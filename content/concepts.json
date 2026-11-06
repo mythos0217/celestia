@@ -1,0 +1,18 @@
+{
+ "schema": "celestia.concepts/1",
+ "concepts": [
+  {"id": "kinematics-components", "name": "運動の成分への分解", "field": "MEC", "requires": [], "laws": []},
+  {"id": "uniform-acceleration", "name": "等加速度運動", "field": "MEC", "requires": ["kinematics-components"], "laws": ["uniform-acceleration-eq"]},
+  {"id": "projectile-motion", "name": "放物運動", "field": "MEC", "requires": ["uniform-acceleration", "kinematics-components"], "laws": ["uniform-acceleration-eq"]},
+  {"id": "force-concept", "name": "力のはたらき", "field": "MEC", "requires": [], "laws": []},
+  {"id": "force-decomposition", "name": "力の分解", "field": "MEC", "requires": ["force-concept", "kinematics-components"], "laws": []},
+  {"id": "equilibrium", "name": "力のつり合い", "field": "MEC", "requires": ["force-decomposition"], "laws": ["newton-1st"]},
+  {"id": "normal-force", "name": "垂直抗力", "field": "MEC", "requires": ["force-concept", "equilibrium"], "laws": ["newton-3rd"]},
+  {"id": "static-friction", "name": "静止摩擦力", "field": "MEC", "requires": ["normal-force"], "laws": ["friction-law"]},
+  {"id": "equation-of-motion", "name": "運動方程式の立て方", "field": "MEC", "requires": ["force-decomposition"], "laws": ["newton-2nd"]},
+  {"id": "simple-harmonic-motion", "name": "単振動", "field": "MEC", "requires": ["equation-of-motion"], "laws": ["hooke-law", "shm-period"]},
+  {"id": "series-parallel", "name": "抵抗の直列・並列", "field": "ELM", "requires": ["ohm-law-use"], "laws": ["ohm-law", "kirchhoff-1st", "kirchhoff-2nd"]},
+  {"id": "ohm-law-use", "name": "オームの法則の使い方", "field": "ELM", "requires": [], "laws": ["ohm-law"]},
+  {"id": "current-conservation", "name": "電流の保存（分岐点）", "field": "ELM", "requires": [], "laws": ["kirchhoff-1st"]}
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "schema": "celestia.simulations/1",
+ "simulations": [
+  {"id": "mech.projectile", "name": "斜方投射・水平投射", "field": "MEC", "model": "mechanics/projectile", "status": "planned",
+   "params": {
+    "v0": {"label": "初速", "unit": "m/s", "min": 0, "max": 40, "step": 0.5, "default": 15},
+    "theta": {"label": "投射角", "unit": "deg", "min": 0, "max": 90, "step": 1, "default": 45},
+    "h0": {"label": "投射点の高さ", "unit": "m", "min": 0, "max": 50, "step": 1, "default": 0},
+    "g": {"label": "重力加速度", "unit": "m/s^2", "min": 1, "max": 20, "step": 0.1, "default": 9.8}},
+   "observables": {"x": "m", "y": "m", "vx": "m/s", "vy": "m/s"},
+   "plots": [["t", "x"], ["t", "y"], ["t", "vx"], ["t", "vy"]]},
+  {"id": "mech.incline", "name": "斜面上の物体と摩擦", "field": "MEC", "model": "mechanics/incline", "status": "planned",
+   "params": {
+    "theta": {"label": "傾き", "unit": "deg", "min": 0, "max": 80, "step": 1, "default": 30},
+    "mu": {"label": "静止摩擦係数", "unit": "1", "min": 0, "max": 1.5, "step": 0.01, "default": 0.6},
+    "muk": {"label": "動摩擦係数", "unit": "1", "min": 0, "max": 1.5, "step": 0.01, "default": 0.4},
+    "m": {"label": "質量", "unit": "kg", "min": 0.1, "max": 10, "step": 0.1, "default": 1},
+    "g": {"label": "重力加速度", "unit": "m/s^2", "min": 1, "max": 20, "step": 0.1, "default": 9.8}},
+   "observables": {"s": "m", "v": "m/s", "N": "N", "f": "N"},
+   "plots": [["t", "v"], ["t", "s"]]},
+  {"id": "mech.spring", "name": "ばね振り子", "field": "MEC", "model": "mechanics/oscillator", "status": "planned",
+   "params": {
+    "m": {"label": "質量", "unit": "kg", "min": 0.1, "max": 5, "step": 0.1, "default": 1},
+    "k": {"label": "ばね定数", "unit": "N/m", "min": 1, "max": 100, "step": 1, "default": 10},
+    "A": {"label": "振幅", "unit": "m", "min": 0, "max": 0.5, "step": 0.01, "default": 0.2}},
+   "observables": {"x": "m", "v": "m/s", "a": "m/s^2", "K": "J", "U": "J"},
+   "measures": {"period": "s"},
+   "plots": [["t", "x"], ["t", "v"], ["t", "K"], ["t", "U"]]},
+  {"id": "mech.pendulum", "name": "単振り子", "field": "MEC", "model": "mechanics/pendulum", "status": "planned",
+   "params": {
+    "l": {"label": "糸の長さ", "unit": "m", "min": 0.1, "max": 5, "step": 0.1, "default": 1},
+    "theta0": {"label": "振れ角", "unit": "deg", "min": 1, "max": 170, "step": 1, "default": 10},
+    "g": {"label": "重力加速度", "unit": "m/s^2", "min": 1, "max": 20, "step": 0.1, "default": 9.8}},
+   "observables": {"theta": "rad", "omega": "rad/s"},
+   "measures": {"period": "s"},
+   "plots": [["t", "theta"], ["t", "omega"]]},
+  {"id": "mech.collision", "name": "1次元の衝突", "field": "MEC", "model": "mechanics/collision", "status": "planned",
+   "params": {
+    "m1": {"label": "質量 m1", "unit": "kg", "min": 0.1, "max": 10, "step": 0.1, "default": 1},
+    "m2": {"label": "質量 m2", "unit": "kg", "min": 0.1, "max": 10, "step": 0.1, "default": 1},
+    "v1": {"label": "速度 v1", "unit": "m/s", "min": -10, "max": 10, "step": 0.1, "default": 3},
+    "v2": {"label": "速度 v2", "unit": "m/s", "min": -10, "max": 10, "step": 0.1, "default": 0},
+    "e": {"label": "反発係数", "unit": "1", "min": 0, "max": 1, "step": 0.01, "default": 1}},
+   "observables": {"x1": "m", "x2": "m", "p": "kg*m/s", "K": "J"},
+   "plots": [["t", "x1"], ["t", "p"], ["t", "K"]]},
+  {"id": "mech.circular", "name": "等速円運動", "field": "MEC", "model": "mechanics/circular", "status": "planned",
+   "params": {
+    "r": {"label": "半径", "unit": "m", "min": 0.1, "max": 10, "step": 0.1, "default": 2},
+    "v": {"label": "速さ", "unit": "m/s", "min": 0.1, "max": 20, "step": 0.1, "default": 4}},
+   "observables": {"x": "m", "y": "m", "ax": "m/s^2", "ay": "m/s^2"},
+   "plots": [["t", "x"], ["t", "y"]]},
+  {"id": "mech.gravitation", "name": "万有引力と軌道", "field": "MEC", "model": "mechanics/gravitation", "status": "planned",
+   "params": {
+    "r0": {"label": "初期距離（地球半径の何倍）", "unit": "1", "min": 1.1, "max": 10, "step": 0.1, "default": 2},
+    "vratio": {"label": "初速（円軌道の速さの何倍）", "unit": "1", "min": 0, "max": 1.6, "step": 0.01, "default": 1}},
+   "observables": {"x": "m", "y": "m", "E": "J", "L": "kg*m^2/s"},
+   "plots": [["t", "E"], ["t", "L"]]}
+ ]
+}

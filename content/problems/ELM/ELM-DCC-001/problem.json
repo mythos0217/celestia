@@ -1,0 +1,151 @@
+{
+ "id": "ELM-DCC-001",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-03",
+ "topic": "直列と並列の合成抵抗",
+ "course": "物理基礎",
+ "level": 0,
+ "minutes": 6,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "起電力 $12\\,\\mathrm{V}$ の電池（内部抵抗は無視できる）と，抵抗値 $4\\,\\Omega$，$6\\,\\Omega$，$3\\,\\Omega$ の抵抗 $R_1$，$R_2$，$R_3$ を図のようにつないだ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-circuit"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "回路全体の合成抵抗を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "電池を流れる電流の大きさを求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$R_3$ を流れる電流の大きさを求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-circuit",
+   "role": "question",
+   "kind": "circuit",
+   "format": "svg",
+   "src": "q-circuit.svg",
+   "alt": "電池と R₁ を直列につなぎ、その先に R₂ と R₃ を並列につないだ回路",
+   "caption": ""
+  },
+  {
+   "id": "a-currents",
+   "role": "answer",
+   "kind": "circuit",
+   "format": "svg",
+   "src": "a-currents.svg",
+   "alt": "電池から 2 A が流れ、分岐点で R₂ に 2/3 A、R₃ に 4/3 A に分かれる",
+   "caption": "分岐点で電流は抵抗の逆比に分かれる（和はもとの 2 A）",
+   "physics": {
+    "junctions": [
+     {
+      "in": [
+       "current:I"
+      ],
+      "out": [
+       "current:I2",
+       "current:I3"
+      ],
+      "values": {
+       "current:I": 2,
+       "current:I2": 0.6667,
+       "current:I3": 1.3333
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$6\\,\\Omega$",
+    "grading": "6 [Ω]"
+   },
+   {
+    "id": "2",
+    "tex": "$2\\,\\mathrm{A}$",
+    "grading": "2 [A]"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac43\\,\\mathrm{A}\\ (\\fallingdotseq 1.3\\,\\mathrm{A})$",
+    "grading": "4/3 [A]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $R_2$ と $R_3$ の並列部分は $\\dfrac{6\\cdot3}{6+3}=2\\,\\Omega$．これと $R_1$ の直列で $4+2=6\\,\\Omega$．\n\n(2) $I=\\dfrac{12}{6}=2\\,\\mathrm{A}$．\n\n(3) 並列部分の電圧は $2\\times2=4\\,\\mathrm{V}$．$R_3$ には $\\dfrac43\\,\\mathrm{A}$，$R_2$ には $\\dfrac46=\\dfrac23\\,\\mathrm{A}$ が流れ，和は $2\\,\\mathrm{A}$ に戻る．"
+    },
+    {
+     "type": "figure",
+     "ref": "a-currents"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "並列部分は電圧が共通．分岐点では電流の和が保存される．"
+ },
+ "concepts": [
+  "series-parallel",
+  "ohm-law-use",
+  "current-conservation"
+ ],
+ "laws": [
+  "ohm-law",
+  "kirchhoff-1st",
+  "kirchhoff-2nd"
+ ],
+ "misconceptions": [
+  "MC-CURRENT-USED-UP"
+ ],
+ "tags": [
+  "合成抵抗",
+  "直流回路",
+  "オームの法則"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

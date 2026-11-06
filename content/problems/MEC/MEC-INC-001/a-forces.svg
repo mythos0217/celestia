@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 240" width="340" height="240" font-family="'Times New Roman', serif">
+<line x1="20" y1="200" x2="320" y2="200" stroke="currentColor" stroke-width="2"/>
+<polygon points="40,200 300,200 300,49.89" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.6" data-phys="incline"/>
+<line x1="40" y1="200" x2="300" y2="49.89" stroke="currentColor" stroke-width="2" data-phys="surface"/>
+<g transform="translate(170,124.94) rotate(-30)" data-phys="body:block" data-angle="30">
+<rect x="-22" y="-30" width="44" height="30" class="f-body" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.6"/>
+</g>
+<path d="M74,200 A34,34 0 0 0 69.44,183" fill="none" stroke="currentColor" stroke-width="1.2"/>
+<text x="84.43" y="188.09" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">θ</text>
+<g class="f-force" data-phys="force:mg" data-dir="270" data-len="70">
+<line x1="162.5" y1="111.95" x2="162.5" y2="171.95" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="162.5,181.95 157.84,171.95 167.16,171.95" fill="currentColor"/>
+<text x="162.5" y="193.95" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">mg</text>
+</g>
+<g class="f-force" data-phys="force:N" data-dir="120" data-len="60.62">
+<line x1="162.5" y1="111.95" x2="137.19" y2="68.11" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="132.19,59.45 141.23,65.78 133.15,70.44" fill="currentColor"/>
+<text x="126.19" y="49.06" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">N</text>
+</g>
+<g class="f-force" data-phys="force:f" data-dir="30" data-len="35">
+<line x1="162.5" y1="111.95" x2="184.15" y2="99.45" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="192.81,94.45 186.48,103.49 181.82,95.41" fill="currentColor"/>
+<text x="203.2" y="88.45" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">f</text>
+</g>
+<g class="f-comp" data-phys="component:mg-parallel" data-dir="210" data-len="35">
+<line x1="162.5" y1="111.95" x2="140.85" y2="124.45" stroke="currentColor" stroke-width="2.2" stroke-dasharray="5 4"/>
+<polygon points="132.19,129.45 138.52,120.41 143.18,128.49" fill="currentColor"/>
+<text x="87.8" y="137.45" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">mg sinθ</text>
+</g>
+<g class="f-comp" data-phys="component:mg-normal" data-dir="300" data-len="60.62">
+<line x1="162.5" y1="111.95" x2="187.81" y2="155.79" stroke="currentColor" stroke-width="2.2" stroke-dasharray="5 4"/>
+<polygon points="192.81,164.45 183.77,158.12 191.85,153.46" fill="currentColor"/>
+<text x="238.81" y="168.84" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">mg cosθ</text>
+</g>
+</svg>

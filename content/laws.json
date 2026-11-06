@@ -1,0 +1,15 @@
+{
+ "schema": "celestia.laws/1",
+ "laws": [
+  {"id": "newton-1st", "name": "慣性の法則", "tex": "\\sum \\vec F=\\vec 0 \\iff \\vec v=\\text{一定}", "conditions": "慣性系", "concepts": ["equilibrium"]},
+  {"id": "newton-2nd", "name": "運動方程式", "tex": "m\\vec a=\\vec F", "conditions": "慣性系。質量が一定", "concepts": ["equation-of-motion"]},
+  {"id": "newton-3rd", "name": "作用・反作用の法則", "tex": "\\vec F_{\\mathrm{AB}}=-\\vec F_{\\mathrm{BA}}", "conditions": "2物体間の力", "concepts": ["normal-force"]},
+  {"id": "uniform-acceleration-eq", "name": "等加速度運動の式", "tex": "v=v_0+at,\\quad x=v_0t+\\tfrac12at^2,\\quad v^2-v_0^2=2ax", "conditions": "加速度が一定", "concepts": ["uniform-acceleration"]},
+  {"id": "friction-law", "name": "摩擦の法則", "tex": "f\\le \\mu N,\\quad f'=\\mu' N", "conditions": "静止摩擦は最大摩擦力まで。動摩擦力は速さによらない（近似）", "concepts": ["static-friction"]},
+  {"id": "hooke-law", "name": "フックの法則", "tex": "F=-kx", "conditions": "弾性限度内", "concepts": ["simple-harmonic-motion"]},
+  {"id": "shm-period", "name": "単振動の周期", "tex": "T=2\\pi\\sqrt{\\frac{m}{k}}", "conditions": "復元力が変位に比例（F=-kx）", "concepts": ["simple-harmonic-motion"]},
+  {"id": "ohm-law", "name": "オームの法則", "tex": "V=RI", "conditions": "抵抗値が一定（オーム抵抗）", "concepts": ["ohm-law-use"]},
+  {"id": "kirchhoff-1st", "name": "キルヒホッフの第1法則", "tex": "\\sum I_{\\text{入}}=\\sum I_{\\text{出}}", "conditions": "定常電流", "concepts": ["current-conservation"]},
+  {"id": "kirchhoff-2nd", "name": "キルヒホッフの第2法則", "tex": "\\sum V=\\sum RI", "conditions": "閉回路を一周", "concepts": ["series-parallel"]}
+ ]
+}

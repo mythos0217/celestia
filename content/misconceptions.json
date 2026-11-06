@@ -1,0 +1,11 @@
+{
+ "schema": "celestia.misconceptions/1",
+ "misconceptions": [
+  {"id": "MC-NORMAL-EQ-MG", "wrong": "垂直抗力はいつも mg に等しい", "right": "垂直抗力は面に垂直な方向の力のつり合い（または運動方程式）で決まる。斜面上では mg cos θ", "concepts": ["normal-force"], "remedy": ["MEC-CON-001", "MEC-INC-001"]},
+  {"id": "MC-FRICTION-MAX", "wrong": "静止摩擦力はいつも μN に等しい", "right": "静止摩擦力の大きさはつり合いで決まり、μN はその上限（最大摩擦力）", "concepts": ["static-friction"], "remedy": ["MEC-CON-001"]},
+  {"id": "MC-SHM-PERIOD-AMPLITUDE", "wrong": "大きく振らせるほど単振動の周期は長くなる", "right": "ばね振り子の周期 2π√(m/k) は振幅によらない", "concepts": ["simple-harmonic-motion"], "remedy": ["MEC-SHM-001"]},
+  {"id": "MC-SHM-PERIOD-LINEAR-M", "wrong": "質量を2倍にすると周期も2倍になる", "right": "周期は √m に比例するので √2 倍", "concepts": ["simple-harmonic-motion"], "remedy": ["MEC-SHM-001"]},
+  {"id": "MC-PROJ-VX-CHANGES", "wrong": "放物運動で水平方向の速さもだんだん小さくなる", "right": "空気抵抗を無視すれば水平方向には力がはたらかず、vx は一定", "concepts": ["projectile-motion"], "remedy": ["MEC-PRJ-001"]},
+  {"id": "MC-CURRENT-USED-UP", "wrong": "電流は抵抗を通ると消費されて減る", "right": "定常電流は分岐しない限り途中で増減しない。消費されるのは電気エネルギー", "concepts": ["current-conservation"], "remedy": ["ELM-DCC-001"]}
+ ]
+}

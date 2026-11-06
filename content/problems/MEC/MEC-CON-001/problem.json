@@ -1,0 +1,114 @@
+{
+ "id": "MEC-CON-001",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-02",
+ "topic": "垂直抗力と摩擦力の誤解",
+ "course": "物理基礎",
+ "level": 0,
+ "minutes": 5,
+ "format": [
+  "concept",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "傾きの角 $\\theta$ のあらい斜面上に，質量 $m$ の物体が静止している．静止摩擦係数を $\\mu$，重力加速度の大きさを $g$ とする．ある生徒は次のように答えた．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "text",
+    "tex": "「物体が受ける垂直抗力の大きさは $mg$，静止摩擦力の大きさは $\\mu mg$ である．」"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "垂直抗力についての誤りを指摘し，正しい大きさを答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "静止摩擦力についての誤りを指摘し，正しい大きさを答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "傾きの角 θ の斜面上に静止している質量 m の物体",
+   "caption": "",
+   "physics": {
+    "angle_deg": 30
+   }
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "垂直抗力は斜面に垂直な方向のつり合いで決まり，$mg\\cos\\theta$．"
+   },
+   {
+    "id": "2",
+    "tex": "$\\mu N$ は最大摩擦力（上限）．静止しているので斜面方向のつり合いより $mg\\sin\\theta$．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 垂直抗力の大きさを決めるのは「面に垂直な方向の力のつり合い」．斜面では重力の垂直成分が $mg\\cos\\theta$ なので $N=mg\\cos\\theta$．水平面のときだけ $N=mg$ になる．\n\n(2) 静止摩擦力は，物体を静止させるのに必要なだけはたらく．斜面方向のつり合いより $f=mg\\sin\\theta$．$\\mu N=\\mu mg\\cos\\theta$ は「これ以上は出せない」上限で，滑り出す直前にだけ $f=\\mu N$ となる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "normal-force",
+  "static-friction",
+  "equilibrium"
+ ],
+ "laws": [
+  "friction-law",
+  "newton-1st"
+ ],
+ "misconceptions": [
+  "MC-NORMAL-EQ-MG",
+  "MC-FRICTION-MAX"
+ ],
+ "tags": [
+  "垂直抗力",
+  "摩擦",
+  "誤概念"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

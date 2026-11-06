@@ -1,0 +1,176 @@
+{
+ "schema": "celestia.taxonomy/1",
+ "fields": [
+  {
+   "key": "MEC",
+   "name": "力学",
+   "order": 1
+  },
+  {
+   "key": "THM",
+   "name": "熱力学",
+   "order": 2
+  },
+  {
+   "key": "WAV",
+   "name": "波動",
+   "order": 3
+  },
+  {
+   "key": "ELM",
+   "name": "電磁気",
+   "order": 4
+  },
+  {
+   "key": "ATM",
+   "name": "原子",
+   "order": 5
+  },
+  {
+   "key": "SYN",
+   "name": "分野横断",
+   "order": 6
+  }
+ ],
+ "units": [
+  {
+   "key": "MEC-01",
+   "field": "MEC",
+   "name": "運動の表し方",
+   "order": 101
+  },
+  {
+   "key": "MEC-02",
+   "field": "MEC",
+   "name": "力とつり合い",
+   "order": 102
+  },
+  {
+   "key": "MEC-03",
+   "field": "MEC",
+   "name": "運動の法則",
+   "order": 103
+  },
+  {
+   "key": "MEC-04",
+   "field": "MEC",
+   "name": "仕事とエネルギー",
+   "order": 104
+  },
+  {
+   "key": "MEC-05",
+   "field": "MEC",
+   "name": "運動量と力積",
+   "order": 105
+  },
+  {
+   "key": "MEC-06",
+   "field": "MEC",
+   "name": "円運動と単振動",
+   "order": 106
+  },
+  {
+   "key": "MEC-07",
+   "field": "MEC",
+   "name": "万有引力",
+   "order": 107
+  },
+  {
+   "key": "MEC-08",
+   "field": "MEC",
+   "name": "剛体のつり合い",
+   "order": 108
+  },
+  {
+   "key": "THM-01",
+   "field": "THM",
+   "name": "熱と温度",
+   "order": 201
+  },
+  {
+   "key": "THM-02",
+   "field": "THM",
+   "name": "気体分子運動論",
+   "order": 202
+  },
+  {
+   "key": "THM-03",
+   "field": "THM",
+   "name": "気体の状態変化と熱力学第1法則",
+   "order": 203
+  },
+  {
+   "key": "WAV-01",
+   "field": "WAV",
+   "name": "波の性質",
+   "order": 301
+  },
+  {
+   "key": "WAV-02",
+   "field": "WAV",
+   "name": "音波",
+   "order": 302
+  },
+  {
+   "key": "WAV-03",
+   "field": "WAV",
+   "name": "光波",
+   "order": 303
+  },
+  {
+   "key": "ELM-01",
+   "field": "ELM",
+   "name": "静電場",
+   "order": 401
+  },
+  {
+   "key": "ELM-02",
+   "field": "ELM",
+   "name": "コンデンサー",
+   "order": 402
+  },
+  {
+   "key": "ELM-03",
+   "field": "ELM",
+   "name": "直流回路",
+   "order": 403
+  },
+  {
+   "key": "ELM-04",
+   "field": "ELM",
+   "name": "電流と磁場",
+   "order": 404
+  },
+  {
+   "key": "ELM-05",
+   "field": "ELM",
+   "name": "電磁誘導",
+   "order": 405
+  },
+  {
+   "key": "ELM-06",
+   "field": "ELM",
+   "name": "交流",
+   "order": 406
+  },
+  {
+   "key": "ATM-01",
+   "field": "ATM",
+   "name": "電子と光",
+   "order": 501
+  },
+  {
+   "key": "ATM-02",
+   "field": "ATM",
+   "name": "原子と原子核",
+   "order": 502
+  },
+  {
+   "key": "SYN-01",
+   "field": "SYN",
+   "name": "融合問題",
+   "order": 601
+  }
+ ],
+ "retired": []
+}

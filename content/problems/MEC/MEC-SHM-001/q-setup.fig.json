@@ -1,0 +1,107 @@
+{
+ "schema": "celestia.figure/1",
+ "size": [
+  340,
+  170
+ ],
+ "items": [
+  {
+   "t": "line",
+   "from": [
+    40,
+    40
+   ],
+   "to": [
+    40,
+    130
+   ],
+   "style": "thick"
+  },
+  {
+   "t": "line",
+   "from": [
+    40,
+    130
+   ],
+   "to": [
+    320,
+    130
+   ],
+   "style": "ground",
+   "phys": "surface"
+  },
+  {
+   "t": "spring",
+   "from": [
+    40,
+    105
+   ],
+   "to": [
+    200,
+    105
+   ],
+   "coils": 9,
+   "amp": 8
+  },
+  {
+   "t": "block",
+   "at": [
+    222,
+    130
+   ],
+   "w": 44,
+   "h": 44,
+   "angle": 0,
+   "label": "m",
+   "phys": "body:block"
+  },
+  {
+   "t": "line",
+   "from": [
+    160,
+    60
+   ],
+   "to": [
+    160,
+    140
+   ],
+   "style": "dash"
+  },
+  {
+   "t": "text",
+   "at": [
+    160,
+    152
+   ],
+   "text": "自然長の位置",
+   "italic": false,
+   "size": 11
+  },
+  {
+   "t": "arrow",
+   "from": [
+    160,
+    62
+   ],
+   "dir": 0,
+   "len": 40,
+   "style": "thin",
+   "phys": "displacement:A",
+   "label": "A",
+   "labelPos": "mid",
+   "labelOffset": [
+    0,
+    -26
+   ]
+  },
+  {
+   "t": "text",
+   "at": [
+    120,
+    92
+   ],
+   "text": "k",
+   "size": 15
+  }
+ ]
+}

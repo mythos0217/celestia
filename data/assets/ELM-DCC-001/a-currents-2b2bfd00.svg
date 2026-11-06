@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 210" width="440" height="210" font-family="'Times New Roman', serif">
+<g data-phys="battery:12 V">
+<line x1="40" y1="170" x2="40" y2="125" stroke="currentColor" stroke-width="1.6"/>
+<line x1="40" y1="115" x2="40" y2="70" stroke="currentColor" stroke-width="1.6"/>
+<line x1="54" y1="115" x2="26" y2="115" stroke="currentColor" stroke-width="1.6"/>
+<line x1="47" y1="125" x2="33" y2="125" stroke="currentColor" stroke-width="3"/>
+<text x="60" y="120" font-size="15" text-anchor="start" dominant-baseline="middle" class="f-label" fill="currentColor">12 V</text>
+</g>
+<polyline points="40,70 80,70" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<g data-phys="resistor:R₁ = 4 Ω">
+<line x1="80" y1="70" x2="107" y2="70" stroke="currentColor" stroke-width="1.6"/>
+<line x1="153" y1="70" x2="180" y2="70" stroke="currentColor" stroke-width="1.6"/>
+<polygon points="107,77 153,77 153,63 107,63" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<text x="130" y="52" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">R₁ = 4 Ω</text>
+</g>
+<polyline points="180,70 340,70" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<g data-phys="resistor:R₂ = 6 Ω">
+<line x1="220" y1="70" x2="220" y2="97" stroke="currentColor" stroke-width="1.6"/>
+<line x1="220" y1="143" x2="220" y2="170" stroke="currentColor" stroke-width="1.6"/>
+<polygon points="213,97 213,143 227,143 227,97" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<text x="234" y="120" font-size="15" text-anchor="start" dominant-baseline="middle" class="f-label" fill="currentColor">R₂ = 6 Ω</text>
+</g>
+<g data-phys="resistor:R₃ = 3 Ω">
+<line x1="340" y1="70" x2="340" y2="97" stroke="currentColor" stroke-width="1.6"/>
+<line x1="340" y1="143" x2="340" y2="170" stroke="currentColor" stroke-width="1.6"/>
+<polygon points="333,97 333,143 347,143 347,97" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<text x="354" y="120" font-size="15" text-anchor="start" dominant-baseline="middle" class="f-label" fill="currentColor">R₃ = 3 Ω</text>
+</g>
+<polyline points="340,170 40,170" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<circle cx="220" cy="70" r="3" fill="currentColor"/>
+<circle cx="220" cy="170" r="3" fill="currentColor"/>
+<g class="f-cur" data-phys="current:I" data-dir="0" data-len="26">
+<line x1="48" y1="62" x2="64.9" y2="62" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="74,62 64.9,66.24 64.9,57.76" fill="currentColor"/>
+<text x="61" y="48" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">I = 2 A</text>
+</g>
+<g class="f-cur" data-phys="current:I2" data-dir="270" data-len="20">
+<line x1="214" y1="76" x2="214" y2="89" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="214,96 210.74,89 217.26,89" fill="currentColor"/>
+<text x="186" y="86" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">2/3 A</text>
+</g>
+<g class="f-cur" data-phys="current:I3" data-dir="270" data-len="20">
+<line x1="334" y1="76" x2="334" y2="89" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="334,96 330.74,89 337.26,89" fill="currentColor"/>
+<text x="306" y="86" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">4/3 A</text>
+</g>
+</svg>

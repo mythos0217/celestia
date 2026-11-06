@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- CELESTIA のアイコン：楕円軌道と、その焦点にある恒星（ケプラーの第1法則）。
+       maskable 用に、絵はすべて中心から半径 400 以内（安全域）に収める -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1534"/>
+      <stop offset="1" stop-color="#28398a"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.4" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#fff4cf"/>
+      <stop offset="0.55" stop-color="#f6c94f"/>
+      <stop offset="1" stop-color="#e09a2a"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f6c94f" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#f6c94f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="planet" cx="0.35" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#e8f1ff"/>
+      <stop offset="1" stop-color="#7fa6f2"/>
+    </radialGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#sky)"/>
+  <g fill="#ffffff">
+    <circle cx="250" cy="230" r="6" opacity="0.9"/>
+    <circle cx="760" cy="200" r="4" opacity="0.7"/>
+    <circle cx="800" cy="720" r="5" opacity="0.8"/>
+    <circle cx="300" cy="790" r="3.5" opacity="0.6"/>
+    <circle cx="560" cy="790" r="3" opacity="0.6"/>
+    <circle cx="210" cy="560" r="3" opacity="0.5"/>
+    <path d="M260 294 l9 27 27 9 -27 9 -9 27 -9 -27 -27 -9 27 -9z" opacity="0.95"/>
+  </g>
+  <g transform="translate(512 512) rotate(-24)">
+    <!-- 長半径 330、短半径 200 → 焦点までの距離 √(330²−200²) ≈ 262.5 -->
+    <ellipse cx="0" cy="0" rx="330" ry="200" fill="none" stroke="#f6c94f" stroke-width="18" stroke-opacity="0.9"/>
+    <circle cx="-262.5" cy="0" r="125" fill="url(#glow)"/>
+    <circle cx="-262.5" cy="0" r="58" fill="url(#sun)"/>
+    <!-- 惑星（軌道上：x = 330 cos t, y = 200 sin t, t = 50°） -->
+    <circle cx="212.1" cy="153.2" r="46" fill="url(#planet)"/>
+  </g>
+</svg>
