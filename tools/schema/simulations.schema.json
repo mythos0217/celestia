@@ -1,0 +1,104 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "celestia.simulations/1",
+ "type": "object",
+ "required": [
+  "schema",
+  "simulations"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "schema": {
+   "const": "celestia.simulations/1"
+  },
+  "simulations": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "name",
+     "field",
+     "model",
+     "status",
+     "params",
+     "observables",
+     "plots"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^[a-z]+\\.[a-z0-9-]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "field": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+     },
+     "model": {
+      "type": "string",
+      "pattern": "^[a-z]+/[a-z0-9-]+$"
+     },
+     "status": {
+      "enum": [
+       "planned",
+       "ready"
+      ]
+     },
+     "params": {
+      "type": "object",
+      "additionalProperties": {
+       "type": "object",
+       "required": [
+        "label",
+        "unit",
+        "default"
+       ],
+       "additionalProperties": false,
+       "properties": {
+        "label": {
+         "type": "string"
+        },
+        "unit": {
+         "type": "string"
+        },
+        "min": {
+         "type": "number"
+        },
+        "max": {
+         "type": "number"
+        },
+        "step": {
+         "type": "number"
+        },
+        "default": {
+         "type": "number"
+        }
+       }
+      }
+     },
+     "observables": {
+      "type": "object"
+     },
+     "measures": {
+      "type": "object"
+     },
+     "plots": {
+      "type": "array",
+      "items": {
+       "type": "array",
+       "minItems": 2,
+       "maxItems": 2,
+       "items": {
+        "type": "string"
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

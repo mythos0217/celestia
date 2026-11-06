@@ -1,0 +1,79 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "celestia.taxonomy/1",
+ "type": "object",
+ "required": [
+  "schema",
+  "fields",
+  "units"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "schema": {
+   "const": "celestia.taxonomy/1"
+  },
+  "fields": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "key",
+     "name",
+     "order"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "key": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "order": {
+      "type": "integer"
+     }
+    }
+   }
+  },
+  "units": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "key",
+     "field",
+     "name",
+     "order"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "key": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}-\\d{2}$"
+     },
+     "field": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "order": {
+      "type": "integer"
+     },
+     "replacedBy": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "retired": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "使わなくなった単元ID（再利用しない）"
+  }
+ }
+}

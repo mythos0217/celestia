@@ -1,0 +1,805 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "celestia.problem/1",
+ "title": "CELESTIA 問題（正規データ）",
+ "type": "object",
+ "required": [
+  "id",
+  "schema",
+  "field",
+  "unit",
+  "level",
+  "format",
+  "statement",
+  "figures",
+  "answer",
+  "solutions",
+  "concepts",
+  "laws",
+  "misconceptions",
+  "tags",
+  "provenance",
+  "quality"
+ ],
+ "additionalProperties": false,
+ "$defs": {
+  "block": {
+   "type": "object",
+   "required": [
+    "type"
+   ],
+   "properties": {
+    "type": {
+     "enum": [
+      "text",
+      "figure",
+      "parts",
+      "simulation"
+     ]
+    }
+   },
+   "allOf": [
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "const": "text"
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "tex"
+      ],
+      "properties": {
+       "type": true,
+       "tex": {
+        "type": "string"
+       }
+      },
+      "additionalProperties": false
+     }
+    },
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "const": "figure"
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "ref"
+      ],
+      "properties": {
+       "type": true,
+       "ref": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$"
+       },
+       "placement": {
+        "enum": [
+         "block",
+         "float-right",
+         "side-by-side"
+        ]
+       }
+      },
+      "additionalProperties": false
+     }
+    },
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "const": "parts"
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "items"
+      ],
+      "properties": {
+       "type": true,
+       "items": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+         "type": "object",
+         "required": [
+          "id",
+          "tex"
+         ],
+         "additionalProperties": false,
+         "properties": {
+          "id": {
+           "type": "string",
+           "pattern": "^[0-9]+[a-z]?$"
+          },
+          "tex": {
+           "type": "string"
+          },
+          "figures": {
+           "type": "array",
+           "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+           }
+          }
+         }
+        }
+       }
+      },
+      "additionalProperties": false
+     }
+    },
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "const": "simulation"
+       }
+      }
+     },
+     "then": {
+      "properties": {
+       "type": true,
+       "caption": {
+        "type": "string"
+       }
+      },
+      "additionalProperties": false
+     }
+    }
+   ]
+  }
+ },
+ "properties": {
+  "id": {
+   "type": "string",
+   "pattern": "^[A-Z]{3}-[A-Z]{3}-\\d{3,}$",
+   "description": "<分野3字>-<単元略号3字>-<番号>。一度使ったら変えない・再利用しない"
+  },
+  "schema": {
+   "const": "celestia.problem/1"
+  },
+  "field": {
+   "type": "string",
+   "pattern": "^[A-Z]{3}$"
+  },
+  "unit": {
+   "type": "string",
+   "pattern": "^[A-Z]{3}-\\d{2}$"
+  },
+  "topic": {
+   "type": "string"
+  },
+  "course": {
+   "enum": [
+    "物理基礎",
+    "物理"
+   ]
+  },
+  "level": {
+   "type": "integer",
+   "minimum": 0,
+   "maximum": 5,
+   "description": "0=基礎 1=標準 2=入試基礎 3=国公立2次 4=難関 5=最難関"
+  },
+  "minutes": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "format": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "enum": [
+     "choice",
+     "numeric",
+     "calc",
+     "written",
+     "derivation",
+     "graph-read",
+     "figure-read",
+     "construct",
+     "experiment",
+     "concept",
+     "synthesis"
+    ]
+   }
+  },
+  "examStyle": {
+   "enum": [
+    "common-test",
+    "national-2nd",
+    "private",
+    "original"
+   ]
+  },
+  "statement": {
+   "type": "object",
+   "required": [
+    "blocks"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "blocks": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "$ref": "#/$defs/block"
+     }
+    }
+   }
+  },
+  "figures": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "role",
+     "kind",
+     "format",
+     "alt"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+     },
+     "role": {
+      "enum": [
+       "question",
+       "answer",
+       "both"
+      ],
+      "description": "answer の図は答え合わせまで表示しない"
+     },
+     "kind": {
+      "enum": [
+       "diagram",
+       "vector",
+       "circuit",
+       "ray",
+       "waveform",
+       "apparatus",
+       "state",
+       "graph",
+       "photo",
+       "sim-initial"
+      ]
+     },
+     "format": {
+      "enum": [
+       "svg",
+       "png",
+       "webp",
+       "plot-json",
+       "sim-plot",
+       "sim-snapshot"
+      ]
+     },
+     "src": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*\\.(svg|png|webp|json)$",
+      "description": "問題フォルダ内のファイル名（Base64 は不可）"
+     },
+     "sim": {
+      "type": "object",
+      "required": [
+       "id"
+      ],
+      "properties": {
+       "id": {
+        "type": "string",
+        "pattern": "^[a-z]+\\.[a-z0-9-]+$"
+       },
+       "preset": {
+        "type": "object"
+       },
+       "t": {
+        "type": "number"
+       }
+      }
+     },
+     "plot": {
+      "type": "object",
+      "properties": {
+       "x": {
+        "type": "string"
+       },
+       "y": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "alt": {
+      "type": "string",
+      "minLength": 4
+     },
+     "caption": {
+      "type": "string"
+     },
+     "width": {
+      "type": "integer",
+      "minimum": 80,
+      "maximum": 1200
+     },
+     "physics": {
+      "type": "object",
+      "description": "この図が表している物理条件（validate_content.py が図と照合する）",
+      "properties": {
+       "angle_deg": {
+        "type": "number"
+       },
+       "equilibrium": {
+        "type": "boolean"
+       },
+       "forces": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "required": [
+          "name",
+          "dir_deg"
+         ],
+         "properties": {
+          "name": {
+           "type": "string"
+          },
+          "dir_deg": {
+           "type": "number"
+          }
+         }
+        }
+       },
+       "vectors": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "required": [
+          "name",
+          "dir_deg"
+         ],
+         "properties": {
+          "name": {
+           "type": "string"
+          },
+          "dir_deg": {
+           "type": "number"
+          }
+         }
+        }
+       },
+       "decompositions": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "required": [
+          "of",
+          "into"
+         ],
+         "properties": {
+          "of": {
+           "type": "string"
+          },
+          "into": {
+           "type": "array",
+           "items": {
+            "type": "string"
+           }
+          }
+         }
+        }
+       },
+       "equalLength": {
+        "type": "array",
+        "items": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        }
+       },
+       "junctions": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "required": [
+          "in",
+          "out"
+         ],
+         "properties": {
+          "in": {
+           "type": "array",
+           "items": {
+            "type": "string"
+           }
+          },
+          "out": {
+           "type": "array",
+           "items": {
+            "type": "string"
+           }
+          },
+          "values": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "allOf": [
+     {
+      "if": {
+       "properties": {
+        "format": {
+         "enum": [
+          "svg",
+          "png",
+          "webp",
+          "plot-json"
+         ]
+        }
+       }
+      },
+      "then": {
+       "required": [
+        "src"
+       ]
+      }
+     },
+     {
+      "if": {
+       "properties": {
+        "format": {
+         "enum": [
+          "sim-plot",
+          "sim-snapshot"
+         ]
+        }
+       }
+      },
+      "then": {
+       "required": [
+        "sim"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "answer": {
+   "type": "object",
+   "required": [
+    "parts"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "parts": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "object",
+      "required": [
+       "id",
+       "tex"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "id": {
+        "type": "string",
+        "pattern": "^([0-9]+[a-z]?|main)$"
+       },
+       "tex": {
+        "type": "string"
+       },
+       "grading": {
+        "type": "string",
+        "description": "入力用の答え（js/answer.js の書式。単位は [m/s]）"
+       },
+       "wrong": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "required": [
+          "value",
+          "misconception"
+         ],
+         "properties": {
+          "value": {
+           "type": "string"
+          },
+          "misconception": {
+           "type": "string",
+           "pattern": "^MC-[A-Z0-9]+(-[A-Z0-9]+)*$"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "solutions": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "kind",
+     "blocks"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^(main|alt\\d+|note\\d*)$"
+     },
+     "kind": {
+      "enum": [
+       "main",
+       "alt",
+       "note"
+      ]
+     },
+     "blocks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+       "$ref": "#/$defs/block"
+      }
+     }
+    }
+   }
+  },
+  "idea": {
+   "type": "object",
+   "required": [
+    "tex"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "tex": {
+     "type": "string"
+    }
+   }
+  },
+  "hints": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "choices": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "tex"
+    ],
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "tex": {
+      "type": "string"
+     },
+     "misconception": {
+      "type": "string",
+      "pattern": "^MC-[A-Z0-9]+(-[A-Z0-9]+)*$"
+     }
+    }
+   }
+  },
+  "simulation": {
+   "type": "object",
+   "required": [
+    "id"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "type": "string",
+     "pattern": "^[a-z]+\\.[a-z0-9-]+$"
+    },
+    "preset": {
+     "type": "object"
+    },
+    "locked": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "show": {
+     "enum": [
+      "before",
+      "after-attempt",
+      "solution"
+     ]
+    }
+   }
+  },
+  "predict": {
+   "type": "object",
+   "required": [
+    "prompt",
+    "choices",
+    "answer"
+   ],
+   "properties": {
+    "prompt": {
+     "type": "string"
+    },
+    "choices": {
+     "type": "array",
+     "minItems": 2,
+     "items": {
+      "type": "object",
+      "required": [
+       "id",
+       "tex"
+      ],
+      "properties": {
+       "id": {
+        "type": "string"
+       },
+       "tex": {
+        "type": "string"
+       },
+       "misconception": {
+        "type": "string",
+        "pattern": "^MC-[A-Z0-9]+(-[A-Z0-9]+)*$"
+       }
+      }
+     }
+    },
+    "answer": {
+     "type": "string"
+    },
+    "experiment": {
+     "type": "object",
+     "properties": {
+      "sim": {
+       "type": "string",
+       "pattern": "^[a-z]+\\.[a-z0-9-]+$"
+      },
+      "vary": {
+       "type": "object"
+      },
+      "measure": {
+       "type": "string"
+      }
+     }
+    },
+    "explain": {
+     "type": "object",
+     "properties": {
+      "laws": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "tex": {
+       "type": "string"
+      }
+     }
+    }
+   }
+  },
+  "concepts": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+   }
+  },
+  "laws": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+   }
+  },
+  "misconceptions": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "pattern": "^MC-[A-Z0-9]+(-[A-Z0-9]+)*$"
+   }
+  },
+  "tags": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "minLength": 1
+   }
+  },
+  "related": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "provenance": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "created": {
+     "type": "string",
+     "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "method": {
+     "type": "string"
+    }
+   }
+  },
+  "quality": {
+   "type": "object",
+   "required": [
+    "status",
+    "checks"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "status": {
+     "enum": [
+      "draft",
+      "review",
+      "published",
+      "hidden"
+     ]
+    },
+    "checks": {
+     "type": "object",
+     "additionalProperties": false,
+     "properties": {
+      "schema": {
+       "type": "boolean"
+      },
+      "units": {
+       "type": "boolean"
+      },
+      "figures": {
+       "enum": [
+        false,
+        "auto",
+        "human"
+       ]
+      },
+      "physics": {
+       "type": "boolean"
+      },
+      "human": {
+       "type": "boolean"
+      }
+     }
+    },
+    "verified": {
+     "type": "boolean"
+    },
+    "issues": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

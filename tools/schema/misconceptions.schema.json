@@ -1,0 +1,55 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "celestia.misconceptions/1",
+ "type": "object",
+ "required": [
+  "schema",
+  "misconceptions"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "schema": {
+   "const": "celestia.misconceptions/1"
+  },
+  "misconceptions": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "wrong",
+     "right",
+     "concepts",
+     "remedy"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^MC-[A-Z0-9]+(-[A-Z0-9]+)*$"
+     },
+     "wrong": {
+      "type": "string"
+     },
+     "right": {
+      "type": "string"
+     },
+     "concepts": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      }
+     },
+     "remedy": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "pattern": "^[A-Z]{3}-[A-Z]{3}-\\d{3,}$"
+      }
+     }
+    }
+   }
+  }
+ }
+}

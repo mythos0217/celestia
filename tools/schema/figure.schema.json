@@ -1,0 +1,54 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "celestia.figure/1",
+ "title": "作図仕様（tools/figgen.py が SVG にする）",
+ "type": "object",
+ "required": [
+  "schema",
+  "size",
+  "items"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "schema": {
+   "const": "celestia.figure/1"
+  },
+  "size": {
+   "type": "array",
+   "minItems": 2,
+   "maxItems": 2,
+   "items": {
+    "type": "number",
+    "minimum": 10
+   }
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "t"
+    ],
+    "properties": {
+     "t": {
+      "enum": [
+       "line",
+       "poly",
+       "arrow",
+       "block",
+       "ball",
+       "arc",
+       "text",
+       "spring",
+       "curve",
+       "resistor",
+       "battery",
+       "wire",
+       "dot"
+      ]
+     }
+    }
+   }
+  }
+ }
+}
