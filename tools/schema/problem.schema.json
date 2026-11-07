@@ -318,6 +318,9 @@
         "items": {
          "type": "string"
         }
+       },
+       "snap": {
+        "type": "boolean"
        }
       }
      },
@@ -433,6 +436,58 @@
           "values": {
            "type": "object"
           }
+         }
+        }
+       },
+       "netForce": {
+        "type": "object",
+        "required": [
+         "dir_deg"
+        ],
+        "properties": {
+         "dir_deg": {
+          "type": "number"
+         }
+        },
+        "description": "合力の向き（運動している物体）"
+       },
+       "torque": {
+        "type": "object",
+        "required": [
+         "about"
+        ],
+        "properties": {
+         "about": {
+          "type": "array",
+          "items": {
+           "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+         }
+        },
+        "description": "この点（SVG 座標）のまわりの力のモーメントの和が 0（剛体のつり合い）"
+       },
+       "refraction": {
+        "type": "object",
+        "required": [
+         "n1",
+         "n2",
+         "in",
+         "out"
+        ],
+        "properties": {
+         "n1": {
+          "type": "number"
+         },
+         "n2": {
+          "type": "number"
+         },
+         "in": {
+          "type": "string"
+         },
+         "out": {
+          "type": "string"
          }
         }
        }

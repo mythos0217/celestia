@@ -139,6 +139,8 @@ def build(content=CONTENT, out=ROOT / 'data'):
             e['c'] = p['concepts']
         if p['misconceptions']:
             e['m'] = p['misconceptions']
+        if p['laws']:
+            e['l'] = p['laws']
         if p.get('simulation'):
             e['sim'] = p['simulation']['id']
         if p.get('predict'):
@@ -212,7 +214,7 @@ def build(content=CONTENT, out=ROOT / 'data'):
         dump(out / f'f-{key}.json', b)
     knowledge = {'dataVersion': version,
                  'concepts': K['concepts'],
-                 'laws': [{**x, 'html': f'${x["tex"]}$'} for x in K['laws']],
+                 'laws': [law_html(x, unknown) for x in K['laws']],
                  'misconceptions': K['misconceptions'],
                  'simulations': K['simulations']}
     dump(out / 'knowledge.json', knowledge)
@@ -231,6 +233,17 @@ def build(content=CONTENT, out=ROOT / 'data'):
     return {'count': len(index), 'fields': len(fields), 'hidden': hidden, 'auto': sum(1 for e in index if e.get('in')),
             'figures': sum(len(b.get('figs', {})) for v in bodies.values() for k, b in v.items() if k != '_meta'),
             'dataVersion': version, 'unknown': sorted(unknown), 'warn': list(WARN)}
+
+
+def law_html(x, unknown):
+    """法則：式・条件・根拠・導出の手順を HTML に（数式はアプリの KaTeX が描く）"""
+    ctx = {'id': x['id'], 'unknown': unknown}
+    out = {**x, 'html': f'${x["tex"]}$', 'condHtml': render(x['conditions'], ctx)}
+    if x.get('basis'):
+        out['basisHtml'] = render(x['basis'], ctx)
+    if x.get('derivation'):
+        out['steps'] = [render(st['tex'], ctx) for st in x['derivation']]
+    return out
 
 
 def blocks_html_text(blocks):

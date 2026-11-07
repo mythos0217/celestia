@@ -44,7 +44,9 @@
        "resistor",
        "battery",
        "wire",
-       "dot"
+       "dot",
+       "circle",
+       "sine"
       ]
      }
     }

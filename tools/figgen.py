@@ -25,6 +25,8 @@
   {"t": "battery", "from": [x,y], "to": [x,y], "label": "E", "plus": "from|to"}
   {"t": "wire", "points": [[x,y],...]}
   {"t": "dot", "at": [x,y]}
+  {"t": "circle", "at": [x,y], "r": 半径, "style": "solid|dash|fill", "label": "地球"}
+  {"t": "sine", "from": [x,y], "to": [x,y], "amp": 振幅, "cycles": 周期の数, "func": "sin|cos", "phase": 度, "mirror": true}
 """
 import json
 import math
@@ -248,6 +250,26 @@ def render(spec):
             out += battery(it)
         elif t == 'wire':
             out.append(f'<polyline points="{" ".join(pt(p) for p in it["points"])}" fill="none" stroke="currentColor" stroke-width="1.6"/>')
+        elif t == 'sine':
+            # 正弦波の曲線：from から to（水平）まで、振幅 amp・周期の数 cycles。func は sin か cos、mirror で ± の対
+            (x0, y0), (x1, _) = it['from'], it['to']
+            n = 160
+            fn = math.sin if it.get('func', 'sin') == 'sin' else math.cos
+            ph = math.radians(it.get('phase', 0))
+            sign = [1, -1] if it.get('mirror') else [1]
+            for sg in sign:
+                pts = [(x0 + (x1 - x0) * k / n, y0 - sg * it['amp'] * fn(2 * math.pi * it['cycles'] * k / n + ph)) for k in range(n + 1)]
+                st = STYLE[it.get('style', 'thin')]
+                phys = f' data-phys="{esc(it["phys"])}"' if it.get('phys') else ''
+                out.append(f'<polyline points="{" ".join(pt(q) for q in pts)}" fill="none" {st}{phys}/>')
+        elif t == 'circle':
+            st = it.get('style', 'solid')
+            fill = 'fill="currentColor" fill-opacity="0.18"' if st == 'fill' else 'fill="none"'
+            dash = ' stroke-dasharray="5 4"' if st == 'dash' else ''
+            phys = f' data-phys="{esc(it["phys"])}"' if it.get('phys') else ''
+            out.append(f'<circle cx="{f(it["at"][0])}" cy="{f(it["at"][1])}" r="{f(it["r"])}" {fill} stroke="currentColor" stroke-width="{it.get("width", 1.4)}"{dash}{phys}/>')
+            if it.get('label'):
+                out.append(text(it['at'][0], it['at'][1], it['label'], italic=False, size=13))
         elif t == 'dot':
             out.append(f'<circle cx="{f(it["at"][0])}" cy="{f(it["at"][1])}" r="3" fill="currentColor"/>')
         else:

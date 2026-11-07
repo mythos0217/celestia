@@ -11,7 +11,7 @@
           問題文が解答用の図を参照していないか（解答図の漏れ）、解答用の図が解説から参照されているか
   SVG     XML として読めるか、viewBox、script・foreignObject・on* 属性・外部 URL・埋め込み画像（base64）が無いか、大きさ
   物理    図に宣言した物理条件（physics）と SVG の実際の形の照合：
-          斜面の角度、力・ベクトルの向き、つり合い（力の和が 0）、分解（成分の和＝元のベクトル）、長さの一致、
+          斜面の角度、力・ベクトルの向き、つり合い（力の和が 0）、運動しているときの合力の向き、剛体の力のモーメントの和、光線の屈折の法則、分解（成分の和＝元のベクトル）、長さの一致、
           分岐点の電流の保存
   参照    concepts / laws / misconceptions / remedy / シミュレーション ID・preset の範囲・locked・予測の実験条件
   小問    問題文の小問 ID と答えの小問 ID の一致
@@ -84,6 +84,19 @@ def check_svg_file(path, R, where):
     return root
 
 
+def arrow_starts(root):
+    """data-phys の付いた矢印の始点（力の作用点）→ {名前: (x, y)}（SVG 座標）"""
+    out = {}
+    for g in root.iter():
+        name = g.get('data-phys')
+        if not name or tag(g) != 'g':
+            continue
+        line = next((c for c in g if tag(c) == 'line'), None)
+        if line is not None:
+            out[name] = (float(line.get('x1')), float(line.get('y1')))
+    return out
+
+
 def arrow_vectors(root):
     """data-phys の付いた矢印（<g> の中の line と矢じりの polygon）→ {名前: (dx, dy, 長さ, 向き°)}
     向きは数学の角度（右 0°、反時計回り正）。手描きの SVG も同じ形にする（docs/figures.md）。"""
@@ -149,6 +162,32 @@ def check_physics(fig, root, R, where):
             big = max(v[2] for v in fs)
             if math.hypot(sx, sy) > SUM_TOL * big:
                 R.err(w, f'つり合いのはずなのに、力の矢印の和が 0 になりません（和の大きさ {math.hypot(sx, sy):.1f}、最大の力 {big:.1f}）')
+    if ph.get('netForce'):
+        fs = [v for k, v in vecs.items() if k.startswith('force:')]
+        sx, sy = sum(v[0] for v in fs), sum(v[1] for v in fs)
+        if math.hypot(sx, sy) < SUM_TOL * max([v[2] for v in fs] or [1]):
+            R.err(w, '合力の向きが宣言されているのに、力の矢印の和がほぼ 0 です（つり合っている図になっている）')
+        elif angle_diff(math.degrees(math.atan2(sy, sx)) % 360, ph['netForce']['dir_deg']) > 5:
+            R.err(w, f'合力の向きが宣言（{ph["netForce"]["dir_deg"]}°）と違います：図では {math.degrees(math.atan2(sy, sx)) % 360:.1f}°')
+    if ph.get('refraction'):
+        rf = ph['refraction']
+        if rf['in'] not in vecs or rf['out'] not in vecs:
+            R.err(w, '屈折の光線（in / out）の矢印がありません')
+        else:
+            # 境界は水平、法線は鉛直。光線の向きと鉛直下向きのなす角が入射角・屈折角
+            t1 = math.radians(angle_diff(vecs[rf['in']][3], 270)); t2 = math.radians(angle_diff(vecs[rf['out']][3], 270))
+            a, b = rf['n1'] * math.sin(t1), rf['n2'] * math.sin(t2)
+            if abs(a - b) > 0.02 * max(a, b, 1e-9):
+                R.err(w, f'屈折の法則が成り立っていません：n₁sinθ₁ = {a:.3f}、n₂sinθ₂ = {b:.3f}（図の角度 {math.degrees(t1):.1f}°、{math.degrees(t2):.1f}°）')
+    if ph.get('torque'):
+        ax, ay = ph['torque']['about']
+        starts = arrow_starts(root)
+        fs = [(k, v) for k, v in vecs.items() if k.startswith('force:')]
+        # 力のモーメント r × F（SVG は y が下向きなので、r の y も上向きに直す）
+        terms = [((starts[k][0] - ax) * v[1] - (-(starts[k][1] - ay)) * v[0]) for k, v in fs]
+        scale = max([abs(math.hypot(starts[k][0] - ax, starts[k][1] - ay)) * v[2] for k, v in fs] or [1])
+        if abs(sum(terms)) > SUM_TOL * scale:
+            R.err(w, f'点 {ph["torque"]["about"]} のまわりの力のモーメントの和が 0 になりません（{sum(terms):.0f}、目安 {scale:.0f}）')
     for dec in ph.get('decompositions', []):
         missing = [n for n in [dec['of']] + dec['into'] if n not in vecs]
         if missing:
@@ -234,7 +273,13 @@ def check_problem(d, p, K, R, ids_seen):
             if f.suffix in ('.png', '.webp') and fg.get('physics'):
                 R.warn(where, f'画像 {fg["src"]} の physics は自動照合できません（人の確認が必要）')
         if fg['format'] in ('sim-plot', 'sim-snapshot'):
-            check_sim_ref(fg['sim']['id'], fg['sim'].get('preset', {}), [], K, R, f'{where} 図 {fg["id"]}')
+            sim = check_sim_ref(fg['sim']['id'], fg['sim'].get('preset', {}), [], K, R, f'{where} 図 {fg["id"]}')
+            if sim and fg['format'] == 'sim-plot':
+                for q in [(fg.get('plot') or {}).get('x', 't')] + (fg.get('plot') or {}).get('y', []):
+                    if q != 't' and q not in sim['observables']:
+                        R.err(where, f'図 {fg["id"]} のグラフの量 {q} が {sim["id"]} にありません')
+                if not (fg.get('plot') or {}).get('y'):
+                    R.err(where, f'図 {fg["id"]}（sim-plot）に plot.y がありません')
     for f in d.iterdir():
         if f.is_file() and f.name not in used_files:
             R.err(where, f'フォルダに使われていないファイル {f.name} があります')
@@ -373,7 +418,8 @@ def check_knowledge(K, problem_ids, R):
             if 'min' in prm and 'max' in prm and not (prm['min'] <= prm['default'] <= prm['max']):
                 R.err('simulations.json', f'{s["id"]} の {k} の既定値 {prm["default"]} が範囲の外です')
         for ax in s['plots']:
-            for q in ax:
+            qs = ax if isinstance(ax, list) else [ax['x']] + ([ax['y']] if 'y' in ax else []) + ax.get('ys', [])
+            for q in qs:
                 if q != 't' and q not in s['observables']:
                     R.err('simulations.json', f'{s["id"]} のグラフの軸 {q} が observables にありません')
         if s['status'] == 'ready' and not (ROOT / 'js' / 'sim' / 'models' / f'{s["model"]}.js').exists():

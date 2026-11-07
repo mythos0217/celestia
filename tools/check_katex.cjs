@@ -43,6 +43,24 @@ for (const f of fs.readdirSync(dir).filter((f) => f.startsWith('f-'))) {
     }
   }
 }
+// 概念・法則（knowledge.json）の式・条件・根拠・導出
+const kp = path.join(dir, 'knowledge.json');
+if (fs.existsSync(kp)) {
+  const K = JSON.parse(fs.readFileSync(kp, 'utf8'));
+  for (const l of K.laws) {
+    const parts = [['式', l.html], ['条件', l.condHtml || ''], ['根拠', l.basisHtml || ''], ...(l.steps || []).map((x, i) => [`導出${i + 1}`, x])];
+    for (const [k, html] of parts) {
+      const segs = [];
+      let s2 = html.replace(/\\\[([\s\S]*?)\\\]/g, (_, m) => { segs.push([m, true]); return ' '; });
+      s2.replace(/\$([^$]+)\$/g, (_, m) => { segs.push([m, false]); return ' '; });
+      for (const [m, disp] of segs) {
+        total++;
+        try { katex.renderToString(unesc(m), { throwOnError: true, displayMode: disp, strict: false }); }
+        catch (e) { bad.push([`law:${l.id}`, k, e.message.replace(/^KaTeX parse error: /, '').slice(0, 120), unesc(m).slice(0, 100)]); }
+      }
+    }
+  }
+}
 console.log(`数式 ${total}個を検査、描画できないもの ${bad.length}個`);
 for (const b of bad.slice(0, 80)) console.log(b.join(' | '));
 process.exitCode = bad.length ? 1 : 0;

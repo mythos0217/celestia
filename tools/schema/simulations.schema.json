@@ -84,18 +84,92 @@
       "type": "object"
      },
      "measures": {
-      "type": "object"
+      "type": "object",
+      "additionalProperties": {
+       "type": "object",
+       "required": [
+        "label",
+        "unit"
+       ],
+       "properties": {
+        "label": {
+         "type": "string"
+        },
+        "unit": {
+         "type": "string"
+        }
+       }
+      }
      },
      "plots": {
       "type": "array",
       "items": {
-       "type": "array",
-       "minItems": 2,
-       "maxItems": 2,
-       "items": {
-        "type": "string"
-       }
+       "oneOf": [
+        {
+         "type": "array",
+         "minItems": 2,
+         "maxItems": 2,
+         "items": {
+          "type": "string"
+         }
+        },
+        {
+         "type": "object",
+         "required": [
+          "x"
+         ],
+         "additionalProperties": false,
+         "properties": {
+          "x": {
+           "type": "string"
+          },
+          "y": {
+           "type": "string"
+          },
+          "ys": {
+           "type": "array",
+           "items": {
+            "type": "string"
+           }
+          },
+          "label": {
+           "type": "string"
+          },
+          "snap": {
+           "type": "boolean"
+          },
+          "mark": {
+           "type": "string"
+          },
+          "zero": {
+           "type": "boolean"
+          },
+          "yRange": {
+           "type": "array",
+           "items": {
+            "type": "number"
+           }
+          },
+          "height": {
+           "type": "integer"
+          }
+         }
+        }
+       ]
       }
+     },
+     "labels": {
+      "type": "object",
+      "additionalProperties": {
+       "type": "string"
+      }
+     },
+     "static": {
+      "type": "boolean",
+      "description": "時間によらない（分布を描く）シミュレーション"
+     },
+     "note": {
+      "type": "string"
      }
     }
    }

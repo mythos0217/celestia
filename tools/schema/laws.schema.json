@@ -20,7 +20,8 @@
      "name",
      "tex",
      "conditions",
-     "concepts"
+     "concepts",
+     "origin"
     ],
     "additionalProperties": false,
     "properties": {
@@ -43,8 +44,80 @@
        "type": "string",
        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
       }
+     },
+     "origin": {
+      "enum": [
+       "fundamental",
+       "empirical",
+       "derived",
+       "definition"
+      ],
+      "description": "fundamental=出発点となる法則、empirical=実験から得た法則、derived=ほかの法則から導く、definition=定義"
+     },
+     "basis": {
+      "type": "string",
+      "description": "導出しない法則の根拠・由来（TeX）"
+     },
+     "derivation": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+       "type": "object",
+       "required": [
+        "tex"
+       ],
+       "additionalProperties": false,
+       "properties": {
+        "tex": {
+         "type": "string"
+        },
+        "figure": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "simulations": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "pattern": "^[a-z]+\\.[a-z0-9-]+$"
+      }
      }
-    }
+    },
+    "allOf": [
+     {
+      "if": {
+       "properties": {
+        "origin": {
+         "const": "derived"
+        }
+       }
+      },
+      "then": {
+       "required": [
+        "derivation"
+       ]
+      }
+     },
+     {
+      "if": {
+       "properties": {
+        "origin": {
+         "enum": [
+          "fundamental",
+          "empirical"
+         ]
+        }
+       }
+      },
+      "then": {
+       "required": [
+        "basis"
+       ]
+      }
+     }
+    ]
    }
   }
  }
