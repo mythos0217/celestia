@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 230" width="340" height="230" font-family="'Times New Roman', serif">
+<line x1="20" y1="200" x2="320" y2="200" stroke="currentColor" stroke-width="2"/>
+<polygon points="40,200 300,200 300,49.89" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.6" data-phys="incline"/>
+<line x1="40" y1="200" x2="300" y2="49.89" stroke="currentColor" stroke-width="2" data-phys="surface"/>
+<g transform="translate(170,124.94) rotate(-30)" data-phys="body:block" data-angle="30">
+<rect x="-22" y="-30" width="44" height="30" class="f-body" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.6"/>
+<text x="0" y="-15" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">m</text>
+</g>
+<path d="M74,200 A34,34 0 0 0 69.44,183" fill="none" stroke="currentColor" stroke-width="1.2"/>
+<text x="84.43" y="188.09" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">θ</text>
+<g class="f-vel" data-phys="velocity:v" data-dir="210" data-len="40">
+<line x1="215" y1="68" x2="189.02" y2="83" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="180.36,88 186.69,78.96 191.35,87.04" fill="currentColor"/>
+<text x="131.97" y="90" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">運動の向き</text>
+</g>
+</svg>

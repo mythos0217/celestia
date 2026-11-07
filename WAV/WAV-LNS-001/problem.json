@@ -1,0 +1,121 @@
+{
+ "id": "WAV-LNS-001",
+ "schema": "celestia.problem/1",
+ "field": "WAV",
+ "unit": "WAV-03",
+ "topic": "凸レンズの実像と虚像",
+ "course": "物理",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "numeric",
+  "derivation"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "焦点距離 $1.0\\,\\mathrm m$ の凸レンズの前方に物体を置く．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "物体をレンズの前方 $1.5\\,\\mathrm m$ に置いた．像はレンズの後方何 m にできるか．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の像の倍率を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "物体をレンズの前方 $0.50\\,\\mathrm m$ に置くと，虚像ができる．虚像はレンズの前方何 m にできるか．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の像の倍率を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$3.0\\,\\mathrm m$",
+    "grading": "3 [m]"
+   },
+   {
+    "id": "2",
+    "tex": "$2.0$ 倍（倒立の実像）",
+    "grading": "2倍"
+   },
+   {
+    "id": "3",
+    "tex": "$1.0\\,\\mathrm m$",
+    "grading": "1 [m]"
+   },
+   {
+    "id": "4",
+    "tex": "$2.0$ 倍（正立の虚像）",
+    "grading": "2倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) レンズの式 $\\dfrac1a+\\dfrac1b=\\dfrac1f$：$\\dfrac1{1.5}+\\dfrac1b=\\dfrac1{1.0}$ より $b=3.0\\,\\mathrm m$（$b>0$：後方に実像）．\n\n(2) 倍率 $\\dfrac ba=\\dfrac{3.0}{1.5}=2.0$．実像は倒立．\n\n(3) $\\dfrac1{0.50}+\\dfrac1b=\\dfrac1{1.0}$ より $b=-1.0\\,\\mathrm m$．負なので，前方 $1.0\\,\\mathrm m$ に虚像．\n\n(4) $\\dfrac{|b|}{a}=\\dfrac{1.0}{0.50}=2.0$．虚像は正立（虫めがね）．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "$b<0$ は虚像（レンズの前方）．焦点より内側の物体は虚像になる．"
+ },
+ "simulation": {
+  "id": "optics.lens",
+  "preset": {
+   "f": 1,
+   "a": 1.5,
+   "h": 0.5
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "lens-imaging"
+ ],
+ "laws": [
+  "lens-equation"
+ ],
+ "misconceptions": [
+  "MC-LENS-HALF"
+ ],
+ "tags": [
+  "レンズ",
+  "実像",
+  "虚像"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

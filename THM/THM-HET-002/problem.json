@@ -1,0 +1,101 @@
+{
+ "id": "THM-HET-002",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-01",
+ "topic": "電熱線で水を温める",
+ "course": "物理基礎",
+ "level": 0,
+ "minutes": 6,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "消費電力 $420\\,\\mathrm W$ の電熱線で，質量 $1.0\\,\\mathrm{kg}$ の水を $100$ 秒間加熱した．水の比熱を $4.2\\times10^3\\,\\mathrm{J/(kg\\cdot K)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電熱線で発生した熱量を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "発生した熱がすべて水に与えられたとき，水の温度上昇を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "発生した熱の $20\\%$ が周囲に逃げたとき，水の温度上昇を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$4.2\\times10^4\\,\\mathrm J$",
+    "grading": "42000 [J]"
+   },
+   {
+    "id": "2",
+    "tex": "$10\\,\\mathrm K$",
+    "grading": "10 [K]"
+   },
+   {
+    "id": "3",
+    "tex": "$8.0\\,\\mathrm K$",
+    "grading": "8 [K]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $Q=Pt=420\\times100=4.2\\times10^4\\,\\mathrm J$．\n\n(2) $Q=mc\\Delta T$ より $\\Delta T=\\dfrac{4.2\\times10^4}{1.0\\times4.2\\times10^3}=10\\,\\mathrm K$．\n\n(3) 水が得るのは $80\\%$ なので $\\Delta T=10\\times0.80=8.0\\,\\mathrm K$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電気エネルギー $Pt$ がジュール熱になり，$mc\\Delta T$ の温度上昇に使われる．"
+ },
+ "concepts": [
+  "heat-temperature",
+  "electric-power"
+ ],
+ "laws": [
+  "heat-capacity",
+  "joule-heat"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "比熱",
+  "ジュール熱"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

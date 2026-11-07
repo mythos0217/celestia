@@ -1,0 +1,100 @@
+{
+ "id": "WAV-BTS-001",
+ "schema": "celestia.problem/1",
+ "field": "WAV",
+ "unit": "WAV-02",
+ "topic": "おんさと弦のうなり",
+ "course": "物理基礎",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "numeric",
+  "derivation"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "振動数 $440\\,\\mathrm{Hz}$ のおんさと，ギターの弦を同時に鳴らすと，1秒間に3回のうなりが聞こえた．弦を少し強く張る（振動数を少し大きくする）と，うなりの回数が減った．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "はじめの弦の振動数を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "弦の振動数を $441\\,\\mathrm{Hz}$ にしたとき，1秒間のうなりの回数を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$437\\,\\mathrm{Hz}$",
+    "grading": "437 [Hz]"
+   },
+   {
+    "id": "2",
+    "tex": "$1$ 回",
+    "grading": "1 [回]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) うなりの回数 $|f_1-f_2|=3$ より，弦は $437\\,\\mathrm{Hz}$ か $443\\,\\mathrm{Hz}$．振動数を大きくするとうなりが減った（$440\\,\\mathrm{Hz}$ に近づいた）ので，はじめは $437\\,\\mathrm{Hz}$．\n\n(2) $|441-440|=1$ 回．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "うなりの回数＝振動数の差．どちら側かは，変えたときの増減で決める．"
+ },
+ "simulation": {
+  "id": "wave.beats",
+  "preset": {
+   "f1": 10,
+   "f2": 13,
+   "A": 1
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "beats"
+ ],
+ "laws": [
+  "beat-frequency"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "うなり",
+  "音"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

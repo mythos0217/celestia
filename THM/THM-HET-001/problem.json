@@ -1,0 +1,92 @@
+{
+ "id": "THM-HET-001",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-01",
+ "topic": "熱量の保存（混合）",
+ "course": "物理基礎",
+ "level": 0,
+ "minutes": 6,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "質量 $m_1$，温度 $T_1$ の水（比熱 $c_1$）の中に，質量 $m_2$，温度 $T_2\\ (>T_1)$ の金属球（比熱 $c_2$）を入れたところ，全体が温度 $T$ になった．熱は容器や外部に逃げないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$T$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "水が得た熱量 $Q$ を，$T$ を使わずに表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T=\\dfrac{m_1c_1T_1+m_2c_2T_2}{m_1c_1+m_2c_2}$",
+    "grading": "T：(m_1 c_1 T_1+m_2 c_2 T_2)/(m_1 c_1+m_2 c_2)"
+   },
+   {
+    "id": "2",
+    "tex": "$Q=\\dfrac{m_1c_1m_2c_2(T_2-T_1)}{m_1c_1+m_2c_2}$",
+    "grading": "Q：m_1 c_1 m_2 c_2 (T_2-T_1)/(m_1 c_1+m_2 c_2)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 金属球が失った熱量＝水が得た熱量（熱量の保存）：\\[m_2c_2(T_2-T)=m_1c_1(T-T_1)\\] $T$ について解くと $T=\\dfrac{m_1c_1T_1+m_2c_2T_2}{m_1c_1+m_2c_2}$（熱容量 $mc$ で重みをつけた平均）．\n\n(2) $Q=m_1c_1(T-T_1)$ に代入して整理すると $Q=\\dfrac{m_1c_1m_2c_2(T_2-T_1)}{m_1c_1+m_2c_2}$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "失った熱＝得た熱．熱容量 $mc$ の大きい方の温度に近づく．"
+ },
+ "concepts": [
+  "heat-temperature"
+ ],
+ "laws": [
+  "heat-capacity"
+ ],
+ "misconceptions": [
+  "MC-HEAT-TEMP"
+ ],
+ "tags": [
+  "比熱",
+  "熱量の保存"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

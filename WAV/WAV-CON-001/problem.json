@@ -1,0 +1,114 @@
+{
+ "id": "WAV-CON-001",
+ "schema": "celestia.problem/1",
+ "field": "WAV",
+ "unit": "WAV-01",
+ "topic": "振動数を変えると波はどうなるか",
+ "course": "物理基礎",
+ "level": 0,
+ "minutes": 5,
+ "format": [
+  "concept"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ぴんと張ったロープの端を上下に振って波を送る．振る速さ（振動数）を2倍にした．ロープの張り方は変えない．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "波の速さは何倍になるか．"
+     },
+     {
+      "id": "2",
+      "tex": "波長は何倍になるか．"
+     },
+     {
+      "id": "3",
+      "tex": "波が進むとき，ロープの各点は波と一緒に進むか．説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1$ 倍（変わらない）",
+    "grading": "1倍"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac12$ 倍",
+    "grading": "(1/2)倍"
+   },
+   {
+    "id": "3",
+    "tex": "進まない．各点はその場で上下に振動するだけで，伝わるのは振動の状態（とエネルギー）．",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 波の速さは媒質（ロープの張力と線密度）で決まり，振動数によらない．\n\n(2) $v=f\\lambda$ で $v$ が一定なので，$f$ が2倍なら $\\lambda$ は $\\dfrac12$ 倍．\n\n(3) 媒質の各点は上下に振動するだけ．シミュレーション「正弦波の伝わり方」で，点 P は上下に動くだけなのに山の位置は右へ進むことを確かめよう．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "波の速さは媒質が決める．振動数を変えると波長が変わる．"
+ },
+ "simulation": {
+  "id": "wave.traveling",
+  "preset": {
+   "A": 0.2,
+   "lambda": 2,
+   "f": 0.5,
+   "dir": 1,
+   "xP": 1
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "wave-basics"
+ ],
+ "laws": [
+  "wave-speed"
+ ],
+ "misconceptions": [
+  "MC-WAVE-SPEED-FREQ",
+  "MC-WAVE-MEDIUM-MOVES"
+ ],
+ "tags": [
+  "波の速さ",
+  "媒質",
+  "誤概念"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

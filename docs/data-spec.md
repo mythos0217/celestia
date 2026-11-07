@@ -1,4 +1,4 @@
-# CELESTIA データ仕様（v0.1）
+# CELESTIA データ仕様（v0.3）
 
 正規データ `content/`（マスター）→ `tools/build_data.py` → アプリ用データ `data/`。アプリが読むのは `data/` だけ。
 JSON Schema は `tools/schema/`、Schema で見られない関係の検査は `tools/validate_content.py`。
@@ -48,7 +48,7 @@ JSON Schema は `tools/schema/`、Schema で見られない関係の検査は `t
 
 ### 入力用の答え（`answer.parts[].grading`）
 
-Lemma の書式（`js/answer.js` の先頭）に、次の2つを足した：
+Lemma の書式（`js/answer.js` の先頭）に、次の2つを足した（また、Lemma で積分定数として特別扱いしていた `C` は、物理では電気容量などのふつうの文字として扱う）：
 
 - 添字：`v_0`、`v_{max}`、`m_A`。文字の直後の数字も添字とみなす（`v0` = `v_0`）
 - 単位：末尾の `[ ]`。`6 [Ω]`、`v_0 cos(θ) [m/s]`（今は表示用。単位表は `tools/validate_content.py` の `UNITS`）
@@ -69,7 +69,7 @@ Lemma の書式（`js/answer.js` の先頭）に、次の2つを足した：
 | --- | --- |
 | `role` | `question`（問題用）／`answer`（解答用）／`both`。**解答用の図は問題文から参照できない**（検査でエラー）。アプリは答え合わせまで表示もファイルの読み込みもしない |
 | `kind` | `diagram` `vector` `circuit` `ray` `waveform` `apparatus` `state` `graph` `photo` `sim-initial` |
-| `format` | `svg`（標準）、`png`／`webp`（写真）、`plot-json`（データから描くグラフ）、`sim-plot`／`sim-snapshot`（シミュレーションから描く。Phase 4） |
+| `format` | `svg`（標準）、`png`／`webp`（写真）、`plot-json`（データから描くグラフ。未実装）、`sim-plot`（シミュレーションのモデルから描くグラフ：`"sim": {"id", "preset", "t"?}, "plot": {"x": "t", "y": ["vy"], "snap"?}`。波形 y-x は `"x": "x", "snap": true` と時刻 `t`）、`sim-snapshot`（未実装） |
 | `src` | 問題フォルダ内のファイル名。Base64 の埋め込みは不可 |
 | `alt` | 代替テキスト（必須。図が見えない人が問題を解けるように） |
 | `physics` | この図が表す物理条件。`validate_content.py` が SVG の実際の形と照合する |
@@ -81,6 +81,9 @@ Lemma の書式（`js/answer.js` の先頭）に、次の2つを足した：
 | `angle_deg` | `data-phys="surface"` の線の傾き（±2°） |
 | `forces` `vectors` | `data-phys="force:N"` などの矢印の向き（±2°） |
 | `equilibrium: true` | `force:` の矢印の和が 0（最大の力の 4% 以内） |
+| `netForce: {dir_deg}` | 運動している物体：`force:` の矢印の和（合力）がその向き（±5°）で、0 ではない |
+| `torque: {about: [x, y]}` | 剛体：その点のまわりの力のモーメント（矢印の始点＝作用点）の和が 0 |
+| `refraction: {n1, n2, in, out}` | 光線：境界は水平として、入射光線と屈折光線の向きが屈折の法則 n₁sinθ₁ = n₂sinθ₂ を満たす（2% 以内） |
 | `decompositions` | 成分の矢印の和が元の矢印に一致 |
 | `equalLength` | 同じ大きさのはずの矢印の長さがそろう |
 | `junctions` | 分岐点で電流の和が保存される |
@@ -89,7 +92,7 @@ Lemma の書式（`js/answer.js` の先頭）に、次の2つを足した：
 
 ### 作図仕様（`*.fig.json`、`celestia.figure/1`）
 
-`tools/figgen.py` が SVG を作る。部品：`line` `poly` `arrow` `block` `ball` `arc` `text` `spring` `curve`（放物線）`resistor` `battery` `wire` `dot`。
+`tools/figgen.py` が SVG を作る。部品：`line` `poly` `arrow` `block` `ball` `arc` `text` `spring` `curve`（放物線）`resistor` `battery` `wire` `dot` `circle` `sine`（正弦波の曲線）。
 座標は SVG と同じ（右が x、下が y）、角度は数学と同じ（右 0°、反時計回り正）。詳しくは `tools/figgen.py` の先頭。
 `node tests/run.mjs` は、SVG が仕様から作り直したものと同じか（作り忘れ）も確かめる。
 
@@ -105,9 +108,9 @@ Lemma の書式（`js/answer.js` の先頭）に、次の2つを足した：
 | ファイル | 1件の形 |
 | --- | --- |
 | `concepts.json` | `{id, name, field, requires: [前提の概念], laws: [法則]}`（前提関係の循環は検査でエラー） |
-| `laws.json` | `{id, name, tex, conditions: 適用条件, concepts}` |
+| `laws.json` | `{id, name, tex, conditions: 適用条件, concepts, origin, basis?, derivation?, simulations?}`。`origin` は `fundamental`（出発点となる法則）／`empirical`（実験から得た法則）／`derived`（導出できる）／`definition`。`derived` は `derivation`（`[{tex}]`、1段ずつ）が必須、`fundamental`・`empirical` は `basis`（根拠・由来）が必須 |
 | `misconceptions.json` | `{id, wrong: 誤った考え, right: 正しい考え, concepts, remedy: [補強問題の ID]}` |
-| `simulations.json` | `{id, name, field, model: "mechanics/projectile", status: planned|ready, params{名前: {label, unit, min, max, step, default}}, observables, measures?, plots: [[x, y]]}` |
+| `simulations.json` | `{id, name, field, model: "mechanics/projectile", status: planned|ready, static?, params{名前: {label, unit, min, max, step, default}}, observables{量: 単位}, labels{量: 表示名}, measures{名前: {label, unit}}, plots}`。`plots` の各段は `[x, y]` か `{x, y | ys: [..], snap?, mark?, yRange?, label?}`（`ys` で重ね描き、`snap` で時刻ごとの分布、`mark` で目印の縦線）。`ready` なら `js/sim/models/<model>.js` が必要（検査） |
 
 ## アプリ用データ（`data/`、`celestia.data/1`）
 

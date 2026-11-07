@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 210" width="340" height="210" font-family="'Times New Roman', serif">
+<line x1="120" y1="40" x2="220" y2="40" stroke="currentColor" stroke-width="2.4"/>
+<line x1="170" y1="40" x2="170" y2="190" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="170" y1="40" x2="217.88" y2="171.56" stroke="currentColor" stroke-width="1.2" data-phys="string"/>
+<circle cx="217.88" cy="171.56" r="9" class="f-body" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.4" data-phys="body:bob"/>
+<path d="M170,84 A44,44 0 0 0 185.05,81.35" fill="none" stroke="currentColor" stroke-width="1.2"/>
+<text x="179.55" y="94.16" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">θ</text>
+<text x="207.94" y="105.78" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">l</text>
+<text x="235.88" y="175.56" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">m</text>
+</svg>

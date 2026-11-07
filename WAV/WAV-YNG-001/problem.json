@@ -1,0 +1,121 @@
+{
+ "id": "WAV-YNG-001",
+ "schema": "celestia.problem/1",
+ "field": "WAV",
+ "unit": "WAV-03",
+ "topic": "ヤングの実験",
+ "course": "物理",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "derivation",
+  "numeric"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "間隔 $d$ の2つのスリットに波長 $\\lambda$ の単色光を当て，距離 $L$ 離れたスクリーンに干渉縞を映した．スクリーン上で，2つのスリットから等距離の点を原点 O とし，O から $x$ 離れた点を P とする．ただし $L\\gg d,\\ L\\gg x$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "2つのスリットから P までの距離の差（経路差）を，$d$，$x$，$L$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "隣り合う明線の間隔 $\\Delta x$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\lambda=600\\,\\mathrm{nm}$，$d=0.30\\,\\mathrm{mm}$，$L=1.5\\,\\mathrm m$ のとき，$\\Delta x$ は何 mm か．"
+     },
+     {
+      "id": "4",
+      "tex": "装置全体を屈折率 $n$ の水中に入れると，明線の間隔は何倍になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{dx}{L}$",
+    "grading": "dx/L"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Delta x=\\dfrac{L\\lambda}{d}$",
+    "grading": "Δx：Lλ/d"
+   },
+   {
+    "id": "3",
+    "tex": "$3.0\\,\\mathrm{mm}$",
+    "grading": "3 [mm]"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac1n$ 倍",
+    "grading": "倍率：1/n"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $L\\gg d,\\ x$ のとき経路差は $d\\sin\\theta\\fallingdotseq d\\tan\\theta=\\dfrac{dx}{L}$．\n\n(2) 明線：$\\dfrac{dx}{L}=m\\lambda$ より $x_m=\\dfrac{mL\\lambda}{d}$，間隔 $\\Delta x=\\dfrac{L\\lambda}d$．\n\n(3) $\\Delta x=\\dfrac{1.5\\times600\\times10^{-9}}{0.30\\times10^{-3}}=3.0\\times10^{-3}\\,\\mathrm m=3.0\\,\\mathrm{mm}$．\n\n(4) 水中では波長が $\\dfrac\\lambda n$ になるので，間隔も $\\dfrac1n$ 倍．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "経路差 $\\dfrac{dx}L$ が波長の整数倍で明線．"
+ },
+ "simulation": {
+  "id": "optics.double-slit",
+  "preset": {
+   "lambda": 600,
+   "d": 0.3,
+   "L": 1.5
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "light-interference",
+  "interference"
+ ],
+ "laws": [
+  "young-fringe",
+  "interference-condition"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "干渉",
+  "ヤングの実験",
+  "光"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

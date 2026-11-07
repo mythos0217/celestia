@@ -1,0 +1,143 @@
+{
+ "id": "WAV-REF-001",
+ "schema": "celestia.problem/1",
+ "field": "WAV",
+ "unit": "WAV-03",
+ "topic": "水面での光の屈折と全反射",
+ "course": "物理",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "空気中から水面に，入射角 $\\theta_1$ で光が入射し，屈折角 $\\theta_2$ で水中に進んだ．空気の屈折率を $1$，水の屈折率を $n$，真空（空気）中の光の速さを $c$，波長を $\\lambda$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-ray"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\sin\\theta_2$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "水中の光の速さを求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "水中の光の波長を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "水中から空気へ光が進むとき，全反射が起こる臨界角を $\\theta_c$ とする．$\\sin\\theta_c$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-ray",
+   "role": "question",
+   "kind": "ray",
+   "format": "svg",
+   "src": "q-ray.svg",
+   "alt": "空気から水へ入射角 θ₁ で入った光が、法線に近づく向きに屈折角 θ₂ で曲がる",
+   "caption": "",
+   "physics": {
+    "refraction": {
+     "n1": 1,
+     "n2": 1.33,
+     "in": "ray:in",
+     "out": "ray:out"
+    }
+   }
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\sin\\theta_2=\\dfrac{\\sin\\theta_1}{n}$",
+    "grading": "sinθ_2：sin(θ_1)/n"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac cn$",
+    "grading": "v：c/n"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac\\lambda n$",
+    "grading": "λ'：λ/n"
+   },
+   {
+    "id": "4",
+    "tex": "$\\sin\\theta_c=\\dfrac1n$",
+    "grading": "sinθ_c：1/n"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 屈折の法則 $1\\cdot\\sin\\theta_1=n\\sin\\theta_2$ より $\\sin\\theta_2=\\dfrac{\\sin\\theta_1}n$．\n\n(2) 屈折率の定義 $n=\\dfrac cv$ より $v=\\dfrac cn$．\n\n(3) 振動数は変わらないので，波長は速さに比例：$\\dfrac\\lambda n$．\n\n(4) 屈折角が $90^\\circ$ になる入射角：$n\\sin\\theta_c=1\\cdot\\sin90^\\circ$ より $\\sin\\theta_c=\\dfrac1n$（水 $n\\fallingdotseq1.33$ で $\\theta_c\\fallingdotseq49^\\circ$）．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "屈折しても振動数は変わらない．速さと波長が $\\dfrac1n$ 倍になる．"
+ },
+ "simulation": {
+  "id": "optics.refraction",
+  "preset": {
+   "n1": 1,
+   "n2": 1.33,
+   "theta1": 50
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "refraction-light"
+ ],
+ "laws": [
+  "refraction-law",
+  "critical-angle"
+ ],
+ "misconceptions": [
+  "MC-REFRACTION-FREQ"
+ ],
+ "tags": [
+  "屈折",
+  "全反射",
+  "光"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

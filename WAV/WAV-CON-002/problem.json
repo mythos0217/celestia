@@ -1,0 +1,100 @@
+{
+ "id": "WAV-CON-002",
+ "schema": "celestia.problem/1",
+ "field": "WAV",
+ "unit": "WAV-03",
+ "topic": "レンズの半分を隠すと",
+ "course": "物理基礎",
+ "level": 0,
+ "minutes": 5,
+ "format": [
+  "concept",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "凸レンズでスクリーンにろうそくの実像を映している．レンズの上半分を黒い紙でおおった．ある生徒は「像の上半分（または下半分）が消える」と予想した．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "スクリーンの像はどうなるか．"
+     },
+     {
+      "id": "2",
+      "tex": "そうなる理由を説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "像の形は全体がそのまま残り，暗くなる．"
+   },
+   {
+    "id": "2",
+    "tex": "物体の1点から出た光は，レンズのあらゆる部分を通って像の同じ1点に集まる．下半分を通る光だけでも，像のすべての点がつくられる．届く光の量が減るので暗くなる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "作図に使う3本の光線（平行・中心・焦点）は代表として選んだだけで，実際には物体の各点から出た光は，レンズ全面を通ってそれぞれ像の1点に集まる．レンズの一部を隠すと，各点に集まる光が減るだけで，像の形は変わらない．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "像の各点には，レンズ全体を通った光が集まっている．"
+ },
+ "simulation": {
+  "id": "optics.lens",
+  "preset": {
+   "f": 1,
+   "a": 2.5,
+   "h": 0.5
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "lens-imaging"
+ ],
+ "laws": [
+  "lens-equation"
+ ],
+ "misconceptions": [
+  "MC-LENS-HALF"
+ ],
+ "tags": [
+  "レンズ",
+  "誤概念"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "id": "THM-CON-001",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "熱を加えると温度は上がるか",
+ "course": "物理基礎",
+ "level": 0,
+ "minutes": 5,
+ "format": [
+  "concept",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある生徒は「物体に熱を加えると，必ずその温度が上がる」と言った．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "熱を加えても温度が上がらない例を2つ挙げよ．"
+     },
+     {
+      "id": "2",
+      "tex": "熱と温度の違いを説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "例：$0^\\circ\\mathrm C$ の氷がとけるとき（融解熱）．理想気体を等温でゆっくり膨張させるとき（吸収した熱はすべて仕事になる）．"
+   },
+   {
+    "id": "2",
+    "tex": "温度は物体の状態（分子の熱運動の激しさ）を表す量．熱は温度差によって移動するエネルギー．加えた熱は温度上昇だけでなく，状態変化や外への仕事にも使われる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 状態変化の間（融解・沸騰）は，加えた熱が分子間の結びつきを切るのに使われ，温度は一定．また熱力学第1法則 $Q=\\Delta U+W$ で，等温膨張では $\\Delta U=0$，$Q=W$．\n\n(2) 温度は「状態を表す量」で，熱は「移動するエネルギーの量」．同じ熱量でも，比熱の大きい物体ほど温度は上がりにくい．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "熱＝移動するエネルギー，温度＝状態．"
+ },
+ "simulation": {
+  "id": "thermo.pv",
+  "preset": {
+   "proc": 0,
+   "ratio": 2
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "heat-temperature",
+  "first-law"
+ ],
+ "laws": [
+  "first-law",
+  "heat-capacity"
+ ],
+ "misconceptions": [
+  "MC-HEAT-TEMP"
+ ],
+ "tags": [
+  "熱",
+  "温度",
+  "誤概念"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

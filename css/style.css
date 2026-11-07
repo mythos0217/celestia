@@ -1,5 +1,5 @@
 :root {
-  --celestia-version: '0.1.1';
+  --celestia-version: '0.3.0';
   --paper: #f6f4ee;
   --card: #ffffff;
   --ink: #1c1d21;
@@ -613,11 +613,59 @@ details.concept summary .ct { font-size: 12px; color: var(--ink-3); }
 details.concept[open] summary { margin-bottom: 8px; }
 details.concept .btn { margin-top: 10px; }
 .laws { display: grid; gap: 6px; margin-top: 8px; }
-.law { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; align-items: center; padding: 8px 10px; border-radius: 10px; background: var(--paper); }
-.law small { grid-column: 1 / -1; }
+.law { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; align-items: center; padding: 8px 10px; border-radius: 10px; background: var(--paper); color: inherit; text-decoration: none; }
+a.law { border: 1px solid var(--line); }
+a.law:active { transform: scale(.99); }
+.law small { grid-column: 1 / -1; line-height: 1.6; }
+.origin { display: inline-block; font-size: 11px; font-weight: 600; border-radius: 6px; padding: 0 6px; margin-right: 6px; background: var(--accent-soft); color: var(--accent); font-style: normal; }
+.origin.o-fundamental { background: var(--warn-soft); color: var(--warn); }
+.origin.o-empirical { background: var(--good-soft); color: var(--good); }
+.law-formula { font-size: 19px; text-align: center; padding: 6px 0 10px; overflow-x: auto; }
+.law-cond b { display: block; font-size: 12px; color: var(--ink-3); margin-bottom: 2px; }
+ol.derivation { padding-left: 1.4em; margin: 6px 0 12px; display: grid; gap: 10px; }
+ol.derivation li { line-height: 1.85; padding: 6px 10px; border-radius: 10px; background: var(--card); border: 1px solid var(--line); }
+ol.derivation li:not(.open) { display: none; }
+ol.derivation li::marker { color: var(--accent); font-weight: 700; }
 
 /* シミュレーション一覧 */
 .panel.notice b { display: block; margin-bottom: 4px; }
+a.sim-card { text-decoration: none; color: inherit; }
+a.sim-card:active { transform: scale(.99); }
+.back { display: inline-block; margin: 4px 0 8px; color: var(--accent); text-decoration: none; font-size: 14px; }
+
+/* シミュレーションのプレーヤー */
+.sim-player { display: grid; gap: 10px; margin-top: 8px; }
+.sp-stage { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.sp-canvas { display: block; width: 100%; height: 280px; touch-action: pan-y; }
+.sim-player.compact .sp-canvas { height: 220px; }
+.sp-bar { display: flex; align-items: center; gap: 8px; }
+.sp-btn { width: 40px; height: 36px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font-size: 15px; flex: none; }
+.sp-play { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+.sp-seek { flex: 1; min-width: 60px; accent-color: var(--accent); }
+.sp-time { font-variant-numeric: tabular-nums; font-size: 12.5px; color: var(--ink-2); min-width: 54px; text-align: right; }
+.sp-speed { border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--ink); padding: 4px; font-size: 12.5px; }
+.sp-warn { font-size: 13px; background: var(--warn-soft); color: var(--ink); border-radius: 10px; padding: 8px 10px; }
+.sp-cols { display: grid; gap: 10px; }
+@media (min-width: 760px) { .sp-cols { grid-template-columns: 1fr 1fr; } .sp-canvas { height: 360px; } }
+.sp-params { display: grid; gap: 6px; }
+.sp-param { display: grid; gap: 2px; font-size: 13px; }
+.sp-param input { width: 100%; accent-color: var(--accent); }
+.sp-pl { display: flex; gap: 6px; align-items: baseline; color: var(--ink-2); }
+.sp-pl b { color: var(--ink); font-variant-numeric: tabular-nums; }
+.sp-pl i { font-style: normal; font-size: 11px; color: var(--ink-3); border: 1px solid var(--line); border-radius: 6px; padding: 0 5px; }
+.sp-param.locked { opacity: .6; }
+.sp-readout table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.sp-readout th { text-align: left; font-weight: 500; color: var(--ink-2); padding: 3px 0; }
+.sp-readout td { text-align: right; font-variant-numeric: tabular-nums; padding: 3px 0; }
+.sp-readout .sp-measures { margin-top: 6px; border-top: 1px solid var(--line); }
+.sp-readout .sp-measures th { color: var(--accent); }
+.timeplot { display: grid; gap: 4px; }
+.timeplot canvas { display: block; width: 100%; background: var(--card); border-radius: 10px; border: 1px solid var(--line); }
+.sim-inline { margin-top: 14px; }
+.sim-inline .sim-open { display: flex; gap: 6px; align-items: center; justify-content: center; }
+figure.pfig .fig-plot { max-width: 520px; }
+body[data-tab="sim"] #mascot:not(.talk) { opacity: 0; }
+.sim-inline #mascot { display: none; }
 .sim-list { display: grid; gap: 10px; }
 @media (min-width: 760px) { .sim-list { grid-template-columns: 1fr 1fr; } }
 .sim-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; display: grid; gap: 8px; }
@@ -627,3 +675,10 @@ details.concept .btn { margin-top: 10px; }
 .sim-params span { padding: 2px 8px; border-radius: 8px; background: var(--paper); color: var(--ink-2); }
 .tabbar a span { white-space: nowrap; }
 @media (max-width: 380px) { .tabbar a { font-size: 10px; } }
+/* プレーヤーが画面幅を超えないように（範囲スライダーの既定の幅などで広がるのを防ぐ） */
+.sim-player, .sim-player > *, .sp-cols > *, .sim-inline { min-width: 0; max-width: 100%; }
+.sp-seek { width: 0; flex: 1 1 auto; }
+.sp-param input[type="range"] { min-width: 0; }
+.sp-readout td { white-space: nowrap; padding-left: 8px; }
+
+.sp-bar[hidden], .sp-warn[hidden] { display: none; }

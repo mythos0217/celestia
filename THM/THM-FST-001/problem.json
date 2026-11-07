@@ -1,0 +1,116 @@
+{
+ "id": "THM-FST-001",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "定圧変化と熱力学第1法則",
+ "course": "物理",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$n\\,\\mathrm{mol}$ の単原子分子理想気体を，圧力を一定に保ったまま，絶対温度 $T$ から $2T$ まで加熱した．気体定数を $R$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "気体が外にした仕事 $W$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "気体の内部エネルギーの増加 $\\Delta U$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "気体が吸収した熱量 $Q$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$W=nRT$",
+    "grading": "W：n R T"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Delta U=\\dfrac32nRT$",
+    "grading": "ΔU：3n R T/2"
+   },
+   {
+    "id": "3",
+    "tex": "$Q=\\dfrac52nRT$",
+    "grading": "Q：5n R T/2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 定圧なので $W=P\\Delta V$．状態方程式より $P\\Delta V=nR\\Delta T=nRT$．\n\n(2) 単原子分子では $U=\\dfrac32nRT$ なので $\\Delta U=\\dfrac32nR\\cdot T$．\n\n(3) 熱力学第1法則 $Q=\\Delta U+W=\\dfrac52nRT$．加えた熱のうち $\\dfrac35$ が内部エネルギーに，$\\dfrac25$ が仕事になる．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "$Q=\\Delta U+W$．仕事は $P$-$V$ 図の面積．"
+ },
+ "simulation": {
+  "id": "thermo.pv",
+  "preset": {
+   "proc": 1,
+   "ratio": 2
+  },
+  "show": "after-attempt",
+  "locked": [
+   "proc"
+  ]
+ },
+ "concepts": [
+  "first-law",
+  "ideal-gas"
+ ],
+ "laws": [
+  "first-law",
+  "internal-energy",
+  "molar-heat",
+  "ideal-gas-law"
+ ],
+ "misconceptions": [
+  "MC-HEAT-TEMP"
+ ],
+ "tags": [
+  "熱力学第1法則",
+  "定圧変化"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

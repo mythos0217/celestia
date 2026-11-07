@@ -1,0 +1,122 @@
+{
+ "schema": "celestia.figure/1",
+ "size": [
+  340,
+  215
+ ],
+ "items": [
+  {
+   "t": "poly",
+   "points": [
+    [
+     20,
+     110
+    ],
+    [
+     320,
+     110
+    ],
+    [
+     320,
+     210
+    ],
+    [
+     20,
+     210
+    ]
+   ],
+   "style": "hatch"
+  },
+  {
+   "t": "line",
+   "from": [
+    20,
+    110
+   ],
+   "to": [
+    320,
+    110
+   ],
+   "style": "ground",
+   "phys": "boundary"
+  },
+  {
+   "t": "line",
+   "from": [
+    170,
+    15
+   ],
+   "to": [
+    170,
+    205
+   ],
+   "style": "dash"
+  },
+  {
+   "t": "arrow",
+   "from": [
+    101.06,
+    52.15
+   ],
+   "dir": 320,
+   "len": 90,
+   "style": "current",
+   "phys": "ray:in"
+  },
+  {
+   "t": "arrow",
+   "from": [
+    170,
+    110
+   ],
+   "dir": 305.17,
+   "len": 90,
+   "style": "current",
+   "phys": "ray:out"
+  },
+  {
+   "t": "arc",
+   "at": [
+    170,
+    110
+   ],
+   "r": 34,
+   "from": 90,
+   "to": 140,
+   "label": "θ₁",
+   "labelGap": 12
+  },
+  {
+   "t": "arc",
+   "at": [
+    170,
+    110
+   ],
+   "r": 40,
+   "from": 270,
+   "to": 305.17,
+   "label": "θ₂",
+   "labelGap": 12
+  },
+  {
+   "t": "text",
+   "at": [
+    50,
+    30
+   ],
+   "text": "空気",
+   "italic": false,
+   "size": 12
+  },
+  {
+   "t": "text",
+   "at": [
+    50,
+    190
+   ],
+   "text": "水",
+   "italic": false,
+   "size": 12
+  }
+ ]
+}

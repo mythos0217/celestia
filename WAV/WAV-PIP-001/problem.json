@@ -1,0 +1,132 @@
+{
+ "id": "WAV-PIP-001",
+ "schema": "celestia.problem/1",
+ "field": "WAV",
+ "unit": "WAV-02",
+ "topic": "閉管と開管の共鳴",
+ "course": "物理",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "長さ $L$ の管の一端を閉じた（閉管）．音速を $V$ とし，開口端補正は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-pipe"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "閉管の基本振動数を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "閉管で，基本振動の次に高い固有振動数を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "閉じていた端も開いて開管にしたとき，基本振動数を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-pipe",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-pipe.svg",
+   "alt": "長さ L の管。左端は閉じ、右端は開いている",
+   "caption": ""
+  },
+  {
+   "id": "a-mode",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-mode.svg",
+   "alt": "閉管の基本振動：閉じた端が節、開いた端が腹で、管の長さは 1/4 波長",
+   "caption": "閉管の基本振動：$L=\\dfrac\\lambda4$"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac V{4L}$",
+    "grading": "f_1：V/(4L)"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{3V}{4L}$",
+    "grading": "f_3：3V/(4L)"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac V{2L}$",
+    "grading": "f：V/(2L)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "閉じた端は空気が動けないので節，開いた端は腹になる．"
+    },
+    {
+     "type": "figure",
+     "ref": "a-mode"
+    },
+    {
+     "type": "text",
+     "tex": "(1) 節から腹まで $\\dfrac\\lambda4$：$L=\\dfrac\\lambda4$ より $\\lambda=4L$，$f_1=\\dfrac V{4L}$．\n\n(2) 次は $L=\\dfrac34\\lambda$（節・腹・節・腹）：$f_3=\\dfrac{3V}{4L}$．閉管では奇数倍の振動だけが起こる．\n\n(3) 開管は両端が腹：$L=\\dfrac\\lambda2$ より $f=\\dfrac V{2L}$（閉管の2倍）．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "閉端は節，開口端は腹．"
+ },
+ "concepts": [
+  "string-resonance"
+ ],
+ "laws": [
+  "pipe-modes",
+  "wave-speed"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "気柱",
+  "共鳴",
+  "定常波"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "id": "WAV-DOP-001",
+ "schema": "celestia.problem/1",
+ "field": "WAV",
+ "unit": "WAV-02",
+ "topic": "動く音源のドップラー効果",
+ "course": "物理",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "振動数 $f_0$ の音を出す音源が，静止している観測者のすぐそばを通る直線上を，観測者に向かって速さ $u$ で近づく．音速を $V\\ (>u)$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "観測者が聞く音の振動数 $f_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "音源が観測者のそばを通り過ぎて遠ざかるとき，観測者が聞く音の振動数 $f_2$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "音源の前方（進む向き）にできる音波の波長を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$f_1=\\dfrac{V}{V-u}f_0$",
+    "grading": "f_1：V f_0/(V-u)"
+   },
+   {
+    "id": "2",
+    "tex": "$f_2=\\dfrac{V}{V+u}f_0$",
+    "grading": "f_2：V f_0/(V+u)"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{V-u}{f_0}$",
+    "grading": "λ：(V-u)/f_0"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(3) 1秒間に出る $f_0$ 個の波は，前方では長さ $V-u$ の中に詰まる：$\\lambda'=\\dfrac{V-u}{f_0}$．\n\n(1) 観測者は静止しているので，音の速さ $V$ で波長 $\\lambda'$ の波を受け取る：$f_1=\\dfrac V{\\lambda'}=\\dfrac{V}{V-u}f_0$．\n\n(2) 後方では波長が $\\dfrac{V+u}{f_0}$ に伸びるので $f_2=\\dfrac{V}{V+u}f_0$．\n\n近づく間は高い一定の音，通り過ぎた瞬間に低い一定の音に変わる（距離ではなく速度で決まる）．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "音源が動くと波長が変わり，観測者が動くと受け取る速さが変わる．"
+ },
+ "simulation": {
+  "id": "wave.doppler",
+  "preset": {
+   "f": 2,
+   "vs": 100,
+   "vo": 0,
+   "V": 340
+  },
+  "show": "after-attempt",
+  "locked": [
+   "V",
+   "vo"
+  ]
+ },
+ "concepts": [
+  "doppler"
+ ],
+ "laws": [
+  "doppler",
+  "wave-speed"
+ ],
+ "misconceptions": [
+  "MC-DOPPLER-DISTANCE"
+ ],
+ "tags": [
+  "ドップラー効果",
+  "音"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "id": "THM-KIN-002",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-02",
+ "topic": "分子の速さと温度",
+ "course": "物理",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "derivation",
+  "concept"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "絶対温度 $T$ の理想気体について，ボルツマン定数を $k$，気体定数を $R$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "分子1個の運動エネルギーの平均を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "モル質量 $M$（$1\\,\\mathrm{mol}$ あたりの質量）の気体で，$\\sqrt{\\overline{v^2}}$ を $R$，$T$，$M$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "温度を $4$ 倍にすると，$\\sqrt{\\overline{v^2}}$ は何倍になるか．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ温度のヘリウム（$M=4\\,\\mathrm{g/mol}$）と酸素（$M=32\\,\\mathrm{g/mol}$）で，ヘリウムの $\\sqrt{\\overline{v^2}}$ は酸素の何倍か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac32kT$",
+    "grading": "3k T/2"
+   },
+   {
+    "id": "2",
+    "tex": "$\\sqrt{\\dfrac{3RT}{M}}$",
+    "grading": "sqrt(3R T/M)"
+   },
+   {
+    "id": "3",
+    "tex": "$2$ 倍",
+    "grading": "2倍"
+   },
+   {
+    "id": "4",
+    "tex": "$2\\sqrt2$ 倍",
+    "grading": "2sqrt(2)倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 気体分子運動論と状態方程式から $\\dfrac12m\\overline{v^2}=\\dfrac32kT$（法則のページ「分子の平均運動エネルギーと温度」）．\n\n(2) $m=\\dfrac{M}{N_A}$，$k=\\dfrac{R}{N_A}$ より $\\overline{v^2}=\\dfrac{3kT}{m}=\\dfrac{3RT}{M}$．\n\n(3) $\\sqrt T$ に比例するので $\\sqrt4=2$ 倍．\n\n(4) $\\dfrac1{\\sqrt M}$ に比例するので $\\sqrt{\\dfrac{32}{4}}=2\\sqrt2$ 倍．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "温度は分子の平均運動エネルギーの目安．同じ温度なら軽い分子ほど速い．"
+ },
+ "simulation": {
+  "id": "thermo.molecules",
+  "preset": {
+   "N": 120,
+   "T": 300,
+   "L": 5
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "kinetic-theory"
+ ],
+ "laws": [
+  "kinetic-temperature",
+  "ideal-gas-law"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "気体分子運動論",
+  "温度"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "id": "THM-CYC-001",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "長方形のサイクルの熱効率",
+ "course": "物理",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "derivation",
+  "graph-read"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "単原子分子理想気体を，図の $P$-$V$ 図のように A→B→C→D→A と変化させる熱機関がある．A の圧力と体積を $P_0$，$V_0$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-cycle"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "1サイクルの間に気体が外にする正味の仕事 $W$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "1サイクルの間に気体が吸収する熱量の和 $Q_{\\text{入}}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この熱機関の熱効率 $e$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-cycle",
+   "role": "question",
+   "kind": "graph",
+   "format": "svg",
+   "src": "q-cycle.svg",
+   "alt": "P-V 図上の長方形のサイクル。A(V₀, P₀)→B(V₀, 2P₀)→C(2V₀, 2P₀)→D(2V₀, P₀)→A の順に時計回り",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$W=P_0V_0$",
+    "grading": "W：P_0 V_0"
+   },
+   {
+    "id": "2",
+    "tex": "$Q_{\\text{入}}=\\dfrac{13}{2}P_0V_0$",
+    "grading": "Q：13P_0 V_0/2"
+   },
+   {
+    "id": "3",
+    "tex": "$e=\\dfrac2{13}$",
+    "grading": "e：2/13"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 1サイクルの正味の仕事は，$P$-$V$ 図でサイクルが囲む面積：$(2P_0-P_0)(2V_0-V_0)=P_0V_0$（時計回りなので正）．\n\n(2) $nRT=PV$ を使うと，内部エネルギーは $U=\\dfrac32PV$．\n\nA→B（定積・圧力増加）：$W=0$，$Q=\\Delta U=\\dfrac32(2P_0V_0-P_0V_0)=\\dfrac32P_0V_0$（吸収）．\n\nB→C（定圧・膨張）：$W=2P_0V_0$，$\\Delta U=\\dfrac32(4P_0V_0-2P_0V_0)=3P_0V_0$，$Q=5P_0V_0$（吸収）．\n\nC→D，D→A は温度が下がり，熱を放出する．\n\nよって $Q_{\\text{入}}=\\dfrac32P_0V_0+5P_0V_0=\\dfrac{13}2P_0V_0$．\n\n(3) $e=\\dfrac{W}{Q_{\\text{入}}}=\\dfrac{2}{13}\\fallingdotseq0.15$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "正味の仕事＝囲む面積．効率の分母は「吸収した熱だけ」の和．"
+ },
+ "concepts": [
+  "heat-engine",
+  "first-law"
+ ],
+ "laws": [
+  "thermal-efficiency",
+  "first-law",
+  "internal-energy"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "熱効率",
+  "サイクル",
+  "P-V図"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,114 @@
+{
+ "id": "THM-FST-002",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "等温変化と断熱変化",
+ "course": "物理",
+ "level": 2,
+ "minutes": 10,
+ "format": [
+  "derivation",
+  "concept"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$n\\,\\mathrm{mol}$ の単原子分子理想気体（絶対温度 $T$）を，ゆっくり体積が $2$ 倍になるまで膨張させる．気体定数を $R$ とし，$\\log$ は自然対数とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "温度を一定に保って膨張させるとき，内部エネルギーの変化 $\\Delta U$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) のとき気体が外にした仕事は $W=nRT\\log2$ である．気体が吸収した熱量 $Q$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "熱の出入りがないように（断熱的に）膨張させると，気体の温度はどうなるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Delta U=0$",
+    "grading": "ΔU：0"
+   },
+   {
+    "id": "2",
+    "tex": "$Q=nRT\\log2$",
+    "grading": "Q：n R T log(2)"
+   },
+   {
+    "id": "3",
+    "tex": "下がる．$Q=0$ なので $\\Delta U=-W$．膨張して正の仕事をするので $\\Delta U<0$，温度が下がる．",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 理想気体の内部エネルギーは温度だけで決まる．等温なので $\\Delta U=0$．\n\n(2) 第1法則 $Q=\\Delta U+W=nRT\\log2$．吸収した熱がすべて仕事になる（熱を加えても温度は上がらない）．\n\n(3) 断熱では $Q=0$ なので $0=\\Delta U+W$．膨張では $W>0$ なので $\\Delta U<0$，温度が下がる．（逆に断熱圧縮では温度が上がる．自転車の空気入れが熱くなるのはこのため．）"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "「熱を加える」と「温度が上がる」は別のこと．"
+ },
+ "simulation": {
+  "id": "thermo.pv",
+  "preset": {
+   "proc": 0,
+   "ratio": 2
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "first-law"
+ ],
+ "laws": [
+  "first-law",
+  "internal-energy",
+  "adiabatic"
+ ],
+ "misconceptions": [
+  "MC-HEAT-TEMP",
+  "MC-ADIABATIC-TEMP"
+ ],
+ "tags": [
+  "等温変化",
+  "断熱変化",
+  "熱力学第1法則"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

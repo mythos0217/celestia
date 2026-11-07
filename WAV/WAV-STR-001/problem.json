@@ -1,0 +1,141 @@
+{
+ "id": "WAV-STR-001",
+ "schema": "celestia.problem/1",
+ "field": "WAV",
+ "unit": "WAV-02",
+ "topic": "弦の3倍振動",
+ "course": "物理",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "両端を固定した長さ $L$ の弦に，3倍振動の定常波ができている．弦を伝わる波の速さを $v$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-wave"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この定常波の波長を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "振動数を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "両端を含めた節の数を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-wave",
+   "role": "question",
+   "kind": "graph",
+   "format": "sim-plot",
+   "sim": {
+    "id": "wave.standing",
+    "preset": {
+     "L": 1.2,
+     "n": 3,
+     "v": 4,
+     "A": 0.04
+    },
+    "t": 0
+   },
+   "plot": {
+    "x": "x",
+    "y": [
+     "y"
+    ],
+    "snap": true
+   },
+   "alt": "長さ 1.2 m の弦にできた3倍振動の定常波の、ある瞬間の形。両端と、弦を3等分する点が節"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{2L}3$",
+    "grading": "λ：2L/3"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{3v}{2L}$",
+    "grading": "f：3v/(2L)"
+   },
+   {
+    "id": "3",
+    "tex": "$4$ 個",
+    "grading": "4 [個]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 3倍振動では弦に腹が3つ，つまり半波長が3つ入る：$L=3\\cdot\\dfrac\\lambda2$ より $\\lambda=\\dfrac{2L}3$．\n\n(2) $f=\\dfrac v\\lambda=\\dfrac{3v}{2L}$．\n\n(3) 両端と内部の2点：$4$ 個（$n$ 倍振動なら $n+1$ 個）．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "固定端は節．弦の長さ＝半波長 × 整数．"
+ },
+ "simulation": {
+  "id": "wave.standing",
+  "preset": {
+   "L": 1.2,
+   "n": 3,
+   "v": 4,
+   "A": 0.04
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "string-resonance",
+  "superposition"
+ ],
+ "laws": [
+  "string-modes",
+  "wave-speed"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "弦",
+  "定常波",
+  "固有振動"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

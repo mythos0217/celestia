@@ -1,0 +1,153 @@
+{
+ "id": "WAV-BAS-001",
+ "schema": "celestia.problem/1",
+ "field": "WAV",
+ "unit": "WAV-01",
+ "topic": "波形のグラフを読む",
+ "course": "物理基礎",
+ "level": 0,
+ "minutes": 6,
+ "format": [
+  "graph-read",
+  "numeric"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は，$x$ 軸の正の向きに進む正弦波の，時刻 $t=0$ の波形（変位 $y$ と位置 $x$ の関係）である．この波の振動数は $0.50\\,\\mathrm{Hz}$ である．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-graph"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "振幅を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "波長を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "波の速さを求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "周期を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-graph",
+   "role": "question",
+   "kind": "graph",
+   "format": "sim-plot",
+   "sim": {
+    "id": "wave.traveling",
+    "preset": {
+     "A": 0.2,
+     "lambda": 2,
+     "f": 0.5,
+     "dir": 1,
+     "xP": 1
+    },
+    "t": 0
+   },
+   "plot": {
+    "x": "x",
+    "y": [
+     "y"
+    ],
+    "snap": true
+   },
+   "alt": "時刻 0 の正弦波の波形。変位は ±0.2 m の範囲で、x = 0, 1, 2, …, 8 m で 0 になり、x = 0.5 m で −0.2 m の谷、x = 1.5 m で 0.2 m の山"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.20\\,\\mathrm m$",
+    "grading": "0.2 [m]"
+   },
+   {
+    "id": "2",
+    "tex": "$2.0\\,\\mathrm m$",
+    "grading": "2 [m]"
+   },
+   {
+    "id": "3",
+    "tex": "$1.0\\,\\mathrm{m/s}$",
+    "grading": "1 [m/s]"
+   },
+   {
+    "id": "4",
+    "tex": "$2.0\\,\\mathrm s$",
+    "grading": "2 [s]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 変位の最大値：$0.20\\,\\mathrm m$．\n\n(2) 同じ形がくり返す長さ（谷から次の谷まで）：$2.0\\,\\mathrm m$．\n\n(3) $v=f\\lambda=0.50\\times2.0=1.0\\,\\mathrm{m/s}$．\n\n(4) $T=\\dfrac1f=2.0\\,\\mathrm s$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "$y$-$x$ グラフからは振幅と波長，$y$-$t$ グラフからは振幅と周期が読める．"
+ },
+ "simulation": {
+  "id": "wave.traveling",
+  "preset": {
+   "A": 0.2,
+   "lambda": 2,
+   "f": 0.5,
+   "dir": 1,
+   "xP": 1
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "wave-basics"
+ ],
+ "laws": [
+  "wave-speed"
+ ],
+ "misconceptions": [
+  "MC-WAVE-SPEED-FREQ"
+ ],
+ "tags": [
+  "波形",
+  "グラフ",
+  "波の基本量"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

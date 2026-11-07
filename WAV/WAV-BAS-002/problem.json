@@ -1,0 +1,111 @@
+{
+ "id": "WAV-BAS-002",
+ "schema": "celestia.problem/1",
+ "field": "WAV",
+ "unit": "WAV-01",
+ "topic": "正弦波の式",
+ "course": "物理",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "原点 O の媒質が $y=A\\sin\\dfrac{2\\pi}{T}t$ と単振動し，その振動が波長 $\\lambda$ の正弦波として $x$ 軸の正の向きに伝わっている．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "波の速さ $v$ を $\\lambda$，$T$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "位置 $x\\ (>0)$ の媒質の，時刻 $t$ における変位 $y$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "位置 $x=\\dfrac\\lambda4$ の媒質の変位が，$t>0$ ではじめて最大になる時刻を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v=\\dfrac\\lambda T$",
+    "grading": "v：λ/T"
+   },
+   {
+    "id": "2",
+    "tex": "$y=A\\sin2\\pi\\left(\\dfrac tT-\\dfrac x\\lambda\\right)$",
+    "grading": "y：A sin(2π(t/T-x/λ))"
+   },
+   {
+    "id": "3",
+    "tex": "$t=\\dfrac T2$",
+    "grading": "t：T/2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 1周期 $T$ の間に波は1波長 $\\lambda$ 進むので $v=\\dfrac\\lambda T$．\n\n(2) 位置 $x$ には原点の振動が $\\dfrac xv$ 遅れて届く．$y=A\\sin\\dfrac{2\\pi}T\\left(t-\\dfrac xv\\right)=A\\sin2\\pi\\left(\\dfrac tT-\\dfrac x\\lambda\\right)$．\n\n(3) $x=\\dfrac\\lambda4$ では $y=A\\sin2\\pi\\left(\\dfrac tT-\\dfrac14\\right)$．最大になるのは $2\\pi\\left(\\dfrac tT-\\dfrac14\\right)=\\dfrac\\pi2$，つまり $t=\\dfrac T2$（原点が最大になる $\\dfrac T4$ から $\\dfrac T4$ 遅れる）．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "位置 $x$ の振動＝原点の振動を $\\dfrac xv$ 遅らせたもの．"
+ },
+ "simulation": {
+  "id": "wave.traveling",
+  "preset": {
+   "A": 0.2,
+   "lambda": 2,
+   "f": 0.5,
+   "dir": 1,
+   "xP": 0.5
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "wave-basics"
+ ],
+ "laws": [
+  "sine-wave",
+  "wave-speed"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "正弦波の式",
+  "波の基本量"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

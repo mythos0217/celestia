@@ -1,0 +1,123 @@
+{
+ "schema": "celestia.figure/1",
+ "size": [
+  340,
+  205
+ ],
+ "items": [
+  {
+   "t": "line",
+   "from": [
+    40,
+    60
+   ],
+   "to": [
+    300,
+    60
+   ],
+   "style": "thick"
+  },
+  {
+   "t": "line",
+   "from": [
+    40,
+    140
+   ],
+   "to": [
+    300,
+    140
+   ],
+   "style": "thick"
+  },
+  {
+   "t": "line",
+   "from": [
+    40,
+    60
+   ],
+   "to": [
+    40,
+    140
+   ],
+   "style": "thick",
+   "phys": "closed-end"
+  },
+  {
+   "t": "text",
+   "at": [
+    40,
+    160
+   ],
+   "text": "閉じた端",
+   "italic": false,
+   "size": 11
+  },
+  {
+   "t": "text",
+   "at": [
+    300,
+    160
+   ],
+   "text": "開いた端",
+   "italic": false,
+   "size": 11
+  },
+  {
+   "t": "line",
+   "from": [
+    40,
+    180
+   ],
+   "to": [
+    300,
+    180
+   ],
+   "style": "thin"
+  },
+  {
+   "t": "text",
+   "at": [
+    170,
+    194
+   ],
+   "text": "L"
+  },
+  {
+   "t": "sine",
+   "from": [
+    40,
+    100
+   ],
+   "to": [
+    300,
+    100
+   ],
+   "amp": 30,
+   "cycles": 0.25,
+   "func": "sin",
+   "mirror": true,
+   "style": "dash",
+   "phys": "mode"
+  },
+  {
+   "t": "text",
+   "at": [
+    52,
+    100
+   ],
+   "text": "節",
+   "italic": false,
+   "size": 12
+  },
+  {
+   "t": "text",
+   "at": [
+    288,
+    100
+   ],
+   "text": "腹",
+   "italic": false,
+   "size": 12
+  }
+ ]
+}

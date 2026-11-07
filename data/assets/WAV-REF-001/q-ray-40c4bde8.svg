@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 215" width="340" height="215" font-family="'Times New Roman', serif">
+<polygon points="20,110 320,110 320,210 20,210" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.6"/>
+<line x1="20" y1="110" x2="320" y2="110" stroke="currentColor" stroke-width="2" data-phys="boundary"/>
+<line x1="170" y1="15" x2="170" y2="205" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4"/>
+<g class="f-cur" data-phys="ray:in" data-dir="320" data-len="90">
+<line x1="101.06" y1="52.15" x2="162.34" y2="103.57" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="170,110 159.35,107.15 165.34,100" fill="currentColor"/>
+</g>
+<g class="f-cur" data-phys="ray:out" data-dir="305.17" data-len="90">
+<line x1="170" y1="110" x2="216.08" y2="175.4" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="221.84,183.57 212.27,178.08 219.89,172.71" fill="currentColor"/>
+</g>
+<path d="M170,76 A34,34 0 0 0 143.95,88.15" fill="none" stroke="currentColor" stroke-width="1.2"/>
+<text x="150.56" y="68.31" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">θ₁</text>
+<path d="M170,150 A40,40 0 0 0 193.04,142.7" fill="none" stroke="currentColor" stroke-width="1.2"/>
+<text x="185.71" y="159.57" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">θ₂</text>
+<text x="50" y="30" font-size="12" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">空気</text>
+<text x="50" y="190" font-size="12" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">水</text>
+</svg>

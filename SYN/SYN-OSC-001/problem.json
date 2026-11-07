@@ -1,0 +1,125 @@
+{
+ "id": "SYN-OSC-001",
+ "schema": "celestia.problem/1",
+ "field": "SYN",
+ "unit": "SYN-01",
+ "topic": "弾丸を受けたばね振り子",
+ "course": "物理",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "derivation",
+  "synthesis"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平面上で，ばね定数 $k$ のばねの一端を壁に固定し，他端に質量 $M$ の木片をつけて静止させた．質量 $m$ の弾丸が速さ $v$ でばねの向きに木片に撃ち込まれ，木片と一体になって単振動を始めた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "衝突直後の木片（と弾丸）の速さ $V$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "単振動の振幅 $A$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "単振動の周期 $T$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "衝突で失われた力学的エネルギー $\\Delta E$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V=\\dfrac{mv}{m+M}$",
+    "grading": "V：m v/(m+M)"
+   },
+   {
+    "id": "2",
+    "tex": "$A=\\dfrac{mv}{\\sqrt{k(m+M)}}$",
+    "grading": "A：m v/sqrt(k(m+M))"
+   },
+   {
+    "id": "3",
+    "tex": "$T=2\\pi\\sqrt{\\dfrac{m+M}k}$",
+    "grading": "T：2π sqrt((m+M)/k)"
+   },
+   {
+    "id": "4",
+    "tex": "$\\Delta E=\\dfrac{mMv^2}{2(m+M)}$",
+    "grading": "ΔE：m M v^2/(2(m+M))"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 衝突は一瞬で，その間ばねの力は無視できる．運動量保存：$mv=(m+M)V$．\n\n(2) 衝突後は力学的エネルギー保存．自然長の位置で速さ $V$，振動の端で速さ $0$：$\\dfrac12(m+M)V^2=\\dfrac12kA^2$ より $A=V\\sqrt{\\dfrac{m+M}k}=\\dfrac{mv}{\\sqrt{k(m+M)}}$．\n\n(3) 質量 $m+M$ の単振動：$T=2\\pi\\sqrt{\\dfrac{m+M}k}$．\n\n(4) $\\Delta E=\\dfrac12mv^2-\\dfrac12(m+M)V^2=\\dfrac{mMv^2}{2(m+M)}$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "衝突は運動量保存，その後の振動はエネルギー保存．使う法則を場面で切り替える．"
+ },
+ "simulation": {
+  "id": "mech.spring",
+  "preset": {
+   "m": 1,
+   "k": 10,
+   "A": 0.2
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "simple-harmonic-motion",
+  "mechanical-energy"
+ ],
+ "laws": [
+  "momentum-conservation",
+  "energy-conservation",
+  "shm-period"
+ ],
+ "misconceptions": [
+  "MC-KE-ALWAYS-CONSERVED"
+ ],
+ "tags": [
+  "衝突",
+  "単振動",
+  "融合"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

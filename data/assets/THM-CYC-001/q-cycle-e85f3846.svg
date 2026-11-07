@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 220" width="330" height="220" font-family="'Times New Roman', serif">
+<g class="f-ink" data-phys="axis:V" data-dir="0" data-len="240">
+<line x1="60" y1="190" x2="290" y2="190" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="300,190 290,194.66 290,185.34" fill="currentColor"/>
+<text x="312" y="190" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">V</text>
+</g>
+<g class="f-ink" data-phys="axis:P" data-dir="90" data-len="170">
+<line x1="60" y1="190" x2="60" y2="30" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="60,20 64.66,30 55.34,30" fill="currentColor"/>
+<text x="60" y="8" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">P</text>
+</g>
+<line x1="150" y1="130" x2="150" y2="70" stroke="currentColor" stroke-width="2.4"/>
+<g class="f-vel" data-phys="step:AB" data-dir="90" data-len="22">
+<line x1="150" y1="108" x2="150" y2="93.7" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="150,86 153.59,93.7 146.41,93.7" fill="currentColor"/>
+</g>
+<line x1="150" y1="70" x2="240" y2="70" stroke="currentColor" stroke-width="2.4"/>
+<g class="f-vel" data-phys="step:BC" data-dir="0" data-len="22">
+<line x1="187" y1="70" x2="201.3" y2="70" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="209,70 201.3,73.59 201.3,66.41" fill="currentColor"/>
+</g>
+<line x1="240" y1="70" x2="240" y2="130" stroke="currentColor" stroke-width="2.4"/>
+<g class="f-vel" data-phys="step:CD" data-dir="270" data-len="22">
+<line x1="240" y1="92" x2="240" y2="106.3" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="240,114 236.41,106.3 243.59,106.3" fill="currentColor"/>
+</g>
+<line x1="240" y1="130" x2="150" y2="130" stroke="currentColor" stroke-width="2.4"/>
+<g class="f-vel" data-phys="step:DA" data-dir="180" data-len="22">
+<line x1="203" y1="130" x2="188.7" y2="130" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="181,130 188.7,126.41 188.7,133.59" fill="currentColor"/>
+</g>
+<circle cx="150" cy="130" r="3" fill="currentColor"/>
+<text x="138" y="140" font-size="13" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">A</text>
+<circle cx="150" cy="70" r="3" fill="currentColor"/>
+<text x="138" y="62" font-size="13" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">B</text>
+<circle cx="240" cy="70" r="3" fill="currentColor"/>
+<text x="252" y="62" font-size="13" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">C</text>
+<circle cx="240" cy="130" r="3" fill="currentColor"/>
+<text x="252" y="140" font-size="13" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">D</text>
+<line x1="60" y1="130" x2="150" y2="130" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="60" y1="70" x2="150" y2="70" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="150" y1="190" x2="150" y2="130" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="240" y1="190" x2="240" y2="130" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="42" y="130" font-size="13" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">P₀</text>
+<text x="38" y="70" font-size="13" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">2P₀</text>
+<text x="150" y="204" font-size="13" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">V₀</text>
+<text x="240" y="204" font-size="13" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">2V₀</text>
+<text x="52" y="202" font-size="12" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">O</text>
+</svg>

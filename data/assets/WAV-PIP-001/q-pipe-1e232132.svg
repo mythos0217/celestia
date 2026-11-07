@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 205" width="340" height="205" font-family="'Times New Roman', serif">
+<line x1="40" y1="60" x2="300" y2="60" stroke="currentColor" stroke-width="2.4"/>
+<line x1="40" y1="140" x2="300" y2="140" stroke="currentColor" stroke-width="2.4"/>
+<line x1="40" y1="60" x2="40" y2="140" stroke="currentColor" stroke-width="2.4" data-phys="closed-end"/>
+<text x="40" y="160" font-size="11" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">閉じた端</text>
+<text x="300" y="160" font-size="11" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">開いた端</text>
+<line x1="40" y1="180" x2="300" y2="180" stroke="currentColor" stroke-width="1.2"/>
+<text x="170" y="194" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">L</text>
+</svg>
