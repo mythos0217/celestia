@@ -1,0 +1,162 @@
+{
+ "id": "MEC-CIR-001",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "糸につながれた小球の等速円運動",
+ "course": "物理",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平面上で，長さ $r$ の軽い糸の一端を点 O に固定し，他端につけた質量 $m$ の小球を，速さ $v$ で O のまわりに等速円運動させた．図は真上から見たものである．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小球の角速度 $\\omega$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "円運動の周期 $T$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "糸が小球を引く力の大きさ $S$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "点 O を中心とする半径 r の円周上を速さ v で回る質量 m の小球（真上から見た図）",
+   "caption": "",
+   "physics": {
+    "vectors": [
+     {
+      "name": "velocity:v",
+      "dir_deg": 90
+     }
+    ]
+   }
+  },
+  {
+   "id": "a-forces",
+   "role": "answer",
+   "kind": "vector",
+   "format": "svg",
+   "src": "a-forces.svg",
+   "alt": "小球の速度は円の接線方向、糸の張力は中心 O の向き",
+   "caption": "糸の張力が向心力になる．速度とは垂直",
+   "physics": {
+    "vectors": [
+     {
+      "name": "velocity:v",
+      "dir_deg": 90
+     },
+     {
+      "name": "force:T",
+      "dir_deg": 180
+     }
+    ]
+   }
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\omega=\\dfrac vr$",
+    "grading": "ω：v/r"
+   },
+   {
+    "id": "2",
+    "tex": "$T=\\dfrac{2\\pi r}{v}$",
+    "grading": "T：2π r/v"
+   },
+   {
+    "id": "3",
+    "tex": "$S=\\dfrac{mv^2}{r}$",
+    "grading": "S：m v^2/r"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 1秒間に進む弧の長さ $v$ を半径で割ると角速度：$\\omega=\\dfrac vr$．\n\n(2) 1周 $2\\pi r$ を速さ $v$ で進むので $T=\\dfrac{2\\pi r}{v}$．"
+    },
+    {
+     "type": "figure",
+     "ref": "a-forces"
+    },
+    {
+     "type": "text",
+     "tex": "(3) 小球の加速度は中心向きで大きさ $\\dfrac{v^2}{r}$（法則のページ「等速円運動の加速度」の導出を参照）．水平方向にはたらく力は糸の張力だけなので，運動方程式は \\[m\\frac{v^2}{r}=S\\]"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "円運動の中心向きの運動方程式：$m\\dfrac{v^2}{r}=$（中心向きの力の和）．"
+ },
+ "simulation": {
+  "id": "mech.circular",
+  "preset": {
+   "r": 2,
+   "v": 4
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "circular-motion",
+  "equation-of-motion"
+ ],
+ "laws": [
+  "centripetal-acceleration",
+  "newton-2nd"
+ ],
+ "misconceptions": [
+  "MC-FLY-OUTWARD"
+ ],
+ "tags": [
+  "円運動",
+  "向心力"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,270 @@
+{
+ "schema": "celestia.misconceptions/1",
+ "misconceptions": [
+  {
+   "id": "MC-NORMAL-EQ-MG",
+   "wrong": "垂直抗力はいつも mg に等しい",
+   "right": "垂直抗力は面に垂直な方向の力のつり合い（または運動方程式）で決まる。（ほかに面に垂直な力がなければ）斜面上では mg cos θ",
+   "concepts": [
+    "normal-force"
+   ],
+   "remedy": [
+    "MEC-CON-001",
+    "MEC-INC-001"
+   ]
+  },
+  {
+   "id": "MC-FRICTION-MAX",
+   "wrong": "静止摩擦力はいつも μN に等しい",
+   "right": "静止摩擦力の大きさはつり合いで決まり、μN はその上限（最大摩擦力）",
+   "concepts": [
+    "static-friction"
+   ],
+   "remedy": [
+    "MEC-CON-001"
+   ]
+  },
+  {
+   "id": "MC-SHM-PERIOD-AMPLITUDE",
+   "wrong": "大きく振らせるほど単振動の周期は長くなる",
+   "right": "ばね振り子の周期 2π√(m/k) は振幅によらない",
+   "concepts": [
+    "simple-harmonic-motion"
+   ],
+   "remedy": [
+    "MEC-SHM-001"
+   ]
+  },
+  {
+   "id": "MC-SHM-PERIOD-LINEAR-M",
+   "wrong": "質量を2倍にすると周期も2倍になる",
+   "right": "周期は √m に比例するので √2 倍",
+   "concepts": [
+    "simple-harmonic-motion"
+   ],
+   "remedy": [
+    "MEC-SHM-001"
+   ]
+  },
+  {
+   "id": "MC-PROJ-VX-CHANGES",
+   "wrong": "放物運動で水平方向の速さもだんだん小さくなる",
+   "right": "空気抵抗を無視すれば水平方向には力がはたらかず、vx は一定",
+   "concepts": [
+    "projectile-motion"
+   ],
+   "remedy": [
+    "MEC-PRJ-001"
+   ]
+  },
+  {
+   "id": "MC-CURRENT-USED-UP",
+   "wrong": "電流は抵抗を通ると消費されて減る",
+   "right": "定常電流は分岐しない限り途中で増減しない。消費されるのは電気エネルギー",
+   "concepts": [
+    "current-conservation"
+   ],
+   "remedy": [
+    "ELM-DCC-001"
+   ]
+  },
+  {
+   "id": "MC-KE-ALWAYS-CONSERVED",
+   "wrong": "衝突の前後で運動エネルギーも保存する",
+   "right": "外力が無視できれば運動量は保存するが，運動エネルギーが保存するのは弾性衝突（e=1）のときだけ",
+   "concepts": [
+    "restitution",
+    "momentum-conservation"
+   ],
+   "remedy": [
+    "MEC-MOM-001",
+    "MEC-MOM-002"
+   ]
+  },
+  {
+   "id": "MC-ACCEL-ZERO-AT-TOP",
+   "wrong": "投げ上げた物体は最高点で止まるので，加速度も 0 になる",
+   "right": "速度が 0 でも速度は変化し続けている．加速度はずっと下向きに g",
+   "concepts": [
+    "acceleration-concept"
+   ],
+   "remedy": [
+    "MEC-CON-002",
+    "MEC-PRJ-003"
+   ]
+  },
+  {
+   "id": "MC-FLY-OUTWARD",
+   "wrong": "円運動中に糸が切れると，遠心力で外向きに飛んでいく",
+   "right": "静止した観測者から見ると遠心力ははたらいていない．糸が切れると接線方向に等速直線運動する",
+   "concepts": [
+    "circular-motion"
+   ],
+   "remedy": [
+    "MEC-CON-003",
+    "MEC-CIR-001"
+   ]
+  },
+  {
+   "id": "MC-PENDULUM-MASS",
+   "wrong": "重いおもりの振り子ほど速く振れる（周期が短い）",
+   "right": "単振り子の周期 2π√(l/g) は質量によらない",
+   "concepts": [
+    "simple-pendulum"
+   ],
+   "remedy": [
+    "MEC-SHM-002"
+   ]
+  },
+  {
+   "id": "MC-TORQUE-FORCE-ONLY",
+   "wrong": "力がつり合っていれば，大きさのある物体は静止したままである",
+   "right": "合力 0 に加えて，力のモーメントの和も 0 でないと回転する（偶力）",
+   "concepts": [
+    "torque"
+   ],
+   "remedy": [
+    "MEC-CON-004",
+    "MEC-RIG-001"
+   ]
+  },
+  {
+   "id": "MC-HEAT-TEMP",
+   "wrong": "熱を加えれば，物体の温度は必ず上がる",
+   "right": "熱は移動するエネルギー，温度は状態．加えた熱は状態変化や仕事にも使われる（等温膨張・融解）",
+   "concepts": [
+    "heat-temperature",
+    "first-law"
+   ],
+   "remedy": [
+    "THM-CON-001",
+    "THM-FST-002"
+   ]
+  },
+  {
+   "id": "MC-ADIABATIC-TEMP",
+   "wrong": "断熱変化では熱の出入りがないので，温度は変わらない",
+   "right": "Q = 0 でも，気体が仕事をすれば ΔU = −W だけ内部エネルギーが減り，温度が下がる",
+   "concepts": [
+    "first-law"
+   ],
+   "remedy": [
+    "THM-FST-002"
+   ]
+  },
+  {
+   "id": "MC-WAVE-SPEED-FREQ",
+   "wrong": "振動数を大きくすると，波の速さも大きくなる",
+   "right": "波の速さは媒質で決まる．振動数を変えると波長が変わる（v = fλ）",
+   "concepts": [
+    "wave-basics"
+   ],
+   "remedy": [
+    "WAV-CON-001",
+    "WAV-BAS-001"
+   ]
+  },
+  {
+   "id": "MC-WAVE-MEDIUM-MOVES",
+   "wrong": "波が進むと，媒質も波と一緒に進む",
+   "right": "媒質の各点はその場で振動するだけ．伝わるのは振動の状態とエネルギー",
+   "concepts": [
+    "wave-basics"
+   ],
+   "remedy": [
+    "WAV-CON-001"
+   ]
+  },
+  {
+   "id": "MC-DOPPLER-DISTANCE",
+   "wrong": "音源が近いほど高い音に聞こえる（ドップラー効果は距離で決まる）",
+   "right": "振動数を決めるのは音源と観測者の速度．近づいている間は一定の高い音",
+   "concepts": [
+    "doppler"
+   ],
+   "remedy": [
+    "WAV-DOP-001"
+   ]
+  },
+  {
+   "id": "MC-REFRACTION-FREQ",
+   "wrong": "光が水に入ると，振動数（色）が変わる",
+   "right": "屈折で変わるのは速さと波長．振動数は変わらない",
+   "concepts": [
+    "refraction-light"
+   ],
+   "remedy": [
+    "WAV-REF-001"
+   ]
+  },
+  {
+   "id": "MC-LENS-HALF",
+   "wrong": "レンズの半分を隠すと，像の半分が消える",
+   "right": "像の各点にはレンズ全体を通った光が集まる．像は全体が残り，暗くなる",
+   "concepts": [
+    "lens-imaging"
+   ],
+   "remedy": [
+    "WAV-CON-002",
+    "WAV-LNS-001"
+   ]
+  },
+  {
+   "id": "MC-POTENTIAL-FIELD",
+   "wrong": "電場が 0 でない点では電位も 0 でない（電位 0 なら電場も 0）",
+   "right": "電場は電位の傾き．電位 0 の点でも電場はありうる（等量異符号の電荷の中点）",
+   "concepts": [
+    "coulomb-field"
+   ],
+   "remedy": [
+    "ELM-FLD-001"
+   ]
+  },
+  {
+   "id": "MC-CAP-CURRENT",
+   "wrong": "コンデンサーの極板の間を電流が流れ続ける",
+   "right": "極板の間は絶縁されている．電荷が極板にたまるまでの間だけ回路に電流が流れる",
+   "concepts": [
+    "capacitor"
+   ],
+   "remedy": [
+    "ELM-CAP-002"
+   ]
+  },
+  {
+   "id": "MC-INDUCTION-FLUX",
+   "wrong": "コイルを強い磁束が貫いていれば，誘導電流が流れる",
+   "right": "誘導起電力は磁束の変化の速さで決まる．磁束が一定なら起電力は 0",
+   "concepts": [
+    "electromagnetic-induction"
+   ],
+   "remedy": [
+    "ELM-CON-001",
+    "ELM-IND-001"
+   ]
+  },
+  {
+   "id": "MC-PHOTO-INTENSITY",
+   "wrong": "光を強くすれば，飛び出す電子のエネルギーも大きくなる",
+   "right": "光の強さは光子の数．飛び出す電子の最大エネルギー hf − W は振動数（と金属）で決まり，光の強さによらない",
+   "concepts": [
+    "photon"
+   ],
+   "remedy": [
+    "ATM-CON-001",
+    "ATM-PHO-001"
+   ]
+  },
+  {
+   "id": "MC-HALFLIFE-ALL-GONE",
+   "wrong": "半減期の2倍の時間がたつと，すべて崩壊する",
+   "right": "半減期ごとに半分になる．2倍の時間では 1/4 が残る",
+   "concepts": [
+    "nuclear-decay"
+   ],
+   "remedy": [
+    "ATM-DEC-001"
+   ]
+  }
+ ]
+}

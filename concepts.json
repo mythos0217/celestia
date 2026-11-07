@@ -1,0 +1,539 @@
+{
+ "schema": "celestia.concepts/1",
+ "concepts": [
+  {
+   "id": "kinematics-components",
+   "name": "運動の成分への分解",
+   "field": "MEC",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "uniform-acceleration",
+   "name": "等加速度運動",
+   "field": "MEC",
+   "requires": [
+    "kinematics-components"
+   ],
+   "laws": [
+    "uniform-acceleration-eq"
+   ]
+  },
+  {
+   "id": "projectile-motion",
+   "name": "放物運動",
+   "field": "MEC",
+   "requires": [
+    "uniform-acceleration",
+    "kinematics-components"
+   ],
+   "laws": [
+    "uniform-acceleration-eq"
+   ]
+  },
+  {
+   "id": "force-concept",
+   "name": "力のはたらき",
+   "field": "MEC",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "force-decomposition",
+   "name": "力の分解",
+   "field": "MEC",
+   "requires": [
+    "force-concept",
+    "kinematics-components"
+   ],
+   "laws": []
+  },
+  {
+   "id": "equilibrium",
+   "name": "力のつり合い",
+   "field": "MEC",
+   "requires": [
+    "force-decomposition"
+   ],
+   "laws": [
+    "newton-1st"
+   ]
+  },
+  {
+   "id": "normal-force",
+   "name": "垂直抗力",
+   "field": "MEC",
+   "requires": [
+    "force-concept",
+    "equilibrium"
+   ],
+   "laws": [
+    "newton-3rd"
+   ]
+  },
+  {
+   "id": "static-friction",
+   "name": "静止摩擦力",
+   "field": "MEC",
+   "requires": [
+    "normal-force"
+   ],
+   "laws": [
+    "friction-law"
+   ]
+  },
+  {
+   "id": "equation-of-motion",
+   "name": "運動方程式の立て方",
+   "field": "MEC",
+   "requires": [
+    "force-decomposition"
+   ],
+   "laws": [
+    "newton-2nd"
+   ]
+  },
+  {
+   "id": "simple-harmonic-motion",
+   "name": "単振動",
+   "field": "MEC",
+   "requires": [
+    "equation-of-motion"
+   ],
+   "laws": [
+    "hooke-law",
+    "shm-period"
+   ]
+  },
+  {
+   "id": "series-parallel",
+   "name": "抵抗の直列・並列",
+   "field": "ELM",
+   "requires": [
+    "ohm-law-use"
+   ],
+   "laws": [
+    "ohm-law",
+    "kirchhoff-1st",
+    "kirchhoff-2nd",
+    "resistor-combination"
+   ]
+  },
+  {
+   "id": "ohm-law-use",
+   "name": "オームの法則の使い方",
+   "field": "ELM",
+   "requires": [],
+   "laws": [
+    "ohm-law"
+   ]
+  },
+  {
+   "id": "current-conservation",
+   "name": "電流の保存（分岐点）",
+   "field": "ELM",
+   "requires": [],
+   "laws": [
+    "kirchhoff-1st"
+   ]
+  },
+  {
+   "id": "acceleration-concept",
+   "name": "加速度（速度の変化の割合）",
+   "field": "MEC",
+   "requires": [
+    "kinematics-components"
+   ],
+   "laws": [
+    "uniform-acceleration-eq"
+   ]
+  },
+  {
+   "id": "simple-pendulum",
+   "name": "単振り子",
+   "field": "MEC",
+   "requires": [
+    "simple-harmonic-motion",
+    "force-decomposition"
+   ],
+   "laws": [
+    "pendulum-period"
+   ]
+  },
+  {
+   "id": "work-energy",
+   "name": "仕事と運動エネルギー",
+   "field": "MEC",
+   "requires": [
+    "equation-of-motion"
+   ],
+   "laws": [
+    "work-energy-theorem"
+   ]
+  },
+  {
+   "id": "mechanical-energy",
+   "name": "力学的エネルギー保存",
+   "field": "MEC",
+   "requires": [
+    "work-energy"
+   ],
+   "laws": [
+    "energy-conservation"
+   ]
+  },
+  {
+   "id": "momentum-conservation",
+   "name": "運動量と力積・運動量保存",
+   "field": "MEC",
+   "requires": [
+    "equation-of-motion"
+   ],
+   "laws": [
+    "impulse-momentum",
+    "momentum-conservation",
+    "newton-3rd"
+   ]
+  },
+  {
+   "id": "restitution",
+   "name": "反発係数と衝突",
+   "field": "MEC",
+   "requires": [
+    "momentum-conservation"
+   ],
+   "laws": [
+    "restitution"
+   ]
+  },
+  {
+   "id": "circular-motion",
+   "name": "等速円運動と向心力",
+   "field": "MEC",
+   "requires": [
+    "equation-of-motion",
+    "kinematics-components"
+   ],
+   "laws": [
+    "centripetal-acceleration"
+   ]
+  },
+  {
+   "id": "universal-gravitation",
+   "name": "万有引力と人工衛星",
+   "field": "MEC",
+   "requires": [
+    "circular-motion"
+   ],
+   "laws": [
+    "universal-gravitation",
+    "kepler-3rd"
+   ]
+  },
+  {
+   "id": "torque",
+   "name": "力のモーメントと剛体のつり合い",
+   "field": "MEC",
+   "requires": [
+    "equilibrium"
+   ],
+   "laws": [
+    "torque-equilibrium",
+    "center-of-mass"
+   ]
+  },
+  {
+   "id": "wave-basics",
+   "name": "波の基本量（振幅・波長・周期・速さ）",
+   "field": "WAV",
+   "requires": [
+    "simple-harmonic-motion"
+   ],
+   "laws": [
+    "wave-speed",
+    "sine-wave"
+   ]
+  },
+  {
+   "id": "superposition",
+   "name": "重ね合わせと定常波",
+   "field": "WAV",
+   "requires": [
+    "wave-basics"
+   ],
+   "laws": [
+    "superposition"
+   ]
+  },
+  {
+   "id": "string-resonance",
+   "name": "弦と気柱の固有振動",
+   "field": "WAV",
+   "requires": [
+    "superposition"
+   ],
+   "laws": [
+    "string-modes",
+    "pipe-modes"
+   ]
+  },
+  {
+   "id": "beats",
+   "name": "うなり",
+   "field": "WAV",
+   "requires": [
+    "superposition"
+   ],
+   "laws": [
+    "beat-frequency"
+   ]
+  },
+  {
+   "id": "doppler",
+   "name": "ドップラー効果",
+   "field": "WAV",
+   "requires": [
+    "wave-basics"
+   ],
+   "laws": [
+    "doppler"
+   ]
+  },
+  {
+   "id": "interference",
+   "name": "波の干渉",
+   "field": "WAV",
+   "requires": [
+    "superposition"
+   ],
+   "laws": [
+    "interference-condition"
+   ]
+  },
+  {
+   "id": "refraction-light",
+   "name": "光の屈折と全反射",
+   "field": "WAV",
+   "requires": [
+    "wave-basics"
+   ],
+   "laws": [
+    "refraction-law",
+    "critical-angle"
+   ]
+  },
+  {
+   "id": "lens-imaging",
+   "name": "レンズの像",
+   "field": "WAV",
+   "requires": [
+    "refraction-light"
+   ],
+   "laws": [
+    "lens-equation"
+   ]
+  },
+  {
+   "id": "light-interference",
+   "name": "光の干渉（ヤングの実験）",
+   "field": "WAV",
+   "requires": [
+    "interference"
+   ],
+   "laws": [
+    "young-fringe"
+   ]
+  },
+  {
+   "id": "coulomb-field",
+   "name": "電場と電位",
+   "field": "ELM",
+   "requires": [
+    "force-concept"
+   ],
+   "laws": [
+    "coulomb-law",
+    "point-charge-field",
+    "point-charge-potential",
+    "uniform-field-potential"
+   ]
+  },
+  {
+   "id": "capacitor",
+   "name": "コンデンサー",
+   "field": "ELM",
+   "requires": [
+    "coulomb-field"
+   ],
+   "laws": [
+    "capacitance",
+    "capacitor-energy"
+   ]
+  },
+  {
+   "id": "electric-power",
+   "name": "電力とジュール熱",
+   "field": "ELM",
+   "requires": [
+    "ohm-law-use"
+   ],
+   "laws": [
+    "joule-heat"
+   ]
+  },
+  {
+   "id": "lorentz-force",
+   "name": "ローレンツ力と電流が受ける力",
+   "field": "ELM",
+   "requires": [
+    "circular-motion"
+   ],
+   "laws": [
+    "lorentz-force",
+    "current-force",
+    "cyclotron-motion",
+    "straight-current-field"
+   ]
+  },
+  {
+   "id": "electromagnetic-induction",
+   "name": "電磁誘導",
+   "field": "ELM",
+   "requires": [
+    "lorentz-force"
+   ],
+   "laws": [
+    "faraday-law",
+    "motional-emf",
+    "transformer"
+   ]
+  },
+  {
+   "id": "ac-circuit",
+   "name": "交流回路",
+   "field": "ELM",
+   "requires": [
+    "electromagnetic-induction",
+    "capacitor"
+   ],
+   "laws": [
+    "ac-reactance",
+    "resonance-frequency",
+    "rms-value"
+   ]
+  },
+  {
+   "id": "heat-temperature",
+   "name": "熱と温度・比熱",
+   "field": "THM",
+   "requires": [],
+   "laws": [
+    "heat-capacity"
+   ]
+  },
+  {
+   "id": "ideal-gas",
+   "name": "理想気体の状態方程式",
+   "field": "THM",
+   "requires": [
+    "heat-temperature"
+   ],
+   "laws": [
+    "ideal-gas-law"
+   ]
+  },
+  {
+   "id": "kinetic-theory",
+   "name": "気体分子運動論",
+   "field": "THM",
+   "requires": [
+    "ideal-gas",
+    "momentum-conservation"
+   ],
+   "laws": [
+    "kinetic-pressure",
+    "kinetic-temperature"
+   ]
+  },
+  {
+   "id": "first-law",
+   "name": "熱力学第1法則と状態変化",
+   "field": "THM",
+   "requires": [
+    "ideal-gas",
+    "work-energy"
+   ],
+   "laws": [
+    "first-law",
+    "internal-energy",
+    "molar-heat",
+    "adiabatic"
+   ]
+  },
+  {
+   "id": "heat-engine",
+   "name": "熱機関と効率",
+   "field": "THM",
+   "requires": [
+    "first-law"
+   ],
+   "laws": [
+    "thermal-efficiency"
+   ]
+  },
+  {
+   "id": "photon",
+   "name": "光子と光電効果",
+   "field": "ATM",
+   "requires": [
+    "wave-basics"
+   ],
+   "laws": [
+    "photon-energy",
+    "photoelectric-equation"
+   ]
+  },
+  {
+   "id": "matter-wave",
+   "name": "物質波",
+   "field": "ATM",
+   "requires": [
+    "photon"
+   ],
+   "laws": [
+    "de-broglie"
+   ]
+  },
+  {
+   "id": "bohr-model",
+   "name": "原子の構造とエネルギー準位",
+   "field": "ATM",
+   "requires": [
+    "matter-wave",
+    "circular-motion",
+    "coulomb-field"
+   ],
+   "laws": [
+    "bohr-levels"
+   ]
+  },
+  {
+   "id": "nuclear-decay",
+   "name": "放射性崩壊と半減期",
+   "field": "ATM",
+   "requires": [],
+   "laws": [
+    "half-life"
+   ]
+  },
+  {
+   "id": "mass-energy",
+   "name": "質量とエネルギー・核反応",
+   "field": "ATM",
+   "requires": [],
+   "laws": [
+    "mass-energy"
+   ]
+  }
+ ]
+}

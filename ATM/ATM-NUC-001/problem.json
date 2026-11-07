@@ -1,0 +1,100 @@
+{
+ "id": "ATM-NUC-001",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "ヘリウム原子核の結合エネルギー",
+ "course": "物理",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "陽子の質量を $m_p$，中性子の質量を $m_n$，ヘリウム原子核（陽子2個と中性子2個）の質量を $m_{\\mathrm{He}}$，光の速さを $c$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ヘリウム原子核の質量欠損 $\\Delta m$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "ヘリウム原子核の結合エネルギー $E$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "核子1個あたりの結合エネルギーを求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Delta m=2m_p+2m_n-m_{\\mathrm{He}}$",
+    "grading": "Δm：2m_p+2m_n-m_{He}"
+   },
+   {
+    "id": "2",
+    "tex": "$E=(2m_p+2m_n-m_{\\mathrm{He}})c^2$",
+    "grading": "E：(2m_p+2m_n-m_{He})c^2"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{(2m_p+2m_n-m_{\\mathrm{He}})c^2}{4}$",
+    "grading": "(2m_p+2m_n-m_{He})c^2/4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) ばらばらの核子の質量の和から，原子核の質量を引いたもの：$\\Delta m=2m_p+2m_n-m_{\\mathrm{He}}$．\n\n(2) 原子核をばらばらにするのに必要なエネルギー（結合エネルギー）は，質量欠損に相当するエネルギー：$E=\\Delta mc^2$（約 $28\\,\\mathrm{MeV}$）．\n\n(3) 核子は4個なので $\\dfrac E4$（約 $7\\,\\mathrm{MeV}$）．核子1個あたりの結合エネルギーが大きい原子核ほど安定．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "質量欠損 × $c^2$ ＝ 結合エネルギー．"
+ },
+ "concepts": [
+  "mass-energy"
+ ],
+ "laws": [
+  "mass-energy"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "質量欠損",
+  "結合エネルギー",
+  "原子核"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

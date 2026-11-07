@@ -1,0 +1,114 @@
+{
+ "id": "ELM-IND-002",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "一定の力で引く導体棒と終端速度",
+ "course": "物理",
+ "level": 2,
+ "minutes": 12,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ELM-IND-001 と同じ装置で，質量 $m$ の導体棒を静止した状態から，レールに平行な一定の力 $F$ で引き始めた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "棒の速さが $v$ のときの加速度の大きさ $a$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "十分時間がたつと，棒は一定の速さ（終端速度）$v_f$ になる．$v_f$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "終端速度のとき，抵抗で1秒間に発生するジュール熱を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$a=\\dfrac Fm-\\dfrac{vB^2l^2}{mR}$",
+    "grading": "a：F/m-v B^2 l^2/(m R)"
+   },
+   {
+    "id": "2",
+    "tex": "$v_f=\\dfrac{FR}{B^2l^2}$",
+    "grading": "v_f：F R/(B^2 l^2)"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{F^2R}{B^2l^2}$",
+    "grading": "F^2 R/(B^2 l^2)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 速さ $v$ のとき，棒は運動と逆向きに $\\dfrac{vB^2l^2}R$ の力を受ける．運動方程式 $ma=F-\\dfrac{vB^2l^2}R$．\n\n(2) 加速度が $0$ になる速さ：$F=\\dfrac{v_fB^2l^2}R$ より $v_f=\\dfrac{FR}{B^2l^2}$．\n\n(3) 終端速度では運動エネルギーが変わらないので，$F$ の仕事率 $Fv_f$ がすべて熱になる：$Fv_f=\\dfrac{F^2R}{B^2l^2}$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "速くなるほど妨げる力が大きくなり，つり合ったところで一定の速さ．"
+ },
+ "simulation": {
+  "id": "elm.induction",
+  "preset": {
+   "F": 0.5,
+   "v0": 0,
+   "B": 1,
+   "l": 0.5,
+   "R": 2,
+   "m": 0.2
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "equation-of-motion"
+ ],
+ "laws": [
+  "motional-emf",
+  "current-force",
+  "newton-2nd"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "終端速度"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,164 @@
+{
+ "id": "MEC-SHM-002",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "単振り子の周期",
+ "course": "物理",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "derivation",
+  "concept"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "長さ $l$ の軽い糸の一端を天井に固定し，他端に質量 $m$ の小さなおもりをつけた．糸を鉛直から小さな角 $\\theta$ だけ傾けて静かに放した．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "振り子の周期 $T$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "糸の長さを $4l$ にすると，周期は何倍になるか．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ振り子を，重力加速度が地球の $\\dfrac16$ の月面で振らせると，周期は何倍になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "長さ l の糸につるした質量 m のおもりを、鉛直から角 θ だけ傾けた単振り子",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T=2\\pi\\sqrt{\\dfrac{l}{g}}$",
+    "grading": "T：2π sqrt(l/g)"
+   },
+   {
+    "id": "2",
+    "tex": "$2$ 倍",
+    "grading": "2倍"
+   },
+   {
+    "id": "3",
+    "tex": "$\\sqrt6$ 倍",
+    "grading": "sqrt(6)倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 振れ角が小さいとき，おもりは $k=\\dfrac{mg}{l}$ のばねにつながれたのと同じ単振動をする（法則のページ「単振り子の周期」の導出を参照）．\\[T=2\\pi\\sqrt{\\frac{m}{mg/l}}=2\\pi\\sqrt{\\frac lg}\\]\n\n(2) $T\\propto\\sqrt l$ なので $\\sqrt4=2$ 倍．\n\n(3) $T\\propto\\dfrac{1}{\\sqrt g}$ なので $\\sqrt6$ 倍．\n\nおもりの質量 $m$ は周期に関係しない（重いおもりは重力も大きいが，動かしにくさも同じ割合で大きい）．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "単振り子の周期は糸の長さと重力加速度だけで決まる．"
+ },
+ "simulation": {
+  "id": "mech.pendulum",
+  "preset": {
+   "l": 1,
+   "theta0": 10
+  },
+  "show": "after-attempt"
+ },
+ "predict": {
+  "prompt": "振れ角を 10° から 60° に大きくすると，周期はどうなると思う？",
+  "choices": [
+   {
+    "id": "a",
+    "tex": "短くなる"
+   },
+   {
+    "id": "b",
+    "tex": "変わらない"
+   },
+   {
+    "id": "c",
+    "tex": "少し（1割ほど）長くなる"
+   },
+   {
+    "id": "d",
+    "tex": "2倍以上になる"
+   }
+  ],
+  "answer": "c",
+  "experiment": {
+   "sim": "mech.pendulum",
+   "vary": {
+    "theta0": [
+     10,
+     60
+    ]
+   },
+   "measure": "period"
+  },
+  "explain": {
+   "laws": [
+    "pendulum-period"
+   ],
+   "tex": "$T=2\\pi\\sqrt{l/g}$ は $\\sin\\theta\\fallingdotseq\\theta$ と近似した式．振れ角 $60^\\circ$ では近似がずれ，周期は約 $1.07$ 倍に長くなる．"
+  }
+ },
+ "concepts": [
+  "simple-pendulum",
+  "simple-harmonic-motion"
+ ],
+ "laws": [
+  "pendulum-period",
+  "shm-period"
+ ],
+ "misconceptions": [
+  "MC-PENDULUM-MASS"
+ ],
+ "tags": [
+  "単振り子",
+  "周期"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

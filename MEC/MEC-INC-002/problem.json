@@ -1,0 +1,173 @@
+{
+ "id": "MEC-INC-002",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "あらい斜面を滑り下りる物体",
+ "course": "物理基礎",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "傾きの角 $\\theta$ のあらい斜面上で，質量 $m$ の物体が斜面に沿って滑り下りている．物体と斜面の間の動摩擦係数を $\\mu$，重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "物体の加速度の大きさ $a$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "物体が静止した状態から滑り始め，斜面に沿って距離 $L$ 進んだときの速さ $v$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で距離 $L$ 進むのにかかる時間 $t$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "傾きの角 θ のあらい斜面を滑り下りる質量 m の物体",
+   "caption": "",
+   "physics": {
+    "angle_deg": 30
+   }
+  },
+  {
+   "id": "a-forces",
+   "role": "answer",
+   "kind": "vector",
+   "format": "svg",
+   "src": "a-forces.svg",
+   "alt": "滑り下りる物体にはたらく重力 mg、垂直抗力 N、斜面上向きの動摩擦力 μ'N",
+   "caption": "動摩擦力は運動と逆向き（斜面上向き）．3力は つり合わず，合力は斜面下向き",
+   "physics": {
+    "angle_deg": 30,
+    "forces": [
+     {
+      "name": "mg",
+      "dir_deg": 270
+     },
+     {
+      "name": "N",
+      "dir_deg": 120
+     },
+     {
+      "name": "f",
+      "dir_deg": 30
+     }
+    ],
+    "netForce": {
+     "dir_deg": 210
+    }
+   }
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$a=g(\\sin\\theta-\\mu\\cos\\theta)$",
+    "grading": "a：g(sin(θ)-μ cos(θ))"
+   },
+   {
+    "id": "2",
+    "tex": "$v=\\sqrt{2gL(\\sin\\theta-\\mu\\cos\\theta)}$",
+    "grading": "v：sqrt(2gL(sin(θ)-μ cos(θ)))"
+   },
+   {
+    "id": "3",
+    "tex": "$t=\\sqrt{\\dfrac{2L}{g(\\sin\\theta-\\mu\\cos\\theta)}}$",
+    "grading": "t：sqrt(2L/(g(sin(θ)-μ cos(θ))))"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "物体には重力 $mg$，垂直抗力 $N$，動摩擦力 $\\mu N$（運動と逆向き＝斜面上向き）がはたらく．"
+    },
+    {
+     "type": "figure",
+     "ref": "a-forces"
+    },
+    {
+     "type": "text",
+     "tex": "(1) 斜面に垂直な方向はつり合い：$N=mg\\cos\\theta$．斜面下向きを正として運動方程式は \\[ma=mg\\sin\\theta-\\mu mg\\cos\\theta\\] よって $a=g(\\sin\\theta-\\mu\\cos\\theta)$．\n\n(2) 等加速度運動の式 $v^2-0^2=2aL$ より $v=\\sqrt{2gL(\\sin\\theta-\\mu\\cos\\theta)}$．\n\n(3) $L=\\dfrac12at^2$ より $t=\\sqrt{\\dfrac{2L}{a}}=\\sqrt{\\dfrac{2L}{g(\\sin\\theta-\\mu\\cos\\theta)}}$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "動摩擦力の大きさは $\\mu N$ で一定，向きは運動と逆．質量 $m$ は加速度に残らない．"
+ },
+ "simulation": {
+  "id": "mech.incline",
+  "preset": {
+   "theta": 30,
+   "mu": 0.4,
+   "muk": 0.3,
+   "m": 1
+  },
+  "locked": [
+   "g"
+  ],
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "force-decomposition",
+  "static-friction"
+ ],
+ "laws": [
+  "newton-2nd",
+  "friction-law",
+  "uniform-acceleration-eq"
+ ],
+ "misconceptions": [
+  "MC-NORMAL-EQ-MG"
+ ],
+ "tags": [
+  "斜面",
+  "動摩擦",
+  "運動方程式"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

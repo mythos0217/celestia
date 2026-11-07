@@ -1,0 +1,125 @@
+{
+ "id": "MEC-GRV-001",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "人工衛星の円軌道",
+ "course": "物理",
+ "level": 2,
+ "minutes": 10,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球を半径 $R$ の一様な球とし，地表での重力加速度の大きさを $g$ とする．人工衛星が，地表から高さ $R$（地球の中心から $2R$）の円軌道を等速で回っている．地球の自転の影響は考えない．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "人工衛星の速さ $v$ を，$g$ と $R$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "人工衛星の周期 $T$ を，$g$ と $R$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "地表すれすれの円軌道を回る人工衛星の速さ $v_1$（第1宇宙速度）を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "半径 R の地球と、中心から 2R の円軌道を回る人工衛星",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v=\\sqrt{\\dfrac{gR}{2}}$",
+    "grading": "v：sqrt(gR/2)"
+   },
+   {
+    "id": "2",
+    "tex": "$T=4\\pi\\sqrt{\\dfrac{2R}{g}}$",
+    "grading": "T：4π sqrt(2R/g)"
+   },
+   {
+    "id": "3",
+    "tex": "$v_1=\\sqrt{gR}$",
+    "grading": "v_1：sqrt(gR)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "地球の質量を $M$，万有引力定数を $G$ とする．地表で $G\\dfrac{Mm}{R^2}=mg$ より $GM=gR^2$．\n\n(1) 万有引力が向心力：\\[m\\frac{v^2}{2R}=G\\frac{Mm}{(2R)^2}\\quad\\Longrightarrow\\quad v=\\sqrt{\\frac{GM}{2R}}=\\sqrt{\\frac{gR}{2}}\\]\n\n(2) $T=\\dfrac{2\\pi\\cdot2R}{v}=4\\pi R\\sqrt{\\dfrac{2}{gR}}=4\\pi\\sqrt{\\dfrac{2R}{g}}$．\n\n(3) 半径 $R$ では $m\\dfrac{v_1^2}{R}=mg$ より $v_1=\\sqrt{gR}$（$\\fallingdotseq7.9\\,\\mathrm{km/s}$）．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "$GM=gR^2$ を使うと，$G$ と $M$ を知らなくても $g$ と $R$ で表せる．"
+ },
+ "simulation": {
+  "id": "mech.gravitation",
+  "preset": {
+   "r0": 2,
+   "vratio": 1
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "circular-motion"
+ ],
+ "laws": [
+  "universal-gravitation",
+  "kepler-3rd",
+  "centripetal-acceleration"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "万有引力",
+  "人工衛星",
+  "宇宙速度"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

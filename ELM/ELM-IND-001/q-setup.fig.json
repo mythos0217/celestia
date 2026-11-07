@@ -1,0 +1,90 @@
+{
+ "schema": "celestia.figure/1",
+ "size": [
+  340,
+  190
+ ],
+ "items": [
+  {
+   "t": "line",
+   "from": [
+    60,
+    60
+   ],
+   "to": [
+    320,
+    60
+   ],
+   "style": "thick"
+  },
+  {
+   "t": "line",
+   "from": [
+    60,
+    160
+   ],
+   "to": [
+    320,
+    160
+   ],
+   "style": "thick"
+  },
+  {
+   "t": "resistor",
+   "from": [
+    60,
+    60
+   ],
+   "to": [
+    60,
+    160
+   ],
+   "label": "R",
+   "labelSide": 1
+  },
+  {
+   "t": "line",
+   "from": [
+    200,
+    50
+   ],
+   "to": [
+    200,
+    170
+   ],
+   "style": "thick",
+   "phys": "rod"
+  },
+  {
+   "t": "arrow",
+   "from": [
+    200,
+    40
+   ],
+   "dir": 0,
+   "len": 40,
+   "style": "velocity",
+   "phys": "velocity:v",
+   "label": "v",
+   "labelPos": "end"
+  },
+  {
+   "t": "text",
+   "at": [
+    188,
+    110
+   ],
+   "text": "l"
+  },
+  {
+   "t": "text",
+   "at": [
+    130,
+    28
+   ],
+   "text": "磁場 B（紙面の裏から表の向き）",
+   "italic": false,
+   "size": 11
+  }
+ ]
+}

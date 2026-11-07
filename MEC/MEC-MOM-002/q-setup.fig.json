@@ -1,0 +1,86 @@
+{
+ "schema": "celestia.figure/1",
+ "size": [
+  340,
+  200
+ ],
+ "items": [
+  {
+   "t": "line",
+   "from": [
+    20,
+    160
+   ],
+   "to": [
+    330,
+    160
+   ],
+   "style": "ground"
+  },
+  {
+   "t": "ball",
+   "at": [
+    90,
+    146
+   ],
+   "r": 14,
+   "phys": "body:A"
+  },
+  {
+   "t": "text",
+   "at": [
+    90,
+    146
+   ],
+   "text": "A",
+   "italic": false,
+   "size": 13
+  },
+  {
+   "t": "arrow",
+   "from": [
+    108,
+    146
+   ],
+   "dir": 0,
+   "len": 50,
+   "style": "velocity",
+   "phys": "velocity:v",
+   "label": "v",
+   "labelPos": "mid",
+   "labelOffset": [
+    0,
+    -16
+   ]
+  },
+  {
+   "t": "ball",
+   "at": [
+    240,
+    146
+   ],
+   "r": 14,
+   "phys": "body:B"
+  },
+  {
+   "t": "text",
+   "at": [
+    240,
+    146
+   ],
+   "text": "B",
+   "italic": false,
+   "size": 13
+  },
+  {
+   "t": "text",
+   "at": [
+    240,
+    178
+   ],
+   "text": "静止",
+   "italic": false,
+   "size": 11
+  }
+ ]
+}

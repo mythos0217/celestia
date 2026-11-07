@@ -1,0 +1,109 @@
+{
+ "id": "ATM-DEC-001",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "半減期",
+ "course": "物理",
+ "level": 0,
+ "minutes": 6,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "半減期 $T$ の放射性原子核が，はじめ $N_0$ 個ある．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "時間 $3T$ 後に残っている原子核の数を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "残っている数が $\\dfrac{N_0}{16}$ になるのは何時間後か．"
+     },
+     {
+      "id": "3",
+      "tex": "時間 $2T$ の間に崩壊した原子核の数を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{N_0}8$",
+    "grading": "N_0/8"
+   },
+   {
+    "id": "2",
+    "tex": "$4T$",
+    "grading": "4T"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac34N_0$",
+    "grading": "3N_0/4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $N=N_0\\left(\\dfrac12\\right)^3=\\dfrac{N_0}8$．\n\n(2) $\\left(\\dfrac12\\right)^k=\\dfrac1{16}$ より $k=4$：$4T$ 後．\n\n(3) $2T$ 後に残るのは $\\dfrac{N_0}4$．崩壊したのは $N_0-\\dfrac{N_0}4=\\dfrac34N_0$．$2T$ で全部なくなるわけではない．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "半減期ごとに半分．$t$ 後は $\\left(\\dfrac12\\right)^{t/T}$ 倍．"
+ },
+ "simulation": {
+  "id": "atom.decay",
+  "preset": {
+   "N0": 400,
+   "T": 3
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "nuclear-decay"
+ ],
+ "laws": [
+  "half-life"
+ ],
+ "misconceptions": [
+  "MC-HALFLIFE-ALL-GONE"
+ ],
+ "tags": [
+  "半減期",
+  "放射性崩壊"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

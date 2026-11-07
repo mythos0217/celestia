@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 205" width="320" height="205" font-family="'Times New Roman', serif">
+<g data-phys="battery:E">
+<line x1="40" y1="170" x2="40" y2="125" stroke="currentColor" stroke-width="1.6"/>
+<line x1="40" y1="115" x2="40" y2="70" stroke="currentColor" stroke-width="1.6"/>
+<line x1="54" y1="115" x2="26" y2="115" stroke="currentColor" stroke-width="1.6"/>
+<line x1="47" y1="125" x2="33" y2="125" stroke="currentColor" stroke-width="3"/>
+<text x="60" y="120" font-size="15" text-anchor="start" dominant-baseline="middle" class="f-label" fill="currentColor">E</text>
+</g>
+<polyline points="40,70 90,70" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<g data-phys="resistor:R">
+<line x1="90" y1="70" x2="117" y2="70" stroke="currentColor" stroke-width="1.6"/>
+<line x1="163" y1="70" x2="190" y2="70" stroke="currentColor" stroke-width="1.6"/>
+<polygon points="117,77 163,77 163,63 117,63" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<text x="140" y="52" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">R</text>
+</g>
+<polyline points="190,70 260,70 260,105" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<line x1="240" y1="105" x2="280" y2="105" stroke="currentColor" stroke-width="2.4"/>
+<line x1="240" y1="123" x2="280" y2="123" stroke="currentColor" stroke-width="2.4"/>
+<text x="294" y="114" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">C</text>
+<polyline points="260,123 260,170 160,170" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<line x1="160" y1="170" x2="124" y2="156" stroke="currentColor" stroke-width="1.2" data-phys="switch"/>
+<circle cx="160" cy="170" r="3" fill="currentColor"/>
+<circle cx="120" cy="170" r="3" fill="currentColor"/>
+<polyline points="120,170 40,170" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<text x="140" y="190" font-size="13" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">S</text>
+</svg>

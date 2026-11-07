@@ -1,0 +1,171 @@
+{
+ "id": "MEC-PRJ-001",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "斜方投射",
+ "course": "物理基礎",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水平な地面上の点 O から，小球を水平と角 $\\theta$ をなす向きに速さ $v_0$ で投げ上げた．重力加速度の大きさを $g$ とし，空気抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "投げてから最高点に達するまでの時間 $t_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "最高点の高さ $H$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "点 O から落下点までの水平距離 $R$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "点 O から水平と角 θ の向きに初速 v₀ で投げ上げた小球と、その軌道",
+   "caption": "",
+   "physics": {
+    "vectors": [
+     {
+      "name": "velocity:v0",
+      "dir_deg": 50
+     }
+    ]
+   }
+  },
+  {
+   "id": "a-components",
+   "role": "answer",
+   "kind": "vector",
+   "format": "svg",
+   "src": "a-components.svg",
+   "alt": "初速度を水平成分 v₀cosθ と鉛直成分 v₀sinθ に分解した図。最高点では速度は水平成分 v₀cosθ だけになる",
+   "caption": "水平方向には力がはたらかないので，速度の水平成分は最後まで $v_0\\cos\\theta$",
+   "physics": {
+    "decompositions": [
+     {
+      "of": "velocity:v0",
+      "into": [
+       "component:v0x",
+       "component:v0y"
+      ]
+     }
+    ],
+    "equalLength": [
+     [
+      "component:v0x",
+      "velocity:v-top"
+     ]
+    ]
+   }
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$t_1=\\dfrac{v_0\\sin\\theta}{g}$",
+    "grading": "t_1：v_0 sin(θ)/g"
+   },
+   {
+    "id": "2",
+    "tex": "$H=\\dfrac{v_0^2\\sin^2\\theta}{2g}$",
+    "grading": "H：v_0^2 sin(θ)^2/(2g)"
+   },
+   {
+    "id": "3",
+    "tex": "$R=\\dfrac{v_0^2\\sin2\\theta}{g}$",
+    "grading": "R：v_0^2 sin(2θ)/g"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "初速度を水平成分 $v_0\\cos\\theta$ と鉛直成分 $v_0\\sin\\theta$ に分ける．水平方向は等速度運動，鉛直方向は加速度 $-g$ の等加速度運動．"
+    },
+    {
+     "type": "figure",
+     "ref": "a-components"
+    },
+    {
+     "type": "text",
+     "tex": "(1) 最高点では鉛直成分が 0：$v_0\\sin\\theta-gt_1=0$ より $t_1=\\dfrac{v_0\\sin\\theta}{g}$．\n\n(2) $0^2-(v_0\\sin\\theta)^2=-2gH$ より $H=\\dfrac{v_0^2\\sin^2\\theta}{2g}$．\n\n(3) 軌道は最高点について対称なので，落下までの時間は $2t_1$．$R=v_0\\cos\\theta\\cdot 2t_1=\\dfrac{2v_0^2\\sin\\theta\\cos\\theta}{g}=\\dfrac{v_0^2\\sin2\\theta}{g}$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水平と鉛直に分ければ，等速度運動と鉛直投げ上げの重ね合わせ．"
+ },
+ "simulation": {
+  "id": "mech.projectile",
+  "preset": {
+   "v0": 15,
+   "theta": 50,
+   "h0": 0
+  },
+  "locked": [
+   "g"
+  ],
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "projectile-motion",
+  "kinematics-components",
+  "uniform-acceleration"
+ ],
+ "laws": [
+  "uniform-acceleration-eq"
+ ],
+ "misconceptions": [
+  "MC-PROJ-VX-CHANGES"
+ ],
+ "tags": [
+  "放物運動",
+  "斜方投射"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

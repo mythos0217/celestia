@@ -1,0 +1,1855 @@
+{
+ "schema": "celestia.simulations/1",
+ "simulations": [
+  {
+   "id": "mech.projectile",
+   "name": "斜方投射・水平投射",
+   "field": "MEC",
+   "model": "mechanics/projectile",
+   "status": "ready",
+   "params": {
+    "v0": {
+     "label": "初速",
+     "unit": "m/s",
+     "min": 0,
+     "max": 40,
+     "step": 0.5,
+     "default": 15
+    },
+    "theta": {
+     "label": "投射角",
+     "unit": "deg",
+     "min": 0,
+     "max": 90,
+     "step": 1,
+     "default": 45
+    },
+    "h0": {
+     "label": "投射点の高さ",
+     "unit": "m",
+     "min": 0,
+     "max": 50,
+     "step": 1,
+     "default": 0
+    },
+    "g": {
+     "label": "重力加速度",
+     "unit": "m/s^2",
+     "min": 1,
+     "max": 20,
+     "step": 0.1,
+     "default": 9.8
+    }
+   },
+   "observables": {
+    "x": "m",
+    "y": "m",
+    "vx": "m/s",
+    "vy": "m/s"
+   },
+   "plots": [
+    [
+     "t",
+     "x"
+    ],
+    [
+     "t",
+     "y"
+    ],
+    [
+     "t",
+     "vx"
+    ],
+    [
+     "t",
+     "vy"
+    ]
+   ],
+   "labels": {
+    "x": "水平位置 x",
+    "y": "高さ y",
+    "vx": "速度の水平成分 vx",
+    "vy": "速度の鉛直成分 vy"
+   },
+   "measures": {
+    "range": {
+     "label": "到達距離",
+     "unit": "m"
+    },
+    "maxHeight": {
+     "label": "最高点の高さ",
+     "unit": "m"
+    },
+    "flightTime": {
+     "label": "滞空時間",
+     "unit": "s"
+    }
+   }
+  },
+  {
+   "id": "mech.incline",
+   "name": "斜面上の物体と摩擦",
+   "field": "MEC",
+   "model": "mechanics/incline",
+   "status": "ready",
+   "params": {
+    "theta": {
+     "label": "傾き",
+     "unit": "deg",
+     "min": 0,
+     "max": 80,
+     "step": 1,
+     "default": 30
+    },
+    "mu": {
+     "label": "静止摩擦係数",
+     "unit": "1",
+     "min": 0,
+     "max": 1.5,
+     "step": 0.01,
+     "default": 0.6
+    },
+    "muk": {
+     "label": "動摩擦係数",
+     "unit": "1",
+     "min": 0,
+     "max": 1.5,
+     "step": 0.01,
+     "default": 0.4
+    },
+    "m": {
+     "label": "質量",
+     "unit": "kg",
+     "min": 0.1,
+     "max": 10,
+     "step": 0.1,
+     "default": 1
+    },
+    "g": {
+     "label": "重力加速度",
+     "unit": "m/s^2",
+     "min": 1,
+     "max": 20,
+     "step": 0.1,
+     "default": 9.8
+    }
+   },
+   "observables": {
+    "s": "m",
+    "v": "m/s",
+    "N": "N",
+    "f": "N"
+   },
+   "plots": [
+    [
+     "t",
+     "v"
+    ],
+    [
+     "t",
+     "s"
+    ],
+    [
+     "t",
+     "f"
+    ]
+   ],
+   "labels": {
+    "s": "滑った距離 s",
+    "v": "速さ v",
+    "N": "垂直抗力 N",
+    "f": "摩擦力 f"
+   },
+   "measures": {
+    "a": {
+     "label": "加速度",
+     "unit": "m/s^2"
+    },
+    "N": {
+     "label": "垂直抗力",
+     "unit": "N"
+    },
+    "fmax": {
+     "label": "最大摩擦力 μN",
+     "unit": "N"
+    }
+   }
+  },
+  {
+   "id": "mech.spring",
+   "name": "ばね振り子",
+   "field": "MEC",
+   "model": "mechanics/oscillator",
+   "status": "ready",
+   "params": {
+    "m": {
+     "label": "質量",
+     "unit": "kg",
+     "min": 0.1,
+     "max": 5,
+     "step": 0.1,
+     "default": 1
+    },
+    "k": {
+     "label": "ばね定数",
+     "unit": "N/m",
+     "min": 1,
+     "max": 100,
+     "step": 1,
+     "default": 10
+    },
+    "A": {
+     "label": "振幅",
+     "unit": "m",
+     "min": 0,
+     "max": 0.5,
+     "step": 0.01,
+     "default": 0.2
+    }
+   },
+   "observables": {
+    "x": "m",
+    "v": "m/s",
+    "a": "m/s^2",
+    "K": "J",
+    "U": "J"
+   },
+   "measures": {
+    "period": {
+     "label": "周期",
+     "unit": "s"
+    }
+   },
+   "plots": [
+    [
+     "t",
+     "x"
+    ],
+    [
+     "t",
+     "v"
+    ],
+    [
+     "t",
+     "K"
+    ],
+    [
+     "t",
+     "U"
+    ]
+   ],
+   "labels": {
+    "x": "変位 x",
+    "v": "速度 v",
+    "a": "加速度 a",
+    "K": "運動エネルギー K",
+    "U": "弾性エネルギー U"
+   }
+  },
+  {
+   "id": "mech.pendulum",
+   "name": "単振り子",
+   "field": "MEC",
+   "model": "mechanics/pendulum",
+   "status": "ready",
+   "params": {
+    "l": {
+     "label": "糸の長さ",
+     "unit": "m",
+     "min": 0.1,
+     "max": 5,
+     "step": 0.1,
+     "default": 1
+    },
+    "theta0": {
+     "label": "振れ角",
+     "unit": "deg",
+     "min": 1,
+     "max": 170,
+     "step": 1,
+     "default": 10
+    },
+    "g": {
+     "label": "重力加速度",
+     "unit": "m/s^2",
+     "min": 1,
+     "max": 20,
+     "step": 0.1,
+     "default": 9.8
+    }
+   },
+   "observables": {
+    "theta": "rad",
+    "omega": "rad/s",
+    "E": "J/kg"
+   },
+   "measures": {
+    "period": {
+     "label": "周期（測定）",
+     "unit": "s"
+    },
+    "T0": {
+     "label": "2π√(l/g)",
+     "unit": "s"
+    }
+   },
+   "plots": [
+    [
+     "t",
+     "theta"
+    ],
+    [
+     "t",
+     "omega"
+    ],
+    [
+     "t",
+     "E"
+    ]
+   ],
+   "labels": {
+    "theta": "振れ角 θ",
+    "omega": "角速度 ω",
+    "E": "力学的エネルギー（1kgあたり）"
+   }
+  },
+  {
+   "id": "mech.collision",
+   "name": "1次元の衝突",
+   "field": "MEC",
+   "model": "mechanics/collision",
+   "status": "ready",
+   "params": {
+    "m1": {
+     "label": "質量 m1",
+     "unit": "kg",
+     "min": 0.1,
+     "max": 10,
+     "step": 0.1,
+     "default": 1
+    },
+    "m2": {
+     "label": "質量 m2",
+     "unit": "kg",
+     "min": 0.1,
+     "max": 10,
+     "step": 0.1,
+     "default": 1
+    },
+    "v1": {
+     "label": "速度 v1",
+     "unit": "m/s",
+     "min": -10,
+     "max": 10,
+     "step": 0.1,
+     "default": 3
+    },
+    "v2": {
+     "label": "速度 v2",
+     "unit": "m/s",
+     "min": -10,
+     "max": 10,
+     "step": 0.1,
+     "default": 0
+    },
+    "e": {
+     "label": "反発係数",
+     "unit": "1",
+     "min": 0,
+     "max": 1,
+     "step": 0.01,
+     "default": 1
+    }
+   },
+   "observables": {
+    "x1": "m",
+    "x2": "m",
+    "v1": "m/s",
+    "v2": "m/s",
+    "p": "kg*m/s",
+    "K": "J"
+   },
+   "plots": [
+    [
+     "t",
+     "v1"
+    ],
+    [
+     "t",
+     "v2"
+    ],
+    [
+     "t",
+     "p"
+    ],
+    [
+     "t",
+     "K"
+    ]
+   ],
+   "labels": {
+    "x1": "位置 x₁",
+    "x2": "位置 x₂",
+    "v1": "速度 v₁",
+    "v2": "速度 v₂",
+    "p": "運動量の和 p",
+    "K": "運動エネルギーの和 K"
+   },
+   "measures": {
+    "v1after": {
+     "label": "衝突後の v₁",
+     "unit": "m/s"
+    },
+    "v2after": {
+     "label": "衝突後の v₂",
+     "unit": "m/s"
+    },
+    "dK": {
+     "label": "運動エネルギーの変化",
+     "unit": "J"
+    }
+   }
+  },
+  {
+   "id": "mech.circular",
+   "name": "等速円運動",
+   "field": "MEC",
+   "model": "mechanics/circular",
+   "status": "ready",
+   "params": {
+    "r": {
+     "label": "半径",
+     "unit": "m",
+     "min": 0.1,
+     "max": 10,
+     "step": 0.1,
+     "default": 2
+    },
+    "v": {
+     "label": "速さ",
+     "unit": "m/s",
+     "min": 0.1,
+     "max": 20,
+     "step": 0.1,
+     "default": 4
+    }
+   },
+   "observables": {
+    "x": "m",
+    "y": "m",
+    "vx": "m/s",
+    "vy": "m/s",
+    "ax": "m/s^2",
+    "ay": "m/s^2"
+   },
+   "plots": [
+    [
+     "t",
+     "x"
+    ],
+    [
+     "t",
+     "vx"
+    ],
+    [
+     "t",
+     "ax"
+    ]
+   ],
+   "labels": {
+    "x": "x 座標",
+    "y": "y 座標",
+    "vx": "速度の x 成分",
+    "vy": "速度の y 成分",
+    "ax": "加速度の x 成分",
+    "ay": "加速度の y 成分"
+   },
+   "measures": {
+    "period": {
+     "label": "周期",
+     "unit": "s"
+    },
+    "omega": {
+     "label": "角速度",
+     "unit": "rad/s"
+    },
+    "acc": {
+     "label": "加速度の大きさ v²/r",
+     "unit": "m/s^2"
+    }
+   }
+  },
+  {
+   "id": "mech.gravitation",
+   "name": "万有引力と軌道",
+   "field": "MEC",
+   "model": "mechanics/gravitation",
+   "status": "ready",
+   "params": {
+    "r0": {
+     "label": "初期距離（地球半径の何倍）",
+     "unit": "1",
+     "min": 1.1,
+     "max": 10,
+     "step": 0.1,
+     "default": 2
+    },
+    "vratio": {
+     "label": "初速（円軌道の速さの何倍）",
+     "unit": "1",
+     "min": 0,
+     "max": 1.6,
+     "step": 0.01,
+     "default": 1
+    }
+   },
+   "observables": {
+    "x": "m",
+    "y": "m",
+    "r": "m",
+    "v": "m/s",
+    "E": "J",
+    "L": "kg*m^2/s"
+   },
+   "plots": [
+    [
+     "t",
+     "r"
+    ],
+    [
+     "t",
+     "v"
+    ],
+    [
+     "t",
+     "E"
+    ],
+    [
+     "t",
+     "L"
+    ]
+   ],
+   "labels": {
+    "x": "x 座標",
+    "y": "y 座標",
+    "r": "中心からの距離 r",
+    "v": "速さ v",
+    "E": "力学的エネルギー E",
+    "L": "角運動量 L"
+   },
+   "measures": {
+    "vcirc": {
+     "label": "円軌道の速さ",
+     "unit": "m/s"
+    },
+    "vesc": {
+     "label": "脱出速度",
+     "unit": "m/s"
+    },
+    "period": {
+     "label": "周期（測定）",
+     "unit": "s"
+    }
+   }
+  },
+  {
+   "id": "wave.traveling",
+   "name": "正弦波の伝わり方",
+   "field": "WAV",
+   "model": "waves/traveling",
+   "status": "ready",
+   "params": {
+    "A": {
+     "label": "振幅",
+     "unit": "m",
+     "min": 0.05,
+     "max": 0.5,
+     "step": 0.01,
+     "default": 0.2
+    },
+    "lambda": {
+     "label": "波長",
+     "unit": "m",
+     "min": 0.5,
+     "max": 4,
+     "step": 0.1,
+     "default": 2
+    },
+    "f": {
+     "label": "振動数",
+     "unit": "Hz",
+     "min": 0.2,
+     "max": 2,
+     "step": 0.05,
+     "default": 0.5
+    },
+    "dir": {
+     "label": "進む向き（+1：右、−1：左）",
+     "unit": "1",
+     "min": -1,
+     "max": 1,
+     "step": 2,
+     "default": 1
+    },
+    "xP": {
+     "label": "点 P の位置",
+     "unit": "m",
+     "min": 0,
+     "max": 8,
+     "step": 0.1,
+     "default": 1
+    }
+   },
+   "observables": {
+    "yP": "m",
+    "vP": "m/s",
+    "x": "m",
+    "y": "m"
+   },
+   "labels": {
+    "yP": "点 P の変位",
+    "vP": "点 P の速度",
+    "x": "位置 x",
+    "y": "変位 y"
+   },
+   "measures": {
+    "v": {
+     "label": "波の速さ fλ",
+     "unit": "m/s"
+    },
+    "T": {
+     "label": "周期 1/f",
+     "unit": "s"
+    }
+   },
+   "plots": [
+    {
+     "x": "x",
+     "y": "y",
+     "snap": true,
+     "label": "いまの波形 y-x",
+     "yRange": [
+      -0.55,
+      0.55
+     ]
+    },
+    [
+     "t",
+     "yP"
+    ],
+    [
+     "t",
+     "vP"
+    ]
+   ]
+  },
+  {
+   "id": "wave.standing",
+   "name": "弦の固有振動（定常波）",
+   "field": "WAV",
+   "model": "waves/standing",
+   "status": "ready",
+   "params": {
+    "L": {
+     "label": "弦の長さ",
+     "unit": "m",
+     "min": 0.5,
+     "max": 3,
+     "step": 0.1,
+     "default": 1.2
+    },
+    "n": {
+     "label": "倍振動の番号 n",
+     "unit": "1",
+     "min": 1,
+     "max": 6,
+     "step": 1,
+     "default": 2
+    },
+    "v": {
+     "label": "弦を伝わる波の速さ",
+     "unit": "m/s",
+     "min": 1,
+     "max": 20,
+     "step": 0.5,
+     "default": 4
+    },
+    "A": {
+     "label": "もとの波の振幅",
+     "unit": "m",
+     "min": 0.01,
+     "max": 0.1,
+     "step": 0.005,
+     "default": 0.04
+    }
+   },
+   "observables": {
+    "yAnti": "m",
+    "x": "m",
+    "y1": "m",
+    "y2": "m",
+    "y": "m"
+   },
+   "labels": {
+    "yAnti": "腹の変位",
+    "x": "位置 x",
+    "y1": "右向きの波",
+    "y2": "左向きの波",
+    "y": "合成波"
+   },
+   "measures": {
+    "f": {
+     "label": "振動数 nv/2L",
+     "unit": "Hz"
+    },
+    "lambda": {
+     "label": "波長 2L/n",
+     "unit": "m"
+    },
+    "nodes": {
+     "label": "節の数",
+     "unit": "1"
+    }
+   },
+   "plots": [
+    {
+     "x": "x",
+     "ys": [
+      "y1",
+      "y2",
+      "y"
+     ],
+     "snap": true,
+     "label": "波形",
+     "yRange": [
+      -0.22,
+      0.22
+     ]
+    },
+    [
+     "t",
+     "yAnti"
+    ]
+   ]
+  },
+  {
+   "id": "wave.beats",
+   "name": "うなり",
+   "field": "WAV",
+   "model": "waves/beats",
+   "status": "ready",
+   "params": {
+    "f1": {
+     "label": "音1の振動数",
+     "unit": "Hz",
+     "min": 4,
+     "max": 20,
+     "step": 0.1,
+     "default": 10
+    },
+    "f2": {
+     "label": "音2の振動数",
+     "unit": "Hz",
+     "min": 4,
+     "max": 20,
+     "step": 0.1,
+     "default": 11
+    },
+    "A": {
+     "label": "振幅",
+     "unit": "1",
+     "min": 0.2,
+     "max": 1,
+     "step": 0.1,
+     "default": 1
+    }
+   },
+   "observables": {
+    "y1": "1",
+    "y2": "1",
+    "y": "1",
+    "env": "1",
+    "envm": "1"
+   },
+   "labels": {
+    "y1": "音1",
+    "y2": "音2",
+    "y": "重ね合わせ",
+    "env": "大きさ（包絡線）",
+    "envm": "包絡線"
+   },
+   "measures": {
+    "fb": {
+     "label": "うなりの回数 |f₁−f₂|",
+     "unit": "Hz"
+    },
+    "Tb": {
+     "label": "うなりの周期",
+     "unit": "s"
+    }
+   },
+   "plots": [
+    {
+     "x": "t",
+     "ys": [
+      "y",
+      "env",
+      "envm"
+     ],
+     "label": "重ね合わせ"
+    },
+    {
+     "x": "t",
+     "ys": [
+      "y1",
+      "y2"
+     ],
+     "label": "2つの音"
+    }
+   ]
+  },
+  {
+   "id": "wave.doppler",
+   "name": "ドップラー効果",
+   "field": "WAV",
+   "model": "waves/doppler",
+   "status": "ready",
+   "params": {
+    "f": {
+     "label": "音源の振動数",
+     "unit": "Hz",
+     "min": 0.5,
+     "max": 4,
+     "step": 0.1,
+     "default": 2
+    },
+    "vs": {
+     "label": "音源の速度",
+     "unit": "m/s",
+     "min": -200,
+     "max": 200,
+     "step": 5,
+     "default": 100
+    },
+    "vo": {
+     "label": "観測者の速度",
+     "unit": "m/s",
+     "min": -200,
+     "max": 200,
+     "step": 5,
+     "default": 0
+    },
+    "V": {
+     "label": "音速",
+     "unit": "m/s",
+     "min": 300,
+     "max": 360,
+     "step": 1,
+     "default": 340
+    }
+   },
+   "observables": {
+    "xs": "m",
+    "xo": "m",
+    "ys": "1",
+    "yo": "1"
+   },
+   "labels": {
+    "xs": "音源の位置",
+    "xo": "観測者の位置",
+    "ys": "音源の振動",
+    "yo": "観測者に届く音"
+   },
+   "measures": {
+    "fo": {
+     "label": "聞こえる振動数（式）",
+     "unit": "Hz"
+    },
+    "foMeasured": {
+     "label": "聞こえる振動数（測定）",
+     "unit": "Hz"
+    },
+    "lamFront": {
+     "label": "前方の波長",
+     "unit": "m"
+    },
+    "lamBack": {
+     "label": "後方の波長",
+     "unit": "m"
+    }
+   },
+   "plots": [
+    [
+     "t",
+     "yo"
+    ],
+    [
+     "t",
+     "ys"
+    ]
+   ]
+  },
+  {
+   "id": "wave.interference",
+   "name": "水面波の干渉",
+   "field": "WAV",
+   "model": "waves/interference",
+   "status": "ready",
+   "params": {
+    "d": {
+     "label": "波源の間隔",
+     "unit": "m",
+     "min": 0.5,
+     "max": 6,
+     "step": 0.1,
+     "default": 3
+    },
+    "lambda": {
+     "label": "波長",
+     "unit": "m",
+     "min": 0.5,
+     "max": 3,
+     "step": 0.1,
+     "default": 1.2
+    },
+    "f": {
+     "label": "振動数",
+     "unit": "Hz",
+     "min": 0.2,
+     "max": 2,
+     "step": 0.1,
+     "default": 0.8
+    },
+    "phase": {
+     "label": "位相（0：同位相、1：逆位相）",
+     "unit": "1",
+     "min": 0,
+     "max": 1,
+     "step": 1,
+     "default": 0
+    }
+   },
+   "observables": {
+    "yC": "1",
+    "x": "m",
+    "a": "1"
+   },
+   "labels": {
+    "yC": "中央の点の変位",
+    "x": "位置 x",
+    "a": "合成波の振幅"
+   },
+   "measures": {
+    "lines": {
+     "label": "強め合う線の数",
+     "unit": "1"
+    }
+   },
+   "plots": [
+    {
+     "x": "x",
+     "y": "a",
+     "snap": true,
+     "label": "点線上の振幅",
+     "yRange": [
+      0,
+      2.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "optics.refraction",
+   "name": "光の屈折と全反射",
+   "field": "WAV",
+   "model": "optics/refraction",
+   "status": "ready",
+   "params": {
+    "n1": {
+     "label": "媒質1の屈折率",
+     "unit": "1",
+     "min": 1,
+     "max": 2.5,
+     "step": 0.01,
+     "default": 1.5
+    },
+    "n2": {
+     "label": "媒質2の屈折率",
+     "unit": "1",
+     "min": 1,
+     "max": 2.5,
+     "step": 0.01,
+     "default": 1.0
+    },
+    "theta1": {
+     "label": "入射角",
+     "unit": "deg",
+     "min": 0,
+     "max": 89,
+     "step": 1,
+     "default": 30
+    }
+   },
+   "observables": {
+    "th1": "deg",
+    "th2": "deg"
+   },
+   "labels": {
+    "th1": "入射角 θ₁",
+    "th2": "屈折角 θ₂"
+   },
+   "measures": {
+    "th2": {
+     "label": "屈折角",
+     "unit": "deg"
+    },
+    "crit": {
+     "label": "臨界角",
+     "unit": "deg"
+    },
+    "nrel": {
+     "label": "相対屈折率 n₂/n₁",
+     "unit": "1"
+    }
+   },
+   "plots": [
+    {
+     "x": "th1",
+     "y": "th2",
+     "mark": "mark",
+     "label": "屈折角と入射角"
+    }
+   ],
+   "static": true
+  },
+  {
+   "id": "optics.lens",
+   "name": "レンズの像",
+   "field": "WAV",
+   "model": "optics/lens",
+   "status": "ready",
+   "params": {
+    "f": {
+     "label": "焦点距離（負は凹レンズ）",
+     "unit": "m",
+     "min": -2,
+     "max": 2,
+     "step": 0.1,
+     "default": 1
+    },
+    "a": {
+     "label": "物体までの距離",
+     "unit": "m",
+     "min": 0.2,
+     "max": 6,
+     "step": 0.05,
+     "default": 2.5
+    },
+    "h": {
+     "label": "物体の高さ",
+     "unit": "m",
+     "min": 0.1,
+     "max": 1,
+     "step": 0.05,
+     "default": 0.5
+    }
+   },
+   "observables": {
+    "a": "m",
+    "b": "m"
+   },
+   "labels": {
+    "a": "物体の距離 a",
+    "b": "像の距離 b"
+   },
+   "measures": {
+    "b": {
+     "label": "像の距離 b",
+     "unit": "m"
+    },
+    "m": {
+     "label": "倍率",
+     "unit": "1"
+    }
+   },
+   "plots": [
+    {
+     "x": "a",
+     "y": "b",
+     "mark": "mark",
+     "label": "像の位置と物体の位置"
+    }
+   ],
+   "static": true
+  },
+  {
+   "id": "optics.double-slit",
+   "name": "ヤングの実験（二重スリット）",
+   "field": "WAV",
+   "model": "optics/double-slit",
+   "status": "ready",
+   "params": {
+    "lambda": {
+     "label": "光の波長",
+     "unit": "nm",
+     "min": 380,
+     "max": 780,
+     "step": 5,
+     "default": 550
+    },
+    "d": {
+     "label": "スリットの間隔",
+     "unit": "mm",
+     "min": 0.1,
+     "max": 1,
+     "step": 0.01,
+     "default": 0.3
+    },
+    "L": {
+     "label": "スクリーンまでの距離",
+     "unit": "m",
+     "min": 0.5,
+     "max": 3,
+     "step": 0.1,
+     "default": 1.5
+    }
+   },
+   "observables": {
+    "x": "mm",
+    "I": "1"
+   },
+   "labels": {
+    "x": "スクリーン上の位置",
+    "I": "明るさ"
+   },
+   "measures": {
+    "dx": {
+     "label": "明線の間隔 Lλ/d",
+     "unit": "mm"
+    }
+   },
+   "plots": [
+    {
+     "x": "x",
+     "y": "I",
+     "label": "明るさの分布",
+     "mark": "mark"
+    }
+   ],
+   "static": true
+  },
+  {
+   "id": "elm.charges",
+   "name": "点電荷のつくる電場と電位",
+   "field": "ELM",
+   "model": "electromagnetism/charges",
+   "status": "ready",
+   "params": {
+    "q1": {
+     "label": "電荷 q₁",
+     "unit": "nC",
+     "min": -5,
+     "max": 5,
+     "step": 0.5,
+     "default": 2
+    },
+    "q2": {
+     "label": "電荷 q₂",
+     "unit": "nC",
+     "min": -5,
+     "max": 5,
+     "step": 0.5,
+     "default": -2
+    },
+    "d": {
+     "label": "電荷の間隔",
+     "unit": "m",
+     "min": 0.2,
+     "max": 2,
+     "step": 0.05,
+     "default": 1
+    }
+   },
+   "observables": {
+    "x": "m",
+    "V": "V",
+    "Ex": "V/m"
+   },
+   "labels": {
+    "x": "位置 x",
+    "V": "電位 V",
+    "Ex": "電場の x 成分"
+   },
+   "measures": {
+    "V0": {
+     "label": "中点の電位",
+     "unit": "V"
+    },
+    "E0": {
+     "label": "中点の電場（x 成分）",
+     "unit": "V/m"
+    }
+   },
+   "plots": [
+    {
+     "x": "x",
+     "y": "V",
+     "label": "直線上の電位"
+    },
+    {
+     "x": "x",
+     "y": "Ex",
+     "label": "直線上の電場"
+    }
+   ],
+   "static": true
+  },
+  {
+   "id": "elm.rc",
+   "name": "コンデンサーの充電・放電",
+   "field": "ELM",
+   "model": "electromagnetism/rc",
+   "status": "ready",
+   "params": {
+    "E": {
+     "label": "電池の起電力",
+     "unit": "V",
+     "min": 1,
+     "max": 12,
+     "step": 0.5,
+     "default": 6
+    },
+    "R": {
+     "label": "抵抗",
+     "unit": "kΩ",
+     "min": 1,
+     "max": 100,
+     "step": 1,
+     "default": 10
+    },
+    "C": {
+     "label": "電気容量",
+     "unit": "μF",
+     "min": 10,
+     "max": 1000,
+     "step": 10,
+     "default": 100
+    },
+    "mode": {
+     "label": "1：充電、0：放電",
+     "unit": "1",
+     "min": 0,
+     "max": 1,
+     "step": 1,
+     "default": 1
+    }
+   },
+   "observables": {
+    "q": "μC",
+    "I": "mA",
+    "Vc": "V",
+    "VR": "V",
+    "U": "J",
+    "heat": "J"
+   },
+   "labels": {
+    "q": "電気量 q",
+    "I": "電流 I",
+    "Vc": "コンデンサーの電圧",
+    "VR": "抵抗の電圧",
+    "U": "静電エネルギー",
+    "heat": "抵抗で出た熱"
+   },
+   "measures": {
+    "tau": {
+     "label": "時定数 RC",
+     "unit": "s"
+    },
+    "Q": {
+     "label": "最後の電気量 CE",
+     "unit": "μC"
+    },
+    "Uf": {
+     "label": "最後の静電エネルギー ½CE²",
+     "unit": "J"
+    }
+   },
+   "plots": [
+    [
+     "t",
+     "q"
+    ],
+    [
+     "t",
+     "I"
+    ],
+    {
+     "x": "t",
+     "ys": [
+      "U",
+      "heat"
+     ],
+     "label": "エネルギー"
+    }
+   ]
+  },
+  {
+   "id": "elm.lorentz",
+   "name": "磁場中の荷電粒子",
+   "field": "ELM",
+   "model": "electromagnetism/lorentz",
+   "status": "ready",
+   "params": {
+    "A": {
+     "label": "質量数（陽子 1、α 粒子 4）",
+     "unit": "1",
+     "min": 1,
+     "max": 4,
+     "step": 1,
+     "default": 1
+    },
+    "Z": {
+     "label": "電荷（e の何倍）",
+     "unit": "1",
+     "min": 1,
+     "max": 2,
+     "step": 1,
+     "default": 1
+    },
+    "v": {
+     "label": "速さ",
+     "unit": "×10⁵ m/s",
+     "min": 1,
+     "max": 20,
+     "step": 0.5,
+     "default": 10
+    },
+    "B": {
+     "label": "磁束密度",
+     "unit": "T",
+     "min": 0.05,
+     "max": 1,
+     "step": 0.01,
+     "default": 0.5
+    }
+   },
+   "observables": {
+    "x": "m",
+    "y": "m",
+    "vx": "m/s",
+    "vy": "m/s"
+   },
+   "labels": {
+    "x": "x",
+    "y": "y",
+    "vx": "速度の x 成分",
+    "vy": "速度の y 成分"
+   },
+   "measures": {
+    "r": {
+     "label": "半径 mv/(qB)",
+     "unit": "m"
+    },
+    "T": {
+     "label": "周期 2πm/(qB)",
+     "unit": "s"
+    },
+    "F": {
+     "label": "ローレンツ力 qvB",
+     "unit": "N"
+    }
+   },
+   "plots": [
+    [
+     "t",
+     "vx"
+    ],
+    [
+     "t",
+     "vy"
+    ]
+   ]
+  },
+  {
+   "id": "elm.induction",
+   "name": "磁場中を動く導体棒",
+   "field": "ELM",
+   "model": "electromagnetism/induction",
+   "status": "ready",
+   "params": {
+    "F": {
+     "label": "棒を引く力",
+     "unit": "N",
+     "min": 0,
+     "max": 2,
+     "step": 0.05,
+     "default": 0.5
+    },
+    "v0": {
+     "label": "はじめの速さ",
+     "unit": "m/s",
+     "min": 0,
+     "max": 5,
+     "step": 0.1,
+     "default": 0
+    },
+    "B": {
+     "label": "磁束密度",
+     "unit": "T",
+     "min": 0.2,
+     "max": 2,
+     "step": 0.05,
+     "default": 1
+    },
+    "l": {
+     "label": "レールの間隔",
+     "unit": "m",
+     "min": 0.2,
+     "max": 1,
+     "step": 0.05,
+     "default": 0.5
+    },
+    "R": {
+     "label": "抵抗",
+     "unit": "Ω",
+     "min": 0.5,
+     "max": 10,
+     "step": 0.5,
+     "default": 2
+    },
+    "m": {
+     "label": "棒の質量",
+     "unit": "kg",
+     "min": 0.05,
+     "max": 1,
+     "step": 0.05,
+     "default": 0.2
+    }
+   },
+   "observables": {
+    "x": "m",
+    "v": "m/s",
+    "emf": "V",
+    "I": "A",
+    "K": "J",
+    "heat": "J",
+    "W": "J"
+   },
+   "labels": {
+    "x": "位置",
+    "v": "速さ v",
+    "emf": "誘導起電力",
+    "I": "電流 I",
+    "K": "運動エネルギー",
+    "heat": "抵抗で出た熱",
+    "W": "F がした仕事"
+   },
+   "measures": {
+    "vt": {
+     "label": "終端速度 FR/(B²l²)",
+     "unit": "m/s"
+    },
+    "tau": {
+     "label": "時定数 mR/(B²l²)",
+     "unit": "s"
+    }
+   },
+   "plots": [
+    [
+     "t",
+     "v"
+    ],
+    [
+     "t",
+     "I"
+    ],
+    {
+     "x": "t",
+     "ys": [
+      "W",
+      "K",
+      "heat"
+     ],
+     "label": "エネルギーの収支"
+    }
+   ]
+  },
+  {
+   "id": "elm.rlc",
+   "name": "交流回路（RLC 直列）",
+   "field": "ELM",
+   "model": "electromagnetism/rlc",
+   "status": "ready",
+   "params": {
+    "V0": {
+     "label": "電源電圧の最大値",
+     "unit": "V",
+     "min": 1,
+     "max": 10,
+     "step": 0.5,
+     "default": 5
+    },
+    "f": {
+     "label": "周波数",
+     "unit": "Hz",
+     "min": 0.1,
+     "max": 3,
+     "step": 0.05,
+     "default": 0.5
+    },
+    "R": {
+     "label": "抵抗",
+     "unit": "Ω",
+     "min": 1,
+     "max": 20,
+     "step": 0.5,
+     "default": 5
+    },
+    "L": {
+     "label": "自己インダクタンス",
+     "unit": "H",
+     "min": 0.1,
+     "max": 5,
+     "step": 0.1,
+     "default": 1
+    },
+    "C": {
+     "label": "電気容量",
+     "unit": "F",
+     "min": 0.01,
+     "max": 1,
+     "step": 0.01,
+     "default": 0.1
+    }
+   },
+   "observables": {
+    "v": "V",
+    "i": "A",
+    "vR": "V",
+    "vL": "V",
+    "vC": "V"
+   },
+   "labels": {
+    "v": "電源電圧",
+    "i": "電流",
+    "vR": "抵抗",
+    "vL": "コイル",
+    "vC": "コンデンサー"
+   },
+   "measures": {
+    "Z": {
+     "label": "インピーダンス",
+     "unit": "Ω"
+    },
+    "I0": {
+     "label": "電流の最大値",
+     "unit": "A"
+    },
+    "phi": {
+     "label": "電流の遅れ φ",
+     "unit": "deg"
+    },
+    "f0": {
+     "label": "共振周波数",
+     "unit": "Hz"
+    }
+   },
+   "plots": [
+    {
+     "x": "t",
+     "ys": [
+      "v",
+      "i"
+     ],
+     "label": "電圧と電流"
+    },
+    {
+     "x": "t",
+     "ys": [
+      "vR",
+      "vL",
+      "vC"
+     ],
+     "label": "各素子の電圧"
+    }
+   ]
+  },
+  {
+   "id": "thermo.molecules",
+   "name": "気体分子の運動と圧力",
+   "field": "THM",
+   "model": "thermo/molecules",
+   "status": "ready",
+   "params": {
+    "N": {
+     "label": "分子の数",
+     "unit": "1",
+     "min": 10,
+     "max": 300,
+     "step": 10,
+     "default": 120
+    },
+    "T": {
+     "label": "温度",
+     "unit": "K",
+     "min": 50,
+     "max": 1000,
+     "step": 10,
+     "default": 300
+    },
+    "L": {
+     "label": "容器の一辺",
+     "unit": "mm",
+     "min": 1,
+     "max": 10,
+     "step": 1,
+     "default": 5
+    }
+   },
+   "observables": {
+    "P": "Pa",
+    "Pth": "Pa"
+   },
+   "labels": {
+    "P": "壁の力積から測った圧力",
+    "Pth": "理論の圧力"
+   },
+   "measures": {
+    "vrms": {
+     "label": "√⟨v²⟩",
+     "unit": "m/s"
+    },
+    "Pth": {
+     "label": "理論の圧力 Nm⟨v²⟩/(3V)",
+     "unit": "Pa"
+    },
+    "Tgas": {
+     "label": "分子の速さから求めた温度",
+     "unit": "K"
+    }
+   },
+   "plots": [
+    {
+     "x": "t",
+     "ys": [
+      "P",
+      "Pth"
+     ],
+     "label": "圧力"
+    }
+   ],
+   "note": "分子の数は少ないが、1個あたりの効果は本物と同じ式で数えている"
+  },
+  {
+   "id": "thermo.pv",
+   "name": "気体の状態変化と熱力学第1法則",
+   "field": "THM",
+   "model": "thermo/pv",
+   "status": "ready",
+   "params": {
+    "proc": {
+     "label": "変化（0 等温、1 定圧、2 定積、3 断熱）",
+     "unit": "1",
+     "min": 0,
+     "max": 3,
+     "step": 1,
+     "default": 0
+    },
+    "ratio": {
+     "label": "変化の大きさ（体積の比、定積は圧力の比）",
+     "unit": "1",
+     "min": 0.3,
+     "max": 3,
+     "step": 0.05,
+     "default": 2
+    }
+   },
+   "observables": {
+    "P": "Pa",
+    "V": "m^3",
+    "T": "K",
+    "W": "J",
+    "dU": "J",
+    "Q": "J"
+   },
+   "labels": {
+    "P": "圧力 P",
+    "V": "体積 V",
+    "T": "温度 T",
+    "W": "気体がした仕事 W",
+    "dU": "内部エネルギーの変化 ΔU",
+    "Q": "吸収した熱 Q"
+   },
+   "measures": {
+    "W": {
+     "label": "仕事 W",
+     "unit": "J"
+    },
+    "Q": {
+     "label": "熱 Q",
+     "unit": "J"
+    },
+    "dU": {
+     "label": "ΔU",
+     "unit": "J"
+    },
+    "T2": {
+     "label": "終わりの温度",
+     "unit": "K"
+    }
+   },
+   "plots": [
+    {
+     "x": "V",
+     "y": "P",
+     "label": "P-V 図",
+     "height": 150
+    },
+    {
+     "x": "t",
+     "ys": [
+      "Q",
+      "dU",
+      "W"
+     ],
+     "label": "Q = ΔU + W"
+    }
+   ]
+  },
+  {
+   "id": "atom.photoelectric",
+   "name": "光電効果",
+   "field": "ATM",
+   "model": "atomic/photoelectric",
+   "status": "ready",
+   "params": {
+    "f": {
+     "label": "光の振動数",
+     "unit": "×10¹⁴ Hz",
+     "min": 2,
+     "max": 20,
+     "step": 0.1,
+     "default": 8
+    },
+    "W": {
+     "label": "仕事関数",
+     "unit": "eV",
+     "min": 1,
+     "max": 5,
+     "step": 0.05,
+     "default": 2.3
+    },
+    "I": {
+     "label": "光の強さ（相対）",
+     "unit": "1",
+     "min": 0,
+     "max": 1,
+     "step": 0.1,
+     "default": 0.6
+    },
+    "V": {
+     "label": "陽極の電位",
+     "unit": "V",
+     "min": -5,
+     "max": 3,
+     "step": 0.05,
+     "default": 0
+    }
+   },
+   "observables": {
+    "f": "×10¹⁴ Hz",
+    "K": "eV",
+    "V": "V",
+    "Ip": "1"
+   },
+   "labels": {
+    "f": "振動数",
+    "K": "K₀",
+    "V": "陽極の電位",
+    "Ip": "光電流（相対）"
+   },
+   "measures": {
+    "K0": {
+     "label": "K₀ = hf − W",
+     "unit": "eV"
+    },
+    "V0": {
+     "label": "阻止電圧",
+     "unit": "V"
+    },
+    "f0": {
+     "label": "限界振動数",
+     "unit": "×10¹⁴ Hz"
+    },
+    "lam": {
+     "label": "波長",
+     "unit": "nm"
+    }
+   },
+   "plots": [
+    {
+     "x": "f",
+     "y": "K",
+     "mark": "markF",
+     "label": "K₀ と振動数"
+    },
+    {
+     "x": "V",
+     "y": "Ip",
+     "mark": "markV",
+     "label": "光電流と電圧"
+    }
+   ],
+   "static": true
+  },
+  {
+   "id": "atom.decay",
+   "name": "放射性崩壊と半減期",
+   "field": "ATM",
+   "model": "atomic/decay",
+   "status": "ready",
+   "params": {
+    "N0": {
+     "label": "はじめの原子核の数",
+     "unit": "1",
+     "min": 20,
+     "max": 1000,
+     "step": 10,
+     "default": 400
+    },
+    "T": {
+     "label": "半減期",
+     "unit": "s",
+     "min": 1,
+     "max": 10,
+     "step": 0.5,
+     "default": 3
+    }
+   },
+   "observables": {
+    "N": "1",
+    "Nth": "1"
+   },
+   "labels": {
+    "N": "残っている数（この試行）",
+    "Nth": "期待値 N₀(1/2)^(t/T)"
+   },
+   "measures": {
+    "lam": {
+     "label": "崩壊定数 ln2/T",
+     "unit": "1/s"
+    }
+   },
+   "plots": [
+    {
+     "x": "t",
+     "ys": [
+      "N",
+      "Nth"
+     ],
+     "label": "残っている原子核"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 170" width="340" height="170" font-family="'Times New Roman', serif">
+<line x1="40" y1="40" x2="40" y2="130" stroke="currentColor" stroke-width="2.4"/>
+<line x1="40" y1="130" x2="320" y2="130" stroke="currentColor" stroke-width="2" data-phys="surface"/>
+<polyline points="40,105 52,105 55.78,113 63.33,97 70.89,113 78.44,97 86,113 93.56,97 101.11,113 108.67,97 116.22,113 123.78,97 131.33,113 138.89,97 146.44,113 154,97 161.56,113 169.11,97 176.67,113 184.22,97 188,105 200,105" fill="none" stroke="currentColor" stroke-width="1.5" data-phys="spring"/>
+<g transform="translate(222,130) rotate(0)" data-phys="body:block" data-angle="0">
+<rect x="-22" y="-44" width="44" height="44" class="f-body" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.6"/>
+<text x="0" y="-22" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">m</text>
+</g>
+<line x1="160" y1="60" x2="160" y2="140" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="160" y="152" font-size="11" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">自然長の位置</text>
+<g class="f-ink" data-phys="displacement:A" data-dir="0" data-len="40">
+<line x1="160" y1="62" x2="190" y2="62" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="200,62 190,66.66 190,57.34" fill="currentColor"/>
+<text x="180" y="48" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">A</text>
+</g>
+<text x="120" y="92" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">k</text>
+</svg>

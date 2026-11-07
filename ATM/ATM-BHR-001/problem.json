@@ -1,0 +1,111 @@
+{
+ "id": "ATM-BHR-001",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "水素原子のエネルギー準位と光",
+ "course": "物理",
+ "level": 2,
+ "minutes": 10,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水素原子のエネルギー準位は $E_n=-\\dfrac{E_1}{n^2}$（$n=1,2,3,\\dots$，$E_1\\fallingdotseq13.6\\,\\mathrm{eV}$）で表される．プランク定数を $h$，光の速さを $c$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電子が $n=3$ から $n=2$ の状態に移るとき放出する光子のエネルギーを，$E_1$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の光の波長を，$E_1$，$h$，$c$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$n=2$ から $n=1$ に移るとき放出する光子のエネルギーを $E_1$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "基底状態（$n=1$）の水素原子をイオン化するのに必要な最小のエネルギーを求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac5{36}E_1$",
+    "grading": "5E_1/36"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{36hc}{5E_1}$",
+    "grading": "λ：36h c/(5E_1)"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac34E_1$",
+    "grading": "3E_1/4"
+   },
+   {
+    "id": "4",
+    "tex": "$E_1$（$\\fallingdotseq13.6\\,\\mathrm{eV}$）",
+    "grading": "E_1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $E_3-E_2=-\\dfrac{E_1}9+\\dfrac{E_1}4=\\dfrac5{36}E_1$（$\\fallingdotseq1.89\\,\\mathrm{eV}$）．\n\n(2) $\\dfrac{hc}\\lambda=\\dfrac5{36}E_1$ より $\\lambda=\\dfrac{36hc}{5E_1}$（$\\fallingdotseq656\\,\\mathrm{nm}$，赤い光：バルマー系列）．\n\n(3) $E_2-E_1=-\\dfrac{E_1}4+E_1=\\dfrac34E_1$（紫外線：ライマン系列）．\n\n(4) 電子を $n=\\infty$（$E=0$）まで引き離すエネルギー：$0-E_1\\cdot(-1)=E_1$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "放出される光子のエネルギー＝準位の差．"
+ },
+ "concepts": [
+  "bohr-model",
+  "photon"
+ ],
+ "laws": [
+  "bohr-levels",
+  "photon-energy"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "エネルギー準位",
+  "水素原子",
+  "スペクトル"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

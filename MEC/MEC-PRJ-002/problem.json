@@ -1,0 +1,167 @@
+{
+ "id": "MEC-PRJ-002",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "水平投射",
+ "course": "物理基礎",
+ "level": 0,
+ "minutes": 8,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "高さ $h$ のがけの上から，小球を水平方向に速さ $v_0$ で投げ出した．重力加速度の大きさを $g$ とし，空気抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小球が地面に落ちるまでの時間 $t_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "投げ出した点から落下点までの水平距離 $L$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "地面に落ちる直前の小球の速さ $v$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "高さ h のがけの上から水平に初速 v₀ で投げ出した小球と、その軌道",
+   "caption": "",
+   "physics": {
+    "vectors": [
+     {
+      "name": "velocity:v0",
+      "dir_deg": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "a-landing",
+   "role": "answer",
+   "kind": "vector",
+   "format": "svg",
+   "src": "a-landing.svg",
+   "alt": "着地点での速度を、水平成分 v₀ と鉛直成分 gt に分解した図",
+   "caption": "水平成分は $v_0$ のまま，鉛直成分は $gt_1=\\sqrt{2gh}$",
+   "physics": {
+    "decompositions": [
+     {
+      "of": "velocity:v",
+      "into": [
+       "component:vx",
+       "component:vy"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$t_1=\\sqrt{\\dfrac{2h}{g}}$",
+    "grading": "t_1：sqrt(2h/g)"
+   },
+   {
+    "id": "2",
+    "tex": "$L=v_0\\sqrt{\\dfrac{2h}{g}}$",
+    "grading": "L：v_0 sqrt(2h/g)"
+   },
+   {
+    "id": "3",
+    "tex": "$v=\\sqrt{v_0^2+2gh}$",
+    "grading": "v：sqrt(v_0^2+2gh)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "水平方向は速さ $v_0$ の等速度運動，鉛直方向は初速度 $0$ の自由落下．2つは互いに影響しない．\n\n(1) 鉛直方向：$h=\\dfrac12gt_1^2$ より $t_1=\\sqrt{\\dfrac{2h}{g}}$．\n\n(2) $L=v_0t_1=v_0\\sqrt{\\dfrac{2h}{g}}$．"
+    },
+    {
+     "type": "figure",
+     "ref": "a-landing"
+    },
+    {
+     "type": "text",
+     "tex": "(3) 着地直前の速度の鉛直成分は $gt_1=\\sqrt{2gh}$，水平成分は $v_0$．三平方の定理より $v=\\sqrt{v_0^2+2gh}$．（力学的エネルギー保存 $\\tfrac12mv_0^2+mgh=\\tfrac12mv^2$ からも同じ．）"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "落下時間は鉛直方向だけで決まり，$v_0$ によらない．"
+ },
+ "simulation": {
+  "id": "mech.projectile",
+  "preset": {
+   "v0": 10,
+   "theta": 0,
+   "h0": 20
+  },
+  "locked": [
+   "theta",
+   "g"
+  ],
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "projectile-motion",
+  "kinematics-components",
+  "uniform-acceleration"
+ ],
+ "laws": [
+  "uniform-acceleration-eq",
+  "energy-conservation"
+ ],
+ "misconceptions": [
+  "MC-PROJ-VX-CHANGES"
+ ],
+ "tags": [
+  "水平投射",
+  "放物運動"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

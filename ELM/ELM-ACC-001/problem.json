@@ -1,0 +1,130 @@
+{
+ "id": "ELM-ACC-001",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-06",
+ "topic": "RLC 直列回路と共振",
+ "course": "物理",
+ "level": 2,
+ "minutes": 12,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "抵抗値 $R$ の抵抗，自己インダクタンス $L$ のコイル，電気容量 $C$ のコンデンサーを直列につなぎ，周波数 $f$，電圧の最大値 $V_0$ の交流電源につないだ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "コイルのリアクタンス $X_L$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "コンデンサーのリアクタンス $X_C$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "回路のインピーダンス $Z$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "電流の最大値が最も大きくなる周波数 $f_0$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$f=f_0$ のときの電流の最大値 $I_0$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$X_L=2\\pi fL$",
+    "grading": "X_L：2π f L"
+   },
+   {
+    "id": "2",
+    "tex": "$X_C=\\dfrac1{2\\pi fC}$",
+    "grading": "X_C：1/(2π f C)"
+   },
+   {
+    "id": "3",
+    "tex": "$Z=\\sqrt{R^2+\\left(2\\pi fL-\\dfrac1{2\\pi fC}\\right)^2}$",
+    "grading": "Z：sqrt(R^2+(2π f L-1/(2π f C))^2)"
+   },
+   {
+    "id": "4",
+    "tex": "$f_0=\\dfrac1{2\\pi\\sqrt{LC}}$",
+    "grading": "f_0：1/(2π sqrt(L C))"
+   },
+   {
+    "id": "5",
+    "tex": "$I_0=\\dfrac{V_0}R$",
+    "grading": "I_0：V_0/R"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1)(2) $\\omega=2\\pi f$ として $X_L=\\omega L$，$X_C=\\dfrac1{\\omega C}$．\n\n(3) 抵抗の電圧は電流と同位相，コイルは $\\dfrac\\pi2$ 進み，コンデンサーは $\\dfrac\\pi2$ 遅れる．回転ベクトルで足すと \\[Z=\\sqrt{R^2+(X_L-X_C)^2}\\]\n\n(4) $Z$ が最小になるのは $X_L=X_C$：$2\\pi f_0L=\\dfrac1{2\\pi f_0C}$ より $f_0=\\dfrac1{2\\pi\\sqrt{LC}}$．\n\n(5) このとき $Z=R$ なので $I_0=\\dfrac{V_0}R$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "コイルとコンデンサーの電圧は逆位相で打ち消し合う．"
+ },
+ "simulation": {
+  "id": "elm.rlc",
+  "preset": {
+   "V0": 5,
+   "f": 0.5,
+   "R": 5,
+   "L": 1,
+   "C": 0.1
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "ac-circuit"
+ ],
+ "laws": [
+  "ac-reactance",
+  "resonance-frequency"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "交流",
+  "共振",
+  "インピーダンス"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

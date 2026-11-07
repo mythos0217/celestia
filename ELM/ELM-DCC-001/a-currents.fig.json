@@ -1,0 +1,168 @@
+{
+ "schema": "celestia.figure/1",
+ "size": [
+  440,
+  210
+ ],
+ "items": [
+  {
+   "t": "battery",
+   "from": [
+    40,
+    170
+   ],
+   "to": [
+    40,
+    70
+   ],
+   "label": "12 V",
+   "plus": "to",
+   "labelSide": 1
+  },
+  {
+   "t": "wire",
+   "points": [
+    [
+     40,
+     70
+    ],
+    [
+     80,
+     70
+    ]
+   ]
+  },
+  {
+   "t": "resistor",
+   "from": [
+    80,
+    70
+   ],
+   "to": [
+    180,
+    70
+   ],
+   "label": "R₁ = 4 Ω",
+   "labelSide": -1
+  },
+  {
+   "t": "wire",
+   "points": [
+    [
+     180,
+     70
+    ],
+    [
+     340,
+     70
+    ]
+   ]
+  },
+  {
+   "t": "resistor",
+   "from": [
+    220,
+    70
+   ],
+   "to": [
+    220,
+    170
+   ],
+   "label": "R₂ = 6 Ω",
+   "labelSide": -1
+  },
+  {
+   "t": "resistor",
+   "from": [
+    340,
+    70
+   ],
+   "to": [
+    340,
+    170
+   ],
+   "label": "R₃ = 3 Ω",
+   "labelSide": -1
+  },
+  {
+   "t": "wire",
+   "points": [
+    [
+     340,
+     170
+    ],
+    [
+     40,
+     170
+    ]
+   ]
+  },
+  {
+   "t": "dot",
+   "at": [
+    220,
+    70
+   ]
+  },
+  {
+   "t": "dot",
+   "at": [
+    220,
+    170
+   ]
+  },
+  {
+   "t": "arrow",
+   "from": [
+    48,
+    62
+   ],
+   "dir": 0,
+   "len": 26,
+   "style": "current",
+   "phys": "current:I",
+   "label": "I = 2 A",
+   "labelPos": "mid",
+   "labelOffset": [
+    0,
+    -26
+   ]
+  },
+  {
+   "t": "arrow",
+   "from": [
+    214,
+    76
+   ],
+   "dir": 270,
+   "len": 20,
+   "style": "current",
+   "phys": "current:I2",
+   "label": "2/3 A",
+   "labelPos": "mid",
+   "labelOffset": [
+    -16,
+    0
+   ],
+   "italic": false
+  },
+  {
+   "t": "arrow",
+   "from": [
+    334,
+    76
+   ],
+   "dir": 270,
+   "len": 20,
+   "style": "current",
+   "phys": "current:I3",
+   "label": "4/3 A",
+   "labelPos": "mid",
+   "labelOffset": [
+    -16,
+    0
+   ],
+   "italic": false
+  }
+ ]
+}

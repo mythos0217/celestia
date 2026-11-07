@@ -1,0 +1,122 @@
+{
+ "id": "ATM-PHO-001",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "光電効果の式",
+ "course": "物理",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "derivation",
+  "concept"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "仕事関数 $W$ の金属に，振動数 $f$ の光を当てたところ，電子が飛び出した．プランク定数を $h$，電気素量を $e$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "飛び出す電子の運動エネルギーの最大値 $K_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "阻止電圧 $V_0$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "電子が飛び出すための，光の振動数の最小値（限界振動数）$f_0$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ振動数で光の強さを2倍にすると，$K_0$ は何倍になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K_0=hf-W$",
+    "grading": "K_0：h f-W"
+   },
+   {
+    "id": "2",
+    "tex": "$V_0=\\dfrac{hf-W}{e}$",
+    "grading": "V_0：(h f-W)/e"
+   },
+   {
+    "id": "3",
+    "tex": "$f_0=\\dfrac Wh$",
+    "grading": "f_0：W/h"
+   },
+   {
+    "id": "4",
+    "tex": "$1$ 倍（変わらない）",
+    "grading": "1倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 光子1個のエネルギー $hf$ が電子1個に与えられ，金属から出るのに $W$ 使う：$K_0=hf-W$．\n\n(2) $eV_0=K_0$ より $V_0=\\dfrac{hf-W}e$．\n\n(3) $K_0=0$ となる振動数：$f_0=\\dfrac Wh$．\n\n(4) 光を強くすると光子の数が増え，飛び出す電子の数（光電流）が増えるが，光子1個のエネルギー $hf$ は変わらないので $K_0$ は変わらない．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "光子1個 ↔ 電子1個．光の強さは光子の数．"
+ },
+ "simulation": {
+  "id": "atom.photoelectric",
+  "preset": {
+   "f": 8,
+   "W": 2.3,
+   "I": 0.6,
+   "V": 0
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "photon"
+ ],
+ "laws": [
+  "photoelectric-equation",
+  "photon-energy"
+ ],
+ "misconceptions": [
+  "MC-PHOTO-INTENSITY"
+ ],
+ "tags": [
+  "光電効果",
+  "光子"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

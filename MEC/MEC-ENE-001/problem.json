@@ -1,0 +1,117 @@
+{
+ "id": "MEC-ENE-001",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-04",
+ "topic": "斜面からあらい面へ",
+ "course": "物理基礎",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな斜面上の高さ $h$ の点 A から，小物体を静かに放した．小物体は斜面を滑り下り，斜面の下端 B からあらい水平面上を進んで止まった．あらい面と小物体の間の動摩擦係数を $\\mu$，重力加速度の大きさを $g$ とする．B での速さの変化はないものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "B を通過するときの速さ $v_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "斜面上で高さ $\\dfrac h2$ の点を通過するときの速さ $v_2$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "B から止まるまでに水平面上を進んだ距離 $d$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "高さ h のなめらかな斜面上の点 A に置いた小物体と、斜面の下端 B から続くあらい水平面",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_1=\\sqrt{2gh}$",
+    "grading": "v_1：sqrt(2gh)"
+   },
+   {
+    "id": "2",
+    "tex": "$v_2=\\sqrt{gh}$",
+    "grading": "v_2：sqrt(gh)"
+   },
+   {
+    "id": "3",
+    "tex": "$d=\\dfrac{h}{\\mu}$",
+    "grading": "d：h/μ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 斜面はなめらかで，垂直抗力は仕事をしないので力学的エネルギーが保存する．\\[mgh=\\frac12mv_1^2\\quad\\Longrightarrow\\quad v_1=\\sqrt{2gh}\\]\n\n(2) $mgh=\\dfrac12mv_2^2+mg\\dfrac h2$ より $v_2=\\sqrt{gh}$．\n\n(3) あらい面では動摩擦力 $\\mu mg$ が運動と逆向きに仕事 $-\\mu mgd$ をする．仕事と運動エネルギーの関係より \\[0-\\frac12mv_1^2=-\\mu mg\\,d\\quad\\Longrightarrow\\quad d=\\frac{v_1^2}{2\\mu g}=\\frac h\\mu\\]"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "摩擦がない区間は力学的エネルギー保存，摩擦がある区間は「仕事と運動エネルギーの関係」で摩擦の仕事を入れる．"
+ },
+ "concepts": [
+  "mechanical-energy",
+  "work-energy"
+ ],
+ "laws": [
+  "energy-conservation",
+  "work-energy-theorem",
+  "friction-law"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "力学的エネルギー保存",
+  "仕事",
+  "動摩擦"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "schema": "celestia.figure/1",
+ "size": [
+  340,
+  200
+ ],
+ "items": [
+  {
+   "t": "line",
+   "from": [
+    20,
+    160
+   ],
+   "to": [
+    330,
+    160
+   ],
+   "style": "ground"
+  },
+  {
+   "t": "block",
+   "at": [
+    205,
+    160
+   ],
+   "w": 50,
+   "h": 34,
+   "label": "m",
+   "phys": "body:cart1"
+  },
+  {
+   "t": "block",
+   "at": [
+    263,
+    160
+   ],
+   "w": 66,
+   "h": 40,
+   "label": "M",
+   "phys": "body:cart2"
+  },
+  {
+   "t": "arrow",
+   "from": [
+    230,
+    108
+   ],
+   "dir": 0,
+   "len": 30,
+   "style": "velocity",
+   "phys": "velocity:V",
+   "label": "V",
+   "labelPos": "end",
+   "labelOffset": [
+    0,
+    0
+   ],
+   "italic": true
+  },
+  {
+   "t": "text",
+   "at": [
+    90,
+    130
+   ],
+   "text": "衝突後：一体になって動く",
+   "italic": false,
+   "size": 12
+  }
+ ]
+}

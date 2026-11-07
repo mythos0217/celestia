@@ -1,0 +1,100 @@
+{
+ "id": "ATM-DBR-001",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "電子線の波長",
+ "course": "物理",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "静止していた電子（質量 $m$，電気量 $-e$）を電位差 $V$ で加速した．プランク定数を $h$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "加速後の電子の速さ $v$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "加速後の電子の物質波の波長 $\\lambda$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "加速電圧を $4$ 倍にすると，波長は何倍になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v=\\sqrt{\\dfrac{2eV}m}$",
+    "grading": "v：sqrt(2e V/m)"
+   },
+   {
+    "id": "2",
+    "tex": "$\\lambda=\\dfrac{h}{\\sqrt{2meV}}$",
+    "grading": "λ：h/sqrt(2m e V)"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac12$ 倍",
+    "grading": "(1/2)倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\dfrac12mv^2=eV$ より $v=\\sqrt{\\dfrac{2eV}m}$．\n\n(2) $\\lambda=\\dfrac h{mv}=\\dfrac{h}{\\sqrt{2meV}}$．\n\n(3) $\\lambda\\propto\\dfrac1{\\sqrt V}$ なので $\\dfrac12$ 倍．電子顕微鏡では加速電圧を高くして波長を短くし，細かいものを見分ける．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "粒子の運動量が大きいほど，物質波の波長は短い．"
+ },
+ "concepts": [
+  "matter-wave"
+ ],
+ "laws": [
+  "de-broglie",
+  "uniform-field-potential"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "物質波",
+  "電子線"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}
