@@ -24,6 +24,11 @@ ok(CAT.ENTRIES.length === idx.count, `ENTRIES の数 ${CAT.ENTRIES.length} = ${i
 ok(meta.warnings.length === 0, `形式の警告がないこと ${meta.warnings}`);
 ok(CAT.FIELDS.every(f => f.subject && f.fieldKey && /^[A-Z]{3}-\d{2}$/.test(f.key)), '単元は「分野 → 単元」の形');
 ok(CAT.LEVELS[2] === '入試基礎' && CAT.SUBJECT_ORDER[0] === '力学', '難易度と分野の並びをデータから読む');
+const tax = JSON.parse(fs.readFileSync(path.join(root, 'content/taxonomy.json'), 'utf8'));
+const emptyUnits = tax.units.filter(u => !CAT.ENTRIES.some(e => e.f === u.key)).map(u => u.key);
+ok(emptyUnits.length === 0, `すべての単元に問題がある（ない単元：${emptyUnits}）`);
+const fieldsWithSim = new Set(JSON.parse(fs.readFileSync(path.join(root, 'content/simulations.json'), 'utf8')).simulations.map(s => s.field));
+ok(tax.fields.filter(f => f.key !== 'SYN').every(f => fieldsWithSim.has(f.key)), 'すべての分野にシミュレーションがある');
 
 ok(CAT.pool({ levels: [0] }).length > 0, 'pool() で基礎の問題がとれる');
 const st = JSON.parse(fs.readFileSync(path.join(root, 'tests/fixtures/state-v1.json'), 'utf8'));

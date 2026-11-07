@@ -1,5 +1,5 @@
 // アイコン・効果音・テーマ・マスコットのうさぎ「ケプラ」
-export const FILE_VERSION = '0.1.1';
+export const FILE_VERSION = '0.3.0';
 
 // ---------------------------------------------------------------- アイコン（線画、currentColor）
 const S = (body, extra = '') => `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" ${extra}>${body}</svg>`;

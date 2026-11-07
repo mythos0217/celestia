@@ -15,7 +15,7 @@
 
 import { parse, compile, freeVars, toTeX, toPlain } from './parser.js';
 
-export const FILE_VERSION = '0.1.1';
+export const FILE_VERSION = '0.3.0';
 
 const SELF_WORDS = /^(証明|図示|記述|略|解答参照)/;
 const UNIT_RE = /(°|個|通り|桁|本|人|回|枚|組|点|色|日|番目|倍|秒|分|円|度|段|列|行|面|辺|頂点|種類)$/;
@@ -168,27 +168,9 @@ function sameAny(u, e) {
   return sameValue(u, e);
 }
 
-// 不定積分（積分定数 C を含む答え）：定数の差を許す
-function sameAntiderivative(u, e) {
-  const vars = [...new Set([...freeVars(e.ast), ...freeVars(u.ast)])].filter(v => v !== 'C');
-  const r = rng(99);
-  let diff = null, valid = 0;
-  for (let k = 0; k < 60 && valid < 10; k++) {
-    const s = { C: 0 };
-    for (const v of vars) s[v] = INT_VARS.has(v) ? 1 + Math.floor(r() * 12) : -2 + r() * 4;
-    const a = e.fn(s), b = u.fn(s);
-    if (!Number.isFinite(a)) continue;
-    if (!Number.isFinite(b)) return { ok: false };
-    valid++;
-    if (diff === null) diff = b - a;
-    else if (!close(b - a, diff)) return { ok: false };
-  }
-  return valid >= 4 ? { ok: true } : { ok: false, error: '値を確かめられませんでした' };
-}
-
 // 式どうしの比較（自由変数に乱数を代入）
 function sameValue(u, e) {
-  if (freeVars(e.ast).has('C')) return sameAntiderivative(u, e);
+  // （Lemma では C を積分定数として扱ったが、物理では電気容量などの普通の文字なので扱わない）
   const vars = [...new Set([...freeVars(e.ast), ...freeVars(u.ast)])];
   const extra = [...freeVars(u.ast)].filter(v => !freeVars(e.ast).has(v));
   if (extra.length) return { ok: false, error: `この答えでは使わない文字「${extra.join('，')}」が入っています` };

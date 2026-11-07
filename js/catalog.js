@@ -2,7 +2,7 @@
 //   一覧 data/index.json、本文 data/f-<単元ID>.json、概念・法則・誤概念・シミュレーション data/knowledge.json
 import { retrievability, dueAt, TARGET_R } from './scheduler.js';
 
-export const FILE_VERSION = '0.1.1';
+export const FILE_VERSION = '0.3.0';
 
 // 難易度（data/index.json の levels で上書きされる）
 export let LEVELS = { 0: '基礎', 1: '標準', 2: '入試基礎', 3: '国公立2次', 4: '難関', 5: '最難関' };

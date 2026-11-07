@@ -14,7 +14,7 @@ import {
   subjectsWithFields, pool, pickPractice, pickReview, dueEntries, nextReviewTime, loadKnowledge,
 } from './catalog.js';
 
-const VERSION = '0.1.1';
+const VERSION = '0.3.0';
 const KEY = 'celestia.v1';   // 同じドメインの Lemma（lemma.v2）・ぶつりば（lemma-physics.v1）と混ざらない名前
 let sync = null, syncApplying = false, syncStatus = null;   // アカウントと同期（initSync で用意）
 const $ = (sel, el = document) => el.querySelector(sel);
@@ -193,7 +193,8 @@ function route() {
     if (tab === 'set') openCollection(arg); else openIds(arg.split(',').map(x => x.trim()).filter(Boolean));
     return;
   }
-  $$('.tabbar a').forEach(a => a.classList.toggle('on', a.dataset.tab === (tab === 'practice' || tab === 'search' ? 'today' : tab)));
+  const tabOf = { practice: 'today', search: 'today', concept: 'concepts', law: 'concepts' };
+  $$('.tabbar a').forEach(a => a.classList.toggle('on', a.dataset.tab === (tabOf[tab] || tab)));
   document.body.dataset.tab = tab;
   clearGraphs();
   document.body.classList.remove('immersive');
@@ -201,6 +202,7 @@ function route() {
   $('#mascot')?.classList.remove('talk'); // 画面を移ったら吹き出しは閉じる
   if (tab === 'sim') return renderSimPage(arg);
   if (tab === 'concepts' || tab === 'concept') return renderConcepts(tab === 'concept' ? arg : '');
+  if (tab === 'law') return renderLaw(arg);
   if (tab === 'map') return renderMap();
   if (tab === 'settings') return renderSettings();
   if (tab === 'practice') return renderPractice();
@@ -382,7 +384,8 @@ async function renderSearch(q) {
 
 async function startSession(steps, cfg = null) {
   view.innerHTML = '<p class="muted" style="padding:40px 4px">問題を読み込んでいます…</p>';
-  try { await ensureBodies(steps.map(s => s.pid).filter(Boolean)); dataWarn(); }
+  // 本文と、図・シミュレーションに使う登録簿（knowledge.json）をそろえてから出題する
+  try { await Promise.all([ensureBodies(steps.map(s => s.pid).filter(Boolean)), loadKnowledge().then(k => { knowledgeCache = k; }).catch(() => {})]); dataWarn(); }
   catch (e) { showBanner(`<b>問題を読み込めませんでした</b>${esc(e.message)}`); route(); return; }
   session = { steps, i: 0, results: [], cfg };
   if (!studyStart || Date.now() - lastActivity > 15 * 60000) { studyStart = Date.now(); breakNotified = 0; }
@@ -532,6 +535,7 @@ function conceptBlock(e) {
   const cs = (e.c || []).map(id => K.concept[id]).filter(Boolean);
   const ms = (e.m || []).map(id => K.misconception[id]).filter(Boolean);
   return `<div class="concept-box">
+    ${(getBody(e.id) || {}).laws ? `<div class="methods"><b class="cb-label">使う法則（導出つき）</b>${getBody(e.id).laws.map(id => K.law[id]).filter(Boolean).map(l => `<a class="chip plain" href="#law=${esc(l.id)}">${esc(l.name)}</a>`).join('')}</div>` : ''}
     ${cs.length ? `<div class="methods"><b class="cb-label">確かめる概念</b>${cs.map(c => `<a class="chip plain" href="#concept=${esc(c.id)}">${esc(c.name)}</a>`).join('')}</div>` : ''}
     ${ms.length ? `<div class="misc-list"><b class="cb-label">よくある誤解</b>${ms.map(m => `<div class="misc"><span class="wrong">✗ ${esc(m.wrong)}</span><span class="right">→ ${esc(m.right)}</span></div>`).join('')}</div>` : ''}
   </div>`;
@@ -560,6 +564,7 @@ function renderWritten(step, e) {
         <span class="count">${session.i + 1} / ${session.steps.length}</span>
       </div>
       <div class="question qhtml">${bigOps(b.q)}</div>
+      <div id="simslot"></div>
 
       ${spec ? '<div id="inputs" class="inputs"></div>' : '<p class="muted pen">この問題は紙に解いてから、答え合わせで自己採点します。</p>'}
       <div id="conf"><div class="label">${spec ? '判定の前に' : '答え合わせの前に'}：どのくらい自信がある？</div>
@@ -570,7 +575,8 @@ function renderWritten(step, e) {
       <div class="pid muted">${esc(e.id)}</div>
     </div>`;
   math($('.question'));
-  mountFigures($('.question'), b.figs, { onDone: (box) => math(box) });
+  mountFigures($('.question'), b.figs, { onDone: (box) => math(box), sims: knowledgeCache && knowledgeCache.simulation });
+  if (b.sim && b.sim.show === 'before') simButton($('#simslot'), b.sim, '図の現象をシミュレーションで見る');
   bindQuit();
   const clock = $('#clock');
   const tick = () => {
@@ -772,7 +778,8 @@ function renderWritten(step, e) {
         <div class="segment self" id="self">${SELF.map(x => `<button data-g="${x.id}">${ICON[x.icon]}<span>${x.label}</span></button>`).join('')}</div>` : ''}
       <div id="after"></div>`;
     math(fb);
-    mountFigures(fb, b.figs, { allowAnswer: true, onDone: (box) => math(box) });
+    mountFigures(fb, b.figs, { allowAnswer: true, onDone: (box) => math(box), sims: knowledgeCache && knowledgeCache.simulation });
+    if (b.sim && b.sim.show !== 'before' && $('#solbox')) simButton($('#solbox'), b.sim, 'シミュレーションで確かめる');
     addDisputeButtons();
     $$('#self button').forEach(btn => btn.addEventListener('click', () => grade(btn.dataset.g)));
     if (spec && !selfParts.length) grade(null);
@@ -879,7 +886,8 @@ function renderWritten(step, e) {
       <textarea class="explain" id="explain" placeholder="${sg === 'full' ? '例：交点の x 座標を出して1/6公式' : '例：(2) の場合分けで a=1 を落とした'}"></textarea>
       <button class="btn primary block" id="next" style="margin-top:14px">${session.i + 1 < session.steps.length ? '次へ' : '結果を見る'}</button>`;
     math(after);
-    mountFigures(after, b.figs, { allowAnswer: true, onDone: (box) => math(box) });
+    mountFigures(after, b.figs, { allowAnswer: true, onDone: (box) => math(box), sims: knowledgeCache && knowledgeCache.simulation });
+    if (b.sim && b.sim.show !== 'before' && $('#solbox', after)) simButton($('#solbox', after), b.sim, 'シミュレーションで確かめる');
     $$('#feel button').forEach(btn => btn.addEventListener('click', () => {
       a.feel = +btn.dataset.k;
       $$('#feel button').forEach(x => x.classList.toggle('on', x === btn));
@@ -939,34 +947,65 @@ function shuffle(a) {
   return a;
 }
 
-// ---------- シミュレーション（Phase 4 で実装。今は登録簿の一覧） ----------
+// ---------- シミュレーション ----------
+// 問題の中に「シミュレーションで確かめる」ボタンを置く（押したら、問題の条件で開く。固定されたパラメータは動かせない）
+function simButton(host, simRef, label) {
+  if (!host || host.querySelector('.sim-open')) return;
+  const box = document.createElement('div');
+  box.className = 'sim-inline';
+  box.innerHTML = `<button class="btn ghost block sim-open">${ICON_SIM} ${esc(label)}</button><div class="sim-host"></div>`;
+  host.appendChild(box);
+  box.querySelector('.sim-open').addEventListener('click', async (ev) => {
+    ev.target.closest('button').remove();
+    const K = knowledgeCache || await loadKnowledge();
+    const sim = K.simulation[simRef.id];
+    if (!sim) return;
+    const M = await import('./sim/ui/player.js');
+    const pl = await M.mountPlayer(box.querySelector('.sim-host'), sim, { values: simRef.preset || {}, locked: simRef.locked || [], maxPlots: 2, compact: true });
+    activeGraphs.push(pl);
+    box.insertAdjacentHTML('beforeend', `<p class="muted small">条件を変えて、答えの式と同じように変化するか確かめよう。<a href="#sim=${esc(sim.id)}">このシミュレーションを大きく開く</a></p>`);
+  });
+}
+const ICON_SIM = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 19c3-10 6-14 9-14s6 4 9 14M3 19h18"/><circle cx="12" cy="5" r="2"/></svg>';
+
 async function renderSimPage(id) {
   view.innerHTML = '<p class="muted" style="padding:40px 4px">読み込んでいます…</p>';
   let K;
   try { K = await loadKnowledge(); knowledgeCache = K; } catch (e) { view.innerHTML = `<p class="muted">${esc(e.message)}</p>`; return; }
-  const subjects = SUBJECT_ORDER;
-  const byField = (fk) => K.simulations.filter(s => s.field === fk);
-  const fieldKeys = [...new Set(K.simulations.map(s => s.field))];
   const fieldName = (fk) => (FIELDS.find(f => f.fieldKey === fk) || {}).subject || fk;
   const probs = (sid) => ENTRIES.filter(e => e.sim === sid);
+  const sim = id && K.simulation[id];
+  if (sim) {
+    const ps = probs(sim.id);
+    view.innerHTML = `
+      <div class="fade-in sim-page">
+        <a class="back" href="#sim">‹ シミュレーション一覧</a>
+        <div class="kicker">シミュレーション · ${esc(fieldName(sim.field))}</div>
+        <h1>${esc(sim.name)}</h1>
+        <div id="player"></div>
+        ${ps.length ? `<button class="btn primary block" id="sprob" style="margin-top:14px">この現象の問題を解く（${ps.length}問）</button>` : ''}
+      </div>`;
+    const M = await import('./sim/ui/player.js');
+    const pl = await M.mountPlayer($('#player'), sim, { values: (state.simPrefs || {})[sim.id] || {}, onChange: (v) => { state.simPrefs = { ...(state.simPrefs || {}), [sim.id]: v }; save(); } });
+    activeGraphs.push(pl);
+    $('#sprob')?.addEventListener('click', () => openIds(ps.map(e => e.id)));
+    return;
+  }
+  const fieldKeys = [...new Set(K.simulations.map(s => s.field))].sort((a, b) => SUBJECT_ORDER.indexOf(fieldName(a)) - SUBJECT_ORDER.indexOf(fieldName(b)));
   view.innerHTML = `
     <div class="fade-in">
       <div class="kicker">シミュレーション</div>
       <h1>現象を動かして確かめる</h1>
-      <p class="sub">条件を変えると、アニメーションとグラフが同じ物理モデルから一緒に変わります。</p>
-      <div class="panel notice"><b>準備中</b>シミュレーション本体は次の段階（Phase 4）で、力学の6本から順に実装します。下は登録済みの一覧です。</div>
-      ${fieldKeys.sort((a, b) => subjects.indexOf(fieldName(a)) - subjects.indexOf(fieldName(b))).map(fk => `
+      <p class="sub">条件を変えると、アニメーションとグラフが同じ物理モデルから一緒に変わります。グラフをなぞると時刻も動きます。</p>
+      ${fieldKeys.map(fk => `
         <h2>${esc(fieldName(fk))}</h2>
-        <div class="sim-list">${byField(fk).map(sm => `
-          <div class="sim-card ${sm.id === id ? 'on' : ''}" id="sim-${esc(sm.id)}">
-            <div class="sim-head"><b>${esc(sm.name)}</b><span class="chip plain">${sm.status === 'ready' ? '使える' : '準備中'}</span></div>
-            <div class="sim-params">${Object.values(sm.params).map(p => `<span>${esc(p.label)}${p.unit && p.unit !== '1' ? ` [${esc(p.unit)}]` : ''}</span>`).join('')}</div>
-            <div class="sim-plots muted small">グラフ：${sm.plots.map(([x, y]) => `${esc(y)}-${esc(x)}`).join('、')}</div>
-            ${probs(sm.id).length ? `<button class="btn ghost" data-ids="${esc(probs(sm.id).map(e => e.id).join(','))}">関連する問題 ${probs(sm.id).length}問</button>` : ''}
-          </div>`).join('')}</div>`).join('')}
+        <div class="sim-list">${K.simulations.filter(s => s.field === fk).map(sm => `
+          <a class="sim-card" href="#sim=${esc(sm.id)}">
+            <div class="sim-head"><b>${esc(sm.name)}</b>${sm.status === 'ready' ? '' : '<span class="chip plain">準備中</span>'}</div>
+            <div class="sim-params">${Object.values(sm.params).map(p => `<span>${esc(p.label)}</span>`).join('')}</div>
+            <div class="sim-plots muted small">グラフ：${sm.plots.map(pl => Array.isArray(pl) ? `${esc(pl[1])}-${esc(pl[0])}` : esc(pl.label || `${(pl.ys || [pl.y]).join('・')}-${pl.x}`)).join('、')}${probs(sm.id).length ? `　関連する問題 ${probs(sm.id).length}問` : ''}</div>
+          </a>`).join('')}</div>`).join('')}
     </div>`;
-  $$('[data-ids]').forEach(b => b.addEventListener('click', () => openIds(b.dataset.ids.split(','))));
-  if (id) document.getElementById(`sim-${id}`)?.scrollIntoView({ block: 'center' });
 }
 
 // ---------- 概念・法則 ----------
@@ -992,17 +1031,61 @@ async function renderConcepts(focus) {
           return `<details class="concept" id="c-${esc(c.id)}" ${c.id === focus ? 'open' : ''}>
             <summary><b>${esc(c.name)}</b><span class="ct">${solved(ps)} / ${ps.length}問</span></summary>
             ${c.requires.length ? `<div class="small muted">前提：${c.requires.map(r => K.concept[r] ? `<a href="#concept=${esc(r)}">${esc(K.concept[r].name)}</a>` : esc(r)).join('、')}</div>` : ''}
-            ${c.laws.length ? `<div class="laws">${c.laws.map(l => K.law[l]).filter(Boolean).map(l => `<div class="law"><b>${esc(l.name)}</b><span class="qhtml">${l.html}</span><small class="muted">${esc(l.conditions)}</small></div>`).join('')}</div>` : ''}
+            ${c.laws.length ? `<div class="laws">${c.laws.map(l => K.law[l]).filter(Boolean).map(lawRow).join('')}</div>` : ''}
             ${ms.length ? `<div class="misc-list">${ms.map(m => `<div class="misc ${seen(m.id) ? 'hit' : ''}"><span class="wrong">✗ ${esc(m.wrong)}</span><span class="right">→ ${esc(m.right)}</span></div>`).join('')}</div>` : ''}
             ${ps.length ? `<button class="btn ghost" data-ids="${esc(ps.map(e => e.id).join(','))}">この概念の問題を解く（${ps.length}問）</button>` : '<p class="muted small">まだ問題がありません</p>'}
           </details>`;
         }).join('')}</div>`).join('')}
       <h2>法則の一覧</h2>
-      <div class="laws">${K.laws.map(l => `<div class="law"><b>${esc(l.name)}</b><span class="qhtml">${l.html}</span><small class="muted">${esc(l.conditions)}</small></div>`).join('')}</div>
+      <p class="sub">法則をタップすると、導出（または根拠）と、使う問題が出ます。</p>
+      <div class="laws">${K.laws.map(lawRow).join('')}</div>
     </div>`;
   math(view);
   $$('[data-ids]').forEach(b => b.addEventListener('click', () => openIds(b.dataset.ids.split(','))));
   if (focus) document.getElementById(`c-${focus}`)?.scrollIntoView({ block: 'start' });
+}
+
+// 法則の1行（概念ページ・一覧）。タップで法則のページへ
+const ORIGIN = { fundamental: '出発点となる法則', empirical: '実験から得た法則', derived: '導出できる', definition: '定義' };
+function lawRow(l) {
+  return `<a class="law" href="#law=${esc(l.id)}"><b>${esc(l.name)}</b><span class="qhtml">${l.html}</span>
+    <small class="muted"><span class="origin o-${esc(l.origin)}">${ORIGIN[l.origin] || ''}</span>${l.condHtml || esc(l.conditions)}</small></a>`;
+}
+
+// ---------- 法則のページ（式・適用条件・導出または根拠・関連する概念・シミュレーション・問題） ----------
+async function renderLaw(id) {
+  view.innerHTML = '<p class="muted" style="padding:40px 4px">読み込んでいます…</p>';
+  let K;
+  try { K = await loadKnowledge(); knowledgeCache = K; } catch (e) { view.innerHTML = `<p class="muted">${esc(e.message)}</p>`; return; }
+  const l = K.law[id];
+  if (!l) { location.hash = '#concepts'; return; }
+  const ps = ENTRIES.filter(e => (e.l || []).includes(l.id));
+  const cs = K.concepts.filter(c => c.laws.includes(l.id) || l.concepts.includes(c.id));
+  const uses = K.laws.filter(x => x.id !== l.id && (x.steps || []).join(' ').includes(l.name));
+  view.innerHTML = `
+    <div class="fade-in law-page">
+      <a class="back" href="#concepts">‹ 概念・法則</a>
+      <div class="kicker">法則 · <span class="origin o-${esc(l.origin)}">${ORIGIN[l.origin] || ''}</span></div>
+      <h1>${esc(l.name)}</h1>
+      <div class="law-formula qhtml">\\[${l.tex}\\]</div>
+      <div class="panel law-cond"><b>成り立つ条件</b><div class="qhtml">${l.condHtml || esc(l.conditions)}</div></div>
+      ${l.basisHtml ? `<h2>${l.origin === 'derived' ? 'もとになる事実' : 'この法則の根拠'}</h2><div class="panel qhtml">${l.basisHtml}</div>` : ''}
+      ${l.steps ? `<h2>導出</h2>
+        <p class="sub">1段ずつ開いて、次の段を自分で考えてから確かめよう。</p>
+        <ol class="derivation">${l.steps.map((st, i) => `<li class="${i === 0 ? 'open' : ''}"><div class="qhtml">${st}</div></li>`).join('')}</ol>
+        <div class="btn-row"><button class="btn" id="dnext">次の段を見る</button><button class="btn ghost" id="dall">すべて表示</button></div>` : ''}
+      ${(l.simulations || []).length ? `<h2>シミュレーションで確かめる</h2><div class="methods">${l.simulations.map(sid => K.simulation[sid]).filter(Boolean).map(sm => `<a class="chip plain" href="#sim=${esc(sm.id)}">${esc(sm.name)}</a>`).join('')}</div>` : ''}
+      ${cs.length ? `<h2>関連する概念</h2><div class="methods">${cs.map(c => `<a class="chip plain" href="#concept=${esc(c.id)}">${esc(c.name)}</a>`).join('')}</div>` : ''}
+      ${uses.length ? `<h2>この法則から導かれるもの</h2><div class="laws">${uses.map(lawRow).join('')}</div>` : ''}
+      ${ps.length ? `<button class="btn primary block" id="lprob" style="margin-top:18px">この法則を使う問題を解く（${ps.length}問）</button>` : ''}
+    </div>`;
+  math(view);
+  const items = $$('.derivation li');
+  const reveal = () => { const n = items.find(li => !li.classList.contains('open')); if (n) n.classList.add('open'); if (!items.some(li => !li.classList.contains('open'))) { $('#dnext')?.remove(); $('#dall')?.remove(); } };
+  $('#dnext')?.addEventListener('click', reveal);
+  $('#dall')?.addEventListener('click', () => { items.forEach(li => li.classList.add('open')); $('#dnext')?.remove(); $('#dall')?.remove(); });
+  if (items.length === 1) { $('#dnext')?.remove(); $('#dall')?.remove(); }
+  $('#lprob')?.addEventListener('click', () => openIds(ps.map(e => e.id)));
 }
 
 // ---------- 定着度 ----------

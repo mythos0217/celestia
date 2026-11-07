@@ -40,6 +40,8 @@ sys.exit(0 if ok else 1)`]],
   ['自動採点の回帰テスト', 'node', ['tests/answer.test.mjs']],
   ['catalog.js の単体テスト（共通ビュー・図・概念・検索・問題セット）', 'node', ['tests/catalog.test.mjs']],
   ['同期の単体テスト（記録の合わせ方・にせ Supabase との通信）', 'node', ['tests/sync.test.mjs']],
+  ['すべての JS モジュールを読み込める（構文エラーがない）', 'node', ['tests/syntax.test.mjs']],
+  ['シミュレーションの物理モデル（解析解・保存則・登録簿・依存の向き）', 'node', ['tests/sim.test.mjs']],
 ];
 if (process.argv.includes('--e2e')) steps.push(['ブラウザでの通し操作', 'node', ['tests/e2e.mjs']]);
 

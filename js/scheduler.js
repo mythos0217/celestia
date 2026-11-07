@@ -2,7 +2,7 @@
 // 記憶の安定度 S（日）と難しさ D（1〜10）を問題ごとに持つ。
 // 想起確率 R(t) = 1 / (1 + t / (9S))。R が 0.9 を切ったら復習（t = S 日後）。
 
-export const FILE_VERSION = '0.1.1';
+export const FILE_VERSION = '0.3.0';
 const DAY = 86400000;
 const INIT_S = { 1: 0.4, 2: 1.2, 3: 3, 4: 8 }; // 初回の評価ごとの安定度（日）
 export const TARGET_R = 0.9;

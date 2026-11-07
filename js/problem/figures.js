@@ -3,7 +3,7 @@
 //   ここで data/f-*.json の figs の情報から中身を入れる。
 //   解答用（role: "answer"）の図は、allowAnswer を付けて呼ぶまで中身を入れない（ファイルも読まない）。
 //   SVG は文字として読み込んで埋め込む（色が明暗の設定に合わせて変わる・将来の操作できる図のため）。
-export const FILE_VERSION = '0.1.1';
+export const FILE_VERSION = '0.3.0';
 
 let esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 export function setFigureEsc(fn) { esc = fn; }
@@ -38,7 +38,7 @@ function captionHTML(info) {
 }
 
 // container の中の空の図の枠に中身を入れる。描画が終わったら onDone(figure要素) を呼ぶ（数式の描画用）
-export function mountFigures(container, figs, { allowAnswer = false, onDone = () => {} } = {}) {
+export function mountFigures(container, figs, { allowAnswer = false, onDone = () => {}, sims = null } = {}) {
   const jobs = [];
   for (const box of container.querySelectorAll('figure.pfig[data-fig]')) {
     if (box.dataset.mounted) continue;
@@ -64,8 +64,14 @@ export function mountFigures(container, figs, { allowAnswer = false, onDone = ()
     } else if (info.format === 'png' || info.format === 'webp') {
       box.innerHTML = `<div class="fig-body"><img src="${esc(info.src)}" alt="${esc(info.alt)}" loading="lazy" decoding="async"></div>${captionHTML(info)}`;
       onDone(box);
+    } else if (info.format === 'sim-plot' && sims && sims[info.sim.id]) {
+      // シミュレーションのモデルから描くグラフ（問題の条件と同じモデルなので食い違わない）
+      box.innerHTML = `<div class="fig-body fig-plot" role="img" aria-label="${esc(info.alt)}"></div>${captionHTML(info)}`;
+      jobs.push(import('../sim/ui/player.js').then(M => M.drawSimPlot(box.querySelector('.fig-body'), sims[info.sim.id],
+        { preset: info.sim.preset || {}, x: (info.plot && info.plot.x) || 't', y: (info.plot && info.plot.y) || [], t: info.sim.t ?? null, snap: !!(info.plot && info.plot.snap), height: 150 })).then(() => onDone(box))
+        .catch(e => { box.querySelector('.fig-body').innerHTML = `<div class="fig-missing">${esc(e.message)}</div>`; }));
     } else {
-      // sim-plot・sim-snapshot・plot-json はシミュレーション基盤（Phase 4）で描く
+      // sim-snapshot・plot-json はまだ描けない
       box.innerHTML = `<div class="fig-body fig-pending" role="img" aria-label="${esc(info.alt)}">${esc(info.alt)}<small>（シミュレーションから描く図：準備中）</small></div>${captionHTML(info)}`;
       onDone(box);
     }

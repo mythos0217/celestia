@@ -112,7 +112,7 @@ try {
     const order = await page.evaluate(() => { const a = document.querySelector('#solbox'), b = document.querySelector('#self'); return !!(a && b && (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING)); });
     ok(order, '自己採点の問題で、解答・解説が「どうだった？」より前に出る');
     await page.goto(U + '#sim'); await page.waitForTimeout(800);
-    ok(await page.locator('.sim-card').count() === 7, 'シミュレーション一覧（登録簿の7件）');
+    ok(await page.locator('.sim-card').count() === 24, 'シミュレーション一覧（登録簿の24件）');
     await page.goto(U + '#concept=normal-force'); await page.waitForTimeout(800);
     ok(await page.locator('details.concept[open]').count() === 1 && (await page.locator('details.concept[open]').innerText()).includes('mg'), '#concept= で概念が開き、誤解が出る');
     await page.locator('details.concept[open] [data-ids]').click(); await page.waitForTimeout(1000);
@@ -181,12 +181,14 @@ try {
     await page.evaluate("__celestia.open(['MEC-INC-001'])"); await page.waitForTimeout(1500);
     const v = JSON.parse(fs.readFileSync(path.join(root, 'data/index.json'), 'utf8')).dataVersion;
     const keys = await page.evaluate(async () => caches.keys());
-    ok(keys.includes('celestia-data-' + v) && keys.includes('celestia-v0.1.1'), `コード用とデータ用のキャッシュ ${keys}`);
+    ok(keys.includes('celestia-data-' + v) && keys.includes('celestia-v0.3.0'), `コード用とデータ用のキャッシュ ${keys}`);
     ok(keys.includes('lemma-v0.9.0') && keys.includes('butsuriba-v0.4.0'), '同じドメインの他のアプリのキャッシュを消さない');
     await page.context().setOffline(true);
     await page.goto(U + '#today'); await page.waitForTimeout(1200);
     await page.evaluate("__celestia.open(['MEC-INC-001'])"); await page.waitForTimeout(1500);
     ok(await page.locator('#inputs input').count() === 3 && await page.locator('.question figure.pfig svg').count() === 1, 'オフラインでも開いた問題が図つきで解ける');
+    await page.goto(U + '#sim=mech.pendulum'); await page.waitForTimeout(1500);
+    ok(await page.locator('.sp-canvas').count() === 1 && await page.locator('.timeplot canvas').count() >= 2, 'オフラインでもシミュレーションが動く');
     await page.context().setOffline(false);
     fakeDataVersion = 'e2enewversion';
     await page.goto(U + '#today'); await page.waitForTimeout(1500);
@@ -195,6 +197,76 @@ try {
     const keys2 = await page.evaluate(async () => caches.keys());
     ok(keys2.includes('celestia-data-e2enewversion') && !keys2.includes('celestia-data-' + v) && keys2.includes('lemma-v0.9.0'), `データの版が変わると自分の古いデータ用キャッシュだけを消す ${keys2}`);
     fakeDataVersion = null;
+  }
+  // 8. シミュレーション・グラフの図・法則の導出
+  {
+    const page = await newPage();
+    await page.goto(U + '#sim'); await page.waitForTimeout(1200);
+    ok(await page.locator('a.sim-card').count() === 24, 'シミュレーション一覧に24本（力学7・波動5・光3・電磁気5・熱2・原子2）');
+    for (const id of ['mech.projectile', 'mech.incline', 'mech.spring', 'mech.pendulum', 'mech.collision', 'mech.circular', 'mech.gravitation']) {
+      await page.goto(U + '#sim=' + id); await page.waitForTimeout(900);
+      const ok1 = await page.locator('.sp-canvas').count() === 1 && await page.locator('.timeplot canvas').count() >= 2;
+      await page.click('.sp-play'); await page.waitForTimeout(700); await page.click('.sp-play');
+      const t = parseFloat(await page.locator('.sp-time').innerText());
+      ok(ok1 && t > 0, `${id}：アニメーションとグラフが出て、再生すると時刻が進む（${t} s）`);
+    }
+    // 他分野：時間で動くものは再生で時刻が進み、時間によらないもの（静的）は再生バーがなく分布のグラフが出る
+    for (const id of ['wave.traveling', 'wave.standing', 'wave.beats', 'wave.doppler', 'wave.interference', 'elm.rc', 'elm.lorentz', 'elm.induction', 'elm.rlc', 'thermo.molecules', 'thermo.pv', 'atom.decay']) {
+      await page.goto(U + '#sim=' + id); await page.waitForTimeout(800);
+      await page.click('.sp-play'); await page.waitForTimeout(600); await page.click('.sp-play');
+      const t = parseFloat(await page.locator('.sp-time').innerText());
+      ok(t > 0 && await page.locator('.timeplot canvas').count() >= 1, `${id}：再生すると時刻が進み、グラフが出る`);
+    }
+    for (const id of ['optics.refraction', 'optics.lens', 'optics.double-slit', 'elm.charges', 'atom.photoelectric']) {
+      await page.goto(U + '#sim=' + id); await page.waitForTimeout(800);
+      ok(await page.locator('.sp-bar:visible').count() === 0 && await page.locator('.timeplot canvas').count() >= 1 && await page.locator('.sp-canvas').count() === 1, `${id}：時間によらない（再生バーなし）で、図と分布のグラフが出る`);
+    }
+    await page.goto(U + '#sim=optics.refraction'); await page.waitForTimeout(800);
+    await page.locator('input[data-k="theta1"]').fill('60'); await page.locator('input[data-k="theta1"]').dispatchEvent('input'); await page.waitForTimeout(300);
+    ok((await page.locator('.sp-warn').innerText()).includes('全反射'), 'n₁=1.5→n₂=1.0 で入射角 60° にすると全反射の表示');
+    await page.goto(U + '#sim=mech.spring'); await page.waitForTimeout(900);
+    const before = await page.locator('.sp-measures td').first().innerText();
+    await page.locator('input[data-k="m"]').fill('2'); await page.locator('input[data-k="m"]').dispatchEvent('input'); await page.waitForTimeout(300);
+    const after = await page.locator('.sp-measures td').first().innerText();
+    ok(parseFloat(after) / parseFloat(before) > 1.40 && parseFloat(after) / parseFloat(before) < 1.43, `質量を2倍にすると周期が √2 倍（${before} → ${after}）`);
+    await page.goto(U + '#today'); await page.waitForTimeout(800);
+    await page.evaluate("__celestia.open(['MEC-PRJ-003'])"); await page.waitForTimeout(1500);
+    ok(await page.locator('.question figure.pfig .timeplot canvas').count() === 1, 'グラフ読解の問題に、モデルから描いた v-t グラフ（sim-plot）');
+    const inp = page.locator('#inputs input');
+    await page.locator('#conf button').nth(1).click();
+    for (const [i, v] of ['10', '1', '10', '5', '20√3'].entries()) await inp.nth(i).fill(v);
+    await page.click('#judge'); await page.waitForTimeout(800);
+    ok((await page.locator('.verdict').innerText()).includes('完答'), 'グラフ読解の問題を単位つきで完答');
+    await page.locator('.sim-open').click(); await page.waitForTimeout(1200);
+    ok(await page.locator('.sim-inline .sp-canvas').count() === 1 && await page.locator('.sim-inline input[data-k="g"]').count() === 1, '解いたあとに「シミュレーションで確かめる」で問題の条件のシミュレーションが開く');
+    ok((await page.locator('.concept-box').innerText()).includes('使う法則'), '解説の下に使う法則へのリンク');
+    // 波形（時刻ごとに形が変わるグラフ）の図・全分野の問題
+    await page.goto(U + '#today'); await page.waitForTimeout(800);
+    await page.evaluate("__celestia.open(['WAV-BAS-001', 'WAV-REF-001'])"); await page.waitForTimeout(1500);
+    ok(await page.locator('.question figure.pfig .timeplot canvas').count() === 1, '波形のグラフ（y-x）の図が問題に出る');
+    await page.locator('#conf button').nth(1).click();
+    for (const [i, v] of ['0.2', '2', '1', '2'].entries()) await page.locator('#inputs input').nth(i).fill(v);
+    await page.click('#judge'); await page.waitForTimeout(700);
+    ok((await page.locator('.verdict').innerText()).includes('完答'), '波形のグラフを読む問題を完答');
+    await next(page); await page.waitForTimeout(1000);
+    ok(await page.locator('.question figure.pfig svg').count() === 1, '屈折の光線の図');
+    await page.evaluate("__celestia.open(['ELM-ACC-001'])"); await page.waitForTimeout(1200);
+    await page.locator('#conf button').nth(1).click();
+    for (const [i, v] of ['2πfL', '1/(2πfC)', 'sqrt(R^2+(2πfL-1/(2πfC))^2)', '1/(2π√(LC))', 'V_0/R'].entries()) await page.locator('#inputs input').nth(i).fill(v);
+    await page.click('#judge'); await page.waitForTimeout(700);
+    ok((await page.locator('.verdict').innerText()).includes('完答'), '交流の問題：C（電気容量）を含む式を正しく採点（積分定数として扱わない）');
+    await page.goto(U + '#law=centripetal-acceleration'); await page.waitForTimeout(1000);
+    ok(await page.locator('ol.derivation li.open').count() === 1, '法則のページ：導出は1段目だけ開いている');
+    await page.click('#dnext'); await page.waitForTimeout(200);
+    ok(await page.locator('ol.derivation li.open').count() === 2, '「次の段を見る」で1段ずつ開く');
+    await page.click('#dall'); await page.waitForTimeout(200);
+    ok(await page.locator('ol.derivation li:not(.open)').count() === 0 && await page.locator('.law-page .katex').count() > 5, 'すべて表示で導出が全部出て、数式が描ける');
+    await page.goto(U + '#law=newton-2nd'); await page.waitForTimeout(800);
+    ok((await page.locator('.law-page').innerText()).includes('この法則の根拠') && await page.locator('ol.derivation').count() === 0, '出発点となる法則は導出ではなく根拠を出す');
+    await page.goto(U + '#concept=circular-motion'); await page.waitForTimeout(800);
+    await page.locator('details.concept[open] a.law').first().click(); await page.waitForTimeout(800);
+    ok(page.url().includes('#law='), '概念ページの法則から法則のページへ');
+    ok(page.errors.length === 0, `ページのエラーなし ${page.errors}`);
   }
   // 7. アカウントと同期：2台の端末でログインすると記録が合わさる（にせ Supabase）
   {

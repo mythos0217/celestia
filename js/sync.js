@@ -4,7 +4,7 @@
 //   ログインしなければ何も送らない（今まで通り端末の中だけ）。
 import { SUPABASE_URL, SUPABASE_KEY } from './config.js';
 
-export const FILE_VERSION = '0.1.1';
+export const FILE_VERSION = '0.3.0';
 const AUTH_KEY = 'celestia.auth';   // Lemma（lemma.auth）とは別に持つ（同じドメインでトークンの更新がぶつからないように）
 export const enabled = () => !!(SUPABASE_URL && SUPABASE_KEY);
 
