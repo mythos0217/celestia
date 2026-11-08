@@ -1,0 +1,152 @@
+{
+ "id": "PHY-OSC-038",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "円筒内のばねで打ち上げられる円板（自然長での分離，周期，はかりの読みの時間平均，摩擦域での減衰と終状態）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，はかりの上に質量 $M$ の円筒が鉛直に立っており，その底にばね定数 $k$ の軽いばねの下端が固定されている．ばねの上端に質量 $m$ の円板をのせる（円板はばねに固定されていない）．円板は円筒の内壁にちょうど接し，水平を保って鉛直方向にだけ動く．鉛直上向きに $x$ 軸をとり，自然長のときのばねの上端を $x=0$ とする．重力加速度の大きさを $g$，$\\omega=\\sqrt{\\dfrac km}$ とする．円板を $x=-(1+\\sqrt2)\\dfrac{g}{\\omega^2}$ まで押し下げて静止させ，時刻 $0$ に静かにはなした．空気抵抗は無視し，円筒は常に静止している．\n\n問 (1)〜(3) は内壁と円板の間に摩擦がない場合（I）を，問 (4)〜(6) は $x>0$ の部分の内壁だけが，動いている円板に速さによらない一定の大きさ $\\alpha mg$（$0<\\alpha<1$）の動摩擦力をおよぼす場合（II，$x\\le0$ では摩擦はない）を考える．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "（I）円板がばねから離れる位置と，そのときの円板の速さを求めよ．また，円板が達する最高点の $x$ 座標を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "（I）円板の運動は周期運動になる．その周期 $T$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "（I）はかりの読み（はかりが円筒を支える力の大きさ）の最大値，最小値を求めよ．また，1周期にわたるはかりの読みの時間平均を求め，その理由を述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "（II）円板が $x>0$ で上昇しているとき，下降しているときのはかりの読みをそれぞれ求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "（II）$n$ 回目にばねから離れるときの円板の速さ $v_n$ と，その後に達する最高点の $x$ 座標 $h_n$ を求めよ．"
+     },
+     {
+      "id": "6",
+      "tex": "（II）十分に時間がたった後の円板の運動を述べよ．また，それまでに摩擦で生じた熱の総量と，その運動でのはかりの読みの最大値を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：円筒内のばねで打ち上げられる円板（自然長での分離，周期，はかりの読みの時間平均，摩擦域での減衰と終状態）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：円筒内のばねで打ち上げられる円板（自然長での分離，周期，はかりの読みの時間平均，摩擦域での減衰と終状態）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$x=0$ で離れ，速さ $\\dfrac g\\omega$；最高点 $x=\\dfrac{g}{2\\omega^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$T=\\dfrac{1}{\\omega}\\left(\\dfrac{3\\pi}{2}+2\\right)$"
+   },
+   {
+    "id": "3",
+    "tex": "最大値 $\\{M+(1+\\sqrt2)m\\}g$，最小値 $Mg$，時間平均 $(M+m)g$（1周期で円板の運動量がもとに戻るので，はかりの力と全重力の力積がつり合う）"
+   },
+   {
+    "id": "4",
+    "tex": "上昇中 $(M-\\alpha m)g$，下降中 $(M+\\alpha m)g$"
+   },
+   {
+    "id": "5",
+    "tex": "$v_n=\\dfrac g\\omega\\left(\\dfrac{1-\\alpha}{1+\\alpha}\\right)^{\\frac{n-1}{2}}$，$h_n=\\dfrac{g}{2(1+\\alpha)\\omega^2}\\left(\\dfrac{1-\\alpha}{1+\\alpha}\\right)^{n-1}$"
+   },
+   {
+    "id": "6",
+    "tex": "$x=-\\dfrac{2g}{\\omega^2}$ と $x=0$ の間の単振動（中心 $-\\dfrac g{\\omega^2}$，振幅 $\\dfrac g{\\omega^2}$，最高点でちょうど自然長）；熱の総量 $\\dfrac{mg^2}{2\\omega^2}$；読みの最大値 $(M+2m)g$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　円板がばねに接している間，円板にはたらく力は $-mg-kx=-k\\left(x+\\dfrac{g}{\\omega^2}\\right)$ で，中心 $-\\dfrac g{\\omega^2}$ の単振動をする．はなした位置は中心から $\\sqrt2\\dfrac g{\\omega^2}$ 下なので振幅は $A=\\sqrt2\\dfrac{g}{\\omega^2}$．\n\n円板とばねの上端の間の力 $N'$ は，ばねが軽いのでばねの弾性力そのもの $N'=-kx$ であり，$N'=0$ となるのは自然長 $x=0$ のとき．よって円板は $\\boldsymbol{x=0}$（つり合いの位置ではない）でばねから離れる．中心からの変位 $\\dfrac{g}{\\omega^2}=\\dfrac{A}{\\sqrt2}$ での速さは\n\\[ v=\\omega\\sqrt{A^2-\\left(\\frac{g}{\\omega^2}\\right)^2}=\\boldsymbol{\\frac{g}{\\omega}}. \\]\nその後は重力だけで上昇し，最高点は $\\dfrac{v^2}{2g}=\\boldsymbol{\\dfrac{g}{2\\omega^2}}$．\n\n\\textbf{(2)}　1周期は「$x>0$ の放物運動」と「ばねに接した単振動の一部」からなる．放物運動の時間は $\\dfrac{2v}{g}=\\dfrac2\\omega$．単振動の参照円では，$x=0$ は最上点から角 $\\varphi$（$\\cos\\varphi=\\dfrac{g/\\omega^2}{A}=\\dfrac1{\\sqrt2}$，$\\varphi=\\dfrac\\pi4$）の位置なので，ばねに接している間に参照円は $2\\pi-2\\varphi=\\dfrac{3\\pi}{2}$ 回る（解答図）．よって\n\\[ T=\\frac2\\omega+\\frac{3\\pi}{2\\omega}=\\boldsymbol{\\frac1\\omega\\left(\\frac{3\\pi}{2}+2\\right)}. \\]\n\n\\textbf{(3)}　円筒（ばねを含む）のつり合いから，はかりの読みは $Mg+(\\text{ばねが円筒の底を押す力})=Mg+k\\max(-x,0)$．最大はばねが最も縮んだ $x=-(1+\\sqrt2)\\dfrac g{\\omega^2}$ で，$k\\cdot(1+\\sqrt2)\\dfrac{g}{\\omega^2}=(1+\\sqrt2)mg$ より最大値 $\\boldsymbol{\\{M+(1+\\sqrt2)m\\}g}$．円板が $x>0$ にある間は $\\boldsymbol{Mg}$ で，これが最小値．\n\n円筒と円板を1つの系とみると，外力ははかりからの力 $F$ と重力 $(M+m)g$ だけで，系の運動量は円板の運動量 $mv_x$ に等しい．1周期後に円板はもとの状態に戻るので運動量の変化は $0$ で\n\\[ \\int_0^T\\{F-(M+m)g\\}\\,dt=0\\quad\\Longrightarrow\\quad\\overline{F}=\\boldsymbol{(M+m)g}. \\]\n読みは大きく変動するが，時間平均はちょうど全体の重さになる．\n\n\\textbf{(4)}　摩擦力は円板と内壁の間の作用・反作用である．上昇中，円板は下向きに $\\alpha mg$ を受け，円筒の内壁は上向きに $\\alpha mg$ を受けるので，読みは $\\boldsymbol{(M-\\alpha m)g}$．下降中は逆向きで $\\boldsymbol{(M+\\alpha m)g}$．\n\n\\textbf{(5)}　$x\\le0$ では摩擦がなく力学的エネルギーが保存するので，ばねに接している間に速さは変わらず，ばねに着地した速さで再びばねから離れる．$x>0$ では上昇中の加速度の大きさが $(1+\\alpha)g$，下降中が $(1-\\alpha)g$ なので，速さ $v_n$ で離れると\n\\[ h_n=\\frac{v_n^2}{2(1+\\alpha)g},\\qquad(\\text{着地の速さ})^2=2(1-\\alpha)g\\,h_n=\\frac{1-\\alpha}{1+\\alpha}v_n^2. \\]\nよって $v_{n+1}^2=\\dfrac{1-\\alpha}{1+\\alpha}v_n^2$，$v_1=\\dfrac g\\omega$ から\n\\[ v_n=\\boldsymbol{\\frac g\\omega\\left(\\frac{1-\\alpha}{1+\\alpha}\\right)^{\\frac{n-1}{2}}},\\qquad h_n=\\boldsymbol{\\frac{g}{2(1+\\alpha)\\omega^2}\\left(\\frac{1-\\alpha}{1+\\alpha}\\right)^{n-1}}. \\]\n\n\\textbf{(6)}　$v_n\\to0$ なので，十分時間がたつと円板はほとんど $x>0$ に出なくなり，$x=0$ で速さ $0$ となるばねとの単振動，すなわち\\textbf{中心 $-\\dfrac{g}{\\omega^2}$，振幅 $\\dfrac{g}{\\omega^2}$ の単振動}（$x=-\\dfrac{2g}{\\omega^2}$ と $x=0$ の間）に近づく．摩擦は $x>0$ でしか仕事をしないので，熱の総量ははじめて $x=0$ を通過するときの運動エネルギーに等しく\n\\[ \\frac12m\\left(\\frac g\\omega\\right)^2=\\boldsymbol{\\frac{mg^2}{2\\omega^2}}. \\]\n（エネルギーで確かめると，はじめの $\\dfrac12k\\left\\{(1+\\sqrt2)\\dfrac g{\\omega^2}\\right\\}^2-mg(1+\\sqrt2)\\dfrac g{\\omega^2}=\\dfrac{mg^2}{2\\omega^2}$ が，最後の運動での値 $0$（$x=0$，速さ $0$）まで減る．）この運動でばねが最も縮むのは $\\dfrac{2g}{\\omega^2}$ で，はかりの読みの最大値は $Mg+2mg=\\boldsymbol{(M+2m)g}$．この運動は周期運動なので，(3) と同じ理由で読みの時間平均は $(M+m)g$ である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ばねにのせただけの物体は，つり合いの位置ではなくばねの力が $0$ になる自然長で離れ，その後の運動は「単振動の一部（参照円の欠けた弧）」と「放物運動」をつないだ周期運動になる．支えの力は大きく変動しても，周期運動では運動量が戻るので時間平均は全重量に等しい．離れた後の区間だけに摩擦があると，離れる速さの2乗が毎回一定の比で減り，最後は自然長でちょうど止まる単振動に落ち着く．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "projectile-motion",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "単振動",
+  "参照円",
+  "ばねからの分離",
+  "力積",
+  "時間平均",
+  "摩擦"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

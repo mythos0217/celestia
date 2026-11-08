@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340">
+<defs><marker id="q-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker></defs>
+<!-- clamp holding B -->
+<rect x="150" y="96" width="40" height="18" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="190" y1="105" x2="204" y2="138" stroke="#222" stroke-width="1.6"/>
+<g stroke="#222" stroke-width="1"><line x1="150" y1="96" x2="142" y2="104"/><line x1="160" y1="96" x2="152" y2="104"/><line x1="170" y1="96" x2="162" y2="104"/><line x1="180" y1="96" x2="172" y2="104"/><line x1="190" y1="96" x2="182" y2="104"/></g>
+<line x1="138" y1="96" x2="200" y2="96" stroke="#222" stroke-width="1.6"/>
+<!-- circular path -->
+<circle cx="210" cy="150" r="110" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<line x1="90" y1="150" x2="340" y2="150" stroke="#888" stroke-width="1" stroke-dasharray="3 4"/>
+<!-- string to A at bottom -->
+<line x1="210" y1="150" x2="210" y2="260" stroke="#222" stroke-width="1.6"/>
+<circle cx="210" cy="150" r="9" fill="#222"/>
+<circle cx="210" cy="260" r="10" fill="#222"/>
+<line x1="224" y1="260" x2="290" y2="260" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ah)"/>
+<text x="290" y="282" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">v<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+<text x="188" y="268" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">A</text>
+<text x="226" y="142" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">B（点O）</text>
+<text x="214" y="212" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">l</text>
+<text x="196" y="288" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">m</text>
+<text x="200" y="138" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222"></text>
+<!-- horizontal position of A (dashed ghost) -->
+<circle cx="320" cy="150" r="10" fill="none" stroke="#888" stroke-width="1.2"/>
+<text x="334" y="140" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#888">糸が水平</text>
+<!-- B mass label -->
+<text x="182" y="180" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">M</text>
+<!-- gravity -->
+<line x1="420" y1="200" x2="420" y2="250" stroke="#222" stroke-width="1.6" marker-end="url(#q-ahk)"/>
+<defs><marker id="q-ahk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<text x="428" y="232" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">g</text>
+</svg>

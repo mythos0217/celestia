@@ -1,0 +1,130 @@
+{
+ "id": "PHY-OSC-045",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "自然長で張った2本のばねの中央のおもりの横振動（3乗の復元力と相似則，たるみのまわりの単振動）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "自然長 $\\ell_0$，ばね定数 $k$ の軽いばね2本の一端を，距離 $2\\ell_0$ 離れた固定点 P，Q にそれぞれつなぎ，他端を質量 $m$ の小球につなぐ．はじめ2本のばねは自然長で一直線になっている．小球を PQ に垂直な向きに $y$ だけずらしたときを考える（図）．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$|y|\\ll\\ell_0$ のとき，小球が2本のばねから受ける力は PQ の中点の向きを向き，その大きさが $\\dfrac{k|y|^3}{\\ell_0^2}$ で近似できることを示せ．必要なら $|x|\\ll1$ のとき $\\sqrt{1+x}\\fallingdotseq1+\\dfrac x2$ を用いよ．"
+     },
+     {
+      "id": "2",
+      "tex": "全体をなめらかな水平面上に置く．小球を PQ に垂直に $A_0$ だけずらして静かに放すと，小球は周期 $T_0$ で振動した．$n$ を正の定数として，$nA_0$ だけずらして放したときの周期と，PQ を通過するときの速さが $A_0$ のときの何倍になるかを求めよ（$nA_0\\ll\\ell_0$）．小球の運動を $y=f(t)$ としたとき，$y=nf(nt)$ がどのような運動を表すかを考えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次に，PQ を水平に保ったまま全体を鉛直面内に置く．小球が静止するときの PQ からの距離 $y_0$ を求めよ（$y_0\\ll\\ell_0$ とする）．重力加速度の大きさを $g$ とする．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) のつり合いの位置のまわりで小球を鉛直方向にわずかに振動させる．その周期 $T$ を $y_0$ と $g$ だけで表せ．また，$y_0=2.0\\ {\\rm cm}$，$g=9.8\\ {\\rm m/s^2}$ のときの $T$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) の周期は，1本の鉛直なばねにつるしたおもりが同じ $y_0$ だけばねを伸ばしてつり合っているときの振動の周期の何倍か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：自然長で張った2本のばねの中央のおもりの横振動（3乗の復元力と相似則，たるみのまわりの単振動）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "各ばねの伸びは $\\sqrt{\\ell_0^2+y^2}-\\ell_0\\fallingdotseq\\dfrac{y^2}{2\\ell_0}$，張力の PQ に垂直な成分の和は $2\\cdot k\\dfrac{y^2}{2\\ell_0}\\cdot\\dfrac{|y|}{\\ell_0}=\\dfrac{k|y|^3}{\\ell_0^2}$（PQ に平行な成分は打ち消し合う）．"
+   },
+   {
+    "id": "2",
+    "tex": "周期 $\\dfrac1n$ 倍，速さ $n^2$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "$y_0=\\left(\\dfrac{mg\\ell_0^2}{k}\\right)^{1/3}$"
+   },
+   {
+    "id": "4",
+    "tex": "$T=2\\pi\\sqrt{\\dfrac{y_0}{3g}}$，$0.16\\ {\\rm s}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{1}{\\sqrt3}$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 復元力} \\\\\nばねの長さは $\\sqrt{\\ell_0^2+y^2}=\\ell_0\\sqrt{1+(y/\\ell_0)^2}\\fallingdotseq\\ell_0+\\dfrac{y^2}{2\\ell_0}$ なので，伸びは $\\dfrac{y^2}{2\\ell_0}$，張力は $\\dfrac{ky^2}{2\\ell_0}$．ばねが PQ となす角を $\\theta$ とすると $\\sin\\theta\\fallingdotseq\\dfrac{|y|}{\\ell_0}$．2本の張力の PQ に平行な成分は対称性で打ち消し合い，垂直な成分の和は\n\\[ 2\\cdot\\frac{ky^2}{2\\ell_0}\\cdot\\frac{|y|}{\\ell_0}=\\boldsymbol{\\frac{k|y|^3}{\\ell_0^2}} \\]\nで，PQ に戻る向き（中点の向き）である．自然長で張ってあるので，変位に比例する項がなく $y^3$ に比例する．\\hfill$\\square$\n\n\\textbf{(2) 振幅と周期の関係} \\\\\n運動方程式は $m\\dfrac{d^2y}{dt^2}=-\\dfrac{k}{\\ell_0^2}y^3$．$y=f(t)$ がこれを満たすとき，$Y(t)=nf(nt)$ について\n\\[ \\frac{d^2Y}{dt^2}=n^3f''(nt)=n^3\\cdot\\left(-\\frac{k}{m\\ell_0^2}f(nt)^3\\right)=-\\frac{k}{m\\ell_0^2}Y^3 \\]\nとなり，$Y$ も同じ運動方程式を満たす．しかも $Y(0)=nA_0$，$Y'(0)=n^2f'(0)=0$ なので，$Y$ は「$nA_0$ だけずらして静かに放した運動」そのものである．$Y$ は $f$ を縦に $n$ 倍，時間を $\\frac1n$ に縮めたものだから，周期は $\\boldsymbol{\\dfrac{1}{n}}$ 倍，速度 $Y'=n^2f'(nt)$ は $\\boldsymbol{n^2}$ 倍になる． \\\\\n（確認）エネルギー保存：位置エネルギーは $U=\\dfrac{ky^4}{4\\ell_0^2}$（$dU/dy$ が (1) の力の大きさ）なので，$\\dfrac12mv_{\\max}^2=\\dfrac{kA^4}{4\\ell_0^2}$ より $v_{\\max}\\propto A^2$．振幅が大きいほど復元力が急に強くなるので，単振動と違って周期が振幅に反比例する．\\hfill$\\square$\n\n\\textbf{(3) 鉛直面内のつり合い} \\\\\n(1) の力が重力とつり合うので $\\dfrac{ky_0^3}{\\ell_0^2}=mg$，\n\\[ \\boldsymbol{y_0=\\left(\\frac{mg\\ell_0^2}{k}\\right)^{1/3}} \\]\n\\hfill$\\square$\n\n\\textbf{(4) つり合いのまわりの微小振動} \\\\\n下向きを正とし，つり合いの位置からの変位を $z$（$|z|\\ll y_0$）とする．\n\\[ m\\frac{d^2z}{dt^2}=mg-\\frac{k(y_0+z)^3}{\\ell_0^2}\\fallingdotseq mg-\\frac{k}{\\ell_0^2}\\left(y_0^3+3y_0^2z\\right)=-\\frac{3ky_0^2}{\\ell_0^2}z \\]\n（$\\dfrac{ky_0^3}{\\ell_0^2}=mg$ を用いた）．よって単振動で，角振動数は $\\omega^2=\\dfrac{3ky_0^2}{m\\ell_0^2}=\\dfrac{3}{y_0}\\cdot\\dfrac{ky_0^3}{m\\ell_0^2}=\\dfrac{3g}{y_0}$．\n\\[ \\boldsymbol{T=2\\pi\\sqrt{\\frac{y_0}{3g}}} \\]\n$k$，$m$，$\\ell_0$ によらず，たるみ $y_0$ だけで決まる．数値は $T=2\\pi\\sqrt{\\dfrac{0.020}{3\\times9.8}}\\fallingdotseq\\boldsymbol{0.16\\ {\\rm s}}$．\\hfill$\\square$\n\n\\textbf{(5) 1本のばねとの比較} \\\\\n1本の鉛直なばね（ばね定数 $k'$）では $k'y_0=mg$ で $T'=2\\pi\\sqrt{\\dfrac{m}{k'}}=2\\pi\\sqrt{\\dfrac{y_0}{g}}$．よって $T/T'=\\boldsymbol{\\dfrac1{\\sqrt3}}$ 倍．力が変位の3乗に比例するので，つり合いの位置での「傾き」（実効的なばね定数）が，同じ力 $mg$ を同じ $y_0$ で生む線形なばねの3倍になるためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "自然長で一直線に張ったばねに垂直な変位を与えると，伸びが変位の2乗，角度が変位の1乗に比例するので復元力は変位の3乗に比例し，運動方程式の相似性から周期は振幅に反比例する．重力下でたるんだつり合いのまわりでは，3乗則の傾きが線形の場合の3倍になるので，微小振動の周期はたるみだけで $2\\pi\\sqrt{y_0/3g}$ と決まる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "equation-of-motion",
+  "equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "非線形振動",
+  "相似則",
+  "単振動",
+  "近似",
+  "つり合い"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

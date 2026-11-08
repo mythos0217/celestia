@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 310">
+<defs><marker id="a-ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker></defs>
+<line x1="70" y1="260" x2="510" y2="260" stroke="#222" stroke-width="1" marker-end="url(#a-ar)"/>
+<line x1="70" y1="270" x2="70" y2="30" stroke="#222" stroke-width="1" marker-end="url(#a-ar)"/>
+<text x="512" y="278" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">t</text>
+<text x="54" y="278" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">0</text>
+<polyline points="70.0,60.0 76.8,60.1 83.6,60.3 90.3,60.6 97.1,61.1 103.9,61.7 110.7,62.4 117.5,63.2 124.2,64.2 131.0,65.3 137.8,66.6 144.6,68.0 151.4,69.5 158.1,71.1 164.9,72.9 171.7,74.7 178.5,76.7 185.3,78.9 192.0,81.1 198.8,83.5 205.6,86.0 212.4,88.6 219.2,91.3 225.9,94.1 232.7,97.1 239.5,100.1 246.3,103.3 253.1,106.6 259.8,110.0 266.6,113.4 273.4,117.0 280.2,120.7 286.9,124.5 293.7,128.4 300.5,132.4 307.3,136.5 314.1,140.7 320.8,145.0 327.6,149.3 334.4,153.8 341.2,158.3 348.0,162.9 354.7,167.7 361.5,172.5 368.3,177.4 375.1,182.3 381.9,187.4 388.6,192.5 395.4,197.7 402.2,203.0 409.0,208.4 415.8,213.8 422.5,219.3 429.3,224.9 436.1,230.6 442.9,236.3 449.7,242.1 456.4,248.0 463.2,254.0 470.0,260.0" fill="none" stroke="#c0392b" stroke-width="1.8"/>
+<polyline points="70.0,260.0 76.8,260.0 83.6,259.9 90.3,259.8 97.1,259.7 103.9,259.6 110.7,259.4 117.5,259.1 124.2,258.9 131.0,258.6 137.8,258.2 144.6,257.9 151.4,257.5 158.1,257.1 164.9,256.6 171.7,256.1 178.5,255.6 185.3,255.1 192.0,254.6 198.8,254.0 205.6,253.4 212.4,252.8 219.2,252.2 225.9,251.6 232.7,250.9 239.5,250.3 246.3,249.6 253.1,248.9 259.8,248.3 266.6,247.6 273.4,246.9 280.2,246.2 286.9,245.5 293.7,244.9 300.5,244.2 307.3,243.6 314.1,242.9 320.8,242.3 327.6,241.7 334.4,241.1 341.2,240.5 348.0,239.9 354.7,239.4 361.5,238.8 368.3,238.3 375.1,237.9 381.9,237.4 388.6,237.0 395.4,236.6 402.2,236.2 409.0,235.9 415.8,235.6 422.5,235.3 429.3,235.1 436.1,234.9 442.9,234.8 449.7,234.6 456.4,234.5 463.2,234.5 470.0,234.5" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+<line x1="470" y1="50" x2="470" y2="260" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="458" y="282" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">π/Ω</text>
+<text x="46" y="65.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">ℓ</text>
+<line x1="70" y1="234.5" x2="470" y2="234.5" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="26" y="239.5" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">2<tspan font-family="Times New Roman, serif" font-style="italic">X</tspan><tspan baseline-shift="sub" font-size="10">c</tspan></text>
+<text x="110" y="90.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">小物体と斜面の下端の斜面に沿った距離</text>
+<text x="170" y="224.5" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">台の変位 <tspan font-family="Times New Roman, serif" font-style="italic">X</tspan>（最大で止まる）</text>
+<text x="80" y="305" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">下端に達する瞬間に台は最も右に寄って一瞬止まる（数値例）</text>
+</svg>

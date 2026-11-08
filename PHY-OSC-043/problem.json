@@ -1,0 +1,122 @@
+{
+ "id": "PHY-OSC-043",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "糸の他端を動かして鉛直面内の等速円運動をさせるときの手の位置と仕事率",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "長さ $L$ の軽い糸の一端に質量 $m$ の小球をつけ，他端を手で持って動かす．手をうまく動かして，小球が鉛直面内で中心 O，半径 $R$ の円周上を一定の速さ $v$ で反時計回りに回るようにする．O を原点とし，水平右向きに $x$ 軸，鉛直上向きに $y$ 軸をとる．小球の位置は O から見た $x$ 軸からの角 $\\theta$ で表す（図）．重力加速度の大きさを $g$ とし，糸は常にぴんと張っているものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小球が円の最下点（$\\theta=270^\\circ$）にあるときの手の位置の座標と，糸の張力の大きさを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "小球が円の最高点（$\\theta=90^\\circ$）にあるときの手の位置の座標と，糸の張力の大きさを求めよ．$v^2>gR$ の場合と $v^2<gR$ の場合に分けて答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "小球が $\\theta=0$ の位置にあるときの手の位置の座標を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "角 $\\theta$ の位置で，糸が小球にする仕事の仕事率 $P$ を求め，その最大値を答えよ．また，小球が1周する間に糸がする仕事の総和を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：糸の他端を動かして鉛直面内の等速円運動をさせるときの手の位置と仕事率",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$(0,\\,L-R)$，$m\\left(\\dfrac{v^2}{R}+g\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "$v^2>gR$：$(0,\\,R-L)$，$m\\left(\\dfrac{v^2}{R}-g\\right)$；$v^2<gR$：$(0,\\,R+L)$，$m\\left(g-\\dfrac{v^2}{R}\\right)$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\left(R-\\dfrac{Lv^2}{\\sqrt{v^4+g^2R^2}},\\ \\dfrac{LgR}{\\sqrt{v^4+g^2R^2}}\\right)$"
+   },
+   {
+    "id": "4",
+    "tex": "$P=mgv\\cos\\theta$，最大値 $mgv$（$\\theta=0$），1周の総和 $0$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　小球の運動（等速円運動）が指定されているので，加速度 $\\vec a$ が決まる．小球にはたらく力は重力 $m\\vec g$ と糸の張力 $\\vec T$ だけなので，運動方程式から\n\\[ \\vec T=m\\vec a-m\\vec g \\]\nと張力が決まり，糸はこの向きに張っている．手は小球から $\\vec T$ の向きに距離 $L$ の位置にある．\n\n\\textbf{加速度と張力}　小球の位置は $(R\\cos\\theta,R\\sin\\theta)$，加速度は中心向きで大きさ $\\dfrac{v^2}{R}$ なので\n\\[ \\vec T=\\left(-\\frac{mv^2}{R}\\cos\\theta,\\ -\\frac{mv^2}{R}\\sin\\theta+mg\\right) \\]\n\n\\textbf{(1)}　$\\theta=270^\\circ$ では $\\vec T=\\left(0,\\ m\\left(\\dfrac{v^2}{R}+g\\right)\\right)$（上向き）．手は小球 $(0,-R)$ の真上 $L$ の点で $\\boldsymbol{(0,\\,L-R)}$，張力 $\\boldsymbol{m\\left(\\dfrac{v^2}{R}+g\\right)}$．\n\n\\textbf{(2)}　$\\theta=90^\\circ$ では $\\vec T=\\left(0,\\ m\\left(g-\\dfrac{v^2}{R}\\right)\\right)$．\n\n・$v^2>gR$：張力は下向きで，手は小球の真下 $L$ の点 $\\boldsymbol{(0,\\,R-L)}$，張力 $\\boldsymbol{m\\left(\\dfrac{v^2}{R}-g\\right)}$．\n\n・$v^2<gR$：重力だけでは向心力として大きすぎるので，糸は小球を上向きに引く．手は小球の真上 $\\boldsymbol{(0,\\,R+L)}$，張力 $\\boldsymbol{m\\left(g-\\dfrac{v^2}{R}\\right)}$．\n\n（$v^2=gR$ ちょうどでは最高点で張力が $0$ となり，糸の向きが定まらない．）\n\n\\textbf{(3)}　$\\theta=0$ では $\\vec T=\\left(-\\dfrac{mv^2}{R},\\ mg\\right)$，大きさ $\\dfrac{m}{R}\\sqrt{v^4+g^2R^2}$．単位ベクトルに $L$ を掛けて小球 $(R,0)$ に加え\n\\[ \\boldsymbol{\\left(R-\\frac{Lv^2}{\\sqrt{v^4+g^2R^2}},\\ \\frac{LgR}{\\sqrt{v^4+g^2R^2}}\\right)} \\]\n\n\\textbf{(4)}　速度は $\\vec v=v(-\\sin\\theta,\\cos\\theta)$ なので\n\\[ P=\\vec T\\cdot\\vec v=\\frac{mv^3}{R}\\sin\\theta\\cos\\theta+v\\cos\\theta\\left(-\\frac{mv^2}{R}\\sin\\theta+mg\\right)=\\boldsymbol{mgv\\cos\\theta} \\]\n最大値は $\\theta=0$（右端で上昇中）で $\\boldsymbol{mgv}$．運動エネルギーが一定なので，糸の仕事率は重力の仕事率 $-mgv\\cos\\theta$ をちょうど打ち消す，と考えても同じ結果になる．1周では重力の仕事が $0$ なので，糸の仕事の総和も $\\boldsymbol{0}$．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "運動が指定されているときは，運動方程式を「力を求める式」として使い，$\\vec T=m\\vec a-m\\vec g$ から糸の向き（すなわち手の位置）が決まる．最高点では $v^2$ と $gR$ の大小で糸が引く向きが反転し，手は円の内側から外側へ移る．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "circular-motion",
+  "work-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "等速円運動",
+  "運動方程式",
+  "張力の向き",
+  "仕事率",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

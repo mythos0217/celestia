@@ -1,0 +1,144 @@
+{
+ "id": "PHY-OSC-036",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "ばねにつながれた斜面台をすべり降りる小物体（斜面方向の運動の独立性と台の単振動の位相合わせ）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかな水平な床の上に，傾きの角 $\\theta$ のなめらかな斜面をもつ質量 $M$ の台が置かれ，台の右側面はばね定数 $k$ のばねで右側の鉛直な壁につながれている．斜面の下端から斜面に沿って距離 $\\ell$ の位置に質量 $m$ の小物体を置き，ばねが自然長の状態で台と小物体を同時に静かにはなした．台は水平方向にのみ動く．台の右向きの変位を $X$，加速度を $A$ とし，重力加速度の大きさを $g$ とする．小物体の大きさは無視でき，小物体は斜面から離れないものとする（(5) で確かめる）．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小物体が斜面から受ける垂直抗力の大きさ $N$ を $m$，$g$，$\\theta$，$A$ で表せ．さらに台の運動方程式から台が単振動することを示し，その角振動数 $\\Omega$ と振動の中心の位置 $X_{\\rm c}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "斜面に沿って上向きの方向（床に対して向きが変わらない）について，床から見た小物体の加速度の成分を求めよ．これを用いて，時刻 $t$ における小物体と斜面の下端との斜面に沿った距離を $\\ell$，$g$，$\\theta$，$t$，$X$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "小物体が斜面の下端にちょうど達した瞬間に，台がはじめて静止した（ばねが最も縮んだ）．$\\ell$ を $m$，$M$，$k$，$g$，$\\theta$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の場合に，下端に達した瞬間の小物体の床に対する速さ $v$ を求めよ．また，そのときのばねの弾性エネルギーと小物体の運動エネルギーの比を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "小物体が下端に達するまでの $N$ の最小値と最大値を求め，小物体が斜面から離れないことを確かめよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ばねにつながれた斜面台をすべり降りる小物体（斜面方向の運動の独立性と台の単振動の位相合わせ）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：ばねにつながれた斜面台をすべり降りる小物体（斜面方向の運動の独立性と台の単振動の位相合わせ）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$N=m(g\\cos\\theta-A\\sin\\theta)$，$\\Omega=\\sqrt{\\dfrac{k}{M+m\\sin^2\\theta}}$，$X_{\\rm c}=\\dfrac{mg\\sin\\theta\\cos\\theta}{k}$"
+   },
+   {
+    "id": "2",
+    "tex": "$-g\\sin\\theta$；距離 $\\ell-\\dfrac12g\\sin\\theta\\,t^2-X\\cos\\theta$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ell=\\dfrac{g\\sin\\theta\\{\\pi^2(M+m\\sin^2\\theta)+4m\\cos^2\\theta\\}}{2k}$"
+   },
+   {
+    "id": "4",
+    "tex": "$v=\\pi g\\sin\\theta\\sqrt{\\dfrac{M+m\\sin^2\\theta}{k}}$，比 $\\dfrac{4m\\cos^2\\theta}{\\pi^2(M+m\\sin^2\\theta)}$"
+   },
+   {
+    "id": "5",
+    "tex": "最小値 $\\dfrac{Mmg\\cos\\theta}{M+m\\sin^2\\theta}$（$t=0$），最大値 $\\dfrac{mg\\cos\\theta(M+2m\\sin^2\\theta)}{M+m\\sin^2\\theta}$（下端に達するとき）で，常に正"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　斜面の外向きの法線方向の単位ベクトルは $\\vec n=(-\\sin\\theta,\\ \\cos\\theta)$（右向き・上向きを正）．小物体は斜面から離れないので，法線方向の加速度は台の加速度の法線成分 $A\\vec e_x\\cdot\\vec n=-A\\sin\\theta$ に等しい．小物体の法線方向の運動方程式は\n\\[ m(-A\\sin\\theta)=N-mg\\cos\\theta\\quad\\Longrightarrow\\quad N=\\boldsymbol{m(g\\cos\\theta-A\\sin\\theta)}. \\]\n台は小物体から力 $N$ を $-\\vec n$ の向きに受け，その水平成分は $N\\sin\\theta$（右向き）．台の運動方程式は\n\\[ MA=-kX+N\\sin\\theta=-kX+mg\\sin\\theta\\cos\\theta-mA\\sin^2\\theta, \\]\n\\[ (M+m\\sin^2\\theta)A=-k\\left(X-\\frac{mg\\sin\\theta\\cos\\theta}{k}\\right). \\]\nよって台は単振動し，$\\Omega=\\boldsymbol{\\sqrt{\\dfrac{k}{M+m\\sin^2\\theta}}}$，中心 $X_{\\rm c}=\\boldsymbol{\\dfrac{mg\\sin\\theta\\cos\\theta}{k}}$．はじめ $X=0$ で静止しているので $X=X_{\\rm c}(1-\\cos\\Omega t)$．\n\n\\textbf{(2)}　台は回転せずに平行移動するので，斜面に沿った上向きの単位ベクトル $\\vec u=(\\cos\\theta,\\ \\sin\\theta)$ は床に対して一定である．小物体にはたらく力は重力と垂直抗力だけで，垂直抗力は $\\vec u$ に垂直だから，$\\vec u$ 方向の加速度の成分は台の運動によらず\n\\[ \\boldsymbol{-g\\sin\\theta}. \\]\n小物体は静止から動き出すので，$\\vec u$ 方向の変位は $-\\dfrac12g\\sin\\theta\\,t^2$．一方，斜面の下端は水平に $X$ 動き，その $\\vec u$ 方向の成分は $X\\cos\\theta$．小物体と下端はともに斜面上にあるので，その差は $\\vec u$ 方向だけで，距離は\n\\[ \\boldsymbol{\\ell-\\frac12g\\sin\\theta\\,t^2-X\\cos\\theta}. \\]\n\n\\textbf{(3)}　台がはじめて静止するのは $\\Omega t=\\pi$ で，そのとき $X=2X_{\\rm c}$．このとき距離が $0$ だから\n\\[ \\ell=\\frac12g\\sin\\theta\\left(\\frac{\\pi}{\\Omega}\\right)^2+2X_{\\rm c}\\cos\\theta=\\boldsymbol{\\frac{g\\sin\\theta\\{\\pi^2(M+m\\sin^2\\theta)+4m\\cos^2\\theta\\}}{2k}}. \\]\n\n\\textbf{(4)}　この瞬間，台は静止しているので小物体の速度の法線成分は $0$ で，速度は $\\vec u$ 方向の成分だけである．その大きさは $g\\sin\\theta\\cdot\\dfrac{\\pi}{\\Omega}$ だから\n\\[ v=\\boldsymbol{\\pi g\\sin\\theta\\sqrt{\\frac{M+m\\sin^2\\theta}{k}}}. \\]\nばねの弾性エネルギーは $\\dfrac12k(2X_{\\rm c})^2=\\dfrac{2m^2g^2\\sin^2\\theta\\cos^2\\theta}{k}$，小物体の運動エネルギーは $\\dfrac12mv^2=\\dfrac{\\pi^2mg^2\\sin^2\\theta(M+m\\sin^2\\theta)}{2k}$ なので，比は\n\\[ \\boldsymbol{\\frac{4m\\cos^2\\theta}{\\pi^2(M+m\\sin^2\\theta)}}. \\]\n（確認：両者の和は $mg\\ell\\sin\\theta$ に一致し，小物体が下がった高さ $\\ell\\sin\\theta$ の位置エネルギーの減少が，台の運動エネルギー $0$ のこの瞬間にばねと小物体に分配されている．）\n\n\\textbf{(5)}　$A=-\\Omega^2(X-X_{\\rm c})=X_{\\rm c}\\Omega^2\\cos\\Omega t$ は $0\\le\\Omega t\\le\\pi$ で $X_{\\rm c}\\Omega^2$ から $-X_{\\rm c}\\Omega^2$ まで単調に減少するので，$N=m(g\\cos\\theta-A\\sin\\theta)$ は単調に増加する．$X_{\\rm c}\\Omega^2=\\dfrac{mg\\sin\\theta\\cos\\theta}{M+m\\sin^2\\theta}$ を用いて\n\\[ N_{\\min}=\\boldsymbol{\\frac{Mmg\\cos\\theta}{M+m\\sin^2\\theta}}\\ (t=0),\\qquad N_{\\max}=\\boldsymbol{\\frac{mg\\cos\\theta(M+2m\\sin^2\\theta)}{M+m\\sin^2\\theta}}\\ \\left(t=\\frac{\\pi}{\\Omega}\\right). \\]\n$N_{\\min}>0$ なので，小物体は斜面から離れない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "平行移動する斜面からの垂直抗力は斜面方向に垂直なので，床に固定した斜面方向について小物体の加速度は台の運動によらず $g\\sin\\theta$ となり，斜面に垂直な方向の拘束からは台の実効質量 $M+m\\sin^2\\theta$ の単振動が出る．斜面に沿った相対距離は「等加速度の項」と「台の単振動の射影」の和になるので，台が止まる瞬間に下端に達する条件から距離が決まり，その瞬間のエネルギーはばねと小物体だけに分配される．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "uniform-acceleration",
+  "kinematics-components"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "斜面台",
+  "単振動",
+  "拘束条件",
+  "垂直抗力",
+  "相対運動",
+  "エネルギー保存"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

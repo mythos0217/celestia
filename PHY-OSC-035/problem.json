@@ -1,0 +1,144 @@
+{
+ "id": "PHY-OSC-035",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "一定の力で引き上げたばね連結2物体の離床後の運動（重心の等速運動と相対振動の合成）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，質量 $M$ の物体Bを水平な床に置き，その上に，ばね定数 $k$ の軽いばねで質量 $m$ の物体Aをつないで，全体を静止させた．ばねはつねに鉛直に保たれ，A，Bは鉛直方向にのみ動く．重力加速度の大きさを $g$ とする．時刻 $t=0$ から，Aに鉛直上向きで一定の大きさ $F$ の力を加え続ける．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Bが床から受ける垂直抗力が（一瞬でも）$0$ になるための $F$ の最小値 $F_{\\min}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "以下では $F=(m+M)g$ とする．Bが床を離れる時刻 $t_1$ と，その瞬間のAの速さ $v_0$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Bが床を離れてからの時間を $\\tau$ とする．Bの速度 $v_{\\rm B}$（鉛直上向きを正）を $\\tau$ の関数として求めよ．また，Bは床を離れたあと一度も下向きに動かないことを示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "Bは床を離れたあと，ときどき一瞬だけ静止する．$n$ 回目（$n=1,2,\\dots$）に静止するときのBの床からの高さ $h_n$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "Bが床を離れたあとの，ばねの自然長からの伸びの最大値を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一定の力で引き上げたばね連結2物体の離床後の運動（重心の等速運動と相対振動の合成）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一定の力で引き上げたばね連結2物体の離床後の運動（重心の等速運動と相対振動の合成）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$F_{\\min}=\\dfrac{(m+M)g}{2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$t_1=\\dfrac{\\pi}{2}\\sqrt{\\dfrac{m}{k}}$，$v_0=\\dfrac{(m+M)g}{\\sqrt{mk}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$v_{\\rm B}=g\\sqrt{\\dfrac{m}{k}}\\,(1-\\cos\\omega'\\tau)$，ただし $\\omega'=\\sqrt{\\dfrac{k(m+M)}{mM}}$（$v_{\\rm B}\\geqq0$）"
+   },
+   {
+    "id": "4",
+    "tex": "$h_n=\\dfrac{2\\pi n\\,gm}{k}\\sqrt{\\dfrac{M}{m+M}}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{g}{k}\\left\\{M+\\sqrt{M(m+M)}\\right\\}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "ばねの自然長からの伸びを $x$（縮みは負）とする．はじめは $kx=-mg$ より $x=-\\dfrac{mg}{k}$．\n\n\\textbf{(1) Bが浮く条件}\n\nBが床にある間，Aは「ばねの力 $-kx$，重力 $-mg$，一定の力 $F$」を受け，つり合いの伸び $x_c=\\dfrac{F-mg}{k}$ を中心とする角振動数 $\\omega=\\sqrt{k/m}$ の単振動をする．静止状態から始まるので振幅は\n\\[ x_c-\\left(-\\frac{mg}{k}\\right)=\\frac{F}{k} \\]\nで，伸びの最大値は $x_c+\\dfrac Fk=\\dfrac{2F-mg}{k}$．Bの垂直抗力は $N=Mg-kx$ なので，$N$ が $0$ に達するには $\\dfrac{2F-mg}{k}\\geqq\\dfrac{Mg}{k}$，すなわち\n\\[ \\boldsymbol{F_{\\min}=\\frac{(m+M)g}{2}} \\]\n（$F$ は全体の重さの半分でよい．一定の力で「勢いをつけて」引くので，振動の行き過ぎ分だけ得をする．）\n\n\\textbf{(2) 離床の瞬間}\n\n$F=(m+M)g$ のとき $x_c=\\dfrac{Mg}{k}$ で，Bが離れる伸び $x=\\dfrac{Mg}{k}$（$N=0$）とちょうど一致する．つまりBが浮くのはAが振動の中心を通る瞬間で，振動の端から $\\frac14$ 周期後である．\n\\[ \\boldsymbol{t_1=\\frac{\\pi}{2}\\sqrt{\\frac{m}{k}}},\\qquad \\boldsymbol{v_0}=\\omega\\cdot\\frac Fk=\\sqrt{\\frac km}\\cdot\\frac{(m+M)g}{k}=\\boldsymbol{\\frac{(m+M)g}{\\sqrt{mk}}} \\]\nAはこのとき速さが最大で，Bは静止している．\n\n\\textbf{(3) 離床後のBの速度}\n\nBが床を離れると，A，B全体にはたらく外力は $F$ と重力 $(m+M)g$ だけで，その和は $0$ である．よって重心は等速度運動を続け，その速度は離床の瞬間の値\n\\[ V_{\\rm G}=\\frac{mv_0+M\\cdot0}{m+M}=\\frac{mv_0}{m+M}=g\\sqrt{\\frac mk} \\]\nのままである．\n\n相対運動については，Aの加速度 $a_{\\rm A}=\\dfrac{F-mg-kx}{m}$，Bの加速度 $a_{\\rm B}=\\dfrac{kx-Mg}{M}$ から\n\\[ \\ddot x=a_{\\rm A}-a_{\\rm B}=\\frac{F}{m}-k\\left(\\frac1m+\\frac1M\\right)x=-\\omega'^2\\left(x-\\frac{Mg}{k}\\right),\\qquad \\omega'=\\sqrt{\\frac{k(m+M)}{mM}} \\]\n（$F=(m+M)g$ を用いた）．離床時は $x=\\dfrac{Mg}{k}$（振動の中心），$\\dot x=v_0$ なので\n\\[ x-\\frac{Mg}{k}=\\frac{v_0}{\\omega'}\\sin\\omega'\\tau,\\qquad \\dot x=v_0\\cos\\omega'\\tau \\]\nBの速度は「重心の速度」から「相対速度の $\\frac{m}{m+M}$ 倍」を引いたものだから\n\\[ v_{\\rm B}=V_{\\rm G}-\\frac{m}{m+M}\\dot x=V_{\\rm G}-V_{\\rm G}\\cos\\omega'\\tau=\\boldsymbol{g\\sqrt{\\frac mk}\\,(1-\\cos\\omega'\\tau)}\\ \\geqq 0 \\]\nしたがってBは決して下向きに動かず，床に戻ることもない．重心は一定の速さで上がり，Bはその上に「重心と同じ大きさの速さの振動」を重ねたもので，速さは $0$ と $2g\\sqrt{m/k}$ の間を往復する（等速で転がる円の周上の点の運動＝サイクロイドと同じ形）．\n\n\\textbf{(4) 静止する高さ}\n\n$v_{\\rm B}=0$ となるのは $\\omega'\\tau=2\\pi n$ のとき．$v_{\\rm B}$ を積分すると\n\\[ y_{\\rm B}=V_{\\rm G}\\left(\\tau-\\frac{\\sin\\omega'\\tau}{\\omega'}\\right) \\]\nなので\n\\[ h_n=V_{\\rm G}\\cdot\\frac{2\\pi n}{\\omega'}=g\\sqrt{\\frac mk}\\cdot2\\pi n\\sqrt{\\frac{mM}{k(m+M)}}=\\boldsymbol{\\frac{2\\pi n\\,gm}{k}\\sqrt{\\frac{M}{m+M}}} \\]\n静止する位置は等間隔に並ぶ．\n\n\\textbf{(5) 伸びの最大値}\n\n相対運動の振幅は $\\dfrac{v_0}{\\omega'}=\\dfrac{(m+M)g}{\\sqrt{mk}}\\sqrt{\\dfrac{mM}{k(m+M)}}=\\dfrac{g\\sqrt{M(m+M)}}{k}$ なので\n\\[ x_{\\max}=\\frac{Mg}{k}+\\frac{g\\sqrt{M(m+M)}}{k}=\\boldsymbol{\\frac gk\\left\\{M+\\sqrt{M(m+M)}\\right\\}} \\]\n（解答図は $y_{\\rm B}$ と $v_{\\rm B}$ の時間変化の概形で，縦軸の目盛りは2つのグラフで別にとってある．）\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一定の力で引くとAは「つり合いの位置を中心とする単振動」をするので，引く力は全重量の半分でBを浮かせられる．$F=(m+M)g$ では離床の瞬間がちょうどAの振動の中心となり，離床後は外力の和が $0$ で重心が等速運動，相対運動は離床位置を中心とする単振動になるため，Bの速度は $V_{\\rm G}(1-\\cos\\omega'\\tau)\\geqq0$ となって決して下がらない（サイクロイド型の運動）．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "kinematics-components",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "単振動",
+  "重心運動",
+  "相対運動",
+  "垂直抗力",
+  "ばね連結2物体",
+  "状態の切り替わり"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

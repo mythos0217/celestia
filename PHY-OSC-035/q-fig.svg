@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 290">
+  <defs>
+    <marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+  </defs>
+  <line x1="60" y1="262" x2="300" y2="262" stroke="#222" stroke-width="1.6"/>
+  <line x1="70" y1="262" x2="60" y2="274" stroke="#222" stroke-width="1"/><line x1="80" y1="262" x2="70" y2="274" stroke="#222" stroke-width="1"/><line x1="90" y1="262" x2="80" y2="274" stroke="#222" stroke-width="1"/><line x1="100" y1="262" x2="90" y2="274" stroke="#222" stroke-width="1"/><line x1="110" y1="262" x2="100" y2="274" stroke="#222" stroke-width="1"/><line x1="120" y1="262" x2="110" y2="274" stroke="#222" stroke-width="1"/><line x1="130" y1="262" x2="120" y2="274" stroke="#222" stroke-width="1"/><line x1="140" y1="262" x2="130" y2="274" stroke="#222" stroke-width="1"/><line x1="150" y1="262" x2="140" y2="274" stroke="#222" stroke-width="1"/><line x1="160" y1="262" x2="150" y2="274" stroke="#222" stroke-width="1"/><line x1="170" y1="262" x2="160" y2="274" stroke="#222" stroke-width="1"/><line x1="180" y1="262" x2="170" y2="274" stroke="#222" stroke-width="1"/><line x1="190" y1="262" x2="180" y2="274" stroke="#222" stroke-width="1"/><line x1="200" y1="262" x2="190" y2="274" stroke="#222" stroke-width="1"/><line x1="210" y1="262" x2="200" y2="274" stroke="#222" stroke-width="1"/><line x1="220" y1="262" x2="210" y2="274" stroke="#222" stroke-width="1"/><line x1="230" y1="262" x2="220" y2="274" stroke="#222" stroke-width="1"/><line x1="240" y1="262" x2="230" y2="274" stroke="#222" stroke-width="1"/><line x1="250" y1="262" x2="240" y2="274" stroke="#222" stroke-width="1"/><line x1="260" y1="262" x2="250" y2="274" stroke="#222" stroke-width="1"/><line x1="270" y1="262" x2="260" y2="274" stroke="#222" stroke-width="1"/><line x1="280" y1="262" x2="270" y2="274" stroke="#222" stroke-width="1"/><line x1="290" y1="262" x2="280" y2="274" stroke="#222" stroke-width="1"/>
+  <rect x="140" y="210" width="80" height="52" fill="none" stroke="#222" stroke-width="1.6"/>
+  <text x="232" y="232" font-family="Noto Sans CJK JP, sans-serif" font-size="16" fill="#222">B</text>
+  <text x="232" y="252" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">（質量 <tspan font-family="Times New Roman, serif" font-style="italic">M</tspan>）</text>
+  <path d="M180.0,210.0 L180.0,202.0 L196.0,197.4 L164.0,188.1 L196.0,178.9 L164.0,169.6 L196.0,160.4 L164.0,151.1 L196.0,141.9 L164.0,132.6 L180.0,128.0 L180.0,120.0" fill="none" stroke="#222" stroke-width="1.6"/>
+  <text x="206" y="170" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">k</text>
+  <rect x="150" y="80" width="60" height="40" fill="none" stroke="#222" stroke-width="1.6"/>
+  <text x="222" y="106" font-family="Noto Sans CJK JP, sans-serif" font-size="16" fill="#222">A</text>
+  <text x="222" y="124" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">（質量 <tspan font-family="Times New Roman, serif" font-style="italic">m</tspan>）</text>
+  <line x1="180" y1="80" x2="180" y2="22" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <text x="190" y="34" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">F</text>
+</svg>

@@ -1,0 +1,143 @@
+{
+ "id": "PHY-OSC-031",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "一定の加速度で下げる板からばねにつるした物体が離れる位置と，その後の振幅（ゆっくり下げる場合と急に外す場合をつなぐ）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，ばね定数 $k$ の軽いばねの上端を天井に固定し，下端に質量 $m$ の物体を取りつける．物体を下から板で支え，ばねが自然の長さになるようにしておく．時刻 $0$ から，板を初速度 $0$，大きさ $\\alpha$（$0<\\alpha<g$）の一定の加速度で鉛直下向きに動かした．物体はしばらく板と一緒に動き，やがて板から離れた．重力加速度の大きさを $g$ とし，ばねの伸びを $x$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "物体が板から離れるときのばねの伸び $x_1$ と，そのときの物体の速さ $v_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "物体が板から離れるまでに，板が物体にした仕事 $W$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "板から離れた後，物体は単振動をする．その振幅 $A$ と，ばねの伸びの最大値 $x_{\\max}$ を求めよ．また，物体が再び板に触れることはないことを示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\alpha\\to0$ および $\\alpha\\to g$ の極限で $x_{\\max}$ はそれぞれどうなるか．それぞれどのような板の動かし方に対応するか述べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$x_{\\max}=\\dfrac{3mg}{2k}$ となるときの $\\alpha$ を $g$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一定の加速度で下げる板からばねにつるした物体が離れる位置と，その後の振幅（ゆっくり下げる場合と急に外す場合をつなぐ）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一定の加速度で下げる板からばねにつるした物体が離れる位置と，その後の振幅（ゆっくり下げる場合と急に外す場合をつなぐ）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$x_1=\\dfrac{m(g-\\alpha)}{k}$，$v_1=\\sqrt{\\dfrac{2m\\alpha(g-\\alpha)}{k}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$W=-\\dfrac{m^2(g-\\alpha)^2}{2k}$"
+   },
+   {
+    "id": "3",
+    "tex": "$A=\\dfrac mk\\sqrt{\\alpha(2g-\\alpha)}$，$x_{\\max}=\\dfrac mk\\Bigl(g+\\sqrt{\\alpha(2g-\\alpha)}\\Bigr)$（再接触しない理由は解説）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\alpha\\to0$ で $\\dfrac{mg}{k}$（ゆっくり下げる），$\\alpha\\to g$ で $\\dfrac{2mg}{k}$（急に板を外す）"
+   },
+   {
+    "id": "5",
+    "tex": "$\\alpha=\\Bigl(1-\\dfrac{\\sqrt3}{2}\\Bigr)g$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　板と一緒に動いている間，物体の加速度は板と同じ $\\alpha$ に決められ，垂直抗力 $N$ がそれを実現するように変わる．$N=0$ となった瞬間に離れる．離れた後は重力とばねの力だけなので，つり合いの位置 $x_0=\\dfrac{mg}{k}$ を中心とする単振動になる．\n\n\\textbf{(1)}　下向きを正として，接触中の物体の運動方程式は\n\\[ m\\alpha=mg-kx-N\\quad\\Longrightarrow\\quad N=m(g-\\alpha)-kx. \\]\n$N=0$ より $x_1=\\boldsymbol{\\dfrac{m(g-\\alpha)}{k}}$．板は等加速度運動なので $v_1^2=2\\alpha x_1$，\n\\[ v_1=\\boldsymbol{\\sqrt{\\frac{2m\\alpha(g-\\alpha)}{k}}}. \\]\n\n\\textbf{(2)}　物体にはたらく板の力は上向きに $N$ で，物体は下向きに動くので\n\\[ W=-\\int_0^{x_1}N\\,dx=-\\Bigl[m(g-\\alpha)x_1-\\frac12kx_1^2\\Bigr]=\\boldsymbol{-\\frac{m^2(g-\\alpha)^2}{2k}}. \\]\n（検算：$\\frac12mv_1^2=mgx_1-\\frac12kx_1^2+W$ を満たす．）\n\n\\textbf{(3)}　離れた瞬間の，振動の中心からの変位は $x_0-x_1=\\dfrac{m\\alpha}{k}$，速さは $v_1$，角振動数は $\\omega=\\sqrt{k/m}$ なので\n\\[ A^2=\\Bigl(\\frac{m\\alpha}{k}\\Bigr)^2+\\frac{v_1^2}{\\omega^2}=\\frac{m^2}{k^2}\\bigl(\\alpha^2+2\\alpha(g-\\alpha)\\bigr)=\\frac{m^2}{k^2}\\alpha(2g-\\alpha), \\]\n\\[ A=\\boldsymbol{\\frac mk\\sqrt{\\alpha(2g-\\alpha)}},\\qquad x_{\\max}=x_0+A=\\boldsymbol{\\frac mk\\Bigl(g+\\sqrt{\\alpha(2g-\\alpha)}\\Bigr)}. \\]\n\\textbf{再接触しないこと}　離れた後の物体の加速度は $g-\\dfrac{kx}{m}$ で，$x=x_1$ でちょうど $\\alpha$，$x>x_1$ では $\\alpha$ より小さい．板から見た物体の相対速度は離れた瞬間 $0$ で，その後は上向きに増えるので，物体が $x>x_1$ にある間，板との間隔は広がり続ける．物体が折り返して $x<x_1$ に戻るころには板は $x_1$ より下にあり，板はその後も下へ加速し続けるので，二度と触れない．\n\n\\textbf{(4)}　$\\alpha\\to0$：$x_{\\max}\\to\\boldsymbol{\\dfrac{mg}{k}}$．板を\\textbf{ゆっくり下げる}場合で，物体はつり合いの位置で静かに板を離れ，振動しない（板が負の仕事 $-\\dfrac{m^2g^2}{2k}$ をしてエネルギーを抜き取る）．\n$\\alpha\\to g$：$x_{\\max}\\to\\boldsymbol{\\dfrac{2mg}{k}}$．物体は $x=0$ ですぐ離れるので，板を\\textbf{急に取り去る}場合と同じで，自然長から振幅 $\\dfrac{mg}{k}$ の単振動をする．一定の加速度で下げる場合は，その間を連続につないでいる．\n\n\\textbf{(5)}　$\\sqrt{\\alpha(2g-\\alpha)}=\\dfrac g2$ より $\\alpha^2-2g\\alpha+\\dfrac{g^2}{4}=0$，$\\alpha=\\Bigl(1\\pm\\dfrac{\\sqrt3}{2}\\Bigr)g$．$0<\\alpha<g$ より\n\\[ \\boldsymbol{\\alpha=\\Bigl(1-\\frac{\\sqrt3}{2}\\Bigr)g}\\ (\\fallingdotseq0.13g). \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一定の加速度で動かす支えから物体が離れるのは垂直抗力が0，すなわち物体の加速度が支えの加速度に等しくなる位置である．その位置と速度から単振動の振幅が $\\alpha(2g-\\alpha)$ の形で決まり，「ゆっくり下げる（振動なし）」と「急に外す（伸び最大 $2mg/k$）」の2つの極限を連続につなぐ．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "work-energy",
+  "normal-force"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "単振動",
+  "垂直抗力",
+  "離れる条件",
+  "仕事とエネルギー",
+  "極限"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

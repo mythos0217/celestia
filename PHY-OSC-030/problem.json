@@ -1,0 +1,144 @@
+{
+ "id": "PHY-OSC-030",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "ばねを途中に付けた棒振り子と軽い振り子の衝突・接触の繰り返し（角振動数が2倍の振り子との周期運動）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平な天井の近接した2点 S，R から，質量の無視できる長さ $L$ の固い棒 A，B がつり下げられ，それぞれ S，R を通る水平な軸のまわりに同じ鉛直面内でなめらかに回転できる．棒 A の下端には質量 $m$ の小球（おもり A），棒 B の下端には質量 $\\dfrac{m}{3}$ の小球（おもり B）が付いている．さらに，棒 A の S から距離 $d$（$0<d\\le L$）の点に，ばね定数 $k$ の軽いばねを水平に取り付け，他端を左側の壁に固定した．ばねは棒 A が鉛直のとき自然長であり，十分長いので傾きの影響は無視できる．2本の棒が鉛直のとき，おもり A の右側にちょうどおもり B が接している．\n\nおもり A，B の最下点からの円周に沿った変位を $x_{\\mathrm A}$，$x_{\\mathrm B}$（右向きを正）とし，振れの角は十分小さいとして $\\sin\\theta\\fallingdotseq\\theta$，ばねの伸びは $\\dfrac{d}{L}x_{\\mathrm A}$ と近似する．おもりの衝突・接触の力は円周方向にはたらくとみなし，反発係数は 1 とする．重力加速度の大きさを $g$，$\\omega=\\sqrt{g/L}$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "棒 A は質量が無視できるので，棒にはたらく力の S のまわりのモーメントはつり合っている．これを用いて，おもり A が棒から受ける円周方向の力を $x_{\\mathrm A}$ で表し，おもり A だけが振動するときの角振動数 $\\omega_{\\mathrm A}$ を求めよ．また，$\\omega_{\\mathrm A}=2\\omega$ となる $d$ を求めよ（$k\\ge\\dfrac{3mg}{L}$ とする）．以下ではこの $d$ に設定する．"
+     },
+     {
+      "id": "2",
+      "tex": "おもり B だけを右に持ち上げて静かに放したところ，時刻 $t=0$ に，静止していたおもり A に左向きの速さ $v$ で衝突した．衝突直後のおもり A，B の速度を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "衝突後，2つのおもりは $0<t<t_1$ では離れていて，$t=t_1$ に再び接した．$t_1$ と，その直前の両者の速度を求め，この間に両者が接しないことを示せ．さらに，$t=t_1$ 以降しばらくの間，両者が接したまま一体となって運動することを示し，その間におもり A がおもり B を押す力の大きさ $N$ を，共通の変位 $x$ と $m$，$\\omega$ で表せ．また，接している時間を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "両者が離れた後の運動を調べ，おもりの運動全体が周期運動になることを示して，その周期 $T$ を $L$，$g$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "運動全体を通じて，おもり A が最も左に達するときの変位の大きさを $v$，$L$，$g$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ばねを途中に付けた棒振り子と軽い振り子の衝突・接触の繰り返し（角振動数が2倍の振り子との周期運動）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：ばねを途中に付けた棒振り子と軽い振り子の衝突・接触の繰り返し（角振動数が2倍の振り子との周期運動）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "棒から受ける力 $-\\dfrac{kd^2}{L^2}x_{\\mathrm A}$，$\\omega_{\\mathrm A}=\\sqrt{\\dfrac{g}{L}+\\dfrac{kd^2}{mL^2}}$，$d=\\sqrt{\\dfrac{3mgL}{k}}$"
+   },
+   {
+    "id": "2",
+    "tex": "A：左向き $\\dfrac v2$，B：右向き $\\dfrac v2$"
+   },
+   {
+    "id": "3",
+    "tex": "$t_1=\\pi\\sqrt{\\dfrac Lg}$，直前の速度はともに左向き $\\dfrac v2$．$N=-\\dfrac34m\\omega^2x$（$x\\le0$），接している時間 $\\dfrac{2\\pi}{\\sqrt{13}}\\sqrt{\\dfrac Lg}$"
+   },
+   {
+    "id": "4",
+    "tex": "$T=\\Bigl(3+\\dfrac{2}{\\sqrt{13}}\\Bigr)\\pi\\sqrt{\\dfrac Lg}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{v}{\\sqrt{13}}\\sqrt{\\dfrac Lg}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) てこで弱められたばね}\n棒 A の傾きを $\\theta=x_{\\mathrm A}/L$ とすると，ばねの伸びは $d\\theta=\\frac{d}{L}x_{\\mathrm A}$ で，ばねは棒を左向きに $k\\frac{d}{L}x_{\\mathrm A}$ の力で引く．おもり A が棒の下端を円周方向に押す力を $F$ とすると，質量のない棒の S のまわりのモーメントのつり合いから\n\\[ F\\cdot L=k\\frac{d}{L}x_{\\mathrm A}\\cdot d\\quad\\Longrightarrow\\quad F=\\frac{kd^2}{L^2}x_{\\mathrm A}. \\]\n作用・反作用により，おもり A は棒から $\\boldsymbol{-\\dfrac{kd^2}{L^2}x_{\\mathrm A}}$ の力を受ける．（ばねの力は「てこ」で $(d/L)^2$ 倍に弱まっておもりに伝わる．棒が質量をもたないので，棒の運動方程式はつり合いの式と同じ形になる．）\\\\\nおもり A の運動方程式は\n\\[ ma_{\\mathrm A}=-\\frac{mg}{L}x_{\\mathrm A}-\\frac{kd^2}{L^2}x_{\\mathrm A},\\qquad \\boldsymbol{\\omega_{\\mathrm A}=\\sqrt{\\frac gL+\\frac{kd^2}{mL^2}}}. \\]\n$\\omega_{\\mathrm A}^2=4\\frac gL$ より $kd^2=3mgL$，$\\boldsymbol{d=\\sqrt{3mgL/k}}$（$d\\le L$ より $k\\ge 3mg/L$ が必要）．おもり B は単振り子で角振動数 $\\omega$．\n\n\\textbf{(2) 1回目の衝突}\n衝突は瞬間的なので，ばね・重力の力積は無視でき，円周方向の運動量が保存する．速度を右向き正で $V_{\\mathrm A}$，$V_{\\mathrm B}$ とすると\n\\[ mV_{\\mathrm A}+\\frac m3V_{\\mathrm B}=-\\frac m3v,\\qquad V_{\\mathrm B}-V_{\\mathrm A}=-(-v-0)=v. \\]\nこれを解いて $\\boldsymbol{V_{\\mathrm A}=-\\dfrac v2}$（左向き），$\\boldsymbol{V_{\\mathrm B}=\\dfrac v2}$（右向き）．\n\n\\textbf{(3) 再び接するまでと接触中}\nそれぞれ $x=0$ から単振動を始めるので\n\\[ x_{\\mathrm A}=-\\frac{v}{4\\omega}\\sin2\\omega t,\\qquad x_{\\mathrm B}=\\frac{v}{2\\omega}\\sin\\omega t. \\]\n\\[ x_{\\mathrm B}-x_{\\mathrm A}=\\frac{v}{2\\omega}\\Bigl(\\sin\\omega t+\\frac12\\sin2\\omega t\\Bigr)=\\frac{v}{2\\omega}\\sin\\omega t\\,(1+\\cos\\omega t) \\]\nは $0<\\omega t<\\pi$ で正なので離れている．$\\omega t=\\pi$ で 0 となるから $\\boldsymbol{t_1=\\pi/\\omega=\\pi\\sqrt{L/g}}$．このとき\n\\[ \\dot x_{\\mathrm A}=-\\frac v2\\cos2\\pi=-\\frac v2,\\qquad \\dot x_{\\mathrm B}=\\frac v2\\cos\\pi=-\\frac v2 \\]\nで，\\textbf{ともに左向き $\\dfrac v2$}．速度が等しいので衝突（撃力）は起こらない．\\\\\n$t_1$ 直後，もし別々に運動すると，$x<0$ で A は $-4\\omega^2x$，B は $-\\omega^2x$ の右向きの加速度をもち，A の方が強く右へ引き戻されて B にめり込むことになる．したがって両者は押し合って一体で動く．一体の運動方程式は\n\\[ \\Bigl(m+\\frac m3\\Bigr)a=-4m\\omega^2x-\\frac m3\\omega^2x\\quad\\Longrightarrow\\quad a=-\\frac{13}{4}\\omega^2x. \\]\nB の運動方程式 $\\frac m3a=-\\frac m3\\omega^2x+N$ より\n\\[ \\boldsymbol{N=\\frac m3\\Bigl(-\\frac{13}{4}+1\\Bigr)\\omega^2x=-\\frac34m\\omega^2x}, \\]\nこれは $x<0$ の間は正（押し合う）で，$x=0$ に戻った瞬間に 0 になる．一体の運動は角振動数 $\\omega_{\\mathrm c}=\\frac{\\sqrt{13}}{2}\\omega$ の単振動で，$x=0$ から出て $x=0$ に戻るまでの半周期，すなわち $\\boldsymbol{\\dfrac{\\pi}{\\omega_{\\mathrm c}}=\\dfrac{2\\pi}{\\sqrt{13}}\\sqrt{\\dfrac Lg}}$ だけ接している．\n\n\\textbf{(4) 離れた後と周期}\n$x=0$ に戻ったとき両者はともに右向き $\\frac v2$．$x>0$ では $N<0$ が必要になるので，ここで離れる．以後\n\\[ x_{\\mathrm A}=\\frac{v}{4\\omega}\\sin2\\omega\\tau,\\quad x_{\\mathrm B}=\\frac{v}{2\\omega}\\sin\\omega\\tau,\\quad x_{\\mathrm B}-x_{\\mathrm A}=\\frac{v}{2\\omega}\\sin\\omega\\tau\\,(1-\\cos\\omega\\tau)>0\\ (0<\\omega\\tau<\\pi) \\]\nで，$\\tau=\\pi/\\omega$ に $x=0$ で出会う．このとき A は右向き $\\frac v2$，B は左向き $\\frac v2$ で正面衝突する．\n\\[ mV_{\\mathrm A}'+\\frac m3V_{\\mathrm B}'=\\frac m2v-\\frac m6v=\\frac m3v,\\qquad V_{\\mathrm B}'-V_{\\mathrm A}'=v \\]\nより $V_{\\mathrm A}'=0$，$V_{\\mathrm B}'=v$．A は最下点で静止し，B は右向き $v$ で単振り子の運動をして，$\\pi/\\omega$ 後に左向き $v$ で静止した A に衝突する．これは $t=0$ と同じ状態なので，運動は周期的に繰り返す．周期は\n\\[ T=\\frac\\pi\\omega+\\frac{2\\pi}{\\sqrt{13}\\,\\omega}+\\frac\\pi\\omega+\\frac\\pi\\omega=\\boldsymbol{\\Bigl(3+\\frac{2}{\\sqrt{13}}\\Bigr)\\pi\\sqrt{\\frac Lg}}. \\]\n（この周期性は，$\\omega_{\\mathrm A}=2\\omega$ のために A と B が同時に最下点に戻ることによる．）\n\n\\textbf{(5) A の最も左の位置}\nA が左にふれるのは，(3) の離れている区間（振幅 $\\frac{v}{4\\omega}$）と接触中（振幅 $\\frac{v/2}{\\omega_{\\mathrm c}}=\\frac{v}{\\sqrt{13}\\,\\omega}$）である．$\\frac1{\\sqrt{13}}>\\frac14$ なので，接触中の方が左まで行き，最大は\n\\[ \\boldsymbol{\\frac{v}{\\sqrt{13}}\\sqrt{\\frac Lg}}. \\]\n軽い B に押されて一体になると，全体の「ばね」が弱く（$\\omega_{\\mathrm c}<\\omega_{\\mathrm A}$）なり，振幅が増える．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "質量のない棒に付けたばねはモーメントのつり合いによって $(d/L)^2$ 倍の実効ばね定数としておもりにはたらき，角振動数を調整できる．角振動数が2倍の振り子との衝突では，両者が同時に最下点へ戻るため，速度がそろった瞬間に撃力なしで接し，「どちらが強く引き戻されるか」で一体運動（接触力 $\\propto -x$）に切り替わり，接触力が0になる点で離れる．衝突・接触・分離の各段階をつなぐと運動全体が周期運動になる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "simple-pendulum",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "単振動",
+  "てこ",
+  "モーメントのつり合い",
+  "弾性衝突",
+  "接触と分離",
+  "周期運動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

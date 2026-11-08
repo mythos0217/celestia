@@ -1,0 +1,152 @@
+{
+ "id": "PHY-OSC-026",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "動くベルト上でばねで結ばれた2物体（重心の等速運動とベルトへの固着）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平な床と角 $\\theta$ をなすベルトコンベアが固定され，ベルトは斜面に沿って上向きに一定の速さ $V$ で動いている．ベルト上に，質量 $M$ の物体 A と質量 $m$ の物体 B をばね定数 $k$ の軽いばねでつないで，A が B より上側になるように置く．A とベルトの間の静止摩擦係数は $\\mu$，動摩擦係数は $\\mu'$ であり，B とベルトの間に摩擦はない．A，B は斜面に沿ってのみ運動し，回転しない．ばねは十分に長く，A と B が衝突することはない．重力加速度の大きさを $g$ とする．速度は床に対するもので，斜面に沿って上向きを正とする．\n\nはじめ，ばねを自然長から $d_0$ だけ伸ばした状態で A，B を床に対して静止させてベルトに置いたところ，A，B はともに床に対して静止し続けた．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$d_0$ を求めよ．また，$\\mu'$ を $M$，$m$，$\\theta$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "時刻 $t=0$ に B を瞬間的にたたいて，床に対して斜面上向きの速さ $u$ を与えた（この瞬間 A は床に対して静止している）．A がベルトに対して滑っている間，A と B の重心の速度 $v_{\\mathrm G}$ は一定に保たれる．その理由を述べ，$v_{\\mathrm G}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "A がベルトに対して滑っている間の A の速度 $v_{\\mathrm A}$ を，時刻 $t$ の関数として求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$u$ がある値 $u_{\\mathrm c}$ より小さいと，A はいつまでもベルトに対して滑り続ける．$u_{\\mathrm c}$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "以下では $u=\\dfrac{(M+m)V}{m}$ とする．A の速度がはじめて $V$ になる時刻 $t_1$ と，その瞬間の B の速度を求めよ．また，$0\\le t\\le t_1$ の間に A とベルトの間の摩擦で発生する熱量 $Q$ を求めよ．"
+     },
+     {
+      "id": "6",
+      "tex": "時刻 $t_1$ 以降，A がベルトに対して静止し続けるために $\\mu$ が満たすべき条件を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：動くベルト上でばねで結ばれた2物体（重心の等速運動とベルトへの固着）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：動くベルト上でばねで結ばれた2物体（重心の等速運動とベルトへの固着）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$d_0=\\dfrac{mg\\sin\\theta}{k}$，$\\mu'=\\dfrac{(M+m)\\tan\\theta}{M}$"
+   },
+   {
+    "id": "2",
+    "tex": "外力の合力が $0$ だから．$v_{\\mathrm G}=\\dfrac{mu}{M+m}$"
+   },
+   {
+    "id": "3",
+    "tex": "$v_{\\mathrm A}=\\dfrac{mu}{M+m}(1-\\cos\\omega t)$，$\\omega=\\sqrt{\\dfrac{k(M+m)}{Mm}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$u_{\\mathrm c}=\\dfrac{(M+m)V}{2m}$"
+   },
+   {
+    "id": "5",
+    "tex": "$t_1=\\dfrac{\\pi}{2}\\sqrt{\\dfrac{Mm}{k(M+m)}}$，B の速度は $V$，$Q=(M+m)gV\\sin\\theta\\sqrt{\\dfrac{Mm}{k(M+m)}}$"
+   },
+   {
+    "id": "6",
+    "tex": "$\\mu\\ge\\dfrac{(M+m)\\tan\\theta}{M}+\\dfrac{V}{g\\cos\\theta}\\sqrt{\\dfrac{k(M+m)}{Mm}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) はじめのつり合い}　B には摩擦がないので，重力の斜面成分とばねの力がつり合う：$kd_0=mg\\sin\\theta$ より $d_0=\\boldsymbol{\\dfrac{mg\\sin\\theta}{k}}$．A は床に対して静止しているが，ベルトは上向きに動いているので，A はベルトに対して下向きに滑っている．よって A には動摩擦力 $\\mu'Mg\\cos\\theta$ が斜面上向きにはたらく．A のつり合い $\\mu'Mg\\cos\\theta=Mg\\sin\\theta+kd_0=(M+m)g\\sin\\theta$ より\n\\[ \\mu'=\\boldsymbol{\\frac{(M+m)\\tan\\theta}{M}} \\]\n\n\\textbf{(2) 重心の等速運動}　A がベルトに対して下向きに滑っている間（$v_{\\mathrm A}<V$），A にはたらく動摩擦力は大きさ $\\mu'Mg\\cos\\theta=(M+m)g\\sin\\theta$ で常に斜面上向きである．A，B をまとめた系に斜面方向にはたらく外力は，重力の成分 $-(M+m)g\\sin\\theta$ とこの動摩擦力だけで（ばねの力は内力，垂直抗力は斜面に垂直），合力は $0$ になる．よって系の運動量が保存し，重心の速度は一定である．たたいた直後は $v_{\\mathrm A}=0$，$v_{\\mathrm B}=u$ だから\n\\[ v_{\\mathrm G}=\\boldsymbol{\\frac{mu}{M+m}} \\]\n動摩擦力が速さによらず一定であること，そしてその値が (1) のつり合いで重力とちょうど打ち消すように決まっていることが鍵である．\n\n\\textbf{(3) 重心から見た単振動}　ばねの自然長からの伸びを $X$ とすると，運動方程式は\n\\[ Ma_{\\mathrm A}=-Mg\\sin\\theta+(M+m)g\\sin\\theta-kX,\\qquad ma_{\\mathrm B}=-mg\\sin\\theta+kX \\]\n差をとると\n\\[ a_{\\mathrm A}-a_{\\mathrm B}=-\\frac{k(M+m)}{Mm}\\left(X-d_0\\right) \\]\n$X$ の変化率は $v_{\\mathrm A}-v_{\\mathrm B}$ なので，相対運動は $X=d_0$ を中心とする角振動数 $\\omega=\\sqrt{\\dfrac{k(M+m)}{Mm}}$ の単振動である．$t=0$ で $X=d_0$（振動の中心），$v_{\\mathrm A}-v_{\\mathrm B}=-u$ だから $v_{\\mathrm A}-v_{\\mathrm B}=-u\\cos\\omega t$．これと $Mv_{\\mathrm A}+mv_{\\mathrm B}=mu$ から\n\\[ v_{\\mathrm A}=v_{\\mathrm G}+\\frac{m}{M+m}(v_{\\mathrm A}-v_{\\mathrm B})=\\boldsymbol{\\frac{mu}{M+m}\\left(1-\\cos\\omega t\\right)},\\qquad \\omega=\\sqrt{\\frac{k(M+m)}{Mm}} \\]\n重心から見ると A は振幅 $v_{\\mathrm G}$ の速度で往復しており，床から見た $v_{\\mathrm A}$ は $0$ と $2v_{\\mathrm G}$ の間を行き来する．\n\n\\textbf{(4) 滑り続ける条件}　(3) の式が成り立つのは $v_{\\mathrm A}<V$ の間である．$v_{\\mathrm A}$ の最大値は $2v_{\\mathrm G}=\\dfrac{2mu}{M+m}$ なので，これが $V$ に届かなければ A は一度もベルトの速さに追いつかず，摩擦は動摩擦のまま，運動は (3) のまま永久に続く（系全体は平均の速さ $v_{\\mathrm G}$ で斜面を上っていく）．よって\n\\[ u_{\\mathrm c}=\\boldsymbol{\\frac{(M+m)V}{2m}} \\]\n$u=u_{\\mathrm c}$ のときは，A は速度の最大値でちょうど $V$ に達する（加速度 $0$ で接するように追いつく）．\n\n\\textbf{(5) 追いつく瞬間}　$u=\\dfrac{(M+m)V}{m}$ では $v_{\\mathrm G}=V$ で，$v_{\\mathrm A}=V(1-\\cos\\omega t)$．はじめて $V$ になるのは $\\cos\\omega t_1=0$ のときで\n\\[ t_1=\\frac{\\pi}{2\\omega}=\\boldsymbol{\\frac{\\pi}{2}\\sqrt{\\frac{Mm}{k(M+m)}}} \\]\n運動量保存 $MV+mv_{\\mathrm B}=(M+m)V$ より B の速度も $\\boldsymbol{V}$ である．つまりこの瞬間，A も B もベルトに対して静止している（A は加速の途中で追いつく点が (4) の場合と異なる）．\n\n発熱は（動摩擦力）×（ベルトに対する滑りの距離）である．滑りの距離は\n\\[ \\int_0^{t_1}(V-v_{\\mathrm A})\\,dt=\\int_0^{t_1}V\\cos\\omega t\\,dt=\\frac{V}{\\omega} \\]\nなので\n\\[ Q=\\mu'Mg\\cos\\theta\\cdot\\frac{V}{\\omega}=\\boldsymbol{(M+m)gV\\sin\\theta\\sqrt{\\frac{Mm}{k(M+m)}}} \\]\n\n\\textbf{(6) 固着し続ける条件}　$t_1$ での伸びは\n\\[ X(t_1)=d_0+\\int_0^{t_1}(v_{\\mathrm A}-v_{\\mathrm B})\\,dt=d_0-\\frac{u}{\\omega}=d_0-\\Delta,\\qquad \\Delta=\\frac{(M+m)V}{m\\omega}=V\\sqrt{\\frac{M(M+m)}{mk}} \\]\nA がベルトに固着すると，等速で動くベルトの上で考えればよい（ベルトとともに動く座標系は慣性系）．B のつり合いの伸びは $d_0$ で，$t_1$ に B はベルトに対して静止しているから，B は振幅 $\\Delta$ の単振動の端から動き出す．以後 $X$ は $d_0-\\Delta$ から $d_0+\\Delta$ の間を往復する．\n\nA にはたらく静止摩擦力 $f$（斜面上向きを正）は，A のつり合い $f=Mg\\sin\\theta+kX$ から\n\\[ (M+m)g\\sin\\theta-k\\Delta\\le f\\le (M+m)g\\sin\\theta+k\\Delta \\]\nの範囲を動く．$|f|\\le\\mu Mg\\cos\\theta$ が常に成り立てばよく，上側の条件\n\\[ (M+m)g\\sin\\theta+k\\Delta\\le\\mu Mg\\cos\\theta \\]\nが成り立てば下側も成り立つ．$k\\Delta=V\\sqrt{kM(M+m)/m}=MV\\omega$ を用いて\n\\[ \\mu\\ge\\boldsymbol{\\frac{(M+m)\\tan\\theta}{M}+\\frac{V}{g\\cos\\theta}\\sqrt{\\frac{k(M+m)}{Mm}}}\\;\\left(=\\mu'+\\frac{V\\omega}{g\\cos\\theta}\\right) \\]\nなお $t_1$ の直後に必要な静止摩擦力 $(M+m)g\\sin\\theta-k\\Delta$ は直前の動摩擦力 $(M+m)g\\sin\\theta$ より小さく，この条件のもとで A は無理なく固着に移る．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ベルトに対して滑る物体の動摩擦力は速さによらず一定で，それが系全体の重力成分と打ち消し合うと，滑りが続く間は重心が等速運動し，各物体は重心から見て単振動する．ベルトの速さに追いつけるかは「重心速度の2倍」との比較で決まり，追いついた瞬間に静止摩擦へ切り替わって，以後は別の振動中心・振幅の単振動になる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "momentum-conservation",
+  "static-friction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ベルトコンベア",
+  "動摩擦力",
+  "重心系",
+  "単振動",
+  "固着",
+  "運動量保存"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker></defs>
+<circle cx="200.0" cy="160.0" r="120" stroke="#222" stroke-width="2.2" fill="none"/>
+<circle cx="200.0" cy="160.0" r="3" stroke="#222" stroke-width="1.6" fill="#222"/>
+<text x="188.0" y="154.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">O</text>
+<line x1="200.0" y1="25.0" x2="200.0" y2="295.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="200.0" y1="160.0" x2="303.9" y2="220.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<rect x="296.9" y="213.0" width="14.0" height="14.0" stroke="#222" stroke-width="1.6" fill="#fff"/>
+<text x="327.9" y="230.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">小物体</text>
+<text x="327.9" y="248.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">m</text>
+<path d="M200.0,200.0 A40,40 0 0 0 234.6,180.0" stroke="#222" stroke-width="1" fill="none"/>
+<text x="220.0" y="220.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">θ</text>
+<text x="264.0" y="188.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">R</text>
+<path d="M269.0,40.5 A138,138 0 0 1 141.7,34.9" stroke="#1f5fbf" stroke-width="1.8" fill="none" marker-end="url(#q-ab)"/>
+<text x="125.7" y="38.9" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf" text-anchor="middle">ω</text>
+<text x="200.0" y="312.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">最下点</text>
+<text x="345.0" y="90.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">中心軸は水平</text>
+<line x1="370.0" y1="250.0" x2="370.0" y2="290.0" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<text x="380.0" y="280.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">g</text>
+</svg>

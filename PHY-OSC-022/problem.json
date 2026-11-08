@@ -1,0 +1,143 @@
+{
+ "id": "PHY-OSC-022",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "支点を放した振り子：重心の自由落下と重心系の等速円運動・張力の不連続",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，質量 $m$ の小球 A と質量 $M$ の小球 B が長さ $l$ の伸び縮みしない軽い糸でつながれている．小球 B を点 O に固定し，A を O の真下に糸が張った状態で静止させておく．A に水平方向の速さ $v_0$ を与えたところ，A は O を中心とする鉛直面内の円運動を始めた．ただし $2gl<v_0^2<5gl$ とし，重力加速度の大きさを $g$ とする．小球の大きさと空気抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "B を固定したままにしておくと，A が O より高い位置で糸がたるむ．たるむ瞬間の糸と水平方向のなす角を $\\alpha$ として，$\\sin\\alpha$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "次に，同じ運動で，A が O と同じ高さに達した瞬間（糸が水平な瞬間）に B を静かに放す．放す直前の糸の張力 $T_1$ と，放した直後の糸の張力 $T_2$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "B を放した後，糸は一度もたるまないことを示せ．また，B を放してから，A が B の真上に初めて来るまでの時間 $t_1$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "B を放した直後の B の加速度の大きさを求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "時刻 $t_1$ における B の位置を，O を原点とし，水平方向は A がはじめにあった側を正，鉛直方向は上向きを正とする座標 $(x_{\\rm B},\\,y_{\\rm B})$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：支点を放した振り子：重心の自由落下と重心系の等速円運動・張力の不連続",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：支点を放した振り子：重心の自由落下と重心系の等速円運動・張力の不連続",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\sin\\alpha=\\dfrac{v_0^2-2gl}{3gl}$"
+   },
+   {
+    "id": "2",
+    "tex": "$T_1=\\dfrac{m(v_0^2-2gl)}{l}$，$T_2=\\dfrac{mM(v_0^2-2gl)}{(m+M)l}$"
+   },
+   {
+    "id": "3",
+    "tex": "張力は一定値 $T_2>0$ のまま（たるまない），$t_1=\\dfrac{\\pi l}{2\\sqrt{v_0^2-2gl}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\sqrt{g^2+\\left\\{\\dfrac{m(v_0^2-2gl)}{(m+M)l}\\right\\}^2}$"
+   },
+   {
+    "id": "5",
+    "tex": "$x_{\\rm B}=\\dfrac{ml}{m+M}$，$y_{\\rm B}=\\dfrac{ml}{m+M}\\left(\\dfrac{\\pi}{2}-1\\right)-\\dfrac{\\pi^2gl^2}{8(v_0^2-2gl)}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 支点を固定した円運動}\n糸が水平から上へ角 $\\alpha$ の位置で，A の速さを $v$ とすると，力学的エネルギー保存より $v^2=v_0^2-2gl(1+\\sin\\alpha)$．中心方向の運動方程式は，重力の中心向き成分が $mg\\sin\\alpha$ なので\n\\[ m\\frac{v^2}{l}=T+mg\\sin\\alpha \\quad\\Longrightarrow\\quad T=\\frac{m}{l}\\left(v_0^2-2gl-3gl\\sin\\alpha\\right). \\]\n$T=0$ とおいて $\\boldsymbol{\\sin\\alpha=\\dfrac{v_0^2-2gl}{3gl}}$．条件 $2gl<v_0^2<5gl$ により $0<\\sin\\alpha<1$ で，確かに O より上でたるむ．\n\n\\textbf{(2) 放す前後の張力}\n糸が水平な瞬間の A の速さを $u$ とすると $u^2=v_0^2-2gl$ で，A の速度は鉛直上向き．このとき重力は糸に垂直なので，放す直前の中心方向の式は $mu^2/l=T_1$，すなわち $\\boldsymbol{T_1=\\dfrac{m(v_0^2-2gl)}{l}}$．\n\n放した直後を考える．放した瞬間には位置・速度は連続で，B は静止，A は上向きに速さ $u$ である．2球は同じ重力加速度 $g$ を受けるので，重心 G とともに自由落下する観測者（重心系）から見ると重力は打ち消され，2球にはたらくのは糸の張力（内力）だけになる．重心系での A，B の速度は，相対速度 $u$（糸に垂直）を質量の逆比に分けたもので，それぞれ $\\dfrac{M}{m+M}u$，$\\dfrac{m}{m+M}u$ の逆向きであり，どちらも糸に垂直である．よって A は G のまわりを半径 $\\dfrac{M}{m+M}l$ で回るので\n\\[ T_2=m\\frac{\\left(\\frac{M}{m+M}u\\right)^2}{\\frac{M}{m+M}l}=\\frac{mM}{m+M}\\cdot\\frac{u^2}{l},\\qquad \\boldsymbol{T_2=\\dfrac{mM(v_0^2-2gl)}{(m+M)l}}. \\]\nB を放すと張力は $\\dfrac{M}{m+M}$ 倍に不連続に下がる．放す前は B を支える手が糸を引いていたが，放した後は B も加速して「逃げる」ためである．\n\n\\textbf{(3) 糸はたるまない}\n重心系では外力がはたらかないので，各球の速さは張力（速度に垂直）によって変わらず，2球は G を中心に一定の角速度 $\\omega=u/l$ で等速円運動を続ける．張力は常に $T_2=\\dfrac{mM}{m+M}\\dfrac{u^2}{l}>0$ で一定となり，糸は決してたるまない．B を固定したままなら (1) の角度でたるむのに対し，放すことで重力の影響が重心の運動へ移り，相対運動には残らないことが要点である．\n\nA が B の真上に来るのは糸が $\\dfrac{\\pi}{2}$ 回転したときで，\n\\[ \\boldsymbol{t_1=\\frac{\\pi}{2\\omega}=\\frac{\\pi l}{2\\sqrt{v_0^2-2gl}}}. \\]\n\n\\textbf{(4) B の加速度}\nB にはたらく力は重力 $Mg$（下向き）と，A の方向（水平）を向く張力 $T_2$ である．よって加速度は下向き $g$ と水平に $T_2/M=\\dfrac{m(v_0^2-2gl)}{(m+M)l}$ の合成で，大きさは\n\\[ \\boldsymbol{\\sqrt{g^2+\\left\\{\\frac{m(v_0^2-2gl)}{(m+M)l}\\right\\}^2}}. \\]\n\n\\textbf{(5) 時刻 $t_1$ での B の位置}\n重心 G ははじめ $\\left(\\dfrac{ml}{m+M},\\,0\\right)$ にあり，速度は全運動量から $\\left(0,\\,\\dfrac{mu}{m+M}\\right)$．以後，加速度 $g$ の放物運動（ここでは鉛直投げ上げ）をする：\n\\[ x_{\\rm G}=\\frac{ml}{m+M},\\qquad y_{\\rm G}=\\frac{mu}{m+M}t-\\frac12gt^2. \\]\nB は G から見て A と反対側，距離 $\\dfrac{m}{m+M}l$ にある．$t=t_1$ では A が B の真上なので，B は G の真下 $\\dfrac{ml}{m+M}$ の位置にある：\n\\[ x_{\\rm B}=\\frac{ml}{m+M},\\qquad y_{\\rm B}=\\frac{mu}{m+M}t_1-\\frac12gt_1^2-\\frac{ml}{m+M}. \\]\n$ut_1=\\dfrac{\\pi l}{2}$ を代入して\n\\[ \\boldsymbol{x_{\\rm B}=\\frac{ml}{m+M}},\\qquad \\boldsymbol{y_{\\rm B}=\\frac{ml}{m+M}\\left(\\frac{\\pi}{2}-1\\right)-\\frac{\\pi^2gl^2}{8(v_0^2-2gl)}}. \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "支点を放すと，同じ重力加速度を受ける2球の重心は放物運動し，重心系では重力が消えて相対運動は角速度 $u/l$ の等速円運動になる．そのため張力は換算質量で決まる一定値 $\\frac{mM}{m+M}\\frac{u^2}{l}$ に不連続に下がり，固定したままならたるむはずの糸が決してたるまなくなる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "projectile-motion",
+  "kinematics-components"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "重心系",
+  "自由落下",
+  "換算質量",
+  "張力",
+  "糸のたるみ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,127 @@
+{
+ "id": "PHY-OSC-040",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "2つの固定電荷の垂直二等分線上のばね振り子と，電荷の符号の切り替えによる単振動の中心・角振動数の変更",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，ばね定数 $\\alpha$ の軽いばねの上端を天井に固定し，下端に質量 $m$，電気量 $q$（$q>0$）の小球をつるす．ばねが自然の長さのときの小球の位置を原点 O とし，鉛直上向きに $x$ 軸をとる．O を通る水平線上で，O の真上の鉛直線から左右に距離 $L$ だけ離れた点 A，B に小さな電極を固定する．A，B には常に等しい電気量を与え，その値を $-Q$ と $+Q$（$Q>0$）の間で瞬間的に切り替えられる．小球は $x$ 軸上だけを動き，$|x|$ は $L$ に比べて十分小さいので，静電気力は $x$ の1次までの近似で扱う．クーロンの法則の比例定数を $k$，重力加速度の大きさを $g$ とし，\n\\[ \\gamma=\\frac{2kqQ}{L^3} \\]\nとおく．$\\gamma<\\alpha$ とする．電気量を切り替える瞬間の前後で，小球の位置と速度は変わらない．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A，B の電気量が $-Q$ のときと $+Q$ のときのそれぞれについて，小球にはたらく力の合力の $x$ 成分を $x$ の1次式で表せ．また，それぞれのつり合いの位置 $x_-$，$x_+$ と，単振動の角振動数 $\\omega_-$，$\\omega_+$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "A，B を $-Q$ にして，小球を O で静かにはなした．小球が初めて最下点に達した瞬間に，A，B を $+Q$ に切り替えた．\n  \\begin{enumerate}\n    \\item 切り替えた後の単振動の振幅を $m$，$g$，$\\alpha$，$\\gamma$ で表せ．\n    \\item 切り替えた直後に小球が上向きに動き出すための $Q$ の条件を求めよ．\n    \\item 切り替えた後，小球が静止し続けるための $Q$ を求めよ．\n  \\end{enumerate}"
+     },
+     {
+      "id": "3",
+      "tex": "$Q$ を (2)(c) の値にして，次の操作を行う．A，B を $-Q$ にして小球を O で静かにはなし，小球が初めて $x=x_-$ を下向きに通過した瞬間に $+Q$ に切り替える．その後，小球が $x=x_-$ を上向きに通過した瞬間に $-Q$ に戻す．\n  \\begin{enumerate}\n    \\item 小球の最下点の位置を $m$，$g$，$\\alpha$ で表せ．\n    \\item $-Q$ に戻した後に小球が達する最高点の位置を求めよ．\n    \\item 以後，「$x=x_-$ を下向きに通過する瞬間に $+Q$，上向きに通過する瞬間に $-Q$」に切り替えることをくり返すと，小球は周期運動をする．その周期 $T$ を $m$，$\\alpha$ で表せ（逆三角関数を用いてよい）．\n  \\end{enumerate}"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：2つの固定電荷の垂直二等分線上のばね振り子と，電荷の符号の切り替えによる単振動の中心・角振動数の変更",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：2つの固定電荷の垂直二等分線上のばね振り子と，電荷の符号の切り替えによる単振動の中心・角振動数の変更",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$-Q$：$-(\\alpha+\\gamma)x-mg$，$x_-=-\\dfrac{mg}{\\alpha+\\gamma}$，$\\omega_-=\\sqrt{\\dfrac{\\alpha+\\gamma}{m}}$；$+Q$：$-(\\alpha-\\gamma)x-mg$，$x_+=-\\dfrac{mg}{\\alpha-\\gamma}$，$\\omega_+=\\sqrt{\\dfrac{\\alpha-\\gamma}{m}}$"
+   },
+   {
+    "id": "2",
+    "tex": "(a) $\\dfrac{mg|\\alpha-3\\gamma|}{\\alpha^2-\\gamma^2}$　(b) $Q<\\dfrac{\\alpha L^3}{6kq}$　(c) $Q=\\dfrac{\\alpha L^3}{6kq}$"
+   },
+   {
+    "id": "3",
+    "tex": "(a) $x=-\\dfrac{3(2+\\sqrt3)mg}{4\\alpha}$　(b) $x=0$（O）　(c) $T=\\dfrac{\\sqrt3\\,\\pi}{2}\\sqrt{\\dfrac{m}{\\alpha}}+\\sqrt{\\dfrac32}\\left(\\pi+2\\sin^{-1}\\dfrac{1}{\\sqrt3}\\right)\\sqrt{\\dfrac{m}{\\alpha}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　A，B の電気量が $\\mp Q$ のとき，A から小球への静電気力の大きさは $\\dfrac{kqQ}{L^2+x^2}$ で，その $x$ 成分は A から小球へ向かう向きの成分 $\\dfrac{x}{\\sqrt{L^2+x^2}}$ 倍である．B からの力も同じで，水平成分は打ち消し合う．$-Q$ のとき（引力）\n\\[ F_{\\rm c}=-\\frac{2kqQ\\,x}{(L^2+x^2)^{3/2}}\\fallingdotseq-\\frac{2kqQ}{L^3}x=-\\gamma x \\]\nで，$+Q$ のとき（斥力）は $+\\gamma x$ になる．ばねの弾性力 $-\\alpha x$ と重力 $-mg$ を加えて\n\\[ -Q:\\ F=-(\\alpha+\\gamma)x-mg,\\qquad +Q:\\ F=-(\\alpha-\\gamma)x-mg. \\]\nどちらも「ばね定数 $\\alpha\\pm\\gamma$ のばねによる単振動」と同じ形で，つり合いの位置と角振動数は\n\\[ x_-=\\boldsymbol{-\\frac{mg}{\\alpha+\\gamma}},\\ \\ \\omega_-=\\boldsymbol{\\sqrt{\\frac{\\alpha+\\gamma}{m}}},\\qquad x_+=\\boldsymbol{-\\frac{mg}{\\alpha-\\gamma}},\\ \\ \\omega_+=\\boldsymbol{\\sqrt{\\frac{\\alpha-\\gamma}{m}}}. \\]\n$+Q$ では実効的なばね定数が小さいので，$x_+$ は $x_-$ より下にある．切り替えは「単振動の中心と角振動数を，位置と速度を保ったまま取りかえる」操作である．\n\n\\textbf{(2)}　$-Q$ のもとで O から静かにはなすと，中心 $x_-$，振幅 $|x_-|$ の単振動をするので，最下点は $2x_-$．ここで速度は $0$ なので，$+Q$ に切り替えた後は $2x_-$ を端とする中心 $x_+$ の単振動になり，振幅は\n\\[ |2x_--x_+|=mg\\left|\\frac{1}{\\alpha-\\gamma}-\\frac{2}{\\alpha+\\gamma}\\right|=\\boldsymbol{\\frac{mg|\\alpha-3\\gamma|}{\\alpha^2-\\gamma^2}}. \\]\n(b) 上向きに動き出すのは，最下点 $2x_-$ が新しい中心 $x_+$ より下にあるとき，すなわち $\\dfrac{2}{\\alpha+\\gamma}>\\dfrac{1}{\\alpha-\\gamma}$，$\\gamma<\\dfrac{\\alpha}{3}$ のときである．$\\gamma=\\dfrac{2kqQ}{L^3}$ より $\\boldsymbol{Q<\\dfrac{\\alpha L^3}{6kq}}$．\n(c) 静止し続けるのは $2x_-=x_+$（振幅 $0$），すなわち $\\gamma=\\dfrac{\\alpha}{3}$ のときで $\\boldsymbol{Q=\\dfrac{\\alpha L^3}{6kq}}$．最下点がちょうど新しいつり合いの位置になる．\n\n\\textbf{(3)}　$\\gamma=\\dfrac{\\alpha}{3}$ なので $x_-=-\\dfrac{3mg}{4\\alpha}$，$x_+=-\\dfrac{3mg}{2\\alpha}=2x_-$，$\\omega_-^2=\\dfrac{4\\alpha}{3m}$，$\\omega_+^2=\\dfrac{2\\alpha}{3m}$．以下 $a=\\dfrac{3mg}{4\\alpha}$ とおく（$x_-=-a$，$x_+=-2a$）．\n\n(a) O から $x_-$ までは振幅 $a$ の単振動なので，$x_-$（中心）での速さは $v=\\omega_-a$．切り替え後は中心 $x_+$ の単振動で，切り替えた瞬間の中心からの変位は $x_--x_+=a$（上側）．単振動のエネルギー保存 $\\dfrac12mv^2+\\dfrac12m\\omega_+^2u^2=$ 一定 より，振幅 $A$ は\n\\[ A^2=a^2+\\frac{v^2}{\\omega_+^2}=a^2+\\frac{\\omega_-^2}{\\omega_+^2}a^2=a^2+2a^2=3a^2,\\qquad A=\\sqrt3\\,a. \\]\n最下点は $x_+-A=-(2+\\sqrt3)a=\\boldsymbol{-\\dfrac{3(2+\\sqrt3)mg}{4\\alpha}}$．\n\n(b) $+Q$ の単振動の間は力学的エネルギー（単振動のエネルギー）が保存するので，小球は同じ位置 $x_-$ に同じ速さ $v$ で（上向きに）戻ってくる．$-Q$ に戻すと，$x_-$ を中心に速さ $v=\\omega_-a$ で通過する単振動になるので振幅は $a$ で，最高点は $x_-+a=\\boldsymbol{0}$，すなわち O である．以後も同じ運動がくり返される（解答図）．\n\n(c) $-Q$ の区間：O から $x_-$ まで，$x_-$ から O まではそれぞれ $\\dfrac14$ 周期なので，合計 $\\dfrac{\\pi}{\\omega_-}=\\dfrac{\\sqrt3\\,\\pi}{2}\\sqrt{\\dfrac m\\alpha}$．\n$+Q$ の区間：中心 $x_+$ からの変位を $u=A\\cos\\phi$（$\\phi=\\omega_+t+\\phi_0$）と書く．切り替えの瞬間は $u=a$ で下向きに動くので $\\cos\\phi_0=\\dfrac{a}{A}=\\dfrac1{\\sqrt3}$（$0<\\phi_0<\\dfrac\\pi2$）．再び $u=a$ を上向きに通るのは $\\phi=2\\pi-\\phi_0$ のときなので，かかる時間は\n\\[ \\frac{2\\pi-2\\phi_0}{\\omega_+}=\\frac{\\pi+2\\sin^{-1}\\frac{1}{\\sqrt3}}{\\omega_+}=\\sqrt{\\frac32}\\left(\\pi+2\\sin^{-1}\\frac1{\\sqrt3}\\right)\\sqrt{\\frac m\\alpha} \\]\n（$\\phi_0=\\cos^{-1}\\frac1{\\sqrt3}=\\frac\\pi2-\\sin^{-1}\\frac1{\\sqrt3}$ を用いた）．よって\n\\[ T=\\boldsymbol{\\frac{\\sqrt3\\,\\pi}{2}\\sqrt{\\frac m\\alpha}+\\sqrt{\\frac32}\\left(\\pi+2\\sin^{-1}\\frac{1}{\\sqrt3}\\right)\\sqrt{\\frac m\\alpha}}\\ \\left(\\fallingdotseq 8.08\\sqrt{\\frac m\\alpha}\\right). \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2つの等しい点電荷の垂直二等分線上では，静電気力が中点からの変位に比例し，電荷の符号によってばねを強める・弱める「実効ばね」になる．電荷の切り替えは位置と速度を保ったまま単振動の中心と角振動数を取りかえる操作なので，切り替え後の振幅は新しい中心からの変位と速度で決まり，最下点が新しいつり合いの位置に一致すれば小球は止まる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "simple-pendulum",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "単振動",
+  "実効ばね定数",
+  "点電荷の電場",
+  "振動中心の切り替え",
+  "エネルギー保存"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

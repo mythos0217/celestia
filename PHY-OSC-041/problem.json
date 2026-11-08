@@ -1,0 +1,126 @@
+{
+ "id": "PHY-OSC-041",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "頭が下になるバンジージャンプのゴムひもの設計（重心の降下量と最大加速度の条件）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "湖面からの高さ $H$ の台の端に，身長 $\\ell$，質量 $m$ の人が直立して静止している．人の足首に軽いゴムひもの一端を結び，他端を台の端（足と同じ高さ）に固定する．ゴムひもの自然長は $L$ で，伸びているときは伸びに比例する大きさの張力（比例定数 $k$）を及ぼし，たるんでいるときの張力は $0$ である．\n\n人は静止した状態から台の外へ倒れ込むように落ち始め，すぐに頭を真下に向けた鉛直な姿勢になり，以後この姿勢を保つ．人は重心が体の中央にある細い棒とみなし，回転の運動エネルギー・空気抵抗は無視する．重力加速度の大きさを $g$ とする．$k$ は，頭がちょうど湖面に届いたところで人の速さが $0$ になるように選ぶ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "頭が湖面に届いたときのゴムひもの伸び $e$ を $H$，$\\ell$，$L$ で表せ．また，$k$ を $m$，$g$，$H$，$e$ で表せ．この式に身長 $\\ell$ が現れない理由を述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "運動中の加速度の大きさの最大値 $a_{\\max}$ を $g$，$H$，$e$ で表せ．$H=30.0\\ \\mathrm{m}$，$\\ell=1.80\\ \\mathrm{m}$ のとき，$a_{\\max}\\leqq3g$ となる自然長 $L$ の最大値 $L_1$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$L=L_1$ のゴムひもを用いたとき，最終的に人がぶら下がって静止したときの頭の湖面からの高さと，運動中の速さの最大値を求めよ．$g=9.8\\ \\mathrm{m/s^2}$ とする．"
+     },
+     {
+      "id": "4",
+      "tex": "(3)と同じ $k$ をもつ別のゴムひもに取り替えて，質量 $1.5m$，身長 $\\ell$ の人が同じように跳ぶ．頭がちょうど湖面に届くようにするには，自然長をいくらにすればよいか．また，この人の加速度の大きさの最大値は $g$ の何倍か．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "数値の答えは有効数字3桁で答えよ．"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：頭が下になるバンジージャンプのゴムひもの設計（重心の降下量と最大加速度の条件）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$e=H-\\ell-L$，$k=\\dfrac{2mgH}{e^2}$（重心の降下量がちょうど $H$ になるから）"
+   },
+   {
+    "id": "2",
+    "tex": "$a_{\\max}=\\left(\\dfrac{2H}{e}-1\\right)g$，$L_1=\\dfrac H2-\\ell=13.2\\ \\mathrm{m}$"
+   },
+   {
+    "id": "3",
+    "tex": "頭の高さ $\\dfrac{3H}{8}=11.3\\ \\mathrm{m}$，最大の速さ $\\sqrt{\\dfrac{9gH}{8}}=18.2\\ \\mathrm{m/s}$"
+   },
+   {
+    "id": "4",
+    "tex": "自然長 $H-\\ell-\\dfrac{\\sqrt6}{4}H=9.83\\ \\mathrm{m}$，$\\dfrac{4\\sqrt6}{3}-1=2.27$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 最下点の伸びとばね定数}\n\n頭が湖面に届いたとき，足首は湖面から $\\ell$ の高さにあるので，ゴムひもの長さは $H-\\ell$，伸びは\n\\[ \\boldsymbol{e=H-\\ell-L} \\]\nはじめ人は直立していて重心は湖面から $H+\\dfrac{\\ell}{2}$ の高さ，最下点では頭が下で重心は $\\dfrac{\\ell}{2}$ の高さにある．重心の降下量は\\textbf{ちょうど $H$}（体が上下反転するので，身長の分がちょうど打ち消し合う）．はじめと最下点で速さは $0$，張力以外の非保存力ははたらかないので，力学的エネルギー保存より\n\\[ mgH=\\frac12ke^2\\qquad\\Longrightarrow\\qquad \\boldsymbol{k=\\frac{2mgH}{e^2}} \\]\n$\\ell$ は $e$ の中には入るが，エネルギーの式そのものには現れない．\n\n\\textbf{(2) 最大加速度と自然長の上限}\n\nゴムひもがたるんでいる間の加速度は $g$．張っている間は，張力 $kx$（$x$ は伸び）と重力の合力で，上向きの加速度 $\\dfrac{kx}{m}-g$ は $x$ が最大の最下点で最大になる：\n\\[ a_{\\max}=\\frac{ke}{m}-g=\\boldsymbol{\\left(\\frac{2H}{e}-1\\right)g} \\]\n（これは $g$ 以上なので，最下点での値が運動全体の最大である．）$a_{\\max}\\leqq3g$ は $e\\geqq\\dfrac H2$ と同値で，$L=H-\\ell-e$ より\n\\[ L\\leqq\\frac H2-\\ell\\quad\\Longrightarrow\\quad \\boldsymbol{L_1=\\frac H2-\\ell=15.0-1.80=13.2\\ \\mathrm{m}} \\]\nゴムを短くして（伸びを大きくして）「柔らかく」受け止めるほど加速度は小さい．\n\n\\textbf{(3) 静止位置と最大の速さ}\n\n$e=\\dfrac H2$ より $k=\\dfrac{8mg}{H}$．静止したときの伸びは $e_0=\\dfrac{mg}{k}=\\dfrac H8$．最下点より $e-e_0$ だけ上に頭があるので，頭の高さは\n\\[ e-e_0=\\frac H2-\\frac H8=\\boldsymbol{\\frac{3H}{8}=11.3\\ \\mathrm{m}} \\]\n速さが最大になるのは加速度が $0$ になる位置，すなわち伸び $e_0$ のつり合いの位置である．はじめの状態からこの位置までの重心の降下量は $H-(e-e_0)$ なので\n\\[ \\frac12mv_{\\max}^2=mg\\{H-(e-e_0)\\}-\\frac12ke_0^2=mg\\left(H-\\frac{3H}{8}\\right)-\\frac12mg\\cdot\\frac H8=\\frac{9}{16}mgH \\]\n\\[ v_{\\max}=\\boldsymbol{\\sqrt{\\frac{9gH}{8}}}=\\sqrt{\\frac{9\\times9.8\\times30.0}{8}}=\\boldsymbol{18.2\\ \\mathrm{m/s}} \\]\n\n\\textbf{(4) 重い人の場合}\n\n重心の降下量はやはり $H$ なので，最下点での伸びを $e'$ とすると\n\\[ 1.5mgH=\\frac12\\cdot\\frac{8mg}{H}e'^2\\quad\\Longrightarrow\\quad e'=\\frac{\\sqrt6}{4}H=18.37\\ \\mathrm{m} \\]\n自然長は $H-\\ell-e'=30.0-1.80-18.37=\\boldsymbol{9.83\\ \\mathrm{m}}$（重い人ほどゴムを短くする）．最大加速度は\n\\[ \\frac{ke'}{1.5m}-g=\\left(\\frac{8}{1.5}\\cdot\\frac{\\sqrt6}{4}-1\\right)g=\\boldsymbol{\\left(\\frac{4\\sqrt6}{3}-1\\right)g\\fallingdotseq2.27g} \\]\n同じ $k$ のゴムでは，重い人の方が最下点で受ける加速度は小さい（エネルギー $1.5mgH$ を受け止める伸びは $\\sqrt{1.5}$ 倍にしかならないのに，質量は $1.5$ 倍だから）．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "頭を下にして落ちると体が上下反転するため，重心の降下量は身長によらず台の高さ $H$ そのものになり，エネルギー保存 $mgH=\\frac12ke^2$ が簡潔になる．最大加速度は最下点で $(2H/e-1)g$ となるので，加速度の上限から逆にゴムの自然長の上限が決まる．同じ $k$ では重い人ほど最大加速度は小さい．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "momentum-conservation",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ばねのエネルギー",
+  "重心",
+  "条件の逆算",
+  "最大加速度",
+  "単振動のつり合いの位置"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

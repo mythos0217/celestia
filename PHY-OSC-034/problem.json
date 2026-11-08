@@ -1,0 +1,144 @@
+{
+ "id": "PHY-OSC-034",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "半球形容器の内面で水平に打ち出した小球の上下運動（鉛直軸まわりの面積速度と最高点）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "内半径 $R$ のなめらかな半球形の容器が，縁を水平にして固定されている．縁を含む水平面上にある球の中心を O とする．図のように，容器の内面上の点 Q に質量 $m$ の小球を置く．線分 OQ が鉛直下向きとなす角を $\\varphi_0\\ \\left(0<\\varphi_0<\\dfrac\\pi2\\right)$ とする．小球に，水平で，かつ O と Q を含む鉛直面に垂直な向きの初速 $v_0$ を与えたところ，小球は内面から離れずに運動した．重力加速度の大きさを $g$ とし，小球の大きさと空気抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小球が高さを変えずに水平面内で等速円運動をするための $v_0$ を，$g,\\ R,\\ \\varphi_0$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "小球がちょうど容器の縁の高さまで上がるための $v_0$ を，$g,\\ R,\\ \\varphi_0$ で表せ．また，このとき小球は縁から外へ飛び出さないことを説明せよ．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "以下では $\\varphi_0=\\dfrac\\pi3$，$v_0=\\sqrt{3gR}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "3",
+      "tex": "小球が最も高い位置に達したときの，O からその位置までの鉛直距離（深さ）$h$ を $R$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の位置で小球が容器から受ける垂直抗力の大きさを $m,\\ g$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：半球形容器の内面で水平に打ち出した小球の上下運動（鉛直軸まわりの面積速度と最高点）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：半球形容器の内面で水平に打ち出した小球の上下運動（鉛直軸まわりの面積速度と最高点）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_0=\\sin\\varphi_0\\sqrt{\\dfrac{gR}{\\cos\\varphi_0}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$v_0=\\sqrt{\\dfrac{2gR}{\\cos\\varphi_0}}$（縁では速度が水平で，鉛直方向の力は重力だけなので下向きに加速し，再び下降する）"
+   },
+   {
+    "id": "3",
+    "tex": "$h=\\dfrac{\\sqrt{13}-3}{4}R$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{3\\sqrt{13}-1}{4}mg$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{保存する量}　小球にはたらく力は重力と垂直抗力である．垂直抗力は球面に垂直，すなわち常に中心 O を向き，速度に垂直なので仕事をしない．よって力学的エネルギーが保存する．\n\nさらに，運動を水平面に射影して考える．重力は鉛直なので射影には寄与せず，垂直抗力の水平成分は O を通る鉛直軸に向かう．つまり射影した運動は軸に向かう中心力だけを受ける平面運動であり，\\textbf{射影した運動の面積速度が一定}となる．軸からの距離を $\\rho$，速度の水平な接線方向（軸を回る向き）の成分を $v_\\psi$ とすると $\\rho v_\\psi$ が一定である．\n\nOQ と鉛直下向きのなす角を $\\varphi$ とすると $\\rho=R\\sin\\varphi$，深さは $R\\cos\\varphi$ である．最も高い点・最も低い点では $\\varphi$ の変化が止まるので，速度は軸を回る水平な向きだけになり $v=v_\\psi$ である．初めの点 Q も速度が水平なので，それ自身が最高点か最低点のどちらかである．\n\n\\textbf{(1) 等速円運動}　半径 $R\\sin\\varphi_0$ の水平な円運動では，垂直抗力 $N_0$ の鉛直成分が重力とつり合い，水平成分が向心力になる：\n\\[ N_0\\cos\\varphi_0=mg,\\qquad N_0\\sin\\varphi_0=\\frac{mv_0^2}{R\\sin\\varphi_0} \\]\n\\[ \\therefore\\ v_0=\\boldsymbol{\\sin\\varphi_0\\sqrt{\\frac{gR}{\\cos\\varphi_0}}} \\]\n\n\\textbf{(2) 縁まで上がる条件}　縁（$\\varphi=\\dfrac\\pi2$，$\\rho=R$）に達した瞬間が最高点で，そこでの速さを $v_1$ とすると\n\\[ R\\sin\\varphi_0\\cdot v_0=R\\,v_1,\\qquad \\frac12mv_0^2=\\frac12mv_1^2+mgR\\cos\\varphi_0 \\]\n$v_1$ を消去して $v_0^2(1-\\sin^2\\varphi_0)=2gR\\cos\\varphi_0$，よって\n\\[ v_0=\\boldsymbol{\\sqrt{\\frac{2gR}{\\cos\\varphi_0}}} \\]\n（これは (1) の値より大きいので，小球は確かに上昇する．）縁では O へ向かう半径が水平なので垂直抗力は水平であり，鉛直方向の力は重力 $mg$ だけである．その瞬間の速度は水平なので，小球は下向きに加速されて内面に沿って再び下降し，縁から上へは出ない．また内面上では $N=\\dfrac{mv^2}{R}+mg\\cos\\varphi>0$ なので，途中で面から離れることもない．\n\n\\textbf{(3) 最高点}　$c=\\cos\\varphi$ とおく．$\\varphi_0=\\dfrac\\pi3$ では $\\sin^2\\varphi_0=\\dfrac34$，$\\cos\\varphi_0=\\dfrac12$．最高点での速さを $v$ とすると\n\\[ R\\sin\\varphi_0\\,v_0=R\\sin\\varphi\\,v\\ \\Rightarrow\\ v^2=\\frac{\\frac34\\cdot3gR}{1-c^2} \\]\n\\[ \\frac12v_0^2=\\frac12v^2-gR\\left(c-\\frac12\\right)\\ \\Rightarrow\\ v^2=3gR+2gR\\left(c-\\frac12\\right)=2gR(1+c) \\]\n（深さが $Rc$ なので，Q より $R\\left(\\frac12-c\\right)$ 高い．）2式から\n\\[ \\frac94=2(1-c^2)(1+c)\\qquad\\therefore\\ 8c^3+8c^2-8c+1=0 \\]\n$c=\\dfrac12$（出発点 Q）が解であることを用いて因数分解すると\n\\[ (2c-1)(4c^2+6c-1)=0\\qquad\\therefore\\ c=\\frac{-3+\\sqrt{13}}{4}\\ (>0) \\]\n$v_0^2=3gR$ は (1) の $\\dfrac32gR$ より大きいので Q は最低点で，もう一方の解が最高点である．(2) の値 $4gR$ より小さいので縁には届かない（$c>0$ と整合）．よって\n\\[ h=Rc=\\boldsymbol{\\frac{\\sqrt{13}-3}{4}R}\\ (\\approx0.15R) \\]\n\n\\textbf{(4) 最高点での垂直抗力}　O に向かう方向の運動方程式は，重力の O 向き成分が $-mg\\cos\\varphi$ であることに注意して\n\\[ \\frac{mv^2}{R}=N-mg\\cos\\varphi\\qquad\\therefore\\ N=\\frac{mv^2}{R}+mgc \\]\n$v^2=2gR(1+c)$ を代入して\n\\[ N=mg(2+3c)=mg\\left(2+\\frac{3\\sqrt{13}-9}{4}\\right)=\\boldsymbol{\\frac{3\\sqrt{13}-1}{4}mg}\\ (\\approx2.5mg) \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "球面上の運動では垂直抗力が中心を向くので，水平面に射影した運動は鉛直軸に向かう中心力運動となり，軸からの距離と水平な回転方向の速度の積（射影の面積速度）が保存する．速度が水平になる最高点・最低点では，これと力学的エネルギー保存の連立が出発点を1つの解にもつ3次方程式になり，因数分解で到達高さが求まる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "universal-gravitation",
+  "simple-pendulum"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "球面上の運動",
+  "面積速度一定",
+  "力学的エネルギー保存",
+  "円すい振り子",
+  "垂直抗力"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

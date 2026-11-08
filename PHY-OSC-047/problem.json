@@ -1,0 +1,130 @@
+{
+ "id": "PHY-OSC-047",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "放物線形の丘をすべる物体の垂直抗力（同じ放物線を描く水平投射との比較）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，断面が放物線形のなめらかな丘がある．丘の両端の間の水平距離は $d$，頂上は両端より $h$ だけ高い．頂上を原点とし，水平右向きに $x$ 軸，鉛直上向きに $y$ 軸をとると，丘の表面は $y=-\\dfrac{4h}{d^2}x^2$（$|x|\\le\\dfrac d2$）で表される．重力加速度の大きさを $g$ とし，空気抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "頂上から小球を水平右向きに投げ出す．小球の軌道が丘の表面とちょうど重なるような初速の大きさ $u$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "曲線上を運動する物体の速さを $v$，加速度の速度に垂直な成分の大きさを $a_\\perp$ とすると，その点での曲線の曲率半径は $R=\\dfrac{v^2}{a_\\perp}$ で与えられる．(1) の小球の運動を用いて，丘の表面上で接線が水平面と角 $\\theta$ をなす点の曲率半径 $R$ を $u$，$g$，$\\theta$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "質量 $m$ の小物体が，頂上を水平右向きに速さ $w$（$0<w<u$）で通過し，丘の表面に沿って滑り下りた．接線の角が $\\theta$ の点で小物体が面から受ける垂直抗力の大きさ $N$ を求め，積 $NR$ が $\\theta$ によらないことを示せ．また，このことから小物体が丘の右端まで面から離れないことを説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$d=60\\ {\\rm m}$，$h=9.0\\ {\\rm m}$，$g=9.8\\ {\\rm m/s^2}$，$m=50\\ {\\rm kg}$，$w=10\\ {\\rm m/s}$ のとき，頂上と右端での $N$ をそれぞれ有効数字3桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "頂上での速さが $w=u$ の場合と $w>u$ の場合，小物体の運動はそれぞれどうなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：放物線形の丘をすべる物体の垂直抗力（同じ放物線を描く水平投射との比較）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$u=\\sqrt{\\dfrac{gd^2}{8h}}=\\dfrac d2\\sqrt{\\dfrac{g}{2h}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$R=\\dfrac{u^2}{g\\cos^3\\theta}$"
+   },
+   {
+    "id": "3",
+    "tex": "$N=\\dfrac{m(u^2-w^2)}{R}=\\dfrac{m(u^2-w^2)g\\cos^3\\theta}{u^2}$，$NR=m(u^2-w^2)$ は一定．$R$ は有限なので $w<u$ なら常に $N>0$ で，面から離れない．"
+   },
+   {
+    "id": "4",
+    "tex": "頂上 $390\\ {\\rm N}$，右端 $246\\ {\\rm N}$"
+   },
+   {
+    "id": "5",
+    "tex": "$w=u$：垂直抗力は常に $0$ で，小物体は面に触れたまま（押さずに）放物運動をして右端まで面に沿う．$w>u$：頂上で直ちに面から離れ，面より上を通る放物線を描く．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 面と重なる放物運動} \\\\\n水平に初速 $u$ で投げ出した小球の軌道は $y=-\\dfrac{g}{2u^2}x^2$．これが $y=-\\dfrac{4h}{d^2}x^2$ と一致する条件は $\\dfrac{g}{2u^2}=\\dfrac{4h}{d^2}$，\n\\[ \\boldsymbol{u=\\sqrt{\\frac{gd^2}{8h}}=\\frac d2\\sqrt{\\frac{g}{2h}}} \\]\n\\hfill$\\square$\n\n\\textbf{(2) 曲率半径} \\\\\n(1) の小球は，丘の表面上の各点を，接線方向の速度で通過する．水平方向の速度は $u$ のままなので，接線の角が $\\theta$ の点での速さは $v_{\\rm p}=\\dfrac{u}{\\cos\\theta}$．加速度は鉛直下向きに $g$ で，速度（接線）に垂直な成分は $g\\cos\\theta$．したがって\n\\[ \\boldsymbol{R=\\frac{v_{\\rm p}^2}{g\\cos\\theta}=\\frac{u^2}{g\\cos^3\\theta}} \\]\n頂上では $R_0=\\dfrac{u^2}{g}=\\dfrac{d^2}{8h}$ で，離れるほど大きくなる．\\hfill$\\square$\n\n\\textbf{(3) 垂直抗力と $NR$} \\\\\n頂上からの落差を $\\Delta$ とすると，力学的エネルギー保存より小物体の速さは $v^2=w^2+2g\\Delta$．一方 (1) の小球も同じ点で $v_{\\rm p}^2=u^2+2g\\Delta$ である． \\\\\n小物体の，面に垂直な方向（曲率の中心向き）の運動方程式は\n\\[ m\\frac{v^2}{R}=mg\\cos\\theta-N \\]\n(1) の小球は垂直抗力なしで同じ曲線を描くので $\\dfrac{v_{\\rm p}^2}{R}=g\\cos\\theta$．これを代入して\n\\[ N=\\frac{m(v_{\\rm p}^2-v^2)}{R}=\\boldsymbol{\\frac{m(u^2-w^2)}{R}=\\frac{m(u^2-w^2)g\\cos^3\\theta}{u^2}} \\]\nよって $\\boldsymbol{NR=m(u^2-w^2)}$ は $\\theta$ によらない．放物線の曲率半径 $R$ はどこでも有限で正だから，$w<u$ なら丘の上のすべての点で $N>0$ となり，小物体は面から離れない．\\hfill$\\square$\n\n\\textbf{(4) 数値} \\\\\n$u^2=\\dfrac{9.8\\times60^2}{8\\times9.0}=490\\ {\\rm m^2/s^2}$，$R_0=\\dfrac{d^2}{8h}=50\\ {\\rm m}$．頂上で\n\\[ N=\\frac{50\\times(490-100)}{50}=\\boldsymbol{390\\ {\\rm N}} \\]\n右端 $x=\\dfrac d2$ では接線の傾きの大きさは $\\left|\\dfrac{dy}{dx}\\right|=\\dfrac{8h}{d^2}\\cdot\\dfrac d2=\\dfrac{4h}{d}=0.60$ なので，$\\cos^2\\theta=\\dfrac{1}{1.36}$，$R=\\dfrac{R_0}{\\cos^3\\theta}=50\\times1.36^{3/2}\\fallingdotseq79.3\\ {\\rm m}$．\n\\[ N=\\frac{50\\times390}{79.3}\\fallingdotseq\\boldsymbol{246\\ {\\rm N}} \\]\n（検算：$v^2=100+2\\times9.8\\times9.0=276.4$，$mg\\cos\\theta-\\dfrac{mv^2}{R}=420.2-174.3=245.9\\ {\\rm N}$．）\\hfill$\\square$\n\n\\textbf{(5) $w\\ge u$ の場合} \\\\\n$w=u$ のときは (3) より $N=0$ がすべての点で成り立つ．小物体は面を押さずに，(1) の小球と全く同じ放物運動をして右端まで面に沿って進む． \\\\\n$w>u$ のときは頂上で $N=\\dfrac{m(u^2-w^2)}{R_0}<0$ となり，面に接し続けることはできない．頂上で直ちに面から離れ，$y=-\\dfrac{g}{2w^2}x^2$ の放物線（丘の表面より上）を飛ぶ．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "放物線の丘の曲率半径は，同じ放物線を描く水平投射の加速度の法線成分から $R=u^2/(g\\cos^3\\theta)$ と求まる．面をすべる物体と，その放物運動とを同じ点で比べると，速さの2乗の差が落差によらず $u^2-w^2$ のまま保たれるので，垂直抗力と曲率半径の積 $NR=m(u^2-w^2)$ が一定になり，面から離れるかどうかは頂上だけで決まる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "projectile-motion",
+  "circular-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "曲率半径",
+  "放物運動",
+  "非等速円運動",
+  "垂直抗力",
+  "力学的エネルギー保存"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

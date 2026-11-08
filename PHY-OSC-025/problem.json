@@ -1,0 +1,143 @@
+{
+ "id": "PHY-OSC-025",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "糸の長さを急に変える振り子のパンピング（中心力による角運動量保存と糸のたるみ）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水平な天井板に小さな穴 O があり，軽くて伸びない糸が O を通して下に垂らされている．糸の下端には質量 $m$ の小球がつけられ，糸の上端は天井板の上で手に持っている（図）．手で糸を引いたりくり出したりすることで，O から小球までの糸の長さを変えることができる．小球は O を通る鉛直面内を運動し，糸が鉛直下向きとなす角を $\\theta$ とする．重力加速度の大きさを $g$ とし，空気抵抗や糸と穴の間の摩擦は無視する．\n\nはじめ糸の長さを $l$ とし，$\\theta=\\theta_0$ $\\left(0<\\theta_0<\\frac{\\pi}{2}\\right)$ の位置で小球を静かに放した．その後，次の2つの操作をくり返す．\n\n・小球が最下点を通過する瞬間に，糸を素早く引いて長さを $l$ から $\\alpha l$ $(0<\\alpha<1)$ にする（引き込み）．\n\n・小球が一瞬静止した瞬間に，糸を素早くくり出して長さを $l$ に戻す（くり出し）．このとき小球は糸の方向に移動するだけで，操作の直後も小球の速さは $0$ とみなせる．\n\nどちらの操作も十分短い時間で行われ，その間の $\\theta$ の変化は無視できる．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "最初の引き込みの直前の小球の速さを $v_0$，直後の速さを $v_1$ とする．引き込みの間に小球が糸から受ける力が常に O を向いていることに注目して，$v_1$ を $g$，$l$，$\\theta_0$，$\\alpha$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "最初の引き込みの後，糸の長さが $\\alpha l$ のまま小球は振れて，$\\theta=\\theta_1$ で一瞬静止した．$\\theta_1\\le\\frac{\\pi}{2}$ となる場合について，$\\cos\\theta_1$ を $\\theta_0$，$\\alpha$ で表せ．また，$\\theta_1\\le\\frac{\\pi}{2}$ となるための条件を $\\theta_0$，$\\alpha$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "最初の引き込みとそれに続く最初のくり出しの間に，手が糸を通して小球にした仕事の和 $W$ を $m$，$g$，$l$，$\\theta_0$，$\\alpha$ で表せ．また，$W$ がこの間の小球の力学的エネルギーの増加に等しいことを確かめよ．"
+     },
+     {
+      "id": "4",
+      "tex": "操作をくり返し，$n$ 回目のくり出しの直後の角を $\\theta_n$ とする．途中で $\\theta$ が $\\frac{\\pi}{2}$ を超えないとして，$\\cos\\theta_n$ を $\\theta_0$，$\\alpha$，$n$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\theta_0=60^\\circ$，$\\alpha^3=0.80$ とする．何回目の引き込みの後に初めて糸がたるむか答えよ．また，糸がたるむ瞬間の $\\cos\\theta$ の値を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：糸の長さを急に変える振り子のパンピング（中心力による角運動量保存と糸のたるみ）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：糸の長さを急に変える振り子のパンピング（中心力による角運動量保存と糸のたるみ）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_1=\\dfrac{\\sqrt{2gl(1-\\cos\\theta_0)}}{\\alpha}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\cos\\theta_1=1-\\dfrac{1-\\cos\\theta_0}{\\alpha^3}$，条件 $1-\\cos\\theta_0\\le\\alpha^3$"
+   },
+   {
+    "id": "3",
+    "tex": "$W=\\dfrac{(1-\\alpha^3)\\,mgl(1-\\cos\\theta_0)}{\\alpha^3}$（力学的エネルギーの増加 $mgl(\\cos\\theta_0-\\cos\\theta_1)$ に一致）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\cos\\theta_n=1-\\dfrac{1-\\cos\\theta_0}{\\alpha^{3n}}$"
+   },
+   {
+    "id": "5",
+    "tex": "4回目の引き込みの後，$\\cos\\theta=-0.15$（$\\theta\\fallingdotseq98^\\circ$）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 引き込みでは O のまわりの角運動量が保存する}　引き込みの間，小球にはたらく力は糸の張力（O 向き）と重力である．張力は非常に大きいが向きが常に O を通るので，O のまわりの力のモーメントは $0$ である．重力は有限の大きさなので，十分短い時間の間に与える力積（したがって角運動量の変化）は無視できる．よって O のまわりの角運動量 $m\\times(\\text{距離})\\times(\\text{速度の糸に垂直な成分})$ が保存する．一方，張力は小球を O に向かって動かすので仕事をし，力学的エネルギーは保存しない．\n\n引き込みの直前（最下点）の速さは，力学的エネルギー保存より\n\\[ v_0=\\sqrt{2gl(1-\\cos\\theta_0)} \\]\n引き終わった瞬間には糸の長さの変化が止まるので，速度は再び糸に垂直になる．角運動量保存 $m\\,l\\,v_0=m\\,(\\alpha l)\\,v_1$ より\n\\[ v_1=\\frac{v_0}{\\alpha}=\\boldsymbol{\\frac{\\sqrt{2gl(1-\\cos\\theta_0)}}{\\alpha}} \\]\n\n\\textbf{(2) 短い糸での振れ}　引き込みの後は張力が速度に垂直なので仕事をせず，力学的エネルギーが保存する．長さ $\\alpha l$ の振り子の最下点から高さ $\\alpha l(1-\\cos\\theta_1)$ まで上がるので\n\\[ \\frac12mv_1^2=mg\\,\\alpha l(1-\\cos\\theta_1)\\quad\\Longrightarrow\\quad 1-\\cos\\theta_1=\\frac{v_1^2}{2g\\alpha l}=\\frac{1-\\cos\\theta_0}{\\alpha^3} \\]\nよって $\\cos\\theta_1=\\boldsymbol{1-\\dfrac{1-\\cos\\theta_0}{\\alpha^3}}$．$\\theta_1\\le\\frac{\\pi}{2}$ すなわち $\\cos\\theta_1\\ge0$ の条件は $\\boldsymbol{1-\\cos\\theta_0\\le\\alpha^3}$ である．（$1-\\cos\\theta$ が1回の引き込みで $\\alpha^{-3}$ 倍になる：$\\alpha^{-2}$ は角運動量保存による運動エネルギーの増加，残りの $\\alpha^{-1}$ は振り子が短いことによる．）\n\n\\textbf{(3) 手のした仕事}　手が小球にする仕事は，張力が小球にする仕事であり，その間の運動エネルギーと位置エネルギーの増加の和に等しい（重力の仕事は位置エネルギーに含める）．\n\n引き込み：小球は最下点で $(1-\\alpha)l$ だけ持ち上がり，速さは $v_0$ から $v_1$ に増えるので\n\\[ W_1=\\frac12m(v_1^2-v_0^2)+mg(1-\\alpha)l=mgl(1-\\cos\\theta_0)\\frac{1-\\alpha^2}{\\alpha^2}+mg(1-\\alpha)l \\]\nくり出し：小球は静止したまま糸の方向（鉛直から $\\theta_1$ 傾いた向き）に $(1-\\alpha)l$ 下がるので\n\\[ W_2=-mg(1-\\alpha)l\\cos\\theta_1=-mg(1-\\alpha)l+mg(1-\\alpha)l\\,\\frac{1-\\cos\\theta_0}{\\alpha^3} \\]\n和をとると $mg(1-\\alpha)l$ が打ち消し合い，\n\\[ W=W_1+W_2=mgl(1-\\cos\\theta_0)\\left\\{\\frac{1-\\alpha^2}{\\alpha^2}+\\frac{1-\\alpha}{\\alpha^3}\\right\\}=\\boldsymbol{\\frac{(1-\\alpha^3)\\,mgl(1-\\cos\\theta_0)}{\\alpha^3}} \\]\nくり出しの直後，小球は長さ $l$ の糸で角 $\\theta_1$ の位置に静止しているので，最下点（長さ $l$）を基準とした力学的エネルギーは $mgl(1-\\cos\\theta_0)$ から $mgl(1-\\cos\\theta_1)=mgl\\dfrac{1-\\cos\\theta_0}{\\alpha^3}$ に増えた．その増加 $mgl(1-\\cos\\theta_0)\\dfrac{1-\\alpha^3}{\\alpha^3}$ は $W$ に一致する．手は「速いときに引き，止まっているときにゆるめる」ことで，正味の正の仕事をしている．\n\n\\textbf{(4) くり返し}　くり出しの直後は「長さ $l$ の糸で角 $\\theta_1$ から静かに放す」状態であり，最初と同じ形になる（振れる向きは逆だが対称）．よって1回の引き込み・くり出しごとに $1-\\cos\\theta$ が $\\alpha^{-3}$ 倍になり\n\\[ 1-\\cos\\theta_n=\\frac{1-\\cos\\theta_0}{\\alpha^{3n}}\\qquad\\therefore\\quad\\cos\\theta_n=\\boldsymbol{1-\\frac{1-\\cos\\theta_0}{\\alpha^{3n}}} \\]\nこれは小角近似を使わない厳密な関係である．\n\n\\textbf{(5) 糸がたるむ瞬間}　$k$ 回目の引き込みの直後の速さを $v$ とし，$u_k=\\dfrac{v^2}{2g\\alpha l}$ とおくと，(2) と同様に $u_k=\\dfrac{1-\\cos\\theta_0}{\\alpha^{3k}}$ である．糸の長さ $\\alpha l$ で角 $\\theta$ にあるときの速さ $v_\\theta$ は $v_\\theta^2=2g\\alpha l\\{u_k-(1-\\cos\\theta)\\}$ なので，糸の方向の運動方程式から張力 $T$ は\n\\[ T=\\frac{mv_\\theta^2}{\\alpha l}+mg\\cos\\theta=mg\\,(2u_k-2+3\\cos\\theta) \\]\n$u_k\\le1$ なら静止する角（$\\cos\\theta=1-u_k\\ge0$）まで $T=mg(1-u_k)\\ge0$ で，たるまない．$u_k>1$ のときは $\\theta$ が $\\frac{\\pi}{2}$ を超えて，静止する前に $T=0$ となる角\n\\[ \\cos\\theta=-\\frac{2}{3}(u_k-1) \\]\nで糸がたるむ（$u_k<\\frac52$ のとき）．長さ $l$ で振れている間の最大の角は $\\theta_n$ で，$u_k\\le1$ である限り $\\frac{\\pi}{2}$ 以下なのでたるまない．\n\n$1-\\cos\\theta_0=0.50$，$\\alpha^{-3}=1.25$ より\n\\[ u_1=0.625,\\quad u_2\\fallingdotseq0.781,\\quad u_3\\fallingdotseq0.977,\\quad u_4\\fallingdotseq1.221 \\]\nとなり，初めて $1$ を超えるのは $\\boldsymbol{4}$ \\textbf{回目の引き込みの後}である．そのとき\n\\[ \\cos\\theta=-\\frac23(1.221-1)\\fallingdotseq\\boldsymbol{-0.15}\\qquad(\\theta\\fallingdotseq98^\\circ) \\]\nで糸がたるみ，以後小球は放物運動をする（解答図）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "糸の長さを急に変える間は張力が中心力なので O のまわりの角運動量が保存し（力学的エネルギーは保存しない），最下点で $\\alpha$ 倍に縮めると速さが $1/\\alpha$ 倍になって，$1-\\cos\\theta$ が厳密に $\\alpha^{-3}$ 倍ずつ増える．静止した瞬間にゆるめれば角運動量を失わないので振幅が等比的に成長し，やがて $u>1$ となった振れで張力が $0$ になる角 $\\cos\\theta=-\\frac23(u-1)$ で糸がたるむ．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "simple-pendulum",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "角運動量保存",
+  "振り子",
+  "パンピング",
+  "糸のたるみ",
+  "仕事とエネルギー"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

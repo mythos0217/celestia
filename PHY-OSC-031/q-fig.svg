@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<defs><marker id="q-ab" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-ak" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker></defs>
+<line x1="70" y1="50" x2="260" y2="50" stroke="#222" stroke-width="1.6"/>
+<g stroke="#222" stroke-width="1"><line x1="80" y1="50" x2="90" y2="38"/><line x1="96" y1="50" x2="106" y2="38"/><line x1="112" y1="50" x2="122" y2="38"/><line x1="128" y1="50" x2="138" y2="38"/><line x1="144" y1="50" x2="154" y2="38"/><line x1="160" y1="50" x2="170" y2="38"/><line x1="176" y1="50" x2="186" y2="38"/><line x1="192" y1="50" x2="202" y2="38"/><line x1="208" y1="50" x2="218" y2="38"/><line x1="224" y1="50" x2="234" y2="38"/><line x1="240" y1="50" x2="250" y2="38"/></g>
+<polyline points="160.0,50.0 160.0,60.0 174.0,65.5 146.0,76.5 174.0,87.5 146.0,98.5 174.0,109.5 146.0,120.5 174.0,131.5 146.0,142.5 174.0,153.5 146.0,164.5 160.0,170.0 160.0,180.0" fill="none" stroke="#222" stroke-width="1.4"/>
+<text x="186" y="118" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">ばね定数 <tspan font-family="Times New Roman, serif" font-style="italic">k</tspan></text>
+<rect x="140" y="180" width="40" height="30" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="188" y="200" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">m</text>
+<rect x="110" y="210" width="100" height="8" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="216" y="220" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">板</text>
+<line x1="160" y1="226" x2="160" y2="276" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="168" y="262" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">加速度 <tspan font-family="Times New Roman, serif" font-style="italic">α</tspan>（初速 0）</text>
+<line x1="60" y1="180" x2="138" y2="180" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="20" y="176" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">自然の長さ</text>
+<line x1="330" y1="120" x2="330" y2="170" stroke="#222" stroke-width="1.8" marker-end="url(#q-ak)"/>
+<text x="338" y="152" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">g</text>
+</svg>

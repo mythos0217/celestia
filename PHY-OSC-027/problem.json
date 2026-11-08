@@ -1,0 +1,136 @@
+{
+ "id": "PHY-OSC-027",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "べき乗の中心力による円運動と小さな抵抗力（抵抗で速くなる条件と，速さが変わらない直線電荷のまわりの運動）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "質量 $m$ の小物体が，定点 O からの距離 $r$ に応じて大きさ $F=kr^n$（$k>0$，$n$ は $n>-3$ の定数）の O 向きの力（中心力）を受けて，O を含む平面内で運動している．この力による位置エネルギーは，$n\\neq-1$ のとき $U=\\dfrac{k}{n+1}r^{n+1}$，$n=-1$ のとき $U=k\\log\\dfrac{r}{r_0}$（$r_0$ は定数，$\\log$ は自然対数）である．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小物体が半径 $r$ の等速円運動をしているときの速さ $v$ と運動エネルギー $K$ を求めよ．また，$n\\neq-1$ のとき，$K$ と $U$ の比 $\\dfrac{K}{U}$ を $n$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "小物体に，速度と逆向きに大きさ $D$ の一定の抵抗力がはたらくようにした．$D$ は中心力に比べて非常に小さく，小物体はほぼ円運動を保ちながら，半径と速さが少しずつ変化する．各瞬間で (1) の円運動の関係が成り立つとして，微小時間 $\\Delta t$ の間の力学的エネルギーの変化 $\\Delta E$ と運動エネルギーの変化 $\\Delta K$ の比 $\\dfrac{\\Delta K}{\\Delta E}$ を $n$ で表し，速さの変化率 $\\dfrac{\\Delta v}{\\Delta t}$ を求めよ．（$\\Delta r$ の2次以上の微小量は無視せよ．）"
+     },
+     {
+      "id": "3",
+      "tex": "抵抗力がはたらいているのに速さが増加するのは，$n$ がどの範囲にあるときか．また，万有引力（$n=-2$）の場合に，はじめの速さを $v_0$ として，軌道半径がはじめの $\\dfrac14$ になるまでの時間を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$n=-1$ の例として，真空中で一様に帯電した十分に長い直線（単位長さあたりの電気量 $\\lambda>0$）のまわりを，電荷 $-q\\,(q>0)$，質量 $m$ の粒子が直線に垂直な平面内で円運動する場合を考える．直線から距離 $r$ の点の電場の強さは $\\dfrac{\\lambda}{2\\pi\\varepsilon_0r}$（$\\varepsilon_0$ は真空の誘電率）であり，重力は無視する．円運動の速さが半径によらないことを示せ．また，この粒子に (2) と同様の抵抗力 $D$ がはたらくとき，時刻 $0$ に $r_0$ であった軌道半径 $r$ を時刻 $t$ の関数として求めよ．必要ならば，$\\dfrac{\\Delta r}{\\Delta t}=-ar$（$a$ は正の定数）を満たす $r$ は $r=r_0e^{-at}$ となることを用いよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：べき乗の中心力による円運動と小さな抵抗力（抵抗で速くなる条件と，速さが変わらない直線電荷のまわりの運動）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：べき乗の中心力による円運動と小さな抵抗力（抵抗で速くなる条件と，速さが変わらない直線電荷のまわりの運動）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v=\\sqrt{\\dfrac{kr^{n+1}}{m}}$，$K=\\dfrac12kr^{n+1}$，$\\dfrac{K}{U}=\\dfrac{n+1}{2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{\\Delta K}{\\Delta E}=\\dfrac{n+1}{n+3}$，$\\dfrac{\\Delta v}{\\Delta t}=-\\dfrac{(n+1)D}{(n+3)m}$"
+   },
+   {
+    "id": "3",
+    "tex": "$-3<n<-1$，$\\dfrac{mv_0}{D}$"
+   },
+   {
+    "id": "4",
+    "tex": "$v=\\sqrt{\\dfrac{q\\lambda}{2\\pi\\varepsilon_0m}}$（$r$ によらない），$r=r_0\\exp\\left(-\\dfrac{Dt}{m}\\sqrt{\\dfrac{2\\pi\\varepsilon_0m}{q\\lambda}}\\right)$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　抵抗力が小さいとき，軌道は各瞬間で円運動の関係を保つ．円運動では速さが半径だけで決まるので，$K$ も $U$ も $r$ の関数になり，抵抗力が奪ったエネルギー $\\Delta E$ が $K$ と $U$ にどう振り分けられるかは $\\dfrac{dK}{dr}$ と $\\dfrac{dU}{dr}$ の比で決まる．\n\n\\textbf{(1)}　運動方程式 $m\\dfrac{v^2}{r}=kr^n$ より $\\boldsymbol{v=\\sqrt{\\dfrac{kr^{n+1}}{m}}}$，$\\boldsymbol{K=\\dfrac12kr^{n+1}}$．$n\\neq-1$ のとき $U=\\dfrac{k}{n+1}r^{n+1}$ なので $\\boldsymbol{\\dfrac{K}{U}=\\dfrac{n+1}{2}}$（ばね $n=1$ で $K=U$，万有引力 $n=-2$ で $2K=-U$）．\n\n\\textbf{(2)}　$\\Delta t$ の間に小物体は $v\\Delta t$ 進み，抵抗力の仕事は $-Dv\\Delta t$．中心力は保存力なので $\\Delta E=-Dv\\Delta t$．\n\n半径が $r$ から $r+\\Delta r$ に変わるとき（1次まで），\n\\[ \\Delta U=kr^n\\Delta r\\quad(\\text{$n=-1$ でも成立}),\\qquad \\Delta K=\\frac{n+1}{2}kr^n\\Delta r \\]\nよって $\\Delta E=\\dfrac{n+3}{2}kr^n\\Delta r$ で，\n\\[ \\boldsymbol{\\frac{\\Delta K}{\\Delta E}=\\frac{n+1}{n+3}} \\]\n$\\Delta K=mv\\Delta v$ と $\\Delta E=-Dv\\Delta t$ を代入して\n\\[ mv\\Delta v=-\\frac{n+1}{n+3}Dv\\Delta t\\quad\\Longrightarrow\\quad \\boldsymbol{\\frac{\\Delta v}{\\Delta t}=-\\frac{(n+1)D}{(n+3)m}} \\]\n速さは一定の割合で変化し，直線上の等加速度運動と同じ形になる．また $n>-3$ では $\\Delta E<0$ から $\\Delta r<0$ で，半径は必ず減少する．\n\n\\textbf{(3)}　$\\dfrac{\\Delta v}{\\Delta t}>0$ となるのは $\\dfrac{n+1}{n+3}<0$，すなわち $\\boldsymbol{-3<n<-1}$．このとき半径が縮むことによる位置エネルギーの減少が，失われる力学的エネルギーより大きく，その差が運動エネルギーの増加に回る．\n\n万有引力 $n=-2$ では $\\dfrac{\\Delta v}{\\Delta t}=+\\dfrac{D}{m}$ で，速さは $v_0+\\dfrac{D}{m}t$．円運動では $v\\propto r^{-1/2}$ なので，半径が $\\dfrac14$ になるのは速さが $2v_0$ になるとき．よって求める時間は $\\boldsymbol{\\dfrac{mv_0}{D}}$．\n\n\\textbf{(4)}　粒子は直線に向かって大きさ $\\dfrac{q\\lambda}{2\\pi\\varepsilon_0r}$ の引力を受ける．これは $k=\\dfrac{q\\lambda}{2\\pi\\varepsilon_0}$，$n=-1$ の中心力である．円運動の式 $m\\dfrac{v^2}{r}=\\dfrac{q\\lambda}{2\\pi\\varepsilon_0r}$ より\n\\[ \\boldsymbol{v=\\sqrt{\\frac{q\\lambda}{2\\pi\\varepsilon_0m}}} \\]\nで，$r$ によらない．したがって抵抗力がはたらいても $\\Delta K=0$（(2) の比で $n=-1$ とすると 0）で，失われたエネルギーはすべて位置エネルギーの減少でまかなわれる．\n\\[ \\Delta U=\\frac{q\\lambda}{2\\pi\\varepsilon_0}\\cdot\\frac{\\Delta r}{r}=mv^2\\frac{\\Delta r}{r}=-Dv\\Delta t\\quad\\Longrightarrow\\quad \\frac{\\Delta r}{\\Delta t}=-\\frac{D}{mv}r \\]\nよって\n\\[ \\boldsymbol{r=r_0\\exp\\left(-\\frac{Dt}{mv}\\right)=r_0\\exp\\left(-\\frac{Dt}{m}\\sqrt{\\frac{2\\pi\\varepsilon_0m}{q\\lambda}}\\right)} \\]\n速さを保ったまま，半径が指数関数的に縮んでいく．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "小さな抵抗力のもとでほぼ円運動を保つ物体では，$K$ と $U$ がともに半径だけの関数になり，失われた力学的エネルギーは $\\Delta K:\\Delta E=(n+1):(n+3)$（中心力 $\\propto r^n$）で運動エネルギーに振り分けられる．$-3<n<-1$（万有引力など）では抵抗によってかえって加速し，$n=-1$（直線電荷）では速さが一定のまま半径が指数関数的に縮む．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "universal-gravitation",
+  "circular-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "円運動",
+  "中心力",
+  "力学的エネルギー",
+  "抵抗力",
+  "人工衛星の逆説",
+  "直線電荷"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,144 @@
+{
+ "id": "PHY-OSC-037",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "床と衝突をくり返すばね振り子の衝突間隔から反発係数と床の位置を逆算する（参照円の欠けた弧）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，天井からばね定数 $k$ の軽いばねで質量 $m$ の小球をつるす．鉛直上向きに $x$ 軸をとり，小球のつり合いの位置を原点とする．つり合いの位置より下の $x=-d$（$d>0$）に水平な床があるが，$d$ の値は分かっていない．小球を $x=h$（$h>d$）まで持ち上げ，時刻 $0$ に静かにはなしたところ，小球は床との衝突をくり返した．小球と床の間の反発係数 $e$（$0<e<1$）も分かっていない．$\\omega=\\sqrt{\\dfrac km}$，$T=\\dfrac{2\\pi}{\\omega}$ とし，空気抵抗と衝突にかかる時間は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "床と衝突した直後の小球の速さが $u$ であったとき，次に床と衝突するまでの時間を $u$，$d$，$\\omega$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "測定したところ，1回目と2回目の衝突の時間間隔は $\\dfrac23T$，2回目と3回目の衝突の時間間隔は $\\dfrac34T$ であった．$e$ を求め，$d$ を $h$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "3回目と4回目の衝突の時間間隔を $T$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "1回目の衝突の時刻を $\\omega$ を用いて表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "十分に時間がたった後の小球の運動を述べ，それまでに失われた力学的エネルギーを $k$，$h$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：床と衝突をくり返すばね振り子の衝突間隔から反発係数と床の位置を逆算する（参照円の欠けた弧）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：床と衝突をくり返すばね振り子の衝突間隔から反発係数と床の位置を逆算する（参照円の欠けた弧）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{2}{\\omega}\\left(\\pi-\\tan^{-1}\\dfrac{u}{\\omega d}\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "$e=\\dfrac{1}{\\sqrt3}$，$d=\\dfrac{h}{\\sqrt{10}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac56T$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{1}{\\omega}\\left(\\pi-\\tan^{-1}3\\right)$"
+   },
+   {
+    "id": "5",
+    "tex": "原点を中心とする振幅 $d$ の単振動（最下点で床にちょうど触れ，衝突しない）．失われた力学的エネルギーは $\\dfrac{9}{20}kh^2$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{準備}　つり合いの位置を原点にとると，重力とばねの力の合力は $-kx$ で，小球は床に触れていない間，原点を中心とする角振動数 $\\omega$ の単振動をする．また重力とばねの位置エネルギーの和は（定数を除いて）$\\dfrac12kx^2$ と書ける．\n\n\\textbf{(1)}　衝突直後，小球は $x=-d$ を速さ $u$ で上向きに出発する．このときの振幅を $A$ とすると $A^2=d^2+\\left(\\dfrac{u}{\\omega}\\right)^2$．参照円（半径 $A$，角速度 $\\omega$ の等速円運動）で考えると，床の高さ $x=-d$ は最下点から両側に角 $\\alpha$ の点で，\n\\[ \\cos\\alpha=\\frac dA,\\qquad \\tan\\alpha=\\frac{u}{\\omega d}. \\]\n小球は床より上の弧（中心角 $2\\pi-2\\alpha$）を回って再び床に達するので，時間は\n\\[ \\frac{2\\pi-2\\alpha}{\\omega}=\\boldsymbol{\\frac2\\omega\\left(\\pi-\\tan^{-1}\\frac{u}{\\omega d}\\right)}=T\\left(1-\\frac\\alpha\\pi\\right). \\]\n（解答図のように，床より下の弧の分だけ周期が欠ける．）\n\n\\textbf{(2)}　1回目の衝突直後の速さを $u_1$，2回目を $u_2$，それぞれの角を $\\alpha_1$，$\\alpha_2$ とする．$T\\left(1-\\dfrac{\\alpha_1}\\pi\\right)=\\dfrac23T$ より $\\alpha_1=\\dfrac\\pi3$，同様に $\\alpha_2=\\dfrac\\pi4$．よって\n\\[ u_1=\\omega d\\tan\\frac\\pi3=\\sqrt3\\,\\omega d,\\qquad u_2=\\omega d\\tan\\frac\\pi4=\\omega d. \\]\n床に達する速さは出発した速さと等しい（床に触れていない間は力学的エネルギーが保存し，同じ高さ $x=-d$ に戻る）ので，2回目の衝突直前の速さは $u_1$．よって\n\\[ e=\\frac{u_2}{u_1}=\\boldsymbol{\\frac{1}{\\sqrt3}}. \\]\n1回目の衝突直前の速さは $u_0=\\dfrac{u_1}{e}=3\\omega d$．時刻 $0$ から1回目の衝突までのエネルギー保存 $\\dfrac12kh^2=\\dfrac12kd^2+\\dfrac12mu_0^2$ から $h^2=d^2+\\dfrac{u_0^2}{\\omega^2}=10d^2$，すなわち\n\\[ d=\\boldsymbol{\\frac{h}{\\sqrt{10}}}. \\]\n\n\\textbf{(3)}　$u_3=eu_2=\\dfrac{\\omega d}{\\sqrt3}$ より $\\tan\\alpha_3=\\dfrac{1}{\\sqrt3}$，$\\alpha_3=\\dfrac\\pi6$．間隔は $T\\left(1-\\dfrac16\\right)=\\boldsymbol{\\dfrac56T}$．\n\n\\textbf{(4)}　$x=h\\cos\\omega t$ で，$x=-d$ となる最初の時刻は $\\cos\\omega t_1=-\\dfrac{d}{h}=-\\dfrac{1}{\\sqrt{10}}$．$\\cos\\beta=\\dfrac{1}{\\sqrt{10}}$ を満たす鋭角は $\\tan\\beta=3$ なので\n\\[ t_1=\\boldsymbol{\\frac1\\omega\\left(\\pi-\\tan^{-1}3\\right)}. \\]\n\n\\textbf{(5)}　衝突ごとに速さが $e$ 倍になり $u_n\\to0$ なので，振幅 $\\sqrt{d^2+(u_n/\\omega)^2}$ は $d$ に近づき，$\\alpha_n\\to0$，衝突間隔は $T$ に近づく．十分時間がたつと，小球は\\textbf{原点を中心とする振幅 $d$ の単振動}をし，最下点 $x=-d$ でちょうど床に（速さ $0$ で）触れる．力学的エネルギー（$\\dfrac12kx^2+\\dfrac12mv^2$）ははじめ $\\dfrac12kh^2$，最後は $\\dfrac12kd^2$ なので，失われたエネルギーは\n\\[ \\frac12k(h^2-d^2)=\\frac12k\\cdot\\frac{9}{10}h^2=\\boldsymbol{\\frac{9}{20}kh^2}. \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "床のあるばね振り子の各区間は，つり合いの位置を中心とする単振動の「床より上の弧」であり，衝突間隔は参照円の欠けた中心角 $2\\alpha$（$\\tan\\alpha=u/\\omega d$）で決まる．観測された間隔から各衝突直後の速さが角度として読み取れ，その比が反発係数，最初の衝突直前の速さとエネルギー保存から未知の床の位置が逆算できる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "simple-pendulum",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "単振動",
+  "参照円",
+  "反発係数",
+  "逆問題",
+  "エネルギー保存",
+  "ばね振り子"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

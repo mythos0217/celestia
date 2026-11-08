@@ -1,0 +1,143 @@
+{
+ "id": "PHY-OSC-033",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "ばね振り子にはね返された軽い小球への再衝突（正弦曲線と直線が接する条件）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平面上で，ばね定数 $k$ の軽いばねの左端を鉛直な壁に固定し，右端に質量 $M$ の小球 A をつけて静止させた．このときの A の位置を原点 O とし，水平右向きに $x$ 軸をとる．右方から質量 $m\\ (m\\le M)$ の小球 B が速さ $v_0$ で左向きに進んできて，時刻 $t=0$ に A と弾性衝突（正面衝突）した．$\\omega=\\sqrt{k/M}$ とし，小球の大きさは無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "衝突直後の A，B の速度を求めよ（右向きを正とする）．"
+     },
+     {
+      "id": "2",
+      "tex": "次に A と B が出会うまでの A，B の位置 $x_{\\rm A}(t)$，$x_{\\rm B}(t)$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$M=m$ のとき，2回目の衝突の時刻と位置，および2回目の衝突後の A，B の運動を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$M>m$ のとき，A がばねを縮めている間には2回目の衝突は起こらないことを示せ．また，2回目の衝突が起こるための $\\dfrac Mm$ の条件を求めよ．必要ならば，方程式 $\\tan\\theta=\\theta$ の $\\pi<\\theta<\\frac32\\pi$ の範囲の解 $\\theta_0$ について $\\theta_0\\approx4.49$，$\\cos\\theta_0\\approx-0.217$，$\\sin\\theta_0\\approx-0.976$ であることを用いてよい．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) の条件の境界の質量比のとき，A は B に追いつくが力をおよぼし合わない．その理由を述べ，A が B に追いつく時刻と位置を $\\omega$，$v_0$ を用いて表せ（数値は有効数字2桁）．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ばね振り子にはね返された軽い小球への再衝突（正弦曲線と直線が接する条件）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：ばね振り子にはね返された軽い小球への再衝突（正弦曲線と直線が接する条件）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：$-\\frac{2m}{M+m}v_0$，B：$\\frac{M-m}{M+m}v_0$"
+   },
+   {
+    "id": "2",
+    "tex": "$x_{\\rm A}=-\\frac{2mv_0}{(M+m)\\omega}\\sin\\omega t$，$x_{\\rm B}=\\frac{(M-m)v_0}{M+m}t$"
+   },
+   {
+    "id": "3",
+    "tex": "時刻 $\\frac{\\pi}{\\omega}$，位置 $x=0$．衝突後 A は $x=0$ に静止したまま，B は速さ $v_0$ で右へ遠ざかる"
+   },
+   {
+    "id": "4",
+    "tex": "$1\\le\\frac Mm<1+2|\\cos\\theta_0|\\approx1.43$"
+   },
+   {
+    "id": "5",
+    "tex": "追いつく瞬間に A と B の速度が等しい（相対速度 $0$）から．時刻 $\\frac{\\theta_0}{\\omega}\\approx\\frac{4.5}{\\omega}$，位置 $x\\approx0.80\\,\\frac{v_0}{\\omega}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　衝突直後の A，B の速度を $V_{\\rm A}$，$V_{\\rm B}$ とする．衝突は瞬間的なので，ばねの力の力積は無視でき，運動量が保存する．弾性衝突なので相対速度は逆転する：\n\\[ m(-v_0)=MV_{\\rm A}+mV_{\\rm B},\\qquad V_{\\rm B}-V_{\\rm A}=v_0 \\]\n\\[ \\therefore\\quad V_{\\rm A}=\\boldsymbol{-\\frac{2m}{M+m}v_0},\\qquad V_{\\rm B}=\\boldsymbol{\\frac{M-m}{M+m}v_0} \\]\n\n\\textbf{(2)}　A は $x=0$ を中心とする角振動数 $\\omega$ の単振動で，$t=0$ に $x=0$ を速度 $V_{\\rm A}$ で通過するから，$v_{\\rm A}=\\frac{2m}{M+m}v_0$ とおいて\n\\[ x_{\\rm A}=\\boldsymbol{-\\frac{v_{\\rm A}}{\\omega}\\sin\\omega t},\\qquad x_{\\rm B}=\\boldsymbol{V_{\\rm B}\\,t} \\]\n\n\\textbf{(3)}　$M=m$ では $V_{\\rm B}=0$ で B は $x=0$ に静止し，A は半周期後の $t=\\boldsymbol{\\pi/\\omega}$ に $x=\\boldsymbol0$ に右向き速さ $v_0$ で戻って B に衝突する．等しい質量の弾性衝突なので速度が入れかわり，\\textbf{A は $x=0$ で静止したまま，B は速さ $v_0$ で右へ遠ざかる}．\n\n\\textbf{(4)}　$\\theta=\\omega t$，$\\rho=\\frac{V_{\\rm B}}{v_{\\rm A}}=\\frac{M-m}{2m}$ とおくと，B と A の距離は\n\\[ x_{\\rm B}-x_{\\rm A}=\\frac{v_{\\rm A}}{\\omega}\\left(\\rho\\,\\theta+\\sin\\theta\\right) \\]\nA がばねを縮めている $0<\\theta<\\pi$ では $\\sin\\theta>0$，$\\rho\\theta>0$ なので距離は正で，衝突は起こらない．\n出会うのは $\\sin\\theta=-\\rho\\theta$，すなわち曲線 $y=\\sin\\theta$ と直線 $y=-\\rho\\theta$ の交点である．直線の傾きの大きさ $\\rho$ が小さいほど交わりやすく，その限界は直線が $\\pi<\\theta<\\frac32\\pi$ で曲線に接するときで，接点を $\\theta_0$ とすると\n\\[ \\sin\\theta_0=-\\rho\\theta_0,\\qquad \\cos\\theta_0=-\\rho \\qquad\\therefore\\quad \\tan\\theta_0=\\theta_0 \\]\nよって $\\rho<-\\cos\\theta_0\\approx0.217$ のとき交わる．なお $2\\pi<\\theta<3\\pi$ では $\\sin\\theta\\ge0$ で交わらず，$\\theta>3\\pi$ で交わるには $\\rho\\cdot3\\pi\\le1$，すなわち $\\rho\\le0.106$ が必要なので，条件は $\\rho<0.217$ で尽くされる．\n\\[ \\frac{M-m}{2m}<|\\cos\\theta_0| \\quad\\therefore\\quad \\boldsymbol{1\\le\\frac Mm<1+2|\\cos\\theta_0|\\approx1.43} \\]\n（$M=m$ は (3) の場合で，$\\theta=\\pi$ で衝突する．）\n\n\\textbf{(5)}　接する点では，曲線と直線の傾きが等しい．$\\frac{d}{dt}(x_{\\rm B}-x_{\\rm A})=v_{\\rm A}(\\rho+\\cos\\theta)$ なので，これは A と B の速度が等しいことを意味する．相対速度 $0$ で触れるだけなので力積は生じず，\\textbf{接触しても力をおよぼし合わない}．\nこのとき $\\rho=|\\cos\\theta_0|$ より $v_{\\rm A}=\\frac{2m}{M+m}v_0=\\frac{v_0}{1+\\rho}$．時刻は $t=\\frac{\\theta_0}{\\omega}\\approx\\boldsymbol{\\frac{4.5}{\\omega}}$，位置は\n\\[ x=-\\frac{v_{\\rm A}}{\\omega}\\sin\\theta_0=\\frac{0.976}{1.217}\\cdot\\frac{v_0}{\\omega}\\approx\\boldsymbol{0.80\\,\\frac{v_0}{\\omega}} \\]\nA はばねを伸ばしながら B に追いつき，速度が等しくなった瞬間にちょうど B の位置に達する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "衝突後，ばねにつながれた小球は単振動，はね返された小球は等速運動をするので，再衝突の有無は正弦曲線 $\\sin\\omega t$ と直線の交点で決まる．再衝突できる限界は直線が正弦曲線に接する（両者の速度が等しくなって触れる）ときで，接点の条件 $\\tan\\theta=\\theta$ から質量比の限界が決まる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "simple-pendulum",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "弾性衝突",
+  "単振動",
+  "再衝突",
+  "接する条件",
+  "位相"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

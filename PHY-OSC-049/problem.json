@@ -1,0 +1,135 @@
+{
+ "id": "PHY-OSC-049",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "入口と出口の傾きが異なる凸円弧を越える小球（離れる位置の場合分けと出口の角の条件）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかな軌道が，水平と角 $\\alpha$ をなす直線の上り坂，点Fでなめらかにつながる半径 $r$ の円弧FGH，点Hでなめらかにつながる水平と角 $\\beta$ をなす直線の下り坂からなっている．円弧の中心Oは軌道の下側にあり，Gは円弧の最高点で，$\\angle\\mathrm{FOG}=\\alpha$，$\\angle\\mathrm{GOH}=\\beta$（$0<\\alpha\\le\\beta<\\frac{\\pi}{2}$）である．\n\n質量 $m$ の小球が上り坂を上ってきて，速さ $v_{\\rm F}$ でFを通過した．小球は軌道の上面を運動し，軌道からは上向き（軌道面から離れる向き）の垂直抗力しか受けない．重力加速度の大きさを $g$ とし，$K=\\dfrac{v_{\\rm F}^2}{gr}$ とおく．小球の大きさと空気抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小球がFを通過する直前に坂から受ける垂直抗力の大きさと，直後に円弧から受ける垂直抗力の大きさ（円弧上にあるとして）をそれぞれ求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "円弧上で，OGから進行方向に測った角 $\\varphi$（$-\\alpha\\le\\varphi\\le\\beta$）の位置にあるときの垂直抗力の大きさ $N$ を，$m,\\ g,\\ K,\\ \\alpha,\\ \\varphi$ で表せ．これを用いて，小球がFで円弧から離れることなく，しかもGを越えるための $K$ の条件を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2)の条件のもとでGを越えた小球が，円弧が十分先まで続いているとしたら離れる位置の角 $\\varphi_1$ について，$\\cos\\varphi_1$ を $K,\\ \\alpha$ で表せ．また，$\\alpha=30^\\circ$，$\\beta=60^\\circ$，$K=0.50$ のとき，小球は円弧上で離れるか，それとも円弧を通り過ぎてHから下り坂に移るか．離れる場合は $\\varphi_1$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "小球が円弧FGHのどこでも離れずにHを通過して下り坂に移るための $K$ の範囲を求めよ．さらに，そのような $v_{\\rm F}$ が存在するための条件は $\\alpha$ によらず $\\cos\\beta>\\dfrac23$ であることを示し，その理由を，ぎりぎりでGを越える場合の運動に注目して説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：入口と出口の傾きが異なる凸円弧を越える小球（離れる位置の場合分けと出口の角の条件）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：入口と出口の傾きが異なる凸円弧を越える小球（離れる位置の場合分けと出口の角の条件）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "直前 $mg\\cos\\alpha$，直後 $mg(\\cos\\alpha-K)$"
+   },
+   {
+    "id": "2",
+    "tex": "$N=mg(3\\cos\\varphi-2\\cos\\alpha-K)$，$2(1-\\cos\\alpha)<K\\le\\cos\\alpha$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\cos\\varphi_1=\\dfrac{K+2\\cos\\alpha}{3}$；円弧上（Gを越えた後）で離れ，$\\varphi_1\\approx42^\\circ$"
+   },
+   {
+    "id": "4",
+    "tex": "$2(1-\\cos\\alpha)<K\\le3\\cos\\beta-2\\cos\\alpha$；存在条件 $\\cos\\beta>\\frac23$（ぎりぎりでGを越える小球は $\\alpha$ によらず $\\cos\\varphi=\\frac23$ で離れるので，Hがそれより手前にあればよい）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) Fの前後での垂直抗力の跳び}\n\n直線の坂の上では小球は直線運動をしているので，坂に垂直な方向の力はつり合う：$N_{\\text{前}}=\\boldsymbol{mg\\cos\\alpha}$．\n\nFを過ぎると小球は半径 $r$ の円運動を始める．Fでの速さは $v_{\\rm F}$ のまま（位置も速さも連続）だが，中心Oに向かう向心力 $m v_{\\rm F}^2/r$ が新たに必要になる．Fでの半径方向（Oへ向かう向き）の運動方程式は\n\\[ m\\frac{v_{\\rm F}^2}{r}=mg\\cos\\alpha-N_{\\text{後}} \\quad\\Longrightarrow\\quad N_{\\text{後}}=\\boldsymbol{mg(\\cos\\alpha-K)} \\]\n曲率が $0$ から $1/r$ へ不連続に変わるので，垂直抗力も $mgK$ だけ不連続に減る．\n\n\\textbf{(2) 円弧上の垂直抗力}\n\n角 $\\varphi$ の位置の高さは中心Oから $r\\cos\\varphi$，Fは $r\\cos\\alpha$ である．軌道はなめらかで垂直抗力は仕事をしないので，力学的エネルギー保存より\n\\[ v^2=v_{\\rm F}^2-2gr(\\cos\\varphi-\\cos\\alpha) \\]\n半径方向の運動方程式 $m\\dfrac{v^2}{r}=mg\\cos\\varphi-N$ に代入して\n\\[ N=\\boldsymbol{mg(3\\cos\\varphi-2\\cos\\alpha-K)} \\]\n$N$ は $\\cos\\varphi$ の増加関数なので，$-\\alpha\\le\\varphi\\le0$ では $\\varphi=-\\alpha$（F）で最小である．したがってFで離れなければGまでは離れない．Fで離れない条件は $N(-\\alpha)\\ge0$，すなわち $K\\le\\cos\\alpha$．またGを越えるにはGでの速さが正であればよく，$v_{\\rm G}^2=v_{\\rm F}^2-2gr(1-\\cos\\alpha)>0$ より $K>2(1-\\cos\\alpha)$．よって\n\\[ \\boldsymbol{2(1-\\cos\\alpha)<K\\le\\cos\\alpha} \\]\n\n\\textbf{(3) Gを越えた後に離れる位置}\n\n$\\varphi>0$ では $N$ は $\\varphi$ とともに減少し，$N=0$ となる角で離れる：\n\\[ \\boldsymbol{\\cos\\varphi_1=\\frac{K+2\\cos\\alpha}{3}} \\]\n（(2)の条件 $K\\le\\cos\\alpha$ のもとで右辺 $\\le\\cos\\alpha$ なので，確かに $\\varphi_1\\ge\\alpha>0$ でありGより先である．）\n\n$\\alpha=30^\\circ$，$K=0.50$ は $2(1-\\cos30^\\circ)\\approx0.27<0.50<\\cos30^\\circ\\approx0.87$ を満たすのでFでは離れずGを越える．$\\cos\\varphi_1=\\dfrac{0.50+1.732}{3}\\approx0.744$ より $\\varphi_1\\approx41.9^\\circ$．これは $\\beta=60^\\circ$ より小さいので，小球は\\textbf{Hに達する前に，Gを越えて $\\boldsymbol{\\varphi_1\\approx42^\\circ}$ の位置で円弧から離れる}．\n\n\\textbf{(4) 離れずに通り抜ける条件}\n\n円弧上で $N$ が最小になるのは両端 F（$\\varphi=-\\alpha$）か H（$\\varphi=\\beta$）である．$\\alpha\\le\\beta$ より $\\cos\\beta\\le\\cos\\alpha$ なので\n\\[ N(\\beta)=mg(3\\cos\\beta-2\\cos\\alpha-K)\\le mg(\\cos\\alpha-K)=N(-\\alpha) \\]\nしたがって出口Hで $N\\ge0$ ならFでも $N\\ge0$ である．Gを越える条件と合わせて\n\\[ \\boldsymbol{2(1-\\cos\\alpha)<K\\le3\\cos\\beta-2\\cos\\alpha} \\]\nこのような $K$ が存在する条件は\n\\[ 2(1-\\cos\\alpha)<3\\cos\\beta-2\\cos\\alpha\\iff\\boldsymbol{\\cos\\beta>\\frac23} \\]\nで，$\\cos\\alpha$ が両辺で打ち消し合い，$\\alpha$ によらない．（Hを過ぎて直線の下り坂に移ると曲率が $0$ になり，垂直抗力は $mg\\cos\\beta$ に増えるので，そこで離れることはない．）\n\n\\textbf{理由}　$K$ が下限 $2(1-\\cos\\alpha)$ に近いとき，小球はGをほとんど速さ $0$ で越える．Gを越えた後の運動は，入口の角 $\\alpha$ や途中の経路には関係なく，「円の頂上から静かに滑り出す運動」と同じになり，$\\cos\\varphi_1=\\dfrac{2(1-\\cos\\alpha)+2\\cos\\alpha}{3}=\\dfrac23$ で離れる．Gを速く越えるほど離れる位置は手前（$\\cos\\varphi_1$ が大きい側）に来るので，最も遅く越える場合でも離れないためには，出口Hが $\\cos\\varphi=\\frac23$（約 $48^\\circ$）より手前になければならない．これが $\\cos\\beta>\\frac23$ の意味である．図は $\\alpha=30^\\circ$ のときの $N/mg$ を $\\varphi$ の関数として描いたもので，$K$ を大きくするとグラフ全体が下がり，$K>\\cos\\alpha$ ではFで負になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "凸の円弧に直線から入ると，速さは連続でも曲率が跳ぶので垂直抗力が入口で不連続に減り，円弧上の垂直抗力 $mg(3\\cos\\varphi-2\\cos\\alpha-K)$ は入口と出口で最小になる．ぎりぎりで頂上を越える物体は入口の角によらず $\\cos\\varphi=\\frac23$ で離れるので，離れずに通過できる初速が存在する条件は出口の角だけで $\\cos\\beta>\\frac23$ と決まる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "circular-motion",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "鉛直面内の円運動",
+  "垂直抗力",
+  "離れる条件",
+  "力学的エネルギー保存",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

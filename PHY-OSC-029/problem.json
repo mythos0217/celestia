@@ -1,0 +1,143 @@
+{
+ "id": "PHY-OSC-029",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "二重レールでの抗力の切り替わりと外側レールから離れて中心を通る放物運動",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，鉛直面内に中心 O，半径 $r$ の半円形の二重レールが固定されている．二重レールは内側と外側のなめらかなレールからなり，その間隔は小球の直径に等しい（小球の大きさは $r$ に比べて無視できる）．レールの下端 A と上端 B は O を通る鉛直線上にあり，二重レールは鉛直線の右側にある．質量 $m$ の小球を，A から水平右向きに速さ $v_0$ でレールの間に進入させる．A から反時計回りに測った O まわりの角を $\\theta$（$0\\le\\theta\\le\\pi$）とし，小球がレールから受ける力を，円の中心に向かう向きを正として $F$ とする（$F>0$ なら外側レール，$F<0$ なら内側レールから力を受ける）．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "角 $\\theta$ における $F$ を，$m,\\ g,\\ r,\\ v_0,\\ \\theta$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "小球が二重レールの途中の角 $\\theta_V\\ (\\frac{\\pi}{2}<\\theta_V<\\pi)$ で速さ $0$ になり，逆戻りした．行きの途中で，力を受けるレールが外側から内側に切り替わる角 $\\theta_F$ について，$\\cos\\theta_F$ を $\\cos\\theta_V$ で表せ．また，このように「途中で内側レールに触れ，かつ B に達しない」ための $v_0$ の範囲を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次に内側レールを取り外し，外側レールだけにした．ある速さ $v_0$ で進入させたところ，小球は外側レールから離れて放物運動をし，ちょうど中心 O を通過した．小球がレールを離れた角を $\\theta_1$ として，$\\cos\\theta_1$ と $v_0^2$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3)と同じ $v_0$ で，内側レールがある場合に小球が速さ $0$ になる角 $\\theta_V$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(3)の放物運動で小球が達する最高点の，A からの高さ $H_1$ を求め，(4)で速さ $0$ になる点の A からの高さ $H_2$ と比べよ．差 $H_2-H_1$ が何を表すかも答えよ．また，小球が O を通過するときの速さを求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：二重レールでの抗力の切り替わりと外側レールから離れて中心を通る放物運動",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：二重レールでの抗力の切り替わりと外側レールから離れて中心を通る放物運動",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$F=\\dfrac{mv_0^2}{r}-2mg+3mg\\cos\\theta$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\cos\\theta_F=\\dfrac23\\cos\\theta_V$，$2gr<v_0^2<4gr$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\cos\\theta_1=-\\dfrac{1}{\\sqrt3}$，$v_0^2=(2+\\sqrt3)gr$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\theta_V=150^\\circ\\ \\left(\\dfrac{5}{6}\\pi\\right)$"
+   },
+   {
+    "id": "5",
+    "tex": "$H_1=\\left(1+\\dfrac{4\\sqrt3}{9}\\right)r$，$H_2=\\left(1+\\dfrac{\\sqrt3}{2}\\right)r$，$H_2-H_1=\\dfrac{\\sqrt3}{18}r$（最高点でも残る水平方向の速度の運動エネルギー $\\frac12mv_x^2$ を高さに換算したもの），O での速さ $3^{1/4}\\sqrt{gr}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 中心方向の運動方程式}　位置 $\\theta$ で，重力の中心向き成分は $-mg\\cos\\theta$（下半分では中心から遠ざける向き）．速さを $v$ とすると\n\\[ m\\frac{v^2}{r}=F-mg\\cos\\theta,\\qquad v^2=v_0^2-2gr(1-\\cos\\theta) \\]\n（エネルギー保存）．よって $\\boldsymbol{F=\\dfrac{mv_0^2}{r}-2mg+3mg\\cos\\theta}$．\n\n\\textbf{(2) 力を受けるレールの切り替わり}　$\\theta_V$ で $v=0$ なので $v_0^2=2gr(1-\\cos\\theta_V)$．代入すると\n\\[ F=mg(3\\cos\\theta-2\\cos\\theta_V). \\]\n$F$ は $\\theta$ とともに単調に減少し，$F=0$ となるのは $\\boldsymbol{\\cos\\theta_F=\\frac23\\cos\\theta_V}$．$\\theta_V>\\frac{\\pi}{2}$ なら $\\cos\\theta_V<0$ で，$\\cos\\theta_F$ は $\\cos\\theta_V$ と $0$ の間にあるから $\\frac{\\pi}{2}<\\theta_F<\\theta_V$ で，確かに途中で内側レールに切り替わる（$\\theta_V\\le\\frac{\\pi}{2}$ なら $F>0$ のまま）．\n条件は $\\frac{\\pi}{2}<\\theta_V<\\pi$，すなわち $0>\\cos\\theta_V>-1$ で，$v_0^2=2gr(1-\\cos\\theta_V)$ より $\\boldsymbol{2gr<v_0^2<4gr}$．\n\n\\textbf{(3) 外側レールだけのとき}　内側レールがなければ，$F$ が $0$ になる角 $\\theta_1$ でレールを離れる．そこで $v_1^2=-gr\\cos\\theta_1$．$c=-\\cos\\theta_1\\ (>0)$ とおき，O を原点，右向き $x$，上向き $y$ にとると，離れる点は $(r\\sin\\theta_1,\\ rc)$，速度は接線方向で $v_1(\\cos\\theta_1,\\ \\sin\\theta_1)=v_1(-c,\\ s)$（$s=\\sin\\theta_1$）．\n$x=0$ に達する時刻は $t=\\dfrac{rs}{v_1c}$．そのとき $y=0$ となる条件は\n\\[ rc+v_1s\\,t-\\frac12gt^2=rc+\\frac{rs^2}{c}-\\frac{gr^2s^2}{2v_1^2c^2}=0. \\]\n$v_1^2=grc$ を代入して $r/c$ をくくると $c^2+s^2-\\dfrac{s^2}{2c^2}=0$，すなわち $1=\\dfrac{1-c^2}{2c^2}$，$c^2=\\frac13$．\nよって $\\boldsymbol{\\cos\\theta_1=-\\dfrac{1}{\\sqrt3}}$（$\\theta_1\\fallingdotseq125^\\circ$）．\n進入速度は $v_0^2=v_1^2+2gr(1-\\cos\\theta_1)=\\dfrac{gr}{\\sqrt3}+2gr\\left(1+\\dfrac{1}{\\sqrt3}\\right)=\\boldsymbol{(2+\\sqrt3)gr}$．\n\n\\textbf{(4) 同じ速さで内側レールがある場合}　$v_0^2=2gr(1-\\cos\\theta_V)$ より $\\cos\\theta_V=1-\\dfrac{2+\\sqrt3}{2}=-\\dfrac{\\sqrt3}{2}$，$\\boldsymbol{\\theta_V=150^\\circ}$．\n検算：(2)の関係 $\\cos\\theta_F=\\frac23\\cos\\theta_V=-\\frac{1}{\\sqrt3}$ は(3)の $\\cos\\theta_1$ と一致する．内側レールの有無にかかわらず，外側レールから離れようとする点は同じである．\n\n\\textbf{(5) 最高点の比較}　離れる点の高さ（A から）は $r(1+c)=r\\left(1+\\frac{1}{\\sqrt3}\\right)$．鉛直成分 $v_1s$ による上昇は $\\dfrac{v_1^2s^2}{2g}=\\dfrac{grc\\cdot\\frac23}{2g}=\\dfrac{r}{3\\sqrt3}$ なので\n\\[ H_1=r\\left(1+\\frac{1}{\\sqrt3}+\\frac{1}{3\\sqrt3}\\right)=\\boldsymbol{\\left(1+\\frac{4\\sqrt3}{9}\\right)r}\\fallingdotseq1.770r. \\]\n一方 $H_2=r(1-\\cos150^\\circ)=\\boldsymbol{\\left(1+\\frac{\\sqrt3}{2}\\right)r}\\fallingdotseq1.866r$ で，$H_1<H_2$．\n二重レールでは内側レールが小球を内向きに押して水平方向の速度まで止めるので，運動エネルギーがすべて位置エネルギーになる．放物運動では水平方向の速度 $v_1c$ が最高点でも残るので，その分だけ低い：\n\\[ H_2-H_1=\\frac{(v_1c)^2}{2g}=\\frac{grc^3}{2g}=\\boldsymbol{\\frac{\\sqrt3}{18}r}. \\]\nO を通過するときは離れる点より $rc$ だけ低いので，$v_{\\rm O}^2=v_1^2+2grc=3grc=\\sqrt3\\,gr$，$\\boldsymbol{v_{\\rm O}=3^{1/4}\\sqrt{gr}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "鉛直円の二重レールでは，速さ0になる角 $\\theta_V$ が $90^\\circ$ を超えると抗力が外側から内側へ $\\cos\\theta_F=\\frac23\\cos\\theta_V$ で切り替わり，その角は外側レールだけのときに離れる角と同じである．離れた後の放物運動が中心を通る条件を逆にたどると進入速度と $\\theta_V$ が決まり，最高点の差は残った水平速度の運動エネルギーに等しい．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "projectile-motion",
+  "circular-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "鉛直面内の円運動",
+  "抗力の符号",
+  "放物運動",
+  "エネルギー保存",
+  "逆問題"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "id": "PHY-OSC-050",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "回転ドラムの内壁とともに回る小物体（離れるより先に滑る理由と最も滑りやすい位置）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，半径 $R$ の円筒形のドラムが，水平な中心軸Oのまわりに一定の角速度 $\\omega$ で回転している．ドラムの内壁に質量 $m$ の小物体があり，内壁との間の静止摩擦係数は $\\mu$ である．小物体はドラムの最下点で内壁に対して静止しており，そこから内壁とともに回り始めた．小物体の位置を，Oから見て最下点から回転の向きに測った角 $\\theta$ で表す．重力加速度の大きさを $g$ とし，$k=\\dfrac{R\\omega^2}{g}$ とおく．小物体の大きさは無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小物体が内壁に対して静止したまま角 $\\theta$ の位置にあるとき，内壁から受ける垂直抗力の大きさ $N$ と，静止摩擦力 $f$（内壁に沿って回転の向きを正とする）を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$k<1$ とする．摩擦が十分に大きければ，小物体は $N=0$ となる角 $\\theta_{\\rm d}$ まで内壁とともに回り，そこで内壁から離れて落ちるように思える．しかし実際には，$\\mu$ がどんなに大きくても，小物体は $\\theta_{\\rm d}$ に達する前に必ず内壁に対して滑り始める．その理由を説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "小物体が1周の間ずっと内壁に対して滑らないための $k$ の条件を $\\mu$ で表せ．また，$k$ がこの条件の境界の値よりわずかに小さいとき，小物体が滑り始める角 $\\theta^*$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\mu=0.50$，$k=1.5$ のとき，小物体が滑り始める角 $\\theta$ を度の単位で有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：回転ドラムの内壁とともに回る小物体（離れるより先に滑る理由と最も滑りやすい位置）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：回転ドラムの内壁とともに回る小物体（離れるより先に滑る理由と最も滑りやすい位置）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$N=mg(k+\\cos\\theta)$，$f=mg\\sin\\theta$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\theta_{\\rm d}$ では $N=0$ で最大摩擦力が $0$ になるが，必要な摩擦力は $mg\\sin\\theta_{\\rm d}=mg\\sqrt{1-k^2}>0$ なので，それより手前で必ず $f>\\mu N$ となる"
+   },
+   {
+    "id": "3",
+    "tex": "$k\\ge\\dfrac{\\sqrt{1+\\mu^2}}{\\mu}$，$\\theta^*=90^\\circ+\\tan^{-1}\\mu$"
+   },
+   {
+    "id": "4",
+    "tex": "$69^\\circ$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) ドラムとともに回る小物体にはたらく力}\n\n小物体が内壁に対して静止していれば，地上から見て半径 $R$，角速度 $\\omega$ の等速円運動をしている．はたらく力は重力 $mg$（鉛直下向き），垂直抗力 $N$（Oへ向かう向き），静止摩擦力 $f$（内壁に沿う向き）である．角 $\\theta$ の位置で，重力のO向きの成分は $-mg\\cos\\theta$（最下点付近ではOから遠ざかる向き），回転の向きの成分は $-mg\\sin\\theta$ である．\n\nO向き（向心方向）の運動方程式：$mR\\omega^2=N-mg\\cos\\theta$ より\n\\[ N=\\boldsymbol{mg(k+\\cos\\theta)} \\]\n等速円運動なので接線方向の加速度は $0$：$f-mg\\sin\\theta=0$ より\n\\[ f=\\boldsymbol{mg\\sin\\theta} \\]\n滑らない条件は $|f|\\le\\mu N$，すなわち $|\\sin\\theta|\\le\\mu(k+\\cos\\theta)$ である．\n\n\\textbf{(2) 離れるより先に滑る理由}\n\n$k<1$ なら $N=0$ となる角 $\\theta_{\\rm d}$（$\\cos\\theta_{\\rm d}=-k$，$90^\\circ<\\theta_{\\rm d}<180^\\circ$）がある．しかしその位置で内壁とともに回り続けるのに必要な摩擦力は\n\\[ f=mg\\sin\\theta_{\\rm d}=mg\\sqrt{1-k^2}>0 \\]\nであるのに対し，最大摩擦力 $\\mu N$ は $0$ である．$|f|-\\mu N$ は $\\theta$ の連続関数で，$\\theta=0$ では $-\\mu mg(k+1)<0$，$\\theta=\\theta_{\\rm d}$ では正だから，その間で必ず $0$ を横切る．つまり $N$ が $0$ に下がりきる前に，最大摩擦力が必要な摩擦力を下回り，小物体は滑り始める．$\\mu$ を大きくしても $\\mu\\cdot0=0$ なのでこの結論は変わらない．内壁から「離れて落ちる」には，まず滑って内壁とともに回る運動をやめなければならない．\n\n\\textbf{(3) 1周滑らない条件と滑りやすい位置}\n\n$0\\le\\theta\\le\\pi$（$f\\ge0$ の側）で滑らない条件は\n\\[ \\sin\\theta-\\mu\\cos\\theta\\le\\mu k \\]\n左辺は $\\sqrt{1+\\mu^2}\\sin(\\theta-\\delta)$（$\\tan\\delta=\\mu$，$0<\\delta<\\frac{\\pi}{2}$）と合成でき，最大値 $\\sqrt{1+\\mu^2}$ を $\\theta=\\frac{\\pi}{2}+\\delta$ でとる．$\\pi\\le\\theta\\le2\\pi$ の側は $\\theta\\to2\\pi-\\theta$ と置きかえた同じ式になるので，1周滑らない条件は\n\\[ \\sqrt{1+\\mu^2}\\le\\mu k\\iff\\boldsymbol{k\\ge\\frac{\\sqrt{1+\\mu^2}}{\\mu}} \\]\n$k$ が境界よりわずかに小さいと，左辺が最大になる点の付近だけで条件が破れるので，滑り始めるのは\n\\[ \\boldsymbol{\\theta^*=90^\\circ+\\tan^{-1}\\mu} \\]\nである．最も滑りやすいのは内壁が鉛直になる真横（$90^\\circ$）ではなく，それを過ぎた上半分の位置である．真横を過ぎると必要な摩擦力 $mg\\sin\\theta$ はわずかに減るが，重力が内壁から引きはがす向きにはたらき始めて $N$ がそれ以上に速く減るからである．なお，$\\frac{\\sqrt{1+\\mu^2}}{\\mu}>1$ だから，最上点で $N\\ge0$（$k\\ge1$）であるだけでは1周滑らずに回ることはできない．\n\n\\textbf{(4) 数値}\n\n$\\mu=0.50$，$k=1.5$ では境界の値 $\\sqrt{1.25}/0.50\\approx2.24$ より $k$ が小さいので，途中で滑る．$\\theta$ を $0$ から増やしたとき初めて $\\sin\\theta-0.50\\cos\\theta=0.75$ となる角を求める：\n\\[ \\sqrt{1.25}\\sin(\\theta-\\delta)=0.75,\\quad \\delta=\\tan^{-1}0.50\\approx26.6^\\circ \\]\n$\\sin(\\theta-\\delta)\\approx0.671$ より $\\theta-\\delta\\approx42.1^\\circ$，したがって $\\theta\\approx\\boldsymbol{69^\\circ}$．このとき $N=mg(1.5+\\cos69^\\circ)>0$ で，確かに内壁に押しつけられたまま滑り始める．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "回転ドラムの内壁とともに回る物体では，垂直抗力 $mg(k+\\cos\\theta)$ が $0$ になる位置でも接線方向に重力の成分が残るので，最大摩擦力 $\\mu N$ が先に不足し，物体は「離れる」前に必ず「滑る」．滑らない条件 $\\sin\\theta-\\mu\\cos\\theta\\le\\mu k$ の左辺は真横ではなく $90^\\circ+\\tan^{-1}\\mu$ で最大になる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "circular-motion",
+  "torque"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "等速円運動",
+  "静止摩擦",
+  "垂直抗力",
+  "三角関数の合成",
+  "状態の切り替わり"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

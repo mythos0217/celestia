@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 330">
+  <defs>
+    <marker id="q-ab" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f5fbf"/></marker>
+    <marker id="q-ak" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222"/></marker>
+  </defs>
+  <ellipse cx="230" cy="110" rx="140" ry="26" fill="none" stroke="#222" stroke-width="1.6"/>
+  <path d="M90,110 A140,140 0 0 0 370,110" fill="none" stroke="#222" stroke-width="1.6"/>
+  <line x1="90" y1="110" x2="370" y2="110" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <circle cx="230" cy="110" r="2.5" fill="#222"/>
+  <text x="236" y="104" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">O</text>
+  <line x1="230" y1="110" x2="230" y2="250" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <line x1="230" y1="110" x2="122.8" y2="200" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <line x1="230" y1="110" x2="329" y2="209" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <text x="290" y="166" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">R</text>
+  <path d="M230,145 A35,35 0 0 1 203.2,132.5" fill="none" stroke="#222" stroke-width="1"/>
+  <text x="200" y="166" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">φ<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+  <circle cx="128.1" cy="195.5" r="7" fill="#888" stroke="#222" stroke-width="1.6"/>
+  <text x="92" y="222" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">Q</text>
+  <text x="140" y="193" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">m</text>
+  <line x1="420" y1="140" x2="420" y2="190" stroke="#222" stroke-width="1.4" marker-end="url(#q-ak)"/>
+  <text x="428" y="172" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">g</text>
+  <circle cx="40" cy="296" r="8" fill="none" stroke="#1f5fbf" stroke-width="1.4"/>
+  <circle cx="40" cy="296" r="2.2" fill="#1f5fbf"/>
+  <text x="56" y="301" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">Q での初速</text>
+  <text x="130" y="301" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">v<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+  <text x="148" y="301" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">は水平で紙面に垂直（手前向き）</text>
+</svg>

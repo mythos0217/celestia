@@ -1,0 +1,122 @@
+{
+ "id": "PHY-OSC-042",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "静止したままの回転枠の板の上を走る小動物（板からの力が軸を通る条件による単振動と不安定）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかに回転できる水平な軸Oに，軽い腕で水平な板を固定した回転枠がある．図（ア）のように板の上面は軸Oの真下 $d$ の位置にあり，Oから板に下ろした垂線の足をHとする．枠は，小動物がいないときには板が水平な状態でつり合っている．重力加速度の大きさを $g$ とする．\n\n質量 $m$ の小動物を，Hから水平距離 $a$ の板上に静止させておき，枠から手を離すと同時に，小動物は板の上を走り出した．小動物は板からの垂直抗力と摩擦力（足で板を蹴る力の反作用）を受けて運動し，そのために枠は\\textbf{静止したままであった}．小動物の大きさは無視し，小動物は板から離れないものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小動物が板から受ける力（垂直抗力と摩擦力の合力）の作用線は軸Oを通ることを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "Hを原点とし，板に沿って小動物の位置を $x$ とする．小動物の加速度を $x$ で表し，$x$ を時刻 $t$ の関数として求めよ．また，この運動の周期を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "小動物の足と板の間の静止摩擦係数を $\\mu$ とする．このような運動ができるための $a$ の条件を求めよ．また，軸Oが枠に及ぼす力の水平成分の大きさの最大値を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "図（イ）のように，板を軸Oの真上 $d$ の位置に取りつけた枠（軸の下におもりをつけ，小動物がいないとき板が水平でつり合う）で同じことを考える．小動物がHを速さ $v_0$ で通過した瞬間から，枠が静止したままとなるように走る．このとき小動物がHから距離 $b$ の点に達するまでの時間を求めよ．必要なら，$\\omega$ を正の定数として $x=Ae^{\\omega t}+Be^{-\\omega t}$（$A$，$B$ は定数）が $\\dfrac{d^2x}{dt^2}=\\omega^2x$ を満たすことを用いてよい．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：静止したままの回転枠の板の上を走る小動物（板からの力が軸を通る条件による単振動と不安定）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "解説参照（枠が静止するには小動物が板に及ぼす力の軸Oのまわりのモーメントが $0$）"
+   },
+   {
+    "id": "2",
+    "tex": "加速度 $-\\dfrac{g}{d}x$，$x=a\\cos\\sqrt{\\dfrac gd}\\,t$，周期 $2\\pi\\sqrt{\\dfrac dg}$"
+   },
+   {
+    "id": "3",
+    "tex": "$a\\leqq\\mu d$，$\\dfrac{mga}{d}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\sqrt{\\dfrac dg}\\,\\log\\left(\\dfrac{b}{v_0}\\sqrt{\\dfrac gd}+\\sqrt{1+\\dfrac{gb^2}{dv_0^2}}\\right)$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 力の作用線}\n\n枠には，重力，軸Oからの力，小動物が板に及ぼす力がはたらく．枠ははじめ小動物なしでつり合っていたので重力のOまわりのモーメントは $0$，軸からの力はOを通るのでモーメントをもたない．枠が回転を始めない（静止し続ける）ためには，小動物が板に及ぼす力のOまわりのモーメントも常に $0$，すなわちその作用線がOを通らなければならない．作用・反作用より，\\textbf{小動物が板から受ける力の作用線もOを通る}．\n\n\\textbf{(2) 小動物の運動}\n\n小動物の位置をP$(x,\\,-d)$（Oを原点，鉛直上向きを正）とすると，Pが受ける力 $\\vec F$ はPからOへ向かう向き（またはその逆向き）なので $\\vec F=\\lambda(-x,\\ d)$ と書ける．小動物は板の上にいて鉛直方向には動かないから，鉛直成分は重力とつり合う：\n\\[ \\lambda d=mg\\quad\\Longrightarrow\\quad \\lambda=\\frac{mg}{d} \\]\n水平成分から運動方程式は\n\\[ m\\ddot x=-\\lambda x=-\\frac{mg}{d}x\\qquad\\therefore\\quad \\ddot x=\\boldsymbol{-\\frac gd\\,x} \\]\nこれは角振動数 $\\omega=\\sqrt{g/d}$ の単振動で，$x(0)=a$，$\\dot x(0)=0$ より\n\\[ \\boldsymbol{x=a\\cos\\sqrt{\\frac gd}\\,t},\\qquad \\text{周期 }\\boldsymbol{2\\pi\\sqrt{\\frac dg}} \\]\n長さ $d$ の単振り子と同じ周期で，小動物は板の上を $-a\\leqq x\\leqq a$ の範囲で往復する．\n\n\\textbf{(3) 摩擦の条件と軸の力}\n\n垂直抗力は $mg$，必要な摩擦力の大きさは $|\\lambda x|=\\dfrac{mg|x|}{d}$ で，その最大値は $x=\\pm a$ での $\\dfrac{mga}{d}$．すべらないためには $\\dfrac{mga}{d}\\leqq\\mu mg$，すなわち $\\boldsymbol{a\\leqq\\mu d}$．\n\n枠のつり合いを考える．小動物が板に及ぼす力は $\\left(\\dfrac{mgx}{d},\\ -mg\\right)$ なので，軸が枠に及ぼす力の水平成分は $-\\dfrac{mgx}{d}$，その大きさの最大値は $\\boldsymbol{\\dfrac{mga}{d}}$（鉛直成分は枠と小動物の重さの和で一定）．\n\n\\textbf{(4) 板が軸の上にある場合}\n\nP$(x,\\,d)$ では $\\vec F=\\lambda(-x,\\ -d)$，鉛直成分 $-\\lambda d=mg$ より $\\lambda=-\\dfrac{mg}{d}$（Oから遠ざかる向きに押される）．運動方程式は\n\\[ \\ddot x=+\\frac gd\\,x \\]\nとなり，Hから離れるほど外向きの加速度が大きくなる（単振動ではなく不安定）．$\\omega=\\sqrt{g/d}$ として $x=Ae^{\\omega t}+Be^{-\\omega t}$，$x(0)=0$，$\\dot x(0)=v_0$ より $A=-B=\\dfrac{v_0}{2\\omega}$：\n\\[ x=\\frac{v_0}{2\\omega}\\left(e^{\\omega t}-e^{-\\omega t}\\right) \\]\n$x=b$ とおき $X=e^{\\omega t}$ について解くと $X^2-\\dfrac{2\\omega b}{v_0}X-1=0$，$X>0$ より $X=\\dfrac{\\omega b}{v_0}+\\sqrt{1+\\dfrac{\\omega^2b^2}{v_0^2}}$．よって\n\\[ t=\\boldsymbol{\\sqrt{\\frac dg}\\,\\log\\left(\\frac{b}{v_0}\\sqrt{\\frac gd}+\\sqrt{1+\\frac{gb^2}{dv_0^2}}\\right)} \\]\n小動物は板の端に向かってどんどん加速しなければならず，いつまでも枠を静止させておくことはできない．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "回転できる枠を静止させ続けるには，枠に及ぼす力のモーメントが常に $0$ でなければならず，小動物が板から受ける力の作用線は軸を通る．鉛直成分が重さとつり合うことから水平成分が位置に比例し，軸が板の上にあれば長さ $d$ の振り子と同じ単振動，下にあれば外向きに指数関数的に増える不安定な運動になる．必要な摩擦力の大きさが振幅の上限を決める．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "simple-pendulum",
+  "torque"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "力のモーメント",
+  "作用線",
+  "単振動",
+  "不安定なつり合い",
+  "摩擦の条件"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker></defs>
+<line x1="40.0" y1="320.0" x2="440.0" y2="320.0" stroke="#222" stroke-width="1.6"/>
+<path d="M50,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M72,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M94,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M116,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M138,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M160,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M182,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M204,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M226,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M248,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M270,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M292,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M314,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M336,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M358,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M380,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M402,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<path d="M424,330 q5,-4 10,0" fill="none" stroke="#222" stroke-width="1"/>
+<text x="400.0" y="350.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">湖面</text>
+<path d="M80.0,80.0 L210.0,80.0 L210.0,92.0 L100.0,92.0 L100.0,320.0 L85.0,320.0 L85.0,92.0 L80.0,92.0 Z" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="198.0" y1="80.0" x2="198.0" y2="30.0" stroke="#222" stroke-width="3"/>
+<circle cx="198.0" cy="22.0" r="7.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="210.0" y="50.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">人</text>
+<path d="M210,84 C240,120 230,90 200,76" fill="none" stroke="#c0392b" stroke-width="1.4"/>
+<text x="240.0" y="124.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">ゴムひも</text>
+<text x="240.0" y="142.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">（台の端に固定，他端は足首）</text>
+<line x1="330.0" y1="80.0" x2="330.0" y2="320.0" stroke="#888" stroke-width="1" marker-end="url(#q-ag)" marker-start="url(#q-ag)"/>
+<text x="338.0" y="200.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">H</text>
+<line x1="215.0" y1="80.0" x2="350.0" y2="80.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="170.0" y1="80.0" x2="170.0" y2="15.0" stroke="#888" stroke-width="1" marker-end="url(#q-ag)" marker-start="url(#q-ag)"/>
+<text x="156.0" y="52.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">ℓ</text>
+<line x1="165.0" y1="15.0" x2="198.0" y2="15.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="212.0" y="20.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">頭</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 250">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker></defs>
+<path d="M75.3,158.1 L222.5,73.1 A135,135 0 0 1 393.4,103.2 L470.6,195.1" stroke="#222" stroke-width="1.8" fill="none"/>
+<line x1="290.0" y1="190.0" x2="222.5" y2="73.1" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="290.0" y1="190.0" x2="290.0" y2="55.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="290.0" y1="190.0" x2="393.4" y2="103.2" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="290.0" cy="190.0" r="2.5" stroke="#222" stroke-width="1.6" fill="#222"/>
+<text x="290.0" y="210.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">O</text>
+<text x="208.5" y="67.1" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">F</text>
+<text x="290.0" y="45.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">G</text>
+<text x="407.4" y="97.2" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">H</text>
+<path d="M271.0,157.1 A38,38 0 0 1 290.0,152.0" stroke="#222" stroke-width="1" fill="none"/>
+<text x="276.5" y="144.8" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">α</text>
+<path d="M290.0,160.0 A30,30 0 0 1 313.0,170.7" stroke="#222" stroke-width="1" fill="none"/>
+<text x="309.4" y="153.3" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">β</text>
+<line x1="75.3" y1="158.1" x2="165.3" y2="158.1" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<path d="M125.3,158.1 A50,50 0 0 0 118.6,133.1" stroke="#222" stroke-width="1" fill="none"/>
+<text x="137.3" y="150.1" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">α</text>
+<line x1="393.4" y1="103.2" x2="473.4" y2="103.2" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<path d="M438.4,103.2 A45,45 0 0 1 422.3,137.7" stroke="#222" stroke-width="1" fill="none"/>
+<text x="449.4" y="129.2" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">β</text>
+<circle cx="123.7" cy="122.0" r="7" stroke="#222" stroke-width="1.6" fill="#fff"/>
+<text x="117.7" y="108.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">m</text>
+<line x1="132.4" y1="117.0" x2="165.3" y2="98.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="163.7" y="84.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">v<tspan baseline-shift="sub" font-size="10" font-style="normal">F</tspan></text>
+<text x="299.0" y="106.3" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">r</text>
+</svg>

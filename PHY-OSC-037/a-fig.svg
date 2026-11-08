@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320">
+<defs>
+<marker id="a-ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker>
+</defs>
+<!-- center (200,150); d = 60 px; A1 = 2d=120 (alpha=60deg), A2 = sqrt2 d = 84.85 (alpha=45) -->
+<line x1="40" y1="150" x2="360" y2="150" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="200" y1="10" x2="200" y2="300" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="40" y1="210" x2="360" y2="210" stroke="#222" stroke-width="1.6"/>
+<text x="10" y="215" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">床</text>
+<text x="366" y="215" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">−<tspan font-family="Times New Roman, serif" font-style="italic">d</tspan></text>
+<text x="366" y="155" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">0</text>
+<!-- circle 1, radius 120: arc above floor (solid) and below floor (dashed) -->
+<circle cx="200" cy="150" r="120" fill="none" stroke="#1f5fbf" stroke-width="1.6"/>
+<circle cx="200" cy="150" r="84.85" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+<!-- floor intersections circle1: x offset = sqrt(120^2-60^2)=103.9 -->
+<line x1="200" y1="150" x2="303.9" y2="210" stroke="#1f5fbf" stroke-width="1"/>
+<line x1="200" y1="150" x2="96.1" y2="210" stroke="#1f5fbf" stroke-width="1"/>
+<line x1="200" y1="150" x2="260" y2="210" stroke="#c0392b" stroke-width="1"/>
+<line x1="200" y1="150" x2="140" y2="210" stroke="#c0392b" stroke-width="1"/>
+<path d="M 200 190 A 40 40 0 0 0 234.6 170" fill="none" stroke="#1f5fbf" stroke-width="1"/>
+<text x="226" y="198" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#1f5fbf">α<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<text x="402" y="60" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">1回目の後：半径 2<tspan font-family="Times New Roman, serif" font-style="italic">d</tspan></text>
+<text x="402" y="80" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf"><tspan font-family="Times New Roman, serif" font-style="italic">α</tspan><tspan baseline-shift="sub" font-size="10">1</tspan>＝π/3，間隔 2<tspan font-family="Times New Roman, serif" font-style="italic">T</tspan>/3</text>
+<text x="402" y="110" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">2回目の後：半径 √2 <tspan font-family="Times New Roman, serif" font-style="italic">d</tspan></text>
+<text x="402" y="130" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b"><tspan font-family="Times New Roman, serif" font-style="italic">α</tspan><tspan baseline-shift="sub" font-size="10">2</tspan>＝π/4，間隔 3<tspan font-family="Times New Roman, serif" font-style="italic">T</tspan>/4</text>
+<text x="402" y="170" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">床より下の弧（中心角 2<tspan font-family="Times New Roman, serif" font-style="italic">α</tspan>）</text>
+<text x="402" y="190" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">の分だけ周期が欠ける</text>
+<text x="40" y="300" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">参照円（中心はつり合いの位置，回転角 <tspan font-family="Times New Roman, serif" font-style="italic">ωt</tspan>）</text>
+</svg>

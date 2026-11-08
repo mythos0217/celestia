@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 300">
+<defs>
+<marker id="q-ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker>
+</defs>
+<!-- floor -->
+<line x1="20" y1="250" x2="540" y2="250" stroke="#222" stroke-width="1.6"/>
+<g stroke="#888" stroke-width="1"><line x1="30" y1="250" x2="22" y2="260"/><line x1="70" y1="250" x2="62" y2="260"/><line x1="110" y1="250" x2="102" y2="260"/><line x1="150" y1="250" x2="142" y2="260"/><line x1="190" y1="250" x2="182" y2="260"/><line x1="230" y1="250" x2="222" y2="260"/><line x1="270" y1="250" x2="262" y2="260"/><line x1="310" y1="250" x2="302" y2="260"/><line x1="350" y1="250" x2="342" y2="260"/><line x1="390" y1="250" x2="382" y2="260"/><line x1="430" y1="250" x2="422" y2="260"/><line x1="470" y1="250" x2="462" y2="260"/><line x1="510" y1="250" x2="502" y2="260"/></g>
+<!-- wall -->
+<line x1="530" y1="60" x2="530" y2="250" stroke="#222" stroke-width="1.6"/>
+<g stroke="#888" stroke-width="1"><line x1="530" y1="70" x2="540" y2="62"/><line x1="530" y1="100" x2="540" y2="92"/><line x1="530" y1="130" x2="540" y2="122"/><line x1="530" y1="160" x2="540" y2="152"/><line x1="530" y1="190" x2="540" y2="182"/><line x1="530" y1="220" x2="540" y2="212"/><line x1="530" y1="250" x2="540" y2="242"/></g>
+<!-- wedge: foot (80,250), top (380,90), right side x=380 -->
+<polygon points="80,250 380,250 380,90" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="300" y="225" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">台 <tspan font-family="Times New Roman, serif" font-style="italic">M</tspan></text>
+<path d="M 130 250 A 50 50 0 0 0 124 227" fill="none" stroke="#222" stroke-width="1"/>
+<text x="136" y="240" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">θ</text>
+<!-- spring from (380,170) to (530,170) -->
+<polyline points="380,170 400,170 408,158 424,182 440,158 456,182 472,158 488,182 504,158 512,170 530,170" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="440" y="150" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">k</text>
+<!-- block on slope: slope dir (300,-160)/340 = (0.882,-0.471). block centered at s=230 from foot -->
+<g transform="translate(283,142) rotate(-28.07)">
+<rect x="-16" y="-22" width="32" height="22" fill="none" stroke="#222" stroke-width="1.6"/>
+</g>
+<text x="296" y="112" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">m</text>
+<!-- ell dimension along slope, offset outward -->
+<line x1="66" y1="224" x2="255" y2="123" stroke="#222" stroke-width="1" marker-start="url(#q-ar)" marker-end="url(#q-ar)"/>
+<line x1="80" y1="250" x2="62" y2="216" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="269" y1="149" x2="251" y2="115" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="140" y="165" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">ℓ</text>
+<text x="40" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">床・斜面はなめらか．はじめ，ばねは自然長で，台と小物体を同時に静かにはなす．</text>
+</svg>

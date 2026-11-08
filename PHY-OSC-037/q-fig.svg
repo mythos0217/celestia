@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 340">
+<defs>
+<marker id="q-ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker>
+</defs>
+<!-- ceiling -->
+<line x1="150" y1="30" x2="290" y2="30" stroke="#222" stroke-width="1.6"/>
+<g stroke="#888" stroke-width="1"><line x1="160" y1="30" x2="170" y2="20"/><line x1="180" y1="30" x2="190" y2="20"/><line x1="200" y1="30" x2="210" y2="20"/><line x1="220" y1="30" x2="230" y2="20"/><line x1="240" y1="30" x2="250" y2="20"/><line x1="260" y1="30" x2="270" y2="20"/><line x1="280" y1="30" x2="290" y2="20"/></g>
+<!-- spring from y=30 to y=110 -->
+<polyline points="220,30 220,45 208,52 232,62 208,72 232,82 208,92 232,102 220,108 220,114" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="220" cy="122" r="8" fill="#222"/>
+<text x="240" y="76" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">k</text>
+<text x="236" y="128" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">m</text>
+<!-- x axis -->
+<line x1="80" y1="320" x2="80" y2="40" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+<text x="64" y="44" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+<!-- levels: h at y=122, 0 at y=200, -d at y=240 -->
+<line x1="80" y1="122" x2="210" y2="122" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="58" y="127" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">h</text>
+<line x1="80" y1="200" x2="300" y2="200" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="60" y="205" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">0</text>
+<text x="305" y="205" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">つり合いの位置</text>
+<!-- floor -->
+<line x1="150" y1="250" x2="300" y2="250" stroke="#222" stroke-width="1.6"/>
+<g stroke="#888" stroke-width="1"><line x1="160" y1="250" x2="152" y2="260"/><line x1="180" y1="250" x2="172" y2="260"/><line x1="200" y1="250" x2="192" y2="260"/><line x1="220" y1="250" x2="212" y2="260"/><line x1="240" y1="250" x2="232" y2="260"/><line x1="260" y1="250" x2="252" y2="260"/><line x1="280" y1="250" x2="272" y2="260"/><line x1="300" y1="250" x2="292" y2="260"/></g>
+<line x1="80" y1="250" x2="150" y2="250" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="44" y="255" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">−<tspan font-family="Times New Roman, serif" font-style="italic">d</tspan></text>
+<text x="305" y="255" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">床（位置は未知）</text>
+<text x="246" y="148" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">時刻 0 に静かにはなす</text>
+</svg>

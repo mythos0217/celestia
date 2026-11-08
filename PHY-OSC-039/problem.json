@@ -1,0 +1,151 @@
+{
+ "id": "PHY-OSC-039",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "動ける台の円弧の溝から飛び出す小物体（傾いた垂直抗力による台の加速度と飛び出し後の台の系）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかで水平な床の上に質量 $M$ の台が置かれている．台には中心 O，半径 $R$ の円弧状のなめらかな溝 PQD が掘られている．P は O と同じ高さにある溝の左端，Q は溝の最下点，D は OQ から右へ角 $\\alpha$（$0<\\alpha<\\frac{\\pi}{2}$）の位置にある溝の右端で，D から右には台の水平な上面 DE が十分遠くまで続いている．台が静止した状態で，質量 $m$ の小物体を P で静かにはなすと，小物体は溝に沿ってすべり，D から飛び出したのち DE 上の点 F に落下した．運動はすべて図の鉛直面内で起こり，台は回転しない．摩擦と空気抵抗は無視し，重力加速度の大きさを $g$ とする．速度・加速度は水平右向きを正とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小物体が D に達したときの，台に対する小物体の速さ $u$ を $M$，$m$，$R$，$g$，$\\alpha$ で表せ．また，このときの床に対する台の速度 $V$ を $u$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "床から見ると，小物体が D を飛び出す向きは水平と角 $\\varphi$ をなす．$\\tan\\varphi$ を $M$，$m$，$\\alpha$ で表し，$\\varphi$ と $\\alpha$ の大小を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "小物体が D を飛び出す直前に，小物体が溝から受ける垂直抗力の大きさ $N$ と，床に対する台の加速度 $A$ を，$M$，$m$，$R$，$g$，$\\alpha$，$u$ のうち必要なものを用いて表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "床が台におよぼす垂直抗力の大きさを，小物体が D を飛び出す直前と直後のそれぞれについて求めよ（$N$ を用いてよい）．"
+     },
+     {
+      "id": "5",
+      "tex": "DF 間の距離 $s$ を $M$，$m$，$R$，$\\alpha$ で表せ．"
+     },
+     {
+      "id": "6",
+      "tex": "小物体をはなしてから F に落下するまでに，台が床に対して動いた距離と向きを $M$，$m$，$R$，$\\alpha$，$s$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：動ける台の円弧の溝から飛び出す小物体（傾いた垂直抗力による台の加速度と飛び出し後の台の系）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：動ける台の円弧の溝から飛び出す小物体（傾いた垂直抗力による台の加速度と飛び出し後の台の系）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$u=\\sqrt{\\dfrac{2(M+m)gR\\cos\\alpha}{M+m\\sin^2\\alpha}}$，$V=-\\dfrac{mu\\cos\\alpha}{M+m}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\tan\\varphi=\\dfrac{M+m}{M}\\tan\\alpha$，$\\varphi>\\alpha$"
+   },
+   {
+    "id": "3",
+    "tex": "$N=\\dfrac{Mm}{M+m\\sin^2\\alpha}\\left(\\dfrac{u^2}{R}+g\\cos\\alpha\\right)$，$A=\\dfrac{m\\sin\\alpha}{M+m\\sin^2\\alpha}\\left(\\dfrac{u^2}{R}+g\\cos\\alpha\\right)$（右向き）"
+   },
+   {
+    "id": "4",
+    "tex": "直前 $Mg+N\\cos\\alpha$，直後 $Mg$"
+   },
+   {
+    "id": "5",
+    "tex": "$s=\\dfrac{4(M+m)R\\sin\\alpha\\cos^2\\alpha}{M+m\\sin^2\\alpha}$"
+   },
+   {
+    "id": "6",
+    "tex": "左向きに $\\dfrac{m}{M+m}\\left\\{R(1+\\sin\\alpha)+s\\right\\}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 運動量とエネルギー}　台と小物体には水平方向の外力がはたらかないので，水平方向の運動量が保存する．D では小物体の台に対する速度は円弧の接線方向，すなわち水平と角 $\\alpha$ をなす右上向きで，その大きさが $u$ である．床に対する小物体の速度は $(V+u\\cos\\alpha,\\ u\\sin\\alpha)$ なので\n\\[ m(V+u\\cos\\alpha)+MV=0 \\quad\\therefore\\quad \\boldsymbol{V=-\\frac{mu\\cos\\alpha}{M+m}}. \\]\n垂直抗力は台と小物体の間の内力で，なめらかな面では両者にする仕事の和が $0$ になるから，系の力学的エネルギーが保存する．P から D までに小物体は $R\\cos\\alpha$ だけ下がるので\n\\[ \\frac12m\\left\\{(V+u\\cos\\alpha)^2+u^2\\sin^2\\alpha\\right\\}+\\frac12MV^2=mgR\\cos\\alpha. \\]\n$V+u\\cos\\alpha=\\dfrac{Mu\\cos\\alpha}{M+m}$ を代入して整理すると，左辺は $\\dfrac{m(M+m\\sin^2\\alpha)}{2(M+m)}u^2$ になるので\n\\[ \\boldsymbol{u=\\sqrt{\\frac{2(M+m)gR\\cos\\alpha}{M+m\\sin^2\\alpha}}}. \\]\n\n\\textbf{(2)} 床から見た速度は $\\left(\\dfrac{M}{M+m}u\\cos\\alpha,\\ u\\sin\\alpha\\right)$ なので\n\\[ \\boldsymbol{\\tan\\varphi=\\frac{M+m}{M}\\tan\\alpha}>\\tan\\alpha \\quad\\therefore\\quad \\boldsymbol{\\varphi>\\alpha}. \\]\n台が逆向きに動いているため，床から見ると飛び出しは溝の向きより急になる．\n\n\\textbf{(3) 傾いた垂直抗力と台の加速度}　D での垂直抗力は O を向き，鉛直と角 $\\alpha$ をなす．その反作用 $N$ は台を右下向きに押すので，台の水平方向の運動方程式は\n\\[ MA=N\\sin\\alpha. \\tag{i} \\]\n（$A\\neq0$ なので，台の上で見ると慣性力 $-mA$ がはたらく．山の頂上のように垂直抗力が鉛直な位置と違い，ここでは台の系は慣性系ではない．）台の上で見ると小物体は半径 $R$，速さ $u$ の円運動をしている．O に向かう向きを正として，重力の成分 $-mg\\cos\\alpha$，慣性力 $-mA$（左向き）の成分 $+mA\\sin\\alpha$ を考えると\n\\[ m\\frac{u^2}{R}=N-mg\\cos\\alpha+mA\\sin\\alpha. \\tag{ii} \\]\nここで，左向きの慣性力の O に向かう成分が正（$+mA\\sin\\alpha$）になることに注意する．(i) を (ii) に代入すると\n\\[ N+\\frac{m\\sin^2\\alpha}{M}N=m\\left(\\frac{u^2}{R}+g\\cos\\alpha\\right) \\]\nとなる（台が右へ加速すると溝の面は小物体から遠ざかる向きに動くので，台が固定されている場合より抗力は小さくてすむ）．したがって\n\\[ \\boldsymbol{N=\\frac{Mm}{M+m\\sin^2\\alpha}\\left(\\frac{u^2}{R}+g\\cos\\alpha\\right)},\\qquad \\boldsymbol{A=\\frac{N\\sin\\alpha}{M}=\\frac{m\\sin\\alpha}{M+m\\sin^2\\alpha}\\left(\\frac{u^2}{R}+g\\cos\\alpha\\right)} \\]\n（右向き．このとき台は左へ動いているので減速している）．(1) の $u$ を代入すると $N=\\dfrac{Mmg\\cos\\alpha\\,(3M+2m+m\\sin^2\\alpha)}{(M+m\\sin^2\\alpha)^2}$ となる．\n\n\\textbf{(4)} 台の鉛直方向のつり合いから，直前は床の垂直抗力が重力 $Mg$ と，小物体からの力の鉛直成分 $N\\cos\\alpha$（下向き）を支えるので $\\boldsymbol{Mg+N\\cos\\alpha}$．飛び出した直後は小物体からの力がなくなるので $\\boldsymbol{Mg}$ になる．同時に台の加速度も $A$ から $0$ に不連続に変わり，以後台は速度 $V$ の等速度運動をする．\n\n\\textbf{(5) 台の系での放物運動}　飛び出した後の台は等速度運動をするので，台とともに動く座標系は慣性系である．この系で小物体は初速 $u$，仰角 $\\alpha$ の放物運動をし，D と同じ高さの DE に戻るまでの水平距離は\n\\[ s=\\frac{u^2\\sin2\\alpha}{g}=\\boldsymbol{\\frac{4(M+m)R\\sin\\alpha\\cos^2\\alpha}{M+m\\sin^2\\alpha}}. \\]\n（床の系で考えると，$\\varphi$ と床に対する速さで飛んで等速の台に落ちることになり計算が複雑になる．）\n\n\\textbf{(6) 重心は水平に動かない}　水平方向の外力がなく，はじめ全体が静止しているので，系の重心の水平位置は最後まで変わらない．台の変位を $X$，小物体の台に対する水平変位を $\\Delta x$ とすると，$m(X+\\Delta x)+MX=0$ より $X=-\\dfrac{m}{M+m}\\Delta x$．P から D までに小物体は台に対して O の左 $R$ から右 $R\\sin\\alpha$ まで，D から F までにさらに $s$ 進むので $\\Delta x=R(1+\\sin\\alpha)+s$．よって台は\n\\[ \\boldsymbol{\\text{左向きに}\\ \\frac{m}{M+m}\\left\\{R(1+\\sin\\alpha)+s\\right\\}} \\]\n動く．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "動ける台の曲面上で垂直抗力が傾いている位置では台が加速度をもつので，垂直抗力は「台の系での慣性力を含む円運動の式」と「台の運動方程式」を連立して求める．飛び出した瞬間に台の加速度は0に切り替わって台の系が慣性系になるので，着地点は相対速度による放物運動で，台の移動距離は重心の不動で求まる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "projectile-motion",
+  "kinematics-components"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動量保存",
+  "慣性力",
+  "円運動",
+  "相対運動",
+  "重心"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

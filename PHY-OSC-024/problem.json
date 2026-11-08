@@ -1,0 +1,144 @@
+{
+ "id": "PHY-OSC-024",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "台の穴に通した糸でおもりとつながる物体の平面運動（面積速度一定と実効的な位置エネルギー）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかな水平な台の面に小さな穴 O があけてある．質量 $m$ の小物体 P を台の上に置き，P に付けた糸を穴 O に通して，台の下に質量 $M$ のおもり Q をつるす．糸は伸び縮みせず質量は無視でき，糸と穴の間に摩擦はない．P は台の面上を，Q は鉛直方向にのみ運動するものとし，P，Q の大きさと空気抵抗は無視する．P の位置を O からの距離 $r$ と，台の上に固定した向きからの角 $\\varphi$ で表す．$r$ の増加する速さ（P の速度の，O から遠ざかる向きの成分）を $u$ とする．重力加速度の大きさを $g$ とし，糸はたるまないものとして答えよ（たるまないことは (5) で確かめる）．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "線分 OP が単位時間に掃く面積（面積速度）を $A$ とする．運動中 $A$ が一定に保たれる理由を述べよ．また，P の運動エネルギーが $\\dfrac12mu^2+\\dfrac{2mA^2}{r^2}$ と表されることを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "P と Q を合わせた系の力学的エネルギー $E$ を，$m$，$M$，$g$，$r$，$u$，$A$ で表せ．ただし，Q の重力による位置エネルギーの基準は，$r=0$ のときの Q の位置とする．"
+     },
+     {
+      "id": "3",
+      "tex": "面積速度が一定値 $A_0$ であるような運動のうち，$E$ が最小となるのはどのような運動か．そのときの $r$ の値 $r_0$ と $E$ の値を，$m$，$M$，$g$，$A_0$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の運動の状態から P をわずかに乱したところ（面積速度は $A_0$ のまま），$r$ は $r_0$ を中心に微小な単振動をした．この単振動の周期 $T_r$ と，P が O のまわりを 1 周する時間 $T_\\varphi$（$r=r_0$ として計算してよい）の比 $\\dfrac{T_r}{T_\\varphi}$ を $m$，$M$ で表せ．また，P が 1 周するごとに同じ向きで O から最も遠くなる（軌道がほぼ閉じる）ための $\\dfrac{M}{m}$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$M=m$ とする．Q を静止させたまま P を O から距離 $a$ の点に置き，糸に垂直な向きに速さ $2\\sqrt{ga}$ を与えた．P が O から最も遠ざかるときの距離 $r_{\\max}$ とそのときの P の速さを求めよ．さらに，糸の張力が $\\dfrac{mM}{m+M}\\left(g+\\dfrac{4A^2}{r^3}\\right)$ と表されることを示し，この運動での張力の最小値を求めて，糸がたるまないことを確かめよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：台の穴に通した糸でおもりとつながる物体の平面運動（面積速度一定と実効的な位置エネルギー）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：台の穴に通した糸でおもりとつながる物体の平面運動（面積速度一定と実効的な位置エネルギー）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "P にはたらく水平な力は O を向く張力だけ（中心力）だから；運動エネルギーは解説参照"
+   },
+   {
+    "id": "2",
+    "tex": "$E=\\dfrac12(m+M)u^2+\\dfrac{2mA^2}{r^2}+Mgr$"
+   },
+   {
+    "id": "3",
+    "tex": "Q が静止し P が半径 $r_0$ の等速円運動をするとき．$r_0=\\left(\\dfrac{4mA_0^{\\,2}}{Mg}\\right)^{\\frac13}$，$E=\\dfrac32Mgr_0=\\dfrac32\\left(4mM^2g^2A_0^{\\,2}\\right)^{\\frac13}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{T_r}{T_\\varphi}=\\sqrt{\\dfrac{m+M}{3m}}$，$\\dfrac{M}{m}=2$"
+   },
+   {
+    "id": "5",
+    "tex": "$r_{\\max}=(1+\\sqrt3)a$，速さ $(\\sqrt3-1)\\sqrt{ga}$，張力の最小値 $\\left(\\dfrac{3\\sqrt3}{2}-2\\right)mg\\ (>0)$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 面積速度一定と運動エネルギー}\n\nP にはたらく力は重力・垂直抗力（鉛直でつり合う）と糸の張力で，水平面内の力は常に O を向く張力だけである．時間 $\\Delta t$ の間の面積速度の変化は $\\frac12(x\\,\\Delta v_y-y\\,\\Delta v_x)=\\frac{\\Delta t}{2m}(xF_y-yF_x)$ で，力が位置ベクトルと平行（O を向く）なら $xF_y-yF_x=0$．よって $A$ は一定である．\n\n速度を「O から遠ざかる成分 $u$」と「それに垂直な成分 $w$」に分けると，面積速度は $A=\\frac12rw$，すなわち $w=\\frac{2A}{r}$．したがって\n\\[ \\frac12m(u^2+w^2)=\\frac12mu^2+\\frac{2mA^2}{r^2}. \\]\n\n\\textbf{(2) 系の力学的エネルギー}\n\n糸の長さは一定なので，$r$ が増えた分だけ Q は上がり，Q の速さは $|u|$，基準からの高さは $r$ である．張力は系の内力で，P 側と Q 側でする仕事が打ち消し合うので，力学的エネルギーは保存し\n\\[ E=\\boldsymbol{\\frac12(m+M)u^2+\\frac{2mA^2}{r^2}+Mgr}. \\]\n$A$ が一定なので，これは「質量 $m+M$ の物体が，位置エネルギー $U(r)=\\dfrac{2mA^2}{r^2}+Mgr$ のもとで 1 次元運動する」のと同じ形である（解答図）．\n\n\\textbf{(3) エネルギー最小の運動}\n\n$E$ を最小にするには $u=0$ で，$U(r)$ が最小になればよい．$U$ の傾き $-\\dfrac{4mA_0^{\\,2}}{r^3}+Mg$ が 0 になる $r$ で最小となるので\n\\[ r_0=\\boldsymbol{\\left(\\frac{4mA_0^{\\,2}}{Mg}\\right)^{\\frac13}}. \\]\n$u=0$ が続くので Q は静止し，P は\\textbf{半径 $r_0$ の等速円運動}をする．$\\dfrac{2mA_0^{\\,2}}{r_0^{\\,2}}=\\dfrac12Mgr_0$ だから\n\\[ E=\\frac12Mgr_0+Mgr_0=\\boldsymbol{\\frac32Mgr_0}=\\frac32\\left(4mM^2g^2A_0^{\\,2}\\right)^{\\frac13}. \\]\n（張力 $Mg$ が P の向心力 $m\\dfrac{w^2}{r_0}$ に等しいことからも同じ $r_0$ が得られる．）\n\n\\textbf{(4) 動径方向の振動と公転}\n\n$r=r_0+\\xi$ とすると，$U$ の傾きは $\\xi$ の 1 次まで\n\\[ -\\frac{4mA_0^{\\,2}}{(r_0+\\xi)^3}+Mg\\fallingdotseq\\frac{12mA_0^{\\,2}}{r_0^{\\,4}}\\xi=\\frac{3Mg}{r_0}\\xi \\]\nなので，質量 $m+M$ の物体にばね定数 $\\dfrac{3Mg}{r_0}$ の復元力がはたらくのと同じで，$T_r=2\\pi\\sqrt{\\dfrac{(m+M)r_0}{3Mg}}$．一方，公転の角速度は $\\dfrac{w}{r_0}=\\dfrac{2A_0}{r_0^{\\,2}}$ で，(3) より $\\dfrac{4A_0^{\\,2}}{r_0^{\\,4}}=\\dfrac{Mg}{mr_0}$ だから $T_\\varphi=2\\pi\\sqrt{\\dfrac{mr_0}{Mg}}$．よって\n\\[ \\frac{T_r}{T_\\varphi}=\\boldsymbol{\\sqrt{\\frac{m+M}{3m}}}. \\]\nO から最も遠くなる点が毎周同じ向きにくるのは $T_r=T_\\varphi$ のときで，$m+M=3m$ より $\\dfrac{M}{m}=\\boldsymbol{2}$．（Q の質量も動径方向の慣性に加わるため，比は $M$ によって変わる．）\n\n\\textbf{(5) $M=m$ の運動}\n\n初めは $u=0$，$w=2\\sqrt{ga}$ なので $A=\\frac12a\\cdot2\\sqrt{ga}=a\\sqrt{ga}$，$E=\\frac12m\\cdot4ga+mga=3mga$．最も遠ざかる点では $u=0$ なので\n\\[ \\frac{2mA^2}{r^2}+mgr=3mga\\quad\\Longrightarrow\\quad\\frac{2a^3}{r^2}+r=3a. \\]\n$r=a$ はこの式を満たす（出発点も $u=0$）ので，$(r-a)$ でくくると $(r-a)(r^2-2ar-2a^2)=0$．$r>a$ の解は\n\\[ r_{\\max}=\\boldsymbol{(1+\\sqrt3)a}. \\]\nそのときの速さは $w=\\dfrac{2A}{r_{\\max}}=\\dfrac{2\\sqrt{ga}}{1+\\sqrt3}=\\boldsymbol{(\\sqrt3-1)\\sqrt{ga}}$．\n\n張力を $T$ とし，Q の上向きの加速度が $r$ の増え方の加速度 $\\alpha$ に等しいことを使う．Q について $M\\alpha=T-Mg$．また $E$ が一定であることから，$r$ が $\\Delta r$ 変わるとき $\\frac12(m+M)u^2$ の増加は $-\\Delta U$ に等しく，$(m+M)\\alpha=-\\dfrac{\\Delta U}{\\Delta r}=\\dfrac{4mA^2}{r^3}-Mg$．2 式から $\\alpha$ を消去して\n\\[ T=M(g+\\alpha)=\\frac{mM}{m+M}\\left(g+\\frac{4A^2}{r^3}\\right). \\]\nこれは常に正であり，$r$ が最大のとき最小になる．$M=m$，$A^2=ga^3$，$(1+\\sqrt3)^3=10+6\\sqrt3$ より $\\dfrac{4a^3}{r_{\\max}^{\\,3}}=\\dfrac{4}{10+6\\sqrt3}=3\\sqrt3-5$．よって\n\\[ T_{\\min}=\\frac m2\\,g\\,(1+3\\sqrt3-5)=\\boldsymbol{\\left(\\frac{3\\sqrt3}{2}-2\\right)mg}\\fallingdotseq0.60\\,mg>0 \\]\nで，糸はたるまない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "中心力のもとでは面積速度が一定なので，接線方向の運動エネルギーを $2mA^2/r^2$ として $r$ だけの 1 次元問題（実効的な位置エネルギー）に帰着できる．エネルギー最小の運動が円運動で，そのまわりの動径振動ではつるしたおもりの質量も慣性に加わるため，動径振動と公転の周期の比が質量比で決まる．張力は換算質量を用いた形で常に正となる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "universal-gravitation",
+  "circular-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "面積速度",
+  "中心力",
+  "実効ポテンシャル",
+  "単振動",
+  "力学的エネルギー保存",
+  "張力"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300">
+<defs><marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="a-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker></defs>
+<circle cx="150.0" cy="140.0" r="110" stroke="#222" stroke-width="2" fill="none"/>
+<circle cx="150.0" cy="140.0" r="3" stroke="#222" stroke-width="1.6" fill="#222"/>
+<text x="138.0" y="156.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">O</text>
+<line x1="150.0" y1="140.0" x2="150.0" y2="260.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="150.0" y1="140.0" x2="249.7" y2="93.5" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<rect x="243.7" y="87.5" width="12.0" height="12.0" stroke="#222" stroke-width="1.6" fill="#fff"/>
+<line x1="249.7" y1="93.5" x2="249.7" y2="148.5" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/>
+<text x="255.7" y="145.5" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#c0392b" text-anchor="start">mg</text>
+<line x1="249.7" y1="93.5" x2="213.4" y2="110.4" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<text x="199.4" y="114.4" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf" text-anchor="end">N</text>
+<line x1="249.7" y1="93.5" x2="230.7" y2="52.7" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<text x="224.7" y="46.7" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf" text-anchor="end">f</text>
+<path d="M150.0,170.0 A30,30 0 0 0 177.2,127.3" stroke="#222" stroke-width="1" fill="none"/>
+<text x="188.0" y="170.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">θ</text>
+<text x="150.0" y="285.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">θ = 90° + arctan μ 付近が最も滑りやすい</text>
+<line x1="320.0" y1="150.0" x2="535.8" y2="150.0" stroke="#888" stroke-width="1" marker-end="url(#a-ag)"/>
+<text x="539.8" y="155.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">θ</text>
+<line x1="320.0" y1="225.8" x2="320.0" y2="62.5" stroke="#888" stroke-width="1" marker-end="url(#a-ag)"/>
+<path d="M320.0,179.2 L321.2,177.1 L322.3,175.0 L323.5,172.9 L324.7,170.8 L325.8,168.6 L327.0,166.4 L328.2,164.2 L329.3,162.0 L330.5,159.7 L331.7,157.5 L332.8,155.2 L334.0,152.9 L335.2,150.6 L336.3,148.4 L337.5,146.1 L338.7,143.8 L339.8,141.6 L341.0,139.3 L342.2,137.1 L343.3,134.8 L344.5,132.6 L345.7,130.5 L346.8,128.3 L348.0,126.2 L349.2,124.1 L350.3,122.0 L351.5,120.0 L352.7,117.9 L353.8,116.0 L355.0,114.1 L356.2,112.2 L357.3,110.4 L358.5,108.6 L359.7,106.8 L360.8,105.2 L362.0,103.5 L363.2,102.0 L364.3,100.5 L365.5,99.0 L366.7,97.6 L367.8,96.3 L369.0,95.0 L370.2,93.8 L371.3,92.7 L372.5,91.7 L373.7,90.7 L374.8,89.8 L376.0,88.9 L377.2,88.2 L378.3,87.5 L379.5,86.9 L380.7,86.3 L381.8,85.9 L383.0,85.5 L384.2,85.2 L385.3,85.0 L386.5,84.8 L387.7,84.8 L388.8,84.8 L390.0,84.9 L391.2,85.1 L392.3,85.3 L393.5,85.7 L394.7,86.1 L395.8,86.6 L397.0,87.1 L398.2,87.8 L399.3,88.5 L400.5,89.3 L401.7,90.2 L402.8,91.1 L404.0,92.1 L405.2,93.2 L406.3,94.4 L407.5,95.6 L408.7,96.9 L409.8,98.2 L411.0,99.6 L412.2,101.1 L413.3,102.6 L414.5,104.2 L415.7,105.9 L416.8,107.6 L418.0,109.3 L419.2,111.1 L420.3,113.0 L421.5,114.9 L422.7,116.8 L423.8,118.8 L425.0,120.8 L426.2,122.9 L427.3,125.0 L428.5,127.1 L429.7,129.2 L430.8,131.4 L432.0,133.6 L433.2,135.8 L434.3,138.0 L435.5,140.3 L436.7,142.5 L437.8,144.8 L439.0,147.1 L440.2,149.4 L441.3,151.6 L442.5,153.9 L443.7,156.2 L444.8,158.4 L446.0,160.7 L447.2,162.9 L448.3,165.2 L449.5,167.4 L450.7,169.5 L451.8,171.7 L453.0,173.8 L454.2,175.9 L455.3,178.0 L456.5,180.0 L457.7,182.1 L458.8,184.0 L460.0,185.9 L461.2,187.8 L462.3,189.6 L463.5,191.4 L464.7,193.2 L465.8,194.8 L467.0,196.5 L468.2,198.0 L469.3,199.5 L470.5,201.0 L471.7,202.4 L472.8,203.7 L474.0,205.0 L475.2,206.2 L476.3,207.3 L477.5,208.3 L478.7,209.3 L479.8,210.2 L481.0,211.1 L482.2,211.8 L483.3,212.5 L484.5,213.1 L485.7,213.7 L486.8,214.1 L488.0,214.5 L489.2,214.8 L490.3,215.0 L491.5,215.2 L492.7,215.2 L493.8,215.2 L495.0,215.1 L496.2,214.9 L497.3,214.7 L498.5,214.3 L499.7,213.9 L500.8,213.4 L502.0,212.9 L503.2,212.2 L504.3,211.5 L505.5,210.7 L506.7,209.8 L507.8,208.9 L509.0,207.9 L510.2,206.8 L511.3,205.6 L512.5,204.4 L513.7,203.1 L514.8,201.8 L516.0,200.4 L517.2,198.9 L518.3,197.4 L519.5,195.8 L520.7,194.1 L521.8,192.4 L523.0,190.7 L524.2,188.9 L525.3,187.0 L526.5,185.1 L527.7,183.2 L528.8,181.2 L530.0,179.2" stroke="#1f5fbf" stroke-width="1.8" fill="none"/>
+<line x1="320.0" y1="106.2" x2="530.0" y2="106.2" stroke="#c0392b" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="534.0" y="110.2" font-family="Noto Sans CJK JP, sans-serif" font-size="11" fill="#c0392b" text-anchor="start">μk（k=1.5）</text>
+<line x1="320.0" y1="84.8" x2="530.0" y2="84.8" stroke="#222" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="534.0" y="88.8" font-family="Noto Sans CJK JP, sans-serif" font-size="11" fill="#222" text-anchor="start">μk（境界）</text>
+<circle cx="360.1" cy="106.2" r="4" stroke="#c0392b" stroke-width="1.6" fill="#c0392b"/>
+<text x="356.1" y="124.2" font-family="Noto Sans CJK JP, sans-serif" font-size="11" fill="#c0392b" text-anchor="end">69°</text>
+<line x1="388.0" y1="150.0" x2="388.0" y2="84.8" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="388.0" y="166.0" font-family="Noto Sans CJK JP, sans-serif" font-size="11" fill="#222" text-anchor="middle">117°</text>
+<text x="425.0" y="166.0" font-family="Noto Sans CJK JP, sans-serif" font-size="11" fill="#222" text-anchor="middle">180°</text>
+<text x="530.0" y="166.0" font-family="Noto Sans CJK JP, sans-serif" font-size="11" fill="#222" text-anchor="middle">360°</text>
+<text x="425.0" y="253.8" font-family="Noto Sans CJK JP, sans-serif" font-size="11" fill="#222" text-anchor="middle">sin θ − μ cos θ と μk の比較（μ=0.5）</text>
+</svg>

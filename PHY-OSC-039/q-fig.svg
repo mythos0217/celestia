@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280">
+<defs><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker></defs>
+
+<path d="M80,80 L110,80 A120,120 0 0 0 321.9,157.1 L580,157.1 L580,235 L80,235 Z" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M30,235 L620,235" stroke="#222" stroke-width="1.6"/>
+<path d="M34,235 L26,243" stroke="#222" stroke-width="1"/>
+<path d="M46,235 L38,243" stroke="#222" stroke-width="1"/>
+<path d="M58,235 L50,243" stroke="#222" stroke-width="1"/>
+<path d="M70,235 L62,243" stroke="#222" stroke-width="1"/>
+<path d="M82,235 L74,243" stroke="#222" stroke-width="1"/>
+<path d="M94,235 L86,243" stroke="#222" stroke-width="1"/>
+<path d="M106,235 L98,243" stroke="#222" stroke-width="1"/>
+<path d="M118,235 L110,243" stroke="#222" stroke-width="1"/>
+<path d="M130,235 L122,243" stroke="#222" stroke-width="1"/>
+<path d="M142,235 L134,243" stroke="#222" stroke-width="1"/>
+<path d="M154,235 L146,243" stroke="#222" stroke-width="1"/>
+<path d="M166,235 L158,243" stroke="#222" stroke-width="1"/>
+<path d="M178,235 L170,243" stroke="#222" stroke-width="1"/>
+<path d="M190,235 L182,243" stroke="#222" stroke-width="1"/>
+<path d="M202,235 L194,243" stroke="#222" stroke-width="1"/>
+<path d="M214,235 L206,243" stroke="#222" stroke-width="1"/>
+<path d="M226,235 L218,243" stroke="#222" stroke-width="1"/>
+<path d="M238,235 L230,243" stroke="#222" stroke-width="1"/>
+<path d="M250,235 L242,243" stroke="#222" stroke-width="1"/>
+<path d="M262,235 L254,243" stroke="#222" stroke-width="1"/>
+<path d="M274,235 L266,243" stroke="#222" stroke-width="1"/>
+<path d="M286,235 L278,243" stroke="#222" stroke-width="1"/>
+<path d="M298,235 L290,243" stroke="#222" stroke-width="1"/>
+<path d="M310,235 L302,243" stroke="#222" stroke-width="1"/>
+<path d="M322,235 L314,243" stroke="#222" stroke-width="1"/>
+<path d="M334,235 L326,243" stroke="#222" stroke-width="1"/>
+<path d="M346,235 L338,243" stroke="#222" stroke-width="1"/>
+<path d="M358,235 L350,243" stroke="#222" stroke-width="1"/>
+<path d="M370,235 L362,243" stroke="#222" stroke-width="1"/>
+<path d="M382,235 L374,243" stroke="#222" stroke-width="1"/>
+<path d="M394,235 L386,243" stroke="#222" stroke-width="1"/>
+<path d="M406,235 L398,243" stroke="#222" stroke-width="1"/>
+<path d="M418,235 L410,243" stroke="#222" stroke-width="1"/>
+<path d="M430,235 L422,243" stroke="#222" stroke-width="1"/>
+<path d="M442,235 L434,243" stroke="#222" stroke-width="1"/>
+<path d="M454,235 L446,243" stroke="#222" stroke-width="1"/>
+<path d="M466,235 L458,243" stroke="#222" stroke-width="1"/>
+<path d="M478,235 L470,243" stroke="#222" stroke-width="1"/>
+<path d="M490,235 L482,243" stroke="#222" stroke-width="1"/>
+<path d="M502,235 L494,243" stroke="#222" stroke-width="1"/>
+<path d="M514,235 L506,243" stroke="#222" stroke-width="1"/>
+<path d="M526,235 L518,243" stroke="#222" stroke-width="1"/>
+<path d="M538,235 L530,243" stroke="#222" stroke-width="1"/>
+<path d="M550,235 L542,243" stroke="#222" stroke-width="1"/>
+<path d="M562,235 L554,243" stroke="#222" stroke-width="1"/>
+<path d="M574,235 L566,243" stroke="#222" stroke-width="1"/>
+<path d="M586,235 L578,243" stroke="#222" stroke-width="1"/>
+<path d="M598,235 L590,243" stroke="#222" stroke-width="1"/>
+<path d="M610,235 L602,243" stroke="#222" stroke-width="1"/>
+<circle cx="230" cy="80" r="2.5" fill="#222"/><text x="224.0" y="72.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">O</text>
+<path d="M110,80 L370,80" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<path d="M230,80 L230,200" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<path d="M230,80 L321.9,157.1" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="106.0" y="72.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">P</text><text x="225.0" y="218.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">Q</text><text x="317.9" y="147.1" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">D</text><text x="564.0" y="149.1" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">E</text>
+<text x="286.6" y="120.4" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">R</text>
+<path d="M230,110 A30,30 0 0 0 253.0,99.3" fill="none" stroke="#222" stroke-width="1"/>
+<text x="236.0" y="126.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">α</text>
+<rect x="111" y="82" width="12" height="12" fill="#fff" fill-opacity="0" stroke="#222" stroke-width="1.6"/>
+<text x="128.0" y="106.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">m</text>
+<text x="470.0" y="205.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">M</text><text x="482.0" y="205.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">（台）</text>
+</svg>

@@ -1,0 +1,143 @@
+{
+ "id": "PHY-OSC-023",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "台車上の倒立振子を倒さずに運ぶ（棒の傾きの時間積分と台車の速度・移動距離）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "手のひらに立てた棒を倒さずに別の場所へ運ぶ動作を，台車上の倒立振子で考える．図の左のように，質量の無視できる長さ $\\ell$ の変形しない細い棒の先端に質量 $m$ の小球を取り付け，棒の下端を，水平な $x$ 軸に沿って動く台車上の点 O に，$x$ 軸を含む鉛直面内でなめらかに回転できるように取り付ける．棒の鉛直上向きからの傾きを $\\theta$（$x$ 軸の正の向きに傾くときを正）とし，$\\theta$ の角速度を $\\omega$，角加速度を $\\beta$ とする．$|\\theta|$ は十分小さく，$\\sin\\theta\\fallingdotseq\\theta$，$\\cos\\theta\\fallingdotseq1$ とし，$\\theta$，$\\omega$ について 2 次以上の項は無視する．台車は棒の運動の影響を受けることなく，任意の加速度 $a$（$x$ 軸の正の向きを正）で強制的に動かせる．重力加速度の大きさを $g$ とし，$T=2\\pi\\sqrt{\\dfrac{\\ell}{g}}$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "台車とともに動く観測者の立場で小球の運動方程式を考え，$\\beta$ を $g$，$\\ell$，$\\theta$，$a$ で表せ．さらに，床から見た小球の水平方向の加速度が，台車の運動によらず $g\\theta$ で与えられることを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "2 つの時刻 $t_{\\rm P}<t_{\\rm Q}$ でともに $\\omega=0$（棒が台車に対して静止）であるとき，その間の台車の速度の変化は，$\\theta$–$t$ グラフと $t$ 軸が $t_{\\rm P}\\le t\\le t_{\\rm Q}$ で囲む部分の面積（$\\theta<0$ の部分は負として数える）の $g$ 倍に等しいことを示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "時刻 $t=0$ で台車は $x=0$ に静止しており，棒は $\\theta=0$ で台車に対して静止している．ここから，図の右のように，区間①（$0\\le t\\le\\frac{T}{2}$）では $\\theta$ を $0$ から $\\theta_1\\,(>0)$ まで，区間②（$\\frac{T}{2}\\le t\\le T$）では $\\theta_1$ から $\\theta_2$ まで，区間③（$T\\le t\\le\\frac{3T}{2}$）では $\\theta_2$ から $0$ まで，いずれも周期 $T$ の単振動の半周期分の形（区間の両端で $\\omega=0$）で変化させる．たとえば区間①では $\\theta=\\dfrac{\\theta_1}{2}\\left(1-\\cos\\dfrac{2\\pi t}{T}\\right)$ である．このように $\\theta$ が変化するように台車の加速度 $a$ を時々刻々調節する．$t=\\frac{3T}{2}$ で台車が静止するための $\\theta_2$ を $\\theta_1$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "区間①での台車の加速度 $a$ を $t$ の関数として求めよ．また，$t=0$ の直後の $a$ の向きと大きさを答え，棒を $x$ 軸の正の向きへ運ぶのに，はじめに台車を逆向きに加速しなければならない理由を (1) の結果を用いて説明せよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(3) の条件のもとで，$t=0$ から $t=\\frac{3T}{2}$ までに台車が移動した距離 $D$ を $\\ell$，$\\theta_1$ で表せ．また，この間の台車の速さの最大値を $g$，$\\ell$，$\\theta_1$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：台車上の倒立振子を倒さずに運ぶ（棒の傾きの時間積分と台車の速度・移動距離）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：台車上の倒立振子を倒さずに運ぶ（棒の傾きの時間積分と台車の速度・移動距離）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\beta=\\dfrac{g\\theta-a}{\\ell}$，水平加速度 $a+\\ell\\beta=g\\theta$"
+   },
+   {
+    "id": "2",
+    "tex": "解説参照"
+   },
+   {
+    "id": "3",
+    "tex": "$\\theta_2=-\\theta_1$"
+   },
+   {
+    "id": "4",
+    "tex": "$a=\\dfrac{g\\theta_1}{2}\\left(1-2\\cos\\dfrac{2\\pi t}{T}\\right)$；直後は $x$ 軸の負の向きに大きさ $\\dfrac{g\\theta_1}{2}$（理由は解説参照）"
+   },
+   {
+    "id": "5",
+    "tex": "$D=\\pi^2\\ell\\theta_1$，最大の速さ $\\left(\\dfrac{\\pi}{2}+2\\right)\\theta_1\\sqrt{g\\ell}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 運動方程式}\n\n台車とともに動く観測者には，小球に重力 $mg$（下向き），慣性力 $ma$（$x$ の負の向き），棒からの力（棒に沿う向き）がはたらく．棒に垂直な方向（$\\theta$ が増える向き）の運動方程式は\n\\[ m\\ell\\beta=mg\\sin\\theta-ma\\cos\\theta\\fallingdotseq mg\\theta-ma \\quad\\therefore\\quad \\boldsymbol{\\beta=\\frac{g\\theta-a}{\\ell}}. \\]\n床から見た小球の水平位置は $X=x+\\ell\\sin\\theta\\fallingdotseq x+\\ell\\theta$ なので，水平方向の加速度は（2 次の項 $\\ell\\omega^2\\theta$ を無視して）\n\\[ a+\\ell\\beta=a+(g\\theta-a)=\\boldsymbol{g\\theta}. \\]\n台車の加速度は消えてしまい，小球の水平加速度は傾きだけで決まる．これは，棒が小球を押す力（大きさ $\\fallingdotseq mg$）の水平成分 $mg\\theta$ だけが小球を水平に加速することに対応する．\n\n\\textbf{(2) 速度変化と面積}\n\n台車の速度を $v$，小球の水平速度を $V$ とすると $V=v+\\ell\\omega$．(1) より $V$ の変化は $g\\theta$ を時間で積み重ねたもの，すなわち $\\Delta V=g\\times(\\theta\\text{–}t\\text{ グラフの面積})$．$t_{\\rm P}$，$t_{\\rm Q}$ で $\\omega=0$ なら $V=v$ だから，台車の速度変化も $\\Delta v=\\Delta V=g\\times(\\text{面積})$ である．\n\n\\textbf{(3) 台車が止まる条件}\n\n半周期分の単振動の形で $\\theta_{\\rm i}$ から $\\theta_{\\rm f}$ まで変化する区間では，$\\theta$ は中心 $\\frac{\\theta_{\\rm i}+\\theta_{\\rm f}}{2}$ のまわりの余弦関数の半周期分なので，その区間の面積は $\\dfrac{\\theta_{\\rm i}+\\theta_{\\rm f}}{2}\\cdot\\dfrac{T}{2}$（余弦の部分の半周期の面積は 0）．$t=0$ と $t=\\frac{3T}{2}$ でともに $\\omega=0$ で，台車ははじめ静止しているので，(2) より\n\\[ \\frac{T}{2}\\left(\\frac{0+\\theta_1}{2}+\\frac{\\theta_1+\\theta_2}{2}+\\frac{\\theta_2+0}{2}\\right)=0 \\quad\\therefore\\quad \\boldsymbol{\\theta_2=-\\theta_1}. \\]\n\n\\textbf{(4) 区間①の加速度}\n\n$\\Omega=\\dfrac{2\\pi}{T}=\\sqrt{\\dfrac{g}{\\ell}}$ とおく．$\\theta=\\frac{\\theta_1}{2}(1-\\cos\\Omega t)$ のとき $\\beta=\\frac{\\theta_1}{2}\\Omega^2\\cos\\Omega t=\\frac{g\\theta_1}{2\\ell}\\cos\\Omega t$．(1) より $a=g\\theta-\\ell\\beta$ だから\n\\[ a=\\boldsymbol{\\frac{g\\theta_1}{2}\\left(1-2\\cos\\frac{2\\pi t}{T}\\right)}. \\]\n$t=0$ の直後は $a=-\\dfrac{g\\theta_1}{2}$，すなわち \\textbf{$x$ の負の向きに大きさ $\\dfrac{g\\theta_1}{2}$}．\n\n理由：(1) より小球を水平に加速できるのは傾き $g\\theta$ だけであり，小球を $x$ の正の向きへ運ぶには，まず棒を正の向きに傾けなければならない．$\\theta=0$，$\\omega=0$ の状態から $\\theta$ を正に増やすには $\\beta>0$，すなわち $g\\theta-a>0$ が必要で，$\\theta=0$ では $a<0$ でなければならない．つまり台車を一度後ろへ引いて棒を前に傾けてから，その傾きで全体を前へ運ぶのである．\n\n\\textbf{(5) 移動距離と最大の速さ}\n\n$t=0$，$\\frac{3T}{2}$ で $\\theta=0$ なので，台車の移動距離は小球の水平移動距離に等しい．小球の水平速度 $V$ を (1) にもとづいて区間ごとに求める（$\\theta_2=-\\theta_1$）．\n\n区間①：$V=\\dfrac{g\\theta_1}{2}\\left(t-\\dfrac{\\sin\\Omega t}{\\Omega}\\right)$．終わりで $V_1=\\dfrac{g\\theta_1T}{4}=\\dfrac{\\pi g\\theta_1}{2\\Omega}$，移動距離は $\\dfrac{g\\theta_1}{2}\\left(\\dfrac{T^2}{8}-\\dfrac{2}{\\Omega^2}\\right)=\\dfrac{g\\theta_1}{\\Omega^2}\\left(\\dfrac{\\pi^2}{4}-1\\right)$．\n\n区間②（$s=t-\\frac{T}{2}$）：$\\theta=\\theta_1\\cos\\Omega s$ より $V=V_1+\\dfrac{g\\theta_1}{\\Omega}\\sin\\Omega s$，移動距離は $V_1\\cdot\\dfrac{T}{2}+\\dfrac{2g\\theta_1}{\\Omega^2}=\\dfrac{g\\theta_1}{\\Omega^2}\\left(\\dfrac{\\pi^2}{2}+2\\right)$．\n\n区間③：$\\theta$ は区間①を時間反転して符号を変えたもの（$t=\\frac{3T}{4}$ に関して奇関数）なので，$V$ は $t=\\frac{3T}{4}$ に関して対称であり，移動距離は区間①と同じ $\\dfrac{g\\theta_1}{\\Omega^2}\\left(\\dfrac{\\pi^2}{4}-1\\right)$（終わりで $V=0$ となり (3) とも合う）．\n\n合計して $\\dfrac{g\\theta_1}{\\Omega^2}\\pi^2$，$\\dfrac{g}{\\Omega^2}=\\ell$ より\n\\[ D=\\boldsymbol{\\pi^2\\ell\\theta_1}. \\]\n台車の速度は $v=V-\\ell\\omega$．区間②では $\\omega=-\\theta_1\\Omega\\sin\\Omega s$ なので\n\\[ v=V_1+\\left(\\frac{g}{\\Omega}+\\ell\\Omega\\right)\\theta_1\\sin\\Omega s=V_1+\\frac{2g\\theta_1}{\\Omega}\\sin\\Omega s, \\]\nこれは $s=\\frac{T}{4}$ で最大 $\\dfrac{g\\theta_1}{\\Omega}\\left(\\dfrac{\\pi}{2}+2\\right)$．区間①では $v=\\dfrac{g\\theta_1}{2\\Omega}(\\Omega t-2\\sin\\Omega t)\\le V_1$（はじめ負になり台車は少し後退する），区間③はこれと対称なので，最大の速さは\n\\[ \\boldsymbol{\\left(\\frac{\\pi}{2}+2\\right)\\theta_1\\sqrt{g\\ell}}. \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "倒立振子では小球の水平加速度が台車の運動によらず $g\\theta$ となるので，棒が台車に対して静止する 2 時刻の間の台車の速度変化は $g\\int\\theta\\,dt$ で決まり，台車を止めるには傾きの時間積分を 0 にする（逆向きに倒し返す）必要がある．傾けるには逆向きの加速が先に必要で，移動距離は $\\theta$ の 2 重積分から求まる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "equation-of-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "倒立振子",
+  "慣性力",
+  "単振動",
+  "逆問題",
+  "時間積分",
+  "台車"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

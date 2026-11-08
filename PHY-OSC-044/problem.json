@@ -1,0 +1,135 @@
+{
+ "id": "PHY-OSC-044",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "回転する円筒容器の液面（あふれる前に底が露出する場合との場合分け）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "半径 $a$，高さ $h$ の上面の開いた円筒形の容器に，深さ $fh$（$0<f<1$）まで液体が入っている．容器を鉛直な中心軸のまわりに一定の角速度 $\\omega$ で回転させ，十分時間がたつと，液体は容器と一体になって回転する．重力加速度の大きさを $g$ とし，表面張力は無視する．必要なら次の事実を用いてよい：「回転放物面 $z=kr^2$（$r$ は軸からの距離）と平面 $z=kR^2$ で囲まれた部分の体積は，底面の半径 $R$，高さ $kR^2$ の円柱の体積の半分である．」"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "容器とともに回転する観測者の立場で，軸から距離 $r$ の液面の傾き $\\dfrac{\\Delta z}{\\Delta r}$ を求め，液面の形が $z=z_0+\\dfrac{\\omega^2r^2}{2g}$（$z_0$ は定数）となることを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$f\\ge\\dfrac12$ のとき，液体があふれない最大の角速度 $\\Omega$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$f<\\dfrac12$ のとき，角速度を大きくしていくと，あふれる前に容器の底の中心が露出する．その角速度 $\\omega_1$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$f<\\dfrac12$ のとき，液体があふれない最大の角速度 $\\Omega$ と，そのときの底の露出部分の半径 $r_0$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：回転する円筒容器の液面（あふれる前に底が露出する場合との場合分け）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：回転する円筒容器の液面（あふれる前に底が露出する場合との場合分け）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{\\Delta z}{\\Delta r}=\\dfrac{\\omega^2r}{g}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Omega=\\dfrac2a\\sqrt{g(1-f)h}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\omega_1=\\dfrac2a\\sqrt{gfh}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\Omega=\\dfrac1a\\sqrt{\\dfrac{gh}{f}}$，$r_0=a\\sqrt{1-2f}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　回転する観測者から見ると，液面の小部分には重力 $mg$（下向き）と遠心力 $mr\\omega^2$（外向き）がはたらき，液面はその合力（有効重力）に垂直になる．液面の傾きは\n\\[ \\frac{\\Delta z}{\\Delta r}=\\frac{mr\\omega^2}{mg}=\\boldsymbol{\\frac{\\omega^2r}{g}} \\]\nこれを満たすのは $z=z_0+\\dfrac{\\omega^2r^2}{2g}$（$r$ で微分すると $\\dfrac{\\omega^2r}{g}$）．以下 $k=\\dfrac{\\omega^2}{2g}$ とおく．\n\n\\textbf{(2)}　液面の最低点（中心）が底より上にある間は，液面は $z=z_0+kr^2$．縁での高さは $z_0+ka^2$．液体の体積は「高さ $z_0+ka^2$ の円柱」から「放物面の上の部分（与えられた事実より円柱 $\\pi a^2\\cdot ka^2$ の半分）」を引いて\n\\[ \\pi a^2(z_0+ka^2)-\\frac12\\pi a^2\\cdot ka^2=\\pi a^2\\left(z_0+\\frac{ka^2}{2}\\right)=\\pi a^2fh \\]\nよって $z_0=fh-\\dfrac{ka^2}{2}$，縁の高さは $fh+\\dfrac{ka^2}{2}$（静止時の液面から，縁は $\\frac{ka^2}{2}$ 上がり中心は同じだけ下がる）．あふれない限界は縁の高さ $=h$：\n\\[ \\frac{\\omega^2a^2}{4g}=(1-f)h\\quad\\therefore\\quad\\boldsymbol{\\Omega=\\frac2a\\sqrt{g(1-f)h}} \\]\nこのとき中心の高さは $z_0=fh-(1-f)h=(2f-1)h\\ge0$ なので，$f\\ge\\frac12$ では確かに底は露出しない．\n\n\\textbf{(3)}　中心が底に達するのは $z_0=0$，すなわち $\\dfrac{\\omega^2a^2}{4g}=fh$：$\\boldsymbol{\\omega_1=\\dfrac2a\\sqrt{gfh}}$．このとき縁の高さは $2fh<h$ なので，$f<\\frac12$ ではあふれる前に底が露出する．\n\n\\textbf{(4)}　$\\omega>\\omega_1$ では半径 $r_0$ の部分の底が露出し，液面は $z=k(r^2-r_0^2)$（$r_0\\le r\\le a$）となる．この放物面を $r<r_0$ にも延長すると頂点は底より $kr_0^2$ 下にある．液体の体積は\n\\[ \\pi a^2Z-\\left\\{\\frac12\\pi a^2(Z+kr_0^2)-\\frac12\\pi r_0^2\\cdot kr_0^2\\right\\}=\\frac{\\pi k}{2}(a^2-r_0^2)^2\\qquad(Z=k(a^2-r_0^2)\\ \\text{は縁の高さ}) \\]\n（中かっこは，底より上で放物面より上にある空間の体積を，延長した放物面の事実を2回使って求めたもの．）あふれない限界は $Z=h$ なので，$a^2-r_0^2=\\dfrac hk$．体積の条件 $\\dfrac{\\pi k}{2}\\cdot\\dfrac{h^2}{k^2}=\\pi a^2fh$ より $k=\\dfrac{h}{2fa^2}$．\n\\[ \\boldsymbol{\\Omega=\\frac1a\\sqrt{\\frac{gh}{f}}},\\qquad r_0^2=a^2-2fa^2\\quad\\therefore\\quad\\boldsymbol{r_0=a\\sqrt{1-2f}} \\]\n$f=\\frac12$ では (2) と (4) の $\\Omega$ はともに $\\frac1a\\sqrt{2gh}$ となって一致し，$r_0=0$ である．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "回転系では液面は重力と遠心力の合力に垂直で回転放物面になり，体積保存から静止液面の上下に等しく $\\omega^2a^2/4g$ ずつ振り分けられる．液量が半分未満だとあふれる前に底が露出し，以後は頂点が底より下にある放物面の一部として体積を数え直す必要があり，限界の角速度の式が切り替わる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "projectile-motion",
+  "circular-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "回転座標系",
+  "遠心力",
+  "回転放物面",
+  "体積保存",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "id": "PHY-OSC-048",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "鉛直な輪に通したリングを頂点の輪を通した糸で引くときのつり合いの安定性と振動",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，半径 $R$ のなめらかな円形の輪を鉛直面内に固定する．輪の中心を O，最下点を P，最高点を Q とする．輪には質量 $m$ の小さなリング A が通してあり，輪に沿ってなめらかに動ける．A に結んだ軽い糸は，Q に固定した小さななめらかな輪を通り，輪の外にある滑車を経て質量 $M$ のおもり B をつるしている．A と Q の間の糸はつねに張った直線（弦 AQ）であり，B は鉛直方向にだけ動く．$\\angle\\mathrm{POA}=\\varphi$（$-\\pi<\\varphi<\\pi$，図の向きを正）とし，重力加速度の大きさを $g$ とする．ただし $0<M<2m$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A が静止していられる位置をすべて求めよ．$\\varphi=0$ 以外の位置は，$\\cos\\dfrac{\\varphi}{2}$ の値で答えよ．以下，そのうち $\\varphi>0$ のものを $\\varphi=\\varphi_*$ とする．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の各位置について，つり合いが安定か不安定かを理由とともに答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "A を P からわずかにずらして静かに放したときの，A の微小振動の周期を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "A を $\\varphi=\\varphi_*$ に置き，わずかに P の側へずらして静かに放した．A が P を通過するときの A の速さ $v_{\\mathrm P}$ を，$m,\\ M,\\ g,\\ R$ で表せ．ただし，このとき糸はたるまないものとする．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) で A が P を通過する瞬間の糸の張力の大きさ $S$ を求めよ．また，この瞬間に糸がたるまない（$S>0$）ための $\\dfrac Mm$ の条件を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：鉛直な輪に通したリングを頂点の輪を通した糸で引くときのつり合いの安定性と振動",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：鉛直な輪に通したリングを頂点の輪を通した糸で引くときのつり合いの安定性と振動",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\varphi=0$ と，$\\cos\\dfrac{\\varphi}{2}=\\dfrac{M}{2m}$ を満たす $\\varphi=\\pm\\varphi_*$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\varphi=0$ は安定，$\\varphi=\\pm\\varphi_*$ は不安定"
+   },
+   {
+    "id": "3",
+    "tex": "$2\\pi\\sqrt{\\dfrac{2mR}{(2m-M)g}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$v_{\\mathrm P}=\\left(2-\\dfrac Mm\\right)\\sqrt{gR}$"
+   },
+   {
+    "id": "5",
+    "tex": "$S=Mg\\left\\{1-\\dfrac12\\left(2-\\dfrac Mm\\right)^2\\right\\}$，条件 $2-\\sqrt2<\\dfrac Mm<2$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{糸の長さと B の高さ}\n\n$\\angle\\mathrm{POA}=\\varphi$ のとき $\\angle\\mathrm{QOA}=\\pi-\\varphi$ なので，弦の長さは\n\\[ \\mathrm{AQ}=2R\\sin\\frac{\\pi-\\varphi}{2}=2R\\cos\\frac{\\varphi}{2} \\]\n糸の全長は一定なので，AQ が長くなった分だけ B は上がる．B の高さは（定数を除いて）$y_{\\mathrm B}=2R\\cos\\dfrac{\\varphi}{2}$ である．\n\n\\textbf{(1)} 接弦定理より，A における円の接線と弦 AQ のなす角は弧 AQ に対する円周角に等しく，$\\dfrac{\\pi-\\varphi}{2}$ である．静止しているとき B もつり合うので張力は $Mg$．A にはたらく力の接線方向（$\\varphi$ が増す向き）の成分は\n\\[ F=Mg\\cos\\frac{\\pi-\\varphi}{2}-mg\\sin\\varphi=Mg\\sin\\frac{\\varphi}{2}-2mg\\sin\\frac{\\varphi}{2}\\cos\\frac{\\varphi}{2} \\]\n（垂直抗力は接線に垂直なので現れない．）$F=0$ より $\\sin\\dfrac{\\varphi}{2}=0$ または $\\cos\\dfrac{\\varphi}{2}=\\dfrac{M}{2m}$．$0<\\dfrac{M}{2m}<1$ なので後者は $\\varphi=\\pm\\varphi_*$（$0<\\varphi_*<\\pi$）の2つの解をもつ．よって $\\boldsymbol{\\varphi=0,\\ \\cos\\frac{\\varphi}{2}=\\frac{M}{2m}}$．\n\n\\textbf{(2)} 輪はなめらかで，糸と Q の輪・滑車もなめらかなので，A と B の系の力学的エネルギーは保存し，位置エネルギーは\n\\[ U(\\varphi)=-mgR\\cos\\varphi+2MgR\\cos\\frac{\\varphi}{2} \\]\n$c=\\cos\\dfrac{\\varphi}{2}$ とおくと $\\cos\\varphi=2c^2-1$ より\n\\[ U=-2mgR\\left(c-\\frac{M}{2m}\\right)^2+(\\text{定数}) \\]\n$|\\varphi|$ が $0$ から $\\pi$ まで増すと $c$ は $1$ から $0$ まで単調に減る．$U$ は $c$ の上に凸な2次関数で，頂点は $c_*=\\dfrac{M}{2m}<1$．\n・$\\varphi=0$（$c=1$）：$|\\varphi|$ が増すと $c$ は頂点 $c_*$ に近づくので $U$ は増加する．$U$ の極小なので\\textbf{安定}．\n\n・$\\varphi=\\pm\\varphi_*$（$c=c_*$）：$U$ の極大なので\\textbf{不安定}（わずかにずれると $U$ が減る向き，すなわちつり合いの位置から離れる向きに動き出す）．\n（力で見ても，$\\varphi$ が小さいとき $F\\approx\\left(\\dfrac M2-m\\right)g\\varphi$ で $M<2m$ なら復元力，$\\varphi_*$ の前後では $F$ の符号が「離れる向き」に変わる．）\n\n\\textbf{(3)} B の速度は $\\dfrac{dy_{\\mathrm B}}{dt}=-R\\sin\\dfrac{\\varphi}{2}\\cdot\\dot\\varphi$ で，$\\varphi$ が小さいと2次の微小量である．加速度も同様に2次の微小量なので，1次の近似では B は静止しているのと同じで，張力は $Mg$ のままとみなせる．したがって A の接線方向の運動方程式は\n\\[ mR\\ddot\\varphi=\\left(\\frac M2-m\\right)g\\varphi=-\\frac{(2m-M)g}{2}\\varphi \\]\nとなり，角振動数 $\\omega=\\sqrt{\\dfrac{(2m-M)g}{2mR}}$ の単振動である．B の重さは復元力に効くが，B の慣性は効かない点に注意．周期は\n\\[ \\boldsymbol{2\\pi\\sqrt{\\frac{2mR}{(2m-M)g}}} \\]\n\n\\textbf{(4)} P では $\\sin\\dfrac{\\varphi}{2}=0$ なので B の速さは $0$（B は最も高い位置で折り返す）．力学的エネルギー保存則より\n\\[ \\frac12mv_{\\mathrm P}^2=U(\\varphi_*)-U(0) \\]\n$U=-2mgRc^2+2MgRc+mgR$ に $c=c_*,\\ 1$ を代入して $M=2mc_*$ を用いると\n\\[ U(\\varphi_*)-U(0)=2gR(1-c_*)\\{m(1+c_*)-M\\}=2mgR(1-c_*)^2 \\]\n\\[ \\therefore\\ v_{\\mathrm P}=2(1-c_*)\\sqrt{gR}=\\boldsymbol{\\left(2-\\frac Mm\\right)\\sqrt{gR}} \\]\n（$U$ は偶関数なので，A はその後 $\\varphi=-\\varphi_*$ に限りなく近づく．）\n\n\\textbf{(5)} B の加速度（上向き正）は\n\\[ \\ddot y_{\\mathrm B}=-R\\sin\\frac{\\varphi}{2}\\,\\ddot\\varphi-\\frac R2\\cos\\frac{\\varphi}{2}\\,\\dot\\varphi^2 \\]\nP では第1項は $0$，$R\\dot\\varphi=v_{\\mathrm P}$ なので $\\ddot y_{\\mathrm B}=-\\dfrac{v_{\\mathrm P}^2}{2R}$．速さが $0$ でも B は下向きに加速している．B の運動方程式 $M\\ddot y_{\\mathrm B}=S-Mg$ より\n\\[ S=M\\left(g-\\frac{v_{\\mathrm P}^2}{2R}\\right)=\\boldsymbol{Mg\\left\\{1-\\frac12\\left(2-\\frac Mm\\right)^2\\right\\}} \\]\n$S>0$ より $\\left(2-\\dfrac Mm\\right)^2<2$，$0<\\dfrac Mm<2$ と合わせて $\\boldsymbol{2-\\sqrt2<\\dfrac Mm<2}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "輪に通したリングを最高点の輪を通る糸で引くと，糸の長さが弦 $2R\\cos\\frac{\\varphi}{2}$ になり，位置エネルギーが $\\cos\\frac{\\varphi}{2}$ の上に凸な2次式となるので，最下点が安定・途中のつり合いが不安定と一目でわかる．最下点付近ではおもりの速度が2次の微小量なので，おもりの重さは復元力に効くが慣性は効かず，通過時には速さ0でも下向きの加速度をもつため張力が重さより小さくなる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "equilibrium",
+  "string-resonance"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "つり合いの安定性",
+  "位置エネルギー",
+  "単振動",
+  "接弦定理",
+  "張力"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "id": "PHY-OSC-046",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "自然長が無視できるばねにつながれたおもりの鉛直面内の運動（2方向の単振動への分解）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ばねの一端を固定点 O に取り付け，他端に質量 $m$ の小球をつける．このばねは自然長が無視できるほど短く，長さが $r$ のときの張力の大きさは $kr$ である（$k$ は定数）．小球は O を含む鉛直面内を運動し，ばねの質量と空気抵抗は無視する．重力加速度の大きさを $g$ とし，O を原点として水平右向きに $x$ 軸，鉛直上向きに $y$ 軸をとる．$\\omega=\\sqrt{k/m}$ とおく．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小球の位置が $(x,\\,y)$ のとき，ばねの力の $x$，$y$ 成分を書き，小球の運動が「$x$ 方向の単振動」と「$y$ 方向の単振動」の重ね合わせになることを示せ．また，小球がつり合う点 C の座標を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "点 P$(a,\\,0)$（$a>0$）で小球を静かに放す．小球の軌跡を求めよ．また，小球がはじめて O の真下を通過する時刻と，そのときのばねの長さ・小球の速さを求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "点 P で小球にある速度を与えると，小球は点 C を中心とする円周上を等速で回った．与えた速度の大きさと向きを求めよ．また，この運動でのばねの長さの最大値を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "点 P で小球を鉛直下向きに速さ $v_0$ で投げ下ろす．小球がはじめて O の真下を通過する時刻と，そのときの O からの深さを求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：自然長が無視できるばねにつながれたおもりの鉛直面内の運動（2方向の単振動への分解）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：自然長が無視できるばねにつながれたおもりの鉛直面内の運動（2方向の単振動への分解）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$F_x=-kx$，$F_y=-ky-mg$（重力を含む）．$x''=-\\omega^2x$，$y''=-\\omega^2\\left(y+\\dfrac{g}{\\omega^2}\\right)$ で，それぞれ独立な角振動数 $\\omega$ の単振動．C$\\left(0,\\,-\\dfrac{mg}{k}\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "P と C を通る直線上の線分（P から C に関して P と対称な点 $\\left(-a,\\,-\\dfrac{2mg}{k}\\right)$ までの往復）．時刻 $\\dfrac{\\pi}{2}\\sqrt{\\dfrac mk}$，ばねの長さ $\\dfrac{mg}{k}$，速さ $\\sqrt{\\dfrac km\\left(a^2+\\dfrac{m^2g^2}{k^2}\\right)}$"
+   },
+   {
+    "id": "3",
+    "tex": "大きさ $\\omega\\sqrt{a^2+\\dfrac{g^2}{\\omega^4}}=\\sqrt{\\dfrac km\\left(a^2+\\dfrac{m^2g^2}{k^2}\\right)}$，向きは CP に垂直（2通り）．ばねの長さの最大値 $\\dfrac{mg}{k}+\\sqrt{a^2+\\dfrac{m^2g^2}{k^2}}$"
+   },
+   {
+    "id": "4",
+    "tex": "時刻 $\\dfrac{\\pi}{2}\\sqrt{\\dfrac mk}$（$v_0$ によらない），深さ $\\dfrac{mg}{k}+v_0\\sqrt{\\dfrac mk}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 運動の分解} \\\\\nばねの力は大きさ $kr$ で O の向きなので，ベクトルで $-k(x,\\,y)$ と書ける．重力 $(0,\\,-mg)$ を加えて\n\\[ mx''=-kx,\\qquad my''=-ky-mg \\]\nすなわち $x''=-\\omega^2x$，$y''=-\\omega^2\\left(y+\\dfrac{g}{\\omega^2}\\right)$．どちらも角振動数 $\\omega$ の単振動の式で，$x$ と $y$ が互いに影響しない．つり合いの点は $x=0$，$y=-\\dfrac{g}{\\omega^2}$：\n\\[ \\boldsymbol{{\\rm C}\\left(0,\\ -\\frac{mg}{k}\\right)} \\]\n「自然長が $0$」であるために力が位置ベクトルに比例し，$x$，$y$ に分けられる点が本質である．以下 $c=\\dfrac{mg}{k}=\\dfrac{g}{\\omega^2}$ とおく．\\hfill$\\square$\n\n\\textbf{(2) 静かに放す} \\\\\n初期条件 $x=a$，$y=0$，速度 $0$ より\n\\[ x=a\\cos\\omega t,\\qquad y=-c+c\\cos\\omega t \\]\n$\\cos\\omega t$ を消去すると $y=-c+\\dfrac{c}{a}x$ で，軌跡は P と C を通る直線のうち，P$(a,0)$ と C に関して対称な点 $(-a,-2c)$ の間の線分（その上を往復）である．O の真下 $x=0$ を初めて通るのは $\\omega t=\\dfrac\\pi2$：\n\\[ \\boldsymbol{t=\\frac{\\pi}{2}\\sqrt{\\frac mk}} \\]\nこのとき $y=-c$ で，小球はちょうど C を通る．ばねの長さは $\\boldsymbol{\\dfrac{mg}{k}}$，速さは $\\omega\\sqrt{a^2+c^2}=\\boldsymbol{\\sqrt{\\dfrac km\\left(a^2+\\dfrac{m^2g^2}{k^2}\\right)}}$（線分の中心で最大）．\\hfill$\\square$\n\n\\textbf{(3) 円運動} \\\\\nC を原点に移した座標 $X=x$，$Y=y+c$ では $X''=-\\omega^2X$，$Y''=-\\omega^2Y$ で，C に向かう大きさ $m\\omega^2\\times(\\text{CからP までの距離})$ の力だけがはたらくのと同じである．半径 $R={\\rm CP}=\\sqrt{a^2+c^2}$ の等速円運動では向心力 $m\\omega^2R$ が必要で，ちょうどこれに等しいので，P で CP に垂直に速さ\n\\[ \\boldsymbol{\\omega R=\\sqrt{\\frac km\\left(a^2+\\frac{m^2g^2}{k^2}\\right)}} \\]\nを与えればよい（回る向きにより2通り）．ばねの長さ ${\\rm O}$ から小球までの距離の最大は，O から C を通って円周に達する点（C の真下）で\n\\[ \\boldsymbol{\\frac{mg}{k}+\\sqrt{a^2+\\frac{m^2g^2}{k^2}}} \\]\n\\hfill$\\square$\n\n\\textbf{(4) 投げ下ろす} \\\\\n$x$ 方向の初期条件は (2) と同じなので $x=a\\cos\\omega t$ のまま．O の真下を初めて通るのは，$v_0$ によらず $\\boldsymbol{t=\\dfrac{\\pi}{2}\\sqrt{\\dfrac mk}}$．$y$ 方向は $y(0)=0$，$y'(0)=-v_0$ より\n\\[ y=-c+c\\cos\\omega t-\\frac{v_0}{\\omega}\\sin\\omega t \\]\n$\\omega t=\\dfrac\\pi2$ で $y=-c-\\dfrac{v_0}{\\omega}$，深さは $\\boldsymbol{\\dfrac{mg}{k}+v_0\\sqrt{\\dfrac mk}}$．\\hfill$\\square$\n\n\\textbf{参考} \\\\\n自然長 $L$ のばねでも，$mg\\gg kL$（伸びが自然長よりはるかに大きい）なら同じ近似が成り立ち，水平から放したおもりが真下に来たときのばねの長さはほぼ $mg/k$ となる．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "自然長が無視できるばねの力は位置ベクトルに比例するので，重力のもとでも $x$，$y$ 方向が同じ角振動数の独立な単振動に分かれ，運動はつり合いの点 C を中心とする2次元の等方的な単振動（直線・円・楕円）になる．そのため静かに放すと C を通る直線上を往復し，O の真下を通る時刻は鉛直方向の初速によらない．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "circular-motion",
+  "equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "単振動",
+  "運動の分解",
+  "ばね",
+  "円運動",
+  "つり合い"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,139 @@
+{
+ "id": "PHY-OSC-021",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "向かい合う2つのばね振り子の繰り返し衝突（重心座標と相対座標への分離）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかな水平面上で，左右の壁にそれぞれ一端を固定したばね定数 $k$ の2本のばねの他端に，質量 $m$ の小球1，2をとりつけた．2本のばねが自然長のとき，小球どうしの間隔は $d$ である．小球1，2の自然長の位置からの変位を，右向きを正としてそれぞれ $x_1,\\ x_2$ とする．小球の大きさとばねの質量は無視でき，小球どうしの衝突は弾性衝突とする．$\\omega=\\sqrt{\\dfrac{k}{m}}$ とおいてよい．\n\n時刻 $t=0$ に，2本のばねが自然長で2つの小球が静止している状態から，小球1にだけ右向きの速さ $u$ を与えた．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小球1が小球2に衝突するための $u$ の条件と，最初の衝突の時刻 $t_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "最初の衝突の直後の小球1，2の速度を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "衝突と衝突の間では，$Y=\\dfrac{x_1+x_2}{2}$ と $D=x_1-x_2$ はそれぞれ角振動数 $\\omega$ の単振動をすることを示せ．また，衝突の前後で $Y,\\ D$ とその時間変化率 $\\dot Y,\\ \\dot D$ はそれぞれどうなるかを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "2回目以降も衝突は繰り返し起こる．隣り合う衝突の時間間隔 $\\Delta t$ は衝突の回によらず一定であることを示し，$\\Delta t$ を $u,\\ \\omega,\\ d$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "$u=\\dfrac{2}{\\sqrt3}\\omega d$ とする．2回目と3回目の衝突が起こるときの $x_1,\\ x_2$ をそれぞれ求めよ．"
+     },
+     {
+      "id": "6",
+      "tex": "(5) の場合，2つの小球とばねの系は，ある時間がたつごとに $t=0$ の直後とまったく同じ状態（位置と速度）に戻る．そのような時間のうち最小のものを $k,\\ m$ で表せ．また，その間に起こる衝突の回数を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：向かい合う2つのばね振り子の繰り返し衝突（重心座標と相対座標への分離）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$u>\\omega d$，$t_1=\\dfrac{1}{\\omega}\\sin^{-1}\\dfrac{\\omega d}{u}$"
+   },
+   {
+    "id": "2",
+    "tex": "小球1：$0$，小球2：右向きに $\\sqrt{u^2-\\omega^2d^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "単振動の証明は解説参照．衝突の前後で $Y,\\ \\dot Y,\\ D$ は変わらず，$\\dot D$ は符号だけが反転する"
+   },
+   {
+    "id": "4",
+    "tex": "$\\Delta t=\\dfrac{2}{\\omega}\\left(\\pi-\\cos^{-1}\\dfrac{\\omega d}{u}\\right)$"
+   },
+   {
+    "id": "5",
+    "tex": "2回目：$x_1=\\dfrac{d}{2}$，$x_2=-\\dfrac{d}{2}$　3回目：$x_1=0$，$x_2=-d$"
+   },
+   {
+    "id": "6",
+    "tex": "$10\\pi\\sqrt{\\dfrac{m}{k}}$，6回"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 衝突までの小球1は $t=0$ に振動の中心を速さ $u$ で通る単振動 $x_1=\\dfrac{u}{\\omega}\\sin\\omega t$ をする．小球2に触れるのは $x_1=d$ のときなので，振幅について $\\dfrac{u}{\\omega}>d$，すなわち $\\boldsymbol{u>\\omega d}$ が条件（等号では速さ0で触れるだけ）．$\\sin\\omega t_1=\\dfrac{\\omega d}{u}$ の最小の正の解として\n\\[ t_1=\\boldsymbol{\\frac{1}{\\omega}\\sin^{-1}\\frac{\\omega d}{u}} \\]\n衝突直前の速さはエネルギー保存 $\\frac12mu^2=\\frac12mv^2+\\frac12kd^2$ より $v=\\sqrt{u^2-\\omega^2d^2}$．\\hfill$\\square$\n\n\\textbf{(2)} 質量の等しい小球の弾性衝突（一直線上）では，運動量保存と「はね返り係数1」から速度が入れかわる．よって小球1は $\\boldsymbol{0}$，小球2は\\textbf{右向きに} $\\boldsymbol{\\sqrt{u^2-\\omega^2d^2}}$．\\hfill$\\square$\n\n\\textbf{(3) 重心座標と相対座標}　衝突の間は $m\\ddot x_1=-kx_1$，$m\\ddot x_2=-kx_2$ で，2式の和と差をとれば\n\\[ \\ddot Y=-\\omega^2Y,\\qquad \\ddot D=-\\omega^2D \\]\nとなり，どちらも角振動数 $\\omega$ の単振動である（2つのばねと質量が等しいことが効いている）．\n\n衝突は一瞬なので位置は変わらず，$Y,\\ D$ は\\textbf{変わらない}．速度は入れかわるので $\\dot Y=\\dfrac{\\dot x_1+\\dot x_2}{2}$ は\\textbf{変わらず}（運動量保存），$\\dot D=\\dot x_1-\\dot x_2$ は\\textbf{符号だけが反転}する（はね返り係数1）．\n\nしたがって，$Y$ は衝突をまったく気にせずに単振動を続け，$D$ は単振動しながら「$D=d$ の位置の壁で速度が反転する」運動をする．$t=0$ では $Y=0,\\ \\dot Y=\\dfrac u2$，$D=0,\\ \\dot D=u$ なので\n\\[ Y=\\frac{u}{2\\omega}\\sin\\omega t\\quad(\\text{全時間}) \\]\n\\hfill$\\square$\n\n\\textbf{(4) 衝突の間隔}　$D$ の単振動の振幅を $R$ とすると，$R^2=D^2+\\left(\\dfrac{\\dot D}{\\omega}\\right)^2$．衝突では $D=d$ のまま $\\dot D$ の符号だけが変わるので $R$ は変わらず，最初の値 $R=\\dfrac{u}{\\omega}$ のままである．\n\n衝突直後を時刻の原点にとると，$D=d$，$\\dot D<0$ から出発する単振動で\n\\[ D=R\\cos(\\omega\\tau+\\varphi),\\qquad \\cos\\varphi=\\frac{d}{R}=\\frac{\\omega d}{u}\\quad\\left(0<\\varphi<\\frac{\\pi}{2}\\right) \\]\nと書ける（$\\tau=0$ で $\\dot D=-R\\omega\\sin\\varphi<0$）．次に $D=d$ となるのは $\\omega\\tau+\\varphi=2\\pi-\\varphi$ のときで，その間 $D<d$（小球は離れている）．よって\n\\[ \\Delta t=\\boldsymbol{\\frac{2}{\\omega}\\left(\\pi-\\cos^{-1}\\frac{\\omega d}{u}\\right)} \\]\nどの衝突の直後も $D=d$，$\\dot D=-R\\omega\\sin\\varphi$ という同じ状態から始まるので，$\\Delta t$ は衝突の回によらない．\\hfill$\\square$\n\n\\textbf{(5)} $u=\\dfrac{2}{\\sqrt3}\\omega d$ のとき $\\cos\\varphi=\\dfrac{\\sqrt3}{2}$，$\\varphi=\\dfrac{\\pi}{6}$，$\\omega\\Delta t=\\dfrac{5\\pi}{3}$．また $\\sin\\omega t_1=\\dfrac{\\sqrt3}{2}$ より $\\omega t_1=\\dfrac{\\pi}{3}$．衝突の瞬間は $D=d$ なので\n\\[ x_1=Y+\\frac d2,\\qquad x_2=Y-\\frac d2,\\qquad Y=\\frac{u}{2\\omega}\\sin\\omega t=\\frac{d}{\\sqrt3}\\sin\\omega t \\]\n2回目：$\\omega t_2=\\dfrac{\\pi}{3}+\\dfrac{5\\pi}{3}=2\\pi$，$Y=0$ より $\\boldsymbol{x_1=\\dfrac d2,\\ x_2=-\\dfrac d2}$（2つの自然長の位置のちょうど中点で衝突）．\n\n3回目：$\\omega t_3=2\\pi+\\dfrac{5\\pi}{3}$，$Y=\\dfrac{d}{\\sqrt3}\\cdot\\left(-\\dfrac{\\sqrt3}{2}\\right)=-\\dfrac d2$ より $\\boldsymbol{x_1=0,\\ x_2=-d}$（小球1の自然長の位置で衝突）．\\hfill$\\square$\n\n\\textbf{(6) 状態が戻る時間}　系の状態は $(Y,\\dot Y,D,\\dot D)$ で決まる．$Y$ は周期 $\\dfrac{2\\pi}{\\omega}$ の単振動，$D$ の運動は衝突ごとに同じことを繰り返すので周期 $\\Delta t=\\dfrac{5\\pi}{3\\omega}$ をもつ．両方が同時に初めの状態に戻る最小の時間 $T$ は，$\\dfrac{2\\pi}{\\omega}$ と $\\dfrac{5\\pi}{3\\omega}$ の最小公倍数で，\n\\[ T=6\\Delta t=5\\cdot\\frac{2\\pi}{\\omega}=\\boldsymbol{10\\pi\\sqrt{\\frac mk}} \\]\nその間に $D$ は $\\boldsymbol{6}$ \\textbf{回}壁で反射する（6回衝突する）．各回の $\\omega t$ を $2\\pi$ で割った余りは $\\dfrac{\\pi}{3},\\ 0,\\ \\dfrac{5\\pi}{3},\\ \\dfrac{4\\pi}{3},\\ \\pi,\\ \\dfrac{2\\pi}{3}$ とすべて異なり，6回目の後に初めて $\\omega t\\equiv\\dfrac{\\pi}{3}$ に戻る．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "等しい2つのばね振り子の間の等質量の弾性衝突は「速度の交換」なので，重心座標 $Y=\\frac{x_1+x_2}{2}$ は衝突を無視した単振動を続け，相対座標 $D=x_1-x_2$ は同じ角振動数の単振動をしながら $D=d$ で速度だけが反転する．振幅が衝突で変わらないため衝突の時間間隔は一定になり，衝突の位置は $Y$ の値だけで決まる．2つの周期の最小公倍数で系全体が元の状態に戻る．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "kinematics-components",
+  "simple-pendulum"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "単振動",
+  "弾性衝突",
+  "速度の交換",
+  "重心運動",
+  "相対運動",
+  "周期"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

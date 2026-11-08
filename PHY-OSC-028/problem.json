@@ -1,0 +1,152 @@
+{
+ "id": "PHY-OSC-028",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "回転する鉛直面内に拘束された振り子の微小振動と床から見た水平軌跡",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，鉛直な回転軸が一定の角速度 $\\Omega$ で回転している．軸上の点 O にちょうつがいがあり，長さ $\\ell$ の軽い棒の一端がつながれ，他端に質量 $m$ の小球が固定されている．ちょうつがいのため，棒は軸を含む鉛直面（軸とともに回転する面）の中でだけなめらかに振れることができる．棒が鉛直下向きとなす角を $\\theta$ とし，重力加速度の大きさを $g$，$\\Omega_{\\rm c}=\\sqrt{g/\\ell}$ とする．空気抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "軸とともに回転する観測者から見た，小球の接線方向（$\\theta$ が増す向き）の運動方程式を書き，つり合いの角 $\\theta_0$ をすべて求めよ．また，$\\Omega<\\Omega_{\\rm c}$ と $\\Omega>\\Omega_{\\rm c}$ のそれぞれで，安定なつり合いの角を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "安定なつり合いのまわりの微小振動の角振動数 $\\omega$ を，$\\Omega<\\Omega_{\\rm c}$，$\\Omega>\\Omega_{\\rm c}$ の場合に分けて求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\omega=\\Omega$ となる有限の $\\Omega$ が存在するのはどちらの場合か．その $\\Omega$ を $g,\\ \\ell$ で表せ．もう一方の場合に $\\omega=\\Omega$ とならない理由も示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の $\\Omega$ で，小球が $\\theta=a\\cos\\omega t$（$0<a\\ll1$）と微小振動している．床に固定した観測者が真上から見たとき，小球の水平面内の軌跡はどのような図形になるか．軸の位置を原点とし，$t=0$ に小球がある向きを $X$ 軸として，図形の中心の位置と大きさを答えよ．また，その上を動く速さを求めよ．（$\\sin\\theta\\approx\\theta$ とし，鉛直方向の運動は無視してよい．）"
+     },
+     {
+      "id": "5",
+      "tex": "一般の $\\Omega\\ (<\\Omega_{\\rm c})$ で同じく $\\theta=a\\cos\\omega t$ と振動しているとき，床に固定した観測者から見た小球の水平方向の速さの最大値と最小値を，$a,\\ \\ell,\\ \\Omega,\\ \\omega$ を用いて表せ．"
+     },
+     {
+      "id": "6",
+      "tex": "小球を回転する面の中に保つため，棒は小球に面に垂直な水平方向の力 $F$ を及ぼす．(4) の運動について，$|F|$ の最大値を $m,\\ g,\\ a$ で表せ．（ヒント：軸のまわりの小球の角運動量 $m\\rho^2\\Omega$（$\\rho$ は軸からの距離）の時間変化を考えよ．）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：回転する鉛直面内に拘束された振り子の微小振動と床から見た水平軌跡",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：回転する鉛直面内に拘束された振り子の微小振動と床から見た水平軌跡",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$m\\ell\\ddot\\theta=-mg\\sin\\theta+m\\ell\\Omega^2\\sin\\theta\\cos\\theta$；$\\theta_0=0,\\ \\pi$ と，$\\Omega>\\Omega_{\\rm c}$ のときさらに $\\cos\\theta_0=\\dfrac{g}{\\ell\\Omega^2}$；安定なのは $\\Omega<\\Omega_{\\rm c}$ で $\\theta_0=0$，$\\Omega>\\Omega_{\\rm c}$ で $\\cos\\theta_0=\\dfrac{g}{\\ell\\Omega^2}$ の角"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Omega<\\Omega_{\\rm c}$：$\\omega=\\sqrt{\\dfrac{g}{\\ell}-\\Omega^2}$，$\\Omega>\\Omega_{\\rm c}$：$\\omega=\\sqrt{\\Omega^2-\\dfrac{g^2}{\\ell^2\\Omega^2}}=\\Omega\\sin\\theta_0$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\Omega<\\Omega_{\\rm c}$ の場合で $\\Omega=\\sqrt{\\dfrac{g}{2\\ell}}$；$\\Omega>\\Omega_{\\rm c}$ では $\\omega=\\Omega\\sin\\theta_0<\\Omega$"
+   },
+   {
+    "id": "4",
+    "tex": "中心 $\\left(\\dfrac{a\\ell}{2},\\ 0\\right)$，半径 $\\dfrac{a\\ell}{2}$ の円（軸を通る），速さ $a\\ell\\Omega=a\\sqrt{\\dfrac{g\\ell}{2}}$（一定）"
+   },
+   {
+    "id": "5",
+    "tex": "最大値 $a\\ell\\max(\\Omega,\\omega)$，最小値 $a\\ell\\min(\\Omega,\\omega)$"
+   },
+   {
+    "id": "6",
+    "tex": "$mga$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 回転系では小球に重力 $mg$，棒の力（棒方向），軸から遠ざかる向きの遠心力 $m\\rho\\Omega^2$（$\\rho=\\ell\\sin\\theta$），および面に垂直なコリオリの力と棒の面に垂直な力がはたらく．面に垂直な力は接線方向に成分をもたないので，接線方向の運動方程式は\n\\[ m\\ell\\ddot\\theta=-mg\\sin\\theta+m\\ell\\Omega^2\\sin\\theta\\cos\\theta=m\\sin\\theta\\left(\\ell\\Omega^2\\cos\\theta-g\\right) \\]\n右辺 $=0$ より $\\boldsymbol{\\theta_0=0,\\ \\pi}$，および $\\boldsymbol{\\cos\\theta_0=\\dfrac{g}{\\ell\\Omega^2}}$（これは $\\Omega>\\Omega_{\\rm c}$ のときだけ存在）．\n$\\theta=0$ の近くでは右辺 $\\approx m\\theta(\\ell\\Omega^2-g)$ なので，$\\Omega<\\Omega_{\\rm c}$ なら復元力（安定），$\\Omega>\\Omega_{\\rm c}$ なら不安定．$\\theta=\\pi$ は常に不安定．$\\Omega>\\Omega_{\\rm c}$ では $\\cos\\theta_0=g/(\\ell\\Omega^2)$ の角が安定である（次問で確かめる）．\nよって安定なのは，$\\Omega<\\Omega_{\\rm c}$ で $\\boldsymbol{\\theta_0=0}$，$\\Omega>\\Omega_{\\rm c}$ で $\\boldsymbol{\\cos\\theta_0=g/(\\ell\\Omega^2)}$ の角．\\hfill$\\square$\n\n\\textbf{(2)} $\\theta=\\theta_0+\\varphi$（$|\\varphi|\\ll1$）として右辺を $\\varphi$ の1次まで展開する．$f(\\theta)=-\\dfrac g\\ell\\sin\\theta+\\Omega^2\\sin\\theta\\cos\\theta$ とすると $\\ddot\\varphi=f'(\\theta_0)\\varphi$，$f'(\\theta)=-\\dfrac g\\ell\\cos\\theta+\\Omega^2\\cos2\\theta$．\n$\\theta_0=0$：$f'(0)=-\\left(\\dfrac g\\ell-\\Omega^2\\right)$ より $\\boldsymbol{\\omega=\\sqrt{\\dfrac g\\ell-\\Omega^2}}\\ (\\Omega<\\Omega_{\\rm c})$．\n$\\cos\\theta_0=\\dfrac{g}{\\ell\\Omega^2}$：$f'(\\theta_0)=-\\Omega^2\\cos^2\\theta_0+\\Omega^2(2\\cos^2\\theta_0-1)=-\\Omega^2\\sin^2\\theta_0$ より\n\\[ \\boldsymbol{\\omega=\\Omega\\sin\\theta_0=\\sqrt{\\Omega^2-\\frac{g^2}{\\ell^2\\Omega^2}}}\\quad(\\Omega>\\Omega_{\\rm c}) \\]\n$f'<0$ だから確かに安定である．$\\omega$ は $\\Omega\\to\\Omega_{\\rm c}$ でどちら側からも $0$ に近づく（つり合いの安定性が入れかわる点）．\\hfill$\\square$\n\n\\textbf{(3)} $\\Omega>\\Omega_{\\rm c}$ では $\\omega=\\Omega\\sin\\theta_0<\\Omega$（$\\sin\\theta_0<1$）なので，有限の $\\Omega$ で $\\omega=\\Omega$ となることはない．$\\Omega<\\Omega_{\\rm c}$ では $\\dfrac g\\ell-\\Omega^2=\\Omega^2$ より $\\boldsymbol{\\Omega=\\sqrt{\\dfrac{g}{2\\ell}}}$（$<\\Omega_{\\rm c}$ を満たす）．\\hfill$\\square$\n\n\\textbf{(4)} 床の系で，軸からの水平距離は $\\rho=\\ell\\sin\\theta\\approx\\ell\\theta$，その向きは角 $\\Omega t$ だけ回っているので\n\\[ X=\\ell a\\cos\\omega t\\cos\\Omega t,\\qquad Y=\\ell a\\cos\\omega t\\sin\\Omega t \\]\n$\\omega=\\Omega$ を代入し，2倍角の公式を使うと\n\\[ X=\\frac{a\\ell}{2}(1+\\cos2\\Omega t),\\qquad Y=\\frac{a\\ell}{2}\\sin2\\Omega t \\]\nよって $\\left(X-\\dfrac{a\\ell}{2}\\right)^2+Y^2=\\left(\\dfrac{a\\ell}{2}\\right)^2$：\\textbf{中心} $\\boldsymbol{\\left(\\dfrac{a\\ell}{2},0\\right)}$，\\textbf{半径} $\\boldsymbol{\\dfrac{a\\ell}{2}}$ の円で，軸の真下の点を通る（解答図 (a)）．この円を角速度 $2\\Omega$ で等速で回るので，速さは\n\\[ \\frac{a\\ell}{2}\\cdot2\\Omega=\\boldsymbol{a\\ell\\Omega=a\\sqrt{\\frac{g\\ell}{2}}} \\]\n回転面の中で往復する運動と面の回転とが同じ角振動数をもつため，振動の「行き」と「帰り」が面の回転によって円の両側に振り分けられるのである．\\hfill$\\square$\n\n\\textbf{(5)} 水平速度は，動径方向の成分 $\\dot\\rho=\\ell\\dot\\theta$ と，面の回転による成分 $\\rho\\Omega=\\ell\\theta\\Omega$ の直交する2成分からなる．したがって\n\\[ v^2=\\ell^2\\left(\\dot\\theta^2+\\Omega^2\\theta^2\\right)=a^2\\ell^2\\left(\\omega^2\\sin^2\\omega t+\\Omega^2\\cos^2\\omega t\\right) \\]\nこれは $\\sin^2\\omega t$ と $\\cos^2\\omega t$ の重みつき平均なので，最大値 $\\boldsymbol{a\\ell\\max(\\Omega,\\omega)}$，最小値 $\\boldsymbol{a\\ell\\min(\\Omega,\\omega)}$．\n\n\\textbf{別解（2つの等速円運動の重ね合わせ）}：複素数 $Z=X+iY=\\ell a\\cos\\omega t\\,e^{i\\Omega t}=\\dfrac{a\\ell}{2}\\left(e^{i(\\Omega+\\omega)t}+e^{i(\\Omega-\\omega)t}\\right)$ と書けるので，水平運動は半径 $\\dfrac{a\\ell}{2}$，角速度 $\\Omega+\\omega$ と $\\Omega-\\omega$ の2つの等速円運動の和である．2つの速度の大きさは $\\dfrac{a\\ell}{2}(\\Omega+\\omega)$ と $\\dfrac{a\\ell}{2}|\\Omega-\\omega|$ で，向きの関係はあらゆる角度をとるから，速さの最大・最小はその和と差：$a\\ell\\max(\\Omega,\\omega)$，$a\\ell\\min(\\Omega,\\omega)$ となり一致する．$\\omega=\\Omega$ のときは片方の円運動の角速度が $0$（中心のずれ $\\frac{a\\ell}{2}$ を表す）になり，(4) の円になる．\\hfill$\\square$\n\n\\textbf{(6)} 床の系で，小球の軸のまわりの角運動量は $L=m\\rho^2\\Omega$．重力・棒方向の力（棒は軸上の点 O を通る）は軸のまわりのモーメントをもたないので，$L$ を変えるのは面に垂直な水平力 $F$ のモーメント $\\rho F$ だけである：\n\\[ \\rho F=\\frac{d}{dt}\\left(m\\rho^2\\Omega\\right)=2m\\Omega\\rho\\dot\\rho\\quad\\therefore\\quad F=2m\\Omega\\dot\\rho\\approx2m\\Omega\\ell\\dot\\theta \\]\n（回転系で見ればコリオリの力 $2m\\Omega\\dot\\rho$ とつり合う力である．）$\\dot\\theta=-a\\omega\\sin\\omega t$ より $|F|$ の最大値は $2m\\Omega\\ell a\\omega$．(4) では $\\omega=\\Omega$，$\\Omega^2=\\dfrac{g}{2\\ell}$ なので\n\\[ |F|_{\\max}=2ma\\ell\\Omega^2=\\boldsymbol{mga} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "回転する面内に拘束された振り子では，回転系の遠心力が重力の復元力を弱め（$\\omega^2=g/\\ell-\\Omega^2$），臨界角速度を超えるとつり合いの位置が分岐して $\\omega=\\Omega\\sin\\theta_0$ になる．床の系での水平運動は「面内の振動」と「面の回転」の合成で，半径 $\\frac{a\\ell}{2}$・角速度 $\\Omega\\pm\\omega$ の2つの等速円運動の和になるため，$\\omega=\\Omega$ のとき軌跡は軸を通る円となり，速さの最大・最小は $a\\ell\\max(\\Omega,\\omega)$，$a\\ell\\min(\\Omega,\\omega)$ で決まる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "simple-pendulum",
+  "circular-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "回転座標系",
+  "遠心力",
+  "つり合いの分岐",
+  "微小振動",
+  "運動の合成",
+  "角運動量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}
