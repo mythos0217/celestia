@@ -1,0 +1,130 @@
+{
+ "id": "PHY-GRV-007",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "公転する接触2球にはたらく潮汐力（並進する場合と同期回転する場合の違いとロッシュ限界）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "質量 $M$，半径 $R$ の一様な球形の惑星のまわりを，質量 $m$，半径 $s$ の一様な2つの小球 A，B が接触したまま公転している（図）．2球の重心 G は惑星の中心 O を中心とする半径 $r$ の等速円運動をしており，その角速度を $\\omega$ とする．$M\\gg m$ として惑星は静止しているとみなし，惑星の自転は考えない．2球の間には万有引力（大きさ $\\dfrac{Gm^2}{(2s)^2}$，$G$ は万有引力定数）と接触面での垂直抗力 $N$（押し合う向きを正とする）がはたらく．接触面には摩擦があって2球はずれないものとする．$s\\ll r$ として，$\\dfrac{s}{r}$ について1次までの近似で答えよ．このとき $\\omega^2=\\dfrac{GM}{r^3}$ とみなしてよい．\n\n2球の中心を結ぶ直線（B から A へ向かう向き）が，O から G へ向かう向きとなす角を $\\varphi$ とする．次の2つの状況を考える．\n\n状況 X：2球は回転しておらず，2球を結ぶ直線の向きは遠方の恒星に対して一定である（その瞬間の角が $\\varphi$）．\n\n状況 Y：2球は公転と同じ角速度 $\\omega$ で回転しており，$\\varphi$ が一定に保たれている（いつも同じ側を惑星に向けている）．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "状況 X で $\\varphi=0$（A が外側，B が内側に一直線に並ぶ）の瞬間の $N$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "状況 Y で $\\varphi=0$ のときの $N$ を求めよ．(1) との違いが生じる理由を簡潔に説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "状況 X で一般の角 $\\varphi$ の瞬間の $N$ を求めよ．また，状況 Y で $\\varphi=\\dfrac{\\pi}{2}$（2球が公転の向きに並ぶ）のときの $N$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "惑星の密度を $\\rho_{\\text P}$，小球の密度を $\\rho$ とする．$\\varphi=0$ で2球が接触を保てる $r$ の下限を，状況 X，Y それぞれについて $R$，$\\rho_{\\text P}$，$\\rho$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\rho_{\\text P}/\\rho=2.0$ のとき，(4) の下限はそれぞれ $R$ の何倍か．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：公転する接触2球にはたらく潮汐力（並進する場合と同期回転する場合の違いとロッシュ限界）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$N=\\dfrac{Gm^2}{4s^2}-\\dfrac{2GMms}{r^3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$N=\\dfrac{Gm^2}{4s^2}-\\dfrac{3GMms}{r^3}$（Y では A が G のまわりを回るための向心力 $m\\omega^2s$ がさらに必要）"
+   },
+   {
+    "id": "3",
+    "tex": "X：$N=\\dfrac{Gm^2}{4s^2}-(3\\cos^2\\varphi-1)\\dfrac{GMms}{r^3}$，Y で $\\varphi=\\frac{\\pi}{2}$：$N=\\dfrac{Gm^2}{4s^2}$"
+   },
+   {
+    "id": "4",
+    "tex": "X：$r\\ge2\\left(\\dfrac{\\rho_{\\text P}}{\\rho}\\right)^{1/3}R$，Y：$r\\ge\\left(\\dfrac{12\\rho_{\\text P}}{\\rho}\\right)^{1/3}R$"
+   },
+   {
+    "id": "5",
+    "tex": "X：$2.5$ 倍，Y：$2.9$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　慣性系で A の運動方程式を立てる．A の加速度は「G の加速度」と「G に対する相対加速度」の和であり，後者が状況 X と Y で異なる．\n\n\\textbf{潮汐による加速度の差}　位置 $\\vec x$ での惑星の重力加速度を $\\vec g(\\vec x)=-\\dfrac{GM}{|\\vec x|^3}\\vec x$ とする．G から $s\\vec e$（$\\vec e$ は B→A の単位ベクトル）だけずれた点では，$s\\vec e$ の動径方向成分 $s\\cos\\varphi$ による大きさの変化と，横方向成分 $s\\sin\\varphi$ による向きの変化から\n\\[ \\vec g(\\vec r_{\\text G}+s\\vec e)-\\vec g(\\vec r_{\\text G})\\fallingdotseq\\frac{GMs}{r^3}\\left(2\\cos\\varphi\\,\\hat r-\\sin\\varphi\\,\\hat t\\right) \\]\n（$\\hat r$ は O→G の向き，$\\hat t$ はそれに垂直な $\\vec e$ 側の向き）．動径成分は $-\\dfrac{GM}{(r+s\\cos\\varphi)^2}\\fallingdotseq-\\dfrac{GM}{r^2}+\\dfrac{2GMs\\cos\\varphi}{r^3}$ から，横成分は向きが角 $\\dfrac{s\\sin\\varphi}{r}$ だけ傾くことから得られる．$\\vec e=\\cos\\varphi\\,\\hat r+\\sin\\varphi\\,\\hat t$ 方向の成分は\n\\[ \\frac{GMs}{r^3}(2\\cos^2\\varphi-\\sin^2\\varphi)=\\frac{GMs}{r^3}(3\\cos^2\\varphi-1) \\]\nまた，G の加速度は A，B の位置の重力加速度の平均で，1次の差は打ち消し合うので $\\vec g(\\vec r_{\\text G})$ に等しい．\n\n\\textbf{(1) 状況 X，$\\varphi=0$}　その瞬間 2球は回転していないので（角加速度があっても，それは $\\vec e$ に垂直な加速度しか生まない），A の加速度は G の加速度 $\\vec g(\\vec r_{\\text G})$ に等しい．A の運動方程式の $\\vec e$ 成分は\n\\[ m\\,\\vec g(\\vec r_{\\text G})\\cdot\\vec e=m\\,\\vec g(\\vec r_{\\text A})\\cdot\\vec e-\\frac{Gm^2}{4s^2}+N \\]\n\\[ N=\\frac{Gm^2}{4s^2}-m\\{\\vec g(\\vec r_{\\text A})-\\vec g(\\vec r_{\\text G})\\}\\cdot\\vec e=\\boldsymbol{\\frac{Gm^2}{4s^2}-\\frac{2GMms}{r^3}} \\]\n外側の A は G より重力が弱いので，G と同じ加速度で動くには B が A を引き止める必要がなく，むしろ A は B から離れる向きに取り残される．これが2球を引き離す「潮汐力」で，係数は $2$ である．地球が自転しないで月のまわりを公転するとき（並進運動）の海水の満ち干と同じ構造である．\n\n\\textbf{(2) 状況 Y，$\\varphi=0$}　A は O を中心とする半径 $r+s$ の円運動をするので，加速度は $-\\omega^2(r+s)\\hat r$．これは G の加速度 $-\\omega^2r\\hat r$ に，G のまわりの回転による向心加速度 $-\\omega^2s\\,\\vec e$ が加わったものである．よって\n\\[ N=\\frac{Gm^2}{4s^2}-\\frac{2GMms}{r^3}-m\\omega^2s=\\boldsymbol{\\frac{Gm^2}{4s^2}-\\frac{3GMms}{r^3}} \\]\n\\textbf{理由}：状況 Y では2球が G のまわりを角速度 $\\omega$ で回転しているので，A をその回転に必要な向心力 $m\\omega^2s=\\dfrac{GMms}{r^3}$ の分だけ余分に内向きに引かなければならず，引き離す効果が $2$ から $3$ に強まる．\n\n\\textbf{(3)}　状況 X では，(1) と同様に A の加速度が $\\vec g(\\vec r_{\\text G})$ なので\n\\[ N=\\boldsymbol{\\frac{Gm^2}{4s^2}-(3\\cos^2\\varphi-1)\\frac{GMms}{r^3}} \\]\n$\\varphi=\\frac{\\pi}{2}$ では $N=\\dfrac{Gm^2}{4s^2}+\\dfrac{GMms}{r^3}$ と，2球は押しつけ合う（干潮の側に相当）．\n\n状況 Y では向心加速度 $-\\omega^2s\\,\\vec e$ が加わるので $N=\\dfrac{Gm^2}{4s^2}-3\\cos^2\\varphi\\,\\dfrac{GMms}{r^3}$．$\\varphi=\\frac{\\pi}{2}$ では\n\\[ N=\\boldsymbol{\\frac{Gm^2}{4s^2}} \\]\n公転の向きに並ぶと，潮汐による押しつけ $\\dfrac{GMms}{r^3}$ と回転による向心力 $m\\omega^2s$ がちょうど打ち消し合い，惑星の影響が1次で消える．\n\n\\textbf{(4) 接触を保つ条件}　$N\\ge0$ である．$M=\\frac43\\pi R^3\\rho_{\\text P}$，$m=\\frac43\\pi s^3\\rho$ を代入すると，状況 X では\n\\[ \\frac{Gm^2}{4s^2}\\ge\\frac{2GMms}{r^3}\\iff r^3\\ge\\frac{8Ms^3}{m}=8R^3\\frac{\\rho_{\\text P}}{\\rho}\\iff r\\ge\\boldsymbol{2\\left(\\frac{\\rho_{\\text P}}{\\rho}\\right)^{1/3}R} \\]\n状況 Y では係数が $3$ なので\n\\[ r^3\\ge\\frac{12Ms^3}{m}\\iff r\\ge\\boldsymbol{\\left(\\frac{12\\rho_{\\text P}}{\\rho}\\right)^{1/3}R} \\]\nいずれも小球の大きさ $s$ によらない（ロッシュ限界と同じ型）．\n\n\\textbf{(5)}　X：$2\\times2.0^{1/3}=16^{1/3}\\fallingdotseq\\boldsymbol{2.5}$ 倍，Y：$24^{1/3}\\fallingdotseq\\boldsymbol{2.9}$ 倍．惑星に同じ面を向けて回る天体（Y）の方が，より遠くで引き離される．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "公転する物体が回転せずに並進するとき（地球の自転を除いた公転と同じ），各部分の加速度は重心と等しく，重力の差だけが残って中心方向に $2GMs/r^3$ の潮汐的な引き離しが生じる．同じ面を惑星に向けて回る（公転と同じ角速度で回転する）と，重心のまわりの向心加速度 $\\omega^2s$ が加わって係数が $3$ になり，公転の向きには潮汐の圧縮と打ち消し合う．どちらの運動状態かで接触を保つ限界（ロッシュ限界型）が変わる．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "circular-motion",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "潮汐力",
+  "万有引力",
+  "円運動",
+  "慣性系と回転",
+  "ロッシュ限界"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300">
+<defs>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="a-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+</defs>
+<path d="M60,170 L260,170 A100,100 0 0 0 160,70 Z" fill="#1f5fbf" fill-opacity="0.15" stroke="none"/>
+<circle cx="160.0" cy="170.0" r="100.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="40.0" y1="170.0" x2="290.0" y2="170.0" stroke="#222" stroke-width="1" marker-end="url(#a-ak)"/>
+<line x1="60.0" y1="170.0" x2="160.0" y2="70.0" stroke="#1f5fbf" stroke-width="1.4"/>
+<line x1="160.0" y1="170.0" x2="160.0" y2="70.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="60" cy="170" r="3" fill="#222"/><circle cx="160" cy="170" r="3" fill="#222"/><circle cx="260" cy="170" r="3" fill="#222"/><circle cx="160" cy="70" r="3" fill="#222"/>
+<text x="54.0" y="190.0" font-family="Times New Roman, serif" font-size="15" text-anchor="end" fill="#222">O</text>
+<text x="164.0" y="190.0" font-family="Times New Roman, serif" font-size="15" text-anchor="start" fill="#222">C</text>
+<text x="266.0" y="190.0" font-family="Times New Roman, serif" font-size="15" text-anchor="start" fill="#222">S</text>
+<text x="166.0" y="64.0" font-family="Times New Roman, serif" font-size="15" text-anchor="start" fill="#222">A′</text>
+<line x1="60.0" y1="210.0" x2="160.0" y2="210.0" stroke="#888" stroke-width="1" marker-end="url(#a-ag)" marker-start="url(#a-ag)"/>
+<text x="110.0" y="226.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="middle" fill="#222">R</text>
+<line x1="160.0" y1="210.0" x2="260.0" y2="210.0" stroke="#888" stroke-width="1" marker-end="url(#a-ag)" marker-start="url(#a-ag)"/>
+<text x="210.0" y="226.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="middle" fill="#222">R</text>
+<text x="215.0" y="135.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="#1f5fbf">1/4 円</text>
+<text x="125.0" y="152.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="#1f5fbf">三角形</text>
+<text x="300.0" y="28.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="#222">短軸方向に一様に引き伸ばした図</text>
+<text x="300.0" y="46.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" text-anchor="middle" fill="#222">（A′ は地表の点 A に対応）</text>
+</svg>

@@ -1,0 +1,131 @@
+{
+ "id": "PHY-GRV-006",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "パルサーの到着時刻とパルス間隔による惑星検出（位置と速度の振幅の周期依存性）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "パルサーは，極めて正確な一定の時間間隔で電波のパルスを放つ天体である．図のように，質量 $M$ のパルサー S と質量 $m$ の惑星 p が，互いの万有引力だけによって，共通の重心 C のまわりを同じ周期 $T$ で等速円運動している．S と p の距離を $d$，S の円軌道の半径を $a$，S の速さを $V$ とする．観測者 O は軌道面内の十分遠方にいて，C は O に対して静止している．S は，S とともに動く立場から見て一定の時間間隔 $P_0$（$P_0\\ll T$）でパルスを放つ．O から遠ざかる向きを $x$ の正の向きとし，C を原点とする S の視線方向の位置を $x(t)$，S の速度の視線方向成分を $v_r(t)$ とする．万有引力定数を $G$，光の速さを $c$ とし，$V\\ll c$ として相対論的効果は考えない．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$d$，$a$，$V$ をそれぞれ $G$，$M$，$m$，$T$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "時刻 $t$ に S が放ったパルスが O に届く時刻は，同じ時刻に C から放った場合と比べて $x(t)/c$ だけ遅れる．この遅れの最大値 $\\tau$ を $a$，$c$ で表せ．また，S が時刻 $t$ と $t+P_0$ に放った相次ぐ2つのパルスが O に届く時間間隔 $P$ は $P=P_0\\left(1+\\dfrac{v_r(t)}{c}\\right)$ と表されることを示し，$\\dfrac{P-P_0}{P_0}$ の最大値 $\\delta$ を $\\tau$，$T$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "到着時刻の遅れの最大値 $\\tau$ が $\\tau_0$ 以上なら惑星を検出できる方法（到着時刻法）と，パルス間隔の相対変化の最大値 $\\delta$ が $\\varepsilon$ 以上なら検出できる方法（パルス間隔法）がある．$m\\ll M$ として $M+m\\fallingdotseq M$ と近似し，それぞれの方法で検出できる惑星の質量の最小値 $m_{\\text{t}}$，$m_{\\text{D}}$ を $G$，$M$，$c$，$T$ と $\\tau_0$ または $\\varepsilon$ で表せ．さらに，公転周期 $T$ がある値 $T_{\\text{c}}$ より長いと，到着時刻法の方がより軽い惑星まで検出できる．$T_{\\text{c}}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$M=2.8\\times10^{30}\\ \\mathrm{kg}$，$\\tau_0=1.0\\times10^{-6}\\ \\mathrm{s}$，$\\varepsilon=1.0\\times10^{-11}$，$G=6.7\\times10^{-11}\\ \\mathrm{N\\cdot m^2/kg^2}$，$c=3.0\\times10^{8}\\ \\mathrm{m/s}$ とする．$T_{\\text{c}}$ を求めよ．また，$T=3.2\\times10^{7}\\ \\mathrm{s}$（約1年）のとき，$m_{\\text{t}}$ と $m_{\\text{D}}$ を求めよ．いずれも有効数字2桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "実際には観測者は軌道面内にいるとは限らない．視線と軌道面の法線のなす角が $i$（$0<i\\le\\frac{\\pi}{2}$）であるとき，2つの方法で測った $\\tau$ と $\\delta$ を組み合わせれば，$m$ と $i$ を別々に決めることができるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：パルサーの到着時刻とパルス間隔による惑星検出（位置と速度の振幅の周期依存性）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$d=\\left(\\dfrac{G(M+m)T^2}{4\\pi^2}\\right)^{\\frac13}$，$a=\\dfrac{m}{(M+m)^{\\frac23}}\\left(\\dfrac{GT^2}{4\\pi^2}\\right)^{\\frac13}$，$V=\\dfrac{m}{(M+m)^{\\frac23}}\\left(\\dfrac{2\\pi G}{T}\\right)^{\\frac13}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\tau=\\dfrac{a}{c}$，$\\delta=\\dfrac{V}{c}=\\dfrac{2\\pi\\tau}{T}$"
+   },
+   {
+    "id": "3",
+    "tex": "$m_{\\text{t}}=\\tau_0c\\,M^{\\frac23}\\left(\\dfrac{4\\pi^2}{GT^2}\\right)^{\\frac13}$，$m_{\\text{D}}=\\varepsilon c\\,M^{\\frac23}\\left(\\dfrac{T}{2\\pi G}\\right)^{\\frac13}$，$T_{\\text{c}}=\\dfrac{2\\pi\\tau_0}{\\varepsilon}$"
+   },
+   {
+    "id": "4",
+    "tex": "$T_{\\text{c}}=6.3\\times10^{5}\\ \\mathrm{s}$，$m_{\\text{t}}=5.0\\times10^{21}\\ \\mathrm{kg}$，$m_{\\text{D}}=2.5\\times10^{23}\\ \\mathrm{kg}$"
+   },
+   {
+    "id": "5",
+    "tex": "できない（$\\tau$，$\\delta$ はともに $m\\sin i$ に比例し，比 $\\tau/\\delta=T/2\\pi$ は $m$，$i$ によらないので，$m\\sin i$ しか決まらない）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 2体の円運動}　S と p は常に C をはさんで一直線上にあり，C は2体を質量の逆比に内分するので，S，p の軌道半径は\n\\[ a=\\frac{m}{M+m}d,\\qquad b=\\frac{M}{M+m}d \\]\nである．p の円運動の運動方程式（向心力は S からの万有引力）は，角速度を $\\omega=\\dfrac{2\\pi}{T}$ として\n\\[ m b\\omega^2=\\frac{GMm}{d^2}\\quad\\Longrightarrow\\quad \\omega^2=\\frac{G(M+m)}{d^3} \\]\nとなる（S の運動方程式 $Ma\\omega^2=GMm/d^2$ からも同じ式が得られる）．よって\n\\[ d=\\boldsymbol{\\left(\\frac{G(M+m)T^2}{4\\pi^2}\\right)^{\\frac13}},\\qquad a=\\frac{m}{M+m}d=\\boldsymbol{\\frac{m}{(M+m)^{\\frac23}}\\left(\\frac{GT^2}{4\\pi^2}\\right)^{\\frac13}},\\qquad V=a\\omega=\\boldsymbol{\\frac{m}{(M+m)^{\\frac23}}\\left(\\frac{2\\pi G}{T}\\right)^{\\frac13}} \\]\nである．ケプラーの第3法則に現れるのが $M$ ではなく $M+m$ であることに注意する．\n\n\\textbf{(2) 位置は到着時刻に，速度はパルス間隔に現れる}　S は C のまわりを半径 $a$ で回るので $x(t)$ は $-a$ から $a$ の間を変化し，遅れ $x(t)/c$ の最大値は\n\\[ \\tau=\\boldsymbol{\\frac{a}{c}} \\]\nである．C から O までの距離を $D$ とすると，時刻 $t$ に放たれたパルスの到着時刻は $t_{\\text{A}}(t)=t+\\dfrac{D+x(t)}{c}$ である．$P_0\\ll T$ なので，$P_0$ の間 S の速度は一定とみなせて $x(t+P_0)-x(t)=v_r(t)P_0$．したがって\n\\[ P=t_{\\text{A}}(t+P_0)-t_{\\text{A}}(t)=P_0+\\frac{x(t+P_0)-x(t)}{c}=P_0\\left(1+\\frac{v_r(t)}{c}\\right) \\]\nとなる（音源が動く場合のドップラー効果と同じ形）．$v_r$ の最大値は $V$ なので\n\\[ \\delta=\\frac{V}{c}=\\frac{a\\omega}{c}=\\boldsymbol{\\frac{2\\pi\\tau}{T}} \\]\nである．到着時刻の遅れ $x(t)/c$ を時間で微分したものがパルス間隔の相対変化 $v_r/c$ であり，振幅の比は角振動数 $\\omega$ になる．\n\n\\textbf{(3) 2つの方法の得意な周期}　$M+m\\fallingdotseq M$ とすると\n\\[ \\tau=\\frac{m}{c\\,M^{\\frac23}}\\left(\\frac{GT^2}{4\\pi^2}\\right)^{\\frac13}\\propto T^{\\frac23},\\qquad \\delta=\\frac{m}{c\\,M^{\\frac23}}\\left(\\frac{2\\pi G}{T}\\right)^{\\frac13}\\propto T^{-\\frac13} \\]\nである．$\\tau=\\tau_0$，$\\delta=\\varepsilon$ となる $m$ がそれぞれの検出限界だから\n\\[ m_{\\text{t}}=\\boldsymbol{\\tau_0c\\,M^{\\frac23}\\left(\\frac{4\\pi^2}{GT^2}\\right)^{\\frac13}},\\qquad m_{\\text{D}}=\\boldsymbol{\\varepsilon c\\,M^{\\frac23}\\left(\\frac{T}{2\\pi G}\\right)^{\\frac13}} \\]\nとなる．比をとると $G$，$M$，$c$ がすべて消えて\n\\[ \\frac{m_{\\text{t}}}{m_{\\text{D}}}=\\frac{\\tau_0}{\\varepsilon}\\cdot\\frac{(4\\pi^2)^{\\frac13}(2\\pi)^{\\frac13}}{T^{\\frac23}T^{\\frac13}}=\\frac{2\\pi\\tau_0}{\\varepsilon T} \\]\nであり，これが $1$ より小さい，すなわち到着時刻法がより軽い惑星まで検出できるのは $T>\\dfrac{2\\pi\\tau_0}{\\varepsilon}$ のときである．よって\n\\[ T_{\\text{c}}=\\boldsymbol{\\frac{2\\pi\\tau_0}{\\varepsilon}} \\]\nである．これは (2) の関係 $\\delta=2\\pi\\tau/T$ そのもので，周期が長いほど「揺れの大きさ（位置）」は大きく，「揺れの速さ（速度）」は小さくなることを表している．\n\n\\textbf{(4) 数値}　$T_{\\text{c}}=\\dfrac{2\\pi\\times1.0\\times10^{-6}}{1.0\\times10^{-11}}\\fallingdotseq\\boldsymbol{6.3\\times10^{5}\\ \\mathrm{s}}$（約7日）．$T=3.2\\times10^7\\ \\mathrm{s}$ のとき，\n\\[ \\left(\\frac{4\\pi^2}{GT^2}\\right)^{\\frac13}=\\left(\\frac{39.5}{6.7\\times10^{-11}\\times(3.2\\times10^{7})^2}\\right)^{\\frac13}\\fallingdotseq8.3\\times10^{-2}\\ \\mathrm{kg^{1/3}/m},\\qquad M^{\\frac23}\\fallingdotseq1.99\\times10^{20}\\ \\mathrm{kg^{2/3}},\\qquad \\tau_0c=3.0\\times10^{2}\\ \\mathrm{m} \\]\nより\n\\[ m_{\\text{t}}=1.0\\times10^{-6}\\times3.0\\times10^{8}\\times1.99\\times10^{20}\\times8.3\\times10^{-2}\\fallingdotseq\\boldsymbol{5.0\\times10^{21}\\ \\mathrm{kg}} \\]\nであり，$m_{\\text{D}}=m_{\\text{t}}\\times\\dfrac{\\varepsilon T}{2\\pi\\tau_0}=m_{\\text{t}}\\times\\dfrac{3.2\\times10^{7}}{6.28\\times10^{5}}\\fallingdotseq\\boldsymbol{2.5\\times10^{23}\\ \\mathrm{kg}}$ である．周期1年では到着時刻法が約50倍軽い惑星（地球の質量の約 $\\frac{1}{1000}$）まで検出できる．\n\n\\textbf{(5) 傾きの影響}　視線と軌道面の法線のなす角が $i$ のとき，S の位置と速度の視線方向成分はどちらも軌道面内にいる場合の $\\sin i$ 倍になるので\n\\[ \\tau=\\frac{a\\sin i}{c},\\qquad \\delta=\\frac{V\\sin i}{c}=\\frac{2\\pi\\tau}{T} \\]\nである．$\\tau$ と $\\delta$ はともに $m\\sin i$ に比例し，その比は $T/2\\pi$ と $m$，$i$ によらない．つまり2つの方法は同じ運動（S の視線方向の単振動）の位置と速度を見ているだけで，独立な情報を与えない．したがって $\\boldsymbol{m\\sin i}$ \\textbf{しか決まらず，$m$ と $i$ を別々に決めることはできない}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "惑星をもつ主星は共通重心のまわりを小さく円運動し，その視線方向の位置は信号の到着時刻の遅れに，速度は信号の間隔の変化（ドップラー効果）に現れる．両者の振幅比は $T/2\\pi$ で，ケプラーの第3法則から前者は $T^{2/3}$，後者は $T^{-1/3}$ に比例するので，検出に有利な方法が周期 $T_{\\text{c}}=2\\pi\\tau_0/\\varepsilon$ を境に入れ替わる．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "circular-motion",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "万有引力",
+  "重心運動",
+  "ケプラーの第3法則",
+  "ドップラー効果",
+  "パルサー",
+  "惑星検出"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

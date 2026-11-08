@@ -1,0 +1,144 @@
+{
+ "id": "PHY-GRV-002",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "地球を貫くトンネルと地表外の落下（単振動と細長い楕円軌道の接続）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球を半径 $R$，密度一様の球とみなし，その中心Oを通る直線状の細いトンネルが掘られている．トンネルの両端の地表の点をA，Bとする．地表での重力加速度の大きさを $g$ とし，地球の自転，空気抵抗，摩擦は無視する．なお，地球内部の中心から距離 $r$ の点で物体が受ける万有引力は，半径 $r$ の球の内部の質量がすべてOに集まったとして計算してよい．\n図のように，Aの真上で地表から高さ $R$ の点S（$\\mathrm{OS}=2R$）で，質量 $m$ の小物体を静かにはなした．小物体はAからトンネルに入り，Oを通過してBから飛び出した．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小物体がAを通過するときの速さ $v_{\\mathrm{A}}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "トンネル内での小物体の運動は単振動の一部であることを示し，Oを通過するときの速さ $v_{\\mathrm{O}}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "小物体がAからBまで進むのにかかる時間 $t_{\\mathrm{in}}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "地表より外側での小物体の運動は，Oを一方の焦点とし，長軸の長さが $2R$ で短軸の長さが限りなく0に近い，細長い楕円軌道の一部とみなすことができる．このことを用いて，小物体がSからAまで落下するのにかかる時間 $t_{\\mathrm{out}}$ を求めよ．必要なら，楕円を短軸方向に一様に引き伸ばしても，面積の比は変わらないことを用いよ．"
+     },
+     {
+      "id": "5",
+      "tex": "小物体の運動は周期運動となる．その周期 $T$ を求めよ．また，Aで静かにはなした場合の周期を $T'$ として，$\\dfrac{T}{T'}$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：地球を貫くトンネルと地表外の落下（単振動と細長い楕円軌道の接続）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：地球を貫くトンネルと地表外の落下（単振動と細長い楕円軌道の接続）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_{\\mathrm{A}}=\\sqrt{gR}$"
+   },
+   {
+    "id": "2",
+    "tex": "$v_{\\mathrm{O}}=\\sqrt{2gR}$"
+   },
+   {
+    "id": "3",
+    "tex": "$t_{\\mathrm{in}}=\\dfrac{\\pi}{2}\\sqrt{\\dfrac Rg}$"
+   },
+   {
+    "id": "4",
+    "tex": "$t_{\\mathrm{out}}=\\left(\\dfrac{\\pi}{2}+1\\right)\\sqrt{\\dfrac Rg}$"
+   },
+   {
+    "id": "5",
+    "tex": "$T=(3\\pi+4)\\sqrt{\\dfrac Rg}$，$\\dfrac{T}{T'}=\\dfrac{3\\pi+4}{2\\pi}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "地球の質量を $M$ とすると，地表で $mg=\\dfrac{GMm}{R^2}$ より $GM=gR^2$．\n\n\\textbf{(1)} 地表の外では万有引力の位置エネルギー $-\\dfrac{GMm}{r}$ を用いて，SからAまでの力学的エネルギー保存より\n\\[ \\frac12mv_{\\mathrm{A}}^2-\\frac{GMm}{R}=-\\frac{GMm}{2R}\\qquad\\therefore\\quad v_{\\mathrm{A}}=\\sqrt{\\frac{GM}{R}}=\\boldsymbol{\\sqrt{gR}} \\]\n\n\\textbf{(2)} トンネル内でOから距離 $r$ の点では，半径 $r$ の球の質量 $M\\dfrac{r^3}{R^3}$ だけが効くので，引力は\n\\[ F=\\frac{GMm}{R^3}r=\\frac{mg}{R}r \\]\nでOを向く．トンネルはOを通るので，Oからの変位を $x$ とすると $m\\ddot x=-\\dfrac{mg}{R}x$ で，これは角振動数 $\\omega=\\sqrt{\\dfrac gR}$ の単振動である．\n単振動のエネルギー保存（中心Oを基準）より\n\\[ \\frac12mv_{\\mathrm{O}}^2=\\frac12mv_{\\mathrm{A}}^2+\\frac12\\cdot\\frac{mg}{R}R^2=mgR\\qquad\\therefore\\quad v_{\\mathrm{O}}=\\boldsymbol{\\sqrt{2gR}} \\]\nこのとき単振動の振幅は $\\dfrac{v_{\\mathrm{O}}}{\\omega}=\\sqrt2R$ で，トンネルの長さの半分 $R$ より大きい（地表で速さが残っているので飛び出す）．\n\n\\textbf{(3)} $x=\\sqrt2R\\sin\\omega t$ と表すと，$x=-R$，$R$ に対応する位相は $-\\dfrac{\\pi}{4}$，$\\dfrac{\\pi}{4}$．位相差は $\\dfrac{\\pi}{2}$ なので\n\\[ t_{\\mathrm{in}}=\\frac{\\pi/2}{\\omega}=\\boldsymbol{\\frac{\\pi}{2}\\sqrt{\\frac Rg}} \\]\n\n\\textbf{(4)} 地表の外の運動は単振動ではない（引力は $1/r^2$）．速度が常にO向きの直線運動は，Oを焦点とし短軸が0に縮んだ楕円軌道の極限とみなせる．Sは遠地点で，長軸の長さ $2R$，半長軸 $a=R$．焦点Oは長軸の端に一致する．この楕円の周期はケプラーの第3法則（円軌道と比べる）より\n\\[ T_{\\mathrm{e}}=2\\pi\\sqrt{\\frac{a^3}{GM}}=2\\pi\\sqrt{\\frac Rg} \\]\n楕円を短軸方向に一様に引き伸ばすと，中心C（$\\mathrm{OC}=R$），半径 $R$ の円になり，Oは円周上，Sは直径の反対の端にくる（解答図）．AはOから距離 $R$ の点なので，引き伸ばした図では Cの真上の点 $\\mathrm{A'}$ に対応する．SからAまでにOと小物体を結ぶ線分が掃く面積は，引き伸ばした図では「扇形 $\\mathrm{CSA'}$（4分の1円）」と「三角形 $\\mathrm{OCA'}$」の和で\n\\[ \\frac{\\pi R^2}{4}+\\frac{R^2}{2} \\]\n全面積 $\\pi R^2$ に対する比は，引き伸ばしで変わらない．面積速度一定より，時間の比は面積の比に等しいから\n\\[ t_{\\mathrm{out}}=T_{\\mathrm{e}}\\times\\frac{\\frac{\\pi}{4}+\\frac12}{\\pi}=2\\sqrt{\\frac Rg}\\left(\\frac{\\pi}{4}+\\frac12\\right)=\\boldsymbol{\\left(\\frac{\\pi}{2}+1\\right)\\sqrt{\\frac Rg}} \\]\n\n\\textbf{(5)} Bから飛び出した後は，(4)の逆の運動でOから $2R$ の点まで上がって一瞬止まり，同じ経路を戻る．1周期は「S→A（外）」「A→B（内）」「B→外の最高点」とその逆の合計で\n\\[ T=2(2t_{\\mathrm{out}}+t_{\\mathrm{in}})=2\\left(\\pi+2+\\frac{\\pi}{2}\\right)\\sqrt{\\frac Rg}=\\boldsymbol{(3\\pi+4)\\sqrt{\\frac Rg}} \\]\nAで静かにはなすとトンネル内だけの単振動で $T'=2\\pi\\sqrt{\\dfrac Rg}$．よって $\\boldsymbol{\\dfrac{T}{T'}=\\dfrac{3\\pi+4}{2\\pi}}$（約 $2.1$）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一様な球の内部では引力が中心からの距離に比例し，中心を通るトンネル内の運動は単振動になる．外部から入ってくると単振動の「振幅」はトンネルより大きく，内部の時間は位相差で求まる．外部の $1/r^2$ の直線運動は細長い楕円軌道の極限とみなし，面積速度とケプラーの第3法則で時間を求めて，内外をつなぐ．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "simple-harmonic-motion",
+  "wave-basics"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "万有引力",
+  "単振動",
+  "ケプラーの法則",
+  "面積速度",
+  "地球トンネル",
+  "状態の切り替え"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

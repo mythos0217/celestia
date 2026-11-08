@@ -1,0 +1,134 @@
+{
+ "id": "PHY-FEQ-003",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-02",
+ "topic": "管の口の石けん膜の圧力差の極大と，大きさの異なる2つの膜の連結（つり合いの安定性）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "内半径 $b$ の2本の円管 A，B の口にそれぞれ石けん膜を張り，2本の管の他端を弁のついた細い管でつないだ（図）．中は空気で満たされている．膜は口から外側にふくらんで球面の一部（球冠）になり，口の面から膜の頂点までの高さを $h$（A では $h_{\\text A}$，B では $h_{\\text B}$）とする．高さ $h$ の球冠の体積は $\\dfrac{\\pi h(3b^2+h^2)}{6}$ である．\n\n石けん膜には表と裏の2つの表面があり，膜の面積を $\\Delta S$ だけ広げるのに必要な仕事は $2\\sigma\\Delta S$（$\\sigma$ は正の定数）である．膜の厚さと重力は無視し，外気圧を $p_0$ とする．膜による圧力差は $p_0$ に比べて十分小さいので，弁を開いているとき，2つの膜がつくる球冠の体積の和は一定に保たれるとしてよい．空気の流れはゆっくりで，温度は一定とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "半径 $R$ の球形のしゃぼん玉の内側と外側の圧力差 $\\Delta p$ を，半径が $R$ から $R+\\Delta R$ に変わるときの仕事を考えて求めよ．球冠の膜でも，その球面の半径を $R$ として同じ関係が成り立つ．管の口の膜の高さが $h$ のときの $\\Delta p$ を $b$，$h$，$\\sigma$ で表し，$\\Delta p$ が最大となる $h$ とその最大値を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "管 A だけを考え，弁の側から空気をゆっくり送りこんで，膜の内側の圧力差を一定値 $\\Delta p_{\\text s}$ に保つ．$0<\\Delta p_{\\text s}<\\dfrac{4\\sigma}{b}$ のとき，つり合う $h$ は2つある．膜の体積がわずかに増えたときに元に戻るのはどちらのつり合いか．また，$\\Delta p_{\\text s}$ が $\\dfrac{4\\sigma}{b}$ を超えるとどうなるか．"
+     },
+     {
+      "id": "3",
+      "tex": "弁を閉じて，$h_{\\text A}=\\dfrac{b}{2}$，$h_{\\text B}=2b$ とした．このとき2つの膜の圧力差が等しいことを示せ．次に弁を開いたところ，膜の形は変わらなかった．A から B へ体積 $\\delta V$ の空気がわずかに移ったとしたときの A，B それぞれの圧力差の変化を $\\sigma$，$b$，$\\delta V$ で表し，元に戻る理由を説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "次に，弁を閉じて $h_{\\text A}=\\dfrac{b}{2}$，$h_{\\text B}=\\dfrac{3b}{2}$ とし，弁を開いた．空気はどちらからどちらへ流れるか．十分時間がたった後の $h_{\\text A}$，$h_{\\text B}$ を $b$ の何倍か有効数字2桁で求め，そのときの圧力差を $\\dfrac{\\sigma}{b}$ の何倍か有効数字2桁で求めよ．必要なら，異なる高さ $h_{\\text A}\\ne h_{\\text B}$ の2つの膜の圧力差が等しいとき $h_{\\text A}h_{\\text B}=b^2$ となることを用いよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：管の口の石けん膜の圧力差の極大と，大きさの異なる2つの膜の連結（つり合いの安定性）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：管の口の石けん膜の圧力差の極大と，大きさの異なる2つの膜の連結（つり合いの安定性）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "しゃぼん玉 $\\Delta p=\\dfrac{4\\sigma}{R}$，管の口の膜 $\\Delta p=\\dfrac{8\\sigma h}{b^2+h^2}$，最大は $h=b$（半球）のときで $\\dfrac{4\\sigma}{b}$"
+   },
+   {
+    "id": "2",
+    "tex": "$h<b$（半球より浅い）方が元に戻る．$\\dfrac{4\\sigma}{b}$ を超えるとつり合いがなく，膜はふくらみ続ける（やがて破れる）"
+   },
+   {
+    "id": "3",
+    "tex": "圧力差はともに $\\dfrac{16\\sigma}{5b}$．A：$-\\dfrac{6.144\\,\\sigma}{\\pi b^4}\\delta V$（$=-\\dfrac{768\\sigma}{125\\pi b^4}\\delta V$），B：$-\\dfrac{0.384\\,\\sigma}{\\pi b^4}\\delta V$（$=-\\dfrac{48\\sigma}{125\\pi b^4}\\delta V$）．A の方が大きく下がるので空気は B から A へ押し戻される"
+   },
+   {
+    "id": "4",
+    "tex": "B から A へ流れる．$h_{\\text A}\\fallingdotseq0.71b$，$h_{\\text B}\\fallingdotseq1.4b$，圧力差 $\\fallingdotseq3.8\\dfrac{\\sigma}{b}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 圧力差}　しゃぼん玉の半径が $\\Delta R$ 増えると，内外の圧力差がする仕事 $\\Delta p\\cdot4\\pi R^2\\Delta R$ が，膜の面積を $\\Delta S=8\\pi R\\Delta R$ 広げる仕事 $2\\sigma\\Delta S$ に等しいので\n\\[ \\Delta p\\cdot4\\pi R^2\\Delta R=2\\sigma\\cdot8\\pi R\\Delta R\\qquad\\therefore\\quad\\Delta p=\\boldsymbol{\\frac{4\\sigma}{R}} \\]\n管の口の膜は，半径 $b$ の円を底面とする高さ $h$ の球冠である．球の半径 $R$ は $R^2=b^2+(R-h)^2$ より $R=\\dfrac{b^2+h^2}{2h}$．よって\n\\[ \\Delta p=\\frac{4\\sigma}{R}=\\boldsymbol{\\frac{8\\sigma h}{b^2+h^2}} \\]\n$\\dfrac{d}{dh}\\dfrac{h}{b^2+h^2}=\\dfrac{b^2-h^2}{(b^2+h^2)^2}$ より，$\\Delta p$ は $h<b$ で増加，$h>b$ で減少し，$h=\\boldsymbol{b}$（\\textbf{半球}，$R=b$ が最小）で最大値 $\\boldsymbol{\\dfrac{4\\sigma}{b}}$ をとる．膜をふくらませていくと，曲率半径は半球のとき最小になり，その後かえって大きくなる．\n\n\\textbf{(2) 圧力を一定に保つとき}　$\\dfrac{8\\sigma h}{b^2+h^2}=\\Delta p_{\\text s}$ の解は $h_1<b<h_2$ の2つ．膜の体積（$h$）がわずかに増えたとき，膜が必要とする圧力差 $\\Delta p(h)$ が送りこむ圧力差 $\\Delta p_{\\text s}$ より大きくなれば空気は押し戻され，小さくなればさらに流れ込む．$h_1<b$ では $\\Delta p$ が $h$ とともに増えるので戻り（\\textbf{安定}），$h_2>b$ では減るのでふくらみ続ける（不安定）．$\\Delta p_{\\text s}>\\dfrac{4\\sigma}{b}$ では膜が支えられる圧力差の最大値を超えるので，つり合いがなく\\textbf{膜はふくらみ続け，やがて破れる}．\n\n\\textbf{(3) 大きさの違う膜のつり合い}　$h_{\\text A}=\\dfrac b2$：$\\Delta p=\\dfrac{8\\sigma(b/2)}{b^2+b^2/4}=\\dfrac{16\\sigma}{5b}$．$h_{\\text B}=2b$：$\\Delta p=\\dfrac{8\\sigma\\cdot2b}{b^2+4b^2}=\\dfrac{16\\sigma}{5b}$．等しい（$h_{\\text A}h_{\\text B}=b^2$ の関係にある）．\n\n体積の変化に対する圧力差の変化の割合は，$\\dfrac{dV}{dh}=\\dfrac{\\pi(b^2+h^2)}{2}$ を用いて\n\\[ \\frac{d(\\Delta p)}{dV}=\\frac{d(\\Delta p)/dh}{dV/dh}=\\frac{16\\sigma(b^2-h^2)}{\\pi(b^2+h^2)^3} \\]\nA（$h=\\frac b2$）では $\\dfrac{16\\sigma\\cdot\\frac34b^2}{\\pi\\left(\\frac54b^2\\right)^3}=\\dfrac{768\\sigma}{125\\pi b^4}\\fallingdotseq\\dfrac{6.14\\,\\sigma}{\\pi b^4}$，B（$h=2b$）では $\\dfrac{16\\sigma(-3b^2)}{\\pi(5b^2)^3}=-\\dfrac{48\\sigma}{125\\pi b^4}\\fallingdotseq-\\dfrac{0.384\\,\\sigma}{\\pi b^4}$．A から B へ $\\delta V$ 移ると，A の体積は $-\\delta V$，B の体積は $+\\delta V$ 変わるので\n\\[ \\delta(\\Delta p_{\\text A})=\\boldsymbol{-\\frac{768\\sigma}{125\\pi b^4}\\delta V},\\qquad\\delta(\\Delta p_{\\text B})=\\boldsymbol{-\\frac{48\\sigma}{125\\pi b^4}\\delta V} \\]\nどちらも下がるが A の方が大きく下がるので，B の圧力が A より高くなり，空気は B から A へ押し戻される．逆向きにずれても同様に戻る．すなわち，一般に「2つの膜の $\\dfrac{d(\\Delta p)}{dV}$ の和が正」なら安定で，半球より深い膜 B が（単独なら不安定でも）浅い膜 A と組み合わさると安定になりうる．\n\n\\textbf{(4) 異なる圧力から始めた場合}　はじめ A：$\\dfrac{8\\cdot\\frac12}{\\frac54}\\dfrac{\\sigma}{b}=3.2\\dfrac{\\sigma}{b}$，B：$\\dfrac{8\\cdot\\frac32}{\\frac{13}{4}}\\dfrac{\\sigma}{b}\\fallingdotseq3.69\\dfrac{\\sigma}{b}$ で B の方が高いので，空気は \\textbf{B から A へ}流れる．A はふくらんで（半球に近づき）圧力差が増し，B はしぼんで（半球に近づき）圧力差がやはり増す．\n\n終状態では圧力差が等しい．異なる $h$ で $\\dfrac{8\\sigma h_{\\text A}}{b^2+h_{\\text A}^2}=\\dfrac{8\\sigma h_{\\text B}}{b^2+h_{\\text B}^2}$ を整理すると $(b^2-h_{\\text A}h_{\\text B})(h_{\\text A}-h_{\\text B})=0$ なので $h_{\\text A}h_{\\text B}=b^2$．体積の和は一定で，$\\dfrac{6}{\\pi b^3}\\times$（体積の和）は\n\\[ \\frac12\\left(3+\\frac14\\right)+\\frac32\\left(3+\\frac94\\right)=\\frac{13}{8}+\\frac{63}{8}=9.5 \\]\n$h_{\\text A}=xb$，$h_{\\text B}=\\dfrac bx$ とおくと\n\\[ x(3+x^2)+\\frac{3x^2+1}{x^3}=9.5 \\]\n左辺は $0<x<1$ で単調に減少し，$x=0.70$ で $9.64$，$x=0.71$ で $9.51$，$x=0.72$ で $9.38$ なので $x\\fallingdotseq0.711$．よって\n\\[ h_{\\text A}\\fallingdotseq\\boldsymbol{0.71b},\\qquad h_{\\text B}=\\frac{b}{x}\\fallingdotseq\\boldsymbol{1.4b},\\qquad\\Delta p=\\frac{8x}{1+x^2}\\cdot\\frac{\\sigma}{b}\\fallingdotseq\\boldsymbol{3.8\\frac{\\sigma}{b}} \\]\n（A は半球より浅く，B は半球より深いまま．(3) と同様に $\\dfrac{d(\\Delta p)}{dV}$ の和は正で，この状態は安定．）圧力差ははじめのどちらの値（3.2，3.69）よりも大きくなっている．\n\nなお，体積を等分した対称な状態（各膜の体積 $\\dfrac{19}{24}\\pi b^3$）は半球の体積 $\\dfrac23\\pi b^3$ より大きく，両方とも半球より深いので $\\dfrac{d(\\Delta p)}{dV}$ の和が負となり不安定で，実現しない（解答図）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "管の口の石けん膜は，ふくらむにつれ曲率半径が半球で最小になるので，圧力差が体積の関数として極大をもつ．同じ圧力差を与える浅い膜と深い膜（$h_{\\text A}h_{\\text B}=b^2$）を連結したつり合いの安定性は，体積を移したときの圧力差の変化率の和の符号で決まり，単独では不安定な深い膜も浅い膜と組めば安定になる．終状態は「圧力差が等しい」と「体積の和が一定」の連立で決まり，対称な状態は実現しない．"
+ },
+ "concepts": [
+  "equilibrium",
+  "work-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "表面張力",
+  "圧力差",
+  "安定性",
+  "仮想仕事",
+  "石けん膜"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

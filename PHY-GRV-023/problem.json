@@ -1,0 +1,135 @@
+{
+ "id": "PHY-GRV-023",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "正三角形配置で剛体的に回転する3天体と，1天体が消えた後の2天体の楕円運動",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "質量 $M$ の天体1と，質量がともに $m$ の天体2，天体3が，互いの万有引力だけを受けて運動している．図のように，3つの天体は1辺の長さ $L$ の正三角形の頂点にあり，この形を保ったまま，3天体の重心 C のまわりに一定の角速度 $\\omega$ で同一平面内を回転している．万有引力定数を $G$ とし，他の天体の影響は考えない．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "各天体が受ける万有引力の合力は，その天体から重心 C へ向かう向きであることを示せ．また，$\\omega$ を $G,\\ M,\\ m,\\ L$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "天体1，天体2の重心 C からの距離 $\\rho_1,\\ \\rho_2$ と，天体2の速さ $v_2$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ある瞬間，天体3が瞬時に消滅した（天体3は爆発して遠方へ飛び去り，その瞬間の天体1，2の位置と速度は変わらないものとする）．この直後の，天体1に対する天体2の相対速度の大きさと，その向きが線分（天体1）–（天体2）となす角を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "その後の天体1と天体2の距離の最大値 $L_{\\max}$ と，天体3の消滅から初めて距離が最大になるまでの時間 $t_1$ を求めよ．必要なら，質量 $m_1,\\ m_2$ の2天体の相対運動は，質量 $m_1+m_2$ の天体を固定したときのケプラー運動と同じ式（エネルギー保存則・面積速度一定・ケプラーの第3法則で $m_1+m_2$ を中心の質量とみなしたもの）に従うことを用いてよい．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：正三角形配置で剛体的に回転する3天体と，1天体が消えた後の2天体の楕円運動",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：正三角形配置で剛体的に回転する3天体と，1天体が消えた後の2天体の楕円運動",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\omega=\\sqrt{\\dfrac{G(M+2m)}{L^3}}$（合力が C へ向かうことは解説参照）"
+   },
+   {
+    "id": "2",
+    "tex": "$\\rho_1=\\dfrac{\\sqrt3\\,mL}{M+2m}$，$\\rho_2=\\dfrac{\\sqrt{M^2+Mm+m^2}}{M+2m}L$，$v_2=\\sqrt{\\dfrac{G(M^2+Mm+m^2)}{(M+2m)L}}$"
+   },
+   {
+    "id": "3",
+    "tex": "大きさ $\\sqrt{\\dfrac{G(M+2m)}{L}}$，向きは線分に垂直（$90^\\circ$）"
+   },
+   {
+    "id": "4",
+    "tex": "$L_{\\max}=\\dfrac{M+2m}{M}L$，$t_1=\\dfrac{\\pi(M+m)}{M}\\sqrt{\\dfrac{L^3}{GM}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 合力が重心へ向かうこと}\n\n天体 $i$ の位置ベクトルを $\\vec r_i$ とする．天体2が受ける力は，天体1，3までの距離がともに $L$ なので\n\\[ \\vec F_2=\\frac{GmM}{L^3}(\\vec r_1-\\vec r_2)+\\frac{Gm\\cdot m}{L^3}(\\vec r_3-\\vec r_2). \\]\nここに $\\dfrac{Gm\\cdot m}{L^3}(\\vec r_2-\\vec r_2)=\\vec 0$ を加えても変わらないので\n\\[ \\vec F_2=\\frac{Gm}{L^3}\\bigl(M\\vec r_1+m\\vec r_2+m\\vec r_3-(M+2m)\\vec r_2\\bigr)=\\frac{Gm(M+2m)}{L^3}(\\vec r_{\\rm C}-\\vec r_2). \\]\nただし $\\vec r_{\\rm C}=\\dfrac{M\\vec r_1+m\\vec r_2+m\\vec r_3}{M+2m}$ は重心である．天体1，3についても全く同様に $\\vec F_i=\\dfrac{Gm_i(M+2m)}{L^3}(\\vec r_{\\rm C}-\\vec r_i)$ となる．\\textbf{3辺が等しいから}「各天体までの距離の3乗」が共通因子としてくくり出せ，合力は重心からの変位に比例して重心を向く．すなわち各天体は重心に質量 $M+2m$ があるかのように，距離に比例する力（比例定数はすべての天体で同じ）を受ける．\n\n重心 C は外力がないので静止しているとしてよく，半径 $\\rho_i$ の等速円運動の運動方程式 $m_i\\omega^2\\rho_i=\\dfrac{Gm_i(M+2m)}{L^3}\\rho_i$ から\n\\[ \\boldsymbol{\\omega=\\sqrt{\\frac{G(M+2m)}{L^3}}} \\]\nとなり，天体によらない．したがって正三角形の形を保ったまま一定の角速度で回転できる．\n\n\\textbf{(2) 重心からの距離}\n\n天体2，3を結ぶ辺の中点を原点，天体1を $(0,\\ \\tfrac{\\sqrt3}{2}L)$ とすると，重心は $y_{\\rm C}=\\dfrac{\\sqrt3ML}{2(M+2m)}$ にある．よって\n\\[ \\rho_1=\\frac{\\sqrt3}{2}L-y_{\\rm C}=\\boldsymbol{\\frac{\\sqrt3\\,mL}{M+2m}},\\qquad \\rho_2=\\sqrt{\\frac{L^2}{4}+y_{\\rm C}^2}=\\boldsymbol{\\frac{\\sqrt{M^2+Mm+m^2}}{M+2m}L}. \\]\n\\[ v_2=\\rho_2\\omega=\\boldsymbol{\\sqrt{\\frac{G(M^2+Mm+m^2)}{(M+2m)L}}}. \\]\n（確認：天体1の合力は $2\\cdot\\dfrac{GMm}{L^2}\\cos30^\\circ=\\dfrac{\\sqrt3GMm}{L^2}$ で，$M\\omega^2\\rho_1$ と一致する．）\n\n\\textbf{(3) 消滅直後の相対速度}\n\n消滅の直前まで3天体は剛体のように回転していたので，各天体の速度は $\\vec v_i=\\vec\\omega\\times(\\vec r_i-\\vec r_{\\rm C})$ である．差をとると重心が消え\n\\[ \\vec v_2-\\vec v_1=\\vec\\omega\\times(\\vec r_2-\\vec r_1). \\]\nよって相対速度の大きさは $\\boldsymbol{\\omega L=\\sqrt{\\dfrac{G(M+2m)}{L}}}$，向きは線分（天体1）–（天体2）に\\textbf{垂直}である．天体3が消えても位置と速度は連続なので，これが2体運動の初期条件になる．\n\n\\textbf{(4) 距離の最大値と時刻}\n\n消滅後は天体1，2だけの2体問題で，相対運動は中心に質量 $M+m$ を固定したケプラー運動と同じである（天体3が消えたので，回転の中心だった C はもはや意味をもたない）．初めの相対速度が距離に垂直なので，消滅の瞬間が楕円軌道の\\textbf{近点または遠点}になる．距離 $L$ での円運動の速さの2乗 $\\dfrac{G(M+m)}{L}$ と比べると $v^2=\\dfrac{G(M+2m)}{L}$ の方が大きいので，ここは\\textbf{近点}で，以後距離は増える．また $v^2<\\dfrac{2G(M+m)}{L}$（$\\Leftrightarrow M>0$）なので束縛された楕円軌道である．\n\n遠点の距離を $r$，速さを $u$ とすると，面積速度一定 $Lv=ru$ と力学的エネルギー保存則\n\\[ \\frac12v^2-\\frac{G(M+m)}{L}=\\frac12u^2-\\frac{G(M+m)}{r} \\]\nから $u$ を消去して整理すると $(r-L)\\bigl[(2G(M+m)-Lv^2)r-L^2v^2\\bigr]=0$．$r\\neq L$ の解は\n\\[ r=\\frac{L^2v^2}{2G(M+m)-Lv^2}=\\frac{(M+2m)L}{2(M+m)-(M+2m)}=\\boldsymbol{\\frac{M+2m}{M}L}. \\]\n\n楕円の長半径は $a=\\dfrac12\\Bigl(L+\\dfrac{M+2m}{M}L\\Bigr)=\\dfrac{M+m}{M}L$．ケプラーの第3法則 $T^2=\\dfrac{4\\pi^2a^3}{G(M+m)}$ より，近点から遠点までの時間は半周期で\n\\[ t_1=\\frac T2=\\pi\\sqrt{\\frac{a^3}{G(M+m)}}=\\boldsymbol{\\frac{\\pi(M+m)}{M}\\sqrt{\\frac{L^3}{GM}}}. \\]\n$m\\to0$ では $L_{\\max}\\to L$（円軌道のまま），$t_1\\to\\pi\\sqrt{L^3/(GM)}$ となり，もとの円運動の半周期に一致する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "3辺が等しい配置では各天体への万有引力の和が「全質量 $M_{\\rm tot}$ を重心に置いた，距離に比例する力」$Gm_iM_{\\rm tot}(\\vec r_{\\rm C}-\\vec r_i)/L^3$ になり，全天体が共通の $\\omega^2=GM_{\\rm tot}/L^3$ で回れる．1天体が突然消えると，剛体回転の性質から残る2天体の相対速度は両者を結ぶ線に垂直で円運動の速さより大きく，その瞬間が新しい楕円軌道の近点になる．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "kinematics-components",
+  "circular-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ラグランジュ解",
+  "三体問題",
+  "重心",
+  "ケプラー運動",
+  "近点と遠点"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

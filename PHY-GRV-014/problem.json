@@ -1,0 +1,122 @@
+{
+ "id": "PHY-GRV-014",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "楕円軌道の近地点と遠地点での噴射による脱出（速いときに加速するほど得をする理由とロケット・噴射ガスのエネルギー収支）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球の半径を $R$，地表での重力加速度の大きさを $g$ とする．宇宙船が，地球の中心からの距離が近地点Pで $2R$，遠地点Aで $6R$ の楕円軌道を回っている．宇宙船のエンジンは短時間だけ噴射して，進行方向に速さを $\\Delta v$ だけ増やすことができる．地球の自転・大気・他の天体の影響は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P，Aでの宇宙船の速さ $v_{\\rm P}$，$v_{\\rm A}$ を $g$，$R$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "1回の噴射で地球の重力圏から脱出するために必要な $\\Delta v$ の最小値を，Pで噴射する場合とAで噴射する場合のそれぞれについて求めよ．$g=9.8\\ \\mathrm{m/s^2}$，$R=6.4\\times10^6\\ \\mathrm{m}$ として，有効数字3桁の数値（$\\mathrm{km/s}$）でも答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ小さな $\\Delta v$ をPで与える場合とAで与える場合で，宇宙船の単位質量あたりの力学的エネルギーの増加をそれぞれ求めよ．$\\Delta v$ が十分小さいとき，その比はいくらか．"
+     },
+     {
+      "id": "4",
+      "tex": "(3)で，同じ量の燃料を燃やしたのに得られる力学的エネルギーが異なるのはなぜか．次のモデルで考えよ：速さ $v$ で進む質量 $M$ の宇宙船（燃料を含む）が，質量 $\\delta m$ のガスを，噴射後の宇宙船に対して速さ $w$ で後ろ向きに一瞬で放出する．宇宙船の速さの増加 $\\Delta v$，宇宙船とガスの運動エネルギーの和の増加，および残った宇宙船の運動エネルギーの増加（$\\delta m$ について1次まで）を求め，その結果から説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：楕円軌道の近地点と遠地点での噴射による脱出（速いときに加速するほど得をする理由とロケット・噴射ガスのエネルギー収支）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_{\\rm P}=\\dfrac{\\sqrt3}{2}\\sqrt{gR}$，$v_{\\rm A}=\\dfrac{\\sqrt3}{6}\\sqrt{gR}$"
+   },
+   {
+    "id": "2",
+    "tex": "P：$\\left(1-\\dfrac{\\sqrt3}{2}\\right)\\sqrt{gR}=1.06\\ \\mathrm{km/s}$，A：$\\dfrac{\\sqrt3}{6}\\sqrt{gR}=2.29\\ \\mathrm{km/s}$"
+   },
+   {
+    "id": "3",
+    "tex": "P：$v_{\\rm P}\\Delta v+\\dfrac12\\Delta v^2$，A：$v_{\\rm A}\\Delta v+\\dfrac12\\Delta v^2$，比は $3$（P がA の3倍）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\Delta v=\\dfrac{\\delta m\\,w}{M}$；和の増加 $\\dfrac{\\delta m\\,w^2(M-\\delta m)}{2M}$（$v$ によらない）；宇宙船の増加 $\\fallingdotseq\\delta m\\,vw$．燃料の化学エネルギーは $v$ によらず一定で，速く動いているときほど後ろへ出したガスの運動エネルギーが大きく減り（$\\fallingdotseq-\\delta m\\,vw$），その分が宇宙船に渡るから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "万有引力定数を $G$，地球の質量を $M_{\\rm E}$ とすると $GM_{\\rm E}=gR^2$．\n\n\\textbf{(1) 近地点・遠地点の速さ}\n\nP，Aでは速度が動径に垂直なので，面積速度一定より $2Rv_{\\rm P}=6Rv_{\\rm A}$，すなわち $v_{\\rm A}=\\dfrac{v_{\\rm P}}{3}$．力学的エネルギー保存より\n\\[ \\frac12v_{\\rm P}^2-\\frac{gR^2}{2R}=\\frac12\\cdot\\frac{v_{\\rm P}^2}{9}-\\frac{gR^2}{6R}\\quad\\Longrightarrow\\quad \\frac49v_{\\rm P}^2=\\frac{gR}{3} \\]\n\\[ \\boldsymbol{v_{\\rm P}=\\frac{\\sqrt3}{2}\\sqrt{gR}},\\qquad \\boldsymbol{v_{\\rm A}=\\frac{\\sqrt3}{6}\\sqrt{gR}} \\]\n\n\\textbf{(2) 脱出に必要な速さの変化}\n\n距離 $r$ での脱出速度は $\\sqrt{\\dfrac{2gR^2}{r}}$．Pでは $\\sqrt{gR}$，Aでは $\\sqrt{\\dfrac{gR}{3}}=\\dfrac{2\\sqrt3}{6}\\sqrt{gR}$ なので\n\\[ \\Delta v_{\\rm P}=\\boldsymbol{\\left(1-\\frac{\\sqrt3}{2}\\right)\\sqrt{gR}},\\qquad \\Delta v_{\\rm A}=\\left(\\frac{2\\sqrt3}{6}-\\frac{\\sqrt3}{6}\\right)\\sqrt{gR}=\\boldsymbol{\\frac{\\sqrt3}{6}\\sqrt{gR}} \\]\n$\\sqrt{gR}=\\sqrt{9.8\\times6.4\\times10^6}=7.92\\times10^3\\ \\mathrm{m/s}$ より $\\Delta v_{\\rm P}=\\boldsymbol{1.06\\ \\mathrm{km/s}}$，$\\Delta v_{\\rm A}=\\boldsymbol{2.29\\ \\mathrm{km/s}}$．脱出に必要な「エネルギーの不足分」はどこで噴射しても同じなのに，Pで噴射する方が必要な速さの変化は半分以下ですむ．\n\n\\textbf{(3) 同じ $\\Delta v$ によるエネルギーの増加}\n\n噴射の瞬間には位置が変わらないので，力学的エネルギーの増加は運動エネルギーの増加に等しい：\n\\[ \\frac12(v+\\Delta v)^2-\\frac12v^2=\\boldsymbol{v\\Delta v+\\frac12\\Delta v^2} \\]\nPでは $v=v_{\\rm P}$，Aでは $v=v_{\\rm A}$ とおけばよい．$\\Delta v$ が小さいとき比は $\\dfrac{v_{\\rm P}}{v_{\\rm A}}=\\boldsymbol3$ で，速く動いている近地点で噴射するほど多くのエネルギーが得られる．\n\n\\textbf{(4) 宇宙船とガスのエネルギー収支}\n\n運動量保存（噴射後の宇宙船の速さ $v+\\Delta v$，ガスの速さ $v+\\Delta v-w$）：\n\\[ Mv=(M-\\delta m)(v+\\Delta v)+\\delta m(v+\\Delta v-w)\\quad\\Longrightarrow\\quad \\boldsymbol{\\Delta v=\\frac{\\delta m\\,w}{M}} \\]\n運動エネルギーの和の増加は\n\\[ \\frac12(M-\\delta m)(v+\\Delta v)^2+\\frac12\\delta m(v+\\Delta v-w)^2-\\frac12Mv^2=\\boldsymbol{\\frac{\\delta m\\,w^2(M-\\delta m)}{2M}} \\]\nとなり $v$ によらない（燃料の化学エネルギーから供給される量は，どの速さで噴射しても同じ）．一方，残った宇宙船の運動エネルギーの増加は\n\\[ \\frac12(M-\\delta m)\\{(v+\\Delta v)^2-v^2\\}\\fallingdotseq M v\\Delta v=\\boldsymbol{\\delta m\\,vw} \\]\nで $v$ に比例する．差を埋めているのはガスで，ガスの運動エネルギーの変化は $\\frac12\\delta m\\{(v-w)^2-v^2\\}\\fallingdotseq-\\delta m\\,vw+\\frac12\\delta m\\,w^2$ と，$v$ が大きいほど大きく減る．速く動いているときに噴射すると，燃料がもともと持っていた大きな運動エネルギーを後ろに捨てる（ガスをほぼ止める）ことになり，その分が宇宙船に移る．これが近地点で噴射するほど得をする理由である．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "速さを $\\Delta v$ 変えたときの運動エネルギーの増加 $v\\Delta v+\\frac12\\Delta v^2$ は元の速さ $v$ に比例するので，同じ噴射でも速い近地点で行う方が力学的エネルギーを多く得られ，脱出に必要な速さの変化が小さい．燃料の化学エネルギーは速さによらないが，速いときほど噴射ガスの運動エネルギーが大きく奪われ，その分が宇宙船に渡る．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "momentum-conservation",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "面積速度一定",
+  "脱出速度",
+  "運動量保存",
+  "運動エネルギー",
+  "オーベルト効果"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

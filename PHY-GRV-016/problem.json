@@ -1,0 +1,122 @@
+{
+ "id": "PHY-GRV-016",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "正三角形・正方形の頂点の物体の重力による崩壊と回転（有効質量とケプラー運動）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "宇宙空間で，質量 $m$ の3つの小さな物体 P$_1$，P$_2$，P$_3$ を，点 O を中心とし O からの距離が $R$ の正三角形の頂点に置く．物体の間には万有引力だけがはたらき，ほかの天体の影響はない．万有引力定数を $G$ とする．必要なら，質量 $M$ の天体のまわりを長半径 $a$ の楕円軌道で回る物体の周期が $2\\pi\\sqrt{\\dfrac{a^3}{GM}}$ であること（ケプラーの第3法則）を用いよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "3つの物体が O からの距離 $r$ の正三角形の頂点にあるとき，各物体が受ける万有引力の合力は O の向きで，その大きさは「O に置いた質量 $M^*$ の天体から受ける万有引力」$\\dfrac{GmM^*}{r^2}$ に等しいことを示し，$M^*$ を $m$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "3つの物体を同時に静かに放す．3つの物体が O で衝突するまでの時間 $t_3$ を求めよ．ただし，直線上を中心に落ちる運動は，離心率が $1$ に近い細長い楕円軌道の極限とみなしてよい．"
+     },
+     {
+      "id": "3",
+      "tex": "正三角形の代わりに，O を中心とする正方形の4つの頂点（O からの距離 $R$）に質量 $m$ の物体を置いて静かに放す．衝突までの時間 $t_4$ を求め，$\\dfrac{t_4}{t_3}$ を有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "再び (1) の3物体の場合に戻る．放す瞬間に，各物体に O のまわりを同じ向きに回るように，O と物体を結ぶ線に垂直に同じ速さ $v_0$ を与える．\n（a）3物体が正三角形の形を保ったまま，一定の速さで回り続けるための $v_0$ の値 $v_{\\rm c}$ を求めよ． \\\\\n  （b）$v_0=\\dfrac{v_{\\rm c}}{\\sqrt2}$ のとき，正三角形の1辺の長さの最小値と，放してからはじめてその最小値になるまでの時間を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：正三角形・正方形の頂点の物体の重力による崩壊と回転（有効質量とケプラー運動）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$M^*=\\dfrac{m}{\\sqrt3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$t_3=\\pi\\sqrt{\\dfrac{R^3}{8GM^*}}=\\pi\\sqrt{\\dfrac{\\sqrt3R^3}{8Gm}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$t_4=\\pi\\sqrt{\\dfrac{R^3}{2(1+2\\sqrt2)Gm}}$，$\\dfrac{t_4}{t_3}\\fallingdotseq0.78$"
+   },
+   {
+    "id": "4",
+    "tex": "(a) $v_{\\rm c}=\\sqrt{\\dfrac{Gm}{\\sqrt3R}}$　(b) 1辺の最小値 $\\dfrac{R}{\\sqrt3}$，時間 $\\pi\\sqrt{\\dfrac{8\\sqrt3R^3}{27Gm}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 有効質量} \\\\\n1辺の長さは $\\sqrt3r$ で，ある物体が他の1つから受ける力の大きさは $\\dfrac{Gm^2}{3r^2}$．この2つの力は O の向きとそれぞれ $30^\\circ$ をなすので，合力は O の向きで\n\\[ 2\\cdot\\frac{Gm^2}{3r^2}\\cos30^\\circ=\\frac{Gm^2}{\\sqrt3\\,r^2}=\\frac{Gm}{r^2}\\cdot\\frac{m}{\\sqrt3} \\]\nよって $\\boldsymbol{M^*=\\dfrac{m}{\\sqrt3}}$．形が正三角形である限り $M^*$ は $r$ によらない．\\hfill$\\square$\n\n\\textbf{(2) 衝突までの時間} \\\\\n3物体は対称性から常に O を中心とする正三角形の頂点にあり，(1) より各物体は「O に固定した質量 $M^*$ の天体」の万有引力だけを受けるのと同じ運動をする．静かに放すと O に向かって直線上を落ちる．これは O を焦点とし，遠い方の端（O から $R$）から始まる，長半径 $a=\\dfrac R2$ の極めて細長い楕円の半周に当たるので\n\\[ t_3=\\frac12\\cdot2\\pi\\sqrt{\\frac{(R/2)^3}{GM^*}}=\\boldsymbol{\\pi\\sqrt{\\frac{R^3}{8GM^*}}=\\pi\\sqrt{\\frac{\\sqrt3R^3}{8Gm}}} \\]\n\\hfill$\\square$\n\n\\textbf{(3) 正方形の場合} \\\\\n隣の2つ（距離 $\\sqrt2r$）からの力は O の向きと $45^\\circ$ をなし，対角の1つ（距離 $2r$）からの力は O の向き．合力は\n\\[ 2\\cdot\\frac{Gm^2}{2r^2}\\cos45^\\circ+\\frac{Gm^2}{4r^2}=\\frac{Gm}{r^2}\\cdot\\frac{(1+2\\sqrt2)m}{4} \\]\nで $M_4^*=\\dfrac{(1+2\\sqrt2)m}{4}$．(2) と同様に\n\\[ t_4=\\pi\\sqrt{\\frac{R^3}{8GM_4^*}}=\\boldsymbol{\\pi\\sqrt{\\frac{R^3}{2(1+2\\sqrt2)Gm}}},\\qquad \\frac{t_4}{t_3}=\\sqrt{\\frac{M^*}{M_4^*}}=\\sqrt{\\frac{4}{\\sqrt3(1+2\\sqrt2)}}\\fallingdotseq\\boldsymbol{0.78} \\]\n物体が増えると中心へ引く力が強まり，早く衝突する．\\hfill$\\square$\n\n\\textbf{(4)(a) 回転する正三角形} \\\\\nO のまわりに同じ速さで回れば，対称性から形は正三角形のまま回転と拡大・縮小をするだけなので，(1) が成り立ち，各物体は質量 $M^*$ の天体のまわりのケプラー運動をする．円運動の条件 $\\dfrac{mv_{\\rm c}^2}{R}=\\dfrac{GmM^*}{R^2}$ より\n\\[ \\boldsymbol{v_{\\rm c}=\\sqrt{\\frac{GM^*}{R}}=\\sqrt{\\frac{Gm}{\\sqrt3R}}} \\]\n\\hfill$\\square$\n\n\\textbf{(4)(b) 最も縮んだとき} \\\\\n各物体は O を焦点とする楕円軌道を描き，放した点は速度が O を結ぶ線に垂直なので軌道の端点（遠点）である．もう一方の端点（近点）の距離を $r_1$，速さを $v_1$ とすると，面積速度一定と力学的エネルギー保存より\n\\[ Rv_0=r_1v_1,\\qquad \\frac12v_0^2-\\frac{GM^*}{R}=\\frac12v_1^2-\\frac{GM^*}{r_1} \\]\n$x=\\dfrac{R}{r_1}$ とおいて $v_1=xv_0$ を代入すると $\\dfrac12v_0^2(x^2-1)=\\dfrac{GM^*}{R}(x-1)$，$x\\ne1$ より $x+1=\\dfrac{2GM^*}{Rv_0^2}=4$（$v_0^2=\\dfrac{GM^*}{2R}$）．よって $x=3$，$r_1=\\dfrac R3$．1辺の長さの最小値は\n\\[ \\sqrt3\\cdot\\frac R3=\\boldsymbol{\\frac{R}{\\sqrt3}} \\]\n楕円の長半径は $a=\\dfrac{R+R/3}{2}=\\dfrac{2R}{3}$ で，遠点から近点までは半周期なので\n\\[ \\pi\\sqrt{\\frac{a^3}{GM^*}}=\\pi\\sqrt{\\frac{8R^3}{27}\\cdot\\frac{\\sqrt3}{Gm}}=\\boldsymbol{\\pi\\sqrt{\\frac{8\\sqrt3R^3}{27Gm}}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "正多角形の頂点の等しい質量は，対称性から形を保ったまま縮み（回転し），各物体が受ける合力は中心に置いた有効質量 $M^*$ の万有引力と同じ $1/r^2$ 型になる．そのため多体問題が1体のケプラー問題に帰着し，衝突時間は細長い楕円の半周期として，回転を与えた場合の最小の大きさは面積速度とエネルギーから求まる．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "restitution",
+  "torque"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "万有引力",
+  "ケプラーの法則",
+  "対称性",
+  "面積速度",
+  "多体問題"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

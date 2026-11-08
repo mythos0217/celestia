@@ -1,0 +1,134 @@
+{
+ "id": "PHY-GRV-017",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "核とマントルの二層構造の惑星内部の重力加速度（掘り下げたときの増減と密度比による場合分け）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "万有引力定数を $G$ とし，惑星の自転は無視する．球対称な質量分布がつくる重力は，考える点を通る同心球面の内側の質量がすべて中心に集まったときの重力に等しく，外側の球殻からの重力は $0$ であることを用いてよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "半径 $R$，平均密度 $\\bar\\rho$ の球対称な惑星がある．地表付近の薄い層の密度は一様で $\\rho_{\\rm s}$ である．地表から鉛直に少し掘り下がると重力加速度の大きさが大きくなるための，$\\bar\\rho$ と $\\rho_{\\rm s}$ の条件を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "以下では，図のように，半径 $R$ の惑星が，中心 O から半径 $a=\\dfrac R2$ までの密度 $\\rho_1$ の一様な核と，その外側の密度 $\\rho_2$ の一様なマントルからなるとする．$\\rho_1=k\\rho_2$（$k>1$）とし，中心からの距離 $r$ の点での重力加速度の大きさを $g(r)$ と書く．マントル内（$a\\leqq r\\leqq R$）での $g(r)$ を，$G$，$\\rho_2$，$k$，$R$，$r$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "地表から核の表面まで鉛直に掘り下がるとき，$g$ の変わり方は $k$ の値によって次の4通りに分かれる．それぞれになる $k$ の範囲を求めよ．\n(ア) 単調に増加する．　(イ) いったん減少したのち増加し，核の表面では地表より大きくなる．　(ウ) いったん減少したのち増加するが，核の表面でも地表の値を超えない．　(エ) 単調に減少する．"
+     },
+     {
+      "id": "4",
+      "tex": "$k=3$ のとき，$g$ が最小になる地表からの深さと，その最小値 $g_{\\min}$ の地表の値 $g(R)$ に対する比を求めよ．また，核の表面での比 $g(a)/g(R)$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：核とマントルの二層構造の惑星内部の重力加速度（掘り下げたときの増減と密度比による場合分け）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：核とマントルの二層構造の惑星内部の重力加速度（掘り下げたときの増減と密度比による場合分け）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\rho_{\\rm s}<\\dfrac23\\bar\\rho$"
+   },
+   {
+    "id": "2",
+    "tex": "$g(r)=\\dfrac{4\\pi G\\rho_2}{3}\\left\\{r+\\dfrac{(k-1)R^3}{8r^2}\\right\\}$"
+   },
+   {
+    "id": "3",
+    "tex": "(ア) $k\\geqq5$　(イ) $\\dfrac73<k<5$　(ウ) $\\dfrac32<k\\leqq\\dfrac73$　(エ) $1<k\\leqq\\dfrac32$"
+   },
+   {
+    "id": "4",
+    "tex": "深さ $\\left(1-\\dfrac{\\sqrt[3]4}{2}\\right)R\\approx0.21R$，$\\dfrac{g_{\\min}}{g(R)}=\\dfrac{3\\sqrt[3]4}{5}\\approx0.95$，$\\dfrac{g(a)}{g(R)}=\\dfrac65$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 地表付近の掘り下げ}\n\n惑星の質量は $M=\\dfrac43\\pi R^3\\bar\\rho$．深さ $d$（$d\\ll R$）の点では，厚さ $d$ の外側の層（質量 $\\approx4\\pi R^2d\\,\\rho_{\\rm s}$）は重力に寄与しないので\n\\[ g(d)=\\frac{G\\left(M-4\\pi R^2d\\,\\rho_{\\rm s}\\right)}{(R-d)^2}\\approx\\frac{GM}{R^2}\\left(1-\\frac{3\\rho_{\\rm s}}{\\bar\\rho}\\frac dR\\right)\\left(1+\\frac{2d}{R}\\right)\\approx g(0)\\left\\{1+\\left(2-\\frac{3\\rho_{\\rm s}}{\\bar\\rho}\\right)\\frac dR\\right\\} \\]\n中心に近づく効果（$+2d/R$）が外側の層を失う効果（$-3\\rho_{\\rm s}d/(\\bar\\rho R)$）にまさればよいので\n\\[ \\boldsymbol{\\rho_{\\rm s}<\\frac23\\bar\\rho} \\]\n\n\\textbf{(2) マントル内の重力}\n\n半径 $r$ の球の内側の質量は，核 $\\dfrac43\\pi a^3k\\rho_2$ とマントルの部分 $\\dfrac43\\pi(r^3-a^3)\\rho_2$ の和である．$a^3=\\dfrac{R^3}{8}$ を用いて\n\\[ g(r)=\\frac{G}{r^2}\\cdot\\frac43\\pi\\rho_2\\left\\{r^3+(k-1)a^3\\right\\}=\\boldsymbol{\\frac{4\\pi G\\rho_2}{3}\\left\\{r+\\frac{(k-1)R^3}{8r^2}\\right\\}} \\]\n\n\\textbf{(3) $k$ による分類}\n\n$B=\\dfrac{(k-1)R^3}{8}>0$ とおくと $g\\propto f(r)=r+\\dfrac{B}{r^2}$，$f'(r)=1-\\dfrac{2B}{r^3}$ で，$f$ は $r_*=(2B)^{1/3}=R\\sqrt[3]{\\dfrac{k-1}{4}}$ で最小になる（$r<r_*$ で減少，$r>r_*$ で増加）．掘り下がる（$r$ が $R$ から $a$ へ減る）向きに見ると，$r>r_*$ の範囲では $g$ は減り，$r<r_*$ の範囲では $g$ は増える．\n\n・$r_*\\geqq R$，すなわち $\\dfrac{k-1}{4}\\geqq1$ の $k\\geqq5$ では，マントル全体で $r\\leqq r_*$ となり，$g$ は単調に増加する（(ア)）．これは (1) の条件と一致する：平均密度は $\\bar\\rho=\\rho_2\\cdot\\dfrac{k+7}{8}$ だから，$\\rho_2<\\dfrac23\\bar\\rho\\iff k>5$．\n\n・$r_*\\leqq a$，すなわち $\\dfrac{k-1}{4}\\leqq\\dfrac18$ の $k\\leqq\\dfrac32$ では，$g$ は単調に減少する（(エ)）．\n\n・$\\dfrac32<k<5$ では $a<r_*<R$ で，$g$ はいったん減少してから増加する．核の表面と地表の比は\n\\[ \\frac{g(a)}{g(R)}=\\frac{a+B/a^2}{R+B/R^2}=\\frac{\\frac R2+\\frac{(k-1)R}{2}}{R+\\frac{(k-1)R}{8}}=\\frac{4k}{k+7} \\]\nで，$g(a)>g(R)\\iff 4k>k+7\\iff k>\\dfrac73$．\n\n以上より（ア）$\\boldsymbol{k\\geqq5}$，（イ）$\\boldsymbol{\\dfrac73<k<5}$，（ウ）$\\boldsymbol{\\dfrac32<k\\leqq\\dfrac73}$，（エ）$\\boldsymbol{1<k\\leqq\\dfrac32}$．\n\n（(1) の判定は地表直下の様子しか教えない．$\\dfrac73<k<5$ では，地表直下では $g$ が減るのに，核の表面では地表より大きくなる．）\n\n\\textbf{(4) $k=3$ の場合}\n\n$r_*=R\\sqrt[3]{\\dfrac{2}{4}}=\\dfrac{\\sqrt[3]4}{2}R\\approx0.794R$ で，深さは\n\\[ \\boldsymbol{R-r_*=\\left(1-\\frac{\\sqrt[3]4}{2}\\right)R\\approx0.21R} \\]\n$B=\\dfrac{R^3}{4}$，$r_*^3=2B$ より $f(r_*)=r_*\\left(1+\\dfrac{B}{r_*^3}\\right)=\\dfrac32r_*$，$f(R)=\\dfrac54R$ だから\n\\[ \\boldsymbol{\\frac{g_{\\min}}{g(R)}=\\frac{\\frac32\\cdot\\frac{\\sqrt[3]4}{2}R}{\\frac54R}=\\frac{3\\sqrt[3]4}{5}\\approx0.95},\\qquad \\boldsymbol{\\frac{g(a)}{g(R)}=\\frac{4\\cdot3}{3+7}=\\frac65} \\]\n核の内部では $g\\propto r$ で減少するので，$g$ が最大になるのは核の表面である（解答図）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "掘り下がると中心に近づく効果（$1/r^2$ の増加）と外側の殻を失う効果が競合し，地表直下で $g$ が増えるのは表層の密度が平均密度の $\\frac23$ 未満のときである．二層構造では $g\\propto r+B/r^2$ が途中で最小をもつので，地表直下の判定と「核の表面が地表より強いか」は別の条件になり，密度比で4通りに場合分けされる．"
+ },
+ "concepts": [
+  "universal-gravitation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "万有引力",
+  "球殻定理",
+  "重力加速度",
+  "密度分布",
+  "最小値",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

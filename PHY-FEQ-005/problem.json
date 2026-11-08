@@ -1,0 +1,135 @@
+{
+ "id": "PHY-FEQ-005",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-02",
+ "topic": "角度 θ で交わる2枚の鉛直な壁の隅で体を支える条件（摩擦力の水平成分が必要になる）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "2枚の鉛直な平らな壁が，鉛直な交線Oで角度 $\\theta$（$0<\\theta<180^\\circ$）をなして交わっている（図は上から見た図）．質量 $m$ の人が，壁1と壁2をそれぞれ1点で押し，床に足をつけずに静止したい．人を1つの物体とみなし，回転のつり合いは考えなくてよい．人と壁の間の静止摩擦係数はどちらの壁でも $\\mu$，重力加速度の大きさを $g$ とする．壁1，壁2から受ける垂直抗力の大きさを $N_1$，$N_2$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "2つの垂直抗力の和は水平面内で0にならない．それにもかかわらず人が静止できるのは，摩擦力が鉛直成分のほかに水平成分ももつからである．摩擦力の水平成分は各壁に沿う向きにしかとれないことに注意して，$N_1=N_2=N$ のとき，壁1から受ける摩擦力の水平成分の大きさを $N$，$\\theta$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$N_1=N_2=N$ で，2つの壁からの摩擦力の鉛直成分が等しいとき，静止できるための $\\mu$ の条件を求め，そのときに必要な $N$ の最小値を $m$，$g$，$\\mu$，$\\theta$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$N_1\\neq N_2$ としても(2)の $\\mu$ の条件はゆるくならないことを示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\mu=0.80$ のとき，このような静止ができる $\\theta$ の範囲を求めよ．また，$\\theta=60^\\circ$，$m=60\\ \\mathrm{kg}$，$g=9.8\\ \\mathrm{m/s^2}$ のとき(2)の $N$ の最小値を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：角度 θ で交わる2枚の鉛直な壁の隅で体を支える条件（摩擦力の水平成分が必要になる）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：角度 θ で交わる2枚の鉛直な壁の隅で体を支える条件（摩擦力の水平成分が必要になる）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$N\\tan\\dfrac{\\theta}{2}$（交線Oへ向かう向き）"
+   },
+   {
+    "id": "2",
+    "tex": "$\\mu>\\tan\\dfrac\\theta2$，$N_{\\min}=\\dfrac{mg}{2\\sqrt{\\mu^2-\\tan^2\\dfrac\\theta2}}$"
+   },
+   {
+    "id": "3",
+    "tex": "解説参照（必要な条件は $\\max\\left(\\dfrac{|N_1\\cos\\theta-N_2|}{N_1\\sin\\theta},\\dfrac{|N_2\\cos\\theta-N_1|}{N_2\\sin\\theta}\\right)<\\mu$ で，左辺は $N_1=N_2$ のとき最小値 $\\tan\\frac\\theta2$ をとる）"
+   },
+   {
+    "id": "4",
+    "tex": "$0<\\theta<77^\\circ$（$\\theta<2\\tan^{-1}0.80$），$5.3\\times10^2\\ \\mathrm{N}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{水平面内のつり合い}\n\n壁1に沿う水平な単位ベクトルを $\\vec e_1$（Oから遠ざかる向き），壁2に沿うものを $\\vec e_2$ とし，壁1の内向きの法線を $\\vec n_1$，壁2の内向きの法線を $\\vec n_2$ とする．壁1の面内にある摩擦力の水平成分は $\\vec e_1$ 方向にしかとれない（壁2も同様）．その成分を $a\\vec e_1$，$b\\vec e_2$ とすると，水平面内のつり合いは\n\\[ N_1\\vec n_1+N_2\\vec n_2+a\\vec e_1+b\\vec e_2=\\vec 0 \\]\n壁1を $x$ 軸にとると $\\vec e_1=(1,0)$，$\\vec n_1=(0,1)$，$\\vec e_2=(\\cos\\theta,\\sin\\theta)$，$\\vec n_2=(\\sin\\theta,-\\cos\\theta)$ で，成分を解くと\n\\[ a=\\frac{N_1\\cos\\theta-N_2}{\\sin\\theta},\\qquad b=\\frac{N_2\\cos\\theta-N_1}{\\sin\\theta} \\]\n\n\\textbf{(1)}　$N_1=N_2=N$ のとき\n\\[ a=-N\\,\\frac{1-\\cos\\theta}{\\sin\\theta}=-N\\tan\\frac\\theta2 \\]\n大きさは $\\boldsymbol{N\\tan\\dfrac\\theta2}$ で，向きは交線Oへ向かう向き（$b$ も同じ）．2つの垂直抗力の和は2つの壁の二等分線に沿って「隅から押し出す」向きを向くので，摩擦力が両方の壁に沿って隅の方へ引き戻す必要がある．\n\n\\textbf{(2)}　鉛直方向のつり合いから，各壁の摩擦力の鉛直成分は $\\dfrac{mg}{2}$．摩擦力全体の大きさが最大摩擦力以下である条件は\n\\[ \\sqrt{\\left(N\\tan\\frac\\theta2\\right)^2+\\left(\\frac{mg}{2}\\right)^2}\\leqq\\mu N \\quad\\Longleftrightarrow\\quad N^2\\left(\\mu^2-\\tan^2\\frac\\theta2\\right)\\geqq\\frac{(mg)^2}{4} \\]\nこれが成り立つ $N$ が存在するには $\\boldsymbol{\\mu>\\tan\\dfrac\\theta2}$ が必要十分で，そのとき\n\\[ \\boldsymbol{N_{\\min}=\\frac{mg}{2\\sqrt{\\mu^2-\\tan^2\\dfrac\\theta2}}} \\]\n$\\theta=90^\\circ$（直角の隅）では $\\mu>1$ が必要で，いくら強く押しても $\\mu\\leqq1$ では登れない．\n\n\\textbf{(3) 非対称にしても条件はゆるくならない}\n\n摩擦力の鉛直成分を除いても，各壁で $|a|\\leqq\\mu N_1$，$|b|\\leqq\\mu N_2$ が必要（鉛直成分が加わるとさらに厳しくなり，等号は不可）．$r=\\dfrac{N_2}{N_1}>0$ とおくと\n\\[ \\mu>\\frac{|\\cos\\theta-r|}{\\sin\\theta}\\quad\\text{かつ}\\quad \\mu>\\frac{|\\cos\\theta-1/r|}{\\sin\\theta} \\]\n$r\\geqq1$ なら $r-\\cos\\theta\\geqq1-\\cos\\theta>0$ より第1式の右辺は $\\dfrac{1-\\cos\\theta}{\\sin\\theta}=\\tan\\dfrac\\theta2$ 以上，$r<1$ なら $\\dfrac1r>1$ で第2式の右辺が $\\tan\\dfrac\\theta2$ より大きい．いずれにしても $\\mu>\\tan\\dfrac\\theta2$ が必要で，$N_1\\neq N_2$ にしても条件はゆるくならない．\n\n\\textbf{(4) 数値}\n\n$\\tan\\dfrac\\theta2<0.80$ より $\\dfrac\\theta2<38.7^\\circ$，すなわち $\\boldsymbol{0<\\theta<77^\\circ}$（直角の隅では不可能で，狭い隅ほど登りやすい）．$\\theta=60^\\circ$ では $\\tan^2 30^\\circ=\\dfrac13$ なので\n\\[ N_{\\min}=\\frac{60\\times9.8}{2\\sqrt{0.64-0.333}}=\\frac{588}{2\\times0.554}\\fallingdotseq\\boldsymbol{5.3\\times10^2\\ \\mathrm{N}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2つの壁の垂直抗力の合力は水平面内で0にならず人を隅から押し出すので，摩擦力は鉛直成分（重さを支える）に加えて壁に沿った水平成分も担う必要がある．その水平成分は垂直抗力の $\\tan(\\theta/2)$ 倍になるため，押す力をいくら大きくしても $\\mu>\\tan(\\theta/2)$ でなければ静止できず，直角の隅では $\\mu>1$ が必要になる．"
+ },
+ "concepts": [
+  "equilibrium",
+  "static-friction",
+  "normal-force"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "静止摩擦",
+  "3次元の力のつり合い",
+  "摩擦力の水平成分",
+  "条件の導出",
+  "壁の隅"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,159 @@
+{
+ "id": "PHY-ENG-014",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-04",
+ "topic": "一定の力で引かれる小球と糸でつながる2球の衝突（力の作用点の変位と重心の変位の差）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平面上に $x$ 軸，$y$ 軸をとる．質量 $M$ の小球 A と，質量 $m$ の小球 B，C を，長さ $L$ の伸び縮みしない軽い糸 2 本で B–A–C の順につなぐ．図のように，はじめ A を原点 O に，B を点 $(-L\\cos\\theta_0,\\ L\\sin\\theta_0)$ に，C を点 $(-L\\cos\\theta_0,\\ -L\\sin\\theta_0)$ に置いて静止させる（$0<\\theta_0<\\frac{\\pi}{2}$）．時刻 $t=0$ から A だけに $x$ 軸の正の向きに一定の大きさ $F$ の力を加え続けたところ，運動は $x$ 軸に関して対称に進み，糸はたるむことなく，B と C は A の後方で近づいて時刻 $t_1$ に $x$ 軸上で初めて衝突した．小球の大きさは無視でき，空気抵抗はないものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "動き始めた直後の A の加速度の大きさ $a_0$ と，糸 1 本の張力の大きさ $S_0$ を，$F$，$M$，$m$，$\\theta_0$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "衝突直前の A の速さを $u$ とする．衝突直前の B の速度の $x$ 成分が $u$ に等しいことを説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "3 球の重心を G とする．時刻 $0$ から $t_1$ までの A の移動距離を $x_1$，G の移動距離を $X_{\\rm G}$ とするとき，差 $x_1-X_{\\rm G}$ を $L$，$M$，$m$，$\\theta_0$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "衝突直前の B の速度の $y$ 成分の大きさ $w$ を，$F$，$L$，$M$，$m$，$\\theta_0$ で表せ（$t_1$ を用いないこと）．"
+     },
+     {
+      "id": "5",
+      "tex": "$u$ と $x_1$ を，$F$，$L$，$M$，$m$，$\\theta_0$，$t_1$ のうち必要なものを用いて表せ．"
+     },
+     {
+      "id": "6",
+      "tex": "衝突直前の糸 1 本の張力の大きさ $S_1$ を，$F$，$M$，$m$，$\\theta_0$ で表せ．"
+     },
+     {
+      "id": "7",
+      "tex": "B と C の衝突が弾性衝突であったとする．衝突後も A に同じ力を加え続けるとき，2 本の糸のそれぞれが $x$ 軸の負の向きとなす角は最大いくらまで開くか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一定の力で引かれる小球と糸でつながる2球の衝突（力の作用点の変位と重心の変位の差）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一定の力で引かれる小球と糸でつながる2球の衝突（力の作用点の変位と重心の変位の差）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$a_0=\\dfrac{F}{M+2m\\cos^2\\theta_0}$，$S_0=\\dfrac{mF\\cos\\theta_0}{M+2m\\cos^2\\theta_0}$"
+   },
+   {
+    "id": "2",
+    "tex": "衝突直前は糸が $x$ 軸に沿い，A に対する B の相対速度は糸に垂直（$y$ 方向）なので"
+   },
+   {
+    "id": "3",
+    "tex": "$x_1-X_{\\rm G}=\\dfrac{2mL(1-\\cos\\theta_0)}{M+2m}$"
+   },
+   {
+    "id": "4",
+    "tex": "$w=\\sqrt{\\dfrac{2FL(1-\\cos\\theta_0)}{M+2m}}$"
+   },
+   {
+    "id": "5",
+    "tex": "$u=\\dfrac{Ft_1}{M+2m}$，$x_1=\\dfrac{Ft_1^2}{2(M+2m)}+\\dfrac{2mL(1-\\cos\\theta_0)}{M+2m}$"
+   },
+   {
+    "id": "6",
+    "tex": "$S_1=\\dfrac{mF(3M+2m-2M\\cos\\theta_0)}{(M+2m)^2}$"
+   },
+   {
+    "id": "7",
+    "tex": "$\\theta_0$（はじめの角まで戻る）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 動き始め}　はじめは全球が静止しているので，糸方向の相対加速度が $0$ という条件だけで拘束が表せる．B から A へ向かう糸方向の単位ベクトルを $\\vec n=(\\cos\\theta_0,-\\sin\\theta_0)$ とすると，B は糸の張力 $S_0\\vec n$ だけを受けるので $\\vec a_{\\rm B}\\cdot\\vec n=S_0/m$．A の加速度は $(a_0,0)$ なので $\\vec a_{\\rm A}\\cdot\\vec n=a_0\\cos\\theta_0$．糸が伸びないことから両者は等しく，$S_0=ma_0\\cos\\theta_0$．A の運動方程式 $Ma_0=F-2S_0\\cos\\theta_0$ に代入して\n\\[ \\boldsymbol{a_0=\\frac{F}{M+2m\\cos^2\\theta_0}},\\qquad \\boldsymbol{S_0=\\frac{mF\\cos\\theta_0}{M+2m\\cos^2\\theta_0}}>0 . \\]\n\n\\textbf{(2)}　衝突の瞬間，B と C はともに $x$ 軸上の点 $(x_{\\rm A}-L,\\,0)$ にあり，糸は $x$ 軸に沿っている．B は A を中心とする半径 $L$ の円周上を動く（糸が伸び縮みしない）ので，A に対する B の相対速度は糸に垂直，すなわち $y$ 方向である．よって B の速度の $x$ 成分は A の速度 $u$ に等しい．C も同様．\n\n\\textbf{(3) 重心の位置}　重心の $x$ 座標は $X=x_{\\rm A}-\\dfrac{2mL\\cos\\varphi}{M+2m}$（$\\varphi$ は糸と $x$ 軸の負の向きのなす角）．$\\varphi$ は $\\theta_0$ から $0$ に変わるので\n\\[ x_1-X_{\\rm G}=\\boldsymbol{\\frac{2mL(1-\\cos\\theta_0)}{M+2m}} . \\]\n\n\\textbf{(4) 2 通りのエネルギーの式}　糸は伸び縮みしないので，張力が両端の球にする仕事の和は $0$ である．したがって外力 $F$ の仕事は\\textbf{力の作用点である A の変位} $x_1$ で計算され，系全体の運動エネルギーは\n\\[ \\tfrac12Mu^2+2\\cdot\\tfrac12m(u^2+w^2)=Fx_1 . \\]\n一方，重心の運動方程式 $(M+2m)\\ddot X=F$ から，重心の運動エネルギーについて $\\tfrac12(M+2m)V_{\\rm G}^2=FX_{\\rm G}$ が成り立つ．衝突直前は (2) より 3 球の速度の $x$ 成分がすべて $u$，$y$ 成分の和は $0$ なので $V_{\\rm G}=u$．辺々引くと，相対運動のエネルギーだけが残り\n\\[ mw^2=F(x_1-X_{\\rm G})=\\frac{2mFL(1-\\cos\\theta_0)}{M+2m}\\quad\\Longrightarrow\\quad \\boldsymbol{w=\\sqrt{\\frac{2FL(1-\\cos\\theta_0)}{M+2m}}} . \\]\n外力の仕事のうち「作用点の変位と重心の変位の差」に相当する分が，重心から見た運動（B，C の回り込み）のエネルギーになる．\n\n\\textbf{(5)}　$y$ 方向には外力がなく，$x$ 方向の運動量の変化は力積 $Ft_1$ に等しい．衝突直前の運動量の $x$ 成分は $(M+2m)u$ なので $\\boldsymbol{u=\\dfrac{Ft_1}{M+2m}}$．重心は加速度 $F/(M+2m)$ の等加速度運動をするので $X_{\\rm G}=\\dfrac{Ft_1^2}{2(M+2m)}$ で，(3) より\n\\[ \\boldsymbol{x_1=\\frac{Ft_1^2}{2(M+2m)}+\\frac{2mL(1-\\cos\\theta_0)}{M+2m}} . \\]\n\n\\textbf{(6) 衝突直前の張力}　B は A のまわりを相対速さ $w$ で円運動しているので，A に向かう向き（$+x$）の相対加速度は $w^2/L$．B：$ma_{\\rm B}=S_1$，A：$Ma_{\\rm A}=F-2S_1$（糸はともに $x$ 軸に沿う）．$a_{\\rm B}-a_{\\rm A}=w^2/L$ に代入すると\n\\[ S_1\\Bigl(\\frac1m+\\frac2M\\Bigr)=\\frac{w^2}{L}+\\frac FM\\ \\Longrightarrow\\ S_1=\\frac{m(F+Mw^2/L)}{M+2m}=\\boldsymbol{\\frac{mF(3M+2m-2M\\cos\\theta_0)}{(M+2m)^2}} . \\]\n\n\\textbf{(7)}　(4) の議論は任意の時刻で成り立ち，重心に対する運動エネルギーを $K'$ とすると\n\\[ K'=F(x_{\\rm A}-X)-F(x_{\\rm A}-X)\\big|_{t=0}=\\frac{2mFL(\\cos\\varphi-\\cos\\theta_0)}{M+2m} \\]\nとなる（弾性衝突では運動エネルギーが保存し，重心の運動は衝突の影響を受けないので，衝突後もそのまま成り立つ）．$K'\\geqq 0$ より $\\cos\\varphi\\geqq\\cos\\theta_0$，すなわち $\\varphi\\leqq\\theta_0$．また弾性衝突は B，C の相対速度（$y$ 成分）を反転させるだけで，重心とともに動く観測者から見ると各球には一様な慣性力がはたらくだけなので，運動は衝突前の運動を逆にたどり，$K'=0$ となる $\\varphi=\\boldsymbol{\\theta_0}$ まで開いて一瞬止まる（以後これをくり返す）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一定の力が1つの物体だけに加わる連結系では，外力の仕事は作用点の変位で決まり，重心の運動エネルギーは重心の変位で決まるので，その差 $F(x_{\\rm A}-X_{\\rm G})$ が重心から見た相対運動のエネルギーになる．差は配置の幾何だけで決まるため，衝突時の回り込みの速さが時間を求めずに得られ，弾性衝突後ははじめの開き角に戻る．"
+ },
+ "concepts": [
+  "work-energy",
+  "kinematics-components",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "重心の運動",
+  "作用点の変位",
+  "相対運動のエネルギー",
+  "糸でつながれた物体",
+  "張力"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

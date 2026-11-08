@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320">
+  <defs>
+    <marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+  </defs>
+  <!-- wall -->
+  <rect x="70" y="40" width="12" height="240" fill="none" stroke="#222" stroke-width="1.6"/>
+  <g stroke="#222" stroke-width="1"><line x1="70" y1="60" x2="62" y2="68"/><line x1="70" y1="90" x2="62" y2="98"/><line x1="70" y1="120" x2="62" y2="128"/><line x1="70" y1="150" x2="62" y2="158"/><line x1="70" y1="180" x2="62" y2="188"/><line x1="70" y1="210" x2="62" y2="218"/><line x1="70" y1="240" x2="62" y2="248"/><line x1="70" y1="270" x2="62" y2="278"/></g>
+  <text x="20" y="34" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">ガラスの壁</text>
+  <!-- bottom -->
+  <line x1="82" y1="280" x2="400" y2="280" stroke="#222" stroke-width="1.6"/>
+  <g stroke="#222" stroke-width="1"><line x1="100" y1="280" x2="92" y2="288"/><line x1="130" y1="280" x2="122" y2="288"/><line x1="160" y1="280" x2="152" y2="288"/><line x1="190" y1="280" x2="182" y2="288"/><line x1="220" y1="280" x2="212" y2="288"/><line x1="250" y1="280" x2="242" y2="288"/><line x1="280" y1="280" x2="272" y2="288"/><line x1="310" y1="280" x2="302" y2="288"/><line x1="340" y1="280" x2="332" y2="288"/><line x1="370" y1="280" x2="362" y2="288"/><line x1="400" y1="280" x2="392" y2="288"/></g>
+  <!-- water surface (theta=0) -->
+  <path d="M82,95 C84,128 110,146 180,150 L400,150" fill="none" stroke="#222" stroke-width="1.6"/>
+  <g stroke="#888" stroke-width="1" stroke-dasharray="6 6"><line x1="96" y1="175" x2="390" y2="175"/><line x1="90" y1="205" x2="390" y2="205"/><line x1="96" y1="235" x2="390" y2="235"/><line x1="90" y1="262" x2="390" y2="262"/></g>
+  <!-- far level line -->
+  <line x1="82" y1="150" x2="180" y2="150" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="82" y1="95" x2="140" y2="95" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="130" y1="95" x2="130" y2="150" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+  <text x="137" y="128" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">h</text>
+  <line x1="380" y1="150" x2="380" y2="280" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+  <text x="388" y="220" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">D</text>
+  <text x="240" y="140" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">遠方の液面</text>
+  <text x="180" y="225" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">水（<tspan font-family="Times New Roman, serif" font-style="italic">θ</tspan>＝0）</text>
+  <!-- inset: contact angle -->
+  <rect x="440" y="40" width="150" height="150" fill="none" stroke="#888" stroke-width="1"/>
+  <text x="448" y="60" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">接触角 <tspan font-family="Times New Roman, serif" font-style="italic">θ</tspan>（一般）</text>
+  <rect x="460" y="70" width="10" height="110" fill="none" stroke="#222" stroke-width="1.6"/>
+  <path d="M470,110 Q500,150 580,158" fill="none" stroke="#222" stroke-width="1.6"/>
+  <line x1="470" y1="110" x2="470" y2="170" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="470" y1="110" x2="500" y2="152" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+  <path d="M470,135 A25,25 0 0,0 484.5,130.3" fill="none" stroke="#222" stroke-width="1"/>
+  <text x="475" y="152" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">θ</text>
+  <text x="530" y="178" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">液体</text>
+  <text x="525" y="100" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">空気</text>
+</svg>

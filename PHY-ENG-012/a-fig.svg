@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 280">
+<defs>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<line x1="60.0" y1="230.0" x2="420.0" y2="230.0" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+<line x1="60.0" y1="230.0" x2="60.0" y2="40.0" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+<text x="426.0" y="235.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">t</text>
+<text x="12.0" y="52.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">速さ</text>
+<text x="46.0" y="248.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">O</text>
+<line x1="60.0" y1="80.0" x2="390.0" y2="80.0" stroke="#1f5fbf" stroke-width="1.8"/>
+<text x="310.0" y="70.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf" text-anchor="start">ベルト</text>
+<line x1="60.0" y1="230.0" x2="240.0" y2="80.0" stroke="#c0392b" stroke-width="1.8"/>
+<text x="180.0" y="190.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b" text-anchor="start">砂</text>
+<line x1="240.0" y1="80.0" x2="240.0" y2="230.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="234.0" y="248.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">t<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<text x="40.0" y="85.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">v</text>
+<path d="M60,230 L60,80 L240.0,80 Z" fill="#88888855" stroke="#888" stroke-width="0.8"/>
+<text x="74.0" y="122.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">相対的に</text>
+<text x="74.0" y="138.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">滑った距離</text>
+<text x="130.0" y="215.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">砂の移動距離</text>
+</svg>

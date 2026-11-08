@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 400">
+  <defs>
+    <marker id="a-ab" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f5fbf"/></marker>
+  </defs>
+  <path d="M134.7,205 A95.3,110 0 0 1 325.3,205 Z" fill="#1f5fbf" fill-opacity="0.12" stroke="none"/>
+  <path d="M134.7,205 L230,260 L325.3,205 Z" fill="#c0392b" fill-opacity="0.15" stroke="#c0392b" stroke-width="1"/>
+  <circle cx="230" cy="260" r="110" fill="none" stroke="#222" stroke-width="1.6"/>
+  <ellipse cx="230" cy="205" rx="95.3" ry="110" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <path d="M134.7,205 A95.3,110 0 0 1 325.3,205" fill="none" stroke="#222" stroke-width="1.6"/>
+  <line x1="230" y1="95" x2="230" y2="315" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+  <circle cx="230" cy="260" r="2.5" fill="#222"/>
+  <circle cx="230" cy="205" r="2.5" fill="#222"/>
+  <text x="236" y="278" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">O（焦点）</text>
+  <text x="236" y="222" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">C</text>
+  <text x="216" y="238" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">c</text>
+  <text x="276" y="198" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">b</text>
+  <text x="285" y="245" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#c0392b">a</text>
+  <text x="236" y="90" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">最遠点</text>
+  <circle cx="134.7" cy="205" r="3" fill="#222"/><circle cx="325.3" cy="205" r="3" fill="#222"/>
+  <text x="112" y="200" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">A</text>
+  <text x="334" y="200" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">B</text>
+  <line x1="134.7" y1="205" x2="134.7" y2="150" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+  <text x="20" y="360" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">OA＝OB＝a より A，B は短軸の両端（C は楕円の中心）．</text>
+  <text x="20" y="382" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">掃く面積＝半楕円（青）＋三角形 OAB（赤）</text>
+</svg>

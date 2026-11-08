@@ -1,0 +1,139 @@
+{
+ "id": "PHY-GRV-005",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "弦トンネル内の単振動と中心での繰り返し衝突",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球を半径 $R$ の一様な密度の球とみなし，地表での重力加速度の大きさを $g$ とする．図のように，地球の中心 O から距離 $h$ $(0<h<R)$ だけ離れた直線に沿って，地表の2点 A，B を結ぶまっすぐで細いトンネルが掘られている．O からトンネルに下ろした垂線の足を H とし，$\\mathrm{AH}=\\mathrm{HB}=L$ とする．地球内部で O から距離 $r$ の点にある質量 $\\mu$ の物体は，大きさ $\\mu g\\dfrac{r}{R}$ の力を O に向かって受けるものとする．地球の自転・公転，トンネルの壁との摩擦，空気抵抗は無視し，小球はトンネルに沿ってだけ運動するものとする．\n\n時刻 $0$ に，質量 $m$ の小球 P を A で静かにはなす．質量 $M$ の小球 Q ははじめ H に静止している．P と Q の間のはね返り係数を $e$ $(0<e<1)$ とし，A から B へ向かう向きを正とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P がトンネル内で単振動することを示し，P が H に達するまでの時間と，そのときの P の速さ $v_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "1回目の衝突の直後の P，Q の速度を $v_0$ を用いて表せ．また，Q がトンネルの出口 B から外へ飛び出さないための $M$ の条件を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "2回目の衝突がどこで起こるかを理由とともに答え，1回目の衝突から2回目の衝突までの時間を求めよ．また，2回目の衝突の直後の P，Q の速度を $v_0$ を用いて表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "十分に時間がたった後，P と Q はどのような運動をするか．また，それまでに衝突によって失われた力学的エネルギーの総量を $m,\\ M,\\ g,\\ R,\\ L$ で表せ．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "(2) の条件は満たされているものとして (3)，(4) に答えよ．"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：弦トンネル内の単振動と中心での繰り返し衝突",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：弦トンネル内の単振動と中心での繰り返し衝突",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "時間 $\\dfrac{\\pi}{2}\\sqrt{\\dfrac{R}{g}}$，$v_0=L\\sqrt{\\dfrac{g}{R}}$ （いずれも $h$ によらない）"
+   },
+   {
+    "id": "2",
+    "tex": "P：$\\dfrac{m-eM}{m+M}v_0$，Q：$\\dfrac{(1+e)m}{m+M}v_0$，条件 $M\\geqq em$"
+   },
+   {
+    "id": "3",
+    "tex": "H で起こる．時間 $\\pi\\sqrt{\\dfrac{R}{g}}$，P：$-\\dfrac{m+e^2M}{m+M}v_0$，Q：$-\\dfrac{(1-e^2)m}{m+M}v_0$"
+   },
+   {
+    "id": "4",
+    "tex": "一体となって H を中心に振幅 $\\dfrac{mL}{m+M}$，周期 $2\\pi\\sqrt{\\dfrac{R}{g}}$ の単振動をする．失われた力学的エネルギー $\\dfrac{mMgL^2}{2(m+M)R}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 弦トンネル内の単振動}\n\nH を原点としてトンネルに沿って $x$ 軸（A→B を正）をとる．位置 $x$ の小球（質量 $\\mu$）は O に向かう大きさ $\\mu g\\dfrac{r}{R}$ の力を受ける．この力のトンネル方向成分は，O から見た位置ベクトルのトンネル方向成分がちょうど $x$ なので\n\\[ F_x=-\\mu\\frac{g}{R}x \\]\nとなり，$h$ によらない．トンネルに垂直な成分は壁の垂直抗力とつり合う．よって小球は H を中心とする角振動数\n\\[ \\omega=\\sqrt{\\frac{g}{R}} \\]\nの単振動をする．周期を $T=2\\pi\\sqrt{R/g}$ とおく．P は端 $x=-L$ から静かにはなされるので振幅は $L$ であり，H に達するまでの時間は\n\\[ \\frac{T}{4}=\\boldsymbol{\\frac{\\pi}{2}\\sqrt{\\frac{R}{g}}},\\qquad v_0=L\\omega=\\boldsymbol{L\\sqrt{\\frac{g}{R}}} \\]\nである．どちらも $h$ によらない（中心を通るトンネルと同じ）ことに注意する．\n\n\\textbf{(2) 1回目の衝突}\n\nH では Q にはたらく力のトンネル方向成分は $0$ であり，Q は静止し続けている．衝突は一瞬なので，その間の重力の力積は無視でき，トンネル方向の運動量が保存する．衝突後の速度を $v_{\\mathrm P},\\ v_{\\mathrm Q}$ とすると\n\\[ mv_0=mv_{\\mathrm P}+Mv_{\\mathrm Q},\\qquad v_{\\mathrm P}-v_{\\mathrm Q}=-ev_0 \\]\nより\n\\[ v_{\\mathrm P}=\\boldsymbol{\\frac{m-eM}{m+M}v_0},\\qquad v_{\\mathrm Q}=\\boldsymbol{\\frac{(1+e)m}{m+M}v_0} \\]\nQ は H から速さ $v_{\\mathrm Q}$ で出発する単振動（角振動数 $\\omega$）をするので，振幅は $v_{\\mathrm Q}/\\omega=\\dfrac{(1+e)m}{m+M}L$ である．これが $L$ 以下なら B から飛び出さないので\n\\[ (1+e)m\\leqq m+M\\quad\\Longleftrightarrow\\quad \\boldsymbol{M\\geqq em} \\]\n\n\\textbf{(3) 2回目の衝突は再び H で起こる}\n\n衝突直後，P も Q も H（$x=0$）にいる．どちらも同じ角振動数 $\\omega$ の単振動をするので，衝突後の時間を $t'$ とすると\n\\[ x_{\\mathrm P}=\\frac{v_{\\mathrm P}}{\\omega}\\sin\\omega t',\\qquad x_{\\mathrm Q}=\\frac{v_{\\mathrm Q}}{\\omega}\\sin\\omega t' \\]\nと書ける．$x_{\\mathrm P}-x_{\\mathrm Q}=\\dfrac{v_{\\mathrm P}-v_{\\mathrm Q}}{\\omega}\\sin\\omega t'$ は $0<t'<\\dfrac{T}{2}$ で $0$ にならず，$t'=\\dfrac{T}{2}$ で初めて $0$ になる．このとき両者はそろって $x=0$，すなわち \\textbf{H} に戻っている（速さが違っても，同じ周期の単振動は同時に中心へ戻る）．したがって2回目の衝突は H で起こり，1回目からの時間は\n\\[ \\frac{T}{2}=\\boldsymbol{\\pi\\sqrt{\\frac{R}{g}}} \\]\nこのとき各速度は衝突直後のちょうど逆向き $-v_{\\mathrm P},\\ -v_{\\mathrm Q}$ である．衝突直前の相対速度は $(-v_{\\mathrm P})-(-v_{\\mathrm Q})=ev_0$，運動量の和は $-mv_0$ なので，衝突直後の速度 $v_{\\mathrm P}',\\ v_{\\mathrm Q}'$ は\n\\[ mv_{\\mathrm P}'+Mv_{\\mathrm Q}'=-mv_0,\\qquad v_{\\mathrm P}'-v_{\\mathrm Q}'=-e\\cdot ev_0 \\]\nより\n\\[ v_{\\mathrm P}'=\\boldsymbol{-\\frac{m+e^2M}{m+M}v_0},\\qquad v_{\\mathrm Q}'=\\boldsymbol{-\\frac{(1-e^2)m}{m+M}v_0} \\]\n\n\\textbf{(4) 十分に時間がたった後}\n\n(3) と同じ理由で，衝突はすべて H で，時間 $T/2$ ごとに起こる．重心速度 $V_{\\mathrm G}=\\dfrac{mv_{\\mathrm P}+Mv_{\\mathrm Q}}{m+M}$ は衝突の前後で変わらず，衝突と衝突の間は2球とも速度が反転して H に戻るので，H を通過するときの重心速度の大きさは常に $\\dfrac{m}{m+M}v_0$ である．一方，相対速度の大きさは衝突のたびに $e$ 倍になり，$e^nv_0\\to0$ となる．したがって十分に時間がたつと2球は同じ速度で動く，つまり\\textbf{一体となって} H を速さ $\\dfrac{m}{m+M}v_0$ で通過する単振動をする．その振幅と周期は\n\\[ \\boldsymbol{\\frac{m}{m+M}\\cdot\\frac{v_0}{\\omega}=\\frac{mL}{m+M}},\\qquad \\boldsymbol{2\\pi\\sqrt{\\frac{R}{g}}} \\]\n失われた力学的エネルギーは，衝突前の P の運動エネルギーと，最終状態で H を通過するときの運動エネルギーの差である（どちらも H での値なので位置エネルギーは等しい）：\n\\[ \\frac12mv_0^2-\\frac12(m+M)\\left(\\frac{m}{m+M}v_0\\right)^2=\\frac{mM}{2(m+M)}v_0^2=\\boldsymbol{\\frac{mMgL^2}{2(m+M)R}} \\]\nこれは相対運動の運動エネルギー（換算質量 $\\dfrac{mM}{m+M}$）がすべて失われたことを表す．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一様な球の内部ではトンネルが中心を通らなくてもトンネル方向の力は $-\\mu\\frac{g}{R}x$ となり，どの小球も同じ角振動数で単振動する．そのため振動の中心で衝突した2球は速さによらず半周期後にそろって中心へ戻り，衝突はすべて中心で半周期ごとに起こる．衝突で減るのは相対運動だけで重心の運動は保たれるので，最終的な一体の振動は重心の運動だけで決まる．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "kinematics-components",
+  "simple-harmonic-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一様球内の重力",
+  "弦トンネル",
+  "単振動",
+  "はね返り係数",
+  "重心運動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

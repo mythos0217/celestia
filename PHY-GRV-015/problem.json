@@ -1,0 +1,122 @@
+{
+ "id": "PHY-GRV-015",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "公転する2惑星の距離が最も速く変化する配置（最大離角）とレーダーのドップラー効果",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽 S のまわりを，同一平面内で同じ向きに等速円運動する内惑星 V（軌道半径 $a$，角速度 $\\omega_{\\mathrm V}$）と地球 E（軌道半径 $b$，角速度 $\\omega_{\\mathrm E}$）がある（$a<b$）．$\\angle\\mathrm{VSE}=\\varphi$ とし，$\\varphi$ は $\\omega=\\omega_{\\mathrm V}-\\omega_{\\mathrm E}\\ (>0)$ の割合で増加する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "距離 $d=\\mathrm{VE}$ の時間変化率 $\\dfrac{\\Delta d}{\\Delta t}$ を $a$，$b$，$\\varphi$，$\\omega$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\left|\\dfrac{\\Delta d}{\\Delta t}\\right|$ が最大になるときの $\\cos\\varphi$ と，その最大値を求めよ．また，そのとき $\\angle\\mathrm{SVE}$ は何度か．地球から見た V と太陽の間の角（離角）とどのような関係にあるか．"
+     },
+     {
+      "id": "3",
+      "tex": "万有引力のもとでの円軌道として，$a=0.723\\,b$，地球の公転の速さを $29.8\\ \\mathrm{km/s}$ とする．(2) の最大値を有効数字3桁で求めよ．また，そのときの離角は何度か．"
+     },
+     {
+      "id": "4",
+      "tex": "地球から V に振動数 $f_0=1.00\\times10^{9}\\ \\mathrm{Hz}$ の電波を送り，V の表面で反射した電波を地球で受信する．受信した電波の振動数と $f_0$ の差の大きさの最大値を有効数字2桁で求めよ．光速を $3.00\\times10^8\\ \\mathrm{m/s}$ とし，速さは光速に比べ十分小さいとする．地球の自転は無視する．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：公転する2惑星の距離が最も速く変化する配置（最大離角）とレーダーのドップラー効果",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{\\Delta d}{\\Delta t}=\\dfrac{ab\\,\\omega\\sin\\varphi}{\\sqrt{a^2+b^2-2ab\\cos\\varphi}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\cos\\varphi=\\dfrac{a}{b}$，最大値 $a\\omega=a(\\omega_{\\mathrm V}-\\omega_{\\mathrm E})$，$\\angle\\mathrm{SVE}=90^\\circ$（EV が V の軌道に接し，離角が最大）"
+   },
+   {
+    "id": "3",
+    "tex": "$13.5\\ \\mathrm{km/s}$，離角 $46.3^\\circ$"
+   },
+   {
+    "id": "4",
+    "tex": "$9.0\\times10^{4}\\ \\mathrm{Hz}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　余弦定理より $d^2=a^2+b^2-2ab\\cos\\varphi$．両辺を時間で微分すると $2d\\dfrac{\\Delta d}{\\Delta t}=2ab\\sin\\varphi\\cdot\\omega$ なので\n\\[ \\boldsymbol{\\frac{\\Delta d}{\\Delta t}=\\frac{ab\\,\\omega\\sin\\varphi}{\\sqrt{a^2+b^2-2ab\\cos\\varphi}}} \\]\n\n\\textbf{(2)}　$g(\\varphi)=\\dfrac{\\sin\\varphi}{\\sqrt{a^2+b^2-2ab\\cos\\varphi}}$ を微分して $0$ とおくと，分子は\n\\[ \\cos\\varphi\\,(a^2+b^2-2ab\\cos\\varphi)-ab\\sin^2\\varphi=-(b\\cos\\varphi-a)(a\\cos\\varphi-b) \\]\n$a\\cos\\varphi-b<0$ なので，$|g|$ が最大になるのは $\\boldsymbol{\\cos\\varphi=\\dfrac{a}{b}}$（$\\varphi$ が $0$〜$180^\\circ$ と $180^\\circ$〜$360^\\circ$ でそれぞれ1回，遠ざかる最大と近づく最大）．このとき $d^2=b^2-a^2$，$\\sin\\varphi=\\dfrac{\\sqrt{b^2-a^2}}{b}$ なので\n\\[ \\left|\\frac{\\Delta d}{\\Delta t}\\right|_{\\max}=\\frac{ab\\,\\omega}{\\sqrt{b^2-a^2}}\\cdot\\frac{\\sqrt{b^2-a^2}}{b}=\\boldsymbol{a\\omega=a(\\omega_{\\mathrm V}-\\omega_{\\mathrm E})} \\]\n$a^2+d^2=b^2$ より $\\boldsymbol{\\angle\\mathrm{SVE}=90^\\circ}$．すなわち直線 EV が V の軌道円に接しており，地球から見た離角 $\\angle\\mathrm{SEV}$（$\\sin\\angle\\mathrm{SEV}=a/b$）が\\textbf{最大離角}になる瞬間である．\n（別解：地球とともに回転する座標系では，地球は静止し，V は半径 $a$ の円周上を速さ $a\\omega$ で回って見える．距離の変化率はこの系での V の速度の視線方向成分なので，視線 EV が V の軌道の接線に一致するとき最大となり，その値は $a\\omega$ である．）\n\n\\textbf{(3)}　円軌道では $\\dfrac{GMm}{r^2}=mr\\omega^2$ より $\\omega\\propto r^{-3/2}$，速さ $v\\propto r^{-1/2}$．V の速さは $v_{\\mathrm V}=v_{\\mathrm E}\\sqrt{b/a}$，また $a\\omega_{\\mathrm E}=\\dfrac{a}{b}v_{\\mathrm E}$ なので\n\\[ a\\omega=v_{\\mathrm V}-\\frac{a}{b}v_{\\mathrm E}=v_{\\mathrm E}\\left(\\sqrt{\\frac{b}{a}}-\\frac{a}{b}\\right)=29.8\\times(1.1761-0.723)\\fallingdotseq\\boldsymbol{13.5\\ \\mathrm{km/s}} \\]\n離角は $\\sin^{-1}0.723\\fallingdotseq\\boldsymbol{46.3^\\circ}$．\n\n\\textbf{(4)}　V が視線方向に速さ $u$ で遠ざかるとき，V が受ける振動数は $f_0\\left(1-\\dfrac{u}{c}\\right)$，反射波を地球で受けると $f_0\\left(1-\\dfrac{u}{c}\\right)^2\\fallingdotseq f_0\\left(1-\\dfrac{2u}{c}\\right)$．差の最大は\n\\[ \\frac{2u_{\\max}}{c}f_0=\\frac{2\\times1.35\\times10^4}{3.00\\times10^8}\\times1.00\\times10^9\\fallingdotseq\\boldsymbol{9.0\\times10^{4}\\ \\mathrm{Hz}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2つの円運動の間の距離の変化率は，内側の物体とともに回る系での相対速度の視線成分で，最大になるのは視線が内側の軌道に接するとき（$\\cos\\varphi=a/b$，最大離角）であり，その値は内側の軌道半径と相対角速度の積 $a(\\omega_{\\mathrm V}-\\omega_{\\mathrm E})$ という簡潔な形になる．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "kinematics-components",
+  "circular-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "円運動",
+  "相対運動",
+  "ケプラーの法則",
+  "最大離角",
+  "ドップラー効果"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

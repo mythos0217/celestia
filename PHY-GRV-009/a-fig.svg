@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 440">
+<defs><marker id="a-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#1f5fbf"/></marker>
+<marker id="a-ak" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#222"/></marker></defs>
+<ellipse cx="280" cy="229.1" rx="96.8" ry="99.1" fill="none" stroke="#c0392b" stroke-width="1.8"/>
+<ellipse cx="280" cy="269.2" rx="137.9" ry="139.2" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+<circle cx="280" cy="250" r="120" fill="none" stroke="#222" stroke-width="1.6" stroke-dasharray="6 4"/>
+<circle cx="280" cy="250" r="60.0" fill="#ddd" stroke="#222" stroke-width="1.6"/><text x="280" y="255" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">地球</text>
+<circle cx="280" cy="130" r="4" fill="#222"/><text x="288" y="148" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">C</text>
+<line x1="280" y1="328.1" x2="130" y2="368.1" stroke="#c0392b" stroke-width="1"/><circle cx="280" cy="328.1" r="3" fill="#c0392b"/><text x="40" y="383.1" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">近地点 0.651<tspan font-family="Times New Roman, serif" font-style="italic">R</tspan></text>
+<text x="292" y="424.5" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">遠地点 1.32<tspan font-family="Times New Roman, serif" font-style="italic">R</tspan></text>
+<line x1="280" y1="328.1" x2="280" y2="408.5" stroke="#888" stroke-dasharray="3 3"/>
+<text x="20" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">赤：減速案 <tspan font-family="Times New Roman, serif" font-style="italic">T</tspan><tspan baseline-shift="sub" font-size="10">1</tspan>=0.75<tspan font-family="Times New Roman, serif" font-style="italic">T</tspan><tspan baseline-shift="sub" font-size="10">0</tspan>，|Δ<tspan font-family="Times New Roman, serif" font-style="italic">V</tspan>|×2=0.224<tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<text x="20" y="52" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">青：加速案 <tspan font-family="Times New Roman, serif" font-style="italic">T</tspan><tspan baseline-shift="sub" font-size="10">1</tspan>=1.25<tspan font-family="Times New Roman, serif" font-style="italic">T</tspan><tspan baseline-shift="sub" font-size="10">0</tspan>，|Δ<tspan font-family="Times New Roman, serif" font-style="italic">V</tspan>|×2=0.134<tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<text x="20" y="74" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">破線：元の円軌道（半径 <tspan font-family="Times New Roman, serif" font-style="italic">R</tspan>），地球の半径 <tspan font-family="Times New Roman, serif" font-style="italic">R</tspan>/2</text>
+</svg>

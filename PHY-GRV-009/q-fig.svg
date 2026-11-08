@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 420">
+<defs><marker id="q-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#1f5fbf"/></marker>
+<marker id="q-ak" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#222"/></marker></defs>
+<circle cx="230" cy="215" r="150" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="230" cy="215" r="75.0" fill="#ddd" stroke="#222" stroke-width="1.6"/>
+<text x="230" y="250" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">地球</text><circle cx="230" cy="215" r="2.5" fill="#222"/><text x="236" y="233" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">O</text>
+<line x1="230" y1="215" x2="230" y2="65" stroke="#888" stroke-dasharray="4 3"/>
+<line x1="230" y1="215" x2="115.1" y2="118.6" stroke="#888" stroke-dasharray="4 3"/>
+<path d="M230,160 A55,55 0 0 0 187.9,179.6" fill="none" stroke="#222"/>
+<text x="208" y="155" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">θ</text>
+<rect x="225" y="60" width="10" height="10" fill="#fff" stroke="#222" stroke-width="1.6"/>
+<text x="238" y="55" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">U（点 C）</text>
+<circle cx="115.1" cy="118.6" r="6" fill="#222"/><text x="85.1" y="110.6" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">Z</text>
+<line x1="222" y1="65" x2="170" y2="65" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<text x="175" y="57" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">V<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+<path d="M89.0,266.3 A150,150 0 0 0 123.9,321.1" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+<text x="236" y="115" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">R</text>
+<line x1="230" y1="215" x2="294.9" y2="252.5" stroke="#222"/>
+<text x="260" y="225" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">R<tspan baseline-shift="sub" font-size="10" font-style="normal">E</tspan></text>
+</svg>

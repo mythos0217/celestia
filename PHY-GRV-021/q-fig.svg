@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker></defs>
+<path d="M50.7,179.7 A330,330 0 0 1 429.3,179.7" stroke="#222" stroke-width="2" fill="none"/>
+<text x="60.7" y="203.7" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">赤道（地表）</text>
+<circle cx="240.0" cy="120.0" r="5" stroke="#222" stroke-width="1.6" fill="#222"/>
+<text x="230.0" y="140.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="end">P</text>
+<line x1="240.0" y1="112.0" x2="240.0" y2="40.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="248.0" y="64.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf" text-anchor="start">v<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+<text x="250.0" y="44.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">（地面に対して鉛直上向き）</text>
+<line x1="240.0" y1="120.0" x2="240.0" y2="290.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="248.0" y="286.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">中心 O へ（距離 R）</text>
+<line x1="360.0" y1="100.0" x2="440.0" y2="100.0" stroke="#222" stroke-width="1.4" marker-end="url(#q-ak)"/>
+<text x="445.0" y="105.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">東</text>
+<line x1="120.0" y1="100.0" x2="40.0" y2="100.0" stroke="#222" stroke-width="1.4" marker-end="url(#q-ak)"/>
+<text x="35.0" y="105.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="end">西</text>
+<path d="M127.6,171.8 A300,300 0 0 1 352.4,171.8" stroke="#1f5fbf" stroke-width="1.8" fill="none" marker-end="url(#q-ab)"/>
+<text x="358.4" y="191.8" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf" text-anchor="start">Ω</text>
+<text x="374.4" y="191.8" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#1f5fbf" text-anchor="start">（自転）</text>
+</svg>

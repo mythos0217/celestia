@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 330">
+<defs>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="a-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+</defs>
+<circle cx="160" cy="165" r="26" fill="#ddd" stroke="#222" stroke-width="1.6"/>
+<circle cx="160.0" cy="165.0" r="78.0" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<ellipse cx="212.0" cy="165" rx="104.0" ry="90.1" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+<circle cx="160" cy="165" r="2.5" fill="#222"/>
+<text x="164.0" y="181.0" font-family="Times New Roman, serif" font-size="14" text-anchor="start" fill="#222">O</text>
+<line x1="108.0" y1="165.0" x2="316.0" y2="165.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="108" cy="165" r="3.5" fill="#222"/><circle cx="316" cy="165" r="3.5" fill="#222"/>
+<line x1="108.0" y1="193.0" x2="160.0" y2="193.0" stroke="#888" stroke-width="1" marker-end="url(#a-ag)" marker-start="url(#a-ag)"/>
+<text x="134.0" y="209.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" text-anchor="middle" fill="#222">2R</text>
+<line x1="160.0" y1="193.0" x2="316.0" y2="193.0" stroke="#888" stroke-width="1" marker-end="url(#a-ag)" marker-start="url(#a-ag)"/>
+<text x="238.0" y="209.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" text-anchor="middle" fill="#222">6R</text>
+<line x1="108.0" y1="165.0" x2="108.0" y2="199.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="316.0" y1="165.0" x2="316.0" y2="199.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="102.0" y="157.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" text-anchor="end" fill="#222">近地点</text>
+<text x="322.0" y="157.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" text-anchor="start" fill="#222">遠地点</text>
+<circle cx="160" cy="87" r="4" fill="#222"/>
+<text x="168.0" y="79.0" font-family="Times New Roman, serif" font-size="14" text-anchor="start" fill="#222">P</text>
+<line x1="160.0" y1="87.0" x2="100.0" y2="87.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<text x="120.0" y="79.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" text-anchor="middle" fill="#1f5fbf">v<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<line x1="160.0" y1="87.0" x2="160.0" y2="117.0" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/>
+<text x="166.0" y="117.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" text-anchor="start" fill="#c0392b">v<tspan baseline-shift="sub" font-size="10">0</tspan>/2</text>
+<text x="330.0" y="40.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="start" fill="#1f5fbf">本体の新しい軌道</text>
+<text x="330.0" y="58.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="start" fill="#1f5fbf">（半長軸 4<tspan font-family="Times New Roman, serif" font-style="italic">R</tspan>）</text>
+<text x="300.0" y="300.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" text-anchor="middle" fill="#888">点線：もとの円軌道（半径 3<tspan font-family="Times New Roman, serif" font-style="italic">R</tspan>）</text>
+</svg>

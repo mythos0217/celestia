@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 300">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker></defs>
+<line x1="70.0" y1="250.0" x2="400.0" y2="250.0" stroke="#222" stroke-width="2.2"/>
+<line x1="70.0" y1="250.0" x2="200.0" y2="24.8" stroke="#222" stroke-width="2.2"/>
+<line x1="82.0" y1="250.0" x2="74.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="94.0" y1="250.0" x2="86.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="106.0" y1="250.0" x2="98.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="118.0" y1="250.0" x2="110.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="130.0" y1="250.0" x2="122.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="142.0" y1="250.0" x2="134.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="154.0" y1="250.0" x2="146.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="166.0" y1="250.0" x2="158.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="178.0" y1="250.0" x2="170.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="190.0" y1="250.0" x2="182.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="202.0" y1="250.0" x2="194.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="214.0" y1="250.0" x2="206.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="226.0" y1="250.0" x2="218.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="238.0" y1="250.0" x2="230.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="250.0" y1="250.0" x2="242.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="262.0" y1="250.0" x2="254.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="274.0" y1="250.0" x2="266.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="286.0" y1="250.0" x2="278.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="298.0" y1="250.0" x2="290.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="310.0" y1="250.0" x2="302.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="322.0" y1="250.0" x2="314.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="334.0" y1="250.0" x2="326.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="346.0" y1="250.0" x2="338.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="358.0" y1="250.0" x2="350.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="370.0" y1="250.0" x2="362.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="382.0" y1="250.0" x2="374.0" y2="258.0" stroke="#222" stroke-width="1"/>
+<line x1="76.0" y1="239.6" x2="66.1" y2="240.8" stroke="#222" stroke-width="1"/>
+<line x1="82.0" y1="229.2" x2="72.1" y2="230.4" stroke="#222" stroke-width="1"/>
+<line x1="88.0" y1="218.8" x2="78.1" y2="220.0" stroke="#222" stroke-width="1"/>
+<line x1="94.0" y1="208.4" x2="84.1" y2="209.6" stroke="#222" stroke-width="1"/>
+<line x1="100.0" y1="198.0" x2="90.1" y2="199.2" stroke="#222" stroke-width="1"/>
+<line x1="106.0" y1="187.6" x2="96.1" y2="188.8" stroke="#222" stroke-width="1"/>
+<line x1="112.0" y1="177.3" x2="102.1" y2="178.5" stroke="#222" stroke-width="1"/>
+<line x1="118.0" y1="166.9" x2="108.1" y2="168.1" stroke="#222" stroke-width="1"/>
+<line x1="124.0" y1="156.5" x2="114.1" y2="157.7" stroke="#222" stroke-width="1"/>
+<line x1="130.0" y1="146.1" x2="120.1" y2="147.3" stroke="#222" stroke-width="1"/>
+<line x1="136.0" y1="135.7" x2="126.1" y2="136.9" stroke="#222" stroke-width="1"/>
+<line x1="142.0" y1="125.3" x2="132.1" y2="126.5" stroke="#222" stroke-width="1"/>
+<line x1="148.0" y1="114.9" x2="138.1" y2="116.1" stroke="#222" stroke-width="1"/>
+<line x1="154.0" y1="104.5" x2="144.1" y2="105.7" stroke="#222" stroke-width="1"/>
+<line x1="160.0" y1="94.1" x2="150.1" y2="95.3" stroke="#222" stroke-width="1"/>
+<line x1="166.0" y1="83.7" x2="156.1" y2="84.9" stroke="#222" stroke-width="1"/>
+<line x1="172.0" y1="73.3" x2="162.1" y2="74.5" stroke="#222" stroke-width="1"/>
+<line x1="178.0" y1="62.9" x2="168.1" y2="64.1" stroke="#222" stroke-width="1"/>
+<line x1="184.0" y1="52.5" x2="174.1" y2="53.7" stroke="#222" stroke-width="1"/>
+<line x1="190.0" y1="42.2" x2="180.1" y2="43.4" stroke="#222" stroke-width="1"/>
+<path d="M120.0,250.0 A50.0,50.0 0 0 0 95.0,206.7" fill="none" stroke="#888" stroke-width="1"/>
+<text x="126.0" y="228.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">θ</text>
+<text x="370.0" y="276.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">壁1</text>
+<text x="210.0" y="35.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">壁2</text>
+<text x="60.0" y="272.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">O</text>
+<text x="250.0" y="60.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">上から見た図</text>
+<text x="250.0" y="82.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">（O は2つの壁が交わる鉛直な線）</text>
+<circle cx="220.0" cy="175.0" r="18.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="220.0" y="180.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">人</text>
+<line x1="220.0" y1="193.0" x2="220.0" y2="250.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="206.0" y1="165.0" x2="140.0" y2="128.8" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+</svg>

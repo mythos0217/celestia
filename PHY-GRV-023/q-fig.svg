@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 380">
+<defs><marker id="q-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker></defs>
+<!-- triangle: side 240, body1 (210,60), body2 (330,268), body3 (90,268) -->
+<polygon points="210,60 330,268 90,268" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="210" cy="60" r="14" fill="#222"/>
+<circle cx="330" cy="268" r="9" fill="#222"/>
+<circle cx="90" cy="268" r="9" fill="#222"/>
+<!-- centroid for M=3m shown approx: y_C between -->
+<circle cx="210" cy="164" r="3" fill="#222"/>
+<text x="218" y="170" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">C</text>
+<text x="232" y="56" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">天体1</text>
+<text x="232" y="76" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">M</text>
+<text x="344" y="272" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">天体2</text>
+<text x="344" y="292" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">m</text>
+<text x="20" y="272" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">天体3</text>
+<text x="56" y="292" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">m</text>
+<text x="280" y="160" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">L</text>
+<text x="128" y="160" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">L</text>
+<text x="205" y="290" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">L</text>
+<!-- omega arrow around C -->
+<path d="M 150 330 A 120 40 0 0 0 250 335" fill="none" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ah)"/>
+<text x="196" y="366" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">ω</text>
+<text x="40" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">（形を保ったまま C のまわりを回転）</text>
+</svg>

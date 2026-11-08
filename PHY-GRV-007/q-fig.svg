@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker><marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#888"/></marker></defs>
+<circle cx="110.0" cy="175.0" r="55.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="110.0" cy="175.0" r="3" fill="#222"/>
+<text x="110.0" y="197.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">M</text>
+<text x="110.0" y="252.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">惑星</text>
+<line x1="110.0" y1="175.0" x2="71.0" y2="135.9" stroke="#222" stroke-width="1"/>
+<text x="84.0" y="163.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="end">R</text>
+<path d="M409.1,314.5 A330.0,330.0 0 0 0 409.1,35.5" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="110.0" y1="175.0" x2="530.0" y2="175.0" stroke="#888" stroke-width="1" stroke-dasharray="4,4"/>
+<circle cx="440.0" cy="175.0" r="2.5" fill="#222"/>
+<circle cx="458.0" cy="162.4" r="22.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="422.0" cy="187.6" r="22.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="390.9" y1="209.4" x2="493.2" y2="137.7" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<path d="M495.0,175.0 A55.0,55.0 0 0 0 485.1,143.5" fill="none" stroke="#222" stroke-width="1"/>
+<text x="502.0" y="161.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">φ</text>
+<line x1="110.0" y1="270.0" x2="440.0" y2="270.0" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+<text x="275.0" y="287.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">r</text>
+<line x1="440.0" y1="175.0" x2="440.0" y2="275.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="110.0" y1="230.0" x2="110.0" y2="275.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="440.0" y="95.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">半径 <tspan font-family="Times New Roman, serif" font-style="italic">s</tspan>，質量 <tspan font-family="Times New Roman, serif" font-style="italic">m</tspan> の一様な球2個</text>
+<text x="440.0" y="113.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">（重心は半径 <tspan font-family="Times New Roman, serif" font-style="italic">r</tspan> の円軌道）</text>
+<line x1="385.0" y1="235.0" x2="385.0" y2="195.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="378.0" y="225.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="end">公転の向き</text>
+</svg>

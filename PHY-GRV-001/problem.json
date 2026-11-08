@@ -1,0 +1,144 @@
+{
+ "id": "PHY-GRV-001",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "円軌道上での動径方向の分離と分離後の楕円軌道・脱出条件",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球（質量 $M$，半径 $R$）の中心Oから距離 $3R$ の円軌道上を，全質量 $m$ の宇宙船が速さ $v_0$ で回っている．万有引力定数を $G$ とし，地球の自転や大気の影響は無視する．\n宇宙船が図の点Pに来たとき，内部のばねにより，質量 $m_1$ の探査機をOPの向き（地球の中心から遠ざかる向き）に打ち出した．打ち出しは瞬間的に行われ，その直後，残りの本体（質量 $m-m_1$）の速度のOP方向の成分は，Oへ向かう向きに大きさ $\\dfrac{v_0}{2}$ であった．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$v_0$ と，円軌道の周期 $T_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "打ち出し直後の本体の速度の，OPに垂直な成分の大きさを求めよ．また，その後の本体の軌道上で，本体がOに最も近づくときと最も遠ざかるときのOからの距離 $r_{\\min}$，$r_{\\max}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "本体がOに最も近づくときの速さ $v_{\\mathrm{p}}$ と，本体の新しい軌道の周期 $T$ を求めよ．$T$ は $T_0$ を用いて表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "打ち出し直後の探査機の速度のOP方向の成分 $w$ を $m$，$m_1$，$v_0$ で表せ．また，探査機が地球の引力圏から脱出する（無限遠方へ飛び去る）ための $\\dfrac{m_1}{m}$ の条件を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$m_1=\\dfrac{m}{4}$ のとき，地球から十分遠方での探査機の速さを $v_0$ を用いて表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：円軌道上での動径方向の分離と分離後の楕円軌道・脱出条件",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：円軌道上での動径方向の分離と分離後の楕円軌道・脱出条件",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_0=\\sqrt{\\dfrac{GM}{3R}}$，$T_0=6\\pi R\\sqrt{\\dfrac{3R}{GM}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$v_0$，$r_{\\min}=2R$，$r_{\\max}=6R$"
+   },
+   {
+    "id": "3",
+    "tex": "$v_{\\mathrm{p}}=\\dfrac{\\sqrt3}{2}\\sqrt{\\dfrac{GM}{R}}$，$T=\\dfrac{8\\sqrt3}{9}T_0$"
+   },
+   {
+    "id": "4",
+    "tex": "$w=\\dfrac{m-m_1}{2m_1}v_0$，$\\dfrac{m_1}{m}\\le\\dfrac13$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{\\sqrt5}{2}v_0$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 万有引力が向心力となるので $m\\dfrac{v_0^2}{3R}=\\dfrac{GMm}{(3R)^2}$，よって $v_0=\\boldsymbol{\\sqrt{\\dfrac{GM}{3R}}}$．\n\\[ T_0=\\frac{2\\pi\\cdot3R}{v_0}=\\boldsymbol{6\\pi R\\sqrt{\\frac{3R}{GM}}} \\]\n\n\\textbf{(2)} 打ち出しの力（ばねの力）はOP方向のみに働き，打ち出しは瞬間的なので万有引力の力積も無視できる．したがってOPに垂直な方向には各部分の運動量が変わらず，本体の速度のOPに垂直な成分は $\\boldsymbol{v_0}$ のままである．\n以後，本体には万有引力（中心力）だけが働くので，面積速度と力学的エネルギーが保存される．ここで注意すべきは，点Pでは速度がOPに垂直ではないことである．面積速度は「距離 × 速度の動径に垂直な成分」で決まるので，Pでは $\\dfrac12\\cdot3R\\cdot v_0$ である（OP方向成分 $\\dfrac{v_0}{2}$ は面積速度に寄与しない）．\nOに最も近い点・遠い点では速度が動径に垂直なので，そこでの距離を $r$，速さを $v$ とすると\n\\[ rv=3Rv_0,\\qquad \\frac12v^2-\\frac{GM}{r}=\\frac12\\left(v_0^2+\\frac{v_0^2}{4}\\right)-\\frac{GM}{3R} \\]\n$v_0^2=\\dfrac{GM}{3R}$ より右辺は $\\dfrac58\\cdot\\dfrac{GM}{3R}-\\dfrac{GM}{3R}=-\\dfrac{GM}{8R}$．$v=\\dfrac{3Rv_0}{r}$ を代入すると\n\\[ \\frac{3GMR}{2r^2}-\\frac{GM}{r}=-\\frac{GM}{8R}\\iff r^2-8Rr+12R^2=0 \\]\nよって $r_{\\min}=\\boldsymbol{2R}$，$r_{\\max}=\\boldsymbol{6R}$．$r_{\\min}>R$ なので本体は地表に衝突しない．\n\n\\textbf{(3)} $v_{\\mathrm{p}}=\\dfrac{3Rv_0}{2R}=\\dfrac32\\sqrt{\\dfrac{GM}{3R}}=\\boldsymbol{\\dfrac{\\sqrt3}{2}\\sqrt{\\dfrac{GM}{R}}}$．\n新しい軌道は半長軸 $a=\\dfrac{2R+6R}{2}=4R$ の楕円である（Pは楕円の短軸方向の端ではなく，焦点Oを通り長軸に垂直な弦の端にあたる：解答図）．ケプラーの第3法則より\n\\[ \\frac{T^2}{(4R)^3}=\\frac{T_0^2}{(3R)^3}\\qquad\\therefore\\quad T=\\left(\\frac43\\right)^{\\frac32}T_0=\\boldsymbol{\\frac{8\\sqrt3}{9}T_0} \\]\n\n\\textbf{(4)} 打ち出し前，宇宙船の速度のOP方向成分は0である．OP方向の運動量保存より\n\\[ m_1w-(m-m_1)\\frac{v_0}{2}=0\\qquad\\therefore\\quad w=\\boldsymbol{\\frac{m-m_1}{2m_1}v_0} \\]\n探査機の速度のOPに垂直な成分も $v_0$ なので，速さの2乗は $v_0^2+w^2$．脱出するには力学的エネルギーが0以上であればよい：\n\\[ \\frac12(v_0^2+w^2)-\\frac{GM}{3R}\\ge0\\iff w^2\\ge v_0^2\\iff\\frac{m-m_1}{2m_1}\\ge1 \\]\nよって $\\boldsymbol{\\dfrac{m_1}{m}\\le\\dfrac13}$．\n\n\\textbf{(5)} $m_1=\\dfrac m4$ のとき $w=\\dfrac{3m/4}{m/2}v_0=\\dfrac32v_0$．遠方での速さを $v_\\infty$ とするとエネルギー保存より\n\\[ \\frac12v_\\infty^2=\\frac12\\left(v_0^2+\\frac94v_0^2\\right)-\\frac{GM}{3R}=\\frac12\\cdot\\frac{13}{4}v_0^2-v_0^2=\\frac58v_0^2 \\]\nよって $v_\\infty=\\boldsymbol{\\dfrac{\\sqrt5}{2}v_0}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "動径方向の分離では，接線方向の速度成分が変わらず動径成分だけが加わる．以後の楕円軌道は，面積速度を「速度の動径に垂直な成分」で評価し，エネルギー保存と連立して近地点・遠地点を求め，周期はケプラーの第3法則で半長軸から求める．脱出条件は動径成分の大きさと運動量保存を結びつけて質量比の条件に直す．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "momentum-conservation",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "万有引力",
+  "面積速度",
+  "楕円軌道",
+  "ケプラーの法則",
+  "運動量保存",
+  "脱出速度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,151 @@
+{
+ "id": "PHY-GRV-021",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "赤道で真上に投げ上げた物体の落下点のずれ（面積速度一定による自転の効果と塔からの落下との比較）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球を半径 $R$ の球とし，地軸のまわりに角速度 $\\Omega$ で自転しているとする．図のように，赤道上の地点Pから，物体を地面に対して鉛直上向きに速さ $v_0$ で投げ上げる．自転していない（地球の外の）観測者から見ると，物体には地球の中心Oに向かう万有引力だけがはたらくので，物体のOのまわりの面積速度は一定に保たれる．運動は赤道面内で起こる．空気抵抗と地球の公転は無視する．\n\n物体の高さ $y$ は $R$ に比べて十分小さいので，$\\dfrac yR$ の1次までの近似を用いる．また，物体の鉛直方向の運動は，大きさ $g$ の一定の加速度で減速・加速する運動（自転の影響を含めた重力加速度 $g$ による運動）として扱ってよい．\n\n物体の真下にある地表の点（Oと物体を結ぶ直線が地表と交わる点）をQとし，QがPに対して地表に沿って東向きに動く速さを $w$（西向きなら負）とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "投げ上げた直後の物体の速度の水平成分（自転していない観測者から見た値）と，Oのまわりの面積速度 $s$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "高さ $y$ にあるときの物体のOのまわりの角速度 $\\omega$ を求めよ．また，$w\\approx-2\\Omega y$ となることを示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "物体が最高点に達したとき，QはPからどちら向きにどれだけ離れているか．また，そのときの $w$ を求めよ．$v_0,\\ g,\\ \\Omega$ で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "物体が地面に落ちる点はPからどちら向きにどれだけ離れているか．"
+     },
+     {
+      "id": "5",
+      "tex": "比較のため，(3)の最高点と同じ高さの塔の頂上から物体を静かに（塔に対して速さ $0$ で）放すと，物体は塔の真下の点より東に落ちる．このずれを $v_0,\\ g,\\ \\Omega$ で表せ．さらに，投げ上げた物体は下りの区間だけを見ても西へずれることを，(3)の結果を用いて説明せよ．"
+     },
+     {
+      "id": "6",
+      "tex": "$v_0=49\\ \\mathrm{m/s}$，$\\Omega=7.3\\times10^{-5}\\ \\mathrm{rad/s}$，$g=9.8\\ \\mathrm{m/s^2}$ のとき，(4)のずれの大きさを有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：赤道で真上に投げ上げた物体の落下点のずれ（面積速度一定による自転の効果と塔からの落下との比較）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：赤道で真上に投げ上げた物体の落下点のずれ（面積速度一定による自転の効果と塔からの落下との比較）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "東向きに $R\\Omega$，$s=\\frac12R^2\\Omega$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\omega=\\Omega\\dfrac{R^2}{(R+y)^2}$，$w=R(\\omega-\\Omega)\\approx-2\\Omega y$"
+   },
+   {
+    "id": "3",
+    "tex": "西へ $\\dfrac{2\\Omega v_0^3}{3g^2}$，$w=-\\dfrac{\\Omega v_0^2}{g}$（西向きに $\\dfrac{\\Omega v_0^2}{g}$）"
+   },
+   {
+    "id": "4",
+    "tex": "西へ $\\dfrac{4\\Omega v_0^3}{3g^2}$"
+   },
+   {
+    "id": "5",
+    "tex": "東へ $\\dfrac{\\Omega v_0^3}{3g^2}$；最高点ですでに西向きの相対速度 $\\dfrac{\\Omega v_0^2}{g}$ をもつので，下りの間にこれだけで西へ $\\dfrac{\\Omega v_0^3}{g^2}$ 進み，東へ戻す効果 $\\dfrac{\\Omega v_0^3}{3g^2}$ を上回る"
+   },
+   {
+    "id": "6",
+    "tex": "西へ $0.12\\ \\mathrm{m}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 投げ上げた直後}\n\n自転していない観測者から見ると，Pは半径 $R$，角速度 $\\Omega$ で東向きに回っているので，物体は鉛直上向きの $v_0$ に加えて東向きの速さ $\\boldsymbol{R\\Omega}$ をもつ．面積速度は「Oからの距離」×「速度の動径に垂直な成分」の半分なので\n\\[ s=\\frac12R\\cdot R\\Omega=\\boldsymbol{\\frac12R^2\\Omega} \\]\n\n\\textbf{(2) 高さ $y$ での角速度}\n\n物体にはたらく力はOを向く万有引力だけなので面積速度は一定である．高さ $y$ で角速度が $\\omega$ なら，速度の動径に垂直な成分は $(R+y)\\omega$ だから\n\\[ \\frac12(R+y)^2\\omega=\\frac12R^2\\Omega\\quad\\Longrightarrow\\quad\\boldsymbol{\\omega=\\Omega\\frac{R^2}{(R+y)^2}}\\approx\\Omega\\left(1-\\frac{2y}{R}\\right) \\]\nQとPはどちらも地表（半径 $R$）上の点で，Qは物体とともに角速度 $\\omega$，Pは $\\Omega$ で回るから，地表に沿った東向きの相対的な速さは\n\\[ w=R(\\omega-\\Omega)\\approx\\boldsymbol{-2\\Omega y} \\]\n高いところでは同じ面積速度を保つために角速度が小さくなるので，物体は地面に対して西へ遅れていく．\n\n\\textbf{(3) 最高点でのずれと相対速度}\n\n鉛直方向は $y=v_0t-\\frac12gt^2$ で，最高点の時刻は $t_1=\\dfrac{v_0}{g}$，高さは $h=\\dfrac{v_0^2}{2g}$．QのPからの東向きの変位 $x$ は $\\dfrac{dx}{dt}=w=-2\\Omega y$ を積分して\n\\[ x(t_1)=-2\\Omega\\int_0^{t_1}\\left(v_0t-\\frac12gt^2\\right)dt=-2\\Omega\\left(\\frac{v_0^3}{2g^2}-\\frac{v_0^3}{6g^2}\\right)=-\\frac{2\\Omega v_0^3}{3g^2} \\]\nよって最高点では\\textbf{西へ $\\boldsymbol{\\dfrac{2\\Omega v_0^3}{3g^2}}$}．このときの相対速度は $w=-2\\Omega h=\\boldsymbol{-\\dfrac{\\Omega v_0^2}{g}}$（西向き）である．\n\n\\textbf{(4) 落下点}\n\n着地は $t_2=\\dfrac{2v_0}{g}$ で，\n\\[ x(t_2)=-2\\Omega\\int_0^{t_2}\\left(v_0t-\\frac12gt^2\\right)dt=-2\\Omega\\left(\\frac{2v_0^3}{g^2}-\\frac{4v_0^3}{3g^2}\\right)=-\\frac{4\\Omega v_0^3}{3g^2} \\]\n落下点は\\textbf{Pの西へ $\\boldsymbol{\\dfrac{4\\Omega v_0^3}{3g^2}}$}．\n\n\\textbf{(5) 塔から落とす場合との比較}\n\n塔の頂上（高さ $h$）の物体は塔とともに角速度 $\\Omega$ で回っているので，面積速度は $\\frac12(R+h)^2\\Omega$ と大きい．高さ $z$ での角速度は\n\\[ \\omega'=\\Omega\\frac{(R+h)^2}{(R+z)^2}\\approx\\Omega\\left(1+\\frac{2(h-z)}{R}\\right) \\]\nで，地表に沿った相対速度は $w'=2\\Omega(h-z)$ と東向きになる．放してからの時刻を $t'$ とすると $h-z=\\frac12gt'^2$ なので $w'=\\Omega gt'^2$．落下時間は $\\sqrt{2h/g}=\\dfrac{v_0}{g}$ だから\n\\[ x'=\\int_0^{v_0/g}\\Omega gt'^2dt'=\\boldsymbol{\\frac{\\Omega v_0^3}{3g^2}}\\quad(\\text{東へ}) \\]\n投げ上げた物体の下りの区間では $z=h-\\frac12gt'^2$ で，$w=-2\\Omega z=-2\\Omega h+\\Omega gt'^2$ である．第2項は塔の物体と全く同じで東へ $\\dfrac{\\Omega v_0^3}{3g^2}$ ずらすが，第1項は最高点ですでにもっている西向きの相対速度 $\\dfrac{\\Omega v_0^2}{g}$ がそのまま続く分で，落下時間 $\\dfrac{v_0}{g}$ の間に西へ $\\dfrac{\\Omega v_0^3}{g^2}$ ずらす．差し引き下りの区間だけで西へ $\\dfrac{2\\Omega v_0^3}{3g^2}$ ずれ，上りの区間の西へのずれ（(3)）と合わせて(4)の結果になる．塔の物体は塔とともに回っていた（大きな面積速度をもつ）のに対し，投げ上げた物体は地表の小さな面積速度のまま上がってきたことが違いである．\n\n\\textbf{(6) 数値}\n\n\\[ \\frac{4\\Omega v_0^3}{3g^2}=\\frac{4\\times7.3\\times10^{-5}\\times49^3}{3\\times9.8^2}=\\frac43\\times7.3\\times10^{-5}\\times1225\\approx\\boldsymbol{0.12\\ \\mathrm{m}}\\ (\\text{西へ}) \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "自転する地球上の物体の運動は，自転していない系で見ると万有引力だけによる面積速度一定の運動で，高さ $y$ にある物体の角速度は $\\Omega(1-2y/R)$ と地面より遅れる．地表に沿った相対速度 $-2\\Omega y$ を時間積分すると，鉛直に投げ上げた物体は西へ $\\frac{4\\Omega v_0^3}{3g^2}$ ずれて落ちる．最高点ですでに西向きの相対速度をもつことが，塔から静かに落とした物体（東へずれる）との違いを生む．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "projectile-motion",
+  "kinematics-components"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "面積速度一定",
+  "自転",
+  "相対運動",
+  "近似計算",
+  "積分"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 340">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<path d="M205,60.1 A120,120 0 0,0 205,299.9 Z" fill="#88888866" stroke="#222" stroke-width="1.6"/>
+<path d="M215,60.1 A120,120 0 0,1 215,299.9 Z" fill="#88888866" stroke="#222" stroke-width="1.6"/>
+<rect x="202" y="100" width="16" height="8" fill="#ffffff" stroke="#222" stroke-width="1.2"/>
+<rect x="202" y="150" width="16" height="8" fill="#ffffff" stroke="#222" stroke-width="1.2"/>
+<rect x="202" y="200" width="16" height="8" fill="#ffffff" stroke="#222" stroke-width="1.2"/>
+<rect x="202" y="250" width="16" height="8" fill="#ffffff" stroke="#222" stroke-width="1.2"/>
+<line x1="210.0" y1="20.0" x2="210.0" y2="330.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<path d="M180,38 A30,9 0 1,0 240,38" fill="none" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="246.0" y="32.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">ω</text>
+<circle cx="210.0" cy="180.0" r="2.5" fill="#222" stroke="#222" stroke-width="1.6"/>
+<line x1="215.0" y1="180.0" x2="313.3" y2="248.8" stroke="#222" stroke-width="1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<text x="270.0" y="230.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">R</text>
+<text x="110.0" y="170.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">半球 A</text>
+<text x="250.0" y="170.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">半球 B</text>
+<text x="228.0" y="85.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">支柱</text>
+<text x="100.0" y="330.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">回転軸を含む面で分割</text>
+</svg>

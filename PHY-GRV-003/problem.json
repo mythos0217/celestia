@@ -1,0 +1,128 @@
+{
+ "id": "PHY-GRV-003",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "ホーマン遷移軌道による火星往復（出発時の惑星配置と火星での待ち時間）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球と火星は，太陽を中心とする同一平面上の円軌道を同じ向きに公転している．軌道半径はそれぞれ $r$，$Cr\\ (C>1)$ であり，地球の公転周期を $1$ 年とする．探査機は太陽の引力だけを受けて運動するものとし，地球・火星の引力，探査機の加速・減速に要する時間は無視する．\n\n探査機は，地球の軌道上の点 A で，地球と同じ速度から公転の向きに瞬間的に加速され，太陽を1つの焦点とし，A を近日点，太陽をはさんで A の反対側にある火星の軌道上の点 B を遠日点とする楕円軌道（遷移軌道）の半周をたどって B に向かう（図）．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A で加速した直後の探査機の速さは，地球の公転の速さの何倍か．$C$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "A から B までの所要時間 $t_1$［年］を $C$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "探査機が B に着いたときに火星もちょうど B にいるためには，出発の瞬間に，火星は太陽から見て地球より角 $\\varphi$ だけ公転の向きに先行していなければならない．$\\varphi$ を $C$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "探査機は火星にしばらく滞在した後，火星の軌道上の点を遠日点，地球の軌道上の点を近日点とする同じ形の遷移軌道の半周をたどって地球に戻る．$C=1.52$ として，$t_1$［年］，$\\varphi$［度］，火星での最短の滞在時間 $t_{\\mathrm w}$［年］，地球を出てから戻るまでの合計時間をそれぞれ有効数字2桁で求めよ．必要なら $(1.26)^{3/2}=1.414$，$(1.52)^{3/2}=1.874$ を用いよ．"
+     },
+     {
+      "id": "5",
+      "tex": "仮想的な惑星 X（軌道半径 $Cr$）に向けて同じ方法で往復するとき，X に着いてから滞在時間 $0$ でただちに引き返しても，地球に戻ったときに地球がそこにいるような $C\\ (>1)$ がある．そのような $C$ の最小値を求め，有効数字3桁で答えよ．必要なら $2^{2/3}=1.587$ を用いよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ホーマン遷移軌道による火星往復（出発時の惑星配置と火星での待ち時間）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\sqrt{\\dfrac{2C}{1+C}}$ 倍"
+   },
+   {
+    "id": "2",
+    "tex": "$t_1=\\dfrac12\\left(\\dfrac{1+C}{2}\\right)^{3/2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\varphi=\\pi\\left\\{1-\\left(\\dfrac{1+C}{2C}\\right)^{3/2}\\right\\}$"
+   },
+   {
+    "id": "4",
+    "tex": "$t_1=0.71$ 年，$\\varphi=44^\\circ$，$t_{\\mathrm w}=1.3$ 年，合計 $2.7$ 年"
+   },
+   {
+    "id": "5",
+    "tex": "$C=2^{5/3}-1\\approx2.17$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "太陽の質量を $M_{\\mathrm S}$，万有引力定数を $G$ とする．地球の公転の速さを $v_{\\mathrm E}$ とすると $\\dfrac{v_{\\mathrm E}^{\\,2}}{r}=\\dfrac{GM_{\\mathrm S}}{r^2}$ より $v_{\\mathrm E}^{\\,2}=\\dfrac{GM_{\\mathrm S}}{r}$．角はすべて太陽から見た公転の向きの角で測る．\n\n\\textbf{(1) A での速さ}\nA，B での探査機の速さを $v_{\\mathrm A},\\ v_{\\mathrm B}$ とする．近日点・遠日点では速度が動径に垂直なので，面積速度一定（ケプラーの第2法則）より $rv_{\\mathrm A}=Crv_{\\mathrm B}$．力学的エネルギー保存則より\n\\[ \\frac12v_{\\mathrm A}^{\\,2}-\\frac{GM_{\\mathrm S}}{r}=\\frac12v_{\\mathrm B}^{\\,2}-\\frac{GM_{\\mathrm S}}{Cr}. \\]\n$v_{\\mathrm B}=v_{\\mathrm A}/C$ を代入して\n\\[ \\frac12v_{\\mathrm A}^{\\,2}\\left(1-\\frac1{C^2}\\right)=\\frac{GM_{\\mathrm S}}{r}\\left(1-\\frac1C\\right)\\quad\\Longrightarrow\\quad v_{\\mathrm A}^{\\,2}=\\frac{2C}{1+C}\\,v_{\\mathrm E}^{\\,2}. \\]\nよって $\\boldsymbol{\\sqrt{\\dfrac{2C}{1+C}}}$ 倍．\n\n\\textbf{(2) 所要時間}\n遷移軌道の長軸は $r+Cr$ で，半長軸は $\\dfrac{(1+C)r}{2}$．ケプラーの第3法則は太陽のまわりを回る天体に共通なので，地球（半径 $r$，周期 $1$ 年）と比べて遷移軌道の周期は $\\left(\\frac{1+C}{2}\\right)^{3/2}$ 年．A から B は半周なので\n\\[ \\boldsymbol{t_1=\\frac12\\left(\\frac{1+C}{2}\\right)^{3/2}}\\ \\text{年}. \\]\n\n\\textbf{(3) 出発時の配置}\n火星の公転周期は $C^{3/2}$ 年なので，$t_1$ の間に火星は $2\\pi\\dfrac{t_1}{C^{3/2}}=\\pi\\left(\\dfrac{1+C}{2C}\\right)^{3/2}$ だけ進む．B は A から $\\pi$ 進んだ位置なので\n\\[ \\varphi+\\pi\\left(\\frac{1+C}{2C}\\right)^{3/2}=\\pi\\qquad\\therefore\\ \\boldsymbol{\\varphi=\\pi\\left\\{1-\\left(\\frac{1+C}{2C}\\right)^{3/2}\\right\\}}. \\]\n\n\\textbf{(4) 数値と待ち時間}\n$C=1.52$ では $\\frac{1+C}{2}=1.26$ なので $t_1=\\frac12\\times1.414=0.707$，$\\boldsymbol{t_1\\approx0.71}$ 年．$\\left(\\frac{1+C}{2C}\\right)^{3/2}=\\frac{1.414}{1.874}=0.7545$ より $\\varphi=180^\\circ\\times0.2455\\approx\\boldsymbol{44^\\circ}$．\n\n地球の角速度を $\\omega_{\\mathrm E}=2\\pi$［/年］，火星の角速度を $\\omega_{\\mathrm M}=\\dfrac{2\\pi}{C^{3/2}}$ とし，地球の角から火星の角を引いた差を $\\delta$ とする．$\\delta$ は一定の割合 $\\omega_{\\mathrm E}-\\omega_{\\mathrm M}$ で増える．\n\\begin{itemize}\n\\item 到着時：火星は A から $\\pi$ の位置，地球は $\\omega_{\\mathrm E}t_1$ の位置なので $\\delta_{\\text{着}}=\\omega_{\\mathrm E}t_1-\\pi$．\n\\item 帰りの出発時：探査機は出発点から $\\pi$ 進んだ地点に $t_1$ 後に着くので，地球はその間に $\\omega_{\\mathrm E}t_1$ 進んで同じ地点にいなければならない．よって $\\delta_{\\text{発}}=\\pi-\\omega_{\\mathrm E}t_1$（$2\\pi$ の整数倍の違いは同じ配置）．\n\\end{itemize}\nしたがって，$n$ を整数として\n\\[ (\\omega_{\\mathrm E}-\\omega_{\\mathrm M})\\,t_{\\mathrm w}=\\delta_{\\text{発}}-\\delta_{\\text{着}}+2\\pi n=2\\pi(n+1)-2\\omega_{\\mathrm E}t_1 \\]\n\\[ t_{\\mathrm w}=\\frac{(n+1)-2t_1}{1-C^{-3/2}}\\ \\text{年}. \\]\n$2t_1=1.414$ なので，$t_{\\mathrm w}\\geqq0$ となる最小の $n+1$ は $2$ で\n\\[ t_{\\mathrm w}=\\frac{2-1.414}{1-\\frac1{1.874}}=\\frac{0.586}{0.4664}\\approx\\boldsymbol{1.3}\\ \\text{年}, \\]\n合計 $2t_1+t_{\\mathrm w}=1.414+1.256\\approx\\boldsymbol{2.7}$ 年．火星に着いた時点で地球は火星より約 $75^\\circ$ 先に進んでいるが，帰りに必要なのは地球が火星より約 $75^\\circ$ 遅れている配置なので，角の差 $\\delta$ がさらに約 $211^\\circ$ 増えるまで待たなければならない．\n\n\\textbf{(5) 待ち時間が 0 になる条件}\n(4) の式で $t_{\\mathrm w}=0$ となるのは，$2t_1=n+1$，つまり往復の飛行時間 $2t_1$ が地球の公転周期の整数倍のときである（このとき地球はちょうど A に戻っていて，探査機の帰着点も A）．$2t_1=\\left(\\frac{1+C}{2}\\right)^{3/2}$ は $C>1$ で $1$ より大きく，$C$ とともに増加するので，最小の $C$ は $2t_1=2$ のときで\n\\[ \\frac{1+C}{2}=2^{2/3}\\quad\\Longrightarrow\\quad \\boldsymbol{C=2^{5/3}-1=2\\times1.587-1\\approx2.17}. \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "遷移軌道の飛行時間はケプラーの第3法則で半長軸から決まり，目標の惑星がその間に進む角から出発時の惑星の配置（先行角）が逆算できる．帰りの機会は2惑星の角の差が一定の割合で増えることから決まり，往復の飛行時間が地球の公転周期の整数倍になるときだけ待ち時間が 0 になる．"
+ },
+ "concepts": [
+  "universal-gravitation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ケプラーの法則",
+  "ホーマン遷移",
+  "楕円軌道",
+  "会合周期",
+  "惑星の配置"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

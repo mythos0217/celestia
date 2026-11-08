@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+<defs><marker id="a-ak" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker></defs>
+<line x1="110" y1="80" x2="575" y2="80" stroke="#222" stroke-width="1" marker-end="url(#a-ak)"/>
+<line x1="110" y1="250" x2="110" y2="30" stroke="#222" stroke-width="1" marker-end="url(#a-ak)"/>
+<text x="555" y="70" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">t<tspan baseline-shift="sub" font-size="10">r</tspan></text>
+<text x="118" y="34" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">f<tspan baseline-shift="sub" font-size="10">B</tspan>/f<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<text x="92" y="74" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">1</text>
+<polyline points="70,80 110,80 170,200 420,200 480,80 560,80" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+<polygon points="110,80 170,200 420,200 480,80" fill="#1f5fbf" fill-opacity="0.12" stroke="none"/>
+<line x1="110" y1="200" x2="170" y2="200" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="20" y="205" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">1 − <tspan font-family="Times New Roman, serif" font-style="italic">ah</tspan>/<tspan font-family="Times New Roman, serif" font-style="italic">c</tspan>²</text>
+<g stroke="#888" stroke-width="1" stroke-dasharray="5,4">
+<line x1="170" y1="80" x2="170" y2="200"/><line x1="420" y1="80" x2="420" y2="200"/><line x1="480" y1="80" x2="480" y2="200"/>
+</g>
+<text x="104" y="100" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">0</text>
+<text x="156" y="72" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">h/c</text>
+<text x="414" y="72" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">T</text>
+<text x="462" y="72" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">T+h/c</text>
+<text x="200" y="160" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#1f5fbf">面積 ＝ （<tspan font-family="Times New Roman, serif" font-style="italic">ah</tspan>/<tspan font-family="Times New Roman, serif" font-style="italic">c</tspan>²）× <tspan font-family="Times New Roman, serif" font-style="italic">T</tspan></text>
+<text x="200" y="235" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">上底 <tspan font-family="Times New Roman, serif" font-style="italic">T</tspan> − <tspan font-family="Times New Roman, serif" font-style="italic">h/c</tspan>，下底 <tspan font-family="Times New Roman, serif" font-style="italic">T</tspan> + <tspan font-family="Times New Roman, serif" font-style="italic">h/c</tspan> の台形（縦は誇張）</text>
+</svg>

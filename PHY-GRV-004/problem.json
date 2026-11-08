@@ -1,0 +1,144 @@
+{
+ "id": "PHY-GRV-004",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "楕円軌道の近日点・遠日点での曲率半径（調和平均）と，近日点での衝突による軌道の変化",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "質量 $M_{\\mathrm S}$ の太陽のまわりを，質量 $M$ の惑星が，太陽を1つの焦点とする楕円軌道を描いて公転している．図のように，近日点 A と遠日点 B の太陽からの距離を $r_1,\\ r_2$，そこでの惑星の速さを $v_1,\\ v_2$ とする．太陽は静止しているものとし，万有引力定数を $G$ とする．\n\n曲線上を動く物体のある点のごく近くの運動は，その点で軌道に接する円の上の円運動とみなせる．この円の半径を，その点での軌道の曲率半径という．速さを $v$，加速度の速度に垂直な成分の大きさを $a_\\perp$ とすると，曲率半径は $v^2/a_\\perp$ である．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A，B での軌道の曲率半径 $\\rho_1,\\ \\rho_2$ を，それぞれ $G,\\ M_{\\mathrm S},\\ r_1,\\ v_1$ および $G,\\ M_{\\mathrm S},\\ r_2,\\ v_2$ で表せ．また，ケプラーの第2法則を用いて $\\rho_1=\\rho_2$ であることを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の共通の値を $\\rho$ とする．$\\rho$ を $r_1,\\ r_2$ で表し，$r_1<\\rho<r_2$ であることを示せ．また，A を通過した直後に惑星が太陽から遠ざかり始めることを，$\\rho$ と $r_1$ の大小関係から説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "惑星が A を通過する瞬間，惑星の速度と逆向きに速さ $u$ で進んできた質量 $m$ の隕石が惑星に正面衝突し，合体した（$mu<Mv_1$）．衝突は瞬間的で，衝突中の太陽の引力の力積は無視できる．衝突直後の速さ $W$ を求めよ．また，衝突後の軌道の A での曲率半径を $\\rho'$ とするとき，$\\rho'$ を $G,\\ M_{\\mathrm S},\\ r_1,\\ W$ で表し，A が衝突後の軌道の遠日点となるための $W$ の条件を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で A が遠日点となったとき，衝突後の軌道の近日点の太陽からの距離 $r'$ を，$r_1$ と $\\rho'$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "衝突後の軌道が円になるような隕石の速さ $u$ を，$M,\\ m,\\ v_1,\\ r_1,\\ r_2$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：楕円軌道の近日点・遠日点での曲率半径（調和平均）と，近日点での衝突による軌道の変化",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：楕円軌道の近日点・遠日点での曲率半径（調和平均）と，近日点での衝突による軌道の変化",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\rho_1=\\dfrac{r_1^{\\,2}v_1^{\\,2}}{GM_{\\mathrm S}}$，$\\rho_2=\\dfrac{r_2^{\\,2}v_2^{\\,2}}{GM_{\\mathrm S}}$，$r_1v_1=r_2v_2$ より等しい"
+   },
+   {
+    "id": "2",
+    "tex": "$\\rho=\\dfrac{2r_1r_2}{r_1+r_2}$（$\\dfrac1\\rho=\\dfrac12\\left(\\dfrac1{r_1}+\\dfrac1{r_2}\\right)$）"
+   },
+   {
+    "id": "3",
+    "tex": "$W=\\dfrac{Mv_1-mu}{M+m}$，$\\rho'=\\dfrac{r_1^{\\,2}W^2}{GM_{\\mathrm S}}$，条件 $W<\\sqrt{\\dfrac{GM_{\\mathrm S}}{r_1}}$（$\\rho'<r_1$）"
+   },
+   {
+    "id": "4",
+    "tex": "$r'=\\dfrac{\\rho' r_1}{2r_1-\\rho'}$"
+   },
+   {
+    "id": "5",
+    "tex": "$u=\\dfrac{v_1}{m}\\left\\{M-(M+m)\\sqrt{\\dfrac{r_1+r_2}{2r_2}}\\right\\}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 近日点・遠日点での曲率半径}\n近日点・遠日点では速度が動径に垂直なので，太陽の引力による加速度 $\\dfrac{GM_{\\mathrm S}}{r^2}$ はすべて速度に垂直な成分である．よって\n\\[ \\frac{v_1^{\\,2}}{\\rho_1}=\\frac{GM_{\\mathrm S}}{r_1^{\\,2}}\\ \\Longrightarrow\\ \\boldsymbol{\\rho_1=\\frac{r_1^{\\,2}v_1^{\\,2}}{GM_{\\mathrm S}}},\\qquad \\boldsymbol{\\rho_2=\\frac{r_2^{\\,2}v_2^{\\,2}}{GM_{\\mathrm S}}}. \\]\n面積速度一定より $\\frac12r_1v_1=\\frac12r_2v_2$，すなわち $r_1v_1=r_2v_2$ なので $\\rho_1=\\rho_2$．曲率半径は面積速度 $h=rv_\\perp$ だけで $\\rho=h^2/(GM_{\\mathrm S})$ と決まるから，両端で等しくなる．\n\n\\textbf{(2) 調和平均}\n力学的エネルギー保存則\n\\[ \\frac12v_1^{\\,2}-\\frac{GM_{\\mathrm S}}{r_1}=\\frac12v_2^{\\,2}-\\frac{GM_{\\mathrm S}}{r_2} \\]\nに $v_2=\\dfrac{r_1}{r_2}v_1$ を代入すると\n\\[ \\frac12v_1^{\\,2}\\,\\frac{r_2^{\\,2}-r_1^{\\,2}}{r_2^{\\,2}}=GM_{\\mathrm S}\\frac{r_2-r_1}{r_1r_2}\\ \\Longrightarrow\\ v_1^{\\,2}=\\frac{2GM_{\\mathrm S}r_2}{r_1(r_1+r_2)} . \\]\nよって\n\\[ \\boldsymbol{\\rho=\\frac{r_1^{\\,2}v_1^{\\,2}}{GM_{\\mathrm S}}=\\frac{2r_1r_2}{r_1+r_2}},\\qquad \\frac1\\rho=\\frac12\\left(\\frac1{r_1}+\\frac1{r_2}\\right). \\]\n$\\frac1\\rho$ は $\\frac1{r_1}$ と $\\frac1{r_2}$ の平均なので，その間にあり $r_1<\\rho<r_2$．\nA では，惑星の軌道は太陽を中心とする半径 $r_1$ の円と同じ点で同じ向きの速度をもつが，曲率半径 $\\rho$ が $r_1$ より大きい，つまりその円より曲がり方がゆるやかである．そのため A を過ぎると惑星はこの円の外側に出て，太陽から遠ざかり始める．\n\n\\textbf{(3) 衝突と新しい軌道}\n衝突中は太陽の引力の力積が無視できるので，運動量が保存する．惑星の速度の向きを正として\n\\[ Mv_1-mu=(M+m)W\\qquad\\therefore\\ \\boldsymbol{W=\\frac{Mv_1-mu}{M+m}}\\ (>0). \\]\n速度の向きは変わらないので，A では衝突後も速度が動径に垂直であり，A は衝突後の軌道でも近日点か遠日点のどちらかである．合体した惑星にはたらく引力は質量に比例するので加速度は $\\frac{GM_{\\mathrm S}}{r_1^{\\,2}}$ のままで\n\\[ \\boldsymbol{\\rho'=\\frac{r_1^{\\,2}W^2}{GM_{\\mathrm S}}}. \\]\n(2) の考え方を逆に使うと，A で $\\rho'<r_1$ なら軌道は半径 $r_1$ の円より強く曲がって円の内側に入り，太陽に近づき始めるので A は遠日点になる．条件は\n\\[ \\rho'<r_1\\iff \\boldsymbol{W<\\sqrt{\\frac{GM_{\\mathrm S}}{r_1}}}\\quad(\\text{半径 }r_1\\text{ の円軌道の速さより遅い}). \\]\n\n\\textbf{(4) 新しい近日点}\n(2) の結果は任意の楕円軌道について，両端（近日点・遠日点）の距離と，そこでの共通の曲率半径の関係を与える．衝突後の軌道の両端の距離は $r_1$（遠日点）と $r'$（近日点）で，曲率半径は $\\rho'$ なので\n\\[ \\frac1{\\rho'}=\\frac12\\left(\\frac1{r_1}+\\frac1{r'}\\right)\\qquad\\therefore\\ \\boldsymbol{r'=\\frac{\\rho' r_1}{2r_1-\\rho'}}. \\]\n$\\rho'$ を代入すると $r'=\\dfrac{r_1^{\\,2}W^2}{2GM_{\\mathrm S}-r_1W^2}$ で，面積速度一定とエネルギー保存を連立して求めた結果と一致する．（$\\rho'\\to2r_1$ で $r'\\to\\infty$ となり，これは放物線軌道，すなわち脱出の境目 $W^2=2GM_{\\mathrm S}/r_1$ に対応する．）\n\n\\textbf{(5) 円軌道になる条件}\n円軌道では曲率半径が太陽からの距離に等しいので $\\rho'=r_1$．$\\rho'=\\rho\\,\\dfrac{W^2}{v_1^{\\,2}}$ だから\n\\[ \\frac{W}{v_1}=\\sqrt{\\frac{r_1}{\\rho}}=\\sqrt{\\frac{r_1+r_2}{2r_2}}. \\]\n(3) の $W$ の式に代入して\n\\[ \\boldsymbol{u=\\frac{v_1}{m}\\left\\{M-(M+m)\\sqrt{\\frac{r_1+r_2}{2r_2}}\\right\\}}. \\]\n（$u>0$ となるには $m$ が十分小さく，$\\frac{M}{M+m}>\\sqrt{\\frac{r_1+r_2}{2r_2}}$ である必要がある．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "近日点・遠日点では加速度がすべて速度に垂直なので曲率半径は $(rv)^2/(GM_{\\mathrm S})$ となり，面積速度一定から両端で等しく，その値は両端の距離の調和平均 $2r_1r_2/(r_1+r_2)$ になる．曲率半径と太陽からの距離の大小で，その点が近日点か遠日点かが決まり，接線方向の衝突後の軌道の反対側の端もエネルギー保存を使わずに調和平均の関係から求まる．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "restitution",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "万有引力",
+  "楕円軌道",
+  "曲率半径",
+  "ケプラーの第2法則",
+  "完全非弾性衝突",
+  "調和平均"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

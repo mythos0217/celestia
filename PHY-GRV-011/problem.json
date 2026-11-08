@@ -1,0 +1,143 @@
+{
+ "id": "PHY-GRV-011",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "地表から第一宇宙速度で斜めに打ち出した物体の楕円軌道と飛行時間",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球を半径 $R$ の一様な球とみなし，地表での重力加速度の大きさを $g$ とする．地球の自転・公転，空気抵抗，および地球以外の天体の影響は無視する．図のように，地表の点 A から小物体を，A での水平面と角 $\\alpha\\ \\left(0<\\alpha<\\dfrac{\\pi}{2}\\right)$ をなす向きに，速さ $v_0=\\sqrt{gR}$ で打ち出した．小物体は地球の中心 O を1つの焦点とする楕円の一部を描いて飛び，地表の点 B に落下した．必要なら，長半径 $a$，短半径 $b$ の楕円の面積が $\\pi ab$ であること，および楕円の中心から焦点までの距離 $c$ について $a^2=b^2+c^2$ が成り立つことを用いてよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "飛行中に小物体が O から最も遠ざかる点の，O からの距離 $r_{\\max}$ を $R,\\ \\alpha$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "この楕円の長半径 $a$ と，中心から焦点までの距離 $c$ を $R,\\ \\alpha$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\angle\\mathrm{AOB}$（小物体が飛び越えた側の中心角）を $\\alpha$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "打ち出してから B に落下するまでの時間 $t$ を $g,\\ R,\\ \\alpha$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\angle\\mathrm{AOB}=90^\\circ$ となるのは $\\alpha$ がいくらのときか．また，そのときの $t$ を，$R=6.4\\times10^{6}\\ \\mathrm{m}$，$g=9.8\\ \\mathrm{m/s^2}$ として有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：地表から第一宇宙速度で斜めに打ち出した物体の楕円軌道と飛行時間",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：地表から第一宇宙速度で斜めに打ち出した物体の楕円軌道と飛行時間",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$r_{\\max}=R(1+\\sin\\alpha)$"
+   },
+   {
+    "id": "2",
+    "tex": "$a=R$，$c=R\\sin\\alpha$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\angle\\mathrm{AOB}=\\pi-2\\alpha$"
+   },
+   {
+    "id": "4",
+    "tex": "$t=\\sqrt{\\dfrac Rg}\\,(\\pi+2\\sin\\alpha)$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\alpha=\\dfrac{\\pi}{4}$，$t\\approx3.7\\times10^{3}\\ \\mathrm{s}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "万有引力定数を $G$，地球の質量を $M$ とすると，地表で $mg=\\dfrac{GMm}{R^2}$ より $GM=gR^2$ である．\n\n\\textbf{(1) 最も遠い点}　万有引力は O を向く中心力なので，O のまわりの面積速度が一定である．A では速度が水平面（OA に垂直な面）と角 $\\alpha$ をなすので，速度の OA に垂直な成分は $v_0\\cos\\alpha$ である．最も遠い点では速度は動径に垂直なので，そこでの速さを $V$ とすると\n\\[ Rv_0\\cos\\alpha=r_{\\max}V \\]\nまた力学的エネルギー保存より（質量を $m$ とする）\n\\[ \\frac12mv_0^2-\\frac{GMm}{R}=\\frac12mV^2-\\frac{GMm}{r_{\\max}} \\]\n$v_0^2=gR$，$GM=gR^2$ を用い，$x=r_{\\max}/R$ とおいて $V$ を消去すると\n\\[ \\frac{\\cos^2\\alpha}{2x^2}-\\frac1x=-\\frac12\\qquad\\therefore\\ x^2-2x+\\cos^2\\alpha=0 \\]\n\\[ x=1\\pm\\sin\\alpha \\]\nこの2つの解は，楕円上で速度が動径に垂直になる2点（O から最も遠い点と最も近い点）を表す．大きい方をとって $r_{\\max}=\\boldsymbol{R(1+\\sin\\alpha)}$．\n\n\\textbf{(2) 長半径}　最も近い点（地球内部にある仮想的な点）までの距離は $r_{\\min}=R(1-\\sin\\alpha)$ で，両者の和が長軸の長さ $2a$ だから\n\\[ a=\\frac{r_{\\max}+r_{\\min}}2=\\boldsymbol{R},\\qquad c=r_{\\max}-a=\\boldsymbol{R\\sin\\alpha} \\]\n長半径は $\\alpha$ によらない．これは，$v_0=\\sqrt{gR}$ が「地表すれすれの円軌道」の速さであり，力学的エネルギーが半径 $R$ の円軌道と同じだからである（$E=-\\dfrac{GMm}{2a}$）．\n\n\\textbf{(3) 落下点}　楕円上の点から2つの焦点までの距離の和は $2a$ である．A は O から距離 $R=a$ にあるので，もう一方の焦点からの距離も $a$ となり，A は2つの焦点から等距離，すなわち短軸の端にある．B も同様に（O から距離 $a$ の楕円上の点として）もう一方の短軸の端である（解答図）．楕円の中心を C とすると，直角三角形 OCA で $\\mathrm{OA}=a=R$，$\\mathrm{OC}=c=R\\sin\\alpha$ だから，$\\angle\\mathrm{AOC}$ について\n\\[ \\cos\\angle\\mathrm{AOC}=\\frac{c}{a}=\\sin\\alpha\\qquad\\therefore\\ \\angle\\mathrm{AOC}=\\frac\\pi2-\\alpha \\]\nC は O から見て最も遠い点の側にあり，小物体はその側を回るので\n\\[ \\angle\\mathrm{AOB}=2\\angle\\mathrm{AOC}=\\boldsymbol{\\pi-2\\alpha} \\]\n（短軸の端では速度が長軸に平行で，その向きと地表の水平面のなす角がちょうど $\\alpha$ になっていることも確かめられる．）\n\n\\textbf{(4) 飛行時間}　A から B まで動径が掃く面積は，短軸 AB で切った楕円の半分（面積 $\\dfrac12\\pi ab$）と三角形 OAB（底辺 $2b$，高さ $c$，面積 $bc$）の和である．$b=\\sqrt{a^2-c^2}=R\\cos\\alpha$ より\n\\[ S=\\frac12\\pi R^2\\cos\\alpha+R^2\\sin\\alpha\\cos\\alpha=R^2\\cos\\alpha\\left(\\frac\\pi2+\\sin\\alpha\\right) \\]\n面積速度は (1) より $\\dfrac12Rv_0\\cos\\alpha=\\dfrac12R\\sqrt{gR}\\cos\\alpha$ なので\n\\[ t=\\frac{S}{\\frac12R\\sqrt{gR}\\cos\\alpha}=\\boldsymbol{\\sqrt{\\frac Rg}\\,(\\pi+2\\sin\\alpha)} \\]\n（別解：周期 $T=2\\pi\\sqrt{a^3/GM}=2\\pi\\sqrt{R/g}$ に面積の割合 $\\dfrac{S}{\\pi ab}=\\dfrac12+\\dfrac{\\sin\\alpha}{\\pi}$ を掛けても同じ結果になる．）\n\n\\textbf{(5)}　$\\pi-2\\alpha=\\dfrac\\pi2$ より $\\boldsymbol{\\alpha=\\dfrac\\pi4}$．このとき\n\\[ t=\\sqrt{\\frac{6.4\\times10^6}{9.8}}\\left(\\pi+\\sqrt2\\right)\\approx 8.08\\times10^2\\times4.56\\approx\\boldsymbol{3.7\\times10^{3}\\ \\mathrm{s}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "地表すれすれの円軌道の速さで打ち出すと力学的エネルギーが半径 $R$ の円軌道と等しく，打ち出す角によらず長半径が $R$ になる．焦点から距離 $a$ の点は短軸の端なので，打ち出し点と落下点は短軸の両端となり，中心角は幾何的に，飛行時間は「半楕円＋三角形」の面積を面積速度で割って求まる．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "楕円軌道",
+  "面積速度一定",
+  "長半径",
+  "短軸",
+  "飛行時間",
+  "弾道飛行"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

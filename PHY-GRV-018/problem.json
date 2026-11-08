@@ -1,0 +1,128 @@
+{
+ "id": "PHY-GRV-018",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "球形の空洞をもつ小惑星の内部の一様な重力場と等時弦",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，半径 $R$，密度 $\\rho$ の一様な球形の小惑星の内部に，半径 $b$ の球形の空洞がある．空洞の中心 O$'$ は小惑星の中心 O から距離 $d$ の位置にあり，$b+d\\leqq R$ である．万有引力定数を $G$ とし，小惑星の自転や他の天体の影響は無視する．一様な球の内部で中心から距離 $r$ の点の重力は，中心向きで大きさ $\\dfrac43\\pi G\\rho r$（単位質量あたり）であることを用いてよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "空洞内の重力（単位質量あたりの力）は，空洞内のどこでも同じ向き・同じ大きさであることを示し，その大きさ $g'$ と向きを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "空洞の壁のうち O から最も遠い点を P とする．P から空洞の壁の任意の点 Q まで，なめらかで細い直線の管を空洞内に通し，管の中で P に小物体を静かに置いて放す．$\\angle{\\rm QPO}=\\varphi$ とするとき，小物体が Q に達するまでの時間 $T$ は $\\varphi$ によらないことを示し，$T$ を $G$，$\\rho$，$b$，$d$ で表せ．また，Q に達したときの速さ $V$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$b+d=R$（P が小惑星の表面にある）とする．空洞がない一様な小惑星で，表面から中心まで細い管の中を落ちる時間を $T_0$ とする．$T_0$ を求め，(2) の $T$ が $T_0$ に等しくなるときの $\\dfrac bR$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：球形の空洞をもつ小惑星の内部の一様な重力場と等時弦",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：球形の空洞をもつ小惑星の内部の一様な重力場と等時弦",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "大きさ $g'=\\dfrac43\\pi G\\rho d$，向きは O$'$ から O へ向かう向き（OO$'$ に平行）"
+   },
+   {
+    "id": "2",
+    "tex": "$T=\\sqrt{\\dfrac{3b}{\\pi G\\rho d}}$，$V=\\cos\\varphi\\sqrt{\\dfrac{16\\pi G\\rho bd}{3}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$T_0=\\dfrac{\\pi}{2}\\sqrt{\\dfrac{3}{4\\pi G\\rho}}$，$\\dfrac bR=\\dfrac{\\pi^2}{16+\\pi^2}\\approx0.38$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "$\\omega^2=\\dfrac43\\pi G\\rho$ とおく．一様な球の内部で，中心 O からの位置ベクトル $\\vec r$ の点の重力は $-\\omega^2\\vec r$ と書ける．\n\n\\textbf{(1) 空洞内の重力}\n\n空洞を「密度 $\\rho$ の物質で埋めた一様な球」と「空洞の部分を占める密度 $-\\rho$ の球」の重ね合わせと考える．空洞内の点 X の，O からの位置ベクトルを $\\vec r$，O$'$ からの位置ベクトルを $\\vec r\\,'$ とすると，X は両方の球の内部にあるので\n\\[ \\vec g=-\\omega^2\\vec r+\\omega^2\\vec r\\,'=-\\omega^2(\\vec r-\\vec r\\,')=-\\omega^2\\,\\overrightarrow{\\rm OO'} \\]\n$\\overrightarrow{\\rm OO'}$ は X によらない一定のベクトルだから，空洞内の重力は一様で\n\\[ \\boldsymbol{g'=\\frac43\\pi G\\rho d},\\quad \\text{向きは}\\ \\boldsymbol{{\\rm O'}\\to{\\rm O}} \\]\n\n\\textbf{(2) 管の中の運動}\n\n重力は一様で PO の向き（P から O$'$ を通って O へ向かう向き）なので，管に沿った加速度は一定値 $g'\\cos\\varphi$ である．一方，PQ は直径 $2b$ の円の弦で，P を通る直径 PO$'$ と角 $\\varphi$ をなすから，円周角の性質より（直径の向かいの角が直角）\n\\[ {\\rm PQ}=2b\\cos\\varphi \\]\n静止から等加速度で ${\\rm PQ}$ 進む時間は\n\\[ T=\\sqrt{\\frac{2\\cdot2b\\cos\\varphi}{g'\\cos\\varphi}}=2\\sqrt{\\frac{b}{g'}}=\\boldsymbol{\\sqrt{\\frac{3b}{\\pi G\\rho d}}} \\]\nで，$\\varphi$ によらない（一様な重力場の中の「等時弦」）．到達時の速さは\n\\[ V=g'\\cos\\varphi\\cdot T=\\cos\\varphi\\cdot2\\sqrt{g'b}=\\boldsymbol{\\cos\\varphi\\sqrt{\\frac{16\\pi G\\rho bd}{3}}} \\]\n管は滑らかで管からの力は管に垂直だから，速さはエネルギー保存（一様な場で PO 方向に $2b\\cos^2\\varphi$ だけ「下がる」）からも $V^2=2g'\\cdot2b\\cos^2\\varphi$ と確かめられる．\n\n\\textbf{(3) 空洞がない場合との比較}\n\n空洞がないとき，管の中の小物体の運動方程式は（O を原点に管の向きに $x$ 軸）$\\ddot x=-\\omega^2x$ で，角振動数 $\\omega$ の単振動である．表面から静かに放して中心に達するのは $\\dfrac14$ 周期後だから\n\\[ \\boldsymbol{T_0=\\frac{\\pi}{2\\omega}=\\frac{\\pi}{2}\\sqrt{\\frac{3}{4\\pi G\\rho}}} \\]\n(2) より $T=2\\sqrt{\\dfrac{b}{\\omega^2d}}=\\dfrac{2}{\\omega}\\sqrt{\\dfrac bd}$．$T=T_0$ とすると $\\sqrt{\\dfrac bd}=\\dfrac{\\pi}{4}$，$d=R-b$ を用いて\n\\[ \\frac{b}{R-b}=\\frac{\\pi^2}{16}\\quad\\Longrightarrow\\quad \\boldsymbol{\\frac bR=\\frac{\\pi^2}{16+\\pi^2}\\approx0.38} \\]\n（この $b$ より大きい空洞では $T<T_0$ となる．$b=d=\\dfrac R2$ のとき，$\\varphi=0$ の管の終点は O で，$T=\\dfrac{2}{\\omega}$，$V=\\omega R$ となり，到達の速さは空洞がない場合の中心での速さ $\\omega R$ と一致するが，時間は $\\dfrac{4}{\\pi}$ 倍に短くなる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "球形の空洞は「負の密度の球」の重ね合わせで扱え，空洞内の重力は O$'$ から O の向きの一様な場 $\\frac43\\pi G\\rho\\,\\overrightarrow{\\rm O'O}$ になる．一様な場では，円の「最も高い点」から円周上の任意の点への滑らかな弦を下る時間はすべて等しい（ガリレイの等時弦）ので，弦の向きによらない落下時間が得られ，空洞のない単振動の時間と比べて空洞の大きさを逆算できる．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "simple-harmonic-motion",
+  "string-resonance"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "万有引力",
+  "重ね合わせ",
+  "空洞",
+  "一様な場",
+  "等時弦",
+  "単振動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,114 @@
+{
+ "id": "PHY-GRV-013",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "探査機を太陽に落とすのに必要な速さと，いったん遠ざかってから落とす方法（太陽系脱出との比較）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球は太陽のまわりを半径 $r_{\\rm E}$ の円軌道上で速さ $V_{\\rm E}=30.0\\ \\mathrm{km/s}$ で公転している．地表から打ち出す探査機について次のように考える．\n\\begin{itemize}\n\\item 地表から速さ $v_0$ で打ち出すと，地球の重力圏を抜けたときの地球に対する速さ $u$ は $v_0^2=v_{\\rm e}^2+u^2$ を満たす．$v_{\\rm e}=11.2\\ \\mathrm{km/s}$ は地球からの脱出速度である．\n\\item 重力圏を抜けた探査機は太陽からの距離 $r_{\\rm E}$ の位置にあり，以後は太陽の万有引力だけを受ける．$u$ の向きは地球の公転方向と平行（同じ向きか逆向き）に選ぶ．地球の自転，他の惑星の影響は無視する．\n\\item 太陽の半径は $R_{\\rm S}=\\dfrac{r_{\\rm E}}{215}$ とし，探査機の軌道の太陽に最も近い点の距離が $R_{\\rm S}$ 以下になれば太陽に落ちるとする．\n\\end{itemize}\n数値の答えは有効数字3桁で求めよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "探査機が太陽系を脱出する（太陽から無限に遠ざかれる）ための $v_0$ の最小値を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "太陽に対する速さ $w$ で距離 $r_{\\rm E}$ の点を公転方向に（太陽と結ぶ線に垂直に）通過する物体の，太陽に最も近づく距離 $r_{\\rm p}$ について，$\\dfrac{r_{\\rm p}}{r_{\\rm E}}=\\dfrac{w^2}{2V_{\\rm E}^2-w^2}$（$w<V_{\\rm E}$）を示せ．これを用いて，探査機を直接太陽に落とすための $v_0$ の最小値を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "別の方法として，まず $u$ を公転方向に与えて，太陽から最も遠い点Q（遠日点）が $8r_{\\rm E}$ の楕円軌道に入れ，Qで探査機のエンジンを短時間噴射して減速し，太陽に落とす．$v_0$，Qでの探査機の速さ，およびQで必要な速さの変化の大きさの最小値を求めよ．また，地表での $v_0$ とQでの速さの変化の和を(2)の $v_0$ と比べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：探査機を太陽に落とすのに必要な速さと，いったん遠ざかってから落とす方法（太陽系脱出との比較）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$16.7\\ \\mathrm{km/s}$"
+   },
+   {
+    "id": "2",
+    "tex": "証明は解説参照，$29.3\\ \\mathrm{km/s}$"
+   },
+   {
+    "id": "3",
+    "tex": "$v_0=15.0\\ \\mathrm{km/s}$，Qでの速さ $5.00\\ \\mathrm{km/s}$，速さの変化 $4.64\\ \\mathrm{km/s}$；和は $19.7\\ \\mathrm{km/s}$ で(2)の $29.3\\ \\mathrm{km/s}$ より小さい"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "太陽の質量を $M_{\\rm S}$，万有引力定数を $G$ とする．地球の円運動から $GM_{\\rm S}=V_{\\rm E}^2r_{\\rm E}$．\n\n\\textbf{(1) 太陽系脱出}\n\n距離 $r_{\\rm E}$ での太陽からの脱出速度は $\\sqrt{\\dfrac{2GM_{\\rm S}}{r_{\\rm E}}}=\\sqrt2\\,V_{\\rm E}$．公転の向きに打ち出せば地球の公転速度を利用できるので $u=(\\sqrt2-1)V_{\\rm E}=12.43\\ \\mathrm{km/s}$ でよく\n\\[ v_0=\\sqrt{11.2^2+12.43^2}=\\boldsymbol{16.7\\ \\mathrm{km/s}} \\]\n\n\\textbf{(2) 直接太陽に落とす}\n\n距離 $r_{\\rm E}$ で速度が動径に垂直なので，この点は軌道の遠日点（$w<V_{\\rm E}$ のとき）．近日点でも速度は動径に垂直で，その速さを $v_{\\rm p}$ とすると，面積速度一定と力学的エネルギー保存より\n\\[ wr_{\\rm E}=v_{\\rm p}r_{\\rm p},\\qquad \\frac12w^2-\\frac{V_{\\rm E}^2r_{\\rm E}}{r_{\\rm E}}=\\frac12v_{\\rm p}^2-\\frac{V_{\\rm E}^2r_{\\rm E}}{r_{\\rm p}} \\]\n$v_{\\rm p}=\\dfrac{wr_{\\rm E}}{r_{\\rm p}}$ を代入し $\\rho=\\dfrac{r_{\\rm E}}{r_{\\rm p}}$ とおくと $w^2\\rho^2-2V_{\\rm E}^2\\rho+(2V_{\\rm E}^2-w^2)=0$，すなわち $(\\rho-1)\\{w^2\\rho-(2V_{\\rm E}^2-w^2)\\}=0$．$\\rho=1$ は出発点自身なので，\n\\[ \\frac{r_{\\rm p}}{r_{\\rm E}}=\\boldsymbol{\\frac{w^2}{2V_{\\rm E}^2-w^2}} \\]\n$r_{\\rm p}\\leqq R_{\\rm S}$ の条件 $\\dfrac{w^2}{2V_{\\rm E}^2-w^2}\\leqq\\dfrac1{215}$ より $w^2\\leqq\\dfrac{2V_{\\rm E}^2}{216}$，$w\\leqq\\dfrac{V_{\\rm E}}{\\sqrt{108}}=2.89\\ \\mathrm{km/s}$．公転と逆向きに打ち出して地球の公転速度をほとんど打ち消す必要があり，$u=30.0-2.89=27.11\\ \\mathrm{km/s}$，\n\\[ v_0=\\sqrt{11.2^2+27.11^2}=\\boldsymbol{29.3\\ \\mathrm{km/s}} \\]\n(1)よりはるかに大きい．太陽に落ちるには「公転の角運動量」をほぼすべて捨てなければならないからである．\n\n\\textbf{(3) 遠ざかってから落とす}\n\n近日点 $r_{\\rm E}$，遠日点 $8r_{\\rm E}$ の楕円で，近日点の速さ $w_1$，遠日点の速さ $w_{\\rm Q}$ とすると，(2)と同様に\n\\[ w_1r_{\\rm E}=w_{\\rm Q}\\cdot8r_{\\rm E},\\qquad \\frac12w_1^2-\\frac{V_{\\rm E}^2r_{\\rm E}}{r_{\\rm E}}=\\frac12w_{\\rm Q}^2-\\frac{V_{\\rm E}^2r_{\\rm E}}{8r_{\\rm E}} \\]\nより $w_1^2\\left(1-\\dfrac1{64}\\right)=\\dfrac74V_{\\rm E}^2$，$w_1=\\dfrac43V_{\\rm E}=40.0\\ \\mathrm{km/s}$．よって $u=10.0\\ \\mathrm{km/s}$，\n\\[ v_0=\\sqrt{11.2^2+10.0^2}=\\boldsymbol{15.0\\ \\mathrm{km/s}},\\qquad w_{\\rm Q}=\\frac{40.0}{8}=\\boldsymbol{5.00\\ \\mathrm{km/s}} \\]\nQで動径に垂直な速さを $w'$ に減らしたとき，Qを遠日点とする軌道の近日点は(2)の式で $r_{\\rm E}\\to8r_{\\rm E}$，$V_{\\rm E}\\to V_{\\rm Q}=\\dfrac{V_{\\rm E}}{\\sqrt8}$（距離 $8r_{\\rm E}$ の円軌道の速さ）とおいたもので与えられる．$r_{\\rm p}\\leqq R_{\\rm S}=\\dfrac{8r_{\\rm E}}{1720}$ より\n\\[ \\frac{w'^2}{2V_{\\rm Q}^2-w'^2}\\leqq\\frac{1}{1720}\\quad\\Longrightarrow\\quad w'\\leqq V_{\\rm Q}\\sqrt{\\frac{2}{1721}}=10.61\\times0.0341=0.362\\ \\mathrm{km/s} \\]\n必要な速さの変化は $5.00-0.362=\\boldsymbol{4.64\\ \\mathrm{km/s}}$．地表での $v_0$ との和は $15.0+4.64=\\boldsymbol{19.7\\ \\mathrm{km/s}}$ で，直接落とす場合の $29.3\\ \\mathrm{km/s}$ より約 $10\\ \\mathrm{km/s}$ も小さい．遠くでは公転の速さそのものが小さいので，捨てるべき角運動量を安く捨てられる．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "太陽に落ちるには探査機の角運動量をほぼすべて失わなければならず，地球の公転速度 $30\\ \\mathrm{km/s}$ をほとんど打ち消す必要があるため，太陽系脱出（不足分 $(\\sqrt2-1)V_{\\rm E}$ を補うだけ）よりはるかに大きな速さが要る．いったん遠日点の遠い楕円軌道に上がると遠日点での速さが小さくなり，そこで減速すれば合計の速さの変化が大きく減る．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "momentum-conservation",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "面積速度一定",
+  "力学的エネルギー保存",
+  "楕円軌道",
+  "脱出速度",
+  "軌道変更"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

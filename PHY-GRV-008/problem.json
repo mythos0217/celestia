@@ -1,0 +1,130 @@
+{
+ "id": "PHY-GRV-008",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "人工衛星と地表の時計の進み方（重力による時間の遅れと運動による遅れのつり合い）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "光速を $c$ とする．以下では，物体の速さは $c$ より十分小さく，重力の効果も弱いとし，時計の進み方の比は $1+(\\text{微小量})$ の形で微小量の1次まで求めよ（$|\\varepsilon_1|,|\\varepsilon_2|\\ll1$ のとき $(1+\\varepsilon_1)(1+\\varepsilon_2)\\approx1+\\varepsilon_1+\\varepsilon_2$，$\\frac{1}{1+\\varepsilon_1}\\approx1-\\varepsilon_1$）．次の事実を用いてよい．\n\n(i) 慣性系に対して速さ $u$ で動く時計は，慣性系で時間 $\\Delta t$ が経過する間に $\\Delta t\\left(1-\\dfrac{u^2}{2c^2}\\right)$ だけ進む．\n\n(ii) 時間変化しない重力の場の中で，質量 $m$ の物体の位置エネルギーが $m\\phi$ と書けるとき（$\\phi$ を重力ポテンシャルという），そこに静止した2つの時計 X，Y の進み方の比は $\\dfrac{\\Delta t_{\\rm Y}}{\\Delta t_{\\rm X}}=1+\\dfrac{\\phi_{\\rm Y}-\\phi_{\\rm X}}{c^2}$ である．\n\n(iii) 両方の効果があるときは，それぞれの比を掛け合わせてよい．すなわち，重力ポテンシャル $\\phi$ の位置を慣性系に対して速さ $u$ で動く時計は，$\\phi=0$ の位置に静止した時計に比べて $1+\\dfrac{\\phi}{c^2}-\\dfrac{u^2}{2c^2}$ の割合で進む．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "図1のように，水平な円板が中心 O を通る鉛直軸のまわりに一定の角速度 $\\Omega$ で回転している．O と，O から距離 $r$ の点 P に，円板に固定した時計を置く．\n  (a) 地上の慣性系で考え，$\\dfrac{\\Delta t_{\\rm P}}{\\Delta t_{\\rm O}}$ を求めよ．\n  (b) 円板とともに回る観測者は，遠心力を一種の「重力」と感じる．遠心力による位置エネルギー（O を基準とする）から重力ポテンシャル $\\phi(r)$ を求め，(ii) を用いても (a) と同じ結果が得られることを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "地球を質量 $M$，半径 $R$ の一様な球，万有引力定数を $G$ とする．この問いと次の問いでは地球の自転を無視する．地表の点 A に静止した時計と，地球の中心を中心とする半径 $r$ の円軌道を回る人工衛星 S の時計の進み方の比 $\\dfrac{\\Delta t_{\\rm S}}{\\Delta t_{\\rm A}}$ を，$G,\\ M,\\ R,\\ r,\\ c$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "衛星の時計が地表の時計とちょうど同じ速さで進む軌道半径 $r_0$ を求めよ．また，$R<r<r_0$ の軌道を回る衛星の時計は，地表の時計より速く進むか遅く進むか答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "次に，地球の自転（角速度 $\\Omega_{\\rm E}$）を考える．図2のように，時計 A は赤道上に固定され，衛星 S は赤道面内の円軌道を回る（地球の中心とともに動く慣性系で考えよ）．衛星の時計が A と同じ速さで進む軌道半径 $r_0'$ を求めよ．また，$\\delta=\\dfrac{\\Omega_{\\rm E}^{\\,2}R^3}{GM}\\ (\\ll1)$ の1次までで $r_0'=r_0(1-k\\delta)$ と表すときの定数 $k$ を求め，$\\dfrac{GM}{R^2}=9.8\\ \\mathrm{m/s^2}$，$R=6.4\\times10^6\\ \\mathrm{m}$，$\\Omega_{\\rm E}=7.3\\times10^{-5}\\ \\mathrm{rad/s}$ のとき，$r_0'$ は $r_0$ より何 km 小さいかを有効数字2桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "静止衛星（赤道面内を角速度 $\\Omega_{\\rm E}$ で回り，地上からは静止して見える衛星）の時計は，赤道上の時計 A に比べて 1 日（$8.64\\times10^4\\ \\mathrm{s}$）あたり何 s 進むか，または遅れるか．(4) の数値と $c=3.0\\times10^8\\ \\mathrm{m/s}$ を用いて有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：人工衛星と地表の時計の進み方（重力による時間の遅れと運動による遅れのつり合い）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "(a) $1-\\dfrac{\\Omega^2r^2}{2c^2}$　(b) $\\phi(r)=-\\dfrac12\\Omega^2r^2$ を (ii) に代入すると同じ式になる"
+   },
+   {
+    "id": "2",
+    "tex": "$1+\\dfrac{GM}{c^2}\\left(\\dfrac1R-\\dfrac{3}{2r}\\right)$"
+   },
+   {
+    "id": "3",
+    "tex": "$r_0=\\dfrac32R$，遅く進む"
+   },
+   {
+    "id": "4",
+    "tex": "$r_0'=\\dfrac{3GMR}{2GM+\\Omega_{\\rm E}^{\\,2}R^3}=\\dfrac{3R}{2+\\delta}$，$k=\\dfrac12$，約 $17\\ \\mathrm{km}$ 小さい"
+   },
+   {
+    "id": "5",
+    "tex": "$4.7\\times10^{-5}\\ \\mathrm{s}$ 進む"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} (a) 慣性系で見ると，O の時計は静止し，P の時計は速さ $u=r\\Omega$ で動く．(i) より\n\\[ \\frac{\\Delta t_{\\rm P}}{\\Delta t_{\\rm O}}=\\boldsymbol{1-\\frac{\\Omega^2r^2}{2c^2}} \\]\n(b) 回転系では質量 $m$ の物体に外向きの遠心力 $m\\Omega^2r$ がはたらく．O を基準とした位置エネルギーは，この力に逆らって O から $r$ まで運ぶ仕事なので\n\\[ U(r)=-\\int_0^r m\\Omega^2r'\\,dr'=-\\frac12m\\Omega^2r^2,\\qquad \\phi(r)=-\\frac12\\Omega^2r^2 \\]\n（コリオリの力は速度に垂直で仕事をしないので，位置エネルギーには寄与しない）．回転系では O，P の時計はともに静止しているので (ii) を使えて\n\\[ \\frac{\\Delta t_{\\rm P}}{\\Delta t_{\\rm O}}=1+\\frac{\\phi(r)-\\phi(0)}{c^2}=1-\\frac{\\Omega^2r^2}{2c^2} \\]\nとなり (a) と一致する．慣性系での「運動による遅れ」は，回転系では「遠心力のポテンシャルによる遅れ」に見えるのである．\\hfill$\\square$\n\n\\textbf{(2)} 無限遠（$\\phi=0$）に静止した時計を基準にとる．地表の時計は $\\phi_{\\rm A}=-\\dfrac{GM}{R}$ に静止しているので，進み方は $1-\\dfrac{GM}{Rc^2}$．\n衛星は $\\phi_{\\rm S}=-\\dfrac{GM}{r}$ にあり，円運動の式 $\\dfrac{mv^2}{r}=\\dfrac{GMm}{r^2}$ より $v^2=\\dfrac{GM}{r}$．(iii) より進み方は\n\\[ 1-\\frac{GM}{rc^2}-\\frac{GM}{2rc^2}=1-\\frac{3GM}{2rc^2} \\]\nしたがって\n\\[ \\frac{\\Delta t_{\\rm S}}{\\Delta t_{\\rm A}}=\\frac{1-\\frac{3GM}{2rc^2}}{1-\\frac{GM}{Rc^2}}\\approx\\boldsymbol{1+\\frac{GM}{c^2}\\left(\\frac1R-\\frac{3}{2r}\\right)} \\]\n\\hfill$\\square$\n\n\\textbf{(3)} (2) の微小量が $0$ になる条件 $\\dfrac1R=\\dfrac{3}{2r}$ より $\\boldsymbol{r_0=\\dfrac32R}$．\n$r<r_0$ では $\\dfrac{3}{2r}>\\dfrac1R$ なので比は $1$ より小さく，衛星の時計は\\textbf{遅く進む}．高い所ほど重力ポテンシャルが高く時計は速く進むが，低い軌道ほど速さ $v$ が大きく運動による遅れが勝つ．両者がつり合うのが $r_0=\\frac32R$（地表から $R/2$ の高さ）である．\\hfill$\\square$\n\n\\textbf{(4)} 慣性系では赤道上の A は速さ $\\Omega_{\\rm E}R$ で動くので，(iii) より A の進み方は\n\\[ 1-\\frac{GM}{Rc^2}-\\frac{\\Omega_{\\rm E}^{\\,2}R^2}{2c^2} \\]\n（(1) と同じく，地球とともに回る系で見れば遠心力のポテンシャル $-\\frac12\\Omega_{\\rm E}^{\\,2}R^2$ による遅れである）．衛星の進み方 $1-\\dfrac{3GM}{2rc^2}$ と等しいとおくと\n\\[ \\frac{3GM}{2r_0'}=\\frac{GM}{R}+\\frac12\\Omega_{\\rm E}^{\\,2}R^2\n\\quad\\Longrightarrow\\quad\n\\boldsymbol{r_0'=\\frac{3GMR}{2GM+\\Omega_{\\rm E}^{\\,2}R^3}=\\frac{3R}{2+\\delta}} \\]\n$\\delta\\ll1$ のとき $r_0'=\\dfrac32R\\left(1+\\dfrac\\delta2\\right)^{-1}\\approx r_0\\left(1-\\dfrac\\delta2\\right)$ なので $\\boldsymbol{k=\\dfrac12}$．\n\n数値：$GM=gR^2$（$g=9.8\\ \\mathrm{m/s^2}$）より $\\delta=\\dfrac{\\Omega_{\\rm E}^{\\,2}R}{g}=\\dfrac{(7.3\\times10^{-5})^2\\times6.4\\times10^6}{9.8}\\approx3.48\\times10^{-3}$．\n\\[ r_0-r_0'\\approx r_0\\cdot\\frac{\\delta}{2}=9.6\\times10^6\\times1.74\\times10^{-3}\\ \\mathrm{m}\\approx1.67\\times10^4\\ \\mathrm{m} \\]\nよって約 $\\boldsymbol{17\\ \\mathrm{km}}$ 小さくなる．地上の時計が自転で遅れる分だけ，衛星側も少し低く（速く運動する軌道に）してつり合わせることになる．\\hfill$\\square$\n\n\\textbf{(5)} 静止衛星の軌道半径 $r_{\\rm g}$ は $\\dfrac{GM}{r_{\\rm g}^{\\,2}}=\\Omega_{\\rm E}^{\\,2}r_{\\rm g}$ より $r_{\\rm g}=\\left(\\dfrac{GM}{\\Omega_{\\rm E}^{\\,2}}\\right)^{1/3}=R\\,\\delta^{-1/3}$．衛星の進み方は (2) と同じく $1-\\dfrac{3GM}{2r_{\\rm g}c^2}$ なので，(4) の A の進み方との比は\n\\[ \\frac{\\Delta t_{\\rm S}}{\\Delta t_{\\rm A}}-1=\\frac{GM}{Rc^2}\\left(1-\\frac32\\,\\delta^{1/3}+\\frac{\\delta}{2}\\right) \\]\n数値は $\\dfrac{GM}{Rc^2}=\\dfrac{gR}{c^2}=\\dfrac{9.8\\times6.4\\times10^6}{(3.0\\times10^8)^2}\\approx6.97\\times10^{-10}$，$\\delta^{1/3}\\approx0.152$ より，括弧内は $1-0.227+0.002\\approx0.774$．よって\n\\[ \\frac{\\Delta t_{\\rm S}}{\\Delta t_{\\rm A}}-1\\approx5.4\\times10^{-10} \\]\n1 日あたりの差は $5.4\\times10^{-10}\\times8.64\\times10^4\\ \\mathrm{s}\\approx\\boldsymbol{4.7\\times10^{-5}\\ \\mathrm{s}}$ で，静止衛星の時計が\\textbf{進む}．\n\n\\textbf{別解（地球とともに回る系）}：この系では A も静止衛星も静止しているので (ii) だけで済む．万有引力と遠心力を合わせたポテンシャル $\\phi(r)=-\\dfrac{GM}{r}-\\dfrac12\\Omega_{\\rm E}^{\\,2}r^2$ を用いると\n\\[ \\frac{\\phi(r_{\\rm g})-\\phi(R)}{c^2}=\\frac{1}{c^2}\\left(\\frac{GM}{R}-\\frac{GM}{r_{\\rm g}}-\\frac12\\Omega_{\\rm E}^{\\,2}r_{\\rm g}^{\\,2}+\\frac12\\Omega_{\\rm E}^{\\,2}R^2\\right) \\]\nここで $\\Omega_{\\rm E}^{\\,2}r_{\\rm g}^{\\,2}=\\dfrac{GM}{r_{\\rm g}}$ を使うと上と同じ式になり，(1) で確かめた「運動による遅れ＝遠心力ポテンシャルによる遅れ」がここでも成り立っている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "時計の進み方は，慣性系では「重力ポテンシャルによる遅れ $\\phi/c^2$」と「運動による遅れ $u^2/2c^2$」の和で決まり，回転系では運動による遅れが遠心力のポテンシャルによる遅れとして現れる（両者は同じ式）．円軌道では $v^2=GM/r$ なので衛星の時計は $1-\\frac{3GM}{2rc^2}$ で進み，地表と同じ速さになる軌道 $r=\\frac32R$ を境に速い・遅いが逆転する．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "circular-motion",
+  "torque"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "重力赤方偏移",
+  "等価原理",
+  "遠心力ポテンシャル",
+  "人工衛星",
+  "近似計算"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

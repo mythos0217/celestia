@@ -1,0 +1,133 @@
+{
+ "id": "PHY-FEQ-008",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-02",
+ "topic": "壁ぎわのメニスカスの高さと，壁が液体から受ける水平力（ぬれ方によらない表面張力の効果）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "広い水槽の鉛直なガラスの壁ぎわでは，液面が曲がる．液体の表面は，表面上に引いた長さ $l$ の線の両側を，その線に垂直で表面に接する向きに大きさ $\\gamma l$ の力で引き合っている（$\\gamma$ は表面張力）．液面が壁と接する線（接触線）で，液体の側で測った液面と壁のなす角を接触角 $\\theta$ という（図の右）．液体の密度を $\\rho$，重力加速度の大きさを $g$，大気圧を $p_0$ とする．壁から十分離れたところの液面は水平で，そこでの液体の深さは $D$ である．状況は壁に沿った方向には一様で，力はすべて壁の幅 $1$ あたりで考える．液面の上と壁の外側は大気である．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水（$\\theta=0$．液面は接触線で壁に沿う）の場合，壁ぎわの液面は遠方の液面より $h$ だけ高い．遠方の液面の高さより上にある液体のうち，壁から遠方の鉛直面までの部分にはたらく水平方向の力のつり合いを考えて，$h$ を $\\rho$，$g$，$\\gamma$ で表せ．また，$\\gamma=7.3\\times10^{-2}\\,$N/m，$\\rho=1.0\\times10^3\\,$kg/m$^3$，$g=9.8\\,$m/s$^2$ のときの $h$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) のとき，壁が液体と大気から受ける水平方向の力の合力 $F$（壁を外へ押す向きを正）を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "水銀（$\\theta=180^\\circ$．液面は接触線で壁に沿って上を向く）の場合，壁ぎわの液面は遠方より $h'$ だけ低い．水銀の密度と表面張力をあらためて $\\rho$，$\\gamma$ として，液体全体にはたらく水平方向の力のつり合いから壁が受ける力 $F'$ を求め，それを用いて $h'$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$0<\\theta<90^\\circ$ の場合に，壁が受ける水平方向の力の合力は $\\theta$ によらず (2) と同じになることを示し，壁ぎわの液面の高さ $h$ を $\\theta$ を用いて表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：壁ぎわのメニスカスの高さと，壁が液体から受ける水平力（ぬれ方によらない表面張力の効果）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：壁ぎわのメニスカスの高さと，壁が液体から受ける水平力（ぬれ方によらない表面張力の効果）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$h=\\sqrt{\\dfrac{2\\gamma}{\\rho g}}$，$3.9\\times10^{-3}\\,$m"
+   },
+   {
+    "id": "2",
+    "tex": "$F=\\dfrac12\\rho gD^2-\\gamma$"
+   },
+   {
+    "id": "3",
+    "tex": "$F'=\\dfrac12\\rho gD^2-\\gamma$，$h'=\\sqrt{\\dfrac{2\\gamma}{\\rho g}}$"
+   },
+   {
+    "id": "4",
+    "tex": "合力は $\\dfrac12\\rho gD^2-\\gamma$，$h=\\sqrt{\\dfrac{2\\gamma(1-\\sin\\theta)}{\\rho g}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "壁から液体の向きに $x$ 軸，遠方の液面を高さ $z=0$ として鉛直上向きに $z$ 軸をとる．液体中の圧力は静水圧の式に従い，遠方の液面で $p_0$ だから，高さ $z$ では $p_0-\\rho gz$ である（$z>0$ では大気圧より低い）．\n\n\\textbf{(1)} 遠方の液面より上の液体（$z\\ge0$，壁から遠方の鉛直面まで）にはたらく水平方向の力を調べる．\n\\begin{itemize}\n\\item 壁が押す力：$\\displaystyle\\int_0^h(p_0-\\rho gz)\\,dz=p_0h-\\frac12\\rho gh^2$（$+x$ 向き）．\n\\item 大気が曲がった液面を押す力：水平成分は，液面を鉛直面に投影した高さ $h$ に $p_0$ をかけたもので，壁の向きに $p_0h$．\n\\item 下の面 $z=0$ は水平なので水平方向の力はない．遠方の切り口は高さが $0$ なので圧力の力はないが，そこで切った表面が外側の表面から $+x$ 向きに $\\gamma$ で引かれる．\n\\item 接触線では液面が壁に沿う（$\\theta=0$）ので，表面張力と壁の間の力に水平成分はない．\n\\end{itemize}\nつり合いより\n\\[ \\left(p_0h-\\frac12\\rho gh^2\\right)-p_0h+\\gamma=0\\quad\\therefore\\quad \\boldsymbol{h=\\sqrt{\\frac{2\\gamma}{\\rho g}}} \\]\n数値を入れて $h=\\sqrt{\\dfrac{2\\times7.3\\times10^{-2}}{1.0\\times10^3\\times9.8}}=\\boldsymbol{3.9\\times10^{-3}\\,\\text{m}}$．切り口を引く表面張力が，壁ぎわの「負圧」の部分が壁の向きに引かれる力 $\\frac12\\rho gh^2$ とつり合っている．\n\n\\textbf{(2)} 壁の外側の大気圧と内側の大気圧の分は打ち消すので，ゲージ圧（$p_0$ との差）で考える．$z<0$ の部分は壁を外へ $\\displaystyle\\int_0^D\\rho gs\\,ds=\\frac12\\rho gD^2$ で押し，$0<z<h$ の部分は壁を液体の側へ $\\frac12\\rho gh^2=\\gamma$ で引く．よって\n\\[ \\boldsymbol{F=\\frac12\\rho gD^2-\\gamma} \\]\n（別解）液体全体（壁から遠方の鉛直面まで，底まで）の水平方向のつり合いを考えると，遠方の切り口は静水圧で壁の向きに $\\frac12\\rho gD^2$ で押され，切り口の表面張力で外向きに $\\gamma$ で引かれ，底からの力は鉛直である．よって壁は液体を $\\frac12\\rho gD^2-\\gamma$ で押しており，作用反作用から同じ結果を得る．\n\n\\textbf{(3)} (2) の別解は液面の形や接触角を使っていないので，水銀でもそのまま成り立ち\n\\[ \\boldsymbol{F'=\\frac12\\rho gD^2-\\gamma} \\]\n（接触線では液面が壁に沿うので，表面張力の水平成分はない）．一方，壁に液体が触れているのは $z<-h'$ の部分だけで，$-h'<z<0$ では壁の内側も大気である．したがって壁を外へ押す力を直接計算すると\n\\[ F'=\\int_{h'}^{D}\\rho gs\\,ds=\\frac12\\rho gD^2-\\frac12\\rho gh'^2 \\]\n両者を比べて $\\frac12\\rho gh'^2=\\gamma$，すなわち $\\boldsymbol{h'=\\sqrt{\\dfrac{2\\gamma}{\\rho g}}}$．水では「負圧で引かれる」ことで，水銀では「液体が壁に触れない部分ができる」ことで，壁を押す力が同じ $\\gamma$ だけ減る．\n\n\\textbf{(4)} (2) の別解は $\\theta$ によらないので，合力は $\\theta$ によらず $\\frac12\\rho gD^2-\\gamma$ である．直接計算では，接触線で液面が壁を液体の側に引く力の水平成分 $\\gamma\\sin\\theta$ が加わり\n\\[ \\frac12\\rho gD^2-\\frac12\\rho gh^2-\\gamma\\sin\\theta=\\frac12\\rho gD^2-\\gamma \\]\n\\[ \\therefore\\quad \\boldsymbol{h=\\sqrt{\\frac{2\\gamma(1-\\sin\\theta)}{\\rho g}}} \\]\n$\\theta=0$ で (1) に一致し，$\\theta\\to90^\\circ$ で $h\\to0$（液面は曲がらない）となる．このように，液面の曲がりは壁が受ける水平力の総量を変えず，その内訳（負圧・液体のない部分・接触線の引く力）だけを変える．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "液面の曲がりを含む液体を遠方の鉛直面で切り出すと，切り口の表面張力 $\\gamma$ が水平方向のつり合いに入る．そのため壁が受ける水平力は静水圧の $\\frac12\\rho gD^2$ からぬれ方（接触角）によらず $\\gamma$ だけ減り，これと壁ぎわの圧力分布の直接計算を比べるとメニスカスの高さ（へこみ）が求まる．"
+ },
+ "concepts": [
+  "equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "表面張力",
+  "メニスカス",
+  "静水圧",
+  "水平方向のつり合い",
+  "接触角"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

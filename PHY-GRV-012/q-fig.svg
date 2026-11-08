@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 300">
+<defs><marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<clipPath id="q-e"><circle cx="200" cy="250" r="45"/></clipPath></defs>
+<circle cx="200" cy="250" r="45" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="65" y1="295" x2="155" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="74" y1="295" x2="164" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="83" y1="295" x2="173" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="92" y1="295" x2="182" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="101" y1="295" x2="191" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="110" y1="295" x2="200" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="119" y1="295" x2="209" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="128" y1="295" x2="218" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="137" y1="295" x2="227" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="146" y1="295" x2="236" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="155" y1="295" x2="245" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="164" y1="295" x2="254" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="173" y1="295" x2="263" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="182" y1="295" x2="272" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="191" y1="295" x2="281" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="200" y1="295" x2="290" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="209" y1="295" x2="299" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="218" y1="295" x2="308" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="227" y1="295" x2="317" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="236" y1="295" x2="326" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<line x1="245" y1="295" x2="335" y2="205" stroke="#222" stroke-width="0.8" clip-path="url(#q-e)"/>
+<path d="M70,250 A130,130 0 0 1 330,250" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<path d="M0,250 A200,200 0 0 1 400,250" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="200" y1="205" x2="200" y2="50" stroke="#222" stroke-width="3"/>
+<circle cx="200" cy="155" r="5" fill="#222"/>
+<text x="208" y="158" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">小物体</text>
+<line x1="200" y1="250" x2="157.7" y2="265.4" stroke="#888" stroke-width="1" marker-end="url(#q-ag)"/>
+<text x="129.7" y="269.4" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">R<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+<line x1="200" y1="250" x2="312.6" y2="185.0" stroke="#888" stroke-width="1" marker-end="url(#q-ag)"/>
+<text x="318.6" y="185.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">R<tspan baseline-shift="sub" font-size="10" font-style="normal">s</tspan></text>
+<line x1="200" y1="250" x2="393.2" y2="198.2" stroke="#888" stroke-width="1" marker-end="url(#q-ag)"/>
+<text x="399.2" y="198.2" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">R<tspan baseline-shift="sub" font-size="10" font-style="normal">2</tspan></text>
+<line x1="188" y1="250" x2="188" y2="155" stroke="#888" stroke-width="1" marker-end="url(#q-ag)"/>
+<text x="172" y="130" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">r</text>
+<text x="208" y="80" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">λ</text>
+<text x="196" y="280" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">M</text>
+<path d="M260,260 A62,62 0 0 0 242,204" fill="none" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="266" y="230" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">ω</text>
+<text x="290" y="292" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">（図は縮尺どおりでない）</text>
+</svg>

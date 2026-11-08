@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300">
+<defs><marker id="q-ak" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker></defs>
+<line x1="90.0" y1="260" x2="546.6666666666667" y2="260" stroke="#222" stroke-width="1.6"/>
+<g stroke="#222" stroke-width="1"><line x1="120" y1="260" x2="110" y2="272"/><line x1="150" y1="260" x2="140" y2="272"/><line x1="180" y1="260" x2="170" y2="272"/><line x1="210" y1="260" x2="200" y2="272"/><line x1="240" y1="260" x2="230" y2="272"/><line x1="270" y1="260" x2="260" y2="272"/><line x1="300" y1="260" x2="290" y2="272"/><line x1="330" y1="260" x2="320" y2="272"/><line x1="360" y1="260" x2="350" y2="272"/><line x1="390" y1="260" x2="380" y2="272"/><line x1="420" y1="260" x2="410" y2="272"/><line x1="450" y1="260" x2="440" y2="272"/><line x1="480" y1="260" x2="470" y2="272"/><line x1="510" y1="260" x2="500" y2="272"/></g>
+<polygon points="110.0,260 260,60 526.7,260" fill="none" stroke="#222" stroke-width="1.6"/>
+<polyline points="172.0,169.0 260,55 383.0,146.0" fill="none" stroke="#222" stroke-width="4" stroke-linejoin="round"/>
+<text x="150.0" y="169.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">A</text>
+<text x="391.0" y="146.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">B</text>
+<text x="253" y="44" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">O</text>
+<path d="M150.0,260 A40,40 0 0 0 134.0,228.0" fill="none" stroke="#222" stroke-width="1"/>
+<text x="154.0" y="248" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">α</text>
+<path d="M476.7,260 A50,50 0 0 1 486.7,230.0" fill="none" stroke="#222" stroke-width="1"/>
+<text x="454.7" y="252" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">β</text>
+<text x="170.0" y="108.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+<text x="334.0" y="94.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">L<tspan font-style="normal" font-family="Noto Sans CJK JP, sans-serif">−</tspan>x</text>
+<line x1="500" y1="40" x2="500" y2="90" stroke="#222" stroke-width="1.8" marker-end="url(#q-ak)"/>
+<text x="508" y="72" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">g</text>
+</svg>

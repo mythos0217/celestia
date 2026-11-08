@@ -1,0 +1,134 @@
+{
+ "id": "PHY-GRV-010",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "一様なちりの雲の中の公転軌道と近点の逆行（動径振動と公転の周期比）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "質量 $M$ の恒星が点 O に固定されており，そのまわりを，O を中心とする半径 $b$ の球の内部に一様に分布した希薄なちりの雲（密度 $\\rho$）が取り巻いている．このちりの中を，質量 $m$（$m\\ll M$）の探査機が O を含む平面内で運動する．ちりは探査機の運動に抵抗を与えず，重力だけをおよぼすものとし，探査機の軌道は常に $r<b$ の範囲にあるとする．万有引力定数を $G$ とする．球対称に分布した質量が半径 $r$ の点におよぼす万有引力は，半径 $r$ の球の内部にある質量がすべて中心に集まった場合と同じであり，外側の質量からの力は打ち消し合うことを用いてよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "探査機が O からの距離 $r$ の点にあるとき，探査機にはたらく万有引力の大きさ $F(r)$ を求めよ．また，探査機が半径 $R$ の円軌道を回るときの角速度 $\\Omega$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "半径 $R$ の円軌道を回っている探査機に，O から遠ざかる向き（動径方向）にごく短時間だけ噴射を行い，動径方向の速さ $u_0$ を与えた．$u_0$ は円運動の速さに比べて十分小さい．噴射の前後で O のまわりの面積速度が変わらない理由を述べ，その後の O からの距離 $r$ が $R$ を中心に単振動することを示して，その角振動数 $\\omega_{\\mathrm r}$ と振幅を求めよ．ただし $|x|\\ll1$ のとき $(1+x)^p\\fallingdotseq 1+px$ を用いてよい．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の運動で，探査機が O に最も近づく点（近点）から次の近点に達するまでの間に，探査機が O のまわりに回る角 $\\Phi$ を求めよ．$\\Phi$ と $2\\pi$ の大小を比べ，近点の方向が公転の向きに進むか逆向きに戻るかを答えよ．さらに，$\\rho\\to0$ の極限と $M\\to0$ の極限で $\\Phi$ がどうなるかを求め，それぞれの極限の軌道の形と結びつけて説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "実際に (2) の運動を観測したところ，近点の方向は 1 回ごとに公転と逆向きに角 $\\delta$（$0<\\delta<\\pi$）ずつ戻っていた．ちりの密度 $\\rho$ を $M$，$R$，$\\delta$ で表せ．また $\\delta\\ll1$ のとき，半径 $R$ の球内にあるちりの質量が $M$ の何倍かを $\\delta$ の1次の式で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一様なちりの雲の中の公転軌道と近点の逆行（動径振動と公転の周期比）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一様なちりの雲の中の公転軌道と近点の逆行（動径振動と公転の周期比）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$F(r)=\\dfrac{GMm}{r^2}+\\dfrac{4\\pi G\\rho m}{3}r$，$\\Omega=\\sqrt{\\dfrac{GM}{R^3}+\\dfrac{4\\pi G\\rho}{3}}$"
+   },
+   {
+    "id": "2",
+    "tex": "噴射の力は O を向く（中心力）ので O のまわりの力のモーメントが 0．$\\omega_{\\mathrm r}=\\sqrt{\\dfrac{GM}{R^3}+\\dfrac{16\\pi G\\rho}{3}}$，振幅 $\\dfrac{u_0}{\\omega_{\\mathrm r}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\Phi=2\\pi\\sqrt{\\dfrac{GM+\\frac{4\\pi}{3}G\\rho R^3}{GM+\\frac{16\\pi}{3}G\\rho R^3}}<2\\pi$ で近点は逆向きに戻る．$\\rho\\to0$ で $\\Phi\\to2\\pi$（閉じた楕円，焦点に O），$M\\to0$ で $\\Phi\\to\\pi$（O を中心とする楕円）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\rho=\\dfrac{3M\\delta(4\\pi-\\delta)}{16\\pi R^3(\\pi-\\delta)(3\\pi-\\delta)}$，ちりの質量は $\\dfrac{\\delta}{3\\pi}$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 万有引力}\n半径 $r$ の球内のちりの質量は $\\frac{4}{3}\\pi r^3\\rho$ なので，\n\\[ F(r)=\\frac{GMm}{r^2}+\\frac{G\\cdot\\frac43\\pi r^3\\rho\\, m}{r^2}=\\frac{GMm}{r^2}+\\frac{4\\pi G\\rho m}{3}r. \\]\n以下 $\\omega_{\\mathrm K}^2=\\dfrac{GM}{R^3}$，$\\kappa=\\dfrac{4\\pi G\\rho}{3}$ とおく．円運動の式 $mR\\Omega^2=F(R)$ より\n\\[ \\boldsymbol{\\Omega=\\sqrt{\\frac{GM}{R^3}+\\frac{4\\pi G\\rho}{3}}}=\\sqrt{\\omega_{\\mathrm K}^2+\\kappa}. \\]\n\n\\textbf{(2) 動径方向の単振動}\n噴射の力は動径方向，万有引力も O を向くので，O のまわりの力のモーメントは常に 0 であり，面積速度 $\\frac12 r v_\\perp$（$v_\\perp$ は動径に垂直な速さ）は噴射の前後を通して一定である．よって $r v_\\perp=R^2\\Omega\\equiv h$．\\\\\n動径方向には，O とともに回る立場で見ると遠心力 $m v_\\perp^2/r=mh^2/r^3$ と引力 $F(r)$ がはたらくので\n\\[ m\\ddot r=\\frac{mh^2}{r^3}-F(r). \\]\n$r=R+\\xi$（$|\\xi|\\ll R$）とおき1次まで展開すると，\n\\[ \\frac{h^2}{r^3}\\fallingdotseq R\\Omega^2\\Bigl(1-\\frac{3\\xi}{R}\\Bigr),\\quad \\frac{F(r)}{m}\\fallingdotseq \\frac{GM}{R^2}\\Bigl(1-\\frac{2\\xi}{R}\\Bigr)+\\kappa R\\Bigl(1+\\frac{\\xi}{R}\\Bigr). \\]\n定数項は円運動の条件で打ち消し合い，\n\\[ \\ddot\\xi=-\\bigl(3\\Omega^2-2\\omega_{\\mathrm K}^2+\\kappa\\bigr)\\xi=-\\bigl(\\omega_{\\mathrm K}^2+4\\kappa\\bigr)\\xi. \\]\nよって $\\xi$ は単振動し，\n\\[ \\boldsymbol{\\omega_{\\mathrm r}=\\sqrt{\\frac{GM}{R^3}+\\frac{16\\pi G\\rho}{3}}}. \\]\n$t=0$ で $\\xi=0$，$\\dot\\xi=u_0$ なので $\\xi=\\frac{u_0}{\\omega_{\\mathrm r}}\\sin\\omega_{\\mathrm r}t$，振幅は $\\boldsymbol{u_0/\\omega_{\\mathrm r}}$．（$\\xi$ が小さいので，角速度は $\\Omega$ のままとみなせる．）\n\n\\textbf{(3) 近点の移動}\n近点から次の近点までの時間は動径振動の周期 $2\\pi/\\omega_{\\mathrm r}$ で，その間に O のまわりに回る角は\n\\[ \\Phi=\\Omega\\cdot\\frac{2\\pi}{\\omega_{\\mathrm r}}=\\boldsymbol{2\\pi\\sqrt{\\frac{\\omega_{\\mathrm K}^2+\\kappa}{\\omega_{\\mathrm K}^2+4\\kappa}}}. \\]\n$\\kappa>0$ なら根号の中は 1 より小さく $\\boldsymbol{\\Phi<2\\pi}$：1 周し終える前に次の近点が来るので，\\textbf{近点の方向は公転と逆向きに戻る}（1 回あたり $2\\pi-\\Phi$）．\n\\begin{itemize}\n\\item $\\rho\\to0$：$\\Phi\\to2\\pi$．逆2乗の引力だけでは動径振動と公転の周期が一致し，軌道は O を焦点とする閉じた楕円になる（近点は 1 周に 1 回，同じ方向）．\n\\item $M\\to0$：$\\Phi\\to\\pi$．引力が距離に比例する（ばねと同じ）ので，$x$，$y$ 方向がそれぞれ同じ角振動数で単振動し，軌道は O を中心とする楕円になる．近点は楕円の短軸の両端の 2 か所にあり，半周ごとに現れる．\n\\end{itemize}\n実際の $\\Phi$ はこの 2 つの間にあり，ちりの効果が大きいほど $\\pi$ に近づく．\n\n\\textbf{(4) 観測からの密度の決定}\n$\\Phi=2\\pi-\\delta$ とし，$x=\\kappa/\\omega_{\\mathrm K}^2$ とおくと，\n\\[ \\frac{1+x}{1+4x}=\\Bigl(1-\\frac{\\delta}{2\\pi}\\Bigr)^2 \\quad\\Longrightarrow\\quad x=\\frac{\\delta(4\\pi-\\delta)}{4(\\pi-\\delta)(3\\pi-\\delta)}. \\]\n$\\rho=\\dfrac{3\\kappa}{4\\pi G}=\\dfrac{3M}{4\\pi R^3}x$ より\n\\[ \\boldsymbol{\\rho=\\frac{3M\\delta(4\\pi-\\delta)}{16\\pi R^3(\\pi-\\delta)(3\\pi-\\delta)}}. \\]\n半径 $R$ の球内のちりの質量は $M_{\\rm d}=\\frac43\\pi R^3\\rho=Mx$ であり，$\\delta\\ll1$ では $x\\fallingdotseq\\dfrac{4\\pi\\delta}{4\\cdot3\\pi^2}=\\dfrac{\\delta}{3\\pi}$ なので，$\\boldsymbol{M_{\\rm d}\\fallingdotseq\\dfrac{\\delta}{3\\pi}M}$．近点のわずかな逆行から，軌道の内側の見えない質量が測れる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "面積速度一定で中心力の運動を動径方向の1次元問題に直すと，円軌道まわりの動径振動の角振動数は $\\omega_{\\mathrm r}^2=3\\Omega^2+F'(R)/m$ で決まる．逆2乗力にだけ $\\omega_{\\mathrm r}=\\Omega$ となって軌道が閉じ，距離に比例する引力（一様なちり）が加わると $\\omega_{\\mathrm r}>\\Omega$ となって近点が逆行するので，その逆行角から内側の質量が求まる．"
+ },
+ "concepts": [
+  "universal-gravitation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "中心力",
+  "面積速度",
+  "動径振動",
+  "近点移動",
+  "球殻定理",
+  "微小振動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

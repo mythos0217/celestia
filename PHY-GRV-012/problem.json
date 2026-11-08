@@ -1,0 +1,144 @@
+{
+ "id": "PHY-GRV-012",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "地球とともに回る自由なテザーの張力分布と，テザーから放した物体の軌道（静止軌道の上下での場合分け）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球（質量 $M$，半径 $R_0$）は一定の角速度 $\\omega$ で自転している．万有引力定数を $G$ とし，地球以外の天体や大気の影響は考えない．また地球以外の物体どうしの万有引力は無視する．\n図1のように，単位長さあたりの質量が $\\lambda$ の一様で伸び縮みしない細いテザー（ひも）が，赤道上の地表から鉛直上向きに，地上から見て静止したまま伸びている．テザーの下端は地表に触れているだけで地面から力を受けておらず，上端は自由端で地球の中心から距離 $R_2$ の位置にある．テザーの各部分は，地球の中心を中心とする角速度 $\\omega$ の円運動をしている．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "赤道上空で自転と同じ角速度 $\\omega$ で円運動する静止衛星の軌道半径 $R_{\\rm s}$ を $G, M, \\omega$ で表せ．以下の問では $GM=\\omega^2R_{\\rm s}^{\\,3}$ を用いてよい．また $R_2>R_{\\rm s}$ である．"
+     },
+     {
+      "id": "2",
+      "tex": "地球の中心から距離 $r$（$R_0\\le r\\le R_2$）の位置でのテザーの張力の大きさ $T(r)$ を $\\lambda,\\omega,R_0,R_{\\rm s},r$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "張力が最大になる位置と，張力の最大値を求めよ．最大値は $\\lambda,\\omega,R_0,R_{\\rm s}$ を用いて因数分解した形で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "テザー上の距離 $r$ の位置に取り付けておいた小物体を静かにテザーから離した（離した瞬間の小物体の速度は，その位置のテザーの速度に等しい）．$s=\\left(\\dfrac{r}{R_{\\rm s}}\\right)^3$ とおく．その後の運動で小物体と地球の中心との距離がとる最小値と最大値を，(i) $r<R_{\\rm s}$，(ii) $R_{\\rm s}<r<2^{1/3}R_{\\rm s}$ の場合について，それぞれ $r$ と $s$ で表せ．また，小物体が地球から無限に遠ざかる $r$ の範囲を求めよ．ただし小物体は地表やテザーに衝突しないものとする．"
+     },
+     {
+      "id": "5",
+      "tex": "$R_{\\rm s}=6.6R_0$ とする．$r<R_{\\rm s}$ の位置で離した小物体が地表に落下しないための $r$ の最小値は $R_0$ の何倍か．有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：地球とともに回る自由なテザーの張力分布と，テザーから放した物体の軌道（静止軌道の上下での場合分け）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：地球とともに回る自由なテザーの張力分布と，テザーから放した物体の軌道（静止軌道の上下での場合分け）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$R_{\\rm s}=\\left(\\dfrac{GM}{\\omega^2}\\right)^{1/3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$T(r)=\\lambda\\omega^2\\left\\{R_{\\rm s}^{\\,3}\\left(\\dfrac1{R_0}-\\dfrac1r\\right)-\\dfrac{r^2-R_0^{\\,2}}{2}\\right\\}$"
+   },
+   {
+    "id": "3",
+    "tex": "$r=R_{\\rm s}$ で最大，$T_{\\max}=\\dfrac{\\lambda\\omega^2(R_{\\rm s}-R_0)^2(2R_{\\rm s}+R_0)}{2R_0}$"
+   },
+   {
+    "id": "4",
+    "tex": "(i) 最小 $\\dfrac{rs}{2-s}$，最大 $r$　(ii) 最小 $r$，最大 $\\dfrac{rs}{2-s}$；無限に遠ざかるのは $r\\ge2^{1/3}R_{\\rm s}$"
+   },
+   {
+    "id": "5",
+    "tex": "$4.7$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　静止衛星（質量 $m$）の円運動の式 $m R_{\\rm s}\\omega^2=\\dfrac{GMm}{R_{\\rm s}^{\\,2}}$ より $\\boldsymbol{R_{\\rm s}=\\left(\\dfrac{GM}{\\omega^2}\\right)^{1/3}}$．\n\n\\textbf{(2) 張力の分布}　距離 $r$ から $r+\\Delta r$ の部分（質量 $\\lambda\\Delta r$）には，万有引力 $\\dfrac{GM\\lambda\\Delta r}{r^2}$（中心向き），下側のテザーの張力 $T(r)$（中心向き），上側のテザーの張力 $T(r+\\Delta r)$（外向き）がはたらき，これらの合力が円運動の向心力 $\\lambda\\Delta r\\,r\\omega^2$ になる：\n\\[ \\frac{GM\\lambda\\Delta r}{r^2}+T(r)-T(r+\\Delta r)=\\lambda\\Delta r\\,r\\omega^2 \\quad\\Longrightarrow\\quad \\frac{\\Delta T}{\\Delta r}=\\lambda\\left(\\frac{GM}{r^2}-\\omega^2r\\right). \\]\n下端は地面から力を受けないので $T(R_0)=0$．$R_0$ から $r$ までの各部分についてこの式を足し合わせると（$\\Delta r\\to0$）\n\\[ T(r)=\\lambda\\left\\{GM\\left(\\frac1{R_0}-\\frac1r\\right)-\\frac{\\omega^2(r^2-R_0^{\\,2})}{2}\\right\\}=\\boldsymbol{\\lambda\\omega^2\\left\\{R_{\\rm s}^{\\,3}\\left(\\frac1{R_0}-\\frac1r\\right)-\\frac{r^2-R_0^{\\,2}}{2}\\right\\}}. \\]\nこれは，地球とともに回る系での1つの質点あたりの「万有引力と遠心力の位置エネルギーの和」$U(r)=-\\dfrac{GM}{r}-\\dfrac12\\omega^2r^2$ を用いて $T(r)=\\lambda\\{U(r)-U(R_0)\\}$ と書ける．なお上端の位置 $R_2$ は $T(R_2)=0$ で決まる．\n\n\\textbf{(3) 張力の最大}　$\\dfrac{\\Delta T}{\\Delta r}=\\lambda\\omega^2\\left(\\dfrac{R_{\\rm s}^{\\,3}}{r^2}-r\\right)$ は $r<R_{\\rm s}$ で正，$r>R_{\\rm s}$ で負である．静止軌道より下では万有引力が遠心力にまさって各部分は上から引き上げられ，上では逆に下へ引き戻されるので，張力は $\\boldsymbol{r=R_{\\rm s}}$（静止軌道の高さ）で最大になる．\n\\[ T_{\\max}=\\lambda\\omega^2\\left\\{\\frac{R_{\\rm s}^{\\,3}}{R_0}-R_{\\rm s}^{\\,2}-\\frac{R_{\\rm s}^{\\,2}-R_0^{\\,2}}{2}\\right\\}=\\frac{\\lambda\\omega^2}{2R_0}\\left(2R_{\\rm s}^{\\,3}-3R_{\\rm s}^{\\,2}R_0+R_0^{\\,3}\\right)=\\boldsymbol{\\frac{\\lambda\\omega^2(R_{\\rm s}-R_0)^2(2R_{\\rm s}+R_0)}{2R_0}}. \\]\n\n\\textbf{(4) 放した小物体の軌道}　離した瞬間の速さは $v=r\\omega$ で，向きは動径に垂直である．したがって離した点は楕円軌道の端点（地球の中心から最も近い点か最も遠い点）であり，もう一方の端点の距離を $r'$，そこでの速さを $v'$ とする（$v'$ も動径に垂直）．面積速度一定と力学的エネルギー保存より\n\\[ rv=r'v',\\qquad \\frac12v^2-\\frac{GM}{r}=\\frac12v'^2-\\frac{GM}{r'}. \\]\n$v'=\\dfrac{rv}{r'}$ を代入して $r'\\neq r$ で割ると $v^2\\dfrac{r+r'}{r'}=\\dfrac{2GM}{r}$，よって\n\\[ r'=\\frac{v^2r^2}{2GM-v^2r}=\\frac{\\omega^2r^4}{2\\omega^2R_{\\rm s}^{\\,3}-\\omega^2r^3}=\\frac{rs}{2-s}. \\]\n$\\dfrac{r'}{r}=\\dfrac{s}{2-s}$ は $s<1$ で $1$ より小さく，$1<s<2$ で $1$ より大きい．\n(i) $r<R_{\\rm s}$（$s<1$）：速さが円軌道に足りず内側に落ちていくので，\\textbf{最大 $r$，最小 $\\boldsymbol{\\dfrac{rs}{2-s}}$}．\n(ii) $R_{\\rm s}<r<2^{1/3}R_{\\rm s}$（$1<s<2$）：速さが円軌道より大きく外側にふくらむので，\\textbf{最小 $r$，最大 $\\boldsymbol{\\dfrac{rs}{2-s}}$}．\n無限に遠ざかる条件は力学的エネルギーが $0$ 以上であることで，$\\dfrac12r^2\\omega^2-\\dfrac{\\omega^2R_{\\rm s}^{\\,3}}{r}\\ge0$，すなわち $s\\ge2$：$\\boldsymbol{r\\ge2^{1/3}R_{\\rm s}}$．（$s=1$ では円軌道，$s\\to2$ で $r'\\to\\infty$ となり(ii)とつながる．）\n\n\\textbf{(5) 地表に落ちない条件}　(i)の最小距離が $R_0$ 以上であればよい：$\\dfrac{rs}{2-s}\\ge R_0$．$\\rho=\\dfrac{r}{R_{\\rm s}}$，$\\kappa=\\dfrac{R_0}{R_{\\rm s}}=\\dfrac1{6.6}$ とおくと $\\dfrac{\\rho^4}{2-\\rho^3}\\ge\\kappa$，すなわち\n\\[ g(\\rho)=\\rho^4+\\kappa\\rho^3-2\\kappa\\ge0. \\]\n$g$ は $\\rho>0$ で増加し，$g(0.70)\\approx-0.011<0$，$g(0.71)\\approx+0.005>0$ で，さらに詰めると $\\rho\\approx0.707$．よって $r_{\\min}=0.707\\times6.6R_0\\approx\\boldsymbol{4.7R_0}$．静止軌道の約 $0.7$ 倍より低い位置で離すと，小物体は地表に落ちる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "地球とともに回るテザーの張力は各部分の「万有引力−向心力」の和で，回転系の有効ポテンシャルの差に比例し，両者が等しくなる静止軌道の高さで最大になる．テザーから放した物体は放した点が軌道の端点になり，静止軌道より下では内側へ，上では外側へ楕円を描き，もう一方の端点は面積速度とエネルギーから $r s/(2-s)$ と決まって $s\\ge2$ で脱出する．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "circular-motion",
+  "torque"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "万有引力",
+  "静止軌道",
+  "張力分布",
+  "楕円軌道",
+  "脱出条件",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

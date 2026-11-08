@@ -1,0 +1,121 @@
+{
+ "id": "PHY-FEQ-007",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-02",
+ "topic": "平行なガラス板の間の水（毛管上昇・水面の圧力差・板を引き離す力と仕事）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水はガラスをよくぬらし，水面はガラスに接する所でガラス面に沿う（接触角 $0$）とする．水の表面張力を $\\gamma$，密度を $\\rho$，重力加速度の大きさを $g$，大気圧を $p_0$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "図1のように，間隔 $d$ の2枚の平行なガラス板を鉛直にして水に浸すと，板の間の水面が上昇する．板の幅は $d$ に比べ十分大きく，水面の曲がった部分の水の量は無視できるとして，上昇する高さ $h$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の板の間で，水面のすぐ下の水の圧力を $p$ とする．$p_0-p$ を $\\gamma,d$ だけで表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "図2のように，2枚のガラス板を水平にして間隔 $d$ で重ね，その間に直径 $D$（$D\\gg d$）の円板状の水をはさむ．水の縁の水面の形は (1) の水面と同じであるとして，板を引き離すのに必要な力の大きさ $F$ を求めよ（板と水の重さは無視する）．$\\gamma=7.2\\times10^{-2}\\,\\mathrm{N/m}$，$d=1.0\\times10^{-5}\\,\\mathrm{m}$，$D=4.0\\,\\mathrm{cm}$ のときの値を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の状態から，水の体積を保ったまま，板の間隔をゆっくり $2d$ まで広げる．このとき外力がする仕事 $W$ を $\\gamma,D$ で表し，(3) の数値で求めよ．また，「ガラスが水にぬれている面積 $1\\,\\mathrm{m^2}$ あたり，系のエネルギーはぬれていないときより $\\gamma$ だけ低い」として，$W$ をエネルギーの変化から求め直し，一致することを確かめよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：平行なガラス板の間の水（毛管上昇・水面の圧力差・板を引き離す力と仕事）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$h=\\dfrac{2\\gamma}{\\rho gd}$"
+   },
+   {
+    "id": "2",
+    "tex": "$p_0-p=\\dfrac{2\\gamma}{d}$"
+   },
+   {
+    "id": "3",
+    "tex": "$F=\\dfrac{\\pi\\gamma D^2}{2d}$，$18\\,\\mathrm{N}$"
+   },
+   {
+    "id": "4",
+    "tex": "$W=\\dfrac{\\pi\\gamma D^2}{4}$，$9.0\\times10^{-5}\\,\\mathrm{J}$（ぬれた面積が板2枚で合計 $\\dfrac{\\pi D^2}{4}$ 減るので，エネルギーの増加 $\\gamma\\cdot\\dfrac{\\pi D^2}{4}$ と一致）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 毛管上昇}\n板の幅を $w$ とし，外の水面より上にある板の間の水の柱を考える．接触角が $0$ なので，水面は板との接触線で板に沿って上向きに引かれ，その力は両方の板で合計 $2\\gamma w$．柱の上面（水面）と下面（外の水面の高さ）にはどちらも大気圧相当の $p_0$ がかかっていると考えると（下面は外の水面と同じ高さなので圧力 $p_0$，上面は大気に接する），圧力による力は打ち消し合う．よって\n\\[ 2\\gamma w=\\rho(wdh)g\\quad\\Longrightarrow\\quad h=\\boldsymbol{\\frac{2\\gamma}{\\rho gd}}. \\]\n\n\\textbf{(2) 水面の圧力差}\n板の間の水の中で，外の水面と同じ高さの圧力は $p_0$．そこから $h$ 上の水面のすぐ下の圧力は\n\\[ p=p_0-\\rho gh=p_0-\\frac{2\\gamma}{d}\\quad\\Longrightarrow\\quad p_0-p=\\boldsymbol{\\frac{2\\gamma}{d}}. \\]\n板の間で曲がった水面（直径 $d$ の半円柱面）は，内側の水の圧力を大気圧より $2\\gamma/d$ だけ下げている．この圧力差は水面の形だけで決まり，重力によらない．\n\n\\textbf{(3) 水平な板の間の水}\n縁の水面は (1) と同じ形なので，はさまれた水の圧力は $p_0-\\dfrac{2\\gamma}{d}$．上の板は，外側から $p_0$，水に接する面積 $\\dfrac{\\pi D^2}{4}$ の部分の内側から $p_0-\\dfrac{2\\gamma}{d}$ で押されるので，正味 $\\dfrac{2\\gamma}{d}\\cdot\\dfrac{\\pi D^2}{4}$ で下の板に押しつけられる．縁で水面が板を引く力は板に沿う向きなので，板に垂直な成分をもたない．よって\n\\[ F=\\boldsymbol{\\frac{\\pi\\gamma D^2}{2d}}=\\frac{\\pi\\times7.2\\times10^{-2}\\times(4.0\\times10^{-2})^2}{2\\times1.0\\times10^{-5}}=\\boldsymbol{18\\,\\mathrm{N}}. \\]\n約 $1.8\\,\\mathrm{kg}$ の物体の重さに相当する．$d$ が小さいほど圧力差が大きく，面積全体にかかるため大きな力になる．\n\n\\textbf{(4) 引き離す仕事}\n水の体積 $V=\\dfrac{\\pi D^2}{4}d$ は一定なので，間隔が $z$ のときぬれている面積（板1枚あたり）は $S=V/z$，必要な力は $F(z)=\\dfrac{2\\gamma}{z}\\cdot\\dfrac{V}{z}=\\dfrac{2\\gamma V}{z^2}$．ゆっくり広げるので外力はこれに等しく\n\\[ W=\\int_d^{2d}\\frac{2\\gamma V}{z^2}\\,dz=2\\gamma V\\left(\\frac1d-\\frac1{2d}\\right)=\\frac{\\gamma V}{d}=\\boldsymbol{\\frac{\\pi\\gamma D^2}{4}}=\\boldsymbol{9.0\\times10^{-5}\\,\\mathrm{J}}. \\]\n\\textbf{エネルギーによる確認}：板1枚のぬれた面積は $\\dfrac Vd$ から $\\dfrac V{2d}$ に減るので，2枚合わせて $2\\left(\\dfrac Vd-\\dfrac V{2d}\\right)=\\dfrac Vd=\\dfrac{\\pi D^2}{4}$ だけ減る．ぬれた面積 $1\\,\\mathrm{m^2}$ あたりエネルギーが $\\gamma$ 低いので，系のエネルギーは $\\gamma\\dfrac{\\pi D^2}{4}$ 増え，これが外力の仕事 $W$ に等しい．縁の水面の面積の変化は周の長さ×間隔の程度で，$d/D$ の程度の小さな補正である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "接触角 $0$ の水面は板の間で半円柱面になり，内部の水を大気圧より $2\\gamma/d$ 低くする．これは毛管上昇の高さ $2\\gamma/(\\rho gd)$ と同じ量の圧力差であり，水平にはさんだ水では面積全体にかかるため大きな引き寄せる力になる．体積一定で間隔を広げるときの仕事は，ぬれた面積の減少×$\\gamma$ というエネルギーの式と一致する．"
+ },
+ "concepts": [
+  "equilibrium",
+  "work-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "表面張力",
+  "毛管現象",
+  "圧力差",
+  "仕事とエネルギー",
+  "つり合い"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "id": "PHY-GRV-009",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "円軌道上の待ち合わせ（減速して追いつく軌道と加速して待つ軌道，地球への衝突条件と必要な速さの変化の非対称性）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "質量 $M$ の地球（中心 O，半径 $R_{\\text{E}}$）のまわりを，宇宙ステーション Z と宇宙船 U が同じ半径 $R$ の円軌道上を同じ向きにまわっている．図のように，Z は U より角度 $\\theta$（$0<\\theta<2\\pi$）だけ先を進んでいる．万有引力定数を $G$ とし，Z・U の質量は $M$ に比べて十分小さく，Z と U の間の引力，大気の抵抗は無視する．U のエンジン噴射はすべて進行方向（またはその逆向き）に十分短い時間で行い，噴射による位置の変化は無視する．\n\nU は点 C で速さを $V_0$ から $V_1$ に変えて楕円軌道に移り，楕円軌道をちょうど $n$ 周（$n$ は正の整数）して C に戻った瞬間に Z と出会い，再び速さを $V_0$ に戻して Z と同じ円軌道に入る．これを「$n$ 周の待ち合わせ」とよぶ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "円軌道の速さ $V_0$ と周期 $T_0$ を $G,\\ M,\\ R$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "U が減速して（$V_1<V_0$）Z に追いつく $n$ 周の待ち合わせを考える．楕円軌道の周期 $T_1$ の $T_0$ に対する比，地球中心から楕円軌道の最も近い点までの距離 $d$ の $R$ に対する比，および $V_1/V_0$ を，$\\theta,\\ n$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\theta=\\pi$，$R_{\\text{E}}=\\dfrac{R}{2}$ とする．(2) の方法で，楕円軌道が地球にぶつからない（$d>R_{\\text{E}}$）ための最小の $n$ を求めよ．また，その $n$ について $V_1/V_0$ の値と，出会うまでの時間（$T_0$ を単位として）を求めよ．数値は有効数字3桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\theta=\\pi$ のまま，今度は U が C で加速して（$V_1'>V_0$）大きい楕円軌道に移り，Z が U に追いつく（Z が U を周回遅れにする）のを待つ $2$ 周の待ち合わせを考える．$V_1'/V_0$ と出会うまでの時間を求めよ．また，(3) の方法と比べて，2回の噴射の速さの変化の大きさの和はどちらが小さいか．数値は有効数字3桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(3)(4) で，周期の変化の割合 $|T_1/T_0-1|$ は等しく $\\dfrac14$ であるのに，必要な速さの変化の大きさは異なった．周期を $T_0(1+\\varepsilon)$（$|\\varepsilon|\\ll1$）にするのに必要な $V_1/V_0$ を $\\varepsilon$ の2次まで求め，この違いが生じる理由を説明せよ．必要なら $|u|\\ll1$ のとき $(1+u)^s\\fallingdotseq1+su+\\dfrac{s(s-1)}{2}u^2$ を用いてよい．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：円軌道上の待ち合わせ（減速して追いつく軌道と加速して待つ軌道，地球への衝突条件と必要な速さの変化の非対称性）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：円軌道上の待ち合わせ（減速して追いつく軌道と加速して待つ軌道，地球への衝突条件と必要な速さの変化の非対称性）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V_0=\\sqrt{\\dfrac{GM}{R}}$，$T_0=2\\pi\\sqrt{\\dfrac{R^3}{GM}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{T_1}{T_0}=1-\\dfrac{\\theta}{2\\pi n}$，$\\dfrac dR=2\\left(1-\\dfrac{\\theta}{2\\pi n}\\right)^{2/3}-1$，$\\dfrac{V_1}{V_0}=\\sqrt{2-\\left(1-\\dfrac{\\theta}{2\\pi n}\\right)^{-2/3}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$n=2$，$V_1/V_0=0.888$，$1.50T_0$"
+   },
+   {
+    "id": "4",
+    "tex": "$V_1'/V_0=1.07$（$1.067$），$2.50T_0$．速さの変化の和は (3) が $0.224V_0$，(4) が $0.134V_0$ で，加速する (4) の方が小さい"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{V_1}{V_0}\\fallingdotseq1+\\dfrac{\\varepsilon}{3}-\\dfrac{\\varepsilon^2}{3}$．2次の項が負なので，周期を延ばす（$\\varepsilon>0$）ほうが同じ $|\\varepsilon|$ に必要な $|\\Delta V|$ が小さい"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　円運動の運動方程式 $\\dfrac{mV_0^2}{R}=\\dfrac{GMm}{R^2}$ より $\\boldsymbol{V_0=\\sqrt{GM/R}}$，$\\boldsymbol{T_0=\\dfrac{2\\pi R}{V_0}=2\\pi\\sqrt{R^3/(GM)}}$．\n\n\\textbf{(2) 減速による待ち合わせ}　C で接線方向に噴射するので，C は新しい楕円軌道の長軸の端になる．減速すると C は最も遠い点（遠地点）になり，周期は短くなる．U が $n$ 周する時間 $nT_1$ の間に，Z は $n$ 周より $\\theta$ だけ少ない角度を進んで C に着かなければならない（Z は $\\theta$ 先にいるので，C まであと $2\\pi-\\theta$，さらに $n-1$ 周）．Z の角速度は $2\\pi/T_0$ なので\n\\[ nT_1=\\frac{2\\pi n-\\theta}{2\\pi}T_0\\quad\\Longrightarrow\\quad \\boldsymbol{\\frac{T_1}{T_0}=1-\\frac{\\theta}{2\\pi n}}. \\]\n楕円の半長軸を $a$ とすると，ケプラーの第3法則より $a=R\\,(T_1/T_0)^{2/3}$．長軸の両端が $R$ と $d$ なので $R+d=2a$：\n\\[ \\boldsymbol{\\frac dR=2\\left(1-\\frac{\\theta}{2\\pi n}\\right)^{2/3}-1}. \\]\nC と最も近い点 D での面積速度一定 $RV_1=dV_D$ と力学的エネルギー保存 $\\frac12V_1^2-\\frac{GM}{R}=\\frac12V_D^2-\\frac{GM}{d}$ から $V_D$ を消去すると\n\\[ V_1^2=\\frac{GM}{R}\\cdot\\frac{2d}{R+d}=V_0^2\\left(2-\\frac{R}{a}\\right), \\]\n\\[ \\boldsymbol{\\frac{V_1}{V_0}=\\sqrt{2-\\left(1-\\frac{\\theta}{2\\pi n}\\right)^{-2/3}}}. \\]\n\n\\textbf{(3) 地球にぶつからない条件}　$\\theta=\\pi$ で $T_1/T_0=1-\\frac1{2n}$．\n$n=1$：$T_1/T_0=\\frac12$，$d/R=2\\cdot2^{-2/3}-1=0.260<\\frac12$ となり，楕円軌道が地球の内部を通る（実際には地表に衝突する）ので不可．\n$n=2$：$T_1/T_0=\\frac34$，$d/R=2(0.75)^{2/3}-1=0.651>\\frac12$ で可．よって最小は $\\boldsymbol{n=2}$．\nこのとき $a/R=(0.75)^{2/3}=0.8255$ で\n\\[ \\frac{V_1}{V_0}=\\sqrt{2-\\frac1{0.8255}}=\\boldsymbol{0.888}, \\]\n出会うまでの時間は $2T_1=\\boldsymbol{1.50\\,T_0}$（この間に Z は $1.5$ 周し，$\\pi+3\\pi=4\\pi$ の位置，すなわち C に着く）．\n「追いつくには減速する」のは，減速すると周期が短くなり，同じ C に先に戻ってこられるからである．ただし減速しすぎると近地点が地球に入るので，周回数を増やして周期の変化を小さくする必要がある．\n\n\\textbf{(4) 加速による待ち合わせ}　U が加速すると周期が長くなり，U はさらに遅れる．Z が U を1周追い越して（Z が U に対して $2\\pi$ 先になって）出会う．Z は U より $\\theta$ 先なので，Z があと $2\\pi-\\theta$ だけ余計に進めばよく，\n\\[ 2T_1'=\\left(2+\\frac{2\\pi-\\theta}{2\\pi}\\right)T_0\\quad\\Longrightarrow\\quad\\frac{T_1'}{T_0}=1+\\frac14=\\frac54 \\quad(\\theta=\\pi). \\]\n$a'/R=(5/4)^{2/3}=1.1604$ で\n\\[ \\frac{V_1'}{V_0}=\\sqrt{2-\\frac1{1.1604}}=\\boldsymbol{1.07}\\ (1.067), \\]\n時間は $2T_1'=\\boldsymbol{2.50\\,T_0}$．C は近地点で，遠地点は $2a'-R=1.32R$ なので地球にぶつかる心配はない．\n2回の噴射の速さの変化の和は，(3) で $2(1-0.888)V_0=0.224V_0$，(4) で $2(1.067-1)V_0=0.134V_0$．\\textbf{加速する (4) の方が小さい}（その代わり時間は長い）．\n\n\\textbf{(5) 2次までの展開}　$\\frac{V_1}{V_0}=\\sqrt{2-(1+\\varepsilon)^{-2/3}}$ で\n\\[ (1+\\varepsilon)^{-2/3}\\fallingdotseq1-\\frac23\\varepsilon+\\frac59\\varepsilon^2,\\qquad 2-(1+\\varepsilon)^{-2/3}\\fallingdotseq1+u,\\ u=\\frac23\\varepsilon-\\frac59\\varepsilon^2, \\]\n\\[ \\sqrt{1+u}\\fallingdotseq1+\\frac u2-\\frac{u^2}{8}=1+\\frac{\\varepsilon}{3}-\\frac{5}{18}\\varepsilon^2-\\frac{1}{18}\\varepsilon^2\n=\\boldsymbol{1+\\frac{\\varepsilon}{3}-\\frac{\\varepsilon^2}{3}}. \\]\n1次までなら $|\\Delta V|$ は $|\\varepsilon|$ だけで決まり，加速と減速は対称である．しかし2次の項が常に負なので，$\\varepsilon>0$（加速）では $|\\Delta V|/V_0\\fallingdotseq\\frac{\\varepsilon}{3}-\\frac{\\varepsilon^2}{3}$ と小さく，$\\varepsilon<0$（減速）では $\\frac{|\\varepsilon|}{3}+\\frac{\\varepsilon^2}{3}$ と大きくなる．物理的には，周期は半長軸の $\\frac32$ 乗，半長軸は $1/(2-V_1^2/V_0^2)$ で決まり，速さが大きいほど少しの加速で軌道（周期）が大きく変わる（速さ $V_0$ で脱出速度 $\\sqrt2V_0$ に近づくと周期が発散する）ためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ円軌道上の相手と出会うには，接線方向の噴射で周期を変えた楕円軌道を整数周させ，「$n$ 周の時間」と「相手が進む角度」を一致させる（追いつくには減速して周期を短くする）．周期からケプラーの第3法則で半長軸，面積速度とエネルギー保存で噴射後の速さが決まり，近地点が地球に入らない条件が周回数の下限を与える．周期の変化に対する速さの変化は2次の項で非対称になり，同じ周期の変化なら加速する方が安い．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "restitution",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ケプラーの第3法則",
+  "楕円軌道",
+  "面積速度",
+  "ランデブー",
+  "近似展開"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

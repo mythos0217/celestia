@@ -1,0 +1,134 @@
+{
+ "id": "PHY-FEQ-009",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-02",
+ "topic": "べき乗則で引き合う小磁石とばねのつり合いの消失から力の法則を決める",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "小さな磁石 A，B の間の磁気力の大きさは，磁石間の距離を $x$ として $F=\\dfrac{K}{x^n}$（$K$，$n$ は正の定数で未知）と表されるとする．\n図1のように，なめらかな水平のレール上の磁石 A をばね定数 $k$ の軽いばねで壁につなぎ，同じ直線上で磁石 B を引き合う向きにして遠くからゆっくり近づけた．磁石間の距離が $d$ になったとき，A ははじめの位置（ばねが自然長の位置）から $s$ だけ B の側に移動しており，その直後に A は自ら B に飛びついた．磁石の大きさは無視でき，A の運動はレールに沿った方向に限られる．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A のはじめの位置から B までの距離を $D$，A の変位を $u$ として，A が静止できる条件を書け．また，A が飛びつく瞬間には $k=\\dfrac{nK}{d^{\\,n+1}}$ が成り立つ理由を説明し，$n$ を $d,\\ s$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$k=4.0\\ \\text{N/m}$，$d=2.0\\ \\text{cm}$，$s=0.50\\ \\text{cm}$ のとき，$n$ と $K$ の値を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次に図2のように，底を閉じた鉛直なガラス管の底に B を固定し，その上に質量 $m=5.0\\ \\text{g}$ の A を，磁石間に斥力がはたらく向きで入れた．A は管の中で向きを変えられず，管との摩擦はない．A が静止するときの磁石間の距離 $h$ を有効数字2桁で求めよ．重力加速度の大きさを $g=9.8\\ \\text{m/s}^2$ とする．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の静止位置から A を少しだけ押し下げて放すと，A は上下に振動する．$|\\varepsilon|\\ll1$ のとき $(1+\\varepsilon)^{-n}\\fallingdotseq1-n\\varepsilon$ を用いて，振動の周期を $h,\\ n,\\ g$ で表し，その値を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：べき乗則で引き合う小磁石とばねのつり合いの消失から力の法則を決める",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：べき乗則で引き合う小磁石とばねのつり合いの消失から力の法則を決める",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$ku=\\dfrac{K}{(D-u)^n}$，$n=\\dfrac{d}{s}$"
+   },
+   {
+    "id": "2",
+    "tex": "$n=4$，$K=3.2\\times10^{-9}\\ \\text{N}\\cdot\\text{m}^4$"
+   },
+   {
+    "id": "3",
+    "tex": "$h=1.6\\ \\text{cm}$"
+   },
+   {
+    "id": "4",
+    "tex": "$2\\pi\\sqrt{\\dfrac{h}{ng}}\\fallingdotseq0.13\\ \\text{s}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 磁石間の距離は $D-u$ なので，A のつり合いは\n\\[ \\boldsymbol{ku=\\dfrac{K}{(D-u)^n}}. \\]\n横軸に $u$ をとり，ばねの力の直線 $y=ku$ と磁気力の曲線 $y=\\dfrac{K}{(D-u)^n}$ を描くと（解答図），交点がつり合いの位置である．$D$ が大きいうちは交点が2つあり，$u$ の小さい方では，A が B 側へずれるとばねの力の増え方が磁気力の増え方より大きい（直線の傾き $k$ ＞ 曲線の傾き）ので押し戻され，安定である．B を近づけると曲線が左へ移り，2つの交点が近づいて，ついに直線と曲線が接する．このとき安定なつり合いの位置が消えるので，A は B に飛びつく．接点では値と傾きがともに等しい：\n\\[ ks=\\dfrac{K}{d^{\\,n}},\\qquad k=\\dfrac{d}{du}\\dfrac{K}{(D-u)^n}=\\dfrac{nK}{(D-u)^{n+1}}=\\dfrac{nK}{d^{\\,n+1}}. \\]\n2式の比をとって\n\\[ n=\\boldsymbol{\\dfrac{d}{s}}. \\]\n\\textbf{(2)} $n=\\dfrac{2.0}{0.50}=\\boldsymbol{4}$．$K=ksd^{\\,n}=4.0\\times5.0\\times10^{-3}\\times(2.0\\times10^{-2})^4=\\boldsymbol{3.2\\times10^{-9}\\ \\text{N}\\cdot\\text{m}^4}$．\\\\\n\\textbf{(3)} 斥力と重力のつり合い $\\dfrac{K}{h^n}=mg$ より\n\\[ h=\\left(\\dfrac{K}{mg}\\right)^{1/4}=d\\left(\\dfrac{ks}{mg}\\right)^{1/4}=2.0\\ \\text{cm}\\times\\left(\\dfrac{0.020}{0.049}\\right)^{1/4}\\fallingdotseq\\boldsymbol{1.6\\ \\text{cm}}. \\]\n\\textbf{(4)} 静止位置から上向きに $y$ ずれたとき，A にはたらく上向きの合力は\n\\[ \\dfrac{K}{(h+y)^n}-mg=mg\\left(1+\\dfrac{y}{h}\\right)^{-n}-mg\\fallingdotseq-\\dfrac{nmg}{h}\\,y. \\]\nばね定数 $\\dfrac{nmg}{h}$ の単振動になるので，周期は\n\\[ T=2\\pi\\sqrt{\\dfrac{h}{ng}}=2\\pi\\sqrt{\\dfrac{1.6\\times10^{-2}}{4\\times9.8}}\\fallingdotseq\\boldsymbol{0.13\\ \\text{s}}. \\]\n力が距離の高いべきで変わるほど（$n$ が大きいほど）復元力が強く，同じ高さでも周期が短くなる．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ばねと距離のべき乗で強まる引力のつり合いは，B を近づけるとばねの直線と引力の曲線が接したところで消える．接点では力の値と傾きがともに一致するので，飛びつく瞬間の距離と変位の比がそのまま指数 $n=d/s$ を与え，その法則から斥力による浮上の高さと復元力（$nmg/h$）が決まる．"
+ },
+ "concepts": [
+  "equilibrium",
+  "simple-harmonic-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "つり合いの安定性",
+  "接する条件",
+  "べき乗則",
+  "磁気力",
+  "単振動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

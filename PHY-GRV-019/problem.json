@@ -1,0 +1,122 @@
+{
+ "id": "PHY-GRV-019",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "半球形の小惑星の平面の中心・頂点・外部の軸上の点での重力（半球殻の場と重ね合わせ）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "半径 $R$，密度 $\\rho$ の一様な球形の小惑星の半分が削り取られ，図のような半球が残った．図の O は平面部分の円の中心，P は半球の頂点，Q は O に関して P と反対側で O から距離 $R$ の点（半球の外部）である．万有引力定数を $G$ とし，自転や他の天体の影響は無視する．必要なら次の事実を用いてよい：面密度 $\\sigma$，半径 $a$ の一様な薄い円板が，その中心軸上で円板から距離 $z$ の点につくる重力の大きさは $2\\pi G\\sigma\\left(1-\\dfrac{z}{\\sqrt{z^2+a^2}}\\right)$ である．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "半径 $r$，面密度 $\\sigma$ の一様で薄い半球殻が，その球の中心につくる重力の大きさを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "半球の O での重力の大きさ $g_{\\rm O}$ を求め，もとの球の表面での重力の大きさ $g_0$ に対する比を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "半球が Q につくる重力の大きさ $g_{\\rm Q}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "半球の頂点 P での重力の大きさ $g_{\\rm P}$ を求め，$g_{\\rm P}/g_0$ を求めよ．$g_{\\rm O}$ と $g_{\\rm P}$ はどちらが大きいか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：半球形の小惑星の平面の中心・頂点・外部の軸上の点での重力（半球殻の場と重ね合わせ）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\pi G\\sigma$"
+   },
+   {
+    "id": "2",
+    "tex": "$g_{\\rm O}=\\pi G\\rho R$，$\\dfrac{g_{\\rm O}}{g_0}=\\dfrac34$"
+   },
+   {
+    "id": "3",
+    "tex": "$g_{\\rm Q}=\\dfrac{2(\\sqrt2-1)}{3}\\pi G\\rho R$"
+   },
+   {
+    "id": "4",
+    "tex": "$g_{\\rm P}=\\dfrac{2(3-\\sqrt2)}{3}\\pi G\\rho R$，$\\dfrac{g_{\\rm P}}{g_0}=\\dfrac{3-\\sqrt2}{2}\\approx0.79$，$g_{\\rm P}$ の方が大きい"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "もとの球の表面での重力は $g_0=\\dfrac{G}{R^2}\\cdot\\dfrac43\\pi R^3\\rho=\\dfrac43\\pi G\\rho R$ である．\n\n\\textbf{(1) 半球殻が中心につくる重力}\n\n中心から見て対称軸と角 $\\theta$〜$\\theta+d\\theta$ をなす部分は半径 $r\\sin\\theta$，幅 $r\\,d\\theta$ の細い輪で，質量は $\\sigma\\cdot2\\pi r\\sin\\theta\\cdot r\\,d\\theta$．輪の各部分は中心から距離 $r$ にあり，軸に垂直な成分は打ち消し合うので，軸方向の成分だけが残る：\n\\[ dg=\\frac{G\\cdot2\\pi\\sigma r^2\\sin\\theta\\,d\\theta}{r^2}\\cos\\theta \\]\n\\[ g=2\\pi G\\sigma\\int_0^{\\pi/2}\\sin\\theta\\cos\\theta\\,d\\theta=\\boldsymbol{\\pi G\\sigma} \\]\n半径 $r$ によらないことが重要である．\n\n\\textbf{(2) 平面の中心 O}\n\n半球は，O を中心とする半径 $r$（$0<r<R$），厚さ $dr$ の半球殻の集まりで，各殻の面密度は $\\rho\\,dr$．(1) よりどの殻も O に $\\pi G\\rho\\,dr$ の重力（頂点の向き）をつくるので\n\\[ \\boldsymbol{g_{\\rm O}=\\pi G\\rho R},\\qquad \\boldsymbol{\\frac{g_{\\rm O}}{g_0}=\\frac{\\pi}{\\frac43\\pi}=\\frac34} \\]\n\n\\textbf{(3) 外部の点 Q}\n\n半球を平面に平行な薄い円板に分ける．O から P 向きに距離 $s$（$0\\leqq s\\leqq R$）の円板は半径 $\\sqrt{R^2-s^2}$，面密度 $\\rho\\,ds$ で，Q からの距離は $z=R+s$．$z^2+a^2=(R+s)^2+R^2-s^2=2R(R+s)$ だから\n\\[ g_{\\rm Q}=\\int_0^R2\\pi G\\rho\\left(1-\\sqrt{\\frac{R+s}{2R}}\\right)ds=2\\pi G\\rho\\left\\{R-\\frac{1}{\\sqrt{2R}}\\cdot\\frac23\\left[(2R)^{3/2}-R^{3/2}\\right]\\right\\} \\]\n\\[ =2\\pi G\\rho R\\left(1-\\frac43+\\frac{\\sqrt2}{3}\\right)=\\boldsymbol{\\frac{2(\\sqrt2-1)}{3}\\pi G\\rho R} \\]\n\n\\textbf{(4) 頂点 P}\n\n削り取られた半球を戻すと，もとの球になる．P でのもとの球の重力 $g_0$（O 向き）は，「残った半球が P につくる重力 $g_{\\rm P}$」と「削り取られた半球が P につくる重力」の和である．削り取られた半球と P の位置関係は，残った半球と Q の位置関係と合同だから，後者の大きさは $g_{\\rm Q}$ で，向きはどちらも O 向きである．よって\n\\[ g_{\\rm P}=g_0-g_{\\rm Q}=\\frac43\\pi G\\rho R-\\frac{2(\\sqrt2-1)}{3}\\pi G\\rho R=\\boldsymbol{\\frac{2(3-\\sqrt2)}{3}\\pi G\\rho R} \\]\n\\[ \\boldsymbol{\\frac{g_{\\rm P}}{g_0}=\\frac{3-\\sqrt2}{2}\\approx0.79} \\]\n（検算：円板に分けて直接求めると，P から距離 $s$ の円板の半径は $\\sqrt{2Rs-s^2}$ で，$g_{\\rm P}=\\displaystyle\\int_0^R2\\pi G\\rho\\left(1-\\sqrt{\\frac{s}{2R}}\\right)ds=2\\pi G\\rho R\\left(1-\\frac{\\sqrt2}{3}\\right)$ となり一致する．）\n\n$\\dfrac{g_{\\rm P}}{g_0}\\approx0.79>\\dfrac34$ なので，$\\boldsymbol{g_{\\rm P}}$ \\textbf{の方が大きい}．O は質量の中心に近いが，O から見ると質量が片側の半分の向きにしか広がっておらず，各部分の引力の向きがそろわないためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "半球殻はその中心に半径によらない重力 $\\pi G\\sigma$ をつくるので，中実の半球の平面の中心では重力が半径に比例して積み上がり，球の表面の $\\frac34$ になる．頂点での重力は，削り取った半球を戻した完全な球との重ね合わせで「外部の軸上の点」の問題に帰着でき，円板への分割による直接計算と照合できる．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "superposition"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "万有引力",
+  "半球",
+  "重ね合わせ",
+  "積分",
+  "円板の重力",
+  "対称性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

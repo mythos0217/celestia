@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 380">
+  <defs>
+    <marker id="q-ar" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker>
+  </defs>
+  <!-- Earth -->
+  <circle cx="220" cy="200" r="160" fill="none" stroke="#222" stroke-width="1.6"/>
+  <!-- chord tunnel: y = 120 (h = 80), half length L = sqrt(160^2-80^2)=138.56 -->
+  <line x1="81.4" y1="114" x2="358.6" y2="114" stroke="#222" stroke-width="1.2"/>
+  <line x1="81.4" y1="126" x2="358.6" y2="126" stroke="#222" stroke-width="1.2"/>
+  <!-- O and perpendicular -->
+  <circle cx="220" cy="200" r="2.5" fill="#222"/>
+  <text x="228" y="216" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">O</text>
+  <line x1="220" y1="200" x2="220" y2="126" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="226" y="170" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">h</text>
+  <!-- right angle mark -->
+  <polyline points="220,138 232,138 232,126" fill="none" stroke="#888" stroke-width="1"/>
+  <!-- radius to B -->
+  <line x1="220" y1="200" x2="358.6" y2="120" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="296" y="178" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">R</text>
+  <!-- labels A, B, H -->
+  <text x="58" y="118" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">A</text>
+  <text x="366" y="118" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">B</text>
+  <text x="213" y="108" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">H</text>
+  <!-- ball P at A, ball Q at H -->
+  <circle cx="90" cy="120" r="5.5" fill="#222"/>
+  <text x="84" y="146" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">P</text>
+  <circle cx="220" cy="120" r="7" fill="#fff" stroke="#222" stroke-width="1.6"/>
+  <text x="196" y="146" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">Q</text>
+  <!-- L dimension -->
+  <line x1="81.4" y1="80" x2="220" y2="80" stroke="#888" stroke-width="1"/>
+  <line x1="81.4" y1="74" x2="81.4" y2="112" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="220" y1="74" x2="220" y2="100" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="144" y="74" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">L</text>
+  <line x1="220" y1="80" x2="358.6" y2="80" stroke="#888" stroke-width="1"/>
+  <line x1="358.6" y1="74" x2="358.6" y2="112" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="284" y="74" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">L</text>
+  <!-- x direction -->
+  <line x1="150" y1="300" x2="290" y2="300" stroke="#222" stroke-width="1.2" marker-end="url(#q-ar)"/>
+  <text x="150" y="325" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">正の向き（A→B）</text>
+  <text x="300" y="356" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">地球</text>
+</svg>

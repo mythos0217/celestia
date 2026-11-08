@@ -1,0 +1,150 @@
+{
+ "id": "PHY-GRV-022",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-07",
+ "topic": "加速する箱の中の光のドップラー効果と等価原理（加速の停止・自由落下への切り替わり）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "光はつねに慣性系 S に対して速さ $c$ で進むものとする．箱の速さは $c$ に比べて十分小さく，特殊相対論の効果は考えない．振動数のずれは（速さ）$/c$ の1次まで求めればよい．\n\n\\textbf{I}　図Iのように，重力のない空間に高さ $h$ の箱があり，床に光源 A，天井に検出器 B が固定されている．A は振動数 $f_0$ の光を真上に出し続け，B はその振動数 $f_{\\rm B}$ を測る．時刻 $t<0$ では箱は S に対して静止しており，$0\\le t\\le T$ の間は一定の加速度 $a$ で上向きに加速し，$t>T$ ではエンジンを止めて等速で進む．ただし $T\\gg\\dfrac hc$，$\\dfrac{aT}{c}\\ll1$ とする．時刻 $t$ での箱の速度（上向き）を $v(t)$ と書く．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "時刻 $t_{\\rm e}$ に A を出た光が時刻 $t_{\\rm r}$ に B に届くとき，$f_{\\rm B}$ を $f_0,\\ c,\\ v(t_{\\rm e}),\\ v(t_{\\rm r})$ で表し，さらに1次の近似式に直せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\dfrac hc<t_{\\rm r}<T$ のとき，$\\dfrac{f_{\\rm B}}{f_0}$ を $a,\\ h,\\ c$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "受信時刻 $t_{\\rm r}$ に対する $\\dfrac{f_{\\rm B}}{f_0}$ のグラフを，$t_{\\rm r}<0$ から $t_{\\rm r}>T+\\dfrac hc$ までかけ．光が届くまでの時間は $\\dfrac hc$ としてよい．"
+     },
+     {
+      "id": "4",
+      "tex": "A は自分の時計の表示を光で B に送り続けている（A の時計が1刻むごとに光の山を一定数出すと考えてよい）．B は受け取った A の時計の表示と，自分の時計の表示を比べる．$t<0$ では，B から見た A の時計は $\\dfrac hc$ だけ遅れて見えた．$t_{\\rm r}>T+\\dfrac hc$ では，この遅れはいくらになっているか．"
+     },
+     {
+      "id": "5",
+      "tex": "\\textbf{II}　「一様な重力加速度 $g$ の中で静止した箱の中の現象は，重力のない空間で加速度 $g$ で上向きに加速する箱の中の現象と区別できない」（等価原理）とする．図IIのように，同じ A，B を取り付けた箱を地表付近で糸でつるして静止させた．B で観測される振動数 $f_{\\rm B}$ を求めよ．"
+     },
+     {
+      "id": "6",
+      "tex": "ある時刻に糸を切り，箱を自由落下させた．糸を切ってから $\\dfrac hc$ 以上たった後に B で観測される振動数を，\\textbf{地面に静止した観測者の立場で}，(5) の振動数のずれ（地面に対して静止した2点の間で生じるずれ）と，A，B が運動していることによるドップラー効果とを組み合わせて求めよ．また，それが等価原理から予想される結果と一致することを確かめよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：加速する箱の中の光のドップラー効果と等価原理（加速の停止・自由落下への切り替わり）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：加速する箱の中の光のドップラー効果と等価原理（加速の停止・自由落下への切り替わり）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$f_{\\rm B}=\\dfrac{c-v(t_{\\rm r})}{c-v(t_{\\rm e})}f_0\\fallingdotseq\\left(1-\\dfrac{v(t_{\\rm r})-v(t_{\\rm e})}{c}\\right)f_0$"
+   },
+   {
+    "id": "2",
+    "tex": "$1-\\dfrac{ah}{c^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$t_{\\rm r}<0$ で $1$，$0<t_{\\rm r}<\\frac hc$ で $1-\\frac{at_{\\rm r}}{c}$，$\\frac hc<t_{\\rm r}<T$ で $1-\\frac{ah}{c^2}$，$T<t_{\\rm r}<T+\\frac hc$ で $1-\\frac ac\\left(T+\\frac hc-t_{\\rm r}\\right)$，その後 $1$ の台形（解答図）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac hc+\\dfrac{ahT}{c^2}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\left(1-\\dfrac{gh}{c^2}\\right)f_0$"
+   },
+   {
+    "id": "6",
+    "tex": "$f_0$（ずれなし）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 光源が光の進む向きに速さ $v_{\\rm e}=v(t_{\\rm e})$ で動くので，S での波長は $\\lambda=\\dfrac{c-v_{\\rm e}}{f_0}$．検出器は光から速さ $v_{\\rm r}=v(t_{\\rm r})$ で遠ざかるので，相対的な速さ $c-v_{\\rm r}$ で波を受け取る．\n\\[ \\boldsymbol{f_{\\rm B}=\\frac{c-v_{\\rm r}}{\\lambda}=\\frac{c-v_{\\rm r}}{c-v_{\\rm e}}f_0\\fallingdotseq\\left(1-\\frac{v_{\\rm r}-v_{\\rm e}}{c}\\right)f_0} \\]\n振動数のずれは「光が飛んでいる間の箱の速度の変化」だけで決まる．\n\n\\textbf{(2)} 光が届くまでの時間は（1次の範囲で）$\\dfrac hc$．その間ずっと加速しているので $v_{\\rm r}-v_{\\rm e}=a\\cdot\\dfrac hc$．\n\\[ \\boldsymbol{\\frac{f_{\\rm B}}{f_0}=1-\\frac{ah}{c^2}} \\]\n上にある B では振動数が低く観測される．\n\n\\textbf{(3)} $t_{\\rm e}=t_{\\rm r}-\\dfrac hc$ から $t_{\\rm r}$ までの間に加速していた時間を $\\tau$ とすれば $\\dfrac{f_{\\rm B}}{f_0}=1-\\dfrac{a\\tau}{c}$．\n\n・$t_{\\rm r}<0$：$\\tau=0$ で $1$．\n\n・$0<t_{\\rm r}<\\frac hc$：光は加速前に出ており $\\tau=t_{\\rm r}$ で $1-\\frac{at_{\\rm r}}{c}$．\n\n・$\\frac hc<t_{\\rm r}<T$：$\\tau=\\frac hc$ で $1-\\frac{ah}{c^2}$．\n\n・$T<t_{\\rm r}<T+\\frac hc$：光の飛行中にエンジンが止まり $\\tau=T-t_{\\rm e}=T+\\frac hc-t_{\\rm r}$．\n\n・$t_{\\rm r}>T+\\frac hc$：$\\tau=0$ で $1$．\n\nグラフは解答図の台形になる．エンジンを止めた瞬間に $f_{\\rm B}$ が戻るのではなく，\\textbf{$\\frac hc$ の時間をかけて直線的に戻る}ことに注意する．\n\n\\textbf{(4)} B が単位時間に受け取る A の時計の進みは $\\dfrac{f_{\\rm B}}{f_0}$ なので，B の時計に比べて A の表示の遅れは単位時間あたり $1-\\dfrac{f_{\\rm B}}{f_0}$ ずつ増える．増えた遅れは (3) のグラフで $1$ と $\\frac{f_{\\rm B}}{f_0}$ の間の台形の面積に等しい．台形の高さは $\\frac{ah}{c^2}$，上底 $T-\\frac hc$，下底 $T+\\frac hc$ だから，面積は $\\dfrac{ah}{c^2}\\times T$．\n\\[ \\boldsymbol{\\text{遅れ}=\\frac hc+\\frac{ahT}{c^2}} \\]\n（S で見ると，最終速度 $V=aT$ で動く箱では光が天井に追いつく時間が $\\frac{h}{c-V}\\fallingdotseq\\frac hc+\\frac{hV}{c^2}$ に伸びたことに対応する．箱の中の人から見れば，加速していた時間 $T$ の間，上の B の時計が下の A の時計より $1+\\frac{ah}{c^2}$ 倍速く進んだと解釈できる．）\n\n\\textbf{(5)} 等価原理より，(2) で $a\\to g$ として $\\boldsymbol{f_{\\rm B}=\\left(1-\\dfrac{gh}{c^2}\\right)f_0}$．\n\n\\textbf{(6)} 地面の観測者の立場では，地面に対して静止した2点の間で光が高さ $h$ を上がるとき振動数は $1-\\frac{gh}{c^2}$ 倍になる（(5)）．これに加えて A，B は下向きに運動している．糸を切ってから時間 $t_{\\rm e}$ 後に A が光を出したとき A の下向きの速さは $u_{\\rm A}=gt_{\\rm e}$，B がそれを受けるときの速さは $u_{\\rm B}=g\\left(t_{\\rm e}+\\frac hc\\right)$ である．光（上向き）に対し，A は光から遠ざかる向きに動くので振動数を下げ，B は光に向かって進むので振動数を上げる．(1) と同様に1次の範囲で\n\\[ \\frac{f_{\\rm B}}{f_0}=\\left(1-\\frac{gh}{c^2}\\right)\\left(1+\\frac{u_{\\rm B}-u_{\\rm A}}{c}\\right)=\\left(1-\\frac{gh}{c^2}\\right)\\left(1+\\frac{gh}{c^2}\\right)\\fallingdotseq1 \\]\nとなり $\\boldsymbol{f_{\\rm B}=f_0}$．重力による振動数のずれと，光の飛行中に落下速度が増えることによるドップラー効果がちょうど打ち消し合う．\n\n等価原理によれば，自由落下する箱の中は重力のない空間で加速していない箱（I で $t>T$ の状態）と区別できず，振動数のずれは生じないはずなので，結果は一致する．なお，(3) と同様に，糸を切った直後の $\\frac hc$ の間は，光の飛行中に落下が始まるので $f_{\\rm B}$ は $\\left(1-\\frac{gh}{c^2}\\right)f_0$ から $f_0$ へ直線的に移り変わる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "加速する箱の中を進む光の振動数のずれは，光が飛んでいる間の箱の速度の変化 $\\Delta v$ だけで決まり $-\\Delta v/c$ となる．したがって加速中は $-ah/c^2$（等価原理により重力によるずれ $-gh/c^2$），加速が止まると $h/c$ の時間をかけて0に戻り，ずれを時間で積分した台形の面積が上下の時計の進みの差 $ahT/c^2$ を与える．自由落下では重力によるずれと落下によるドップラー効果が打ち消し合う．"
+ },
+ "concepts": [
+  "universal-gravitation",
+  "doppler"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "等価原理",
+  "重力赤方偏移",
+  "光のドップラー効果",
+  "加速度系",
+  "時計の進み"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

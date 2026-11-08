@@ -1,0 +1,114 @@
+{
+ "id": "PHY-FEQ-004",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-02",
+ "topic": "山形の2つの粗い斜面にまたがるロープ（つり合いの範囲・頂点の張力の不定性・滑り出した後の速さ）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平面となす角が $\\alpha$ と $\\beta$ の2つの粗い斜面が頂点 O で接した山形の台が床に固定されている．ここで $\\sin\\alpha=\\dfrac45$，$\\cos\\alpha=\\dfrac35$，$\\sin\\beta=\\dfrac35$，$\\cos\\beta=\\dfrac45$ である．長さ $L$，質量 $M$ の一様なロープ AB を O にかけ，左の斜面に長さ $x$，右の斜面に長さ $L-x$ がのるように置く．O の部分はなめらかで滑車のように力を伝え，ロープは常に斜面に沿っているものとする．ロープと斜面の間の静止摩擦係数と動摩擦係数はともに $\\mu=\\dfrac14$，重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ロープが静止していられる $x$ の範囲を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$x=\\dfrac L2$ でロープが静止しているとき，O におけるロープの張力の大きさ $T$ は1つに決まらない．$T$ のとりうる範囲を $M$，$g$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "ロープを (1) の範囲の上限の位置に置き，左向きにわずかに押したところ，ロープは滑り始めた．右端 B が O に達したときのロープの速さ $v$ を $g$，$L$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：山形の2つの粗い斜面にまたがるロープ（つり合いの範囲・頂点の張力の不定性・滑り出した後の速さ）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{8}{27}L\\leqq x\\leqq\\dfrac{16}{29}L$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{13}{40}Mg\\leqq T\\leqq\\dfrac25Mg$"
+   },
+   {
+    "id": "3",
+    "tex": "$v=13\\sqrt{\\dfrac{gL}{580}}$（$v^2=\\dfrac{169}{580}gL$）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　ロープを O の左右の2つの部分に分け，それぞれの斜面方向のつり合いを考える．静止摩擦力は最大値以下の範囲で「必要なだけ」はたらくので，O の張力 $T$ は各部分ごとに区間の形で制約され，2つの区間に共通部分があれば静止できる．単位長さあたりの質量を $\\lambda=M/L$ とする．\n\n\\textbf{(1)}　左の部分（重さ $\\lambda xg$）：斜面下向きの重力の成分 $\\lambda xg\\sin\\alpha$，垂直抗力 $\\lambda xg\\cos\\alpha$．摩擦力 $f$（斜面上向きを正）は $|f|\\leqq\\mu\\lambda xg\\cos\\alpha$ で，$T=\\lambda xg\\sin\\alpha-f$ より\n\\[ \\lambda xg(\\sin\\alpha-\\mu\\cos\\alpha)\\leqq T\\leqq\\lambda xg(\\sin\\alpha+\\mu\\cos\\alpha),\\quad\\text{すなわち}\\quad 0.65\\lambda xg\\leqq T\\leqq0.95\\lambda xg. \\]\n右の部分も同様に\n\\[ 0.4\\lambda(L-x)g\\leqq T\\leqq0.8\\lambda(L-x)g. \\]\n（どちらの斜面も $\\tan>\\mu$ なので下限は正で，ロープが O で押し合うことはない．）2つの区間が共通部分をもつ条件は\n\\[ 0.95x\\geqq0.4(L-x)\\quad\\text{かつ}\\quad 0.8(L-x)\\geqq0.65x \\]\nであり，\n\\[ \\boldsymbol{\\frac{8}{27}L\\leqq x\\leqq\\frac{16}{29}L}. \\]\n下限より短いとロープは右へ，上限より長いと左へ滑る．\n\n\\textbf{(2)}　$x=L/2$ では左の区間が $[0.325Mg,\\ 0.475Mg]$，右の区間が $[0.2Mg,\\ 0.4Mg]$ なので，共通部分は\n\\[ \\boldsymbol{\\frac{13}{40}Mg\\leqq T\\leqq\\frac25Mg}. \\]\n未知数（$T$ と左右の摩擦力の3つ）に対してつり合いの式は2本しかなく，静止摩擦力は不等式でしか決まらないので $T$ は決まらない（置き方などの履歴で決まる）．\n\n\\textbf{(3)}　ロープ全体は同じ速さで動き，O はなめらかなので，ロープ全体の運動方程式（左向きを正）は，滑り始めると摩擦力が左右とも運動と逆向き（右の部分では斜面下向き）の最大値 $\\mu N$ になって\n\\[ Ma=\\lambda g\\bigl[x(\\sin\\alpha-\\mu\\cos\\alpha)-(L-x)(\\sin\\beta+\\mu\\cos\\beta)\\bigr]=\\frac{Mg}{L}\\Bigl(\\frac{29}{20}x-\\frac45L\\Bigr). \\]\nこの力は $x_2=\\dfrac{16}{29}L$ で $0$ になり，$x$ について1次式なので，「ばね定数が負のばね」$F=K(x-x_2)$，$K=\\dfrac{29Mg}{20L}$ と同じ形である．したがって $x_2$ から $L$ まで動く間にする仕事は\n\\[ W=\\frac12K(L-x_2)^2=\\frac12\\cdot\\frac{29Mg}{20L}\\cdot\\Bigl(\\frac{13}{29}L\\Bigr)^2=\\frac{169}{1160}MgL. \\]\n（重力と動摩擦力の仕事の和．O の張力は内力で，なめらかな O では仕事の和が0．）運動エネルギーと仕事の関係 $\\frac12Mv^2=W$ より\n\\[ v^2=\\frac{169}{580}gL,\\qquad \\boldsymbol{v=13\\sqrt{\\frac{gL}{580}}}\\ (\\fallingdotseq0.54\\sqrt{gL}). \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "分布した物体に静止摩擦がはたらくとき，内部の張力はつり合いの式だけでは決まらず，部分ごとに「最大摩擦力の範囲」で区間として制約される．静止できる条件は区間の共通部分の存在であり，境界を越えて滑り出すと合力が位置の1次式（負のばね）になるので，仕事が平方の形で求まる．"
+ },
+ "concepts": [
+  "equilibrium",
+  "work-energy",
+  "static-friction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "静止摩擦",
+  "つり合いの範囲",
+  "不静定",
+  "ロープ",
+  "仕事とエネルギー"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

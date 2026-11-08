@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 400" width="440" height="400">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+</defs>
+<circle cx="210.0" cy="210.0" r="105.0" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="210.0" cy="210.0" r="150.0" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="210.0" cy="210.0" r="10.0" fill="#fff" stroke="#222" stroke-width="1.6"/>
+<text x="194.0" y="234.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">S</text>
+<line x1="210.0" y1="210.0" x2="351.0" y2="261.3" stroke="#222" stroke-width="1" />
+<line x1="210.0" y1="210.0" x2="270.2" y2="124.0" stroke="#222" stroke-width="1" />
+<line x1="270.2" y1="124.0" x2="351.0" y2="261.3" stroke="#c0392b" stroke-width="1.6" />
+<text x="322.6" y="192.6" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="start" fill="#c0392b">d</text>
+<circle cx="351.0" cy="261.3" r="7.0" fill="#fff" stroke="#222" stroke-width="1.6"/>
+<text x="363.0" y="279.3" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="start" fill="#222">E</text>
+<circle cx="270.2" cy="124.0" r="6.0" fill="#fff" stroke="#222" stroke-width="1.6"/>
+<text x="264.2" y="112.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="end" fill="#222">V</text>
+<path d="M238.2,220.3 A30,30 0 0 0 227.2,185.4" stroke="#222" stroke-width="1" fill="none"/>
+<text x="250.0" y="196.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="start" fill="#222">φ</text>
+<text x="226.1" y="171.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="end" fill="#222">a</text>
+<text x="282.5" y="255.7" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="start" fill="#222">b</text>
+<path d="M292.0,352.0 A164,164 0 0 0 352.0,292.0" stroke="#1f5fbf" stroke-width="1.6" fill="none" marker-end="url(#q-ab)"/>
+<path d="M194.2,120.4 A91,91 0 0 0 151.5,140.3" stroke="#1f5fbf" stroke-width="1.6" fill="none" marker-end="url(#q-ab)"/>
+<text x="210.0" y="30.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="#222">公転の向き（反時計回り）</text>
+</svg>

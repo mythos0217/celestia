@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 310">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker></defs>
+<circle cx="150.0" cy="150.0" r="8.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="140.0" y="178.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">太陽</text>
+<circle cx="150.0" cy="150.0" r="55.0" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="95.0" cy="150.0" r="5.0" fill="#222" stroke="#222" stroke-width="1.6"/>
+<text x="57.0" y="142.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">地球</text>
+<ellipse cx="312.5" cy="150" rx="217.5" ry="144.6" fill="none" stroke="#1f5fbf" stroke-width="1.6"/>
+<circle cx="530.0" cy="150.0" r="4" fill="#1f5fbf"/>
+<text x="524.0" y="138.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="end">遠日点 Q</text>
+<line x1="150.0" y1="280.0" x2="530.0" y2="280.0" stroke="#888" stroke-width="1" marker-end="url(#q-ag)" marker-start="url(#q-ag)"/>
+<text x="320.0" y="274.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">8r<tspan baseline-shift="sub" font-size="10" font-style="normal" font-family="Noto Sans CJK JP, sans-serif">E</tspan></text>
+<line x1="524.0" y1="150.0" x2="164.0" y2="150.0" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5,4" marker-end="url(#q-ar)"/>
+<text x="350.0" y="170.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#c0392b" text-anchor="start">Q から太陽へ落下</text>
+<line x1="150.0" y1="150.0" x2="117.0" y2="106.0" stroke="#888" stroke-width="1"/>
+<text x="125.2" y="125.2" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">r<tspan baseline-shift="sub" font-size="10" font-style="normal" font-family="Noto Sans CJK JP, sans-serif">E</tspan></text>
+<text x="552.0" y="292.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="end">（縮尺は正確でない）</text>
+</svg>
