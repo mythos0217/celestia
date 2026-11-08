@@ -1,0 +1,139 @@
+{
+ "id": "PHY-KTG-002",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-02",
+ "topic": "動く壁による分子の減速と断熱変化（球形容器と円筒容器の比較）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "質量 $m$ の単原子分子からなる希薄な気体を考える．分子どうしの衝突は無視でき，分子は壁と弾性衝突する（壁が動いているときは，壁とともに動く観測者から見て弾性衝突する）．気体の絶対温度は分子の平均運動エネルギーに比例するものとする．\n\\textbf{[I]}　図1のように，半径 $r$ の球形容器が，半径を速さ $u$ で一様にゆっくり大きくしていく．$u$ は分子の速さに比べて十分小さく，$u^2$ 以上の項は無視する．速さ $v$ の分子が，壁の法線（中心 O の方向）と角 $\\theta$ をなして壁に衝突した．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "衝突直後の分子の速さの変化 $\\Delta v$ を $u,\\,\\theta$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "この分子が多数回衝突するが，$r,\\,v,\\,\\theta$ はほぼ一定とみなせる短い時間 $\\Delta t$ を考える．速さの変化率 $\\dfrac{\\Delta v}{\\Delta t}$ を $v,\\,r,\\,u$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2)から，この分子について $vr$ が一定に保たれることを示せ．さらに，中心 O のまわりの分子の角運動量を考えて，$\\theta$ も一定に保たれることを示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "容器内の気体の絶対温度 $T$ と体積 $V$ の間に成り立つ関係を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "\\textbf{[II]}　図2のように，断面積が一様な円筒容器の一端をピストンでふさぎ，同じ希薄気体（分子間衝突なし）を入れる．はじめ速度分布は等方的で，温度 $T_0$，圧力 $p_0$，底からピストンまでの長さ $L$ である．ピストンを外向きにゆっくり引き出して長さを $2L$ にした．ピストンに垂直な向きを $x$ 軸とする．\n各分子について，速度の $x$ 成分の大きさ $|v_x|$ と底からピストンまでの長さ $\\ell$ の間に成り立つ関係を示せ．また，長さ $2L$ になったとき，分子1個あたりの平均運動エネルギーははじめの何倍か．ピストンが受ける圧力は $p_0$ の何倍か．"
+     },
+     {
+      "id": "6",
+      "tex": "その後ピストンを固定した．容器は断熱されており，ごくまれに起こる分子間衝突によって，長い時間の後に速度分布は等方的になった．このときの温度 $T_1$ と圧力 $p_1$ を求めよ．また，分子間衝突が頻繁に起こる通常の気体を準静的に断熱膨張させて体積を2倍にしたときの温度 $T_2$ と $T_1$ の大小を比べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：動く壁による分子の減速と断熱変化（球形容器と円筒容器の比較）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Delta v=-2u\\cos\\theta$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{\\Delta v}{\\Delta t}=-\\dfrac{uv}{r}$"
+   },
+   {
+    "id": "3",
+    "tex": "解説参照（$vr=$一定，$\\theta=$一定）"
+   },
+   {
+    "id": "4",
+    "tex": "$TV^{\\frac23}=$一定"
+   },
+   {
+    "id": "5",
+    "tex": "$|v_x|\\ell=$一定，$\\dfrac34$ 倍，$\\dfrac18$ 倍"
+   },
+   {
+    "id": "6",
+    "tex": "$T_1=\\dfrac34T_0$，$p_1=\\dfrac38p_0$，$T_2=2^{-\\frac23}T_0\\approx0.63T_0$ なので $T_1>T_2$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　壁とともに速さ $u$ で外向きに動く観測者から見ると，衝突前の分子の法線方向（外向き）の速度成分は $v\\cos\\theta-u$，衝突後はその逆向きで $-(v\\cos\\theta-u)$．静止系に戻すと衝突後の法線成分は $-(v\\cos\\theta-2u)$，接線成分 $v\\sin\\theta$ は変わらない．\n\\[ v'^2=v^2\\sin^2\\theta+(v\\cos\\theta-2u)^2\\approx v^2-4uv\\cos\\theta \\]\n$v'\\approx v\\left(1-\\dfrac{2u\\cos\\theta}{v}\\right)$ より $\\boldsymbol{\\Delta v=-2u\\cos\\theta}$．\n\\textbf{(2)}　衝突から衝突までの道のりは弦の長さ $2r\\cos\\theta$ なので，時間 $\\Delta t$ の衝突回数は $\\dfrac{v\\Delta t}{2r\\cos\\theta}$．\n\\[ \\frac{\\Delta v}{\\Delta t}=-2u\\cos\\theta\\cdot\\frac{v}{2r\\cos\\theta}=\\boldsymbol{-\\frac{uv}{r}} \\]\n（$\\cos\\theta$ が約分され，入射角によらない．）\n\\textbf{(3)}　$\\Delta r=u\\Delta t$ だから (2) は $\\dfrac{\\Delta v}{v}=-\\dfrac{\\Delta r}{r}$．これより\n\\[ \\Delta(vr)=r\\Delta v+v\\Delta r=0 \\]\nとなり $vr$ は一定である（$v\\propto\\dfrac1r$）．\n壁が分子に及ぼす力は壁に垂直，すなわち中心 O を向くので，O のまわりの角運動量は衝突でも衝突の間でも保存する．弦と O の距離は $r\\sin\\theta$ だから角運動量は $mv\\cdot r\\sin\\theta$．$vr$ が一定なので $\\sin\\theta$ も一定，すなわち $\\boldsymbol{\\theta}$ \\textbf{は一定}である．\n\\textbf{(4)}　(3)はどの分子についても $\\theta$ や $v$ によらず成り立つから，すべての分子の速さが $\\dfrac1r$ に比例して変化する．よって $T\\propto\\overline{v^2}\\propto r^{-2}\\propto V^{-\\frac23}$ であり\n\\[ \\boldsymbol{TV^{\\frac23}=\\text{一定}} \\]\nこれは単原子分子理想気体の断熱変化の式（$\\gamma=\\frac53$）そのものである．球形容器では分子間衝突がなくても成り立つ点に注意．\n\\textbf{(5)}　ピストンとの1回の衝突で $|v_x|$ は $2u$ 減り，衝突は往復 $2\\ell$ ごとに起こる．(2)と同様に $\\dfrac{\\Delta|v_x|}{\\Delta t}=-2u\\cdot\\dfrac{|v_x|}{2\\ell}=-\\dfrac{|v_x|}{\\ell}\\dfrac{\\Delta\\ell}{\\Delta t}$ より\n\\[ \\boldsymbol{|v_x|\\ell=\\text{一定}} \\]\n$y,\\,z$ 成分は変わらない．$\\ell:L\\to2L$ で $v_x^2$ は各分子 $\\dfrac14$ 倍．はじめは等方的なので $\\overline{v_x^2}=\\overline{v_y^2}=\\overline{v_z^2}=\\dfrac13\\overline{v^2}$ であり，平均運動エネルギーは\n\\[ \\frac{\\frac13\\cdot\\frac14+\\frac13+\\frac13}{1}=\\boldsymbol{\\frac34}\\ \\text{倍} \\]\nピストンが受ける圧力は $p=\\dfrac{Nm\\overline{v_x^2}}{V}$ なので，$\\overline{v_x^2}$ が $\\dfrac14$ 倍，$V$ が $2$ 倍で $\\boldsymbol{\\dfrac18}$ \\textbf{倍}．\n球と違い，円筒では $x$ 方向の運動だけが減速されるので，分子間衝突がないと速度分布が等方的でなくなる．\n\\textbf{(6)}　ピストン固定・断熱なので，分子間衝突で分布が等方的になる間，全運動エネルギーは保存する．よって平均運動エネルギーは (5) の $\\dfrac34$ 倍のままで $\\boldsymbol{T_1=\\dfrac34T_0}$．状態方程式 $pV\\propto T$ より\n\\[ p_1=p_0\\cdot\\frac{T_1}{T_0}\\cdot\\frac{L}{2L}=\\boldsymbol{\\frac38p_0} \\]\n通常の気体の準静的断熱膨張では $TV^{\\frac23}=$一定 より $T_2=2^{-\\frac23}T_0\\approx0.63T_0$．したがって $\\boldsymbol{T_1>T_2}$．膨張中に $x$ 方向の運動エネルギーだけが削られ，$y,\\,z$ 方向の分はピストンに仕事をしないまま残るため，気体がピストンにした仕事が準静的断熱膨張より小さく，その分温度の下がり方が小さい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ゆっくり後退する壁で弾性衝突する分子は1回あたり $2u\\cos\\theta$ 減速し，衝突頻度と組み合わせると球形容器では入射角によらず $vr$ が一定となって，分子間衝突なしで $TV^{2/3}=$一定が出る．円筒では $|v_x|\\ell$ だけが保存されて分布が非等方化し，後から等方化させると準静的断熱変化より高い温度に落ち着く．"
+ },
+ "concepts": [
+  "kinetic-theory",
+  "restitution",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "分子運動論",
+  "断熱変化",
+  "動く壁",
+  "角運動量保存",
+  "等方性",
+  "非平衡"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

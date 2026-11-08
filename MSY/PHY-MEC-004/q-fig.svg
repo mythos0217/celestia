@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 330">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<line x1="120" y1="20" x2="240" y2="20" stroke="#222" stroke-width="1.6"/>
+<line x1="120" y1="20" x2="128" y2="12" stroke="#222" stroke-width="1"/>
+<line x1="130" y1="20" x2="138" y2="12" stroke="#222" stroke-width="1"/>
+<line x1="140" y1="20" x2="148" y2="12" stroke="#222" stroke-width="1"/>
+<line x1="150" y1="20" x2="158" y2="12" stroke="#222" stroke-width="1"/>
+<line x1="160" y1="20" x2="168" y2="12" stroke="#222" stroke-width="1"/>
+<line x1="170" y1="20" x2="178" y2="12" stroke="#222" stroke-width="1"/>
+<line x1="180" y1="20" x2="188" y2="12" stroke="#222" stroke-width="1"/>
+<line x1="190" y1="20" x2="198" y2="12" stroke="#222" stroke-width="1"/>
+<line x1="200" y1="20" x2="208" y2="12" stroke="#222" stroke-width="1"/>
+<line x1="210" y1="20" x2="218" y2="12" stroke="#222" stroke-width="1"/>
+<line x1="220" y1="20" x2="228" y2="12" stroke="#222" stroke-width="1"/>
+<line x1="230" y1="20" x2="238" y2="12" stroke="#222" stroke-width="1"/>
+<line x1="180" y1="20" x2="180" y2="60" stroke="#222" stroke-width="1.6"/>
+<circle cx="180" cy="60" r="22" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="180" cy="60" r="2.5" fill="#222"/>
+<line x1="180" y1="60" x2="195.6" y2="75.6" stroke="#222" stroke-width="1"/>
+<text x="186" y="92" font-family="Times New Roman, serif" font-style="italic" font-size="13" fill="#222" text-anchor="start">R</text>
+<circle cx="155.0" cy="60.0" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155.4" cy="55.7" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="156.5" cy="51.4" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="158.3" cy="47.5" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="160.8" cy="43.9" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="163.9" cy="40.8" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="167.5" cy="38.3" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="171.4" cy="36.5" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="175.7" cy="35.4" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="180.0" cy="35.0" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="184.3" cy="35.4" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="188.6" cy="36.5" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="192.5" cy="38.3" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="196.1" cy="40.8" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="199.2" cy="43.9" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="201.7" cy="47.5" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="203.5" cy="51.4" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="204.6" cy="55.7" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205.0" cy="60.0" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="67" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="74" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="81" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="88" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="95" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="102" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="109" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="116" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="123" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="130" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="137" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="144" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="151" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="158" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="165" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="172" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="179" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="186" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="193" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="200" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="207" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="214" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="221" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="228" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="235" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="242" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="249" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="256" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="263" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="270" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="277" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="284" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="67" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="74" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="81" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="88" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="95" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="102" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="109" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="116" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="123" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="130" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="137" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="144" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="151" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="158" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="165" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="172" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="179" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="186" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="193" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="200" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="207" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="214" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="205" cy="221" r="3" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="155" cy="298" r="9" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="170" y="304" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">m</text>
+<text x="128" y="304" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start">A</text>
+<text x="213" y="236" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start">B</text>
+<line x1="118.0" y1="60.0" x2="150.0" y2="60.0" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="118" y1="60" x2="118" y2="289" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+<text x="100" y="180" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">x</text>
+</svg>

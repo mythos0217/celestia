@@ -1,0 +1,122 @@
+{
+ "id": "PHY-HEA-001",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-01",
+ "topic": "ヒーターを熱量計として使う相変化の熱量測定と混合",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "電力 $P$ のヒーターを組み込んだ容器がある．容器の熱容量 $C$，氷の比熱 $c_{\\text{i}}$，氷の融解熱（単位質量あたり）$l$ はいずれも未知であり，水の比熱 $c_{\\text{w}}$ だけが分かっている．熱は外部に逃げず，ヒーターの熱容量は無視でき，容器と中身の温度は常に一様であるとする．\n\\textbf{実験1}　質量 $m$ の氷を容器に入れて全体を $-\\theta_0$〔℃〕（$\\theta_0>0$）にしてから加熱を始めると，図の実線のように，温度は $0$℃ に達するまで一定の割合 $k_1$〔K/s〕で上昇し，その後 $0$℃ のまま時間 $\\tau$ だけ一定に保たれた．\n\\textbf{実験2}　氷を質量 $2m$ に変え，全体を $-\\theta_0$〔℃〕にしてから同様に加熱すると，$0$℃ に達するまでの上昇の割合は $k_2$〔K/s〕であった（図の破線）．ただし $\\dfrac{k_1}{2}<k_2<k_1$ である．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "氷の融解熱 $l$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "氷の比熱 $c_{\\text{i}}$ と容器の熱容量 $C$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "実験1の初めの状態（質量 $m$ の氷，全体が $-\\theta_0$〔℃〕）でヒーターは使わず，熱容量 $K$，温度 $\\theta$〔℃〕（$\\theta>0$）の金属塊を容器に入れて十分に時間がたった．最終的に $0$℃ の氷と水が共存するための $\\theta$ の範囲を $P,\\,k_1,\\,\\tau,\\,\\theta_0,\\,K$ で表せ．また，そのとき融けた氷の質量を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\theta$ が(3)の範囲より大きいとき，最終的な全体の温度〔℃〕を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ヒーターを熱量計として使う相変化の熱量測定と混合",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$l=\\dfrac{P\\tau}{m}$"
+   },
+   {
+    "id": "2",
+    "tex": "$c_{\\text{i}}=\\dfrac{P}{m}\\left(\\dfrac{1}{k_2}-\\dfrac{1}{k_1}\\right)$，$C=P\\left(\\dfrac{2}{k_1}-\\dfrac{1}{k_2}\\right)$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{P\\theta_0}{k_1K}\\le\\theta\\le\\dfrac{P}{K}\\left(\\dfrac{\\theta_0}{k_1}+\\tau\\right)$，融けた質量 $\\dfrac{m}{P\\tau}\\left(K\\theta-\\dfrac{P\\theta_0}{k_1}\\right)$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{K\\theta-P\\left(\\frac{\\theta_0}{k_1}+\\tau\\right)}{K+mc_{\\text{w}}+P\\left(\\frac{2}{k_1}-\\frac{1}{k_2}\\right)}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　一定電力 $P$ のヒーターは「時間を測れば熱量が分かる」熱量計である．温度が上がっている区間では $P=(\\text{熱容量})\\times(\\text{上昇率})$，温度が一定の区間では熱はすべて相変化に使われる．\n\\textbf{(1)}　実験1の $0$℃ の区間では温度が変わらないので，容器も氷も温度変化による熱を吸収せず，加えた熱 $P\\tau$ はすべて氷 $m$ の融解に使われる．\n\\[ P\\tau=ml \\qquad\\therefore\\ \\boldsymbol{l=\\frac{P\\tau}{m}} \\]\n\\textbf{(2)}　$0$℃ に達するまでの区間では，時間 $\\Delta t$ に加えた熱 $P\\Delta t$ で（氷＋容器）の温度が $k\\Delta t$ 上がるから\n\\[ \\text{実験1}:\\ P=(mc_{\\text{i}}+C)k_1,\\qquad \\text{実験2}:\\ P=(2mc_{\\text{i}}+C)k_2 \\]\n辺々引いて $mc_{\\text{i}}=\\dfrac{P}{k_2}-\\dfrac{P}{k_1}$，これを戻して\n\\[ \\boldsymbol{c_{\\text{i}}=\\frac{P}{m}\\left(\\frac{1}{k_2}-\\frac{1}{k_1}\\right)},\\qquad \\boldsymbol{C=P\\left(\\frac{2}{k_1}-\\frac{1}{k_2}\\right)} \\]\n条件 $k_2<k_1$ は $c_{\\text{i}}>0$，$k_2>\\dfrac{k_1}{2}$ は $C>0$ を保証している．\n\\textbf{(3)}　（氷 $m$＋容器）を $-\\theta_0$ から $0$℃ まで上げるのに必要な熱は，(2)の式から $c_{\\text{i}}$ と $C$ を分離しなくても\n\\[ H_0=(mc_{\\text{i}}+C)\\theta_0=\\frac{P\\theta_0}{k_1} \\]\nと分かる（実験1のグラフで $0$℃ に達するまでの時間 $\\theta_0/k_1$ に $P$ を掛けたもの）．氷 $m$ をすべて融かすにはさらに $ml=P\\tau$ が要る．金属塊が $0$℃ まで下がるときに出す熱は $K\\theta$ である．\n\\begin{itemize}\n  \\item $K\\theta<H_0$ なら，全体は $0$℃ に届かない．\n  \\item $H_0\\le K\\theta\\le H_0+P\\tau$ なら，$0$℃ で止まり，氷の一部（または全部）が融ける．\n  \\item $K\\theta>H_0+P\\tau$ なら，氷はすべて融けて $0$℃ を超える．\n\\end{itemize}\nよって共存の条件は\n\\[ \\boldsymbol{\\frac{P\\theta_0}{k_1K}\\le\\theta\\le\\frac{P}{K}\\left(\\frac{\\theta_0}{k_1}+\\tau\\right)} \\]\n融けた質量 $x$ は，余った熱 $K\\theta-H_0$ が融解に使われるので\n\\[ x=\\frac{K\\theta-H_0}{l}=\\boldsymbol{\\frac{m}{P\\tau}\\left(K\\theta-\\frac{P\\theta_0}{k_1}\\right)} \\]\n\\textbf{(4)}　最終温度を $t$〔℃〕とする．$0$℃ を超えた後は（水 $m$＋容器）の熱容量 $mc_{\\text{w}}+C$ が効くので，ここで初めて $C$ を単独で知る必要がある．熱量の保存（金属塊が失った熱＝水・容器・氷が得た熱）より\n\\[ K(\\theta-t)=\\frac{P\\theta_0}{k_1}+P\\tau+(mc_{\\text{w}}+C)t \\]\n$C=P\\left(\\dfrac{2}{k_1}-\\dfrac{1}{k_2}\\right)$ を代入して\n\\[ \\boldsymbol{t=\\frac{K\\theta-P\\left(\\frac{\\theta_0}{k_1}+\\tau\\right)}{K+mc_{\\text{w}}+P\\left(\\frac{2}{k_1}-\\frac{1}{k_2}\\right)}} \\]\n(3)の範囲より $\\theta$ が大きいので分子は正であり，$t>0$ となって矛盾はない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一定電力のヒーターでは熱容量＝電力÷温度上昇率，相変化の熱＝電力×停滞時間として温度–時間グラフから熱量を読める．質量の異なる2回の実験で容器と試料の熱容量を分離でき，混合の最終状態は $0$℃ に達する熱・全部融かす熱との大小比較で場合分けして決まる．"
+ },
+ "concepts": [
+  "heat-temperature",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱容量",
+  "比熱",
+  "融解熱",
+  "熱量の保存",
+  "相変化",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

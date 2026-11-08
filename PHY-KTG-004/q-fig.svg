@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+<rect x="40" y="40" width="520" height="200" fill="none" stroke="#222" stroke-width="3"/>
+<rect x="296" y="40" width="8" height="132" fill="#ddd" stroke="#222" stroke-width="1.6"/>
+<rect x="296" y="180" width="8" height="60" fill="#ddd" stroke="#222" stroke-width="1.6"/>
+<line x1="308" y1="176" x2="350" y2="200" stroke="#222" stroke-width="1"/>
+<text x="352" y="206" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">小孔（面積 <tspan font-family="Times New Roman, serif" font-style="italic">s</tspan>）</text>
+<line x1="300" y1="90" x2="352" y2="70" stroke="#222" stroke-width="1"/>
+<text x="355" y="70" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">隔壁（温度 <tspan font-family="Times New Roman, serif" font-style="italic">T</tspan><tspan font-family="Times New Roman, serif" baseline-shift="sub" font-size="10">p</tspan>，片面の面積 <tspan font-family="Times New Roman, serif" font-style="italic">S</tspan>）</text>
+<circle cx="108.5" cy="170.3" r="3" fill="#888"/>
+<circle cx="138.2" cy="177.5" r="3" fill="#888"/>
+<circle cx="195.8" cy="112.9" r="3" fill="#888"/>
+<circle cx="58.0" cy="205.5" r="3" fill="#888"/>
+<circle cx="113.4" cy="133.1" r="3" fill="#888"/>
+<circle cx="279.0" cy="161.4" r="3" fill="#888"/>
+<circle cx="243.2" cy="162.2" r="3" fill="#888"/>
+<circle cx="198.8" cy="123.1" r="3" fill="#888"/>
+<circle cx="197.8" cy="209.2" r="3" fill="#888"/>
+<circle cx="172.7" cy="194.0" r="3" fill="#888"/>
+<circle cx="206.1" cy="112.7" r="3" fill="#888"/>
+<circle cx="225.6" cy="175.9" r="3" fill="#888"/>
+<circle cx="122.8" cy="108.7" r="3" fill="#888"/>
+<circle cx="249.7" cy="161.7" r="3" fill="#888"/>
+<circle cx="481.7" cy="210.5" r="3" fill="#888"/>
+<circle cx="480.7" cy="215.5" r="3" fill="#888"/>
+<circle cx="408.9" cy="201.1" r="3" fill="#888"/>
+<circle cx="420.0" cy="217.3" r="3" fill="#888"/>
+<circle cx="517.7" cy="116.7" r="3" fill="#888"/>
+<circle cx="350.6" cy="131.0" r="3" fill="#888"/>
+<circle cx="537.2" cy="157.3" r="3" fill="#888"/>
+<circle cx="461.0" cy="141.1" r="3" fill="#888"/>
+<circle cx="434.1" cy="151.3" r="3" fill="#888"/>
+<circle cx="399.0" cy="175.2" r="3" fill="#888"/>
+<circle cx="451.5" cy="213.5" r="3" fill="#888"/>
+<circle cx="473.4" cy="216.5" r="3" fill="#888"/>
+<circle cx="512.7" cy="223.9" r="3" fill="#888"/>
+<circle cx="471.0" cy="124.6" r="3" fill="#888"/>
+<text x="170" y="270" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">容器 1：温度 <tspan font-family="Times New Roman, serif" font-style="italic">T</tspan><tspan font-family="Times New Roman, serif" baseline-shift="sub" font-size="10">1</tspan>，体積 <tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan font-family="Times New Roman, serif" baseline-shift="sub" font-size="10">1</tspan></text>
+<text x="430" y="270" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">容器 2：温度 <tspan font-family="Times New Roman, serif" font-style="italic">T</tspan><tspan font-family="Times New Roman, serif" baseline-shift="sub" font-size="10">2</tspan>，体積 <tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan font-family="Times New Roman, serif" baseline-shift="sub" font-size="10">2</tspan></text>
+</svg>

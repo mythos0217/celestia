@@ -1,0 +1,136 @@
+{
+ "id": "PHY-THD-007",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "途中からばねが効き始めるピストンと温度–熱量グラフの折れ曲がり",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平に固定したシリンダー（断面積 $S$）に物質量 $n$ の単原子分子の理想気体を入れ，摩擦なく動くピストンでふさぐ．シリンダーの外側には，ばね定数 $k$ の軽いばねがあり，一端は壁に固定され，自然長の状態の他端はピストンの外側の面から距離 $d$ だけ離れている．大気圧を $P_0$ とする．はじめ気体の圧力は $P_0$，温度は $T_0$，底からピストンまでの距離は $L$ である．気体をヒーターでゆっくり加熱する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ピストンがばねに接触するときの気体の温度 $T_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "加熱開始から，ばねが $d$ だけ縮むまでに気体がした仕事 $W$ と，気体に加えた熱量 $Q$ を，$P_0,\\,S,\\,L,\\,d,\\,k$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "加えた熱量を横軸，気体の温度を縦軸にとったグラフは，ピストンがばねに接触する点で折れ曲がる．接触直後のグラフの傾きは接触直前の何倍か．$P_0,\\,S,\\,L,\\,d,\\,k$ で表し，1より大きいか小さいかを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3)の値は，$k\\to\\infty$ のときどんな値に近づくか．その意味を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：途中からばねが効き始めるピストンと温度–熱量グラフの折れ曲がり",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：途中からばねが効き始めるピストンと温度–熱量グラフの折れ曲がり",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T_1=\\dfrac{L+d}{L}T_0$"
+   },
+   {
+    "id": "2",
+    "tex": "$W=2P_0Sd+\\dfrac12kd^2$，$Q=5P_0Sd+\\dfrac32kdL+\\dfrac72kd^2$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{5\\{P_0S+k(L+d)\\}}{5P_0S+3k(L+d)}$ 倍（1より大きい）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac53$（定圧モル比熱と定積モル比熱の比．ばねが硬い極限では接触後は定積変化になる）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　接触までピストンには内外の圧力しか働かず，ゆっくり動くので圧力 $P_0$ の定圧変化．$V\\propto T$ より $\\boldsymbol{T_1=\\dfrac{L+d}{L}T_0}$．\n\\textbf{(2)}　底からピストンまでの距離を $L+x$ とする．$0\\le x\\le d$ では $P=P_0$，$d\\le x\\le2d$ ではピストンのつり合い $PS=P_0S+k(x-d)$ より $P=P_0+\\dfrac{k(x-d)}{S}$（$P$ は $V$ の1次式）．\n\\textbf{エネルギーで考える}：ピストンはゆっくり動くので運動エネルギーは無視でき，気体がした仕事は，大気を押しのける仕事とばねの弾性エネルギーの増加の和になる．\n\\[ \\boldsymbol{W=P_0S\\cdot2d+\\frac12kd^2} \\]\n（$P$–$V$ グラフで，長方形 $P_0\\times Sd$ と台形 $\\dfrac{P_0+(P_0+kd/S)}{2}\\times Sd$ の面積の和としても同じ．）\n終状態は $P_2=P_0+\\dfrac{kd}{S}$，$V_2=S(L+2d)$．$nRT=PV$ より\n\\[ \\Delta U=\\frac32(P_2V_2-P_0SL)=\\frac32\\{2P_0Sd+kd(L+2d)\\} \\]\n第1法則 $Q=\\Delta U+W$ より\n\\[ \\boldsymbol{Q=5P_0Sd+\\frac32kdL+\\frac72kd^2} \\]\n\\textbf{(3)}　\\textbf{接触直前}は定圧変化で $\\Delta Q=\\dfrac52nR\\Delta T$，傾き $\\dfrac{\\Delta T}{\\Delta Q}=\\dfrac{2}{5nR}$．\n\\textbf{接触直後}（$x=d$，$P=P_0$，$V_1=S(L+d)$）に体積が $\\Delta V$ 増えると $\\Delta P=\\dfrac{k}{S^2}\\Delta V$．$a=\\dfrac{k(L+d)}{S}$ とおくと $V_1\\Delta P=\\dfrac{a}{S}\\Delta V$ で\n\\[ nR\\Delta T=P_0\\Delta V+V_1\\Delta P=\\frac{P_0S+k(L+d)}{S}\\Delta V \\]\n\\[ \\Delta Q=\\frac32nR\\Delta T+P_0\\Delta V=\\frac{\\frac52P_0S+\\frac32k(L+d)}{S}\\Delta V \\]\nよって傾きの比は\n\\[ \\frac{(\\Delta T/\\Delta Q)_{\\text{後}}}{(\\Delta T/\\Delta Q)_{\\text{前}}}=\\frac52\\cdot\\frac{P_0S+k(L+d)}{\\frac52P_0S+\\frac32k(L+d)}=\\boldsymbol{\\frac{5\\{P_0S+k(L+d)\\}}{5P_0S+3k(L+d)}} \\]\n分子−分母 $=2k(L+d)>0$ なので\\textbf{1より大きい}．ばねが効くと，同じ温度上昇に対する膨張量が小さくなり，外への仕事に回る熱が減るため，同じ熱でも温度が上がりやすくなる．\n\\textbf{(4)}　$k\\to\\infty$ で $\\boldsymbol{\\dfrac53}$ に近づく．これは $\\dfrac{C_P}{C_V}=\\dfrac{\\frac52R}{\\frac32R}$ であり，ばねが非常に硬いとピストンは接触後ほとんど動かず定積変化になる（傾きが定圧の $\\dfrac{1}{C_P}$ から定積の $\\dfrac{1}{C_V}$ に跳ねる）ことを表す．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ばねに接触するまでは定圧，接触後は圧力が体積の1次式になり，気体の仕事は大気への仕事とばねの弾性エネルギーの和としてエネルギー収支で求まる．接触の瞬間に状態変化の種類が切り替わるため温度–熱量グラフが折れ曲がり，接触後の実効的なモル比熱は定圧と定積の中間の値になる．"
+ },
+ "concepts": [
+  "first-law",
+  "work-energy",
+  "heat-temperature"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ばね付きピストン",
+  "第1法則",
+  "弾性エネルギー",
+  "大気圧の仕事",
+  "モル比熱",
+  "状態の切り替わり"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

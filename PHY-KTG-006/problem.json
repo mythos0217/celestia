@@ -1,0 +1,130 @@
+{
+ "id": "PHY-KTG-006",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-02",
+ "topic": "スペクトル線のドップラー幅による気体の温度測定と断熱変化・自由膨張",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "質量 $m$ の原子 X からなる単原子分子理想気体が，断熱材でできたシリンダーとなめらかに動くピストンの中に封入され，絶対温度 $T_0$ に保たれている．原子 X は静止しているとき波長 $\\lambda_0$ の光を出す（外部からエネルギーを与えて，どの原子も同じ頻度で発光し続けるとする．発光による気体のエネルギーの変化は無視する）．容器の窓から $x$ 軸の正の向きに出た光を，図のように格子定数 $d$ の回折格子に垂直に入射させ，距離 $L$ だけ離れたスクリーン上で観測する．光の速さを $c$，ボルツマン定数を $k_{\\rm B}$ とし，原子の速さは $c$ に比べて十分小さい．回折角は十分小さく $\\sin\\theta\\fallingdotseq\\tan\\theta$ としてよい．光の強さの分布の広がりは，ドップラー効果だけで決まるものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "速度の $x$ 成分が $v_x$ の原子が出した光を観測すると，波長はいくらか．$v_x/c$ の1次まで求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "観測される波長と $\\lambda_0$ の差 $\\Delta\\lambda$ の2乗平均の平方根 $\\sigma_\\lambda=\\sqrt{\\overline{\\Delta\\lambda^2}}$ を，$\\lambda_0,\\ m,\\ T_0,\\ c,\\ k_{\\rm B}$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "スクリーン上の $k$ 次（$k=1,2,\\dots$）の明線の中心の位置を $z_k$（0次の明線から測る），明線の位置の広がり（2乗平均の平方根）を $\\sigma_k$ とする．比 $r=\\sigma_k/z_k$ を求め，それが $k,\\ d,\\ L$ によらないことを示せ．また，2次の明線について $r=1.4\\times10^{-6}$ と測定されたとき，気体の温度を有効数字2桁で求めよ．ただし $m=3.8\\times10^{-26}\\ \\mathrm{kg}$，$c=3.0\\times10^{8}\\ \\mathrm{m/s}$，$k_{\\rm B}=1.38\\times10^{-23}\\ \\mathrm{J/K}$ とする．"
+     },
+     {
+      "id": "4",
+      "tex": "温度 $T_0$ の状態から，ピストンをゆっくり押し込んで気体の体積を $\\frac18$ にした．比 $r$ ははじめの何倍になるか．"
+     },
+     {
+      "id": "5",
+      "tex": "再び温度 $T_0$，体積 $V_0$ の状態に戻した．今度はピストンを固定し，図の破線の仕切り板を外して，上部にある体積 $V_0$ の真空の部屋へ気体を一気に広げた（容器全体は断熱されている）．十分時間がたったときの比 $r$ ははじめの何倍か．さらにその後，ピストンをゆっくり押し込んで体積を $V_0$ に戻すと，$r$ ははじめの何倍になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：スペクトル線のドップラー幅による気体の温度測定と断熱変化・自由膨張",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\lambda_0\\left(1-\\dfrac{v_x}{c}\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\sigma_\\lambda=\\lambda_0\\sqrt{\\dfrac{k_{\\rm B}T_0}{mc^2}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$r=\\sqrt{\\dfrac{k_{\\rm B}T_0}{mc^2}}$（$k,d,L$ によらない），$T\\fallingdotseq4.9\\times10^{2}\\ \\mathrm{K}$"
+   },
+   {
+    "id": "4",
+    "tex": "$2$ 倍"
+   },
+   {
+    "id": "5",
+    "tex": "自由膨張後 $1$ 倍（変わらない），押し戻した後 $2^{1/3}\\fallingdotseq1.26$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 動く光源のドップラー効果}　原子が速度の $x$ 成分 $v_x$ で観測者に近づくと，1周期 $1/f_0$ の間に波源が $v_x/f_0$ だけ進むので，観測方向の波長は\n\\[ \\lambda=\\frac{c-v_x}{f_0}=\\boldsymbol{\\lambda_0\\left(1-\\frac{v_x}{c}\\right)} \\]\nとなる（$v_y,\\ v_z$ は観測方向に垂直なので1次では効かない）．\n\n\\textbf{(2) 熱運動による広がり}　$\\Delta\\lambda=-\\lambda_0v_x/c$ なので $\\overline{\\Delta\\lambda^2}=\\lambda_0^2\\,\\overline{v_x^2}/c^2$．エネルギー等分配より $\\frac12m\\overline{v_x^2}=\\frac12k_{\\rm B}T_0$，すなわち $\\overline{v_x^2}=k_{\\rm B}T_0/m$ だから\n\\[ \\sigma_\\lambda=\\boldsymbol{\\lambda_0\\sqrt{\\frac{k_{\\rm B}T_0}{mc^2}}}. \\]\n平均 $\\overline{\\Delta\\lambda}=0$ なので，線の中心は $\\lambda_0$ のまま，幅だけが $\\sqrt{T_0/m}$ に比例して広がる．\n\n\\textbf{(3) 回折格子で見た幅}　$k$ 次の明線は $d\\sin\\theta=k\\lambda$，小角では $z=L\\tan\\theta\\fallingdotseq kL\\lambda/d$．位置は波長の1次式なので，波長の広がりはそのまま位置の広がりに移り\n\\[ z_k=\\frac{kL\\lambda_0}{d},\\qquad \\sigma_k=\\frac{kL}{d}\\sigma_\\lambda,\\qquad r=\\frac{\\sigma_k}{z_k}=\\frac{\\sigma_\\lambda}{\\lambda_0}=\\boldsymbol{\\sqrt{\\frac{k_{\\rm B}T_0}{mc^2}}}. \\]\n高次の明線ほど幅は広がるが中心も同じ割合で遠ざかるので，比 $r$ は次数にも装置（$d,\\ L$）にもよらず，気体の温度と原子の質量だけで決まる．したがって\n\\[ T=\\frac{mc^2r^2}{k_{\\rm B}}=\\frac{3.8\\times10^{-26}\\times(3.0\\times10^8)^2\\times(1.4\\times10^{-6})^2}{1.38\\times10^{-23}}\\fallingdotseq\\boldsymbol{4.9\\times10^{2}\\ \\mathrm{K}}. \\]\n\n\\textbf{(4) 準静的断熱圧縮}　ゆっくり押し込むので準静的な断熱変化で，単原子分子では $TV^{2/3}=$ 一定．体積が $\\frac18$ になると $T=T_0\\cdot8^{2/3}=4T_0$．$r\\propto\\sqrt T$ なので $r$ は $\\boldsymbol{2}$ 倍．\n\n\\textbf{(5) 自由膨張}　真空への膨張では気体は外部に仕事をせず（$W=0$），断熱なので $Q=0$．第1法則より内部エネルギーは変わらず，理想気体では温度も $T_0$ のまま．よって $r$ は $\\boldsymbol{1}$ 倍（変わらない）．分子は動く壁に当たらないので分子の速さの分布が変わらない，と見ても同じである．\n\nその後，体積 $2V_0$ から $V_0$ へ準静的に断熱圧縮すると $T=T_0\\cdot2^{2/3}$，したがって $r$ は $\\boldsymbol{2^{1/3}\\fallingdotseq1.26}$ 倍．はじめと同じ体積に戻っても温度は上がっている．不可逆な自由膨張は準静的過程で元に戻せないことが，スペクトル線の幅として観測される．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "熱運動する原子の光は速度の視線成分に比例して波長がずれるので，線の幅（2乗平均）は $\\lambda_0\\sqrt{k_{\\rm B}T/mc^2}$ で温度を表す．回折格子では幅と中心位置が同じ割合で次数に比例するため，比だけが温度を与え，準静的断熱変化と自由膨張の違いが線幅の変化として現れる．"
+ },
+ "concepts": [
+  "kinetic-theory",
+  "first-law",
+  "doppler"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ドップラー効果",
+  "エネルギー等分配",
+  "回折格子",
+  "断熱変化",
+  "自由膨張"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

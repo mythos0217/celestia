@@ -1,0 +1,128 @@
+{
+ "id": "PHY-HEA-003",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-01",
+ "topic": "表面での熱伝達と積雪を含む湖の氷の成長（直列の熱抵抗）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "凍り始めた湖の氷の成長を考える．湖水は $0^\\circ$C に保たれ，氷の下面の温度は $0^\\circ$C である．氷の上の空気の温度は $-T_{\\rm a}$（$T_{\\rm a}>0$）で一定である．氷の熱伝導率を $\\lambda$，密度を $\\rho$，単位質量あたりの融解熱を $L$ とする．\n\n厚さ $l$，熱伝導率 $\\lambda$ の層を通して，両面の温度差 $\\Delta T$ によって面積 $S$ あたり時間 $t$ に伝わる熱量は $\\dfrac{\\lambda S\\Delta T}{l}t$ である．また，空気に接する面から空気へ，面積 $S$ あたり時間 $t$ に逃げる熱量は，その面と空気の温度差を $\\Delta T'$ として $\\alpha S\\Delta T't$（$\\alpha$ は定数）である．氷（と (5) の雪）の熱容量は無視でき，各瞬間に層の中の温度は厚さ方向に直線的に変化しているとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "氷の厚さが $x$ のとき，単位面積から単位時間に逃げる熱量 $q$ と，氷の上面の温度 $T_{\\rm s}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "氷の上面の温度が $-T_{\\rm a}/2$ になる厚さ $x^*$ を求めよ．また，$x\\ll x^*$ と $x\\gg x^*$ のそれぞれで，氷の厚さが時間とともにどのように増えるかを述べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "厚さが $0$ から $X$ になるまでの時間 $t(X)$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$T_{\\rm a}=10\\,$K，$\\lambda=2.2\\,$W/(m·K)，$\\alpha=25\\,$W/(m$^2$·K)，$\\rho=9.2\\times10^2\\,$kg/m$^3$，$L=3.3\\times10^5\\,$J/kg とする．厚さが $0$ から $5.0\\,$cm になるまでの時間と，$5.0\\,$cm から $10\\,$cm になるまでの時間を，それぞれ時間（h）の単位で有効数字2桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) で厚さが $5.0\\,$cm になった瞬間に，氷の上に厚さ $2.0\\,$cm，熱伝導率 $0.11\\,$W/(m·K) の雪が積もり，その後は変化しなかった．雪は融けず，雪の上面から空気へ逃げる熱量も同じ $\\alpha$ で表される．氷の厚さが $10\\,$cm になるまでの時間を，時間（h）の単位で有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：表面での熱伝達と積雪を含む湖の氷の成長（直列の熱抵抗）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$q=\\dfrac{T_{\\rm a}}{\\dfrac{x}{\\lambda}+\\dfrac{1}{\\alpha}}$，$T_{\\rm s}=-\\dfrac{\\alpha x}{\\lambda+\\alpha x}T_{\\rm a}$"
+   },
+   {
+    "id": "2",
+    "tex": "$x^*=\\dfrac{\\lambda}{\\alpha}$．$x\\ll x^*$ では厚さは時間に比例して増え，$x\\gg x^*$ では時間の平方根に比例して増える"
+   },
+   {
+    "id": "3",
+    "tex": "$t(X)=\\dfrac{\\rho L}{T_{\\rm a}}\\left(\\dfrac{X^2}{2\\lambda}+\\dfrac{X}{\\alpha}\\right)$"
+   },
+   {
+    "id": "4",
+    "tex": "$22\\,$h，$31\\,$h"
+   },
+   {
+    "id": "5",
+    "tex": "$1.1\\times10^2\\,$h"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 熱は氷を通って上面へ，上面から空気へと順に流れ，熱容量を無視するので，どちらの段階でも単位面積・単位時間あたり同じ熱量 $q$ が流れる：\n\\[ q=\\frac{\\lambda\\{0-T_{\\rm s}\\}}{x},\\qquad q=\\alpha\\{T_{\\rm s}-(-T_{\\rm a})\\} \\]\nそれぞれ温度差を $q$ で表して足すと $T_{\\rm a}=q\\left(\\dfrac{x}{\\lambda}+\\dfrac1\\alpha\\right)$ となり\n\\[ \\boldsymbol{q=\\frac{T_{\\rm a}}{\\dfrac{x}{\\lambda}+\\dfrac1\\alpha}},\\qquad \\boldsymbol{T_{\\rm s}=-\\frac{qx}{\\lambda}=-\\frac{\\alpha x}{\\lambda+\\alpha x}T_{\\rm a}} \\]\n電流と電圧の関係にならうと，$x/\\lambda$ と $1/\\alpha$ は直列につないだ「熱抵抗」で，温度差 $T_{\\rm a}$ がその比に分配される．\n\n\\textbf{(2)} $T_{\\rm s}=-T_{\\rm a}/2$ は2つの熱抵抗が等しいときで，$\\dfrac{x^*}{\\lambda}=\\dfrac1\\alpha$ より $\\boldsymbol{x^*=\\dfrac{\\lambda}{\\alpha}}$．\n\n時間 $dt$ の間に厚さが $dx$ 増えると，単位面積あたり質量 $\\rho\\,dx$ の水が凍って融解熱 $\\rho L\\,dx$ を出し，これが $q\\,dt$ として逃げる．よって\n\\[ \\rho L\\frac{dx}{dt}=q=\\frac{T_{\\rm a}}{\\dfrac{x}{\\lambda}+\\dfrac1\\alpha} \\]\n$x\\ll x^*$ では $q\\approx\\alpha T_{\\rm a}$ が一定なので厚さは\\textbf{時間に比例}して増える（表面からの熱の逃げ方が成長を決める）．$x\\gg x^*$ では $q\\approx\\lambda T_{\\rm a}/x$ なので $x\\,dx\\propto dt$ となり，$x^2$ が時間に比例，すなわち厚さは\\textbf{時間の平方根に比例}して増える（氷の中の熱伝導が成長を決める）．\n\n\\textbf{(3)} $\\rho L\\left(\\dfrac{x}{\\lambda}+\\dfrac1\\alpha\\right)dx=T_{\\rm a}\\,dt$ を $x=0$ から $X$ まで積分して\n\\[ \\boldsymbol{t(X)=\\frac{\\rho L}{T_{\\rm a}}\\left(\\frac{X^2}{2\\lambda}+\\frac{X}{\\alpha}\\right)} \\]\n\n\\textbf{(4)} $\\dfrac{\\rho L}{T_{\\rm a}}=\\dfrac{9.2\\times10^2\\times3.3\\times10^5}{10}=3.04\\times10^7\\,$J/(m$^3$·K) を用いて，\n\\[ t(0.050)=3.04\\times10^7\\times\\left(\\frac{0.050^2}{4.4}+\\frac{0.050}{25}\\right)=7.8\\times10^4\\,\\text{s}\\approx\\boldsymbol{22\\,\\text{h}} \\]\n\\[ t(0.10)=3.04\\times10^7\\times\\left(\\frac{0.10^2}{4.4}+\\frac{0.10}{25}\\right)=1.90\\times10^5\\,\\text{s} \\]\nより，$5.0\\,$cm から $10\\,$cm までは $1.90\\times10^5-7.8\\times10^4=1.12\\times10^5\\,\\text{s}\\approx\\boldsymbol{31\\,\\text{h}}$．$x^*=2.2/25=8.8\\,$cm 付近を境に伝導による抵抗が主になるので，後半の $5\\,$cm は前半より時間がかかるが，伝導だけの場合の3倍よりは小さい．\n\n\\textbf{(5)} 雪の層は熱抵抗 $\\dfrac{s}{\\lambda_{\\rm s}}=\\dfrac{0.020}{0.11}=0.182\\,$m$^2$·K/W を直列に加える（厚さ $\\lambda\\times0.182=0.40\\,$m の氷に相当）．(3) と同様に\n\\[ \\rho L\\left(\\frac{x}{\\lambda}+\\frac1\\alpha+\\frac{s}{\\lambda_{\\rm s}}\\right)dx=T_{\\rm a}\\,dt \\]\nを $x=0.050$ から $0.10$ まで積分して\n\\[ t=\\frac{\\rho L}{T_{\\rm a}}\\left\\{\\frac{0.10^2-0.050^2}{2\\times2.2}+(0.10-0.050)\\left(\\frac1{25}+0.182\\right)\\right\\}=3.04\\times10^7\\times1.28\\times10^{-2}\\approx3.9\\times10^5\\,\\text{s} \\]\nすなわち $\\boldsymbol{1.1\\times10^2\\,\\text{h}}$（約4.5日）で，雪がないときの約3.5倍かかる．雪は熱をよく通さないので，薄い積雪でも氷の成長を大きく遅らせる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "熱の流れは電流と同じく直列の「熱抵抗」$x/\\lambda+1/\\alpha$ の和で決まり，氷の成長速度はそれに反比例する．薄いうちは表面からの熱の逃げが律速して厚さは時間に比例し，厚くなると氷の伝導が律速して $\\sqrt t$ に比例する．積雪は等価な氷の厚さとして抵抗に加わる．"
+ },
+ "concepts": [
+  "heat-temperature"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱伝導",
+  "融解熱",
+  "熱抵抗",
+  "氷の成長",
+  "律速過程"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

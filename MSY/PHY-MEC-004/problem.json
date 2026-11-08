@@ -1,0 +1,136 @@
+{
+ "id": "PHY-MEC-004",
+ "schema": "celestia.problem/1",
+ "field": "MSY",
+ "unit": "MSY-01",
+ "topic": "軽い滑車にかけた鎖が滑車から浮き上がる瞬間（端におもりをつけた場合）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation",
+  "synthesis"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "天井に固定した水平な軸のまわりになめらかに回転できる，質量の無視できる半径 $R$ の滑車がある．これに長さ $L$，質量 $M$ の一様で柔らかく伸び縮みしない鎖をかけ，鎖の一端 A に質量 $m$（$m<M$）の小さなおもりを取り付けた．他端を B とする．$R$ は $L$ に比べて十分小さく，滑車に接している部分の鎖の長さと質量，およびおもりの大きさは無視できる．滑車の両側の鎖は常に鉛直であるとし，重力加速度の大きさを $g$，$\\lambda=M/L$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "鎖が滑車に接しながら速さ $v$ で動いているとき，滑車の両側の鎖の張力はともに $T$ である（滑車が軽く，軸がなめらかなため）．滑車に巻き付いている部分の鎖が滑車から受ける垂直抗力の，単位長さあたりの大きさ $n$ を $T,v,\\lambda,R$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "A 側の鎖の長さ（滑車の軸の高さから A まで）を $x$ とする．鎖とおもりが静止していられる $x$ の値 $x_0$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "A 側の長さを $x_0$ よりわずかに長くして静かに放すと，A 側が下がり始めた．A 側の長さが $x$ のときの鎖の速さ $v$ と張力 $T$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "やがて鎖は滑車から浮き上がる（$n=0$ となる）．その瞬間の鎖の加速度の大きさ $a_1$，速さ $v_1$，A 側の長さ $x_1$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：軽い滑車にかけた鎖が滑車から浮き上がる瞬間（端におもりをつけた場合）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：軽い滑車にかけた鎖が滑車から浮き上がる瞬間（端におもりをつけた場合）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$n=\\dfrac{T-\\lambda v^2}{R}$"
+   },
+   {
+    "id": "2",
+    "tex": "$x_0=\\dfrac{(M-m)L}{2M}$"
+   },
+   {
+    "id": "3",
+    "tex": "$v=(x-x_0)\\sqrt{\\dfrac{2Mg}{(M+m)L}}$，$T=\\dfrac{2Mg\\,(L-x)(Mx+mL)}{(M+m)L^2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$a_1=\\dfrac{g}{\\sqrt2}$，$v_1=\\dfrac12\\sqrt{\\dfrac{(M+m)gL}{M}}$，$x_1=\\dfrac{(M-m)L}{2M}+\\dfrac{(M+m)L}{2\\sqrt2\\,M}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　滑車に接する中心角 $\\Delta\\theta$ の微小部分（長さ $R\\Delta\\theta$，質量 $\\lambda R\\Delta\\theta$）を考える（解答図）．両端の張力 $T$ の合力は O 向きに $2T\\sin\\frac{\\Delta\\theta}{2}\\approx T\\Delta\\theta$，滑車からの垂直抗力は外向きに $nR\\Delta\\theta$ である．この部分は速さ $v$ で半径 $R$ の円周上を動くので，O 向きの加速度は $\\frac{v^2}{R}$．O 向きの運動方程式は\n\\[ \\lambda R\\Delta\\theta\\cdot\\frac{v^2}{R}=T\\Delta\\theta-nR\\Delta\\theta\\quad\\text{より}\\quad n=\\boldsymbol{\\frac{T-\\lambda v^2}{R}}. \\]\n鎖が動いている（$v\\neq0$）と，張力の一部が向心力に使われ，滑車を押す力が減る．$T=\\lambda v^2$ になると $n=0$ となり，鎖は滑車から浮く．\n\n\\textbf{(2)}　両側の重さのつり合い $(\\lambda x+m)g=\\lambda(L-x)g$ より\n\\[ x_0=\\boldsymbol{\\frac{(M-m)L}{2M}}. \\]\n（$x$ が $x_0$ より少しでも大きいと A 側が重くなって下がり続けるので，このつり合いは不安定である．）\n\n\\textbf{(3)}　滑車が軽く，軸がなめらかなので，鎖とおもり全体の力学的エネルギーは保存する．軸の高さを基準に下向きの深さで位置エネルギーを表すと\n\\[ U(x)=-\\frac{\\lambda g}{2}\\left\\{x^2+(L-x)^2\\right\\}-mgx \\]\nで，$U(x)$ を $x_0$ のまわりで整理すると $U(x_0)-U(x)=\\lambda g(x-x_0)^2$ となる．（実際，A 側の長さが $\\Delta x$ 増えると，B 側の上端の長さ $\\Delta x$ の部分が A 側の下に移るのと同じで，$x$ を増やす向きの力は $g\\{(\\lambda x+m)-\\lambda(L-x)\\}=2\\lambda g(x-x_0)$ である．）よって $\\frac12(M+m)v^2=\\lambda g(x-x_0)^2$ から\n\\[ v=\\boldsymbol{(x-x_0)\\sqrt{\\frac{2Mg}{(M+m)L}}}. \\]\n全体の加速度は $a=\\dfrac{2\\lambda g(x-x_0)}{M+m}$．B 側（質量 $\\lambda(L-x)$，上向きに加速度 $a$）の運動方程式 $T-\\lambda(L-x)g=\\lambda(L-x)a$ より\n\\[ T=\\lambda(L-x)(g+a)=\\boldsymbol{\\frac{2Mg\\,(L-x)(Mx+mL)}{(M+m)L^2}}. \\]\n（A 側とおもりの運動方程式 $(\\lambda x+m)(g-a)=T$ からも同じ結果になる．）\n\n\\textbf{(4)}　$u=\\dfrac{a}{g}=\\dfrac{2\\lambda(x-x_0)}{M+m}$ とおく．$L-x_0=\\dfrac{(M+m)L}{2M}=\\dfrac{M+m}{2\\lambda}$ だから $L-x=\\dfrac{M+m}{2\\lambda}(1-u)$ と書ける．すると\n\\[ T=\\lambda(L-x)g(1+u)=\\frac{(M+m)g}{2}(1-u^2),\\qquad \\lambda v^2=\\frac{2\\lambda^2g(x-x_0)^2}{M+m}=\\frac{(M+m)g}{2}u^2. \\]\n$n=0$ すなわち $T=\\lambda v^2$ の条件は $1-u^2=u^2$，$u=\\frac1{\\sqrt2}$ となり，おもりの質量 $m$ によらず「加速度が $g/\\sqrt2$ に達したとき」に鎖は滑車から浮く．\n\\[ a_1=\\boldsymbol{\\frac{g}{\\sqrt2}},\\qquad v_1^2=\\frac{(M+m)g}{2\\lambda}u^2=\\frac{(M+m)gL}{4M}\\ \\text{より}\\ v_1=\\boldsymbol{\\frac12\\sqrt{\\frac{(M+m)gL}{M}}}, \\]\n\\[ x_1=x_0+\\frac{M+m}{2\\lambda}u=\\boldsymbol{\\frac{(M-m)L}{2M}+\\frac{(M+m)L}{2\\sqrt2\\,M}}. \\]\nこのとき $L-x_1=\\frac{M+m}{2\\lambda}\\left(1-\\frac1{\\sqrt2}\\right)>0$ なので B 側はまだ残っており，また $m<M$ のもとで $x_1<L$ も成り立つので，この状況は実際に起こる．$x_0$ では $u=0$ で $n>0$，その後 $u$ の増加とともに $n$ は単調に減るので，初めて $n=0$ となるのはこの瞬間である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "曲がった経路に沿って速さ $v$ で動く柔らかい鎖の微小部分では，張力のうち $\\lambda v^2$ が向心力に使われ，支えを押す力は $(T-\\lambda v^2)/R$ になる．つり合いの近くから動き出す鎖では，張力と $\\lambda v^2$ がどちらも「加速度÷$g$」で表せ，$T=\\lambda v^2$ となるのは端のおもりの質量によらず加速度が $g/\\sqrt2$ に達したときである．"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "circular-motion",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "鎖",
+  "張力",
+  "向心力",
+  "接触が離れる条件",
+  "エネルギー保存"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

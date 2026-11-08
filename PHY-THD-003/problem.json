@@ -1,0 +1,131 @@
+{
+ "id": "PHY-THD-003",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "ストッパーを外して落下したピストンの不可逆断熱圧縮",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "断熱材でできた鉛直なシリンダー（断面積 $S$）に，単原子分子の理想気体が入っている．質量 $M$ のピストンは断熱材でできており，摩擦なく動くことができる．大気圧を $P_0$，重力加速度の大きさを $g$ とする．\nはじめ，ピストンはストッパーで支えられて底から高さ $L$ の位置にあり，気体の圧力は $P_0$，温度は $T_0$ であった（図）．ストッパーを急に外すと，ピストンは落下して上下に振動したが，気体の粘性によって振動はやがて止まり，ピストンは底から高さ $h$ の位置で静止した．この間，熱はシリンダーの外に逃げず，ピストンは底に達しなかったものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "静止したときの気体の圧力 $P_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$h$ と，静止したときの気体の温度 $T$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ストッパーを外す代わりに，ピストンに手を添えてゆっくり下ろし，(1)と同じ圧力 $P_1$ でつり合う位置で手を離したとする．このときの高さ $h'$ と温度 $T'$ を求めよ．ただし，この断熱変化では $PV^{\\frac53}$ が一定である．また，$T$ と $T'$ の大小を理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ピストンの質量 $M$ をいくら大きくしても，(2)の $h$ はある値より小さくならない．その値を $L$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "(2)の状態から，気体をヒーターでゆっくり加熱し，ピストンを高さ $L$ まで戻した．加えた熱量 $Q$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ストッパーを外して落下したピストンの不可逆断熱圧縮",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$P_1=P_0+\\dfrac{Mg}{S}$"
+   },
+   {
+    "id": "2",
+    "tex": "$h=\\dfrac{5P_0S+2Mg}{5(P_0S+Mg)}L$，$T=\\left(1+\\dfrac{2Mg}{5P_0S}\\right)T_0$"
+   },
+   {
+    "id": "3",
+    "tex": "$h'=\\left(\\dfrac{P_0S}{P_0S+Mg}\\right)^{\\frac35}L$，$T'=\\left(1+\\dfrac{Mg}{P_0S}\\right)^{\\frac25}T_0$，$T>T'$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac25L$"
+   },
+   {
+    "id": "5",
+    "tex": "$Q=\\dfrac32MgL$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　ストッパーを急に外すと気体の圧力は一様でなく，状態方程式も $PV^{\\gamma}=$一定 も途中では使えない（準静的でない）．使えるのは，始めと終わりの状態方程式・つり合いと，\\textbf{全体のエネルギー保存（第1法則）}である．\n\\textbf{(1)}　静止したピストンのつり合い $P_1S=P_0S+Mg$ より $\\boldsymbol{P_1=P_0+\\dfrac{Mg}{S}}$．\n\\textbf{(2)}　ピストンは静止から静止まで動いたので運動エネルギーの変化は $0$．ピストンに働く重力と大気圧の力は一定で，ともに下向きに距離 $L-h$ だけ仕事をする．これらと気体がピストンに及ぼす力の仕事の和が $0$ なので，気体がされた仕事は\n\\[ W_{\\text{された}}=(P_0S+Mg)(L-h) \\]\n（振動中に粘性で失われた力学的エネルギーは気体の内部にとどまる．）断熱なので第1法則は $\\Delta U=W_{\\text{された}}$．物質量を $n$，気体定数を $R$ とし，$nRT_0=P_0SL$，$nRT=P_1Sh$ を用いて\n\\[ \\frac32(P_1Sh-P_0SL)=P_1S(L-h)\\qquad\\therefore\\ h=\\frac{2P_1+3P_0}{5P_1}L \\]\n$P_1$ を代入して\n\\[ \\boldsymbol{h=\\frac{5P_0S+2Mg}{5(P_0S+Mg)}L},\\qquad T=T_0\\frac{P_1h}{P_0L}=\\boldsymbol{\\left(1+\\frac{2Mg}{5P_0S}\\right)T_0} \\]\n\\textbf{(3)}　準静的な断熱変化では $P_0(SL)^{\\frac53}=P_1(Sh')^{\\frac53}$ より\n\\[ \\boldsymbol{h'=\\left(\\frac{P_0S}{P_0S+Mg}\\right)^{\\frac35}L},\\qquad T'=T_0\\frac{P_1h'}{P_0L}=\\boldsymbol{\\left(1+\\frac{Mg}{P_0S}\\right)^{\\frac25}T_0} \\]\n$x=\\dfrac{Mg}{P_0S}>0$ とおき $f(x)=1+\\dfrac25x-(1+x)^{\\frac25}$ とすると，$f(0)=0$，$f'(x)=\\dfrac25\\left\\{1-(1+x)^{-\\frac35}\\right\\}>0$ なので $f(x)>0$．よって $\\boldsymbol{T>T'}$．急に落とすと，ピストンが勢いで押し込んだ分の力学的エネルギーが振動の減衰で気体の内部エネルギーに変わるため，同じ終わりの圧力でも温度が高く，体積も大きくなる（$h>h'$）．\n\\textbf{(4)}　$\\dfrac hL=\\dfrac{5+2x}{5(1+x)}$ は $x$ の増加とともに減少し，$x\\to\\infty$ で $\\boldsymbol{\\dfrac25}$ \\textbf{倍}（$\\boldsymbol{\\dfrac25L}$）に近づく．準静的なら $h'\\to0$ となるのと対照的で，いくら重いピストンを落としても気体は $\\dfrac25$ より小さくは圧縮されない．\n\\textbf{(5)}　ゆっくり加熱するとピストンはつり合いを保ち，圧力 $P_1$ の定圧変化となる．単原子分子なので\n\\[ Q=\\frac52P_1S(L-h)=\\frac52(P_0S+Mg)\\cdot\\frac{3Mg}{5(P_0S+Mg)}L=\\boldsymbol{\\frac32MgL} \\]\n検算：最初の状態（高さ $L$，圧力 $P_0$）から最後の状態（高さ $L$，圧力 $P_1$）までを通して見ると，ピストンは元の高さに戻ったので気体が外にした正味の仕事は $0$ であり，$Q=\\Delta U=\\dfrac32(P_1-P_0)SL=\\dfrac32MgL$ と一致する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ストッパーを急に外す圧縮は準静的でないため断熱の式は使えず，ピストンの静止から静止までのエネルギー保存（重力と大気圧の仕事が気体の内部エネルギーになる）と終状態のつり合いで決まる．同じ終圧でも準静的断熱圧縮より高温・大体積になり，圧縮の限界が $\\frac25L$ になる．"
+ },
+ "concepts": [
+  "first-law",
+  "mechanical-energy",
+  "work-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "不可逆変化",
+  "断熱変化",
+  "第1法則",
+  "ピストン",
+  "大気圧の仕事",
+  "極限"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

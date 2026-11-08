@@ -1,0 +1,131 @@
+{
+ "id": "PHY-THD-001",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "開口型と密閉型の熱気球の浮上高度の違い（等温大気）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のような熱気球がある．球皮（風船部）の容積は $V$ で一定（伸び縮みしない）であり，気球全体の質量（内部の空気を除き，ゴンドラ・積荷を含む）は $W$ である．球皮の下端には開口部があり，弁で閉じることもできる．弁が開いているとき，内部の空気の圧力は外気の圧力に等しい．大気は温度 $T_0$ で高さによらず一定の理想気体とし，地表での大気の圧力を $P_0$，密度を $\\rho_0$，重力加速度の大きさを $g$ とする．ゴンドラの体積は無視し，$\\rho_0V>W$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "弁を開いたまま内部の空気を温度 $T$ に保つ．気球が地表から浮上するための $T$ の条件を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "内部の空気の温度を(1)の条件を満たす $T$ に保ったところ，気球は上昇し，ある高さで静止した．その高さでの大気の密度 $\\rho_h$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "静止したその高さで弁を閉じ，ヒーターを切った．内部の空気は球皮を通してゆっくり冷え，やがて温度 $T_0$ になった．この間，気球は上昇するか，下降するか，静止したままか．理由とともに答えよ．また，温度が $T_0$ になったときの内部の空気の圧力を，その高さでの大気圧 $P_h$ を用いて表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "大気中で高さが微小量 $\\Delta h$ だけ増えるときの大気の密度の変化 $\\Delta\\rho$ を，その高さの密度 $\\rho$ と $\\rho_0,\\,P_0,\\,g,\\,\\Delta h$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "(3)の後（弁は閉じたまま），積荷のうち質量 $\\Delta w$（$\\Delta w\\ll W$）を捨てたところ，気球は $\\Delta h_1$ だけ上昇して静止した．一方，(2)の静止状態から弁を開けたまま温度 $T$ を保って同じ $\\Delta w$ を捨てていたとすると，上昇量は $\\Delta h_2$ であったはずである．$\\Delta h_1,\\ \\Delta h_2$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：開口型と密閉型の熱気球の浮上高度の違い（等温大気）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T>\\dfrac{\\rho_0V}{\\rho_0V-W}T_0$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\rho_h=\\dfrac{WT}{V(T-T_0)}$"
+   },
+   {
+    "id": "3",
+    "tex": "静止したまま（内部の空気の質量が変わらないため），圧力 $\\dfrac{T_0}{T}P_h$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\Delta\\rho=-\\dfrac{\\rho_0g}{P_0}\\rho\\,\\Delta h$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\Delta h_1=\\dfrac{P_0\\,\\Delta w}{\\rho_0gW}\\cdot\\dfrac{T-T_0}{T}$，$\\Delta h_2=\\dfrac{P_0\\,\\Delta w}{\\rho_0gW}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　浮力は外気の密度で決まり $\\rho_{\\text{外}}Vg$．気球が上下するのは浮力が変わるからだけでなく，「内部の空気の重さ」が変わるからでもある．弁が開いているか閉じているかで，内部の空気の質量が保存するかどうかが切り替わる．\n\\textbf{(1)}　空気の分子量を $M_{\\text{m}}$ とすると状態方程式は $P=\\dfrac{\\rho}{M_{\\text{m}}}RT$．弁が開いていれば内外の圧力が等しいので，内部の空気の密度は $\\rho_{\\text{内}}=\\rho_{\\text{外}}\\dfrac{T_0}{T}$．地表での力のつり合いの条件（浮力＞重力）は\n\\[ \\rho_0Vg>\\rho_0\\frac{T_0}{T}Vg+Wg\\qquad\\therefore\\ \\boldsymbol{T>\\frac{\\rho_0V}{\\rho_0V-W}T_0} \\]\n\\textbf{(2)}　高さ $h$ で $\\rho_hVg=\\rho_h\\dfrac{T_0}{T}Vg+Wg$ より\n\\[ \\boldsymbol{\\rho_h=\\frac{WT}{V(T-T_0)}} \\]\n\\textbf{(3)}　弁を閉じた瞬間の内部の空気の質量は $m_{\\text{内}}=\\rho_h\\dfrac{T_0}{T}V$ で，以後変わらない．球皮は伸び縮みしないので体積 $V$，したがって浮力 $\\rho_hVg$ も変わらない．重力 $(W+m_{\\text{内}})g$ も変わらないから，\\textbf{気球は静止したまま}である（温度が下がっても，閉じた容器の空気は重くならない）．\n内部の空気は質量・体積が一定のまま温度が $T\\to T_0$ になるので，圧力は温度に比例する：\n\\[ P_{\\text{内}}=P_h\\cdot\\frac{T_0}{T}=\\boldsymbol{\\frac{T_0}{T}P_h} \\]\n（外気より低圧になるが，球皮が硬いので体積は保たれる．）\n\\textbf{(4)}　断面積1の薄い空気層（厚さ $\\Delta h$）のつり合いより $\\Delta P=-\\rho g\\Delta h$．等温大気では $P\\propto\\rho$ で $\\dfrac{P}{\\rho}=\\dfrac{P_0}{\\rho_0}$ だから $\\Delta\\rho=\\dfrac{\\rho_0}{P_0}\\Delta P$．\n\\[ \\boldsymbol{\\Delta\\rho=-\\frac{\\rho_0g}{P_0}\\rho\\,\\Delta h} \\]\n\\textbf{(5)}　\\textbf{弁を閉じた場合}：内部の空気の質量 $m_{\\text{内}}$ は一定．新しいつり合いの密度を $\\rho'$ とすると\n\\[ \\rho'V=W-\\Delta w+m_{\\text{内}},\\quad \\rho_hV=W+m_{\\text{内}}\\qquad\\therefore\\ \\rho'-\\rho_h=-\\frac{\\Delta w}{V} \\]\n(4)より $-\\dfrac{\\Delta w}{V}=-\\dfrac{\\rho_0g}{P_0}\\rho_h\\Delta h_1$，(2)の $\\rho_h$ を代入して\n\\[ \\boldsymbol{\\Delta h_1=\\frac{P_0\\,\\Delta w}{\\rho_0gW}\\cdot\\frac{T-T_0}{T}} \\]\n\\textbf{弁を開けた場合}：つり合いは $\\rho''V\\left(1-\\dfrac{T_0}{T}\\right)=W-\\Delta w$ で，(2)の式と比べると $\\rho''=\\rho_h\\dfrac{W-\\Delta w}{W}$，すなわち $\\rho''-\\rho_h=-\\rho_h\\dfrac{\\Delta w}{W}$．よって\n\\[ \\boldsymbol{\\Delta h_2=\\frac{P_0\\,\\Delta w}{\\rho_0gW}} \\]\n$\\dfrac{\\Delta h_2}{\\Delta h_1}=\\dfrac{T}{T-T_0}>1$．弁が開いていると，上昇に伴って外気が薄くなるのと同時に内部の空気も開口部から押し出されて軽くなるため，閉じた気球より大きく上昇する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "熱気球の浮力は外気の密度で決まり，開口型では内部の空気の密度も外気に比例して変わるが，密閉すると内部の空気の質量が保存されて温度変化は浮力のつり合いに無関係になる．どちらの場合も積荷を捨てた後の上昇量は等温大気の密度勾配から求まり，内部の空気が逃げるかどうかで差が出る．"
+ },
+ "concepts": [
+  "first-law",
+  "equilibrium",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱気球",
+  "浮力",
+  "状態方程式",
+  "等温大気",
+  "密度",
+  "系の取り方"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 350" width="440" height="350">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="q-ad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+</defs>
+<line x1="60.0" y1="290.0" x2="425.0" y2="290.0" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+<line x1="60.0" y1="290.0" x2="60.0" y2="20.0" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+<text x="423.0" y="310.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">V</text>
+<text x="50.0" y="28.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">P</text>
+<text x="54.0" y="308.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="end">O</text>
+<line x1="308.0" y1="232.0" x2="370.0" y2="290.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="122.0" y1="58.0" x2="308.0" y2="232.0" stroke="#222" stroke-width="1.8"/>
+<line x1="202.6" y1="133.4" x2="227.4" y2="156.6" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<circle cx="122.0" cy="58.0" r="3" fill="#222"/>
+<text x="130.0" y="52.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start">A</text>
+<circle cx="308.0" cy="232.0" r="3" fill="#222"/>
+<text x="316.0" y="226.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start">C</text>
+<line x1="122.0" y1="290.0" x2="122.0" y2="58.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="308.0" y1="290.0" x2="308.0" y2="232.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="60.0" y1="58.0" x2="122.0" y2="58.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="60.0" y1="232.0" x2="308.0" y2="232.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="122.0" y="310.0" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="308.0" y="310.0" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Noto Sans CJK JP, sans-serif">4</tspan><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="370.0" y="310.0" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Noto Sans CJK JP, sans-serif">5</tspan><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="52.0" y="63.0" font-size="15" fill="#222" text-anchor="end"><tspan font-family="Noto Sans CJK JP, sans-serif">4</tspan><tspan font-family="Times New Roman, serif" font-style="italic">P</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="52.0" y="237.0" font-size="15" fill="#222" text-anchor="end"><tspan font-family="Times New Roman, serif" font-style="italic">P</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+</svg>

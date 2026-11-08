@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280">
+  <defs>
+    <marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+    <marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+  </defs>
+  <text x="40" y="50" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">空気（温度 −<tspan font-family="Times New Roman, serif" font-style="italic" font-size="16">T</tspan><tspan baseline-shift="sub" font-size="10">a</tspan>，一定）</text>
+  <!-- snow (for (5)) -->
+  <rect x="40" y="80" width="320" height="30" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="372" y="94" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">雪（(5) のみ）</text>
+  <!-- ice -->
+  <rect x="40" y="110" width="320" height="60" fill="#888" fill-opacity="0.15" stroke="#222" stroke-width="1.6"/>
+  <text x="150" y="146" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">氷（<tspan font-family="Times New Roman, serif" font-style="italic" font-size="16">λ</tspan>，<tspan font-family="Times New Roman, serif" font-style="italic" font-size="16">ρ</tspan>，<tspan font-family="Times New Roman, serif" font-style="italic" font-size="16">L</tspan>）</text>
+  <line x1="20" y1="110" x2="20" y2="170" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+  <text x="4" y="146" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+  <text x="372" y="128" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">上面の温度 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="15">T</tspan><tspan baseline-shift="sub" font-size="10">s</tspan></text>
+  <text x="372" y="176" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">下面 0 ℃</text>
+  <!-- water -->
+  <g stroke="#888" stroke-width="1" stroke-dasharray="6 6"><line x1="40" y1="195" x2="360" y2="195"/><line x1="46" y1="220" x2="360" y2="220"/><line x1="40" y1="245" x2="360" y2="245"/></g>
+  <text x="150" y="268" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">湖水（0 ℃）</text>
+  <!-- heat flow -->
+  <line x1="320" y1="165" x2="320" y2="60" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+  <text x="290" y="70" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#c0392b">q</text>
+</svg>

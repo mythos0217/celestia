@@ -1,0 +1,122 @@
+{
+ "id": "PHY-THD-008",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "断熱容器間の気体の移動と内部エネルギー保存",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，容積 $V$ の容器 A と容積 $2V$ の容器 B が，コック C のついた細い管でつながれている．容器・管・コックはすべて断熱材でできていて熱容量は無視でき，管の容積も無視できる．はじめ C は閉じており，A には圧力 $3p$，絶対温度 $T$ の単原子分子理想気体が，B には圧力 $p$，絶対温度 $2T$ の同じ気体が入っている．気体定数を $R$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "C を全開にして十分に時間がたつと，気体全体が一様になった．このときの圧力 $p_1$ と絶対温度 $T_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "次に，はじめの状態に戻して別の操作を行う．C をわずかに開くと気体は A から B へゆっくり流れ，A と B の圧力が等しくなった瞬間に C を閉じた．A，B 内の気体はそれぞれ各瞬間に一様とみなせ，A と B の間で熱のやりとりはないとする．C を閉じた直後の圧力 $p_2$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で，A に残っている気体は流出の間，断熱的かつ準静的に膨張したとみなせ，$pV^{5/3}=$一定 に従うとする．C を閉じた直後の A 内の気体の絶対温度 $T_A$ と B 内の気体の絶対温度 $T_B$ は，それぞれ $T$ の何倍か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) で A から B へ移動した気体の物質量は $\\dfrac{pV}{RT}$ の何倍か．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：断熱容器間の気体の移動と内部エネルギー保存",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$p_1=\\dfrac53p$，$T_1=\\dfrac54T$"
+   },
+   {
+    "id": "2",
+    "tex": "$p_2=\\dfrac53p$"
+   },
+   {
+    "id": "3",
+    "tex": "$T_A=\\left(\\dfrac59\\right)^{2/5}T\\approx0.79T$，$T_B\\approx1.8T$"
+   },
+   {
+    "id": "4",
+    "tex": "$0.89$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 容器は断熱で，気体は外部に仕事もしないので，熱力学第1法則より気体全体の内部エネルギーの和は保存する．単原子分子理想気体では $U=\\dfrac32nRT=\\dfrac32pV$ と書けるので，各容器の内部エネルギーは「$\\dfrac32\\times$圧力$\\times$容積」である．\n\\[ \\frac32(3p\\cdot V)+\\frac32(p\\cdot 2V)=\\frac32\\,p_1\\cdot 3V \\qquad\\therefore\\quad \\boldsymbol{p_1=\\frac53p} \\]\n物質量は $n_A=\\dfrac{3pV}{RT}$，$n_B=\\dfrac{p\\cdot 2V}{R\\cdot 2T}=\\dfrac{pV}{RT}$ で，合計 $n=\\dfrac{4pV}{RT}$．状態方程式 $p_1\\cdot 3V=nRT_1$ より $\\boldsymbol{T_1=\\dfrac54T}$．\n\n\\textbf{(2)} C を閉じた直後は A と B の温度は異なるが，それでも各容器の内部エネルギーは $\\dfrac32\\times$圧力$\\times$容積 で表せる．全体は断熱・仕事なしなので内部エネルギーの和は保存し，A，B の圧力はともに $p_2$ だから\n\\[ \\frac32(3pV+2pV)=\\frac32\\,p_2(V+2V)\\qquad\\therefore\\quad\\boldsymbol{p_2=\\frac53p} \\]\n(1) と同じ値になる．断熱容器内の単原子分子気体では，温度分布がどうであれ「圧力$\\times$容積」の和が保存されるからである．\n\n\\textbf{(3)} A に残った気体（物質量一定）だけに注目すると $pV^{5/3}=$一定．$V\\propto T/p$ を代入すると $p^{-2/3}T^{5/3}=$一定，すなわち $T\\propto p^{2/5}$．よって\n\\[ T_A=T\\left(\\frac{p_2}{3p}\\right)^{2/5}=\\left(\\frac59\\right)^{2/5}T\\approx \\boldsymbol{0.79T} \\]\nA に残った物質量は\n\\[ n_A'=\\frac{p_2V}{RT_A}=\\frac53\\left(\\frac95\\right)^{2/5}\\frac{pV}{RT}\\approx2.11\\,\\frac{pV}{RT} \\]\nB 内の物質量は $n_B'=n-n_A'\\approx1.89\\,\\dfrac{pV}{RT}$ なので，状態方程式より\n\\[ T_B=\\frac{p_2\\cdot 2V}{Rn_B'}\\approx\\frac{10/3}{1.89}\\,T\\approx\\boldsymbol{1.8T} \\]\nA の気体は膨張して冷え，B では流れ込んだ気体が後続の気体に押し込まれる仕事を受けるため，(1) の一様温度 $1.25T$ より高温になる．なお，この後 C を開け放せば (1) の状態に落ち着く（圧力は $\\dfrac53p$ のまま）．\n\n\\textbf{(4)} $n_A-n_A'=3\\,\\dfrac{pV}{RT}-2.11\\,\\dfrac{pV}{RT}\\approx \\boldsymbol{0.89}\\,\\dfrac{pV}{RT}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "断熱容器内の混合では内部エネルギーの和が保存し，単原子分子理想気体では $U=\\frac32pV$ なので，温度が不均一でも「圧力×容積」の和が保存されて共通の圧力が直ちに決まる．残留気体の断熱膨張を組み合わせると各容器の温度まで決まる．"
+ },
+ "concepts": [
+  "first-law",
+  "mechanical-energy",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気体の混合",
+  "内部エネルギー保存",
+  "断熱変化",
+  "物質量保存",
+  "単原子分子理想気体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

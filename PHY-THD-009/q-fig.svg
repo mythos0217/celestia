@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<line x1="40.0" y1="90.0" x2="300.0" y2="90.0" stroke="#222" stroke-width="3.2"/>
+<line x1="40.0" y1="170.0" x2="300.0" y2="170.0" stroke="#222" stroke-width="3.2"/>
+<line x1="300.0" y1="90.0" x2="300.0" y2="124.0" stroke="#222" stroke-width="3.2"/>
+<line x1="300.0" y1="136.0" x2="300.0" y2="170.0" stroke="#222" stroke-width="3.2"/>
+<rect x="84" y="92" width="14" height="76" fill="#bbb" stroke="#222" stroke-width="1.6"/>
+<line x1="30.0" y1="130.0" x2="84.0" y2="130.0" stroke="#222" stroke-width="3"/>
+<line x1="20.0" y1="130.0" x2="60.0" y2="130.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="91" y="80" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">D</text>
+<rect x="99" y="92" width="200" height="76" fill="#e9edf3" stroke="none"/>
+<text x="200" y="122" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Times New Roman, serif" font-style="italic">n</tspan><tspan font-family="Noto Sans CJK JP, sans-serif"> mol，</tspan><tspan font-family="Times New Roman, serif" font-style="italic">T</tspan><tspan font-family="Times New Roman, serif" font-style="italic" baseline-shift="sub" font-size="10">0</tspan></text>
+<text x="200" y="148" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Noto Sans CJK JP, sans-serif">体積 </tspan><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan font-family="Times New Roman, serif" font-style="italic" baseline-shift="sub" font-size="10">0</tspan><tspan font-family="Noto Sans CJK JP, sans-serif">，圧力 </tspan><tspan font-family="Times New Roman, serif" font-style="italic">P</tspan><tspan font-family="Times New Roman, serif" font-style="italic" baseline-shift="sub" font-size="10">0</tspan></text>
+<text x="170" y="80" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">A</text>
+<line x1="300.0" y1="124.0" x2="400.0" y2="124.0" stroke="#222" stroke-width="1.6"/>
+<line x1="300.0" y1="136.0" x2="400.0" y2="136.0" stroke="#222" stroke-width="1.6"/>
+<circle cx="350" cy="130" r="9" fill="none" stroke="#222" stroke-width="1.6"/><line x1="344.0" y1="124.0" x2="356.0" y2="136.0" stroke="#222" stroke-width="1.4"/>
+<line x1="344.0" y1="136.0" x2="356.0" y2="124.0" stroke="#222" stroke-width="1.4"/>
+<text x="350" y="112" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">C</text>
+<rect x="400" y="60" width="160" height="150" fill="none" stroke="#222" stroke-width="3.2"/>
+<line x1="400.0" y1="124.0" x2="400.0" y2="136.0" stroke="#e9edf3" stroke-width="4"/>
+<text x="480" y="50" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">B</text>
+<text x="480" y="130" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Noto Sans CJK JP, sans-serif">容積 </tspan><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan font-family="Times New Roman, serif" font-style="italic" baseline-shift="sub" font-size="10">B</tspan></text>
+<text x="480" y="156" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">はじめ真空</text>
+<text x="300" y="245" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">（シリンダー・ピストン・容器・管はすべて断熱材）</text>
+<text x="40" y="215" font-size="13" fill="#222" text-anchor="start"><tspan font-family="Noto Sans CJK JP, sans-serif">Dを押して A の圧力を </tspan><tspan font-family="Times New Roman, serif" font-style="italic">P</tspan><tspan font-family="Times New Roman, serif" font-style="italic" baseline-shift="sub" font-size="10">0</tspan><tspan font-family="Noto Sans CJK JP, sans-serif"> に保つ</tspan></text>
+</svg>

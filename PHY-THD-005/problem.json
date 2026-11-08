@@ -1,0 +1,136 @@
+{
+ "id": "PHY-THD-005",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "P–T グラフ上の長方形サイクルの向きと熱効率",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$1$ mol の単原子分子の理想気体が，図の圧力 $P$–絶対温度 $T$ グラフに示す長方形のサイクル A$(T_0,\\,P_0)$ → B$(2T_0,\\,P_0)$ → C$(2T_0,\\,2P_0)$ → D$(T_0,\\,2P_0)$ → A を準静的に行う．気体定数を $R$ とし，$V_0=\\dfrac{RT_0}{P_0}$ とおく．温度 $T$ の等温変化で体積が $V_1$ から $V_2$ になるとき，気体がする仕事は $RT\\log_e\\dfrac{V_2}{V_1}$ である．必要なら $\\log_e2=0.693$ を用いよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "状態 A，B，C，D の体積をそれぞれ $V_0$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "各過程 A→B，B→C，C→D，D→A で気体が吸収する熱量を求めよ（放出する場合は負の値とする）．"
+     },
+     {
+      "id": "3",
+      "tex": "1サイクルで気体がする正味の仕事を求めよ．また，このサイクルを $P$–$V$ グラフに描いたとき，時計回り・反時計回りのどちらに回るか．"
+     },
+     {
+      "id": "4",
+      "tex": "このサイクルを逆向き（A→D→C→B→A）に行わせると熱機関として働く．その熱効率を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：P–T グラフ上の長方形サイクルの向きと熱効率",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：P–T グラフ上の長方形サイクルの向きと熱効率",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V_{\\text{A}}=V_0$，$V_{\\text{B}}=2V_0$，$V_{\\text{C}}=V_0$，$V_{\\text{D}}=\\dfrac{V_0}{2}$"
+   },
+   {
+    "id": "2",
+    "tex": "A→B：$\\dfrac52RT_0$，B→C：$-2RT_0\\log_e2$，C→D：$-\\dfrac52RT_0$，D→A：$RT_0\\log_e2$"
+   },
+   {
+    "id": "3",
+    "tex": "$-RT_0\\log_e2$（気体は正味で仕事をされる），反時計回り"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{2\\log_e2}{5+4\\log_e2}\\approx0.18$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　$P$–$T$ グラフの横線は定圧変化，縦線は等温変化．どちら向きに仕事をするかは $P$–$V$ グラフに直さないと分からない．\n\\textbf{(1)}　$V=\\dfrac{RT}{P}$ より\n\\[ \\boldsymbol{V_{\\text{A}}=V_0,\\quad V_{\\text{B}}=2V_0,\\quad V_{\\text{C}}=\\frac{R\\cdot2T_0}{2P_0}=V_0,\\quad V_{\\text{D}}=\\frac{V_0}{2}} \\]\n\\textbf{(2)}　\\textbf{A→B（定圧）}：$Q=C_P\\Delta T=\\dfrac52R(2T_0-T_0)=\\boldsymbol{\\dfrac52RT_0}$．\n\\textbf{B→C（等温，$2T_0$）}：$\\Delta U=0$ なので，吸収熱＝気体がした仕事 $=R\\cdot2T_0\\log_e\\dfrac{V_0}{2V_0}=\\boldsymbol{-2RT_0\\log_e2}$（等温圧縮で放熱）．\n\\textbf{C→D（定圧）}：$Q=\\dfrac52R(T_0-2T_0)=\\boldsymbol{-\\dfrac52RT_0}$．\n\\textbf{D→A（等温，$T_0$）}：$Q=RT_0\\log_e\\dfrac{V_0}{V_0/2}=\\boldsymbol{RT_0\\log_e2}$（等温膨張で吸熱）．\n\\textbf{(3)}　1サイクルで $\\Delta U=0$ だから，正味の仕事＝吸収熱の総和：\n\\[ W=\\frac52RT_0-2RT_0\\log_e2-\\frac52RT_0+RT_0\\log_e2=\\boldsymbol{-RT_0\\log_e2} \\]\n負なので気体は正味で仕事を\\textbf{される}．$P$–$V$ グラフでは，A$(V_0,P_0)$→B$(2V_0,P_0)$ と低圧側を右へ進み，B→C の等温線を左上へ，C$(V_0,2P_0)$→D$(V_0/2,2P_0)$ と高圧側を左へ進み，D→A の等温線を右下へ戻る．低圧側で膨張・高圧側で圧縮するので\\textbf{反時計回り}であり，囲む面積 $RT_0\\log_e2$ が外からされた正味の仕事に等しい．なお，$P$–$T$ グラフで囲まれた面積は仕事を表さないので，仕事の符号は必ず $P$–$V$ グラフに直して判断する．\n\\textbf{(4)}　逆向きでは各過程の熱の符号が反転する．吸収するのは D→C（定圧加熱）$\\dfrac52RT_0$ と C→B（$2T_0$ での等温膨張）$2RT_0\\log_e2$ で\n\\[ Q_{\\text{吸}}=\\frac52RT_0+2RT_0\\log_e2,\\qquad W=RT_0\\log_e2 \\]\n\\[ e=\\frac{W}{Q_{\\text{吸}}}=\\frac{2\\log_e2}{5+4\\log_e2}=\\frac{1.386}{7.772}\\approx\\boldsymbol{0.18} \\]\n同じ最高・最低温度で動くカルノー機関の効率 $1-\\dfrac{T_0}{2T_0}=0.5$ よりかなり小さい．定圧過程で温度差のある熱のやりとりをしているためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "$P$–$T$ グラフでは水平線が定圧・垂直線が等温変化で，状態方程式で $P$–$V$ グラフに直して初めて仕事の符号（回る向き）が分かる．低圧側で膨張し高圧側で圧縮する向きなら正味の仕事は負で，熱機関として働かせるには逆に回す必要があり，効率は吸収した熱だけで割って求める．"
+ },
+ "concepts": [
+  "first-law",
+  "work-energy",
+  "heat-engine"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱サイクル",
+  "PTグラフ",
+  "等温変化",
+  "定圧変化",
+  "熱効率",
+  "グラフの読み替え"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

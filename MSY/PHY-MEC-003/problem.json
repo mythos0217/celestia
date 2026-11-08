@@ -1,0 +1,113 @@
+{
+ "id": "PHY-MEC-003",
+ "schema": "celestia.problem/1",
+ "field": "MSY",
+ "unit": "MSY-01",
+ "topic": "給水と底の穴からの流出が同時にある容器の水位（流出速度が深さの平方根に比例する場合）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation",
+  "synthesis"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "高さ $H$，断面積 $S$ の円筒形の容器がある．上の注水口からは毎秒一定の体積 $Q$ の水が入り，底には断面積 $s$（$s\\ll S$）の小さな排水口がある．水深が $h$ のとき，排水口から流れ出る水の速さは $\\sqrt{2gh}$ であるとする（$g$ は重力加速度の大きさ）．\n空の容器に注水口だけを開けると時間 $T_1$ で満水になり，満水の容器で排水口だけを開けると時間 $T_2$ で空になる．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "排水口だけを開けたとき，$\\sqrt h$ が時間に対して一定の割合で減少することを示し，$T_2$ を $S$，$s$，$H$，$g$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "空の容器で注水口と排水口を同時に開けると，水深はある値 $h_\\infty$ に近づく．$\\dfrac{h_\\infty}{H}$ を $T_1$，$T_2$ で表し，水があふれる条件を $T_1$，$T_2$ の関係で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$T_1=3.0$ 分，$T_2=2.0$ 分とする．満水の容器で注水口と排水口を同時に開けたとき，水深が $\\dfrac{H}{4}$ になるまでの時間を有効数字2桁で求めよ．また，排水口だけを開けた場合に水深が $\\dfrac H4$ になるまでの時間と比べよ．必要なら $\\log_e2=0.693$ を用いよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：給水と底の穴からの流出が同時にある容器の水位（流出速度が深さの平方根に比例する場合）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{\\Delta\\sqrt h}{\\Delta t}=-\\dfrac{s}{2S}\\sqrt{2g}$（一定），$T_2=\\dfrac{S}{s}\\sqrt{\\dfrac{2H}{g}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{h_\\infty}{H}=\\left(\\dfrac{T_2}{2T_1}\\right)^2$，あふれる条件 $T_2>2T_1$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{T_2^2}{2T_1}\\left(\\dfrac32+2\\log_e2\\right)\\fallingdotseq1.9$ 分（排水口だけなら $1.0$ 分）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　短い時間 $\\Delta t$ に流れ出る体積は $s\\sqrt{2gh}\\,\\Delta t$ で，それが $-S\\Delta h$ に等しい：$\\dfrac{\\Delta h}{\\Delta t}=-\\dfrac{s}{S}\\sqrt{2gh}$．$\\dfrac{\\Delta\\sqrt h}{\\Delta t}=\\dfrac{1}{2\\sqrt h}\\dfrac{\\Delta h}{\\Delta t}$ なので\n\\[ \\frac{\\Delta\\sqrt h}{\\Delta t}=-\\frac{s}{2S}\\sqrt{2g}\\quad(\\text{一定}) \\]\n$\\sqrt h$ が $\\sqrt H$ から $0$ まで一定の割合で減るので $\\boldsymbol{T_2=\\dfrac{2S}{s}\\sqrt{\\dfrac{H}{2g}}=\\dfrac{S}{s}\\sqrt{\\dfrac{2H}{g}}}$．これを $\\beta=\\dfrac{s}{S}\\sqrt{2g}=\\dfrac{2\\sqrt H}{T_2}$ と書いておく．また注水だけのとき $\\alpha=\\dfrac QS=\\dfrac{H}{T_1}$．\n\n\\textbf{(2)}　両方開けると $\\dfrac{\\Delta h}{\\Delta t}=\\alpha-\\beta\\sqrt h$．水深は $\\alpha=\\beta\\sqrt h$ となる $h_\\infty$ に近づく（$h<h_\\infty$ では増え，$h>h_\\infty$ では減る）．\n\\[ \\sqrt{h_\\infty}=\\frac\\alpha\\beta=\\frac{H}{T_1}\\cdot\\frac{T_2}{2\\sqrt H}\\quad\\therefore\\quad \\boldsymbol{\\frac{h_\\infty}{H}=\\left(\\frac{T_2}{2T_1}\\right)^2} \\]\nあふれるのは $h_\\infty>H$，すなわち $\\boldsymbol{T_2>2T_1}$．（排水の勢いは満水のときに最大なので，「満水時の排水量 $=2\\times$平均の排水量」と比べることになり，単純に $T_2>T_1$ ではない．）\n\n\\textbf{(3)}　$u=\\sqrt h$，$x=\\dfrac{u}{\\sqrt{h_\\infty}}$ とおく．$\\Delta h=2u\\Delta u$ より\n\\[ \\Delta t=\\frac{2u\\,\\Delta u}{\\alpha-\\beta u}=\\frac{2\\alpha}{\\beta^2}\\cdot\\frac{x\\,\\Delta x}{1-x} \\]\n$\\dfrac{x}{1-x}=-1+\\dfrac{1}{1-x}$ なので，$x$ が $x_0$ から $x_1$（ともに $1$ より大）まで変わる時間は\n\\[ t=\\frac{2\\alpha}{\\beta^2}\\left[-x-\\log_e|x-1|\\right]_{x_0}^{x_1} \\]\n数値：$\\dfrac{h_\\infty}{H}=\\dfrac19$ なので満水では $x_0=3$，$h=\\dfrac H4$ では $x_1=\\dfrac32$．$\\dfrac{2\\alpha}{\\beta^2}=\\dfrac{T_2^2}{2T_1}=\\dfrac23$ 分．\n\\[ t=\\frac{T_2^2}{2T_1}\\left\\{\\left(-\\tfrac32-\\log_e\\tfrac12\\right)-\\left(-3-\\log_e2\\right)\\right\\}=\\frac{T_2^2}{2T_1}\\left(\\frac32+2\\log_e2\\right)=\\frac23\\times2.886\\fallingdotseq\\boldsymbol{1.9\\ \\text{分}} \\]\n排水口だけなら (1) より $\\sqrt h$ が $\\sqrt H$ から $\\dfrac{\\sqrt H}{2}$ へ一定の割合で減るので $\\dfrac{T_2}{2}=1.0$ 分．注水があるため約 $1.9$ 倍の時間がかかる．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "流出速度が $\\sqrt{2gh}$ に比例すると $\\sqrt h$ が一定の割合で減るので，排水時間は平均の流出量でなく満水時の流出量の半分で決まる．注水と同時なら水位は流入と流出がつり合う $h_\\infty$ に近づき，あふれる条件は $T_2>T_1$ ではなく $T_2>2T_1$ になる．"
+ },
+ "concepts": [
+  "equation-of-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "トリチェリの定理",
+  "流量の収支",
+  "平衡水位",
+  "変数変換",
+  "微分方程式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

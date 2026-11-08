@@ -1,0 +1,130 @@
+{
+ "id": "PHY-KTG-005",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-02",
+ "topic": "気体中で不規則に動く板（力のゆらぎと抵抗力のつり合いによるエネルギー等分配）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "希薄な気体の中に，面積 $S$，質量 $M$ の薄い板が，板に垂直な $x$ 軸の方向にだけなめらかに動けるように置かれている．気体分子の質量は $m\\ (m\\ll M)$，単位体積あたりの分子数は $n$ である．簡単のため，分子は $x$ 方向にだけ動き，半数は $+x$ 向き，半数は $-x$ 向きに，同じ速さ $v$ で運動しているとする．分子は板と弾性衝突し，分子どうしの衝突や板の両面の間の気体の偏りは考えない．板の速度を $u$ とし，$|u|\\ll v$ である．$\\tau$ は十分短い時間で，その間に2個以上の分子が板に衝突することはないとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "板が静止しているとき，時間 $\\tau$ の間に板が分子から受ける力積の $x$ 成分を $I$ とする．$I$ の平均値は 0 である．$I^2$ の平均値は $\\tau$ に比例し $\\overline{I^2}=A\\tau$ と書ける．$A$ を $n,\\ S,\\ m,\\ v$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "板が速度 $u$ で動いているとき，板が受ける力の平均は $u$ に比例し $-Bu$ と書ける．$B$ を $n,\\ S,\\ m,\\ v$ で表せ．ただし $u^2$ の項は無視する．"
+     },
+     {
+      "id": "3",
+      "tex": "板は分子の衝突によって不規則に動きまわる．時間 $\\tau$ の間の板の運動エネルギーの変化の平均値を，$u,\\ A,\\ B,\\ M,\\ \\tau$ で表せ．ここで，$|u|\\ll v$ なので $\\overline{I^2}$ は (1) の $A\\tau$ としてよい．これを用いて，十分に時間がたった後の板の運動エネルギーの平均 $\\overline{K}=\\overline{\\frac12Mu^2}$ を $A,\\ B$ で表し，さらに $m,\\ v$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "実際の気体では分子の速さはさまざまである．$x$ 方向の速さが $v_j$ の分子が単位体積あたり $n_j$ 個（半数ずつ $\\pm x$ 向き）あるとすると，(1)(2) の $A,\\ B$ はどう書きかわるか．また，マクスウェル分布にしたがう温度 $T$ の気体では，$x$ 方向の速さの3乗の平均と1乗の平均の比が $\\dfrac{\\overline{|v_x|^3}}{\\overline{|v_x|}}=\\dfrac{2k_{\\rm B}T}{m}$（$k_{\\rm B}$ はボルツマン定数）となることを用いて，$\\overline{K}$ を $k_{\\rm B},\\ T$ で表せ．これを気体分子1個の $x$ 方向の運動エネルギーの平均 $\\frac12m\\overline{v_x^{\\,2}}=\\frac12k_{\\rm B}T$ と比べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "板の運動エネルギーの平均がはじめ $K_0$ であったとき，時刻 $t$ での平均値 $\\overline{K}(t)$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：気体中で不規則に動く板（力のゆらぎと抵抗力のつり合いによるエネルギー等分配）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$A=4nSm^2v^3$"
+   },
+   {
+    "id": "2",
+    "tex": "$B=4nSmv$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\left(-Bu^2+\\dfrac{A}{2M}\\right)\\tau$，$\\overline{K}=\\dfrac{A}{4B}=\\dfrac14mv^2$"
+   },
+   {
+    "id": "4",
+    "tex": "$A=4Sm^2\\sum_jn_jv_j^{\\,3}$，$B=4Sm\\sum_jn_jv_j$，$\\overline{K}=\\dfrac12k_{\\rm B}T$（分子の $x$ 方向の運動エネルギーの平均に等しい）"
+   },
+   {
+    "id": "5",
+    "tex": "$\\overline{K}(t)=\\dfrac{A}{4B}+\\left(K_0-\\dfrac{A}{4B}\\right)e^{-2Bt/M}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$-x$ 向きに動く分子（数密度 $\\frac n2$）のうち，時間 $\\tau$ の間に板の $+x$ 側の面に当たるのは，板を底面とする高さ $v\\tau$ の円柱の中にあるものなので，その確率は $p_+=\\frac12nSv\\tau$（$\\ll1$）．$-x$ 側から当たる確率 $p_-$ も同じである．重い板との弾性衝突で分子の速度は反転するので，1回の衝突の力積の大きさは $2mv$ である．\n\\[ \\overline{I}=p_+(-2mv)+p_-(2mv)=0,\\qquad \\overline{I^2}=(p_++p_-)(2mv)^2=4nSm^2v^3\\tau \\]\nよって $A=\\boldsymbol{4nSm^2v^3}$．力の平均は 0 でも，その「ゆらぎ」は 0 ではない．\n\n\\textbf{(2)}　板が $+x$ 向きに速さ $u$ で動くとき，$+x$ 側から当たる分子の板に対する相対速さは $v+u$ で，確率 $\\frac12nS(v+u)\\tau$，力積 $-2m(v+u)$．$-x$ 側からは相対速さ $v-u$ で，確率 $\\frac12nS(v-u)\\tau$，力積 $+2m(v-u)$．したがって\n\\[ \\overline{I}=\\frac12nS\\tau\\left\\{-2m(v+u)^2+2m(v-u)^2\\right\\}=-4nSmvu\\,\\tau \\]\n平均の力は $-4nSmv\\,u$ で，$B=\\boldsymbol{4nSmv}$．前から当たる分子が多く，しかも強く当たるので，動く板には速度に比例する抵抗力がはたらく．\n\n\\textbf{(3)}　時間 $\\tau$ の間に板の速度は $u$ から $u+\\dfrac IM$ に変わるので，運動エネルギーの変化は\n\\[ \\frac12M\\left(u+\\frac IM\\right)^2-\\frac12Mu^2=uI+\\frac{I^2}{2M} \\]\n平均をとると，$\\overline{I}=-Bu\\tau$，$\\overline{I^2}=A\\tau$ より\n\\[ \\overline{\\Delta K}=\\boldsymbol{\\left(-Bu^2+\\frac{A}{2M}\\right)\\tau} \\]\n第1項は抵抗力による損失（速さの2乗に比例），第2項は不規則な衝突による「加熱」で板の速度によらない．十分に時間がたつと両者がつり合い，平均として $\\overline{\\Delta K}=0$：\n\\[ B\\,\\overline{u^2}=\\frac{A}{2M}\\ \\Longrightarrow\\ \\overline{K}=\\frac12M\\overline{u^2}=\\boldsymbol{\\frac{A}{4B}}=\\boldsymbol{\\frac14mv^2} \\]\n$\\overline{u^2}=\\dfrac{mv^2}{2M}\\ll v^2$ なので，$|u|\\ll v$ の仮定とも矛盾しない．力のゆらぎの強さ $A$ と抵抗の強さ $B$ の比が，板が気体から受けとる運動エネルギーを決めている．\n\n\\textbf{(4)}　各グループの寄与を足し合わせればよいので\n\\[ A=\\boldsymbol{4Sm^2\\sum_jn_jv_j^{\\,3}},\\qquad B=\\boldsymbol{4Sm\\sum_jn_jv_j} \\]\n$\\sum_jn_jv_j^{\\,3}=n\\overline{|v_x|^3}$，$\\sum_jn_jv_j=n\\overline{|v_x|}$ と書けるので，マクスウェル分布では\n\\[ \\overline{K}=\\frac{A}{4B}=\\frac{m}{4}\\cdot\\frac{\\overline{|v_x|^3}}{\\overline{|v_x|}}=\\frac m4\\cdot\\frac{2k_{\\rm B}T}{m}=\\boldsymbol{\\frac12k_{\\rm B}T} \\]\nこれは気体分子1個の $x$ 方向の運動エネルギーの平均 $\\frac12k_{\\rm B}T$ に\\textbf{等しい}．板は質量によらず，1つの方向の運動について分子と同じ平均運動エネルギーをもつ（エネルギー等分配）．(3) の結果が $\\frac14mv^2$ と分子の $\\frac12mv^2$ の半分になったのは，全分子の速さを同じ $v$ とした簡単なモデルのためで，ゆらぎの強さは速さの3乗平均，抵抗は1乗平均で決まるので，速さの分布の形が効いてくる．\n\n\\textbf{(5)}　(3) の式で $u^2=\\dfrac{2K}{M}$ とすると，平均値について\n\\[ \\frac{d\\overline{K}}{dt}=-\\frac{2B}{M}\\overline{K}+\\frac{A}{2M}=-\\frac{2B}{M}\\left(\\overline{K}-\\frac{A}{4B}\\right) \\]\n$\\overline{K}-\\dfrac{A}{4B}$ は時定数 $\\dfrac{M}{2B}$ で指数関数的に減衰するので\n\\[ \\overline{K}(t)=\\boldsymbol{\\frac{A}{4B}+\\left(K_0-\\frac{A}{4B}\\right)e^{-2Bt/M}} \\]\n板の速度の平均値は時定数 $\\dfrac MB$ で減衰し，運動エネルギーはその半分の時定数で平衡値 $\\frac{A}{4B}$ に近づく．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "気体中の板が分子から受ける力は，静止していても平均0のまわりにゆらいでおり（力積の2乗平均が時間に比例），動くと速度に比例する抵抗力になる．速さの2乗に比例するエネルギー損失と，ゆらぎによる速度によらないエネルギー注入のつり合いから，板の平均運動エネルギーはゆらぎと抵抗の係数の比で決まり，マクスウェル分布では分子と同じ $\\frac12k_{\\rm B}T$ になる（揺動と散逸の関係）．"
+ },
+ "concepts": [
+  "kinetic-theory",
+  "momentum-conservation",
+  "equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "力積のゆらぎ",
+  "抵抗力",
+  "エネルギー等分配",
+  "マクスウェル分布",
+  "ブラウン運動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

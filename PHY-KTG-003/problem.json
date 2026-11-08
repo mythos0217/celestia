@@ -1,0 +1,142 @@
+{
+ "id": "PHY-KTG-003",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-02",
+ "topic": "平均自由行程と熱伝導率の圧力依存性（連続領域と希薄領域の切り替わり）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，間隔 $L$ で向かい合う2枚の平行な板の間に，単原子分子（直径 $d$）からなる理想気体が圧力 $p$ で入っている．板1の絶対温度は $T+\\Delta T$，板2の絶対温度は $T$ で，$\\Delta T\\ll T$ とする．ボルツマン定数を $k$ とし，分子の平均の速さ $\\bar v$ は場所によらず一定とみなす．単位体積あたりの分子数を $n$ とすると，気体中の仮想的な平面を一方の側から横切る分子の数は単位時間・単位面積あたり $\\dfrac14 n\\bar v$ であることが知られている．また，分子1個は，最後に衝突した場所（または最後にはね返った板）の温度 $T'$ に応じたエネルギー $\\dfrac32kT'$ を運ぶものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "分子は，他の分子の中心が自分の中心から距離 $d$ 以内に入ると衝突する．他の分子が静止しているとみなして，平均自由行程 $\\lambda$ を $p$，$T$，$d$，$k$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\lambda\\ll L$ の場合を考える（モデルA）．気体の温度は板の間で直線的に変化し，ある平面を横切る分子は，その平面から（平面に垂直な向きに）距離 $\\lambda$ だけ離れた場所で最後の衝突をしたとみなす．板1から板2の向きに単位時間・単位面積あたり運ばれる熱量 $q_{\\rm A}$ を $k$，$\\bar v$，$d$，$L$，$\\Delta T$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\lambda\\gg L$ の場合を考える（モデルB）．分子どうしは衝突せず，板に当たった分子はその板の温度に応じたエネルギーをもってはね返るとする．このときの熱量 $q_{\\rm B}$ を $p$，$T$，$\\bar v$，$\\Delta T$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "実際の熱量は $q_{\\rm A}$ と $q_{\\rm B}$ のうち小さい方で近似できるものとする．2つのモデルが切り替わる圧力 $p_{\\rm c}$ を求め，そのときの $\\lambda$ を $L$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "この気体の平均自由行程は，$T=300\\,\\mathrm{K}$，$p=1.0\\times10^{5}\\,\\mathrm{Pa}$ で $6.8\\times10^{-8}\\,\\mathrm{m}$ である．$L=5.0\\,\\mathrm{mm}$，$T=300\\,\\mathrm{K}$ とする．\n  \\begin{enumerate}\n    \\item 圧力を $1.0\\times10^{2}\\,\\mathrm{Pa}$，$1.0\\,\\mathrm{Pa}$ に下げたとき，熱量はそれぞれ $1.0\\times10^{5}\\,\\mathrm{Pa}$ のときの何倍になるか．\n    \\item 熱量を $1.0\\times10^{5}\\,\\mathrm{Pa}$ のときの $\\dfrac{1}{100}$ にするには，圧力をいくらにすればよいか．\n  \\end{enumerate}\n  数値は有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：平均自由行程と熱伝導率の圧力依存性（連続領域と希薄領域の切り替わり）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：平均自由行程と熱伝導率の圧力依存性（連続領域と希薄領域の切り替わり）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\lambda=\\dfrac{kT}{\\pi d^2p}$"
+   },
+   {
+    "id": "2",
+    "tex": "$q_{\\rm A}=\\dfrac{3k\\bar v\\,\\Delta T}{4\\pi d^2L}$（$p$ によらない）"
+   },
+   {
+    "id": "3",
+    "tex": "$q_{\\rm B}=\\dfrac{3p\\bar v\\,\\Delta T}{8T}$"
+   },
+   {
+    "id": "4",
+    "tex": "$p_{\\rm c}=\\dfrac{2kT}{\\pi d^2L}$，$\\lambda=\\dfrac{L}{2}$"
+   },
+   {
+    "id": "5",
+    "tex": "(a) $1.0$ 倍，$0.37$ 倍　(b) $2.7\\times10^{-2}\\,\\mathrm{Pa}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　1個の分子が距離 $\\lambda$ 進む間に掃く「半径 $d$ の円柱」の中に，平均して他の分子が1個入ると衝突する：\n\\[ n\\cdot\\pi d^2\\lambda=1,\\qquad n=\\frac{p}{kT}\\quad\\Longrightarrow\\quad \\boldsymbol{\\lambda=\\frac{kT}{\\pi d^2p}} \\]\n\n\\textbf{(2)}　板1から板2の向きに $x$ 軸をとると，温度勾配は $-\\dfrac{\\Delta T}{L}$ である．平面を左（高温側）から横切る分子は距離 $\\lambda$ 左の温度 $T_x+\\lambda\\dfrac{\\Delta T}{L}$，右から横切る分子は $T_x-\\lambda\\dfrac{\\Delta T}{L}$ のエネルギーを運ぶ．両側から横切る分子数はともに $\\dfrac14n\\bar v$ なので，\n\\[ q_{\\rm A}=\\frac14n\\bar v\\cdot\\frac32k\\cdot2\\lambda\\frac{\\Delta T}{L}=\\frac34\\,(n\\lambda)\\,k\\bar v\\frac{\\Delta T}{L} \\]\n(1) より $n\\lambda=\\dfrac{1}{\\pi d^2}$ は圧力によらないので\n\\[ \\boldsymbol{q_{\\rm A}=\\frac{3k\\bar v\\,\\Delta T}{4\\pi d^2L}} \\]\n圧力を下げると「運び手の数 $n$」は減るが，1個が運ぶ距離 $\\lambda$ が同じ割合で伸びるため，両者の積が一定になる．これがモデルAの核心である．\n\n\\textbf{(3)}　衝突がないので，板1を出た分子は温度 $T+\\Delta T$ のエネルギーをそのまま板2へ運び，板2を出た分子は温度 $T$ のエネルギーを板1へ運ぶ．どの面でも両向きの分子数は $\\dfrac14n\\bar v$ なので\n\\[ q_{\\rm B}=\\frac14n\\bar v\\cdot\\frac32k\\Delta T=\\frac38\\cdot\\frac{p}{kT}\\bar v k\\Delta T=\\boldsymbol{\\frac{3p\\bar v\\,\\Delta T}{8T}} \\]\nこちらは運ぶ距離が板の間隔で頭打ちになるので，$p$ に比例する．\n\n\\textbf{(4)}　比をとると\n\\[ \\frac{q_{\\rm B}}{q_{\\rm A}}=\\frac{\\frac38 n\\bar vk\\Delta T}{\\frac34 n\\lambda\\bar vk\\frac{\\Delta T}{L}}=\\frac{L}{2\\lambda} \\]\n$q_{\\rm A}=q_{\\rm B}$ となるのは $\\boldsymbol{\\lambda=\\dfrac{L}{2}}$ のときで，(1) に代入して\n\\[ \\boldsymbol{p_{\\rm c}=\\frac{2kT}{\\pi d^2L}} \\]\n$p>p_{\\rm c}$（$\\lambda<L/2$）では $q_{\\rm A}$ の方が小さく，$p<p_{\\rm c}$ では $q_{\\rm B}$ の方が小さい．すなわち実際の熱量は $p>p_{\\rm c}$ では一定，$p<p_{\\rm c}$ では $p$ に比例して減る（解答図）．\n\n\\textbf{(5)}　$\\lambda$ は $p$ に反比例するので $\\lambda=6.8\\times10^{-8}\\times\\dfrac{1.0\\times10^5}{p}\\,\\mathrm{m}$．切り替わりは $\\lambda=L/2=2.5\\times10^{-3}\\,\\mathrm{m}$，すなわち $p_{\\rm c}=2.7\\,\\mathrm{Pa}$ である．\n\n(a)　$1.0\\times10^2\\,\\mathrm{Pa}$ では $\\lambda=6.8\\times10^{-5}\\,\\mathrm{m}<L/2$ なのでモデルAのまま，熱量は変わらず $\\boldsymbol{1.0}$ 倍．圧力を $\\dfrac{1}{1000}$ にしても断熱効果はまったくない．$1.0\\,\\mathrm{Pa}$ では $\\lambda=6.8\\times10^{-3}\\,\\mathrm{m}>L/2$ なのでモデルBになり，\n\\[ \\frac{q_{\\rm B}}{q_{\\rm A}}=\\frac{L}{2\\lambda}=\\frac{5.0\\times10^{-3}}{2\\times6.8\\times10^{-3}}\\approx\\boldsymbol{0.37}\\ \\text{倍} \\]\n\n(b)　$\\dfrac{L}{2\\lambda}=\\dfrac{1}{100}$ より $\\lambda=50L=0.25\\,\\mathrm{m}$．よって\n\\[ p=1.0\\times10^5\\times\\frac{6.8\\times10^{-8}}{0.25}\\approx\\boldsymbol{2.7\\times10^{-2}\\,\\mathrm{Pa}} \\]\n魔法瓶の真空層がきわめて高い真空を必要とするのは，平均自由行程が層の厚さを大きく超えるまで熱の伝わり方が変わらないからである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "気体の熱伝導では，運び手の数密度 $n$ と1個が運ぶ距離 $\\lambda$ がともに圧力で変わり，積 $n\\lambda$ が一定なので熱伝導率は圧力によらない．平均自由行程が容器の大きさを超えると運ぶ距離が頭打ちになり，そこから初めて熱流が圧力に比例して減る．"
+ },
+ "concepts": [
+  "kinetic-theory",
+  "first-law"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "平均自由行程",
+  "熱伝導",
+  "気体分子運動論",
+  "真空断熱",
+  "モデルの切り替わり"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

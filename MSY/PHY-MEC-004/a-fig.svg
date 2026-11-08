@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240">
+<defs>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<path d="M299.7,168.5 A110,110 0 0 0 100.3,168.5" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="200" cy="215" r="2.5" fill="#222"/>
+<text x="206" y="219" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">O</text>
+<path d="M179.2,96.8 A120,120 0 0 1 220.8,96.8" fill="none" stroke="#222" stroke-width="5"/>
+<line x1="200.0" y1="215.0" x2="179.2" y2="96.8" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="200.0" y1="215.0" x2="220.8" y2="96.8" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="179.2" y1="96.8" x2="110.2" y2="109.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<text x="99.16221867996836" y="126.82306963853503" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">T</text>
+<line x1="220.8" y1="96.8" x2="289.8" y2="109.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<text x="282.83778132003164" y="126.82306963853503" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">T</text>
+<line x1="200.0" y1="92.0" x2="200.0" y2="50.0" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/>
+<text x="208" y="63" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b" text-anchor="start">nRΔθ</text>
+<path d="M205.2,185.5 A30,30 0 0 0 194.8,185.5" fill="none" stroke="#222" stroke-width="1"/>
+<text x="212" y="155" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">Δθ</text>
+<text x="125" y="175" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">R</text>
+<line x1="240.0" y1="65.0" x2="300.0" y2="65.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<text x="304" y="69" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">v</text>
+<text x="20" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">滑車に接する微小部分（質量 λRΔθ）</text>
+<text x="275" y="195" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">加速度 v²/R（O 向き）</text>
+</svg>

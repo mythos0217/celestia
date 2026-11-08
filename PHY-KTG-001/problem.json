@@ -1,0 +1,131 @@
+{
+ "id": "PHY-KTG-001",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-02",
+ "topic": "鏡の球形空洞に閉じこめた光子気体の圧力",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "半径 $r$ の球形の空洞があり，内壁は光を完全に反射する鏡になっている．空洞内には多数の光子が飛び交っており，光子どうしは互いに影響し合わない．光子1個のエネルギーを $\\varepsilon$ とすると，その運動量の大きさは $\\dfrac{\\varepsilon}{c}$（$c$ は光速）であり，壁で反射しても $\\varepsilon$ は変わらないものとする．\nある光子が，図のように壁の法線（中心 O の方向）と角 $\\theta$ をなして壁に当たった．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "1回の反射で，この光子が壁に与える力積の大きさと向きを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この光子が時間 $t$ の間に壁に当たる回数を求めよ．また，この光子が壁に及ぼす力の（時間平均の）大きさの総和を求め，それが $\\theta$ によらないことを示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "空洞内の光子の全エネルギーを $E$ とする．壁が受ける圧力 $p$ を，$E$ と空洞の体積 $V$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ空洞に，光子の代わりに単原子分子の理想気体を入れ，その内部エネルギーを $E$ にした．このときの圧力 $p'$ は $p$ の何倍か．また，1個あたりの運動量の大きさが $q$，速さが $w$ の粒子 $N$ 個（$q,\\,w$ は粒子ごとに異なってよい）が空洞内を飛び交う場合に，(2)(3)の議論を一般化して圧力を $N,\\,V$ と $qw$ の平均値 $\\overline{qw}$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "半径 $5.0$ cm の鏡の空洞に全エネルギー $1.0$ J の光を閉じこめたときの圧力を，有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：鏡の球形空洞に閉じこめた光子気体の圧力",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "大きさ $\\dfrac{2\\varepsilon\\cos\\theta}{c}$，向きは壁に垂直に外向き（中心 O から遠ざかる向き）"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{ct}{2r\\cos\\theta}$ 回，力 $\\dfrac{\\varepsilon}{r}$（$\\theta$ を含まない）"
+   },
+   {
+    "id": "3",
+    "tex": "$p=\\dfrac{E}{3V}$"
+   },
+   {
+    "id": "4",
+    "tex": "$2$ 倍，$p=\\dfrac{N\\overline{qw}}{3V}$"
+   },
+   {
+    "id": "5",
+    "tex": "$6.4\\times10^2$ Pa"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　鏡での反射は，その点で球に接する平面での反射と同じである．壁に平行な運動量成分は変わらず，垂直成分 $\\dfrac{\\varepsilon}{c}\\cos\\theta$ が逆向きになる．中心向きを正とすると，光子の運動量変化は\n\\[ \\frac{\\varepsilon}{c}\\cos\\theta-\\left(-\\frac{\\varepsilon}{c}\\cos\\theta\\right)=\\frac{2\\varepsilon\\cos\\theta}{c} \\]\n作用・反作用により，壁は大きさ $\\boldsymbol{\\dfrac{2\\varepsilon\\cos\\theta}{c}}$ の力積を\\textbf{外向き（中心から遠ざかる向き）}に受ける．\n\\textbf{(2)}　反射角も $\\theta$ なので，光子は次も角 $\\theta$ で壁に当たる．弦の両端と O でできる三角形は二等辺三角形だから，反射から反射までの道のりは $2r\\cos\\theta$．時間 $t$ に進む道のりは $ct$ なので，衝突回数は\n\\[ \\boldsymbol{\\frac{ct}{2r\\cos\\theta}} \\]\n時間 $t$ に壁に与える力積は $\\dfrac{2\\varepsilon\\cos\\theta}{c}\\times\\dfrac{ct}{2r\\cos\\theta}=\\dfrac{\\varepsilon t}{r}$．これを $t$ で割って，力の大きさ（総和）は\n\\[ \\boldsymbol{\\frac{\\varepsilon}{r}} \\]\nとなり，$\\cos\\theta$ が約分されて $\\theta$ によらない．浅い角で当たる光子は1回の力積が小さいが，その分頻繁に当たるためである．\n\\textbf{(3)}　全光子の力の総和は $\\sum\\dfrac{\\varepsilon}{r}=\\dfrac{E}{r}$．これが表面積 $4\\pi r^2$ に一様にかかるので\n\\[ p=\\frac{E}{r\\cdot4\\pi r^2}=\\frac{E}{3\\cdot\\frac43\\pi r^3}=\\boldsymbol{\\frac{E}{3V}} \\]\n\\textbf{(4)}　(2)の議論で，粒子の運動量を $q$，速さを $w$ にすると，1回の力積 $2q\\cos\\theta$，衝突回数 $\\dfrac{wt}{2r\\cos\\theta}$ で，力は $\\dfrac{qw}{r}$．$N$ 個で総和をとり面積で割ると\n\\[ \\boldsymbol{p=\\frac{N\\overline{qw}}{3V}} \\]\n光子では $qw=\\dfrac{\\varepsilon}{c}\\cdot c=\\varepsilon$ なので $p=\\dfrac{E}{3V}$．単原子分子では $qw=mv\\cdot v=2\\cdot\\dfrac12mv^2$ なので $p'=\\dfrac{2E}{3V}$．よって $p'$ は $p$ の $\\boldsymbol{2}$ 倍．同じエネルギーでも「運動量×速さ」が運動エネルギーの何倍かが粒子の種類で違うことが，圧力の違いになる．\n\\textbf{(5)}　$V=\\dfrac43\\pi(5.0\\times10^{-2})^3=5.24\\times10^{-4}$ m$^3$ より\n\\[ p=\\frac{1.0}{3\\times5.24\\times10^{-4}}\\approx\\boldsymbol{6.4\\times10^2\\ \\text{Pa}} \\]\n大気圧の約 $\\dfrac{1}{160}$ である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "球面壁との衝突では1回の力積が $\\cos\\theta$ に比例し衝突頻度が $1/\\cos\\theta$ に比例するため，1粒子が壁に及ぼす力は入射角によらず「運動量×速さ÷半径」になる．この構造は気体分子でも光子でも共通で，$pV=\\frac13N\\overline{qw}$ から光子気体では $pV=\\frac13E$，単原子分子気体では $pV=\\frac23E$ となる．"
+ },
+ "concepts": [
+  "kinetic-theory",
+  "restitution",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "分子運動論",
+  "圧力",
+  "力積",
+  "光子",
+  "運動量",
+  "球形容器"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

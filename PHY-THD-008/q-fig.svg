@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 280">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<rect x="60" y="110" width="150" height="130" rx="18" fill="none" stroke="#222" stroke-width="3.2"/>
+<rect x="300" y="80" width="200" height="160" rx="18" fill="none" stroke="#222" stroke-width="3.2"/>
+<polyline points="150.0,110.0 150.0,50.0 395.0,50.0 395.0,80.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<polyline points="160.0,110.0 160.0,60.0 385.0,60.0 385.0,80.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="272" cy="55" r="9" fill="none" stroke="#222" stroke-width="1.6"/><line x1="266.0" y1="49.0" x2="278.0" y2="61.0" stroke="#222" stroke-width="1.4"/>
+<line x1="266.0" y1="61.0" x2="278.0" y2="49.0" stroke="#222" stroke-width="1.4"/>
+<text x="272" y="32" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Noto Sans CJK JP, sans-serif">コック </tspan><tspan font-family="Times New Roman, serif" font-style="italic">C</tspan></text>
+<text x="72" y="100" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">A</text>
+<text x="488" y="70" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">B</text>
+<text x="135" y="160" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Noto Sans CJK JP, sans-serif">容積 </tspan><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan></text>
+<text x="135" y="188" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Noto Sans CJK JP, sans-serif">圧力 3</tspan><tspan font-family="Times New Roman, serif" font-style="italic">p</tspan></text>
+<text x="135" y="214" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Noto Sans CJK JP, sans-serif">温度 </tspan><tspan font-family="Times New Roman, serif" font-style="italic">T</tspan></text>
+<text x="400" y="140" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Noto Sans CJK JP, sans-serif">容積 2</tspan><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan></text>
+<text x="400" y="170" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Noto Sans CJK JP, sans-serif">圧力 </tspan><tspan font-family="Times New Roman, serif" font-style="italic">p</tspan></text>
+<text x="400" y="198" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Noto Sans CJK JP, sans-serif">温度 2</tspan><tspan font-family="Times New Roman, serif" font-style="italic">T</tspan></text>
+<text x="280" y="268" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">（容器・管・コックはすべて断熱材）</text>
+</svg>

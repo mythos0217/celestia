@@ -1,0 +1,113 @@
+{
+ "id": "PHY-THD-009",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "定圧で押し込む不可逆な流入と第1法則",
+ "course": "物理",
+ "level": 4,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，左端になめらかに動くピストン D をもつシリンダー A と，容積 $V_B$ の容器 B が，弁 C のついた細い管でつながれている．シリンダー・ピストン・容器・管はすべて断熱材でできていて熱容量は無視でき，管の容積も無視できる．はじめ C は閉じており，A には物質量 $n$，絶対温度 $T_0$ の単原子分子理想気体が体積 $V_0$ で入っていて（このときの圧力を $P_0$ とする），B は真空である．気体定数を $R$ とする．\n\nC を開き，A 内の気体の圧力がつねに $P_0$ に保たれるように D をゆっくり押し込んでいくと，気体は C を通って B へ流れ込んだ．A 内の気体の温度は $T_0$ のまま変わらず，B 内の気体は各瞬間に一様とみなせるものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A の体積が $V_0-u$ になったとき（$0<u\\le V_0$），B 内の気体の圧力 $P_B$ を $P_0$，$u$，$V_B$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "A 内の気体を最後まですべて B へ押し込むことができるための $V_B$ の条件を求めよ．また，押し込み終えた後の B 内の気体の絶対温度を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次に，B にはじめから物質量 $n$，絶対温度 $T_0$ の同じ気体が入っている場合を考える（ほかの条件は同じ）．A 内の気体をすべて B へ押し込むことができるための $V_B$ の条件と，押し込み終えた後の B 内の気体の絶対温度を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：定圧で押し込む不可逆な流入と第1法則",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$P_B=\\dfrac{5u}{3V_B}P_0$"
+   },
+   {
+    "id": "2",
+    "tex": "$V_B\\ge\\dfrac53V_0$，$\\dfrac53T_0$"
+   },
+   {
+    "id": "3",
+    "tex": "$V_B\\ge\\dfrac83V_0$，$\\dfrac43T_0$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方} C を通る流れは不可逆で，B 内の気体に $pV^{5/3}=$一定 は使えない．しかし「B に入った気体」を系とみれば，熱力学第1法則 $\\Delta U=Q+W$ はいつでも成り立つ．断熱なので $Q=0$．この系が受ける仕事は，後ろから押す気体（すなわち D）による仕事だけである（B は変形しない容器で，真空への流入では仕事をしない）．A の圧力は一定 $P_0$ なので，A の体積を $u$ 減らす間にされる仕事は $W=P_0u$．\n\n\\textbf{(1)} B に移った物質量 $n'$ は，A 内で体積 $u$ を占めていた分だから $P_0u=n'RT_0$．B 内の気体の内部エネルギーは $\\dfrac32P_BV_B$ なので，第1法則より\n\\[ \\frac32P_BV_B-\\frac32n'RT_0=P_0u\\qquad\\therefore\\quad \\frac32P_BV_B=\\frac32P_0u+P_0u=\\frac52P_0u \\]\n\\[ \\therefore\\quad \\boldsymbol{P_B=\\frac{5u}{3V_B}P_0} \\]\n1 mol 移すごとに，内部エネルギー $\\dfrac32RT_0$ と押し込みの仕事 $RT_0$ の合計 $\\dfrac52RT_0$ が B に持ち込まれる．\n\n\\textbf{(2)} 気体が A から B へ流れ込み続けるには $P_B\\le P_0$ が必要．$P_B$ は $u$ に比例して増えるので，最後 $u=V_0$ で成り立てば途中でも成り立つ．\n\\[ \\frac{5V_0}{3V_B}\\le1\\qquad\\therefore\\quad \\boldsymbol{V_B\\ge\\frac53V_0} \\]\nこのとき $\\dfrac32nRT=\\dfrac52P_0V_0=\\dfrac52nRT_0$ より $\\boldsymbol{T=\\dfrac53T_0}$．温度は $V_B$ によらない（条件を満たす限り）．\n\n\\textbf{(3)} B に初めからある気体の内部エネルギー $\\dfrac32nRT_0$ を加えて同様に\n\\[ \\frac32P_BV_B=\\frac32nRT_0+\\frac52P_0u \\]\n$u=V_0$ で $\\dfrac32(2n)RT=\\dfrac32nRT_0+\\dfrac52nRT_0=4nRT_0$ より $\\boldsymbol{T=\\dfrac43T_0}$．このとき $P_B=\\dfrac{2nR\\cdot\\frac43T_0}{V_B}=\\dfrac{8V_0}{3V_B}P_0$．$P_B$ は $u$ について単調増加なので，最後に $P_B\\le P_0$ であればよく\n\\[ \\boldsymbol{V_B\\ge\\frac83V_0} \\]\n（このとき最初の $P_B=\\dfrac{V_0}{V_B}P_0<P_0$ も満たされ，流れは始まる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "不可逆な流入でも，流れ込む気体を系にとって第1法則を使えば，一定圧力で押し込む仕事 $P_0\\Delta V$ から終状態が決まる．受け手の圧力は押し込んだ体積に比例して増え，「押し込みきれる」条件が容器の容積の条件として現れる．"
+ },
+ "concepts": [
+  "first-law",
+  "work-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱力学第一法則",
+  "不可逆過程",
+  "定圧での押し込み",
+  "真空への流入",
+  "条件の逆算"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300">
+<defs><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker></defs>
+<rect x="274" y="50" width="12" height="190" fill="#ccc" stroke="#222" stroke-width="1.6"/>
+<text x="240" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">板（面積 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="16">S</tspan>，質量 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="16">M</tspan>）</text>
+<circle cx="70" cy="80" r="4" fill="#222"/>
+<line x1="76" y1="80" x2="100" y2="80" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<circle cx="130" cy="120" r="4" fill="#222"/>
+<line x1="124" y1="120" x2="100" y2="120" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<circle cx="90" cy="170" r="4" fill="#222"/>
+<line x1="96" y1="170" x2="120" y2="170" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<circle cx="190" cy="90" r="4" fill="#222"/>
+<line x1="184" y1="90" x2="160" y2="90" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<circle cx="200" cy="200" r="4" fill="#222"/>
+<line x1="206" y1="200" x2="230" y2="200" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<circle cx="150" cy="225" r="4" fill="#222"/>
+<line x1="144" y1="225" x2="120" y2="225" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<circle cx="230" cy="150" r="4" fill="#222"/>
+<line x1="236" y1="150" x2="260" y2="150" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<circle cx="60" cy="230" r="4" fill="#222"/>
+<line x1="54" y1="230" x2="30" y2="230" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<circle cx="340" cy="80" r="4" fill="#222"/>
+<line x1="346" y1="80" x2="370" y2="80" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<circle cx="400" cy="130" r="4" fill="#222"/>
+<line x1="394" y1="130" x2="370" y2="130" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<circle cx="470" cy="90" r="4" fill="#222"/>
+<line x1="476" y1="90" x2="500" y2="90" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<circle cx="360" cy="190" r="4" fill="#222"/>
+<line x1="354" y1="190" x2="330" y2="190" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<circle cx="440" cy="220" r="4" fill="#222"/>
+<line x1="446" y1="220" x2="470" y2="220" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<circle cx="500" cy="170" r="4" fill="#222"/>
+<line x1="494" y1="170" x2="470" y2="170" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<circle cx="320" cy="140" r="4" fill="#222"/>
+<line x1="326" y1="140" x2="350" y2="140" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<circle cx="480" cy="250" r="4" fill="#222"/>
+<line x1="474" y1="250" x2="450" y2="250" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<text x="20" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">分子（質量 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="15">m</tspan>，速さ <tspan font-family="Times New Roman, serif" font-style="italic" font-size="15">v</tspan>，<tspan font-family="Times New Roman, serif" font-style="italic" font-size="15">±x</tspan> 向き）</text>
+<line x1="288" y1="265" x2="330" y2="265" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="335" y="270" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">u</text>
+<line x1="20" y1="285" x2="540" y2="285" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="530" y="278" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+</svg>

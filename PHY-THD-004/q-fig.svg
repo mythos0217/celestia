@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 330" width="460" height="330">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="q-ad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+</defs>
+<line x1="90.0" y1="50.0" x2="90.0" y2="290.0" stroke="#222" stroke-width="1.6"/>
+<line x1="190.0" y1="50.0" x2="190.0" y2="290.0" stroke="#222" stroke-width="1.6"/>
+<line x1="90.0" y1="290.0" x2="190.0" y2="290.0" stroke="#222" stroke-width="1.6"/>
+<line x1="90.0" y1="50.0" x2="100.0" y2="50.0" stroke="#222" stroke-width="3"/>
+<line x1="180.0" y1="50.0" x2="190.0" y2="50.0" stroke="#222" stroke-width="3"/>
+<rect x="91" y="202.0" width="98" height="8" fill="#222"/>
+<text x="140.0" y="260.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">気体</text>
+<polyline points="116.0,278.0 120.0,278.0 123.3,283.0 130.0,273.0 136.7,283.0 143.3,273.0 150.0,283.0 156.7,273.0 160.0,278.0 164.0,278.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="208.0" y1="50.0" x2="208.0" y2="290.0" stroke="#222" stroke-width="1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<text x="214.0" y="175.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">L</text>
+<line x1="74.0" y1="210.0" x2="74.0" y2="290.0" stroke="#222" stroke-width="1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<text x="68" y="255.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="end">L/3</text>
+<text x="140.0" y="315.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">図1（開口端が上）</text>
+<text x="200.0" y="44.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">縁</text>
+<text x="86.0" y="198.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="end">ピストン</text>
+<line x1="320.0" y1="50.0" x2="320.0" y2="290.0" stroke="#222" stroke-width="1.6"/>
+<line x1="420.0" y1="50.0" x2="420.0" y2="290.0" stroke="#222" stroke-width="1.6"/>
+<line x1="320.0" y1="50.0" x2="420.0" y2="50.0" stroke="#222" stroke-width="1.6"/>
+<line x1="320.0" y1="290.0" x2="330.0" y2="290.0" stroke="#222" stroke-width="3"/>
+<line x1="410.0" y1="290.0" x2="420.0" y2="290.0" stroke="#222" stroke-width="3"/>
+<rect x="321" y="130.0" width="98" height="8" fill="#222"/>
+<text x="370.0" y="104.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">気体</text>
+<polyline points="346.0,62.0 350.0,62.0 353.3,67.0 360.0,57.0 366.7,67.0 373.3,57.0 380.0,67.0 386.7,57.0 390.0,62.0 394.0,62.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="438.0" y1="50.0" x2="438.0" y2="290.0" stroke="#222" stroke-width="1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<text x="444.0" y="175.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">L</text>
+<line x1="304.0" y1="50.0" x2="304.0" y2="130.0" stroke="#222" stroke-width="1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<text x="298" y="95.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="end">L/3</text>
+<text x="370.0" y="315.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">図2（開口端が下）</text>
+<text x="430.0" y="306.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">縁</text>
+<text x="316.0" y="154.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="end">ピストン</text>
+</svg>

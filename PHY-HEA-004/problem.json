@@ -1,0 +1,130 @@
+{
+ "id": "PHY-HEA-004",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-01",
+ "topic": "放射シールドで囲んだ探査機の表面温度（片面だけ磨いたシールドの向きの効果）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "光源から遠く離れた宇宙空間（温度 $0\\,$K とみなし，外から放射は入ってこない）に，表面積 $A$ の球形の探査機がある．探査機の内部では単位時間あたり $I$ の熱が発生し，探査機の表面は黒体（入射する放射をすべて吸収する面）である．温度 $T$ の黒体の面は，単位面積・単位時間あたり $\\sigma T^4$ の放射のエネルギーを出す（$\\sigma$ は定数）．また，放射率 $\\varepsilon$（$0<\\varepsilon<1$）の面は，単位面積・単位時間あたり $\\varepsilon\\sigma T^4$ を出し，入射した放射のうち割合 $\\varepsilon$ を吸収して残りを反射する．\n\n探査機を薄い球殻のシールドで囲む．シールドは探査機の表面にごく近く，どの面の面積も $A$ とみなせ，向かい合う2つの面の一方から出た放射はすべて他方に届く．シールドの内面と外面の温度は等しく，熱は放射だけで伝わる．十分時間がたった定常状態を考える．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "シールドがないときの探査機の表面温度 $T_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "両面とも黒体のシールドを $N$ 枚重ねて囲んだときの探査機の表面温度を，$T_0$ を用いて表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "内面が黒体で，外面を磨いて放射率を $\\varepsilon$ にしたシールド1枚で囲んだ（図の左）．探査機とシールドの温度を，$T_0$ を用いて表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) のシールドを裏返し，内面の放射率が $\\varepsilon$，外面が黒体となるようにして囲んだ（図の右）．黒体の面と放射率 $\\varepsilon$ の面が向かい合うとき，両者の間で単位面積・単位時間に正味やりとりされる放射のエネルギーを，反射を追って求めよ．それを用いて，探査機とシールドの温度を $T_0$ を用いて表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "$T_0=300\\,$K，$\\varepsilon=0.050$ のとき，(3)，(4) のそれぞれの場合の探査機とシールドの温度を有効数字3桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：放射シールドで囲んだ探査機の表面温度（片面だけ磨いたシールドの向きの効果）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T_0=\\left(\\dfrac{I}{\\sigma A}\\right)^{1/4}$"
+   },
+   {
+    "id": "2",
+    "tex": "$(N+1)^{1/4}T_0$"
+   },
+   {
+    "id": "3",
+    "tex": "探査機 $\\left(1+\\dfrac1\\varepsilon\\right)^{1/4}T_0$，シールド $\\varepsilon^{-1/4}T_0$"
+   },
+   {
+    "id": "4",
+    "tex": "正味 $\\varepsilon\\sigma(T_{\\rm p}^4-T_{\\rm s}^4)$（$T_{\\rm p}$：黒体の面，$T_{\\rm s}$：放射率 $\\varepsilon$ の面の温度）．探査機 $\\left(1+\\dfrac1\\varepsilon\\right)^{1/4}T_0$，シールド $T_0$"
+   },
+   {
+    "id": "5",
+    "tex": "(3) 探査機 $642\\,$K，シールド $634\\,$K　(4) 探査機 $642\\,$K，シールド $300\\,$K"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "定常状態では，探査機で発生した熱 $I$ が，どの面を通っても正味 $I$ の割合で外へ流れ出ている．\n\n\\textbf{(1)} $\\sigma AT_0^4=I$ より $\\boldsymbol{T_0=\\left(\\dfrac{I}{\\sigma A}\\right)^{1/4}}$．\n\n\\textbf{(2)} 探査機の温度を $\\tau_0$，内側から $k$ 番目のシールドの温度を $\\tau_k$（$k=1,\\dots,N$）とする．$k$ 番目のすき間で向かい合う黒体の面どうしの正味のやりとりは $\\sigma A(\\tau_{k-1}^4-\\tau_k^4)$ で，これが $I=\\sigma AT_0^4$ に等しいので，すき間を1つ通るごとに $\\tau^4$ は $T_0^4$ ずつ下がる．最も外のシールドは宇宙へ $\\sigma A\\tau_N^4=I$ を出すので $\\tau_N^4=T_0^4$．よって探査機は\n\\[ \\tau_0^4=(N+1)T_0^4,\\qquad \\boldsymbol{\\tau_0=(N+1)^{1/4}T_0} \\]\n電気回路にたとえると，各すき間と外側への放射が同じ大きさの「抵抗」として直列につながり，$T^4$ が電位の役をする．\n\n\\textbf{(3)} 探査機の温度を $T_{\\rm p}$，シールドの温度を $T_{\\rm s}$ とする．すき間は黒体どうしなので $I=\\sigma A(T_{\\rm p}^4-T_{\\rm s}^4)$．外面は放射率 $\\varepsilon$ で，外からは何も入らないので $I=\\varepsilon\\sigma AT_{\\rm s}^4$．よって\n\\[ T_{\\rm s}^4=\\frac{T_0^4}{\\varepsilon},\\qquad T_{\\rm p}^4=T_{\\rm s}^4+T_0^4=\\left(1+\\frac1\\varepsilon\\right)T_0^4 \\]\n\\[ \\boldsymbol{T_{\\rm p}=\\left(1+\\frac1\\varepsilon\\right)^{1/4}T_0},\\qquad \\boldsymbol{T_{\\rm s}=\\varepsilon^{-1/4}T_0} \\]\n外面が熱を出しにくいので，シールド自身が高温になって熱を捨てる．\n\n\\textbf{(4)} 黒体の面（温度 $T_{\\rm p}$）から出た $\\sigma T_{\\rm p}^4$ のうち，放射率 $\\varepsilon$ の面が $\\varepsilon\\sigma T_{\\rm p}^4$ を吸収し，残り $(1-\\varepsilon)\\sigma T_{\\rm p}^4$ を反射する．反射された放射は黒体の面にすべて吸収されて，そこで終わる．一方，放射率 $\\varepsilon$ の面が出す $\\varepsilon\\sigma T_{\\rm s}^4$ は黒体の面にすべて吸収される．よって正味のやりとりは\n\\[ \\boldsymbol{\\varepsilon\\sigma(T_{\\rm p}^4-T_{\\rm s}^4)} \\]\n（$T_{\\rm p}=T_{\\rm s}$ で $0$ になり，熱平衡と矛盾しない．）定常状態の条件は\n\\[ I=\\varepsilon\\sigma A(T_{\\rm p}^4-T_{\\rm s}^4),\\qquad I=\\sigma AT_{\\rm s}^4 \\]\nより $T_{\\rm s}^4=T_0^4$，$T_{\\rm p}^4=T_0^4+\\dfrac{T_0^4}{\\varepsilon}$．\n\\[ \\boldsymbol{T_{\\rm p}=\\left(1+\\frac1\\varepsilon\\right)^{1/4}T_0},\\qquad \\boldsymbol{T_{\\rm s}=T_0} \\]\n(2) のたとえでは，(3) も (4) も「抵抗」$1$ と $1/\\varepsilon$ の直列で，順序を入れかえても全体は同じなので探査機の温度は変わらない．しかし，その間の点（シールド）の「電位」$T_{\\rm s}^4$ は順序で変わる．\n\n\\textbf{(5)} $1+\\dfrac1\\varepsilon=21$ より $T_{\\rm p}=21^{1/4}\\times300=\\boldsymbol{642\\,\\text{K}}$（(3)，(4) 共通）．シールドは (3) で $20^{1/4}\\times300=\\boldsymbol{634\\,\\text{K}}$，(4) で $\\boldsymbol{300\\,\\text{K}}$．黒体のシールド1枚（$2^{1/4}\\times300=357\\,$K）と比べ，磨いた面を使うと探査機の保温効果がずっと大きい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "定常状態では各すき間を通る正味のエネルギー流がすべて発熱 $I$ に等しく，$T^4$ を電位とみなすと，各すき間と外への放射が直列の「抵抗」（黒体どうしは $1$，放射率 $\\varepsilon$ の面を含むと $1/\\varepsilon$）になる．そのため探査機の温度はシールドの向きによらないが，シールド自身の温度は向きで大きく異なる．"
+ },
+ "concepts": [
+  "heat-temperature",
+  "coulomb-field",
+  "nuclear-decay"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱放射",
+  "シュテファン・ボルツマンの法則",
+  "放射率",
+  "定常状態",
+  "熱抵抗"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

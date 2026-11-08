@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 245" width="420" height="245" font-family="'Times New Roman', serif">
+<line x1="40" y1="200" x2="400" y2="200" stroke="currentColor" stroke-width="2"/>
+<polygon points="120,200 120,60 120.77,74.63 123.06,89.11 126.85,103.26 132.1,116.94 138.76,130 146.74,142.29 155.96,153.68 166.32,164.04 177.71,173.26 190,181.24 203.06,187.9 216.74,193.15 230.89,196.94 245.37,199.23 260,200" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.6"/>
+<circle cx="128" cy="52" r="8" class="f-body" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.4" data-phys="body:m"/>
+<text x="128" y="38" font-size="14" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">m</text>
+<text x="170" y="182" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">M</text>
+<line x1="96" y1="60" x2="96" y2="200" stroke="currentColor" stroke-width="1.2"/>
+<text x="84" y="134" font-size="14" text-anchor="end" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">h</text>
+<line x1="120" y1="214" x2="260" y2="214" stroke="currentColor" stroke-width="1.2"/>
+<text x="190" y="234" font-size="14" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">L</text>
+</svg>

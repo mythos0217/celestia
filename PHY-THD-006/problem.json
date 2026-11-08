@@ -1,0 +1,144 @@
+{
+ "id": "PHY-THD-006",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "P–V 直線過程での吸熱・放熱の切り替わり点から定積モル比熱を決める",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "物質量 $n$ の理想気体（定積モル比熱 $C_V$ は未知の定数）を，図の $P$–$V$ グラフの直線に沿って，状態 A$(V_0,\\,4P_0)$ から状態 C$(4V_0,\\,P_0)$ までゆっくり膨張させる．この直線を延長すると $V=5V_0$ で $P=0$ となる．気体定数を $R$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この過程で気体の温度が最高になるときの体積と，最高温度を求めよ．また，それは気体の種類（$C_V$ の値）によるか．"
+     },
+     {
+      "id": "2",
+      "tex": "気体が熱を吸収する状態から放出する状態へ切り替わるときの体積 $V_{\\text{s}}$ を，$C_V,\\,R,\\,V_0$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "実験の結果，$V_{\\text{s}}=\\dfrac{35}{12}V_0$ であった．$C_V$ を $R$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3)の気体について，A→C の間に気体が吸収した熱量と放出した熱量をそれぞれ $P_0V_0$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "(1)(2)より，$V_{\\text{s}}$ は温度が最高になる体積よりつねに大きい．温度が下がりつつ熱を吸収している区間で，気体のエネルギー収支はどうなっているか説明し，(3)の気体についてこの区間で吸収した熱量を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：P–V 直線過程での吸熱・放熱の切り替わり点から定積モル比熱を決める",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：P–V 直線過程での吸熱・放熱の切り替わり点から定積モル比熱を決める",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V=\\dfrac52V_0$，$T_{\\max}=\\dfrac{25P_0V_0}{4nR}$，気体の種類によらない"
+   },
+   {
+    "id": "2",
+    "tex": "$V_{\\text{s}}=\\dfrac{5(C_V+R)}{2C_V+R}V_0$"
+   },
+   {
+    "id": "3",
+    "tex": "$C_V=\\dfrac52R$"
+   },
+   {
+    "id": "4",
+    "tex": "吸収 $\\dfrac{529}{48}P_0V_0$，放出 $\\dfrac{169}{48}P_0V_0$"
+   },
+   {
+    "id": "5",
+    "tex": "吸収した熱と内部エネルギーの減少分の和を外への仕事に使っている，$\\dfrac{25}{48}P_0V_0$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　直線の式は $P=P_0\\left(5-\\dfrac{V}{V_0}\\right)$．状態方程式より\n\\[ T=\\frac{PV}{nR}=\\frac{P_0}{nRV_0}V(5V_0-V) \\]\nは $V$ の2次関数で，$V=\\boldsymbol{\\dfrac52V_0}$ で最大 $\\boldsymbol{T_{\\max}=\\dfrac{25P_0V_0}{4nR}}$．$T$ は状態方程式だけで決まるので\\textbf{気体の種類によらない}．\n\\textbf{(2)}　体積が $\\Delta V$ 増える間の吸収熱は，第1法則より $\\Delta Q=\\Delta U+P\\Delta V$．$\\Delta U=nC_V\\Delta T=\\dfrac{C_V}{R}\\Delta(PV)$ であり，直線上で $\\Delta(PV)=P_0\\left(5-\\dfrac{2V}{V_0}\\right)\\Delta V$ なので\n\\[ \\frac{\\Delta Q}{\\Delta V}=\\frac{C_V}{R}P_0\\left(5-\\frac{2V}{V_0}\\right)+P_0\\left(5-\\frac{V}{V_0}\\right)=\\frac{P_0}{R}\\left\\{5(C_V+R)-(2C_V+R)\\frac{V}{V_0}\\right\\} \\]\nこれは $V$ について減少する1次式なので，正から負に変わるのは\n\\[ \\boldsymbol{V_{\\text{s}}=\\frac{5(C_V+R)}{2C_V+R}V_0} \\]\n\\textbf{(3)}　$\\dfrac{5(C_V+R)}{2C_V+R}=\\dfrac{35}{12}$ より $60C_V+60R=70C_V+35R$，$\\boldsymbol{C_V=\\dfrac52R}$（2原子分子と同じ値）．\n\\textbf{(4)}　$C_V=\\dfrac52R$ のとき $\\dfrac{\\Delta Q}{\\Delta V}=P_0\\left(\\dfrac{35}{2}-6\\dfrac{V}{V_0}\\right)$．$x=\\dfrac V{V_0}$ として\n\\[ Q_{\\text{吸}}=P_0V_0\\int_{1}^{35/12}\\left(\\frac{35}{2}-6x\\right)dx=\\boldsymbol{\\frac{529}{48}P_0V_0},\\qquad Q_{\\text{放}}=-P_0V_0\\int_{35/12}^{4}\\left(\\frac{35}{2}-6x\\right)dx=\\boldsymbol{\\frac{169}{48}P_0V_0} \\]\n検算：A→C 全体では $\\Delta U=\\dfrac52(P_0\\cdot4V_0-4P_0V_0)=0$，仕事は台形の面積 $\\dfrac{4P_0+P_0}{2}\\cdot3V_0=\\dfrac{15}{2}P_0V_0$．$Q_{\\text{吸}}-Q_{\\text{放}}=\\dfrac{360}{48}P_0V_0=\\dfrac{15}{2}P_0V_0$ で一致する．\n\\textbf{(5)}　(2)の結果から $V_{\\text{s}}-\\dfrac52V_0=\\dfrac{5RV_0}{2(2C_V+R)}>0$．温度最高の点では $\\Delta U=0$ だが，気体はまだ外に $P\\Delta V>0$ の仕事をしているので，その分の熱を吸収している．その先しばらくは，内部エネルギーの減少だけでは外への仕事をまかなえず，\\textbf{吸収した熱と内部エネルギーの減少分の両方を外への仕事に使っている}．$C_V=\\dfrac52R$ のとき，$\\dfrac52V_0$ から $\\dfrac{35}{12}V_0$ までの吸収熱は\n\\[ P_0V_0\\int_{5/2}^{35/12}\\left(\\frac{35}{2}-6x\\right)dx=\\boldsymbol{\\frac{25}{48}P_0V_0} \\]\n（この間 $\\Delta U=-\\dfrac{125}{288}P_0V_0$，仕事 $\\dfrac{275}{288}P_0V_0$ で $\\Delta Q=\\Delta U+W$ を満たす．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "$P$–$V$ 直線上の温度最高点は状態方程式だけで決まるが，吸熱から放熱への切り替わりは $\\Delta Q=\\frac{C_V}{R}\\Delta(PV)+P\\Delta V$ の符号で決まり $C_V$ に依存して最高温度点より必ず先にある．逆に切り替わり点の観測から $C_V$ を決定でき，その間は温度が下がりながら吸熱している．"
+ },
+ "concepts": [
+  "first-law",
+  "heat-temperature",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "PVグラフ",
+  "直線過程",
+  "吸熱と放熱",
+  "定積モル比熱",
+  "第1法則",
+  "最高温度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

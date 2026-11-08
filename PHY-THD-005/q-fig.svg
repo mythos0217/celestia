@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 300" width="380" height="300">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="q-ad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+</defs>
+<line x1="60.0" y1="260.0" x2="350.0" y2="260.0" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+<line x1="60.0" y1="260.0" x2="60.0" y2="25.0" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+<text x="348.0" y="280.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">T</text>
+<text x="50.0" y="33.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">P</text>
+<text x="54.0" y="278.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="end">O</text>
+<polygon points="180.0,170.0 300.0,170.0 300.0,80.0 180.0,80.0" fill="none" stroke="#222" stroke-width="1.8"/>
+<line x1="234.0" y1="170.0" x2="249.6" y2="170.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<line x1="300.0" y1="129.5" x2="300.0" y2="117.8" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<line x1="246.0" y1="80.0" x2="230.4" y2="80.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<line x1="180.0" y1="120.5" x2="180.0" y2="132.2" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<circle cx="180.0" cy="170.0" r="3" fill="#222"/>
+<text x="172.0" y="188.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="end">A</text>
+<circle cx="300.0" cy="170.0" r="3" fill="#222"/>
+<text x="308.0" y="188.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start">B</text>
+<circle cx="300.0" cy="80.0" r="3" fill="#222"/>
+<text x="308.0" y="74.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start">C</text>
+<circle cx="180.0" cy="80.0" r="3" fill="#222"/>
+<text x="172.0" y="74.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="end">D</text>
+<line x1="180.0" y1="260.0" x2="180.0" y2="170.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="300.0" y1="260.0" x2="300.0" y2="170.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="60.0" y1="170.0" x2="180.0" y2="170.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="60.0" y1="80.0" x2="180.0" y2="80.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="172.0" y="280.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">T<tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="286.0" y="280.0" font-size="15" fill="#222"><tspan font-family="Noto Sans CJK JP, sans-serif">2</tspan><tspan font-family="Times New Roman, serif" font-style="italic">T</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="30.0" y="175.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">P<tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="20.0" y="85.0" font-size="15" fill="#222"><tspan font-family="Noto Sans CJK JP, sans-serif">2</tspan><tspan font-family="Times New Roman, serif" font-style="italic">P</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+</svg>

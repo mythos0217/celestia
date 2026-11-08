@@ -1,0 +1,131 @@
+{
+ "id": "PHY-THD-004",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "シリンダーの向きで変わる定圧加熱の所要時間とピストンの質量の決定",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "断熱材でできたシリンダー（断面積 $S$）の一端は閉じており，他端は開いていて，その開口端の内側の縁（閉じた端から距離 $L$）でピストンが止まり，それより外へは出ない．ピストンは断熱材でできた質量 $M$（未知）の薄い板で，摩擦なく動く．シリンダー内には単原子分子の理想気体 $1$ mol と，一定の電力 $H$ のヒーターがある．大気圧を $P_0$，気体定数を $R$，重力加速度の大きさを $g$ とする．ヒーターの熱容量は無視でき，加熱はゆっくり行われるものとする．\n\\textbf{実験1}　図1のように開口端を上にして鉛直に立て，気柱の長さが $\\dfrac L3$ になるよう温度を調整した．このときの温度を $T_{\\text{a}}$ とする．ヒーターを入れると，気柱の長さが $\\dfrac{2L}{3}$ になるまでに時間 $\\tau_1$ かかった．\n\\textbf{実験2}　図2のように開口端を下にして鉛直に立て，気柱の長さが $\\dfrac L3$ になるよう温度を調整してからヒーターを入れると，気柱の長さが $\\dfrac{2L}{3}$ になるまでの時間は $\\dfrac{\\tau_1}{2}$ であった．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\dfrac{Mg}{S}$ を $P_0$ で表せ．また $T_{\\text{a}}$ を $P_0,\\,S,\\,L,\\,R$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "実験2の加熱前の温度を $T_{\\text{a}}$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "実験2でヒーターを入れ続けた．ピストンが縁に達するのは加熱開始から何 $\\tau_1$ 後か．また，そのときの温度を $T_{\\text{a}}$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "ピストンが縁に達した後の，加熱開始から時間 $t$ における温度 $T(t)$ を $T_{\\text{a}},\\,t,\\,\\tau_1$ で表せ．また，気体の圧力が $P_0+\\dfrac{Mg}{S}$ になる時刻と，そのときの温度を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4)で圧力が $P_0+\\dfrac{Mg}{S}$ になった瞬間にヒーターを切り，シリンダーをゆっくり回転させて開口端を上に向けた．回転の間，ピストンはどうなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：シリンダーの向きで変わる定圧加熱の所要時間とピストンの質量の決定",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{Mg}{S}=\\dfrac{P_0}{3}$，$T_{\\text{a}}=\\dfrac{4P_0SL}{9R}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{T_{\\text{a}}}{2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\tau_1$ 後，$\\dfrac32T_{\\text{a}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$T(t)=\\left(\\dfrac{5t}{3\\tau_1}-\\dfrac16\\right)T_{\\text{a}}$，時刻 $\\dfrac{19}{10}\\tau_1$，温度 $3T_{\\text{a}}$"
+   },
+   {
+    "id": "5",
+    "tex": "縁に押しつけられたまま動かず，開口端が真上を向いた瞬間に縁から受ける力が $0$ になる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　ピストンが動いている間はつり合いが保たれ，気体の圧力は向きで決まる一定値（定圧変化）．定圧変化で加えた熱は $Q=\\dfrac52P\\Delta V$ なので，同じ体積変化でも圧力が違えば必要な熱（＝時間）が違う．これを逆に使って $M$ を決める．\n\\textbf{(1)}　ピストンのつり合いより，気体の圧力は\n\\[ \\text{実験1}:\\ P_{\\text{上}}=P_0+\\frac{Mg}{S},\\qquad \\text{実験2}:\\ P_{\\text{下}}=P_0-\\frac{Mg}{S} \\]\n単原子分子の定圧変化では $Q=\\dfrac52R\\Delta T=\\dfrac52P\\Delta V$．体積変化はどちらも $\\Delta V=\\dfrac{SL}{3}$ だから\n\\[ H\\tau_1=\\frac52P_{\\text{上}}\\frac{SL}{3},\\qquad H\\frac{\\tau_1}{2}=\\frac52P_{\\text{下}}\\frac{SL}{3} \\]\n比をとって $P_{\\text{下}}=\\dfrac12P_{\\text{上}}$，すなわち $P_0-\\dfrac{Mg}{S}=\\dfrac12\\left(P_0+\\dfrac{Mg}{S}\\right)$ より $\\boldsymbol{\\dfrac{Mg}{S}=\\dfrac{P_0}{3}}$．このとき $P_{\\text{上}}=\\dfrac43P_0$，$P_{\\text{下}}=\\dfrac23P_0$．状態方程式 $P_{\\text{上}}\\dfrac{SL}{3}=RT_{\\text{a}}$ より $\\boldsymbol{T_{\\text{a}}=\\dfrac{4P_0SL}{9R}}$．\n\\textbf{(2)}　体積が同じで圧力が半分なので，温度も半分で $\\boldsymbol{\\dfrac{T_{\\text{a}}}{2}}$．\n\\textbf{(3)}　$\\dfrac{2L}{3}$ から $L$ までの体積変化も $\\dfrac{SL}{3}$ で圧力も同じなので，さらに $\\dfrac{\\tau_1}{2}$ かかる．よって加熱開始から $\\boldsymbol{\\tau_1}$ 後．温度は $P_{\\text{下}}SL=RT$ より\n\\[ T=\\frac{\\frac23P_0SL}{R}=\\frac12\\cdot\\frac{4P_0SL}{3R}=\\boldsymbol{\\frac32T_{\\text{a}}} \\]\n\\textbf{(4)}　縁に達した後は体積一定（定積変化）で，$H\\Delta t=\\dfrac32R\\Delta T$．(1)より $H\\tau_1=\\dfrac52\\cdot\\dfrac43P_0\\cdot\\dfrac{SL}{3}=\\dfrac52RT_{\\text{a}}$ なので $\\dfrac{H}{R}=\\dfrac{5T_{\\text{a}}}{2\\tau_1}$．\n\\[ T(t)=\\frac32T_{\\text{a}}+\\frac{2}{3}\\cdot\\frac{5T_{\\text{a}}}{2\\tau_1}(t-\\tau_1)=\\boldsymbol{\\left(\\frac{5t}{3\\tau_1}-\\frac16\\right)T_{\\text{a}}} \\]\n圧力が $P_0+\\dfrac{Mg}{S}=\\dfrac43P_0$ になるとき，体積 $SL$ で $RT=\\dfrac43P_0SL=3RT_{\\text{a}}$ より温度は $\\boldsymbol{3T_{\\text{a}}}$．$\\left(\\dfrac{5t}{3\\tau_1}-\\dfrac16\\right)=3$ を解いて $\\boldsymbol{t=\\dfrac{19}{10}\\tau_1}$．\n検算：全体で加えた熱 $H\\cdot\\dfrac{19}{10}\\tau_1=\\dfrac{19}{4}RT_{\\text{a}}$，内部エネルギー変化 $\\dfrac32R\\left(3T_{\\text{a}}-\\dfrac12T_{\\text{a}}\\right)=\\dfrac{15}{4}RT_{\\text{a}}$，仕事 $P_{\\text{下}}\\cdot\\dfrac{2SL}{3}=RT_{\\text{a}}$ で，第1法則を満たす．\n\\textbf{(5)}　ヒーターを切ると気体は断熱されているので，ピストンが縁に止まっている限り体積も温度も変わらず，圧力は $\\dfrac43P_0$ のままである．開口端の向きが鉛直下向きから角 $\\varphi$ だけ回ったとき，ピストンをその位置に保つのに必要な気体の圧力は $P_0-\\dfrac{Mg}{S}\\cos\\varphi$ で，$0\\le\\varphi\\le\\pi$ の範囲で最大でも $P_0+\\dfrac{Mg}{S}=\\dfrac43P_0$．気体の圧力はつねにそれ以上なので，ピストンは\\textbf{縁に押しつけられたまま動かない}．開口端が真上を向いた瞬間に必要な圧力と気体の圧力がちょうど等しくなり，\\textbf{縁から受ける力が $0$ になる}（そのままつり合って静止）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "シリンダーの向きによってピストンが気体に及ぼす圧力が $P_0\\pm Mg/S$ と変わり，一定電力での定圧加熱の所要時間は圧力に比例するので，時間の比からピストンの質量が逆算できる．ピストンが縁に達した瞬間に定圧から定積に切り替わり，以後の温度上昇の割合が変わる．"
+ },
+ "concepts": [
+  "first-law",
+  "equilibrium",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "定圧変化",
+  "定積変化",
+  "ピストンのつり合い",
+  "ジュール熱",
+  "条件の逆算",
+  "状態の切り替わり"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

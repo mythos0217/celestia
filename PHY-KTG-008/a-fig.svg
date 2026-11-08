@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300">
+<defs><marker id="a-ak" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker></defs>
+<!-- axes: t horizontal at y=150, v vertical at x=60 -->
+<line x1="60" y1="150" x2="500" y2="150" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+<line x1="60" y1="280" x2="60" y2="20" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+<text x="490" y="170" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">t</text>
+<text x="40" y="28" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">v</text>
+<text x="44" y="166" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">O</text>
+<!-- v0 = 90px above axis (y=60), v1 = 30 (y=120). slope: drop 60 over 100px. -->
+<!-- segment: floor at t=0 v=+v0 down to +v1 at t=100 (ceiling), jump to -v1, down to -v0 at t=200, jump to +v0 -->
+<g stroke="#222" stroke-width="1.6" fill="none">
+<polyline points="60,60 160,120"/>
+<polyline points="160,180 260,240"/>
+<polyline points="260,60 360,120"/>
+<polyline points="360,180 460,240"/>
+</g>
+<g stroke="#c0392b" stroke-width="1.6" stroke-dasharray="3,3">
+<line x1="160" y1="120" x2="160" y2="180"/><line x1="360" y1="120" x2="360" y2="180"/>
+</g>
+<g stroke="#1f5fbf" stroke-width="1.6" stroke-dasharray="3,3">
+<line x1="260" y1="240" x2="260" y2="60"/><line x1="460" y1="240" x2="460" y2="60"/>
+</g>
+<g stroke="#888" stroke-width="1" stroke-dasharray="4,3">
+<line x1="60" y1="120" x2="160" y2="120"/><line x1="60" y1="240" x2="260" y2="240"/><line x1="60" y1="180" x2="160" y2="180"/>
+</g>
+<text x="26" y="65" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">v<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<text x="26" y="125" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">v<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<text x="14" y="185" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">−v<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<text x="14" y="245" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">−v<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<text x="166" y="112" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">天井で衝突</text>
+<text x="166" y="128" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">（力積 2<tspan font-family="Times New Roman, serif" font-style="italic">mv</tspan><tspan baseline-shift="sub" font-size="9">1</tspan>）</text>
+<text x="266" y="270" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">床で衝突（力積 2<tspan font-family="Times New Roman, serif" font-style="italic">mv</tspan><tspan baseline-shift="sub" font-size="9">0</tspan>）</text>
+<!-- period T -->
+<line x1="62" y1="38" x2="258" y2="38" stroke="#222" stroke-width="1" marker-end="url(#a-ak)" marker-start="url(#a-ak)"/>
+<text x="110" y="28" font-family="Times New Roman, serif" font-size="15" fill="#222"><tspan font-style="italic">T</tspan> = 2(<tspan font-style="italic">v</tspan><tspan baseline-shift="sub" font-size="10">0</tspan><tspan baseline-shift="0"> − </tspan><tspan font-style="italic">v</tspan><tspan baseline-shift="sub" font-size="10">1</tspan><tspan baseline-shift="0">)/</tspan><tspan font-style="italic">g</tspan></text>
+</svg>

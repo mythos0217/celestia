@@ -1,0 +1,129 @@
+{
+ "id": "MSY-LOP-001",
+ "schema": "celestia.problem/1",
+ "field": "MSY",
+ "unit": "MSY-01",
+ "topic": "ばねで打ち出した小球と鉛直な円形レール",
+ "course": "物理",
+ "level": 2,
+ "minutes": 12,
+ "format": [
+  "derivation",
+  "synthesis"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平面の左端に，ばね定数 $k$ の軽いばねの一端を固定する．質量 $m$ の小球をばねの他端に押し当て，ばねを自然長から $x$ 縮めて静かに放した．小球はばねを離れたあと水平面を進み，水平面になめらかにつながった半径 $r$ の鉛直な円形レールの内側に入った．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ばねを離れたときの小球の速さ $v_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "小球がレールの最高点を通過するときの速さ $v$ を，$k$，$m$，$x$，$g$，$r$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "小球がレールから離れずに最高点を通過するとき，最高点で小球がレールから受ける垂直抗力の大きさ $N$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "小球がレールから離れずに最高点を通過するための，$x$ の最小値 $x_0$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "左の壁に固定したばねで小球を打ち出す。水平面の先に半径 r の鉛直な円形レールがある",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_0=x\\sqrt{\\dfrac km}$",
+    "grading": "v_0：x sqrt(k/m)"
+   },
+   {
+    "id": "2",
+    "tex": "$v=\\sqrt{\\dfrac{kx^2}{m}-4gr}$",
+    "grading": "v：sqrt(k x^2/m-4g r)"
+   },
+   {
+    "id": "3",
+    "tex": "$N=\\dfrac{kx^2}{r}-5mg$",
+    "grading": "N：k x^2/r-5m g"
+   },
+   {
+    "id": "4",
+    "tex": "$x_0=\\sqrt{\\dfrac{5mgr}{k}}$",
+    "grading": "x_0：sqrt(5m g r/k)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 弾性エネルギーがすべて運動エネルギーになる：$\\dfrac12kx^2=\\dfrac12mv_0^2$ より $v_0=x\\sqrt{\\dfrac km}$．\n\n(2) 最高点は水平面から $2r$ の高さ．力学的エネルギー保存：$\\dfrac12kx^2=\\dfrac12mv^2+mg\\cdot2r$ より $v=\\sqrt{\\dfrac{kx^2}m-4gr}$．\n\n(3) 最高点では，重力 $mg$ と垂直抗力 $N$ がともに下向き（円の中心向き）．円運動の運動方程式 \\[m\\frac{v^2}{r}=mg+N\\] より $N=\\dfrac{mv^2}r-mg=\\dfrac{kx^2}{r}-4mg-mg=\\dfrac{kx^2}{r}-5mg$（この式は $N\\ge0$，すなわち (4) の条件を満たすときに使える）．\n\n(4) レールから離れない条件は $N\\ge0$：$\\dfrac{kx^2}r\\ge5mg$ より $x\\ge\\sqrt{\\dfrac{5mgr}k}$．最高点で $v>0$（$x>\\sqrt{4mgr/k}$）であるだけでは足りない．$v^2<gr$ だと，最高点に達する前に $N=0$ となってレールを離れ，放物運動になる．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "エネルギー保存で速さ，円運動の運動方程式で垂直抗力．「離れない」は $N\\ge0$．"
+ },
+ "concepts": [
+  "mechanical-energy",
+  "circular-motion"
+ ],
+ "laws": [
+  "energy-conservation",
+  "hooke-law",
+  "centripetal-acceleration",
+  "newton-2nd"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "力学的エネルギー保存",
+  "鉛直面内の円運動",
+  "ばね",
+  "融合"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

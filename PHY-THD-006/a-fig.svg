@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 350" width="440" height="350">
+<defs>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="a-ad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+</defs>
+<line x1="60.0" y1="290.0" x2="425.0" y2="290.0" stroke="#222" stroke-width="1.6" marker-end="url(#a-ak)"/>
+<line x1="60.0" y1="290.0" x2="60.0" y2="20.0" stroke="#222" stroke-width="1.6" marker-end="url(#a-ak)"/>
+<text x="423.0" y="310.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">V</text>
+<text x="50.0" y="28.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">P</text>
+<text x="54.0" y="308.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="end">O</text>
+<polyline points="146.8,31.1 149.3,38.3 151.8,45.1 154.2,51.5 156.7,57.6 159.2,63.4 161.7,69.0 164.2,74.2 166.6,79.2 169.1,84.0 171.6,88.6 174.1,93.0 176.6,97.2 179.0,101.2 181.5,105.1 184.0,108.7 186.5,112.3 189.0,115.7 191.4,119.0 193.9,122.2 196.4,125.2 198.9,128.2 201.4,131.0 203.8,133.8 206.3,136.4 208.8,139.0 211.3,141.4 213.8,143.8 216.2,146.2 218.7,148.4 221.2,150.6 223.7,152.7 226.2,154.7 228.6,156.7 231.1,158.7 233.6,160.5 236.1,162.4 238.6,164.1 241.0,165.9 243.5,167.5 246.0,169.2 248.5,170.8 251.0,172.3 253.4,173.8 255.9,175.3 258.4,176.7 260.9,178.1 263.4,179.5 265.8,180.8 268.3,182.1 270.8,183.4 273.3,184.6 275.8,185.8 278.2,187.0 280.7,188.2 283.2,189.3 285.7,190.4 288.2,191.5 290.6,192.6 293.1,193.6 295.6,194.6 298.1,195.6 300.6,196.6 303.0,197.5 305.5,198.5 308.0,199.4 310.5,200.3 313.0,201.2 315.4,202.0 317.9,202.9 320.4,203.7 322.9,204.5 325.4,205.3 327.8,206.1 330.3,206.9 332.8,207.6 335.3,208.4 337.8,209.1 340.2,209.8 342.7,210.5 345.2,211.2" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5 3"/>
+<text x="326.6" y="199.7" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#888" text-anchor="start">等温線</text>
+<line x1="308.0" y1="232.0" x2="370.0" y2="290.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="122.0" y1="58.0" x2="240.8" y2="169.2" stroke="#1f5fbf" stroke-width="2.4"/>
+<line x1="240.8" y1="169.2" x2="308.0" y2="232.0" stroke="#c0392b" stroke-width="2.4"/>
+<circle cx="215.0" cy="145.0" r="3.5" fill="#222"/>
+<line x1="215.0" y1="290.0" x2="215.0" y2="145.0" stroke="#888" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="240.8" cy="169.2" r="3.5" fill="#c0392b"/>
+<line x1="240.8" y1="290.0" x2="240.8" y2="169.2" stroke="#888" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="205.0" y="165.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="end">温度最高</text>
+<text x="250.8" y="159.2" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#c0392b" text-anchor="start">吸熱→放熱</text>
+<text x="201.0" y="326.0" font-size="14" fill="#222" text-anchor="middle"><tspan font-family="Noto Sans CJK JP, sans-serif">5/2 </tspan><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="258.8" y="326.0" font-size="14" fill="#c0392b" text-anchor="middle"><tspan font-family="Noto Sans CJK JP, sans-serif">35/12 </tspan><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="145.0" y="109.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf" text-anchor="end">吸熱</text>
+<text x="269.0" y="225.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b" text-anchor="end">放熱</text>
+<circle cx="122.0" cy="58.0" r="3" fill="#222"/>
+<text x="130.0" y="52.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start">A</text>
+<circle cx="308.0" cy="232.0" r="3" fill="#222"/>
+<text x="316.0" y="226.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start">C</text>
+<line x1="122.0" y1="290.0" x2="122.0" y2="58.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="308.0" y1="290.0" x2="308.0" y2="232.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="60.0" y1="58.0" x2="122.0" y2="58.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="60.0" y1="232.0" x2="308.0" y2="232.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="122.0" y="310.0" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="308.0" y="310.0" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Noto Sans CJK JP, sans-serif">4</tspan><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="370.0" y="310.0" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Noto Sans CJK JP, sans-serif">5</tspan><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="52.0" y="63.0" font-size="15" fill="#222" text-anchor="end"><tspan font-family="Noto Sans CJK JP, sans-serif">4</tspan><tspan font-family="Times New Roman, serif" font-style="italic">P</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="52.0" y="237.0" font-size="15" fill="#222" text-anchor="end"><tspan font-family="Times New Roman, serif" font-style="italic">P</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+</svg>

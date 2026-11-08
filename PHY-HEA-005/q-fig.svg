@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker></defs>
+<rect x="90" y="40" width="220" height="230" rx="6" fill="none" stroke="#222" stroke-width="1.6"/>
+<rect x="100" y="50" width="200" height="210" rx="4" fill="none" stroke="#222" stroke-width="1"/>
+<text x="200.0" y="290.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">断熱容器（内部は真空）</text>
+<line x1="110.0" y1="52.0" x2="170.0" y2="150.0" stroke="#222" stroke-width="1"/>
+<line x1="290.0" y1="52.0" x2="230.0" y2="150.0" stroke="#222" stroke-width="1"/>
+<line x1="110.0" y1="258.0" x2="170.0" y2="175.0" stroke="#222" stroke-width="1"/>
+<line x1="290.0" y1="258.0" x2="230.0" y2="175.0" stroke="#222" stroke-width="1"/>
+<rect x="160" y="150" width="80" height="25" fill="none" stroke="#222" stroke-width="1.6"/>
+<rect x="175" y="110" width="50" height="40" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="175.0" y1="114.0" x2="225.0" y2="114.0" stroke="#888" stroke-width="0.8"/>
+<line x1="175.0" y1="122.0" x2="225.0" y2="122.0" stroke="#888" stroke-width="0.8"/>
+<line x1="175.0" y1="130.0" x2="225.0" y2="130.0" stroke="#888" stroke-width="0.8"/>
+<line x1="175.0" y1="138.0" x2="225.0" y2="138.0" stroke="#888" stroke-width="0.8"/>
+<line x1="175.0" y1="146.0" x2="225.0" y2="146.0" stroke="#888" stroke-width="0.8"/>
+<text x="200.0" y="135.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">試料</text>
+<rect x="168" y="157" width="30" height="11" fill="none" stroke="#222" stroke-width="1.4"/>
+<text x="183.0" y="192.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="middle">R</text>
+<circle cx="222" cy="163" r="5" fill="none" stroke="#222" stroke-width="1.4"/>
+<line x1="168.0" y1="162.0" x2="140.0" y2="162.0" stroke="#222" stroke-width="1"/>
+<line x1="140.0" y1="162.0" x2="140.0" y2="40.0" stroke="#222" stroke-width="1"/>
+<line x1="140.0" y1="40.0" x2="140.0" y2="20.0" stroke="#222" stroke-width="1"/>
+<line x1="227.0" y1="163.0" x2="260.0" y2="163.0" stroke="#222" stroke-width="1"/>
+<line x1="260.0" y1="163.0" x2="260.0" y2="20.0" stroke="#222" stroke-width="1"/>
+<line x1="330.0" y1="110.0" x2="226.0" y2="128.0" stroke="#888" stroke-width="1"/>
+<text x="335.0" y="114.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">試料（熱容量</text>
+<text x="420.0" y="114.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">C</text>
+<text x="432.0" y="114.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">）</text>
+<line x1="330.0" y1="170.0" x2="200.0" y2="163.0" stroke="#888" stroke-width="1"/>
+<text x="335.0" y="174.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">ヒーター（1.00 kΩ）</text>
+<line x1="330.0" y1="205.0" x2="224.0" y2="168.0" stroke="#888" stroke-width="1"/>
+<text x="335.0" y="209.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">温度計</text>
+<line x1="330.0" y1="240.0" x2="275.0" y2="215.0" stroke="#888" stroke-width="1"/>
+<text x="335.0" y="244.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">支持糸（熱を通さない）</text>
+<text x="140.0" y="15.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">電源へ</text>
+<text x="262.0" y="15.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">計測器へ</text>
+</svg>

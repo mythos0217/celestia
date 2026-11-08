@@ -1,0 +1,114 @@
+{
+ "id": "PHY-THD-010",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "断面積の異なる連結ピストンと外気のする仕事",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，断面積 $S$ のシリンダー A と断面積 $2S$ のシリンダー B を向かい合わせて水平に固定し，それぞれのなめらかに動くピストンを棒で連結する．A と B の外側の端は閉じており，2枚のピストンにはさまれた部分は圧力 $p_0$ の外気に通じている．A，B にはそれぞれ 1 mol の単原子分子理想気体が入っていて，はじめはともに圧力 $p_0$，絶対温度 $T_0$，体積 $V_0$ でつり合っていた．シリンダーとピストンは断熱材でできており，A 内の気体だけをヒーターでゆっくり加熱する．気体定数を $R$ とし，断熱変化では $pV^{5/3}=$一定 が成り立つことを用いてよい．ピストンは常に静かに動くものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A，B 内の気体の圧力をそれぞれ $p_A$，$p_B$ とする．$p_A$ と $p_B$ の間に成り立つ関係式を $p_0$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "A 内の気体の体積が $\\dfrac54V_0$ になったときの，B 内の気体の体積 $V_B$ と絶対温度 $T_B$，および A 内の気体の圧力 $p_A$ と絶対温度 $T_A$ を求めよ（累乗根は残してよい）．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の状態になるまでに，外気がピストンと棒の全体にした仕事 $W_0$ と，ヒーターが A 内の気体に与えた熱量 $q$ を，$R$，$T_0$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：断面積の異なる連結ピストンと外気のする仕事",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$p_A+p_0=2p_B$"
+   },
+   {
+    "id": "2",
+    "tex": "$V_B=\\dfrac12V_0$，$T_B=2^{2/3}T_0$，$p_A=(2^{8/3}-1)p_0$，$T_A=\\left(5\\cdot2^{2/3}-\\dfrac54\\right)T_0\\ (\\approx6.7T_0)$"
+   },
+   {
+    "id": "3",
+    "tex": "$W_0=\\dfrac14RT_0$，$q=\\left(9\\cdot2^{2/3}-\\dfrac{41}{8}\\right)RT_0\\ (\\approx9.2RT_0)$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} ピストン2枚と棒をひとまとめにし，右向きを正として力のつり合いを書く．A の気体は A のピストンを右へ $p_AS$，外気は A のピストンを左へ $p_0S$，B のピストンを右へ $p_0\\cdot2S$ で押し，B の気体は B のピストンを左へ $p_B\\cdot2S$ で押す．\n\\[ p_AS-p_0S+2p_0S-2p_BS=0\\qquad\\therefore\\quad\\boldsymbol{p_A+p_0=2p_B} \\]\n断面積が異なるので外気の力は打ち消し合わず，差し引き $p_0S$ が右向きに残る．（はじめ $p_A=p_B=p_0$ はこれを満たす．）\n\n\\textbf{(2)} ピストンの移動距離を $l$ とすると，A の体積増加 $Sl=\\dfrac14V_0$，B の体積減少 $2Sl=\\dfrac12V_0$．よって $\\boldsymbol{V_B=\\dfrac12V_0}$．B は断熱・準静的に圧縮されるので $pV^{5/3}=$一定，状態方程式と合わせて $TV^{2/3}=$一定 だから\n\\[ p_B=2^{5/3}p_0,\\qquad \\boldsymbol{T_B=2^{2/3}T_0}\\ (\\approx1.59T_0) \\]\n(1) より $\\boldsymbol{p_A=2p_B-p_0=(2^{8/3}-1)p_0}$．$p_0V_0=RT_0$ を使って\n\\[ T_A=\\frac{p_A\\cdot\\frac54V_0}{R}=\\frac54(2^{8/3}-1)T_0=\\boldsymbol{\\left(5\\cdot2^{2/3}-\\frac54\\right)T_0}\\approx6.7T_0 \\]\n\n\\textbf{(3)} 外気が A のピストンにする仕事は $-p_0Sl$，B のピストンにする仕事は $+2p_0Sl$ なので\n\\[ W_0=p_0Sl=\\frac14p_0V_0=\\boldsymbol{\\frac14RT_0} \\]\n（ピストンにはさまれた部分の体積が $Sl$ だけ増え，そこへ外気が入り込む．）ピストンと棒は静かに動くので運動エネルギーは変わらない．したがって，A の気体がピストン系にした仕事 $W_A$ と $W_0$ の和が，ピストン系が B の気体にした仕事 $W_B$ に等しい：$W_A+W_0=W_B$．B は断熱なので $W_B=\\Delta U_B=\\dfrac32R(T_B-T_0)$．A について第1法則 $q=\\Delta U_A+W_A$ より\n\\[ q=\\frac32R(T_A-T_0)+\\frac32R(T_B-T_0)-W_0=\\frac32R\\left(6\\cdot2^{2/3}-\\frac{13}{4}\\right)T_0-\\frac14RT_0 \\]\n\\[ \\therefore\\quad \\boldsymbol{q=\\left(9\\cdot2^{2/3}-\\frac{41}{8}\\right)RT_0}\\approx9.2RT_0 \\]\n外気がなければ $q=\\Delta U_A+\\Delta U_B$ だが，ここでは外気が系に仕事 $W_0$ をする分だけヒーターの熱量が少なくて済む．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "棒で連結したピストンでは，A がした仕事と外気がした仕事の和が B にされた仕事に等しい．断面積が異なると外気の力が打ち消し合わず，外気の仕事がエネルギー収支に入る．B の断熱圧縮と力のつり合いから状態を決め，ヒーターの熱量を両気体の内部エネルギー変化と外気の仕事で表す．"
+ },
+ "concepts": [
+  "first-law",
+  "work-energy",
+  "equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "連結ピストン",
+  "力のつり合い",
+  "外気のする仕事",
+  "断熱変化",
+  "熱力学第一法則"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,127 @@
+{
+ "id": "MSY-CRT-001",
+ "schema": "celestia.problem/1",
+ "field": "MSY",
+ "unit": "MSY-01",
+ "topic": "なめらかな曲面をもつ台と小物体",
+ "course": "物理",
+ "level": 2,
+ "minutes": 12,
+ "format": [
+  "derivation",
+  "synthesis"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平面上に，なめらかな曲面をもつ質量 $M$ の台を置く．曲面の上端は水平面から高さ $h$ にあり，下端では曲面が水平面に水平につながっている．台は水平面上を自由に動ける．質量 $m$ の小物体を曲面の上端に置いて静かに放した．曲面の上端から下端までの水平距離を $L$，重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小物体が曲面の下端に達したときの，小物体の速さ $v$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "そのときの台の速さ $V$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "小物体が上端から下端まで動く間に，台が動いた距離 $x$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "台を水平面に固定した場合に比べて，下端での小物体の速さは何倍か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "なめらかな水平面上の、なめらかな曲面をもつ台（質量 M）と、曲面の上端（高さ h）に置いた小物体（質量 m）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v=\\sqrt{\\dfrac{2Mgh}{M+m}}$",
+    "grading": "v：sqrt(2M g h/(M+m))"
+   },
+   {
+    "id": "2",
+    "tex": "$V=m\\sqrt{\\dfrac{2gh}{M(M+m)}}$",
+    "grading": "V：m sqrt(2g h/(M(M+m)))"
+   },
+   {
+    "id": "3",
+    "tex": "$x=\\dfrac{mL}{M+m}$",
+    "grading": "x：m L/(M+m)"
+   },
+   {
+    "id": "4",
+    "tex": "$\\sqrt{\\dfrac{M}{M+m}}$ 倍",
+    "grading": "sqrt(M/(M+m))倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "小物体と台をひとまとめに考える．水平方向には外力がないので，水平方向の運動量が保存する．摩擦がなく，垂直抗力は小物体と台の間で互いに仕事を打ち消し合うので，全体の力学的エネルギーも保存する．\n\n(1)(2) 下端では小物体も台も水平に動く．右向きを正とし，小物体が右へ $v$，台が左へ $V$ で動くとすると\\[0=mv-MV,\\qquad mgh=\\frac12mv^2+\\frac12MV^2\\] $V=\\dfrac mMv$ を代入して $mgh=\\dfrac12mv^2\\left(1+\\dfrac mM\\right)$ より $v=\\sqrt{\\dfrac{2Mgh}{M+m}}$，$V=\\dfrac mMv=m\\sqrt{\\dfrac{2gh}{M(M+m)}}$．\n\n(3) 水平方向の運動量が常に $0$ なので，全体の重心は水平方向に動かない．小物体が右へ $L-x$，台が左へ $x$ 動くとすると $m(L-x)=Mx$ より $x=\\dfrac{mL}{M+m}$．\n\n(4) 固定した場合は $mgh=\\dfrac12mv_0^2$ より $v_0=\\sqrt{2gh}$．$\\dfrac v{v_0}=\\sqrt{\\dfrac{M}{M+m}}$ 倍（$M\\to\\infty$ で $1$ に近づく）．\n\n注意：小物体だけを見ると，垂直抗力が仕事をする（台が動くので，垂直抗力は小物体の速度に垂直でない）．小物体だけで $mgh=\\dfrac12mv^2$ とするのは誤り．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水平方向の運動量保存と，全体の力学的エネルギー保存．小物体だけのエネルギー保存は成り立たない．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "mechanical-energy"
+ ],
+ "laws": [
+  "momentum-conservation",
+  "energy-conservation"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "運動量保存",
+  "力学的エネルギー保存",
+  "重心",
+  "融合"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

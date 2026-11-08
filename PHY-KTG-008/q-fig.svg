@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340">
+<defs><marker id="q-ab" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-ak" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker></defs>
+<!-- floor hatch -->
+<line x1="90" y1="290" x2="290" y2="290" stroke="#222" stroke-width="1.6"/>
+<g stroke="#222" stroke-width="1">
+<line x1="95" y1="290" x2="85" y2="302"/><line x1="115" y1="290" x2="105" y2="302"/><line x1="135" y1="290" x2="125" y2="302"/><line x1="155" y1="290" x2="145" y2="302"/><line x1="175" y1="290" x2="165" y2="302"/><line x1="195" y1="290" x2="185" y2="302"/><line x1="215" y1="290" x2="205" y2="302"/><line x1="235" y1="290" x2="225" y2="302"/><line x1="255" y1="290" x2="245" y2="302"/><line x1="275" y1="290" x2="265" y2="302"/>
+</g>
+<!-- container -->
+<rect x="130" y="60" width="120" height="226" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="130" y1="60" x2="250" y2="60" stroke="#222" stroke-width="3"/>
+<line x1="130" y1="286" x2="250" y2="286" stroke="#222" stroke-width="3"/>
+<text x="258" y="66" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">天井</text>
+<text x="258" y="282" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">床</text>
+<!-- molecule path -->
+<line x1="190" y1="70" x2="190" y2="280" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<circle cx="190" cy="250" r="6" fill="#222"/>
+<text x="200" y="262" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">m</text>
+<line x1="176" y1="262" x2="176" y2="200" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="150" y="222" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf">v<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<!-- height L -->
+<line x1="100" y1="60" x2="100" y2="286" stroke="#222" stroke-width="1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<line x1="95" y1="60" x2="128" y2="60" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="82" y="178" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">L</text>
+<!-- g -->
+<line x1="330" y1="120" x2="330" y2="180" stroke="#222" stroke-width="1.8" marker-end="url(#q-ak)"/>
+<text x="340" y="156" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">g</text>
+</svg>

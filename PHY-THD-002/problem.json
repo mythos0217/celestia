@@ -1,0 +1,123 @@
+{
+ "id": "PHY-THD-002",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "比熱比が未知のオットーサイクルと仕事を最大にする圧縮比",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "物質量 $n$ の理想気体（定積モル比熱 $C_V$，比熱比 $\\gamma$ はいずれも未知の定数）が，図のサイクル A→B→C→D→A を準静的に行う．A→B は断熱圧縮，B→C は定積加熱，C→D は断熱膨張，D→A は定積冷却であり，$V_{\\text{A}}=V_{\\text{D}}$，$V_{\\text{B}}=V_{\\text{C}}$ である．断熱変化では $TV^{\\gamma-1}$ が一定に保たれる．状態 A，B，C，D の絶対温度をそれぞれ $T_{\\text{A}},\\,T_{\\text{B}},\\,T_{\\text{C}},\\,T_{\\text{D}}$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$T_{\\text{D}}$ を $T_{\\text{A}},\\,T_{\\text{B}},\\,T_{\\text{C}}$ で表せ（$\\gamma$ を用いずに）．"
+     },
+     {
+      "id": "2",
+      "tex": "1サイクルで気体が吸収する熱量と放出する熱量はどの過程で出入りするか答え，それぞれの大きさと，気体が1サイクルでする正味の仕事 $W$ を $n,\\,C_V,\\,T_{\\text{A}},\\,T_{\\text{B}},\\,T_{\\text{C}}$ で表せ．また熱効率 $e$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "最低温度 $T_{\\text{A}}$ と最高温度 $T_{\\text{C}}$ を固定し，圧縮比 $\\dfrac{V_{\\text{A}}}{V_{\\text{B}}}$ を変える（$T_{\\text{A}}<T_{\\text{B}}<T_{\\text{C}}$ の範囲）．$W$ を最大にする $T_{\\text{B}}$，$W$ の最大値，そのときの熱効率を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3)で $W$ が最大のとき，$T_{\\text{B}}$ と $T_{\\text{D}}$ の間にどのような関係があるか．また一般に $T_{\\text{D}}>T_{\\text{B}}$ となるための圧縮比 $\\dfrac{V_{\\text{A}}}{V_{\\text{B}}}$ の条件を $T_{\\text{A}},\\,T_{\\text{C}},\\,\\gamma$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：比熱比が未知のオットーサイクルと仕事を最大にする圧縮比",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T_{\\text{D}}=\\dfrac{T_{\\text{A}}T_{\\text{C}}}{T_{\\text{B}}}$"
+   },
+   {
+    "id": "2",
+    "tex": "吸収は B→C で $nC_V(T_{\\text{C}}-T_{\\text{B}})$，放出は D→A で $nC_V\\left(\\dfrac{T_{\\text{A}}T_{\\text{C}}}{T_{\\text{B}}}-T_{\\text{A}}\\right)$，$W=\\dfrac{nC_V(T_{\\text{B}}-T_{\\text{A}})(T_{\\text{C}}-T_{\\text{B}})}{T_{\\text{B}}}$，$e=1-\\dfrac{T_{\\text{A}}}{T_{\\text{B}}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$T_{\\text{B}}=\\sqrt{T_{\\text{A}}T_{\\text{C}}}$，$W_{\\max}=nC_V\\left(\\sqrt{T_{\\text{C}}}-\\sqrt{T_{\\text{A}}}\\right)^2$，$e=1-\\sqrt{\\dfrac{T_{\\text{A}}}{T_{\\text{C}}}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$T_{\\text{B}}=T_{\\text{D}}$，$\\dfrac{V_{\\text{A}}}{V_{\\text{B}}}<\\left(\\dfrac{T_{\\text{C}}}{T_{\\text{A}}}\\right)^{\\frac{1}{2(\\gamma-1)}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　圧縮比を $\\kappa=\\dfrac{V_{\\text{A}}}{V_{\\text{B}}}$ とする．断熱変化 A→B と C→D に $TV^{\\gamma-1}=$一定 を用いると\n\\[ T_{\\text{B}}=T_{\\text{A}}\\kappa^{\\gamma-1},\\qquad T_{\\text{C}}=T_{\\text{D}}\\kappa^{\\gamma-1}\\qquad\\therefore\\ \\frac{T_{\\text{B}}}{T_{\\text{A}}}=\\frac{T_{\\text{C}}}{T_{\\text{D}}} \\]\nよって $\\boldsymbol{T_{\\text{D}}=\\dfrac{T_{\\text{A}}T_{\\text{C}}}{T_{\\text{B}}}}$．$\\gamma$ は比をとると消える．\n\\textbf{(2)}　断熱過程では $Q=0$．定積過程では仕事が $0$ なので第1法則より $Q=\\Delta U=nC_V\\Delta T$ であり，温度が上がる B→C で吸収，下がる D→A で放出する．（$T_{\\text{C}}>T_{\\text{B}}$ は加熱だから，$T_{\\text{D}}>T_{\\text{A}}$ は(1)の比が等しいことから従う．）\n\\[ Q_{\\text{吸}}=nC_V(T_{\\text{C}}-T_{\\text{B}}),\\qquad Q_{\\text{放}}=nC_V(T_{\\text{D}}-T_{\\text{A}})=nC_V\\left(\\frac{T_{\\text{A}}T_{\\text{C}}}{T_{\\text{B}}}-T_{\\text{A}}\\right) \\]\n1サイクルでは $\\Delta U=0$ なので $W=Q_{\\text{吸}}-Q_{\\text{放}}$．整理すると\n\\[ \\boldsymbol{W=\\frac{nC_V(T_{\\text{B}}-T_{\\text{A}})(T_{\\text{C}}-T_{\\text{B}})}{T_{\\text{B}}}},\\qquad e=\\frac{W}{Q_{\\text{吸}}}=\\boldsymbol{1-\\frac{T_{\\text{A}}}{T_{\\text{B}}}} \\]\n（別解：断熱過程の仕事は $\\Delta U$ で決まり，C→D で $nC_V(T_{\\text{C}}-T_{\\text{D}})$ をし，A→B で $nC_V(T_{\\text{B}}-T_{\\text{A}})$ をされる．差をとっても同じ $W$ になる．）効率は圧縮による温度上昇の比だけで決まり，$\\gamma$ を知らなくてよい．\n\\textbf{(3)}　$W=nC_V\\left(T_{\\text{A}}+T_{\\text{C}}-T_{\\text{B}}-\\dfrac{T_{\\text{A}}T_{\\text{C}}}{T_{\\text{B}}}\\right)$．相加・相乗平均の関係より\n\\[ T_{\\text{B}}+\\frac{T_{\\text{A}}T_{\\text{C}}}{T_{\\text{B}}}\\ge2\\sqrt{T_{\\text{A}}T_{\\text{C}}} \\]\nで，等号は $\\boldsymbol{T_{\\text{B}}=\\sqrt{T_{\\text{A}}T_{\\text{C}}}}$（これは $T_{\\text{A}}$ と $T_{\\text{C}}$ の間にある）．このとき\n\\[ \\boldsymbol{W_{\\max}=nC_V\\left(\\sqrt{T_{\\text{C}}}-\\sqrt{T_{\\text{A}}}\\right)^2},\\qquad e=\\boldsymbol{1-\\sqrt{\\frac{T_{\\text{A}}}{T_{\\text{C}}}}} \\]\n圧縮比を上げると効率は上がるが，加熱できる温度幅 $T_{\\text{C}}-T_{\\text{B}}$ が減って $W$ はかえって小さくなる．両者の兼ね合いで最大が決まる．\n\\textbf{(4)}　$T_{\\text{B}}=\\sqrt{T_{\\text{A}}T_{\\text{C}}}$ のとき $T_{\\text{D}}=\\dfrac{T_{\\text{A}}T_{\\text{C}}}{T_{\\text{B}}}=\\sqrt{T_{\\text{A}}T_{\\text{C}}}$ なので $\\boldsymbol{T_{\\text{B}}=T_{\\text{D}}}$．\n一般に $T_{\\text{D}}>T_{\\text{B}}\\iff T_{\\text{A}}T_{\\text{C}}>T_{\\text{B}}^2\\iff\\kappa^{\\gamma-1}<\\sqrt{\\dfrac{T_{\\text{C}}}{T_{\\text{A}}}}$ だから\n\\[ \\boldsymbol{\\frac{V_{\\text{A}}}{V_{\\text{B}}}<\\left(\\frac{T_{\\text{C}}}{T_{\\text{A}}}\\right)^{\\frac{1}{2(\\gamma-1)}}} \\]\n圧縮比が小さいと，膨張後の D の方が圧縮後の B より高温になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2本の断熱線と2本の定積線からなるサイクルでは断熱変化の温度比が等しく，$T_{\\text{A}}T_{\\text{C}}=T_{\\text{B}}T_{\\text{D}}$ が比熱比を知らずに成り立つ．熱の出入りは定積過程だけで決まるので効率は $1-T_{\\text{A}}/T_{\\text{B}}$ となり，最高・最低温度を固定すると仕事が最大になるのは $T_{\\text{B}}=T_{\\text{D}}=\\sqrt{T_{\\text{A}}T_{\\text{C}}}$ のときである．"
+ },
+ "concepts": [
+  "first-law",
+  "work-energy",
+  "heat-temperature"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱サイクル",
+  "断熱変化",
+  "熱効率",
+  "第1法則",
+  "最大化",
+  "温度の大小"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "schema": "celestia.figure/1",
+ "size": [
+  420,
+  230
+ ],
+ "items": [
+  {
+   "t": "line",
+   "from": [
+    30,
+    200
+   ],
+   "to": [
+    400,
+    200
+   ],
+   "style": "ground"
+  },
+  {
+   "t": "line",
+   "from": [
+    30,
+    120
+   ],
+   "to": [
+    30,
+    200
+   ],
+   "style": "ground"
+  },
+  {
+   "t": "spring",
+   "from": [
+    30,
+    190
+   ],
+   "to": [
+    86,
+    190
+   ],
+   "coils": 7,
+   "amp": 6
+  },
+  {
+   "t": "ball",
+   "at": [
+    96,
+    190
+   ],
+   "r": 10,
+   "phys": "body:m"
+  },
+  {
+   "t": "text",
+   "at": [
+    96,
+    170
+   ],
+   "text": "m",
+   "italic": true,
+   "size": 14,
+   "anchor": "middle"
+  },
+  {
+   "t": "circle",
+   "at": [
+    300,
+    130
+   ],
+   "r": 70,
+   "style": "solid"
+  },
+  {
+   "t": "line",
+   "from": [
+    300,
+    130
+   ],
+   "to": [
+    300,
+    60
+   ],
+   "style": "dash"
+  },
+  {
+   "t": "text",
+   "at": [
+    310,
+    100
+   ],
+   "text": "r",
+   "italic": true,
+   "size": 14,
+   "anchor": "start"
+  },
+  {
+   "t": "dot",
+   "at": [
+    300,
+    130
+   ]
+  },
+  {
+   "t": "text",
+   "at": [
+    300,
+    48
+   ],
+   "text": "最高点",
+   "italic": false,
+   "size": 11,
+   "anchor": "middle"
+  }
+ ]
+}

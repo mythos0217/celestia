@@ -1,0 +1,122 @@
+{
+ "id": "PHY-HEA-002",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-01",
+ "topic": "支え方で変わる金属棒の温度上昇（熱膨張による重心の移動と重力の仕事）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "長さ $L$，質量 $m$，比熱 $c$，線膨張率 $\\alpha$ の一様な金属棒が3本ある．真空中で，（ア）は断熱板の上に鉛直に立て，（イ）は上端を断熱糸でつるし，（ウ）は上端から距離 $s$ の点を断熱の留め具で固定して，いずれも鉛直に保つ．それぞれに同じ熱量 $Q$ を与える．棒の温度は一様に上がるものとし，熱膨張による棒の重心の移動を考える．棒の変形の弾性エネルギーは無視し，重力加速度の大きさを $g$ とする．$\\alpha\\Delta T\\ll1$ として，1次の範囲で考えよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "（ア），（イ）の温度上昇 $\\Delta T_{\\rm A}$，$\\Delta T_{\\rm B}$ を求めよ．どちらの温度上昇が大きいか．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\dfrac{\\Delta T_{\\rm B}-\\Delta T_{\\rm A}}{\\Delta T_{\\rm A}}$ を $\\alpha$ の1次の範囲で求め，$L=2.0\\ \\mathrm{m}$，$\\alpha=1.2\\times10^{-5}\\ \\mathrm{K^{-1}}$，$c=4.5\\times10^{2}\\ \\mathrm{J/(kg\\cdot K)}$，$g=9.8\\ \\mathrm{m/s^2}$ のときの値を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "（ウ）の温度上昇を求めよ．また，（ウ）の温度上昇が重力のない場合と等しくなる $s$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "（イ）の棒の下端に質量 $M$ のおもりをつるして同じ熱量 $Q$ を与えた．温度上昇を求めよ．おもりの重力のした仕事はどこへ行ったと考えられるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：支え方で変わる金属棒の温度上昇（熱膨張による重心の移動と重力の仕事）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Delta T_{\\rm A}=\\dfrac{Q}{m\\left(c+\\dfrac{gL\\alpha}{2}\\right)}$，$\\Delta T_{\\rm B}=\\dfrac{Q}{m\\left(c-\\dfrac{gL\\alpha}{2}\\right)}$；（イ）の方が大きい"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{gL\\alpha}{c}=5.2\\times10^{-7}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{Q}{m\\left\\{c-g\\alpha\\left(\\dfrac L2-s\\right)\\right\\}}$，$s=\\dfrac L2$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{Q}{mc-\\left(\\dfrac m2+M\\right)gL\\alpha}$；棒の内部エネルギー（温度上昇）に加わる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{エネルギーの収支}\n\n真空中で断熱して支えているので，与えた熱量 $Q$ は「棒の内部エネルギーの増加 $mc\\Delta T$」と「重力による位置エネルギーの増加」に分かれる（重力が正の仕事をすれば，その分だけ内部エネルギーに加わる）．温度が $\\Delta T$ 上がると棒の各部分の間隔は $1+\\alpha\\Delta T$ 倍になる．\n\n\\textbf{(1) 立てた棒とつるした棒}\n\n（ア）は下端が固定されているので，重心（下端から $\\frac L2$）は $\\dfrac L2\\alpha\\Delta T$ だけ上がる：\n\\[ Q=mc\\Delta T_{\\rm A}+mg\\frac{L}{2}\\alpha\\Delta T_{\\rm A}\\quad\\Longrightarrow\\quad \\boldsymbol{\\Delta T_{\\rm A}=\\frac{Q}{m\\left(c+\\dfrac{gL\\alpha}{2}\\right)}} \\]\n（イ）は上端が固定されているので重心は $\\dfrac L2\\alpha\\Delta T$ だけ下がり，重力のした仕事も内部エネルギーになる：\n\\[ Q=mc\\Delta T_{\\rm B}-mg\\frac L2\\alpha\\Delta T_{\\rm B}\\quad\\Longrightarrow\\quad \\boldsymbol{\\Delta T_{\\rm B}=\\frac{Q}{m\\left(c-\\dfrac{gL\\alpha}{2}\\right)}} \\]\n\\textbf{（イ）の方が大きい}．\n\n\\textbf{(2) 差の大きさ}\n\n\\[ \\frac{\\Delta T_{\\rm B}-\\Delta T_{\\rm A}}{\\Delta T_{\\rm A}}=\\frac{c+\\frac{gL\\alpha}{2}}{c-\\frac{gL\\alpha}{2}}-1\\fallingdotseq\\boldsymbol{\\frac{gL\\alpha}{c}}=\\frac{9.8\\times2.0\\times1.2\\times10^{-5}}{4.5\\times10^2}=\\boldsymbol{5.2\\times10^{-7}} \\]\n差はきわめて小さいが，向きは確定している．\n\n\\textbf{(3) 途中を固定した棒}\n\n固定点から重心までの距離 $\\dfrac L2-s$（重心が固定点より下なら正）が $1+\\alpha\\Delta T$ 倍になるので，重心は $\\left(\\dfrac L2-s\\right)\\alpha\\Delta T$ だけ下がる：\n\\[ Q=mc\\Delta T-mg\\left(\\frac L2-s\\right)\\alpha\\Delta T\\quad\\Longrightarrow\\quad \\boldsymbol{\\Delta T=\\frac{Q}{m\\left\\{c-g\\alpha\\left(\\dfrac L2-s\\right)\\right\\}}} \\]\n$s=0$ で（イ），$s=L$ で（ア）に一致する．重心が動かない $\\boldsymbol{s=\\dfrac L2}$（中央で固定）のとき，温度上昇は重力がない場合の $\\dfrac{Q}{mc}$ と同じになる．\n\n\\textbf{(4) おもりをつるした場合}\n\nおもりは下端とともに $L\\alpha\\Delta T$ だけ下がるので，重力のする仕事が $MgL\\alpha\\Delta T$ 増える：\n\\[ Q=mc\\Delta T-\\left(\\frac m2+M\\right)gL\\alpha\\Delta T\\quad\\Longrightarrow\\quad \\boldsymbol{\\Delta T=\\frac{Q}{mc-\\left(\\dfrac m2+M\\right)gL\\alpha}} \\]\nおもりの位置エネルギーの減少分は，おもりが伸びる棒を引くことで棒に対してする仕事となり，\\textbf{棒の内部エネルギー（温度上昇）に加わる}（運動エネルギーにはならない程度にゆっくり伸びる）．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "熱膨張で物体の重心が上下すると，与えた熱の一部が重力に逆らう仕事に使われたり，逆に重力のした仕事が内部エネルギーに加わったりする．重心の移動量は支点から重心までの距離に比例するので，同じ熱量でも立てた物体はつるした物体より温度上昇がわずかに小さく，重心で支えれば重力の影響は消える．"
+ },
+ "concepts": [
+  "heat-temperature",
+  "momentum-conservation",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱膨張",
+  "熱量",
+  "重心",
+  "エネルギー保存",
+  "内部エネルギー"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

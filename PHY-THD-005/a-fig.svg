@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" width="420" height="320">
+<defs>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="a-ad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+</defs>
+<line x1="60.0" y1="280.0" x2="400.0" y2="280.0" stroke="#222" stroke-width="1.6" marker-end="url(#a-ak)"/>
+<line x1="60.0" y1="280.0" x2="60.0" y2="25.0" stroke="#222" stroke-width="1.6" marker-end="url(#a-ak)"/>
+<text x="398.0" y="300.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">V</text>
+<text x="50.0" y="33.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">P</text>
+<text x="54.0" y="298.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="end">O</text>
+<polygon points="210.0,170.0 360.0,170.0 360.0,170.0 357.5,169.1 355.0,168.1 352.5,167.2 350.0,166.2 347.5,165.2 345.0,164.2 342.5,163.2 340.0,162.1 337.5,161.1 335.0,160.0 332.5,158.9 330.0,157.8 327.5,156.6 325.0,155.5 322.5,154.3 320.0,153.1 317.5,151.8 315.0,150.6 312.5,149.3 310.0,148.0 307.5,146.7 305.0,145.3 302.5,143.9 300.0,142.5 297.5,141.1 295.0,139.6 292.5,138.1 290.0,136.5 287.5,134.9 285.0,133.3 282.5,131.7 280.0,130.0 277.5,128.3 275.0,126.5 272.5,124.7 270.0,122.9 267.5,121.0 265.0,119.0 262.5,117.0 260.0,115.0 257.5,112.9 255.0,110.8 252.5,108.6 250.0,106.3 247.5,104.0 245.0,101.6 242.5,99.2 240.0,96.7 237.5,94.1 235.0,91.4 232.5,88.7 230.0,85.9 227.5,83.0 225.0,80.0 222.5,76.9 220.0,73.8 217.5,70.5 215.0,67.1 212.5,63.6 210.0,60.0 135.0,60.0 135.0,60.0 136.2,63.6 137.5,67.1 138.8,70.5 140.0,73.8 141.2,76.9 142.5,80.0 143.8,83.0 145.0,85.9 146.2,88.7 147.5,91.4 148.8,94.1 150.0,96.7 151.2,99.2 152.5,101.6 153.8,104.0 155.0,106.3 156.2,108.6 157.5,110.8 158.8,112.9 160.0,115.0 161.2,117.0 162.5,119.0 163.8,121.0 165.0,122.9 166.2,124.7 167.5,126.5 168.8,128.3 170.0,130.0 171.2,131.7 172.5,133.3 173.8,134.9 175.0,136.5 176.2,138.1 177.5,139.6 178.8,141.1 180.0,142.5 181.2,143.9 182.5,145.3 183.8,146.7 185.0,148.0 186.2,149.3 187.5,150.6 188.8,151.8 190.0,153.1 191.2,154.3 192.5,155.5 193.8,156.6 195.0,157.8 196.2,158.9 197.5,160.0 198.8,161.1 200.0,162.1 201.2,163.2 202.5,164.2 203.8,165.2 205.0,166.2 206.2,167.2 207.5,168.1 208.8,169.1 210.0,170.0" fill="#1f5fbf" fill-opacity="0.12" stroke="none" stroke-width="0"/>
+<line x1="210.0" y1="170.0" x2="360.0" y2="170.0" stroke="#222" stroke-width="1.8"/>
+<polyline points="360.0,170.0 357.5,169.1 355.0,168.1 352.5,167.2 350.0,166.2 347.5,165.2 345.0,164.2 342.5,163.2 340.0,162.1 337.5,161.1 335.0,160.0 332.5,158.9 330.0,157.8 327.5,156.6 325.0,155.5 322.5,154.3 320.0,153.1 317.5,151.8 315.0,150.6 312.5,149.3 310.0,148.0 307.5,146.7 305.0,145.3 302.5,143.9 300.0,142.5 297.5,141.1 295.0,139.6 292.5,138.1 290.0,136.5 287.5,134.9 285.0,133.3 282.5,131.7 280.0,130.0 277.5,128.3 275.0,126.5 272.5,124.7 270.0,122.9 267.5,121.0 265.0,119.0 262.5,117.0 260.0,115.0 257.5,112.9 255.0,110.8 252.5,108.6 250.0,106.3 247.5,104.0 245.0,101.6 242.5,99.2 240.0,96.7 237.5,94.1 235.0,91.4 232.5,88.7 230.0,85.9 227.5,83.0 225.0,80.0 222.5,76.9 220.0,73.8 217.5,70.5 215.0,67.1 212.5,63.6 210.0,60.0" fill="none" stroke="#222" stroke-width="1.8"/>
+<line x1="210.0" y1="60.0" x2="135.0" y2="60.0" stroke="#222" stroke-width="1.8"/>
+<polyline points="135.0,60.0 136.2,63.6 137.5,67.1 138.8,70.5 140.0,73.8 141.2,76.9 142.5,80.0 143.8,83.0 145.0,85.9 146.2,88.7 147.5,91.4 148.8,94.1 150.0,96.7 151.2,99.2 152.5,101.6 153.8,104.0 155.0,106.3 156.2,108.6 157.5,110.8 158.8,112.9 160.0,115.0 161.2,117.0 162.5,119.0 163.8,121.0 165.0,122.9 166.2,124.7 167.5,126.5 168.8,128.3 170.0,130.0 171.2,131.7 172.5,133.3 173.8,134.9 175.0,136.5 176.2,138.1 177.5,139.6 178.8,141.1 180.0,142.5 181.2,143.9 182.5,145.3 183.8,146.7 185.0,148.0 186.2,149.3 187.5,150.6 188.8,151.8 190.0,153.1 191.2,154.3 192.5,155.5 193.8,156.6 195.0,157.8 196.2,158.9 197.5,160.0 198.8,161.1 200.0,162.1 201.2,163.2 202.5,164.2 203.8,165.2 205.0,166.2 206.2,167.2 207.5,168.1 208.8,169.1 210.0,170.0" fill="none" stroke="#222" stroke-width="1.8"/>
+<line x1="270.0" y1="170.0" x2="300.0" y2="170.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<line x1="290.0" y1="136.5" x2="280.0" y2="130.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<line x1="180.0" y1="60.0" x2="157.5" y2="60.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<line x1="170.0" y1="130.0" x2="175.0" y2="136.5" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<circle cx="210.0" cy="170.0" r="3" fill="#222"/>
+<text x="206.0" y="190.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="end">A</text>
+<circle cx="360.0" cy="170.0" r="3" fill="#222"/>
+<text x="368.0" y="188.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start">B</text>
+<circle cx="210.0" cy="60.0" r="3" fill="#222"/>
+<text x="218.0" y="54.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start">C</text>
+<circle cx="135.0" cy="60.0" r="3" fill="#222"/>
+<text x="127.0" y="54.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="end">D</text>
+<line x1="135.0" y1="280.0" x2="135.0" y2="60.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="210.0" y1="280.0" x2="210.0" y2="60.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="360.0" y1="280.0" x2="360.0" y2="170.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="60.0" y1="170.0" x2="210.0" y2="170.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="60.0" y1="60.0" x2="135.0" y2="60.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="135.0" y="300.0" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan><tspan font-family="Noto Sans CJK JP, sans-serif">/2</tspan></text>
+<text x="202.0" y="300.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">V<tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="346.0" y="300.0" font-size="15" fill="#222"><tspan font-family="Noto Sans CJK JP, sans-serif">2</tspan><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="30.0" y="175.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">P<tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="20.0" y="65.0" font-size="15" fill="#222"><tspan font-family="Noto Sans CJK JP, sans-serif">2</tspan><tspan font-family="Times New Roman, serif" font-style="italic">P</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="285.0" y="101.8" font-size="13" fill="#222"><tspan font-family="Noto Sans CJK JP, sans-serif">等温 2</tspan><tspan font-family="Times New Roman, serif" font-style="italic">T</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="141.0" y="104.0" font-size="13" fill="#222" text-anchor="end"><tspan font-family="Noto Sans CJK JP, sans-serif">等温 </tspan><tspan font-family="Times New Roman, serif" font-style="italic">T</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="247.5" y="219.5" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf" text-anchor="start">反時計回り：正味の仕事は負</text>
+</svg>

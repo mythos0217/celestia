@@ -1,0 +1,124 @@
+{
+ "id": "PHY-MEC-001",
+ "schema": "celestia.problem/1",
+ "field": "MSY",
+ "unit": "MSY-01",
+ "topic": "宙返り軌道の入口での弾性衝突で両方の車両が離れない質量比の範囲",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation",
+  "synthesis"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平な台の上に，左側の斜面，半径 $R$ の円形の宙返り部分，右側の線路をなめらかにつないだ模型の線路がある．円の最下点は台の上面に接し，高さは台の上面から測る．車両はレールの上に乗っているだけで，線路からぶら下がることはできない．右側の線路のうち高さ $R$ 以上の部分は傾斜角 $\\theta$ の直線で，ここでは車両と線路の間に動摩擦係数 $\\mu=\\tan\\theta$ の摩擦がはたらく（静止摩擦係数は $\\mu$ 以上）．それ以外の場所では摩擦は無視できる．重力加速度の大きさを $g$ とし，車両の大きさと空気抵抗は無視する．\n\n円の最下点に質量 $m_2$ の車両 B を置き，左側の斜面の高さ $4R$ の地点から質量 $m_1$ の車両 A を静かにはなす．A は最下点で B と弾性衝突する．衝突後も A は取り除かず，そのまま運動させる．$r=m_2/m_1$ とおく．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "衝突直前の A の速さを $v$ とする．衝突直後の A，B の速度を，右向き（宙返りに入る向き）を正として $v$，$r$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "B が線路から離れずに宙返りをするための $r$ の条件を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "A，B のどちらも，その後一度も線路から離れないための $r$ の範囲を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$r=\\dfrac12$ のとき，B が右側の線路で達する最高点の高さ $h_4$ を求め，その後の B の運動を述べよ．また，A のその後の運動を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：宙返り軌道の入口での弾性衝突で両方の車両が離れない質量比の範囲",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：$\\dfrac{1-r}{1+r}v$，B：$\\dfrac{2}{1+r}v$"
+   },
+   {
+    "id": "2",
+    "tex": "$r\\le\\dfrac{4\\sqrt{10}}{5}-1$"
+   },
+   {
+    "id": "3",
+    "tex": "$0<r\\le\\dfrac{13-4\\sqrt{10}}{3}$ または $\\dfrac13\\le r\\le\\dfrac{4\\sqrt{10}}{5}-1$"
+   },
+   {
+    "id": "4",
+    "tex": "$h_4=\\dfrac{73}{18}R$，B はそこで静止し続ける．A は高さ $\\dfrac49R$ までしか上がらず，円の下部と左側の斜面の間を往復し続ける．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 弾性衝突}\n\n$v^2=2g\\cdot4R=8gR$．運動量保存 $m_1v=m_1v_A+m_2v_B$ と，はね返り係数 $1$ の式 $v_B-v_A=v$ から\n\\[ v_A=\\boldsymbol{\\frac{1-r}{1+r}v},\\qquad v_B=\\boldsymbol{\\frac{2}{1+r}v} \\]\n\n\\textbf{(2) B が宙返りする条件}\n\n最下点の速さ $u$ の車両が最高点で線路から離れない条件は，最高点の運動方程式 $m\\dfrac{u_{\\rm top}^2}{R}=mg+N$ で $N\\ge0$，すなわち $u_{\\rm top}^2\\ge gR$．力学的エネルギー保存 $u^2=u_{\\rm top}^2+4gR$ と合わせて $u^2\\ge5gR$．これを「最下点の速さで上がれる高さ」$H=u^2/(2g)$ で書くと $H\\ge\\frac52R$ である．\n\nB では $H_B=\\left(\\dfrac{2}{1+r}\\right)^2\\cdot4R\\ge\\dfrac52R$，$(1+r)^2\\le\\dfrac{32}{5}$ より\n\\[ \\boldsymbol{r\\le\\frac{4\\sqrt{10}}{5}-1}\\ (\\approx1.53) \\]\n\n\\textbf{(3) A も離れない条件}\n\nA は衝突後，$r<1$ なら右へ，$r>1$ なら左の斜面を上ってから戻ってきて，いずれにしても速さ $|v_A|$ で円に入る（$r=1$ なら最下点で静止）．円に入った車両が離れないのは，\n\n・宙返りしきる：$H\\ge\\frac52R$，または\n\n・円の中心の高さ $R$ までしか上がらない：$H\\le R$（中心より下の円弧では，速さ $0$ になるまで垂直抗力は正で，そのまま滑り戻る）\nのどちらかであり，$R<H<\\frac52R$ では中心より上で垂直抗力が $0$ になり線路から離れる．\n\nA では $H_A=\\left(\\dfrac{1-r}{1+r}\\right)^2\\cdot4R$．\n\n・$H_A\\le R$：$\\dfrac{|1-r|}{1+r}\\le\\dfrac12$ より $\\dfrac13\\le r\\le3$．\n\n・$H_A\\ge\\frac52R$：$\\dfrac{|1-r|}{1+r}\\ge\\sqrt{\\dfrac58}$ より $r\\le\\dfrac{13-4\\sqrt{10}}{3}$ または $r\\ge\\dfrac{13+4\\sqrt{10}}{3}$．\nこれと (2) の共通部分をとり，\n\\[ \\boldsymbol{0<r\\le\\frac{13-4\\sqrt{10}}{3}\\ (\\approx0.117)\\quad\\text{または}\\quad\\frac13\\le r\\le\\frac{4\\sqrt{10}}{5}-1} \\]\nなお，前者の場合は A も宙返りして右側の線路に進むが，A は B より遅いので円の中で追いつくことはなく，(4) と同様に B より低い位置で止まるので再び衝突することもない．\n\n\\textbf{(4) 摩擦のある斜面}\n\n$r=\\frac12$ では $v_B=\\frac43v$，$v_B^2=\\frac{16}{9}\\cdot8gR=\\frac{128}{9}gR$．高さ $R$ に達したときの速さ $w$ は $w^2=v_B^2-2gR=\\frac{110}{9}gR$．\n\n斜面を上る間，重力の斜面成分 $mg\\sin\\theta$ と動摩擦力 $\\mu mg\\cos\\theta=mg\\sin\\theta$ がともに下向きにはたらき，減速度は $2g\\sin\\theta$．上る距離を $s$ とすると $w^2=2\\cdot2g\\sin\\theta\\cdot s$，上がる高さは $s\\sin\\theta=\\dfrac{w^2}{4g}$（運動エネルギーの半分が位置エネルギー，半分が摩擦熱になる）．よって\n\\[ h_4=R+\\frac{w^2}{4g}=R+\\frac{110}{36}R=\\boldsymbol{\\frac{73}{18}R} \\]\n最高点では，重力の斜面成分 $mg\\sin\\theta$ が最大静止摩擦力 $\\mu' mg\\cos\\theta\\ (\\mu'\\ge\\mu)$ 以下なので，\\textbf{B はそこで静止し続ける}．\n\nA は $v_A=\\frac13v$ で，$H_A=\\frac19\\cdot4R=\\frac49R<R$．A は円の高さ $\\frac49R$ まで上って戻り，左の斜面を高さ $\\frac49R$ まで上ってまた戻る．摩擦がないので，\\textbf{円の下部と左側の斜面の間を往復し続ける}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "衝突で分け合った速さを「上がれる高さ」$H=u^2/2g$ に直すと，円軌道で離れないのは $H\\ge\\frac52R$（宙返り）か $H\\le R$（中心の高さ以下で引き返す）のどちらかであり，その中間が危険域になる．はね返った側の車両も後で必ず円に入るので，2台の条件の共通部分として質量比の範囲が飛び飛びに決まる．$\\mu=\\tan\\theta$ の斜面では運動エネルギーの半分だけが高さになり，最高点で静止する．"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "circular-motion",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "弾性衝突",
+  "円運動",
+  "垂直抗力",
+  "力学的エネルギー保存",
+  "動摩擦",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}
