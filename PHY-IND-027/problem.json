@@ -1,0 +1,130 @@
+{
+ "id": "PHY-IND-027",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "回転する導体棒の振り子の電磁制動（磁場の向きで変わる指数減衰とべき乗の減衰）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，半径 $a$ の2枚の導体円板が，その中心を通る水平な導体の軸のまわりに，そろって摩擦なく回転できる．長さ $L$，質量 $m$ の細い導体棒が，2枚の円板の縁に軸と平行に固定されている．2枚の円板の間には，軸の両端を通して抵抗値 $R$ の抵抗がつながれている．円板の質量，棒・円板・軸の電気抵抗，回路の自己誘導は無視する．棒が最も低い位置から軸のまわりに回った角を $\\theta$，その角速度を $\\omega=\\dfrac{d\\theta}{dt}$ とし，重力加速度の大きさを $g$ とする．以下，振動の減衰はゆるやかで，1周期の間は振幅一定の単振動とみなして平均をとってよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "鉛直方向に磁束密度 $B$ の一様な磁場を加えた．棒の誘導起電力の大きさと，電流が棒に及ぼす力の軸のまわりのモーメントの大きさを，$\\theta,\\ \\omega$ などで表せ．さらに，振幅の小さい振動の力学的エネルギー $E$ が時間とともに $E=E_0e^{-t/\\tau}$ のように減ることを示し，$\\tau$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "次に，磁場の向きを，水平で棒に垂直な向き（大きさ $B$）に変えた．棒の誘導起電力の大きさと，力のモーメントの大きさを求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の磁場のもとで，振幅 $\\theta_0\\ (\\ll1)$ の振動を考える．1周期あたりの平均の消費電力を $\\theta_0$ などで表し，振幅が時間とともに\n  \\[ \\theta_0(t)=\\frac{\\theta_0(0)}{\\sqrt{1+\\alpha t}} \\]\n  のように減ることを示して，$\\alpha$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(1) と (2) の磁場のそれぞれで，振幅がはじめの半分になるまでの時間を求め，その比を $\\theta_0(0)$ で表せ．$\\theta_0(0)=0.10\\,\\mathrm{rad}$ のとき，その比はおよそいくらか．"
+     },
+     {
+      "id": "5",
+      "tex": "(2) の磁場で振幅の小さい振動をしているとき，抵抗の両端の電圧は，棒の振動の何倍の振動数で変化するか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：回転する導体棒の振り子の電磁制動（磁場の向きで変わる指数減衰とべき乗の減衰）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "起電力 $BLa\\omega|\\cos\\theta|$，モーメント $\\dfrac{(BLa)^2\\omega\\cos^2\\theta}{R}$，$\\tau=\\dfrac{mR}{B^2L^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "起電力 $BLa\\omega|\\sin\\theta|$，モーメント $\\dfrac{(BLa)^2\\omega\\sin^2\\theta}{R}$"
+   },
+   {
+    "id": "3",
+    "tex": "平均消費電力 $\\dfrac{(BLa)^2g\\,\\theta_0^{\\,4}}{8aR}$，$\\alpha=\\dfrac{B^2L^2\\theta_0(0)^2}{4mR}$"
+   },
+   {
+    "id": "4",
+    "tex": "(1)：$\\dfrac{2mR\\log2}{B^2L^2}$，(2)：$\\dfrac{12mR}{B^2L^2\\theta_0(0)^2}$，比 $\\dfrac{6}{\\theta_0(0)^2\\log2}$，約 $9\\times10^2$ 倍"
+   },
+   {
+    "id": "5",
+    "tex": "2倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{準備}　角 $\\theta$ の位置で，棒の速度は大きさ $a\\omega$，向きは円の接線方向であり，その水平成分は $a\\omega\\cos\\theta$，鉛直成分は $a\\omega\\sin\\theta$ である．長さ $L$ の棒の誘導起電力は，磁場に垂直な速度成分だけで決まる（$vBL$ の $v$ は磁場に垂直な成分）．回転の運動方程式は $ma^2\\dfrac{d\\omega}{dt}=-mga\\sin\\theta+(\\text{電磁力のモーメント})$ である．\n\n\\textbf{(1)}　磁場が鉛直なので，効くのは速度の水平成分で，起電力は $\\boldsymbol{BLa\\omega|\\cos\\theta|}$，電流は $i=\\dfrac{BLa\\omega\\cos\\theta}{R}$．電流が受ける力 $iBL$ は棒と磁場の両方に垂直，すなわち水平で接線に対して角 $\\theta$ をなすので，軸のまわりのモーメントはその接線成分 $iBL\\cos\\theta$ に $a$ をかけて\n\\[ N=\\boldsymbol{\\frac{(BLa)^2\\omega\\cos^2\\theta}{R}} \\]\n（レンツの法則により回転を妨げる向き）．電磁力が単位時間にする負の仕事 $N\\omega$ は消費電力 $\\dfrac{(BLa\\omega\\cos\\theta)^2}{R}$ に等しい．振幅が小さいと $\\cos\\theta\\fallingdotseq1$ で，失われるエネルギーの割合は\n\\[ \\frac{dE}{dt}=-\\frac{(BLa)^2}{R}\\overline{\\omega^2} \\]\n単振動では運動エネルギーの平均は全エネルギーの半分なので $E=ma^2\\overline{\\omega^2}$．よって $\\dfrac{dE}{dt}=-\\dfrac{B^2L^2}{mR}E$ となり，$E=E_0e^{-t/\\tau}$，\n\\[ \\tau=\\boldsymbol{\\frac{mR}{B^2L^2}} \\]\n振幅は $e^{-t/2\\tau}$ で減る．\n\n\\textbf{(2)}　磁場が水平で棒に垂直なので，効くのは速度の鉛直成分で，起電力は $\\boldsymbol{BLa\\omega|\\sin\\theta|}$．力は鉛直になり，その接線成分は $iBL\\sin\\theta$ なので\n\\[ N=\\boldsymbol{\\frac{(BLa)^2\\omega\\sin^2\\theta}{R}} \\]\n最下点付近では棒はほぼ水平に，すなわち磁場とほぼ平行に動くので，誘導起電力がほとんど生じない．\n\n\\textbf{(3)}　$\\theta=\\theta_0\\cos\\Omega t$，$\\Omega=\\sqrt{\\dfrac ga}$ とすると $\\sin\\theta\\fallingdotseq\\theta$ で，消費電力は $\\dfrac{(BLa)^2}{R}\\theta^2\\omega^2$．\n\\[ \\overline{\\theta^2\\omega^2}=\\theta_0^{\\,4}\\Omega^2\\,\\overline{\\cos^2\\Omega t\\sin^2\\Omega t}=\\theta_0^{\\,4}\\Omega^2\\,\\overline{\\frac{1-\\cos4\\Omega t}{8}}=\\frac{\\theta_0^{\\,4}\\Omega^2}{8} \\]\nよって平均の消費電力は $\\boldsymbol{\\dfrac{(BLa)^2g\\,\\theta_0^{\\,4}}{8aR}}$ で，振幅の4乗に比例する．一方 $E=\\frac12ma^2\\Omega^2\\theta_0^{\\,2}$ なので，$X=\\theta_0^{\\,2}$ とおくと\n\\[ \\frac12ma^2\\Omega^2\\frac{dX}{dt}=-\\frac{(BLa)^2\\Omega^2}{8R}X^2\\ \\Longrightarrow\\ \\frac{dX}{dt}=-\\frac{B^2L^2}{4mR}X^2 \\]\n$\\dfrac{d}{dt}\\left(\\dfrac1X\\right)=\\dfrac{B^2L^2}{4mR}$ より $\\dfrac1X=\\dfrac{1}{\\theta_0(0)^2}+\\dfrac{B^2L^2}{4mR}t$，すなわち\n\\[ \\theta_0(t)=\\frac{\\theta_0(0)}{\\sqrt{1+\\alpha t}},\\qquad \\alpha=\\boldsymbol{\\frac{B^2L^2\\theta_0(0)^2}{4mR}} \\]\n指数関数的ではなく，時間の $-\\frac12$ 乗でゆっくり減っていく．振幅が小さくなるほど減衰の割合が小さくなるからである．\n\n\\textbf{(4)}　(1)：$e^{-t/2\\tau}=\\frac12$ より $t_{\\rm v}=2\\tau\\log2=\\boldsymbol{\\dfrac{2mR\\log2}{B^2L^2}}$．\n(2)：$1+\\alpha t=4$ より $t_{\\rm h}=\\dfrac3\\alpha=\\boldsymbol{\\dfrac{12mR}{B^2L^2\\theta_0(0)^2}}$．\n\\[ \\frac{t_{\\rm h}}{t_{\\rm v}}=\\boldsymbol{\\frac{6}{\\theta_0(0)^2\\log2}}\\fallingdotseq\\frac{6}{0.010\\times0.69}\\fallingdotseq\\boldsymbol{9\\times10^2} \\]\n同じ大きさの磁場でも，向きによって制動の効き方がまったく異なる．\n\n\\textbf{(5)}　起電力は $BLa\\omega\\sin\\theta\\fallingdotseq BLa\\theta\\omega=-BLa\\theta_0^{\\,2}\\Omega\\cos\\Omega t\\sin\\Omega t=-\\dfrac12BLa\\theta_0^{\\,2}\\Omega\\sin2\\Omega t$ なので，棒の振動の\\textbf{2倍}の振動数で変化する．棒が左右どちらの端に向かうときも同じ向きに上下するので，1往復の間に起電力の向きが2回入れかわるのである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "回転する棒の誘導起電力は磁場に垂直な速度成分だけで決まるので，磁場の向きによって制動の強さが位置で変わる．鉛直な磁場では最下点で最も強く効いてエネルギーは指数関数的に減るが，水平な磁場では最下点で棒が磁場と平行に動くため，消費電力が振幅の4乗に比例し，振幅は時間の $-\\frac12$ 乗でしか減らない．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "simple-harmonic-motion",
+  "simple-pendulum"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "誘導起電力",
+  "電磁制動",
+  "単振動",
+  "エネルギーの散逸",
+  "減衰"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

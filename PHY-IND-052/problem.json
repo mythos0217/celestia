@@ -1,0 +1,160 @@
+{
+ "id": "PHY-IND-052",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "一様な勾配の磁場中を落下する自己インダクタンスをもつコイル（終端速度の行き過ぎと，自己誘導による位置の先行）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，鉛直な紙面内に，紙面の裏から表へ向かう磁場がある．鉛直下向きに $y$ 軸をとると，磁束密度の大きさは $B=B_0+\\beta y$（$B_0$，$\\beta$ は正の定数）で，水平方向の位置にはよらない．質量 $m$，抵抗 $R$，自己インダクタンス $L$ の長方形コイル PQRS（水平な辺 PQ，SR の長さ $a$，鉛直な辺の長さ $h$）を，辺 PQ を水平にして紙面内で静かに放した．放した時刻を $t=0$，そのときの辺 PQ の位置を $y=0$ とし，時刻 $t$ における辺 PQ の位置を $y$，コイルの速度を $v$（下向きを正），コイルの電流を $I$（落下によって生じる誘導起電力の向きを正）とする．コイルは傾いたり回転したりせず，常に磁場の中にある．重力加速度の大きさを $g$ とし，空気抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "コイルを貫く磁束の変化による誘導起電力の大きさを $v$ を用いて表せ．また，電流 $I$ が流れているとき，コイル全体が磁場から受ける力の大きさと向きを求めよ．以下，$K=\\beta ah$ とおいてよい．"
+     },
+     {
+      "id": "2",
+      "tex": "十分に時間がたつと，コイルは一定の速さ $v_\\infty$ で落下するようになった．$v_\\infty$ とそのときの電流 $I_\\infty$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "抵抗が $R=0$（超伝導）のコイルを同じように放すと，コイルはどのような運動をするか．コイルが達する最も低い位置の $y$ と，運動の周期を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "以下では $R>0$ とする．回路について成り立つ式と，コイルの運動方程式を，それぞれ時刻 $0$ から $t$ まで足し合わせる（積分する）ことにより，$v$，$y$，$I$，$t$ の間に成り立つ関係式を1つ求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "自己インダクタンスだけが $0$ で，ほかは同じコイルを，同時に同じ位置から放した．十分に時間がたった後，同じ時刻で比べると，2つのコイルの位置の差はいくらか．どちらのコイルが下にあるかも答えよ．"
+     },
+     {
+      "id": "6",
+      "tex": "十分に時間がたった後，自己インダクタンス $L$ のコイルが $y=D$ を通過した．放してからそれまでに発生したジュール熱 $J$ を求めよ．また，自己インダクタンス $0$ のコイルが同じ位置 $y=D$ を通過するまでに発生するジュール熱との差を求めよ．"
+     },
+     {
+      "id": "7",
+      "tex": "$u=v-v_\\infty$ とおくと，$u$ は $\\dfrac{d^2u}{dt^2}+2\\gamma\\dfrac{du}{dt}+\\omega_0^{\\,2}u=0$（$\\gamma$，$\\omega_0$ は正の定数）の形の式に従う．この形の式の解は，$\\gamma<\\omega_0$ なら振動しながら $0$ に近づき，$\\gamma\\ge\\omega_0$ なら振動せずに $0$ に近づく（本問の初期条件では，このとき $u$ は符号を変えない）ことが知られている．$\\gamma$，$\\omega_0$ を求め，落下の途中でコイルの速さが一度 $v_\\infty$ を超えるための $R$ の条件を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一様な勾配の磁場中を落下する自己インダクタンスをもつコイル（終端速度の行き過ぎと，自己誘導による位置の先行）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一様な勾配の磁場中を落下する自己インダクタンスをもつコイル（終端速度の行き過ぎと，自己誘導による位置の先行）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "起電力 $\\beta ahv=Kv$，力の大きさ $\\beta ahI=KI$，向きは鉛直上向き"
+   },
+   {
+    "id": "2",
+    "tex": "$v_\\infty=\\dfrac{mgR}{K^2}$，$I_\\infty=\\dfrac{mg}{K}$"
+   },
+   {
+    "id": "3",
+    "tex": "$y=\\dfrac{mgL}{K^2}$ を中心とする単振動．最も低い位置 $y=\\dfrac{2mgL}{K^2}$，周期 $\\dfrac{2\\pi\\sqrt{mL}}{K}$"
+   },
+   {
+    "id": "4",
+    "tex": "$mv=mgt-\\dfrac{K}{R}(Ky-LI)$"
+   },
+   {
+    "id": "5",
+    "tex": "差 $\\dfrac{mgL}{K^2}$（$=v_\\infty\\dfrac{L}{R}$）で，自己インダクタンス $L$ のコイルの方が下"
+   },
+   {
+    "id": "6",
+    "tex": "$J=mgD-\\dfrac{m^3g^2R^2}{2K^4}-\\dfrac{m^2g^2L}{2K^2}$，差は $\\dfrac{m^2g^2L}{2K^2}\\left(=\\dfrac12LI_\\infty^{\\,2}\\right)$ で $L$ のコイルの方が少ない"
+   },
+   {
+    "id": "7",
+    "tex": "$\\gamma=\\dfrac{R}{2L}$，$\\omega_0=\\dfrac{K}{\\sqrt{mL}}$，条件 $R<2K\\sqrt{\\dfrac{L}{m}}=2\\beta ah\\sqrt{\\dfrac{L}{m}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\begin{enumerate}\n  \\item 辺 PQ が $y$ にあるとき，コイルを貫く磁束は\n\\[ \\Phi=\\int_y^{y+h}(B_0+\\beta s)\\,a\\,ds=a h\\left(B_0+\\beta y+\\tfrac12\\beta h\\right) \\]\nで，$\\dfrac{\\Delta\\Phi}{\\Delta t}=\\beta ah\\dfrac{\\Delta y}{\\Delta t}=\\beta ahv$．よって起電力の大きさは $\\boldsymbol{\\beta ahv=Kv}$ で，$B_0$ によらない．\n落下とともに紙面の表向きの磁束が増えるので，誘導電流は裏向きの磁場をつくる向き（表から見て時計回り）に流れる．鉛直な2辺が受ける力は打ち消し合う．下の辺 SR（磁束密度 $B_0+\\beta(y+h)$）は上向き，上の辺 PQ（$B_0+\\beta y$）は下向きの力を受けるので，合力は上向きで大きさ\n\\[ \\{B_0+\\beta(y+h)\\}aI-(B_0+\\beta y)aI=\\boldsymbol{\\beta ahI=KI} . \\]\n  \\item 回路の式と運動方程式は\n\\[ L\\frac{\\Delta I}{\\Delta t}+RI=Kv,\\qquad m\\frac{\\Delta v}{\\Delta t}=mg-KI \\]\nである．一定の速さでは加速度も電流の変化も $0$ なので，$mg=KI_\\infty$，$RI_\\infty=Kv_\\infty$ より $\\boldsymbol{I_\\infty=\\dfrac{mg}{K}}$，$\\boldsymbol{v_\\infty=\\dfrac{mgR}{K^2}}$．どちらも $L$ によらない．\n  \\item $R=0$ では $L\\dfrac{\\Delta I}{\\Delta t}=K\\dfrac{\\Delta y}{\\Delta t}$ なので，$t=0$ で $I=0$，$y=0$ より $LI=Ky$ が常に成り立つ（外部磁場による磁束の増加 $Ky$ を自己誘導の磁束 $LI$ がちょうど打ち消す，すなわち回路の全磁束が保存される）．運動方程式は\n\\[ m\\frac{\\Delta v}{\\Delta t}=mg-\\frac{K^2}{L}y=-\\frac{K^2}{L}\\left(y-\\frac{mgL}{K^2}\\right) \\]\nとなり，コイルはばね定数 $K^2/L$ のばねにつるされた物体と同じく，$y=\\dfrac{mgL}{K^2}$ を中心とする\\textbf{単振動}をする．$y=0$ で静止から始まるので振幅は $\\dfrac{mgL}{K^2}$，最も低い位置は $\\boldsymbol{y=\\dfrac{2mgL}{K^2}}$，周期は $\\boldsymbol{2\\pi\\sqrt{\\dfrac{mL}{K^2}}=\\dfrac{2\\pi\\sqrt{mL}}{K}}$．ジュール熱が出ないので，位置エネルギーの減少は運動エネルギーと磁気エネルギー $\\frac12LI^2$ の間を行き来する．\n  \\item 回路の式の各辺を時間で足し合わせると，$\\sum L\\Delta I=LI$，$\\sum RI\\Delta t=Rq$（$q$ は流れた電気量），$\\sum Kv\\Delta t=Ky$ なので $LI+Rq=Ky$．運動方程式を足し合わせると $mv=mgt-Kq$（電磁力の力積は $K$ と電気量の積）．$q$ を消去して\n\\[ \\boldsymbol{mv=mgt-\\frac{K}{R}\\,(Ky-LI)} . \\]\n  \\item 十分に時間がたつと $v=v_\\infty$，$I=I_\\infty$ なので，(4) から\n\\[ y_L=\\frac{R}{K^2}\\left(mgt-mv_\\infty\\right)+\\frac{L I_\\infty}{K} . \\]\n$L=0$ のコイルでも $v_\\infty$ は同じで，$y_0=\\dfrac{R}{K^2}(mgt-mv_\\infty)$．よって\n\\[ y_L-y_0=\\frac{LI_\\infty}{K}=\\boldsymbol{\\frac{mgL}{K^2}}\\left(=v_\\infty\\frac{L}{R}\\right) \\]\nで，\\textbf{自己インダクタンス $L$ のコイルの方が下にある}．自己誘導のために落ち始めの電流（ブレーキ）が遅れて立ち上がり，その分だけ先行するのである（この差は (3) の振動の中心の深さと一致する）．\n  \\item 重力による位置エネルギーの減少 $mgD$ は，運動エネルギー，コイルの磁気エネルギー $\\frac12LI^2$，ジュール熱に分かれる．$y=D$ では $v=v_\\infty$，$I=I_\\infty$ なので\n\\[ J=mgD-\\frac12mv_\\infty^{\\,2}-\\frac12LI_\\infty^{\\,2}=\\boldsymbol{mgD-\\frac{m^3g^2R^2}{2K^4}-\\frac{m^2g^2L}{2K^2}} . \\]\n$L=0$ のコイルでは $J_0=mgD-\\frac12mv_\\infty^{\\,2}$ なので，差は $J_0-J=\\boldsymbol{\\dfrac12LI_\\infty^{\\,2}=\\dfrac{m^2g^2L}{2K^2}}$ で，$L$ のコイルの方が少ない（その分が磁気エネルギーとして蓄えられている）．\n  \\item $I_\\infty$ からのずれを $j=I-I_\\infty$ とすると，(2) の式から\n\\[ m\\frac{du}{dt}=-Kj,\\qquad L\\frac{dj}{dt}=Ku-Rj . \\]\n第1式を微分して第2式を代入し，$j=-\\dfrac mK\\dfrac{du}{dt}$ を使うと\n\\[ \\frac{d^2u}{dt^2}=-\\frac{K}{mL}\\left(Ku-Rj\\right)=-\\frac{K^2}{mL}u-\\frac{R}{L}\\frac{du}{dt} , \\]\nすなわち $\\dfrac{d^2u}{dt^2}+\\dfrac{R}{L}\\dfrac{du}{dt}+\\dfrac{K^2}{mL}u=0$．よって $\\boldsymbol{\\gamma=\\dfrac{R}{2L}}$，$\\boldsymbol{\\omega_0=\\dfrac{K}{\\sqrt{mL}}}$．\n$t=0$ で $u=-v_\\infty<0$ なので，速さが $v_\\infty$ を超える（$u>0$ になる）のは振動しながら近づく場合，すなわち $\\gamma<\\omega_0$ のときである：\n\\[ \\frac{R}{2L}<\\frac{K}{\\sqrt{mL}}\\quad\\Longleftrightarrow\\quad \\boldsymbol{R<2K\\sqrt{\\frac{L}{m}}=2\\beta ah\\sqrt{\\frac{L}{m}}} . \\]\nコイルの運動は，質量 $m$，ばね定数 $K^2/L$ のばね（(3) の超伝導の場合）に，抵抗による減衰が加わった減衰振動と同じ構造をもつ．$L\\to0$ ではこの条件は満たされず，速さは単調に $v_\\infty$ に近づく．\\hfill$\\square$\n\\end{enumerate}"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一様な勾配の磁場中を動くコイルでは，起電力も力も同じ係数 $K=\\beta ah$ で速度・電流に比例し，位置によらない．自己インダクタンスを含めると落下運動は「ばね定数 $K^2/L$ のばね」と抵抗による減衰をもつ振動系と同じ式になり，$R<2K\\sqrt{L/m}$ では速さが終端速度を一度超える．回路の式と運動方程式を時間で足し合わせる（電気量と力積）と，十分後の位置は $L=0$ の場合より $mgL/K^2$ だけ先行し，同じ位置でのジュール熱は $\\frac12LI_\\infty^2$ だけ少ないことが分かる．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "momentum-conservation",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "自己インダクタンス",
+  "終端速度",
+  "減衰振動",
+  "電気量と力積",
+  "エネルギー保存"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

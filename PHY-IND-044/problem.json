@@ -1,0 +1,147 @@
+{
+ "id": "PHY-IND-044",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "一定の圧力差で駆動される電磁流体発電機の等価電源と最大電力・ポンプ運転",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，断面が長方形の水平な管の中を，電気抵抗率 $\\rho$ の液体金属が $+x$ 向きに流れている．管の上面と下面の一部は，$x$ 方向の長さ $\\ell$，$y$ 方向の幅 $w$ の向かい合った2枚の電極 P（上），Q（下）になっていて，その間隔は $d$ である．管の側面は絶縁体である．電極にはさまれた部分（以下，発電部）には $+y$ 向きに磁束密度 $B$ の一様な磁場がかかっている．\n\n発電部の液体はひとかたまりとなって一様な速さで動くとみなし，管の壁から速さ $u$ に比例する抵抗力 $ku$（$k$ は正の定数）を受けるとする．また，発電部の上流側と下流側の圧力差 $\\Delta p$（上流側が高い）は管の外のポンプによって一定に保たれ，発電部の液体はこの圧力差によって $+x$ 向きに大きさ $\\Delta p\\cdot wd$ の力を受ける．液体中の電流は電極間を $z$ 方向に一様に流れるとし，電流がつくる磁場，電極の外への電流の広がり，導線の抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電極 P，Q をどこにもつながないとき，定常状態での液体の速さ $u_0$ と，電極間の電位差 $V_0$ を求めよ．P，Q のどちらが高電位か．また，電極間の液体の電気抵抗 $r$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P と Q を抵抗 $R$ でつないだ．定常状態での液体の速さ $u$ と，$R$ を流れる電流 $I$ を求めよ．さらに，P，Q 間の電位差 $V$ が $V=V_0-r'I$ の形に書けることを示し，$r'$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$R$ を変えて，$R$ で消費される電力を最大にしたい．そのときの $R$ と最大の電力 $P_{\\max}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3)のとき，圧力差が発電部の液体にする仕事率に対する $P_{\\max}$ の割合 $\\eta$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "次にポンプを止めて $\\Delta p=0$ とし，P，Q 間に起電力 $E_{\\rm b}$ の電池を P 側が正極になるようにつないだ（電池の内部抵抗は無視する）．定常状態で液体はどちら向きにどれだけの速さで流れるか．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "$r$ を求めた後は，答えに $r$ を用いてよい．"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一定の圧力差で駆動される電磁流体発電機の等価電源と最大電力・ポンプ運転",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一定の圧力差で駆動される電磁流体発電機の等価電源と最大電力・ポンプ運転",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$u_0=\\dfrac{\\Delta p\\,wd}{k}$，$V_0=\\dfrac{\\Delta p\\,wBd^2}{k}$，P が高電位，$r=\\dfrac{\\rho d}{\\ell w}$"
+   },
+   {
+    "id": "2",
+    "tex": "$u=\\dfrac{\\Delta p\\,wd\\,(R+r)}{B^2d^2+k(R+r)}$，$I=\\dfrac{\\Delta p\\,wBd^2}{B^2d^2+k(R+r)}$，$r'=r+\\dfrac{B^2d^2}{k}$"
+   },
+   {
+    "id": "3",
+    "tex": "$R=r+\\dfrac{B^2d^2}{k}$，$P_{\\max}=\\dfrac{(\\Delta p)^2w^2B^2d^4}{4k(kr+B^2d^2)}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\eta=\\dfrac{B^2d^2}{2(B^2d^2+2kr)}$"
+   },
+   {
+    "id": "5",
+    "tex": "$+x$ 向きに $\\dfrac{E_{\\rm b}Bd}{B^2d^2+kr}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 開放状態}\n\n電流が流れなければ液体に電磁力ははたらかないので，力のつり合い $\\Delta p\\cdot wd=ku_0$ より\n\\[ \\boldsymbol{u_0=\\frac{\\Delta p\\,wd}{k}} . \\]\n液体中の正の電荷は $q\\vec u\\times\\vec B$（$+x\\times+y=+z$ 向き）の力を受けて上へ，負の電荷は下へ寄るので，\\textbf{P が高電位}になる．電荷が受ける電場の力とローレンツ力がつり合うまでたまるので，電極間の電場は $u_0B$，電位差は\n\\[ \\boldsymbol{V_0=u_0Bd=\\frac{\\Delta p\\,wBd^2}{k}} . \\]\n電流は長さ $d$，断面積 $\\ell w$ の液体を流れるので $\\boldsymbol{r=\\dfrac{\\rho d}{\\ell w}}$．\n\n\\textbf{(2) 抵抗をつないだ定常状態}\n\n発電部は起電力 $uBd$，内部抵抗 $r$ の電池とみなせ，\n\\[ uBd=(R+r)I \\quad\\cdots\\text{①} \\]\n液体中を上向き（Q→P）に流れる電流 $I$ は磁場から $I\\cdot d\\cdot B$ の力を受け，その向きは $+z\\times+y=-x$，すなわち流れを妨げる向きである．速さが一定だから\n\\[ \\Delta p\\cdot wd=ku+IBd \\quad\\cdots\\text{②} \\]\n①②を解いて\n\\[ \\boldsymbol{u=\\frac{\\Delta p\\,wd\\,(R+r)}{B^2d^2+k(R+r)}},\\qquad \\boldsymbol{I=\\frac{\\Delta p\\,wBd^2}{B^2d^2+k(R+r)}} . \\]\nP，Q 間の電位差は $V=uBd-rI$．②から $u=\\dfrac{\\Delta p\\,wd-IBd}{k}$ を代入すると\n\\[ V=\\frac{\\Delta p\\,wBd^2}{k}-\\left(r+\\frac{B^2d^2}{k}\\right)I=V_0-r'I,\\qquad \\boldsymbol{r'=r+\\frac{B^2d^2}{k}} . \\]\n電流を取り出すと電磁力で流れが遅くなり起電力が下がるので，その分が「見かけの内部抵抗」$B^2d^2/k$ として液体の電気抵抗 $r$ に直列に加わる．発電機全体は起電力 $V_0$，内部抵抗 $r'$ の電池と等価である（解答図）．\n\n\\textbf{(3) 最大電力}\n\n等価な電池に外部抵抗 $R$ をつなぐと，$R$ の電力は\n\\[ RI^2=\\frac{RV_0^2}{(R+r')^2}=\\frac{V_0^2}{\\left(\\sqrt R-\\dfrac{r'}{\\sqrt R}\\right)^2+4r'} \\]\nで，$R=r'$ のとき最大．よって\n\\[ \\boldsymbol{R=r+\\frac{B^2d^2}{k}},\\qquad \\boldsymbol{P_{\\max}=\\frac{V_0^2}{4r'}=\\frac{(\\Delta p)^2w^2B^2d^4}{4k(kr+B^2d^2)}} . \\]\n（流れの速さ一定の条件で考えると最適値は $R=r$ だが，圧力差一定では流れの減速まで含めた $r'$ に合わせることになる．）\n\n\\textbf{(4) 効率}\n\n$R=r'$ のとき $I=\\dfrac{V_0}{2r'}$．②より\n\\[ u=\\frac{\\Delta p\\,wd-IBd}{k}=u_0\\left(1-\\frac{B^2d^2}{2kr'}\\right)=u_0\\frac{2kr+B^2d^2}{2(kr+B^2d^2)} . \\]\n圧力差の仕事率は $\\Delta p\\,wd\\cdot u$，また $P_{\\max}=\\dfrac{V_0^2}{4r'}=\\Delta p\\,wd\\,u_0\\cdot\\dfrac{B^2d^2}{4(kr+B^2d^2)}$ だから\n\\[ \\boldsymbol{\\eta=\\frac{P_{\\max}}{\\Delta p\\,wd\\,u}=\\frac{B^2d^2}{2(B^2d^2+2kr)}} . \\]\nなお，一般に②×$u$ と①×$I$ から $\\Delta p\\,wd\\cdot u=(R+r)I^2+ku^2$ となり，圧力差の仕事率は $R$，$r$ でのジュール熱と壁の抵抗による損失の和に一致する（エネルギー保存）．$r\\to0$ でも $\\eta$ は $\\dfrac12$ を超えない．\n\n\\textbf{(5) ポンプとしての運転}\n\n電池は P 側が正極なので，液体中には P→Q（$-z$ 向き）に電流が流れうる．Q→P 向きを正とする電流を $I$ として，回路の式と力のつり合いは\n\\[ uBd-E_{\\rm b}=rI,\\qquad 0=ku+IBd . \\]\n第2式より $I=-\\dfrac{ku}{Bd}$ を第1式に代入して\n\\[ u=\\frac{E_{\\rm b}Bd}{B^2d^2+kr}>0 . \\]\nよって液体は $\\boldsymbol{+x}$ \\textbf{向きに速さ $\\boldsymbol{\\dfrac{E_{\\rm b}Bd}{B^2d^2+kr}}$} で流れる．電流は $I<0$（P→Q）で，$-z\\times+y=+x$ 向きの電磁力が液体を押し，発電機が電磁ポンプに切りかわる．液体が動くと起電力 $uBd$ が電池に逆らうので，速さは $E_{\\rm b}/(Bd)$ より小さいところで頭打ちになる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "圧力差一定で駆動される電磁流体発電機では，電流を取り出すと電磁力で流れが遅くなり起電力も下がるので，端子電圧は電流の1次式となり，液体の抵抗 $r$ に流れの減速による $B^2d^2/k$ が直列に加わった内部抵抗をもつ電池と等価になる．最大電力の条件はこの見かけの内部抵抗に負荷を合わせることで，外から電池で電流を逆向きに流せば同じ装置が電磁ポンプとしてはたらく．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "electric-power",
+  "lorentz-force"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電磁流体発電",
+  "ローレンツ力",
+  "等価電源",
+  "最大電力",
+  "電磁ポンプ"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

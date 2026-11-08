@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400">
+<defs><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<circle cx="40" cy="40" r="6.0" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="40" cy="40" r="1.8" fill="#888"/>
+<circle cx="88" cy="40" r="6.0" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="88" cy="40" r="1.8" fill="#888"/>
+<circle cx="136" cy="40" r="6.0" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="136" cy="40" r="1.8" fill="#888"/>
+<circle cx="184" cy="40" r="6.0" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="184" cy="40" r="1.8" fill="#888"/>
+<circle cx="232" cy="40" r="6.0" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="232" cy="40" r="1.8" fill="#888"/>
+<circle cx="280" cy="40" r="6.0" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="280" cy="40" r="1.8" fill="#888"/>
+<circle cx="328" cy="40" r="6.0" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="328" cy="40" r="1.8" fill="#888"/>
+<circle cx="40" cy="80" r="6.9" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="40" cy="80" r="1.8" fill="#888"/>
+<circle cx="88" cy="80" r="6.9" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="88" cy="80" r="1.8" fill="#888"/>
+<circle cx="136" cy="80" r="6.9" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="136" cy="80" r="1.8" fill="#888"/>
+<circle cx="232" cy="80" r="6.9" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="232" cy="80" r="1.8" fill="#888"/>
+<circle cx="280" cy="80" r="6.9" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="280" cy="80" r="1.8" fill="#888"/>
+<circle cx="328" cy="80" r="6.9" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="328" cy="80" r="1.8" fill="#888"/>
+<circle cx="40" cy="120" r="7.8" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="40" cy="120" r="1.8" fill="#888"/>
+<circle cx="136" cy="120" r="7.8" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="136" cy="120" r="1.8" fill="#888"/>
+<circle cx="184" cy="120" r="7.8" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="184" cy="120" r="1.8" fill="#888"/>
+<circle cx="232" cy="120" r="7.8" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="232" cy="120" r="1.8" fill="#888"/>
+<circle cx="328" cy="120" r="7.8" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="328" cy="120" r="1.8" fill="#888"/>
+<circle cx="40" cy="160" r="8.7" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="40" cy="160" r="1.8" fill="#888"/>
+<circle cx="88" cy="160" r="8.7" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="88" cy="160" r="1.8" fill="#888"/>
+<circle cx="328" cy="160" r="8.7" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="328" cy="160" r="1.8" fill="#888"/>
+<circle cx="40" cy="200" r="9.6" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="40" cy="200" r="1.8" fill="#888"/>
+<circle cx="88" cy="200" r="9.6" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="88" cy="200" r="1.8" fill="#888"/>
+<circle cx="136" cy="200" r="9.6" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="136" cy="200" r="1.8" fill="#888"/>
+<circle cx="184" cy="200" r="9.6" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="184" cy="200" r="1.8" fill="#888"/>
+<circle cx="232" cy="200" r="9.6" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="232" cy="200" r="1.8" fill="#888"/>
+<circle cx="280" cy="200" r="9.6" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="280" cy="200" r="1.8" fill="#888"/>
+<circle cx="328" cy="200" r="9.6" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="328" cy="200" r="1.8" fill="#888"/>
+<circle cx="40" cy="240" r="10.5" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="40" cy="240" r="1.8" fill="#888"/>
+<circle cx="136" cy="240" r="10.5" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="136" cy="240" r="1.8" fill="#888"/>
+<circle cx="184" cy="240" r="10.5" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="184" cy="240" r="1.8" fill="#888"/>
+<circle cx="232" cy="240" r="10.5" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="232" cy="240" r="1.8" fill="#888"/>
+<circle cx="328" cy="240" r="10.5" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="328" cy="240" r="1.8" fill="#888"/>
+<circle cx="40" cy="280" r="11.4" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="40" cy="280" r="1.8" fill="#888"/>
+<circle cx="88" cy="280" r="11.4" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="88" cy="280" r="1.8" fill="#888"/>
+<circle cx="136" cy="280" r="11.4" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="136" cy="280" r="1.8" fill="#888"/>
+<circle cx="184" cy="280" r="11.4" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="184" cy="280" r="1.8" fill="#888"/>
+<circle cx="232" cy="280" r="11.4" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="232" cy="280" r="1.8" fill="#888"/>
+<circle cx="280" cy="280" r="11.4" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="280" cy="280" r="1.8" fill="#888"/>
+<circle cx="328" cy="280" r="11.4" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="328" cy="280" r="1.8" fill="#888"/>
+<circle cx="40" cy="320" r="12.3" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="40" cy="320" r="1.8" fill="#888"/>
+<circle cx="88" cy="320" r="12.3" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="88" cy="320" r="1.8" fill="#888"/>
+<circle cx="136" cy="320" r="12.3" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="136" cy="320" r="1.8" fill="#888"/>
+<circle cx="184" cy="320" r="12.3" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="184" cy="320" r="1.8" fill="#888"/>
+<circle cx="232" cy="320" r="12.3" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="232" cy="320" r="1.8" fill="#888"/>
+<circle cx="280" cy="320" r="12.3" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="280" cy="320" r="1.8" fill="#888"/>
+<circle cx="328" cy="320" r="12.3" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="328" cy="320" r="1.8" fill="#888"/>
+<circle cx="40" cy="360" r="13.2" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="40" cy="360" r="1.8" fill="#888"/>
+<circle cx="88" cy="360" r="13.2" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="88" cy="360" r="1.8" fill="#888"/>
+<circle cx="136" cy="360" r="13.2" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="136" cy="360" r="1.8" fill="#888"/>
+<circle cx="184" cy="360" r="13.2" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="184" cy="360" r="1.8" fill="#888"/>
+<circle cx="232" cy="360" r="13.2" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="232" cy="360" r="1.8" fill="#888"/>
+<circle cx="280" cy="360" r="13.2" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="280" cy="360" r="1.8" fill="#888"/>
+<circle cx="328" cy="360" r="13.2" fill="none" stroke="#888" stroke-width="1"/>
+<circle cx="328" cy="360" r="1.8" fill="#888"/>
+<rect x="100" y="110" width="170" height="110" fill="none" stroke="#222" stroke-width="2.2"/>
+<text x="84" y="106" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">P</text>
+<text x="274" y="106" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">Q</text>
+<text x="274" y="236" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">R</text>
+<text x="84" y="236" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">S</text>
+<line x1="100" y1="88" x2="270" y2="88" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+<rect x="176.0" y="74" width="18" height="16" fill="white" fill-opacity="0"/>
+<text x="185.0" y="83" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">a</text>
+<line x1="296" y1="110" x2="296" y2="220" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+<text x="302" y="170.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">h</text>
+<line x1="400" y1="110" x2="400" y2="385" stroke="#222" stroke-width="1.4" marker-end="url(#q-ak)"/>
+<line x1="270" y1="110" x2="400" y2="110" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="408" y="115" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">y<tspan font-style="normal" font-family="Noto Sans CJK JP, sans-serif"> = 0</tspan></text>
+<text x="408" y="380" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">y</text>
+<line x1="470" y1="40" x2="470" y2="90" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<text x="478" y="70" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">g</text>
+<text x="40" y="18" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">磁場（紙面の裏から表向き）<tspan font-family="Times New Roman, serif" font-style="italic">B</tspan> = <tspan font-family="Times New Roman, serif" font-style="italic">B</tspan><tspan baseline-shift="sub" font-size="10">0</tspan> + <tspan font-family="Times New Roman, serif" font-style="italic">βy</tspan></text>
+<text x="185.0" y="170.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">質量 <tspan font-family="Times New Roman, serif" font-style="italic">m</tspan>，抵抗 <tspan font-family="Times New Roman, serif" font-style="italic">R</tspan></text>
+<text x="185.0" y="189.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">自己インダクタンス <tspan font-family="Times New Roman, serif" font-style="italic">L</tspan></text>
+</svg>

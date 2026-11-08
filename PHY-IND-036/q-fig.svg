@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 270">
+<defs><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker></defs>
+
+<rect x="70" y="70" width="230" height="60" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<ellipse cx="70" cy="100.0" rx="9" ry="30.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M73.0,130 Q80.0,100.0 83.0,70" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M83.0,70 Q90.23076923076923,100.0 89.46153846153845,130" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="2,2"/>
+<path d="M89.46153846153845,130 Q96.46153846153845,100.0 99.46153846153845,70" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M99.46153846153845,70 Q106.69230769230768,100.0 105.92307692307692,130" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="2,2"/>
+<path d="M105.92307692307692,130 Q112.92307692307692,100.0 115.92307692307692,70" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M115.92307692307692,70 Q123.15384615384616,100.0 122.38461538461539,130" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="2,2"/>
+<path d="M122.38461538461539,130 Q129.3846153846154,100.0 132.3846153846154,70" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M132.3846153846154,70 Q139.6153846153846,100.0 138.84615384615384,130" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="2,2"/>
+<path d="M138.84615384615384,130 Q145.84615384615384,100.0 148.84615384615384,70" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M148.84615384615384,70 Q156.0769230769231,100.0 155.30769230769232,130" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="2,2"/>
+<path d="M155.30769230769232,130 Q162.30769230769232,100.0 165.30769230769232,70" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M165.30769230769232,70 Q172.53846153846155,100.0 171.76923076923077,130" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="2,2"/>
+<path d="M171.76923076923077,130 Q178.76923076923077,100.0 181.76923076923077,70" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M181.76923076923077,70 Q189.0,100.0 188.23076923076923,130" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="2,2"/>
+<path d="M188.23076923076923,130 Q195.23076923076923,100.0 198.23076923076923,70" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M198.23076923076923,70 Q205.46153846153845,100.0 204.69230769230768,130" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="2,2"/>
+<path d="M204.69230769230768,130 Q211.69230769230768,100.0 214.69230769230768,70" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M214.69230769230768,70 Q221.9230769230769,100.0 221.15384615384616,130" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="2,2"/>
+<path d="M221.15384615384616,130 Q228.15384615384616,100.0 231.15384615384616,70" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M231.15384615384616,70 Q238.3846153846154,100.0 237.6153846153846,130" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="2,2"/>
+<path d="M237.6153846153846,130 Q244.6153846153846,100.0 247.6153846153846,70" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M247.6153846153846,70 Q254.84615384615387,100.0 254.0769230769231,130" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="2,2"/>
+<path d="M254.0769230769231,130 Q261.0769230769231,100.0 264.0769230769231,70" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M264.0769230769231,70 Q271.3076923076923,100.0 270.53846153846155,130" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="2,2"/>
+<path d="M270.53846153846155,130 Q277.53846153846155,100.0 280.53846153846155,70" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M280.53846153846155,70 Q287.7692307692308,100.0 287.0,130" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="2,2"/>
+<path d="M287.0,130 Q294.0,100.0 297.0,70" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M73,130 L73,170" stroke="#222" stroke-width="1.6"/><circle cx="73" cy="174" r="4" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M297,70 L317,70 L317,170" fill="none" stroke="#222" stroke-width="1.6"/><circle cx="317" cy="174" r="4" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="67" y="198" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">a</text><text x="312" y="198" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">b</text>
+<path d="M70,52 L300,52" stroke="#222" stroke-width="1" marker-start="url(#q-ar)" marker-end="url(#q-ar)"/>
+<text x="181.0" y="46" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">ℓ</text>
+<text x="12" y="105.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">断面積</text><text x="40" y="124.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">A</text>
+<text x="145.0" y="160" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">巻数 </text><text x="181.0" y="160" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">N</text>
+<rect x="380" y="60" width="80" height="150" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<circle cx="420" cy="54" r="4" fill="none" stroke="#222" stroke-width="1.6"/><path d="M420,58 L420,80" stroke="#222" stroke-width="1.6"/>
+<path d="M404,80 L436,80" stroke="#222" stroke-width="1.6"/><path d="M412,88 L428,88" stroke="#222" stroke-width="3"/>
+<path d="M420,88 L420,120" stroke="#222" stroke-width="1.6"/><rect x="412" y="120" width="16" height="40" fill="none" stroke="#222" stroke-width="1.6"/><path d="M420,160 L420,216" stroke="#222" stroke-width="1.6"/><circle cx="420" cy="220" r="4" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="440" y="90" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">E</text><text x="436" y="146" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">r</text><text x="390" y="76" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">＋</text>
+<text x="398" y="250" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">電池</text>
+<circle cx="540" cy="54" r="4" fill="none" stroke="#222" stroke-width="1.6"/><path d="M540,58 L540,125" stroke="#222" stroke-width="1.6"/>
+<path d="M520,125 L560,125" stroke="#222" stroke-width="1.6"/><path d="M520,137 L560,137" stroke="#222" stroke-width="1.6"/>
+<path d="M540,137 L540,216" stroke="#222" stroke-width="1.6"/><circle cx="540" cy="220" r="4" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="566" y="137" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">C</text><text x="500" y="250" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">コンデンサー</text>
+</svg>

@@ -1,0 +1,130 @@
+{
+ "id": "PHY-IND-031",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "一様磁場中で回転できる超伝導の正方形枠（磁束保存による復元力と単振動・回転への切り替わり）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平面内に $x$ 軸，$y$ 軸，鉛直上向きに $z$ 軸をとる．空間には $y$ 軸の正の向きに磁束密度の大きさ $B$ の一様な磁場がかかっている．1辺の長さ $\\ell$ の正方形の導線の枠 abcd があり，辺 ab は $z$ 軸に一致していて（a が下端，b が上端，c は b の，d は a の向かい側の頂点），枠は $z$ 軸のまわりに摩擦なく回転できる．辺 cd には質量 $M$ のおもりが取り付けられていて，ほかの部分の質量は無視できる．枠は超伝導線でできていて電気抵抗は $0$，枠の自己インダクタンスは $L$ で一定である．上から見て，枠の面が $x$ 軸となす角を $\\varphi$（反時計回りを正）とする．\n\n枠を角 $\\varphi_0\\ (0<\\varphi_0\\le\\frac{\\pi}{2})$ に固定し，電流が流れていない状態で磁場をかけ，その後で枠を超伝導状態にした．以下，枠の固定を外して回転させる．電流は $\\mathrm{a\\to d\\to c\\to b\\to a}$ の向き（辺 dc では鉛直上向き）を正とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "枠が角 $\\varphi$ にあるとき，枠に流れる電流 $i$ を $B,\\ \\ell,\\ L,\\ \\varphi,\\ \\varphi_0$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "角 $\\varphi$ で電流 $i$ が流れているとき，枠の各辺が磁場から受ける力による $z$ 軸のまわりの力のモーメントを求め，$\\varphi$ を増やす向きを正として $i,\\ B,\\ \\ell,\\ \\varphi$ で表せ．また，枠の回転の運動エネルギーと $\\dfrac12Li^2$ の和が保存されることを示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\varphi_0=\\dfrac{\\pi}{2}$ の場合，枠を $\\varphi_0$ からわずかに回転させてはなすと，枠は $\\varphi_0$ を中心に単振動する．その周期 $T$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$0<\\varphi_0<\\dfrac{\\pi}{2}$ の場合の微小振動の周期 $T(\\varphi_0)$ を求めよ．また，$\\varphi_0$ を $0$ に近づけると何が起こるか，理由とともに述べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\varphi_0=\\dfrac{\\pi}{2}$ で静止している枠に，瞬間的に角速度 $\\Omega$（$\\varphi$ を増やす向き）を与えた．枠が往復運動をするための $\\Omega$ の条件と，そのときの最大の回転角 $\\psi_{\\max}$（$\\varphi_0$ から測る）が満たす式，および電流の大きさの最大値を求めよ．また，$\\Omega$ がその条件を満たさないとき，枠はどのような運動をするか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一様磁場中で回転できる超伝導の正方形枠（磁束保存による復元力と単振動・回転への切り替わり）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$i=\\dfrac{B\\ell^2}{L}(\\cos\\varphi-\\cos\\varphi_0)$"
+   },
+   {
+    "id": "2",
+    "tex": "$N=iB\\ell^2\\sin\\varphi$"
+   },
+   {
+    "id": "3",
+    "tex": "$T=\\dfrac{2\\pi\\sqrt{LM}}{B\\ell}$"
+   },
+   {
+    "id": "4",
+    "tex": "$T(\\varphi_0)=\\dfrac{2\\pi\\sqrt{LM}}{B\\ell\\sin\\varphi_0}$．$\\varphi_0\\to0$ で $T\\to\\infty$：$\\varphi=0$ 付近では磁束が角度の2乗でしか変わらず，復元力が変位に比例しなくなる（単振動でなくなり，振動は極めて遅い）"
+   },
+   {
+    "id": "5",
+    "tex": "$\\Omega<\\dfrac{B\\ell}{\\sqrt{LM}}$，$\\sin\\psi_{\\max}=\\dfrac{\\Omega\\sqrt{LM}}{B\\ell}$，電流の最大値 $\\Omega\\sqrt{\\dfrac{M}{L}}\\,\\ell$．$\\Omega>\\dfrac{B\\ell}{\\sqrt{LM}}$ なら同じ向きに回転し続ける（角速度は周期的に変化）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　抵抗 $0$ の閉回路では誘導起電力が $0$ でなければならず，「外部磁場による磁束 $+$ 自己誘導による磁束 $Li$」が一定に保たれる．これから電流が角度の関数として決まり，ローレンツ力のモーメントが角度だけの関数になる．\n\n\\textbf{(1)}　枠の面内で軸から離れる水平な向きの単位ベクトルを $\\vec e=(\\cos\\varphi,\\ \\sin\\varphi,\\ 0)$ とする．正の電流は $\\mathrm{a\\to d}$ で $\\vec e$ の向き，$\\mathrm{d\\to c}$ で $+z$ の向きに流れるので，正の電流が右ねじの向きにつくる面の法線は $\\vec e\\times\\hat z=(\\sin\\varphi,\\ -\\cos\\varphi,\\ 0)$ の向きである．この向きに測った外部磁場の磁束は\n\\[ \\Phi_{\\rm ext}=B\\hat y\\cdot(\\sin\\varphi,\\ -\\cos\\varphi,\\ 0)\\,\\ell^2=-B\\ell^2\\cos\\varphi \\]\n抵抗が $0$ なので，回路の起電力の和 $-\\dfrac{\\Delta\\Phi_{\\rm ext}}{\\Delta t}-L\\dfrac{\\Delta i}{\\Delta t}$ は $0$ でなければならない（$0$ でなければ電流が限りなく変化する）．よって $\\Phi_{\\rm ext}+Li$ が一定で，はじめ $\\varphi=\\varphi_0$，$i=0$ だから\n\\[ -B\\ell^2\\cos\\varphi+Li=-B\\ell^2\\cos\\varphi_0\\quad\\Longrightarrow\\quad i=\\boldsymbol{\\frac{B\\ell^2}{L}(\\cos\\varphi-\\cos\\varphi_0)} \\]\n\n\\textbf{(2)}　辺 ad，cb は水平で，電流は水平（軸から離れる向きか近づく向き）に流れる．磁場も水平なので，力 $i\\vec\\ell\\times\\vec B$ は鉛直方向となり，$z$ 軸のまわりのモーメントをもたない．辺 ab は軸上にあるのでモーメントは $0$．\n辺 dc（位置 $\\ell\\vec e$）には $+z$ 向きに電流 $i$ が流れるから，力は\n\\[ \\vec F=i\\ell\\,\\hat z\\times B\\hat y=-i\\ell B\\,\\hat x \\]\n$z$ 軸のまわりのモーメント（上から見て反時計回り，すなわち $\\varphi$ を増やす向きを正）は $N=xF_y-yF_x$ より\n\\[ N=-\\ell\\sin\\varphi\\cdot(-i\\ell B)=\\boldsymbol{iB\\ell^2\\sin\\varphi} \\]\n(1) の $i$ を代入すると\n\\[ N=\\frac{B^2\\ell^4}{L}(\\cos\\varphi-\\cos\\varphi_0)\\sin\\varphi \\]\n$0<\\varphi<\\pi$ の範囲で，$\\varphi$ が $\\varphi_0$ より少し大きいと $\\cos\\varphi<\\cos\\varphi_0$ で $N<0$，小さいと $N>0$ となり，常に $\\varphi_0$ に戻す向きにはたらく．\n\\textbf{エネルギー}：枠の角速度を $\\omega$ とすると，モーメントの仕事率（運動エネルギーの増加率）は $N\\omega$．一方，(1) の式の変化をとると（$\\cos\\varphi$ の変化率は $-\\sin\\varphi\\cdot\\omega$）$L\\dfrac{\\Delta i}{\\Delta t}=-B\\ell^2\\sin\\varphi\\cdot\\omega$ だから\n\\[ \\frac{\\Delta}{\\Delta t}\\left(\\frac12Li^2\\right)=Li\\frac{\\Delta i}{\\Delta t}=-iB\\ell^2\\sin\\varphi\\cdot\\omega=-N\\omega \\]\nしたがって $\\dfrac12M\\ell^2\\omega^2+\\dfrac12Li^2$ は一定である．（ローレンツ力が枠にする仕事は，誘導起電力が電流に対してする負の仕事とちょうど打ち消し合い，エネルギーは運動エネルギーとコイルの磁場のエネルギーの間を行き来する．）\n\n\\textbf{(3)}　エネルギー保存則\n\\[ \\frac12M\\ell^2\\omega^2+\\frac{B^2\\ell^4}{2L}(\\cos\\varphi-\\cos\\varphi_0)^2=\\text{一定} \\]\nで，$\\varphi_0=\\dfrac\\pi2$，$\\varphi=\\dfrac\\pi2+\\psi$ とおくと $\\cos\\varphi=-\\sin\\psi\\fallingdotseq-\\psi$．位置エネルギーにあたる項は $\\dfrac{B^2\\ell^4}{2L}\\psi^2$ で，ばね定数 $\\dfrac{B^2\\ell^4}{L}$，慣性 $M\\ell^2$ の単振動になる（運動方程式で書くと $M\\ell^2\\ddot\\psi=-\\dfrac{B^2\\ell^4}{L}\\psi$）．角振動数は $\\sqrt{\\dfrac{B^2\\ell^4}{LM\\ell^2}}=\\dfrac{B\\ell}{\\sqrt{LM}}$ で\n\\[ T=\\boldsymbol{\\frac{2\\pi\\sqrt{LM}}{B\\ell}} \\]\n\n\\textbf{(4)}　$\\varphi=\\varphi_0+\\psi$ とすると $\\cos\\varphi-\\cos\\varphi_0\\fallingdotseq-\\psi\\sin\\varphi_0$．位置エネルギーは $\\dfrac{B^2\\ell^4\\sin^2\\varphi_0}{2L}\\psi^2$ となり，\n\\[ T(\\varphi_0)=\\boldsymbol{\\frac{2\\pi\\sqrt{LM}}{B\\ell\\sin\\varphi_0}} \\]\n$\\varphi_0\\to0$ で $T\\to\\infty$ となる．$\\varphi_0=0$（枠の面が磁場に垂直）付近では外部磁場の磁束 $B\\ell^2\\cos\\varphi$ が角度の2乗でしか変化しないため，誘導される電流も，復元のモーメントも変位に比例しなくなり（$\\psi^3$ に比例），単振動ではなくなる．復元作用が極めて弱く，振動は非常にゆっくりで，周期は振幅によって変わる．超伝導の枠は「冷やしたときの磁束」を保とうとするので，磁束の変化が角度に敏感な向き（枠の面が磁場に平行）で冷やすほど強く向きが固定される．\n\n\\textbf{(5)}　$\\varphi_0=\\dfrac\\pi2$ のとき，エネルギー保存則は\n\\[ \\frac12M\\ell^2\\Omega^2=\\frac12M\\ell^2\\omega^2+\\frac{B^2\\ell^4}{2L}\\sin^2\\psi \\]\n右辺第2項の最大値は $\\psi=\\dfrac\\pi2$（枠の面が磁場に垂直）での $\\dfrac{B^2\\ell^4}{2L}$．これを超えられなければ枠は戻ってきて往復運動するので，条件は\n\\[ \\frac12M\\ell^2\\Omega^2<\\frac{B^2\\ell^4}{2L}\\quad\\Longrightarrow\\quad\\boldsymbol{\\Omega<\\frac{B\\ell}{\\sqrt{LM}}} \\]\n最大の回転角は $\\omega=0$ となる角で\n\\[ \\boldsymbol{\\sin\\psi_{\\max}=\\frac{\\Omega\\sqrt{LM}}{B\\ell}} \\]\n電流の大きさは $|i|=\\dfrac{B\\ell^2}{L}|\\sin\\psi|$ なので，最大値は\n\\[ |i|_{\\max}=\\frac{B\\ell^2}{L}\\sin\\psi_{\\max}=\\boldsymbol{\\Omega\\ell\\sqrt{\\frac{M}{L}}} \\]\n（はじめの運動エネルギーがすべて $\\dfrac12Li^2$ に移ったときの値と一致する．）\n$\\Omega>\\dfrac{B\\ell}{\\sqrt{LM}}$ のときは $\\psi=\\dfrac\\pi2$ を越え，その先 $\\sin^2\\psi$ は再び減るので，枠は止まることなく\\textbf{同じ向きに回転し続ける}．$\\psi=\\pi$ で電流は再び $0$ になり，角速度は $\\psi$ が $\\pi$ 進むごとに同じ変化をくり返す（$\\psi=\\dfrac\\pi2+n\\pi$ で最小）．抵抗がないのでエネルギーは失われない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "抵抗 $0$ の閉回路では「外部磁場の磁束 $+Li$」が保存されるので，電源がなくても枠を回すと電流が誘導され，そのローレンツ力のモーメントが冷却時の向きへ戻す復元力になる．運動エネルギーと $\\frac12Li^2$ の和が保存され，復元の強さは冷却時の向きでの磁束の角度変化率（$\\sin\\varphi_0$）で決まり，エネルギーの山 $\\frac{B^2\\ell^4}{2L}$ を越えるかどうかで往復運動と回転が切り替わる．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "simple-harmonic-motion",
+  "torque"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "超伝導",
+  "磁束保存",
+  "自己インダクタンス",
+  "力のモーメント",
+  "単振動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

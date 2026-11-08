@@ -1,0 +1,135 @@
+{
+ "id": "PHY-IND-042",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "自分の電流がつくる磁場の中で回るファラデー円板（自励発電機の臨界角速度と，一定トルクで回したときの角速度の固定）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，十分に長いコイル（単位長さあたりの巻数 $n$）の中に，半径 $r$ の金属円板が置かれ，コイルの中心軸と一致する回転軸のまわりに摩擦なく回転できる．コイルの一端はブラシで円板の縁に，他端は電流計を通して回転軸につながっており，回路全体の抵抗は $R$，自己インダクタンスは $L$ である．コイルの中心軸は地磁気と平行で，地磁気の磁束密度の大きさを $B_0$ とする．真空の透磁率を $\\mu_0$ とする．\n\n円板の回転の向きと電流の向きには符号をつけ，円板が正の向きに回るとき，円板に生じる起電力による電流が，コイル内に $B_0$ と同じ向きの磁場をつくるように配線してあるとする．電流 $I$ はこの向きを正とし，コイル内の磁束密度は $B=B_0+\\mu_0nI$ である．角速度 $\\omega$ で回る円板の中心と縁の間には大きさ $\\dfrac12B\\omega r^2$ の起電力が生じ，円板を電流 $I$ が流れると，円板は回転を妨げる向きに大きさ $\\dfrac12BIr^2$ の磁気力のモーメントを受ける．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "円板を正の向きに一定の角速度 $\\omega$ で回し続けるとき，十分に時間がたった後の電流 $I$ を求めよ．また，このような一定の電流が存在するのは $\\omega$ がある値 $\\omega_{\\rm c}$ より小さいときに限られる．$\\omega_{\\rm c}$ を求め，$\\omega>\\omega_{\\rm c}$ のとき電流がどうなるかを説明せよ．"
+     },
+     {
+      "id": "2",
+      "tex": "円板を負の向きに一定の角速度で回すとき，十分に時間がたった後の電流の大きさを角速度の大きさ $|\\omega|$ で表せ．$|\\omega|\\to\\infty$ の極限で，電流と円板の位置の磁束密度はそれぞれどうなるか．"
+     },
+     {
+      "id": "3",
+      "tex": "以下では $B_0$ は（電流を生じさせるきっかけとしては必要だが）無視できるほど小さいとする．円板に正の向きの一定の力のモーメント $\\tau$ を加え続けたところ，角速度と電流が一定の状態になった．このときの角速度 $\\omega$ と電流の大きさ $|I|$ を求めよ．また，$\\tau$ のする仕事率と回路のジュール熱の関係を確かめよ．"
+     },
+     {
+      "id": "4",
+      "tex": "実際には，(3) の状態からずれると角速度と電流は一定にならず，周期的に変動し続ける．円板の角速度は $J\\dfrac{\\Delta\\omega}{\\Delta t}=\\tau-\\dfrac12\\mu_0nI^2r^2$（$J$ は正の定数），電流は $L\\dfrac{\\Delta I}{\\Delta t}=\\dfrac12\\mu_0nI\\omega r^2-RI$ に従う（$B_0$ は無視）．$I>0$ の変動が1周期ごとにもとの状態にもどるとき，角速度の1周期の時間平均 $\\langle\\omega\\rangle$ と，ジュール熱の発生率の時間平均 $R\\langle I^2\\rangle$ を求めよ．必要なら $\\dfrac{1}{I}\\dfrac{dI}{dt}=\\dfrac{d}{dt}\\log I$ を用いよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：自分の電流がつくる磁場の中で回るファラデー円板（自励発電機の臨界角速度と，一定トルクで回したときの角速度の固定）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：自分の電流がつくる磁場の中で回るファラデー円板（自励発電機の臨界角速度と，一定トルクで回したときの角速度の固定）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I=\\dfrac{B_0\\omega r^2}{2R-\\mu_0n\\omega r^2}$，$\\omega_{\\rm c}=\\dfrac{2R}{\\mu_0nr^2}$；$\\omega>\\omega_{\\rm c}$ では電流は（$B_0$ による起電力がきっかけとなって）限りなく増加する"
+   },
+   {
+    "id": "2",
+    "tex": "$|I|=\\dfrac{B_0|\\omega|r^2}{2R+\\mu_0n|\\omega|r^2}$；$|\\omega|\\to\\infty$ で $I\\to-\\dfrac{B_0}{\\mu_0n}$，磁束密度 $\\to0$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\omega=\\omega_{\\rm c}=\\dfrac{2R}{\\mu_0nr^2}$（$\\tau$ によらない），$|I|=\\dfrac1r\\sqrt{\\dfrac{2\\tau}{\\mu_0n}}$；$\\tau\\omega_{\\rm c}=RI^2$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\langle\\omega\\rangle=\\omega_{\\rm c}=\\dfrac{2R}{\\mu_0nr^2}$，$R\\langle I^2\\rangle=\\dfrac{2R\\tau}{\\mu_0nr^2}=\\tau\\omega_{\\rm c}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{回路の式}\n\nコイル内の磁束密度は $B=B_0+\\mu_0nI$ で，円板の起電力 $\\frac12B\\omega r^2$ が抵抗とコイルの自己誘導起電力にかかるので\n\\[ L\\frac{\\Delta I}{\\Delta t}=\\frac12(B_0+\\mu_0nI)\\omega r^2-RI \\]\n電流が一定になれば左辺は0である．\n\n\\textbf{(1)} 一定の電流は $\\frac12(B_0+\\mu_0nI)\\omega r^2=RI$ を満たすので\n\\[ I=\\boldsymbol{\\frac{B_0\\omega r^2}{2R-\\mu_0n\\omega r^2}} \\]\n回路の式の右辺は $\\left(\\frac12\\mu_0n\\omega r^2-R\\right)I+\\frac12B_0\\omega r^2$ である．$I$ の係数が負，すなわち $\\omega<\\omega_{\\rm c}$，\n\\[ \\omega_{\\rm c}=\\boldsymbol{\\frac{2R}{\\mu_0nr^2}} \\]\nのときは，$I$ が上の値より大きいと右辺が負になって $I$ は減り，小さいと増えるので，電流はこの値に落ち着く．一方 $\\omega\\geqq\\omega_{\\rm c}$ では右辺は $I\\geqq0$ で常に正となり，電流は\\textbf{増え続ける}．自分の電流がつくる磁場による起電力だけで抵抗での電圧降下をまかなえるようになるからで，地磁気はきっかけを与えるだけである（自励発電機）．実際には円板を一定の角速度に保つのに必要な力のモーメント $\\frac12BIr^2$ も限りなく大きくなる．\n\n\\textbf{(2)} 負の向きでは $\\omega=-|\\omega|$ を代入して\n\\[ I=-\\frac{B_0|\\omega|r^2}{2R+\\mu_0n|\\omega|r^2},\\qquad |I|=\\boldsymbol{\\frac{B_0|\\omega|r^2}{2R+\\mu_0n|\\omega|r^2}} \\]\n今度はコイルの磁場が $B_0$ を打ち消す向き（$I<0$）なので，分母が大きくなり電流は頭打ちになる．$|\\omega|\\to\\infty$ で\n\\[ I\\to\\boldsymbol{-\\frac{B_0}{\\mu_0n}},\\qquad B=B_0+\\mu_0nI\\to\\boldsymbol{0} \\]\n速く回すほどコイルの磁場が地磁気をちょうど打ち消すところまで近づき，円板の位置の磁場はほとんど0になる（起電力 $\\frac12B\\omega r^2=RI$ は有限にとどまる）．\n\n\\textbf{(3)} 角速度一定なので力のモーメントがつり合い，電流一定なので回路の式の右辺が0である（$B_0$ を無視）：\n\\[ \\tau=\\frac12\\mu_0nI^2r^2,\\qquad \\frac12\\mu_0nI\\omega r^2=RI \\]\n$I\\neq0$ なので第2式から\n\\[ \\omega=\\boldsymbol{\\frac{2R}{\\mu_0nr^2}=\\omega_{\\rm c}} \\]\nで，角速度は $\\tau$ によらず臨界角速度に決まる．第1式から\n\\[ |I|=\\boldsymbol{\\frac1r\\sqrt{\\frac{2\\tau}{\\mu_0n}}} \\]\n加えるモーメントを大きくしても速く回るのではなく，電流（磁場）が大きくなるだけである．仕事率は\n\\[ \\tau\\omega_{\\rm c}=\\frac12\\mu_0nI^2r^2\\cdot\\frac{2R}{\\mu_0nr^2}=\\boldsymbol{RI^2} \\]\nで，加えた仕事率はすべてジュール熱になる（角速度もコイルの磁場のエネルギーも一定だから当然である）．\n\n\\textbf{(4)} 電流の式を $I$ で割ると\n\\[ \\frac{d}{dt}\\log I=\\frac{\\mu_0nr^2}{2L}(\\omega-\\omega_{\\rm c}) \\]\n1周期 $T$ の間に $I$ はもとの値にもどるので，左辺を1周期にわたって積分すると0である．よって $\\displaystyle\\int_0^T(\\omega-\\omega_{\\rm c})\\,dt=0$，すなわち\n\\[ \\langle\\omega\\rangle=\\boldsymbol{\\omega_{\\rm c}=\\frac{2R}{\\mu_0nr^2}} \\]\n同様に角速度の式を1周期にわたって積分すると，$\\omega$ ももとにもどるので $\\displaystyle\\int_0^T\\left(\\tau-\\frac12\\mu_0nI^2r^2\\right)dt=0$，よって $\\langle I^2\\rangle=\\dfrac{2\\tau}{\\mu_0nr^2}$ で\n\\[ R\\langle I^2\\rangle=\\boldsymbol{\\frac{2R\\tau}{\\mu_0nr^2}=\\tau\\omega_{\\rm c}} \\]\n変動していても，平均の角速度は (3) の一定状態と同じ $\\omega_{\\rm c}$ に固定され，加えた仕事率の平均 $\\tau\\langle\\omega\\rangle$ は平均のジュール熱に等しい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ファラデー円板の電流を，円板を貫く磁場をつくるコイルに流すと，起電力が自分の電流に比例する部分をもつので，正帰還の向きでは臨界角速度 $2R/(\\mu_0nr^2)$ を超えると電流が増え続け（自励発電），逆向きでは磁場が打ち消されて電流が飽和する．一定のトルクで回すと角速度はトルクによらず臨界値に固定され（変動しても時間平均がそうなる），トルクは電流の大きさだけを決める．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "ファラデー円板",
+  "自励発電機",
+  "正帰還",
+  "臨界角速度",
+  "エネルギー収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

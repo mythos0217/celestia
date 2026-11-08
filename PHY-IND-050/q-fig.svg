@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+    <marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+  </defs>
+  <!-- field strip -->
+  <line x1="260" y1="40" x2="260" y2="350" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <line x1="330" y1="40" x2="330" y2="350" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  
+  <text x="338" y="58" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">磁束密度 <tspan font-family="Times New Roman, serif" font-style="italic">B</tspan>（⊙）</text>
+  <rect x="260" y="40" width="70" height="310" fill="#888" fill-opacity="0.15" stroke="none"/>
+  <circle cx="278" cy="52" r="6" fill="none" stroke="#222" stroke-width="1.1"/><circle cx="278" cy="52" r="1.8" fill="#222"/><circle cx="312" cy="52" r="6" fill="none" stroke="#222" stroke-width="1.1"/><circle cx="312" cy="52" r="1.8" fill="#222"/><circle cx="278" cy="342" r="6" fill="none" stroke="#222" stroke-width="1.1"/><circle cx="278" cy="342" r="1.8" fill="#222"/><circle cx="312" cy="342" r="6" fill="none" stroke="#222" stroke-width="1.1"/><circle cx="312" cy="342" r="1.8" fill="#222"/>
+  <!-- axes -->
+  <line x1="40" y1="200" x2="580" y2="200" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+  <text x="566" y="192" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+  <text x="244" y="34" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">y</text>
+  <line x1="260" y1="360" x2="260" y2="25" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+  <text x="244" y="194" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">O</text>
+  <!-- coil -->
+  <polygon points="410,200 290,80 170,200 290,320" fill="none" stroke="#222" stroke-width="1.6"/>
+  <text x="416" y="194" font-family="Times New Roman, serif" font-size="16" fill="#222">P</text>
+  <text x="272" y="78" font-family="Times New Roman, serif" font-size="16" fill="#222">Q</text>
+  <text x="152" y="194" font-family="Times New Roman, serif" font-size="16" fill="#222">R</text>
+  <text x="268" y="336" font-family="Times New Roman, serif" font-size="16" fill="#222">S</text>
+  <!-- chords -->
+  <line x1="260" y1="110.0" x2="260" y2="290.0" stroke="#c0392b" stroke-width="2.4"/>
+  <line x1="330" y1="120.0" x2="330" y2="280.0" stroke="#c0392b" stroke-width="2.4"/>
+  <text x="236" y="282.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#c0392b">l<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+  <text x="335" y="272.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#c0392b">l<tspan baseline-shift="sub" font-size="10">w</tspan></text>
+  <!-- a dimension along PR above -->
+  <line x1="290" y1="214" x2="410" y2="214" stroke="#222" stroke-width="1" marker-start="url(#q-ar)" marker-end="url(#q-ar)"/>
+  <text x="346.0" y="232" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">a</text>
+  <line x1="170" y1="214" x2="290" y2="214" stroke="#222" stroke-width="1" marker-start="url(#q-ar)" marker-end="url(#q-ar)"/>
+  <text x="226.0" y="232" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">a</text>
+  <!-- w dimension -->
+  <line x1="260" y1="372" x2="330" y2="372" stroke="#222" stroke-width="1" marker-start="url(#q-ar)" marker-end="url(#q-ar)"/>
+  <text x="290.0" y="392" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">w</text>
+  <!-- velocity -->
+  <line x1="440" y1="260" x2="495" y2="260" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <text x="462" y="252" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">v</text>
+</svg>

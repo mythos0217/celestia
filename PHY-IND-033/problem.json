@@ -1,0 +1,144 @@
+{
+ "id": "PHY-IND-033",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "一定速度で動かす導体棒が自由な棒を引きずるときのジュール熱（段階的・ゆっくりした加速で熱を減らす）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は真上から見た図である．水平面内に間隔 $l$ で平行に置かれた十分長い2本の導体レールがあり，鉛直上向きに磁束密度の大きさ $B$ の一様な磁場がかかっている．レールの上に，レールに垂直に2本の導体棒 P，Q を置く．P の質量は $m$，P，Q の電気抵抗はそれぞれ $R$ であり，レールの抵抗，摩擦，回路の自己インダクタンスは無視する．Q は外力によって指定した速度で右向きに動かすことができ，Q の速さは瞬時に変えられるものとする．初め P，Q は静止している．以下，$\\tau=\\dfrac{2mR}{B^2l^2}$ とおく．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "時刻 $t=0$ に Q の速さを $w$ にし，以後その速さに保つ．時刻 $t$ における P の速さ $v(t)$ を求めよ．必要なら，$\\dfrac{dv}{dt}=-\\dfrac{1}{\\tau}(v-w)$ の解が $v-w=\\{v(0)-w\\}e^{-t/\\tau}$ であることを用いてよい．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) で，十分時間が経つまでに回路で発生するジュール熱の総量 $H_1$ と，外力が Q にした仕事 $W$ を求めよ．また，$H_1$ が $B$，$l$，$R$ によらない理由を，P と Q が受ける電磁力の力積に注目して説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(1) の過程で，2本の棒の間隔は最終的に初めよりどれだけ広がるか．"
+     },
+     {
+      "id": "4",
+      "tex": "初めの状態から，Q の速さをまず $\\dfrac w2$ にして，P の速さがほぼ $\\dfrac w2$ になるまで待ち，続いて Q の速さを $w$ にした．十分時間が経つまでのジュール熱の総量 $H_2$ を求めよ．また，速さを $N$ 段階に等分して上げた場合（各段階で P が追いつくまで待つ）のジュール熱の総量 $H_N$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "初めの状態から，Q の速さを時刻 $0$ から $T$ までの間に一定の割合で $0$ から $w$ まで連続的に上げ，その後は $w$ に保つ．$T$ が $\\tau$ に比べて十分大きいとき，加速中の大部分の時間で，P に対する Q の相対速さはほぼ一定とみなせる．この相対速さと，ジュール熱の総量 $H(T)$ の近似式を $m$，$w$，$T$，$\\tau$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一定速度で動かす導体棒が自由な棒を引きずるときのジュール熱（段階的・ゆっくりした加速で熱を減らす）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一定速度で動かす導体棒が自由な棒を引きずるときのジュール熱（段階的・ゆっくりした加速で熱を減らす）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v(t)=w\\left(1-e^{-t/\\tau}\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "$H_1=\\dfrac12mw^2$，$W=mw^2$（P，Q には大きさの等しい電磁力がはたらき，外力の力積が P の運動量 $mw$ に等しいので）"
+   },
+   {
+    "id": "3",
+    "tex": "$w\\tau=\\dfrac{2mRw}{B^2l^2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$H_2=\\dfrac14mw^2$，$H_N=\\dfrac{mw^2}{2N}$"
+   },
+   {
+    "id": "5",
+    "tex": "相対速さ $\\dfrac{w\\tau}{T}$，$H(T)\\approx\\dfrac{\\tau}{T}mw^2$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　P の速さを $v$ とすると，Q と P の誘導起電力 $Bwl$，$Bvl$ は回路の中で逆向きにはたらくので，回路の電流は\n\\[ I=\\frac{Bl(w-v)}{2R} . \\]\nP はこの電流により進行方向に $IBl$ の力を受けるので\n\\[ m\\frac{dv}{dt}=\\frac{B^2l^2}{2R}(w-v)=-\\frac1\\tau(v-w) . \\]\n$v(0)=0$ より $v(t)=\\boldsymbol{w\\left(1-e^{-t/\\tau}\\right)}$．\n\n\\textbf{(2)}　Q と P には同じ電流 $I$ が流れ，長さも同じ $l$ なので，電磁力の大きさはつねに等しい（Q には後ろ向き，P には前向き）．Q は等速なので外力は Q の電磁力とつり合い，外力の大きさは P が受ける電磁力の大きさに常に等しい．P の運動量変化は $mw$ なので，外力の力積も $mw$．外力の作用点（Q）は常に速さ $w$ で動くので\n\\[ W=w\\times(\\text{外力の力積})=\\boldsymbol{mw^2} . \\]\nP の運動エネルギーの増加は $\\frac12mw^2$ なので，エネルギー保存より\n\\[ H_1=W-\\frac12mw^2=\\boldsymbol{\\frac12mw^2} . \\]\n（直接 $\\int 2RI^2\\,dt=\\dfrac{B^2l^2w^2}{2R}\\cdot\\dfrac{\\tau}{2}=\\dfrac12mw^2$ と計算しても一致する．）$B,l,R$ は「どれだけ速く P が追いつくか（$\\tau$）」を決めるだけで，力積の総量 $mw$ は変わらないので，熱は $B,l,R$ によらない．これは電池でコンデンサーを充電するとき，抵抗によらず電池の仕事の半分が熱になるのと同じ構造である．\n\n\\textbf{(3)}　間隔の増加は相対速度 $w-v=we^{-t/\\tau}$ の積分で\n\\[ \\int_0^\\infty we^{-t/\\tau}dt=w\\tau=\\boldsymbol{\\frac{2mRw}{B^2l^2}} . \\]\n（別解：P の運動方程式 $m\\,\\Delta v=\\dfrac{B^2l^2}{2R}(w-v)\\Delta t$ の和をとると，$mw=\\dfrac{B^2l^2}{2R}\\times(\\text{間隔の増加})$．）\n\n\\textbf{(4)}　(2) の結果は「静止していた P を，相対速さ $\\Delta w$ だけ速い Q が引きずる」ときの熱 $\\frac12m(\\Delta w)^2$ と読める（Q とともに動く慣性系で見れば，P は相対速さ $\\Delta w$ から止まるまで減速するだけである）．速さを $\\frac w2$ ずつ2段階に上げると，各段階で $\\frac12m\\left(\\frac w2\\right)^2$ の熱が出るので\n\\[ H_2=2\\times\\frac12m\\Bigl(\\frac w2\\Bigr)^2=\\boldsymbol{\\frac14mw^2} . \\]\n$N$ 段階なら $H_N=N\\times\\dfrac12m\\Bigl(\\dfrac wN\\Bigr)^2=\\boldsymbol{\\dfrac{mw^2}{2N}}$．段階を細かくすると熱はいくらでも小さくできる．\n\n\\textbf{(5)}　Q の加速度は $\\alpha=\\dfrac wT$．P が Q とほぼ同じ加速度 $\\alpha$ で加速しているとき，P の運動方程式 $m\\alpha=\\dfrac{B^2l^2}{2R}s$ より相対速さ $s$ は\n\\[ s=\\frac{2mR}{B^2l^2}\\alpha=\\boldsymbol{\\frac{w\\tau}{T}} \\]\nで一定となる（$T\\gg\\tau$ なら，初めに $s$ がこの値になるまでの時間 $\\sim\\tau$ と，終わりに $s$ が $0$ に戻る時間 $\\sim\\tau$ は $T$ に比べて短い）．ジュール熱の発生率は $2RI^2=\\dfrac{B^2l^2}{2R}s^2=\\dfrac{m}{\\tau}s^2$ なので，時間 $T$ の間の熱は\n\\[ H(T)\\approx\\frac{m}{\\tau}\\Bigl(\\frac{w\\tau}{T}\\Bigr)^2T=\\boldsymbol{\\frac{\\tau}{T}mw^2} . \\]\n$T\\to\\infty$ で $H\\to0$ となり，(4) の $N\\to\\infty$ と同じく，ゆっくり加速すれば熱をいくらでも小さくできる．\\\\\n（参考：最初と最後の過渡部分まで含めて厳密に計算すると $H(T)=mw^2\\dfrac{\\tau}{T}\\Bigl\\{1-\\dfrac{\\tau}{T}\\left(1-e^{-T/\\tau}\\right)\\Bigr\\}$ となり，$T\\to0$ で (2) の $\\frac12mw^2$ に，$T\\gg\\tau$ で上の近似式に一致する．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一定速度で動かされる棒と自由な棒には同じ電流による等しい電磁力がはたらくので，外力の力積は自由な棒の運動量に等しく，外力の仕事は $mw^2$，ジュール熱は抵抗や磁場によらず $\\frac12mw^2$ となる．熱は「相対速さの2乗」で決まるので，駆動速度を段階的・連続的にゆっくり上げると熱は $1/N$，$\\tau/T$ に減る．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "momentum-conservation",
+  "work-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "2本の導体棒",
+  "力積",
+  "ジュール熱",
+  "段階的加速",
+  "準静的過程",
+  "エネルギー収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

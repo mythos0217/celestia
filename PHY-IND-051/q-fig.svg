@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 425">
+<defs>
+<marker id="q-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<!-- field region y<=0 : boundary and symbols -->
+<line x1="40" y1="200" x2="470" y2="200" stroke="#888" stroke-width="1" stroke-dasharray="6,4"/>
+<g fill="none" stroke="#888" stroke-width="1">
+<circle cx="70" cy="240" r="6"/><circle cx="70" cy="300" r="6"/><circle cx="70" cy="360" r="6"/>
+<circle cx="130" cy="390" r="6"/><circle cx="350" cy="390" r="6"/>
+<circle cx="420" cy="240" r="6"/><circle cx="420" cy="300" r="6"/><circle cx="420" cy="360" r="6"/>
+<circle cx="150" cy="250" r="6"/><circle cx="330" cy="250" r="6"/><circle cx="300" cy="330" r="6"/>
+</g>
+<g fill="#888">
+<circle cx="70" cy="240" r="1.8"/><circle cx="70" cy="300" r="1.8"/><circle cx="70" cy="360" r="1.8"/>
+<circle cx="130" cy="390" r="1.8"/><circle cx="350" cy="390" r="1.8"/>
+<circle cx="420" cy="240" r="1.8"/><circle cx="420" cy="300" r="1.8"/><circle cx="420" cy="360" r="1.8"/>
+<circle cx="150" cy="250" r="1.8"/><circle cx="330" cy="250" r="1.8"/><circle cx="300" cy="330" r="1.8"/>
+</g>
+<text x="428" y="228" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">磁場</text>
+<text x="461" y="228" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+<text x="120" y="414" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">磁場は <tspan font-family="Times New Roman, serif" font-style="italic">y</tspan> ≦ 0 の領域のみ（紙面の裏から表の向き）</text>
+<!-- axes -->
+<line x1="40" y1="200" x2="478" y2="200" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+<line x1="250" y1="395" x2="250" y2="20" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="468" y="194" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+<text x="258" y="28" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">y</text>
+<!-- wheel: center (250,200) R=130 -->
+<circle cx="250" cy="200" r="130" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="250" y1="200" x2="227.4" y2="328.0" stroke="#222" stroke-width="2.2"/>
+<line x1="250" y1="200" x2="372.2" y2="155.5" stroke="#222" stroke-width="2.2"/>
+<line x1="250" y1="200" x2="150.4" y2="116.4" stroke="#222" stroke-width="2.2"/>
+<circle cx="250" cy="200" r="3.5" fill="#222"/>
+<circle cx="227.4" cy="328.0" r="3.5" fill="#222"/>
+<circle cx="372.2" cy="155.5" r="3.5" fill="#222"/>
+<circle cx="150.4" cy="116.4" r="3.5" fill="#222"/>
+<text x="232" y="222" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">O</text>
+<text x="205" y="352" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">P<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<text x="382" y="150" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">P<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<text x="124" y="108" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">P<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<!-- 120 deg marks -->
+<path d="M 246.2 221.7 A 22 22 0 0 0 270.7 192.5" fill="none" stroke="#888" stroke-width="1"/>
+<text x="268" y="230" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">120°</text>
+<!-- radius label -->
+<text x="318" y="168" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">a</text>
+<!-- rotation arrow CCW -->
+<path d="M 370 70 A 175 175 0 0 0 290 32" fill="none" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ah)"/>
+<text x="352" y="44" font-family="Times New Roman, serif" font-style="italic" font-size="17" fill="#1f5fbf">ω</text>
+<text x="20" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">スポークの抵抗：各 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="15">r</tspan></text>
+<text x="20" y="60" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">各弧の抵抗：<tspan font-family="Times New Roman, serif" font-style="italic" font-size="15">s</tspan></text>
+</svg>

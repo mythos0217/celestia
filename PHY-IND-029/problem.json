@@ -1,0 +1,143 @@
+{
+ "id": "PHY-IND-029",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "コイルを使った昇圧回路の定常状態（電流が途切れないモードと途切れるモードの切り替わり）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，起電力 $E$ の電池，自己インダクタンス $L$ のコイル，スイッチ S，理想的なダイオード（順方向の抵抗 0，逆方向には電流を流さない），電気容量 $C$ のコンデンサー，抵抗値 $R$ の負荷抵抗からなる回路がある．S は周期 $T$ で開閉をくり返し，各周期のはじめの時間 $DT$（$0<D<1$）だけ閉じ，残りの時間 $(1-D)T$ は開いている．コイルを図の矢印の向きに流れる電流を $I$ とする．$C$ は十分大きく，十分時間がたった後のコンデンサーの電圧は一定値 $V_0$（$V_0>E$）とみなしてよい．電池・コイル・導線の抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "コイルの電流 $I$ が常に正である（ダイオードが S の開いている間ずっと導通する）とする．1周期の間に $I$ が元の値に戻ることから $V_0$ を $E,\\ D$ で表せ．また，1周期の $I$ の増加量 $\\Delta I$ と，$I$ の時間平均 $\\bar I$ を $E,\\ D,\\ T,\\ L,\\ R$ のうち必要なもので表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の仮定が成り立つための $R$ の条件を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$R$ が (2) の条件を満たさないときは，S が開いている間に $I$ が 0 になり，その後は次に S が閉じるまで $I=0$ のままとなる．このときの $V_0$ を $E,\\ D,\\ T,\\ L,\\ R$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$E=10\\ \\text{V}$，$D=0.50$，$L=100\\ \\mu\\text{H}$，$T=20\\ \\mu\\text{s}$ とする．(2) の境界の $R$ の値を求めよ．また，$R=40\\ \\Omega$ と $R=240\\ \\Omega$ のそれぞれについて $V_0$ を求めよ．$R=240\\ \\Omega$ のときは，$I$ の最大値と，1周期のうち $I=0$ となっている時間も求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$R=240\\ \\Omega$ のとき，S が開いた瞬間にコイルに蓄えられているエネルギーと，1周期の間に負荷抵抗で消費されるエネルギーをそれぞれ求めよ．両者が一致しない理由を説明し，比が $\\dfrac{V_0}{V_0-E}$ になることを示せ．さらに，$D$ を一定に保ったまま負荷抵抗を取り外す（$R\\to\\infty$）と $V_0$ はどうなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：コイルを使った昇圧回路の定常状態（電流が途切れないモードと途切れるモードの切り替わり）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：コイルを使った昇圧回路の定常状態（電流が途切れないモードと途切れるモードの切り替わり）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V_0=\\dfrac{E}{1-D}$，$\\Delta I=\\dfrac{EDT}{L}$，$\\bar I=\\dfrac{E}{(1-D)^2R}$"
+   },
+   {
+    "id": "2",
+    "tex": "$R<\\dfrac{2L}{D(1-D)^2T}$"
+   },
+   {
+    "id": "3",
+    "tex": "$V_0=\\dfrac E2\\left(1+\\sqrt{1+\\dfrac{2D^2RT}{L}}\\right)$"
+   },
+   {
+    "id": "4",
+    "tex": "境界 $80\\ \\Omega$，$R=40\\ \\Omega$ で $20\\ \\text{V}$，$R=240\\ \\Omega$ で $30\\ \\text{V}$，$I$ の最大値 $1.0\\ \\text{A}$，$I=0$ の時間 $5.0\\ \\mu\\text{s}$"
+   },
+   {
+    "id": "5",
+    "tex": "$5.0\\times10^{-5}\\ \\text{J}$，$7.5\\times10^{-5}\\ \\text{J}$（S が開いている間も電池が仕事をするため），$R\\to\\infty$ で $V_0$ は限りなく大きくなる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　コイルの電圧は $L\\dfrac{\\Delta I}{\\Delta t}$ なので，各区間で $I$ は直線的に変化する．十分時間がたった周期的な状態では1周期で $I$ が元に戻るので，「コイルの電圧 $\\times$ 時間」の1周期の和は0になる．また $V_0$ が一定なので，コンデンサーの電荷も1周期で元に戻り，ダイオードを通って流れ込む電気量の平均が負荷の電流 $V_0/R$ に等しい．\n\n\\textbf{(1)}　S が閉じている間，コイルの電圧は $E$ で $I$ は傾き $\\dfrac EL$ で増加し，S が開いている間（ダイオード導通）は $E-V_0$ で傾き $-\\dfrac{V_0-E}{L}$ で減少する．1周期で戻るので\n\\[ E\\cdot DT-(V_0-E)(1-D)T=0\\quad\\Longrightarrow\\quad\\boldsymbol{V_0=\\frac{E}{1-D}}. \\]\n$\\boldsymbol{\\Delta I=\\dfrac{EDT}{L}}$．回路に抵抗は負荷しかないので，電池の平均の仕事率 $E\\bar I$ が負荷の消費電力 $V_0^{\\,2}/R$ に等しく，\n\\[ \\boldsymbol{\\bar I=\\frac{V_0^{\\,2}}{ER}=\\frac{E}{(1-D)^2R}}. \\]\n（ダイオードを通る電流の平均 $(1-D)\\bar I$ が $V_0/R$ に等しいことからも同じ結果になる．）\n\n\\textbf{(2)}　$I$ は $\\bar I$ を中心に $\\pm\\frac{\\Delta I}{2}$ の範囲で変化する（三角波）ので，最小値が正である条件は $\\bar I>\\frac{\\Delta I}{2}$：\n\\[ \\frac{E}{(1-D)^2R}>\\frac{EDT}{2L}\\quad\\Longrightarrow\\quad\\boldsymbol{R<\\frac{2L}{D(1-D)^2T}}. \\]\n負荷が軽い（$R$ が大きい）と平均電流が小さくなり，このモードは保てない．\n\n\\textbf{(3) 電流が途切れる場合}　S を閉じた瞬間 $I=0$ なので，S が開く瞬間の値は $I_{\\text p}=\\frac{EDT}{L}$．開いた後は傾き $-\\frac{V_0-E}{L}$ で減り，時間 $t_2=\\frac{LI_{\\text p}}{V_0-E}=\\frac{EDT}{V_0-E}$ で0になる（その後ダイオードは逆向きの電流を流せないので $I=0$）．この間にダイオードを通ってコンデンサー側へ送られる電気量は三角形の面積 $\\frac12I_{\\text p}t_2$ で，これが1周期に負荷を流れる電気量 $\\frac{V_0}{R}T$ に等しい：\n\\[ \\frac12\\cdot\\frac{EDT}{L}\\cdot\\frac{EDT}{V_0-E}=\\frac{V_0T}{R}\n\\quad\\Longrightarrow\\quad V_0(V_0-E)=\\frac{E^2D^2RT}{2L}. \\]\n$V_0>E$ の解をとって\n\\[ \\boldsymbol{V_0=\\frac E2\\left(1+\\sqrt{1+\\frac{2D^2RT}{L}}\\right)}. \\]\n（(2) の境界 $R=\\frac{2L}{D(1-D)^2T}$ を代入すると根号内は $\\left(\\frac{1+D}{1-D}\\right)^2$ となり $V_0=\\frac{E}{1-D}$ に一致して，2つのモードが連続につながる．）$V_0$ は (1) と違って負荷 $R$ や $L,\\ T$ に依存する．\n\n\\textbf{(4) 数値}　境界は $\\frac{2\\times100\\times10^{-6}}{0.50\\times0.25\\times20\\times10^{-6}}=\\boldsymbol{80\\ \\Omega}$．\n$R=40\\ \\Omega$ は電流が途切れないモードで $V_0=\\frac{10}{0.5}=\\boldsymbol{20\\ \\text{V}}$（このとき $\\bar I=1.0\\ \\text A$，$\\Delta I=1.0\\ \\text A$ で最小値 $0.5\\ \\text A>0$ を確かに満たす）．\n$R=240\\ \\Omega$ は途切れるモードで，$\\frac{2D^2RT}{L}=\\frac{2\\times0.25\\times240\\times20\\times10^{-6}}{100\\times10^{-6}}=24$，$V_0=5(1+5)=\\boldsymbol{30\\ \\text{V}}$．\n$I$ の最大値は $I_{\\text p}=\\frac{10\\times0.50\\times20\\times10^{-6}}{100\\times10^{-6}}=\\boldsymbol{1.0\\ \\text A}$，$t_2=\\frac{10\\times10\\times10^{-6}}{30-10}=5.0\\ \\mu\\text s$ なので，$I=0$ の時間は $20-10-5.0=\\boldsymbol{5.0\\ \\mu\\text{s}}$．\n「$V_0=E/(1-D)$」を使うと 20 V となり誤る．\n\n\\textbf{(5) エネルギー収支}　コイルのエネルギーは $\\frac12LI_{\\text p}^{\\,2}=\\frac12\\times100\\times10^{-6}\\times1.0^2=\\boldsymbol{5.0\\times10^{-5}\\ \\text J}$，負荷の1周期の消費は $\\frac{V_0^{\\,2}}{R}T=\\frac{900}{240}\\times20\\times10^{-6}=\\boldsymbol{7.5\\times10^{-5}\\ \\text J}$．\nS が開いている間（時間 $t_2$）も電流は電池を通って流れるので，電池はコイルのエネルギーとは別に $E\\times\\frac12I_{\\text p}t_2$ の仕事をする．コンデンサー側へ送られるエネルギーは $V_0\\times\\frac12I_{\\text p}t_2$ で，コイルが失うエネルギーはその差 $(V_0-E)\\frac12I_{\\text p}t_2=\\frac12LI_{\\text p}^{\\,2}$（$t_2=\\frac{LI_{\\text p}}{V_0-E}$ を使った）．よって\n\\[ \\frac{\\text{負荷へのエネルギー}}{\\text{コイルのエネルギー}}=\\frac{V_0}{V_0-E}=\\frac{30}{20}=1.5 \\]\nとなり，数値とも一致する．\n$R\\to\\infty$ では (3) の根号内が限りなく大きくなり，$V_0$ は \\textbf{限りなく大きくなる}．毎周期コイルが $\\frac12LI_{\\text p}^{\\,2}$ のエネルギーをコンデンサーに送り込むのに，それを消費する負荷がないためで，実際の回路では素子の耐圧を超えて壊れる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "周期的な定常状態では，コイルの電流が1周期で元に戻るので「コイルの電圧×時間」の和が0になり，電流が途切れなければ出力電圧は $E/(1-D)$ と負荷によらない．負荷が軽く電流が途中で0になるとこの関係は使えず，ダイオードを通る電気量（三角形の面積）と負荷の電流のつり合いから出力電圧が決まり，負荷・インダクタンス・周期に依存して負荷を外すと発散する．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "昇圧回路",
+  "コイル",
+  "ダイオード",
+  "定常状態",
+  "モードの切り替わり",
+  "エネルギー収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

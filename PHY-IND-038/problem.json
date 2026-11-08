@@ -1,0 +1,122 @@
+{
+ "id": "PHY-IND-038",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "コンデンサーの充電電流がつくる磁場による隣のコイルの誘導電流（電気容量の2階微分）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，真空中に半径 $R_\\mathrm{A}$ の1巻きの円形コイルAと，半径 $R_\\mathrm{B}$ の1巻きの円形コイルBが，同一平面内に中心をそろえて置かれている．コイルAには起電力 $V$ の電池と平行板コンデンサー（極板P，Q）が，コイルBには抵抗値 $r$ の抵抗が接続されている．極板は横 $a$，奥行き $b$ の長方形で，はじめの極板間隔は $d$ であり，$d$ は $a$，$b$ に比べて十分小さい．極板の端の効果は無視する．真空の誘電率を $\\varepsilon_0$，透磁率を $\\mu_0$ とする．\n\n$R_\\mathrm{B}$ は $R_\\mathrm{A}$ に比べて十分小さく，コイルBの内部の磁場は一様でコイルAの中心での値に等しいとしてよい．コイルAの抵抗と自己誘導，コイルBの電流がつくる磁場，コンデンサー・電池・抵抗の大きさはすべて無視し，コイルAは円電流として磁場を計算してよい．電流は両コイルとも図の反時計回りを正とし，電池は，コイルAに正の電流が流れると極板Pが正に帯電する向きにつながれている．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "厚さ $d$，奥行き $b$，比誘電率 $\\varepsilon_\\mathrm{r}\\,(>1)$ の誘電体板を，図のように極板間に挿入していく．挿入長 $s\\ (0<s<a)$ が時間 $t$ とともに変わるとき，コイルAの電流 $I_\\mathrm{A}$ とコイルBの電流 $I_\\mathrm{B}$ を，$\\dfrac{ds}{dt}$，$\\dfrac{d^2s}{dt^2}$ などを用いて表せ．また，誘電体を一定の速さで挿入している間は $I_\\mathrm{B}=0$ となることを確かめよ．"
+     },
+     {
+      "id": "2",
+      "tex": "誘電体板をばねにつないで，$s=\\dfrac a2+s_0\\sin\\omega t\\ \\left(0<s_0<\\dfrac a2\\right)$ のように振動させた．$I_\\mathrm{B}$ の振幅と，抵抗で消費される電力の時間平均を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "誘電体板を取り除いて極板間隔を $d$ に戻したのち，極板Qを固定したまま，極板Pを平行に保って一定の速さ $u$ で遠ざける．極板間隔が $d+ut$ である時刻 $t\\ (t>0)$ の $I_\\mathrm{B}$ を符号を含めて求めよ．また，極板間隔が $d$ から $2d$ になるまでに抵抗で発生するジュール熱 $W$ を求めよ．ただし，動かし始めの瞬間の影響は考えなくてよい．"
+     },
+     {
+      "id": "4",
+      "tex": "極板Pの動かし方を変えて，極板間隔が $d$ の時刻 $t=0$ に速さ $u$ で遠ざかり始め，その後コイルBに電流がまったく流れないようにしたい．極板間隔 $g$ を時刻 $t$ の関数として求めよ．また，極板間隔が $2d$ になる時刻と，そのときの極板Pの速さを求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：コンデンサーの充電電流がつくる磁場による隣のコイルの誘導電流（電気容量の2階微分）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I_\\mathrm{A}=\\dfrac{\\varepsilon_0(\\varepsilon_\\mathrm{r}-1)bV}{d}\\dfrac{ds}{dt}$，$I_\\mathrm{B}=-\\dfrac{\\pi\\mu_0\\varepsilon_0(\\varepsilon_\\mathrm{r}-1)bVR_\\mathrm{B}^2}{2R_\\mathrm{A}dr}\\dfrac{d^2s}{dt^2}$（一定の速さなら $\\dfrac{d^2s}{dt^2}=0$ で $I_\\mathrm{B}=0$）"
+   },
+   {
+    "id": "2",
+    "tex": "振幅 $\\dfrac{\\pi\\mu_0\\varepsilon_0(\\varepsilon_\\mathrm{r}-1)bVR_\\mathrm{B}^2\\omega^2s_0}{2R_\\mathrm{A}dr}$，平均電力 $\\dfrac{\\pi^2\\mu_0^2\\varepsilon_0^2(\\varepsilon_\\mathrm{r}-1)^2b^2V^2R_\\mathrm{B}^4\\omega^4s_0^2}{8R_\\mathrm{A}^2d^2r}$"
+   },
+   {
+    "id": "3",
+    "tex": "$I_\\mathrm{B}=-\\dfrac{\\pi\\mu_0\\varepsilon_0abVR_\\mathrm{B}^2u^2}{R_\\mathrm{A}r(d+ut)^3}$（時計回り），$W=\\dfrac{31\\pi^2\\mu_0^2\\varepsilon_0^2a^2b^2V^2R_\\mathrm{B}^4u^3}{160R_\\mathrm{A}^2rd^5}$"
+   },
+   {
+    "id": "4",
+    "tex": "$g=\\dfrac{d^2}{d-ut}\\ \\left(0\\le t<\\dfrac du\\right)$，時刻 $\\dfrac{d}{2u}$，速さ $4u$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{全体の構造}　コイルAの抵抗と自己誘導を無視するので，コンデンサーの電圧は常に $V$ で，電気量は $Q=CV$．コイルAの電流は $I_\\mathrm{A}=\\dfrac{dQ}{dt}=V\\dfrac{dC}{dt}$（正の向きは極板Pを正に充電する向き）．$I_\\mathrm{A}$ がコイルBの位置につくる磁場は $\\dfrac{\\mu_0I_\\mathrm{A}}{2R_\\mathrm{A}}$ なので，コイルBを貫く磁束は $\\Phi=\\dfrac{\\pi\\mu_0R_\\mathrm{B}^2}{2R_\\mathrm{A}}I_\\mathrm{A}$（反時計回りの電流がつくる紙面手前向きを正）．ファラデーの法則より，コイルBの起電力（反時計回り正）は $-\\dfrac{d\\Phi}{dt}$ で\n\\[ I_\\mathrm{B}=-\\frac{\\pi\\mu_0R_\\mathrm{B}^2}{2R_\\mathrm{A}r}\\frac{dI_\\mathrm{A}}{dt}=-\\frac{\\pi\\mu_0R_\\mathrm{B}^2V}{2R_\\mathrm{A}r}\\frac{d^2C}{dt^2}. \\]\nつまり \\textbf{コイルBの電流は電気容量の2階微分（「容量の加速度」）で決まる}．\n\n\\textbf{(1)}　挿入部分と残りの部分の並列で $C=\\dfrac{\\varepsilon_0b}{d}\\{(a-s)+\\varepsilon_\\mathrm{r}s\\}=\\dfrac{\\varepsilon_0ab}{d}+\\dfrac{\\varepsilon_0(\\varepsilon_\\mathrm{r}-1)b}{d}s$．$C$ は $s$ の1次式なので\n\\[ \\boldsymbol{I_\\mathrm{A}=\\frac{\\varepsilon_0(\\varepsilon_\\mathrm{r}-1)bV}{d}\\frac{ds}{dt}},\\qquad \\boldsymbol{I_\\mathrm{B}=-\\frac{\\pi\\mu_0\\varepsilon_0(\\varepsilon_\\mathrm{r}-1)bVR_\\mathrm{B}^2}{2R_\\mathrm{A}dr}\\frac{d^2s}{dt^2}}. \\]\n一定の速さでは $I_\\mathrm{A}$ は一定（充電電流は流れ続ける）だが，磁束が変化しないので $I_\\mathrm{B}=0$ である．\n\n\\textbf{(2)}　$\\dfrac{d^2s}{dt^2}=-\\omega^2s_0\\sin\\omega t$ を代入すると $I_\\mathrm{B}=I_0\\sin\\omega t$，\n\\[ I_0=\\boldsymbol{\\frac{\\pi\\mu_0\\varepsilon_0(\\varepsilon_\\mathrm{r}-1)bVR_\\mathrm{B}^2\\omega^2s_0}{2R_\\mathrm{A}dr}}. \\]\n$\\sin^2$ の時間平均は $\\frac12$ なので平均電力は $\\dfrac{rI_0^2}{2}=\\boldsymbol{\\dfrac{\\pi^2\\mu_0^2\\varepsilon_0^2(\\varepsilon_\\mathrm{r}-1)^2b^2V^2R_\\mathrm{B}^4\\omega^4s_0^2}{8R_\\mathrm{A}^2d^2r}}$（$\\omega^4$ に比例）．\n\n\\textbf{(3)}　間隔 $g=d+ut$ で $C=\\dfrac{\\varepsilon_0ab}{g}$．$\\dfrac{dC}{dt}=-\\dfrac{\\varepsilon_0abu}{g^2}$，$\\dfrac{d^2C}{dt^2}=\\dfrac{2\\varepsilon_0abu^2}{g^3}$．$C$ が $g$ の1次式ではない（$1/g$ に比例する）ため，\\textbf{一定の速さでも $\\dfrac{d^2C}{dt^2}\\neq0$} であり，\n\\[ \\boldsymbol{I_\\mathrm{B}=-\\frac{\\pi\\mu_0\\varepsilon_0abVR_\\mathrm{B}^2u^2}{R_\\mathrm{A}r(d+ut)^3}}\\quad(\\text{負，すなわち時計回り}). \\]\n（向きの確認：$I_\\mathrm{A}<0$ で放電電流が時計回りに流れ，その大きさは減っていく．したがって紙面奥向きの磁束が減るので，それを補う時計回りの電流がBに流れる．）\n\nジュール熱は，$K=\\dfrac{\\pi\\mu_0\\varepsilon_0abVR_\\mathrm{B}^2}{R_\\mathrm{A}r}$ とおいて\n\\[ W=\\int_0^{d/u}r\\frac{K^2u^4}{(d+ut)^6}\\,dt=\\frac{rK^2u^3}{5}\\left(\\frac1{d^5}-\\frac1{(2d)^5}\\right)=\\boldsymbol{\\frac{31\\pi^2\\mu_0^2\\varepsilon_0^2a^2b^2V^2R_\\mathrm{B}^4u^3}{160R_\\mathrm{A}^2rd^5}}. \\]\n\n\\textbf{(4)}　すべての時刻で $I_\\mathrm{B}=0$ となるには $\\dfrac{d^2C}{dt^2}=0$，すなわち $C\\propto\\dfrac1g$ が時間の1次式であればよい：$\\dfrac1g=\\alpha+\\beta t$．$t=0$ で $g=d$ より $\\alpha=\\dfrac1d$．また $\\dfrac{d}{dt}\\left(\\dfrac1g\\right)=-\\dfrac1{g^2}\\dfrac{dg}{dt}$ に $t=0$ の値 $g=d$，$\\dfrac{dg}{dt}=u$ を入れて $\\beta=-\\dfrac{u}{d^2}$．よって\n\\[ \\frac1g=\\frac1d-\\frac{ut}{d^2}\\quad\\Longrightarrow\\quad \\boldsymbol{g=\\frac{d^2}{d-ut}}\\ \\left(0\\le t<\\frac du\\right). \\]\n$g=2d$ となるのは $\\boldsymbol{t=\\dfrac{d}{2u}}$．速さは $\\dfrac{dg}{dt}=\\dfrac{d^2u}{(d-ut)^2}=\\dfrac{u}{d^2}g^2$ で，$g=2d$ のとき $\\boldsymbol{4u}$．このとき $I_\\mathrm{A}=V\\dfrac{dC}{dt}=-\\dfrac{\\varepsilon_0abVu}{d^2}$ は一定に保たれている．極板Pは速さを間隔の2乗に比例させて加速し続けなければならず，$t\\to d/u$ で間隔は限りなく大きくなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電圧一定のコンデンサーの充電電流は $V\\,dC/dt$，それがつくる磁場の変化で隣のコイルに生じる誘導電流は $d^2C/dt^2$ に比例する．誘電体の挿入のように $C$ が変位の1次式なら等速運動では誘導電流が流れないが，極板間隔を変えると $C\\propto1/g$ のため等速でも流れ，逆に $1/g$ を時間の1次式にすれば（速さ $\\propto g^2$）流れない．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "capacitor",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "相互誘導",
+  "充電電流",
+  "電気容量の変化",
+  "円電流の磁場",
+  "ジュール熱"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

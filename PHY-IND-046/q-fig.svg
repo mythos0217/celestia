@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker></defs>
+<rect x="20" y="20" width="270" height="210" fill="none" stroke="#888" stroke-dasharray="5,4" stroke-width="1"/>
+<circle cx="41" cy="41" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="41" cy="41" r="1.8" fill="#222"/>
+<circle cx="41" cy="87" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="41" cy="87" r="1.8" fill="#222"/>
+<circle cx="41" cy="133" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="41" cy="133" r="1.8" fill="#222"/>
+<circle cx="41" cy="179" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="41" cy="179" r="1.8" fill="#222"/>
+<circle cx="41" cy="225" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="41" cy="225" r="1.8" fill="#222"/>
+<circle cx="87" cy="41" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="87" cy="41" r="1.8" fill="#222"/>
+<circle cx="87" cy="179" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="87" cy="179" r="1.8" fill="#222"/>
+<circle cx="87" cy="225" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="87" cy="225" r="1.8" fill="#222"/>
+<circle cx="133" cy="41" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="133" cy="41" r="1.8" fill="#222"/>
+<circle cx="133" cy="133" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="133" cy="133" r="1.8" fill="#222"/>
+<circle cx="133" cy="225" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="133" cy="225" r="1.8" fill="#222"/>
+<circle cx="179" cy="41" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="179" cy="41" r="1.8" fill="#222"/>
+<circle cx="179" cy="133" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="179" cy="133" r="1.8" fill="#222"/>
+<circle cx="179" cy="225" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="179" cy="225" r="1.8" fill="#222"/>
+<circle cx="225" cy="41" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="225" cy="41" r="1.8" fill="#222"/>
+<circle cx="225" cy="179" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="225" cy="179" r="1.8" fill="#222"/>
+<circle cx="225" cy="225" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="225" cy="225" r="1.8" fill="#222"/>
+<circle cx="271" cy="41" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="271" cy="41" r="1.8" fill="#222"/>
+<circle cx="271" cy="87" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="271" cy="87" r="1.8" fill="#222"/>
+<circle cx="271" cy="133" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="271" cy="133" r="1.8" fill="#222"/>
+<circle cx="271" cy="179" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="271" cy="179" r="1.8" fill="#222"/>
+<circle cx="271" cy="225" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="271" cy="225" r="1.8" fill="#222"/>
+<circle cx="155" cy="125" r="70" fill="none" stroke="#222" stroke-width="2.4"/>
+<path d="M 194.6 85.4 A 56 56 0 0 0 115.4 85.4" fill="none" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="150" y="100" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">I</text>
+<text x="24" y="252" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">コイル（</text><text x="78" y="252" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">L</text><text x="88" y="252" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">，</text><text x="100" y="252" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">R</text><text x="112" y="252" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">），磁場は手前向き（⊙）</text>
+<text x="24" y="268" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">青い矢印は電流 </text><text x="122" y="268" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">I</text><text x="130" y="268" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222"> の正の向き</text>
+<line x1="340" y1="220" x2="585" y2="220" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<line x1="340" y1="220" x2="340" y2="40" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<polyline points="340,220 450,100 575,100" fill="none" stroke="#222" stroke-width="1.8"/>
+<line x1="450" y1="100" x2="450" y2="220" stroke="#888" stroke-dasharray="4,3"/><line x1="340" y1="100" x2="450" y2="100" stroke="#888" stroke-dasharray="4,3"/>
+<text x="445" y="240" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">T</text><text x="572" y="240" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">t</text><text x="326" y="238" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">0</text>
+<text x="306" y="105" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">Φ<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<text x="348" y="50" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">Φ<tspan baseline-shift="sub" font-size="10" font-style="normal">e</tspan></text>
+</svg>

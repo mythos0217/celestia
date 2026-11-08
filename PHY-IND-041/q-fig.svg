@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<line x1="150" y1="30" x2="150" y2="300" stroke="#888" stroke-width="1" stroke-dasharray="6 4"/>
+<ellipse cx="150" cy="165" rx="55" ry="110" fill="none" stroke="#222" stroke-width="1.8"/>
+<path d="M122,42 A28,8 0 1 0 178,42" fill="none" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="184" y="44" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">ω</text>
+<ellipse cx="150" cy="171" rx="14" ry="4" fill="none" stroke="#222" stroke-width="1.2"/>
+<path d="M134,167 L150,162 L166,157 L150,166 Z" fill="#222"/>
+<line x1="150" y1="162" x2="150" y2="171" stroke="#222" stroke-width="1.2"/>
+<line x1="155" y1="165" x2="205" y2="165" stroke="#222" stroke-width="1" marker-end="url(#q-ak)" />
+<text x="174" y="159" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">a</text>
+<text x="80" y="310" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">横から見た図</text>
+<text x="212" y="225" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">抵抗 <tspan font-family="Times New Roman, serif" font-style="italic">R</tspan>，</text>
+<text x="212" y="245" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">自己インダクタンス <tspan font-family="Times New Roman, serif" font-style="italic">L</tspan></text>
+<circle cx="440" cy="170" r="95" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="362.2" y1="224.5" x2="517.8" y2="115.5" stroke="#222" stroke-width="2.4"/>
+<line x1="440" y1="170" x2="399.8" y2="112.7" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<text x="384.4" y="105.7" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">n</text>
+<line x1="440" y1="170" x2="440" y2="80" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<path d="M440,130 A40,40 0 0 0 417.1,137.2" fill="none" stroke="#222" stroke-width="1"/>
+<text x="418" y="126" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">ωt</text>
+<line x1="575" y1="290" x2="575" y2="200" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="548" y="290" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B<tspan baseline-shift="sub" font-size="10">h</tspan></text>
+<text x="433" y="65" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">北</text>
+<text x="321" y="175" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">西</text>
+<text x="543" y="175" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">東</text>
+<text x="433" y="285" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">南</text>
+<circle cx="440" cy="170" r="3" fill="#222"/>
+<path d="M549.6,146.7 A112,112 0 0 0 504.2,78.3" fill="none" stroke="#1f5fbf" stroke-width="1.6" marker-end="url(#q-ab)"/>
+<text x="539.7" y="101.8" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">ω</text>
+<text x="380" y="310" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">上から見た図（太線：輪）</text>
+</svg>

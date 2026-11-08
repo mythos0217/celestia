@@ -1,0 +1,144 @@
+{
+ "id": "PHY-IND-047",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "ソレノイドを囲む回路上の導体棒：磁束の変え方によらない最終変位と電流の逆転",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は上から見た図である．水平面内に間隔 $l$ の2本の長い平行な導体レールが置かれ，その左端どうしは導線でつながれている．この導線とレールがつくる回路は，鉛直に立てた十分に長いソレノイドを1回だけ囲んでいる．レールの上には質量 $m$ の導体棒 PQ がレールと垂直に置かれ，摩擦なく動ける．レールのある領域には鉛直上向きに磁束密度 $B$ の一様な磁場がかかっている．ソレノイドの磁場はその内部にだけ生じ，ソレノイドのある場所には外部の磁場はない．回路の電気抵抗は棒の抵抗 $R$ だけとし，回路の自己インダクタンスは無視する．棒の速度 $u$ は右向きを正，回路の電流 $I$ は上から見て反時計回り（図の青い矢印の向き）を正とする．\n\nソレノイドの電流を変えることにより，ソレノイド内の磁束 $\\Phi_{\\rm s}$（鉛直上向きを正）を $0$ から $\\Phi_1$（$>0$）まで変化させ，その後は一定に保つ．始め棒は静止しており，レールは十分に長く，棒がレールの左端に達することはないものとする．必要なら「$\\dfrac{dy}{dt}=-\\dfrac{y}{\\tau}$ をみたす関数は $y=y(0)\\,e^{-t/\\tau}$ である」ことを用いてよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電流 $I$ を $\\dfrac{d\\Phi_{\\rm s}}{dt}$，$u$ などを用いて表し，棒の運動方程式を書け．"
+     },
+     {
+      "id": "2",
+      "tex": "棒が動き始める向きを答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\Phi_{\\rm s}$ を $0$ から $\\Phi_1$ までどのように変化させても，十分に時間がたつと棒は静止する．その理由を述べよ．また，$\\Phi_{\\rm s}$ を変え始めてから棒が静止するまでに棒を流れた電気量の総和 $Q$（正の向きを正とする）と，その間の棒の変位（向きと大きさ）を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "特に，$\\Phi_{\\rm s}$ を時刻 $0$ から $T$ の間に一定の割合で $\\Phi_1$ まで増やし，その後は一定に保つ場合を考える．$\\tau=\\dfrac{mR}{B^2l^2}$ とおく．$0\\le t\\le T$ における $u$ を求めよ．また，電流の向きが逆転する時刻を答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) で $T\\to0$ とした場合（$\\Phi_{\\rm s}$ を瞬間的に変えた場合）について，変化直後の棒の速さと，その後棒が静止するまでの移動距離を求め，(3) の結果と一致することを確かめよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ソレノイドを囲む回路上の導体棒：磁束の変え方によらない最終変位と電流の逆転",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：ソレノイドを囲む回路上の導体棒：磁束の変え方によらない最終変位と電流の逆転",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I=-\\dfrac1R\\left(\\dfrac{d\\Phi_{\\rm s}}{dt}+Blu\\right)$，$m\\dfrac{du}{dt}=BlI=-\\dfrac{Bl}{R}\\left(\\dfrac{d\\Phi_{\\rm s}}{dt}+Blu\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "左向き"
+   },
+   {
+    "id": "3",
+    "tex": "$\\Phi_{\\rm s}$ が一定になった後は $m\\dfrac{du}{dt}=-\\dfrac{B^2l^2}{R}u$ で速度が指数関数的に0に近づくため．$Q=0$，変位は左向きに $\\dfrac{\\Phi_1}{Bl}$"
+   },
+   {
+    "id": "4",
+    "tex": "$u=-\\dfrac{\\Phi_1}{BlT}\\left(1-e^{-t/\\tau}\\right)$，逆転は時刻 $T$"
+   },
+   {
+    "id": "5",
+    "tex": "速さ $\\dfrac{Bl\\Phi_1}{mR}$（左向き），移動距離 $\\dfrac{\\Phi_1}{Bl}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　棒の位置を左端から $x$ とすると，回路が囲む面を貫く磁束（上向き正）は $\\Phi=\\Phi_{\\rm s}+Blx$ である（ソレノイドの外には磁場がないので，ソレノイドからの寄与は回路の形によらず $\\Phi_{\\rm s}$）．反時計回りを正とすると誘導起電力は $-\\dfrac{d\\Phi}{dt}$ だから\n\\[ RI=-\\frac{d\\Phi_{\\rm s}}{dt}-Blu\\quad\\therefore\\ I=\\boldsymbol{-\\frac1R\\left(\\frac{d\\Phi_{\\rm s}}{dt}+Blu\\right)}. \\]\n正の向きの電流は棒の中を P→Q の向きに流れ，上向きの磁場から右向きの力 $BlI$ を受ける．よって\n\\[ m\\frac{du}{dt}=\\boldsymbol{BlI=-\\frac{Bl}{R}\\left(\\frac{d\\Phi_{\\rm s}}{dt}+Blu\\right)}. \\]\n\n\\textbf{(2)}　始めは $u=0$，$\\dfrac{d\\Phi_{\\rm s}}{dt}>0$ なので $I<0$ で，力は左向き．よって棒は\\textbf{左向き}に動き始める（回路の面積を減らして，上向きの磁束の増加を打ち消す向き．レンツの法則と一致）．\n\n\\textbf{(3)}　$\\Phi_{\\rm s}$ が一定になった後は $m\\dfrac{du}{dt}=-\\dfrac{B^2l^2}{R}u$ となり，速度に比例する抵抗力だけを受けるので $u$ は指数関数的に $0$ に近づく．\n\n運動方程式 $m\\dfrac{du}{dt}=BlI$ の両辺に $\\Delta t$ をかけて全時間について足し合わせると（$\\sum I\\Delta t=Q$）\n\\[ m(u_{\\text{終}}-u_{\\text{始}})=BlQ. \\]\n始めも終わりも静止しているので $Q=\\boldsymbol{0}$．\n\n次に回路の式 $RI\\,\\Delta t=-\\Delta\\Phi_{\\rm s}-Bl\\,\\Delta x$ を足し合わせると，棒の右向きの変位を $X$ として\n\\[ RQ=-\\Phi_1-BlX. \\]\n$Q=0$ より $X=-\\dfrac{\\Phi_1}{Bl}$，すなわち\\textbf{左向きに} $\\boldsymbol{\\dfrac{\\Phi_1}{Bl}}$．\n\nこれは「回路の全磁束 $\\Phi_{\\rm s}+Blx$ が最終的に元の値に戻る」ことを意味し，$m$，$R$ や $\\Phi_{\\rm s}$ の変え方によらない．また $Q=0$ なので，始め負の向きに流れた電流は途中で必ず正の向きに変わる（棒は左へ加速した後，減速して止まる）．\n\n\\textbf{(4)}　$0\\le t\\le T$ では $\\dfrac{d\\Phi_{\\rm s}}{dt}=\\dfrac{\\Phi_1}{T}$ だから，(1) より\n\\[ \\frac{du}{dt}=-\\frac1\\tau\\left(u+\\frac{\\Phi_1}{BlT}\\right). \\]\n$y=u+\\dfrac{\\Phi_1}{BlT}$ とおけば $y(0)=\\dfrac{\\Phi_1}{BlT}$ で $y=\\dfrac{\\Phi_1}{BlT}e^{-t/\\tau}$．よって\n\\[ u=\\boldsymbol{-\\frac{\\Phi_1}{BlT}\\left(1-e^{-t/\\tau}\\right)}. \\]\nこのとき $I=\\dfrac{m}{Bl}\\dfrac{du}{dt}=-\\dfrac{\\Phi_1}{RT}e^{-t/\\tau}<0$．一方 $t>T$ では $\\dfrac{d\\Phi_{\\rm s}}{dt}=0$ となり，$I=-\\dfrac{Bl}{R}u>0$（棒はまだ左向きに動いている）．よって電流は\\textbf{時刻 $T$} に（不連続に）向きを変える．棒の速さは $t=T$ で最大となり，その後は時定数 $\\tau$ で減衰する．\n\n（確認：$0\\le t\\le T$ の変位は $-\\dfrac{\\Phi_1}{BlT}\\left\\{T-\\tau\\left(1-e^{-T/\\tau}\\right)\\right\\}$，その後の変位は $u(T)\\,\\tau=-\\dfrac{\\Phi_1\\tau}{BlT}\\left(1-e^{-T/\\tau}\\right)$ で，和は $-\\dfrac{\\Phi_1}{Bl}$ となり (3) と一致する．）\n\n\\textbf{(5)}　$T\\to0$ では $1-e^{-T/\\tau}\\approx\\dfrac{T}{\\tau}$ なので $u(T)\\to-\\dfrac{\\Phi_1}{Bl\\tau}=-\\dfrac{Bl\\Phi_1}{mR}$．変化直後の速さは $\\boldsymbol{\\dfrac{Bl\\Phi_1}{mR}}$（左向き）．\n（別解：瞬間的な変化の間は棒は動けないので，流れる電気量は $-\\dfrac{\\Phi_1}{R}$，棒が受ける力積は $Bl\\times\\left(-\\dfrac{\\Phi_1}{R}\\right)$ で，これが $m\\times$ 速度になる．）\n\nその後は $m\\dfrac{du}{dt}=-\\dfrac{B^2l^2}{R}u$ に従う．両辺に $\\Delta t$ をかけて足し合わせると $m(0-u(T))=-\\dfrac{B^2l^2}{R}X'$（$X'$ はこの間の変位）だから，移動距離は\n\\[ \\frac{mR}{B^2l^2}\\cdot\\frac{Bl\\Phi_1}{mR}=\\boldsymbol{\\frac{\\Phi_1}{Bl}} \\]\nとなり，(3) の結果と一致する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ソレノイドを囲む回路上の導体棒では，回路の式と運動方程式を時間について足し合わせると $RQ=-\\Delta\\Phi_{\\rm s}-Bl\\Delta x$，$m\\Delta u=BlQ$ となる．静止から静止までなら通過電気量は $0$ で，棒の変位は回路の全磁束を元に戻す $\\Delta\\Phi_{\\rm s}/Bl$ に決まり，磁束の変え方・質量・抵抗によらない（その代わり電流は途中で必ず逆転する）．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "momentum-conservation",
+  "equation-of-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "ソレノイド",
+  "導体棒",
+  "通過電気量",
+  "力積",
+  "全磁束"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

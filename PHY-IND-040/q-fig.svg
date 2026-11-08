@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 215">
+<line x1="50" y1="60" x2="50" y2="119" stroke="#222" stroke-width="1.6" fill="none"/>
+<line x1="34" y1="119" x2="66" y2="119" stroke="#222" stroke-width="1.6" fill="none"/>
+<line x1="42" y1="129" x2="58" y2="129" stroke="#222" stroke-width="3"/>
+<line x1="50" y1="129" x2="50" y2="190" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="14" y="130" text-anchor="start" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">E</text>
+<line x1="50" y1="60" x2="85" y2="60" stroke="#222" stroke-width="1.6" fill="none"/>
+<circle cx="87" cy="60" r="2.5" fill="#222"/><circle cx="117" cy="60" r="2.5" fill="#222"/>
+<line x1="87" y1="60" x2="113" y2="44" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="96" y="36" text-anchor="start" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">S</text>
+<line x1="119" y1="60" x2="190" y2="60" stroke="#222" stroke-width="1.6" fill="none"/>
+<path d="M190,60 a10.0,10.0 0 0 1 20,0 a10.0,10.0 0 0 1 20,0 a10.0,10.0 0 0 1 20,0 a10.0,10.0 0 0 1 20,0 a10.0,10.0 0 0 1 20,0" stroke="#222" stroke-width="1.6" fill="none"/>
+<line x1="290" y1="60" x2="360" y2="60" stroke="#222" stroke-width="1.6" fill="none"/>
+<path d="M360,60 a10.0,10.0 0 0 1 20,0 a10.0,10.0 0 0 1 20,0 a10.0,10.0 0 0 1 20,0 a10.0,10.0 0 0 1 20,0 a10.0,10.0 0 0 1 20,0" stroke="#222" stroke-width="1.6" fill="none"/>
+<line x1="460" y1="60" x2="500" y2="60" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="228" y="36" text-anchor="start" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">K<tspan baseline-shift="sub" font-size="10" font-style="normal">1</tspan></text>
+<text x="240" y="92" text-anchor="middle" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">L</text>
+<text x="398" y="36" text-anchor="start" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">K<tspan baseline-shift="sub" font-size="10" font-style="normal">2</tspan></text>
+<text x="410" y="92" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="16" fill="#222">2<tspan font-family="Times New Roman, serif" font-style="italic">L</tspan></text>
+<line x1="150" y1="60" x2="150" y2="111" stroke="#222" stroke-width="1.6" fill="none"/>
+<circle cx="150" cy="125" r="14" stroke="#222" stroke-width="1.6" fill="none"/>
+<line x1="140" y1="115" x2="160" y2="135" stroke="#222" stroke-width="1.4"/><line x1="140" y1="135" x2="160" y2="115" stroke="#222" stroke-width="1.4"/>
+<line x1="150" y1="139" x2="150" y2="190" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="170" y="130" text-anchor="start" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">P<tspan baseline-shift="sub" font-size="10" font-style="normal">1</tspan></text>
+<circle cx="150" cy="60" r="2.5" fill="#222"/><circle cx="150" cy="190" r="2.5" fill="#222"/>
+<line x1="330" y1="60" x2="330" y2="111" stroke="#222" stroke-width="1.6" fill="none"/>
+<circle cx="330" cy="125" r="14" stroke="#222" stroke-width="1.6" fill="none"/>
+<line x1="320" y1="115" x2="340" y2="135" stroke="#222" stroke-width="1.4"/><line x1="320" y1="135" x2="340" y2="115" stroke="#222" stroke-width="1.4"/>
+<line x1="330" y1="139" x2="330" y2="190" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="350" y="130" text-anchor="start" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">P<tspan baseline-shift="sub" font-size="10" font-style="normal">2</tspan></text>
+<circle cx="330" cy="60" r="2.5" fill="#222"/><circle cx="330" cy="190" r="2.5" fill="#222"/>
+<line x1="500" y1="60" x2="500" y2="111" stroke="#222" stroke-width="1.6" fill="none"/>
+<circle cx="500" cy="125" r="14" stroke="#222" stroke-width="1.6" fill="none"/>
+<line x1="490" y1="115" x2="510" y2="135" stroke="#222" stroke-width="1.4"/><line x1="490" y1="135" x2="510" y2="115" stroke="#222" stroke-width="1.4"/>
+<line x1="500" y1="139" x2="500" y2="190" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="520" y="130" text-anchor="start" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">P<tspan baseline-shift="sub" font-size="10" font-style="normal">3</tspan></text>
+<circle cx="500" cy="60" r="2.5" fill="#222"/><circle cx="500" cy="190" r="2.5" fill="#222"/>
+<line x1="50" y1="190" x2="500" y2="190" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="128" y="82" text-anchor="start" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">A</text>
+<text x="308" y="82" text-anchor="start" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+<text x="508" y="82" text-anchor="start" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">C</text>
+</svg>

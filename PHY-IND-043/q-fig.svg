@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400">
+  <defs>
+    <marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+    <marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+    <marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+  </defs>
+  <!-- magnet -->
+  <path d="M150,250 L150,385 M310,250 L310,385" stroke="#222" stroke-width="1.6" fill="none"/>
+  <ellipse cx="230" cy="250" rx="80" ry="16" fill="none" stroke="#222" stroke-width="1.6"/>
+  <text x="250" y="330" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">棒磁石</text>
+  <text x="222" y="285" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">N</text>
+  <!-- field lines -->
+  <g stroke="#888" stroke-width="1" fill="none" marker-end="url(#q-ag)">
+    <path d="M230,246 L230,40"/>
+    <path d="M205,246 C200,180 190,120 172,50"/>
+    <path d="M255,246 C260,180 270,120 288,50"/>
+    <path d="M180,248 C168,190 145,130 110,70"/>
+    <path d="M280,248 C292,190 315,130 350,70"/>
+    <path d="M160,250 C140,210 110,170 70,130"/>
+    <path d="M300,250 C320,210 350,170 390,130"/>
+  </g>
+  <!-- z axis -->
+  <line x1="230" y1="250" x2="230" y2="30" stroke="#222" stroke-width="1" stroke-dasharray="5,4"/>
+  <!-- ring -->
+  <ellipse cx="230" cy="150" rx="42" ry="10" fill="none" stroke="#222" stroke-width="2.4"/>
+  <line x1="230" y1="150" x2="272" y2="150" stroke="#222" stroke-width="1"/>
+  <text x="246" y="146" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">a</text>
+  <line x1="262" y1="157" x2="300" y2="190" stroke="#222" stroke-width="1"/>
+  <text x="300" y="205" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">輪（超伝導）</text>
+  <text x="302" y="224" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">m<tspan font-style="normal" font-family="Noto Sans CJK JP, sans-serif">，</tspan>L</text>
+  <!-- origin label -->
+  <line x1="236" y1="150" x2="236" y2="150" stroke="#222"/>
+  <line x1="60" y1="150" x2="186" y2="150" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="18" y="155" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">z<tspan font-style="normal" font-family="Noto Sans CJK JP, sans-serif"> = 0</tspan></text>
+  <!-- z label -->
+  <text x="238" y="34" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">z</text>
+  <!-- component arrows (inset) -->
+  <g transform="translate(395,215)">
+    <line x1="0" y1="0" x2="0" y2="-50" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+    <line x1="0" y1="0" x2="50" y2="0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+    <text x="6" y="-44" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B<tspan baseline-shift="sub" font-size="10">z</tspan></text>
+    <text x="38" y="20" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B<tspan baseline-shift="sub" font-size="10">r</tspan></text>
+  </g>
+  <!-- gravity -->
+  <line x1="420" y1="40" x2="420" y2="90" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+  <text x="428" y="72" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">g</text>
+</svg>

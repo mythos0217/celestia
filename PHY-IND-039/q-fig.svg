@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280">
+<defs><marker id="q-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#1f5fbf"/></marker><marker id="q-ak" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#222"/></marker></defs>
+<ellipse cx="180" cy="130" rx="22" ry="26" fill="none" stroke="#222" stroke-width="1.6"/>
+<polygon points="160,134 30,144 30,150 160,144" fill="none" stroke="#222" stroke-width="1.6"/>
+<polygon points="200,134 330,144 330,150 200,144" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="180" y1="104" x2="180" y2="70" stroke="#222" stroke-width="1.6"/>
+<line x1="30" y1="180" x2="330" y2="180" stroke="#222" stroke-width="1"/>
+<line x1="30" y1="172" x2="30" y2="188" stroke="#222" stroke-width="1"/>
+<line x1="330" y1="172" x2="330" y2="188" stroke="#222" stroke-width="1"/>
+<text x="175" y="200" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">w</text>
+<line x1="225" y1="104" x2="225" y2="156" stroke="#222" stroke-width="1"/>
+<line x1="200" y1="104" x2="232" y2="104" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="200" y1="156" x2="232" y2="156" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="232" y="135" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">h</text>
+<text x="30" y="125" font-family="Noto Sans CJK JP, sans-serif"  font-size="13" fill="#222">左翼端</text>
+<text x="280" y="125" font-family="Noto Sans CJK JP, sans-serif"  font-size="13" fill="#222">右翼端</text>
+<text x="60" y="250" font-family="Noto Sans CJK JP, sans-serif"  font-size="13" fill="#222">後ろから見た図（紙面の奥へ速さ <tspan font-family="Times New Roman, serif" font-style="italic">v</tspan> で進む）</text>
+<line x1="500" y1="200" x2="500" y2="55" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<line x1="430" y1="130" x2="575" y2="130" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<text x="494" y="48" font-family="Noto Sans CJK JP, sans-serif"  font-size="13" fill="#222">北</text>
+<text x="580" y="135" font-family="Noto Sans CJK JP, sans-serif"  font-size="13" fill="#222">東</text>
+<line x1="500" y1="130" x2="557.3" y2="89.8" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<text x="560.6" y="83.6" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf">v</text>
+<path d="M 500,100 A 30 30 0 0 1 524.6,112.8" fill="none" stroke="#222" stroke-width="1"/>
+<text x="508" y="94" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">ψ</text>
+<text x="440" y="250" font-family="Noto Sans CJK JP, sans-serif"  font-size="13" fill="#222">上から見た図</text>
+</svg>

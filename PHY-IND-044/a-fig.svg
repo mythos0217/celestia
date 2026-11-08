@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260">
+  <g stroke="#222" stroke-width="1.6" fill="none">
+    <!-- battery V0 left -->
+    <line x1="60" y1="60" x2="60" y2="118"/>
+    <line x1="42" y1="118" x2="78" y2="118"/>
+    <line x1="51" y1="130" x2="69" y2="130" stroke-width="3"/>
+    <line x1="60" y1="130" x2="60" y2="200"/>
+    <!-- top: r and B^2d^2/k -->
+    <line x1="60" y1="60" x2="110" y2="60"/>
+    <rect x="110" y="50" width="70" height="20"/>
+    <line x1="180" y1="60" x2="230" y2="60"/>
+    <rect x="230" y="50" width="70" height="20"/>
+    <line x1="300" y1="60" x2="420" y2="60"/>
+    <!-- R right -->
+    <line x1="420" y1="60" x2="420" y2="95"/>
+    <rect x="410" y="95" width="20" height="70"/>
+    <line x1="420" y1="165" x2="420" y2="200"/>
+    <line x1="60" y1="200" x2="420" y2="200"/>
+    <circle cx="340" cy="60" r="3.5" fill="#222"/>
+    <circle cx="340" cy="200" r="3.5" fill="#222"/>
+  </g>
+  <rect x="30" y="30" width="290" height="190" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <g font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">
+    <text x="84" y="130">V<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+    <text x="140" y="94">r</text>
+    <text x="236" y="98">B<tspan baseline-shift="super" font-size="10" font-style="normal">2</tspan>d<tspan baseline-shift="super" font-size="10" font-style="normal">2</tspan><tspan font-style="normal">/</tspan>k</text>
+    <text x="440" y="136">R</text>
+  </g>
+  <g font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">
+    <text x="34" y="244">発電機の等価電源（起電力 <tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan font-size="9" baseline-shift="sub">0</tspan>，内部抵抗 <tspan font-family="Times New Roman, serif" font-style="italic">r′</tspan>）</text>
+    <text x="346" y="52">P</text>
+    <text x="346" y="218">Q</text>
+    <text x="196" y="130" font-size="12">流れの減速</text>
+    <text x="196" y="146" font-size="12">による分</text>
+  </g>
+</svg>

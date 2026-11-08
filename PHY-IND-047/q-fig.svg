@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 300">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker></defs>
+<rect x="250" y="40" width="355" height="200" fill="none" stroke="#888" stroke-dasharray="5,4"/>
+<circle cx="275" cy="62" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="275" cy="62" r="1.8" fill="#222"/>
+<circle cx="275" cy="140" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="275" cy="140" r="1.8" fill="#222"/>
+<circle cx="275" cy="218" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="275" cy="218" r="1.8" fill="#222"/>
+<circle cx="325" cy="62" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="325" cy="62" r="1.8" fill="#222"/>
+<circle cx="325" cy="140" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="325" cy="140" r="1.8" fill="#222"/>
+<circle cx="325" cy="218" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="325" cy="218" r="1.8" fill="#222"/>
+<circle cx="375" cy="62" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="375" cy="62" r="1.8" fill="#222"/>
+<circle cx="375" cy="140" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="375" cy="140" r="1.8" fill="#222"/>
+<circle cx="375" cy="218" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="375" cy="218" r="1.8" fill="#222"/>
+<circle cx="475" cy="62" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="475" cy="62" r="1.8" fill="#222"/>
+<circle cx="475" cy="218" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="475" cy="218" r="1.8" fill="#222"/>
+<circle cx="525" cy="62" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="525" cy="62" r="1.8" fill="#222"/>
+<circle cx="525" cy="140" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="525" cy="140" r="1.8" fill="#222"/>
+<circle cx="525" cy="218" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="525" cy="218" r="1.8" fill="#222"/>
+<text x="470" y="262" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">一様磁場 </text><text x="528" y="262" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">B</text><text x="540" y="262" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">（⊙）</text>
+<line x1="80" y1="95" x2="600" y2="95" stroke="#222" stroke-width="1.6"/>
+<line x1="80" y1="185" x2="600" y2="185" stroke="#222" stroke-width="1.6"/>
+<line x1="80" y1="95" x2="80" y2="185" stroke="#222" stroke-width="1.6"/>
+<circle cx="160" cy="140" r="30" fill="none" stroke="#222" stroke-width="1.6"/><circle cx="160" cy="140" r="25" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="160" cy="140" r="7" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="160" cy="140" r="1.8" fill="#222"/>
+<text x="128" y="215" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">ソレノイド</text>
+<text x="196" y="132" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">Φ<tspan baseline-shift="sub" font-size="10" font-style="normal">s</tspan></text>
+<line x1="66" y1="118" x2="66" y2="165" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="40" y="146" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">I</text>
+<rect x="421" y="82" width="8" height="116" fill="#fff" fill-opacity="0" stroke="#222" stroke-width="1.6"/>
+<text x="420" y="78" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">Q</text><text x="420" y="214" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">P</text>
+<text x="438" y="125" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">m</text><text x="438" y="166" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">R</text>
+<line x1="432" y1="140" x2="490" y2="140" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="494" y="145" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">u</text>
+<line x1="560" y1="98" x2="560" y2="182" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+<text x="566" y="145" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">l</text>
+<text x="20" y="288" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">上から見た図．⊙ は鉛直上向き．青い矢印は </text><text x="290" y="288" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">I</text><text x="298" y="288" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">，</text><text x="310" y="288" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">u</text><text x="320" y="288" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222"> の正の向き</text>
+</svg>

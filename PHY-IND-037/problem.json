@@ -1,0 +1,144 @@
+{
+ "id": "PHY-IND-037",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "鉛直磁場中の斜面レールでおもりを引き上げる導体棒（浮き上がりの制約と損失最小の傾き）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は，水平面と角 $\\theta$（$0<\\theta<\\frac{\\pi}{2}$）をなす斜面を横から見たものである．斜面上には間隔 $\\ell$ の平行な2本の金属レールが最大傾斜の方向に敷かれ，その上に質量 $m$ の導体棒がレールと直交するように置かれている（図では棒の断面を円で示す）．棒はレールの上に置いてあるだけで，レールから浮き上がることができる．棒の中央には斜面と平行な軽い糸がつけられ，斜面の上端にあるなめらかな滑車を通して質量 $M$（$M>m$）のおもりをつるしている．レールの下端は，起電力 $E$ の電池，抵抗値 $r$ の抵抗，スイッチ S を直列につないだ導線で結ばれている．空間には鉛直上向きで磁束密度の大きさ $B$ の一様な磁場がかかっており，電池の向きは，S を閉じると棒に図の ⊙ の向き（紙面の裏から表）に電流が流れるように選んである．摩擦，電池の内部抵抗，抵抗 $r$ 以外の電気抵抗，回路の自己誘導，回路の電流がつくる磁場は無視する．レールと糸は十分に長い．重力加速度の大きさを $g$ とする．\n\n棒を手で支えて静止させておき，S を閉じると同時に静かにはなしたところ，棒は斜面を下り，おもりは上昇しはじめた．やがて棒の速さは一定になった（これを定常状態とよぶ）．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "定常状態で棒を流れる電流 $I_\\infty$ と，おもりが上昇する速さ $v_\\infty$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "定常状態で，抵抗で発生するジュール熱の仕事率を電池が供給する仕事率で割った値を損失率 $\\lambda$ とする．$\\lambda$ を $\\theta$ の関数として表せ．また，仮に棒がレールから浮き上がらないように押さえられているとすると，$\\lambda$ を最小にする $\\theta$ は $\\theta_1$ である．$\\sin\\theta_1$ と $\\lambda$ の最小値を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "棒が押さえられていないとき，定常状態で棒がレールから受ける垂直抗力の大きさ $N_\\infty$ を $\\theta$ の関数として求めよ．また，$\\theta=\\theta_1$ のときの $N_\\infty$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "S を閉じた直後に棒がレールから受ける垂直抗力を，棒が浮き上がらないと仮定して $N_0$ とする．$N_0$ を求めよ．また，棒が運動の途中で一度もレールから浮き上がらないための $\\theta$ の条件を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "以下，$EB\\ell>gr\\sqrt{M^2-m^2}$ とし，$k=\\dfrac{mgr}{EB\\ell}$ とおく．棒が押さえられていないとき，運動の途中で棒が浮き上がらず，しかもおもりを引き上げることができる範囲で，$\\lambda$ を最小にする $\\theta$ を $\\theta_2$ とする．$\\tan\\theta_2$ と，そのときの $\\lambda$ を $M$，$m$，$k$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：鉛直磁場中の斜面レールでおもりを引き上げる導体棒（浮き上がりの制約と損失最小の傾き）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：鉛直磁場中の斜面レールでおもりを引き上げる導体棒（浮き上がりの制約と損失最小の傾き）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I_\\infty=\\dfrac{(M-m\\sin\\theta)g}{B\\ell\\cos\\theta}$，$v_\\infty=\\dfrac{EB\\ell\\cos\\theta-(M-m\\sin\\theta)gr}{B^2\\ell^2\\cos^2\\theta}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\lambda=\\dfrac{(M-m\\sin\\theta)gr}{EB\\ell\\cos\\theta}$，$\\sin\\theta_1=\\dfrac{m}{M}$，最小値 $\\dfrac{gr\\sqrt{M^2-m^2}}{EB\\ell}$"
+   },
+   {
+    "id": "3",
+    "tex": "$N_\\infty=\\dfrac{(m-M\\sin\\theta)g}{\\cos\\theta}$，$\\theta=\\theta_1$ で $N_\\infty=0$"
+   },
+   {
+    "id": "4",
+    "tex": "$N_0=mg\\cos\\theta-\\dfrac{EB\\ell}{r}\\sin\\theta$，条件 $\\tan\\theta\\le\\dfrac{mgr}{EB\\ell}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\tan\\theta_2=k$，$\\lambda=\\dfrac{k}{m}\\left(M\\sqrt{1+k^2}-mk\\right)$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{力の向き}　電流は ⊙ 向き，磁場は鉛直上向きなので，棒が受ける力 $F=IB\\ell$ は\\textbf{水平で斜面の下側（図の左）向き}である．これを斜面方向と斜面に垂直な方向に分けると，斜面に沿って下向きに $F\\cos\\theta$，斜面から\\textbf{引き離す向き}に $F\\sin\\theta$ となる．糸の張力は斜面に平行なので，垂直抗力には関係しない．\n\n\\textbf{(1)} 定常状態では棒もおもりも等速なので，糸の張力は $Mg$ で，棒の斜面方向の力のつり合いは\n\\[ I_\\infty B\\ell\\cos\\theta+mg\\sin\\theta=Mg \\quad\\therefore\\quad \\boldsymbol{I_\\infty=\\frac{(M-m\\sin\\theta)g}{B\\ell\\cos\\theta}}. \\]\n棒は速さ $v$（おもりの速さと同じ）で斜面を下る．磁場に垂直な速度成分は $v\\cos\\theta$ なので誘導起電力は $vB\\ell\\cos\\theta$ で，電池の起電力と逆向きにはたらく．回路の式 $E-v_\\infty B\\ell\\cos\\theta=rI_\\infty$ より\n\\[ \\boldsymbol{v_\\infty=\\frac{E-rI_\\infty}{B\\ell\\cos\\theta}=\\frac{EB\\ell\\cos\\theta-(M-m\\sin\\theta)gr}{B^2\\ell^2\\cos^2\\theta}}. \\]\n（エネルギーで確かめると，$EI_\\infty=rI_\\infty^2+(M-m\\sin\\theta)gv_\\infty$ が成り立つ．電池の仕事はジュール熱と，おもりの位置エネルギーの増加から棒の位置エネルギーの減少を引いた分になる．）\n\n\\textbf{(2)} $\\lambda=\\dfrac{rI_\\infty^2}{EI_\\infty}=\\dfrac{rI_\\infty}{E}$ なので\n\\[ \\boldsymbol{\\lambda=\\frac{(M-m\\sin\\theta)gr}{EB\\ell\\cos\\theta}}. \\]\n$f(\\theta)=\\dfrac{M-m\\sin\\theta}{\\cos\\theta}$ とおくと $f'(\\theta)=\\dfrac{M\\sin\\theta-m}{\\cos^2\\theta}$ だから，$f$ は $\\sin\\theta=\\dfrac mM$ まで減少しその後増加する．よって $\\boldsymbol{\\sin\\theta_1=\\dfrac mM}$ で，$\\cos\\theta_1=\\dfrac{\\sqrt{M^2-m^2}}{M}$ より $f(\\theta_1)=\\sqrt{M^2-m^2}$，\n\\[ \\lambda_{\\min}=\\boldsymbol{\\frac{gr\\sqrt{M^2-m^2}}{EB\\ell}}. \\]\n（傾けるほど棒の重力が助けになるが，電磁力の斜面方向の成分 $\\cos\\theta$ 倍が減る．その兼ね合いである．）\n\n\\textbf{(3)} 斜面に垂直な方向には加速度がないので\n\\[ N_\\infty=mg\\cos\\theta-I_\\infty B\\ell\\sin\\theta=mg\\cos\\theta-(M-m\\sin\\theta)g\\tan\\theta=\\boldsymbol{\\frac{(m-M\\sin\\theta)g}{\\cos\\theta}}. \\]\n$\\theta=\\theta_1$ では $\\boldsymbol{N_\\infty=0}$ となる．すなわち，(2) の最適な傾きでは，棒は重力・張力 $Mg$・電磁力の3力だけでつり合っていて，ちょうど浮き上がる寸前である（張力の鉛直成分 $Mg\\sin\\theta$ が $mg$ と等しい）．$\\theta>\\theta_1$ では定常状態でさえ $N_\\infty<0$ となり，押さえていない棒は浮き上がってしまう．\n\n\\textbf{(4)} S を閉じた直後は $v=0$ なので誘導起電力はなく，電流は $E/r$ である．よって\n\\[ \\boldsymbol{N_0=mg\\cos\\theta-\\frac{EB\\ell}{r}\\sin\\theta}. \\]\n運動の途中では，棒の速さが $0$ から $v_\\infty$ へ単調に増える（運動方程式 $(M+m)\\dfrac{dv}{dt}=IB\\ell\\cos\\theta+mg\\sin\\theta-Mg$ の右辺は $v$ の1次の減少関数で，$v_\\infty$ で $0$ になる）ので，電流 $I=\\dfrac{E-vB\\ell\\cos\\theta}{r}$ は $E/r$ から $I_\\infty$ へ単調に減り，垂直抗力 $mg\\cos\\theta-IB\\ell\\sin\\theta$ は単調に増える．したがって最も浮き上がりやすいのは\\textbf{スイッチを閉じた直後}で，一度も浮き上がらない条件は $N_0\\ge0$：\n\\[ \\boldsymbol{\\tan\\theta\\le\\frac{mgr}{EB\\ell}}. \\]\n\n\\textbf{(5)} おもりを引き上げられる条件は，$v_\\infty>0$，すなわち $\\lambda<1$ である．$\\lambda(\\theta)$ は $\\sin\\theta<\\dfrac mM$ の範囲で減少関数なので，許される範囲 $\\tan\\theta\\le k$ の上端 $\\theta_2$（$\\tan\\theta_2=k$）で $\\sin\\theta_2<\\dfrac mM$ ならそこが最小になる．\n$\\sin\\theta_2=\\dfrac{k}{\\sqrt{1+k^2}}<\\dfrac mM \\iff k^2(M^2-m^2)<m^2 \\iff EB\\ell>gr\\sqrt{M^2-m^2}$ であり，これは仮定から成り立つ．また，このとき $\\lambda(\\theta_2)<1$ も成り立つ（$\\lambda(\\theta_2)<1 \\iff kM\\sqrt{1+k^2}<m(1+k^2) \\iff \\sin\\theta_2<\\dfrac mM$）ので，おもりは確かに上がる．したがって\n\\[ \\boldsymbol{\\tan\\theta_2=k=\\frac{mgr}{EB\\ell}}. \\]\n$\\dfrac{gr}{EB\\ell}=\\dfrac km$，$\\dfrac{1}{\\cos\\theta_2}=\\sqrt{1+k^2}$，$\\tan\\theta_2=k$ を使うと\n\\[ \\lambda=\\frac km\\left(\\frac{M}{\\cos\\theta_2}-m\\tan\\theta_2\\right)=\\boldsymbol{\\frac km\\left(M\\sqrt{1+k^2}-mk\\right)}. \\]\n定常状態だけを見ると最適な $\\theta_1$ でも棒は浮かないように見えるが，実際には電流が最大になる始動の瞬間が制約になり，最適な傾きは $\\theta_1$ より小さい $\\theta_2$ になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "鉛直磁場中の斜面上の棒が受ける水平な電磁力は，斜面方向の成分で仕事をすると同時に，垂直成分で棒を斜面から引き離す．損失率を最小にする傾きではちょうど垂直抗力が0になり，さらに電流が最大になる始動の瞬間が浮き上がりの制約になるので，最適な傾きは制約の境界 $\\tan\\theta=mgr/(EB\\ell)$ に移る．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "work-energy",
+  "normal-force"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "電磁力",
+  "垂直抗力",
+  "損失率",
+  "最適化",
+  "終端速度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

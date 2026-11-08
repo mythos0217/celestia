@@ -1,0 +1,136 @@
+{
+ "id": "PHY-IND-041",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "地磁気の中で回転する導線の輪と中心の方位磁針（誘導電流の磁場の時間平均と自己インダクタンスによる遮蔽）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "半径 $a$ の細い導線でつくった円形の輪（抵抗 $R$，自己インダクタンス $L$）が，鉛直な直径を軸として一定の角速度 $\\omega$ で回転している．回転の向きは上から見て反時計回りである．輪の中心には，鉛直な軸のまわりに自由に回れる小さな方位磁針が置いてある．地磁気の水平成分は北向きで大きさ $B_{\\rm h}$ であり，地磁気の鉛直成分は輪を貫かない．\n\n図のように，輪の面に垂直な単位ベクトル $\\vec n$ が時刻 $t$ に北から西へ角 $\\omega t$ だけ回った向きを向くとし，輪の電流 $I$ は $\\vec n$ の向きに右ねじが進む向きを正とする．輪の電流が輪の中心につくる磁場は大きさ $\\dfrac{\\mu_0|I|}{2a}$（$\\mu_0$ は真空の透磁率）で $\\vec n$ に平行である．磁針は速い変化には追従できず，中心での磁場（地磁気と輪の電流の磁場の和）の水平成分の\\textbf{時間平均}の向きを向くものとする．$\\sin\\omega t$，$\\cos\\omega t$ の積の1周期にわたる時間平均は，$\\langle\\sin^2\\omega t\\rangle=\\dfrac12$，$\\langle\\sin\\omega t\\cos\\omega t\\rangle=0$ を用いて求めてよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$L$ が無視できるとき，輪を貫く磁束 $\\Phi(t)$ と電流 $I(t)$ を求めよ．また，中心での輪の電流の磁場の時間平均の北向き成分と西向き成分を求め，磁針が北から東西どちらへふれるか，そのふれの角 $\\theta$ の $\\tan\\theta$ を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$L$ を考慮すると，定常状態の電流は，$\\tan\\varphi=\\dfrac{\\omega L}{R}$（$0<\\varphi<\\dfrac{\\pi}{2}$）として\n\\[ I(t)=\\frac{\\pi a^2B_{\\rm h}\\omega}{\\sqrt{R^2+\\omega^2L^2}}\\sin(\\omega t-\\varphi) \\]\nとなる．$k=\\dfrac{\\pi\\mu_0a}{4L}$，$x=\\dfrac{\\omega L}{R}$ とおいて，輪の電流の磁場の時間平均の北向き成分と西向き成分を $k,x,B_{\\rm h}$ で表し，\n\\[ \\tan\\theta=\\frac{kx}{1+(1-k)x^2} \\]\nとなることを示せ．ただし $0<k<1$ とする．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\omega$ を $0$ から大きくしていくとき，$\\tan\\theta$ が最大になる $\\omega$ と，そのときの $\\tan\\theta$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\omega\\to\\infty$ の極限で，磁針はどの向きを向くか．また，中心での磁場の時間平均の大きさは $B_{\\rm h}$ の何倍になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：地磁気の中で回転する導線の輪と中心の方位磁針（誘導電流の磁場の時間平均と自己インダクタンスによる遮蔽）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：地磁気の中で回転する導線の輪と中心の方位磁針（誘導電流の磁場の時間平均と自己インダクタンスによる遮蔽）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Phi=\\pi a^2B_{\\rm h}\\cos\\omega t$，$I=\\dfrac{\\pi a^2B_{\\rm h}\\omega}{R}\\sin\\omega t$；北向き成分 $0$，西向き成分 $\\dfrac{\\pi\\mu_0a\\omega B_{\\rm h}}{4R}$；西へふれ，$\\tan\\theta=\\dfrac{\\pi\\mu_0a\\omega}{4R}$"
+   },
+   {
+    "id": "2",
+    "tex": "北向き成分 $-\\dfrac{kx^2}{1+x^2}B_{\\rm h}$（南向き），西向き成分 $\\dfrac{kx}{1+x^2}B_{\\rm h}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\omega=\\dfrac{R}{L\\sqrt{1-k}}$ のとき $\\tan\\theta=\\dfrac{k}{2\\sqrt{1-k}}$"
+   },
+   {
+    "id": "4",
+    "tex": "北を向く（ふれは $0$ にもどる）；$1-k$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "北向きを $x$ 軸，西向きを $y$ 軸にとると，$\\vec n=(\\cos\\omega t,\\ \\sin\\omega t)$ である．\n\n\\textbf{(1)} 輪を貫く磁束は $\\vec n$ の向きを正として\n\\[ \\Phi=\\boldsymbol{\\pi a^2B_{\\rm h}\\cos\\omega t} \\]\n誘導起電力は $V=-\\dfrac{d\\Phi}{dt}=\\pi a^2B_{\\rm h}\\omega\\sin\\omega t$（$\\vec n$ に右ねじの向きを正）なので\n\\[ I=\\frac{V}{R}=\\boldsymbol{\\frac{\\pi a^2B_{\\rm h}\\omega}{R}\\sin\\omega t} \\]\n中心での輪の電流の磁場は $\\dfrac{\\mu_0I}{2a}\\vec n$ だから，その成分の時間平均は\n\\[ \\text{北向き}：\\frac{\\mu_0}{2a}\\cdot\\frac{\\pi a^2B_{\\rm h}\\omega}{R}\\langle\\sin\\omega t\\cos\\omega t\\rangle=\\boldsymbol{0},\\qquad\n\\text{西向き}：\\frac{\\mu_0}{2a}\\cdot\\frac{\\pi a^2B_{\\rm h}\\omega}{R}\\langle\\sin^2\\omega t\\rangle=\\boldsymbol{\\frac{\\pi\\mu_0a\\omega B_{\\rm h}}{4R}} \\]\n地磁気 $B_{\\rm h}$（北向き）との和の向きは北から\\textbf{西}へ $\\theta$ 傾き\n\\[ \\tan\\theta=\\boldsymbol{\\frac{\\pi\\mu_0a\\omega}{4R}} \\]\n西向き成分が残るのは，電流が $\\sin\\omega t$ に比例し，$\\vec n$ が西を向く時間帯（$\\sin\\omega t>0$）に正，東を向く時間帯に負となって，磁場がいつも西寄りになるからである．回転の向きを逆にすると東へふれる．\n\n\\textbf{(2)} 北向き成分の時間平均は\n\\[ \\frac{\\mu_0}{2a}\\cdot\\frac{\\pi a^2B_{\\rm h}\\omega}{\\sqrt{R^2+\\omega^2L^2}}\\langle\\sin(\\omega t-\\varphi)\\cos\\omega t\\rangle \\]\n$\\sin(\\omega t-\\varphi)=\\sin\\omega t\\cos\\varphi-\\cos\\omega t\\sin\\varphi$ より\n\\[ \\langle\\sin(\\omega t-\\varphi)\\cos\\omega t\\rangle=-\\frac12\\sin\\varphi,\\qquad\\langle\\sin(\\omega t-\\varphi)\\sin\\omega t\\rangle=\\frac12\\cos\\varphi \\]\nまた $\\dfrac{\\omega}{\\sqrt{R^2+\\omega^2L^2}}=\\dfrac{\\sin\\varphi}{L}$ である．よって\n\\[ \\text{北向き}：-\\frac{\\pi\\mu_0a}{4L}B_{\\rm h}\\sin^2\\varphi=\\boldsymbol{-\\frac{kx^2}{1+x^2}B_{\\rm h}},\\qquad\n\\text{西向き}：\\frac{\\pi\\mu_0a}{4L}B_{\\rm h}\\sin\\varphi\\cos\\varphi=\\boldsymbol{\\frac{kx}{1+x^2}B_{\\rm h}} \\]\n（$\\tan\\varphi=x$ から $\\sin^2\\varphi=\\frac{x^2}{1+x^2}$，$\\sin\\varphi\\cos\\varphi=\\frac{x}{1+x^2}$．）北向き成分が負，すなわち輪の磁場は平均として地磁気を弱める．地磁気との和の北向き成分は $B_{\\rm h}\\left(1-\\dfrac{kx^2}{1+x^2}\\right)>0$ なので\n\\[ \\tan\\theta=\\frac{\\dfrac{kx}{1+x^2}}{1-\\dfrac{kx^2}{1+x^2}}=\\frac{kx}{1+(1-k)x^2} \\]\n（$L\\to0$ では $kx=\\dfrac{\\pi\\mu_0a\\omega}{4R}$，$x\\to0$ となり (1) に一致する．）\n\n\\textbf{(3)} $\\tan\\theta=\\dfrac{k}{\\dfrac1x+(1-k)x}$ で，分母は相加・相乗平均の関係より $\\dfrac1x+(1-k)x\\geqq2\\sqrt{1-k}$，等号は $x=\\dfrac{1}{\\sqrt{1-k}}$ のとき．よって\n\\[ \\omega=\\boldsymbol{\\frac{R}{L\\sqrt{1-k}}}\\ \\text{のとき最大で}\\quad \\tan\\theta=\\boldsymbol{\\frac{k}{2\\sqrt{1-k}}} \\]\nふれは $\\omega$ とともに単調に増えるのではなく，ある角速度で最大になった後は小さくなる．\n\n\\textbf{(4)} $x\\to\\infty$ では西向き成分 $\\to0$，北向き成分 $\\to-kB_{\\rm h}$ なので，$\\tan\\theta\\to0$ で磁針は\\textbf{北}を向き，中心の磁場の時間平均は $\\boldsymbol{(1-k)}$ 倍の大きさになる．\n\n速く回すと誘導起電力のほとんどが自己誘導起電力 $L\\dfrac{dI}{dt}$ とつり合い（抵抗が効かない），輪を貫く全磁束（地磁気の磁束と自分の電流の磁束の和）がほぼ一定に保たれる．そのため電流は地磁気による磁束 $\\pi a^2B_{\\rm h}\\cos\\omega t$ の変化を打ち消すように $-\\cos\\omega t$ に比例し（$\\varphi\\to\\frac{\\pi}{2}$），輪の磁場は平均として地磁気と逆向きになって，中心の磁場を弱める（回転する導体による磁場の遮蔽）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "回転する輪の誘導電流は磁束の時間変化に比例するので，電流がつくる磁場は輪の向きと相関をもち，時間平均すると回転の向きに傾いた成分が残る．自己インダクタンスがあると電流の位相が遅れて，平均磁場に地磁気を打ち消す成分が加わり，ふれは角速度について最大値をもち，高速回転の極限では輪を貫く磁束がほぼ保存されて中心の磁場が弱められる（遮蔽）．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "torque",
+  "wave-basics"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "回転する輪",
+  "時間平均",
+  "自己インダクタンス",
+  "位相の遅れ",
+  "磁気遮蔽"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

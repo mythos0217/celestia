@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 260">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="q-ak2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<!-- rails -->
+<line x1="40" y1="70" x2="530" y2="70" stroke="#222" stroke-width="2.4"/>
+<line x1="40" y1="190" x2="530" y2="190" stroke="#222" stroke-width="2.4"/>
+<!-- field symbols -->
+<g fill="none" stroke="#888" stroke-width="1">
+<circle cx="80" cy="110" r="6"/><circle cx="80" cy="150" r="6"/><circle cx="240" cy="110" r="6"/><circle cx="240" cy="150" r="6"/><circle cx="420" cy="110" r="6"/><circle cx="420" cy="150" r="6"/><circle cx="500" cy="130" r="6"/>
+</g>
+<g fill="#888"><circle cx="80" cy="110" r="1.8"/><circle cx="80" cy="150" r="1.8"/><circle cx="240" cy="110" r="1.8"/><circle cx="240" cy="150" r="1.8"/><circle cx="420" cy="110" r="1.8"/><circle cx="420" cy="150" r="1.8"/><circle cx="500" cy="130" r="1.8"/></g>
+<text x="512" y="135" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+<!-- rod P -->
+<rect x="155" y="60" width="10" height="140" fill="#ddd" stroke="#222" stroke-width="1.6"/>
+<text x="150" y="225" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">P</text>
+<text x="172" y="225" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">（質量 <tspan font-family="Times New Roman, serif" font-style="italic">m</tspan>，抵抗 <tspan font-family="Times New Roman, serif" font-style="italic">R</tspan>）</text>
+<!-- rod Q -->
+<rect x="330" y="60" width="10" height="140" fill="#ddd" stroke="#222" stroke-width="1.6"/>
+<text x="326" y="225" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">Q</text>
+<text x="348" y="225" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">（抵抗 <tspan font-family="Times New Roman, serif" font-style="italic">R</tspan>）</text>
+<!-- velocity of Q -->
+<line x1="345" y1="40" x2="400" y2="40" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="406" y="45" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#1f5fbf">外力で動かす</text>
+<!-- l -->
+<line x1="25" y1="72" x2="25" y2="188" stroke="#222" stroke-width="1" marker-start="url(#q-ak2)" marker-end="url(#q-ak2)"/>
+<text x="8" y="136" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">l</text>
+<text x="40" y="250" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">真上から見た図（磁場は鉛直上向き ⊙）</text>
+</svg>

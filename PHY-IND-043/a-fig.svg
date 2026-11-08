@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300">
+  <defs>
+    <marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+  </defs>
+  <!-- axes: origin at (400,250) -->
+  <line x1="40" y1="250" x2="450" y2="250" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+  <line x1="400" y1="280" x2="400" y2="20" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+  <text x="455" y="268" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">z</text>
+  <text x="408" y="30" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">F</text>
+  <text x="404" y="268" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">O</text>
+  <!-- F = -K^2 z / L  : z_c at x=240 -> F=mg at y=150 ; 2z_c at x=80 -> F=2mg at y=50 -->
+  <line x1="420" y1="262.5" x2="60" y2="37.5" stroke="#1f5fbf" stroke-width="1.8"/>
+  <text x="90" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#1f5fbf">磁気力 <tspan font-family="Times New Roman, serif" font-style="italic">F</tspan> = −<tspan font-family="Times New Roman, serif" font-style="italic">K</tspan>²<tspan font-family="Times New Roman, serif" font-style="italic">z</tspan>/<tspan font-family="Times New Roman, serif" font-style="italic">L</tspan></text>
+  <!-- mg line -->
+  <line x1="60" y1="150" x2="440" y2="150" stroke="#c0392b" stroke-width="1.6"/>
+  <text x="408" y="144" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#c0392b">mg</text>
+  <!-- guides -->
+  <line x1="240" y1="150" x2="240" y2="250" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <line x1="80" y1="50" x2="80" y2="250" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <line x1="80" y1="50" x2="400" y2="50" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <text x="408" y="55" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">2<tspan font-family="Times New Roman, serif" font-style="italic">mg</tspan></text>
+  <text x="205" y="274" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">−mgL/K<tspan font-style="normal">²</tspan></text>
+  <text x="40" y="274" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">−2mgL/K<tspan font-style="normal">²</tspan></text>
+  <text x="150" y="232" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">つり合いの位置</text>
+  <text x="84" y="232" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">最下点</text>
+</svg>

@@ -1,0 +1,144 @@
+{
+ "id": "PHY-IND-028",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "コンデンサーで駆動される並列の2本の導体棒（電流の分配が生む糸の張力と，糸がなくても変わらない終状態）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は水平面を上から見たものである．間隔 $L$ の2本の平行なレールが水平に置かれ，鉛直上向きで磁束密度の大きさ $B$ の一様な磁場がかかっている．レールの上には，質量がともに $m$ で，電気抵抗がそれぞれ $R_1$，$R_2$（$R_1<R_2$）の導体棒 P，Q がレールに垂直に置かれ，レールに沿ってなめらかに動くことができる．P と Q は軽い絶縁体の糸で結ばれ，糸は張っている．レールの左端には，電気量 $Q_0\\,(>0)$ をたくわえた電気容量 $C$ のコンデンサーとスイッチ S がつながれている．P，Q 以外の電気抵抗，回路の自己インダクタンス，電流がつくる磁場は無視する．\n\nはじめ P，Q は静止していた．時刻 $0$ に S を閉じると，P，Q は図の右向き（P が前，Q が後ろ）に動き始めた．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "S を閉じた直後に P，Q を流れる電流の大きさ $I_1$，$I_2$ と，糸の張力の大きさ $T_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "糸が張ったまま運動している間，P と Q を流れる電流の比は一定であることを示せ．また，コンデンサーから流れ出る電流が $I$ のときの糸の張力 $T$ を $I$ を用いて表し，糸がたるまないことを確かめよ．"
+     },
+     {
+      "id": "3",
+      "tex": "十分に時間がたった後の P，Q の速さ $u_{\\rm f}$ を求めよ．また，それまでに P，Q で発生したジュール熱の和 $H$ と，そのうち P で発生した分 $H_1$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "運動の全体を通じて，糸が Q に与えた力積の大きさ $J$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "次に，糸を外して同じ実験を行った（はじめの状態は同じで，P と Q が衝突することはない）．十分に時間がたった後の P，Q の速さと，それまでに発生したジュール熱の和を求めよ．また，P と Q の間隔は最終的にはじめより何だけ広がるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：コンデンサーで駆動される並列の2本の導体棒（電流の分配が生む糸の張力と，糸がなくても変わらない終状態）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：コンデンサーで駆動される並列の2本の導体棒（電流の分配が生む糸の張力と，糸がなくても変わらない終状態）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I_1=\\dfrac{Q_0}{CR_1}$，$I_2=\\dfrac{Q_0}{CR_2}$，$T_0=\\dfrac{BLQ_0(R_2-R_1)}{2CR_1R_2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$I_1:I_2=R_2:R_1$（一定），$T=\\dfrac{BLI(R_2-R_1)}{2(R_1+R_2)}\\ (>0)$"
+   },
+   {
+    "id": "3",
+    "tex": "$u_{\\rm f}=\\dfrac{BLQ_0}{2m+CB^2L^2}$，$H=\\dfrac{mQ_0^2}{C(2m+CB^2L^2)}$，$H_1=\\dfrac{R_2}{R_1+R_2}H$"
+   },
+   {
+    "id": "4",
+    "tex": "$J=\\dfrac{R_2-R_1}{R_1+R_2}mu_{\\rm f}=\\dfrac{(R_2-R_1)mBLQ_0}{(R_1+R_2)(2m+CB^2L^2)}$"
+   },
+   {
+    "id": "5",
+    "tex": "P，Q とも $u_{\\rm f}$（(3) と同じ），ジュール熱も $H$（(3) と同じ），間隔の増加 $\\dfrac{(R_2-R_1)mu_{\\rm f}}{B^2L^2}=\\dfrac{(R_2-R_1)mQ_0}{BL(2m+CB^2L^2)}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　P と Q はコンデンサーに並列につながっている．レールの抵抗は無視できるので，P，Q の両端の電圧はどちらもコンデンサーの電圧 $V$ に等しい．各棒の電流は「$V$ から自分の誘導起電力を引いたもの÷自分の抵抗」で決まる．\n\n\\textbf{(1)}　直後は速さ 0 で起電力がないので $\\boldsymbol{I_1=\\dfrac{Q_0}{CR_1}}$，$\\boldsymbol{I_2=\\dfrac{Q_0}{CR_2}}$．電磁力は $F_1=I_1BL$，$F_2=I_2BL$（ともに右向き）．糸が張っていて共通の加速度 $a$ で動くとき，張力 $T$（P を後ろへ，Q を前へ引く）について\n\\[ ma=F_1-T,\\qquad ma=F_2+T\\quad\\Longrightarrow\\quad T=\\frac{F_1-F_2}{2} \\]\nよって $\\boldsymbol{T_0=\\dfrac{BLQ_0}{2C}\\left(\\dfrac{1}{R_1}-\\dfrac{1}{R_2}\\right)=\\dfrac{BLQ_0(R_2-R_1)}{2CR_1R_2}}$．$R_1<R_2$ なので $T_0>0$ で，糸は張ったままである．\n\n\\textbf{(2)}　糸が張っている間は P，Q の速さ $u$ が共通なので，誘導起電力 $BLu$ も共通である．\n\\[ I_1=\\frac{V-BLu}{R_1},\\qquad I_2=\\frac{V-BLu}{R_2}\\quad\\Longrightarrow\\quad \\boldsymbol{I_1:I_2=R_2:R_1}\\ (\\text{一定}) \\]\n$I=I_1+I_2$ より $I_1=\\dfrac{R_2}{R_1+R_2}I$，$I_2=\\dfrac{R_1}{R_1+R_2}I$ だから\n\\[ \\boldsymbol{T=\\frac{BL(I_1-I_2)}{2}=\\frac{BLI(R_2-R_1)}{2(R_1+R_2)}} \\]\n$V>BLu$ の間は $I>0$ なので $T>0$ で，糸はたるまない．張力は電流に比例して減り，電流が 0 になると同時に 0 になる．\n\n\\textbf{(3)}　P，Q が受ける力積の和は $BL\\sum I\\Delta t=BLq$（$q$ はコンデンサーから流れ出た電気量）なので $2mu=BLq$．十分に時間がたつと電流が 0 になり $V=BLu_{\\rm f}$，すなわち $\\dfrac{Q_0-q}{C}=BLu_{\\rm f}$．2式から\n\\[ \\boldsymbol{u_{\\rm f}=\\frac{BLQ_0}{2m+CB^2L^2}} \\]\nエネルギー保存より（コンデンサーの最終電気量は $CBLu_{\\rm f}$）\n\\[ H=\\frac{Q_0^2}{2C}-\\frac{(CBLu_{\\rm f})^2}{2C}-\\frac12(2m)u_{\\rm f}^2=\\boldsymbol{\\frac{mQ_0^2}{C(2m+CB^2L^2)}} \\]\n各瞬間の発熱率は $I_1^2R_1:I_2^2R_2=\\dfrac{1}{R_1}:\\dfrac{1}{R_2}=R_2:R_1$ で一定なので $\\boldsymbol{H_1=\\dfrac{R_2}{R_1+R_2}H}$．\n\n\\textbf{(4)}　Q は電磁力の力積 $BLq_2$（$q_2$ は Q を流れた電気量）と糸の力積 $J$ を受けて $mu_{\\rm f}$ の運動量を得る．電流の比が一定なので $q_2=\\dfrac{R_1}{R_1+R_2}q=\\dfrac{R_1}{R_1+R_2}\\cdot\\dfrac{2mu_{\\rm f}}{BL}$．よって\n\\[ J=mu_{\\rm f}-BLq_2=mu_{\\rm f}\\left(1-\\frac{2R_1}{R_1+R_2}\\right)=\\boldsymbol{\\frac{R_2-R_1}{R_1+R_2}mu_{\\rm f}} \\]\n\n\\textbf{(5)}　糸がないと P，Q の速さ $u_1$，$u_2$ は異なるが，次の2点は変わらない．\n(a) 力積：$mu_1+mu_2=BL(q_1+q_2)=BLq$（P，Q の電流の和がコンデンサーの電流）．\n\n(b) 最終状態：電流が 0 になるのは各棒の起電力が $V$ に等しいとき，すなわち $BLu_1=BLu_2=V$ なので，最後は2本が同じ速さになる．\n\n\nこれは (3) とまったく同じ2式なので，最終的な速さは \\textbf{P，Q とも $u_{\\rm f}$} で，最終的なエネルギーも同じだから\\textbf{ジュール熱の和も $H$} で変わらない．途中では P が先に強く加速されて $u_{\\rm f}$ を超え，その後は P の起電力が $V$ を上回って P が発電機（電流が逆向き）として Q を加速する（解答図）．糸の役割を，回路を通した電流のやりとりが代わりに果たしたことになる．\n\n間隔の変化は，各棒の運動方程式 $m\\dfrac{\\Delta u_i}{\\Delta t}=BL\\dfrac{V-BLu_i}{R_i}$ を\n\\[ mR_1\\frac{\\Delta u_1}{\\Delta t}-mR_2\\frac{\\Delta u_2}{\\Delta t}=-B^2L^2(u_1-u_2) \\]\nと組み合わせると，$V$ が消える．両辺を時間について足し合わせると，左辺は $m(R_1-R_2)u_{\\rm f}$，右辺は $-B^2L^2\\times$（間隔の増加 $\\Delta d$）となるので\n\\[ \\boldsymbol{\\Delta d=\\frac{(R_2-R_1)mu_{\\rm f}}{B^2L^2}=\\frac{(R_2-R_1)mQ_0}{BL(2m+CB^2L^2)}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "並列につながれ同じ速さで動く2本の棒は起電力が共通なので，電流の比が抵抗の逆比で一定となり，その差が糸の張力（内力）を生む．終状態は「力積の和 $=BLq$」と「各棒の起電力 $=$ コンデンサーの電圧」だけで決まるので，糸を外しても最終速度とジュール熱の和は変わらず，運動方程式を抵抗で重みづけして組み合わせると間隔の増加が求まる．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "momentum-conservation",
+  "equation-of-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "導体棒",
+  "コンデンサー",
+  "内力",
+  "力積",
+  "ジュール熱"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,144 @@
+{
+ "id": "PHY-IND-048",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "立方体の辺に沿った平面でないコイルの回転と面積ベクトル（3軸の振幅から最大起電力を逆算）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "\\textbf{A}　図のように，一辺 $a$ の立方体の頂点を O$(0,0,0)$，A$(a,0,0)$，B$(a,a,0)$，C$(0,a,0)$，D$(0,a,a)$，E$(0,0,a)$，F$(a,0,a)$，G$(a,a,a)$ とする．6本の辺 AB，BC，CD，DE，EF，FA に沿って導線を張り，1巻きの閉じたコイル（平面ではない六角形）をつくる．立方体の他の辺には導線はなく，コイルの形は変わらない．このコイルを，$x$ 軸の正の向きの磁束密度 $B$ の一様な磁場の中で，$z$ 軸（直線 OE）を回転軸として，$z$ 軸の正の側から見て反時計回りに一定の角速度 $\\omega$ で回転させる．時刻 $t=0$ にコイルは図の位置にある．\n\n平面でない閉回路を貫く磁束は，その閉回路を縁とする面であればどの面を通して計算してもよい．磁束の正の向きは，コイルを A→B→C→D→E→F→A の向きにたどるとき，縁とする面の各部分で右ねじの進む向きとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "時刻 $t=0$ にコイルを貫く磁束 $\\Phi(0)$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "時刻 $t$ にコイルを貫く磁束 $\\Phi(t)$ を求めよ．また，コイルに生じる誘導起電力の大きさの最大値 $V_0$ と，起電力の大きさが初めて最大になる時刻を求めよ．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "\\textbf{B}　次に，形のわからない（平面とは限らない）1巻きの閉じたコイルを考える．コイルの形は変わらない．コイルに固定した座標軸を $x$，$y$，$z$ 軸とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "3",
+      "tex": "一様な磁場 $\\vec B=(B_x,B_y,B_z)$ がこのコイルを貫く磁束は，コイルの形だけで決まる定数 $S_x,S_y,S_z$ を用いて $\\Phi=B_xS_x+B_yS_y+B_zS_z$ と表せることを説明せよ．また，A のコイルの $(S_x,S_y,S_z)$ を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "このコイルを，大きさ $B$ の一様な磁場の中で，磁場に垂直な回転軸のまわりに角速度 $\\omega$ で回転させる．回転軸を $x$ 軸，$y$ 軸，$z$ 軸に平行に選んだとき，誘導起電力の振幅はそれぞれ $V_1$，$V_2$，$V_3$ であった．回転軸の向きをいろいろに変えるとき（磁場はつねに回転軸に垂直で，$B$，$\\omega$ は変えない），誘導起電力の振幅の最大値を $V_1,V_2,V_3$ で表せ．また，A のコイルについてその値を $\\omega$，$B$，$a$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：立方体の辺に沿った平面でないコイルの回転と面積ベクトル（3軸の振幅から最大起電力を逆算）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：立方体の辺に沿った平面でないコイルの回転と面積ベクトル（3軸の振幅から最大起電力を逆算）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Phi(0)=Ba^2$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Phi(t)=\\sqrt2\\,Ba^2\\cos\\left(\\omega t+\\dfrac{\\pi}{4}\\right)$，$V_0=\\sqrt2\\,\\omega Ba^2$，$t=\\dfrac{\\pi}{4\\omega}$"
+   },
+   {
+    "id": "3",
+    "tex": "コイルを縁とする面を平面片に分けると各片の磁束が $\\vec B$ の成分の1次式になるため．A のコイルは $(S_x,S_y,S_z)=(a^2,a^2,a^2)$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\sqrt{\\dfrac{V_1^2+V_2^2+V_3^2}{2}}$，A のコイルでは $\\sqrt3\\,\\omega Ba^2$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　このコイルは，O に集まる3つの正方形の面 OABC（$z=0$），OCDE（$x=0$），OEFA（$y=0$）を合わせた面の縁になっている．3面が共有する辺 OA，OC，OE は，隣り合う2面で逆向きにたどられて打ち消し合い，縁には残らない．\nA→B→C の向きから面 OABC の法線は $+z$，C→D→E の向きから面 OCDE の法線は $+x$，E→F→A の向きから面 OEFA の法線は $+y$ の向きである．$x$ 方向の磁場が貫くのは面 OCDE だけなので\n\\[ \\Phi(0)=\\boldsymbol{Ba^2}. \\]\n\n\\textbf{(2)}　コイルとともに3つの面も回る．面 OABC の法線は $z$ 方向のままなので，その磁束はつねに $0$．面 OCDE の法線（始め $+x$）と面 OEFA の法線（始め $+y$）は，$xy$ 面内で角 $\\omega t$ だけ回って $(\\cos\\omega t,\\ \\sin\\omega t,\\ 0)$，$(-\\sin\\omega t,\\ \\cos\\omega t,\\ 0)$ となる．よって\n\\[ \\Phi(t)=Ba^2\\cos\\omega t-Ba^2\\sin\\omega t=\\boldsymbol{\\sqrt2\\,Ba^2\\cos\\left(\\omega t+\\frac{\\pi}{4}\\right)}. \\]\n誘導起電力は\n\\[ V=-\\frac{d\\Phi}{dt}=\\sqrt2\\,\\omega Ba^2\\sin\\left(\\omega t+\\frac{\\pi}{4}\\right) \\]\nだから $V_0=\\boldsymbol{\\sqrt2\\,\\omega Ba^2}$．$\\omega t+\\dfrac{\\pi}{4}=\\dfrac{\\pi}{2}$ のとき初めて最大となるので $t=\\boldsymbol{\\dfrac{\\pi}{4\\omega}}$．このとき2つの側面の法線が磁場と $45^\\circ$ をなし，磁束は打ち消し合って $0$ になっている．面積 $a^2$ の平面コイルを同じように回した場合の $\\sqrt2$ 倍の起電力が得られる．\n\n\\textbf{(3)}　コイルを縁とする面を，小さな平面片に分ける．面積 $\\Delta S$，単位法線ベクトル $(n_x,n_y,n_z)$ の平面片を一様な磁場が貫く磁束は，磁場と法線のなす角を $\\theta$ として\n\\[ B\\,\\Delta S\\cos\\theta=(B_xn_x+B_yn_y+B_zn_z)\\,\\Delta S \\]\nである．これを全部の平面片について足し合わせると\n\\[ \\Phi=B_x\\sum n_x\\Delta S+B_y\\sum n_y\\Delta S+B_z\\sum n_z\\Delta S \\]\nとなり，$S_x=\\sum n_x\\Delta S$ などは磁場によらず形だけで決まる定数である．縁を共有する面ならどの面で計算しても磁束は等しいので，これらの値は面の選び方にもよらない（$S_x$ はコイルを $yz$ 面に正射影した図形の，向きを含めた面積である）．\nA のコイルでは (1) の3面から $(S_x,S_y,S_z)=\\boldsymbol{(a^2,\\ a^2,\\ a^2)}$．\n\n\\textbf{(4)}　回転軸を $z$ 軸に平行に選んだ場合，コイルとともに回る立場から見ると，磁場は $xy$ 面内で角速度 $\\omega$ で逆向きに回る：$\\vec B=B(\\cos\\omega t,\\ -\\sin\\omega t,\\ 0)$（$t=0$ の磁場の向きを $x$ 軸とした）．(3) より\n\\[ \\Phi=B(S_x\\cos\\omega t-S_y\\sin\\omega t)=B\\sqrt{S_x^2+S_y^2}\\,\\cos(\\omega t+\\alpha) \\]\n（$\\alpha$ は定数）となり，$V_3=\\omega B\\sqrt{S_x^2+S_y^2}$．$t=0$ の磁場の向きを $xy$ 面内の別の向きにしても，位相が変わるだけで振幅は同じである．同様に\n\\[ V_1=\\omega B\\sqrt{S_y^2+S_z^2},\\qquad V_2=\\omega B\\sqrt{S_z^2+S_x^2}. \\]\n一般に，$\\vec S=(S_x,S_y,S_z)$ を回転軸に平行な成分と垂直な成分 $\\vec S_\\perp$ に分けると，回転軸に垂直な磁場は平行な成分とは内積が $0$ なので，振幅は $\\omega B|\\vec S_\\perp|$ である．これが最大になるのは回転軸が $\\vec S$ に垂直なときで，最大値は $\\omega B|\\vec S|$．ここで\n\\[ V_1^2+V_2^2+V_3^2=2\\omega^2B^2\\left(S_x^2+S_y^2+S_z^2\\right)=2\\omega^2B^2|\\vec S|^2 \\]\nだから，最大値は\n\\[ \\boldsymbol{\\sqrt{\\frac{V_1^2+V_2^2+V_3^2}{2}}}. \\]\nA のコイルでは $|\\vec S|=\\sqrt3\\,a^2$ なので，最大値は $\\boldsymbol{\\sqrt3\\,\\omega Ba^2}$（回転軸を体対角線 OG に垂直にとればよい）．(2) の $z$ 軸まわりの回転では $\\vec S$ の $z$ 成分が使われないため，$\\sqrt2\\,\\omega Ba^2$ にとどまっていた．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "平面でない閉回路の磁束は，同じ縁をもつ任意の面（ここでは立方体の3面）で計算でき，一様な磁場に対しては面積ベクトル $\\vec S$ との内積 $\\vec B\\cdot\\vec S$ になる．回転させたときの起電力の振幅は $\\vec S$ の回転軸に垂直な成分だけで決まるので，3つの軸まわりの振幅から $|\\vec S|$ と最大振幅が逆算できる．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "torque",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "交流の発生",
+  "非平面コイル",
+  "面積ベクトル",
+  "磁束"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

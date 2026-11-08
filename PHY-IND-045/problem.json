@@ -1,0 +1,128 @@
+{
+ "id": "PHY-IND-045",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "質量の無視できる導体棒とばねの系が等価なコイルとしてふるまう回路",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平面上に2組の平行なレール（P と P$'$，Q と Q$'$．どちらも間隔 $l$）が平行に置かれ，鉛直上向きに磁束密度 $B$ の一様な磁場がかかっている．レールに直角に導体棒 M（PP$'$ 上）と N（QQ$'$ 上）がのっていて，絶縁体の板でつながれ，一体となってレールに沿って（$x$ 軸方向に）なめらかに動く．板にはばね定数 $k$ の絶縁体のばねがレールと平行に取りつけられ，ばねの他端は固定されている．ばねが自然長のときの棒の位置を $x=0$ とする．\n\nPP$'$ の端は抵抗 $R$ と切りかえスイッチ S$_1$ を通してつながっている．S$_1$ を a 側にすると起電力 $E$ の電池が直列に入り，b 側にすると電池を除いて導線でつながる．電池から電流が流れたとき M が受ける力の向きは $+x$ 向きである．QQ$'$ の端は抵抗 $r$ とスイッチ S$_2$ でつながっている．\n\n棒・板・ばねの質量，摩擦，レール・棒・導線の抵抗，電池の内部抵抗，回路の自己インダクタンスはすべて無視できる．はじめ S$_1$ は b 側，S$_2$ は開いていて，ばねは自然長で全体は静止している．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "S$_2$ を開いたまま，時刻 $t=0$ に S$_1$ を a 側に入れた．入れた直後の棒の速さ $u_0$ と，$R$ を流れる電流 $i$ を時刻 $t$ の関数として求めよ．また，この回路の電流は「電池・抵抗 $R$・自己インダクタンス $L$ のコイルの直列回路」と同じ式にしたがう．$L$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "はじめの状態にもどし，S$_2$ を閉じてから時刻 $t=0$ に S$_1$ を a 側に入れた．入れた直後に $R$ を流れる電流 $i_0$ と $r$ を流れる電流 $i_{r0}$ を求めよ．また，十分時間がたったときの棒の位置を $x_\\infty$ として，$x_\\infty-x$ は $e^{-t/\\tau}$ に比例して減少する．$x_\\infty$ と $\\tau$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2)で十分時間がたった後，S$_1$ を b 側に切りかえた．その後，$r$ と $R$ で発生するジュール熱の総量 $H_r$，$H_R$ をそれぞれ求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：質量の無視できる導体棒とばねの系が等価なコイルとしてふるまう回路",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：質量の無視できる導体棒とばねの系が等価なコイルとしてふるまう回路",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$u_0=\\dfrac{E}{Bl}$，$i=\\dfrac{E}{R}\\left(1-e^{-\\frac{kR}{B^2l^2}t}\\right)$，$L=\\dfrac{B^2l^2}{k}$"
+   },
+   {
+    "id": "2",
+    "tex": "$i_0=i_{r0}=\\dfrac{E}{R+r}$，$x_\\infty=\\dfrac{BlE}{kR}$，$\\tau=\\dfrac{B^2l^2(R+r)}{kRr}$"
+   },
+   {
+    "id": "3",
+    "tex": "$H_r=\\dfrac{B^2l^2E^2}{2kR(R+r)}$，$H_R=\\dfrac{B^2l^2E^2\\,r}{2kR^2(R+r)}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{基本の式}\n\n棒・板・ばねの質量は無視できるので，加速度がいくらであっても合力は $0$ でなければならない（質量 $0$ の物体に合力がはたらくと加速度が無限大になる）．したがって運動方程式の代わりに力のつり合いの式が常に成り立つ．一方，質量がないので速度は瞬時に変わりうる．\n\n棒の速度を $\\dot x$ とすると，M，N にはそれぞれ $Bl\\dot x$ の誘導起電力が生じ，M の起電力は電池の電流を妨げる向きである．\n\n\\textbf{(1) S$_2$ 開：ばね付きの棒はコイル}\n\nM の回路の式と，棒にはたらく力のつり合いは\n\\[ E-Bl\\dot x=Ri,\\qquad Bli=kx . \\]\n$t=0$ では $x=0$ なので第2式より $i=0$，第1式より\n\\[ \\boldsymbol{u_0=\\frac{E}{Bl}} \\]\nである．棒は瞬時にこの速さで動き出し，誘導起電力がちょうど電池の起電力を打ち消すので電流は $0$ から始まる．\n\n第2式から $x=\\dfrac{Bl}{k}i$，$\\dot x=\\dfrac{Bl}{k}\\dfrac{di}{dt}$．第1式に代入して\n\\[ E=Ri+\\frac{B^2l^2}{k}\\frac{di}{dt} \\]\nこれは自己インダクタンス $\\boldsymbol{L=\\dfrac{B^2l^2}{k}}$ のコイルと $R$ の直列回路の式そのものである．$i(0)=0$ より\n\\[ \\boldsymbol{i=\\frac{E}{R}\\left(1-e^{-\\frac{kR}{B^2l^2}t}\\right)} . \\]\n（ばねの弾性エネルギー $\\frac12kx^2=\\frac12k\\left(\\frac{Bl}{k}i\\right)^2=\\frac12Li^2$ がコイルの磁気エネルギーの役割をする．）\n\n\\textbf{(2) S$_2$ 閉：コイルと $r$ の並列}\n\nN の回路には $\\dfrac{Bl\\dot x}{r}$ の電流が流れ，N は $\\dfrac{B^2l^2}{r}\\dot x$ の力を運動と逆向きに受ける．力のつり合いと M の回路の式は\n\\[ Bli=kx+\\frac{B^2l^2}{r}\\dot x,\\qquad E-Bl\\dot x=Ri . \\]\n$i_L=\\dfrac{kx}{Bl}$（(1)の「コイルの電流」）と M の起電力 $V_{\\rm M}=Bl\\dot x$ を使うと，第1式は\n\\[ i=i_L+\\frac{V_{\\rm M}}{r} \\]\nとなり，$V_{\\rm M}=L\\dfrac{di_L}{dt}$ だから，全体は「$R$ と，$L$ と $r$ の並列部分との直列回路」と等価である（解答図）．\n\n$t=0$ では $x=0$ より $i_L=0$（コイルの電流は連続）なので，電流はすべて $r$ の枝を流れ，\n\\[ \\boldsymbol{i_0=i_{r0}=\\frac{E}{R+r}} . \\]\nこのとき $V_{\\rm M}=\\dfrac{rE}{R+r}$ で，棒は速さ $\\dfrac{rE}{Bl(R+r)}$ で動き出す．\n\n$i$ を消去すると\n\\[ B^2l^2\\left(\\frac1R+\\frac1r\\right)\\dot x+kx=\\frac{BlE}{R} \\]\nで，$x_\\infty-x\\propto e^{-t/\\tau}$，\n\\[ \\boldsymbol{x_\\infty=\\frac{BlE}{kR}},\\qquad \\boldsymbol{\\tau=\\frac{B^2l^2(R+r)}{kRr}}=\\frac{L}{\\ \\frac{Rr}{R+r}\\ } \\]\n（コイル $L$ から見た抵抗が $R$ と $r$ の並列になる）．十分時間がたつと棒は止まり $r$ の電流は $0$，$i=E/R$ である．\n\n\\textbf{(3) 蓄えたエネルギーの行き先}\n\nS$_1$ を b 側にすると電池がなくなり，力のつり合いは\n\\[ -\\frac{B^2l^2}{R}\\dot x-\\frac{B^2l^2}{r}\\dot x=kx \\]\nとなって，棒は $x=0$ に向かって指数関数的にもどる．ばねの弾性エネルギー\n\\[ U=\\frac12kx_\\infty^2=\\frac{B^2l^2E^2}{2kR^2} \\]\nは最終的にすべて $R$ と $r$ でのジュール熱になる．$R$ と $r$ にはどの瞬間も同じ電圧 $Bl\\dot x$ がかかるので，発熱の比は $\\dfrac{1}{r}:\\dfrac{1}{R}=R:r$．よって\n\\[ \\boldsymbol{H_r=\\frac{R}{R+r}U=\\frac{B^2l^2E^2}{2kR(R+r)}},\\qquad \\boldsymbol{H_R=\\frac{r}{R+r}U=\\frac{B^2l^2E^2\\,r}{2kR^2(R+r)}} . \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "質量の無視できる導体棒は常に力のつり合いを保つので，ばねにつながれた棒の電流は変位に比例し，その起電力は電流の時間変化に比例する．そのため磁場中のばね付き棒は自己インダクタンス $B^2l^2/k$ のコイルと等価になり（弾性エネルギー＝磁気エネルギー），もう一方の棒の抵抗はこのコイルに並列に入る．スイッチ直後の電流配分・時定数・ジュール熱の配分は等価回路から求まる．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "equilibrium",
+  "coulomb-field"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "導体棒",
+  "ばね",
+  "等価回路",
+  "自己インダクタンス",
+  "時定数",
+  "ジュール熱"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

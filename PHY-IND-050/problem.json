@@ -1,0 +1,135 @@
+{
+ "id": "PHY-IND-050",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "45°傾けた正方形コイルが磁場の帯を通過するときの起電力波形（2つの境界の弦の差）と逆算",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，$xy$ 平面内の $0\\le x\\le w$ の帯状の領域にだけ，紙面に垂直に裏から表へ向かう一様な磁場（磁束密度の大きさ $B$）がある．一辺の長さ $\\sqrt2\\,a$ の正方形の1巻きコイル PQRS を，対角線 PR が $x$ 軸上にあり P が $+x$ 側になるように $xy$ 平面内に置き，$+x$ 向きに一定の速さ $v$ で動かす．頂点 Q は $y>0$ 側，S は $y<0$ 側にある．コイルの抵抗を $R$ とし，自己インダクタンスは無視する．時刻 $t=0$ に頂点 P が $x=0$ を通過した．コイルに生じる誘導起電力 $V$ は，P→Q→R→S→P の向き（紙面の表から見て反時計回り）を正とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ある時刻に，直線 $x=0$ と直線 $x=w$ がコイルの内部を横切る線分の長さを，それぞれ $l_0$，$l_w$ とする（横切らないときは $0$ とする）．この時刻の $V$ を $B$，$v$，$l_0$，$l_w$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$w<a$ の場合について，$0\\le t\\le\\dfrac{2a+w}{v}$ での $V$ を $t$ の関数として求め，グラフの概形をかけ．"
+     },
+     {
+      "id": "3",
+      "tex": "幅 $w$（$w<a$），磁束密度 $B$，速さ $v$ がいずれも分からない別の装置で，同じコイルを同じ向きにして一定の速さで通過させ，$|V|$ をオシロスコープで観測した．頂点 P が磁場に入った時刻から $|V|$ は一定の割合で増え，時間 $T_1$ 後に $V_1$ に達し，その後の時間 $T_2$ の間は $V_1$ のまま一定であった．$v$，$w$，$B$ を $a$，$T_1$，$T_2$，$V_1$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$w<a$ の場合について，コイルを一定の速さで動かすために加える外力の大きさの最大値 $F_{\\rm m}$ と，コイルが磁場の領域を完全に通過するまでに発生するジュール熱 $Q$ を求めよ．また，$w=\\dfrac a2$ のときの $Q$ は，$w\\ge2a$ としたときの $Q$ の何倍か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：45°傾けた正方形コイルが磁場の帯を通過するときの起電力波形（2つの境界の弦の差）と逆算",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：45°傾けた正方形コイルが磁場の帯を通過するときの起電力波形（2つの境界の弦の差）と逆算",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V=-Bv(l_0-l_w)$"
+   },
+   {
+    "id": "2",
+    "tex": "$0\\le t\\le\\frac wv$：$V=-2Bv^2t$，$\\frac wv\\le t\\le\\frac av$：$V=-2Bvw$，$\\frac av\\le t\\le\\frac{a+w}v$：$V=-2Bv(2a+w-2vt)$，$\\frac{a+w}v\\le t\\le\\frac{2a}v$：$V=2Bvw$，$\\frac{2a}v\\le t\\le\\frac{2a+w}v$：$V=2Bv(2a+w-vt)$（台形が正負に並ぶグラフ）"
+   },
+   {
+    "id": "3",
+    "tex": "$v=\\dfrac{a}{T_1+T_2}$，$w=\\dfrac{aT_1}{T_1+T_2}$，$B=\\dfrac{V_1(T_1+T_2)^2}{2a^2T_1}$"
+   },
+   {
+    "id": "4",
+    "tex": "$F_{\\rm m}=\\dfrac{4B^2vw^2}{R}$，$Q=\\dfrac{4B^2vw^2(2a-w)}{R}$，$\\dfrac{9}{32}$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 2つの境界での面積の出入り}\n\n磁場の領域内にあるコイルの面積を $A$ とすると，磁束は $\\Phi=BA$（紙面の表向きを正）である．微小時間 $\\Delta t$ にコイルが $v\\Delta t$ 進むと，境界 $x=0$ ではコイルの長さ $l_0$ の部分が磁場に入り，面積 $l_0v\\Delta t$ が増える．境界 $x=w$ では長さ $l_w$ の部分が磁場から出て，面積 $l_wv\\Delta t$ が減る．よって\n\\[ \\frac{\\Delta\\Phi}{\\Delta t}=Bv(l_0-l_w) \\]\n表向きの磁束が増えると，それを打ち消す時計回り（負の向き）の起電力が生じるので\n\\[ \\boldsymbol{V=-Bv(l_0-l_w)} \\]\n（磁場中にあるコイルの辺が磁場を横切ることによる起電力 $vBl$ を辺ごとに足し合わせても同じ結果になる．）\n\n\\textbf{(2) 弦の長さを追う}\n\nP の位置を $X=vt$ とする．P から $x$ 軸の負の向きに距離 $d$ の位置でコイルを横切る線分の長さは，$0\\le d\\le a$ で $2d$，$a\\le d\\le2a$ で $2(2a-d)$ である．$x=0$ では $d=X$，$x=w$ では $d=X-w$ だから，$w<a$ のとき\n\\begin{itemize}\n\\item $0\\le X\\le w$：$l_0=2X$，$l_w=0$\n\\item $w\\le X\\le a$：$l_0=2X$，$l_w=2(X-w)$ で，$l_0-l_w=2w$（一定）\n\\item $a\\le X\\le a+w$：$l_0=2(2a-X)$，$l_w=2(X-w)$ で，$l_0-l_w=2(2a+w-2X)$\n\\item $a+w\\le X\\le2a$：$l_0=2(2a-X)$，$l_w=2(2a-X+w)$ で，$l_0-l_w=-2w$（一定）\n\\item $2a\\le X\\le2a+w$：$l_0=0$，$l_w=2(2a+w-X)$\n\\end{itemize}\n$X=vt$ を代入すると\n\\[ \\boldsymbol{V=\\begin{cases}-2Bv^2t & (0\\le t\\le\\frac wv)\\\\ -2Bvw & (\\frac wv\\le t\\le\\frac av)\\\\ -2Bv(2a+w-2vt) & (\\frac av\\le t\\le\\frac{a+w}v)\\\\ 2Bvw & (\\frac{a+w}v\\le t\\le\\frac{2a}v)\\\\ 2Bv(2a+w-vt) & (\\frac{2a}v\\le t\\le\\frac{2a+w}v)\\end{cases}} \\]\nグラフは解答図のように，負の台形と正の台形が直線でつながった形になる．2つの境界がともにコイルの同じ側の斜辺を横切っている間は，入る面積と出る面積の増え方の差が一定になるので，$V$ は一定値 $\\mp2Bvw$ になる．\n\n\\textbf{(3) 波形から装置を逆算する}\n\n(2) より，$|V|$ が一定の割合で増える時間は $T_1=\\dfrac wv$，一定値 $V_1=2Bvw$ が続く時間は $T_2=\\dfrac{a-w}{v}$ である．辺々加えると $T_1+T_2=\\dfrac av$ だから\n\\[ \\boldsymbol{v=\\frac{a}{T_1+T_2}},\\qquad \\boldsymbol{w=vT_1=\\frac{aT_1}{T_1+T_2}},\\qquad \\boldsymbol{B=\\frac{V_1}{2vw}=\\frac{V_1(T_1+T_2)^2}{2a^2T_1}} \\]\nコイルの寸法 $a$ が分かっていれば，時間の比から幅が，台形の高さから磁束密度が決まる．\n\n\\textbf{(4) 外力とジュール熱}\n\nコイルの電流は $I=V/R$．磁場から受ける力の合力は運動を妨げる向きで，その大きさを $F$ とすると，速さ一定なので外力の仕事率がジュール熱の発生率に等しい：\n\\[ Fv=\\frac{V^2}{R}\\quad\\Longrightarrow\\quad F=\\frac{B^2v(l_0-l_w)^2}{R} \\]\n$|l_0-l_w|$ の最大値は $2w$ なので\n\\[ \\boldsymbol{F_{\\rm m}=\\frac{4B^2vw^2}{R}} \\]\nジュール熱は $Q=\\displaystyle\\int\\frac{V^2}{R}dt=\\frac{B^2v}{R}\\int(l_0-l_w)^2dX$ で，(2) の5つの区間の積分は\n\\[ \\frac{4w^3}{3}+4w^2(a-w)+\\frac{4w^3}{3}+4w^2(a-w)+\\frac{4w^3}{3}=8aw^2-4w^3 \\]\n（3つの直線部分はそれぞれ $|l_0-l_w|$ が $0$ と $2w$ の間を長さ $w$ で直線的に変わるので，どれも $\\frac{(2w)^2w}{3}$）．よって\n\\[ \\boldsymbol{Q=\\frac{4B^2vw^2(2a-w)}{R}} \\]\n$w\\ge2a$ では，入るときと出るときが別々に起こり，それぞれ $\\displaystyle\\int l^2dX=2\\int_0^a(2d)^2dd=\\frac{8a^3}{3}$ なので $Q=\\dfrac{16B^2va^3}{3R}$．$w=\\dfrac a2$ では $Q=\\dfrac{4B^2v}{R}\\cdot\\dfrac{a^2}{4}\\cdot\\dfrac{3a}{2}=\\dfrac{3B^2va^3}{2R}$ なので，その比は\n\\[ \\frac{3/2}{16/3}=\\boldsymbol{\\frac{9}{32}}\\ \\textbf{倍} \\]\n帯が細いと，入る面積と出る面積の変化が打ち消し合って起電力が小さく抑えられる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "幅をもつ磁場の帯を通過するコイルの起電力は，2本の境界線がコイルを横切る長さの差に比例する（$V=-Bv(l_0-l_w)$）．45°傾けた正方形コイルでは，2本の境界が同じ斜辺を横切る間は入る面積と出る面積の変化が打ち消し合って起電力が一定になるので，台形の波形の時間と高さから帯の幅・速さ・磁束密度を逆算でき，ジュール熱も弦の長さの差の2乗の積分で求まる．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "string-resonance",
+  "wave-basics"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "誘導起電力",
+  "磁束の変化",
+  "コイルの通過",
+  "波形の逆算",
+  "ジュール熱"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

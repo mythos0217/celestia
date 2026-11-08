@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 380">
+<defs>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<!-- axes: origin (70,250); t scale 60px per m/k; v scale -->
+<line x1="70" y1="350" x2="70" y2="20" stroke="#222" stroke-width="1.4" marker-end="url(#a-ak)"/>
+<line x1="60" y1="250" x2="500" y2="250" stroke="#222" stroke-width="1.4" marker-end="url(#a-ak)"/>
+<text x="490" y="272" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">t</text>
+<text x="78" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">速度（上向き正）</text>
+<text x="56" y="266" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">O</text>
+<!-- pipe velocity a t : slope: from (70,250) to (470,50) -->
+<line x1="70" y1="250" x2="470" y2="50" stroke="#1f5fbf" stroke-width="1.8"/>
+<text x="380" y="80" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">パイプ <tspan font-family="Times New Roman, serif" font-style="italic">at</tspan></text>
+<!-- asymptote a(t - m/k) - mg/k : shift right 60 px (m/k) and down 60 px (mg/k) ; at t: y = 250 - 0.5*(x-70-60) + 60 -->
+<line x1="130" y1="310" x2="470" y2="140" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<!-- magnet velocity curve V(t) -->
+<path id="a-vm" fill="none" stroke="#c0392b" stroke-width="1.8" d="M70,310.0 L75,309.9 L80,309.6 L85,309.1 L90,308.5 L95,307.7 L100,306.8 L105,305.8 L110,304.6 L115,303.3 L120,302.0 L125,300.5 L130,299.0 L135,297.3 L140,295.7 L145,293.9 L150,292.1 L155,290.2 L160,288.3 L165,286.3 L170,284.3 L175,282.3 L180,280.2 L185,278.1 L190,275.9 L195,273.8 L200,271.6 L205,269.3 L210,267.1 L215,264.8 L220,262.5 L225,260.2 L230,257.9 L235,255.6 L240,253.2 L245,250.9 L250,248.5 L255,246.1 L260,243.7 L265,241.3 L270,238.9 L275,236.5 L280,234.1 L285,231.7 L290,229.2 L295,226.8 L300,224.4 L305,221.9 L310,219.5 L315,217.0 L320,214.5 L325,212.1 L330,209.6 L335,207.1 L340,204.7 L345,202.2 L350,199.7 L355,197.2 L360,194.8 L365,192.3 L370,189.8 L375,187.3 L380,184.8 L385,182.3 L390,179.9 L395,177.4 L400,174.9 L405,172.4 L410,169.9 L415,167.4 L420,164.9 L425,162.4 L430,159.9 L435,157.4 L440,154.9 L445,152.4 L450,149.9 L455,147.5 L460,145.0 L465,142.5 L470,140.0"/>
+<text x="380" y="196" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">磁石 <tspan font-family="Times New Roman, serif" font-style="italic">V</tspan>(<tspan font-family="Times New Roman, serif" font-style="italic">t</tspan>)</text>
+<!-- level -v1 -->
+<line x1="64" y1="310" x2="140" y2="310" stroke="#888" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="10" y="315" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">−<tspan font-family="Times New Roman, serif" font-style="italic">mg</tspan>/<tspan font-family="Times New Roman, serif" font-style="italic">k</tspan></text>
+<!-- delay annotation at mid: pipe line at y=150 is x=270; asymptote at y=150 x=450? -->
+<line x1="130" y1="250" x2="130" y2="320" stroke="#888" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="118" y="340" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">m</tspan>/<tspan font-family="Times New Roman, serif" font-style="italic">k</tspan></text>
+<text x="200" y="360" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">漸近線 <tspan font-family="Times New Roman, serif" font-style="italic">a</tspan>(<tspan font-family="Times New Roman, serif" font-style="italic">t</tspan>−<tspan font-family="Times New Roman, serif" font-style="italic">m</tspan>/<tspan font-family="Times New Roman, serif" font-style="italic">k</tspan>)−<tspan font-family="Times New Roman, serif" font-style="italic">mg</tspan>/<tspan font-family="Times New Roman, serif" font-style="italic">k</tspan>（破線）</text>
+</svg>

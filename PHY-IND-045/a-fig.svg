@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 280">
+  <g stroke="#222" stroke-width="1.6" fill="none">
+    <!-- battery -->
+    <line x1="60" y1="50" x2="60" y2="118"/>
+    <line x1="42" y1="118" x2="78" y2="118"/>
+    <line x1="51" y1="129" x2="69" y2="129" stroke-width="3"/>
+    <line x1="60" y1="129" x2="60" y2="220"/>
+    <!-- R -->
+    <line x1="60" y1="50" x2="130" y2="50"/>
+    <rect x="130" y="40" width="70" height="20"/>
+    <line x1="200" y1="50" x2="460" y2="50"/>
+    <line x1="60" y1="220" x2="460" y2="220"/>
+    <!-- L branch at x=300 -->
+    <line x1="300" y1="50" x2="300" y2="88"/>
+    <path d="M300,88 a10,10 0 0 1 0,20 a10,10 0 0 1 0,20 a10,10 0 0 1 0,20 a10,10 0 0 1 0,20"/>
+    <line x1="300" y1="168" x2="300" y2="220"/>
+    <!-- r branch at x=460 -->
+    <line x1="460" y1="50" x2="460" y2="100"/>
+    <rect x="450" y="100" width="20" height="70"/>
+    <line x1="460" y1="170" x2="460" y2="220"/>
+  </g>
+  <circle cx="300" cy="50" r="3.5" fill="#222"/><circle cx="300" cy="220" r="3.5" fill="#222"/>
+  <g font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">
+    <text x="84" y="130">E</text>
+    <text x="158" y="84">R</text>
+    <text x="320" y="124">L</text><text x="332" y="124" font-style="normal">=</text>
+    <text x="346" y="124">B<tspan baseline-shift="super" font-size="10" font-style="normal">2</tspan>l<tspan baseline-shift="super" font-size="10" font-style="normal">2</tspan><tspan font-style="normal">/</tspan>k</text>
+    <text x="480" y="140">r</text>
+  </g>
+  <g font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">
+    <text x="316" y="148">ばね付きの棒</text>
+    <text x="482" y="164" font-size="12">棒 N</text>
+    <text x="482" y="180" font-size="12">の回路</text>
+    <text x="40" y="258">M の起電力 <tspan font-family="Times New Roman, serif" font-style="italic">Bl</tspan><tspan font-family="Times New Roman, serif" font-style="italic">ẋ</tspan> ＝ コイルの電圧，コイルの電流 ＝ <tspan font-family="Times New Roman, serif" font-style="italic">kx</tspan>/<tspan font-family="Times New Roman, serif" font-style="italic">Bl</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 360">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<path d="M155,80 A75,11 0 0 1 305,80" fill="none" stroke="#888" stroke-width="1"/>
+<path d="M155,96 A75,11 0 0 1 305,96" fill="none" stroke="#888" stroke-width="1"/>
+<path d="M155,112 A75,11 0 0 1 305,112" fill="none" stroke="#888" stroke-width="1"/>
+<path d="M155,128 A75,11 0 0 1 305,128" fill="none" stroke="#888" stroke-width="1"/>
+<path d="M155,144 A75,11 0 0 1 305,144" fill="none" stroke="#888" stroke-width="1"/>
+<path d="M155,160 A75,11 0 0 1 305,160" fill="none" stroke="#888" stroke-width="1"/>
+<path d="M155,224 A75,11 0 0 1 305,224" fill="none" stroke="#888" stroke-width="1"/>
+<path d="M155,240 A75,11 0 0 1 305,240" fill="none" stroke="#888" stroke-width="1"/>
+<path d="M155,256 A75,11 0 0 1 305,256" fill="none" stroke="#888" stroke-width="1"/>
+<path d="M155,272 A75,11 0 0 1 305,272" fill="none" stroke="#888" stroke-width="1"/>
+<path d="M155,288 A75,11 0 0 1 305,288" fill="none" stroke="#888" stroke-width="1"/>
+<path d="M155,304 A75,11 0 0 1 305,304" fill="none" stroke="#888" stroke-width="1"/>
+<line x1="230" y1="30" x2="230" y2="335" stroke="#222" stroke-width="2.4"/>
+<ellipse cx="230" cy="190" rx="52" ry="14" fill="none" stroke="#222" stroke-width="2.4"/>
+<path d="M155,80 A75,11 0 0 0 305,80" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M155,96 A75,11 0 0 0 305,96" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M155,112 A75,11 0 0 0 305,112" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M155,128 A75,11 0 0 0 305,128" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M155,144 A75,11 0 0 0 305,144" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M155,160 A75,11 0 0 0 305,160" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M155,224 A75,11 0 0 0 305,224" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M155,240 A75,11 0 0 0 305,240" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M155,256 A75,11 0 0 0 305,256" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M155,272 A75,11 0 0 0 305,272" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M155,288 A75,11 0 0 0 305,288" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M155,304 A75,11 0 0 0 305,304" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="230" y1="190" x2="282" y2="190" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="262" y="184" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">r</text>
+<polyline points="305,80 305,30 285,30" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="270" cy="30" r="15" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="270" y="35" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">A</text>
+<line x1="255" y1="30" x2="233" y2="30" stroke="#222" stroke-width="1.6"/>
+<circle cx="232" cy="30" r="2.5" fill="#222"/>
+<polyline points="155,304 115,304 115,190 176,190" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="177" cy="190" r="2.5" fill="#222"/>
+<text x="55" y="210" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">ブラシ</text>
+<path d="M212,52 A18,5 0 1 0 248,52" fill="none" stroke="#1f5fbf" stroke-width="1.6" marker-end="url(#q-ab)"/>
+<text x="192" y="56" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">ω</text>
+<line x1="380" y1="270" x2="380" y2="130" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="390" y="150" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+<text x="388" y="172" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">（地磁気）</text>
+<text x="320" y="96" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">コイル（単位長さ</text>
+<text x="320" y="114" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">あたり <tspan font-family="Times New Roman, serif" font-style="italic">n</tspan> 巻き）</text>
+<text x="110" y="350" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">回路全体の抵抗 <tspan font-family="Times New Roman, serif" font-style="italic">R</tspan>　回転軸もコイルの中心軸</text>
+</svg>

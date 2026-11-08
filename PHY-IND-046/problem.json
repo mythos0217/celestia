@@ -1,0 +1,143 @@
+{
+ "id": "PHY-IND-046",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "外部磁束の増加を遅れて追う抵抗とインダクタンスをもつコイル（通過電気量とジュール熱）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，自己インダクタンス $L$，電気抵抗 $R$ の1巻きの円形コイルが，コイル面に垂直な一様な磁場の中に置かれている．外部磁場がコイルを貫く磁束 $\\Phi_{\\rm e}$ は，時刻 $t<0$ では $0$，$0\\le t\\le T$ では $\\Phi_{\\rm e}=\\Phi_0\\,t/T$（$\\Phi_0>0$）と一定の割合で増加し，$t>T$ では $\\Phi_0$ のまま一定に保たれる．コイルを流れる電流を $I$ とし，その電流がつくる磁場がコイルの内側で外部磁場と同じ向きになる向き（図の青い矢印の向き）を正とする．コイルを貫く全磁束は $\\Phi=\\Phi_{\\rm e}+LI$ である．$\\tau=\\dfrac{L}{R}$ とおき，必要なら「$\\dfrac{dy}{dt}=-\\dfrac{y}{\\tau}$ をみたす関数は $y=y(0)\\,e^{-t/\\tau}$ である」ことを用いてよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$0\\le t\\le T$ における $I$ を $t$ の関数として求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "時刻 $T$ にコイルを貫く全磁束 $\\Phi(T)$ は，$\\Phi_0$ よりいくら小さいか．"
+     },
+     {
+      "id": "3",
+      "tex": "時刻 $0$ から十分に時間がたつまでに，コイルの断面を通過する電気量の大きさ $Q$ を求めよ．また，$Q$ が $L$ にも $T$ にもよらない理由を述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "時刻 $0$ から十分に時間がたつまでにコイルで発生するジュール熱の総量 $H$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$T\\to0$ としたときの $H$ の極限値と，$T\\gg\\tau$ のときの $H$ の近似式（主要な項のみ）を求めよ．また，$T\\to0$ の極限値がどのようなエネルギーに等しいかを説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：外部磁束の増加を遅れて追う抵抗とインダクタンスをもつコイル（通過電気量とジュール熱）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：外部磁束の増加を遅れて追う抵抗とインダクタンスをもつコイル（通過電気量とジュール熱）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I=-\\dfrac{\\Phi_0}{RT}\\left(1-e^{-t/\\tau}\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{\\Phi_0\\tau}{T}\\left(1-e^{-T/\\tau}\\right)$"
+   },
+   {
+    "id": "3",
+    "tex": "$Q=\\dfrac{\\Phi_0}{R}$（始めと終わりの電流がともに0で，自己誘導の寄与 $-L\\Delta I$ が0になるため）"
+   },
+   {
+    "id": "4",
+    "tex": "$H=\\dfrac{\\Phi_0^2}{RT^2}\\left\\{T-\\tau\\left(1-e^{-T/\\tau}\\right)\\right\\}$"
+   },
+   {
+    "id": "5",
+    "tex": "$T\\to0$：$\\dfrac{\\Phi_0^2}{2L}$（全磁束が0のまま凍結されたときにコイルにたくわえられる磁気エネルギー），$T\\gg\\tau$：$H\\approx\\dfrac{\\Phi_0^2}{RT}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　外部磁場の変化による誘導起電力と自己誘導起電力を合わせると，ファラデーの法則は全磁束 $\\Phi=\\Phi_{\\rm e}+LI$ について\n\\[ RI=-\\frac{d\\Phi}{dt}=-\\frac{d\\Phi_{\\rm e}}{dt}-L\\frac{dI}{dt} \\]\nとなる．$0\\le t\\le T$ では $\\dfrac{d\\Phi_{\\rm e}}{dt}=\\dfrac{\\Phi_0}{T}$ なので\n\\[ L\\frac{dI}{dt}=-R\\left(I+\\frac{\\Phi_0}{RT}\\right). \\]\n$y=I+\\dfrac{\\Phi_0}{RT}$ とおくと $\\dfrac{dy}{dt}=-\\dfrac{y}{\\tau}$．コイルの電流は連続なので $t=0$ で $I=0$，すなわち $y(0)=\\dfrac{\\Phi_0}{RT}$．よって\n\\[ I=\\boldsymbol{-\\frac{\\Phi_0}{RT}\\left(1-e^{-t/\\tau}\\right)}. \\]\n電流は負，すなわち外部磁束の増加を妨げる向きに流れ，その大きさは $\\dfrac{\\Phi_0}{RT}$ に近づいていく．\n\n\\textbf{(2)}　$\\Phi(T)=\\Phi_0+LI(T)=\\Phi_0-\\dfrac{L\\Phi_0}{RT}\\left(1-e^{-T/\\tau}\\right)$ より，不足分は\n\\[ \\boldsymbol{\\frac{\\Phi_0\\tau}{T}\\left(1-e^{-T/\\tau}\\right)}. \\]\n$T\\gg\\tau$ なら不足分は $\\dfrac{\\Phi_0}{T}\\tau$ で，全磁束は外部磁束を時間 $\\tau$ だけ遅れて追いかけている．$t>T$ では $I$ が時定数 $\\tau$ で $0$ に戻り，全磁束は $\\Phi_0$ に追いつく．\n\n\\textbf{(3)}　回路の式 $RI=-\\dfrac{d\\Phi_{\\rm e}}{dt}-L\\dfrac{dI}{dt}$ の両辺に微小時間 $\\Delta t$ をかけ，全時間について足し合わせると\n\\[ R\\times(\\text{通過電気量})=-(\\Phi_{\\rm e}\\text{ の変化})-L\\times(I\\text{ の変化}). \\]\n始め（$t=0$）も終わり（十分後）も $I=0$ だから右辺第2項は $0$，$\\Phi_{\\rm e}$ の変化は $\\Phi_0$．よって\n\\[ Q=\\boldsymbol{\\frac{\\Phi_0}{R}}. \\]\n自己誘導起電力 $-L\\dfrac{dI}{dt}$ は電流が増える間と減る間で符号が逆になり，その時間についての和 $-L\\Delta I$ は始めと終わりの電流だけで決まる（ここでは $0$）．したがって通過電気量は外部磁束の総変化だけで決まり，$L$ にも変化のさせ方（$T$）にもよらない．\n\n\\textbf{(4)}　外部磁場の変化による起電力 $V_{\\rm e}=-\\dfrac{d\\Phi_{\\rm e}}{dt}$ は，$0<t<T$ で一定値 $-\\dfrac{\\Phi_0}{T}$，$t>T$ で $0$ である．コイルの磁気エネルギー $\\frac12LI^2$ は始めも終わりも $0$ なので，エネルギー保存より，ジュール熱の総量は $V_{\\rm e}$ がした仕事の総和に等しい．$V_{\\rm e}$ が一定の区間では，その仕事は「起電力 $\\times$ その間に流れた電気量」である．$0\\le t\\le T$ に流れた電気量（正の向き）を $q$ とすると，(3) と同様に\n\\[ Rq=-\\Phi_0-LI(T)\\quad\\therefore\\ q=-\\frac{\\Phi_0}{R}+\\frac{\\tau\\Phi_0}{RT}\\left(1-e^{-T/\\tau}\\right). \\]\nよって\n\\[ H=\\left(-\\frac{\\Phi_0}{T}\\right)q=\\boldsymbol{\\frac{\\Phi_0^2}{RT^2}\\left\\{T-\\tau\\left(1-e^{-T/\\tau}\\right)\\right\\}}. \\]\n（$t>T$ には起電力はなく，時刻 $T$ にたくわえられていた $\\frac12LI(T)^2$ がジュール熱になるが，その分は上の収支に含まれている．$\\int RI^2\\,dt$ を直接計算しても同じ結果になる．）\n\n\\textbf{(5)}　$x=T/\\tau\\to0$ では $1-e^{-x}\\approx x-\\dfrac{x^2}{2}$ より $T-\\tau\\left(1-e^{-T/\\tau}\\right)\\approx\\dfrac{T^2}{2\\tau}$．よって\n\\[ H\\to\\frac{\\Phi_0^2}{2R\\tau}=\\boldsymbol{\\frac{\\Phi_0^2}{2L}}. \\]\n$T\\gg\\tau$ では $e^{-T/\\tau}\\approx0$，$T-\\tau\\approx T$ として $H\\approx\\boldsymbol{\\dfrac{\\Phi_0^2}{RT}}$ となり，ゆっくり変えるほど熱は少ない．\n\n$T\\to0$ では電流が増える間がないので，コイルを貫く全磁束は $0$ のまま凍結される：$\\Phi_{\\rm e}+LI=0$ より直後の電流は $I=-\\dfrac{\\Phi_0}{L}$ で，コイルには磁気エネルギー $\\dfrac12L\\left(\\dfrac{\\Phi_0}{L}\\right)^2=\\dfrac{\\Phi_0^2}{2L}$ がたくわえられる．その後このエネルギーがすべてジュール熱になる．すなわち極限値は，磁束が凍結されたときのコイルの磁気エネルギーに等しい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "抵抗と自己インダクタンスをもつコイルでは全磁束 $\\Phi_{\\rm e}+LI$ が外部磁束を時定数 $L/R$ だけ遅れて追いかける．通過電気量は始めと終わりの電流だけで決まって $L$ や変化の速さによらない一方，ジュール熱は「一定の起電力 $\\times$ 電気量」から求まり，急変の極限では凍結された磁束による磁気エネルギー $\\Phi_0^2/2L$ に一致する．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "自己誘導",
+  "全磁束",
+  "時定数",
+  "通過電気量",
+  "ジュール熱",
+  "磁束の凍結"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

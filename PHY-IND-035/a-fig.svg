@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360">
+<defs>
+<marker id="a-ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker>
+<marker id="a-bl" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="a-rd" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#c0392b"/></marker>
+<pattern id="a-hat" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#888" stroke-width="1"/></pattern>
+</defs>
+<line x1="20" y1="190" x2="545" y2="190" stroke="#222" stroke-width="1" marker-end="url(#a-ar)"/>
+<text x="540" y="210" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+<circle cx="90" cy="190" r="36" fill="url(#a-hat)" stroke="#222" stroke-width="1.6"/>
+<text x="64" y="240" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">O</text>
+<!-- orbit: P at x=200, rho=110, center 310, Q at 420 -->
+<circle cx="310" cy="190" r="110" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="310" cy="190" r="3" fill="#222"/>
+<text x="296" y="210" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">中心</text>
+<line x1="310" y1="190" x2="388" y2="112" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="352" y="140" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">ρ</text>
+<circle cx="200" cy="190" r="6" fill="#222"/>
+<text x="176" y="182" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">P</text>
+<circle cx="420" cy="190" r="6" fill="#222"/>
+<text x="426" y="182" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">Q</text>
+<!-- velocity at P: +y (up) -->
+<line x1="200" y1="190" x2="200" y2="120" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-bl)"/>
+<text x="166" y="128" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">v<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<!-- direction arrow on orbit (clockwise) -->
+<path d="M 250 92 A 110 110 0 0 1 330 82" fill="none" stroke="#222" stroke-width="1.2" marker-end="url(#a-ar)"/>
+<text x="250" y="70" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">時計回り</text>
+<!-- velocity at Q: -y (down) -->
+<line x1="420" y1="190" x2="420" y2="260" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-bl)"/>
+<text x="428" y="262" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">v<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<!-- impulse at Q: +y red -->
+<line x1="432" y1="190" x2="432" y2="120" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-rd)"/>
+<text x="440" y="122" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">2回目の力積</text>
+<!-- impulse at P (red, short) -->
+<line x1="212" y1="250" x2="212" y2="210" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-rd)"/>
+<text x="220" y="250" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">1回目の力積</text>
+<!-- dims -->
+<line x1="90" y1="300" x2="200" y2="300" stroke="#222" stroke-width="1" marker-end="url(#a-ar)"/>
+<text x="130" y="320" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">r<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<line x1="90" y1="335" x2="420" y2="335" stroke="#222" stroke-width="1" marker-end="url(#a-ar)"/>
+<text x="250" y="355" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">R</text>
+<line x1="90" y1="190" x2="90" y2="340" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="420" y1="196" x2="420" y2="340" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="200" y1="196" x2="200" y2="305" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+</svg>

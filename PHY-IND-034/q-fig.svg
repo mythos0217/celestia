@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 270">
+<defs><marker id="q-ak2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker></defs>
+<rect x="50" y="95" width="460" height="30" fill="#eee" stroke="#222" stroke-width="1.6"/>
+<ellipse cx="50" cy="110" rx="6" ry="15" fill="#eee" stroke="#222" stroke-width="1.6"/>
+<text x="20" y="80" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">鉄心（断面積 <tspan font-family="Times New Roman, serif" font-style="italic">S</tspan>，透磁率 <tspan font-family="Times New Roman, serif" font-style="italic">μ</tspan>）</text>
+<path d="M70.0,88 Q84.3,110 86.7,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M86.7,88 Q101.0,110 103.3,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M103.3,88 Q117.7,110 120.0,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M120.0,88 Q134.3,110 136.7,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M136.7,88 Q151.0,110 153.3,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M153.3,88 Q167.7,110 170.0,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M170.0,88 Q184.3,110 186.7,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M186.7,88 Q201.0,110 203.3,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M203.3,88 Q217.7,110 220.0,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M220.0,88 Q234.3,110 236.7,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M236.7,88 Q251.0,110 253.3,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M253.3,88 Q267.7,110 270.0,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M300.0,88 Q313.9,110 315.8,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M315.8,88 Q329.8,110 331.7,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M331.7,88 Q345.6,110 347.5,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M347.5,88 Q361.4,110 363.3,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M363.3,88 Q377.2,110 379.2,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M379.2,88 Q393.1,110 395.0,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M395.0,88 Q408.9,110 410.8,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M410.8,88 Q424.8,110 426.7,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M426.7,88 Q440.6,110 442.5,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M442.5,88 Q456.4,110 458.3,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M458.3,88 Q472.3,110 474.2,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<path d="M474.2,88 Q488.1,110 490.0,132" fill="none" stroke="#222" stroke-width="1.4"/>
+<!-- terminals coil1 -->
+<line x1="70" y1="132" x2="70" y2="185" stroke="#222" stroke-width="1.4"/>
+<line x1="270" y1="132" x2="270" y2="185" stroke="#222" stroke-width="1.4"/>
+<circle cx="70" cy="189" r="4" fill="none" stroke="#222" stroke-width="1.4"/>
+<circle cx="270" cy="189" r="4" fill="none" stroke="#222" stroke-width="1.4"/>
+<text x="64" y="212" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">a</text>
+<text x="264" y="212" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">b</text>
+<line x1="300" y1="132" x2="300" y2="185" stroke="#222" stroke-width="1.4"/>
+<line x1="490" y1="132" x2="490" y2="185" stroke="#222" stroke-width="1.4"/>
+<circle cx="300" cy="189" r="4" fill="none" stroke="#222" stroke-width="1.4"/>
+<circle cx="490" cy="189" r="4" fill="none" stroke="#222" stroke-width="1.4"/>
+<text x="294" y="212" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">c</text>
+<text x="484" y="212" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">d</text>
+<text x="120" y="160" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">コイル1（<tspan font-family="Times New Roman, serif" font-style="italic">N</tspan><tspan baseline-shift="sub" font-size="10">1</tspan> 回）</text>
+<text x="345" y="160" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">コイル2（<tspan font-family="Times New Roman, serif" font-style="italic">N</tspan><tspan baseline-shift="sub" font-size="10">2</tspan> 回）</text>
+<!-- flux direction -->
+<line x1="200" y1="45" x2="360" y2="45" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="140" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">a→b，c→d の電流がつくる磁束の向き（同じ向き）</text>
+<line x1="50" y1="240" x2="510" y2="240" stroke="#222" stroke-width="1" marker-start="url(#q-ak2)" marker-end="url(#q-ak2)"/>
+<text x="275" y="262" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">l</text>
+</svg>

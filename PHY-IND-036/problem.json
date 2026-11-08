@@ -1,0 +1,143 @@
+{
+ "id": "PHY-IND-036",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "ソレノイドの直流励磁とコンデンサー放電によるパルス磁場（巻数によらない最大磁場）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，長さ $\\ell$，断面積 $A$ の細長い円筒に導線を一様に $N$ 回巻いたコイル（ソレノイド）がある．コイルの内部は真空（透磁率 $\\mu_0$）で，内部の磁場は一様とみなし，端の効果は無視する．コイルの端子を a，b とする．このほかに，起電力 $E$・内部抵抗 $r$ の電池と，電気容量 $C$ のコンデンサーがある．これらを使ってコイルの内部にできるだけ強い磁場をつくりたい．導線とスイッチの抵抗，電磁波の放射は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "コイルの自己インダクタンス $L$ を求めよ．また，電池を端子 a，b に直接つないで（a 側が正極）十分に時間がたったときの，コイル内部の磁束密度の大きさ $B_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "次に，電池でコンデンサーを電圧 $E$ に充電したのち電池から切り離し，時刻 $t=0$ にコンデンサーだけをコイルの両端につないだ．その後，コイル内部の磁束密度の大きさがはじめて最大になる時刻 $t_2$ と，その最大値 $B_2$ を求めよ．また，$B_2$ が巻数 $N$ によらない理由を，エネルギーの観点から簡潔に説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$B_1=B_2$ となる巻数 $N^*$ を求めよ．また，そのときのコイルの自己インダクタンスを $L^*$ として，$r$ を $L^*$ と $C$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(1) のように電池を直接つないで，コイルに a→b の向きに一定の電流が流れている状態をつくる．時刻 $t=0$ に電池を切り離すと同時に，別に電圧 $E$ に充電しておいたコンデンサーをコイルの両端につないだ（切り替えは瞬間的で，その間にコイルの電流は変わらないとする）．コンデンサーの正極板を a につなぐ場合（ア）と b につなぐ場合（イ）のそれぞれについて，その後のコイル内部の磁束密度の大きさの最大値 $B_{\\max}$ と，それにはじめて達する時刻を，$B_1$，$B_2$，$L$，$C$ を用いて表せ．また，（イ）で最大になるときの磁場の向きは，$t=0$ の向きと比べてどうなっているか．"
+     },
+     {
+      "id": "5",
+      "tex": "$N=N^*$ のとき，(4) の $B_{\\max}$ を $B_1$ で表し，（ア）（イ）それぞれの時刻を $r$，$C$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ソレノイドの直流励磁とコンデンサー放電によるパルス磁場（巻数によらない最大磁場）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：ソレノイドの直流励磁とコンデンサー放電によるパルス磁場（巻数によらない最大磁場）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$L=\\dfrac{\\mu_0N^2A}{\\ell}$，$B_1=\\dfrac{\\mu_0NE}{r\\ell}$"
+   },
+   {
+    "id": "2",
+    "tex": "$t_2=\\dfrac{\\pi}{2}\\sqrt{LC}=\\dfrac{\\pi N}{2}\\sqrt{\\dfrac{\\mu_0AC}{\\ell}}$，$B_2=E\\sqrt{\\dfrac{\\mu_0C}{A\\ell}}$（静電エネルギー $\\frac12CE^2$ がすべて体積 $A\\ell$ の磁場のエネルギー $\\frac{B^2}{2\\mu_0}A\\ell$ に移るから）"
+   },
+   {
+    "id": "3",
+    "tex": "$N^*=r\\sqrt{\\dfrac{C\\ell}{\\mu_0A}}$，$r=\\sqrt{\\dfrac{L^*}{C}}$"
+   },
+   {
+    "id": "4",
+    "tex": "どちらも $B_{\\max}=\\sqrt{B_1^2+B_2^2}$．時刻は（ア）$\\sqrt{LC}\\,\\tan^{-1}\\dfrac{B_2}{B_1}$，（イ）$\\sqrt{LC}\\left(\\pi-\\tan^{-1}\\dfrac{B_2}{B_1}\\right)$．（イ）では磁場は $t=0$ と逆向き"
+   },
+   {
+    "id": "5",
+    "tex": "$B_{\\max}=\\sqrt2\\,B_1$，（ア）$\\dfrac{\\pi}{4}rC$，（イ）$\\dfrac{3\\pi}{4}rC$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 単位長さあたりの巻数は $N/\\ell$ なので，電流 $I$ のとき内部の磁束密度は $B=\\mu_0\\dfrac{N}{\\ell}I$，コイル全体を貫く磁束（鎖交数）は $NBA=\\dfrac{\\mu_0N^2A}{\\ell}I$ である．これが $LI$ に等しいから\n\\[ \\boldsymbol{L=\\frac{\\mu_0N^2A}{\\ell}}. \\]\n十分に時間がたつと電流は一定で，コイルの誘導起電力は $0$ になる．電流は $E/r$ なので\n\\[ \\boldsymbol{B_1=\\frac{\\mu_0NE}{r\\ell}}\\qquad(\\text{巻数 }N\\text{ に比例}). \\]\n\n\\textbf{(2)} コンデンサーの a 側の極板の電気量を $q$，コイルを a→b に流れる電流を $I$ とすると，$I=-\\dfrac{dq}{dt}$，$L\\dfrac{dI}{dt}=\\dfrac{q}{C}$ となり，$q$ は角振動数 $\\omega=\\dfrac{1}{\\sqrt{LC}}$ の単振動をする．$t=0$ で $q=\\pm CE$，$I=0$ だから，$|I|=E\\sqrt{\\dfrac CL}\\,|\\sin\\omega t|$ であり，最初の最大は $\\omega t=\\dfrac{\\pi}{2}$ のとき：\n\\[ \\boldsymbol{t_2=\\frac{\\pi}{2}\\sqrt{LC}=\\frac{\\pi N}{2}\\sqrt{\\frac{\\mu_0AC}{\\ell}}}. \\]\n電流の最大値 $E\\sqrt{C/L}$ を代入すると\n\\[ B_2=\\mu_0\\frac{N}{\\ell}E\\sqrt{\\frac{C\\ell}{\\mu_0N^2A}}=\\boldsymbol{E\\sqrt{\\frac{\\mu_0C}{A\\ell}}}. \\]\n抵抗がないので，電流最大の瞬間（$q=0$）には静電エネルギー $\\frac12CE^2$ がすべて磁場のエネルギーになっている．ソレノイドの磁場のエネルギーは $\\frac12LI^2=\\dfrac{B^2}{2\\mu_0}A\\ell$（エネルギー密度×体積）なので，$\\dfrac{B_2^2}{2\\mu_0}A\\ell=\\dfrac12CE^2$ となり，巻数は現れない．巻数を増やすと $L\\propto N^2$ のため電流が $1/N$ 倍になり，$B\\propto NI$ の増加と打ち消し合う．巻数を変えて変わるのは最大になるまでの時間（$\\propto N$）だけである．\n\n\\textbf{(3)} $\\dfrac{\\mu_0N^*E}{r\\ell}=E\\sqrt{\\dfrac{\\mu_0C}{A\\ell}}$ より\n\\[ \\boldsymbol{N^*=r\\sqrt{\\frac{C\\ell}{\\mu_0A}}}. \\]\nこのとき $L^*=\\dfrac{\\mu_0N^{*2}A}{\\ell}=r^2C$ なので $\\boldsymbol{r=\\sqrt{L^*/C}}$．すなわち，電池の内部抵抗が LC 回路の特性インピーダンス $\\sqrt{L/C}$ に等しい巻数が境目で，$N>N^*$ なら直流のほうが，$N<N^*$ ならコンデンサー放電のほうが強い磁場をつくる．\n\n\\textbf{(4)} 切り替え直後の電流は $I_1=E/r$（コイルの電流は連続）で，以後は(2)と同じ式に従う．$t=0$ で $\\dfrac{dI}{dt}=\\dfrac{q(0)}{LC}$ である．$I_2=E\\sqrt{C/L}$ とおくと，（ア）では $q(0)=+CE$ より $\\dfrac{dI}{dt}(0)=\\dfrac{E}{L}=\\omega I_2$，（イ）では $-\\omega I_2$ なので\n\\[ I(t)=I_1\\cos\\omega t\\pm I_2\\sin\\omega t=\\sqrt{I_1^2+I_2^2}\\,\\cos(\\omega t\\mp\\phi),\\qquad \\tan\\phi=\\frac{I_2}{I_1} \\]\n（複号は上が（ア），下が（イ））．エネルギーで見ても，$\\frac12LI^2+\\frac{q^2}{2C}=\\frac12LI_1^2+\\frac12CE^2$ が保存し，$q=0$ のとき $|I|$ が最大になるので $LI_{\\max}^2=LI_1^2+CE^2$ である．$B\\propto I$ で $B_1\\propto I_1$，$B_2\\propto I_2$ だから，どちらの場合も\n\\[ \\boldsymbol{B_{\\max}=\\sqrt{B_1^2+B_2^2}} \\]\n（磁場は「足し算」ではなく，エネルギーが足し算になる）．\n（ア）では電流がまず増え，$\\omega t=\\phi$ で最大：$\\boldsymbol{t=\\sqrt{LC}\\tan^{-1}\\dfrac{B_2}{B_1}}$．\n（イ）では電流がまず減って $0$ を通り，逆向きに増えて $\\omega t+\\phi=\\pi$ で $|I|$ が最大：$\\boldsymbol{t=\\sqrt{LC}\\left(\\pi-\\tan^{-1}\\dfrac{B_2}{B_1}\\right)}$．このとき電流は b→a 向きなので，\\textbf{磁場は $t=0$ と逆向き}である．\n\n\\textbf{(5)} $N=N^*$ では $B_1=B_2$ なので $\\boldsymbol{B_{\\max}=\\sqrt2\\,B_1}$，$\\phi=\\dfrac{\\pi}{4}$．また $\\sqrt{L^*C}=\\sqrt{r^2C\\cdot C}=rC$ より，（ア）$\\boldsymbol{\\dfrac{\\pi}{4}rC}$，（イ）$\\boldsymbol{\\dfrac{3\\pi}{4}rC}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "コンデンサーの放電でつくる最大磁場は，静電エネルギーがすべて磁場のエネルギー（エネルギー密度×体積）に移ることで決まり，$L\\propto N^2$ のため巻数によらない．直流励磁の磁場は巻数に比例するので，両者は内部抵抗が特性インピーダンス $\\sqrt{L/C}$ に等しい巻数で入れかわり，電流と電荷の両方をもつ初期状態からの LC 振動では磁場の最大値が $\\sqrt{B_1^2+B_2^2}$（エネルギーの和）になる．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "capacitor",
+  "ac-circuit"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "自己インダクタンス",
+  "LC振動",
+  "磁場のエネルギー",
+  "ソレノイド",
+  "特性インピーダンス"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}
