@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360">
+<defs>
+<marker id="q-ab" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-ak" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker>
+<pattern id="q-hat" width="8" height="8" patternUnits="userSpaceOnUse"><line x1="0" y1="8" x2="8" y2="0" stroke="#222" stroke-width="1"/></pattern>
+</defs>
+<!-- cylinder walls (thick, hatched = insulating) -->
+<rect x="80" y="40" width="16" height="300" fill="url(#q-hat)" stroke="#222" stroke-width="1.6"/>
+<rect x="384" y="40" width="16" height="300" fill="url(#q-hat)" stroke="#222" stroke-width="1.6"/>
+<rect x="80" y="324" width="320" height="16" fill="url(#q-hat)" stroke="#222" stroke-width="1.6"/>
+<!-- piston -->
+<rect x="96" y="80" width="288" height="22" fill="url(#q-hat)" stroke="#222" stroke-width="1.6"/>
+<text x="200" y="74" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">ピストン</text>
+<line x1="320" y1="22" x2="320" y2="76" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="328" y="44" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">一定の力</text>
+<!-- bubble -->
+<circle cx="220" cy="215" r="62" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="220" cy="215" r="58" fill="none" stroke="#222" stroke-width="0.8"/>
+<line x1="220" y1="215" x2="263.8" y2="171.2" stroke="#222" stroke-width="1" />
+<circle cx="220" cy="215" r="2" fill="#222"/>
+<text x="245" y="205" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">r</text>
+<text x="180" y="240" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">気体 A</text>
+<text x="182" y="258" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">n<tspan baseline-shift="sub" font-size="10" font-style="normal">A</tspan><tspan font-style="normal" font-family="Noto Sans CJK JP, sans-serif" font-size="13"> mol</tspan></text>
+<text x="130" y="150" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">シャボン玉（膜は2面）</text>
+<!-- gas B label -->
+<text x="300" y="135" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">気体 B</text>
+<text x="300" y="155" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">n<tspan baseline-shift="sub" font-size="10" font-style="normal">B</tspan><tspan font-style="normal" font-family="Noto Sans CJK JP, sans-serif" font-size="13"> mol</tspan></text>
+<text x="300" y="175" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">圧力 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="15">P</tspan></text>
+<!-- heater -->
+<path d="M320,324 L320,305 L326,312 L332,305 L338,312 L344,305 L350,312 L356,305 L356,324" fill="none" stroke="#222" stroke-width="1.4"/>
+<text x="300" y="296" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">ヒーター</text>
+</svg>

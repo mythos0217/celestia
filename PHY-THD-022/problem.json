@@ -1,0 +1,122 @@
+{
+ "id": "PHY-THD-022",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "半透膜で仕切られた2種の気体（熱のおもりとしての気体と膜が破れたときの不可逆変化）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，鉛直に立てた断面積 $S$ のシリンダーに，質量 $M$ のピストンがなめらかに動けるようにはめられている．シリンダーの外は真空である．シリンダーの底から一定の高さに，気体 X の分子は自由に通すが気体 Y の分子は通さない膜が水平に固定されており，膜より下の部分の体積は $V_0$（一定）である．シリンダー内には単原子分子理想気体 X が $n$ mol，単原子分子理想気体 Y が $\\nu n$ mol 入っていて，Y は膜より下にだけ存在する．膜とピストンの間の部分の体積を $V$ とする．シリンダー，ピストン，膜は断熱材でできていて熱容量は無視でき，シリンダー内の温度は常に一様とする．膜より下の部分には体積と熱容量の無視できるヒーターがある．気体定数を $R$，重力加速度の大きさを $g$ とし，状態変化は特に断りのない限りゆっくり起こるものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "温度 $T_0$ でピストンが静止しているとき，$V$ を求めよ．また，シリンダーの底面が気体から受ける力の大きさを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の状態からヒーターでゆっくり加熱したところ，ピストンが $\\Delta h$ だけ上昇した．この間にヒーターが気体に与えた熱量 $Q$ を $M$，$g$，$\\Delta h$，$\\nu$ で表せ．また，$Q=4Mg\\Delta h$ であったとき $\\nu$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "再び (1) の状態に戻し，ヒーターを止めて，ピストンに外から下向きの力を加えてゆっくり押し下げた．気体 X の圧力 $p$ と，X が占める全体積 $V_{\\text X}=V+V_0$ の間に $pV_{\\text X}^{\\ \\kappa}=$一定 の関係が成り立つことを示し，$\\kappa$ を $\\nu$ で表せ．また，$V_{\\text X}$ が (1) のときの半分になったときの温度を $T_0$，$\\nu$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(1) の状態（ピストンに外力ははたらいていない）で，膜が突然破れて Y も自由に行き来できるようになった．ピストンはしばらく上下に動いたのち静止した．このときの温度 $T_{\\text f}$ を求めよ．また，気体全体の体積は (1) のときの $V+V_0$ の何倍になったか．それぞれ $\\nu$ を用いて表し，$\\nu=1$ の場合の値も答えよ．ピストンが静止するまでの間も外部との熱の出入りはない．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：半透膜で仕切られた2種の気体（熱のおもりとしての気体と膜が破れたときの不可逆変化）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V=\\dfrac{nRT_0S}{Mg}-V_0$，底面の力 $Mg+\\dfrac{\\nu nRT_0S}{V_0}$"
+   },
+   {
+    "id": "2",
+    "tex": "$Q=\\dfrac{5+3\\nu}{2}Mg\\Delta h$，$\\nu=1$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\kappa=\\dfrac{5+3\\nu}{3(1+\\nu)}$，温度 $2^{\\frac{2}{3(1+\\nu)}}\\,T_0$"
+   },
+   {
+    "id": "4",
+    "tex": "$T_{\\text f}=\\dfrac{5+3\\nu}{5(1+\\nu)}T_0$，体積は $\\dfrac{5+3\\nu}{5}$ 倍（$\\nu=1$ のとき $T_{\\text f}=0.8T_0$，$1.6$ 倍）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 膜をはさむ圧力}　X は膜を自由に通るので，つり合いの状態では膜の両側で X の分子の数密度が等しく，X は膜がないのと同じく体積 $V+V_0$ 全体に一様に広がる．X の分圧は\n\\[ p_{\\text X}=\\frac{nRT_0}{V+V_0} \\]\nY は膜より下だけにあり，分圧は $p_{\\text Y}=\\dfrac{\\nu nRT_0}{V_0}$．ピストンに当たるのは X の分子だけなので，ピストンのつり合いは $p_{\\text X}S=Mg$．よって\n\\[ V=\\boldsymbol{\\frac{nRT_0S}{Mg}-V_0} \\]\n底面には X と Y の両方が当たるので，底面が受ける力は\n\\[ (p_{\\text X}+p_{\\text Y})S=\\boldsymbol{Mg+\\frac{\\nu nRT_0S}{V_0}} \\]\nY の分圧による力 $p_{\\text Y}S$ は膜が受け止めている（膜は Y に下から押し上げられ，それを支える力を出している）．\n\n\\textbf{(2) 定圧加熱}　ピストンの重さで $p_{\\text X}=\\dfrac{Mg}{S}$ が一定に保たれる．$p_{\\text X}(V+V_0)=nRT$ より，温度上昇 $\\Delta T$ と体積変化 $S\\Delta h$ の関係は\n\\[ nR\\,\\Delta T=p_{\\text X}S\\Delta h=Mg\\Delta h \\]\n温度は一様なので Y も同じだけ温まり，内部エネルギーの増加は\n\\[ \\Delta U=\\frac32(n+\\nu n)R\\Delta T=\\frac32(1+\\nu)Mg\\Delta h \\]\n気体が外にする仕事はピストンを押し上げる仕事 $p_{\\text X}S\\Delta h=Mg\\Delta h$ だけである（Y の体積は変わらないので Y は仕事をしない）．熱力学第一法則より\n\\[ Q=\\Delta U+Mg\\Delta h=\\boldsymbol{\\frac{5+3\\nu}{2}Mg\\Delta h} \\]\n$Q=4Mg\\Delta h$ なら $\\dfrac{5+3\\nu}{2}=4$ より $\\nu=\\boldsymbol{1}$．Y は仕事をしないが熱を吸収する「おもり」の役割をし，同じ膨張に必要な熱量を増やす．\n\n\\textbf{(3) 断熱圧縮}　熱の出入りがないので，気体全体の内部エネルギーの増加は X がされた仕事に等しい：\n\\[ \\frac32(1+\\nu)nR\\,\\Delta T=-p\\,\\Delta V_{\\text X},\\qquad p=\\frac{nRT}{V_{\\text X}} \\]\n両辺を $nRT$ で割ると\n\\[ \\frac32(1+\\nu)\\frac{\\Delta T}{T}=-\\frac{\\Delta V_{\\text X}}{V_{\\text X}}\\quad\\Longrightarrow\\quad TV_{\\text X}^{\\ \\frac{2}{3(1+\\nu)}}=\\text{一定} \\]\n（微小変化を積み重ねる：$\\log T+\\frac{2}{3(1+\\nu)}\\log V_{\\text X}$ が一定）．$T\\propto pV_{\\text X}$ を代入して\n\\[ pV_{\\text X}^{\\ \\kappa}=\\text{一定},\\qquad\\kappa=1+\\frac{2}{3(1+\\nu)}=\\boldsymbol{\\frac{5+3\\nu}{3(1+\\nu)}} \\]\n$\\nu=0$ なら単原子分子の比熱比 $\\frac53$ に戻り，$\\nu$ が大きいほど $\\kappa$ は等温の $1$ に近づく．$V_{\\text X}$ が半分になると\n\\[ T=T_0\\cdot2^{\\frac{2}{3(1+\\nu)}} \\]\n（$\\nu=1$ なら $2^{1/3}T_0$）．\n\n\\textbf{(4) 膜が破れたとき（不可逆変化）}　膜が破れると Y が膜より上へ急に流れ込んでピストンを押し上げ，ピストンは振動ののち静止する．この変化はゆっくりではないので断熱の式は使えない．しかし外は真空で熱の出入りもないので，「気体の内部エネルギー＋ピストンの位置エネルギー」が保存する（始めと終わりでピストンは静止）．気体全体の体積を $W$ とし，始めを $W_{\\text i}=V+V_0$，終わりを $W_{\\text f}$ とすると，ピストンの上昇は $(W_{\\text f}-W_{\\text i})/S$ なので\n\\[ \\frac32(1+\\nu)nR(T_{\\text f}-T_0)=-\\frac{Mg}{S}(W_{\\text f}-W_{\\text i}) \\]\n終状態では X と Y の両方がピストンに当たるので，つり合いは $(1+\\nu)nRT_{\\text f}=\\dfrac{Mg}{S}W_{\\text f}$．始めは $nRT_0=\\dfrac{Mg}{S}W_{\\text i}$．これらを代入すると\n\\[ \\frac32(1+\\nu)(T_{\\text f}-T_0)=-(1+\\nu)T_{\\text f}+T_0\\quad\\Longrightarrow\\quad T_{\\text f}=\\boldsymbol{\\frac{5+3\\nu}{5(1+\\nu)}T_0} \\]\n\\[ \\frac{W_{\\text f}}{W_{\\text i}}=\\frac{(1+\\nu)T_{\\text f}}{T_0}=\\boldsymbol{\\frac{5+3\\nu}{5}}\\text{ 倍} \\]\n$\\nu=1$ では $T_{\\text f}=\\boldsymbol{0.8T_0}$，体積は $\\boldsymbol{1.6}$ 倍．膜が支えていた Y の圧力がピストンにかかるようになり，気体はピストンを持ち上げる仕事をした分だけ冷える．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一方の気体だけを通す膜があると，通す気体 X は膜がないのと同様に全体に広がり，ピストンには X の分圧だけがかかる．通さない気体 Y は仕事をしないが温度は共通なので熱容量だけを加える「熱のおもり」となり，定圧加熱の熱量や断熱変化の指数 $\\kappa=\\frac{5+3\\nu}{3(1+\\nu)}$ を変える．膜が破れると膜が支えていた Y の圧力がピストンに移り，不可逆な膨張の終状態は内部エネルギーとピストンの位置エネルギーの和の保存から決まる．"
+ },
+ "concepts": [
+  "first-law",
+  "work-energy",
+  "heat-temperature"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "半透膜",
+  "分圧",
+  "断熱変化",
+  "熱力学第一法則",
+  "不可逆変化"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

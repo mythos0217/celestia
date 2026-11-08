@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><pattern id="q-dots" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.2" fill="#222"/></pattern></defs>
+<rect x="40" y="40" width="200" height="180" fill="none" stroke="#222" stroke-width="5"/>
+<text x="85" y="120" font-size="17" fill="#222" font-family="Noto Sans CJK JP, sans-serif"><tspan font-family="Times New Roman, serif" font-style="italic">p</tspan><tspan baseline-shift="sub" font-size="10">1</tspan>，<tspan font-family="Times New Roman, serif" font-style="italic">T</tspan><tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<text x="120" y="155" font-size="17" fill="#222" font-family="Noto Sans CJK JP, sans-serif"><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<text x="115" y="250" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">容器</text>
+<rect x="240" y="118" width="70" height="24" fill="white" stroke="none"/>
+<line x1="240" y1="116" x2="310" y2="116" stroke="#222" stroke-width="4"/>
+<line x1="240" y1="144" x2="310" y2="144" stroke="#222" stroke-width="4"/>
+<rect x="252" y="118" width="46" height="24" fill="url(#q-dots)" stroke="#222" stroke-width="1"/>
+<text x="200" y="78" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">多孔質の栓</text>
+<line x1="250" y1="84" x2="272" y2="120" stroke="#222" stroke-width="1"/>
+<polyline points="310,116 310,90 560,90" fill="none" stroke="#222" stroke-width="4"/>
+<polyline points="310,144 310,170 560,170" fill="none" stroke="#222" stroke-width="4"/>
+<rect x="313" y="93" width="16" height="74" fill="#ccc" stroke="#222" stroke-width="1.6"/>
+<line x1="329" y1="130" x2="433" y2="130" stroke="#222" stroke-width="3"/>
+<text x="353" y="122" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">ピストン</text>
+<line x1="513" y1="130" x2="443" y2="130" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="463" y="122" font-size="16" fill="#1f5fbf" font-family="Noto Sans CJK JP, sans-serif">圧力 <tspan font-family="Times New Roman, serif" font-style="italic">p</tspan><tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<text x="420" y="200" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">シリンダー</text>
+<text x="330" y="250" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">（はじめピストンは栓に接している）</text>
+</svg>

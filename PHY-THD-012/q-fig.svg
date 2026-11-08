@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400">
+<defs>
+<marker id="q-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<pattern id="q-wv" width="24" height="12" patternUnits="userSpaceOnUse"><path d="M0,6 q6,-4 12,0 t12,0" fill="none" stroke="#888" stroke-width="0.6"/></pattern>
+</defs>
+<!-- liquid -->
+<path d="M102,92 H298 V340 H102 Z M178,186 H208 V217 H178 Z" fill="url(#q-wv)" fill-rule="evenodd"/>
+<!-- container walls -->
+<path d="M100,40 L100,342 L300,342 L300,40" fill="none" stroke="#222" stroke-width="1.6"/>
+<!-- floor hatch -->
+<line x1="80" y1="350" x2="320" y2="350" stroke="#222" stroke-width="1.6"/>
+<g stroke="#222" stroke-width="1">
+<line x1="86" y1="350" x2="78" y2="360"/><line x1="102" y1="350" x2="94" y2="360"/><line x1="118" y1="350" x2="110" y2="360"/><line x1="134" y1="350" x2="126" y2="360"/><line x1="150" y1="350" x2="142" y2="360"/><line x1="166" y1="350" x2="158" y2="360"/><line x1="182" y1="350" x2="174" y2="360"/><line x1="198" y1="350" x2="190" y2="360"/><line x1="214" y1="350" x2="206" y2="360"/><line x1="230" y1="350" x2="222" y2="360"/><line x1="246" y1="350" x2="238" y2="360"/><line x1="262" y1="350" x2="254" y2="360"/><line x1="278" y1="350" x2="270" y2="360"/><line x1="294" y1="350" x2="286" y2="360"/><line x1="310" y1="350" x2="302" y2="360"/>
+</g>
+<rect x="100" y="342" width="200" height="8" fill="none" stroke="#222" stroke-width="1.6"/>
+<!-- piston (lid) -->
+<rect x="102" y="76" width="196" height="16" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="200" y1="76" x2="200" y2="40" stroke="#222" stroke-width="1.6"/>
+<line x1="200" y1="22" x2="200" y2="48" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ah)"/>
+<text x="208" y="34" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">押す力を調節</text>
+<text x="306" y="88" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">ピストン</text>
+<text x="306" y="106" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">直下の圧力</text>
+<text x="380" y="106" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">P</text>
+<!-- diver at depth z -->
+<path d="M180,190 L180,236 M206,190 L206,236 M180,190 L206,190" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="180" y1="217" x2="206" y2="217" stroke="#222" stroke-width="1"/>
+<text x="182" y="208" font-family="Noto Sans CJK JP, sans-serif" font-size="11" fill="#222">空気</text>
+<text x="214" y="200" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">浮沈子（質量</text>
+<text x="300" y="200" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">m</text>
+<text x="312" y="200" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">）</text>
+<!-- depth z -->
+<line x1="130" y1="92" x2="130" y2="217" stroke="#888" stroke-width="1" stroke-dasharray="4 3" marker-start="url(#q-ag)" marker-end="url(#q-ag)"/>
+<line x1="126" y1="217" x2="180" y2="217" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="136" y="160" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">z</text>
+<!-- depth H -->
+<line x1="60" y1="92" x2="60" y2="342" stroke="#888" stroke-width="1" marker-start="url(#q-ag)" marker-end="url(#q-ag)"/>
+<line x1="56" y1="92" x2="100" y2="92" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="42" y="222" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">H</text>
+<text x="306" y="300" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">液体（密度</text>
+<text x="378" y="300" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">ρ</text>
+<text x="388" y="300" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">）</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360">
+<defs>
+<marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<line x1="70" y1="30" x2="190" y2="30" stroke="#222" stroke-width="1.6"/><line x1="78" y1="30" x2="70" y2="20" stroke="#222" stroke-width="1"/><line x1="90" y1="30" x2="82" y2="20" stroke="#222" stroke-width="1"/><line x1="102" y1="30" x2="94" y2="20" stroke="#222" stroke-width="1"/><line x1="114" y1="30" x2="106" y2="20" stroke="#222" stroke-width="1"/><line x1="126" y1="30" x2="118" y2="20" stroke="#222" stroke-width="1"/><line x1="138" y1="30" x2="130" y2="20" stroke="#222" stroke-width="1"/><line x1="150" y1="30" x2="142" y2="20" stroke="#222" stroke-width="1"/><line x1="162" y1="30" x2="154" y2="20" stroke="#222" stroke-width="1"/><line x1="174" y1="30" x2="166" y2="20" stroke="#222" stroke-width="1"/><line x1="186" y1="30" x2="178" y2="20" stroke="#222" stroke-width="1"/>
+<path d="M130,30 L130,40 L116,43.75 L144,51.25 L116,58.75 L144,66.25 L116,73.75 L144,81.25 L116,88.75 L144,96.25 L116,103.75 L144,111.25 L116,118.75 L144,126.25 L130,130 L130,140" fill="none" stroke="#222" stroke-width="1.4"/>
+<!-- cylinder A -->
+<path d="M80,100 L80,300 L180,300 L180,100" fill="none" stroke="#222" stroke-width="2.4"/>
+<rect x="82" y="140" width="96" height="14" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="196" y="152" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">ピストン（断面積</text>
+<text x="310" y="152" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">S</text>
+<text x="322" y="152" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">）</text>
+<text x="152" y="90" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">ばね</text>
+<text x="184" y="90" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">k</text>
+<text x="104" y="230" font-family="Noto Sans CJK JP, sans-serif" font-size="16" fill="#222">A</text>
+<!-- heater -->
+<path d="M100,290 q6,-12 12,0 q6,-12 12,0 q6,-12 12,0 q6,-12 12,0" fill="none" stroke="#222" stroke-width="1.4"/>
+<text x="92" y="276" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">ヒーター</text>
+<!-- x dimension -->
+<line x1="60" y1="300" x2="60" y2="154" stroke="#888" stroke-width="1" marker-start="url(#q-ag)" marker-end="url(#q-ag)"/>
+<line x1="56" y1="154" x2="80" y2="154" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="40" y="232" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+<!-- tube with cock -->
+<line x1="180" y1="284" x2="300" y2="284" stroke="#222" stroke-width="1.6"/>
+<line x1="180" y1="294" x2="300" y2="294" stroke="#222" stroke-width="1.6"/>
+<circle cx="240" cy="289" r="9" fill="none" stroke="#222" stroke-width="1.4"/>
+<line x1="234" y1="283" x2="246" y2="295" stroke="#222" stroke-width="1.4"/><line x1="246" y1="283" x2="234" y2="295" stroke="#222" stroke-width="1.4"/>
+<text x="232" y="320" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">コック</text>
+<!-- vessel B -->
+<rect x="300" y="200" width="150" height="110" fill="none" stroke="#222" stroke-width="2.4"/>
+<text x="420" y="300" font-family="Noto Sans CJK JP, sans-serif" font-size="16" fill="#222">B</text>
+<!-- vane -->
+<line x1="375" y1="120" x2="375" y2="262" stroke="#222" stroke-width="1.4"/>
+<rect x="352" y="244" width="46" height="18" fill="none" stroke="#222" stroke-width="1.4"/>
+<line x1="375" y1="244" x2="375" y2="262" stroke="#222" stroke-width="1.4"/>
+<text x="318" y="236" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">羽根車</text>
+<!-- drum and string to weight -->
+<circle cx="375" cy="110" r="12" fill="none" stroke="#222" stroke-width="1.4"/>
+<line x1="387" y1="110" x2="470" y2="110" stroke="#222" stroke-width="1.2"/>
+<circle cx="476" cy="116" r="8" fill="none" stroke="#222" stroke-width="1.4"/>
+<line x1="484" y1="116" x2="484" y2="170" stroke="#222" stroke-width="1.2"/>
+<rect x="472" y="170" width="24" height="24" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="500" y="188" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">おもり</text>
+<text x="420" y="94" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">糸</text>
+<text x="380" y="330" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">（全体は真空中）</text>
+</svg>

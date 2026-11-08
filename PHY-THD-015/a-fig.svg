@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 330">
+<defs>
+<marker id="a-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<line x1="60" y1="290" x2="450" y2="290" stroke="#222" stroke-width="1.6" marker-end="url(#a-ag)"/>
+<line x1="60" y1="290" x2="60" y2="20" stroke="#222" stroke-width="1.6" marker-end="url(#a-ag)"/>
+<text x="440" y="312" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">温度</text>
+<text x="68" y="28" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">高さ</text>
+<text x="100" y="28" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">z</text>
+<!-- crossing at (330,200) as z=0, T0 -->
+<line x1="330" y1="290" x2="330" y2="200" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="60" y1="200" x2="330" y2="200" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="322" y="310" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">T<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<text x="44" y="205" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">0</text>
+<!-- environment: slope beta (smaller): dT/dz small -> steep line -->
+<line x1="361.8" y1="270" x2="261.8" y2="50" stroke="#222" stroke-width="1.8"/>
+<text x="250" y="44" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">周囲（減率</text>
+<text x="322" y="44" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">β</text>
+<text x="332" y="44" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">）</text>
+<!-- parcel adiabat: slope Gamma (bigger) -> shallower line -->
+<line x1="405" y1="250" x2="165" y2="90" stroke="#1f5fbf" stroke-width="1.8"/>
+<text x="110" y="80" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#1f5fbf">空気塊（断熱減率</text>
+<text x="226" y="80" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">Γ</text>
+<text x="238" y="80" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#1f5fbf">）</text>
+<!-- at height delta (y=130): env T at x=330-(70)*(100/220)=298.2 ; parcel at x=330-70*(240/160)=225 -->
+<line x1="60" y1="130" x2="300" y2="130" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="44" y="135" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">δ</text>
+<circle cx="225" cy="130" r="3.5" fill="#1f5fbf"/>
+<circle cx="298" cy="130" r="3.5" fill="#222"/>
+<text x="110" y="246" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">空気塊の方が低温</text>
+<text x="110" y="264" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">→ 重くなり戻される</text>
+</svg>

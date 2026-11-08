@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340">
+<defs><marker id="q-ak" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker></defs>
+<!-- table -->
+<line x1="40" y1="300" x2="300" y2="300" stroke="#222" stroke-width="1.6"/>
+<g stroke="#222" stroke-width="1"><line x1="50" y1="300" x2="40" y2="312"/><line x1="70" y1="300" x2="60" y2="312"/><line x1="90" y1="300" x2="80" y2="312"/><line x1="110" y1="300" x2="100" y2="312"/><line x1="130" y1="300" x2="120" y2="312"/><line x1="150" y1="300" x2="140" y2="312"/><line x1="170" y1="300" x2="160" y2="312"/><line x1="190" y1="300" x2="180" y2="312"/><line x1="210" y1="300" x2="200" y2="312"/><line x1="230" y1="300" x2="220" y2="312"/><line x1="250" y1="300" x2="240" y2="312"/><line x1="270" y1="300" x2="260" y2="312"/><line x1="290" y1="300" x2="280" y2="312"/></g>
+<!-- flask body -->
+<path d="M150,90 L150,125 C80,140 60,190 65,230 C70,280 110,299 165,299 C220,299 260,280 265,230 C268,200 262,150 180,125 L180,90" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="140" y="215" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">容積</text>
+<text x="176" y="215" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">V</text>
+<!-- neck tube up to stopcock -->
+<line x1="160" y1="90" x2="160" y2="50" stroke="#222" stroke-width="1.6"/>
+<line x1="170" y1="90" x2="170" y2="50" stroke="#222" stroke-width="1.6"/>
+<line x1="150" y1="90" x2="180" y2="90" stroke="#222" stroke-width="1.6"/>
+<!-- stopcock -->
+<rect x="152" y="58" width="26" height="12" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="165" y1="58" x2="165" y2="70" stroke="#222" stroke-width="2.5"/>
+<text x="186" y="70" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">コック K</text>
+<!-- side tube to manometer -->
+<path d="M260,170 L340,170" stroke="#222" stroke-width="1.6" fill="none"/>
+<path d="M258,180 L330,180" stroke="#222" stroke-width="1.6" fill="none"/>
+<!-- U tube -->
+<path d="M340,170 L340,270 Q340,285 355,285 L385,285 Q400,285 400,270 L400,60" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M330,180 L330,272 Q330,295 355,295 L385,295 Q410,295 410,272 L410,60" fill="none" stroke="#222" stroke-width="1.6"/>
+<!-- liquid: left level y=230, right level y=150 -->
+<path d="M330,230 L330,272 Q330,295 355,295 L385,295 Q410,295 410,272 L410,150 L400,150 L400,270 Q400,285 385,285 L355,285 Q340,285 340,270 L340,230 z" fill="#888" fill-opacity="0.35" stroke="none"/>
+<line x1="330" y1="230" x2="340" y2="230" stroke="#222" stroke-width="1.2"/>
+<line x1="400" y1="150" x2="410" y2="150" stroke="#222" stroke-width="1.2"/>
+<line x1="342" y1="230" x2="440" y2="230" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="412" y1="150" x2="440" y2="150" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="432" y1="150" x2="432" y2="230" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+<text x="440" y="196" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">h<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<text x="350" y="324" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">液体（密度 <tspan font-family="Times New Roman, serif" font-style="italic">ρ</tspan>）</text>
+<text x="402" y="50" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">大気</text>
+<text x="20" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">大気 圧力 <tspan font-family="Times New Roman, serif" font-style="italic">p</tspan><tspan baseline-shift="sub" font-size="10">0</tspan><tspan baseline-shift="0">，温度 </tspan><tspan dx="3"></tspan><tspan font-family="Times New Roman, serif" font-style="italic">T</tspan><tspan baseline-shift="sub" font-size="10">0</tspan></text>
+</svg>

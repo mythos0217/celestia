@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400">
+<defs>
+<pattern id="q-hat" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#222" stroke-width="1"/></pattern>
+<marker id="q-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="q-ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+</defs>
+<!-- cylinder walls -->
+<path d="M160,40 L160,350 L330,350 L330,40 Z" fill="none" stroke="#222" stroke-width="1.6"/>
+<rect x="160" y="350" width="170" height="10" fill="url(#q-hat)" stroke="none"/>
+<text x="215" y="80" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">真空</text>
+<!-- piston -->
+<rect x="161" y="150" width="168" height="18" fill="#bbb" stroke="#222" stroke-width="1.6"/>
+<text x="340" y="164" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">ピストン（質量</text>
+<text x="440" y="164" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">M</text>
+<text x="454" y="164" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">）</text>
+<!-- vapor -->
+<text x="205" y="240" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">水蒸気</text>
+<!-- liquid -->
+<rect x="161" y="300" width="168" height="49" fill="#d8d8d8" stroke="none"/>
+<line x1="161" y1="300" x2="329" y2="300" stroke="#222" stroke-width="1.2"/>
+<text x="230" y="330" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">水</text>
+<!-- area label -->
+<line x1="160" y1="125" x2="330" y2="125" stroke="#888" stroke-width="1" stroke-dasharray="4 3" marker-start="url(#q-ah)" marker-end="url(#q-ah)"/>
+<text x="232" y="118" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">断面積</text>
+<text x="280" y="118" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">A</text>
+<!-- temperature/pressure label -->
+<text x="340" y="250" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">温度</text>
+<text x="372" y="250" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">T<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+<text x="340" y="272" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">圧力</text>
+<text x="372" y="272" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">p<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+<!-- y arrow -->
+<line x1="130" y1="150" x2="130" y2="190" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ahb)"/>
+<text x="112" y="178" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">y</text>
+</svg>

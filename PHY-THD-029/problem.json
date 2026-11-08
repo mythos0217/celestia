@@ -1,0 +1,142 @@
+{
+ "id": "PHY-THD-029",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "液中に口を開けた容器の気体（液体の圧力による1次の P–V 変化と，下端からあふれる気体）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，上面が閉じて下面が開いた断面積 $S$，高さ $H$ の円筒容器が，鉛直に保たれて，密度 $\\rho$ の液体を満たした十分に広い水槽の中に固定されている．容器の中には $n$ モルの単原子分子理想気体が閉じ込められていて，その下は液体である．容器の上面は液面から深さ $H$ の位置にある．容器の上面から気体と液体の境界面までの距離を $y$ とする．大気圧を $P_0=3\\rho gH$ とし（$g$ は重力加速度の大きさ），水槽の液面の高さは変わらないものとする．気体の質量，液体の蒸発や気体の液体への溶解，容器の壁の熱容量は無視でき，容器の上面に取り付けた加熱冷却器で気体の温度をゆっくり変えることができる．気体定数を $R$ とする．\n\nはじめ，気体の温度は $T_0$，$y=\\dfrac{H}{2}$ であった．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "気体の圧力 $P$ を $y$ の関数として $\\rho,\\ g,\\ H,\\ y$ で表せ．また，$nRT_0$ を $\\rho,\\ g,\\ S,\\ H$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "気体をゆっくり加熱すると境界面は下がっていき，やがて容器の下端に達した．このときの温度 $T_1$ を $T_0$ で表せ．また，この間に気体がした仕事と吸収した熱を，それぞれ $nRT_0$ を用いて表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の加熱をはじめた直後の，この変化に沿った気体のモル比熱を $R$ で表せ．また，境界面が下端に達する直前のモル比熱も求め，境界面が下がるにつれてモル比熱が増えるか減るかを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "境界面が下端に達した後も加熱を続け，温度を $3T_0$ にした．このとき容器内の気体の物質量は $n$ の何倍か．"
+     },
+     {
+      "id": "5",
+      "tex": "次に，容器内の気体の温度を $T_0$ に戻し，容器を鉛直に保ったまま上下に移動させて固定し直したところ，境界面がはじめと同じ $y=\\dfrac{H}{2}$ の位置になった．このとき容器の上面は水槽の液面からどれだけ上，または下にあるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：液中に口を開けた容器の気体（液体の圧力による1次の P–V 変化と，下端からあふれる気体）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：液中に口を開けた容器の気体（液体の圧力による1次の P–V 変化と，下端からあふれる気体）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$P=\\rho g(4H+y)$，$nRT_0=\\dfrac94\\rho gSH^2$"
+   },
+   {
+    "id": "2",
+    "tex": "$T_1=\\dfrac{20}{9}T_0$，仕事 $\\dfrac{19}{18}nRT_0$，吸収した熱 $\\dfrac{26}{9}nRT_0$"
+   },
+   {
+    "id": "3",
+    "tex": "直後 $\\dfrac{12}{5}R$，直前 $\\dfrac73R$，減る"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{20}{27}$ 倍"
+   },
+   {
+    "id": "5",
+    "tex": "液面より $\\dfrac{H}{6}$ だけ上"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　境界面は液体の中にあるので，気体の圧力はその深さの液体の圧力に等しい．境界面の深さは $y$ とともに増えるから，$P$ は $V=Sy$ の1次式になる（「液体のばね」）．境界面が容器の下端に達すると，それ以上は体積が増えず，余分な気体が泡となって逃げ出すので，状態変化の種類が切り替わる．\n\n\\textbf{(1)}　境界面の液面からの深さは $H+y$ なので\n\\[ P=P_0+\\rho g(H+y)=\\boldsymbol{\\rho g(4H+y)} \\]\nはじめ $y=\\dfrac H2$ で $P=\\dfrac92\\rho gH$，$V=\\dfrac{SH}{2}$ だから\n\\[ nRT_0=PV=\\boldsymbol{\\frac94\\rho gSH^2} \\]\n以下 $\\rho gSH^2=\\dfrac49nRT_0$ を使う．\n\n\\textbf{(2)}　$y=H$ で $P=5\\rho gH$，$V=SH$ なので $nRT_1=5\\rho gSH^2$，\n\\[ T_1=\\frac{5}{9/4}T_0=\\boldsymbol{\\frac{20}{9}T_0} \\]\n気体がした仕事は $P$–$V$ 図の台形の面積で\n\\[ W=\\frac{P_{\\text{はじめ}}+P_{\\text{後}}}{2}\\times\\Delta V=\\frac{\\frac92+5}{2}\\rho gH\\times\\frac{SH}{2}=\\frac{19}{8}\\rho gSH^2=\\boldsymbol{\\frac{19}{18}nRT_0} \\]\n内部エネルギーの増加は $\\Delta U=\\dfrac32nR(T_1-T_0)=\\dfrac32\\cdot\\dfrac{11}{9}nRT_0=\\dfrac{11}{6}nRT_0$．よって吸収した熱は\n\\[ Q=\\Delta U+W=\\frac{11}{6}nRT_0+\\frac{19}{18}nRT_0=\\boldsymbol{\\frac{26}{9}nRT_0} \\]\n\n\\textbf{(3)}　$y$ が $\\Delta y$ 増えるとき，$\\Delta V=S\\Delta y$，$\\Delta P=\\rho g\\Delta y=\\dfrac{\\rho g}{S}\\Delta V$．状態方程式より\n\\[ nR\\Delta T=P\\Delta V+V\\Delta P=\\left(P+\\rho gy\\right)S\\Delta y \\]\n吸収する熱は $\\Delta Q=\\dfrac32nR\\Delta T+P\\Delta V$ なので，モル比熱は\n\\[ C=\\frac{\\Delta Q}{n\\Delta T}=\\frac32R+\\frac{P\\,S\\Delta y}{(P+\\rho gy)S\\Delta y}R=\\frac32R+\\frac{4H+y}{4H+2y}R \\]\n$y=\\dfrac H2$ で $C=\\dfrac32R+\\dfrac{4.5}{5}R=\\boldsymbol{\\dfrac{12}{5}R}$，$y=H$ で $C=\\dfrac32R+\\dfrac56R=\\boldsymbol{\\dfrac73R}$．$\\dfrac{4H+y}{4H+2y}$ は $y$ とともに減少するので，モル比熱は\\textbf{減る}（定圧モル比熱 $\\dfrac52R$ より小さく，定積モル比熱 $\\dfrac32R$ より大きい）．圧力が体積とともに上がるため，温度を上げても体積の増え方が定圧変化より小さく，仕事に回る熱が減るのである．\n\n\\textbf{(4)}　境界面が下端に達した後は，気体が増えた分は容器の下端から泡となって逃げるので，容器内の気体は $P=5\\rho gH$，$V=SH$ のまま，物質量だけが減る．$PV=n'RT$ で $PV$ が一定だから $n'T$ が一定：\n\\[ n'\\cdot3T_0=n\\cdot\\frac{20}{9}T_0\\quad\\Longrightarrow\\quad n'=\\boldsymbol{\\frac{20}{27}n} \\]\n（$\\dfrac{7}{27}$ が逃げた．この区間は定積・定圧のまま物質量が変わる変化で，(3) のような比熱の考え方は使えない．）\n\n\\textbf{(5)}　容器の上面の液面からの深さを $h'$（上にあるときは負）とする．$y=\\dfrac H2$，温度 $T_0$ なので\n\\[ n'RT_0=\\left\\{P_0+\\rho g\\left(h'+\\frac H2\\right)\\right\\}\\frac{SH}{2} \\]\n左辺は $\\dfrac{20}{27}\\cdot\\dfrac94\\rho gSH^2=\\dfrac53\\rho gSH^2$ だから\n\\[ 3H+h'+\\frac H2=\\frac{10}{3}H\\quad\\Longrightarrow\\quad h'=-\\frac H6 \\]\n気体が減ったので，同じ体積にするには圧力を下げなければならない．したがって容器を沈めるのではなく引き上げ，上面を液面より\\textbf{$\\boldsymbol{\\dfrac{H}{6}}$ だけ上}にすればよい．このとき境界面の液面からの深さは $-\\dfrac H6+\\dfrac H2=\\dfrac H3>0$ で，境界面は液面より下にあり，設定は矛盾しない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "液体中に口を開けた容器に閉じ込めた気体の圧力は境界面の深さの液体の圧力で決まるので，体積の1次式 $P=a+bV$ となり（液体のばね），その変化に沿ったモル比熱は定積と定圧の間で状態とともに変わる．境界面が容器の下端に達すると圧力・体積が固定されて気体が泡として逃げ出す変化に切り替わり，物質量の減少を容器の深さの調整で補う逆算につながる．"
+ },
+ "concepts": [
+  "first-law",
+  "heat-temperature"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "液体の圧力",
+  "P–V 図",
+  "モル比熱",
+  "物質量の変化",
+  "熱力学第一法則"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

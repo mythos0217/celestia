@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 300">
+  <defs><marker id="q-ak" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222"/></marker></defs>
+  <!-- floor -->
+  <line x1="20" y1="280" x2="600" y2="280" stroke="#222" stroke-width="1.6"/>
+  <g stroke="#222" stroke-width="1"><path d="M30,280 l-10,12 M45,280 l-10,12 M60,280 l-10,12 M75,280 l-10,12 M90,280 l-10,12 M105,280 l-10,12 M120,280 l-10,12 M135,280 l-10,12 M150,280 l-10,12 M165,280 l-10,12 M180,280 l-10,12 M195,280 l-10,12 M210,280 l-10,12 M225,280 l-10,12 M240,280 l-10,12 M255,280 l-10,12 M270,280 l-10,12 M285,280 l-10,12 M300,280 l-10,12 M315,280 l-10,12 M330,280 l-10,12 M345,280 l-10,12 M360,280 l-10,12 M375,280 l-10,12 M390,280 l-10,12 M405,280 l-10,12 M420,280 l-10,12 M435,280 l-10,12 M450,280 l-10,12 M465,280 l-10,12 M480,280 l-10,12 M495,280 l-10,12 M510,280 l-10,12 M525,280 l-10,12 M540,280 l-10,12 M555,280 l-10,12 M570,280 l-10,12 M585,280 l-10,12 M600,280 l-10,12"/></g>
+  <!-- container 1 -->
+  <g stroke="#222" stroke-width="2.4" fill="none">
+    <path d="M250,160 L40,160 L40,280"/>
+  </g>
+  <!-- heater -->
+  <path d="M55,190 l10,6 l-10,6 l10,6 l-10,6 l10,6 l-10,6 l10,6 l-10,6" fill="none" stroke="#222" stroke-width="1.4"/>
+  <text x="70" y="250" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">ヒーター</text>
+  <text x="105" y="215" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">気体1</text>
+  <!-- piston A (container-1 face) -->
+  <rect x="200" y="161" width="8" height="118" fill="#fff" stroke="#222" stroke-width="1.6"/>
+  <text x="212" y="178" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">2<tspan font-family="Times New Roman, serif" font-style="italic">S</tspan><tspan baseline-shift="sub" font-size="10">0</tspan></text>
+  <!-- rod -->
+  <g stroke="#222" stroke-width="1.4"><line x1="208" y1="246" x2="352" y2="246"/><line x1="208" y1="254" x2="352" y2="254"/></g>
+  <text x="250" y="238" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">ピストンA</text>
+  <!-- container 2 with narrow inlet -->
+  <g stroke="#222" stroke-width="2.4" fill="none">
+    <path d="M330,220 L390,220 L390,120 L470,120 L470,30"/>
+    <path d="M520,30 L520,280"/>
+  </g>
+  <!-- piston A (container-2 face) -->
+  <rect x="352" y="221" width="8" height="58" fill="#fff" stroke="#222" stroke-width="1.6"/>
+  <text x="364" y="238" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">S</tspan><tspan baseline-shift="sub" font-size="10">0</tspan></text>
+  <text x="420" y="205" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">気体2</text>
+  <!-- piston B and weight -->
+  <rect x="471" y="95" width="48" height="7" fill="#fff" stroke="#222" stroke-width="1.6"/>
+  <rect x="482" y="72" width="26" height="23" fill="none" stroke="#222" stroke-width="1.6"/>
+  <text x="488" y="89" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">M</text>
+  <text x="530" y="104" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">ピストンB（<tspan font-family="Times New Roman, serif" font-style="italic">S</tspan>）</text>
+  <!-- stopper -->
+  <g fill="#222"><rect x="470" y="44" width="9" height="5"/><rect x="511" y="44" width="9" height="5"/></g>
+  <text x="530" y="50" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">ストッパー</text>
+  <!-- h dimension -->
+  <g stroke="#888" stroke-width="1"><line x1="440" y1="49" x2="466" y2="49" stroke-dasharray="3 3"/><line x1="440" y1="95" x2="466" y2="95" stroke-dasharray="3 3"/><line x1="450" y1="51" x2="450" y2="93"/></g>
+  <text x="436" y="78" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">h</text>
+  <text x="250" y="110" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">真空</text>
+</svg>

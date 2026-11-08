@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 250">
+  <defs>
+    <pattern id="q-h" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#222" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <!-- 断熱材 -->
+  <path d="M40 50 H520 V200 H40 Z M56 66 V184 H504 V66 Z" fill="url(#q-h)" fill-rule="evenodd" stroke="none"/>
+  <rect x="40" y="50" width="480" height="150" fill="none" stroke="#222" stroke-width="1.6"/>
+  <rect x="56" y="66" width="448" height="118" fill="none" stroke="#222" stroke-width="1.6"/>
+  <!-- ピストン -->
+  <rect x="200" y="66" width="12" height="118" fill="#222"/>
+  <rect x="348" y="66" width="12" height="118" fill="#222"/>
+  <!-- ヒーター -->
+  <rect x="72" y="150" width="56" height="16" fill="none" stroke="#222" stroke-width="1.6"/>
+  <path d="M76 158 l6 -5 l6 10 l6 -10 l6 10 l6 -10 l6 10 l6 -5" fill="none" stroke="#c0392b" stroke-width="1.2"/>
+  <rect x="432" y="150" width="56" height="16" fill="none" stroke="#222" stroke-width="1.6"/>
+  <path d="M436 158 l6 -5 l6 10 l6 -10 l6 10 l6 -10 l6 10 l6 -5" fill="none" stroke="#c0392b" stroke-width="1.2"/>
+  <!-- 文字 -->
+  <text x="110" y="105" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">部屋A</text>
+  <text x="255" y="105" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">部屋B</text>
+  <text x="405" y="105" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">部屋C</text>
+  <text x="80" y="143" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">H<tspan baseline-shift="sub" font-size="10">A</tspan></text>
+  <text x="440" y="143" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">H<tspan baseline-shift="sub" font-size="10">C</tspan></text>
+  <text x="170" y="38" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">ピストン1</text>
+  <text x="318" y="38" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">ピストン2</text>
+  <line x1="206" y1="42" x2="206" y2="60" stroke="#888" stroke-width="1"/>
+  <line x1="354" y1="42" x2="354" y2="60" stroke="#888" stroke-width="1"/>
+  <text x="225" y="228" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">断熱材で覆われたシリンダー</text>
+  <text x="100" y="128" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">1 mol</text>
+  <text x="250" y="128" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">1 mol</text>
+  <text x="400" y="128" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">1 mol</text>
+</svg>

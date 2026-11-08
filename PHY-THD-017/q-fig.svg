@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360">
+  <defs>
+    <marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+    <pattern id="q-liq" width="6" height="6" patternUnits="userSpaceOnUse"><line x1="0" y1="6" x2="6" y2="0" stroke="#888" stroke-width="0.8"/></pattern>
+  </defs>
+  <!-- liquid in B -->
+  <rect x="150" y="250" width="180" height="80" fill="url(#q-liq)"/>
+  <!-- liquid in tube up to y=210 -->
+  <rect x="304" y="210" width="6" height="40" fill="url(#q-liq)"/>
+  <!-- outer walls -->
+  <rect x="150" y="90" width="180" height="240" fill="none" stroke="#222" stroke-width="1.6"/>
+  <!-- partition wall (thickness l) -->
+  <g stroke="#222" stroke-width="1.6">
+    <line x1="150" y1="170" x2="304" y2="170"/><line x1="310" y1="170" x2="330" y2="170"/>
+    <line x1="150" y1="210" x2="304" y2="210"/><line x1="310" y1="210" x2="330" y2="210"/>
+  </g>
+  <g stroke="#222" stroke-width="0.8">
+    <line x1="160" y1="210" x2="200" y2="170"/><line x1="190" y1="210" x2="230" y2="170"/><line x1="220" y1="210" x2="260" y2="170"/><line x1="250" y1="210" x2="290" y2="170"/><line x1="280" y1="210" x2="300" y2="190"/>
+  </g>
+  <!-- tube -->
+  <line x1="304" y1="170" x2="304" y2="322" stroke="#222" stroke-width="1.4"/>
+  <line x1="310" y1="170" x2="310" y2="322" stroke="#222" stroke-width="1.4"/>
+    <!-- surfaces -->
+  <line x1="150" y1="250" x2="304" y2="250" stroke="#222" stroke-width="1"/>
+  <line x1="310" y1="250" x2="330" y2="250" stroke="#222" stroke-width="1"/>
+  <!-- heater coil -->
+  <path d="M 162 236 q 5 -12 10 0 q 5 -12 10 0 q 5 -12 10 0 q 5 -12 10 0" fill="none" stroke="#222" stroke-width="1.4"/>
+  <line x1="162" y1="236" x2="150" y2="236" stroke="#222" stroke-width="1.2"/>
+  <line x1="202" y1="236" x2="210" y2="244" stroke="#222" stroke-width="1.2"/>
+  <text x="60" y="240" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">ヒーター</text>
+  <line x1="112" y1="236" x2="150" y2="236" stroke="#222" stroke-width="1"/>
+  <!-- labels -->
+  <text x="200" y="135" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">A（真空）</text>
+  <text x="220" y="232" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">B　気体 <tspan font-family="Times New Roman, serif" font-style="italic">T</tspan><tspan baseline-shift="sub" font-size="10">0</tspan></text>
+  <text x="195" y="295" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">液体（密度 <tspan font-family="Times New Roman, serif" font-style="italic">ρ</tspan>）</text>
+  <text x="70" y="195" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">断熱壁</text>
+  <line x1="112" y1="190" x2="150" y2="190" stroke="#222" stroke-width="1"/>
+  <text x="350" y="166" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">細管</text>
+  <line x1="348" y1="162" x2="312" y2="180" stroke="#222" stroke-width="1"/>
+  <!-- dimensions right -->
+  <g stroke="#888" stroke-width="1">
+    <line x1="330" y1="90" x2="420" y2="90" stroke-dasharray="3,3"/>
+    <line x1="330" y1="170" x2="420" y2="170" stroke-dasharray="3,3"/>
+    <line x1="330" y1="210" x2="420" y2="210" stroke-dasharray="3,3"/>
+    <line x1="330" y1="250" x2="420" y2="250" stroke-dasharray="3,3"/>
+    <line x1="330" y1="330" x2="420" y2="330" stroke-dasharray="3,3"/>
+  </g>
+  <line x1="410" y1="90" x2="410" y2="170" stroke="#888" stroke-width="1" marker-start="url(#q-ag)" marker-end="url(#q-ag)"/>
+  <line x1="410" y1="170" x2="410" y2="210" stroke="#888" stroke-width="1" marker-start="url(#q-ag)" marker-end="url(#q-ag)"/>
+  <line x1="410" y1="210" x2="410" y2="250" stroke="#888" stroke-width="1" marker-start="url(#q-ag)" marker-end="url(#q-ag)"/>
+  <line x1="410" y1="250" x2="410" y2="330" stroke="#888" stroke-width="1" marker-start="url(#q-ag)" marker-end="url(#q-ag)"/>
+  <text x="418" y="135" font-family="Times New Roman, serif" font-size="15" fill="#222">2<tspan font-style="italic">ℓ</tspan></text>
+  <text x="418" y="195" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">ℓ</text>
+  <text x="418" y="235" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">ℓ</text>
+  <text x="418" y="295" font-family="Times New Roman, serif" font-size="15" fill="#222">2<tspan font-style="italic">ℓ</tspan></text>
+  <text x="150" y="352" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">断面積 <tspan font-family="Times New Roman, serif" font-style="italic">S</tspan></text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 330">
+  <defs>
+    <marker id="q-ab" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f5fbf"/></marker>
+  </defs>
+  <path d="M120,40 L120,290 L330,290 L330,40" fill="none" stroke="#222" stroke-width="2.4"/>
+  <rect x="122" y="214" width="206" height="16" fill="#888" fill-opacity="0.5" stroke="#222" stroke-width="1.6"/>
+  <text x="340" y="227" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">ピストン</text>
+  <rect x="122" y="230" width="206" height="58" fill="#1f5fbf" fill-opacity="0.15" stroke="none"/>
+  <text x="196" y="250" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">水（</text>
+  <text x="228" y="250" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">T</text>
+  <text x="237" y="254" font-family="Noto Sans CJK JP, sans-serif" font-size="10" fill="#222">0</text>
+  <text x="244" y="250" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">）</text>
+  <path d="M150,262 a8,8 0 0 1 16,0 a8,8 0 0 1 16,0 a8,8 0 0 1 16,0 a8,8 0 0 1 16,0 a8,8 0 0 1 16,0 a8,8 0 0 1 16,0" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+  <line x1="150" y1="262" x2="150" y2="300" stroke="#c0392b" stroke-width="1.4"/>
+  <line x1="246" y1="262" x2="246" y2="300" stroke="#c0392b" stroke-width="1.4"/>
+  <text x="256" y="312" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">ヒーター（電力</text>
+  <text x="352" y="312" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">P</text>
+  <text x="362" y="312" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">）</text>
+  <line x1="180" y1="150" x2="180" y2="208" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <line x1="270" y1="150" x2="270" y2="208" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <text x="212" y="180" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">大気</text>
+  <text x="212" y="200" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">p</text>
+  <text x="220" y="204" font-family="Noto Sans CJK JP, sans-serif" font-size="10" fill="#222">0</text>
+    <text x="40" y="100" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">断面積</text>
+  <text x="88" y="100" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">S</text>
+  <text x="20" y="140" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">（断熱容器）</text>
+</svg>

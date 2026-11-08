@@ -1,0 +1,135 @@
+{
+ "id": "PHY-THD-012",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "浮沈子のつり合いの不安定性と圧力操作のヒステリシス",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，密度 $\\rho$ の液体で満たされた容器の上面を，なめらかに動くピストンでふさぐ．ピストンを押す力を調節して，ピストン直下の液体の圧力 $P$ を自由に変えられる．液体中には，下端の開いた細いガラス管を逆さにした浮沈子（質量 $m$）があり，管の上部に物質量 $n$ の空気が閉じ込められている．ピストン直下から容器の底までの深さは $H$ である．\n\n浮沈子の大きさは $H$ に比べて十分小さく，浮沈子の深さを $z$（ピストン直下から測る）とすると，閉じ込められた空気の圧力は $P+\\rho gz$ とみなせる．浮沈子がピストンに接しているとき $z=0$，底に接しているとき $z=H$ である．ガラスの体積と空気の質量は無視し，空気は常に液体と同じ絶対温度 $T$ の理想気体とする．液体の抵抗のため浮沈子の運動は非常にゆっくりで，浮沈子の慣性は無視できる（浮沈子は常にそのときの合力の向きに動く）ものとする．気体定数を $R$，重力加速度の大きさを $g$ とする．\n\nはじめ $P=P_0$ で，浮沈子はピストン直下に浮いて接していた．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$P$ をゆっくり大きくしていくと，$P$ がある値 $P_1$ を超えたとき浮沈子はピストンを離れて沈み始めた．$P_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "浮沈子が沈み始めたあと，深さ $z$ に達した瞬間に $P$ を $P_0$ に戻した．その後浮沈子がピストンまで浮かび上がるための $z$ の条件を求めよ．ただし，$H$ は十分大きいものとする．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の条件の境目の深さを $z_{\\rm c}$ とする．$P=P_0$ のもとで浮沈子が深さ $z_{\\rm c}+\\delta$（$|\\delta|\\ll z_{\\rm c}$）にあるとき，浮沈子にはたらく合力を下向きを正として $\\delta$ の1次まで求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "浮沈子が底（$z=H$）に沈んだあと，$P$ をゆっくり小さくしていくと，$P$ がある値 $P_2$ を下回ったとき浮沈子は浮かび上がり始めた．$P_2$ と $P_1-P_2$ を求めよ．また，$P$ を $\\dfrac{P_0}{2}$ までしか下げられないとき，底に沈んだ浮沈子を浮かび上がらせることができる $H$ の条件を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：浮沈子のつり合いの不安定性と圧力操作のヒステリシス",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：浮沈子のつり合いの不安定性と圧力操作のヒステリシス",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$P_1=\\dfrac{nRT\\rho}{m}$"
+   },
+   {
+    "id": "2",
+    "tex": "$z<z_{\\rm c}=\\dfrac{nRT}{mg}-\\dfrac{P_0}{\\rho g}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{m^2g^2}{nRT}\\delta$（$\\delta>0$ でさらに沈み，$\\delta<0$ でさらに浮く：不安定）"
+   },
+   {
+    "id": "4",
+    "tex": "$P_2=\\dfrac{nRT\\rho}{m}-\\rho gH$，$P_1-P_2=\\rho gH$，$H<\\dfrac{nRT}{mg}-\\dfrac{P_0}{2\\rho g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{浮沈子にはたらく力}　深さ $z$ での空気の体積は，ボイルの法則（等温）より\n\\[ V(z)=\\frac{nRT}{P+\\rho gz} \\]\nガラスの体積は無視するので，浮力は押しのけた液体（空気の部分）の重さ $\\rho gV$ で，上向きの合力は\n\\[ F_{\\uparrow}(z)=\\rho g\\,\\frac{nRT}{P+\\rho gz}-mg \\]\n深いほど空気が圧縮されて浮力が減る，というのがこの問題の鍵である．慣性は無視できるので，浮沈子は $F_{\\uparrow}>0$ なら浮き，$F_{\\uparrow}<0$ なら沈む．\n\n\\textbf{(1)}　ピストンに接している（$z=0$）浮沈子が離れるのは $F_{\\uparrow}(0)<0$ になったときで，\n\\[ \\rho g\\frac{nRT}{P_1}=mg\\quad\\Longrightarrow\\quad \\boldsymbol{P_1=\\frac{nRT\\rho}{m}} \\]\n（はじめ浮いていたので $P_0<P_1$ である．）\n\n\\textbf{(2)}　$P=P_0$ のとき $F_{\\uparrow}(z)=0$ となる深さは\n\\[ \\rho g\\frac{nRT}{P_0+\\rho gz_{\\rm c}}=mg\\quad\\Longrightarrow\\quad z_{\\rm c}=\\frac{nRT}{mg}-\\frac{P_0}{\\rho g} \\]\n$F_{\\uparrow}(z)$ は $z$ について単調減少なので，$z<z_{\\rm c}$ では $F_{\\uparrow}>0$（浮く），$z>z_{\\rm c}$ では $F_{\\uparrow}<0$（沈む）．浮き始めた浮沈子は浅くなるほど浮力が増すので，そのままピストンまで上がる．よって条件は $\\boldsymbol{z<z_{\\rm c}=\\dfrac{nRT}{mg}-\\dfrac{P_0}{\\rho g}}$．$P$ を元に戻しても状態が元に戻らないことがある，という点がひねりである．\n\n\\textbf{(3)}　下向きの合力 $F_{\\downarrow}=-F_{\\uparrow}$ を $z_{\\rm c}$ のまわりで1次近似すると\n\\[ F_{\\downarrow}\\approx \\frac{\\rho^2g^2\\,nRT}{(P_0+\\rho gz_{\\rm c})^2}\\,\\delta \\]\nつり合いの式から $P_0+\\rho gz_{\\rm c}=\\dfrac{nRT\\rho}{m}$ なので\n\\[ F_{\\downarrow}\\approx\\boldsymbol{\\frac{m^2g^2}{nRT}\\,\\delta} \\]\n係数が正なので，少し深くずれる（$\\delta>0$）と下向きの力がはたらいてさらに沈み，浅くずれると上向きの力でさらに浮く．ずれを広げる向きに力がはたらくので，このつり合いは不安定である（ばねとは逆符号の「負のばね定数」）．\n\n\\textbf{(4)}　$z=H$ で $F_{\\uparrow}(H)>0$ となれば浮き始める．境目は\n\\[ \\rho g\\frac{nRT}{P_2+\\rho gH}=mg\\quad\\Longrightarrow\\quad \\boldsymbol{P_2=\\frac{nRT\\rho}{m}-\\rho gH},\\qquad \\boldsymbol{P_1-P_2=\\rho gH} \\]\n沈ませるときと浮かせるときで必要な圧力が $\\rho gH$ だけ異なる（ヒステリシス）．これは，浮沈子の空気が感じる圧力が「$P$ + 深さの分」であり，ピストン直下と底とで深さの分 $\\rho gH$ だけ違うためである．$P$ を $\\dfrac{P_0}{2}$ まで下げて浮かせるには $\\dfrac{P_0}{2}<P_2$，すなわち\n\\[ \\boldsymbol{H<\\frac{nRT}{mg}-\\frac{P_0}{2\\rho g}} \\]\nこれより深い容器では，一度沈んだ浮沈子は二度と浮かび上がらない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "気体を含む浮沈子は深いほど圧縮されて浮力が減るので，つり合いの深さは「負のばね定数」をもつ不安定点になる．そのため圧力を元に戻しても状態が戻らず，沈ませる圧力と浮かせる圧力の間に液柱の圧力差 $\\rho gH$ のヒステリシスが生じる．"
+ },
+ "concepts": [
+  "first-law",
+  "equilibrium",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "浮沈子",
+  "ボイルの法則",
+  "浮力",
+  "不安定なつり合い",
+  "ヒステリシス"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

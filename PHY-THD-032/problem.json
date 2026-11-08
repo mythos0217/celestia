@@ -1,0 +1,144 @@
+{
+ "id": "PHY-THD-032",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "真空中の液体に浮かべた逆さの容器（浮力で決まる等圧変化と，気体ばね・液柱ばねの直列による振動）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，真空中に置かれた広い水槽の液体（密度 $\\rho$）に，質量 $m$，断面積 $S$ の円筒形の容器を，閉じた面を上にして（逆さにして）中に気体を入れた状態でまっすぐに浮かべた．容器の壁の厚さと体積は無視でき，容器は鉛直を保ったまま上下にのみ動く．つり合いの状態で，容器内の液面は外の液面より $d$ だけ低く，容器の上面から容器内の液面までの気体の部分の長さは $\\ell$ である．気体は単原子分子理想気体で，物質量は $n$ である．気体の重さ，液体の蒸発，液体の運動の慣性と粘性は無視し，水槽は十分に広くて外の液面の高さは変わらないとする．重力加速度の大きさを $g$，気体定数を $R$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "つり合いの状態での気体の圧力 $p$ と，$d$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "容器内のヒーターで気体をゆっくり加熱し，熱量 $Q$ を与えた．この間 $d$ が変わらないことを説明し，容器が上昇した距離 $\\Delta h$ を求めよ．また，$Q$ のうち容器の重力による位置エネルギーの増加になった割合を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "加熱をやめて元のつり合いの状態に戻したあと，容器をつり合いの位置から上向きに小さな距離 $y$（$|y|\\ll d,\\ \\ell$）だけ持ち上げた．気体は断熱変化をし，その比熱比を $\\gamma$ とする（$pV^\\gamma=$一定）．このときの容器内の液面の深さの変化 $\\Delta d$（深くなる向きを正）を $y$ の1次の近似で $d,\\ell,\\gamma,y$ で表せ．また，容器にはたらく力の合力が $-Ky$ の形になることを示し，$K$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "容器を放すと単振動をする．その周期 $T$ が，長さ $d+\\dfrac{\\ell}{\\gamma}$ の単振り子の周期に等しいことを示せ．また，中に気体を入れない（中まで詰まった）同じ質量・断面積の浮きを同じ液体に浮かべたときの上下振動の周期と比べて，$T$ は何倍か．"
+     },
+     {
+      "id": "5",
+      "tex": "$d=5.0\\ \\mathrm{cm}$，$\\ell=20\\ \\mathrm{cm}$，$\\gamma=\\dfrac53$，$g=9.8\\ \\mathrm{m/s^2}$ のとき，$T$ を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：真空中の液体に浮かべた逆さの容器（浮力で決まる等圧変化と，気体ばね・液柱ばねの直列による振動）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：真空中の液体に浮かべた逆さの容器（浮力で決まる等圧変化と，気体ばね・液柱ばねの直列による振動）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$p=\\dfrac{mg}{S}$，$d=\\dfrac{m}{\\rho S}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Delta h=\\dfrac{2Q}{5mg}$，割合 $\\dfrac25$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\Delta d=-\\dfrac{\\gamma d}{\\gamma d+\\ell}\\,y$，$K=\\dfrac{\\rho gS\\gamma d}{\\gamma d+\\ell}$"
+   },
+   {
+    "id": "4",
+    "tex": "$T=2\\pi\\sqrt{\\dfrac{d+\\ell/\\gamma}{g}}$，$\\sqrt{1+\\dfrac{\\ell}{\\gamma d}}$ 倍"
+   },
+   {
+    "id": "5",
+    "tex": "$0.83\\ \\mathrm{s}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) つり合い}\n\n容器（壁の厚さは無視）にはたらく鉛直方向の力は，気体が上面を押し上げる力 $pS$ と重力 $mg$ だけである（外は真空）．よって $pS=mg$，$\\boldsymbol{p=\\dfrac{mg}{S}}$．\n\n一方，容器内の液面での圧力は，外の液面（圧力 $0$）から深さ $d$ の液体の圧力に等しいので $p=\\rho gd$．\n\\[ \\boldsymbol{d=\\frac{p}{\\rho g}=\\frac{m}{\\rho S}} \\]\n（$\\rho Sd=m$ は，気体が押しのけた液体の重さが容器の重さに等しいという浮力のつり合いである．）\n\n\\textbf{(2) ゆっくりした加熱}\n\n各瞬間に容器はつり合っているので，(1)と同じ理由で $p=\\dfrac{mg}{S}$ は温度によらず一定，したがって $d=\\dfrac{p}{\\rho g}$ も変わらない．つまりこの加熱は\\textbf{定圧変化}で，容器内の液面の深さは一定のまま容器ごと持ち上がる．\n\n温度上昇を $\\Delta T$ とすると，定圧モル比熱 $\\frac52R$ より $Q=\\frac52nR\\Delta T$．体積の増加は $S\\Delta h$ なので状態方程式から $pS\\Delta h=nR\\Delta T$．\n\\[ \\Delta h=\\frac{nR\\Delta T}{pS}=\\frac{nR\\Delta T}{mg}=\\boldsymbol{\\frac{2Q}{5mg}} \\]\n気体のした仕事は $pS\\Delta h=mg\\Delta h$ で，真空中なのでこれがすべて容器の位置エネルギーの増加になる（液面の高さは内外とも変わらないので液体の位置エネルギーは変わらない）．\n\\[ \\frac{mg\\Delta h}{Q}=\\boldsymbol{\\frac25} \\]\n残りの $\\frac35$ は気体の内部エネルギーの増加である．\n\n\\textbf{(3) 持ち上げたときの力}\n\n容器を $y$ 持ち上げ，容器内の液面が $\\Delta d$ だけ深くなったとすると，気体の長さは $\\ell+y+\\Delta d$，圧力は液面の深さで決まり $p+\\rho g\\Delta d$．断熱変化の式 $pV^\\gamma=$一定 を1次で近似すると\n\\[ \\frac{\\Delta p}{p}=-\\gamma\\frac{\\Delta V}{V}\\quad\\Longrightarrow\\quad \\rho g\\Delta d=-\\gamma p\\,\\frac{y+\\Delta d}{\\ell} \\]\n$p=\\rho gd$ を代入すると $\\Delta d=-\\dfrac{\\gamma d}{\\ell}(y+\\Delta d)$ より\n\\[ \\boldsymbol{\\Delta d=-\\frac{\\gamma d}{\\gamma d+\\ell}\\,y} \\]\n（持ち上げると気体が膨張して圧力が下がり，容器内の液面が上がる．）容器にはたらく合力は\n\\[ (p+\\rho g\\Delta d)S-mg=\\rho gS\\,\\Delta d=-\\frac{\\rho gS\\gamma d}{\\gamma d+\\ell}\\,y,\\qquad \\boldsymbol{K=\\frac{\\rho gS\\gamma d}{\\gamma d+\\ell}} \\]\nこれは\n\\[ \\frac1K=\\frac{1}{\\rho gS}+\\frac{\\ell}{\\gamma pS} \\]\nと書き直せ，「液柱のばね」（ばね定数 $\\rho gS$）と「気体のばね」（ばね定数 $\\gamma pS/\\ell$）の\\textbf{直列}になっている（解答図）．容器の変位 $y$ は，気体の伸び $y+\\Delta d$ と液面の変位 $-\\Delta d$ に分けられ，両方のばねに同じ力 $\\rho gS\\Delta d$ がかかるからである．\n\n\\textbf{(4) 周期}\n\n$m=\\rho Sd$ を用いると\n\\[ \\omega^2=\\frac Km=\\frac{\\rho gS\\gamma d}{\\rho Sd(\\gamma d+\\ell)}=\\frac{\\gamma g}{\\gamma d+\\ell}=\\frac{g}{d+\\ell/\\gamma},\\qquad \\boldsymbol{T=2\\pi\\sqrt{\\frac{d+\\ell/\\gamma}{g}}} \\]\nとなり，長さ $d+\\ell/\\gamma$ の単振り子の周期と等しい．\n\n中まで詰まった浮きでは，沈む深さが $\\dfrac{m}{\\rho S}=d$ で，復元力の比例定数は $\\rho gS$ だけなので $T_0=2\\pi\\sqrt{\\dfrac dg}$．よって\n\\[ \\frac{T}{T_0}=\\boldsymbol{\\sqrt{1+\\frac{\\ell}{\\gamma d}}} \\]\n気体のばねが直列に入るぶん全体が柔らかくなり，周期が長くなる．\n\n\\textbf{(5)} $d+\\dfrac{\\ell}{\\gamma}=0.050+\\dfrac{0.20}{5/3}=0.17\\ \\mathrm{m}$ より\n\\[ T=2\\pi\\sqrt{\\frac{0.17}{9.8}}\\approx\\boldsymbol{0.83\\ \\mathrm{s}} \\]\n（詰まった浮きの $0.45\\ \\mathrm{s}$ の約1.8倍．）\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "逆さに浮かべた容器の気体の圧力は容器の力のつり合い（$pS=mg$）だけで決まるので，ゆっくりした加熱は定圧変化になり，真空中では気体の仕事がすべて容器の位置エネルギーになる．上下の振動では容器の変位が気体の伸びと容器内の液面の変位に分かれ，「液柱のばね $\\rho gS$」と「断熱の気体のばね $\\gamma pS/\\ell$」の直列となって，周期は長さ $d+\\ell/\\gamma$ の単振り子と等しくなる．"
+ },
+ "concepts": [
+  "first-law",
+  "simple-harmonic-motion",
+  "simple-pendulum"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "定圧変化",
+  "浮力",
+  "断熱変化",
+  "気体のばね",
+  "直列ばね",
+  "単振動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

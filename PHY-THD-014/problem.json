@@ -1,0 +1,143 @@
+{
+ "id": "PHY-THD-014",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "有限の熱容量をもつ2物体の間で働くカルノー機関と取り出せる仕事",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "物質量 $n$ の理想気体（定積モル比熱 $C_V$）を作業物質とする熱機関が，次の4つの準静的過程からなるサイクルを行う：温度 $T_{\\rm H}$ での等温膨張（体積 $V_1\\to V_2$），断熱膨張（$V_2\\to V_3$，温度 $T_{\\rm H}\\to T_{\\rm L}$），温度 $T_{\\rm L}$ での等温圧縮（$V_3\\to V_4$），断熱圧縮（$V_4\\to V_1$，温度 $T_{\\rm L}\\to T_{\\rm H}$）．温度 $T$ で体積が $V_a$ から $V_b$ に等温変化するとき気体が外部にする仕事は $nRT\\log\\dfrac{V_b}{V_a}$，断熱変化では $TV^{R/C_V}$ が一定であることを用いてよい．気体定数を $R$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "1サイクルで高温側から吸収する熱量を $Q_{\\rm H}$，低温側へ放出する熱量を $Q_{\\rm L}$ とする．$\\dfrac{Q_{\\rm L}}{Q_{\\rm H}}=\\dfrac{T_{\\rm L}}{T_{\\rm H}}$ を示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "次に，図のように，この機関を熱容量 $C$（一定）の2つの物体A，Bの間で働かせる．はじめAの温度は $4T_0$，Bの温度は $T_0$ である．機関は1サイクルごとにAから熱を吸収してBへ放出し，1サイクルは十分小さく，その間のA，Bの温度変化は無視できる（各サイクルはそのときのA，Bの温度を $T_{\\rm H}$，$T_{\\rm L}$ とするサイクルとみなせる）．A，B と機関以外の間の熱のやりとりはない．\n\n機関を動かし続けると，やがてA，Bの温度が等しくなって機関は止まる．このときの温度 $T_{\\rm f}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "機関が取り出した仕事の総量 $W$ と，Aから吸収した熱量の総和に対する $W$ の割合 $\\eta$ を求めよ．また，$\\eta$ を最初の1サイクルの効率と比べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "機関をAの温度が $3T_0$ になったところで止めた場合，Bの温度と，それまでに取り出した仕事を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "機関を使わずにA，Bを直接接触させたときの最終温度を求め，(2) の $T_{\\rm f}$ がそれより低くなる理由を簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：有限の熱容量をもつ2物体の間で働くカルノー機関と取り出せる仕事",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：有限の熱容量をもつ2物体の間で働くカルノー機関と取り出せる仕事",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "略（解説参照）"
+   },
+   {
+    "id": "2",
+    "tex": "$T_{\\rm f}=2T_0$"
+   },
+   {
+    "id": "3",
+    "tex": "$W=CT_0$，$\\eta=\\dfrac12$（最初の1サイクルの効率 $\\dfrac34$ より小さい）"
+   },
+   {
+    "id": "4",
+    "tex": "Bの温度 $\\dfrac43T_0$，仕事 $\\dfrac23CT_0$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac52T_0$．機関がエネルギーの一部 $CT_0$ を仕事として外へ取り出すため，A，Bに残る内部エネルギーが少ないから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　等温過程では内部エネルギーが変わらないので，吸収（放出）熱量は気体のした（された）仕事に等しい：\n\\[ Q_{\\rm H}=nRT_{\\rm H}\\log\\frac{V_2}{V_1},\\qquad Q_{\\rm L}=nRT_{\\rm L}\\log\\frac{V_3}{V_4} \\]\n2本の断熱線について $TV^{R/C_V}=$一定 より\n\\[ T_{\\rm H}V_2^{R/C_V}=T_{\\rm L}V_3^{R/C_V},\\qquad T_{\\rm H}V_1^{R/C_V}=T_{\\rm L}V_4^{R/C_V} \\]\n辺々割ると $\\left(\\dfrac{V_2}{V_1}\\right)^{R/C_V}=\\left(\\dfrac{V_3}{V_4}\\right)^{R/C_V}$，すなわち $\\dfrac{V_2}{V_1}=\\dfrac{V_3}{V_4}$．よって対数の部分が打ち消し合い\n\\[ \\frac{Q_{\\rm L}}{Q_{\\rm H}}=\\frac{T_{\\rm L}}{T_{\\rm H}} \\]\nが $C_V$ によらず成り立つ．\n\n\\textbf{(2)}　あるサイクルでAから $\\Delta Q_{\\rm A}$ を吸収し，Bへ $\\Delta Q_{\\rm B}$ を放出するとき，(1) より $\\dfrac{\\Delta Q_{\\rm B}}{T_{\\rm B}}=\\dfrac{\\Delta Q_{\\rm A}}{T_{\\rm A}}$．A，Bの温度変化を $\\Delta T_{\\rm A}$（$<0$），$\\Delta T_{\\rm B}$（$>0$）とすると $\\Delta Q_{\\rm A}=-C\\Delta T_{\\rm A}$，$\\Delta Q_{\\rm B}=C\\Delta T_{\\rm B}$ なので\n\\[ \\frac{\\Delta T_{\\rm A}}{T_{\\rm A}}+\\frac{\\Delta T_{\\rm B}}{T_{\\rm B}}=0 \\]\nこれを積分すると $\\log T_{\\rm A}+\\log T_{\\rm B}=$一定，すなわち\n\\[ T_{\\rm A}T_{\\rm B}=\\text{一定}=4T_0\\cdot T_0 \\]\n（各サイクルで温度の相対変化が打ち消し合うので，積が保たれる．）最後に $T_{\\rm A}=T_{\\rm B}=T_{\\rm f}$ となるので $T_{\\rm f}^2=4T_0^2$，\n\\[ \\boldsymbol{T_{\\rm f}=2T_0} \\]\n\n\\textbf{(3)}　Aから吸収した熱の総和は $C(4T_0-2T_0)=2CT_0$，Bへ放出した熱の総和は $C(2T_0-T_0)=CT_0$．機関（気体）は毎サイクル元の状態に戻るので，エネルギー保存より\n\\[ \\boldsymbol{W=2CT_0-CT_0=CT_0},\\qquad \\boldsymbol{\\eta=\\frac{CT_0}{2CT_0}=\\frac12} \\]\n最初の1サイクルの効率は $1-\\dfrac{T_0}{4T_0}=\\dfrac34$ である．運転が進むと温度差が縮み各サイクルの効率が下がるので，全体の効率 $\\dfrac12$ は最初の効率より小さい．\n\n\\textbf{(4)}　$T_{\\rm A}T_{\\rm B}=4T_0^2$ より，$T_{\\rm A}=3T_0$ のとき $\\boldsymbol{T_{\\rm B}=\\dfrac43T_0}$．仕事は\n\\[ W'=C(4T_0-3T_0)-C\\left(\\frac43T_0-T_0\\right)=\\boldsymbol{\\frac23CT_0} \\]\nAの温度が最初の $1\\,T_0$ 下がる間に，全仕事の $\\dfrac23$ が取り出されている．\n\n\\textbf{(5)}　直接接触では熱がそのまま移るだけなので内部エネルギーの和が保存し，$C\\cdot4T_0+C\\cdot T_0=2C\\,T'$ より $\\boldsymbol{T'=\\dfrac52T_0}$．機関を使った場合は，エネルギーの一部 $CT_0$ が仕事として系の外へ取り出されるので，A，Bに残る内部エネルギーが $2C\\cdot\\dfrac52T_0-CT_0=2C\\cdot2T_0$ となり，最終温度が低くなる．保存量が「温度の和」から「温度の積」に変わることが，この問題の要点である（解答図）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "カルノーサイクルでは2本の断熱線の体積比が等しいので $Q_{\\rm L}/Q_{\\rm H}=T_{\\rm L}/T_{\\rm H}$ が成り立つ．これを熱容量が有限の2物体の間で微小サイクルごとに適用すると温度の積が保存し，最終温度は相乗平均，取り出せる仕事は相加平均との差から決まる．"
+ },
+ "concepts": [
+  "first-law",
+  "work-energy",
+  "heat-temperature"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "カルノーサイクル",
+  "熱効率",
+  "有限熱源",
+  "最大仕事",
+  "相乗平均"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

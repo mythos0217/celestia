@@ -1,0 +1,131 @@
+{
+ "id": "PHY-THD-026",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "自由な仕切りでつながれた比熱比の異なる2気体の断熱膨張とストッパーによる切り替わり",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，断熱材でできた十分に長いシリンダーが水平に固定されている．シリンダー内は，なめらかに動く断熱材のピストン W と，なめらかに動く断熱材の仕切り板 D で，領域 A と領域 B に分けられている．A には単原子分子理想気体（定積モル比熱 $\\frac32R$），B には二原子分子理想気体（定積モル比熱 $\\frac52R$）が封入されている（$R$ は気体定数）．W の左側は真空で，W は外力で支えられている．シリンダーの内側にはストッパー S があり，D は S より左へは動けない．D が S に接しているときの B の体積は $2V_1$ である．W，D，S の体積は無視できる．\nはじめ，A，B の気体はともに圧力 $p_1$，体積 $V_1$ であった．この状態から外力を少しずつ弱めて，W を左へゆっくり動かしていく．比熱比を $\\gamma$ とすると，断熱変化では $pV^{\\gamma}$ が一定である．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "D が S に達するまでの間，A，B の気体の圧力が等しい理由を述べ，共通の圧力が $p$ のときの A，B の体積 $V_{\\rm A}$，$V_{\\rm B}$ を $p_1,\\ V_1,\\ p$ で表せ．また，この間 D はどちら向きに動くか答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "D が S に達するときの圧力 $p_{\\rm s}$ と，そのときの A の体積を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "その後も W を動かし続け，A の圧力が $\\dfrac{p_1}{32}$ になったところで止めた．このときの A の体積を求めよ．また，はじめからこのときまでに気体が W にした仕事の総和を $p_1V_1$ を用いて表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "次に，ストッパー S を取り除いた装置で，はじめの A，B の体積をそれぞれ $V_{{\\rm A}1}$，$V_{{\\rm B}1}$（圧力はともに $p_1$）として同じ操作を行い，圧力が $\\dfrac{p_1}{32}$ になったところで止めた．この間に A の気体がした仕事と B の気体がした仕事が等しくなるための比 $\\dfrac{V_{{\\rm A}1}}{V_{{\\rm B}1}}$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) で，B の気体を断熱にせず，B に取り付けたヒーターで温度をはじめの値に保ちながら同じ操作を行う場合，比 $\\dfrac{V_{{\\rm A}1}}{V_{{\\rm B}1}}$ はいくらになるか．また，(4) で B の比熱比を $\\gamma$ として求めた式で $\\gamma\\to1$ とすると，この結果に一致することを示せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：自由な仕切りでつながれた比熱比の異なる2気体の断熱膨張とストッパーによる切り替わり",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "D は質量が無視できなめらかに動くので両側の圧力は等しい．$V_{\\rm A}=V_1\\left(\\dfrac{p_1}{p}\\right)^{3/5}$，$V_{\\rm B}=V_1\\left(\\dfrac{p_1}{p}\\right)^{5/7}$，D は左向きに動く"
+   },
+   {
+    "id": "2",
+    "tex": "$p_{\\rm s}=2^{-7/5}p_1\\ (\\approx0.38p_1)$，A の体積 $2^{21/25}V_1\\ (\\approx1.79V_1)$"
+   },
+   {
+    "id": "3",
+    "tex": "$8V_1$，仕事 $\\dfrac{29-10\\cdot2^{3/5}}{8}p_1V_1\\ (\\approx1.73p_1V_1)$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{V_{{\\rm A}1}}{V_{{\\rm B}1}}=\\dfrac{20}{9}\\left(1-2^{-10/7}\\right)\\ (\\approx1.40)$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{40}{9}\\log 2\\ (\\approx3.08)$；$\\gamma\\to1$ で $\\dfrac{1-32^{-(\\gamma-1)/\\gamma}}{\\gamma-1}\\to\\log32$ となり一致"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "比熱比は A：$\\alpha=\\dfrac{5}{3}$，B：$\\beta=\\dfrac{7}{5}$ である（$C_p=C_V+R$ より）．\n\n\\textbf{(1)} D は質量が無視でき，なめらかに動くので，D にはたらく力（両側の圧力による力）はつり合っている．したがって \\textbf{A と B の圧力は常に等しい}．どちらの気体も断熱壁に囲まれ，変化はゆっくりなので，それぞれが自分の比熱比で $pV^{\\gamma}=$一定 に従う：\n\\[ \\boldsymbol{V_{\\rm A}=V_1\\left(\\frac{p_1}{p}\\right)^{3/5}},\\qquad \\boldsymbol{V_{\\rm B}=V_1\\left(\\frac{p_1}{p}\\right)^{5/7}} \\]\n$p$ が下がると $V_{\\rm B}$ は増えるので，D は\\textbf{左向き}に動く．なお $\\dfrac{V_{\\rm B}}{V_{\\rm A}}=\\left(\\dfrac{p_1}{p}\\right)^{4/35}$ も増えるので，同じ圧力変化に対して比熱比の小さい B の方が相対的に大きく膨らむ．\\hfill$\\square$\n\n\\textbf{(2)} $V_{\\rm B}=2V_1$ とおくと $\\left(\\dfrac{p_1}{p_{\\rm s}}\\right)^{5/7}=2$ より\n\\[ \\boldsymbol{p_{\\rm s}=2^{-7/5}p_1}\\approx0.38p_1,\\qquad V_{\\rm A}=V_1\\cdot\\left(2^{7/5}\\right)^{3/5}=\\boldsymbol{2^{21/25}V_1}\\approx1.79V_1 \\]\n\\hfill$\\square$\n\n\\textbf{(3)} D が S に接した後は B の体積は $2V_1$ に固定され，B の圧力は $p_{\\rm s}$ のまま変わらない（A の圧力の方が低くなり，D は S に押しつけられる）．一方 A は，\\textbf{はじめから終わりまで断熱変化を続けている}ので，S の有無にかかわらず同じ断熱線上にある：\n\\[ V_{\\rm A}=V_1\\cdot32^{3/5}=\\boldsymbol{8V_1} \\]\nW のした仕事は，熱の出入りがないので気体全体の内部エネルギーの減少に等しい（W の左は真空）．\n\\[ \\Delta U_{\\rm A}=\\frac32\\left(\\frac{p_1}{32}\\cdot8V_1-p_1V_1\\right)=-\\frac98p_1V_1,\\qquad\n\\Delta U_{\\rm B}=\\frac52\\left(p_{\\rm s}\\cdot2V_1-p_1V_1\\right)=\\frac52\\left(2^{-2/5}-1\\right)p_1V_1 \\]\nよって気体が W にした仕事は\n\\[ -(\\Delta U_{\\rm A}+\\Delta U_{\\rm B})=\\left\\{\\frac98+\\frac52\\left(1-2^{-2/5}\\right)\\right\\}p_1V_1=\\boldsymbol{\\frac{29-10\\cdot2^{3/5}}{8}p_1V_1}\\approx1.73p_1V_1 \\]\n（B が D を通して A に仕事をし，A がそれを W に伝えている．A 自身の内部エネルギーの減少 $\\frac98p_1V_1$ だけでなく，S に達するまでの B の仕事も W に届く．）\\hfill$\\square$\n\n\\textbf{(4)} 比熱比 $\\gamma$ の気体が圧力 $p_1$，体積 $V$ から断熱的に圧力 $p_1/32$ まで膨張するとき，した仕事は内部エネルギーの減少に等しく\n\\[ W(\\gamma)=\\frac{1}{\\gamma-1}\\left(p_1V-\\frac{p_1}{32}V\\cdot32^{1/\\gamma}\\right)=\\frac{p_1V}{\\gamma-1}\\left(1-32^{-(\\gamma-1)/\\gamma}\\right) \\]\nA（$\\gamma=\\frac53$，$32^{-2/5}=\\frac14$）：$W_{\\rm A}=\\dfrac32\\cdot\\dfrac34p_1V_{{\\rm A}1}=\\dfrac98p_1V_{{\\rm A}1}$．\nB（$\\gamma=\\frac75$，$32^{-2/7}=2^{-10/7}$）：$W_{\\rm B}=\\dfrac52\\left(1-2^{-10/7}\\right)p_1V_{{\\rm B}1}$．\n$W_{\\rm A}=W_{\\rm B}$ より\n\\[ \\boldsymbol{\\frac{V_{{\\rm A}1}}{V_{{\\rm B}1}}=\\frac{20}{9}\\left(1-2^{-10/7}\\right)}\\approx1.40 \\]\n同じ体積から同じ圧力比だけ膨張するとき，比熱比の小さい気体（B）の方が多く膨らみ，多くの仕事をする（$V_{{\\rm A}1}=V_{{\\rm B}1}$ なら $W_{\\rm A}=1.13p_1V_1<W_{\\rm B}=1.57p_1V_1$）．そのため A の方を約 1.4 倍多く用意する必要がある．\\hfill$\\square$\n\n\\textbf{(5)} B を等温に保つと $pV=p_1V_{{\\rm B}1}$ なので，圧力が $p_1/32$ になるまでの仕事は\n\\[ W_{\\rm B}=\\int p\\,dV=p_1V_{{\\rm B}1}\\log\\frac{V_{\\rm B}}{V_{{\\rm B}1}}=p_1V_{{\\rm B}1}\\log32=5\\log2\\cdot p_1V_{{\\rm B}1} \\]\n（このとき B はヒーターから同じ量の熱を受け取る）．A は (4) と同じく $\\frac98p_1V_{{\\rm A}1}$ なので\n\\[ \\boldsymbol{\\frac{V_{{\\rm A}1}}{V_{{\\rm B}1}}=\\frac{40}{9}\\log2}\\approx3.08 \\]\n$\\gamma\\to1$ の極限：$\\varepsilon=\\dfrac{\\gamma-1}{\\gamma}\\to0$ とすると $32^{-\\varepsilon}=e^{-\\varepsilon\\log32}\\approx1-\\varepsilon\\log32$ より\n\\[ \\frac{1-32^{-(\\gamma-1)/\\gamma}}{\\gamma-1}\\approx\\frac{\\varepsilon\\log32}{\\gamma-1}=\\frac{\\log32}{\\gamma}\\to\\log32 \\]\nとなり，$W(\\gamma)\\to p_1V\\log32$ で等温変化の仕事に一致する．比熱比 $\\gamma=C_p/C_V$ が $1$ に近い（$C_V$ が非常に大きい）気体は，膨張しても温度がほとんど下がらない．つまり\\textbf{温度を一定に保たれた気体は「比熱比 1 の気体」として断熱変化と同じ式で扱える}．$W(\\gamma)$ は $\\gamma$ が小さいほど大きく，等温がその上限になっている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "自由に動く仕切りでつながれた2つの気体は圧力が常に等しく，それぞれが自分の比熱比の断熱線（または等温線）に沿って変化する．同じ圧力比の膨張では比熱比の小さい気体ほど大きく膨らみ多くの仕事をし，等温変化はその $\\gamma\\to1$ の極限にあたる．ストッパーで一方の体積が固定されても，断熱変化を続ける側の終状態は変わらず，取り出せる仕事の差は固定された側の内部エネルギーの差だけで決まる．"
+ },
+ "concepts": [
+  "first-law",
+  "work-energy",
+  "heat-temperature"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "断熱変化",
+  "比熱比",
+  "仕切り板",
+  "ストッパー",
+  "等温変化",
+  "気体の仕事"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

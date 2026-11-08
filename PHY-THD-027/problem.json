@@ -1,0 +1,151 @@
+{
+ "id": "PHY-THD-027",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "液体があふれ出るピストンの加熱：負のモル比熱とつり合いの不安定化",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，断面積 $S$，底から上端の縁までの高さ $H$ の円筒容器が鉛直に置かれている．容器の上端は大気に開いている．容器の中には，なめらかに動く質量と厚さの無視できるピストンがあり，その下に単原子分子理想気体 $n$ モルが，上には密度 $\\rho$ の液体が入っている．液体は常に容器の縁まで満たされており，ピストンが上がると縁からあふれた分は容器の外へ流れ去る（ピストンが上がるとき液体が戻ってくることはない）．容器とピストンは断熱材でできており，気体は内部のヒーターでゆっくり加熱できる．大気圧を $P_0=\\rho ga$（$a$ は正の定数で $a<H$），重力加速度の大きさを $g$，気体定数を $R$ とする．液体の表面張力・蒸発は考えない．底からピストンまでの高さを $y$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "液体が縁まで満たされ，ピストンがつり合っているとき，気体の圧力 $P$ と絶対温度 $T$ を $y$ の関数として表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "ゆっくり加熱してピストンを上げていくとき，気体の温度が最大になる高さ $y_{\\rm m}$ と，その最大値 $T_{\\rm m}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "つり合いを保ちながらピストンが $\\Delta y$ だけ上がる間に気体が吸収する熱量 $\\Delta Q$ を，$\\Delta y$ の1次まで求めよ．また，この過程の気体のモル比熱 $C=\\dfrac{\\Delta Q}{n\\Delta T}$ を $y$ の関数として表し，$C<0$（熱を吸収しているのに温度が下がる）となる $y$ の範囲を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ピストンがある高さ $y$ でつり合っているとき，何らかのはずみでピストンがすばやく $\\Delta y\\,(>0)$ だけ上がったとする．すばやい変化なので気体は断熱変化をする（圧力と体積は $PV^{5/3}=$ 一定を満たす）．ピストンにはたらく力の和の変化を $\\Delta y$ の1次まで求め，つり合いが安定である（ピストンが押し戻される）ための $y$ の条件を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(3)，(4) の結果から，ヒーターでゆっくり加熱を続けたときに何が起こるかを説明せよ．"
+     },
+     {
+      "id": "6",
+      "tex": "$a=\\dfrac{H}{5}$，はじめの高さ $y=\\dfrac{H}{5}$ の場合に，つり合いを保って加熱できる限界の高さ $y_{\\rm c}$，そこでの温度と $T_{\\rm m}$ の比，およびそこまでに加えた熱量の総和 $Q$ を $\\rho,\\ g,\\ S,\\ H$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：液体があふれ出るピストンの加熱：負のモル比熱とつり合いの不安定化",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：液体があふれ出るピストンの加熱：負のモル比熱とつり合いの不安定化",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$P=\\rho g(a+H-y)$，$T=\\dfrac{\\rho gS\\,y(a+H-y)}{nR}$"
+   },
+   {
+    "id": "2",
+    "tex": "$y_{\\rm m}=\\dfrac{a+H}{2}$，$T_{\\rm m}=\\dfrac{\\rho gS(a+H)^2}{4nR}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\Delta Q=\\dfrac{\\rho gS}{2}\\{5(a+H)-8y\\}\\Delta y$，$C=\\dfrac{5(a+H)-8y}{2(a+H-2y)}R$，$\\dfrac{a+H}{2}<y<\\dfrac58(a+H)$"
+   },
+   {
+    "id": "4",
+    "tex": "上向きを正として $\\rho gS\\Delta y-\\dfrac{5\\rho gS(a+H-y)}{3y}\\Delta y$，安定条件 $y<\\dfrac58(a+H)$"
+   },
+   {
+    "id": "5",
+    "tex": "$y_{\\rm m}$ を過ぎると吸熱しながら温度が下がるが，つり合いは保たれピストンはゆっくり上がる．$y_{\\rm c}=\\frac58(a+H)$ に達するとつり合いが不安定になると同時に，さらに上がるには放熱が必要になるので，加熱を続けるとピストンは一気に上がって液体をすべて押し出す．"
+   },
+   {
+    "id": "6",
+    "tex": "$y_{\\rm c}=\\dfrac34H$，$\\dfrac{T}{T_{\\rm m}}=\\dfrac{15}{16}$，$Q=\\dfrac{121}{200}\\rho gSH^2$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) つり合いの圧力と温度}　ピストンの上の液柱の高さは $H-y$ なので，ピストンの質量を無視したつり合いから\n\\[ \\boldsymbol{P=P_0+\\rho g(H-y)=\\rho g(a+H-y)},\\qquad \\boldsymbol{T=\\frac{PSy}{nR}=\\frac{\\rho gS\\,y(a+H-y)}{nR}}. \\]\nピストンが上がるほど液柱が減るので，圧力は $y$ の1次関数として減少する．\n\n\\textbf{(2) 温度の最大}　$T$ は $y$ の2次関数で，$y(a+H-y)$ は $\\boldsymbol{y_{\\rm m}=\\frac{a+H}{2}}$ で最大，$\\boldsymbol{T_{\\rm m}=\\frac{\\rho gS(a+H)^2}{4nR}}$．$a<H$ なので $y_{\\rm m}<H$ で，この点は実際に容器内にある．\n\n\\textbf{(3) 熱量とモル比熱}　第1法則 $\\Delta Q=\\frac32nR\\Delta T+PS\\Delta y$．(1)から $nR\\Delta T=\\rho gS(a+H-2y)\\Delta y$ なので\n\\[ \\Delta Q=\\rho gS\\left\\{\\tfrac32(a+H-2y)+(a+H-y)\\right\\}\\Delta y=\\boldsymbol{\\frac{\\rho gS}{2}\\{5(a+H)-8y\\}\\Delta y}, \\]\n\\[ \\boldsymbol{C=\\frac{\\Delta Q}{n\\Delta T}=\\frac{5(a+H)-8y}{2(a+H-2y)}R}. \\]\n分母は $y=y_{\\rm m}$ で，分子は $y=\\frac58(a+H)$ で符号を変える．$y<y_{\\rm m}$ では両方正で $C>0$．$\\boldsymbol{\\frac{a+H}{2}<y<\\frac58(a+H)}$ では分母が負・分子が正で $C<0$：熱を吸収しているのに温度が下がる．これは，気体がする仕事 $PS\\Delta y$ が吸収熱を上回り，内部エネルギーが減るためである．\n\n\\textbf{(4) すばやい変位に対する安定性}　ピストンが $\\Delta y$ 上がると，液体が $S\\Delta y$ だけあふれ出るので，液体がピストンを押し下げる力は $\\rho gS\\Delta y$ だけ減る（上向きに $+\\rho gS\\Delta y$）．気体は断熱変化で $P(Sy)^{5/3}=$ 一定，$\\Delta P=-\\frac53P\\frac{\\Delta y}{y}$ なので，気体の押す力は $-\\frac53\\frac{PS}{y}\\Delta y$ 変化する．合計（上向き正）は\n\\[ \\boldsymbol{\\rho gS\\Delta y-\\frac{5\\rho gS(a+H-y)}{3y}\\Delta y}. \\]\nこれが負なら変位を打ち消す向きの力となり安定．$3y<5(a+H-y)$，すなわち $\\boldsymbol{y<\\frac58(a+H)}$．液体のあふれは「負のばね」，気体の断熱圧縮性は正のばねとしてはたらき，その大小で安定性が決まる．\n\n\\textbf{(5) 加熱を続けると}　(3)の $\\Delta Q>0$ の条件と(4)の安定条件は，どちらも $y<\\frac58(a+H)$ で一致する．偶然ではない：$\\Delta Q=\\Delta U+P\\Delta V$ が正であることは，断熱変化（$\\Delta Q=0$）での圧力の下がり方が，つり合いの曲線に沿った圧力の下がり方より大きいことと同値だからである．\nしたがって，加熱すると $y_{\\rm m}$ までは温度が上がり，$y_{\\rm m}$ から $y_{\\rm c}=\\frac58(a+H)$ の間は吸熱しながら温度が下がる（つり合いは安定なのでピストンはゆっくり上がる）．$y_{\\rm c}$ では，つり合いを保ってさらに上がるには熱を取り去らねばならず，同時にわずかな上昇に対してつり合いが不安定になる．加熱を続けるとピストンは一気に上昇し，液体をすべて押し出してしまう．\n\n\\textbf{(6) 数値例}　$a=\\frac H5$ のとき $a+H=\\frac65H$，$y_{\\rm m}=\\frac35H$，$\\boldsymbol{y_{\\rm c}=\\frac34H}$（$<H$ なので実際に起こる）．\n$T\\propto y(\\frac65H-y)$ より $\\dfrac{T(y_{\\rm c})}{T_{\\rm m}}=\\dfrac{\\frac34\\cdot\\frac{9}{20}}{\\frac35\\cdot\\frac35}=\\boldsymbol{\\dfrac{15}{16}}$．\n熱量は(3)を積分して\n\\[ Q=\\int_{H/5}^{3H/4}\\rho gS(3H-4y)\\,dy=\\rho gS\\Bigl[3Hy-2y^2\\Bigr]_{H/5}^{3H/4}=\\boldsymbol{\\frac{121}{200}\\rho gSH^2}. \\]\n（検算：気体の仕事 $\\int PS\\,dy=\\frac{319}{800}\\rho gSH^2$，内部エネルギーの増加 $\\frac32nR\\Delta T=\\frac{33}{160}\\rho gSH^2$ で，和は一致する．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "液体が縁からあふれるとピストン上の液柱の重さが減り，圧力が体積の減少関数になるため，つり合いの経路で温度は極大をもち，その先では吸熱しながら温度が下がる（負のモル比熱）．液体のあふれは負のばね，気体の断熱圧縮性は正のばねで，その大小で決まる安定限界は吸熱が0になる点と一致し，そこでピストンは一気に跳ね上がる．"
+ },
+ "concepts": [
+  "first-law",
+  "equilibrium",
+  "heat-temperature"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱力学第一法則",
+  "モル比熱",
+  "安定性",
+  "断熱変化",
+  "液柱の圧力"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

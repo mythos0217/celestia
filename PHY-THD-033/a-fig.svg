@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320">
+<defs>
+<marker id="a-bl" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="a-rd" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#c0392b"/></marker>
+</defs>
+<text x="20" y="24" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">向流（R₁, R₂ の順に冷やし，R₂, R₁ の順に温める）</text>
+<!-- temperature axis: TL at y=270, TH at y=60 -->
+<line x1="60" y1="60" x2="560" y2="60" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="60" y1="130" x2="560" y2="130" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="60" y1="200" x2="560" y2="200" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="60" y1="270" x2="560" y2="270" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="20" y="65" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">T<tspan baseline-shift="sub" font-size="10">H</tspan></text>
+<text x="20" y="275" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">T<tspan baseline-shift="sub" font-size="10">L</tspan></text>
+<text x="10" y="135" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">R₁</text>
+<text x="10" y="205" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">R₂</text>
+<!-- cooling path (blue) -->
+<text x="80" y="50" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">B→C の気体の温度</text>
+<polyline points="80,60 140,60 140,130 200,130 200,200 260,200 260,270 300,270" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+<line x1="140" y1="70" x2="140" y2="125" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-bl)"/>
+<text x="146" y="100" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#1f5fbf">R₁へ</text>
+<text x="206" y="170" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#1f5fbf">R₂へ</text>
+<text x="266" y="240" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#1f5fbf">低温熱源へ</text>
+<!-- heating path (red) -->
+<text x="350" y="300" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">D→A の気体の温度</text>
+<polyline points="330,270 390,270 390,200 450,200 450,130 510,130 510,60 550,60" fill="none" stroke="#c0392b" stroke-width="1.8"/>
+<line x1="390" y1="262" x2="390" y2="206" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-rd)"/>
+<text x="396" y="240" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#c0392b">R₂から</text>
+<text x="456" y="170" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#c0392b">R₁から</text>
+<text x="516" y="100" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#c0392b">高温熱源</text>
+<text x="300" y="120" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">3等分の段</text>
+</svg>

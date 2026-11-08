@@ -1,0 +1,114 @@
+{
+ "id": "PHY-THD-011",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "2種の気体にはさまれたピストンの断熱振動",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平に固定した断面積 $S$，内容積 $V_0$ のシリンダーを，質量 $M$ のなめらかに動くピストン（厚さは無視できる）で左右に仕切る．左室には単原子分子理想気体，右室には二原子分子理想気体（定積モル比熱 $\\dfrac52R$）が入っており，ピストンがつり合いの位置にあるとき，両室の圧力はともに $P$，左室の体積は $V_1$，右室の体積は $V_0-V_1$ である．シリンダーとピストンは断熱材でできている．ピストンをつり合いの位置からわずかに右へずらして静かに放すと，ピストンは振動した．気体の変化は準静的な断熱変化とみなし，微小量の2次以上は無視する．$R$ は気体定数である．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "定積モル比熱 $C_V$ の理想気体が，圧力 $p$，体積 $V$ の状態から断熱的に体積を $\\Delta V$ だけ微小変化させたときの圧力変化 $\\Delta p$ を，状態方程式と熱力学第1法則を用いて $p,\\ V,\\ \\Delta V,\\ C_V,\\ R$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "ピストンがつり合いの位置から右へ $x$ だけずれたとき，ピストンにはたらく合力 $F$（右向きを正）を求めよ．また，振動の周期 $\\tau$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$V_0,\\ P,\\ M,\\ S$ を変えずに，両室の気体の量を調整して $V_1$ だけを変える（つり合いの圧力は $P$ のまま）．$\\tau$ が最大になる $V_1$ と，そのときの周期 $\\tau_{\\max}$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：2種の気体にはさまれたピストンの断熱振動",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Delta p=-\\dfrac{C_V+R}{C_V}\\cdot\\dfrac{p}{V}\\Delta V$"
+   },
+   {
+    "id": "2",
+    "tex": "$F=-PS^2\\left(\\dfrac{5}{3V_1}+\\dfrac{7}{5(V_0-V_1)}\\right)x$，$\\tau=2\\pi\\sqrt{\\dfrac{M}{PS^2\\left(\\dfrac{5}{3V_1}+\\dfrac{7}{5(V_0-V_1)}\\right)}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$V_1=\\dfrac{5}{5+\\sqrt{21}}V_0\\ (\\approx0.52V_0)$，$\\tau_{\\max}=\\dfrac{2\\sqrt{15}\\,\\pi}{(5+\\sqrt{21})S}\\sqrt{\\dfrac{MV_0}{P}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 物質量を $n$，温度変化を $\\Delta T$ とする．断熱なので第1法則は（気体がされる仕事 $-p\\Delta V$）\n\\[ nC_V\\Delta T=-p\\Delta V \\]\n状態方程式 $(p+\\Delta p)(V+\\Delta V)=nR(T+\\Delta T)$ から $pV=nRT$ を引き，2次の微小量を落とすと $p\\Delta V+V\\Delta p=nR\\Delta T$．これに $n\\Delta T=-\\dfrac{p\\Delta V}{C_V}$ を代入して\n\\[ V\\Delta p=-p\\Delta V-\\frac{R}{C_V}p\\Delta V\\qquad\\therefore\\quad\\boldsymbol{\\Delta p=-\\frac{C_V+R}{C_V}\\cdot\\frac{p}{V}\\Delta V} \\]\n係数 $\\gamma=\\dfrac{C_V+R}{C_V}$ は単原子で $\\dfrac53$，二原子で $\\dfrac75$．\n\n\\textbf{(2)} ピストンが右へ $x$ ずれると，左室の体積は $+Sx$，右室は $-Sx$ 変化するので\n\\[ \\Delta p_1=-\\frac53\\cdot\\frac{P}{V_1}Sx,\\qquad \\Delta p_2=+\\frac75\\cdot\\frac{P}{V_0-V_1}Sx \\]\n合力は $F=(P+\\Delta p_1)S-(P+\\Delta p_2)S$ だから\n\\[ \\boldsymbol{F=-PS^2\\left(\\frac{5}{3V_1}+\\frac{7}{5(V_0-V_1)}\\right)x} \\]\n両室の気体はどちらもピストンを押し戻す向きに働く「並列のばね」で，ばね定数は $K=PS^2\\left(\\dfrac{5}{3V_1}+\\dfrac{7}{5(V_0-V_1)}\\right)$．単振動となり\n\\[ \\boldsymbol{\\tau=2\\pi\\sqrt{\\frac MK}=2\\pi\\sqrt{\\frac{M}{PS^2\\left(\\frac{5}{3V_1}+\\frac{7}{5(V_0-V_1)}\\right)}}} \\]\n\n\\textbf{(3)} $\\tau$ 最大 $\\Leftrightarrow$ $f(V_1)=\\dfrac{a}{V_1}+\\dfrac{b}{V_0-V_1}$（$a=\\dfrac53$，$b=\\dfrac75$）が最小．\n\\[ f'(V_1)=-\\frac{a}{V_1^2}+\\frac{b}{(V_0-V_1)^2}=0\\quad\\Rightarrow\\quad\\frac{V_1}{V_0-V_1}=\\sqrt{\\frac ab}=\\sqrt{\\frac{25}{21}}=\\frac{5}{\\sqrt{21}} \\]\n$f$ は $0<V_1<V_0$ で下に凸（$f''>0$）なので，これが最小を与える．\n\\[ \\boldsymbol{V_1=\\frac{5}{5+\\sqrt{21}}V_0}\\approx0.52V_0 \\]\nこのとき $f_{\\min}=\\dfrac{(\\sqrt a+\\sqrt b)^2}{V_0}$ で，$\\sqrt{\\dfrac53}+\\sqrt{\\dfrac75}=\\dfrac{5+\\sqrt{21}}{\\sqrt{15}}$ だから\n\\[ \\boldsymbol{\\tau_{\\max}=\\frac{2\\pi}{\\sqrt a+\\sqrt b}\\cdot\\frac1S\\sqrt{\\frac{MV_0}{P}}=\\frac{2\\sqrt{15}\\,\\pi}{(5+\\sqrt{21})S}\\sqrt{\\frac{MV_0}{P}}} \\]\n体積を等分する位置ではなく，比熱比の大きい（ばねとして硬い）単原子分子側の体積をやや大きくしたときに周期が最大になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "断熱変化する気体は体積変化に比例した復元力を生むばねで，ばね定数は比熱比 $\\gamma$ と $p/V$ に比例する．ピストン両側の気体は並列ばねとして働き，周期が最大になる仕切りの位置は $\\gamma$ の平方根の比で決まる．"
+ },
+ "concepts": [
+  "first-law",
+  "simple-harmonic-motion",
+  "heat-temperature"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "断熱変化",
+  "気体ばね",
+  "単振動",
+  "比熱比",
+  "最大最小"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

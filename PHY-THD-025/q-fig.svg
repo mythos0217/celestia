@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 280">
+  <defs><marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker></defs>
+  <line x1="90" y1="40" x2="260" y2="40" stroke="#222" stroke-width="1.6"/>
+  <line x1="90" y1="40" x2="100" y2="28" stroke="#222" stroke-width="1"/><line x1="102" y1="40" x2="112" y2="28" stroke="#222" stroke-width="1"/><line x1="114" y1="40" x2="124" y2="28" stroke="#222" stroke-width="1"/><line x1="126" y1="40" x2="136" y2="28" stroke="#222" stroke-width="1"/><line x1="138" y1="40" x2="148" y2="28" stroke="#222" stroke-width="1"/><line x1="150" y1="40" x2="160" y2="28" stroke="#222" stroke-width="1"/><line x1="162" y1="40" x2="172" y2="28" stroke="#222" stroke-width="1"/><line x1="174" y1="40" x2="184" y2="28" stroke="#222" stroke-width="1"/><line x1="186" y1="40" x2="196" y2="28" stroke="#222" stroke-width="1"/><line x1="198" y1="40" x2="208" y2="28" stroke="#222" stroke-width="1"/><line x1="210" y1="40" x2="220" y2="28" stroke="#222" stroke-width="1"/><line x1="222" y1="40" x2="232" y2="28" stroke="#222" stroke-width="1"/><line x1="234" y1="40" x2="244" y2="28" stroke="#222" stroke-width="1"/><line x1="246" y1="40" x2="256" y2="28" stroke="#222" stroke-width="1"/>
+  <path d="M167.0,40.0 L168.9,42.6 L170.4,45.2 L171.0,47.8 L170.6,50.4 L169.4,53.0 L167.6,55.6 L165.6,58.2 L164.0,60.8 L163.1,63.4 L163.2,66.0 L164.2,68.6 L165.9,71.2 L167.9,73.8 L169.6,76.4 L170.8,79.0 L171.0,81.6 L170.2,84.2 L168.6,86.8 L166.7,89.4 L164.8,92.0 L163.5,94.6 L163.0,97.2 L163.5,99.8 L164.9,102.4 L166.7,105.0 L168.7,107.6 L170.2,110.2 L171.0,112.8 L170.7,115.4 L169.6,118.0 L167.8,120.6 L165.8,123.2 L164.2,125.8 L163.2,128.4 L163.1,131.0 L164.0,133.6 L165.6,136.2 L167.6,138.8 L169.4,141.4 L170.7,144.0 L171.0,146.6 L170.3,149.2 L168.9,151.8 L167.0,154.4 L165.1,157.0 L163.6,159.6 L163.0,162.2 L163.4,164.8 L164.6,167.4 L166.5,170.0" fill="none" stroke="#222" stroke-width="1.6"/>
+  <path d="M173.0,40.0 L174.9,42.6 L176.4,45.2 L177.0,47.8 L176.6,50.4 L175.4,53.0 L173.6,55.6 L171.6,58.2 L170.0,60.8 L169.1,63.4 L169.2,66.0 L170.2,68.6 L171.9,71.2 L173.9,73.8 L175.6,76.4 L176.8,79.0 L177.0,81.6 L176.2,84.2 L174.6,86.8 L172.7,89.4 L170.8,92.0 L169.5,94.6 L169.0,97.2 L169.5,99.8 L170.9,102.4 L172.7,105.0 L174.7,107.6 L176.2,110.2 L177.0,112.8 L176.7,115.4 L175.6,118.0 L173.8,120.6 L171.8,123.2 L170.2,125.8 L169.2,128.4 L169.1,131.0 L170.0,133.6 L171.6,136.2 L173.6,138.8 L175.4,141.4 L176.7,144.0 L177.0,146.6 L176.3,149.2 L174.9,151.8 L173.0,154.4 L171.1,157.0 L169.6,159.6 L169.0,162.2 L169.4,164.8 L170.6,167.4 L172.5,170.0" fill="none" stroke="#222" stroke-width="1.6"/>
+  <line x1="170" y1="170" x2="170" y2="180" stroke="#222" stroke-width="1.6"/>
+  <rect x="140" y="180" width="60" height="44" fill="none" stroke="#222" stroke-width="1.6"/>
+  <text x="161" y="208" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">M</text>
+  <text x="196" y="110" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">ゴムひも</text>
+  <!-- natural length and extension -->
+  <line x1="110" y1="40" x2="110" y2="96" stroke="#888" stroke-width="1" marker-start="url(#q-ag)" marker-end="url(#q-ag)"/>
+  <text x="56" y="74" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#888">自然長</text>
+  <line x1="102" y1="96" x2="150" y2="96" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="110" y1="98" x2="110" y2="170" stroke="#888" stroke-width="1" marker-start="url(#q-ag)" marker-end="url(#q-ag)"/>
+  <line x1="102" y1="170" x2="150" y2="170" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="92" y="140" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+  <!-- model box -->
+  <rect x="250" y="120" width="185" height="66" fill="none" stroke="#888" stroke-width="1"/>
+  <text x="262" y="146" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">張力 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="15">X = ATx</tspan></text>
+  <text x="262" y="172" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">内部エネルギー <tspan font-family="Times New Roman, serif" font-style="italic" font-size="15">U = CT</tspan></text>
+  <text x="150" y="252" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">温度 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="15">T</tspan></text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280">
+<defs>
+<marker id="q-ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker>
+</defs>
+<!-- cylinder: left closed end at x=260, open right; piston at x=380 (pulled) -->
+<line x1="80" y1="90" x2="300" y2="90" stroke="#222" stroke-width="1.6"/>
+<line x1="80" y1="170" x2="300" y2="170" stroke="#222" stroke-width="1.6"/>
+<line x1="80" y1="90" x2="80" y2="170" stroke="#222" stroke-width="1.6"/>
+<!-- piston at x=270 -->
+<rect x="262" y="92" width="14" height="76" fill="#888" stroke="#222" stroke-width="1.6"/>
+<line x1="276" y1="130" x2="350" y2="130" stroke="#222" stroke-width="3"/>
+<text x="300" y="120" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">ピストン</text>
+<text x="140" y="136" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">シリンダー</text>
+<!-- dead volume mark: x=80..110 -->
+<line x1="110" y1="92" x2="110" y2="168" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="80" y1="190" x2="110" y2="190" stroke="#222" stroke-width="1" marker-start="url(#q-ar)" marker-end="url(#q-ar)"/>
+<text x="78" y="210" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">V<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<line x1="80" y1="225" x2="262" y2="225" stroke="#222" stroke-width="1" marker-start="url(#q-ar)" marker-end="url(#q-ar)"/>
+<text x="150" y="245" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">V<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<text x="168" y="245" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">（引ききったとき）</text>
+<!-- inlet valve J on top-left -->
+<line x1="95" y1="90" x2="95" y2="50" stroke="#222" stroke-width="1.6"/>
+<line x1="115" y1="90" x2="115" y2="50" stroke="#222" stroke-width="1.6"/>
+<polygon points="95,70 115,70 105,60" fill="none" stroke="#222" stroke-width="1.2"/>
+<text x="122" y="66" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">吸気弁 J（大気 <tspan font-family="Times New Roman, serif" font-style="italic">P</tspan><tspan baseline-shift="sub" font-size="10">0</tspan>）</text>
+<!-- outlet valve K: pipe from left end to tank -->
+<line x1="80" y1="120" x2="40" y2="120" stroke="#222" stroke-width="1.6"/>
+<line x1="80" y1="140" x2="40" y2="140" stroke="#222" stroke-width="1.6"/>
+<line x1="40" y1="120" x2="40" y2="70" stroke="#222" stroke-width="1.6"/>
+<line x1="20" y1="140" x2="40" y2="140" stroke="#222" stroke-width="1.6"/>
+<line x1="20" y1="140" x2="20" y2="70" stroke="#222" stroke-width="1.6"/>
+<polygon points="20,100 40,100 30,90" fill="none" stroke="#222" stroke-width="1.2"/>
+<text x="0" y="114" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">K</text>
+<!-- tank -->
+<rect x="420" y="40" width="160" height="110" rx="14" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="452" y="92" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">タンク</text>
+<text x="452" y="116" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">体積 <tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10">T</tspan></text>
+<polyline points="20,70 20,20 500,20 500,40" fill="none" stroke="#222" stroke-width="1.6"/>
+<polyline points="40,70 40,30 480,30 480,40" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="200" y="14" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">逆止弁 K（シリンダー→タンクの向きにだけ通す）</text>
+</svg>

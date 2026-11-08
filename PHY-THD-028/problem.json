@@ -1,0 +1,130 @@
+{
+ "id": "PHY-THD-028",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "内部エネルギー密度が温度だけで決まる気体（微小カルノーサイクルによる P–T 関係の導出と自由膨張での冷却）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある気体 G の圧力を $P$，体積を $V$，内部エネルギーを $U$，絶対温度を $T$ とする．G について，次の3つのことがわかっている：内部エネルギーは $U=\\alpha PV$（$\\alpha$ は正の定数）と表される；単位体積あたりの内部エネルギー $u=\\dfrac{U}{V}$ は $T$ だけで決まる；熱力学第一法則が成り立ち，G が体積を $\\Delta V$ だけ増やすときにする仕事は $P\\Delta V$ である．\nまた，高温 $T_{\\rm H}$ と低温 $T_{\\rm L}$ の熱源の間でゆっくり運転する可逆な熱機関（等温変化と断熱変化からなるサイクル）の熱効率は，作業物質によらず $1-\\dfrac{T_{\\rm L}}{T_{\\rm H}}$ である．変化はすべてゆっくり行うものとする（(4) の自由膨張を除く）．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "G の温度を一定に保って体積を $V_1$ から $V_2$ に増やすとき，圧力はどう変化するか．また，その間に G が吸収する熱 $Q$ を $P,\\ V_1,\\ V_2,\\ \\alpha$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "断熱変化では $PV^{\\gamma}$ が一定となる．$\\gamma$ を $\\alpha$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "図のように，温度 $T+\\Delta T$ での等温膨張（体積 $V_1\\to V_2$）→ 断熱膨張 → 温度 $T$ での等温圧縮 → 断熱圧縮 からなるサイクルを考える（$\\Delta T$ は微小）．温度 $T+\\Delta T,\\ T$ での圧力をそれぞれ $P+\\Delta P,\\ P$ とする．このサイクルで G が1周の間にする正味の仕事を，$\\Delta P$ の1次までの精度で $\\Delta P,\\ V_1,\\ V_2$ で表せ．これと熱効率の関係を用いて，$P$ が $T^{x}$ に比例すること（$x$ は定数）を示し，$x$ を $\\alpha$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "断熱材で囲まれた容器の中で，G を真空中へ自由膨張させて体積を2倍にした．膨張後の温度 $T'$ はもとの温度 $T$ の何倍か．また，同じ状態から断熱的にゆっくり体積を2倍にした場合の温度 $T''$ は $T$ の何倍か．$T,\\ T',\\ T''$ の大小関係も答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "外側が真空のシリンダーに G を入れ，ばねにつながれたなめらかなピストンでふたをした．ばねの力により，G の圧力はつねに体積に比例する（$P=\\beta V$，$\\beta$ は正の定数）．はじめの圧力 $P_1$，体積 $V_1$，温度 $T_1$ の状態から，ゆっくり加熱して温度を $2T_1$ にした．このとき G が吸収した熱を $\\alpha,\\ P_1,\\ V_1$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：内部エネルギー密度が温度だけで決まる気体（微小カルノーサイクルによる P–T 関係の導出と自由膨張での冷却）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "圧力は変わらない（一定），$Q=(\\alpha+1)P(V_2-V_1)$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\gamma=\\dfrac{\\alpha+1}{\\alpha}$"
+   },
+   {
+    "id": "3",
+    "tex": "正味の仕事 $\\Delta P\\,(V_2-V_1)$，$\\dfrac{\\Delta P}{P}=(\\alpha+1)\\dfrac{\\Delta T}{T}$ より $P\\propto T^{\\alpha+1}$，$x=\\alpha+1$"
+   },
+   {
+    "id": "4",
+    "tex": "$T'=2^{-\\frac{1}{\\alpha+1}}T$，$T''=2^{-\\frac{1}{\\alpha}}T$，$T''<T'<T$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\left(\\alpha+\\dfrac12\\right)\\left(4^{\\alpha+1}-1\\right)P_1V_1$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　「$u$ が $T$ だけで決まる」ことから，等温変化は定圧変化でもある．この性質と第一法則，可逆機関の熱効率を組み合わせると，状態方程式を知らなくても $P$ と $T$ の関係が決まる．\n\n\\textbf{(1)}　$u=\\dfrac{U}{V}=\\alpha P$ が $T$ だけで決まるので，$T$ 一定なら $P$ も\\textbf{一定}である．第一法則より\n\\[ Q=\\Delta U+P\\Delta V=\\alpha P(V_2-V_1)+P(V_2-V_1)=\\boldsymbol{(\\alpha+1)P(V_2-V_1)} \\]\n（理想気体と違い，等温膨張でも内部エネルギーは $\\alpha P\\Delta V$ だけ増える．）\n\n\\textbf{(2)}　断熱変化では $\\Delta U=-P\\Delta V$．$\\Delta U=\\alpha(P\\Delta V+V\\Delta P)$ だから\n\\[ (\\alpha+1)P\\Delta V+\\alpha V\\Delta P=0\\quad\\Longrightarrow\\quad \\frac{\\Delta P}{P}+\\frac{\\alpha+1}{\\alpha}\\frac{\\Delta V}{V}=0 \\]\nよって $PV^{\\gamma}$ 一定，$\\boldsymbol{\\gamma=\\dfrac{\\alpha+1}{\\alpha}}$．\n\n\\textbf{(3)}　(1) より，等温線は $P$–$V$ 図上で水平な線分である．サイクルは高さ $\\Delta P$ の水平な帯の中にあり，左右を2本の断熱線で区切られている．断熱線は帯の中でほぼ直線とみなせ，帯の上辺（長さ $V_2-V_1$）と下辺の長さの差は $\\Delta P$ の1次の量なので，囲む面積（正味の仕事）は\n\\[ W=\\Delta P\\,(V_2-V_1)\\quad(\\Delta P\\ \\text{の1次まで}) \\]\n高温側で吸収する熱は (1) より $Q_{\\rm H}=(\\alpha+1)(P+\\Delta P)(V_2-V_1)\\fallingdotseq(\\alpha+1)P(V_2-V_1)$．このサイクルは可逆なので熱効率は $1-\\dfrac{T}{T+\\Delta T}\\fallingdotseq\\dfrac{\\Delta T}{T}$ であり，\n\\[ \\frac{\\Delta P\\,(V_2-V_1)}{(\\alpha+1)P(V_2-V_1)}=\\frac{\\Delta T}{T}\\quad\\Longrightarrow\\quad\\frac{\\Delta P}{P}=(\\alpha+1)\\frac{\\Delta T}{T} \\]\nこれは $P=cT^{x}$ とおくと $\\dfrac{\\Delta P}{P}=x\\dfrac{\\Delta T}{T}$ となることと一致するので，$P\\propto T^{\\alpha+1}$，$\\boldsymbol{x=\\alpha+1}$．したがって $u=\\alpha P\\propto T^{\\alpha+1}$ でもある．（$\\alpha=3$ は空洞放射の場合で，$u\\propto T^4$ というシュテファン・ボルツマンの法則になる．）\n\n\\textbf{(4)}　\\textbf{自由膨張}：真空中への膨張では仕事をせず，熱の出入りもないので $U$ は一定．体積が2倍なので $u$ は $\\dfrac12$ 倍，$u\\propto T^{\\alpha+1}$ より\n\\[ T'=\\boldsymbol{2^{-\\frac{1}{\\alpha+1}}\\,T} \\]\n理想気体なら自由膨張で温度は変わらないが，G では $u$ が $T$ だけで決まるため，薄まると必ず冷える．\n\\textbf{断熱的にゆっくり}：$PV^{\\frac{\\alpha+1}{\\alpha}}$ 一定と $P\\propto T^{\\alpha+1}$ より $(TV^{\\frac1\\alpha})^{\\alpha+1}$ が一定，すなわち $TV^{\\frac1\\alpha}$ 一定．よって\n\\[ T''=\\boldsymbol{2^{-\\frac{1}{\\alpha}}\\,T} \\]\n$\\dfrac1\\alpha>\\dfrac1{\\alpha+1}>0$ なので $\\boldsymbol{T''<T'<T}$．ゆっくりした断熱膨張では外部に仕事をする分だけ $U$ が減るので，自由膨張より低温になる．\n\n\\textbf{(5)}　$P=\\beta V$ と $P\\propto T^{\\alpha+1}$ より $V\\propto T^{\\alpha+1}$．温度が2倍になると $P,\\ V$ はともに $2^{\\alpha+1}$ 倍で，$PV$ は $4^{\\alpha+1}$ 倍になる．\nG がする仕事は $P$–$V$ 図の台形の面積で\n\\[ W=\\int_{V_1}^{V_2}\\beta V\\,dV=\\frac12\\left(P_2V_2-P_1V_1\\right) \\]\n内部エネルギーの変化は $\\Delta U=\\alpha(P_2V_2-P_1V_1)$．よって吸収した熱は\n\\[ Q=\\Delta U+W=\\left(\\alpha+\\frac12\\right)(P_2V_2-P_1V_1)=\\boldsymbol{\\left(\\alpha+\\frac12\\right)\\left(4^{\\alpha+1}-1\\right)P_1V_1} \\]\n（例えば $\\alpha=3$ なら約 $893P_1V_1$ で，温度を2倍にするのに理想気体よりはるかに多くの熱が要る．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "単位体積あたりの内部エネルギーが温度だけで決まる気体では，等温変化が定圧変化になり，等温膨張でも内部エネルギーが増える．微小な可逆サイクル（水平な等温線と断熱線）の面積 $\\Delta P\\Delta V$ と吸熱 $(\\alpha+1)P\\Delta V$ をカルノー効率 $\\Delta T/T$ と結ぶと，$U=\\alpha PV$ から $P\\propto T^{\\alpha+1}$ が導かれる．この気体は自由膨張でも冷え，準静的断熱膨張との冷え方の差が仕事の有無を表す．"
+ },
+ "concepts": [
+  "first-law",
+  "work-energy",
+  "heat-engine"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "カルノーサイクル",
+  "熱効率",
+  "断熱変化",
+  "自由膨張",
+  "空洞放射"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

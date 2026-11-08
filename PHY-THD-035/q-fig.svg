@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 340">
+<defs>
+<marker id="q-ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker>
+<pattern id="q-hat" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#888" stroke-width="1.2"/></pattern>
+</defs>
+<!-- insulated walls -->
+<path d="M100,20 H300 V320 H100 Z M120,40 V300 H280 V40 Z" fill="url(#q-hat)" fill-rule="evenodd" stroke="#222" stroke-width="1.6"/>
+<!-- inner region height 260: total 4V0 -> 65 px per V0 ; B: 3V0 top 40..235, piston at 235, A: 235..300 -->
+<rect x="121" y="229" width="158" height="12" fill="#888" stroke="#222" stroke-width="1.6"/>
+<text x="150" y="130" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">B：1 mol</text>
+<text x="150" y="155" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">体積 3<tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10">0</tspan>，温度 <tspan font-family="Times New Roman, serif" font-style="italic">T</tspan><tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<text x="150" y="268" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">A：1 mol</text>
+<text x="150" y="290" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">体積 <tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10">0</tspan>，温度 <tspan font-family="Times New Roman, serif" font-style="italic">T</tspan><tspan baseline-shift="sub" font-size="10">A</tspan></text>
+<line x1="300" y1="235" x2="340" y2="235" stroke="#888" stroke-width="1"/>
+<text x="344" y="232" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">ピストン</text>
+<text x="344" y="250" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">質量 <tspan font-family="Times New Roman, serif" font-style="italic">M</tspan>，断面積 <tspan font-family="Times New Roman, serif" font-style="italic">S</tspan></text>
+<text x="310" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">断熱材</text>
+<line x1="60" y1="60" x2="60" y2="140" stroke="#222" stroke-width="1.2" marker-end="url(#q-ar)"/>
+<text x="40" y="104" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">g</text>
+</svg>

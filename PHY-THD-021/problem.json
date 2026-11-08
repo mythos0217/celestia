@@ -1,0 +1,144 @@
+{
+ "id": "PHY-THD-021",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "断熱変化と定圧の接触をくり返して有限の物体を冷やす冷凍サイクル（吸放熱比一定と仕事の総和）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，容器 X には物質量 1 mol の単原子分子理想気体が，なめらかに動く質量の無視できるピストンで閉じ込められており，ピストンの上に載せるおもりの質量を変えることで気体の圧力を変えられる．容器 Y は体積が一定で，物質量 1 mol の単原子分子理想気体が入っている．物体 Z の温度は常に $T_{\\rm H}$ に保たれている．X と Y，または X と Z を接触させたときだけ熱が移り，それ以外の熱の出入りはない．容器の熱容量は無視でき，操作はすべてゆっくり行う．気体定数を $R$ とし，単原子分子理想気体の断熱変化では $pV^{\\frac53}$ が一定であることを用いてよい．\n\nはじめ，X 内の気体の圧力は $p_{\\rm H}$，温度は $T_{\\rm H}$ であり，Y 内の気体の温度も $T_{\\rm H}$ である．次の操作①〜④を 1 サイクルとして，これをくり返す．\n操作①：X をどれとも接触させずに，おもりを徐々に減らして X 内の圧力を $\\dfrac{p_{\\rm H}}{32}$ にする．\n\n操作②：おもりをそのままにして X を Y に接触させ，X と Y の温度が等しくなるまで待ち，離す．\n\n操作③：X をどれとも接触させずに，おもりを徐々に増やして X 内の圧力を $p_{\\rm H}$ に戻す．\n\n操作④：おもりをそのままにして X を Z に接触させ，X の温度が $T_{\\rm H}$ になるまで待ち，離す．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "①の後の X 内の気体の温度と体積は，それぞれ①の前の何倍か．"
+     },
+     {
+      "id": "2",
+      "tex": "1 回目のサイクルの②の後の Y 内の気体の温度 $T_1$ を $T_{\\rm H}$ で表せ．また，④の後に X 内の気体がはじめの状態に戻ることを説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "②で Y から X に移る熱量を $Q_{\\rm Y}$，④で X から Z に移る熱量を $Q_{\\rm Z}$ とする．どのサイクルでも $Q_{\\rm Z}$ は $Q_{\\rm Y}$ の一定倍であることを示し，その倍率を求めよ．また，1 サイクルの間に X 内の気体がされた仕事の総和 $W$ は $Q_{\\rm Y}$ の何倍か．"
+     },
+     {
+      "id": "4",
+      "tex": "$n$ 回目のサイクルの後の Y 内の気体の温度 $T_n$ を $T_{\\rm H}$，$n$ で表せ．また，サイクルを限りなくくり返したときに $T_n$ が近づく温度 $T_\\infty$ を求めよ．さらに，$T_n-T_\\infty$ がはじめて $T_\\infty$ の $1\\,\\%$ 以下になる $n$ を求めよ．必要なら $\\log_{10}2=0.301$，$\\log_{10}3=0.477$ を用いよ．"
+     },
+     {
+      "id": "5",
+      "tex": "サイクルを限りなくくり返すとき，X 内の気体がされる仕事の総和 $W_{\\rm tot}$ を $R$，$T_{\\rm H}$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：断熱変化と定圧の接触をくり返して有限の物体を冷やす冷凍サイクル（吸放熱比一定と仕事の総和）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：断熱変化と定圧の接触をくり返して有限の物体を冷やす冷凍サイクル（吸放熱比一定と仕事の総和）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "温度 $\\dfrac14$ 倍，体積 8 倍"
+   },
+   {
+    "id": "2",
+    "tex": "$T_1=\\dfrac{17}{32}T_{\\rm H}$；④の後は圧力 $p_{\\rm H}$，温度 $T_{\\rm H}$ なので状態方程式から体積も元に戻る"
+   },
+   {
+    "id": "3",
+    "tex": "$Q_{\\rm Z}=4Q_{\\rm Y}$，$W=3Q_{\\rm Y}$"
+   },
+   {
+    "id": "4",
+    "tex": "$T_n=\\dfrac{T_{\\rm H}}{4}+\\dfrac34T_{\\rm H}\\left(\\dfrac38\\right)^n$，$T_\\infty=\\dfrac{T_{\\rm H}}{4}$，$n=6$"
+   },
+   {
+    "id": "5",
+    "tex": "$W_{\\rm tot}=\\dfrac{27}{8}RT_{\\rm H}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 断熱膨張}\n\n$pV^{\\frac53}=$ 一定 と $pV=RT$ から $T\\propto p^{\\frac25}$，$V\\propto p^{-\\frac35}$．圧力が $\\frac{1}{32}=2^{-5}$ 倍になるので，温度は $2^{-2}=\\boldsymbol{\\dfrac14}$ \\textbf{倍}，体積は $2^{3}=\\boldsymbol{8}$ \\textbf{倍}．\n\n\\textbf{(2) Y との接触}\n\n②では X 内の圧力が一定（おもり一定）なので，X が受け取る熱は定圧モル比熱 $\\frac52R$ を用いて $\\frac52R\\Delta T$（内部エネルギー $\\frac32R\\Delta T$ ＋ おもりを持ち上げる仕事 $R\\Delta T$）．Y は体積一定なので放出する熱は $\\frac32R\\times$（温度の下がり）．X の温度は $\\frac{T_{\\rm H}}{4}$ から $T_1$ へ，Y は $T_{\\rm H}$ から $T_1$ へ変わるから\n\\[ \\frac52R\\left(T_1-\\frac{T_{\\rm H}}{4}\\right)=\\frac32R(T_{\\rm H}-T_1)\\quad\\therefore\\quad T_1=\\boldsymbol{\\frac{17}{32}T_{\\rm H}}. \\]\n④の後，X 内の圧力は $p_{\\rm H}$，温度は $T_{\\rm H}$ ではじめと同じであり，物質量も同じなので，状態方程式から体積も同じになる．よって \\textbf{X はサイクルごとにはじめの状態に戻る}．各サイクルで変わるのは Y の温度だけである．\n\n\\textbf{(3) 吸熱と放熱の比}\n\nあるサイクルの②の後の X の温度を $T'$（Y の新しい温度と同じ）とする．$Q_{\\rm Y}=\\frac52R\\left(T'-\\frac{T_{\\rm H}}{4}\\right)$．③で圧力が 32 倍になるので温度は 4 倍の $4T'$ になり，④で定圧のまま $T_{\\rm H}$ まで下がるから\n\\[ Q_{\\rm Z}=\\frac52R(4T'-T_{\\rm H})=4\\cdot\\frac52R\\left(T'-\\frac{T_{\\rm H}}{4}\\right)=\\boldsymbol{4Q_{\\rm Y}}. \\]\n同じ 2 つの圧力の間の断熱変化では温度の比が常に 4 なので，2 つの定圧過程の温度差の比も 4 になり，$T'$（すなわちサイクル）によらない．\n\nX は 1 サイクルではじめの状態に戻るので内部エネルギーの変化は 0．熱を $Q_{\\rm Y}$ 受け取り $Q_{\\rm Z}$ 放出したから，第一法則より\n\\[ W=Q_{\\rm Z}-Q_{\\rm Y}=\\boldsymbol{3Q_{\\rm Y}}. \\]\n\n\\textbf{(4) Y の温度の変化}\n\n(2) と同様に，$T_{n-1}$ の Y と $\\frac{T_{\\rm H}}{4}$ の X を接触させると\n\\[ \\frac52\\left(T_n-\\frac{T_{\\rm H}}{4}\\right)=\\frac32(T_{n-1}-T_n)\\quad\\Longrightarrow\\quad T_n-\\frac{T_{\\rm H}}{4}=\\frac38\\left(T_{n-1}-\\frac{T_{\\rm H}}{4}\\right). \\]\n$T_0=T_{\\rm H}$ より\n\\[ T_n=\\boldsymbol{\\frac{T_{\\rm H}}{4}+\\frac34T_{\\rm H}\\left(\\frac38\\right)^n},\\qquad T_\\infty=\\boldsymbol{\\frac{T_{\\rm H}}{4}}. \\]\n（Y の温度は①の後の X の温度に近づく．それより冷えると②で熱が逆向きに流れるので，それ以上は下がらない．）\n\n$T_n-T_\\infty=\\frac34T_{\\rm H}\\left(\\frac38\\right)^n\\le\\frac{1}{100}\\cdot\\frac{T_{\\rm H}}{4}$ より $\\left(\\frac83\\right)^n\\ge300$．常用対数をとると $n(3\\times0.301-0.477)\\ge 2+0.477$，すなわち $0.426\\,n\\ge2.477$，$n\\ge5.81\\cdots$．よって $n=\\boldsymbol{6}$．\n\n\\textbf{(5) 仕事の総和}\n\n(3) より毎回 $W=3Q_{\\rm Y}$ なので，総和は「Y から取り出した熱の総和」の 3 倍である．Y は体積一定で $T_{\\rm H}$ から $\\frac{T_{\\rm H}}{4}$ まで冷えるので，取り出した熱の総和は $\\frac32R\\left(T_{\\rm H}-\\frac{T_{\\rm H}}{4}\\right)=\\frac98RT_{\\rm H}$．よって\n\\[ W_{\\rm tot}=3\\times\\frac98RT_{\\rm H}=\\boldsymbol{\\frac{27}{8}RT_{\\rm H}}. \\]\n各回の仕事を等比数列の和として計算しなくても，吸放熱の比が一定であることから直ちに求まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ 2 つの圧力の間を断熱線で結ぶ定圧サイクルでは，断熱変化での温度比が一定なので，2 つの定圧過程での吸熱と放熱の比がサイクルによらず一定になる．熱容量が有限の物体から熱をくみ出すと，温度は等比的に「断熱膨張後の温度」へ近づき，仕事の総和は取り出した熱の総和の定数倍として級数を使わずに求まる．"
+ },
+ "concepts": [
+  "first-law",
+  "work-energy",
+  "heat-temperature"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "冷凍機",
+  "断熱変化",
+  "定圧変化",
+  "熱容量",
+  "漸化式",
+  "熱力学第一法則"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

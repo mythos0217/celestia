@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340">
+<defs>
+<marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+</defs>
+<line x1="40" y1="300" x2="440" y2="300" stroke="#222" stroke-width="1.6"/>
+<g stroke="#222" stroke-width="1">
+<line x1="50" y1="300" x2="42" y2="310"/><line x1="70" y1="300" x2="62" y2="310"/><line x1="90" y1="300" x2="82" y2="310"/><line x1="110" y1="300" x2="102" y2="310"/><line x1="130" y1="300" x2="122" y2="310"/><line x1="150" y1="300" x2="142" y2="310"/><line x1="170" y1="300" x2="162" y2="310"/><line x1="190" y1="300" x2="182" y2="310"/><line x1="210" y1="300" x2="202" y2="310"/><line x1="230" y1="300" x2="222" y2="310"/><line x1="250" y1="300" x2="242" y2="310"/><line x1="270" y1="300" x2="262" y2="310"/><line x1="290" y1="300" x2="282" y2="310"/><line x1="310" y1="300" x2="302" y2="310"/><line x1="330" y1="300" x2="322" y2="310"/><line x1="350" y1="300" x2="342" y2="310"/><line x1="370" y1="300" x2="362" y2="310"/><line x1="390" y1="300" x2="382" y2="310"/><line x1="410" y1="300" x2="402" y2="310"/><line x1="430" y1="300" x2="422" y2="310"/>
+</g>
+<text x="190" y="330" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">地表</text>
+<line x1="70" y1="300" x2="70" y2="30" stroke="#222" stroke-width="1.4" marker-end="url(#q-ag)"/>
+<text x="78" y="36" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">z</text>
+<!-- reference height z=0 -->
+<line x1="64" y1="200" x2="420" y2="200" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="40" y="205" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">0</text>
+<!-- original parcel position dashed, displaced parcel solid -->
+<circle cx="240" cy="200" r="24" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<circle cx="240" cy="130" r="24" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="240" y1="172" x2="240" y2="158" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<line x1="290" y1="200" x2="290" y2="130" stroke="#888" stroke-width="1" marker-start="url(#q-ag)" marker-end="url(#q-ag)"/>
+<line x1="264" y1="130" x2="294" y2="130" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="298" y="170" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">δ</text>
+<text x="146" y="110" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">空気塊</text>
+<!-- environment profile text -->
+<text x="320" y="60" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">周囲の大気の温度</text>
+<text x="320" y="84" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">T</text>
+<text x="330" y="84" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">(</text>
+<text x="336" y="84" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">z</text>
+<text x="344" y="84" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">) ＝ </text>
+<text x="372" y="84" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">T<tspan baseline-shift="sub" font-size="10">0</tspan> − βz</text>
+</svg>

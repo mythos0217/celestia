@@ -1,0 +1,144 @@
+{
+ "id": "PHY-THD-038",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "オットーサイクルと，初めの圧力まで膨張しきるサイクルの熱効率の比較（部分サイクルの仕事の符号による大小判定）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "単原子分子理想気体を作業物質とする2つの熱機関 a，c を考える．断熱変化では $pV^{\\frac53}$ が一定に保たれる．図の状態 A（圧力 $p_{\\rm A}$，体積 $V_{\\rm A}$）から出発し，\n\\begin{itemize}\n  \\item 熱機関 a：A→B（断熱圧縮して体積 $V_{\\rm B}=V_{\\rm A}/r$ に，$r>1$）→C（体積一定で加熱し，圧力を $p_{\\rm C}=\\alpha p_{\\rm B}$ に，$\\alpha>1$）→D（断熱膨張して体積 $V_{\\rm A}$ に）→A（体積一定で冷却）\n  \\item 熱機関 c：A→B→C は a と同じ．C→F（断熱膨張して圧力が $p_{\\rm A}$ に戻るまで）→A（圧力一定で冷却し，体積 $V_{\\rm A}$ に）\n\\end{itemize}\nとする．熱効率は（1サイクルで外にした正味の仕事）÷（1サイクルで吸収した熱量の和）で定める．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "圧力の比 $p_{\\rm D}/p_{\\rm A}$ と体積の比 $V_{\\rm F}/V_{\\rm A}$ を $\\alpha$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "熱機関 a の熱効率 $e_{\\rm a}$ を $r$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "熱機関 c の熱効率 $e_{\\rm c}$ を $r$，$\\alpha$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の式を使わずに $e_{\\rm c}>e_{\\rm a}$ であることを示したい．A→D→F→A（A→D は体積一定，D→F は図の断熱線の一部，F→A は圧力一定）という仮想的なサイクルの正味の仕事の符号に注目して説明せよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$r=8$，$\\alpha=32$ のとき，$e_{\\rm a}$，$e_{\\rm c}$（分数で）と $V_{\\rm F}/V_{\\rm A}$ を求めよ．また，$\\alpha\\to1$（加える熱がごくわずか）の極限で $e_{\\rm c}$ が $e_{\\rm a}$ に一致することを示し，その理由を図の上で説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：オットーサイクルと，初めの圧力まで膨張しきるサイクルの熱効率の比較（部分サイクルの仕事の符号による大小判定）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：オットーサイクルと，初めの圧力まで膨張しきるサイクルの熱効率の比較（部分サイクルの仕事の符号による大小判定）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{p_{\\rm D}}{p_{\\rm A}}=\\alpha$，$\\dfrac{V_{\\rm F}}{V_{\\rm A}}=\\alpha^{\\frac35}$"
+   },
+   {
+    "id": "2",
+    "tex": "$e_{\\rm a}=1-r^{-\\frac23}$"
+   },
+   {
+    "id": "3",
+    "tex": "$e_{\\rm c}=1-\\dfrac53\\,r^{-\\frac23}\\,\\dfrac{\\alpha^{\\frac35}-1}{\\alpha-1}$"
+   },
+   {
+    "id": "4",
+    "tex": "A→D→F→A は $p$–$V$ 図で時計回りなので正味の仕事は正，よって A→D の吸熱 $Q_{\\rm AD}$ は F→A の放熱 $|Q_{\\rm FA}|$ より大きい．a と c は吸熱（B→C）が共通で，放熱が a は $Q_{\\rm AD}$，c は $|Q_{\\rm FA}|$ なので $e_{\\rm c}>e_{\\rm a}$"
+   },
+   {
+    "id": "5",
+    "tex": "$e_{\\rm a}=\\dfrac34$，$e_{\\rm c}=\\dfrac{337}{372}$，$V_{\\rm F}/V_{\\rm A}=8$．$\\alpha\\to1$ で $\\dfrac{\\alpha^{3/5}-1}{\\alpha-1}\\to\\dfrac35$ より $e_{\\rm c}\\to1-r^{-2/3}=e_{\\rm a}$（D と F が A に近づき，部分サイクルの面積が加熱量に比べて2次の微小量になるため）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}\\quad 断熱線 A–B と C–D はどちらも体積 $V_{\\rm B}$ と $V_{\\rm A}$ を結ぶので，$p_{\\rm B}=p_{\\rm A}r^{5/3}$，$p_{\\rm C}=p_{\\rm D}r^{5/3}$．よって $\\boldsymbol{p_{\\rm D}/p_{\\rm A}=p_{\\rm C}/p_{\\rm B}=\\alpha}$．C→F では $p_{\\rm C}V_{\\rm B}^{5/3}=p_{\\rm A}V_{\\rm F}^{5/3}$ なので\n\\[ V_{\\rm F}=V_{\\rm B}\\Big(\\frac{p_{\\rm C}}{p_{\\rm A}}\\Big)^{\\frac35}=\\frac{V_{\\rm A}}{r}\\big(\\alpha r^{\\frac53}\\big)^{\\frac35}=\\alpha^{\\frac35}V_{\\rm A},\\qquad \\boldsymbol{\\frac{V_{\\rm F}}{V_{\\rm A}}=\\alpha^{\\frac35}}. \\]\n\n\\textbf{(2)}\\quad 熱の出入りは定積の2過程だけ．単原子分子では定積で $Q=\\frac32V\\Delta p$ だから\n\\[ Q_{\\rm BC}=\\tfrac32V_{\\rm B}(\\alpha-1)p_{\\rm B}=\\tfrac32V_{\\rm A}p_{\\rm A}r^{\\frac23}(\\alpha-1),\\qquad |Q_{\\rm DA}|=\\tfrac32V_{\\rm A}(\\alpha-1)p_{\\rm A}. \\]\n$e_{\\rm a}=1-|Q_{\\rm DA}|/Q_{\\rm BC}=\\boldsymbol{1-r^{-\\frac23}}$．\n\n\\textbf{(3)}\\quad 吸熱は B→C だけで a と同じ．F→A は定圧なので放熱は $|Q_{\\rm FA}|=\\frac52p_{\\rm A}(V_{\\rm F}-V_{\\rm A})=\\frac52p_{\\rm A}V_{\\rm A}(\\alpha^{3/5}-1)$．\n\\[ e_{\\rm c}=1-\\frac{|Q_{\\rm FA}|}{Q_{\\rm BC}}=\\boldsymbol{1-\\frac53\\,r^{-\\frac23}\\,\\frac{\\alpha^{\\frac35}-1}{\\alpha-1}}. \\]\n\n\\textbf{(4) 部分サイクルによる比較}\\quad A→D（上へ），D→F（断熱線に沿って右下へ），F→A（左へ）は $p$–$V$ 図で時計回りなので，このサイクルの正味の仕事 $W'$ は正（囲む面積）．1周で内部エネルギーは元に戻るから第1法則より $W'=Q_{\\rm AD}-|Q_{\\rm FA}|>0$（D→F は断熱で熱の出入りなし）．ここで $Q_{\\rm AD}=|Q_{\\rm DA}|$ は a の放熱そのものである．a と c は吸熱 $Q_{\\rm BC}$ が共通で，放熱は a が $|Q_{\\rm DA}|$，c がそれより小さい $|Q_{\\rm FA}|$ だから $e_{\\rm c}>e_{\\rm a}$．\n(3) の式では，これは $x=\\alpha>1$ について $x-1>\\frac53(x^{3/5}-1)$ と同値である．$f(x)=x-1-\\frac53(x^{3/5}-1)$ は $f(1)=0$，$f'(x)=1-x^{-2/5}>0\\ (x>1)$ なので確かに成り立つ．\n\n\\textbf{(5)}\\quad $r^{2/3}=4$，$\\alpha^{3/5}=8$ より $e_{\\rm a}=\\boldsymbol{\\frac34}$，\n\\[ e_{\\rm c}=1-\\frac53\\cdot\\frac14\\cdot\\frac{7}{31}=\\boldsymbol{\\frac{337}{372}}\\ (\\approx0.91),\\qquad \\boldsymbol{\\frac{V_{\\rm F}}{V_{\\rm A}}=8}. \\]\n効率は大きく上がるが，シリンダーを初めの8倍の体積まで膨張させなければならない．\n$\\alpha=1+\\varepsilon$ とすると $\\alpha^{3/5}-1\\approx\\frac35\\varepsilon$ なので $\\frac{\\alpha^{3/5}-1}{\\alpha-1}\\to\\frac35$，よって $e_{\\rm c}\\to1-r^{-2/3}=e_{\\rm a}$．図では，D と F がともに A に近づき，部分サイクル A→D→F の三角形の面積は高さ（$\\propto\\varepsilon$）と底辺（$\\propto\\varepsilon$）の積で $\\varepsilon^2$ の大きさになる．一方吸熱は $\\varepsilon$ に比例するので，効率の差は $\\varepsilon\\to0$ で消える．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "吸熱過程を共有する2つのサイクルの効率は，放熱の大小で決まる．その大小は両サイクルの差にあたる部分サイクル（定積で上がり，断熱で下り，定圧で戻る）の向きから正味の仕事の符号で判定でき，初めの圧力まで膨張しきるサイクルの方が必ず効率が高い．差は加熱量の2次の微小量になる．"
+ },
+ "concepts": [
+  "first-law",
+  "work-energy",
+  "heat-temperature"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱効率",
+  "オットーサイクル",
+  "断熱変化",
+  "部分サイクル",
+  "p-V図",
+  "単原子分子理想気体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

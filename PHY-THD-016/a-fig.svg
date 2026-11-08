@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 330">
+<defs>
+<marker id="a-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+</defs>
+<line x1="70" y1="290" x2="480" y2="290" stroke="#222" stroke-width="1.6" marker-end="url(#a-ag)"/>
+<line x1="70" y1="290" x2="70" y2="20" stroke="#222" stroke-width="1.6" marker-end="url(#a-ag)"/>
+<text x="486" y="296" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">V</text>
+<text x="46" y="28" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">p</text>
+<!-- V0 at x=200, 2V0 at x=400 ; pa y=80, p1 y=150, pb y=220 -->
+<rect x="200" y="80" width="200" height="140" fill="#1f5fbf" fill-opacity="0.10" stroke="none"/>
+<line x1="200" y1="150" x2="200" y2="84" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<line x1="200" y1="80" x2="396" y2="80" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<line x1="400" y1="80" x2="400" y2="216" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<line x1="400" y1="220" x2="204" y2="220" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<line x1="200" y1="220" x2="200" y2="154" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<circle cx="200" cy="150" r="3.5" fill="#222"/>
+<line x1="70" y1="80" x2="200" y2="80" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="70" y1="150" x2="200" y2="150" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="70" y1="220" x2="200" y2="220" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="200" y1="220" x2="200" y2="290" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="400" y1="220" x2="400" y2="290" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="34" y="85" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">p<tspan baseline-shift="sub" font-size="10">a</tspan></text>
+<text x="34" y="155" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">p<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<text x="34" y="225" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">p<tspan baseline-shift="sub" font-size="10">b</tspan></text>
+<text x="190" y="310" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">Sh</text>
+<text x="386" y="310" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">2</text>
+<text x="396" y="310" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">Sh</text>
+<text x="210" y="145" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">はじめの状態</text>
+<text x="250" y="70" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">上昇（動摩擦 下向き）</text>
+<text x="240" y="240" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">下降（動摩擦 上向き）</text>
+<text x="408" y="150" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">静止したまま冷却</text>
+<text x="262" y="190" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">面積 ＝ 2</text>
+<text x="322" y="190" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf">Fh</text>
+</svg>

@@ -1,0 +1,151 @@
+{
+ "id": "PHY-THD-017",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "液体を真空室へ押し上げる気体の P∝V 過程と，加熱速度の折れ曲がりからの定積モル比熱の決定",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，断面積 $S$ の鉛直な円筒形容器が，厚さ $\\ell$ の断熱壁で上下の2室 A，B に仕切られている．B 室には密度 $\\rho$ の液体が深さ $2\\ell$ まで入っており，その上の高さ $\\ell$ の空間に，温度 $T_0$ の理想気体が閉じ込められている．A 室（高さ $2\\ell$）は密閉された真空である．B 室の底の近くから立てた細管が壁を貫いて A 室の床に開いており，はじめ細管内の液面は B 室の液面から高さ $\\ell$ のところで静止していた．B 室の気体はヒーターで加熱できる．細管の容積，液体の蒸発，液体・容器と気体の間の熱のやりとりは無視する．気体の定積モル比熱を $C_V$（未知），気体定数を $R$，重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "はじめの気体の圧力 $P_1$ を求めよ．加熱を始めると細管内の液面が上昇し，やがて A 室の床に達した．このときの気体の温度 $T_1$ を $T_0$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "さらに加熱を続けると，液体は A 室にたまり始めた．B 室の気体の体積が $V$ のときの圧力 $P$ と温度 $T$ を，$\\rho,\\ g,\\ S,\\ \\ell,\\ T_0,\\ V$ のうち必要なもので表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の過程で，気体 $1\\,\\mathrm{mol}$ の温度を $1\\,\\mathrm K$ 上げるのに必要な熱量（この過程でのモル比熱）$C$ を $C_V,\\ R$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "ヒーターの発熱の仕事率を一定にして実験すると，気体の温度は時間に対して折れ線状に上昇し，液体が A 室に流れ込み始めた瞬間に温度の上昇率が $\\dfrac56$ 倍になった．$C_V$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "加熱を始めてから B 室の気体の体積が $2S\\ell$ になるまでに，ヒーターが与えた熱量の総和 $Q$ を $\\rho,\\ g,\\ S,\\ \\ell$ で表せ（$C_V$ は (4) の値とする）．また，(2) の過程で気体がした仕事が液体の位置エネルギーの増加に等しいことを確かめよ．"
+     },
+     {
+      "id": "6",
+      "tex": "A 室の床の高さが B 室のはじめの液面から $H$（$H>\\ell$）であったとする（他の条件は同じ）．液体が A 室に流れ込み始める前後での温度の上昇率の比（後／前）を $H,\\ \\ell,\\ C_V,\\ R$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：液体を真空室へ押し上げる気体の P∝V 過程と，加熱速度の折れ曲がりからの定積モル比熱の決定",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：液体を真空室へ押し上げる気体の P∝V 過程と，加熱速度の折れ曲がりからの定積モル比熱の決定",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$P_1=\\rho g\\ell$，$T_1=2T_0$"
+   },
+   {
+    "id": "2",
+    "tex": "$P=\\dfrac{2\\rho g}{S}V$，$T=2T_0\\left(\\dfrac{V}{S\\ell}\\right)^2$"
+   },
+   {
+    "id": "3",
+    "tex": "$C=C_V+\\dfrac R2$"
+   },
+   {
+    "id": "4",
+    "tex": "$C_V=\\dfrac52R$"
+   },
+   {
+    "id": "5",
+    "tex": "$Q=\\dfrac{41}{2}\\rho gS\\ell^2$（仕事・位置エネルギーの増加とも $3\\rho gS\\ell^2$）"
+   },
+   {
+    "id": "6",
+    "tex": "$\\dfrac{C_V(H+2\\ell)}{C_V(H+2\\ell)+RH}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　細管内の液柱の上は真空なので，B 室の液面と同じ高さでの圧力のつり合いから $P_1=\\boldsymbol{\\rho g\\ell}$．細管の容積は無視できるので，液柱が上がる間 B 室の液面は動かず，気体は\\textbf{定積変化}をする．液柱の上端が A 室の床（B 室の液面から $2\\ell$）に達したとき圧力は $2\\rho g\\ell$ で，定積なので $T_1=\\boldsymbol{2T_0}$．\n\n\\textbf{(2)}　液体が A 室に流れ込み，B 室の液面が $x$ 下がると，断面積が等しいので A 室の液面は床から $x$ 上がる．液面の高さの差は $(2\\ell+x)-(-x)=2\\ell+2x$ で，A 室の液面の上は真空だから\n\\[ P=\\rho g(2\\ell+2x),\\qquad V=S(\\ell+x) \\]\n$x$ を消去すると $P=\\boldsymbol{\\dfrac{2\\rho g}{S}V}$ で，圧力は体積に比例する．物質量を $n$ とすると $nR T_0=P_1S\\ell=\\rho gS\\ell^2$ なので\n\\[ T=\\frac{PV}{nR}=\\frac{2\\rho gV^2/S}{\\rho gS\\ell^2}T_0=\\boldsymbol{2T_0\\left(\\frac{V}{S\\ell}\\right)^2} \\]\n（$V=S\\ell$ で $T=2T_0$ となり (1) とつながる．）\n\n\\textbf{(3)}　$P=kV$（$k=\\dfrac{2\\rho g}{S}$）のとき，$nRT=kV^2$ より微小変化で $nR\\Delta T=2kV\\Delta V=2P\\Delta V$，すなわち気体がする仕事は $P\\Delta V=\\dfrac12nR\\Delta T$．第1法則より\n\\[ \\Delta Q=nC_V\\Delta T+P\\Delta V=n\\left(C_V+\\frac R2\\right)\\Delta T\\quad\\Longrightarrow\\quad C=\\boldsymbol{C_V+\\frac R2} \\]\nこの過程のモル比熱は温度によらず一定である．\n\n\\textbf{(4)}　定積過程（液体が細管を上る間）のモル比熱は $C_V$，(2) の過程では $C_V+\\dfrac R2$．どちらも一定なので，仕事率一定の加熱では温度は時間に比例して上がり，上昇率はモル比熱に反比例する．\n\\[ \\frac{C_V}{C_V+\\frac R2}=\\frac56\\quad\\Longrightarrow\\quad C_V=\\boldsymbol{\\frac52R} \\]\n（2原子分子の気体と考えられる．単原子分子なら比は $\\dfrac34$ になる．）\n\n\\textbf{(5)}　$n=\\dfrac{\\rho gS\\ell^2}{RT_0}$．定積過程の熱量は $Q_1=nC_V(2T_0-T_0)=\\dfrac52\\rho gS\\ell^2$．$V=2S\\ell$ では $T=8T_0$ なので，(2) の過程の熱量は\n\\[ Q_2=n\\left(C_V+\\frac R2\\right)(8T_0-2T_0)=\\frac{\\rho gS\\ell^2}{RT_0}\\cdot3R\\cdot6T_0=18\\rho gS\\ell^2 \\]\n\\[ Q=Q_1+Q_2=\\boldsymbol{\\frac{41}{2}\\rho gS\\ell^2} \\]\nこのとき B 室の液面は $\\ell$ 下がり（残り $\\ell$），A 室の液体の深さは $\\ell$（高さ $2\\ell$ 以内）で，設定と矛盾しない．\n\n仕事：$P$–$V$ 図で原点を通る直線の下の台形の面積だから\n\\[ W=\\frac12\\left(2\\rho g\\ell+4\\rho g\\ell\\right)(2S\\ell-S\\ell)=3\\rho gS\\ell^2 \\]\n位置エネルギー：B 室の液面から深さ $\\ell$ までの液体（質量 $\\rho S\\ell$，重心は B 室のはじめの液面から $\\dfrac{\\ell}{2}$ 下）が，A 室の床から高さ $\\ell$ までの部分（重心は B 室のはじめの液面から $\\dfrac52\\ell$ 上）に移ったと見なせるので，増加は $\\rho S\\ell g\\left(\\dfrac52\\ell+\\dfrac12\\ell\\right)=3\\rho gS\\ell^2$．両者は等しい．A 室は真空で外気の仕事がなく，細管の液体の運動エネルギーも無視できる（ゆっくりした変化）ので，気体の仕事はすべて液体の持ち上げに使われる．\n\n\\textbf{(6)}　床の高さが $H$ のとき，流れ込み始める瞬間の圧力は $\\rho gH$，体積は $S\\ell$．その後 $P=\\rho g(H+2x)$，$V=S(\\ell+x)$ なので $\\dfrac{\\Delta P}{\\Delta V}=\\dfrac{2\\rho g}{S}$．$nR\\Delta T=P\\Delta V+V\\Delta P$ より，流れ込み始める直後で\n\\[ \\frac{P\\Delta V}{nR\\Delta T}=\\frac{P}{P+V\\frac{\\Delta P}{\\Delta V}}=\\frac{\\rho gH}{\\rho gH+2\\rho g\\ell}=\\frac{H}{H+2\\ell} \\]\nしたがってこの瞬間のモル比熱は $C_V+\\dfrac{RH}{H+2\\ell}$ で，上昇率の比は\n\\[ \\boldsymbol{\\frac{C_V(H+2\\ell)}{C_V(H+2\\ell)+RH}} \\]\n$H=2\\ell$ のとき (4) の結果 $\\dfrac{C_V}{C_V+R/2}$ に一致する．$H\\neq2\\ell$ では $P$ は $V$ に比例せず，この比熱は $V$ とともに変わる（温度は時間について直線にならない）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "液柱で真空室へ液体を押し上げる気体では，液面差が体積に比例して増えるため $P\\propto V$ の過程になり，その間のモル比熱は $C_V+R/2$ で一定となる．細管を上る間の定積変化（比熱 $C_V$）からの切り替わりで，一定の加熱率に対する温度上昇率が不連続に変わるので，その比から $C_V$ が決まる．気体の仕事は液体の位置エネルギーの増加に等しい．"
+ },
+ "concepts": [
+  "first-law",
+  "work-energy",
+  "heat-temperature"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "液柱と圧力",
+  "ポリトロープ過程",
+  "モル比熱",
+  "熱力学第一法則",
+  "状態の切り替わり"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

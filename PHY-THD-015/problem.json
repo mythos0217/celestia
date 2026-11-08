@@ -1,0 +1,146 @@
+{
+ "id": "PHY-THD-015",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "断熱減率と大気中の空気塊の浮き沈み（大気の安定・不安定）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "空気をモル質量 $M$，比熱比 $\\gamma$ の理想気体とみなす．気体定数を $R$，重力加速度の大きさを $g$ とする．大気は静止しており，高さが $\\Delta z$ 増すと圧力は $\\rho g\\Delta z$ だけ減る（$\\rho$ はその高さでの空気の密度）．図のように，周囲の大気の絶対温度は高さ $z$ とともに $T(z)=T_0-\\beta z$（$\\beta$ は定数）のように変化している．\n\n高さ $z=0$ にあった小さな空気塊を考える．空気塊は周囲と熱をやりとりせず，常に周囲と同じ圧力を保ちながら準静的に断熱変化する（圧力 $P$，体積 $V$ について $PV^{\\gamma}=$一定）．空気塊にはたらく力は重力と周囲の空気からの浮力だけとし，空気の抵抗や周囲の空気を押しのける効果は無視する．$|\\Delta x|\\ll1$ のとき $(1+\\Delta x)^{a}\\approx1+a\\Delta x$ を用いてよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "空気塊がゆっくり上昇するとき，高さ1あたりの空気塊の温度の低下 $\\Gamma$ を $M$，$g$，$\\gamma$，$R$ で表せ．ただし，空気塊の温度は周囲の温度とほぼ等しいものとする．"
+     },
+     {
+      "id": "2",
+      "tex": "はじめ空気塊の温度は周囲と同じ $T_0$ であった．空気塊を $z=0$ から $\\delta$（$|\\delta|$ は十分小さい）だけ上に移して静かに放した．放した直後の空気塊の加速度（上向きを正）を $\\delta$ の1次まで求め，$g$，$T_0$，$\\Gamma$，$\\beta$，$\\delta$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "空気塊が $z=0$ を中心に単振動するための $\\beta$ の条件と，その角振動数 $\\omega$ を求めよ．条件を満たさないとき空気塊はどうなるか．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\beta=0$（等温大気），$T_0=280\\,\\mathrm{K}$，$M=2.9\\times10^{-2}\\,\\mathrm{kg/mol}$，$\\gamma=1.4$，$g=9.8\\,\\mathrm{m/s^2}$，$R=8.3\\,\\mathrm{J/(mol\\cdot K)}$ のとき，$\\Gamma$ の値と単振動の周期を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) と同じ $T_0$，$M$，$\\gamma$，$g$，$R$ で，ある日の大気で空気塊の振動の周期を測ると $5.0\\times10^{2}\\,\\mathrm{s}$ であった．この日の $\\beta$ を求めよ．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "数値は有効数字2桁で答えよ．"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：断熱減率と大気中の空気塊の浮き沈み（大気の安定・不安定）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：断熱減率と大気中の空気塊の浮き沈み（大気の安定・不安定）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Gamma=\\dfrac{(\\gamma-1)Mg}{\\gamma R}$"
+   },
+   {
+    "id": "2",
+    "tex": "$a=-\\dfrac{g(\\Gamma-\\beta)}{T_0}\\delta$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\beta<\\Gamma$，$\\omega=\\sqrt{\\dfrac{g(\\Gamma-\\beta)}{T_0}}$．$\\beta>\\Gamma$ では空気塊はずれた向きにますます離れていく（不安定）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\Gamma=9.8\\times10^{-3}\\,\\mathrm{K/m}$，周期 $3.4\\times10^{2}\\,\\mathrm{s}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\beta=5.3\\times10^{-3}\\,\\mathrm{K/m}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　断熱変化の式 $PV^\\gamma=$一定 と状態方程式 $PV=n'RT$（$n'$ は空気塊の物質量）から $V$ を消すと $T\\propto P^{(\\gamma-1)/\\gamma}$．微小変化では\n\\[ \\frac{\\Delta T}{T}=\\frac{\\gamma-1}{\\gamma}\\frac{\\Delta P}{P} \\]\n空気塊の圧力は周囲と等しいので $\\Delta P=-\\rho g\\Delta z$，周囲の空気の密度は $\\rho=\\dfrac{PM}{RT}$（空気塊と周囲の温度はほぼ等しい）．よって\n\\[ \\Delta T=-\\frac{\\gamma-1}{\\gamma}\\cdot\\frac{Mg}{R}\\Delta z,\\qquad \\boldsymbol{\\Gamma=\\frac{(\\gamma-1)Mg}{\\gamma R}} \\]\n（乾燥断熱減率．$\\gamma$ と $M$ だけで決まり，周囲の温度分布 $\\beta$ にはよらない．）\n\n\\textbf{(2)}　高さ $\\delta$ で，空気塊の温度は $T_{\\rm p}=T_0-\\Gamma\\delta$，周囲の温度は $T_{\\rm e}=T_0-\\beta\\delta$．圧力が等しいので密度は温度に反比例し，$\\rho_{\\rm p}T_{\\rm p}=\\rho_{\\rm e}T_{\\rm e}$．空気塊（体積 $V$）の運動方程式は\n\\[ \\rho_{\\rm p}Va=\\rho_{\\rm e}Vg-\\rho_{\\rm p}Vg\\quad\\Longrightarrow\\quad a=g\\left(\\frac{\\rho_{\\rm e}}{\\rho_{\\rm p}}-1\\right)=g\\left(\\frac{T_{\\rm p}}{T_{\\rm e}}-1\\right) \\]\n1次近似すると\n\\[ a=g\\left(\\frac{T_0-\\Gamma\\delta}{T_0-\\beta\\delta}-1\\right)\\approx\\boldsymbol{-\\frac{g(\\Gamma-\\beta)}{T_0}\\,\\delta} \\]\n空気塊は上昇すると断熱膨張で冷えるが，周囲も上空ほど冷たい．浮き沈みを決めるのは両者の冷え方の差 $\\Gamma-\\beta$ である（解答図）．\n\n\\textbf{(3)}　(2) は任意の小さな変位で成り立つので，$\\Gamma-\\beta>0$ なら復元力となって単振動する：\n\\[ \\boldsymbol{\\beta<\\Gamma},\\qquad \\boldsymbol{\\omega=\\sqrt{\\frac{g(\\Gamma-\\beta)}{T_0}}} \\]\n$\\beta>\\Gamma$ のときは，上にずれた空気塊が周囲より暖かく（軽く）なってさらに上昇し，下にずれればさらに下降する．つり合いは不安定で，対流が起こる．\n\n\\textbf{(4)}　\n\\[ \\Gamma=\\frac{0.4\\times2.9\\times10^{-2}\\times9.8}{1.4\\times8.3}\\approx\\boldsymbol{9.8\\times10^{-3}\\,\\mathrm{K/m}} \\]\n$\\beta=0$ なので\n\\[ \\omega=\\sqrt{\\frac{9.8\\times9.78\\times10^{-3}}{280}}\\approx1.85\\times10^{-2}\\,\\mathrm{s^{-1}},\\qquad \\frac{2\\pi}{\\omega}\\approx\\boldsymbol{3.4\\times10^{2}\\,\\mathrm{s}} \\]\n等温大気でも，空気塊が断熱的に冷えるために安定な浮き沈みが生じる．\n\n\\textbf{(5)}　$\\omega=\\dfrac{2\\pi}{5.0\\times10^2}\\approx1.257\\times10^{-2}\\,\\mathrm{s^{-1}}$ より\n\\[ \\Gamma-\\beta=\\frac{\\omega^2T_0}{g}=\\frac{(1.257\\times10^{-2})^2\\times280}{9.8}\\approx4.51\\times10^{-3}\\,\\mathrm{K/m} \\]\n\\[ \\beta=9.78\\times10^{-3}-4.51\\times10^{-3}\\approx\\boldsymbol{5.3\\times10^{-3}\\,\\mathrm{K/m}} \\]\n周期が長いほど $\\beta$ は $\\Gamma$ に近く，大気は不安定に近い．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "上下に動く空気塊は断熱変化で高さ1あたり $\\Gamma=(\\gamma-1)Mg/(\\gamma R)$ ずつ冷え，浮力の正負は周囲の温度低下率 $\\beta$ との差で決まる．$\\beta<\\Gamma$ なら復元力が変位に比例して単振動し，$\\beta>\\Gamma$ なら不安定になって対流が起こるので，振動の周期から大気の温度勾配を逆算できる．"
+ },
+ "concepts": [
+  "first-law",
+  "simple-harmonic-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "断熱減率",
+  "浮力",
+  "大気の安定性",
+  "単振動",
+  "ポアソンの法則"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

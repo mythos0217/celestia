@@ -1,0 +1,123 @@
+{
+ "id": "PHY-THD-020",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "水と水蒸気が共存するシリンダーのピストンの中立なつり合いと断熱時の振動",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，断面積 $A$ の鉛直なシリンダーに水を入れ，質量 $M$ のピストンでふたをした．ピストンはなめらかに動き，その上は真空である．シリンダー内には水（液体）と水蒸気だけがあり，以下の過程を通じて両者はつねに共存している．水と水蒸気が共存するとき，圧力は温度だけで決まる蒸気圧に等しく，着目する温度 $T_0$ の付近では蒸気圧は\n\\[ p=p_0+\\alpha\\,(T-T_0)\\qquad(\\alpha>0 \\text{ は定数}) \\]\nと表せる．はじめ温度 $T_0$，圧力 $p_0$ でピストンはつり合っている（$Mg=p_0A$，$g$ は重力加速度の大きさ）．\n\n水と水蒸気の 1 mol あたりの体積をそれぞれ $v_{\\rm l}$，$v_{\\rm g}$ とし，$\\Delta v=v_{\\rm g}-v_{\\rm l}$ とおく．また，1 mol の水を圧力を一定に保って同じ温度の水蒸気に変えるのに必要な熱量（蒸発熱）を $q$，シリンダー内の水と水蒸気をそれぞれの物質量を変えずに温度を $1$ K 上げるのに必要な熱量（熱容量）を $C$ とする．$v_{\\rm l},\\ v_{\\rm g},\\ q,\\ C$ は一定とみなしてよい．ピストンの変位は小さく，シリンダー内はつねに一様な平衡状態にあるとし，シリンダーとピストンの熱容量は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "シリンダーを温度 $T_0$ の大きな熱浴に浸しておく．ピストンをゆっくり $y$ だけ押し下げてから手をはなすと，その後ピストンはどうなるか．理由とともに答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) でピストンを押し下げる間に，シリンダー内から熱浴へ移った熱量 $Q$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次に，はじめの状態からシリンダーを断熱材で覆い，ピストンをゆっくり $y$ だけ押し下げた．このとき水になった水蒸気の物質量 $\\Delta n$ と，温度の上昇 $\\Delta T$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の状態で手をはなすと，ピストンは単振動をした．その周期 $\\tau$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：水と水蒸気が共存するシリンダーのピストンの中立なつり合いと断熱時の振動",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "押し下げた位置で静止したままである（温度が $T_0$ に保たれるので圧力が $p_0$ のまま変わらず，ピストンにはたらく力がつり合ったままだから）"
+   },
+   {
+    "id": "2",
+    "tex": "$Q=\\dfrac{qAy}{\\Delta v}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\Delta n=\\dfrac{Ay}{\\Delta v}$，$\\Delta T=\\dfrac{qAy}{C\\,\\Delta v}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\tau=2\\pi\\sqrt{\\dfrac{MC\\,\\Delta v}{\\alpha qA^2}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 熱浴中：中立のつり合い}\n\n水と水蒸気が共存している限り，圧力は温度だけで決まる．熱浴で温度が $T_0$ に保たれるので，体積を変えても圧力は $p_0$ のままであり，体積の減少分はその分の水蒸気が水になることでまかなわれる．ピストンにはたらく力 $p_0A-Mg=0$ はどこでもつり合うので，\\textbf{ピストンは押し下げた位置で静止したまま}である（理想気体のような復元力がない）．\n\n\\textbf{(2) 熱浴へ移る熱}\n\n体積は $Ay$ 減る．水蒸気が $\\Delta n$ mol 水になると体積は $\\Delta n\\,\\Delta v$ 減るので $\\Delta n=\\dfrac{Ay}{\\Delta v}$．\n\n蒸発熱 $q$ は圧力一定で 1 mol を蒸発させる熱で，その間に外へ $p\\,\\Delta v$ の仕事をしているから，1 mol あたりの内部エネルギーの増加は $q-p\\Delta v$ である．凝縮では逆に $\\Delta n(q-p_0\\Delta v)$ だけ内部エネルギーが減る．ピストンがした仕事は $p_0Ay=p_0\\Delta v\\,\\Delta n$．熱力学第一法則（シリンダー内が受けた熱 $=-Q$）より\n\\[ -\\Delta n(q-p_0\\Delta v)=-Q+p_0\\Delta v\\,\\Delta n\\quad\\Longrightarrow\\quad Q=q\\,\\Delta n=\\boldsymbol{\\frac{qAy}{\\Delta v}} \\]\n\n\\textbf{(3) 断熱：凝縮の熱が温度を上げる}\n\n体積の関係は (2) と同じなので $\\Delta n=\\boldsymbol{\\dfrac{Ay}{\\Delta v}}$（温度変化による $v_{\\rm l},v_{\\rm g}$ の変化は無視）．断熱なので，内部エネルギーの変化はされた仕事に等しい：\n\\[ C\\,\\Delta T-\\Delta n\\,(q-p\\Delta v)=pAy=p\\,\\Delta v\\,\\Delta n \\]\n（$p$ は過程中の圧力で，$p_0$ との差は $y$ について高次なので無視できる．）$p\\Delta v\\,\\Delta n$ が両辺で打ち消し合い，\n\\[ C\\,\\Delta T=q\\,\\Delta n\\quad\\Longrightarrow\\quad \\Delta T=\\boldsymbol{\\frac{qAy}{C\\,\\Delta v}} \\]\n凝縮で放出される蒸発熱が逃げ場を失い，水と水蒸気の温度を上げる．\n\n\\textbf{(4) 復元力と周期}\n\n温度が上がると共存の圧力（蒸気圧）が $\\Delta p=\\alpha\\Delta T$ 上がるので，ピストンには上向きに\n\\[ A\\,\\Delta p=\\frac{\\alpha qA^2}{C\\,\\Delta v}\\,y \\]\nの力がはたらく．これは変位 $y$ に比例する復元力で，ばね定数 $K=\\dfrac{\\alpha qA^2}{C\\Delta v}$ のばねと同じである．ピストンが上に戻れば逆に蒸発が起こって温度が下がり，圧力が下がって下向きの力になる．よって周期は\n\\[ \\tau=2\\pi\\sqrt{\\frac{M}{K}}=\\boldsymbol{2\\pi\\sqrt{\\frac{MC\\,\\Delta v}{\\alpha qA^2}}} \\]\n熱浴中（等温）では復元力が $0$ で振動しないのに対し，断熱では相変化の熱が温度を通して圧力にはね返ることが復元力の起源である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "液体と蒸気が共存する限り圧力は温度だけで決まるので，等温では体積を変えても圧力が変わらず，ピストンは中立のつり合いになる．断熱では凝縮で出る蒸発熱（ピストンの仕事の分は打ち消し合って $C\\Delta T=q\\Delta n$）が温度を上げ，蒸気圧曲線の傾きを通して復元力が生まれる．"
+ },
+ "concepts": [
+  "first-law",
+  "simple-harmonic-motion",
+  "work-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "蒸気圧",
+  "蒸発熱",
+  "熱力学第一法則",
+  "相変化",
+  "単振動",
+  "断熱変化"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

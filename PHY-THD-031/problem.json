@@ -1,0 +1,143 @@
+{
+ "id": "PHY-THD-031",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "断熱膨張と定積での温度回復による比熱比の測定（クレマン・デゾルムの方法）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，容積 $V$ の大きな瓶にコック K と U 字管の圧力計（液体の密度 $\\rho$）を取りつけた．瓶の外は圧力 $p_0$，温度 $T_0$ の大気で，瓶の中の気体は比熱比 $\\gamma$（未知）の理想気体とみなす．重力加速度の大きさを $g$ とし，圧力計の管の体積は無視する．\n\n瓶に気体を送り込んでコックを閉じ，十分に時間をおくと，瓶内の温度は $T_0$ にもどり，圧力計の液面差は $h_1$ になった（瓶内の圧力 $p_1=p_0+\\rho gh_1$）．次にコックを短時間だけ開き，瓶内の圧力が $p_0$ になった瞬間に閉じた．その後，十分に時間をおくと瓶内の温度は再び $T_0$ になり，液面差は $h_2$（圧力 $p_2=p_0+\\rho gh_2$）になった．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "コックを開いている間に瓶から出ていかずに残った気体に注目すると，この気体は断熱的かつ準静的に膨張したとみなせる．コックを閉じた直後の瓶内の温度 $T'$ を $p_0$，$p_1$，$T_0$，$\\gamma$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "瓶に残った気体の物質量は，コックを開く前の物質量の何倍か．$p_1$，$p_2$ だけで表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\gamma$ を $p_0$，$p_1$，$p_2$ で表せ．さらに $\\rho gh_1$，$\\rho gh_2$ が $p_0$ に比べて十分小さいとき $\\gamma\\fallingdotseq\\dfrac{h_1}{h_1-h_2}$ となることを示し，$h_1=15.0\\,\\text{cm}$，$h_2=4.3\\,\\text{cm}$ のときの $\\gamma$ を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "コックを開いている時間が長すぎると，気体が流れ出ている間に瓶の壁から熱が入る．このとき瓶に残った気体の変化が $pV^k=$ 一定（$1<k<\\gamma$ の定数）で表されるとすると，(3) の式で計算した値は何を表すか．また，十分にゆっくり流出させて変化が等温とみなせる極限では $h_2$ はいくらになるか．これらから，コックを開く時間が長すぎると $\\gamma$ を大きく見積もるか小さく見積もるかを答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(3) の測定で，コックを閉じてから温度が $T_0$ にもどるまでに瓶内の気体が吸収した熱量 $Q$ を $V$，$p_0$，$p_2$，$\\gamma$ で表せ．また $V=1.00\\times10^{-2}\\,\\text{m}^3$，$\\rho=1.00\\times10^3\\,\\text{kg/m}^3$，$g=9.8\\,\\text{m/s}^2$ とし，$\\gamma$ には (3) の値を用いて $Q$ を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：断熱膨張と定積での温度回復による比熱比の測定（クレマン・デゾルムの方法）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：断熱膨張と定積での温度回復による比熱比の測定（クレマン・デゾルムの方法）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T'=T_0\\left(\\dfrac{p_0}{p_1}\\right)^{\\frac{\\gamma-1}{\\gamma}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{p_2}{p_1}$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "$\\gamma=\\dfrac{\\log(p_1/p_0)}{\\log(p_1/p_2)}$，$\\gamma\\fallingdotseq1.40$"
+   },
+   {
+    "id": "4",
+    "tex": "実際の変化の指数 $k$ を表す；等温の極限で $h_2=0$（値は $1$）；小さく見積もる"
+   },
+   {
+    "id": "5",
+    "tex": "$Q=\\dfrac{V(p_2-p_0)}{\\gamma-1}$，$Q\\fallingdotseq1.0\\times10\\,\\text{J}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{系の取り方}　コックを開くと気体は勢いよく流れ出し，流出そのものは準静的ではない．しかし瓶の中に「残る」気体だけを系に取ると，この気体は出ていく気体を押し出しながら一様に膨張し（瓶の中では圧力がほぼ一様），短時間なので熱の出入りはない．したがって残った気体は準静的な断熱変化 $pV^\\gamma=$一定 に従う．残った気体は初め圧力 $p_1$ で瓶の一部の体積 $V_{\\rm r}$ を占め，閉じた直後には圧力 $p_0$ で体積 $V$ 全体を占める．\n\n\\textbf{(1)}　断熱変化では $TV^{\\gamma-1}=$一定，$pV^\\gamma=$一定 から $T^\\gamma p^{1-\\gamma}=$一定．よって\n\\[ T'=\\boldsymbol{T_0\\left(\\frac{p_0}{p_1}\\right)^{\\frac{\\gamma-1}{\\gamma}}}\\quad(<T_0). \\]\n\n\\textbf{(2)}　残った気体（物質量 $n'$）は，コックを閉じた後は体積 $V$ のまま温度が $T_0$ にもどって圧力 $p_2$ になる：$p_2V=n'RT_0$．一方，初めの気体全体（物質量 $n$）は $p_1V=nRT_0$．よって\n\\[ \\frac{n'}{n}=\\boldsymbol{\\frac{p_2}{p_1}}. \\]\n$\\gamma$ を知らなくても，流出した割合 $1-\\dfrac{p_2}{p_1}$ が測れることに注意する．\n\n\\textbf{(3)}　残った気体の始状態 $(p_1,V_{\\rm r},T_0)$ と終状態 $(p_2,V,T_0)$ は同じ等温線上にあるから $p_1V_{\\rm r}=p_2V$，また断熱変化から $p_1V_{\\rm r}^{\\,\\gamma}=p_0V^\\gamma$．$\\dfrac{V}{V_{\\rm r}}=\\dfrac{p_1}{p_2}$ を後者に入れて\n\\[ \\frac{p_1}{p_0}=\\left(\\frac{p_1}{p_2}\\right)^\\gamma\\quad\\Longrightarrow\\quad \\gamma=\\boldsymbol{\\frac{\\log(p_1/p_0)}{\\log(p_1/p_2)}}. \\]\n$|x|\\ll1$ で $\\log(1+x)\\fallingdotseq x$ を用いると，$\\log\\dfrac{p_1}{p_0}\\fallingdotseq\\dfrac{\\rho gh_1}{p_0}$，$\\log\\dfrac{p_1}{p_2}\\fallingdotseq\\dfrac{\\rho g(h_1-h_2)}{p_0}$ なので\n\\[ \\gamma\\fallingdotseq\\frac{h_1}{h_1-h_2}=\\frac{15.0}{10.7}\\fallingdotseq\\boldsymbol{1.40}. \\]\n（2原子分子の空気の値 $\\frac75$ に合う．）図のように，断熱線で $p_0$ まで下がり，定積で等温線上の点にもどるので，断熱線と等温線の傾きの比が $\\gamma$ として現れている．\n\n\\textbf{(4)}　$pV^k=$一定 のとき，(3) と同じ計算で $\\dfrac{p_1}{p_0}=\\left(\\dfrac{p_1}{p_2}\\right)^k$ となるので，(3) の式の値は \\textbf{実際の変化の指数 $k$} を表す．等温（$k\\to1$）の極限では，流出直後の温度がすでに $T_0$ なので閉じた後に圧力は上がらず，$p_2=p_0$，すなわち $\\boldsymbol{h_2=0}$ で，値は $\\dfrac{h_1}{h_1-0}=1$ になる．$1<k<\\gamma$ だから，コックを開く時間が長すぎると $\\gamma$ を\\textbf{小さく見積もる}．（熱が入る分だけ $T'$ が高く，その後の圧力の回復 $h_2$ が小さくなる．）\n\n\\textbf{(5)}　コックを閉じた後は体積一定で仕事をしないので，熱力学第一法則より $Q=\\Delta U$．理想気体の内部エネルギーは温度だけで決まり $U=\\dfrac{pV}{\\gamma-1}$（$U=nC_VT$，$C_V=\\dfrac{R}{\\gamma-1}$）と書けるから，体積 $V$ のまま圧力が $p_0$ から $p_2$ に変わるとき\n\\[ Q=\\boldsymbol{\\frac{V(p_2-p_0)}{\\gamma-1}}=\\frac{V\\rho gh_2}{\\gamma-1}=\\frac{1.00\\times10^{-2}\\times1.00\\times10^3\\times9.8\\times0.043}{0.40}\\fallingdotseq\\boldsymbol{1.0\\times10\\,\\text{J}}. \\]\n（別解：$n'=\\dfrac{p_2V}{RT_0}$，温度上昇 $T_0-T'=T_0\\left(1-\\dfrac{p_0}{p_2}\\right)$ を $Q=n'C_V(T_0-T')$ に入れても同じ式になる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "流出のような不可逆な過程でも，容器に残る気体だけを系に取れば準静的な断熱膨張とみなせる．その後の定積での温度回復で終状態が始状態と同じ等温線にもどるので，断熱線と等温線の比較から比熱比が圧力だけで $\\gamma=\\log(p_1/p_0)/\\log(p_1/p_2)$ と測れ，熱が漏れると実際の変化の指数 $k(<\\gamma)$ を測ることになる．"
+ },
+ "concepts": [
+  "first-law",
+  "heat-temperature"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "比熱比",
+  "断熱変化",
+  "系の取り方",
+  "等温線",
+  "測定法",
+  "内部エネルギー"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

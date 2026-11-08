@@ -1,0 +1,130 @@
+{
+ "id": "PHY-THD-036",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "定圧の気体中に浮かぶシャボン玉の気体の熱容量（表面エネルギーを含むエネルギー収支）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかに動くピストンをもつ断熱シリンダーの中に，単原子分子理想気体 B（物質量 $n_{\\mathrm B}$）が入っている．ピストンの外から一定の力を加えて，B の圧力はつねに $P$ に保たれている．B の中には，単原子分子理想気体 A（物質量 $n_{\\mathrm A}$）を閉じこめた半径 $r$ の球形のシャボン玉が浮かんでいる．シャボン玉の膜は内側と外側の2つの表面をもち，それぞれの表面には単位長さあたり $\\sigma$ の表面張力がはたらく（$\\sigma$ は温度や面積によらない定数）．膜は気体を通さないが熱はよく通し，A と B の温度はつねに等しい．膜の質量・熱容量，重力の影響は無視し，シリンダーは十分大きいとする．気体定数を $R$ とする．シリンダー内のヒーターでゆっくり加熱する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "シャボン玉を半分に切った半球部分の力のつり合いを考えて，A の圧力 $P_{\\mathrm A}$ を $P$，$\\sigma$，$r$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "膜の表面エネルギーを「表面積×表面張力」とする．半径が $r$ から $r+\\Delta r$ に変わるとき，A が膜にする仕事と膜が B にする仕事の差が，膜の表面エネルギーの増加に等しいことを示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "温度が $\\Delta T$ 上がるのに要する熱量を $\\Delta Q$ とし，シリンダー内の気体全体の熱容量 $C=\\dfrac{\\Delta Q}{\\Delta T}$ を $n_{\\mathrm A}$，$n_{\\mathrm B}$，$R$，$P$，$\\sigma$，$r$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$C$ を $C=\\dfrac52n_{\\mathrm B}R+c_{\\mathrm A}n_{\\mathrm A}$ と書いたときの $c_{\\mathrm A}$（A の1 molあたりの実効的な熱容量）について，$\\sigma\\to0$ の極限と，$\\dfrac{\\sigma}{r}\\gg P$ の極限での値をそれぞれ求めよ．また，後者が $\\dfrac52R$ より大きくなる理由を，(2) の結果を用いて説明せよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$P=1.0\\times10^5\\ \\mathrm{Pa}$，$\\sigma=2.5\\times10^{-2}\\ \\mathrm{N/m}$，$r=1.0\\ \\mathrm{cm}$ のとき，$c_{\\mathrm A}$ は $\\dfrac52R$ から何倍ずれているか．$\\dfrac{c_{\\mathrm A}}{\\frac52R}-1$ の値を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：定圧の気体中に浮かぶシャボン玉の気体の熱容量（表面エネルギーを含むエネルギー収支）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$P_{\\mathrm A}=P+\\dfrac{4\\sigma}{r}$"
+   },
+   {
+    "id": "2",
+    "tex": "$(P_{\\mathrm A}-P)\\cdot4\\pi r^2\\Delta r=16\\pi\\sigma r\\Delta r=\\Delta(2\\cdot4\\pi r^2\\sigma)$"
+   },
+   {
+    "id": "3",
+    "tex": "$C=\\dfrac52n_{\\mathrm B}R+n_{\\mathrm A}R\\left(\\dfrac32+\\dfrac{3Pr+12\\sigma}{3Pr+8\\sigma}\\right)$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\sigma\\to0$：$c_{\\mathrm A}=\\dfrac52R$，$\\sigma/r\\gg P$：$c_{\\mathrm A}=3R$（加えた熱の一部が膜の表面エネルギーとしてたくわえられるため）"
+   },
+   {
+    "id": "5",
+    "tex": "$1.3\\times10^{-5}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　半球部分にはたらく力は，A が切り口の円（面積 $\\pi r^2$）を押す力 $P_{\\mathrm A}\\pi r^2$，B が外側から押す力の合力 $P\\pi r^2$（曲面にはたらく圧力の合力は射影面積で決まる），切り口の円周に沿って2つの表面が引く力 $2\\sigma\\cdot2\\pi r$ である．つり合いより\n\\[ (P_{\\mathrm A}-P)\\pi r^2=4\\pi r\\sigma\\qquad\\therefore\\quad P_{\\mathrm A}=\\boldsymbol{P+\\frac{4\\sigma}{r}}. \\]\n\n\\textbf{(2)}　体積の増加は $\\Delta V_{\\mathrm A}=4\\pi r^2\\Delta r$．A が膜にする仕事 $P_{\\mathrm A}\\Delta V_{\\mathrm A}$ と膜が B を押しのける仕事 $P\\Delta V_{\\mathrm A}$ の差は\n\\[ (P_{\\mathrm A}-P)\\cdot4\\pi r^2\\Delta r=\\frac{4\\sigma}{r}\\cdot4\\pi r^2\\Delta r=16\\pi\\sigma r\\Delta r. \\]\n一方，表面エネルギー $E=\\sigma\\cdot2\\cdot4\\pi r^2=8\\pi\\sigma r^2$ の増加は $16\\pi\\sigma r\\Delta r$ で，両者は等しい．膜は質量がなく運動エネルギーをもたないので，受けた仕事の差はすべて表面エネルギーになる．\n\n\\textbf{(3)}　シリンダー内の気体 A，B と膜をまとめて1つの系とみなす．外部とのやりとりは，ヒーターの熱 $\\Delta Q$ と，B がピストンを押す仕事 $P\\Delta V_{\\mathrm{tot}}$（$V_{\\mathrm{tot}}=V_{\\mathrm A}+V_{\\mathrm B}$）である．第一法則より\n\\[ \\Delta Q=\\frac32(n_{\\mathrm A}+n_{\\mathrm B})R\\Delta T+\\Delta E+P(\\Delta V_{\\mathrm A}+\\Delta V_{\\mathrm B}). \\]\n(2) より $\\Delta E+P\\Delta V_{\\mathrm A}=P_{\\mathrm A}\\Delta V_{\\mathrm A}$．また B は定圧なので $P\\Delta V_{\\mathrm B}=n_{\\mathrm B}R\\Delta T$．よって\n\\[ \\Delta Q=\\frac52n_{\\mathrm B}R\\Delta T+\\frac32n_{\\mathrm A}R\\Delta T+P_{\\mathrm A}\\Delta V_{\\mathrm A}. \\]\n最後の項を $\\Delta T$ で表す．A の状態方程式 $n_{\\mathrm A}RT=P_{\\mathrm A}V_{\\mathrm A}=\\left(P+\\dfrac{4\\sigma}r\\right)\\dfrac43\\pi r^3=\\dfrac43\\pi Pr^3+\\dfrac{16}{3}\\pi\\sigma r^2$ の変化をとると\n\\[ n_{\\mathrm A}R\\Delta T=\\left(4\\pi Pr^2+\\frac{32}{3}\\pi\\sigma r\\right)\\Delta r. \\]\n一方 $P_{\\mathrm A}\\Delta V_{\\mathrm A}=(4\\pi Pr^2+16\\pi\\sigma r)\\Delta r$．比をとって\n\\[ P_{\\mathrm A}\\Delta V_{\\mathrm A}=\\frac{3Pr+12\\sigma}{3Pr+8\\sigma}\\,n_{\\mathrm A}R\\Delta T. \\]\nしたがって\n\\[ C=\\boldsymbol{\\frac52n_{\\mathrm B}R+n_{\\mathrm A}R\\left(\\frac32+\\frac{3Pr+12\\sigma}{3Pr+8\\sigma}\\right)}. \\]\nA の圧力は一定ではない（温度が上がると $r$ が増え $P_{\\mathrm A}$ は下がる）ので，A について「定圧モル比熱」は使えない点に注意する．\n\n\\textbf{(4)}　$\\sigma\\to0$ では分数が $1$ になり $c_{\\mathrm A}=\\boldsymbol{\\dfrac52R}$（膜がなければ A も圧力 $P$ の定圧変化）．$\\sigma/r\\gg P$ では分数が $\\dfrac{12}{8}=\\dfrac32$ となり $c_{\\mathrm A}=\\boldsymbol{3R}$．\n\n理由：$P_{\\mathrm A}\\Delta V_{\\mathrm A}$ のうち $P\\Delta V_{\\mathrm A}$ は B を押しのける仕事，残り $(P_{\\mathrm A}-P)\\Delta V_{\\mathrm A}$ は (2) より膜の表面エネルギーの増加になる．加熱で玉がふくらむと表面積が増え，表面エネルギーとして熱の一部が蓄えられるので，同じ温度上昇に余分の熱が必要になる．しかも膨張とともに $P_{\\mathrm A}$ は下がるので，$n_{\\mathrm A}R\\Delta T=\\Delta(P_{\\mathrm A}V_{\\mathrm A})<P_{\\mathrm A}\\Delta V_{\\mathrm A}$ となり，A がする仕事は $n_{\\mathrm A}R\\Delta T$ を上回る．\n\n\\textbf{(5)}　$c_{\\mathrm A}-\\dfrac52R=R\\left(\\dfrac{3Pr+12\\sigma}{3Pr+8\\sigma}-1\\right)=\\dfrac{4\\sigma R}{3Pr+8\\sigma}$ なので\n\\[ \\frac{c_{\\mathrm A}}{\\frac52R}-1=\\frac{8\\sigma}{5(3Pr+8\\sigma)}. \\]\n$Pr=1.0\\times10^3\\ \\mathrm{N/m}$，$\\sigma=2.5\\times10^{-2}\\ \\mathrm{N/m}$ を代入すると，$\\dfrac{0.20}{5\\times(3.0\\times10^3+0.20)}\\fallingdotseq\\boldsymbol{1.3\\times10^{-5}}$．ふつうの大きさのシャボン玉では $4\\sigma/r=10\\ \\mathrm{Pa}$ が大気圧に比べてきわめて小さく，効果はごくわずかである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弾性膜（表面張力）で圧力差が保たれた気体を含む系では，加えた熱の一部が膜のエネルギー（表面エネルギー）として蓄えられ，そのエネルギーは「内外の圧力差×体積変化」に等しい．膜内の気体は定圧変化ではないので，状態方程式の変化 $\\Delta(P_{\\mathrm A}V_{\\mathrm A})$ と仕事 $P_{\\mathrm A}\\Delta V_{\\mathrm A}$ の比から実効的な熱容量を求める．"
+ },
+ "concepts": [
+  "first-law",
+  "work-energy",
+  "heat-temperature"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱力学第一法則",
+  "表面張力",
+  "シャボン玉",
+  "熱容量",
+  "系の取り方"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

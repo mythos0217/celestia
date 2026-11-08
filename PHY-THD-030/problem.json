@@ -1,0 +1,143 @@
+{
+ "id": "PHY-THD-030",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "ピストン下での沸騰：蒸発熱の仕事と内部エネルギーへの配分とピストンの上昇速度",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，断面積 $S$ の円筒容器が鉛直に置かれ，なめらかに動く質量の無視できるピストンで閉じられている．容器の外は圧力 $p_0$ の大気である．容器内には質量 $m_{\\mathrm w}$ の水だけが入っていて（空気はない），初めピストンは水面に接している．水の温度は，圧力 $p_0$ のもとでの沸点 $T_0$ である．容器内のヒーターで一定の電力 $P$ で加熱する．容器とピストンは断熱材でできており，ヒーター・容器・ピストンの熱容量は無視する．\n\n圧力 $p_0$，温度 $T_0$ で単位質量の水を水蒸気にするのに必要な熱量（蒸発熱）を $L$，水のモル質量を $M$，気体定数を $R$ とする．水蒸気は理想気体とみなし，その定積モル比熱を $3R$ とする．液体の水の体積は水蒸気の体積に比べて無視できるものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "加熱を始めてから水がすべて水蒸気になるまでに，ピストンが上昇する距離 $\\Delta h$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "沸騰している間，ピストンは一定の速さ $u_1$ で上昇する．$u_1$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "沸騰している間，ヒーターが供給するエネルギーのうち，ピストンを通して大気を押しのける仕事に使われる割合 $f$ を求めよ．また，$R=8.3\\ \\mathrm{J/(mol\\cdot K)}$，$T_0=373\\ \\mathrm{K}$，$M=1.8\\times10^{-2}\\ \\mathrm{kg/mol}$，$L=2.3\\times10^{6}\\ \\mathrm{J/kg}$ として $f$ の値を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "水がすべて水蒸気になった後も加熱を続けると，ピストンは一定の速さ $u_2$ で上昇した．$u_2$ を求めよ．また，(3) の数値を用いて $\\dfrac{u_1}{u_2}$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "ヒーターの電力がわからない状態で，別の液体（モル質量 $M'$，圧力 $p_0$ での沸点 $T'$，その蒸気は理想気体で定積モル比熱 $3R$）について同じ実験を行い，沸騰中と全部気化した後のピストンの速さ $u_1'$，$u_2'$ を測定した．この液体の蒸発熱 $L'$ を，$u_1',\\ u_2',\\ M',\\ T',\\ R$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ピストン下での沸騰：蒸発熱の仕事と内部エネルギーへの配分とピストンの上昇速度",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：ピストン下での沸騰：蒸発熱の仕事と内部エネルギーへの配分とピストンの上昇速度",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Delta h=\\dfrac{m_{\\mathrm w}RT_0}{Mp_0S}$"
+   },
+   {
+    "id": "2",
+    "tex": "$u_1=\\dfrac{PRT_0}{MLp_0S}$"
+   },
+   {
+    "id": "3",
+    "tex": "$f=\\dfrac{RT_0}{ML}$，$f\\approx7.5\\times10^{-2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$u_2=\\dfrac{P}{4p_0S}$，$\\dfrac{u_1}{u_2}=\\dfrac{4RT_0}{ML}\\approx0.30$"
+   },
+   {
+    "id": "5",
+    "tex": "$L'=\\dfrac{4RT'u_2'}{M'u_1'}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{状況の整理}　ピストンは軽くなめらかなので，容器内の圧力は常に $p_0$ である．水と水蒸気が共存している間，圧力 $p_0$ のもとで温度は沸点 $T_0$ に保たれ，加えた熱はすべて蒸発に使われる．\n\n\\textbf{(1)}　水がすべて水蒸気になると，物質量 $n=\\dfrac{m_{\\mathrm w}}{M}$ の理想気体が圧力 $p_0$，温度 $T_0$ で体積 $S\\Delta h$ を占めるので\n\\[ p_0S\\Delta h=\\frac{m_{\\mathrm w}}{M}RT_0\\qquad\\therefore\\ \\Delta h=\\boldsymbol{\\frac{m_{\\mathrm w}RT_0}{Mp_0S}} \\]\n$P$ にも $L$ にもよらない．\n\n\\textbf{(2)}　単位時間に蒸発する質量は $\\dfrac PL$，その物質量は $\\dfrac{P}{ML}$ である．これが圧力 $p_0$，温度 $T_0$ で占める体積の増加率が $Su_1$ なので\n\\[ p_0Su_1=\\frac{P}{ML}RT_0\\qquad\\therefore\\ u_1=\\boldsymbol{\\frac{PRT_0}{MLp_0S}} \\]\n\n\\textbf{(3)}　大気を押しのける仕事率は $p_0Su_1$ なので\n\\[ f=\\frac{p_0Su_1}{P}=\\boldsymbol{\\frac{RT_0}{ML}}=\\frac{8.3\\times373}{1.8\\times10^{-2}\\times2.3\\times10^{6}}\\approx\\boldsymbol{7.5\\times10^{-2}} \\]\n熱力学第一法則 $Q=\\Delta U+W$ を水 $1$ mol の蒸発に当てはめると，$Q=ML$，$W=p_0\\Delta V=RT_0$ だから，蒸発熱の大部分（約 $92.5\\%$）は内部エネルギーの増加 $\\Delta U=ML-RT_0$（分子間の結合を断ち切るためのエネルギー）であり，外への仕事はわずかである．\n\n\\textbf{(4)}　全部が水蒸気になった後は，物質量 $n$ の理想気体の定圧変化である．定圧モル比熱は $C_p=3R+R=4R$ なので，温度上昇率は $\\dfrac{dT}{dt}=\\dfrac{P}{4nR}$．状態方程式 $p_0V=nRT$ より体積の増加率は\n\\[ Su_2=\\frac{nR}{p_0}\\cdot\\frac{P}{4nR}=\\frac{P}{4p_0}\\qquad\\therefore\\ u_2=\\boldsymbol{\\frac{P}{4p_0S}} \\]\n（第一法則で見ると，$Q=nC_v\\Delta T+nR\\Delta T$ のうち仕事の割合は $\\dfrac{R}{4R}=\\dfrac14$ で，これがそのままピストンの速さを決める．）よって\n\\[ \\frac{u_1}{u_2}=\\frac{4RT_0}{ML}=4f\\approx\\boldsymbol{0.30} \\]\n同じ電力で加熱しているのに，全部気化した後の方がピストンは約3倍速く上昇する．沸騰中は熱の約 $7.5\\%$ しか仕事にならないが，気体の定圧加熱では $25\\%$ が仕事になるからである．\n\n\\textbf{(5)}　(4) と同様に $\\dfrac{u_1'}{u_2'}=\\dfrac{4RT'}{M'L'}$ が成り立つ（$P$ と $S$，$p_0$ は比で消える）．よって\n\\[ L'=\\boldsymbol{\\frac{4RT'u_2'}{M'u_1'}} \\]\n電力を知らなくても，2つの速さの比だけで蒸発熱が求まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一定圧力での蒸発では，加えた熱（蒸発熱）は外へする仕事 $p\\Delta V=RT$（1 mol あたり）と内部エネルギーの増加に分かれ，仕事の割合は $RT/(ML)$ と小さい．気化後の理想気体の定圧加熱では仕事の割合が $R/C_p$ になるため，同じ電力でもピストンの上昇速度は気化後の方が大きく，その比から電力によらず蒸発熱が求まる．"
+ },
+ "concepts": [
+  "first-law",
+  "work-energy",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "蒸発熱",
+  "熱力学第一法則",
+  "定圧変化",
+  "ピストン",
+  "状態変化"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

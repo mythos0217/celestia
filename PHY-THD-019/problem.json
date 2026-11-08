@@ -1,0 +1,131 @@
+{
+ "id": "PHY-THD-019",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "重力下の等温気体柱（両端の密度差と，変形しない物体・伸び縮みする風船の浮力）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，高さ $L$，断面積 $S$ の円筒容器を鉛直に立て，モル質量（1 mol あたりの質量）$m$ の理想気体を $n$ mol 入れて密閉し，気体の温度を一様に $T$ に保つ．重力のため，気体の単位体積あたりの物質量 $c$ と圧力 $p$ は，容器の底からの高さ $z$ の関数 $c(z)$，$p(z)$ となる．気体定数を $R$，重力加速度の大きさを $g$ とする．容器内に入れる物体の体積は容器の容積に比べて十分小さく，気体の分布に影響しないとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "容器内の気体全体にはたらく力のつり合いを考えて，$p(0)-p(L)$ を $n$，$m$，$g$，$S$ で表せ．さらに $c(0)-c(L)$ を求めよ．この結果は近似を用いずに成り立つ．"
+     },
+     {
+      "id": "2",
+      "tex": "高さ $z$ と $z+\\Delta z$ の間の薄い気体の層のつり合いから，$c(z+\\Delta z)-c(z)=-\\alpha\\,c(z)\\,\\Delta z$（$\\Delta z$ は十分小さい）と表されることを示し，$\\alpha$ を $m$，$g$，$R$，$T$ で表せ．また，この関係から $c(z)=c(0)e^{-\\alpha z}$ となることが知られている．$c(0)$ を $n$，$S$，$L$，$\\alpha$ で表し，(1) の結果と一致することを確かめよ．"
+     },
+     {
+      "id": "3",
+      "tex": "変形しない小物体（質量 $M$，体積 $v$）を気体中に入れたところ，高さ $z_0$（$0<z_0<L$）で静止した．$z_0$ を $\\alpha$，$m$，$v$，$M$，$c(0)$ で表せ．また，このような $z_0$ が存在するための $M$ の条件を $c(0)$，$c(L)$ などで表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の小物体を高さ $z_0+\\Delta z$（$|\\Delta z|$ は十分小さい）に移したとき，小物体にはたらく重力と浮力の合力を $M$，$g$，$\\alpha$，$\\Delta z$ で表せ．気体から受ける抵抗や，小物体の運動による気体の運動を無視すると，小物体は単振動をする．その周期 $\\tau$ を $g$，$R$，$T$，$m$ で表し，$m=4.4\\times10^{-2}\\ \\mathrm{kg/mol}$，$T=300\\ \\mathrm{K}$，$R=8.3\\ \\mathrm{J/(mol\\cdot K)}$，$g=9.8\\ \\mathrm{m/s^2}$ のときの値を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "小物体のかわりに，質量 $M_{\\mathrm s}$ の薄くてよく伸び縮みする膜でできた風船を入れる．風船の中にはモル質量 $m'$（$<m$）の理想気体が $n'$ mol 入っていて，温度は $T$，圧力は風船の外の気体の圧力に常に等しい．風船にはたらく重力と浮力の合力は高さによらないことを示せ．また，この風船は (3) のような静止位置をもつか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：重力下の等温気体柱（両端の密度差と，変形しない物体・伸び縮みする風船の浮力）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$p(0)-p(L)=\\dfrac{nmg}{S}$，$c(0)-c(L)=\\dfrac{nmg}{RTS}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\alpha=\\dfrac{mg}{RT}$，$c(0)=\\dfrac{n\\alpha}{S(1-e^{-\\alpha L})}$"
+   },
+   {
+    "id": "3",
+    "tex": "$z_0=\\dfrac1\\alpha\\log\\dfrac{mvc(0)}{M}$，条件 $mv\\,c(L)<M<mv\\,c(0)$"
+   },
+   {
+    "id": "4",
+    "tex": "合力 $-Mg\\alpha\\,\\Delta z$（上向きを正），$\\tau=\\dfrac{2\\pi}{g}\\sqrt{\\dfrac{RT}{m}}$，$1.5\\times10^{2}\\ \\mathrm{s}$"
+   },
+   {
+    "id": "5",
+    "tex": "合力は上向きに $\\{n'(m-m')-M_{\\mathrm s}\\}g$ で一定．もたない（合力が高さによらないので，つり合うなら全ての高さで中立，そうでなければ常に上か下に動き，容器の上端か底に達する）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 気体全体のつり合い}　容器内の気体全体（質量 $nm$）には，重力 $nmg$（下向き），底面が押し上げる力 $p(0)S$，上面が押し下げる力 $p(L)S$ がはたらく（側面からの力は水平）．気体は静止しているので\n\\[ p(0)S-p(L)S-nmg=0\\quad\\Longrightarrow\\quad p(0)-p(L)=\\boldsymbol{\\frac{nmg}{S}} \\]\nである．各高さで状態方程式 $p=cRT$ が成り立ち $T$ は一様なので\n\\[ c(0)-c(L)=\\frac{p(0)-p(L)}{RT}=\\boldsymbol{\\frac{nmg}{RTS}} \\]\nとなる．密度の分布の形によらず，両端の差は気体の重さだけで決まる．\n\n\\textbf{(2) 薄い層のつり合い}　厚さ $\\Delta z$ の層の物質量は $c(z)S\\Delta z$，重さは $c(z)S\\Delta z\\,mg$ だから\n\\[ p(z)S-p(z+\\Delta z)S=c(z)S\\Delta z\\,mg \\]\n$p=cRT$ を代入して\n\\[ c(z+\\Delta z)-c(z)=-\\frac{mg}{RT}c(z)\\Delta z,\\qquad \\alpha=\\boldsymbol{\\frac{mg}{RT}} \\]\nである．$c(z)=c(0)e^{-\\alpha z}$ のとき，全物質量の条件は\n\\[ n=S\\int_0^Lc(0)e^{-\\alpha z}dz=\\frac{Sc(0)}{\\alpha}(1-e^{-\\alpha L})\\quad\\Longrightarrow\\quad c(0)=\\boldsymbol{\\frac{n\\alpha}{S(1-e^{-\\alpha L})}} \\]\nである．これから $c(0)-c(L)=c(0)(1-e^{-\\alpha L})=\\dfrac{n\\alpha}{S}=\\dfrac{nmg}{RTS}$ となり，(1) と一致する．\n\n\\textbf{(3) 静止位置}　小物体にはたらく浮力は，押しのけた気体の重さ $c(z)mv\\,g$ に等しい（小物体の大きさの範囲で $c$ の変化は無視できる）．静止する条件は $c(z_0)mvg=Mg$，すなわち $c(0)e^{-\\alpha z_0}=\\dfrac{M}{mv}$ より\n\\[ z_0=\\boldsymbol{\\frac1\\alpha\\log\\frac{mv\\,c(0)}{M}} \\]\nである．$c(z)$ は $z$ の減少関数なので，$0<z_0<L$ となる条件は\n\\[ \\boldsymbol{mv\\,c(L)<M<mv\\,c(0)} \\]\nである（小物体の平均密度が，容器の上端と底の気体の密度の間にあること）．\n\n\\textbf{(4) 復元力と振動}　上向きを正とすると，高さ $z_0+\\Delta z$ での合力は\n\\[ F=c(z_0+\\Delta z)mvg-Mg=c(z_0)mvg\\,(e^{-\\alpha\\Delta z}-1)\\fallingdotseq Mg\\cdot(-\\alpha\\Delta z)=\\boldsymbol{-Mg\\alpha\\,\\Delta z} \\]\nである（$c(z_0)mv=M$ を用いた）．上にずれると浮力が減って下向きに，下にずれると上向きに力がはたらくので，$z_0$ は安定なつり合いの位置で，ばね定数 $Mg\\alpha$ の単振動をする．角振動数は $\\omega=\\sqrt{\\dfrac{Mg\\alpha}{M}}=\\sqrt{g\\alpha}$ で，周期は\n\\[ \\tau=\\frac{2\\pi}{\\sqrt{g\\alpha}}=\\boldsymbol{\\frac{2\\pi}{g}\\sqrt{\\frac{RT}{m}}} \\]\nとなり，小物体の質量や体積によらない．数値を代入すると\n\\[ \\tau=\\frac{2\\times3.14}{9.8}\\sqrt{\\frac{8.3\\times300}{4.4\\times10^{-2}}}\\fallingdotseq0.641\\times238\\fallingdotseq\\boldsymbol{1.5\\times10^{2}\\ \\mathrm{s}} \\]\nである．\n\n\\textbf{(5) 伸び縮みする風船}　風船の中の気体の体積は，外と圧力が等しいので $V_{\\mathrm b}=\\dfrac{n'RT}{p(z)}$ であり，高さとともに大きくなる．浮力は押しのけた気体の重さで，外の気体の単位体積あたりの物質量は $c(z)=\\dfrac{p(z)}{RT}$ だから\n\\[ (\\text{浮力})=c(z)V_{\\mathrm b}mg=\\frac{p(z)}{RT}\\cdot\\frac{n'RT}{p(z)}\\cdot mg=n'mg \\]\nとなり，高さによらない．重力 $(M_{\\mathrm s}+n'm')g$ も一定なので，合力は上向きに\n\\[ \\{n'(m-m')-M_{\\mathrm s}\\}g \\]\nで一定である．したがって風船は (3) のような\\textbf{静止位置をもたない}．合力が正なら上端まで上がり，負なら底まで沈む（ちょうど $0$ ならどの高さでも静止する中立のつり合いで，復元力ははたらかない）．変形しない小物体では高さとともに浮力が減ることが安定性を生んだが，伸び縮みする風船では外の気体が薄くなるのと同じ割合で体積が増えて，浮力の変化が打ち消されるのである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "重力下の等温気体では，気体全体のつり合いから底と上端の圧力差は分布の形によらず気体の重さ÷断面積で決まり，薄い層のつり合いから密度は高さとともに指数関数的に減る．変形しない物体は浮力が高さとともに減るので安定な静止位置をもち，物体によらない周期 $2\\pi/\\sqrt{g\\alpha}$ で振動するが，伸び縮みする風船は体積が密度に反比例して増えるため浮力が高さによらず，静止位置をもたない．"
+ },
+ "concepts": [
+  "first-law",
+  "simple-harmonic-motion",
+  "equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "等温大気",
+  "浮力",
+  "状態方程式",
+  "力のつり合い",
+  "単振動",
+  "安定性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

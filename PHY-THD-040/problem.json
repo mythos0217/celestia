@@ -1,0 +1,142 @@
+{
+ "id": "PHY-THD-040",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "断熱シリンダーの3部屋を順に加熱する操作と，加熱の順序によるヒーターの熱量の違い",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，断熱材で覆われた水平なシリンダーが固定されており，内部はなめらかに動く2つのピストン1，2によって，左から部屋A，B，Cに仕切られている．シリンダーとピストンは熱を通さず，装置の熱容量は無視できる．部屋A，Cにはそれぞれヒーター $\\mathrm{H_A}$，$\\mathrm{H_C}$ があり，その部屋の気体だけを加熱できる．各部屋には同じ理想気体が 1 モルずつ入っており，その定積モル比熱を $C_V$，比熱比を $\\gamma$，気体定数を $R$ とする．はじめ，3つの部屋の気体はいずれも体積 $V_0$，温度 $T_0$ であった．加熱はすべて十分ゆっくり行い，ピストンは常につり合っているものとする．また，熱の出入りのない準静的な変化では，気体の圧力 $p$ と体積 $V$ の間に $pV^{\\gamma}=$ 一定 が成り立つことを用いてよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "はじめの状態から $\\mathrm{H_A}$ だけで加熱し，部屋Aの体積が $2V_0$ になったところで加熱をやめた．このときの部屋Bの体積 $V_\\mathrm{B}$ と温度 $T_\\mathrm{B}$，および $\\mathrm{H_A}$ が与えた熱量 $Q_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "はじめの状態から2つのヒーターを使って，部屋A，B，Cの体積の比が $6:1:2$ である状態Fにしたい．ヒーターは一度に1つずつ，それぞれ1回だけ使う．経路I：「$\\mathrm{H_A}$ で加熱してやめ，次に $\\mathrm{H_C}$ で加熱する」，経路II：「$\\mathrm{H_C}$ で加熱してやめ，次に $\\mathrm{H_A}$ で加熱する」のそれぞれについて，第1段階の加熱をやめるべきときの，経路Iでは部屋Aの体積，経路IIでは部屋Cの体積を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "状態Fでの部屋Bの温度 $T_\\mathrm{F}$ と，2つのヒーターが与えた熱量の合計 $Q$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "1つの部屋の気体が微小な熱量 $\\Delta Q$ を受け取って，その温度が $T$，圧力と体積が $p$，$V$ から $p+\\Delta p$，$V+\\Delta V$ に変化したとする．$K=pV^{\\gamma}$ の変化を $\\Delta K$ とするとき，2次の微小量を無視して $\\Delta Q = C_V T\\,\\dfrac{\\Delta K}{K}$ が成り立つことを示せ．"
+     },
+     {
+      "id": "5",
+      "tex": "状態Fに至るまでに $\\mathrm{H_A}$ が与える熱量を，経路Iでは $Q_\\mathrm{A}^{\\mathrm{I}}$，経路IIでは $Q_\\mathrm{A}^{\\mathrm{II}}$ とする．これらを $C_V$，$T_0$，$\\gamma$ で表せ．また，単原子分子理想気体（$C_V=\\frac32R$，$\\gamma=\\frac53$）の場合にそれぞれ $RT_0$ の何倍かを有効数字3桁で求め，どちらが大きいかを (4) の結果を用いて説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：断熱シリンダーの3部屋を順に加熱する操作と，加熱の順序によるヒーターの熱量の違い",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：断熱シリンダーの3部屋を順に加熱する操作と，加熱の順序によるヒーターの熱量の違い",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V_\\mathrm{B}=\\dfrac{V_0}{2}$，$T_\\mathrm{B}=2^{\\gamma-1}T_0$，$Q_1=3\\left(2^{\\gamma}-1\\right)C_VT_0$"
+   },
+   {
+    "id": "2",
+    "tex": "経路I：部屋Aの体積 $\\dfrac94V_0$，経路II：部屋Cの体積 $\\dfrac32V_0$"
+   },
+   {
+    "id": "3",
+    "tex": "$T_\\mathrm{F}=3^{\\gamma-1}T_0$，$Q=3\\left(3^{\\gamma}-1\\right)C_VT_0$（経路によらない）"
+   },
+   {
+    "id": "4",
+    "tex": "解説参照"
+   },
+   {
+    "id": "5",
+    "tex": "$Q_\\mathrm{A}^{\\mathrm{I}}=3\\left\\{\\left(\\frac83\\right)^{\\gamma}-1\\right\\}C_VT_0$，$Q_\\mathrm{A}^{\\mathrm{II}}=\\dfrac{9^{\\gamma}-4^{\\gamma}}{3^{\\gamma-1}}C_VT_0$；単原子分子では $Q_\\mathrm{A}^{\\mathrm{I}}\\approx 18.6RT_0$，$Q_\\mathrm{A}^{\\mathrm{II}}\\approx 20.8RT_0$ で，経路IIの方が大きい"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　ピストンは熱を通さないので，加熱していない部屋の気体は準静的な断熱変化をする．すなわち各部屋の $K=pV^{\\gamma}$ は，その部屋を加熱している間しか変わらない．さらにピストンがつり合っているので3部屋の圧力 $p$ は常に共通である．したがって\n\\[ V_i=\\left(\\frac{K_i}{p}\\right)^{1/\\gamma} \\]\nであり，\\textbf{加熱していない2つの部屋の体積の比 $(K_i/K_j)^{1/\\gamma}$ は変わらない}．また，シリンダーは固定されているので気体全体は外部に仕事をせず，ヒーターの熱量の合計は3部屋の内部エネルギーの増加の合計に等しい．1モルの理想気体の内部エネルギーは $C_VT=\\dfrac{C_V}{R}pV$ である．\n\n\\textbf{(1)}　B，Cはともに加熱されず，はじめの状態（$p_0=RT_0/V_0$，体積 $V_0$）が同じなので $K_\\mathrm{B}=K_\\mathrm{C}$，よって常に $V_\\mathrm{B}=V_\\mathrm{C}$．全体積 $3V_0$ から $2V_0+2V_\\mathrm{B}=3V_0$ で $\\boldsymbol{V_\\mathrm{B}=\\frac{V_0}{2}}$．Bの断熱変化 $TV^{\\gamma-1}=$ 一定 より $\\boldsymbol{T_\\mathrm{B}=2^{\\gamma-1}T_0}$．このとき圧力は $p=p_0\\cdot2^{\\gamma}$ なので，Aの温度は $T_\\mathrm{A}=\\dfrac{p\\cdot2V_0}{R}=2^{\\gamma+1}T_0$，Cの温度は $T_\\mathrm{B}$ と同じ．よって\n\\[ Q_1=C_V\\left(2^{\\gamma+1}T_0+2\\cdot2^{\\gamma-1}T_0-3T_0\\right)=\\boldsymbol{3\\left(2^{\\gamma}-1\\right)C_VT_0}. \\]\n\n\\textbf{(2)}　状態Fでは $V_\\mathrm{A}=2V_0$，$V_\\mathrm{B}=\\dfrac{V_0}{3}$，$V_\\mathrm{C}=\\dfrac{2V_0}{3}$．\n\n経路I：第2段階（$\\mathrm{H_C}$ での加熱）の間，AとBは加熱されないので $V_\\mathrm{A}:V_\\mathrm{B}$ は状態Fの値 $6:1$ のまま変わらない．一方，第1段階の終わりには（(1)と同様に）$V_\\mathrm{B}=V_\\mathrm{C}$ である．よって第1段階の終わりの体積を $6v,\\ v,\\ v$ とおくと $8v=3V_0$ より $v=\\frac38V_0$，部屋Aの体積は $\\boldsymbol{\\frac94V_0}$．\n\n経路II：第2段階（$\\mathrm{H_A}$ での加熱）の間，BとCの比は状態Fの $1:2$ のまま．第1段階の終わりには $V_\\mathrm{A}=V_\\mathrm{B}$ なので，体積を $u,\\ u,\\ 2u$ とおくと $4u=3V_0$，部屋Cの体積は $\\boldsymbol{\\frac32V_0}$．\n\n\\textbf{(3)}　Bは一度も加熱されないので，$V_0\\to\\dfrac{V_0}{3}$ の断熱変化をする：$\\boldsymbol{T_\\mathrm{F}=3^{\\gamma-1}T_0}$．圧力が共通なので温度は体積に比例し，$T_\\mathrm{A}=6T_\\mathrm{F}$，$T_\\mathrm{C}=2T_\\mathrm{F}$．気体全体が外部にする仕事は0なので\n\\[ Q=C_V\\left(9T_\\mathrm{F}-3T_0\\right)=\\boldsymbol{3\\left(3^{\\gamma}-1\\right)C_VT_0}. \\]\nこれは状態Fだけで決まり，経路I，IIのどちらでも同じである．\n\n\\textbf{(4)}　第1法則より $\\Delta Q=\\Delta U+p\\Delta V$．$U=\\dfrac{C_V}{R}pV$ なので $\\Delta U=\\dfrac{C_V}{R}(V\\Delta p+p\\Delta V)$．$C_V+R=\\gamma C_V$ を使うと\n\\[ \\Delta Q=\\frac{C_V}{R}\\left(V\\Delta p+\\gamma p\\Delta V\\right)=\\frac{C_V}{R}pV\\left(\\frac{\\Delta p}{p}+\\gamma\\frac{\\Delta V}{V}\\right). \\]\n一方 $K=pV^{\\gamma}$ の変化は $\\dfrac{\\Delta K}{K}=\\dfrac{\\Delta p}{p}+\\gamma\\dfrac{\\Delta V}{V}$（2次の微小量を無視）．$pV=RT$ と合わせて $\\Delta Q=C_VT\\,\\dfrac{\\Delta K}{K}$．\\hfill（証明終）\n\n\\textbf{(5)}　1つのヒーターだけが働いている間は，そのヒーターの熱量が全体の内部エネルギーの増加に等しい．\n\n経路I：第1段階の終わりは体積 $\\frac94V_0,\\ \\frac38V_0,\\ \\frac38V_0$，圧力 $p_0\\left(\\frac83\\right)^{\\gamma}$．全内部エネルギーは $\\dfrac{C_V}{R}p\\cdot3V_0=3\\left(\\frac83\\right)^{\\gamma}C_VT_0$ なので\n\\[ Q_\\mathrm{A}^{\\mathrm{I}}=\\boldsymbol{3\\left\\{\\left(\\tfrac83\\right)^{\\gamma}-1\\right\\}C_VT_0}. \\]\n経路II：第1段階（Cの加熱）の終わりは体積 $\\frac34V_0,\\ \\frac34V_0,\\ \\frac32V_0$，圧力 $p_0\\left(\\frac43\\right)^{\\gamma}$．$Q_\\mathrm{C}^{\\mathrm{II}}=3\\left\\{\\left(\\frac43\\right)^{\\gamma}-1\\right\\}C_VT_0$ で，$Q_\\mathrm{A}^{\\mathrm{II}}=Q-Q_\\mathrm{C}^{\\mathrm{II}}$ より\n\\[ Q_\\mathrm{A}^{\\mathrm{II}}=3\\left\\{3^{\\gamma}-\\left(\\tfrac43\\right)^{\\gamma}\\right\\}C_VT_0=\\boldsymbol{\\frac{9^{\\gamma}-4^{\\gamma}}{3^{\\gamma-1}}C_VT_0}. \\]\n単原子分子では $\\left(\\frac83\\right)^{5/3}\\approx5.128$，$3^{5/3}\\approx6.240$，$\\left(\\frac43\\right)^{5/3}\\approx1.615$ より\n\\[ Q_\\mathrm{A}^{\\mathrm{I}}\\approx\\boldsymbol{18.6RT_0},\\qquad Q_\\mathrm{A}^{\\mathrm{II}}\\approx\\boldsymbol{20.8RT_0}, \\]\nで，\\textbf{経路IIの方が大きい}（その分 $Q_\\mathrm{C}$ は小さく，合計は $23.6RT_0$ で等しい）．\n\n理由：どちらの経路でも部屋Aの $K_\\mathrm{A}$ は同じ初期値から同じ最終値まで増えるので，(4) より $Q_\\mathrm{A}=\\sum C_VT_\\mathrm{A}\\dfrac{\\Delta K_\\mathrm{A}}{K_\\mathrm{A}}$ は「$K_\\mathrm{A}$ を同じ割合だけ増やすときのAの温度」で決まる．経路IIでは，Aは先にCの膨張によって断熱圧縮され，温度が上がった状態から加熱されるので，同じ $K_\\mathrm{A}$ の増加により多くの熱を要する．逆にCは経路IIでは低温のうちに加熱されるので $Q_\\mathrm{C}$ が少なくて済む．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "自由なピストンで仕切られた断熱の部屋では圧力が共通で，加熱しない部屋の $pV^{\\gamma}$ は不変なので，加熱していない部屋どうしの体積比は保たれる．これから途中の状態が逆算でき，熱量の合計は終状態の内部エネルギーだけで決まるが，$\\Delta Q=C_VT\\,\\Delta(pV^{\\gamma})/(pV^{\\gamma})$ により，各ヒーターの熱量は加熱時の温度，すなわち加熱の順序に依存する．"
+ },
+ "concepts": [
+  "first-law",
+  "heat-temperature"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "断熱変化",
+  "自由ピストン",
+  "第1法則",
+  "加熱の順序",
+  "ポアソンの式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

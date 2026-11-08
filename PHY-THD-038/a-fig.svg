@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 380" width="520" height="380">
+<defs><marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker></defs>
+<line x1="60.0" y1="330.0" x2="60.0" y2="25.0" stroke="#222" stroke-width="1.6" marker-end="url(#a-ak)"/>
+<line x1="60.0" y1="330.0" x2="500.0" y2="330.0" stroke="#222" stroke-width="1.6" marker-end="url(#a-ak)"/>
+<text x="48.0" y="30.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">p</text>
+<text x="495.0" y="350.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">V</text>
+<text x="50.0" y="348.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">O</text>
+<polygon points="228.4,303.1 228.4,260.1 228.4,260.1 230.6,261.6 232.8,263.0 234.9,264.4 237.1,265.8 239.3,267.0 241.5,268.3 243.6,269.5 245.8,270.7 248.0,271.8 250.2,272.9 252.3,274.0 254.5,275.0 256.7,276.0 258.8,277.0 261.0,278.0 263.2,278.9 265.4,279.8 267.5,280.7 269.7,281.5 271.9,282.3 274.1,283.1 276.2,283.9 278.4,284.7 280.6,285.4 282.7,286.2 284.9,286.9 287.1,287.5 289.3,288.2 291.4,288.9 293.6,289.5 295.8,290.1 298.0,290.7 300.1,291.3 302.3,291.9 304.5,292.5 306.6,293.0 308.8,293.5 311.0,294.1 313.2,294.6 315.3,295.1 317.5,295.6 319.7,296.0 321.9,296.5 324.0,297.0 326.2,297.4 328.4,297.9 330.6,298.3 332.7,298.7 334.9,299.1 337.1,299.5 339.2,299.9 341.4,300.3 343.6,300.7 345.8,301.1 347.9,301.4 350.1,301.8 352.3,302.1 354.5,302.5 356.6,302.8 358.8,303.1 358.8,303.1" stroke="none" stroke-width="0" fill="#c0392b33"/>
+<polyline points="228.4,303.1 226.9,302.7 225.4,302.3 223.8,301.9 222.3,301.4 220.8,301.0 219.2,300.5 217.7,300.0 216.2,299.5 214.6,299.0 213.1,298.5 211.6,298.0 210.0,297.4 208.5,296.9 207.0,296.3 205.5,295.7 203.9,295.1 202.4,294.5 200.9,293.8 199.3,293.1 197.8,292.5 196.3,291.7 194.7,291.0 193.2,290.3 191.7,289.5 190.1,288.7 188.6,287.9 187.1,287.0 185.6,286.2 184.0,285.2 182.5,284.3 181.0,283.3 179.4,282.3 177.9,281.3 176.4,280.2 174.8,279.1 173.3,278.0 171.8,276.8 170.2,275.5 168.7,274.3 167.2,272.9 165.6,271.5 164.1,270.1 162.6,268.6 161.1,267.0 159.5,265.4 158.0,263.7 156.5,262.0 154.9,260.1 153.4,258.2 151.9,256.2 150.3,254.1 148.8,251.9 147.3,249.6 145.7,247.2 144.2,244.7 142.7,242.0 141.1,239.3 139.6,236.3 138.1,233.2 136.6,230.0" stroke="#222" stroke-width="1.6" fill="none"/>
+<polyline points="136.6,70.0 138.1,78.4 139.6,86.5 141.1,94.1 142.7,101.3 144.2,108.2 145.7,114.7 147.3,121.0 148.8,127.0 150.3,132.7 151.9,138.1 153.4,143.3 154.9,148.3 156.5,153.1 158.0,157.7 159.5,162.1 161.1,166.3 162.6,170.4 164.1,174.3 165.6,178.0 167.2,181.6 168.7,185.1 170.2,188.4 171.8,191.6 173.3,194.7 174.8,197.7 176.4,200.6 177.9,203.4 179.4,206.1 181.0,208.7 182.5,211.2 184.0,213.6 185.6,216.0 187.1,218.3 188.6,220.5 190.1,222.6 191.7,224.7 193.2,226.7 194.7,228.7 196.3,230.5 197.8,232.4 199.3,234.2 200.9,235.9 202.4,237.6 203.9,239.2 205.5,240.8 207.0,242.3 208.5,243.8 210.0,245.3 211.6,246.7 213.1,248.1 214.6,249.5 216.2,250.8 217.7,252.0 219.2,253.3 220.8,254.5 222.3,255.7 223.8,256.8 225.4,258.0 226.9,259.1 228.4,260.1" stroke="#222" stroke-width="1.6" fill="none"/>
+<line x1="136.6" y1="230.0" x2="136.6" y2="70.0" stroke="#222" stroke-width="1.6"/>
+<line x1="228.4" y1="260.1" x2="228.4" y2="303.1" stroke="#222" stroke-width="1.6"/>
+<polyline points="228.4,260.1 230.6,261.6 232.8,263.0 234.9,264.4 237.1,265.8 239.3,267.0 241.5,268.3 243.6,269.5 245.8,270.7 248.0,271.8 250.2,272.9 252.3,274.0 254.5,275.0 256.7,276.0 258.8,277.0 261.0,278.0 263.2,278.9 265.4,279.8 267.5,280.7 269.7,281.5 271.9,282.3 274.1,283.1 276.2,283.9 278.4,284.7 280.6,285.4 282.7,286.2 284.9,286.9 287.1,287.5 289.3,288.2 291.4,288.9 293.6,289.5 295.8,290.1 298.0,290.7 300.1,291.3 302.3,291.9 304.5,292.5 306.6,293.0 308.8,293.5 311.0,294.1 313.2,294.6 315.3,295.1 317.5,295.6 319.7,296.0 321.9,296.5 324.0,297.0 326.2,297.4 328.4,297.9 330.6,298.3 332.7,298.7 334.9,299.1 337.1,299.5 339.2,299.9 341.4,300.3 343.6,300.7 345.8,301.1 347.9,301.4 350.1,301.8 352.3,302.1 354.5,302.5 356.6,302.8 358.8,303.1" stroke="#222" stroke-width="1.6" fill="none" stroke-dasharray="6,4"/>
+<line x1="358.8" y1="303.1" x2="228.4" y2="303.1" stroke="#222" stroke-width="1.6" stroke-dasharray="6,4"/>
+<circle cx="228.4" cy="303.1" r="3.5" fill="#222"/>
+<text x="216.4" y="295.1" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">A</text>
+<circle cx="136.6" cy="230.0" r="3.5" fill="#222"/>
+<text x="122.6" y="234.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">B</text>
+<circle cx="136.6" cy="70.0" r="3.5" fill="#222"/>
+<text x="122.6" y="66.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">C</text>
+<circle cx="228.4" cy="260.1" r="3.5" fill="#222"/>
+<text x="240.4" y="254.1" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">D</text>
+<circle cx="358.8" cy="303.1" r="3.5" fill="#222"/>
+<text x="362.8" y="293.1" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">F</text>
+<line x1="60.0" y1="303.1" x2="228.4" y2="303.1" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="54.0" y="308.1" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="end" fill="#222">p<tspan baseline-shift="sub" font-size="10" font-style="normal">A</tspan></text>
+<line x1="136.6" y1="330.0" x2="136.6" y2="230.0" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="228.4" y1="330.0" x2="228.4" y2="303.1" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="358.8" y1="330.0" x2="358.8" y2="303.1" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="136.6" y="350.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">V<tspan baseline-shift="sub" font-size="10" font-style="normal">B</tspan></text>
+<text x="228.4" y="350.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">V<tspan baseline-shift="sub" font-size="10" font-style="normal">A</tspan></text>
+<text x="358.8" y="350.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">V<tspan baseline-shift="sub" font-size="10" font-style="normal">F</tspan></text>
+<line x1="136.6" y1="158.0" x2="136.6" y2="142.0" stroke="#222" stroke-width="1.6" marker-end="url(#a-ak)"/>
+<line x1="228.4" y1="275.6" x2="228.4" y2="289.6" stroke="#222" stroke-width="1.6" marker-end="url(#a-ak)"/>
+<line x1="301.6" y1="303.1" x2="285.6" y2="303.1" stroke="#222" stroke-width="1.6" marker-end="url(#a-ak)"/>
+<text x="368.8" y="150.1" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="#222">破線：熱機関 c のみ</text>
+<line x1="268.4" y1="291.1" x2="318.4" y2="220.1" stroke="#c0392b" stroke-width="1"/>
+<text x="320.4" y="216.1" font-size="14" text-anchor="start" fill="#c0392b"><tspan font-family="Times New Roman, serif" font-style="italic">W</tspan><tspan font-family="Noto Sans CJK JP, sans-serif">′ > 0</tspan></text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320">
+  <line x1="70" y1="260" x2="490" y2="260" stroke="#222" stroke-width="1.2"/>
+  <path d="M490,260 l-10,-4 v8 z" fill="#222"/>
+  <text x="462" y="284" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">時刻</text>
+  <line x1="70" y1="260" x2="70" y2="30" stroke="#222" stroke-width="1.2"/>
+  <path d="M70,30 l-4,10 h8 z" fill="#222"/>
+  <text x="20" y="26" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">ピストンの高さ</text>
+  <polyline points="70,260 350,140 450,9" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+  <line x1="350" y1="260" x2="350" y2="140" stroke="#888" stroke-dasharray="4,3"/>
+  <line x1="70" y1="140" x2="350" y2="140" stroke="#888" stroke-dasharray="4,3"/>
+  <text x="36" y="200" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">Δ</text>
+  <text x="46" y="200" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">h</text>
+  <text x="140" y="165" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">沸騰中：傾き</text>
+  <text x="225" y="165" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">u<tspan baseline-shift="sub" font-size="10" font-style="normal">1</tspan></text>
+  <text x="300" y="60" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">全部気化後：傾き</text>
+  <text x="414" y="60" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">u<tspan baseline-shift="sub" font-size="10" font-style="normal">2</tspan></text>
+  <text x="300" y="282" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">すべて水蒸気になる</text>
+  <text x="80" y="300" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">u₁/u₂ = 4RT₀/(ML) ≈ 0.30（気化後の方が速い）</text>
+</svg>

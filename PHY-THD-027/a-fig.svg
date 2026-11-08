@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320">
+<defs><marker id="a-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<g font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">
+<rect x="322.0" y="60.0" width="63.0" height="200.0" fill="#c0392b" fill-opacity="0.12"/>
+<line x1="70" y1="260" x2="520" y2="260" stroke="#222" stroke-width="1.4" marker-end="url(#a-ag)"/>
+<line x1="70" y1="260" x2="70" y2="20" stroke="#222" stroke-width="1.4" marker-end="url(#a-ag)"/>
+<text x="520" y="280" font-family="Times New Roman, serif" font-style="italic" font-size="16">y</text>
+<text x="20" y="22" font-family="Times New Roman, serif" font-style="italic" font-size="16">T/T<tspan font-size="10" baseline-shift="sub">m</tspan></text>
+<polyline points="154.0,159.0 157.9,155.3 161.8,151.6 165.7,148.1 169.7,144.6 173.6,141.3 177.5,138.0 181.4,134.8 185.3,131.7 189.2,128.6 193.2,125.7 197.1,122.9 201.0,120.1 204.9,117.4 208.8,114.9 212.7,112.4 216.6,110.0 220.6,107.6 224.5,105.4 228.4,103.3 232.3,101.2 236.2,99.2 240.1,97.4 244.1,95.6 248.0,93.9 251.9,92.3 255.8,90.7 259.7,89.3 263.6,87.9 267.5,86.7 271.5,85.5 275.4,84.4 279.3,83.4 283.2,82.5 287.1,81.7 291.0,80.9 294.9,80.3 298.9,79.7 302.8,79.2 306.7,78.9 310.6,78.6 314.5,78.3 318.4,78.2 322.4,78.2 326.3,78.2 330.2,78.4 334.1,78.6 338.0,78.9 341.9,79.3 345.8,79.8 349.8,80.4 353.7,81.1 357.6,81.8 361.5,82.7 365.4,83.6 369.3,84.6 373.3,85.7 377.2,86.9 381.1,88.2 385.0,89.5" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+<polyline points="385.0,89.5 388.6,90.9 392.2,92.3 395.9,93.8 399.5,95.4 403.1,97.0 406.7,98.7 410.3,100.5 414.0,102.4 417.6,104.3 421.2,106.4 424.8,108.5 428.4,110.6 432.1,112.9 435.7,115.2 439.3,117.6 442.9,120.1 446.6,122.6 450.2,125.2 453.8,127.9 457.4,130.7 461.0,133.5 464.7,136.4 468.3,139.4 471.9,142.5 475.5,145.7 479.1,148.9 482.8,152.2 486.4,155.5 490.0,159.0" fill="none" stroke="#888" stroke-width="1.4" stroke-dasharray="5 4"/>
+<line x1="70" y1="78.2" x2="322.0" y2="78.2" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="48" y="83.2">1</text>
+<line x1="70" y1="89.5" x2="385.0" y2="89.5" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="28" y="103.5">15/16</text>
+<line x1="322.0" y1="260" x2="322.0" y2="78.2" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="385.0" y1="260" x2="385.0" y2="89.5" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="490.0" y1="260" x2="490.0" y2="254" stroke="#222" stroke-width="1.2"/>
+<line x1="154.0" y1="260" x2="154.0" y2="254" stroke="#222" stroke-width="1.2"/>
+<text x="140.0" y="280">H/5</text>
+<text x="302.0" y="280">3H/5</text>
+<text x="375.0" y="280">3H/4</text>
+<text x="485.0" y="280">H</text>
+<text x="312.0" y="300" font-size="12">（<tspan font-family="Times New Roman, serif" font-style="italic">y</tspan><tspan font-size="9" baseline-shift="sub">m</tspan>）</text>
+<text x="381.0" y="300" font-size="12">（<tspan font-family="Times New Roman, serif" font-style="italic">y</tspan><tspan font-size="9" baseline-shift="sub">c</tspan>）</text>
+<text x="324.1" y="178.2" font-size="12" fill="#c0392b">吸熱しながら</text>
+<text x="324.1" y="192.7" font-size="12" fill="#c0392b">温度が下がる</text>
+<text x="324.1" y="207.3" font-size="12" fill="#c0392b">（<tspan font-family="Times New Roman, serif" font-style="italic">C</tspan> &lt; 0）</text>
+<text x="175.0" y="178.2" font-size="12">安定なつり合いの経路</text>
+<text x="406.0" y="147.3" font-size="12" fill="#888">不安定</text>
+<text x="397.6" y="161.8" font-size="12" fill="#888">（実現しない）</text>
+</g></svg>

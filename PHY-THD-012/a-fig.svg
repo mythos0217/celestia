@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360">
+<defs>
+<marker id="a-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+</defs>
+<!-- axes: horizontal z (depth), vertical P -->
+<line x1="80" y1="300" x2="470" y2="300" stroke="#222" stroke-width="1.6" marker-end="url(#a-ag)"/>
+<line x1="80" y1="300" x2="80" y2="30" stroke="#222" stroke-width="1.6" marker-end="url(#a-ag)"/>
+<text x="474" y="320" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">深さ</text>
+<text x="504" y="320" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">z</text>
+<text x="50" y="34" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">P</text>
+<!-- equilibrium line P = P1 - rho g z from (0,P1) to (H,P2) -->
+<line x1="80" y1="70" x2="460" y2="260" stroke="#222" stroke-width="1.6"/>
+<text x="236" y="196" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">つり合いの線（不安定）</text>
+<text x="236" y="216" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">P</text>
+<text x="248" y="216" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">＝</text>
+<text x="264" y="216" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">P<tspan baseline-shift="sub" font-size="10">1</tspan> − ρgz</text>
+<text x="250" y="118" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">線より上：沈む</text>
+<text x="110" y="284" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">線より下：浮く</text>
+<!-- H tick -->
+<line x1="400" y1="300" x2="400" y2="40" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="394" y="320" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">H</text>
+<text x="76" y="320" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">0</text>
+<!-- P levels -->
+<text x="38" y="75" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">P<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<line x1="80" y1="230" x2="400" y2="230" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="38" y="235" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">P<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<line x1="80" y1="140" x2="400" y2="140" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="38" y="145" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">P<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<!-- zc mark -->
+<line x1="221" y1="140" x2="221" y2="300" stroke="#888" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="212" y="320" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">z<tspan baseline-shift="sub" font-size="10">c</tspan></text>
+<!-- hysteresis path -->
+<line x1="86" y1="140" x2="86" y2="74" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<line x1="90" y1="66" x2="394" y2="66" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<line x1="406" y1="70" x2="406" y2="226" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/>
+<line x1="398" y1="236" x2="92" y2="236" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/>
+<text x="230" y="60" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">沈む</text>
+<text x="230" y="254" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">浮く</text>
+</svg>

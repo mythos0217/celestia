@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 340">
+  <defs>
+    <marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+    <marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+  </defs>
+  <!-- axes: origin (60,300); V unit Sl = 120px ; P unit rho g l = 55px -->
+  <line x1="60" y1="300" x2="390" y2="300" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+  <line x1="60" y1="300" x2="60" y2="20" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+  <text x="394" y="306" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">V</text>
+  <text x="44" y="24" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">P</text>
+  <text x="46" y="316" font-family="Times New Roman, serif" font-size="14" fill="#222">O</text>
+  <!-- work area -->
+  <polygon points="180,190 300,80 300,300 180,300" fill="#1f5fbf" fill-opacity="0.12" stroke="none"/>
+  <!-- line through origin (guide) -->
+  <line x1="60" y1="300" x2="180" y2="190" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <!-- process -->
+  <line x1="180" y1="245" x2="180" y2="190" stroke="#c0392b" stroke-width="1.8"/>
+  <line x1="180" y1="190" x2="300" y2="80" stroke="#c0392b" stroke-width="1.8"/>
+  <line x1="180" y1="230" x2="180" y2="214" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/>
+  <line x1="236" y1="138.7" x2="246" y2="129.5" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/>
+  <circle cx="180" cy="245" r="3" fill="#222"/><circle cx="180" cy="190" r="3" fill="#222"/><circle cx="300" cy="80" r="3" fill="#222"/>
+  <!-- guides -->
+  <g stroke="#888" stroke-width="1" stroke-dasharray="3,3">
+    <line x1="60" y1="245" x2="180" y2="245"/><line x1="60" y1="190" x2="180" y2="190"/><line x1="60" y1="80" x2="300" y2="80"/>
+    <line x1="180" y1="245" x2="180" y2="300"/><line x1="300" y1="80" x2="300" y2="300"/>
+  </g>
+  <text x="152" y="320" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">Sℓ</text>
+  <text x="282" y="320" font-family="Times New Roman, serif" font-size="14" fill="#222">2<tspan font-style="italic">Sℓ</tspan></text>
+  <text x="14" y="249" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">ρgℓ</text>
+  <text x="6" y="194" font-family="Times New Roman, serif" font-size="14" fill="#222">2<tspan font-style="italic">ρgℓ</tspan></text>
+  <text x="6" y="84" font-family="Times New Roman, serif" font-size="14" fill="#222">4<tspan font-style="italic">ρgℓ</tspan></text>
+  <text x="188" y="232" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">定積（細管を上る）</text>
+  <text x="250" y="160" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">P</tspan> ∝ <tspan font-family="Times New Roman, serif" font-style="italic">V</tspan>（A に流入）</text>
+  <text x="220" y="270" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#1f5fbf">仕事 3<tspan font-family="Times New Roman, serif" font-style="italic">ρgSℓ</tspan>²</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330">
+<defs>
+<marker id="q-ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker>
+<marker id="q-bl" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-rd" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#c0392b"/></marker>
+</defs>
+<!-- PV diagram -->
+<line x1="50" y1="280" x2="300" y2="280" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+<line x1="50" y1="280" x2="50" y2="30" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+<text x="302" y="296" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">V</text>
+<text x="34" y="34" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">p</text>
+<text x="40" y="298" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">O</text>
+<!-- V1=100, V2=250 ; TH isotherm p=11000/V ; TL isotherm p=5500/V (pixel heights) -->
+<path d="M100,170 Q150,205 175,221 Q215,240 250,236" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M100,60 Q160,118 200,135 Q230,145 250,148" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="250" y1="148" x2="250" y2="236" stroke="#222" stroke-width="1.6"/>
+<line x1="100" y1="170" x2="100" y2="60" stroke="#222" stroke-width="1.6"/>
+<path d="M165,111 L178,118" stroke="#222" stroke-width="1.6" marker-end="url(#q-ar)"/>
+<path d="M250,185 L250,198" stroke="#222" stroke-width="1.6" marker-end="url(#q-ar)"/>
+<path d="M190,229 L176,222" stroke="#222" stroke-width="1.6" marker-end="url(#q-ar)"/>
+<path d="M100,122 L100,108" stroke="#222" stroke-width="1.6" marker-end="url(#q-ar)"/>
+<text x="86" y="58" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">A</text>
+<text x="256" y="146" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">B</text>
+<text x="256" y="246" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">C</text>
+<text x="84" y="182" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">D</text>
+<text x="185" y="110" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">T<tspan baseline-shift="sub" font-size="10">H</tspan></text>
+<text x="150" y="240" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">T<tspan baseline-shift="sub" font-size="10">L</tspan></text>
+<line x1="100" y1="170" x2="100" y2="280" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="250" y1="236" x2="250" y2="280" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="92" y="300" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">V<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<text x="242" y="300" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">V<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<!-- schematic of contacts -->
+<text x="340" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">B→C（体積 <tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10">2</tspan>）</text>
+<rect x="340" y="55" width="70" height="40" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="356" y="80" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">気体</text>
+<line x1="412" y1="75" x2="438" y2="75" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-rd)"/>
+<rect x="440" y="55" width="60" height="40" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="446" y="72" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">蓄熱器</text>
+<text x="456" y="89" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">K</text>
+<text x="508" y="80" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">→ 低温熱源</text>
+<text x="340" y="150" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">D→A（体積 <tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10">1</tspan>）</text>
+<rect x="340" y="165" width="70" height="40" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="356" y="190" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">気体</text>
+<line x1="438" y1="185" x2="414" y2="185" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-rd)"/>
+<rect x="440" y="165" width="60" height="40" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="446" y="182" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">蓄熱器</text>
+<text x="456" y="199" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">K</text>
+<text x="508" y="190" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">→ 高温熱源</text>
+<text x="340" y="250" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">いずれも，まず蓄熱器と同じ温度になる</text>
+<text x="340" y="270" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">まで熱をやりとりし，その後に熱源で</text>
+<text x="340" y="290" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">目標の温度にする．</text>
+</svg>

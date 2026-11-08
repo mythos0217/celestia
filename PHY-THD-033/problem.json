@@ -1,0 +1,144 @@
+{
+ "id": "PHY-THD-033",
+ "schema": "celestia.problem/1",
+ "field": "THM",
+ "unit": "THM-03",
+ "topic": "スターリングサイクルの蓄熱器の定常状態（回収率の上限1/2と向流配置による改善）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "物質量 $n$ の単原子分子理想気体（定積モル比熱 $C_V$，気体定数 $R$）をシリンダーに閉じ込め，図の A→B→C→D→A のサイクルをくり返す熱機関がある．\nA→B：温度 $T_{\\rm H}$ に保ったまま体積 $V_1$ から $V_2=rV_1$（$r>1$）まで膨張する．\nB→C：体積 $V_2$ のまま温度 $T_{\\rm L}$（$T_{\\rm L}<T_{\\rm H}$）まで冷える．\nC→D：温度 $T_{\\rm L}$ に保ったまま体積 $V_1$ まで圧縮される．\nD→A：体積 $V_1$ のまま温度 $T_{\\rm H}$ まで温まる．\n\n定積変化の熱を再利用するため，熱容量 $K$ の蓄熱器（固体）を用いる．B→C では気体をまず蓄熱器に接触させ，両者が同じ温度になるまで熱をやりとりさせてから，低温熱源で $T_{\\rm L}$ まで冷やす．D→A では気体をまず蓄熱器に接触させて同じ温度にしてから，高温熱源で $T_{\\rm H}$ まで温める．蓄熱器は気体以外とは熱をやりとりしない．サイクルを十分にくり返し，蓄熱器の温度変化が毎サイクル同じになった状態（定常状態）を考える．気体と蓄熱器以外の熱容量は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "定常状態で，B→C の接触を終えた直後の蓄熱器の温度 $\\theta_{\\rm h}$ と，D→A の接触を終えた直後の温度 $\\theta_{\\rm c}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "1サイクルの間に蓄熱器を通して再利用される熱量 $Q_{\\rm R}$ と，その D→A で気体が必要とする熱量 $nC_V(T_{\\rm H}-T_{\\rm L})$ に対する割合 $f$ を求めよ．また，$K$ をいくら大きくしても $f$ は $\\dfrac12$ を超えないことを，定常状態の温度の関係から説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "このサイクルの熱効率 $e$（1サイクルで外部にした正味の仕事 ÷ 高温熱源から受け取った熱量）を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "熱容量が十分に大きく，1サイクルの間の温度変化が無視できる蓄熱器 R$_1$，R$_2$ を用意した．B→C では R$_1$，R$_2$ の順に，D→A では R$_2$，R$_1$ の順に気体を接触させ，そのつど同じ温度になるまで熱をやりとりさせる．定常状態での R$_1$，R$_2$ の温度と，再利用される熱の割合 $f_2$ を求めよ．また，D→A でも R$_1$，R$_2$ の順に接触させた場合の割合 $f_2'$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) の前者の方法で十分大きな蓄熱器を $N$ 個並べたときの割合 $f_N$ を求め，$N\\to\\infty$ での熱効率を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：スターリングサイクルの蓄熱器の定常状態（回収率の上限1/2と向流配置による改善）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：スターリングサイクルの蓄熱器の定常状態（回収率の上限1/2と向流配置による改善）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\theta_{\\rm h}=\\dfrac{(nC_V+K)T_{\\rm H}+KT_{\\rm L}}{nC_V+2K}$，$\\theta_{\\rm c}=\\dfrac{(nC_V+K)T_{\\rm L}+KT_{\\rm H}}{nC_V+2K}$"
+   },
+   {
+    "id": "2",
+    "tex": "$Q_{\\rm R}=\\dfrac{nC_VK(T_{\\rm H}-T_{\\rm L})}{nC_V+2K}$，$f=\\dfrac{K}{nC_V+2K}<\\dfrac12$"
+   },
+   {
+    "id": "3",
+    "tex": "$e=\\dfrac{R(T_{\\rm H}-T_{\\rm L})\\log r}{RT_{\\rm H}\\log r+C_V(T_{\\rm H}-T_{\\rm L})\\dfrac{nC_V+K}{nC_V+2K}}$"
+   },
+   {
+    "id": "4",
+    "tex": "R$_1$：$\\dfrac{2T_{\\rm H}+T_{\\rm L}}{3}$，R$_2$：$\\dfrac{T_{\\rm H}+2T_{\\rm L}}{3}$，$f_2=\\dfrac23$；同じ順の場合 $f_2'=\\dfrac12$"
+   },
+   {
+    "id": "5",
+    "tex": "$f_N=\\dfrac{N}{N+1}$，$e\\to1-\\dfrac{T_{\\rm L}}{T_{\\rm H}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "以下 $c=nC_V$（気体の定積での熱容量）とおく．$\\log$ は自然対数．\n\n\\textbf{(1)}　B→C の接触では，温度 $T_{\\rm H}$ の気体と温度 $\\theta_{\\rm c}$（前のサイクルの D→A で接触を終えた温度）の蓄熱器が熱をやりとりし，同じ温度 $\\theta_{\\rm h}$ になる．気体は定積なので仕事をせず，熱量の保存から\n\\[ c(T_{\\rm H}-\\theta_{\\rm h})=K(\\theta_{\\rm h}-\\theta_{\\rm c}). \\]\nD→A の接触では，温度 $T_{\\rm L}$ の気体と温度 $\\theta_{\\rm h}$ の蓄熱器が同じ温度 $\\theta_{\\rm c}$ になるので\n\\[ K(\\theta_{\\rm h}-\\theta_{\\rm c})=c(\\theta_{\\rm c}-T_{\\rm L}). \\]\n定常状態ではこの2式が同時に成り立つ．辺々から $T_{\\rm H}-\\theta_{\\rm h}=\\theta_{\\rm c}-T_{\\rm L}$ が分かり，これと第1式を連立して\n\\[ \\theta_{\\rm h}=\\boldsymbol{\\frac{(c+K)T_{\\rm H}+KT_{\\rm L}}{c+2K}},\\qquad \\theta_{\\rm c}=\\boldsymbol{\\frac{(c+K)T_{\\rm L}+KT_{\\rm H}}{c+2K}}. \\]\n\n\\textbf{(2)}　D→A で蓄熱器から気体に戻る熱量は\n\\[ Q_{\\rm R}=c(\\theta_{\\rm c}-T_{\\rm L})=\\boldsymbol{\\frac{cK(T_{\\rm H}-T_{\\rm L})}{c+2K}},\\qquad f=\\frac{Q_{\\rm R}}{c(T_{\\rm H}-T_{\\rm L})}=\\boldsymbol{\\frac{K}{c+2K}}. \\]\n$K\\to\\infty$ でも $f\\to\\dfrac12$ で，$\\dfrac12$ を超えない．理由：(1) で見たように，気体が蓄熱器に渡す熱と受け取る熱は等しく $T_{\\rm H}-\\theta_{\\rm h}=\\theta_{\\rm c}-T_{\\rm L}$ である．また蓄熱器は熱を受け取った後のほうが温度が高いので $\\theta_{\\rm h}\\ge\\theta_{\\rm c}$．したがって\n\\[ \\theta_{\\rm c}-T_{\\rm L}=\\frac{(T_{\\rm H}-T_{\\rm L})-(\\theta_{\\rm h}-\\theta_{\\rm c})}{2}\\le\\frac{T_{\\rm H}-T_{\\rm L}}{2}. \\]\n1つの物体と「同じ温度になるまで」接触させる方法では，冷やす気体と温める気体が蓄熱器の温度の上下に分かれるため，温めるほうの気体は高々中間の温度までしか上がらない．\n\n\\textbf{(3)}　等温変化では内部エネルギーが変わらないので，A→B で吸収する熱は外部にした仕事に等しく $nRT_{\\rm H}\\log r$，C→D で放出する熱は $nRT_{\\rm L}\\log r$．定積変化では仕事は $0$ なので，1サイクルの正味の仕事は\n\\[ W=nR(T_{\\rm H}-T_{\\rm L})\\log r. \\]\n高温熱源から受け取る熱は A→B の分と，D→A で $\\theta_{\\rm c}$ から $T_{\\rm H}$ まで温める分 $c(T_{\\rm H}-\\theta_{\\rm c})=c(T_{\\rm H}-T_{\\rm L})(1-f)$ の和だから\n\\[ e=\\frac{W}{nRT_{\\rm H}\\log r+c(T_{\\rm H}-T_{\\rm L})(1-f)}=\\boldsymbol{\\frac{R(T_{\\rm H}-T_{\\rm L})\\log r}{RT_{\\rm H}\\log r+C_V(T_{\\rm H}-T_{\\rm L})\\dfrac{nC_V+K}{nC_V+2K}}}. \\]\n\n\\textbf{(4)}　蓄熱器の熱容量が十分大きいので，R$_1$，R$_2$ の温度はそれぞれ一定値 $a$，$b$ とみなせ，接触を終えた気体の温度は蓄熱器の温度に等しくなる．\n\nB→C：気体は $T_{\\rm H}\\to a\\to b\\to T_{\\rm L}$ と変わり，R$_1$ は $c(T_{\\rm H}-a)$，R$_2$ は $c(a-b)$ を受け取る．\n\nD→A（R$_2$，R$_1$ の順）：気体は $T_{\\rm L}\\to b\\to a\\to T_{\\rm H}$ と変わり，R$_2$ は $c(b-T_{\\rm L})$，R$_1$ は $c(a-b)$ を放出する．\n\n定常状態では各蓄熱器の出入りがつり合うので\n\\[ T_{\\rm H}-a=a-b,\\qquad a-b=b-T_{\\rm L}. \\]\nよって $T_{\\rm L}$ と $T_{\\rm H}$ の間が3等分され，R$_1$：$\\boldsymbol{a=\\dfrac{2T_{\\rm H}+T_{\\rm L}}{3}}$，R$_2$：$\\boldsymbol{b=\\dfrac{T_{\\rm H}+2T_{\\rm L}}{3}}$．D→A で蓄熱器から受け取る熱は $c(a-T_{\\rm L})$ なので $\\boldsymbol{f_2=\\dfrac23}$．\n\nD→A も R$_1$，R$_2$ の順にすると，気体は $T_{\\rm L}\\to a\\to b$ と変わり，R$_1$ は $c(a-T_{\\rm L})$ を放出し，R$_2$ は $c(a-b)$ を「受け取る」（$a>b$ なら気体のほうが熱い）．R$_2$ のつり合いは $c(a-b)+c(a-b)=0$ となって $a=b$，R$_1$ のつり合い $T_{\\rm H}-a=a-T_{\\rm L}$ から $a=b=\\dfrac{T_{\\rm H}+T_{\\rm L}}{2}$．R$_2$ は何の役にも立たず $\\boldsymbol{f_2'=\\dfrac12}$ である．冷やす気体と温める気体を逆の順に通す（向流）ことが本質である．\n\n\\textbf{(5)}　$N$ 個を向流に並べると，(4) と同様に各蓄熱器のつり合いから，気体が冷やされるときの温度の段差と温められるときの段差がすべて等しくなり，$T_{\\rm L}$ から $T_{\\rm H}$ までが $N+1$ 等分される．温める気体は最も高温の蓄熱器の温度 $T_{\\rm L}+\\dfrac{N}{N+1}(T_{\\rm H}-T_{\\rm L})$ まで上がるので\n\\[ f_N=\\boldsymbol{\\frac{N}{N+1}}. \\]\n$N\\to\\infty$ で $f_N\\to1$，高温熱源から受け取る熱は $nRT_{\\rm H}\\log r$ だけになり\n\\[ e\\to\\frac{nR(T_{\\rm H}-T_{\\rm L})\\log r}{nRT_{\\rm H}\\log r}=\\boldsymbol{1-\\frac{T_{\\rm L}}{T_{\\rm H}}}. \\]\nこれはカルノー効率に等しい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "蓄熱器と「同じ温度になるまで」熱をやりとりさせる方式では，定常状態で渡す熱と戻る熱が等しく，冷やす気体と温める気体が蓄熱器の温度の上下に分かれるため，熱容量をいくら大きくしても回収率は $\\frac12$ を超えない．複数の蓄熱器を冷却と加熱で逆の順に通す（向流）と温度差が等分されて回収率は $N/(N+1)$ になり，効率はカルノー効率に近づく．"
+ },
+ "concepts": [
+  "first-law",
+  "heat-temperature",
+  "heat-engine"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "スターリングサイクル",
+  "蓄熱器",
+  "定常状態",
+  "熱効率",
+  "向流",
+  "カルノー効率"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

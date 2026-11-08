@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360">
+<defs><marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="a-ab" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker></defs>
+<line x1="80" y1="320" x2="540" y2="320" stroke="#222" stroke-width="1.4" marker-end="url(#a-ak)"/>
+<line x1="80" y1="320" x2="80" y2="20" stroke="#222" stroke-width="1.4" marker-end="url(#a-ak)"/>
+<text x="530" y="342" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">V</text><text x="62" y="30" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">P</text>
+<text x="80" y="335" font-family="Noto Sans CJK JP, sans-serif" font-size="11" fill="#888">（縦軸は途中を省略）</text>
+<line x1="80" y1="180.0" x2="270.0" y2="140.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="270.0" y1="140.0" x2="460" y2="100.0" stroke="#1f5fbf" stroke-width="2"/>
+<line x1="357.0" y1="121.7" x2="367.0" y2="119.6" stroke="#1f5fbf" stroke-width="2" marker-end="url(#a-ab)"/>
+<circle cx="270.0" cy="140.0" r="4" fill="#222"/><circle cx="460" cy="100.0" r="4" fill="#222"/>
+<text x="240.0" y="128.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">はじめ（</text><text x="292.0" y="128.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">T</text><text x="302.0" y="132.0" font-family="Noto Sans CJK JP, sans-serif" font-size="10" fill="#222">0</text><text x="308.0" y="128.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">）</text>
+<text x="380" y="70.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">下端に到達（</text><text x="458" y="70.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">T</text><text x="468" y="74.0" font-family="Noto Sans CJK JP, sans-serif" font-size="10" fill="#222">1</text><text x="474" y="70.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">）</text>
+<text x="380" y="88.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#c0392b">以後 P, V 一定で泡が逃げる</text>
+<line x1="80" y1="273.3333333333333" x2="479.0" y2="189.33333333333331" stroke="#c0392b" stroke-width="1.4" stroke-dasharray="7,4"/>
+<circle cx="270.0" cy="233.33333333333331" r="4" fill="#c0392b"/>
+<text x="280.0" y="253.33333333333331" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#c0392b">(5) 容器を引き上げた後の直線と状態</text>
+<!-- guides -->
+<line x1="270.0" y1="140.0" x2="270.0" y2="320" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="460" y1="100.0" x2="460" y2="320" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="80" y1="140.0" x2="270.0" y2="140.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="80" y1="100.0" x2="460" y2="100.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="80" y1="233.33333333333331" x2="270.0" y2="233.33333333333331" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="254.0" y="338" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">SH/2</text>
+<text x="450" y="338" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">SH</text>
+<text x="8" y="104.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">5ρgH</text>
+<text x="4" y="144.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">4.5ρgH</text>
+<text x="8" y="184.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">4ρgH</text>
+<text x="2" y="237.33333333333331" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">(10/3)ρgH</text>
+<text x="137.0" y="132.00000000000003" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#1f5fbf">傾き ρg/S</text>
+</svg>
