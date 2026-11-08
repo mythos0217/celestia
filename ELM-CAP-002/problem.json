@@ -1,0 +1,141 @@
+{
+ "id": "ELM-CAP-002",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-02",
+ "topic": "コンデンサーの充電とエネルギー",
+ "course": "物理",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "起電力 $E$ の電池（内部抵抗は無視），抵抗値 $R$ の抵抗，電気容量 $C$ のコンデンサー，スイッチ S を直列につなぐ．はじめコンデンサーに電荷はない．S を閉じた．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-circuit"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "S を閉じた直後に流れる電流 $I_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "十分時間がたったとき，コンデンサーの電気量 $Q$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "そのときコンデンサーにたくわえられた静電エネルギー $U$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "充電の間に抵抗で発生したジュール熱 $H$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-circuit",
+   "role": "question",
+   "kind": "circuit",
+   "format": "svg",
+   "src": "q-circuit.svg",
+   "alt": "起電力 E の電池、抵抗 R、電気容量 C のコンデンサー、スイッチ S を直列につないだ回路",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I_0=\\dfrac ER$",
+    "grading": "I_0：E/R"
+   },
+   {
+    "id": "2",
+    "tex": "$Q=CE$",
+    "grading": "Q：C E"
+   },
+   {
+    "id": "3",
+    "tex": "$U=\\dfrac12CE^2$",
+    "grading": "U：C E^2/2"
+   },
+   {
+    "id": "4",
+    "tex": "$H=\\dfrac12CE^2$",
+    "grading": "H：C E^2/2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 直後はコンデンサーに電荷がなく，電圧 $0$．電池の電圧はすべて抵抗にかかる：$I_0=\\dfrac ER$．\n\n(2) 十分時間がたつと電流は $0$，抵抗の電圧も $0$．コンデンサーの電圧が $E$ になる：$Q=CE$．\n\n(3) $U=\\dfrac12CE^2$．\n\n(4) 電池がした仕事は（運んだ電気量）×（起電力）$=QE=CE^2$．エネルギー保存より $H=CE^2-\\dfrac12CE^2=\\dfrac12CE^2$．抵抗の大きさによらず，ちょうど半分が熱になる．\n\n極板の間を電流が通り抜けるのではなく，極板に電荷がたまっていく．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "直後：コンデンサー＝導線，十分後：コンデンサー＝断線．電池の仕事 $QE$ の半分が熱．"
+ },
+ "simulation": {
+  "id": "elm.rc",
+  "preset": {
+   "E": 6,
+   "R": 10,
+   "C": 100,
+   "mode": 1
+  },
+  "show": "after-attempt",
+  "locked": [
+   "mode"
+  ]
+ },
+ "concepts": [
+  "capacitor",
+  "electric-power"
+ ],
+ "laws": [
+  "capacitor-energy",
+  "joule-heat",
+  "kirchhoff-2nd"
+ ],
+ "misconceptions": [
+  "MC-CAP-CURRENT"
+ ],
+ "tags": [
+  "コンデンサー",
+  "RC回路",
+  "ジュール熱"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

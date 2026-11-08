@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400">
+<defs><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<line x1="120" y1="60" x2="300" y2="60" stroke="#222" stroke-width="3"/>
+<line x1="125" y1="60" x2="133" y2="50" stroke="#222" stroke-width="1"/>
+<line x1="137" y1="60" x2="145" y2="50" stroke="#222" stroke-width="1"/>
+<line x1="149" y1="60" x2="157" y2="50" stroke="#222" stroke-width="1"/>
+<line x1="161" y1="60" x2="169" y2="50" stroke="#222" stroke-width="1"/>
+<line x1="173" y1="60" x2="181" y2="50" stroke="#222" stroke-width="1"/>
+<line x1="185" y1="60" x2="193" y2="50" stroke="#222" stroke-width="1"/>
+<line x1="197" y1="60" x2="205" y2="50" stroke="#222" stroke-width="1"/>
+<line x1="209" y1="60" x2="217" y2="50" stroke="#222" stroke-width="1"/>
+<line x1="221" y1="60" x2="229" y2="50" stroke="#222" stroke-width="1"/>
+<line x1="233" y1="60" x2="241" y2="50" stroke="#222" stroke-width="1"/>
+<line x1="245" y1="60" x2="253" y2="50" stroke="#222" stroke-width="1"/>
+<line x1="257" y1="60" x2="265" y2="50" stroke="#222" stroke-width="1"/>
+<line x1="269" y1="60" x2="277" y2="50" stroke="#222" stroke-width="1"/>
+<line x1="281" y1="60" x2="289" y2="50" stroke="#222" stroke-width="1"/>
+<line x1="293" y1="60" x2="301" y2="50" stroke="#222" stroke-width="1"/>
+<text x="310" y="65" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">P（固定）　電荷 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">+Q</tspan></text>
+<line x1="120" y1="100" x2="300" y2="100" stroke="#222" stroke-width="3"/>
+<text x="310" y="105" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">A（質量 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">m</tspan>）　電荷 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">−Q</tspan></text>
+<line x1="100" y1="62" x2="100" y2="98" stroke="#222" stroke-width="1" marker-start="url(#q-ar)" marker-end="url(#q-ar)"/>
+<text x="84" y="86" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">d</text>
+<polyline points="210.0,100.0 210.0,108.0 220.0,116.4 200.0,124.8 220.0,133.1 200.0,141.5 220.0,149.9 200.0,158.2 220.0,166.6 200.0,175.0 220.0,183.4 200.0,191.8 220.0,200.1 200.0,208.5 220.0,216.9 200.0,225.2 220.0,233.6 210.0,242.0 210.0,250.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="228" y="180" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">k</text>
+<line x1="120" y1="250" x2="300" y2="250" stroke="#222" stroke-width="3"/>
+<text x="310" y="255" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">B（質量 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">m</tspan>）　電荷 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">+q</tspan></text>
+<line x1="120" y1="290" x2="300" y2="290" stroke="#222" stroke-width="3"/>
+<line x1="125" y1="290" x2="117" y2="300" stroke="#222" stroke-width="1"/>
+<line x1="137" y1="290" x2="129" y2="300" stroke="#222" stroke-width="1"/>
+<line x1="149" y1="290" x2="141" y2="300" stroke="#222" stroke-width="1"/>
+<line x1="161" y1="290" x2="153" y2="300" stroke="#222" stroke-width="1"/>
+<line x1="173" y1="290" x2="165" y2="300" stroke="#222" stroke-width="1"/>
+<line x1="185" y1="290" x2="177" y2="300" stroke="#222" stroke-width="1"/>
+<line x1="197" y1="290" x2="189" y2="300" stroke="#222" stroke-width="1"/>
+<line x1="209" y1="290" x2="201" y2="300" stroke="#222" stroke-width="1"/>
+<line x1="221" y1="290" x2="213" y2="300" stroke="#222" stroke-width="1"/>
+<line x1="233" y1="290" x2="225" y2="300" stroke="#222" stroke-width="1"/>
+<line x1="245" y1="290" x2="237" y2="300" stroke="#222" stroke-width="1"/>
+<line x1="257" y1="290" x2="249" y2="300" stroke="#222" stroke-width="1"/>
+<line x1="269" y1="290" x2="261" y2="300" stroke="#222" stroke-width="1"/>
+<line x1="281" y1="290" x2="273" y2="300" stroke="#222" stroke-width="1"/>
+<line x1="293" y1="290" x2="285" y2="300" stroke="#222" stroke-width="1"/>
+<text x="310" y="295" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">C（固定）　電荷 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">−q</tspan></text>
+<line x1="100" y1="252" x2="100" y2="288" stroke="#222" stroke-width="1" marker-start="url(#q-ar)" marker-end="url(#q-ar)"/>
+<text x="84" y="276" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">d</text>
+<path d="M120,250 C 60,250 50,240 50,225" fill="none" stroke="#222" stroke-width="1.2"/>
+<circle cx="50" cy="222" r="3" fill="none" stroke="#222" stroke-width="1.2"/>
+<line x1="50" y1="222" x2="30" y2="250" stroke="#222" stroke-width="1.4"/>
+<circle cx="50" cy="262" r="3" fill="none" stroke="#222" stroke-width="1.2"/>
+<path d="M50,265 C 50,290 70,300 120,295" fill="none" stroke="#222" stroke-width="1.2"/>
+<text x="4" y="208" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">スイッチ</text>
+<text x="18" y="270" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222"></text>
+<line x1="470" y1="150" x2="470" y2="210" stroke="#222" stroke-width="1.6" marker-end="url(#q-ar)"/>
+<text x="452" y="140" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">重力</text>
+<text x="200" y="350" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">極板の面積はすべて <tspan font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">S</tspan></text>
+</svg>

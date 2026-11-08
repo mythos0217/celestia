@@ -1,0 +1,141 @@
+{
+ "id": "ELM-IND-001",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "一定の速さで動く導体棒",
+ "course": "物理",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鉛直上向きで磁束密度 $B$ の一様な磁場の中に，間隔 $l$ の平行なレールを水平に置き，一端に抵抗値 $R$ の抵抗をつないだ．レールの上に導体棒を垂直に置き，一定の速さ $v$ で動かし続けた．抵抗以外の電気抵抗と摩擦は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "導体棒に生じる誘導起電力の大きさ $V$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "回路を流れる電流 $I$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "導体棒を一定の速さで動かすのに必要な外力の大きさ $F$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "外力の仕事率 $P$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "circuit",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "抵抗 R をつないだ間隔 l の平行なレールの上を、導体棒が速さ v で動く。磁場は紙面に垂直",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V=vBl$",
+    "grading": "V：v B l"
+   },
+   {
+    "id": "2",
+    "tex": "$I=\\dfrac{vBl}{R}$",
+    "grading": "I：v B l/R"
+   },
+   {
+    "id": "3",
+    "tex": "$F=\\dfrac{vB^2l^2}{R}$",
+    "grading": "F：v B^2 l^2/R"
+   },
+   {
+    "id": "4",
+    "tex": "$P=\\dfrac{v^2B^2l^2}{R}$",
+    "grading": "P：v^2 B^2 l^2/R"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 時間 $\\Delta t$ に回路の面積は $lv\\Delta t$ 変わるので，$V=\\dfrac{\\Delta\\Phi}{\\Delta t}=vBl$．\n\n(2) $I=\\dfrac VR=\\dfrac{vBl}R$．\n\n(3) 電流が流れる棒は磁場から $IlB$ の力を受ける．向きは運動を妨げる向き（レンツの法則）．一定の速さで動かすには，同じ大きさの外力が必要：$F=IlB=\\dfrac{vB^2l^2}R$．\n\n(4) $P=Fv=\\dfrac{v^2B^2l^2}R$．これは抵抗の消費電力 $RI^2$ と等しい：外力の仕事がすべてジュール熱になる．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "誘導電流が受ける力は，いつも運動を妨げる向き．"
+ },
+ "simulation": {
+  "id": "elm.induction",
+  "preset": {
+   "F": 0.5,
+   "v0": 0,
+   "B": 1,
+   "l": 0.5,
+   "R": 2,
+   "m": 0.2
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "lorentz-force",
+  "electric-power"
+ ],
+ "laws": [
+  "motional-emf",
+  "current-force",
+  "joule-heat"
+ ],
+ "misconceptions": [
+  "MC-INDUCTION-FLUX"
+ ],
+ "tags": [
+  "電磁誘導",
+  "導体棒",
+  "レンツの法則"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

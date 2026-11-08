@@ -1,0 +1,135 @@
+{
+ "id": "PHY-ACC-001",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-06",
+ "topic": "ダイオードを含むLC回路による共振充電と電荷の受け渡し",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，起電力 $E$ の電池（内部抵抗は無視），自己インダクタンス $L_1$，$L_2$ のコイル，理想的なダイオード $\\mathrm{D}_1$，$\\mathrm{D}_2$（順方向の抵抗は 0，逆方向には電流を流さない），電気容量 $C$ のコンデンサー $\\mathrm{C}_1$，電気容量 $kC$（$k>0$）のコンデンサー $\\mathrm{C}_2$，スイッチ $\\mathrm{S}_1$，$\\mathrm{S}_2$ で回路をつくった．導線の抵抗は無視する．はじめ両スイッチは開いていて，コンデンサーは帯電していない．コンデンサーの電圧は，図の上側の極板が正のときを正とする．\n\n\\textbf{[I]} $\\mathrm{S}_1$ を閉じた．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "回路を流れる電流の最大値と，電流が流れ始めてから止まるまでの時間を求めよ．また，電流が止まった後の $\\mathrm{C}_1$ の電圧 $V_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この間に電池がした仕事と $\\mathrm{C}_1$ に蓄えられた静電エネルギーを求めよ．また，コイルの代わりに抵抗を入れて同じ電池で $\\mathrm{C}_1$ を充電した場合，最終的な電圧と失われるエネルギーはどうなるか．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "\\textbf{[II]} 次に $\\mathrm{S}_1$ を開き，$\\mathrm{S}_2$ を閉じた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "3",
+      "tex": "電流が止まった後の $\\mathrm{C}_1$，$\\mathrm{C}_2$ の電圧 $V_1$，$V_2$ を $E$ と $k$ で表せ．また，電流が流れていた時間を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\mathrm{C}_1$ の静電エネルギーのうち $\\mathrm{C}_2$ に移った割合を $k$ で表し，それが最大になる $k$ を求めよ．また，$k=3$ のときの $V_1$，$V_2$ を求めよ．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "\\textbf{II}　で $L_2$ と $\\mathrm{D}_2$ を取り除いて導線（わずかな抵抗をもつ）で直結した場合，最終的に失われるエネルギーは $\\mathrm{C}_1$ のはじめの静電エネルギーの何倍か．"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ダイオードを含むLC回路による共振充電と電荷の受け渡し",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "最大値 $E\\sqrt{\\dfrac{C}{L_1}}$，時間 $\\pi\\sqrt{L_1C}$，$V_0=2E$"
+   },
+   {
+    "id": "2",
+    "tex": "仕事・静電エネルギーともに $2CE^2$（損失なし）．抵抗で充電すると電圧は $E$，電池の仕事 $CE^2$ のうち $\\dfrac12CE^2$ がジュール熱として失われる"
+   },
+   {
+    "id": "3",
+    "tex": "$V_1=\\dfrac{2(1-k)}{1+k}E$，$V_2=\\dfrac{4}{1+k}E$，時間 $\\pi\\sqrt{\\dfrac{kL_2C}{1+k}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{4k}{(1+k)^2}$，$k=1$（全エネルギーが移る），$k=3$ のとき $V_1=-E$，$V_2=E$　(5) $\\dfrac{k}{1+k}$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 共振充電}\n$\\mathrm{C}_1$ の電気量を $q$，電流を $i=\\dfrac{\\Delta q}{\\Delta t}$ とすると，キルヒホッフの法則より\n\\[ L_1\\frac{\\Delta i}{\\Delta t}=E-\\frac{q}{C} \\]\nこれは「つり合いの位置 $q=CE$ のまわりの単振動」と同じ形で，角振動数 $\\dfrac{1}{\\sqrt{L_1C}}$．$q=0$，$i=0$ から始まるので $q$ は $0$ と $2CE$ の間を振動する：$q=CE\\left(1-\\cos\\dfrac{t}{\\sqrt{L_1C}}\\right)$．\n電流が最大になるのは $q=CE$ のときで，エネルギー保存（電池の仕事 $Eq$ ＝ 静電エネルギー ＋ コイルのエネルギー）より\n\\[ E\\cdot CE=\\frac{(CE)^2}{2C}+\\frac12L_1i_{\\max}^2\\quad\\Longrightarrow\\quad i_{\\max}=\\boldsymbol{E\\sqrt{\\frac{C}{L_1}}} \\]\n半周期後（$t=\\pi\\sqrt{L_1C}$）に $q=2CE$，$i=0$ となり，電流は逆向きになろうとするがダイオードが止める．よって時間は $\\boldsymbol{\\pi\\sqrt{L_1C}}$，$V_0=\\boldsymbol{2E}$（電池の起電力の2倍）．\n\n\\textbf{(2) エネルギー}\n電池の仕事 $E\\times2CE=\\boldsymbol{2CE^2}$，静電エネルギー $\\dfrac12C(2E)^2=\\boldsymbol{2CE^2}$ で等しく，損失はない．抵抗を通すと電流が単調に減って電圧 $E$ で止まり，電池の仕事 $CE^2$ のうち半分 $\\dfrac12CE^2$ が必ずジュール熱になる（抵抗値によらない）．\n\n\\textbf{(3) $\\mathrm{C}_1\\to\\mathrm{C}_2$ への受け渡し}\nはじめ $\\mathrm{C}_1$ の電気量 $Q_0=2CE$．$\\mathrm{C}_2$ へ移った電気量を $q$ とすると\n\\[ L_2\\frac{\\Delta i}{\\Delta t}=\\frac{Q_0-q}{C}-\\frac{q}{kC} \\]\nつり合いの位置は $q_e=\\dfrac{k}{1+k}Q_0$，2つのコンデンサーの直列合成容量 $C'=\\dfrac{kC}{1+k}$ で角振動数 $\\dfrac{1}{\\sqrt{L_2C'}}$．$q=0$ から始まり半周期後に $q=2q_e$，$i=0$ となってダイオードで止まる．\n\\[ V_2=\\frac{2q_e}{kC}=\\boldsymbol{\\frac{4}{1+k}E},\\qquad V_1=\\frac{Q_0-2q_e}{C}=\\boldsymbol{\\frac{2(1-k)}{1+k}E} \\]\n時間は $\\pi\\sqrt{L_2C'}=\\boldsymbol{\\pi\\sqrt{\\dfrac{kL_2C}{1+k}}}$．\n\n（別解：衝突との対応）損失がないので，電気量保存 $CV_1+kCV_2=C\\cdot2E$ とエネルギー保存 $\\dfrac12CV_1^2+\\dfrac12kCV_2^2=\\dfrac12C(2E)^2$ が成り立つ．これは「質量 $C$，速さ $2E$ の物体が静止した質量 $kC$ の物体に弾性衝突する」式と同じで，弾性衝突の公式 $V_1=\\dfrac{C-kC}{C+kC}\\cdot2E$，$V_2=\\dfrac{2C}{C+kC}\\cdot2E$ が上の結果と一致する．\n\n\\textbf{(4) 移ったエネルギーの割合}\n\\[ \\frac{\\frac12kCV_2^2}{2CE^2}=\\boldsymbol{\\frac{4k}{(1+k)^2}}=1-\\left(\\frac{1-k}{1+k}\\right)^2\\le1 \\]\n等号は $\\boldsymbol{k=1}$ で，このとき $V_1=0$，$V_2=2E$ と全エネルギーが移る（等しい質量の弾性衝突で速度が入れかわるのと同じ）．$k=3$ では\n\\[ V_1=\\boldsymbol{-E},\\qquad V_2=\\boldsymbol{E} \\]\nとなり，$\\mathrm{C}_1$ は逆向きに充電される（軽い物体が重い物体に当たってはね返るのに対応）．\n\n\\textbf{(5) 直結した場合}\n最終的に両者の電圧が等しくなり $V=\\dfrac{2CE}{C+kC}=\\dfrac{2E}{1+k}$．失われるエネルギーは\n\\[ 2CE^2-\\frac12(1+k)C\\left(\\frac{2E}{1+k}\\right)^2=2CE^2\\cdot\\frac{k}{1+k} \\]\nで $\\boldsymbol{\\dfrac{k}{1+k}}$ 倍（完全非弾性衝突に対応）．コイルとダイオードを使うと，電流が 0 になる瞬間に回路が切れるのでこの損失を避けられる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "コイルを通した充放電ではLC振動の半周期，電流が0になる瞬間にダイオードが回路を断つので，エネルギーを失わずに電荷を移せる（電源電圧の2倍への充電など）．2つのコンデンサー間の受け渡しは電気量保存とエネルギー保存が弾性衝突と同じ形になり，抵抗で直結した場合（完全非弾性衝突）と対比される．"
+ },
+ "concepts": [
+  "ac-circuit",
+  "restitution",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気振動",
+  "LC回路",
+  "ダイオード",
+  "エネルギー保存",
+  "弾性衝突との対応"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

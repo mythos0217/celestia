@@ -1,0 +1,131 @@
+{
+ "id": "PHY-CAP-005",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-02",
+ "topic": "接地した2枚の極板の間で動く帯電極板（誘導電流と静電気力による実効ばね）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，面積 $S$ の金属極板 L，N を間隔 $2a$ で平行に固定し，その間に同形の薄い金属極板 M を平行に置く．M は絶縁棒とばね定数 $k$ のばねで壁につながれ，極板に垂直な方向（$x$ 軸方向）にだけなめらかに動ける．L と N の中央を原点として M の位置を $x$（$-a<x<a$）とし，ばねは M が $x=0$ にあるとき自然長である．M には正の電気量 $q$ が与えられており，M は他のどこにも電気的につながっていない．L と N は内部抵抗の無視できる検流計 G を含む導線で結ばれ，L は接地されている．M の質量を $m$，極板間の誘電率を $\\varepsilon$ とし，$C_0=\\dfrac{\\varepsilon S}{a}$ とおく．極板の端の効果，重力の影響は無視し，各瞬間の電荷分布は，M がその位置に静止しているときと同じとみなしてよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "M が位置 $x$ にあるとき，M の電位 $V_{\\mathrm M}$ と，N の電気量 $Q_{\\mathrm N}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "M が速度 $v$（$x$ 軸の正の向きを正）で動いているとき，G を L から N の向きに流れる電流 $I$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "M が位置 $x$ にあるとき，M が受ける静電気力の $x$ 成分 $F$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$x=0$ が M の安定なつり合いの位置となるための $k$ の条件を求めよ．また，この条件のもとで M を $x=0$ から少しずらして放すと M は振幅 $A$ で単振動した．その角振動数 $\\omega$ と，G を流れる電流の最大値を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "次に，G を取り除いて，起電力 $V_0$ の電池を L と N の間に N が高電位になるようにつないだ（L は接地したまま）．このとき M のつり合いの位置 $x_{\\mathrm e}$ と，そのまわりの微小振動の角振動数を求めよ．ただし $k$ は (4) の条件を満たし，$|x_{\\mathrm e}|<a$ とする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：接地した2枚の極板の間で動く帯電極板（誘導電流と静電気力による実効ばね）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V_{\\mathrm M}=\\dfrac{q(a^2-x^2)}{2a^2C_0}$，$Q_{\\mathrm N}=-\\dfrac{q(a+x)}{2a}$"
+   },
+   {
+    "id": "2",
+    "tex": "$I=-\\dfrac{qv}{2a}$（N から L の向きに大きさ $\\dfrac{qv}{2a}$．位置によらない）"
+   },
+   {
+    "id": "3",
+    "tex": "$F=\\dfrac{q^2x}{2a^2C_0}$"
+   },
+   {
+    "id": "4",
+    "tex": "$k>\\dfrac{q^2}{2a^2C_0}$，$\\omega=\\sqrt{\\dfrac{1}{m}\\left(k-\\dfrac{q^2}{2a^2C_0}\\right)}$，電流の最大値 $\\dfrac{q\\omega A}{2a}$"
+   },
+   {
+    "id": "5",
+    "tex": "$x_{\\mathrm e}=-\\dfrac{aC_0qV_0}{2a^2C_0k-q^2}$，角振動数は (4) の $\\omega$ と同じ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{電位による解法}　L と N は導線で結ばれ，L は接地されているので，どちらも電位 $0$ である．LM 間，MN 間の電気容量は\n\\[ C_1=\\frac{\\varepsilon S}{a+x}=\\frac{a}{a+x}C_0,\\qquad C_2=\\frac{a}{a-x}C_0 \\]\n\n(1) M は孤立しているので，M の両面の電気量の和は $q$ に保たれる．M の電位を $V_{\\mathrm M}$ とすると，M の左面の電気量は $C_1(V_{\\mathrm M}-0)$，右面は $C_2(V_{\\mathrm M}-0)$ なので\n\\[ (C_1+C_2)V_{\\mathrm M}=q,\\qquad C_1+C_2=\\frac{2a^2}{a^2-x^2}C_0\\qquad\\therefore\\ \\boldsymbol{V_{\\mathrm M}=\\frac{q(a^2-x^2)}{2a^2C_0}} \\]\nN の電気量は M の右面と逆符号で\n\\[ Q_{\\mathrm N}=C_2(0-V_{\\mathrm M})=\\boldsymbol{-\\frac{q(a+x)}{2a}} \\]\n同様に L の電気量は $-\\dfrac{q(a-x)}{2a}$ である．M の電荷 $q$ は，L，N に距離に逆比例する割合で逆符号の電荷を誘導する．\n\n(2) $Q_{\\mathrm N}$ は $x$ の 1 次式なので，時間 $\\Delta t$ に M が $\\Delta x=v\\Delta t$ 動くと $\\Delta Q_{\\mathrm N}=-\\dfrac{q}{2a}\\Delta x$．この電荷は G を通って L から N へ運ばれるので\n\\[ \\boldsymbol{I=\\frac{\\Delta Q_{\\mathrm N}}{\\Delta t}=-\\frac{qv}{2a}} \\]\nすなわち N から L の向きに大きさ $\\dfrac{qv}{2a}$ の電流が流れ，M の位置によらない．\n\n(3) M の右面の電気量は $Q_{\\mathrm R}=-Q_{\\mathrm N}=\\dfrac{q(a+x)}{2a}$，左面は $Q_{\\mathrm L}=\\dfrac{q(a-x)}{2a}$ である．MN 間の電場は $\\dfrac{Q_{\\mathrm R}}{\\varepsilon S}$ で，右面の電荷はその半分の電場から力を受ける（極板間引力と同じ）．右面は N に引かれて $+x$ 向きに $\\dfrac{Q_{\\mathrm R}^{\\,2}}{2\\varepsilon S}$，左面は L に引かれて $-x$ 向きに $\\dfrac{Q_{\\mathrm L}^{\\,2}}{2\\varepsilon S}$ の力を受ける．よって\n\\[ F=\\frac{Q_{\\mathrm R}^{\\,2}-Q_{\\mathrm L}^{\\,2}}{2\\varepsilon S}=\\frac{q^2}{4a^2}\\cdot\\frac{4ax}{2\\varepsilon S}=\\frac{q^2x}{2a\\varepsilon S}=\\boldsymbol{\\frac{q^2x}{2a^2C_0}} \\]\n（別解：静電エネルギー $U=\\dfrac{q^2}{2(C_1+C_2)}=\\dfrac{q^2(a^2-x^2)}{4a^2C_0}$ に対し，電池がないので $F\\Delta x=-\\Delta U$ から同じ結果を得る．）$F$ は $x$ と同符号，すなわち近い方の極板に引き寄せる向きで，大きさが変位に比例する．\n\n(4) M にはたらく力の合計は $-kx+\\dfrac{q^2}{2a^2C_0}x=-\\left(k-\\dfrac{q^2}{2a^2C_0}\\right)x$．静電気力は「負のばね」としてはたらくので，安定であるためには\n\\[ \\boldsymbol{k>\\frac{q^2}{2a^2C_0}},\\qquad \\boldsymbol{\\omega=\\sqrt{\\frac1m\\left(k-\\frac{q^2}{2a^2C_0}\\right)}} \\]\n(2) より G の電流は M の速度に比例し，速度の最大値は $A\\omega$ なので，電流の最大値は $\\boldsymbol{\\dfrac{q\\omega A}{2a}}$．\n\n(5) L の電位は $0$，N の電位は $V_0$ になる．M の電気量の保存 $C_1V_{\\mathrm M}+C_2(V_{\\mathrm M}-V_0)=q$ から，各極板の電気量は「電池がない場合」と「M が帯電していない場合」の和になる．M が帯電していない場合，M の左面と右面には $+\\dfrac{C_0V_0}2$，$-\\dfrac{C_0V_0}2$ が現れる（M は一様な電場 $\\dfrac{V_0}{2a}$ を乱さない）．よって\n\\[ Q_{\\mathrm R}=\\frac{q(a+x)}{2a}-\\frac{C_0V_0}2,\\qquad Q_{\\mathrm L}=\\frac{q(a-x)}{2a}+\\frac{C_0V_0}2 \\]\n(3) と同様にして\n\\[ F=\\frac{Q_{\\mathrm R}^{\\,2}-Q_{\\mathrm L}^{\\,2}}{2\\varepsilon S}=\\frac{q^2x}{2a^2C_0}-\\frac{qV_0}{2a} \\]\n第 2 項は，電池による一様な電場 $\\dfrac{V_0}{2a}$（$-x$ 向き）から電荷 $q$ が受ける力そのもので，$x$ によらない．つり合いの条件 $-kx_{\\mathrm e}+\\dfrac{q^2x_{\\mathrm e}}{2a^2C_0}-\\dfrac{qV_0}{2a}=0$ より\n\\[ \\boldsymbol{x_{\\mathrm e}=-\\frac{qV_0}{2a}\\cdot\\frac{2a^2C_0}{2a^2C_0k-q^2}=-\\frac{aC_0qV_0}{2a^2C_0k-q^2}} \\]\n一定の力は振動の中心をずらすだけなので，角振動数は \\textbf{(4) の $\\omega$ と同じ}である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "孤立した帯電極板が接地極板の間にあるとき，電位による解法（孤立部分の電気量保存）で誘導電荷が位置の 1 次式になるため，極板の速度に比例し位置によらない電流が流れる．両面の電荷の 2 乗の差から求めた静電気力は変位に比例して近い極板へ引き寄せる「負のばね」となり，外部電圧はこれに一定の力を重ね合わせるだけになる．"
+ },
+ "concepts": [
+  "capacitor",
+  "simple-harmonic-motion",
+  "superposition"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "孤立部分の電気量保存",
+  "電位による解法",
+  "誘導電流",
+  "極板間引力",
+  "単振動",
+  "重ね合わせ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

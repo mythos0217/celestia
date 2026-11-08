@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260">
+<g stroke="#222" stroke-width="1.6" fill="none">
+<!-- loop -->
+<polyline points="80,60 80,40 440,40 440,80"/>
+<polyline points="440,124 440,140"/>
+<polyline points="440,170 440,220 80,220 80,190"/>
+<polyline points="80,150 80,128"/>
+<polyline points="80,112 80,90"/>
+</g>
+<!-- battery E0 at left (80, 60-90): long plate top? -->
+<g stroke="#222" stroke-width="1.6">
+<line x1="60" y1="66" x2="100" y2="66"/>
+<line x1="70" y1="74" x2="90" y2="74" stroke-width="3"/>
+<line x1="80" y1="60" x2="80" y2="66"/><line x1="80" y1="74" x2="80" y2="90"/>
+<!-- C1 -->
+<line x1="62" y1="112" x2="98" y2="112"/><line x1="62" y1="128" x2="98" y2="128"/>
+<!-- C2 -->
+<line x1="62" y1="150" x2="98" y2="150"/><line x1="62" y1="166" x2="98" y2="166"/>
+<line x1="80" y1="166" x2="80" y2="190"/>
+<!-- R -->
+<rect x="430" y="80" width="20" height="44" fill="none"/>
+<!-- switch -->
+<line x1="440" y1="142" x2="458" y2="164"/>
+</g>
+<circle cx="440" cy="140" r="2.5" fill="#fff" stroke="#222" stroke-width="1.2"/>
+<circle cx="440" cy="170" r="2.5" fill="#fff" stroke="#222" stroke-width="1.2"/>
+<g font-size="15" fill="#222">
+<text x="108" y="76" font-family="Times New Roman, serif" font-style="italic">E<tspan baseline-shift="sub" font-size="10">0</tspan><tspan font-style="normal" font-family="Noto Sans CJK JP, sans-serif" font-size="13">＝</tspan>Qd<tspan font-style="normal">/</tspan>(εS)</text>
+<text x="108" y="125" font-family="Times New Roman, serif" font-style="italic">C<tspan baseline-shift="sub" font-size="10">1</tspan><tspan font-style="normal" font-family="Noto Sans CJK JP, sans-serif" font-size="13">＝</tspan>εS<tspan font-style="normal">/</tspan>d</text>
+<text x="108" y="163" font-family="Times New Roman, serif" font-style="italic">C<tspan baseline-shift="sub" font-size="10">2</tspan><tspan font-style="normal">(</tspan>z<tspan font-style="normal">)</tspan><tspan font-style="normal" font-family="Noto Sans CJK JP, sans-serif" font-size="13">＝</tspan>ε<tspan baseline-shift="sub" font-size="10">0</tspan>S<tspan font-style="normal">/</tspan>z</text>
+<text x="458" y="108" font-family="Times New Roman, serif" font-style="italic">R</text>
+<text x="464" y="160" font-family="Noto Sans CJK JP, sans-serif" font-size="14">K</text>
+<text x="22" y="56" font-family="Noto Sans CJK JP, sans-serif" font-size="13">下電極側</text>
+<text x="22" y="210" font-family="Noto Sans CJK JP, sans-serif" font-size="13">上電極側</text>
+<text x="170" y="250" font-family="Noto Sans CJK JP, sans-serif" font-size="13">外部回路から見た等価回路（長い極板が正極）</text>
+</g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 270">
+  <defs>
+    <marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+    <marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+  </defs>
+  <g stroke="#222" stroke-width="1.6" fill="none">
+    <!-- wires -->
+    <path d="M120,112 V50 H215"/>
+    <path d="M255,50 H340 V80"/>
+    <path d="M340,190 V230 H120 V150"/>
+    <!-- coil (JIS: half circles) -->
+    <path d="M340,80 a11,11 0 0,1 0,22 a11,11 0 0,1 0,22 a11,11 0 0,1 0,22 a11,11 0 0,1 0,22 a11,11 0 0,1 0,22"/>
+    <!-- switch -->
+    <circle cx="218" cy="50" r="3" fill="#222"/>
+    <circle cx="252" cy="50" r="3" fill="#222"/>
+    <path d="M218,50 L248,32"/>
+  </g>
+  <!-- capacitor plates -->
+  <line x1="70" y1="112" x2="170" y2="112" stroke="#222" stroke-width="3.2"/>
+  <line x1="70" y1="150" x2="170" y2="150" stroke="#222" stroke-width="3.2"/>
+  <!-- gap dimension -->
+  <line x1="185" y1="112" x2="185" y2="150" stroke="#888" stroke-width="1" marker-start="url(#q-ag)" marker-end="url(#q-ag)"/>
+  <!-- movement arrow for plate B -->
+  <line x1="88" y1="160" x2="88" y2="196" stroke="#1f5fbf" stroke-width="1.8" marker-start="url(#q-ab)" marker-end="url(#q-ab)"/>
+  <g font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">
+    <text x="192" y="136">d</text>
+    <text x="362" y="140">L</text>
+  </g>
+  <g font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">
+    <text x="44" y="117">A</text>
+    <text x="44" y="155">B</text>
+    <text x="228" y="26">K</text>
+    <text x="98" y="186">可動</text>
+    <text x="54" y="96">固定</text>
+    <text x="200" y="258" font-size="13">極板の面積 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="15">S</tspan>（真空）</text>
+  </g>
+</svg>

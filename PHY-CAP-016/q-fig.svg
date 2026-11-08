@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 85 520 225">
+<defs><marker id="q-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<!-- floor -->
+<line x1="40" y1="270" x2="400" y2="270" stroke="#222" stroke-width="1.6"/>
+<g stroke="#222" stroke-width="1">
+<line x1="50" y1="270" x2="40" y2="282"/><line x1="70" y1="270" x2="60" y2="282"/><line x1="90" y1="270" x2="80" y2="282"/><line x1="110" y1="270" x2="100" y2="282"/><line x1="130" y1="270" x2="120" y2="282"/><line x1="150" y1="270" x2="140" y2="282"/><line x1="170" y1="270" x2="160" y2="282"/><line x1="190" y1="270" x2="180" y2="282"/><line x1="210" y1="270" x2="200" y2="282"/><line x1="230" y1="270" x2="220" y2="282"/><line x1="250" y1="270" x2="240" y2="282"/><line x1="270" y1="270" x2="260" y2="282"/><line x1="290" y1="270" x2="280" y2="282"/><line x1="310" y1="270" x2="300" y2="282"/><line x1="330" y1="270" x2="320" y2="282"/><line x1="350" y1="270" x2="340" y2="282"/><line x1="370" y1="270" x2="360" y2="282"/><line x1="390" y1="270" x2="380" y2="282"/>
+</g>
+<!-- lower electrode -->
+<rect x="80" y="262" width="260" height="6" fill="#222"/>
+<!-- dielectric film -->
+<rect x="80" y="212" width="260" height="50" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="80" y1="216" x2="340" y2="216" stroke="#222" stroke-width="1.2" stroke-dasharray="2 3"/>
+<g font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">
+<text x="96" y="229" >− − − − − − − − − − − − − − − − − − − − − </text>
+</g>
+<text x="190" y="252" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">誘電体（誘電率 <tspan font-family="Times New Roman, serif" font-style="italic">ε</tspan>）</text>
+<!-- upper electrode -->
+<rect x="80" y="122" width="260" height="6" fill="#222"/>
+<text x="150" y="112" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">上電極（面積 <tspan font-family="Times New Roman, serif" font-style="italic">S</tspan>）</text>
+<text x="150" y="295" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">下電極</text>
+<text x="100" y="175" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">真空</text>
+<!-- dims -->
+<line x1="60" y1="128" x2="60" y2="212" stroke="#222" stroke-width="1" marker-start="url(#q-ah)" marker-end="url(#q-ah)"/>
+<text x="44" y="175" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">z</text>
+<line x1="60" y1="212" x2="60" y2="262" stroke="#222" stroke-width="1" marker-start="url(#q-ah)" marker-end="url(#q-ah)"/>
+<text x="44" y="242" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">d</text>
+<line x1="60" y1="212" x2="80" y2="212" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<!-- fixed charge label -->
+<line x1="300" y1="217" x2="285" y2="196" stroke="#222" stroke-width="1"/>
+<text x="225" y="190" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">固定電荷 −<tspan font-family="Times New Roman, serif" font-style="italic">Q</tspan></text>
+<!-- circuit -->
+<polyline points="340,125 460,125 460,150" fill="none" stroke="#222" stroke-width="1.6"/>
+<rect x="450" y="150" width="20" height="44" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="478" y="178" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">R</text>
+<line x1="460" y1="194" x2="460" y2="212" stroke="#222" stroke-width="1.6"/>
+<circle cx="460" cy="214" r="2.5" fill="#fff" stroke="#222" stroke-width="1.2"/>
+<line x1="460" y1="216" x2="480" y2="238" stroke="#222" stroke-width="1.6"/>
+<circle cx="460" cy="242" r="2.5" fill="#fff" stroke="#222" stroke-width="1.2"/>
+<text x="486" y="240" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">K</text>
+<polyline points="460,244 460,265 340,265" fill="none" stroke="#222" stroke-width="1.6"/>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 330">
+<text x="10" y="22" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">図1</text>
+<!-- fig1: source at x=60, r, transformer at 200, load at 320 -->
+<circle cx="60" cy="95" r="16" fill="none" stroke="#222" stroke-width="1.6"/><path d="M51,95 q4.5,-9 9,0 t9,0" fill="none" stroke="#222" stroke-width="1.4"/>
+<text x="22" y="100" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">E</text>
+<path d="M60,79 V50 H90" stroke="#222" stroke-width="1.6" fill="none"/><rect x="90" y="43.0" width="40" height="14" fill="#fff" fill-opacity="0" stroke="#222" stroke-width="1.6"/><text x="102" y="38" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">r</text>
+<path d="M130,50 H200 V70" stroke="#222" stroke-width="1.6" fill="none"/>
+<path d="M60,111 V140 H200 V120" stroke="#222" stroke-width="1.6" fill="none"/>
+<path d="M200,70 a5.0,5.0 0 0 1 0,10.0 a5.0,5.0 0 0 1 0,10.0 a5.0,5.0 0 0 1 0,10.0 a5.0,5.0 0 0 1 0,10.0 a5.0,5.0 0 0 1 0,10.0" fill="none" stroke="#222" stroke-width="1.6"/><path d="M240,70 a5.0,5.0 0 0 0 0,10.0 a5.0,5.0 0 0 0 0,10.0 a5.0,5.0 0 0 0 0,10.0 a5.0,5.0 0 0 0 0,10.0 a5.0,5.0 0 0 0 0,10.0" fill="none" stroke="#222" stroke-width="1.6"/><line x1="217" y1="66" x2="217" y2="124" stroke="#222" stroke-width="1.6"/><line x1="223" y1="66" x2="223" y2="124" stroke="#222" stroke-width="1.6"/><text x="220" y="148" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="#222"></text>
+<text x="185" y="160" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">n<tspan baseline-shift="sub" font-size="10" font-style="normal">1</tspan></text>
+<text x="245" y="160" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">n<tspan baseline-shift="sub" font-size="10" font-style="normal">2</tspan></text>
+<path d="M240,70 V50 H330 V75" stroke="#222" stroke-width="1.6" fill="none"/><rect x="323.0" y="75" width="14" height="40" fill="none" stroke="#222" stroke-width="1.6"/><path d="M330,115 V140 H240 V120" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="345" y="100" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">R<tspan baseline-shift="sub" font-size="10" font-style="normal">L</tspan></text>
+<text x="70" y="182" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">発電機</text>
+<!-- fig2 -->
+<text x="10" y="210" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">図2</text>
+<circle cx="50" cy="265" r="16" fill="none" stroke="#222" stroke-width="1.6"/><path d="M41,265 q4.5,-9 9,0 t9,0" fill="none" stroke="#222" stroke-width="1.4"/><text x="12" y="270" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">E</text>
+<path d="M50,249 V235 H140 V245" stroke="#222" stroke-width="1.6" fill="none"/><path d="M50,281 V300 H140 V290" stroke="#222" stroke-width="1.6" fill="none"/>
+<path d="M140,245 a4.5,4.5 0 0 1 0,9.0 a4.5,4.5 0 0 1 0,9.0 a4.5,4.5 0 0 1 0,9.0 a4.5,4.5 0 0 1 0,9.0 a4.5,4.5 0 0 1 0,9.0" fill="none" stroke="#222" stroke-width="1.6"/><path d="M180,245 a4.5,4.5 0 0 0 0,9.0 a4.5,4.5 0 0 0 0,9.0 a4.5,4.5 0 0 0 0,9.0 a4.5,4.5 0 0 0 0,9.0 a4.5,4.5 0 0 0 0,9.0" fill="none" stroke="#222" stroke-width="1.6"/><line x1="157" y1="241" x2="157" y2="294" stroke="#222" stroke-width="1.6"/><line x1="163" y1="241" x2="163" y2="294" stroke="#222" stroke-width="1.6"/><text x="160" y="318" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="#222"></text>
+<text x="160" y="320" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="#222">1 : <tspan font-family="Times New Roman, serif" font-style="italic">k</tspan></text>
+<path d="M180,245 V235 H250" stroke="#222" stroke-width="1.6" fill="none"/><rect x="250" y="228.0" width="40" height="14" fill="#fff" fill-opacity="0" stroke="#222" stroke-width="1.6"/><path d="M290,235 H400 V245" stroke="#222" stroke-width="1.6" fill="none"/>
+<path d="M180,290 V300 H400 V290" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="235" y="222" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">送電線（往復 <tspan font-family="Times New Roman, serif" font-style="italic">R</tspan><tspan baseline-shift="sub" font-size="10">l</tspan>）</text>
+<path d="M400,245 a4.5,4.5 0 0 1 0,9.0 a4.5,4.5 0 0 1 0,9.0 a4.5,4.5 0 0 1 0,9.0 a4.5,4.5 0 0 1 0,9.0 a4.5,4.5 0 0 1 0,9.0" fill="none" stroke="#222" stroke-width="1.6"/><path d="M440,245 a4.5,4.5 0 0 0 0,9.0 a4.5,4.5 0 0 0 0,9.0 a4.5,4.5 0 0 0 0,9.0 a4.5,4.5 0 0 0 0,9.0 a4.5,4.5 0 0 0 0,9.0" fill="none" stroke="#222" stroke-width="1.6"/><line x1="417" y1="241" x2="417" y2="294" stroke="#222" stroke-width="1.6"/><line x1="423" y1="241" x2="423" y2="294" stroke="#222" stroke-width="1.6"/><text x="420" y="318" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="#222"></text>
+<text x="420" y="320" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">k</tspan> : 1</text>
+<path d="M440,245 V235 H530 V247" stroke="#222" stroke-width="1.6" fill="none"/><rect x="523.0" y="247" width="14" height="40" fill="none" stroke="#222" stroke-width="1.6"/><path d="M530,287 V300 H440 V290" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="545" y="272" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">R<tspan baseline-shift="sub" font-size="10" font-style="normal">L</tspan></text>
+</svg>

@@ -1,0 +1,112 @@
+{
+ "id": "ELM-DCC-002",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-03",
+ "topic": "電池の内部抵抗と消費電力",
+ "course": "物理",
+ "level": 2,
+ "minutes": 10,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "起電力 $E$，内部抵抗 $r$ の電池に，抵抗値 $R$ の抵抗をつないだ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "回路を流れる電流 $I$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "電池の端子電圧 $V$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "抵抗 $R$ での消費電力 $P$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$R$ を変えると $P$ が最大になる．そのときの $R$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I=\\dfrac{E}{R+r}$",
+    "grading": "I：E/(R+r)"
+   },
+   {
+    "id": "2",
+    "tex": "$V=\\dfrac{ER}{R+r}$",
+    "grading": "V：E R/(R+r)"
+   },
+   {
+    "id": "3",
+    "tex": "$P=\\dfrac{E^2R}{(R+r)^2}$",
+    "grading": "P：E^2 R/(R+r)^2"
+   },
+   {
+    "id": "4",
+    "tex": "$R=r$",
+    "grading": "R：r"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) キルヒホッフの第2法則：$E=rI+RI$ より $I=\\dfrac E{R+r}$．\n\n(2) 端子電圧は起電力から内部の電圧降下を引いたもの：$V=E-rI=\\dfrac{ER}{R+r}$．\n\n(3) $P=RI^2=\\dfrac{E^2R}{(R+r)^2}$．\n\n(4) $P=\\dfrac{E^2}{R+2r+r^2/R}$．分母の $R+\\dfrac{r^2}R$ は，相加平均と相乗平均の関係より $R=r$ のとき最小値 $2r$．よって $R=r$ で最大（$P_{\\max}=\\dfrac{E^2}{4r}$）．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "端子電圧 $V=E-rI$．外部抵抗が内部抵抗と等しいとき電力が最大．"
+ },
+ "concepts": [
+  "electric-power",
+  "series-parallel"
+ ],
+ "laws": [
+  "kirchhoff-2nd",
+  "joule-heat",
+  "ohm-law"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "内部抵抗",
+  "電力",
+  "直流回路"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

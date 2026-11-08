@@ -1,0 +1,135 @@
+{
+ "id": "PHY-ACC-005",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-06",
+ "topic": "コイルとLC並列部の直列回路：反共振による遮断と容量性に転じた並列部との直列共振",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，抵抗値 $R=20\\ \\Omega$ の抵抗，自己インダクタンス $L_1$ のコイル，および自己インダクタンス $L_2$ のコイルと電気容量 $C$ のコンデンサーを並列にした部分を直列につなぎ，電圧 $V_0\\sin\\omega t$（$V_0=10\\ \\mathrm V$）の交流電源に接続した．$L_1$，$L_2$，$C$ の値はわかっていない．コイルの抵抗は無視できる．\n\n$\\omega$ を $0$ から増やしながら回路を流れる電流 $I$ の振幅 $I_{\\mathrm m}$ を調べたところ，$\\omega=\\omega_{\\mathrm b}=1.0\\times10^4\\ \\mathrm{rad/s}$ で $I_{\\mathrm m}=0$ となり，$\\omega=\\omega_{\\mathrm s}=2.0\\times10^4\\ \\mathrm{rad/s}$ で $I_{\\mathrm m}$ が最大になった．また，$\\omega=\\omega_{\\mathrm b}$ のとき $L_2$ を流れる電流 $I_2$ の振幅は $0.50\\ \\mathrm A$ であった．数値は有効数字2桁で答えよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\omega=\\omega_{\\mathrm b}$ で $I_{\\mathrm m}=0$ となる理由を述べ，$L_2$ と $C$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "並列部分を1つの素子とみなすと，$\\omega<\\omega_{\\mathrm b}$ と $\\omega>\\omega_{\\mathrm b}$ のそれぞれで，コイルとコンデンサーのどちらとしてはたらくか．これをもとに，$I_{\\mathrm m}$ が最大になる角周波数が $\\omega_{\\mathrm b}$ より大きくなければならない理由を述べ，$L_1$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\omega=\\omega_{\\mathrm s}$ のとき，$L_1$ の両端の電圧の振幅，$C$ を流れる電流の振幅，$L_2$ を流れる電流の振幅をそれぞれ求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "電源電圧に対して $I$ の位相が進むのは，$\\omega$ がどの範囲にあるときか．また，$\\omega\\to0$ および $\\omega\\to\\infty$ で $I_{\\mathrm m}$ はそれぞれ何に近づくか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：コイルとLC並列部の直列回路：反共振による遮断と容量性に転じた並列部との直列共振",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：コイルとLC並列部の直列回路：反共振による遮断と容量性に転じた並列部との直列共振",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$L_2=2.0\\times10^{-3}\\ \\mathrm H$，$C=5.0\\times10^{-6}\\ \\mathrm F$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\omega<\\omega_{\\mathrm b}$ でコイル，$\\omega>\\omega_{\\mathrm b}$ でコンデンサー；$L_1=6.7\\times10^{-4}\\ \\mathrm H$"
+   },
+   {
+    "id": "3",
+    "tex": "$L_1$ の電圧 $6.7\\ \\mathrm V$，$C$ の電流 $0.67\\ \\mathrm A$，$L_2$ の電流 $0.17\\ \\mathrm A$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\omega_{\\mathrm b}<\\omega<\\omega_{\\mathrm s}$；$\\omega\\to0$ で $0.50\\ \\mathrm A$，$\\omega\\to\\infty$ で $0$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{並列部分のはたらき}\n\n並列部分の両端の電圧の振幅を $v$ とすると，$L_2$ の電流は電圧より $\\dfrac{\\pi}{2}$ 遅れて振幅 $\\dfrac{v}{\\omega L_2}$，$C$ の電流は $\\dfrac{\\pi}{2}$ 進んで振幅 $\\omega Cv$．両者は逆位相なので，並列部分に流れ込む電流は振幅 $\\left|\\dfrac{1}{\\omega L_2}-\\omega C\\right|v$ で，大きい方の位相をもつ．\n\n\\textbf{(1)}\n\n$\\dfrac{1}{\\omega L_2}=\\omega C$，すなわち $\\omega=\\dfrac{1}{\\sqrt{L_2C}}$ のとき，並列部分は有限の電圧 $v$ がかかっても全体として電流を通さない（$L_2$ と $C$ の間を電流が往復するだけ）．よって $I=0$ となる．このとき $R$ と $L_1$ には電流が流れず電圧も $0$ なので，並列部分の電圧振幅は電源と同じ $V_0$．したがって\n\\[ 0.50=\\frac{V_0}{\\omega_{\\mathrm b}L_2}\\quad\\Longrightarrow\\quad L_2=\\frac{10}{1.0\\times10^4\\times0.50}=\\boldsymbol{2.0\\times10^{-3}\\ \\mathrm H} \\]\n\\[ C=\\frac{1}{\\omega_{\\mathrm b}^{\\,2}L_2}=\\boldsymbol{5.0\\times10^{-6}\\ \\mathrm F} \\]\n\n\\textbf{(2)}\n\n$\\omega<\\omega_{\\mathrm b}$ では $\\dfrac{1}{\\omega L_2}>\\omega C$ で，並列部分の電流は電圧より遅れる $\\Rightarrow$ \\textbf{コイル}としてはたらく（リアクタンス $X_{\\mathrm p}=\\dfrac{1}{1/(\\omega L_2)-\\omega C}>0$）．$\\omega>\\omega_{\\mathrm b}$ では電流が進む $\\Rightarrow$ \\textbf{コンデンサー}としてはたらく（$X_{\\mathrm p}<0$）．\n\n回路全体のインピーダンスは $Z=\\sqrt{R^2+(\\omega L_1+X_{\\mathrm p})^2}\\ge R$ であり，$I_{\\mathrm m}$ が最大（$=V_0/R$）になるのは $\\omega L_1+X_{\\mathrm p}=0$ のときである．$\\omega L_1>0$ なので $X_{\\mathrm p}<0$，すなわち並列部分がコンデンサーとしてはたらく $\\omega>\\omega_{\\mathrm b}$ でしかこの直列共振は起こらない．条件は\n\\[ \\omega L_1=\\frac{1}{\\omega C-\\dfrac{1}{\\omega L_2}}\\iff \\omega^2=\\frac{L_1+L_2}{L_1L_2C}=\\omega_{\\mathrm b}^{\\,2}\\left(1+\\frac{L_2}{L_1}\\right) \\]\nこれが $\\omega_{\\mathrm s}$ なので\n\\[ L_1=\\frac{L_2\\,\\omega_{\\mathrm b}^{\\,2}}{\\omega_{\\mathrm s}^{\\,2}-\\omega_{\\mathrm b}^{\\,2}}=\\frac{2.0\\times10^{-3}}{4-1}=\\boldsymbol{6.7\\times10^{-4}\\ \\mathrm H} \\]\n\n\\textbf{(3)}\n\n$\\omega=\\omega_{\\mathrm s}$ では $I_{\\mathrm m}=\\dfrac{V_0}{R}=0.50\\ \\mathrm A$．$L_1$ の電圧振幅は\n\\[ \\omega_{\\mathrm s}L_1I_{\\mathrm m}=2.0\\times10^4\\times\\frac{2.0\\times10^{-3}}{3}\\times0.50=\\boldsymbol{6.7\\ \\mathrm V} \\]\n共振では $L_1$ の電圧と並列部分の電圧が打ち消し合うので，並列部分の電圧振幅も $v=6.7\\ \\mathrm V$．よって\n\\[ I_C=\\omega_{\\mathrm s}Cv=2.0\\times10^4\\times5.0\\times10^{-6}\\times\\frac{20}{3}=\\boldsymbol{0.67\\ \\mathrm A},\\qquad I_{L_2}=\\frac{v}{\\omega_{\\mathrm s}L_2}=\\frac{20/3}{40}=\\boldsymbol{0.17\\ \\mathrm A} \\]\n2つは逆位相で，差 $0.67-0.17=0.50\\ \\mathrm A$ が全電流に一致する．コンデンサーには全電流より大きい電流が流れている．\n\n\\textbf{(4)}\n\n$I$ が進むのは全リアクタンス $\\omega L_1+X_{\\mathrm p}$ が負のときである．$\\omega<\\omega_{\\mathrm b}$ では2つとも正．$\\omega>\\omega_{\\mathrm b}$ では $\\omega L_1$ は増加し $|X_{\\mathrm p}|=\\dfrac{1}{\\omega C-1/(\\omega L_2)}$ は減少するので，符号が変わるのは $\\omega_{\\mathrm s}$ の1回だけである．よって $\\boldsymbol{\\omega_{\\mathrm b}<\\omega<\\omega_{\\mathrm s}}$．\n\n$\\omega\\to0$ では $L_1$ のリアクタンスが $0$ に，並列部分は $L_2$ が短絡するので $0$ になり，$I_{\\mathrm m}\\to\\dfrac{V_0}{R}=\\boldsymbol{0.50\\ \\mathrm A}$．$\\omega\\to\\infty$ では並列部分は $C$ が短絡するが $\\omega L_1\\to\\infty$ なので $I_{\\mathrm m}\\to\\boldsymbol{0}$．（解答図：$I_{\\mathrm m}$ は $V_0/R$ から減って $\\omega_{\\mathrm b}$ で $0$，$\\omega_{\\mathrm s}$ で再び $V_0/R$ に達したのち減少する．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "LC並列部は反共振角周波数で外部への電流を遮断し（内部では電流が往復する），それより高い周波数では容量性に転じる．そのため直列のコイルとの直列共振は必ず反共振より高い周波数で起こり，電流が0になる周波数・最大になる周波数・反共振時の循環電流の3つから全素子の値を逆算できる．"
+ },
+ "concepts": [
+  "ac-circuit",
+  "wave-basics"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反共振",
+  "直列共振",
+  "リアクタンス",
+  "位相",
+  "LC並列回路",
+  "逆問題"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

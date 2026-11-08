@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<polyline points="60.0,150.0 60.0,320.0 420.0,320.0 420.0,150.0" stroke="#222" stroke-width="1.6" fill="none"/>
+<rect x="61" y="250" width="358" height="69" stroke="none" stroke-width="0" fill="#88888833"/>
+<line x1="60" y1="250" x2="420" y2="250" stroke="#222" stroke-width="1"/>
+<rect x="208" y="90" width="6" height="160" stroke="#222" stroke-width="1.6" fill="none"/>
+<rect x="266" y="90" width="6" height="160" stroke="#222" stroke-width="1.6" fill="none"/>
+<rect x="214" y="180" width="52" height="70" stroke="none" stroke-width="0" fill="#88888833"/>
+<line x1="214" y1="180" x2="266" y2="180" stroke="#222" stroke-width="1"/>
+<line x1="296" y1="250" x2="296" y2="180" stroke="#222" stroke-width="1.1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<text x="304" y="220.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="start" fill="#222">h</text>
+<line x1="286" y1="250" x2="346" y2="250" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="272" y1="180" x2="306" y2="180" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="174" y1="90" x2="174" y2="250" stroke="#222" stroke-width="1.1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<text x="166" y="175.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="end" fill="#222">L</text>
+<line x1="164" y1="90" x2="206" y2="90" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="164" y1="250" x2="206" y2="250" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="214" y1="78" x2="266" y2="78" stroke="#222" stroke-width="1.1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<text x="240.0" y="72" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">d</text>
+<line x1="211" y1="90" x2="211" y2="30" stroke="#222" stroke-width="1.6"/>
+<line x1="211" y1="30" x2="280" y2="30" stroke="#222" stroke-width="1.6"/>
+<line x1="286" y1="17" x2="286" y2="43" stroke="#222" stroke-width="1.6"/>
+<line x1="294" y1="23" x2="294" y2="37" stroke="#222" stroke-width="3"/>
+<line x1="294" y1="30" x2="340" y2="30" stroke="#222" stroke-width="1.6"/>
+<circle cx="340" cy="30" r="2.5" stroke="#222" stroke-width="1.6" fill="#222"/>
+<circle cx="380" cy="30" r="2.5" stroke="#222" stroke-width="1.6" fill="#222"/>
+<line x1="340" y1="30" x2="376" y2="16" stroke="#222" stroke-width="1.6"/>
+<line x1="380" y1="30" x2="410" y2="30" stroke="#222" stroke-width="1.6"/>
+<line x1="410" y1="30" x2="410" y2="60" stroke="#222" stroke-width="1.6"/>
+<line x1="410" y1="60" x2="269" y2="60" stroke="#222" stroke-width="1.6"/>
+<line x1="269" y1="60" x2="269" y2="90" stroke="#222" stroke-width="1.6"/>
+<text x="290" y="16" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">V</text>
+<text x="360" y="14" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">S</text>
+<text x="410" y="300" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="end" fill="#222">液体（密度 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="15">ρ</tspan>，比誘電率 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="15">ε</tspan><tspan baseline-shift="sub" font-size="10">r</tspan>）</text>
+</svg>

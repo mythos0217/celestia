@@ -1,0 +1,122 @@
+{
+ "id": "PHY-ACC-008",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-06",
+ "topic": "理想変圧器による抵抗の変換：最大電力の整合と送電効率の対比",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "電力損失のない理想変圧器を考える．電圧・電流はすべて実効値で表し，抵抗以外の素子（コイル・コンデンサー）の影響は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "1次コイルの巻数 $n_1$，2次コイルの巻数 $n_2$ の変圧器の2次側に抵抗 $R_{\\text{L}}$ の負荷をつなぐ．1次側の電圧と電流の比は，$a=\\dfrac{n_1}{n_2}$ と $R_{\\text{L}}$ でどう表されるか．"
+     },
+     {
+      "id": "2",
+      "tex": "起電力 $E$，内部抵抗 $r$ の交流発電機の端子に，(1) の変圧器の1次側をつなぐ（図1）．負荷の消費電力 $P$ を $a$ の関数として求めよ．$P$ が最大となる $a$ と $P$ の最大値を求め，そのとき発電機の起電力がする仕事率のうち何割が負荷で消費されるかを答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "内部抵抗の無視できる起電力 $E$ の交流発電機の電圧を，巻数比 $1:k$ の昇圧変圧器で上げ，往復の抵抗が $R_{\\text{l}}$ の送電線で送り，巻数比 $k:1$ の降圧変圧器で下げて抵抗 $R_{\\text{L}}$ の負荷につなぐ（図2）．負荷の消費電力 $P_{\\text{L}}$ と送電効率 $\\eta$（負荷の消費電力 $\\div$ 発電機の供給電力）を $k$ の関数として求めよ．また，$k\\to\\infty$ の極限で $P_{\\text{L}}$ はどうなるか．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で $E=100\\,\\text{V}$，$R_{\\text{L}}=1.0\\,\\Omega$，$R_{\\text{l}}=2.0\\,\\Omega$ とする．$k=1$（変圧器なし）のときの $\\eta$ と $P_{\\text{L}}$ を求めよ．次に，$\\eta\\ge0.98$ となる最小の整数 $k$ と，そのときの $P_{\\text{L}}$ を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：理想変圧器による抵抗の変換：最大電力の整合と送電効率の対比",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$a^2R_{\\text{L}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$P=\\dfrac{E^2a^2R_{\\text{L}}}{(r+a^2R_{\\text{L}})^2}$；$a=\\sqrt{\\dfrac{r}{R_{\\text{L}}}}$ のとき最大値 $\\dfrac{E^2}{4r}$，そのとき5割（効率 $\\frac12$）"
+   },
+   {
+    "id": "3",
+    "tex": "$P_{\\text{L}}=\\dfrac{E^2R_{\\text{L}}k^4}{(R_{\\text{l}}+k^2R_{\\text{L}})^2}$，$\\eta=\\dfrac{k^2R_{\\text{L}}}{R_{\\text{l}}+k^2R_{\\text{L}}}$；$P_{\\text{L}}\\to\\dfrac{E^2}{R_{\\text{L}}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$k=1$：$\\eta=0.33$，$P_{\\text{L}}=1.1\\times10^3\\,\\text{W}$；$k=10$，$P_{\\text{L}}=9.6\\times10^3\\,\\text{W}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　理想変圧器では $\\dfrac{V_1}{V_2}=\\dfrac{n_1}{n_2}=a$，電力が等しいので $V_1I_1=V_2I_2$ より $I_1=\\dfrac{I_2}{a}$．$V_2=R_{\\text{L}}I_2$ を用いると\n\\[ \\frac{V_1}{I_1}=\\frac{aV_2}{I_2/a}=\\boldsymbol{a^2R_{\\text{L}}} . \\]\n1次側から見ると，負荷は抵抗 $a^2R_{\\text{L}}$ に見える．\n\n\\textbf{(2)}　発電機から見た回路は $r$ と $a^2R_{\\text{L}}$ の直列なので $I_1=\\dfrac{E}{r+a^2R_{\\text{L}}}$．変圧器は損失がないので，負荷の電力は1次側の抵抗 $a^2R_{\\text{L}}$ の消費電力に等しく\n\\[ P=\\boldsymbol{\\frac{E^2a^2R_{\\text{L}}}{(r+a^2R_{\\text{L}})^2}}=\\frac{E^2}{\\dfrac{r^2}{x}+2r+x}=\\frac{E^2}{\\Bigl(\\dfrac{r}{\\sqrt{x}}-\\sqrt x\\Bigr)^2+4r}\\quad(x=a^2R_{\\text{L}}) . \\]\nよって $x=r$，すなわち $a=\\boldsymbol{\\sqrt{r/R_{\\text{L}}}}$ で最大値 $\\boldsymbol{\\dfrac{E^2}{4r}}$．このとき電流は $\\dfrac{E}{2r}$ で，起電力の仕事率 $\\dfrac{E^2}{2r}$ のうち負荷で消費されるのは $\\boldsymbol{5}$\\textbf{割}．残り半分は内部抵抗で熱になる（整合）．\n\n\\textbf{(3)}　負荷側から順に変換する．降圧変圧器（1次 $k$ 対 2次 $1$）の1次側から見ると負荷は $k^2R_{\\text{L}}$．送電線を含めると $R_{\\text{l}}+k^2R_{\\text{L}}$．発電機の電圧は昇圧変圧器で $kE$ になるので，送電線の電流は\n\\[ I_{\\text{l}}=\\frac{kE}{R_{\\text{l}}+k^2R_{\\text{L}}} . \\]\n負荷の電力は抵抗 $k^2R_{\\text{L}}$ の消費電力として\n\\[ P_{\\text{L}}=I_{\\text{l}}^2k^2R_{\\text{L}}=\\boldsymbol{\\frac{E^2R_{\\text{L}}k^4}{(R_{\\text{l}}+k^2R_{\\text{L}})^2}},\\qquad \\eta=\\frac{I_{\\text{l}}^2k^2R_{\\text{L}}}{I_{\\text{l}}^2(R_{\\text{l}}+k^2R_{\\text{L}})}=\\boldsymbol{\\frac{k^2R_{\\text{L}}}{R_{\\text{l}}+k^2R_{\\text{L}}}} . \\]\n（負荷の側から見れば，送電線の抵抗は $R_{\\text{l}}/k^2$ に縮んで見える．）$k\\to\\infty$ では $P_{\\text{L}}\\to\\boldsymbol{\\dfrac{E^2}{R_{\\text{L}}}}$ となり，送電線がない（発電機に負荷を直結した）場合と同じになる．\\\\\n(2) との違いに注意する．(2) では負荷の電力を最大にしようとすると半分が損失になる．送電では負荷の要求に対し損失を減らすことが目的なので，「整合」ではなく，送電線が見かけ上無視できるほど $k$ を大きくする（高電圧送電）．\n\n\\textbf{(4)}　$k=1$：$\\eta=\\dfrac{1}{2+1}=\\boldsymbol{0.33}$，$P_{\\text{L}}=\\dfrac{100^2\\times1}{(2+1)^2}=\\boldsymbol{1.1\\times10^3\\,\\text{W}}$．\\\\\n$\\eta\\ge0.98$ は $\\dfrac{k^2}{2+k^2}\\ge0.98\\iff k^2\\ge98$．$9^2=81<98<100=10^2$ より最小の整数は $k=\\boldsymbol{10}$（このとき $\\eta=\\frac{100}{102}=0.980$）．\n\\[ P_{\\text{L}}=\\frac{100^2\\times10^4}{(2+100)^2}=9.6\\times10^3\\,\\text{W}\\quad\\Rightarrow\\quad\\boldsymbol{9.6\\times10^3\\,\\text{W}} . \\hfill\\square \\]"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "理想変圧器は2次側の抵抗を巻数比の2乗倍に見せる．内部抵抗のある電源では見かけの抵抗を内部抵抗に合わせると負荷の電力が最大（効率50%）になるが，送電では逆に昇圧・降圧で送電線抵抗を負荷から見て $1/k^2$ に縮め，効率を1に近づけるのが目的である．"
+ },
+ "concepts": [
+  "ac-circuit",
+  "electric-power",
+  "series-parallel"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "理想変圧器",
+  "インピーダンス変換",
+  "最大電力の整合",
+  "送電効率",
+  "高電圧送電"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

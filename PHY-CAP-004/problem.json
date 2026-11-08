@@ -1,0 +1,130 @@
+{
+ "id": "PHY-CAP-004",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-02",
+ "topic": "極板間を上昇する誘電体液体（電圧一定と電荷一定の比較とエネルギー収支）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，幅 $w$，高さ $L$ の長方形の金属極板 2 枚を間隔 $d$ で鉛直に向かい合わせて固定し，広い容器に入った液体の液面に下端が接するようにする．液体は絶縁性で，密度 $\\rho$，比誘電率 $\\varepsilon_{\\mathrm r}\\ (>1)$ である．極板はスイッチ S を通して起電力 $V$ の電池につながれている．極板間の液体が容器の液面から高さ $h$ まで上がった状態を考える（$0\\leqq h<L$）．空気の誘電率を $\\varepsilon_0$，重力加速度の大きさを $g$ とする．容器は十分広く，容器の液面の高さは変わらないものとし，表面張力，極板の端の効果は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "極板の電気容量 $C(h)$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "S を閉じたままにしたとき，液体は極板間を上昇し，やがて高さ $h_V$ で静止した．$h_V$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で，液体が $h=0$ から上昇し始めて $h_V$ で静止するまでに，電池がした仕事を $W$ とする．静電エネルギーの増加，上昇した液体の重力による位置エネルギーの増加，液体の運動の過程で熱として失われたエネルギーは，それぞれ $W$ の何倍か．"
+     },
+     {
+      "id": "4",
+      "tex": "次に，液体を除いた状態で極板を電圧 $V_0$ に充電してから S を開き，その後，液面に極板の下端が接するようにした．液体は極板間を上昇し，高さ $h_1$ で静止した．$h_1=\\dfrac{L}{2(\\varepsilon_{\\mathrm r}-1)}$ であったとき，$V_0$ を求めよ．ただし $\\varepsilon_{\\mathrm r}>\\dfrac32$ とする．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) で液体が静止したときの極板間の電圧を $V_0$ で表せ．また，S を閉じたまま電圧 $V_0$ を保った場合の上昇の高さは，$h_1$ の何倍になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：極板間を上昇する誘電体液体（電圧一定と電荷一定の比較とエネルギー収支）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$C(h)=\\dfrac{\\varepsilon_0w\\{L+(\\varepsilon_{\\mathrm r}-1)h\\}}{d}$"
+   },
+   {
+    "id": "2",
+    "tex": "$h_V=\\dfrac{(\\varepsilon_{\\mathrm r}-1)\\varepsilon_0V^2}{2\\rho gd^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "静電エネルギー $\\dfrac12$ 倍，位置エネルギー $\\dfrac14$ 倍，熱 $\\dfrac14$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "$V_0=\\dfrac{3d}{2(\\varepsilon_{\\mathrm r}-1)}\\sqrt{\\dfrac{\\rho gL}{\\varepsilon_0}}$"
+   },
+   {
+    "id": "5",
+    "tex": "電圧 $\\dfrac23V_0$，$\\dfrac94$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 液体のある部分（面積 $wh$）とない部分（面積 $w(L-h)$）の 2 つのコンデンサーの並列とみなせる．\n\\[ C(h)=\\frac{\\varepsilon_{\\mathrm r}\\varepsilon_0wh}{d}+\\frac{\\varepsilon_0w(L-h)}{d}=\\boldsymbol{\\frac{\\varepsilon_0w\\{L+(\\varepsilon_{\\mathrm r}-1)h\\}}{d}} \\]\n$C$ は $h$ の 1 次式で，$h$ が $\\Delta h$ 増すと $\\Delta C=\\dfrac{(\\varepsilon_{\\mathrm r}-1)\\varepsilon_0w}{d}\\Delta h$ となる．\n\n(2) \\textbf{電圧一定での引き上げる力}　液面を仮想的に $\\Delta h$ だけゆっくり上げるとき，電池の仕事は $V\\cdot\\Delta C\\,V=V^2\\Delta C$，静電エネルギーの増加は $\\dfrac12V^2\\Delta C$ である．電場が液体を引き上げる力を $F$ とすると，エネルギー保存より $V^2\\Delta C+(-F\\Delta h)=\\dfrac12V^2\\Delta C$ （$F$ とつり合う下向きの外力で支えながら上げるので，外力の仕事は $-F\\Delta h$．重力は別に扱う）．よって\n\\[ F=\\frac12V^2\\frac{\\Delta C}{\\Delta h}=\\frac{(\\varepsilon_{\\mathrm r}-1)\\varepsilon_0wV^2}{2d} \\]\nこれは $h$ によらない一定の力である．極板間で容器の液面より高い部分の液体の重さ $\\rho g\\,wdh$ とつり合うので\n\\[ \\frac{(\\varepsilon_{\\mathrm r}-1)\\varepsilon_0wV^2}{2d}=\\rho gwdh_V\\qquad\\therefore\\ \\boldsymbol{h_V=\\frac{(\\varepsilon_{\\mathrm r}-1)\\varepsilon_0V^2}{2\\rho gd^2}} \\]\n\n(3) 電池を通る電気量は $\\Delta C\\,V$ なので $W=V^2\\{C(h_V)-C(0)\\}=Fh_V\\cdot2$．静電エネルギーの増加は $\\dfrac12V^2\\{C(h_V)-C(0)\\}=\\boldsymbol{\\dfrac12W}$．上昇した液柱（質量 $\\rho wdh_V$，重心の高さ $\\dfrac{h_V}2$）の位置エネルギーは\n\\[ \\rho wdh_V\\cdot g\\cdot\\frac{h_V}{2}=\\frac12(\\rho gwdh_V)h_V=\\frac12Fh_V=\\boldsymbol{\\frac14W} \\]\n残りの $\\boldsymbol{\\dfrac14W}$ は，液体が勢いよく上昇して $h_V$ のまわりで振動し，粘性などで静止するまでに熱として失われる．一定の力 $F$ がした仕事 $Fh_V$ のうち，重心が $h_V/2$ しか上がらないため半分しか位置エネルギーにならない点は，ばねにおもりを急に吊るしたときと同じ構造である．\n\n(4) S を開いた後は電気量 $Q=C(0)V_0$ が一定である．このとき引き上げる力は，ゆっくり $\\Delta h$ 上げる間のエネルギー保存（電池なし）から\n\\[ F_Q=-\\frac{\\Delta}{\\Delta h}\\left(\\frac{Q^2}{2C}\\right)=\\frac{Q^2}{2C^2}\\frac{\\Delta C}{\\Delta h}=\\frac12\\left(\\frac{Q}{C(h)}\\right)^2\\frac{(\\varepsilon_{\\mathrm r}-1)\\varepsilon_0w}{d} \\]\nすなわち「そのときの電圧 $V'=Q/C(h)$ を使った (2) の式」になる．液面が上がると $C$ が増えて $V'$ が下がるので，力は弱まる．$\\dfrac{C(h)}{C(0)}=1+\\dfrac{(\\varepsilon_{\\mathrm r}-1)h}{L}$ より，つり合いの式は\n\\[ \\frac{(\\varepsilon_{\\mathrm r}-1)\\varepsilon_0wV_0^{\\,2}}{2d\\left\\{1+\\frac{(\\varepsilon_{\\mathrm r}-1)h_1}{L}\\right\\}^2}=\\rho gwdh_1 \\]\n$h_1=\\dfrac{L}{2(\\varepsilon_{\\mathrm r}-1)}$（$\\varepsilon_{\\mathrm r}>\\dfrac32$ より $h_1<L$）のとき $1+\\dfrac{(\\varepsilon_{\\mathrm r}-1)h_1}L=\\dfrac32$ なので\n\\[ V_0^{\\,2}=\\frac{2\\rho gd^2}{(\\varepsilon_{\\mathrm r}-1)\\varepsilon_0}\\cdot\\frac94\\cdot\\frac{L}{2(\\varepsilon_{\\mathrm r}-1)}=\\frac{9\\rho gd^2L}{4(\\varepsilon_{\\mathrm r}-1)^2\\varepsilon_0}\\qquad\\therefore\\ \\boldsymbol{V_0=\\frac{3d}{2(\\varepsilon_{\\mathrm r}-1)}\\sqrt{\\frac{\\rho gL}{\\varepsilon_0}}} \\]\n\n(5) 電気量一定で $C$ が $\\dfrac32$ 倍になったので，電圧は $\\boldsymbol{\\dfrac23V_0}$．電圧 $V_0$ を保った場合の高さは (2) の式で $V=V_0$ として $\\dfrac{(\\varepsilon_{\\mathrm r}-1)\\varepsilon_0V_0^{\\,2}}{2\\rho gd^2}=\\dfrac94\\cdot\\dfrac{L}{2(\\varepsilon_{\\mathrm r}-1)}$ なので，$h_1$ の $\\boldsymbol{\\dfrac94}$ 倍．電気量一定では，上昇につれて電圧が下がり引き上げる力が弱まるため，上昇は電圧一定のときより小さい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電圧一定のとき，電池の仕事の半分が静電エネルギーになり残り半分が力学的仕事になるので，誘電体を引き込む力は $\\frac12V^2\\,dC/dh$ で位置によらず一定になる．一定の力で持ち上げた液柱は位置エネルギーとしてその仕事の半分しか受け取らず，残りは熱になる．電荷一定では電圧が上昇とともに下がるため力が弱まり，つり合いの高さが小さくなる．"
+ },
+ "concepts": [
+  "capacitor",
+  "mechanical-energy",
+  "work-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "誘電体",
+  "電圧一定と電荷一定",
+  "エネルギー保存",
+  "静電気力",
+  "電池のする仕事"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

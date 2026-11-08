@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 330">
+<defs><marker id="a-ax" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<line x1="80" y1="170" x2="450" y2="170" stroke="#222" stroke-width="1.4" marker-end="url(#a-ax)"/>
+<line x1="80" y1="296.5" x2="80" y2="32.5" stroke="#222" stroke-width="1.4" marker-end="url(#a-ax)"/>
+<line x1="420" y1="285.5" x2="420" y2="54.5" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="445" y="190" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">発電所側</text>
+<text x="50" y="192" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">消費地</text>
+<text x="20" y="27.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">π/2 進んだ電流</text>
+<line x1="80" y1="170" x2="420" y2="60" stroke="#222" stroke-width="1.8"/>
+<line x1="80" y1="280" x2="420" y2="170" stroke="#c0392b" stroke-width="1.8"/>
+<line x1="80" y1="225.0" x2="420" y2="115.0" stroke="#1f5fbf" stroke-width="1.8"/>
+<text x="426" y="65" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">ωCV</text>
+<text x="25" y="285" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">−ωCV</text>
+<line x1="76" y1="60" x2="420" y2="60" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="414" y="190" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">ℓ</text>
+<line x1="470" y1="60" x2="495" y2="60" stroke="#222" stroke-width="1.8"/>
+<line x1="470" y1="86" x2="495" y2="86" stroke="#c0392b" stroke-width="1.8"/>
+<line x1="470" y1="112" x2="495" y2="112" stroke="#1f5fbf" stroke-width="1.8"/>
+<text x="500" y="65" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">コイルなし</text>
+<text x="500" y="91" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">L</tspan>=<tspan font-family="Times New Roman, serif" font-style="italic">L</tspan><tspan baseline-shift="sub" font-size="9">1</tspan>（完全補償）</text>
+<text x="500" y="117" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">L</tspan>=<tspan font-family="Times New Roman, serif" font-style="italic">L</tspan><tspan baseline-shift="sub" font-size="9">2</tspan>（半分補償）</text>
+<text x="80" y="315" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">送電線を流れる電流のうち電圧より π/2 進んだ成分（最大値）の分布</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 340">
+<defs>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<line x1="40" y1="300" x2="238.0" y2="300" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<line x1="238.0" y1="300" x2="370.0" y2="124.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<line x1="40" y1="300" x2="370.0" y2="124.0" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/>
+<line x1="238.0" y1="300" x2="370.0" y2="300" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="370.0" y1="124.0" x2="370.0" y2="300" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<path d="M278.0,300 A40,40 0 0 0 262.0,268.0" fill="none" stroke="#222" stroke-width="1"/>
+<text x="282.0" y="286" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">φ</text>
+<text x="110" y="324" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf">V<tspan baseline-shift="sub" font-size="10">R</tspan><tspan font-style="normal" font-family="Noto Sans CJK JP, sans-serif"> = 90 V（電流と同位相）</tspan></text>
+<text x="185" y="258" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf">V<tspan baseline-shift="sub" font-size="10" font-style="normal">c</tspan><tspan font-style="normal" font-family="Noto Sans CJK JP, sans-serif"> = 100 V</tspan></text>
+<text x="90" y="200" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#c0392b">V<tspan font-style="normal" font-family="Noto Sans CJK JP, sans-serif"> = 170 V</tspan></text>
+<text x="298.0" y="324" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">rI</tspan> = 60 V</text>
+<text x="376.0" y="212.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">ωLI</tspan> = 80 V</text>
+<line x1="40" y1="340" x2="40" y2="340" />
+<text x="20" y="24" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">電流を基準にしたベクトル図（余弦定理で φ を決める）</text>
+</svg>

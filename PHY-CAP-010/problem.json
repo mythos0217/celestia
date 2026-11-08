@@ -1,0 +1,122 @@
+{
+ "id": "PHY-CAP-010",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-02",
+ "topic": "伸縮する極板間の電場の圧力（比熱比2の気体とのアナロジー）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，幅 $a$（紙面に垂直）の2枚の導体の極板を間隔 $d$ で水平に向かい合わせたコンデンサーがある．各極板は2枚の薄い導体板をなめらかに重ねたもので，重なりの長さを変えることで極板の長さを変えられる．極板間の左端は固定した絶縁体の壁で，右端は極板にはさまれてなめらかに動く絶縁体の壁 W（面積 $ad$）でふさがれており，極板の長さは常に左端の壁から W までの距離 $x$ に等しい．極板間の空間（体積 $V=adx$）は密閉されている．真空の誘電率を $\\varepsilon_0$ とし，極板の端での電場の乱れは無視する．(3)，(4) で封入する気体の誘電率も $\\varepsilon_0$ とみなす．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "極板間を真空にし，極板に $+Q$，$-Q$ の電荷を与えて孤立させる．W をゆっくり $\\Delta x$ だけ動かしたときの静電エネルギーの変化を考えて，W が電場から受ける力の向きと大きさを求めよ．また，W の単位面積あたりの力 $p_E$ を極板間の電場の強さ $E$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の $p_E$ について，$p_EV^2$ が $x$ によらないこと，および極板間の静電エネルギー $U_E$ が $p_EV$ に等しいことを示せ．比熱比 $\\gamma$ の理想気体では，断熱変化で $pV^\\gamma$ が一定，内部エネルギーが $\\dfrac{pV}{\\gamma-1}$ である．電荷一定の極板間の電場は，比熱比がいくらの気体と同じふるまいをするといえるか．"
+     },
+     {
+      "id": "3",
+      "tex": "極板間に単原子分子理想気体を封入した．W の外側は圧力 $p_0$ の大気である．極板の電荷は $\\pm Q$ に保たれている．はじめ $x=x_1$（体積 $V_1$），温度 $T_1$ でつり合っていて，このとき $p_E=\\frac12p_0$ であった．気体をゆっくり加熱して $x=2x_1$ にした．このときの気体の温度 $T_2$ を $T_1$ で表し，気体が吸収した熱量 $Q_{\\text{in}}$ を $p_0$，$V_1$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) のはじめの状態（$x=x_1$，温度 $T_1$，電荷 $\\pm Q$）で，極板間の電位差に等しい起電力の電池を極板につなぎ，つないだまま気体をゆっくり加熱して $x=2x_1$ にした．気体が吸収した熱量 $Q'_{\\text{in}}$ と，電池がした仕事 $W_{\\text{b}}$ を $p_0$，$V_1$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：伸縮する極板間の電場の圧力（比熱比2の気体とのアナロジー）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "W を外向き（極板を伸ばす向き）に押す力で大きさ $\\dfrac{Q^2d}{2\\varepsilon_0ax^2}$，$p_E=\\dfrac12\\varepsilon_0E^2$"
+   },
+   {
+    "id": "2",
+    "tex": "$p_EV^2=\\dfrac{Q^2d^2}{2\\varepsilon_0}$（一定），$U_E=p_EV$，比熱比 $\\gamma=2$"
+   },
+   {
+    "id": "3",
+    "tex": "$T_2=\\dfrac72T_1$，$Q_{\\text{in}}=\\dfrac{21}{8}p_0V_1$"
+   },
+   {
+    "id": "4",
+    "tex": "$Q'_{\\text{in}}=\\dfrac54p_0V_1$，$W_{\\text{b}}=p_0V_1$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 側面の壁にはたらく力}　容量は $C=\\dfrac{\\varepsilon_0ax}{d}$，電荷一定なので $U_E=\\dfrac{Q^2}{2C}=\\dfrac{Q^2d}{2\\varepsilon_0ax}$．W を外向きに $\\Delta x$ 動かすと $U_E$ は減少する．孤立系なので，W を押さえる外力の仕事が $\\Delta U_E$ に等しく，電場が W にする仕事は $-\\Delta U_E>0$．よって電場は W を\\textbf{外向き}に押し，その大きさは\n\\[ F=-\\frac{dU_E}{dx}=\\boldsymbol{\\frac{Q^2d}{2\\varepsilon_0ax^2}}. \\]\n$E=\\dfrac{Q}{\\varepsilon_0ax}$ を用いると $p_E=\\dfrac{F}{ad}=\\dfrac{Q^2}{2\\varepsilon_0a^2x^2}=\\boldsymbol{\\frac12\\varepsilon_0E^2}$．電場のエネルギー密度と同じ値で，電気力線は横方向に「押し広げる圧力」をもつ．\n\n\\textbf{(2) 気体との比較}　$V=adx$ より\n\\[ p_EV^2=\\frac{Q^2}{2\\varepsilon_0a^2x^2}\\cdot a^2d^2x^2=\\frac{Q^2d^2}{2\\varepsilon_0}\\ (\\text{一定}),\\qquad p_EV=\\frac{Q^2}{2\\varepsilon_0a^2x^2}\\cdot adx=\\frac{Q^2d}{2\\varepsilon_0ax}=U_E. \\]\n理想気体の断熱変化 $pV^\\gamma=$一定，内部エネルギー $\\dfrac{pV}{\\gamma-1}$ と比べると，どちらも $\\gamma=2$ で一致する．つまり電荷一定の電場は「比熱比 $\\boldsymbol{\\gamma=2}$ の気体」の断熱変化と同じふるまいをする（外とのエネルギーのやり取りは W への仕事だけ）．\n\n\\textbf{(3) 電荷一定での加熱}　W のつり合いは $p+p_E=p_0$（$p$ は気体の圧力）．$p_E=\\dfrac{p_0}2\\left(\\dfrac{V_1}{V}\\right)^2$ だから，$V=2V_1$ で $p_E=\\dfrac{p_0}8$，$p=\\dfrac78p_0$．はじめは $p=\\dfrac{p_0}{2}$ なので，気体の状態方程式より\n\\[ \\frac{T_2}{T_1}=\\frac{\\frac78p_0\\cdot2V_1}{\\frac12p_0\\cdot V_1}=\\frac72,\\qquad \\boldsymbol{T_2=\\frac72T_1}. \\]\n気体の内部エネルギーの変化：$\\Delta U=\\dfrac32(p_2V_2-p_1V_1)=\\dfrac32\\left(\\dfrac74-\\dfrac12\\right)p_0V_1=\\dfrac{15}{8}p_0V_1$．\n気体のした仕事：$W_g=\\displaystyle\\int p\\,dV=\\int(p_0-p_E)\\,dV=p_0V_1-\\int_{V_1}^{2V_1}p_E\\,dV$．ここで $\\displaystyle\\int p_E\\,dV$ は電場が W にした仕事で，(1) より静電エネルギーの減少 $U_E(V_1)-U_E(2V_1)=\\dfrac12p_0V_1-\\dfrac18p_0\\cdot2V_1=\\dfrac14p_0V_1$ に等しい．よって $W_g=\\dfrac34p_0V_1$．\n\\[ Q_{\\text{in}}=\\Delta U+W_g=\\boldsymbol{\\frac{21}{8}p_0V_1}. \\]\n（大気を押しのける仕事 $p_0V_1$ の一部 $\\frac14p_0V_1$ を，「$\\gamma=2$ の気体」である電場が自分の内部エネルギーを使って肩代わりしている．）\n\n\\textbf{(4) 電圧一定での加熱}　電圧 $V_0$ 一定なら $E=V_0/d$ が一定なので $p_E=\\frac12\\varepsilon_0E^2$ も一定で $\\dfrac{p_0}2$ のまま．気体は定圧 $\\dfrac{p_0}2$ で体積が2倍になるので温度は $2T_1$ になり，\n\\[ Q'_{\\text{in}}=\\frac52\\cdot\\frac{p_0}{2}\\cdot V_1=\\boldsymbol{\\frac54p_0V_1}. \\]\n電荷は $Q=CV_0\\propto x$ なので $Q$ から $2Q$ に増え，$W_{\\text{b}}=V_0\\cdot Q=2U_E(V_1)=2\\cdot\\dfrac12p_0V_1=\\boldsymbol{p_0V_1}$．\n収支：静電エネルギーの増加 $\\frac12p_0\\cdot2V_1-\\frac12p_0V_1=\\frac12p_0V_1$ と，電場が W にした仕事 $p_E\\Delta V=\\frac12p_0V_1$ の和が $W_{\\text{b}}$ に等しい．電圧一定では電場は「定圧の気体」としてふるまい，必要なエネルギーは電池が2倍の量を供給して半分を蓄える．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "コンデンサーの極板間の電場は，電気力線に垂直な壁を $\\frac12\\varepsilon_0E^2$ の圧力で押し広げる．電荷一定ではこの「電場の圧力」と体積が $p_EV^2=$一定，$U_E=p_EV$ を満たし，比熱比2の気体の断熱変化と同じ構造になる．気体と共存させたときの熱量は，電場を第2の気体とみなしたエネルギー収支で求まり，電圧一定では電場は定圧の気体として電池が仕事を補う．"
+ },
+ "concepts": [
+  "capacitor",
+  "work-energy",
+  "heat-temperature"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電場の圧力",
+  "静電エネルギー",
+  "熱力学第一法則",
+  "電池の仕事",
+  "アナロジー"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

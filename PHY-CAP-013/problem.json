@@ -1,0 +1,131 @@
+{
+ "id": "PHY-CAP-013",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-02",
+ "topic": "直列コンデンサーとネオンランプの点滅（孤立部分にたまる電荷と点灯回数の上限）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，起電力 $E$ の電池（内部抵抗は無視できる），スイッチ S，抵抗値 $R$ の抵抗，電気容量 $C_{\\mathrm A}$ のコンデンサー A，電気容量 $C_{\\mathrm B}$ のコンデンサー B を直列につなぎ，A と並列にネオンランプ N をつなぐ．N は，両端の電圧が $V_{\\text{on}}$ に達すると点灯して電流を流し，電圧が $V_{\\text{off}}$（$0<V_{\\text{off}}<V_{\\text{on}}$）まで下がると消灯する．消灯している間は電流を流さない．N の電気容量は無視できる．N が点灯してから消灯するまでの時間は，R を通して電荷が運ばれる時間に比べて十分に短く，点灯中に R を通る電荷は無視できるとする．はじめ A，B は電荷をもたず，時刻 $0$ に S を閉じる．\n\nA の上側の極板と B の下側の極板の間の電圧を $V$，A，B の電圧をそれぞれ $V_{\\mathrm A}$，$V_{\\mathrm B}$ とし，点 P につながる2枚の極板（A の下側の極板と B の上側の極板）の電気量の和を $q$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "N が消灯しているとき，$V_{\\mathrm A}$ を $V$，$q$，$C_{\\mathrm A}$，$C_{\\mathrm B}$ で表せ．また，$q$ が変化しうるのはどのようなときか．"
+     },
+     {
+      "id": "2",
+      "tex": "N が初めて点灯する直前の $V_{\\mathrm B}$ を求めよ．また，この1回目の点灯で N を通過する電気量，$q$ の変化量，N から光や熱として失われるエネルギーをそれぞれ求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "N が $k$ 回点灯して消灯した後，もう点灯しないとすると，十分に時間がたったとき $V_{\\mathrm A}$ はいくらになるか．これを用いて，$k+1$ 回目の点灯が起こる条件を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$C_{\\mathrm A}=C$，$C_{\\mathrm B}=2C$，$V_{\\text{on}}=90\\ \\mathrm{V}$，$V_{\\text{off}}=60\\ \\mathrm{V}$，$E=280\\ \\mathrm{V}$ とする．S を閉じてから N は全部で何回点灯するか．また，十分に時間がたった後の $V_{\\mathrm A}$ と $V_{\\mathrm B}$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) の場合に，S を閉じてから十分に時間がたつまでに抵抗で発生するジュール熱を，$C$ を用いて表せ（単位は J，$C$ は F で表した数値とする）．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：直列コンデンサーとネオンランプの点滅（孤立部分にたまる電荷と点灯回数の上限）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V_{\\mathrm A}=\\dfrac{C_{\\mathrm B}V-q}{C_{\\mathrm A}+C_{\\mathrm B}}$．$q$ は N が点灯している間だけ変化する"
+   },
+   {
+    "id": "2",
+    "tex": "$V_{\\mathrm B}=\\dfrac{C_{\\mathrm A}}{C_{\\mathrm B}}V_{\\text{on}}$，通過電気量 $C_{\\mathrm A}(V_{\\text{on}}-V_{\\text{off}})$，$q$ の変化量 $+C_{\\mathrm A}(V_{\\text{on}}-V_{\\text{off}})$，エネルギー $\\dfrac12C_{\\mathrm A}(V_{\\text{on}}^2-V_{\\text{off}}^2)$"
+   },
+   {
+    "id": "3",
+    "tex": "$V_{\\mathrm A}=\\dfrac{C_{\\mathrm B}E-kC_{\\mathrm A}(V_{\\text{on}}-V_{\\text{off}})}{C_{\\mathrm A}+C_{\\mathrm B}}$，条件 $C_{\\mathrm B}E-kC_{\\mathrm A}(V_{\\text{on}}-V_{\\text{off}})>(C_{\\mathrm A}+C_{\\mathrm B})V_{\\text{on}}$"
+   },
+   {
+    "id": "4",
+    "tex": "10回，$V_{\\mathrm A}=\\dfrac{260}{3}\\fallingdotseq87\\ \\mathrm{V}$，$V_{\\mathrm B}=\\dfrac{580}{3}\\fallingdotseq193\\ \\mathrm{V}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{133900}{3}C\\fallingdotseq4.46\\times10^{4}\\,C\\ \\mathrm{J}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 孤立部分}　点 P につながる2枚の極板と N の下側の端子は，N が消灯している間は電池にも大地にもつながらない孤立部分なので，その電気量 $q$ は一定である．A の上側の極板の電気量を $Q_{\\mathrm A}=C_{\\mathrm A}V_{\\mathrm A}$，B の上側の極板の電気量を $Q_{\\mathrm B}=C_{\\mathrm B}V_{\\mathrm B}$ とすると，$q=-Q_{\\mathrm A}+Q_{\\mathrm B}$，$V=V_{\\mathrm A}+V_{\\mathrm B}$ だから\n\\[ V=V_{\\mathrm A}+\\frac{q+C_{\\mathrm A}V_{\\mathrm A}}{C_{\\mathrm B}}\\quad\\Longrightarrow\\quad V_{\\mathrm A}=\\boldsymbol{\\frac{C_{\\mathrm B}V-q}{C_{\\mathrm A}+C_{\\mathrm B}}} \\]\nである．$q$ が変化しうるのは，\\textbf{N が点灯して A の上側から P へ電荷が流れ込むときだけ}である．\n\n\\textbf{(2) 1回目の点灯}　はじめ $q=0$ なので $Q_{\\mathrm A}=Q_{\\mathrm B}$，すなわち $C_{\\mathrm A}V_{\\mathrm A}=C_{\\mathrm B}V_{\\mathrm B}$．点灯の直前は $V_{\\mathrm A}=V_{\\text{on}}$ なので\n\\[ V_{\\mathrm B}=\\boldsymbol{\\frac{C_{\\mathrm A}}{C_{\\mathrm B}}V_{\\text{on}}} \\]\nである．点灯中は R を電荷が通らないので，A の上側の極板と B の下側の極板の電気量は変わらない．B の電気量 $Q_{\\mathrm B}$（B の下側の極板の電気量 $-Q_{\\mathrm B}$）は変わらず，N は A の上側の極板から P へ電荷を運んで A だけを放電させる．$V_{\\mathrm A}$ が $V_{\\text{on}}$ から $V_{\\text{off}}$ まで下がるので，N を通過する電気量は\n\\[ \\boldsymbol{C_{\\mathrm A}(V_{\\text{on}}-V_{\\text{off}})} \\]\nで，その分だけ $q$ が増える（$q$ の変化量 $\\boldsymbol{+C_{\\mathrm A}(V_{\\text{on}}-V_{\\text{off}})}$）．点灯中は電池も仕事をせず（電池を通る電荷が $0$），B のエネルギーも変わらないので，N で失われるエネルギーは A の静電エネルギーの減少に等しく\n\\[ \\boldsymbol{\\frac12C_{\\mathrm A}(V_{\\text{on}}^2-V_{\\text{off}}^2)} \\]\nである．\n\n\\textbf{(3) 点灯が起こる条件}　$k$ 回の点灯で $q=kC_{\\mathrm A}(V_{\\text{on}}-V_{\\text{off}})$ となる．もう点灯しなければ，十分に時間がたつと R に電流が流れなくなって $V=E$ となるので，(1) より\n\\[ V_{\\mathrm A}=\\boldsymbol{\\frac{C_{\\mathrm B}E-kC_{\\mathrm A}(V_{\\text{on}}-V_{\\text{off}})}{C_{\\mathrm A}+C_{\\mathrm B}}} \\]\nである．消灯直後の $V_{\\mathrm A}=V_{\\text{off}}$ から，$V_{\\mathrm A}$ はこの値に向かって単調に変化するので，$k+1$ 回目の点灯が起こるのはこの値が $V_{\\text{on}}$ を超えるとき，すなわち\n\\[ \\boldsymbol{C_{\\mathrm B}E-kC_{\\mathrm A}(V_{\\text{on}}-V_{\\text{off}})>(C_{\\mathrm A}+C_{\\mathrm B})V_{\\text{on}}} \\]\nである．点灯のたびに孤立部分に電荷がたまり，A にかかる電圧の行き着く先が下がっていくので，直流では点灯はいつか止まる（B は直流を通さない）．\n\n\\textbf{(4) 数値}　$C_{\\mathrm A}(V_{\\text{on}}-V_{\\text{off}})=30C$ なので，条件は $2C\\times280-30kC>3C\\times90$，すなわち $30k<290$，$k\\le9$．$k=0,1,\\dots,9$ の各段階で次の点灯が起こるので，点灯は全部で $\\boldsymbol{10}$ \\textbf{回}である．10回後は $q=300C$ で\n\\[ V_{\\mathrm A}=\\frac{560C-300C}{3C}=\\boldsymbol{\\frac{260}{3}\\ \\mathrm{V}}\\fallingdotseq87\\ \\mathrm{V},\\qquad V_{\\mathrm B}=E-V_{\\mathrm A}=\\boldsymbol{\\frac{580}{3}\\ \\mathrm{V}}\\fallingdotseq193\\ \\mathrm{V} \\]\nとなる（$V_{\\mathrm A}<V_{\\text{on}}$ なので11回目は起こらない）．\n\n\\textbf{(5) エネルギー収支}　電池の負極は B の下側の極板につながっているので，電池を負極から正極へ通過した電気量は，最終的な B の電気量 $Q_{\\mathrm B}=2C\\times\\frac{580}{3}=\\frac{1160}{3}C$ に等しい．電池がした仕事は\n\\[ EQ_{\\mathrm B}=280\\times\\frac{1160}{3}C=\\frac{324800}{3}C \\]\nである．最終的な静電エネルギーは\n\\[ \\frac12C\\left(\\frac{260}{3}\\right)^2+\\frac12\\cdot2C\\left(\\frac{580}{3}\\right)^2=\\frac{33800+336400}{9}C=\\frac{123400}{3}C \\]\nで，N で失われたエネルギーは (2) の10回分 $10\\times\\frac12C(90^2-60^2)=22500C$ である．よって抵抗で発生したジュール熱は\n\\[ \\frac{324800}{3}C-\\frac{123400}{3}C-22500C=\\boldsymbol{\\frac{133900}{3}C}\\fallingdotseq4.46\\times10^{4}\\,C\\ \\mathrm{J} \\]\nである．各充電過程の電流の時間変化を求めなくても，電池の仕事と終状態のエネルギー，点灯で失われるエネルギーだけで決まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ネオンランプが一方のコンデンサーを放電させるたびに，2つのコンデンサーの間の孤立部分に一定の電荷が送り込まれ，孤立部分の電気量保存の式から，A の電圧が行き着く値が点灯ごとに一定量ずつ下がる．そのため直流電源でも点灯は有限回で止まり，その回数は「行き着く値が点灯電圧を超えるか」で決まる．抵抗のジュール熱は電池の仕事・終状態の静電エネルギー・点灯で失われるエネルギーの収支から求まる．"
+ },
+ "concepts": [
+  "capacitor",
+  "work-energy",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "コンデンサー",
+  "孤立部分の電気量保存",
+  "ネオンランプ",
+  "ヒステリシス",
+  "エネルギー収支",
+  "ジュール熱"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

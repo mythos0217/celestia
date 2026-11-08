@@ -1,0 +1,130 @@
+{
+ "id": "PHY-CAP-007",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-02",
+ "topic": "並列抵抗をもつRC回路の充電グラフから素子の値を決める",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図 1 の回路で，電池の起電力は $E=6.00$ V（内部抵抗なし），R$_1$，R$_2$ は抵抗値の分からない抵抗，C は電気容量の分からないコンデンサーで，はじめ帯電していない．電流計 A（内部抵抗なし）は C と直列に入っている．時刻 $t=0$ にスイッチ S を閉じたところ，A を流れる電流 $I$ は図 2 のように変化した．十分に時間がたった後に S を開くと，S を開いた直後に A を流れた電流の大きさは $1.00$ mA であった．答えはすべて有効数字 3 桁で求めよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "R$_1$ の抵抗値を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "R$_2$ の抵抗値と，S を開く直前の C の電圧 $V_{\\mathrm f}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "図 2 のグラフと両軸で囲まれた部分（$t\\to\\infty$ まで）に含まれる方眼の数は，ほぼ 60 個であった．C の電気容量を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "図 2 で $I$ が $t=0$ の値の半分になる時刻を $t_1$ とする．時刻 $t_1$ に電池を流れる電流を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "S を開いた後，A を流れる電流が S を開いた直後の値の半分になるまでの時間を $t_2$ とする．$\\dfrac{t_2}{t_1}$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：並列抵抗をもつRC回路の充電グラフから素子の値を決める",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.00\\times10^3\\ \\Omega$"
+   },
+   {
+    "id": "2",
+    "tex": "R$_2$：$4.00\\times10^3\\ \\Omega$，$V_{\\mathrm f}=4.00$ V"
+   },
+   {
+    "id": "3",
+    "tex": "$3.00\\times10^{-3}$ F"
+   },
+   {
+    "id": "4",
+    "tex": "$2.00$ mA"
+   },
+   {
+    "id": "5",
+    "tex": "$3.00$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $t=0$ では C は帯電しておらず電圧 $0$ である．R$_2$ は C と並列なので R$_2$ の電圧も $0$ で，R$_2$ には電流が流れない．電池の電流はすべて R$_1$ を通って C に流れ込むので，図 2 の $I(0)=3.00$ mA より\n\\[ R_1=\\frac{E}{I(0)}=\\frac{6.00}{3.00\\times10^{-3}}=\\boldsymbol{2.00\\times10^3\\ \\Omega} \\]\n\n(2) 十分に時間がたつと C の電流は $0$ となり，R$_1$ と R$_2$ の直列に電流 $\\dfrac{E}{R_1+R_2}$ が流れる．C の電圧は R$_2$ の電圧に等しく $V_{\\mathrm f}=\\dfrac{R_2}{R_1+R_2}E$．S を開くと，C は R$_2$ だけを通して放電し，その直後の電流は\n\\[ \\frac{V_{\\mathrm f}}{R_2}=\\frac{E}{R_1+R_2}=1.00\\times10^{-3}\\ \\text{A}\\qquad\\therefore\\ R_1+R_2=6.00\\times10^3\\ \\Omega \\]\nよって $\\boldsymbol{R_2=4.00\\times10^3\\ \\Omega}$，$\\boldsymbol{V_{\\mathrm f}=4.00\\ \\text{V}}$．S を開く前に R$_2$ を流れていた電流と，開いた直後の放電電流は同じ大きさである（C の電圧が連続だから）．\n\n(3) $I$–$t$ グラフの面積は C に流れ込んだ電気量である．方眼 1 個は $0.2\\times10^{-3}\\ \\text{A}\\times1\\ \\text{s}=2\\times10^{-4}$ C なので，最終的な電気量は $60\\times2\\times10^{-4}=1.20\\times10^{-2}$ C．\n\\[ C=\\frac{1.20\\times10^{-2}}{V_{\\mathrm f}}=\\frac{1.20\\times10^{-2}}{4.00}=\\boldsymbol{3.00\\times10^{-3}\\ \\text{F}} \\]\n（C の電圧の最終値は $E$ ではなく $V_{\\mathrm f}$ であることに注意．）\n\n(4) C の電圧を $V_C$ とすると，R$_1$ の電流は $\\dfrac{E-V_C}{R_1}$，R$_2$ の電流は $\\dfrac{V_C}{R_2}$ で，その差が C に流れ込む電流 $I$ である．\n\\[ I=\\frac{E-V_C}{R_1}-\\frac{V_C}{R_2}=\\frac{V_{\\mathrm f}-V_C}{R'},\\qquad R'=\\frac{R_1R_2}{R_1+R_2}=\\frac43\\times10^3\\ \\Omega \\]\n（$I$ は $V_C$ の 1 次式で，$V_C=0$ で $\\dfrac E{R_1}=\\dfrac{V_{\\mathrm f}}{R'}$，$V_C=V_{\\mathrm f}$ で $0$．）$I=\\dfrac12I(0)$ のとき $V_C=\\dfrac12V_{\\mathrm f}=2.00$ V なので，電池の電流は R$_1$ の電流\n\\[ \\frac{E-V_C}{R_1}=\\frac{6.00-2.00}{2.00\\times10^3}=\\boldsymbol{2.00\\times10^{-3}\\ \\text{A}} \\]\n（C への電流 $1.50$ mA と R$_2$ の電流 $\\dfrac{2.00}{4.00\\times10^3}=0.50$ mA の和としても $2.00$ mA．）\n\n(5) (4) より，充電中の C は「起電力 $V_{\\mathrm f}$ の電池と抵抗 $R'$ の直列」で充電されるのと同じである．微小時間 $\\Delta t$ に $V_C$ は $\\dfrac{I\\Delta t}{C}$ 増え，$I$ は $\\dfrac{1}{R'}\\cdot\\dfrac{I\\Delta t}C$ 減るので\n\\[ \\frac{\\Delta I}{I}=-\\frac{\\Delta t}{R'C} \\]\n電流が単位時間あたりに減る割合は $\\dfrac1{R'C}$ で一定であり，電流が半分になるまでの時間は $R'C$ に比例する．放電中は $I=\\dfrac{V_C}{R_2}$ で，同様に $\\dfrac{\\Delta I}{I}=-\\dfrac{\\Delta t}{R_2C}$．2 つのグラフは時間軸の目盛りの倍率だけが異なる同じ形の曲線なので\n\\[ \\frac{t_2}{t_1}=\\frac{R_2C}{R'C}=\\frac{R_1+R_2}{R_1}=\\boldsymbol{3.00} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "並列抵抗をもつ RC 回路では，C の電流が電圧の 1 次式になるので，C から見た回路は起電力 V_f・抵抗 R1R2/(R1+R2) の直列回路と同じになる．充電直後（C は導線と同じ）と放電直後（C の電圧は連続）の電流，グラフの面積（電気量）から素子の値を逆算でき，電流が半減する時間は抵抗と容量の積に比例する．"
+ },
+ "concepts": [
+  "capacitor",
+  "electric-power",
+  "series-parallel"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "RC回路",
+  "過渡現象",
+  "I-tグラフの面積",
+  "テブナンの定理",
+  "キルヒホッフの法則"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

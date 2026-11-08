@@ -1,0 +1,136 @@
+{
+ "id": "PHY-CAP-001",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-02",
+ "topic": "電池につないだ平行板コンデンサー内の帯電した金属板（電位の山と移動の仕事）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，面積 $S$ の2枚の金属板 A，B を間隔 $3d$ で平行に向かい合わせ，B を接地し，A を起電力 $V_0$ の電池の正極に接続する（B は電池の負極側）．A と B の間に，同じ面積で厚さの無視できる金属板 M を A，B と平行に，B からの距離が $x$ $(0<x<3d)$ の位置に絶縁して保持する．M は電気量 $+q$ $(q>0)$ をもち，M の電気量は常に変わらない．M がないときの AB 間の電気容量を $C_0$ とし，電場は極板間で一様，端の効果は無視する．以下の答えは $V_0$，$q$，$C_0$，$d$，$x$ のうち必要なものを用いて表せ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "BM 間，MA 間の電場の強さ $E_1$，$E_2$（いずれも A から B へ向かう向きを正とする）と，M の電位 $V_{\\mathrm M}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "A の電気量 $Q_{\\mathrm A}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "以下，$q=2C_0V_0$ とする．M の電位が A の電位 $V_0$ より高くなる $x$ の範囲を求めよ．また，M の電位の最大値と，そのときの $x$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "M を $x=d$ の位置から $x=2d$ の位置まで，ゆっくり移動させた．この間に電池を通過した電気量とその向き，コンデンサー全体の静電エネルギーの変化，および M を動かした外力のした仕事を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：電池につないだ平行板コンデンサー内の帯電した金属板（電位の山と移動の仕事）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：電池につないだ平行板コンデンサー内の帯電した金属板（電位の山と移動の仕事）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$E_1=\\dfrac{V_0}{3d}+\\dfrac{q(3d-x)}{9C_0d^2}$，$E_2=\\dfrac{V_0}{3d}-\\dfrac{qx}{9C_0d^2}$，$V_{\\mathrm M}=\\dfrac{V_0x}{3d}+\\dfrac{qx(3d-x)}{9C_0d^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$Q_{\\mathrm A}=C_0V_0-\\dfrac{qx}{3d}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac32d<x<3d$，最大値 $\\dfrac98V_0$（$x=\\dfrac94d$）"
+   },
+   {
+    "id": "4",
+    "tex": "電気量 $\\dfrac23C_0V_0$ が A から電池の正極へ流れこむ（電池は充電される向き），静電エネルギーの変化 $0$，外力の仕事 $\\dfrac23C_0V_0^2$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{準備}　$C_0=\\dfrac{\\varepsilon_0S}{3d}$（$\\varepsilon_0$ は真空の誘電率）なので $\\varepsilon_0S=3dC_0$ である．\n\n\\textbf{(1) ガウスの法則と電位差の条件}　M は薄い導体板で内部の電場は $0$．M を囲む閉曲面にガウスの法則を用いると，M から下向きに出る電気力線と上向きに出る電気力線の差が $q$ に対応し\n\\[ \\varepsilon_0S(E_1-E_2)=q\\quad\\Longrightarrow\\quad E_1-E_2=\\frac{q}{3dC_0} \\]\nまた，B から A までの電位差が $V_0$ だから\n\\[ E_1x+E_2(3d-x)=V_0 \\]\n連立して\n\\[ E_1=\\boldsymbol{\\frac{V_0}{3d}+\\frac{q(3d-x)}{9C_0d^2}},\\qquad E_2=\\boldsymbol{\\frac{V_0}{3d}-\\frac{qx}{9C_0d^2}} \\]\nB の電位が $0$ なので $V_{\\mathrm M}=E_1x=\\boldsymbol{\\dfrac{V_0x}{3d}+\\dfrac{qx(3d-x)}{9C_0d^2}}$．\nM がないときの直線的な電位（第1項）に，$x$ の2次式（第2項）が加わる．\n\n\\textbf{(2)}　A の下面の電気量は，A から出る電気力線の数から $Q_{\\mathrm A}=\\varepsilon_0SE_2=\\boldsymbol{C_0V_0-\\dfrac{qx}{3d}}$．\n\n\\textbf{(3) 電位の山}　$q=2C_0V_0$ のとき\n\\[ V_{\\mathrm M}=\\frac{V_0x}{3d}+\\frac{2V_0x(3d-x)}{9d^2}=V_0\\left(\\frac{x}{d}-\\frac{2x^2}{9d^2}\\right) \\]\n$V_{\\mathrm M}>V_0$ は $2x^2-9dx+9d^2<0$，すなわち $(2x-3d)(x-3d)<0$ より $\\boldsymbol{\\dfrac32d<x<3d}$．このとき $E_2<0$（MA 間の電場が上向き）で，$Q_{\\mathrm A}<0$ となる．\n平方完成すると $V_{\\mathrm M}=V_0\\left\\{\\dfrac98-\\dfrac{2}{9d^2}\\left(x-\\dfrac94d\\right)^2\\right\\}$ なので，$x=\\boldsymbol{\\dfrac94d}$ で最大値 $\\boldsymbol{\\dfrac98V_0}$．\n\n\\textbf{(4) 移動の仕事}　(2) より $Q_{\\mathrm A}$ は $x=d$ から $2d$ で $\\dfrac{q}{3d}\\cdot d=\\dfrac q3=\\dfrac23C_0V_0$ だけ減る．よって\\textbf{電気量 $\\dfrac23C_0V_0$ が A から電池の正極へ流れこむ}（電池は起電力に逆らって電荷を受け取る）．電池のした仕事は $W_{\\text{電池}}=V_0\\Delta Q_{\\mathrm A}=-\\dfrac23C_0V_0^2$．\n静電エネルギーは\n\\[ U=\\frac{\\varepsilon_0S}{2}\\left\\{E_1^2x+E_2^2(3d-x)\\right\\}=\\frac12C_0V_0^2+\\frac{q^2x(3d-x)}{18C_0d^2} \\]\nで，$x(3d-x)$ は $x=d$ と $x=2d$ で等しい（ともに $2d^2$）ので，\\textbf{静電エネルギーの変化は $\\boldsymbol{0}$}．\nエネルギー保存 $W_{\\text{外}}+W_{\\text{電池}}=\\Delta U$ より\n\\[ W_{\\text{外}}=0-\\left(-\\frac23C_0V_0^2\\right)=\\boldsymbol{\\frac23C_0V_0^2} \\]\n\\textbf{別解（力から）}　M 自身の電荷がつくる電場は M に力を及ぼさないので，M が受ける静電気力は $q\\cdot\\dfrac{E_1+E_2}{2}$（下向き）である．ゆっくり動かす外力は上向きにこれと同じ大きさで\n\\[ W_{\\text{外}}=\\int_d^{2d}q\\cdot\\frac{E_1+E_2}{2}\\,dx=\\int_d^{2d}\\left\\{\\frac{qV_0}{3d}+\\frac{q^2(3d-2x)}{18C_0d^2}\\right\\}dx=\\frac{qV_0}{3}=\\frac23C_0V_0^2 \\]\n（第2項の積分は $0$）となり一致する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "帯電した導体板をはさむ2つの間隙の電場は，ガウスの法則による「電場の差＝電荷」と，電池による「電位差の和＝起電力」の2式で決まる．板の電荷のために電位は位置の2次式となって電池の電圧を超える山をもち，板を動かすと電池との電荷のやり取りが生じるので，外力の仕事は静電エネルギーの変化と電池の仕事を合わせて求める．"
+ },
+ "concepts": [
+  "capacitor",
+  "work-energy",
+  "coulomb-field"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "平行板コンデンサー",
+  "ガウスの法則",
+  "帯電した金属板",
+  "電位分布",
+  "電池の仕事",
+  "静電エネルギー"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

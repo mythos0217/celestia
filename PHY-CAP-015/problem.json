@@ -1,0 +1,143 @@
+{
+ "id": "PHY-CAP-015",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-02",
+ "topic": "漏れ電流のある2層誘電体コンデンサー（境界面の電荷と短絡後に再び現れる電圧）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，面積 $S$ の 2 枚の平行な電極の間に，厚さ $d$ の 2 つの層を重ねてすき間なくはさんだ素子 X がある．層 1 は誘電率 $\\varepsilon$，抵抗率 $\\rho$ の一様な物質，層 2 は誘電率 $4\\varepsilon$，抵抗率 $\\dfrac{\\rho}{2}$ の一様な物質でできている．電場は電極間に電極に垂直な向きにのみ生じるものとし，端の効果は無視する．素子 X はスイッチによって，起電力 $V_0$ の電池（P 側），抵抗の無視できる導線（Q 側）のどちらかにつなぐか，どちらにもつながないことができる．電池の内部抵抗，導線と電極の抵抗は無視する．$C=\\dfrac{\\varepsilon S}{d}$，$R=\\dfrac{\\rho d}{S}$，$\\tau=\\varepsilon\\rho$ とおく．電圧はいずれも「上側の電位 $-$ 下側の電位」で表す（層 1，層 2 についても同様）．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "誘電率 $\\varepsilon'$，抵抗率 $\\rho'$，厚さ $\\ell$，面積 $A$ の一様な層は，抵抗 $R'$ とコンデンサー $C'$ の並列接続と同じはたらきをする．$R'C'$ を求め，層の形によらないことを示せ．また，素子 X の等価回路をかき，各素子の値を $C$，$R$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "はじめ素子 X に電荷はない．スイッチを P 側に入れた直後に層 1，層 2 にかかる電圧 $V_1$，$V_2$ と，十分に時間がたったときの $V_1$，$V_2$ および電池を流れる電流を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で十分に時間がたったとき，層 1 と層 2 の境界面に現れている電荷 $Q_{\\rm m}$ を $C$，$V_0$ で表せ．また，一般に 2 つの層の誘電率と抵抗率をそれぞれ $\\varepsilon_1,\\rho_1$，$\\varepsilon_2,\\rho_2$ とするとき，電圧をかけてからどの時刻でも境界面に電荷が現れないための条件を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "続いてスイッチを Q 側に切り替え，ごく短い時間（層を流れる電流で電荷が移動できないほど短い時間）だけ両電極を導線でつないだのち，スイッチをどちらにもつながない状態にした．導線でつないだ直後の $V_1$，$V_2$ を $V_0$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "スイッチをどちらにもつながない状態にした時刻を $t=0$ とする．$t>0$ での電極間の電圧 $V(t)$ を $V_0$，$\\tau$，$t$ で表せ．また，$V(t)$ の最大値と，最大となる時刻を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：漏れ電流のある2層誘電体コンデンサー（境界面の電荷と短絡後に再び現れる電圧）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：漏れ電流のある2層誘電体コンデンサー（境界面の電荷と短絡後に再び現れる電圧）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$R'C'=\\varepsilon'\\rho'$（形によらない）；等価回路は「$R_1=R$ と $C_1=C$ の並列」と「$R_2=\\dfrac{R}{2}$ と $C_2=4C$ の並列」の直列"
+   },
+   {
+    "id": "2",
+    "tex": "直後 $V_1=\\dfrac45V_0$，$V_2=\\dfrac15V_0$；十分後 $V_1=\\dfrac23V_0$，$V_2=\\dfrac13V_0$，電流 $\\dfrac{2V_0}{3R}$"
+   },
+   {
+    "id": "3",
+    "tex": "$Q_{\\rm m}=\\dfrac23CV_0$；条件 $\\varepsilon_1\\rho_1=\\varepsilon_2\\rho_2$"
+   },
+   {
+    "id": "4",
+    "tex": "$V_1=-\\dfrac{2}{15}V_0$，$V_2=\\dfrac{2}{15}V_0$"
+   },
+   {
+    "id": "5",
+    "tex": "$V(t)=\\dfrac{2V_0}{15}\\left(e^{-\\frac{t}{2\\tau}}-e^{-\\frac{t}{\\tau}}\\right)$，最大値 $\\dfrac{V_0}{30}$（$t=2\\tau\\log_e2$）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 等価回路}\n\n層の両面の電圧を $V$ とすると，層を流れる伝導電流は $\\dfrac{V}{R'}$（$R'=\\dfrac{\\rho'\\ell}{A}$）で，同時に両面には $C'V$（$C'=\\dfrac{\\varepsilon' A}{\\ell}$）の電荷がたまる．電流が「電荷をためる部分」と「通り抜ける部分」に分かれるので，$R'$ と $C'$ の並列接続と同じである．\n\\[ R'C'=\\frac{\\rho'\\ell}{A}\\cdot\\frac{\\varepsilon'A}{\\ell}=\\boldsymbol{\\varepsilon'\\rho'} \\]\nで，$\\ell$，$A$ によらず物質だけで決まる．よって素子 X は\n\\[ R_1=R,\\ C_1=C\\ (\\tau_1=\\tau),\\qquad R_2=\\frac{\\rho}{2}\\cdot\\frac{d}{S}=\\frac{R}{2},\\ C_2=\\frac{4\\varepsilon S}{d}=4C\\ (\\tau_2=2\\tau) \\]\nの 2 つの並列部分を直列につないだもの（解答図）である．\n\n\\textbf{(2) 直後と十分後}\n\nスイッチを入れた直後は，抵抗 $R_1$，$R_2$ を流れる電流が運ぶ電荷はまだ無視でき，電池は抵抗の無視できる導線を通して $C_1$，$C_2$ を一瞬で充電する．したがって直列コンデンサーとして等しい電荷 $q$ がたまり，$\\frac{q}{C}+\\frac{q}{4C}=V_0$ より\n\\[ V_1=\\boldsymbol{\\frac45V_0},\\qquad V_2=\\boldsymbol{\\frac15V_0}. \\]\n十分に時間がたつとコンデンサーの電荷は変化せず，電流は $R_1$，$R_2$ だけを流れる：\n\\[ I=\\frac{V_0}{R+\\frac{R}{2}}=\\boldsymbol{\\frac{2V_0}{3R}},\\quad V_1=IR=\\boldsymbol{\\frac23V_0},\\quad V_2=I\\cdot\\frac R2=\\boldsymbol{\\frac13V_0}. \\]\n電圧の配分が「容量の逆比」から「抵抗の比」へ移り変わる．\n\n\\textbf{(3) 境界面の電荷}\n\n境界面（$C_1$ の下側の極板と $C_2$ の上側の極板を合わせた部分）の電荷は\n\\[ Q_{\\rm m}=C_2V_2-C_1V_1=4C\\cdot\\frac{V_0}{3}-C\\cdot\\frac{2V_0}{3}=\\boldsymbol{\\frac23CV_0}. \\]\n（直後は $C_2V_2-C_1V_1=0$ なので，この電荷は漏れ電流によって時間をかけて運ばれてきたものである．）\n\n一般に十分後は $V_i=\\dfrac{R_i}{R_1+R_2}V_0$ より\n\\[ Q_{\\rm m}=\\frac{C_2R_2-C_1R_1}{R_1+R_2}V_0=\\frac{\\varepsilon_2\\rho_2-\\varepsilon_1\\rho_1}{R_1+R_2}V_0. \\]\n$\\varepsilon_1\\rho_1=\\varepsilon_2\\rho_2$ なら，直後の配分（容量の逆比）と十分後の配分（抵抗の比）が一致し，両層の電圧は同じ割合で変化するから，どの時刻でも $Q_{\\rm m}=0$ である．よって条件は $\\boldsymbol{\\varepsilon_1\\rho_1=\\varepsilon_2\\rho_2}$．\n\n\\textbf{(4) 短絡直後}\n\nごく短い時間では，境界面は層の抵抗を通してしか電荷をやりとりできないので，$Q_{\\rm m}$ は保存される．一方，両電極を導線でつなぐので $V_1+V_2=0$．\n\\[ 4C\\,V_2-C\\,V_1=\\frac23CV_0,\\qquad V_1+V_2=0 \\]\nより $V_1=\\boldsymbol{-\\dfrac{2}{15}V_0}$，$V_2=\\boldsymbol{\\dfrac{2}{15}V_0}$．端子間は 0 でも，内部には逆向きの電圧が「隠れて」いる．\n\n\\textbf{(5) 再び現れる電圧}\n\nスイッチを開くと外部に電流は流れない．直列の 2 つの並列部分を流れる電流は等しいので，どちらの部分の電流も 0，すなわち各層のコンデンサーは自分の抵抗を通して独立に放電する：\n\\[ V_1(t)=-\\frac{2V_0}{15}e^{-\\frac{t}{\\tau}},\\qquad V_2(t)=\\frac{2V_0}{15}e^{-\\frac{t}{2\\tau}}. \\]\nよって\n\\[ V(t)=V_1+V_2=\\boldsymbol{\\frac{2V_0}{15}\\left(e^{-\\frac{t}{2\\tau}}-e^{-\\frac{t}{\\tau}}\\right)}. \\]\n時定数の短い層 1 が先に放電するため，いったん 0 になった端子間に充電時と同じ向きの電圧が再び現れ，その後ゆっくり 0 に戻る．$u=e^{-\\frac{t}{2\\tau}}$ とおくと $V=\\frac{2V_0}{15}(u-u^2)$ は $u=\\frac12$ で最大となるので，\n\\[ t=\\boldsymbol{2\\tau\\log_e2}\\ \\text{のとき最大値}\\ \\frac{2V_0}{15}\\cdot\\frac14=\\boldsymbol{\\frac{V_0}{30}}. \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "誘電率と抵抗率をもつ層は $RC=\\varepsilon\\rho$ の並列 RC 回路と等価で，2 層を直列にすると電圧の配分が容量の逆比から抵抗の比へ移るため，$\\varepsilon\\rho$ が異なると境界面に電荷がたまる．短時間の短絡ではこの境界電荷が保存されて内部に逆向きの電圧が残り，開放後は各層が別々の時定数で放電するので，端子間に電圧が再び現れる．"
+ },
+ "concepts": [
+  "capacitor",
+  "series-parallel"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "漏れ電流",
+  "誘電体",
+  "時定数",
+  "境界面の電荷",
+  "電荷保存",
+  "過渡現象"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

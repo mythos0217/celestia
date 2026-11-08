@@ -1,0 +1,91 @@
+{
+ "id": "ELM-CON-001",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "磁石が止まっていると",
+ "course": "物理基礎",
+ "level": 0,
+ "minutes": 5,
+ "format": [
+  "concept",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "コイルの中に強い棒磁石を入れたまま静止させた．ある生徒は「コイルを強い磁束が貫いているので，大きな誘導電流が流れ続ける」と言った．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "誘導電流は流れるか．"
+     },
+     {
+      "id": "2",
+      "tex": "誘導電流が流れるのはどのようなときか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "流れない．"
+   },
+   {
+    "id": "2",
+    "tex": "コイルを貫く磁束が変化しているとき（磁石を出し入れする，コイルを動かす，磁場の強さを変えるなど）．起電力は磁束の変化の速さに比例する．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ファラデーの法則 $V=-N\\dfrac{\\Delta\\Phi}{\\Delta t}$：起電力を決めるのは磁束の大きさではなく，変化の速さ．磁石が静止していれば $\\Delta\\Phi=0$ で，どれほど強い磁石でも起電力は $0$．磁石を速く動かすほど大きな電流が流れる．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "誘導起電力は磁束の「変化」で生じる．"
+ },
+ "concepts": [
+  "electromagnetic-induction"
+ ],
+ "laws": [
+  "faraday-law"
+ ],
+ "misconceptions": [
+  "MC-INDUCTION-FLUX"
+ ],
+ "tags": [
+  "電磁誘導",
+  "誤概念"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

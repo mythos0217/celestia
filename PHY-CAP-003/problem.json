@@ -1,0 +1,143 @@
+{
+ "id": "PHY-CAP-003",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-02",
+ "topic": "電源電圧を段階的・連続的に上げる充電のジュール熱",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，起電力 $E$ を自由に変えられる直流電源（内部抵抗なし），抵抗値 $R$ の抵抗，電気容量 $C$ のコンデンサー，スイッチ S を直列につなぐ．はじめコンデンサーは帯電していない．このコンデンサーを電圧 $V$ まで充電する方法を比べる．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$E=V$ にしてから S を閉じ，十分に時間がたつまで待つ．この間に電源がした仕事 $W_1$ と，抵抗で発生したジュール熱 $H_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "S を閉じたまま，$E$ を $0$ から $\\dfrac VN$ ずつ $N$ 回に分けて $V$ まで上げる（$N$ は正の整数．各段階で十分に時間がたつまで待つ）．この間に電源がした仕事の合計 $W_N$ と，ジュール熱の合計 $H_N$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で充電した後，S を閉じたまま，$E$ を $V$ から $\\dfrac VN$ ずつ $N$ 回に分けて $0$ まで下げる（各段階で十分に時間がたつまで待つ）．この間に発生するジュール熱の合計と，電源に戻るエネルギー（電源が受け取るエネルギー）を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "コンデンサーを放電させて最初の状態に戻した後，S を閉じたまま，$E$ を時間 $T$ かけて $0$ から $V$ まで一定の割合で増やし，その後は $E=V$ に保つ．$T$ は $RC$ に比べて十分大きく，$\\dfrac{RC}T$ の 2 次以上の微小量は無視してよい．発生するジュール熱の合計 $H$ を $R,\\ C,\\ V,\\ T$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "充電で発生するジュール熱を，最終的にコンデンサーに蓄えられる静電エネルギーの $1\\,\\%$ 以下にしたい．(2) の方法では $N$ をいくら以上に，(4) の方法では $T$ を $RC$ の何倍以上にすればよいか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：電源電圧を段階的・連続的に上げる充電のジュール熱",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：電源電圧を段階的・連続的に上げる充電のジュール熱",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$W_1=CV^2$，$H_1=\\dfrac12CV^2$"
+   },
+   {
+    "id": "2",
+    "tex": "$W_N=\\dfrac{N+1}{2N}CV^2$，$H_N=\\dfrac{CV^2}{2N}$"
+   },
+   {
+    "id": "3",
+    "tex": "ジュール熱 $\\dfrac{CV^2}{2N}$，電源に戻るエネルギー $\\dfrac{N-1}{2N}CV^2$"
+   },
+   {
+    "id": "4",
+    "tex": "$H=\\dfrac{RC^2V^2}{T}$"
+   },
+   {
+    "id": "5",
+    "tex": "$N\\geqq100$，$T\\geqq200RC$（200 倍以上）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{基本}　電源が電気量 $\\Delta q$ を起電力 $E$ の向きに送り出すとき，電源のする仕事は $E\\Delta q$ である．電流が $0$ になるまで待てば，ジュール熱は電流の時間変化を知らなくても\n\\[ (\\text{電源の仕事})=(\\text{静電エネルギーの増加})+(\\text{ジュール熱}) \\]\nから求まる．$RI^2$ を時間で足し合わせる必要はない．\n\n(1) 電源を通った電気量は $CV$ なので $\\boldsymbol{W_1=CV^2}$．静電エネルギーの増加は $\\dfrac12CV^2$ だから $\\boldsymbol{H_1=\\dfrac12CV^2}$．抵抗値 $R$ によらず，電源の仕事のちょうど半分が熱になる．\n\n(2) $j$ 回目（$j=1,2,\\dots,N$）の段階では，起電力 $\\dfrac{jV}N$ の電源が電気量 $\\dfrac{CV}N$ を送り，コンデンサーの電圧は $\\dfrac{(j-1)V}N$ から $\\dfrac{jV}N$ に上がる．\n\\[ (\\text{電源の仕事})=\\frac{jV}{N}\\cdot\\frac{CV}{N},\\qquad (\\text{静電エネルギーの増加})=\\frac C2\\left\\{\\left(\\frac{jV}N\\right)^2-\\left(\\frac{(j-1)V}N\\right)^2\\right\\}=\\frac{(2j-1)CV^2}{2N^2} \\]\nよって各段階のジュール熱は $\\dfrac{CV^2}{2N^2}$（段差 $\\dfrac VN$ だけで決まる）．$N$ 段階の合計は\n\\[ \\boldsymbol{H_N=\\frac{CV^2}{2N}},\\qquad \\boldsymbol{W_N}=\\frac{CV^2}{N^2}\\sum_{j=1}^{N}j=\\boldsymbol{\\frac{N+1}{2N}CV^2} \\]\n解答図（$N=4$）のように，横軸に電気量，縦軸に電圧をとると，電源の仕事は階段の下の面積，静電エネルギーは直線の下の三角形，ジュール熱は両者の間の小さな三角形 $N$ 個の面積になる．\n\n(3) $j$ 回目の段階では，電源の起電力は $\\dfrac{(N-j)V}{N}$ で，コンデンサーの電圧は $\\dfrac{(N-j+1)V}N$ から $\\dfrac{(N-j)V}N$ に下がり，電気量 $\\dfrac{CV}N$ が電源に逆向きに流れ込む．電源が受け取るエネルギーは $\\dfrac{(N-j)V}N\\cdot\\dfrac{CV}N$，静電エネルギーの減少は $\\dfrac{(2N-2j+1)CV^2}{2N^2}$ で，その差 $\\dfrac{CV^2}{2N^2}$ がジュール熱である．合計すると\n\\[ (\\text{ジュール熱})=\\boldsymbol{\\frac{CV^2}{2N}},\\qquad (\\text{電源に戻るエネルギー})=\\frac{CV^2}{N^2}\\sum_{j=1}^{N}(N-j)=\\boldsymbol{\\frac{N-1}{2N}CV^2} \\]\n（確認：$\\dfrac12CV^2=\\dfrac{CV^2}{2N}+\\dfrac{N-1}{2N}CV^2$．）$N$ を大きくすれば，蓄えたエネルギーのほとんどを電源に回収できる．\n\n(4) 起電力は単位時間あたり $\\dfrac VT$ ずつ増える．$T\\gg RC$ なので，充電開始後 $RC$ 程度の時間がたつと，コンデンサーの電圧は電源の起電力から一定の小さな遅れを保ちながら同じ割合 $\\dfrac VT$ で増える．このとき電流は\n\\[ I=\\frac{\\Delta q}{\\Delta t}=C\\frac{\\Delta V_C}{\\Delta t}=\\frac{CV}{T}\\quad(\\text{一定}) \\]\n抵抗の電圧は $RI=\\dfrac{RC}{T}V\\ll V$ で，遅れは小さい．時間 $T$ の間のジュール熱は\n\\[ RI^2T=\\frac{RC^2V^2}{T}=\\frac12CV^2\\cdot\\frac{2RC}{T} \\]\nこれは静電エネルギーの $\\dfrac{RC}T$ の 1 次の大きさである．充電開始直後に電流が $0$ から $\\dfrac{CV}T$ に立ち上がる間の熱の差や，$t=T$ 以後に残りの遅れの電圧 $\\dfrac{RC}TV$ が解消される間の熱（$\\dfrac12C\\left(\\dfrac{RC}TV\\right)^2$ の程度）は $\\left(\\dfrac{RC}T\\right)^2$ の程度なので無視できる．よって\n\\[ \\boldsymbol{H=\\frac{RC^2V^2}{T}} \\]\n(2) と比べると，$N$ 段階の充電は $T=2NRC$ の連続的な充電と同じ熱を生む．どちらも「電源とコンデンサーの電圧差を常に小さく保つ」ことで熱を減らしている．\n\n(5) (2) では $\\dfrac{H_N}{\\frac12CV^2}=\\dfrac1N\\leqq0.01$ より $\\boldsymbol{N\\geqq100}$．(4) では $\\dfrac{H}{\\frac12CV^2}=\\dfrac{2RC}{T}\\leqq0.01$ より $\\boldsymbol{T\\geqq200RC}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電流が止まるまで待てば，ジュール熱は「電源の仕事－静電エネルギーの増加」で決まり，1回の接続で生じる熱は電源とコンデンサーの電圧差（段差）だけで決まる．段差を小さくするほど（段階的・連続的に電圧を上げるほど）熱は減り，連続的な充電では熱が RC/T に比例する．"
+ },
+ "concepts": [
+  "capacitor",
+  "mechanical-energy",
+  "work-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電池のする仕事",
+  "ジュール熱",
+  "エネルギー保存",
+  "段階的充電",
+  "RC回路"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

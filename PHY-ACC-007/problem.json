@@ -1,0 +1,122 @@
+{
+ "id": "PHY-ACC-007",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-06",
+ "topic": "コイルのリアクタンスをもつ自転車用発電機の出力の頭打ち（定電圧源から定電流源への移り変わり）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "自転車の発電機を考える．図のように，半径 $a$ の回転子が，半径 $R$ の車輪の中心から距離 $b$ の位置で車輪の側面に接し，すべらずに回転する．回転子と一体の円柱形の磁石の側面には N 極と S 極が4つずつ交互に並んでおり，磁石の左右に固定された2つのコイル（それぞれ巻数 $N$，自己インダクタンス $L$）を貫く磁束は，回転子の角速度を $\\omega$ とすると1巻きあたり $\\Phi=\\Phi_0\\cos4\\omega t$ と変化する．2つのコイルは起電力が強め合うように直列につながれ，抵抗値 $r$ の電球に電流を流す．コイルの抵抗，2つのコイルの間の相互誘導，導線の抵抗は無視し，電流は十分時間がたった後の正弦波の交流とする．車輪は地面をすべらずに転がる．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "回路全体の起電力の最大値 $E_0$，電流の最大値 $I_0$，電球の平均消費電力 $\\overline{P}$ を，$N,\\ \\Phi_0,\\ L,\\ r,\\ \\omega$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "自転車の速さを大きくしていくと，$I_0$ はある値 $I_\\infty$ に，$\\overline{P}$ はある値 $P_\\infty$ に近づく．$I_\\infty$ と $P_\\infty$ を求めよ．また，$I_\\infty$ が $r$ によらない理由を，「2つのコイルを貫く磁束の総和（巻数を考えたもの）$2N\\Phi+2Li$」がほぼ一定に保たれることから説明せよ（$i$ は電流）．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\overline{P}=\\dfrac12P_\\infty$ となるときの自転車の速さ $v_{1/2}$ を，$R,\\ a,\\ b,\\ r,\\ L$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "抵抗値 $r_1$ の電球と $r_2$ の電球 $(r_1<r_2)$ を付けかえて比べる．遅いときと速いときでは，それぞれどちらの電球の消費電力が大きいか．また，両者の消費電力が等しくなる自転車の速さ $v^*$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：コイルのリアクタンスをもつ自転車用発電機の出力の頭打ち（定電圧源から定電流源への移り変わり）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$E_0=8N\\Phi_0\\omega$，$I_0=\\dfrac{8N\\Phi_0\\omega}{\\sqrt{r^2+64L^2\\omega^2}}$，$\\overline{P}=\\dfrac{32N^2\\Phi_0^{\\,2}\\omega^2r}{r^2+64L^2\\omega^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$I_\\infty=\\dfrac{N\\Phi_0}{L}$，$P_\\infty=\\dfrac{N^2\\Phi_0^{\\,2}r}{2L^2}$（理由は解説）"
+   },
+   {
+    "id": "3",
+    "tex": "$v_{1/2}=\\dfrac{Rar}{8bL}$"
+   },
+   {
+    "id": "4",
+    "tex": "遅いときは $r_1$，速いときは $r_2$ の電球が大きい，$v^*=\\dfrac{Ra\\sqrt{r_1r_2}}{8bL}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　1つのコイルの起電力は $-N\\dfrac{d\\Phi}{dt}=4N\\Phi_0\\omega\\sin4\\omega t$ で，強め合うように直列につないだので回路の起電力は\n\\[ E=8N\\Phi_0\\omega\\sin4\\omega t,\\qquad E_0=\\boldsymbol{8N\\Phi_0\\omega} \\]\n角周波数は $4\\omega$ である．2つのコイルの自己インダクタンスの和は $2L$ なので，リアクタンスは $X=2L\\cdot4\\omega=8L\\omega$，インピーダンスは $\\sqrt{r^2+X^2}$ である．\n\\[ I_0=\\frac{E_0}{\\sqrt{r^2+X^2}}=\\boldsymbol{\\frac{8N\\Phi_0\\omega}{\\sqrt{r^2+64L^2\\omega^2}}},\\qquad \\overline{P}=\\frac12I_0^{\\,2}r=\\boldsymbol{\\frac{32N^2\\Phi_0^{\\,2}\\omega^2r}{r^2+64L^2\\omega^2}} \\]\n\n\\textbf{(2)}　自転車の速さは $\\omega$ に比例する．$\\omega\\to\\infty$ では分母の $r^2$ が無視できて\n\\[ I_\\infty=\\frac{8N\\Phi_0\\omega}{8L\\omega}=\\boldsymbol{\\frac{N\\Phi_0}{L}},\\qquad P_\\infty=\\frac12I_\\infty^{\\,2}r=\\boldsymbol{\\frac{N^2\\Phi_0^{\\,2}r}{2L^2}} \\]\n起電力もリアクタンスも $\\omega$ に比例して増えるので，その比である電流は頭打ちになる．\n\n\\textbf{理由}　回路の式は，コイルの全磁束（巻数をかけたもの）を $\\Lambda=2N\\Phi+2Li$ として\n\\[ -\\frac{d\\Lambda}{dt}=ri \\]\nと書ける（磁石による起電力と自己誘導の起電力の和が電球の電圧降下に等しい）．速い回転では $\\Lambda$ を変えようとする速さ（$\\omega$ に比例）に比べて右辺 $ri$ は電流が有限なので小さく，$\\Lambda$ はほぼ一定（平均 0）に保たれる．つまりコイルは抵抗のない閉じた回路のように「磁束を保つ」電流を流し，$2Li\\fallingdotseq-2N\\Phi$，すなわち $i\\fallingdotseq-\\dfrac{N\\Phi_0}{L}\\cos4\\omega t$ となる．この電流は磁石の磁束を打ち消すのに必要な量だけで決まるので，電球の抵抗にも回転の速さにもよらない．発電機は速いときには「定電流源」としてはたらく．\n\n\\textbf{(3)}　$\\dfrac{\\overline{P}}{P_\\infty}=\\dfrac{X^2}{r^2+X^2}=\\dfrac12$ より $X=r$，すなわち $8L\\omega=r$，$\\omega=\\dfrac{r}{8L}$．車輪の角速度を $\\Omega$ とすると，接点の速さが等しいことから $a\\omega=b\\Omega$，自転車の速さは $v=R\\Omega=\\dfrac{Ra}{b}\\omega$ なので\n\\[ v_{1/2}=\\boldsymbol{\\frac{Rar}{8bL}} \\]\n\n\\textbf{(4)}　遅いとき（$X\\ll r$）は $\\overline{P}\\fallingdotseq\\dfrac{E_0^{\\,2}}{2r}$ で，起電力が決まった電源（定電圧源）として振る舞うので抵抗の\\textbf{小さい $r_1$} の方が明るい．速いとき（$X\\gg r$）は $\\overline{P}\\fallingdotseq\\dfrac12I_\\infty^{\\,2}r$ で，定電流源なので抵抗の\\textbf{大きい $r_2$} の方が明るい．両者が等しくなるのは\n\\[ \\frac{r_1}{r_1^{\\,2}+X^2}=\\frac{r_2}{r_2^{\\,2}+X^2}\\ \\Longrightarrow\\ X^2(r_2-r_1)=r_1r_2(r_2-r_1)\\ \\Longrightarrow\\ X=\\sqrt{r_1r_2} \\]\nのときで，$8L\\omega=\\sqrt{r_1r_2}$ より\n\\[ v^*=\\boldsymbol{\\frac{Ra\\sqrt{r_1r_2}}{8bL}} \\]\nリアクタンスが2つの抵抗値の相乗平均になる速さで明るさが入れかわる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "発電機の起電力とコイルのリアクタンスはともに回転の角速度に比例するので，速いときの電流は頭打ちになる．これはコイルの全磁束（磁石の磁束＋自己誘導の磁束）がほぼ一定に保たれることの表れで，発電機は遅いときは定電圧源，速いときは定電流源として振る舞う．そのため2つの電球の明るさは，リアクタンスが抵抗値の相乗平均になる速さで入れかわる．"
+ },
+ "concepts": [
+  "ac-circuit",
+  "torque",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "発電機",
+  "リアクタンス",
+  "インピーダンス",
+  "磁束",
+  "消費電力"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

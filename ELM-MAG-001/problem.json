@@ -1,0 +1,102 @@
+{
+ "id": "ELM-MAG-001",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "平行な2本の電流にはたらく力",
+ "course": "物理",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "derivation",
+  "concept"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "真空中で，距離 $r$ 離れた平行な長い2本の導線に，同じ向きに電流 $I_1$，$I_2$ を流した．真空の透磁率を $\\mu_0$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電流 $I_1$ が導線2の位置につくる磁場の磁束密度 $B_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "導線2の長さ $l$ の部分が受ける力の大きさ $F$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "2本の導線は引き合うか，反発し合うか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$B_1=\\dfrac{\\mu_0I_1}{2\\pi r}$",
+    "grading": "B_1：μ_0 I_1/(2π r)"
+   },
+   {
+    "id": "2",
+    "tex": "$F=\\dfrac{\\mu_0I_1I_2l}{2\\pi r}$",
+    "grading": "F：μ_0 I_1 I_2 l/(2π r)"
+   },
+   {
+    "id": "3",
+    "tex": "引き合う．",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 直線電流が距離 $r$ につくる磁場は $H=\\dfrac{I_1}{2\\pi r}$，磁束密度は $B=\\mu_0H=\\dfrac{\\mu_0I_1}{2\\pi r}$．\n\n(2) 電流が磁場から受ける力 $F=I_2B_1l=\\dfrac{\\mu_0I_1I_2l}{2\\pi r}$．\n\n(3) 右ねじの法則で $B_1$ の向きを求め，フレミングの左手の法則を使うと，導線2は導線1に向かう力を受ける．同じ向きの電流は引き合い，逆向きなら反発し合う．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一方の電流がつくる磁場から，もう一方の電流が力を受ける．"
+ },
+ "concepts": [
+  "lorentz-force"
+ ],
+ "laws": [
+  "straight-current-field",
+  "current-force"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "直線電流",
+  "磁場",
+  "電流が受ける力"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

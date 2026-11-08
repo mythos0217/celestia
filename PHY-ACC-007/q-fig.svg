@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 320">
+<defs><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker></defs>
+<circle cx="150" cy="160" r="120" fill="none" stroke="#222" stroke-width="2.4"/>
+<circle cx="150" cy="160" r="106" fill="none" stroke="#222" stroke-width="1"/>
+<circle cx="150" cy="160" r="4" fill="#222"/>
+<circle cx="206.6" cy="92.6" r="14" fill="#eef2f8" stroke="#222" stroke-width="1.6"/>
+<line x1="150" y1="160" x2="206.6" y2="92.6" stroke="#222" stroke-width="1"/>
+<text x="186.3" y="140.3" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">b</text>
+<line x1="150" y1="160" x2="37.2" y2="119.0" stroke="#222" stroke-width="1"/>
+<text x="89.6" y="131.5" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">R</text>
+<text x="224.6" y="80.6" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">回転子（半径 <tspan font-family="Times New Roman, serif" font-style="italic">a</tspan>）</text>
+<text x="140" y="180" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">O</text>
+<text x="60" y="310" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">(a) 車輪の側面と回転子</text>
+<circle cx="470" cy="150" r="42" fill="white" stroke="#222" stroke-width="1.6"/>
+<line x1="470" y1="150" x2="508.8" y2="166.1" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="495.0" y="155.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">N</text>
+<line x1="470" y1="150" x2="486.1" y2="188.8" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="486.2" y="176.2" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">S</text>
+<line x1="470" y1="150" x2="453.9" y2="188.8" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="465.0" y="185.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">N</text>
+<line x1="470" y1="150" x2="431.2" y2="166.1" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="443.8" y="176.2" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">S</text>
+<line x1="470" y1="150" x2="431.2" y2="133.9" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="435.0" y="155.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">N</text>
+<line x1="470" y1="150" x2="453.9" y2="111.2" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="443.8" y="133.8" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">S</text>
+<line x1="470" y1="150" x2="486.1" y2="111.2" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="465.0" y="125.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">N</text>
+<line x1="470" y1="150" x2="508.8" y2="133.9" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="486.2" y="133.8" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">S</text>
+<circle cx="470" cy="150" r="4" fill="#222"/>
+<ellipse cx="358" cy="150" rx="5" ry="17.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<ellipse cx="370" cy="150" rx="5" ry="17.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<ellipse cx="382" cy="150" rx="5" ry="17.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<ellipse cx="394" cy="150" rx="5" ry="17.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<ellipse cx="406" cy="150" rx="5" ry="17.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<ellipse cx="534" cy="150" rx="5" ry="17.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<ellipse cx="546" cy="150" rx="5" ry="17.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<ellipse cx="558" cy="150" rx="5" ry="17.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<ellipse cx="570" cy="150" rx="5" ry="17.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<ellipse cx="582" cy="150" rx="5" ry="17.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="356" y="190" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">コイル</text>
+<text x="532" y="190" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">コイル</text>
+<polyline points="358,133 358,40 456,40" fill="none" stroke="#222" stroke-width="1.4"/>
+<polyline points="582,133 582,40 484,40" fill="none" stroke="#222" stroke-width="1.4"/>
+<polyline points="406,167 406,220 534,220 534,167" fill="none" stroke="#222" stroke-width="1.4"/>
+<circle cx="470" cy="40" r="14" fill="white" stroke="#222" stroke-width="1.6"/>
+<line x1="460" y1="30" x2="480" y2="50" stroke="#222" stroke-width="1.2"/><line x1="460" y1="50" x2="480" y2="30" stroke="#222" stroke-width="1.2"/>
+<text x="490" y="32" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">電球 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="16">r</tspan></text>
+<path d="M 448,96 A 34 34 0 0 1 492,96" fill="none" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="496" y="94" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">ω</text>
+<text x="390" y="310" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">(b) 磁石・コイル・電球</text>
+</svg>

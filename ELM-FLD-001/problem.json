@@ -1,0 +1,136 @@
+{
+ "id": "ELM-FLD-001",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "正負の点電荷のつくる電場と電位",
+ "course": "物理",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "点 A に電気量 $+Q$，点 B に $-Q$ の点電荷を固定した．AB の距離は $2a$，O は AB の中点，C は AB の延長上で B から $a$ 離れた点である．クーロンの法則の比例定数を $k$ とし，電位の基準は無限遠とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "O での電場の大きさ $E_{\\mathrm O}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "O での電位 $V_{\\mathrm O}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "C での電位 $V_{\\mathrm C}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "電気量 $q\\ (>0)$ の点電荷を C から O までゆっくり運ぶのに必要な仕事 $W$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "一直線上に、+Q の点 A、中点 O、−Q の点 B、B から a 離れた点 C が並ぶ。AO、OB、BC はいずれも a",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$E_{\\mathrm O}=\\dfrac{2kQ}{a^2}$",
+    "grading": "E_O：2k Q/a^2"
+   },
+   {
+    "id": "2",
+    "tex": "$V_{\\mathrm O}=0$",
+    "grading": "V_O：0"
+   },
+   {
+    "id": "3",
+    "tex": "$V_{\\mathrm C}=-\\dfrac{2kQ}{3a}$",
+    "grading": "V_C：-2k Q/(3a)"
+   },
+   {
+    "id": "4",
+    "tex": "$W=\\dfrac{2kQq}{3a}$",
+    "grading": "W：2k Q q/(3a)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $+Q$ のつくる電場は A から遠ざかる向き（O では B 向き），$-Q$ のつくる電場は B に向かう向き（O では B 向き）．同じ向きなので足して \\[E_{\\mathrm O}=k\\frac Q{a^2}+k\\frac Q{a^2}=\\frac{2kQ}{a^2}\\]\n\n(2) 電位はスカラーなので足すだけ：$V_{\\mathrm O}=k\\dfrac Qa+k\\dfrac{-Q}a=0$．電場は $0$ でないのに電位は $0$．\n\n(3) $V_{\\mathrm C}=k\\dfrac Q{3a}-k\\dfrac Qa=-\\dfrac{2kQ}{3a}$．\n\n(4) 必要な仕事は電位の差 × 電気量：$W=q(V_{\\mathrm O}-V_{\\mathrm C})=\\dfrac{2kQq}{3a}$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電場はベクトルの和，電位はスカラーの和．"
+ },
+ "simulation": {
+  "id": "elm.charges",
+  "preset": {
+   "q1": 2,
+   "q2": -2,
+   "d": 1
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "coulomb-field"
+ ],
+ "laws": [
+  "point-charge-field",
+  "point-charge-potential",
+  "coulomb-law"
+ ],
+ "misconceptions": [
+  "MC-POTENTIAL-FIELD"
+ ],
+ "tags": [
+  "電場",
+  "電位",
+  "点電荷"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

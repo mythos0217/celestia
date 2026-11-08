@@ -1,0 +1,102 @@
+{
+ "id": "ELM-ACC-002",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-06",
+ "topic": "実効値と変圧器",
+ "course": "物理",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "実効値 $100\\,\\mathrm V$ の交流電源がある．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電圧の最大値を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この電源に $50\\,\\Omega$ の抵抗をつないだとき，平均の消費電力を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "1次コイルと2次コイルの巻き数の比が $20:1$ の変圧器の1次側にこの電源をつないだ．2次側の電圧の実効値を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$100\\sqrt2\\fallingdotseq141\\,\\mathrm V$",
+    "grading": "100sqrt(2) [V]"
+   },
+   {
+    "id": "2",
+    "tex": "$200\\,\\mathrm W$",
+    "grading": "200 [W]"
+   },
+   {
+    "id": "3",
+    "tex": "$5.0\\,\\mathrm V$",
+    "grading": "5 [V]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $V_0=\\sqrt2V_e=100\\sqrt2\\,\\mathrm V$．\n\n(2) 平均の電力は実効値で直流と同じように計算できる：$\\overline P=\\dfrac{V_e^2}R=\\dfrac{100^2}{50}=200\\,\\mathrm W$．\n\n(3) $\\dfrac{V_1}{V_2}=\\dfrac{N_1}{N_2}$ より $V_2=100\\times\\dfrac1{20}=5.0\\,\\mathrm V$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "実効値＝同じ電力を出す直流の値．変圧器の電圧は巻き数に比例．"
+ },
+ "concepts": [
+  "ac-circuit",
+  "electromagnetic-induction"
+ ],
+ "laws": [
+  "rms-value",
+  "transformer"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "実効値",
+  "変圧器",
+  "交流"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

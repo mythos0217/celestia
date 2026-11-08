@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+<defs><marker id="q-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#222"/></marker></defs>
+<rect x="30" y="40" width="210" height="200" rx="14" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="6,4"/>
+<text x="40" y="32" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">測定装置</text>
+<g stroke="#222" stroke-width="1.6" fill="none">
+<line x1="100" y1="70" x2="100" y2="95"/>
+<rect x="90" y="95" width="20" height="50"/>
+<line x1="100" y1="145" x2="100" y2="172"/>
+<line x1="82" y1="172" x2="118" y2="172"/>
+<line x1="91" y1="182" x2="109" y2="182" stroke-width="3"/>
+<line x1="100" y1="182" x2="100" y2="215"/>
+<line x1="100" y1="70" x2="165" y2="70"/>
+<circle cx="180" cy="70" r="15"/>
+<line x1="195" y1="70" x2="290" y2="70"/>
+<line x1="100" y1="215" x2="290" y2="215"/>
+<line x1="290" y1="70" x2="290" y2="128"/>
+<line x1="270" y1="128" x2="310" y2="128" stroke-width="3"/>
+<line x1="270" y1="146" x2="310" y2="146" stroke-width="3"/>
+<line x1="290" y1="146" x2="290" y2="215"/>
+</g>
+<circle cx="240" cy="70" r="3.5" fill="#222"/><circle cx="240" cy="215" r="3.5" fill="#222"/>
+<text x="173" y="76" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">A</text>
+<text x="70" y="126" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">r</text>
+<text x="40" y="186" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">E<tspan font-style="normal">(</tspan>t<tspan font-style="normal">)</tspan></text>
+<text x="318" y="143" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">C</text>
+<!-- triangle wave graph -->
+<line x1="370" y1="150" x2="590" y2="150" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+<line x1="380" y1="240" x2="380" y2="50" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+<polyline points="380,210 430,90 480,210 530,90 580,210" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+<line x1="380" y1="90" x2="430" y2="90" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="380" y1="210" x2="480" y2="210" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="384" y="44" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">E</text>
+<text x="580" y="170" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">t</text>
+<text x="340" y="95" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">E<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<text x="330" y="215" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222"><tspan font-style="normal" font-family="Noto Sans CJK JP, sans-serif">−</tspan>E<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<line x1="380" y1="262" x2="480" y2="262" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+<line x1="480" y1="262" x2="380" y2="262" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+<line x1="480" y1="212" x2="480" y2="268" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="424" y="284" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">T</text>
+</svg>

@@ -1,0 +1,135 @@
+{
+ "id": "PHY-ACC-011",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-06",
+ "topic": "内部抵抗のある信号源につないだ並列共振回路（選択度の帯域幅と最大電力のトレードオフ）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ラジオの同調回路を，図のようなモデルで考える．起電力の最大値 $V_1$，角周波数 $\\omega$ の交流電源と抵抗値 $r$ の抵抗（アンテナ側の内部抵抗とみなす）を直列にし，その先に，自己インダクタンス $L$ のコイル，電気容量 $C$ を変えられるコンデンサー，抵抗値 $R$ の抵抗（イヤホンなど受信側の負荷）を並列につないだ部分（以下，並列部）を接続する．並列部の両端の交流電圧の最大値を $V_2$，並列部に流れ込む電流の最大値を $I_2$ とする．回路は定常状態にあり，コイルの抵抗は無視できる．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "角周波数 $\\omega_1$ の電波を受けるとき，$V_2$ を最大にする $C$ の値と，そのときの $V_2$，および抵抗 $R$ で消費される電力の時間平均 $P$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$C$ を (1) の値に固定して電源の角周波数 $\\omega$ を変える．$V_2$ が (1) の値の半分になる角周波数を $\\omega_2$，$\\omega_3$（$\\omega_2>\\omega_3$）とする．差 $\\Delta\\omega=\\omega_2-\\omega_3$ と積 $\\omega_2\\omega_3$ を求めよ．近似は用いないこと．"
+     },
+     {
+      "id": "3",
+      "tex": "比 $V_2/I_2$ が $\\omega=\\omega_1$ のときの値の半分になる2つの角周波数の差を $\\Delta\\omega'$ とする．$\\Delta\\omega/\\Delta\\omega'$ を求めよ．また，この結果から，電源側の抵抗 $r$ が同調の鋭さ（選択度）にどう影響するかを述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$r$，$L$ と (1) の $C$ は固定し，混信を避けるため $\\Delta\\omega$ が与えられた値 $D$ 以下でなければならないとする．$\\kappa=\\dfrac{rCD}{\\sqrt3}$ とおく．この条件のもとで $P$ を最大にする $R$ と，$P$ の最大値を求めよ．$\\kappa$ の値によって場合分けすること．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：内部抵抗のある信号源につないだ並列共振回路（選択度の帯域幅と最大電力のトレードオフ）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：内部抵抗のある信号源につないだ並列共振回路（選択度の帯域幅と最大電力のトレードオフ）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$C=\\dfrac{1}{\\omega_1^2L}$，$V_2=\\dfrac{R}{R+r}V_1$，$P=\\dfrac{RV_1^2}{2(R+r)^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Delta\\omega=\\dfrac{\\sqrt3}{C}\\left(\\dfrac1r+\\dfrac1R\\right)=\\dfrac{\\sqrt3(R+r)}{rRC}$，$\\omega_2\\omega_3=\\omega_1^2=\\dfrac{1}{LC}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{\\Delta\\omega}{\\Delta\\omega'}=1+\\dfrac Rr$．$r$ は負荷 $R$ と並列にはたらいて共振を鈍らせ，$r$ が小さいほど選択度が下がる"
+   },
+   {
+    "id": "4",
+    "tex": "$\\kappa\\le1$ のとき条件を満たす $R$ はない．$1<\\kappa<2$ のとき $R=\\dfrac{r}{\\kappa-1}$，$P_{\\max}=\\dfrac{(\\kappa-1)V_1^2}{2\\kappa^2r}$．$\\kappa\\ge2$ のとき $R=r$，$P_{\\max}=\\dfrac{V_1^2}{8r}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{準備：並列部のアドミタンス}　並列部の電圧の最大値を $V_2$ とすると，各素子を流れる電流の最大値は $R$：$\\dfrac{V_2}{R}$（電圧と同位相），$C$：$\\omega CV_2$（$\\frac{\\pi}{2}$ 進む），$L$：$\\dfrac{V_2}{\\omega L}$（$\\frac{\\pi}{2}$ 遅れる）である．$C$ と $L$ の電流は逆位相なので打ち消し合い，並列部に流れ込む電流は，電圧と同位相の成分 $\\dfrac{V_2}{R}$ と，$\\frac{\\pi}{2}$ ずれた成分 $bV_2$（$b=\\omega C-\\dfrac{1}{\\omega L}$）の合成になる：\n\\[ I_2=V_2\\sqrt{\\frac1{R^2}+b^2}. \\]\n電源の起電力は，$r$ の電圧（$I_2$ と同位相）と $V_2$ の和である．位相図で $V_2$ の向きを基準にすると，$rI_2$ は $V_2$ と同じ向きの成分 $\\dfrac{r}{R}V_2$ と直交する成分 $rbV_2$ をもつので\n\\[ V_1=V_2\\sqrt{\\left(1+\\frac rR\\right)^2+r^2b^2}. \\tag{*} \\]\n\n\\textbf{(1)} (*) で $V_1$ が一定なので，$V_2$ が最大になるのは $b=0$，すなわち $\\omega_1C=\\dfrac{1}{\\omega_1L}$ のとき：\n\\[ \\boldsymbol{C=\\frac{1}{\\omega_1^2L}},\\qquad \\boldsymbol{V_2=\\frac{R}{R+r}V_1},\\qquad \\boldsymbol{P=\\frac{V_2^2}{2R}=\\frac{RV_1^2}{2(R+r)^2}}. \\]\nこのとき $L$ と $C$ の電流は打ち消し合い，電源から見ると $r$ と $R$ の直列回路になる．\n\n\\textbf{(2)} (*) より，$V_2$ が共振時の半分になるのは\n\\[ \\left(1+\\frac rR\\right)^2+r^2b^2=4\\left(1+\\frac rR\\right)^2 \\iff b=\\pm\\sqrt3\\left(\\frac1r+\\frac1R\\right)\\equiv\\pm b_0 \\]\nのときである．$\\omega_2$ では $\\omega_2C-\\dfrac1{\\omega_2L}=b_0$，$\\omega_3$ では $\\omega_3C-\\dfrac1{\\omega_3L}=-b_0$．両式を $\\omega$ の2次方程式 $LC\\omega^2\\mp b_0L\\omega-1=0$ とみると，正の解は\n\\[ \\omega_2=\\frac{b_0L+\\sqrt{b_0^2L^2+4LC}}{2LC},\\qquad \\omega_3=\\frac{-b_0L+\\sqrt{b_0^2L^2+4LC}}{2LC}. \\]\nしたがって，近似なしに\n\\[ \\boldsymbol{\\Delta\\omega=\\frac{b_0}{C}=\\frac{\\sqrt3}{C}\\left(\\frac1r+\\frac1R\\right)=\\frac{\\sqrt3(R+r)}{rRC}},\\qquad \\boldsymbol{\\omega_2\\omega_3=\\frac{1}{LC}=\\omega_1^2}. \\]\n帯域の幅は $L$ によらず，$C$ と「$r$ と $R$ の並列合成抵抗 $\\dfrac{rR}{r+R}$」だけで決まる．\n\n\\textbf{(3)} $\\dfrac{V_2}{I_2}=\\dfrac{1}{\\sqrt{1/R^2+b^2}}$ が共振時（$=R$）の半分になるのは $b=\\pm\\dfrac{\\sqrt3}{R}$ のときで，(2) と同じ計算で $\\Delta\\omega'=\\dfrac{\\sqrt3}{RC}$．よって\n\\[ \\boldsymbol{\\frac{\\Delta\\omega}{\\Delta\\omega'}=\\frac{R+r}{r}=1+\\frac Rr}. \\]\n並列部だけの性質（$V_2/I_2$）で見るより，実際に受信される電圧 $V_2$ の共振の幅は広い．電源の内部抵抗 $r$ は，共振回路から見ると負荷 $R$ と\\textbf{並列}にもう1つの抵抗がつながっているのと同じにはたらき，共振回路のエネルギーを逃がして共振を鈍らせる．$r$ が小さいほど（$R/r$ が大きいほど）帯域が広がり，選択度は下がる．\n\n\\textbf{(4)} 条件 $\\Delta\\omega\\le D$ は\n\\[ \\frac{\\sqrt3}{C}\\left(\\frac1r+\\frac1R\\right)\\le D \\iff 1+\\frac rR\\le\\kappa. \\]\n$\\kappa\\le1$ ならどんな $R$ でも満たせない．$\\kappa>1$ なら $\\boldsymbol{R\\ge\\dfrac{r}{\\kappa-1}}$ が許される範囲である．\n一方 $P(R)=\\dfrac{V_1^2}{2}\\cdot\\dfrac{R}{(R+r)^2}$ は $\\dfrac{dP}{dR}\\propto\\dfrac{r-R}{(R+r)^3}$ より $R=r$ で最大（整合）で，$R>r$ では減少する．\n・$\\kappa\\ge2$（$\\dfrac{r}{\\kappa-1}\\le r$）のとき，$R=r$ が許されるので $\\boldsymbol{R=r}$，$\\boldsymbol{P_{\\max}=\\dfrac{V_1^2}{8r}}$．\n\n・$1<\\kappa<2$ のとき，許される範囲はすべて $R>r$ の側にあり $P$ は減少関数なので，境界 $\\boldsymbol{R=\\dfrac{r}{\\kappa-1}}$ で最大：$R+r=\\dfrac{\\kappa r}{\\kappa-1}$ を代入して $\\boldsymbol{P_{\\max}=\\dfrac{(\\kappa-1)V_1^2}{2\\kappa^2r}}$．\n（$\\kappa=2$ で両者は一致する．）選択度を確保したいときは，負荷の抵抗をあえて整合値より大きくして，電力を少し犠牲にすることになる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "並列共振回路の受信電圧が半分になる2つの角周波数は，近似なしで差が $\\sqrt3/(C\\,R_{\\parallel})$，積が共振角周波数の2乗になり，$R_{\\parallel}$ は負荷と信号源の内部抵抗の並列合成である．そのため信号源の内部抵抗も共振を鈍らせ，帯域幅の制約のもとでは最大電力の整合 $R=r$ が許されない場合があり，最適な負荷は制約の境界で決まる．"
+ },
+ "concepts": [
+  "ac-circuit",
+  "wave-basics",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "並列共振",
+  "選択度",
+  "帯域幅",
+  "インピーダンス整合",
+  "位相図"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,136 @@
+{
+ "id": "PHY-ACC-012",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-06",
+ "topic": "電気容量が一様に分布した送電線の損失と分路リアクトルによる補償（集中定数近似の落とし穴）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "発電所から長さ $\\ell$ の2本の送電線で，消費地の抵抗に交流の電力を送る．送電線1本の抵抗は全体で $R$ で長さ方向に一様に分布し，2本の送電線の間の電気容量は全体で $C$ で長さ方向に一様に分布している．消費地には角周波数 $\\omega$，最大値 $V$ の交流電圧がかかり，消費地の抵抗は時間平均 $P$ の電力を消費している．送電線の抵抗による電圧降下は十分小さく，2本の送電線の間の電圧はどの位置でも消費地と同じ $V\\sin\\omega t$ とみなしてよい．電流はすべて最大値で表し，抵抗 $r$ に最大値 $I$ の交流電流が流れるときの時間平均の消費電力は $\\dfrac12rI^2$ であることを用いてよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "図(a)のように，電気容量をすべて消費地側の端に集めた回路で近似する．消費地の抵抗に流れる電流の最大値 $I_r$ とコンデンサーに流れる電流の最大値 $I_C$ を求め，2本の送電線全体での時間平均の消費電力（送電損失）$P_{\\rm B}$ を $P, V, \\omega, C, R$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "図(b)のように，送電線を長さ $\\dfrac{\\ell}{N}$ の $N$ 個の区間に分け，各区間を1本あたりの抵抗 $\\dfrac RN$ と，その消費地側にある電気容量 $\\dfrac CN$ のコンデンサーで表す．消費地から数えて $j$ 番目の区間の抵抗を流れる電流の最大値を求め，$N\\to\\infty$ として送電損失 $P_{\\rm B}'$ を求めよ．必要なら $\\displaystyle\\sum_{j=1}^{N}j^2=\\frac{N(N+1)(2N+1)}{6}$ を用いよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$P,\\omega,C,R$ を一定にして $V$ を変えるとき，$P_{\\rm B}'$ を最小にする $V^2$ と，$P_{\\rm B}'$ の最小値を求めよ．また，(1)の近似で同じ計算をした場合の最小値と比べ，その比を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "消費地側の端で，2本の送電線の間に自己インダクタンス $L$ のコイル（分路リアクトル）を消費地の抵抗と並列につないだ．(1)の近似で送電損失を最小にする $L$ を $L_1$，(2)のモデルで送電損失を最小にする $L$ を $L_2$ とする．$L_1$，$L_2$ を求めよ．また(2)のモデルで，$L=L_1$ のときと $L=L_2$ のときの送電損失を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：電気容量が一様に分布した送電線の損失と分路リアクトルによる補償（集中定数近似の落とし穴）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：電気容量が一様に分布した送電線の損失と分路リアクトルによる補償（集中定数近似の落とし穴）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I_r=\\dfrac{2P}{V}$，$I_C=\\omega CV$，$P_{\\rm B}=R\\left(\\dfrac{4P^2}{V^2}+\\omega^2C^2V^2\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\sqrt{\\left(\\dfrac{2P}{V}\\right)^2+\\left(\\dfrac{j}{N}\\omega CV\\right)^2}$，$P_{\\rm B}'=R\\left(\\dfrac{4P^2}{V^2}+\\dfrac{\\omega^2C^2V^2}{3}\\right)$"
+   },
+   {
+    "id": "3",
+    "tex": "$V^2=\\dfrac{2\\sqrt3P}{\\omega C}$，最小値 $\\dfrac{4\\sqrt3}{3}R\\omega CP$；(1)の近似の最小値 $4R\\omega CP$ の $\\dfrac{1}{\\sqrt3}$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "$L_1=\\dfrac{1}{\\omega^2C}$，$L_2=\\dfrac{2}{\\omega^2C}$；$L=L_1$ で $R\\left(\\dfrac{4P^2}{V^2}+\\dfrac{\\omega^2C^2V^2}{3}\\right)$（コイルがないときと同じ），$L=L_2$ で $R\\left(\\dfrac{4P^2}{V^2}+\\dfrac{\\omega^2C^2V^2}{12}\\right)$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 集中定数の近似}　消費地の抵抗の時間平均電力は $\\dfrac12VI_r=P$ より $I_r=\\dfrac{2P}{V}$（電圧と同位相）．コンデンサーのリアクタンスは $\\dfrac1{\\omega C}$ なので $I_C=\\omega CV$（位相は電圧より $\\dfrac{\\pi}{2}$ 進む）．位相が $\\dfrac{\\pi}{2}$ ずれた2つの電流の和の最大値は $I=\\sqrt{I_r^2+I_C^2}$ で，この電流が抵抗 $R$ の送電線2本を流れるので\n\\[ P_{\\rm B}=2\\cdot\\frac12RI^2=\\boldsymbol{R\\left(\\frac{4P^2}{V^2}+\\omega^2C^2V^2\\right)}. \\]\n\n\\textbf{(2) 分布のモデル}　電圧はどこでも $V\\sin\\omega t$ なので，各コンデンサーには同じ位相で最大値 $\\dfrac{\\omega CV}{N}$ の電流が流れる．消費地から $j$ 番目の区間の抵抗には，消費地の電流と，それより消費地側にある $j$ 個のコンデンサーの電流が流れるので，電圧と同位相の成分は $\\dfrac{2P}{V}$，$\\dfrac\\pi2$ 進んだ成分は $\\dfrac{j}{N}\\omega CV$ で，最大値は\n\\[ I_j=\\boldsymbol{\\sqrt{\\left(\\frac{2P}{V}\\right)^2+\\left(\\frac jN\\omega CV\\right)^2}}. \\]\n充電電流は発電所に近いほど大きい．2本の送電線の区間 $j$ での損失は $2\\cdot\\dfrac12\\cdot\\dfrac RN I_j^2$ なので\n\\[ P_{\\rm B}'=\\frac RN\\sum_{j=1}^{N}I_j^2=R\\left\\{\\frac{4P^2}{V^2}+\\omega^2C^2V^2\\cdot\\frac{(N+1)(2N+1)}{6N^2}\\right\\}\\ \\xrightarrow{N\\to\\infty}\\ \\boldsymbol{R\\left(\\frac{4P^2}{V^2}+\\frac{\\omega^2C^2V^2}{3}\\right)}. \\]\n充電電流の2乗の平均が最大値の2乗の $\\dfrac13$ になるためで，(1)の近似はこの部分の損失を3倍に見積もっている．\n\n\\textbf{(3) 最適な電圧}　相加平均と相乗平均の関係より\n\\[ P_{\\rm B}'=R\\left(\\frac{4P^2}{V^2}+\\frac{\\omega^2C^2V^2}{3}\\right)\\ge2R\\sqrt{\\frac{4P^2\\omega^2C^2}{3}}=\\frac{4}{\\sqrt3}R\\omega CP. \\]\n等号は $\\dfrac{4P^2}{V^2}=\\dfrac{\\omega^2C^2V^2}{3}$ のときで，$\\boldsymbol{V^2=\\dfrac{2\\sqrt3P}{\\omega C}}$，最小値は $\\boldsymbol{\\dfrac{4\\sqrt3}{3}R\\omega CP}$．電圧を上げると負荷電流は減るが充電電流が増えるので，損失を最小にする電圧がある．(1)の近似では同様に $V^2=\\dfrac{2P}{\\omega C}$ で最小値 $4R\\omega CP$ となるので，比は $\\boldsymbol{\\dfrac1{\\sqrt3}}$（分布のモデルの方が小さい）．\n\n\\textbf{(4) 分路リアクトル}　コイルの電流は最大値 $\\dfrac{V}{\\omega L}$ で位相が電圧より $\\dfrac\\pi2$ 遅れるので，コンデンサーの電流と逆位相で打ち消し合う．\n(1)の近似では送電線を流れる $\\dfrac\\pi2$ 進んだ成分は $\\omega CV-\\dfrac{V}{\\omega L}$ で，これを $0$ にする $\\boldsymbol{L_1=\\dfrac{1}{\\omega^2C}}$ のとき損失は $\\dfrac{4RP^2}{V^2}$ と最小に見える．\n(2)のモデルでは，区間 $j$ の $\\dfrac\\pi2$ 進んだ成分は $V\\left(\\dfrac jN\\omega C-a\\right)$（$a=\\dfrac1{\\omega L}$）で，$N\\to\\infty$ で $\\xi=\\dfrac jN$ についての2乗平均は\n\\[ \\int_0^1(\\omega C\\xi-a)^2\\,d\\xi=\\frac{\\omega^2C^2}{3}-\\omega Ca+a^2=\\left(a-\\frac{\\omega C}{2}\\right)^2+\\frac{\\omega^2C^2}{12} \\]\n（$\\displaystyle\\frac1N\\sum j=\\frac{N+1}{2N}\\to\\frac12$ を用いた）．よって損失は\n\\[ P_{\\rm B}'(L)=R\\left\\{\\frac{4P^2}{V^2}+V^2\\left(\\frac{1}{\\omega L}-\\frac{\\omega C}{2}\\right)^2+\\frac{\\omega^2C^2V^2}{12}\\right\\} \\]\nで，最小になるのは $\\dfrac1{\\omega L}=\\dfrac{\\omega C}2$，すなわち $\\boldsymbol{L_2=\\dfrac{2}{\\omega^2C}}$ のときで，損失は $\\boldsymbol{R\\left(\\dfrac{4P^2}{V^2}+\\dfrac{\\omega^2C^2V^2}{12}\\right)}$（無効電流による部分がコイルなしの $\\dfrac14$）．\n一方 $L=L_1$（$a=\\omega C$）では $\\left(\\dfrac{\\omega C}{2}\\right)^2+\\dfrac{\\omega^2C^2}{12}=\\dfrac{\\omega^2C^2}{3}$ なので，損失は $\\boldsymbol{R\\left(\\dfrac{4P^2}{V^2}+\\dfrac{\\omega^2C^2V^2}{3}\\right)}$ で，コイルがないときと全く同じになる．消費地側の端の1か所で全部を打ち消すと，コイルの電流が送電線全体を逆向きに流れて，消費地側の区間ではかえって無効電流が増えるからである．集中定数の近似は「どこを流れるか」を失うため，補償の最適値を誤らせる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "分布した電気容量の充電電流は消費地からの距離に比例して増えるので，損失は電流の2乗の平均（係数 $\\frac13$）で決まり，消費地側に集めた近似は無効電流による損失を3倍に見積もる．消費地側の1か所のコイルで補償するとき，集中近似では完全補償 $L=1/(\\omega^2C)$ が最適に見えるが，分布のモデルではそれは損失を全く減らさず，半分だけ打ち消す $L=2/(\\omega^2C)$ が最適で無効分の損失は $\\frac14$ になる．"
+ },
+ "concepts": [
+  "ac-circuit",
+  "wave-basics",
+  "capacitor"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "送電損失",
+  "無効電流",
+  "分布定数",
+  "位相",
+  "相加相乗平均",
+  "分路リアクトル"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

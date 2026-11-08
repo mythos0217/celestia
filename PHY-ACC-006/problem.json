@@ -1,0 +1,153 @@
+{
+ "id": "PHY-ACC-006",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-06",
+ "topic": "電流0の瞬間ごとに電池の向きを反転するLC回路（振動中心の切り替えによる共振的な増幅）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，自己インダクタンス $L$ のコイル，電気容量 $C$ のコンデンサー，起電力 $E$ の2個の電池と切り替えスイッチ S からなる回路がある．S を 1 側に入れると，コンデンサーの極板 a を高電位にしようとする向きに電池が入り，2 側に入れると逆向きに入る．a の b に対する電位を $V_C$，図の矢印の向きの電流を $i$ とする．S の切り替えは瞬時に行える．\n\n\\textbf{I}\\quad 導線・コイル・電池の抵抗は無視できるとする．はじめコンデンサーは帯電しておらず，時刻 $t=0$ に S を 1 側に入れた．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電流が初めて $0$ になるまでの $V_C$ と $i$ を $t$ の関数として求めよ．また，電流が初めて $0$ になる時刻 $t_1$ と，そのときの $V_C$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "時刻 $t_1$ に S を 2 側に切り替え，以後，電流が $0$ になるたびに S を切り替えた．$n$ 回目に電流が $0$ になる時刻 $t_n$ と，そのときの $V_C$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$t_n<t<t_{n+1}$ の間の電流の大きさの最大値と，この間に電池がした仕事を求めよ．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "\\textbf{II}\\quad 次に，コイルが小さな抵抗 $r$ をもつ場合を考える．この回路で S を切り替えずにおくと，電流が $0$ になる瞬間ごとに，$V_C$ とそのときのつり合いの値（S が 1 側なら $E$，2 側なら $-E$）との差の大きさが一定の比 $\\kappa$（$0<\\kappa<1$）で小さくなっていく．I と同様に，電流が $0$ になるたびに S を切り替え続けた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "4",
+      "tex": "十分に時間がたつと，電流が $0$ になる瞬間の $|V_C|$ は一定値 $V_{\\mathrm p}$ に近づく．$V_{\\mathrm p}$ を $E$，$\\kappa$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "$r$ が十分小さく，$V_{\\mathrm p}\\gg E$ で，$V_C$ は近似的に振幅 $V_{\\mathrm p}$，角周波数 $\\dfrac{1}{\\sqrt{LC}}$ の単振動とみなせるとする．1回の切り替えから次の切り替えまでに電池がする仕事と抵抗で発生するジュール熱のつり合いから，$V_{\\mathrm p}$ を $E$，$L$，$C$，$r$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：電流0の瞬間ごとに電池の向きを反転するLC回路（振動中心の切り替えによる共振的な増幅）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：電流0の瞬間ごとに電池の向きを反転するLC回路（振動中心の切り替えによる共振的な増幅）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\omega_0=\\dfrac{1}{\\sqrt{LC}}$ として $V_C=E(1-\\cos\\omega_0t)$，$i=E\\sqrt{\\dfrac CL}\\sin\\omega_0t$；$t_1=\\pi\\sqrt{LC}$，$V_C=2E$"
+   },
+   {
+    "id": "2",
+    "tex": "$t_n=n\\pi\\sqrt{LC}$，$V_C(t_n)=(-1)^{n-1}\\,2nE$"
+   },
+   {
+    "id": "3",
+    "tex": "最大値 $(2n+1)E\\sqrt{\\dfrac CL}$，仕事 $2(2n+1)CE^2$"
+   },
+   {
+    "id": "4",
+    "tex": "$V_{\\mathrm p}=\\dfrac{1+\\kappa}{1-\\kappa}E$"
+   },
+   {
+    "id": "5",
+    "tex": "$V_{\\mathrm p}=\\dfrac{4E}{\\pi r}\\sqrt{\\dfrac LC}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}\n\na の電荷を $q=CV_C$ とすると $i=\\dfrac{\\Delta q}{\\Delta t}$．S が 1 側のとき，閉回路について\n\\[ E=L\\frac{\\Delta i}{\\Delta t}+V_C \\quad\\Longrightarrow\\quad LC\\frac{d^2V_C}{dt^2}=-(V_C-E) \\]\nこれは $V_C=E$ を中心とする角周波数 $\\omega_0=\\dfrac{1}{\\sqrt{LC}}$ の単振動の式である．$V_C(0)=0$，$i(0)=0$ より\n\\[ \\boldsymbol{V_C=E(1-\\cos\\omega_0t)},\\qquad \\boldsymbol{i=C\\frac{dV_C}{dt}=E\\sqrt{\\frac CL}\\sin\\omega_0t} \\]\n電流が初めて $0$ になるのは半周期後で $t_1=\\boldsymbol{\\pi\\sqrt{LC}}$，このとき $V_C=\\boldsymbol{2E}$．\n\n\\textbf{(2) 振動の中心の切り替え}\n\nS が 2 側なら同様に $V_C=-E$ を中心とする角周波数 $\\omega_0$ の単振動になる．電流 $0$ の瞬間は $V_C$ が端にあるので，切り替えた瞬間に $V_C$ は新しい中心から最も離れた位置にあり，そこから半周期 $\\pi\\sqrt{LC}$ で中心の反対側の同じ距離の位置に達して電流が再び $0$ になる（単振動の周期は振幅によらない）．\n\n$t_1$ で $V_C=2E$，新しい中心 $-E$ からの距離は $3E$ なので，$t_2$ で $V_C=-E-3E=-4E$．一般に $t_n$ で $V_C=(-1)^{n-1}2nE$ とすると，次の中心 $(-1)^nE$ からの距離は $2nE+E=(2n+1)E$ なので，$t_{n+1}$ では $V_C=(-1)^n\\{E+(2n+1)E\\}=(-1)^n2(n+1)E$．よって帰納的に\n\\[ t_n=\\boldsymbol{n\\pi\\sqrt{LC}},\\qquad V_C(t_n)=\\boldsymbol{(-1)^{n-1}\\,2nE} \\]\n半周期ごとに振幅が $2E$ ずつ増える．\n\n\\textbf{(3)}\n\n$t_n<t<t_{n+1}$ の $V_C$ の振幅は $(2n+1)E$ なので，電流の振幅は\n\\[ C\\omega_0(2n+1)E=\\boldsymbol{(2n+1)E\\sqrt{\\frac CL}} \\]\n両端の時刻では電流が $0$ でコイルのエネルギーは $0$．抵抗がないので，電池の仕事はコンデンサーのエネルギーの増加に等しい：\n\\[ \\frac12C\\{2(n+1)E\\}^2-\\frac12C(2nE)^2=\\boldsymbol{2(2n+1)CE^2} \\]\n（確認：この間に電池を起電力の向きに通過する電気量は $C\\{2nE+2(n+1)E\\}=2(2n+1)CE$ で，仕事は $E$ 倍の $2(2n+1)CE^2$．）\n\n\\textbf{(4) 損失がある場合の定常状態}\n\n電流 $0$ の瞬間に $|V_C|=V_{\\mathrm p}$ で，切り替え後の中心は反対符号の $\\mp E$ なので，中心からの差は $V_{\\mathrm p}+E$．次に電流が $0$ になるとき差は $\\kappa(V_{\\mathrm p}+E)$ になり，$V_C$ は中心の反対側にあるので $|V_C|=E+\\kappa(V_{\\mathrm p}+E)$．定常ならこれが $V_{\\mathrm p}$ に等しく\n\\[ V_{\\mathrm p}=E+\\kappa(V_{\\mathrm p}+E)\\quad\\Longrightarrow\\quad V_{\\mathrm p}=\\boldsymbol{\\frac{1+\\kappa}{1-\\kappa}E} \\]\n$\\kappa\\to1$（損失 $\\to0$）で $V_{\\mathrm p}\\to\\infty$ となり，I の結果と矛盾しない．\n\n\\textbf{(5) エネルギーのつり合い}\n\n1回の区間で $V_C$ は $\\pm V_{\\mathrm p}$ から $\\mp V_{\\mathrm p}$ まで変わり，電池を起電力の向きに $2CV_{\\mathrm p}$ の電気量が通るので，電池の仕事は $2CEV_{\\mathrm p}$．一方，電流は振幅 $C\\omega_0V_{\\mathrm p}$ の正弦波とみなせるので，半周期 $\\dfrac{\\pi}{\\omega_0}$ のジュール熱は\n\\[ r\\cdot\\frac{(C\\omega_0V_{\\mathrm p})^2}{2}\\cdot\\frac{\\pi}{\\omega_0}=\\frac{\\pi rC^2\\omega_0V_{\\mathrm p}^{\\,2}}{2} \\]\n両者を等しいとおいて\n\\[ V_{\\mathrm p}=\\frac{4E}{\\pi rC\\omega_0}=\\boldsymbol{\\frac{4E}{\\pi r}\\sqrt{\\frac LC}} \\]\n（(4) で小さい $r$ に対して $1-\\kappa\\approx\\dfrac{\\pi r}{2}\\sqrt{\\dfrac CL}$ とすれば同じ結果になる．$\\dfrac1r\\sqrt{\\dfrac LC}$ は共振の鋭さ $Q$ であり，振幅 $E$ の矩形波電圧に含まれる基本振動の成分の振幅が $\\dfrac{4}{\\pi}E$ であることと対応している．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電池の向きを変えると LC 振動の「つり合いの位置」が $\\pm E$ に切り替わるだけで，各区間は振幅によらない半周期の単振動になる．電流0（$V_C$ が端）の瞬間に中心を反転させると，半周期ごとに振幅が $2E$ ずつ増える．損失があるときの定常振幅は，差の減衰比による漸化式とも，電池の仕事とジュール熱のつり合いとも求まり，$\\frac{4}{\\pi}QE$ となる．"
+ },
+ "concepts": [
+  "ac-circuit",
+  "simple-harmonic-motion",
+  "work-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "LC振動",
+  "電気振動",
+  "共振",
+  "単振動の中心",
+  "エネルギー収支",
+  "矩形波"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

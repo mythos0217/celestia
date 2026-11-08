@@ -1,0 +1,101 @@
+{
+ "id": "ELM-FLD-002",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "一様な電場で加速される電子",
+ "course": "物理",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "間隔 $d$ の平行な2枚の金属板の間に電位差 $V$ をかけ，一様な電場をつくった．負極板の位置から，質量 $m$，電気量 $-e$ の電子を静かに放した．重力は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "極板間の電場の大きさ $E$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "電子が正極板に達したときの速さ $v$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "電子が正極板に達するまでの時間 $t$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$E=\\dfrac Vd$",
+    "grading": "E：V/d"
+   },
+   {
+    "id": "2",
+    "tex": "$v=\\sqrt{\\dfrac{2eV}{m}}$",
+    "grading": "v：sqrt(2e V/m)"
+   },
+   {
+    "id": "3",
+    "tex": "$t=d\\sqrt{\\dfrac{2m}{eV}}$",
+    "grading": "t：d sqrt(2m/(e V))"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 一様な電場では $V=Ed$ より $E=\\dfrac Vd$．\n\n(2) 電場がする仕事 $eV$ が運動エネルギーになる：$\\dfrac12mv^2=eV$ より $v=\\sqrt{\\dfrac{2eV}m}$．\n\n(3) 加速度は $a=\\dfrac{eE}m=\\dfrac{eV}{md}$（一定）．$d=\\dfrac12at^2$ より $t=\\sqrt{\\dfrac{2d}{a}}=d\\sqrt{\\dfrac{2m}{eV}}$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電位差 $V$ を通過すると，電気量 $q$ の粒子は $qV$ のエネルギーを得る．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "work-energy"
+ ],
+ "laws": [
+  "uniform-field-potential",
+  "work-energy-theorem"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "一様な電場",
+  "電子"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

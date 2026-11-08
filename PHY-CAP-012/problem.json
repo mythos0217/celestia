@@ -1,0 +1,135 @@
+{
+ "id": "PHY-CAP-012",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-02",
+ "topic": "三角波電源による電気容量と内部抵抗の測定（時定数とピーク電流）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，起電力 $E(t)$ を時間的に変えられる電源と抵抗値 $r$ の抵抗，電流計が直列につながった測定装置があり，その端子に電気容量 $C$ のコンデンサーをつなぐ．電源と電流計の内部抵抗は $r$ に含めて考える．$E(t)$ は，図のように $-E_0$ と $+E_0$ の間を一定の割合で上下する周期 $T$ の三角波であり，増加・減少の割合の大きさを $\\alpha=\\dfrac{4E_0}{T}$ とする．$r$ と $C$ は未知であり，$\\tau=rC$ とおく．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$T$ が $\\tau$ に比べて十分長いとき，各半周期の後半では電流計の示す電流はほぼ一定になる．その大きさ $I_\\infty$ を $C$，$\\alpha$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の状態で $E$ が増加から減少に転じた時刻を $t=0$ とする．$0<t<\\frac T2$ での電流 $I(t)$（図の電流計を右向きに流れる向きを正）を $C$，$\\alpha$，$\\tau$ で表し，電流が 0 になる時刻 $t_0$ を求めよ．必要なら，「$\\dfrac{dX}{dt}=-\\dfrac X\\tau$ を満たす量 $X$ は $X(t)=X(0)e^{-t/\\tau}$ となる」ことを用いてよい．"
+     },
+     {
+      "id": "3",
+      "tex": "$T$ が $\\tau$ と同程度のとき，十分に時間がたった後の周期的な状態で，電流の最大値 $I_p$ を $C$，$\\alpha$，$T$，$\\tau$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$E_0=2.0\\,\\text{V}$ として，$T_1=40\\,\\text{ms}$ のとき $I_p=0.200\\,\\text{mA}$，$T_2=4.0\\,\\text{ms}$ のとき $I_p=1.52\\,\\text{mA}$ であった．$T_1$ の測定では (1) の近似が成り立つと仮定して，$C$ と $r$ を有効数字2桁で求めよ．また，求めた値を用いて，この仮定が妥当であったことを確かめよ．必要なら $e^{-2}=0.135$，$e^{-10}=4.5\\times10^{-5}$ を用いよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：三角波電源による電気容量と内部抵抗の測定（時定数とピーク電流）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：三角波電源による電気容量と内部抵抗の測定（時定数とピーク電流）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I_\\infty=C\\alpha$"
+   },
+   {
+    "id": "2",
+    "tex": "$I(t)=C\\alpha\\left(2e^{-t/\\tau}-1\\right)$，$t_0=\\tau\\log_e2$"
+   },
+   {
+    "id": "3",
+    "tex": "$I_p=C\\alpha\\dfrac{1-e^{-T/(2\\tau)}}{1+e^{-T/(2\\tau)}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$C=1.0\\times10^{-6}\\,\\text{F}$，$r=1.0\\times10^{3}\\,\\Omega$（$T_1/(2\\tau)=20$ で $e^{-20}$ は無視できる）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{基本の式}　コンデンサーの電圧を $v$（端子の上側が高い向きを正）とすると，回路の式と電荷の式は\n\\[ E(t)=rI+v,\\qquad I=C\\frac{dv}{dt}. \\]\n第1式を時間で微分して第2式を使うと\n\\[ \\frac{dE}{dt}=r\\frac{dI}{dt}+\\frac IC\\quad\\Longrightarrow\\quad \\frac{dI}{dt}=-\\frac{1}{\\tau}\\left(I-C\\frac{dE}{dt}\\right). \\]\n$\\frac{dE}{dt}$ が一定（$\\pm\\alpha$）の区間では，$I$ は $\\pm C\\alpha$ に向かって時定数 $\\tau$ で指数関数的に近づく．また $E$ と $v$（電荷）は連続なので，$I=(E-v)/r$ も連続である．\n\n\\textbf{(1)}　十分時間がたつと $\\frac{dI}{dt}\\to0$ となり $I=C\\frac{dE}{dt}$．大きさは $\\boldsymbol{I_\\infty=C\\alpha}$（電圧を一定の割合で変えると，コンデンサーには一定の電流が流れる）．\n\n\\textbf{(2)}　$t>0$ では $\\frac{dE}{dt}=-\\alpha$ なので $X=I+C\\alpha$ について $\\frac{dX}{dt}=-\\frac X\\tau$．$t=0$ で電流は連続で $I(0)=C\\alpha$ だから $X(0)=2C\\alpha$，\n\\[ \\boldsymbol{I(t)=C\\alpha\\left(2e^{-t/\\tau}-1\\right)},\\qquad I(t_0)=0\\ \\text{より}\\ \\boldsymbol{t_0=\\tau\\log_e2}. \\]\n電源の電圧が下がり始めても，すぐには電流の向きは変わらない．\n\n\\textbf{(3) 周期的な状態}　対称性から，減少区間の始めの電流を $+I_p$，終わり（$t=\\frac T2$）の電流を $-I_p$ とおける．(2) と同様に $I+C\\alpha=(I_p+C\\alpha)e^{-t/\\tau}$ なので，$t=\\frac T2$ で\n\\[ -I_p+C\\alpha=(I_p+C\\alpha)e^{-T/(2\\tau)}\\quad\\Longrightarrow\\quad \\boldsymbol{I_p=C\\alpha\\frac{1-e^{-T/(2\\tau)}}{1+e^{-T/(2\\tau)}}}. \\]\n$T\\gg\\tau$ で $I_p\\to C\\alpha$（(1) に一致），$T\\ll\\tau$ で $I_p\\fallingdotseq C\\alpha\\dfrac{T}{4\\tau}=\\dfrac{E_0}{r}$（コンデンサーの電圧がほとんど変わらず，抵抗だけの回路と同じ）となる．\n\n\\textbf{(4)}　$T_1$ では $\\alpha_1=\\dfrac{4\\times2.0}{40\\times10^{-3}}=2.0\\times10^2\\,\\text{V/s}$，(1) より\n\\[ C=\\frac{I_p}{\\alpha_1}=\\frac{0.200\\times10^{-3}}{2.0\\times10^2}=\\boldsymbol{1.0\\times10^{-6}\\,\\text{F}}. \\]\n$T_2$ では $\\alpha_2=2.0\\times10^3\\,\\text{V/s}$，$C\\alpha_2=2.00\\,\\text{mA}$．$y=e^{-T_2/(2\\tau)}$ とおくと (3) より\n\\[ \\frac{1-y}{1+y}=\\frac{1.52}{2.00}=0.76\\quad\\Longrightarrow\\quad y=\\frac{0.24}{1.76}\\fallingdotseq0.136\\fallingdotseq e^{-2}. \\]\nよって $\\dfrac{T_2}{2\\tau}=2.0$，$\\tau=1.0\\times10^{-3}\\,\\text{s}$，$r=\\dfrac{\\tau}{C}=\\boldsymbol{1.0\\times10^3\\,\\Omega}$．\n確認：$T_1$ では $\\dfrac{T_1}{2\\tau}=20$，$e^{-20}=(4.5\\times10^{-5})^2\\fallingdotseq2\\times10^{-9}$ なので (3) の分数は $1$ と区別できず，$I_p=C\\alpha_1$ とした近似は十分に成り立つ．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "起電力を一定の割合 $\\alpha$ で変えるとコンデンサーには一定電流 $C\\alpha$ が流れるが，直列抵抗があると電流は時定数 $rC$ で遅れてこの値に近づく．三角波では各半周期で $\\pm C\\alpha$ への緩和をつなぐ周期的な状態となり，ピーク電流が $C\\alpha\\tanh(T/4rC)$ になるので，周期の異なる2回の測定から容量と抵抗を分離して決められる（近似の妥当性は求めた値で検証する）．"
+ },
+ "concepts": [
+  "capacitor",
+  "electric-power",
+  "series-parallel"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気容量の測定",
+  "RC回路",
+  "時定数",
+  "三角波",
+  "過渡現象"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

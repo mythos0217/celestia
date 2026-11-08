@@ -1,0 +1,137 @@
+{
+ "schema": "celestia.figure/1",
+ "size": [
+  340,
+  140
+ ],
+ "items": [
+  {
+   "t": "line",
+   "from": [
+    30,
+    100
+   ],
+   "to": [
+    330,
+    100
+   ],
+   "style": "thin"
+  },
+  {
+   "t": "circle",
+   "at": [
+    90,
+    100
+   ],
+   "r": 11,
+   "style": "fill"
+  },
+  {
+   "t": "text",
+   "at": [
+    90,
+    100
+   ],
+   "text": "+Q",
+   "italic": false,
+   "size": 11
+  },
+  {
+   "t": "circle",
+   "at": [
+    230,
+    100
+   ],
+   "r": 11,
+   "style": "fill"
+  },
+  {
+   "t": "text",
+   "at": [
+    230,
+    100
+   ],
+   "text": "−Q",
+   "italic": false,
+   "size": 11
+  },
+  {
+   "t": "dot",
+   "at": [
+    160,
+    100
+   ]
+  },
+  {
+   "t": "text",
+   "at": [
+    160,
+    118
+   ],
+   "text": "O",
+   "italic": false,
+   "size": 13
+  },
+  {
+   "t": "dot",
+   "at": [
+    300,
+    100
+   ]
+  },
+  {
+   "t": "text",
+   "at": [
+    300,
+    118
+   ],
+   "text": "C",
+   "italic": false,
+   "size": 13
+  },
+  {
+   "t": "text",
+   "at": [
+    90,
+    124
+   ],
+   "text": "A",
+   "italic": false,
+   "size": 13
+  },
+  {
+   "t": "text",
+   "at": [
+    230,
+    124
+   ],
+   "text": "B",
+   "italic": false,
+   "size": 13
+  },
+  {
+   "t": "text",
+   "at": [
+    125,
+    86
+   ],
+   "text": "a"
+  },
+  {
+   "t": "text",
+   "at": [
+    195,
+    86
+   ],
+   "text": "a"
+  },
+  {
+   "t": "text",
+   "at": [
+    265,
+    86
+   ],
+   "text": "a"
+  }
+ ]
+}

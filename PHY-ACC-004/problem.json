@@ -1,0 +1,143 @@
+{
+ "id": "PHY-ACC-004",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-06",
+ "topic": "周波数によらず純抵抗に見えるRL・RC並列回路（交流ブリッジの平衡と過渡現象）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の破線内の回路は，自己インダクタンス $L$ のコイルと抵抗値 $R$ の抵抗を直列にした枝と，抵抗値 $R$ の抵抗と電気容量 $C$ のコンデンサーを直列にした枝を，端子 A，B の間に並列につないだものである．コイルの枝の2素子の接続点を P，コンデンサーの枝の2素子の接続点を Q とし，P，Q 間に内部抵抗が十分大きい電圧計をつなぐ．導線・コイル・電池の抵抗は無視できる．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "まず，電池とスイッチ S の代わりに A，B 間に交流電源をつなぎ，角周波数 $\\omega$ を変えて調べたところ，どの $\\omega$ でも電圧計の読みは $0$ であった．$L$ を $R$，$C$ で表せ．また，電源電圧の振幅が $V_0$ のとき，電源を流れる電流の振幅と，電源電圧に対する電流の位相のずれを求めよ．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "以下，$L$ は (1) で求めた値とし，$\\tau=CR$ とおく．交流電源を外し，図のように起電力 $E$ の電池とスイッチ S をつないだ．はじめコンデンサーは帯電しておらず，電流は流れていない．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "2",
+      "tex": "時刻 $t=0$ に S を閉じた．$t>0$ でのコイルの枝の電流 $i_L$ とコンデンサーの枝の電流 $i_C$（いずれも A から B へ向かう向きを正）を求め，電池を流れる電流が $t$ によらないことを示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "十分に時間がたった後，コイルとコンデンサーにたくわえられているエネルギーをそれぞれ求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "その後，S を開いた（この時刻を改めて $t=0$ とする）．S を開いた直後の A，B 間の電圧を求めよ．さらに，$t>0$ でコイルの枝を A から B へ流れる電流が $i(t)=\\dfrac{E}{R}e^{-t/\\tau}$ となることを，回路の式をみたすことを確かめて示し，$t>0$ の A，B 間の電圧と，S を開いた後に2つの抵抗で発生するジュール熱の合計を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：周波数によらず純抵抗に見えるRL・RC並列回路（交流ブリッジの平衡と過渡現象）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：周波数によらず純抵抗に見えるRL・RC並列回路（交流ブリッジの平衡と過渡現象）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$L=CR^2$，電流の振幅 $\\dfrac{V_0}{R}$，位相のずれ $0$（$\\omega$ によらない）"
+   },
+   {
+    "id": "2",
+    "tex": "$i_L=\\dfrac{E}{R}\\left(1-e^{-t/\\tau}\\right)$，$i_C=\\dfrac{E}{R}e^{-t/\\tau}$，電池の電流は常に $\\dfrac{E}{R}$"
+   },
+   {
+    "id": "3",
+    "tex": "コイル $\\dfrac12CE^2$，コンデンサー $\\dfrac12CE^2$"
+   },
+   {
+    "id": "4",
+    "tex": "直後の電圧 $0$，$t>0$ でも A，B 間の電圧は常に $0$，ジュール熱の合計 $CE^2$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 交流ブリッジの平衡}\n\n交流の電圧・電流を複素数で表す（$j$ を虚数単位とし，コイルのインピーダンスは $j\\omega L$，コンデンサーは $\\dfrac{1}{j\\omega C}$．位相の進み・遅れを複素数の偏角で扱う方法で，ベクトル図と同等である）．B を電位の基準とし，A の電位を $V$ とする．コイルの枝の電流は $\\dfrac{V}{R+j\\omega L}$ なので P の電位は $\\dfrac{RV}{R+j\\omega L}$．コンデンサーの枝の電流は $\\dfrac{V}{R+1/(j\\omega C)}$ なので Q の電位は $\\dfrac{V/(j\\omega C)}{R+1/(j\\omega C)}=\\dfrac{V}{1+j\\omega CR}$．読みが $0$ となる条件は\n\\[ \\frac{R}{R+j\\omega L}=\\frac{1}{1+j\\omega CR}\\iff R+j\\omega CR^2=R+j\\omega L \\iff \\boldsymbol{L=CR^2} \\]\nで，これは $\\omega$ を含まないので，すべての $\\omega$ で平衡する．（コイルの枝もコンデンサーの枝も，時定数 $L/R$ と $CR$ が等しい．）\n\n電源を流れる電流は，この条件の下で\n\\[ \\frac{V}{R(1+j\\omega\\tau)}+\\frac{j\\omega C\\,V}{1+j\\omega\\tau}=\\frac{V(1+j\\omega CR)}{R(1+j\\omega\\tau)}=\\frac{V}{R} \\]\nすなわちボックス全体のインピーダンスは $\\omega$ によらず純抵抗 $R$ である．電流の振幅は $\\boldsymbol{\\dfrac{V_0}{R}}$，位相のずれは $\\boldsymbol{0}$．\n\n\\textbf{(2) S を閉じた後}\n\n2つの枝はどちらも A，B 間の電圧 $E$ に直接つながるので独立に扱える．コイルの電流は連続で $0$ から増え，時定数 $L/R=CR^2/R=\\tau$ で $E/R$ に近づく．コンデンサーの枝は直後に導線とみなせて $E/R$ が流れ，時定数 $CR=\\tau$ で減衰する：\n\\[ i_L=\\boldsymbol{\\frac{E}{R}\\left(1-e^{-t/\\tau}\\right)},\\qquad i_C=\\boldsymbol{\\frac{E}{R}e^{-t/\\tau}} \\]\n和は $i_L+i_C=\\dfrac{E}{R}$ で $t$ によらない（(1) の「どの周波数でも抵抗 $R$」の時間領域での表れ）．このとき P，Q の電位（B 基準）は $Ri_L=E(1-e^{-t/\\tau})$ と $E-Ri_C=E(1-e^{-t/\\tau})$ で等しく，電圧計の読みは過渡状態でも $0$ である．\n\n\\textbf{(3) 十分時間がたった後}\n\n$i_L=E/R$，$i_C=0$ で，コンデンサーの電圧は $E$．\n\\[ U_L=\\frac12L\\left(\\frac{E}{R}\\right)^2=\\frac12CR^2\\cdot\\frac{E^2}{R^2}=\\boldsymbol{\\frac12CE^2},\\qquad U_C=\\boldsymbol{\\frac12CE^2} \\]\n\n\\textbf{(4) S を開いた後}\n\nS を開くと外部への電流は $0$ になるので，コイルの電流 $i$ は A $\\to$ P $\\to$ B と流れた後，コンデンサーの枝を B $\\to$ Q $\\to$ A と逆向きに流れて1つの閉回路を回る．コンデンサーの Q 側の極板の電荷を $q$ とすると，Q 側から電流が流れ出すので $\\dfrac{\\Delta q}{\\Delta t}=-i$．閉回路の電圧の式は（コイル側とコンデンサー側で A，B 間の電圧が等しいことから）\n\\[ L\\frac{\\Delta i}{\\Delta t}+Ri=\\frac{q}{C}-Ri \\quad\\cdots(*) \\]\n直後は $i=E/R$，$q=CE$（いずれも連続）なので $L\\dfrac{\\Delta i}{\\Delta t}=E-2E=-E$．したがって A，B 間の電圧は\n\\[ V_{AB}=L\\frac{\\Delta i}{\\Delta t}+Ri=-E+E=\\boldsymbol{0} \\]\n外から見ると抵抗 $R$ に電流 $0$ が流れているのと同じで，内部に $CE^2$ のエネルギーが残っていても端子間の電圧は生じない．\n\n次に $i=\\dfrac{E}{R}e^{-t/\\tau}$ とすると，$q=CE-\\displaystyle\\int_0^t i\\,dt=CE-\\frac{E}{R}\\tau\\left(1-e^{-t/\\tau}\\right)=CEe^{-t/\\tau}$．このとき\n\\[ L\\frac{di}{dt}+Ri=-CR^2\\cdot\\frac{E}{R\\tau}e^{-t/\\tau}+Ee^{-t/\\tau}=0,\\qquad \\frac{q}{C}-Ri=Ee^{-t/\\tau}-Ee^{-t/\\tau}=0 \\]\nで $(*)$ をみたし，初期条件 $i(0)=E/R$，$q(0)=CE$ もみたす．よってこれが解であり，$t>0$ の A，B 間の電圧は常に $\\boldsymbol{0}$ である．（$(*)$ を $L\\dfrac{d^2i}{dt^2}+2R\\dfrac{di}{dt}+\\dfrac{i}{C}=0$ と書くと，$L=CR^2$ はちょうど $(2R)^2=4L/C$ の臨界減衰の条件にあたり，電流は振動せずに減衰する．）\n\nコンデンサーの電荷も電流も $0$ に向かうので，発生するジュール熱の合計はたくわえられていたエネルギーの和\n\\[ \\frac12CE^2+\\frac12CE^2=\\boldsymbol{CE^2} \\]\nに等しい（2つの抵抗には同じ電流が流れるので $\\dfrac12CE^2$ ずつ）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "RL直列の枝とRC直列の枝の時定数が等しい（$L=CR^2$）と，交流ブリッジはすべての周波数で平衡し，回路全体は周波数によらない純抵抗 $R$ になる．その時間領域での表れとして，スイッチを入れても電池の電流は一定で，切った後も端子間の電圧は0のまま，内部では臨界減衰でエネルギー $CE^2$ が散逸する．"
+ },
+ "concepts": [
+  "ac-circuit"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "交流ブリッジ",
+  "インピーダンス",
+  "定抵抗回路",
+  "過渡現象",
+  "臨界減衰",
+  "時定数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

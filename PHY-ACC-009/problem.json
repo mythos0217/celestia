@@ -1,0 +1,136 @@
+{
+ "id": "PHY-ACC-009",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-06",
+ "topic": "3電圧計法による抵抗をもつコイルの測定（実効値は足し算できない）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，抵抗値 $R=45\\,\\Omega$ の抵抗と，自己インダクタンス $L$ で内部抵抗 $r$ をもつコイルを直列にして，周波数 $50\\,\\text{Hz}$ の交流電源につないだ．$L$，$r$ は未知である．交流電圧計（内部抵抗は十分大きい）で実効値を測ると，抵抗の両端は $V_R=90\\,\\text{V}$，コイルの両端は $V_{\\text{c}}=100\\,\\text{V}$，電源の両端は $V=170\\,\\text{V}$ であった．数値は有効数字2桁で答えよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "回路を流れる電流の実効値 $I$ を求めよ．また，$V$ が $V_R+V_{\\text{c}}$ と等しくならない理由を説明せよ．"
+     },
+     {
+      "id": "2",
+      "tex": "コイルの電圧が電流より進む位相を $\\varphi$ とする．$\\cos\\varphi$ を求め，$r$，$L$，コイルの消費電力，および回路全体の力率を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "実は，(1)(2) の3つの読みだけでは，未知の素子が「抵抗をもつコイル」なのか「抵抗とコンデンサーの直列」なのか区別できない．その理由を述べよ．また，区別するため電源の周波数だけを $100\\,\\text{Hz}$ に変えた（電源電圧の実効値は $170\\,\\text{V}$ のまま）．未知の素子が抵抗をもつコイルの場合と，(2) で求めた $r$ と同じ抵抗と $50\\,\\text{Hz}$ で同じリアクタンスをもつコンデンサーの直列の場合のそれぞれについて，$V_R$ の読みを予想せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "周波数を $50\\,\\text{Hz}$ に戻し，回路にコンデンサーを直列に加えて電流が最大になるようにした．コンデンサーの電気容量 $C$，電流の実効値，コイルの両端の電圧の実効値，および「コイルとコンデンサーをまとめた部分」の両端の電圧の実効値を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：3電圧計法による抵抗をもつコイルの測定（実効値は足し算できない）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：3電圧計法による抵抗をもつコイルの測定（実効値は足し算できない）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I=2.0\\,\\text{A}$；抵抗とコイルの電圧は位相が異なり，実効値は位相のずれを含めたベクトル和で合成されるため"
+   },
+   {
+    "id": "2",
+    "tex": "$\\cos\\varphi=0.60$，$r=30\\,\\Omega$，$L=0.13\\,\\text{H}$，コイルの消費電力 $1.2\\times10^2\\,\\text{W}$，力率 $0.88$"
+   },
+   {
+    "id": "3",
+    "tex": "3つの読みは $\\cos\\varphi$（$|\\sin\\varphi|$）しか決めず，電圧の進み・遅れを区別しないため；コイルなら $V_R=70\\,\\text{V}$，コンデンサーなら $V_R=99\\,\\text{V}$"
+   },
+   {
+    "id": "4",
+    "tex": "$C=8.0\\times10^{-5}\\,\\text{F}$，電流 $2.3\\,\\text{A}$，コイルの電圧 $1.1\\times10^2\\,\\text{V}$，まとめた部分の電圧 $68\\,\\text{V}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　抵抗の電圧と電流は同位相なので $I=\\dfrac{V_R}{R}=\\dfrac{90}{45}=\\boldsymbol{2.0\\,\\text{A}}$．\\\\\nコイルは内部抵抗とインダクタンスをもつので，その電圧は電流より $\\varphi$ だけ進む．瞬時値では $v=v_R+v_{\\text{c}}$ が成り立つが，最大になる時刻がずれているので，実効値（振幅）は単純に足せず，位相差を含めたベクトル（回転ベクトル）の和で合成される．\n\n\\textbf{(2)}　電流の向きを基準とするベクトル図で，$\\vec V=\\vec V_R+\\vec V_{\\text{c}}$，$\\vec V_R$ と $\\vec V_{\\text{c}}$ のなす角が $\\varphi$．余弦定理より\n\\[ V^2=V_R^2+V_{\\text{c}}^2+2V_RV_{\\text{c}}\\cos\\varphi,\\qquad \\cos\\varphi=\\frac{170^2-90^2-100^2}{2\\times90\\times100}=\\frac{10800}{18000}=\\boldsymbol{0.60} . \\]\n$\\sin\\varphi=0.80$．コイルの電圧の電流と同位相の成分が $rI$，$90^\\circ$ 進んだ成分が $\\omega LI$ なので\n\\[ r=\\frac{V_{\\text{c}}\\cos\\varphi}{I}=\\frac{60}{2.0}=\\boldsymbol{30\\,\\Omega},\\qquad \\omega L=\\frac{V_{\\text{c}}\\sin\\varphi}{I}=40\\,\\Omega,\\quad L=\\frac{40}{2\\pi\\times50}=\\boldsymbol{0.13\\,\\text{H}} . \\]\nコイルの消費電力は $V_{\\text{c}}I\\cos\\varphi=rI^2=30\\times2.0^2=\\boldsymbol{1.2\\times10^2\\,\\text{W}}$．（$\\dfrac{V^2-V_R^2-V_{\\text{c}}^2}{2R}=\\dfrac{10800}{90}=120\\,\\text{W}$ と，3つの読みだけからも求まる．）\\\\\n回路全体のインピーダンスは $\\sqrt{(R+r)^2+(\\omega L)^2}=\\sqrt{75^2+40^2}=85\\,\\Omega$（$85\\times2.0=170\\,\\text{V}$ と一致）．力率は $\\dfrac{R+r}{85}=\\dfrac{15}{17}=\\boldsymbol{0.88}$．\n\n\\textbf{(3)}　余弦定理で決まるのは $\\cos\\varphi$ だけで，$\\vec V_{\\text{c}}$ が電流より進んでいても（$\\varphi>0$，誘導性）遅れていても（$\\varphi<0$，容量性）同じ3つの読みになる．つまり「抵抗 $30\\,\\Omega$ とリアクタンス $40\\,\\Omega$ のコンデンサーの直列」でも全く同じ読みになる．\\\\\n周波数を2倍にすると，コイルのリアクタンスは2倍の $80\\,\\Omega$，コンデンサーのリアクタンスは $\\frac12$ 倍の $20\\,\\Omega$ になる．\n\\[ \\text{コイル}：I=\\frac{170}{\\sqrt{75^2+80^2}}=1.55\\,\\text{A},\\ V_R=\\boldsymbol{70\\,\\text{V}};\\qquad \\text{コンデンサー}：I=\\frac{170}{\\sqrt{75^2+20^2}}=2.19\\,\\text{A},\\ V_R=\\boldsymbol{99\\,\\text{V}} . \\]\n$V_R$ が減ればコイル，増えればコンデンサーと判別できる．\n\n\\textbf{(4)}　電流が最大になるのは直列共振で，コンデンサーのリアクタンスがコイルのリアクタンスに等しいとき：\n\\[ \\frac{1}{\\omega C}=40\\,\\Omega,\\qquad C=\\frac{1}{2\\pi\\times50\\times40}=\\boldsymbol{8.0\\times10^{-5}\\,\\text{F}} . \\]\nこのときインピーダンスは $R+r=75\\,\\Omega$ だけで，電流は $\\dfrac{170}{75}=\\boldsymbol{2.3\\,\\text{A}}$．コイルのインピーダンスは $\\sqrt{30^2+40^2}=50\\,\\Omega$ なので，コイルの電圧は $2.27\\times50=\\boldsymbol{1.1\\times10^2\\,\\text{V}}$．\\\\\nコイルとコンデンサーをまとめた部分では，リアクタンスが打ち消し合って内部抵抗 $r$ だけが残るので，その電圧は $rI=30\\times2.27=\\boldsymbol{68\\,\\text{V}}$．コイルだけの電圧（$113\\,\\text{V}$）やコンデンサーの電圧（$91\\,\\text{V}$）より小さい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "直列回路では各部の電圧の実効値は位相差を含むベクトル和で合成されるので，3つの電圧計の読みと余弦定理から未知のコイルの位相（ひいては内部抵抗とインダクタンス・消費電力）が決まる．ただし読みは $\\cos\\varphi$ しか決めず進み・遅れを区別できないため，周波数を変えた測定が必要になる．"
+ },
+ "concepts": [
+  "ac-circuit",
+  "string-resonance",
+  "wave-basics"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "3電圧計法",
+  "ベクトル図",
+  "余弦定理",
+  "内部抵抗をもつコイル",
+  "直列共振",
+  "力率"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

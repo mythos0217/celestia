@@ -1,0 +1,143 @@
+{
+ "id": "PHY-CAP-017",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-02",
+ "topic": "抵抗につないだコンデンサーから誘電体を一定の速さで引き抜くときの電圧の増減とエネルギー収支",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，比誘電率 $\\varepsilon_{\\rm r}\\ (\\varepsilon_{\\rm r}>1)$ の誘電体の板が極板間をすき間なく満たした平行板コンデンサーがある．誘電体がないときの電気容量は $C_0$ である．このコンデンサーを電圧 $V_0$ に充電したのち，時刻 $0$ に抵抗値 $R$ の抵抗に接続すると同時に，誘電体の板を極板に平行な向きに一定の速さで引き抜き始め，時刻 $\\tau$ にちょうど完全に引き抜いた．極板の端の効果，誘電体と極板の間の摩擦，導線の抵抗と回路の自己インダクタンスは無視する．$k=\\dfrac{\\tau}{(\\varepsilon_{\\rm r}-1)RC_0}$ とおく．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "時刻 $t\\ (0\\le t\\le\\tau)$ のコンデンサーの電気容量 $C(t)$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "時刻 $t$ のコンデンサーの電荷を $Q$ とする．回路の式から $Q$ と $C$ の間に成り立つ関係を導き，$Q$ を $C(t)$ と $k,\\ \\varepsilon_{\\rm r},\\ C_0,\\ V_0$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "抵抗の両端の電圧 $V(t)$ を求めよ．また，$V(t)$ が時刻によらず $V_0$ に保たれるための $\\tau$ を求め，そのとき $0\\le t\\le\\tau$ の間に抵抗で発生するジュール熱 $J$ と，誘電体を引き抜く外力がした仕事 $W$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "引き抜きをより速くして，$k=\\dfrac12$ とした．時刻 $\\tau$ の電圧 $V(\\tau)$，ジュール熱 $J$，外力の仕事 $W$ を求めよ．また，引き抜き終えたときのコンデンサーの静電エネルギーを，はじめの静電エネルギーと比べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "引き抜き終えたときの電圧 $V(\\tau)$ が $V_0$ より大きくなるための $\\tau$ の条件を求めよ．また，引き抜く速さを限りなく大きくした極限で $V(\\tau)$ はいくらに近づくか．その理由も述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：抵抗につないだコンデンサーから誘電体を一定の速さで引き抜くときの電圧の増減とエネルギー収支",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：抵抗につないだコンデンサーから誘電体を一定の速さで引き抜くときの電圧の増減とエネルギー収支",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$C(t)=C_0\\left\\{\\varepsilon_{\\rm r}-(\\varepsilon_{\\rm r}-1)\\dfrac t\\tau\\right\\}$"
+   },
+   {
+    "id": "2",
+    "tex": "$Q=\\varepsilon_{\\rm r}C_0V_0\\left(\\dfrac{C}{\\varepsilon_{\\rm r}C_0}\\right)^{k}$"
+   },
+   {
+    "id": "3",
+    "tex": "$V(t)=V_0\\left(\\dfrac{C(t)}{\\varepsilon_{\\rm r}C_0}\\right)^{k-1}$；$\\tau=(\\varepsilon_{\\rm r}-1)RC_0$，$J=(\\varepsilon_{\\rm r}-1)C_0V_0^{\\,2}$，$W=\\dfrac12(\\varepsilon_{\\rm r}-1)C_0V_0^{\\,2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$V(\\tau)=\\sqrt{\\varepsilon_{\\rm r}}\\,V_0$，$J=W=\\dfrac12\\varepsilon_{\\rm r}C_0V_0^{\\,2}\\log\\varepsilon_{\\rm r}$（自然対数），静電エネルギーははじめと等しい"
+   },
+   {
+    "id": "5",
+    "tex": "$\\tau<(\\varepsilon_{\\rm r}-1)RC_0$；$\\varepsilon_{\\rm r}V_0$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　時刻 $t$ に誘電体が入っている部分の割合は $1-\\frac t\\tau$．誘電体のある部分とない部分の並列とみて\n\\[ C(t)=C_0\\left\\{\\varepsilon_{\\rm r}\\left(1-\\frac t\\tau\\right)+\\frac t\\tau\\right\\}=\\boldsymbol{C_0\\left\\{\\varepsilon_{\\rm r}-(\\varepsilon_{\\rm r}-1)\\frac t\\tau\\right\\}}. \\]\n$\\frac{dC}{dt}=-\\frac{(\\varepsilon_{\\rm r}-1)C_0}{\\tau}$ で一定である．\n\n\\textbf{(2)}　抵抗を流れる電流は $I=-\\frac{dQ}{dt}$，抵抗の電圧はコンデンサーの電圧 $\\frac QC$ に等しいので $-R\\frac{dQ}{dt}=\\frac QC$．$\\frac{dQ}{dt}=\\frac{dQ}{dC}\\cdot\\frac{dC}{dt}$ を使うと\n\\[ R\\cdot\\frac{(\\varepsilon_{\\rm r}-1)C_0}{\\tau}\\cdot\\frac{dQ}{dC}=\\frac QC\\quad\\Longrightarrow\\quad\\frac{dQ}{Q}=k\\,\\frac{dC}{C}. \\]\n積分して $Q\\propto C^k$．$C=\\varepsilon_{\\rm r}C_0$ のとき $Q=\\varepsilon_{\\rm r}C_0V_0$ だから\n\\[ Q=\\boldsymbol{\\varepsilon_{\\rm r}C_0V_0\\left(\\frac{C}{\\varepsilon_{\\rm r}C_0}\\right)^k}. \\]\n\n\\textbf{(3)}　$V=\\frac QC=\\boldsymbol{V_0\\left(\\frac{C}{\\varepsilon_{\\rm r}C_0}\\right)^{k-1}}$．$C$ が減っても $V$ が一定なのは $k=1$，すなわち $\\tau=\\boldsymbol{(\\varepsilon_{\\rm r}-1)RC_0}$ のとき．このとき電流は $\\frac{V_0}R$ で一定なので\n\\[ J=\\frac{V_0^{\\,2}}R\\tau=\\boldsymbol{(\\varepsilon_{\\rm r}-1)C_0V_0^{\\,2}}. \\]\n静電エネルギーは $\\frac12\\varepsilon_{\\rm r}C_0V_0^{\\,2}$ から $\\frac12C_0V_0^{\\,2}$ へ $\\frac12(\\varepsilon_{\\rm r}-1)C_0V_0^{\\,2}$ だけ減る．エネルギー保存（外力の仕事＝静電エネルギーの増加＋ジュール熱）より\n\\[ W=-\\frac12(\\varepsilon_{\\rm r}-1)C_0V_0^{\\,2}+(\\varepsilon_{\\rm r}-1)C_0V_0^{\\,2}=\\boldsymbol{\\frac12(\\varepsilon_{\\rm r}-1)C_0V_0^{\\,2}}. \\]\nジュール熱の半分をコンデンサーが，残りの半分を外力が賄う．誘電体は極板の間へ引き込まれる向きの力を受けるので，引き抜くには正の仕事が必要である．\n\n\\textbf{(4)}　$k=\\frac12$ のとき $V=V_0\\left(\\frac{C}{\\varepsilon_{\\rm r}C_0}\\right)^{-1/2}$．$C(\\tau)=C_0$ より $V(\\tau)=\\boldsymbol{\\sqrt{\\varepsilon_{\\rm r}}\\,V_0}$．\n$dt=-\\frac{\\tau}{(\\varepsilon_{\\rm r}-1)C_0}dC=-kR\\,dC$ を使って\n\\[ J=\\int_0^\\tau\\frac{V^2}R\\,dt=\\int_{C_0}^{\\varepsilon_{\\rm r}C_0}kV^2\\,dC=\\frac12\\int_{C_0}^{\\varepsilon_{\\rm r}C_0}V_0^{\\,2}\\frac{\\varepsilon_{\\rm r}C_0}{C}\\,dC=\\boldsymbol{\\frac12\\varepsilon_{\\rm r}C_0V_0^{\\,2}\\log\\varepsilon_{\\rm r}}. \\]\n引き抜き終えたときの静電エネルギー $\\frac12C_0(\\sqrt{\\varepsilon_{\\rm r}}V_0)^2=\\frac12\\varepsilon_{\\rm r}C_0V_0^{\\,2}$ は，はじめの静電エネルギーと\\textbf{等しい}．したがって $W=J=\\boldsymbol{\\frac12\\varepsilon_{\\rm r}C_0V_0^{\\,2}\\log\\varepsilon_{\\rm r}}$ で，外力の仕事がすべてジュール熱になり，コンデンサーは電荷を失いながら静電エネルギーを保つ．\n\n\\textbf{(5)}　$V(\\tau)=V_0\\varepsilon_{\\rm r}^{\\,1-k}>V_0\\iff k<1\\iff\\boldsymbol{\\tau<(\\varepsilon_{\\rm r}-1)RC_0}$．引き抜きが時定数に比べて速いと，放電で電荷が減る効果より容量の減少が勝ち，電圧が上がる．\n$\\tau\\to0$ では $k\\to0$ で $V(\\tau)\\to\\boldsymbol{\\varepsilon_{\\rm r}V_0}$．引き抜く間に抵抗を流れる電荷が無視でき，電荷 $\\varepsilon_{\\rm r}C_0V_0$ のまま容量だけが $C_0$ になるからである（$Q\\propto C^k$ で $k\\to0$ は電荷一定に対応する）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "誘電体を一定の速さで引き抜くと電気容量が時間の1次式で減るので，回路の式 $R\\,dQ/dt=-Q/C$ を容量 $C$ を変数として書き直すと $Q\\propto C^{k}$（$k$ は引き抜きにかかる時間と時定数 $(\\varepsilon_{\\rm r}-1)RC_0$ の比）となり，電圧は $C^{k-1}$ に比例する．$k=1$ なら電圧一定，速く引き抜く（$k<1$）と放電しながら電圧が上がり，外力の仕事が静電エネルギーの変化とジュール熱を賄う．"
+ },
+ "concepts": [
+  "capacitor",
+  "work-energy",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "誘電体",
+  "RC回路",
+  "電気容量の時間変化",
+  "エネルギー収支",
+  "外力の仕事"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

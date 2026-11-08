@@ -1,0 +1,135 @@
+{
+ "id": "PHY-ACC-003",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-06",
+ "topic": "RLC直列回路のリサジュー図形から位相差と素子の値を読み取る",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，抵抗値 $R$ の抵抗，自己インダクタンス $L$ のコイル，電気容量 $C$ のコンデンサーを交流電源に直列につなぎ，点 a の電位（電源電圧）$v$ をオシロスコープの横（$x$）入力に，点 b の電位（抵抗の電圧）$v_R$ を縦（$y$）入力に加えた（電位はいずれも接地点を基準とする）．蛍光面上の輝点の座標は $x=kv$，$y=kv_R$（$k$ は $x$，$y$ 共通の正の定数）で表される．電源電圧の振幅は一定に保ったまま，角周波数だけを変えられる．\n角周波数を $\\omega_1$ にしたところ，蛍光面には図の楕円が現れた．楕円は $-a\\le x\\le a$ の範囲にあり，$x$ 軸と $x=\\pm\\dfrac a2$ で交わった．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電源電圧を $v=V_0\\sin\\omega_1t$，電流の位相の電源電圧に対する遅れを $\\phi$ として，$x$，$y$ を $a$，$\\phi$，$t$ で表せ．さらに $|\\phi|$ と，楕円上の $y$ の最大値を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "角周波数を $2\\omega_1$ にすると，蛍光面には (1) と全く同じ図形が現れた．$\\omega_1$ と $2\\omega_1$ では位相のずれが異なるのに同じ図形になる理由を説明せよ．また，$L$ と $C$ を $R$ と $\\omega_1$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "図形が線分になる角周波数を $\\omega_1$ で表し，そのときの図形を式で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "図形の $y$ の範囲が $-\\dfrac a2\\le y\\le\\dfrac a2$ になる角周波数をすべて，$\\omega_1$ を用いて表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：RLC直列回路のリサジュー図形から位相差と素子の値を読み取る",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：RLC直列回路のリサジュー図形から位相差と素子の値を読み取る",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$x=a\\sin\\omega_1t$，$y=a\\cos\\phi\\,\\sin(\\omega_1t-\\phi)$，$|\\phi|=\\dfrac{\\pi}{6}$，$y$ の最大値 $\\dfrac{\\sqrt3}{2}a$"
+   },
+   {
+    "id": "2",
+    "tex": "図形の式 $x^2-2xy+\\dfrac{y^2}{\\cos^2\\phi}=a^2\\sin^2\\phi$ が $\\phi$ の符号によらないから（$\\omega_1$ と $2\\omega_1$ では $\\phi=-\\dfrac{\\pi}{6}$ と $+\\dfrac{\\pi}{6}$）．$L=\\dfrac{R}{\\sqrt3\\,\\omega_1}$，$C=\\dfrac{\\sqrt3}{2\\omega_1R}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\sqrt2\\,\\omega_1$，$y=x\\ (-a\\le x\\le a)$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{\\sqrt{17}-3}{2}\\omega_1$，$\\dfrac{\\sqrt{17}+3}{2}\\omega_1$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 輝点の運動}\n電源電圧の振幅 $V_0$ に $x$ の最大値 $a$ が対応するから $kV_0=a$．インピーダンスを $Z$ とすると，抵抗の電圧は電流と同位相で振幅 $RI_0=R\\dfrac{V_0}{Z}=V_0\\cos\\phi$（$\\cos\\phi=\\dfrac RZ$）．よって\n\\[ x=\\boldsymbol{a\\sin\\omega_1t},\\qquad y=\\boldsymbol{a\\cos\\phi\\,\\sin(\\omega_1t-\\phi)} \\]\n$y=0$ となるのは $\\omega_1t=\\phi$（$+\\pi$）のときで，このとき $x=\\pm a\\sin\\phi$．これが $\\pm\\dfrac a2$ だから $|\\sin\\phi|=\\dfrac12$，$|\\phi|=\\boldsymbol{\\dfrac{\\pi}{6}}$．$y$ の最大値は $a\\cos\\phi=\\boldsymbol{\\dfrac{\\sqrt3}{2}a}$．\n\n\\textbf{(2) 同じ図形になる理由と素子の値}\n$\\dfrac xa=\\sin\\theta$，$\\dfrac{y}{a\\cos\\phi}=\\sin\\theta\\cos\\phi-\\cos\\theta\\sin\\phi$（$\\theta=\\omega t$）から $\\theta$ を消去すると\n\\[ \\left(\\frac{y}{a\\cos\\phi}-\\frac{x}{a}\\cos\\phi\\right)^2=\\sin^2\\phi\\left(1-\\frac{x^2}{a^2}\\right)\\ \\Longrightarrow\\ x^2-2xy+\\frac{y^2}{\\cos^2\\phi}=a^2\\sin^2\\phi \\]\nこの式は $\\cos^2\\phi$，$\\sin^2\\phi$ だけを含むので，$\\phi$ と $-\\phi$ は同じ図形を与える（輝点がたどる向きが逆になるだけ）．したがって $\\omega_1$，$2\\omega_1$ で $|\\phi|=\\dfrac{\\pi}{6}$，つまり $\\dfrac{|X|}{R}=\\tan\\dfrac{\\pi}{6}=\\dfrac{1}{\\sqrt3}$（$X=\\omega L-\\dfrac{1}{\\omega C}$）．\n$X$ は $\\omega$ について単調増加なので $X(\\omega_1)<X(2\\omega_1)$，よって\n\\[ \\omega_1L-\\frac{1}{\\omega_1C}=-\\frac{R}{\\sqrt3},\\qquad 2\\omega_1L-\\frac{1}{2\\omega_1C}=+\\frac{R}{\\sqrt3} \\]\n辺々加えて $3\\omega_1L=\\dfrac{3}{2\\omega_1C}$，すなわち $\\dfrac1C=2\\omega_1^2L$．第1式に代入して $-\\omega_1L=-\\dfrac{R}{\\sqrt3}$：\n\\[ L=\\boldsymbol{\\frac{R}{\\sqrt3\\,\\omega_1}},\\qquad C=\\frac{1}{2\\omega_1^2L}=\\boldsymbol{\\frac{\\sqrt3}{2\\omega_1R}} \\]\n\n\\textbf{(3) 線分になるとき}\n楕円がつぶれて線分になるのは $\\phi=0$，すなわち共振のとき：\n\\[ \\omega_0=\\frac{1}{\\sqrt{LC}}=\\boldsymbol{\\sqrt2\\,\\omega_1} \\]\n（同じ図形を与える $\\omega_1$ と $2\\omega_1$ の相乗平均になっている．）このとき $y=a\\sin\\omega_0t=x$ なので，図形は線分 $\\boldsymbol{y=x\\ (-a\\le x\\le a)}$．\n\n\\textbf{(4) $y$ の範囲が $\\pm\\dfrac a2$}\n$a\\cos\\phi=\\dfrac a2$ より $\\cos\\phi=\\dfrac12$，$|X|=\\sqrt3R$．$\\omega=u\\,\\omega_1$ とおくと $X=\\dfrac{R}{\\sqrt3}\\left(u-\\dfrac2u\\right)$ だから\n\\[ u-\\frac2u=\\pm3\\quad\\Longrightarrow\\quad u^2\\mp3u-2=0 \\]\n正の解は $u=\\dfrac{3+\\sqrt{17}}{2}$，$\\dfrac{-3+\\sqrt{17}}{2}$．よって\n\\[ \\omega=\\boldsymbol{\\frac{\\sqrt{17}-3}{2}\\omega_1},\\ \\boldsymbol{\\frac{\\sqrt{17}+3}{2}\\omega_1} \\]\n（2つの積は $2\\omega_1^2=\\omega_0^2$ で，ここでも共振角周波数の両側に対になって現れる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "x に電源電圧，y に抵抗電圧（電流）を入れたリサジュー図形は位相差 φ の楕円で，x 軸との交点から |sinφ| が読める．図形の式は φ の符号によらないため，同じ図形を与える2つの角周波数は共振角周波数の両側にあって，その相乗平均が共振角周波数になる．"
+ },
+ "concepts": [
+  "ac-circuit",
+  "wave-basics"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "交流",
+  "RLC直列",
+  "リサジュー図形",
+  "位相差",
+  "共振",
+  "オシロスコープ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

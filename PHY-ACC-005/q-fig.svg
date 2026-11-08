@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 250" width="540" height="250">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker>
+</defs>
+<line x1="60" y1="80" x2="100" y2="80" stroke="#222" stroke-width="1.6"/>
+<rect x="100" y="73.0" width="50" height="14" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="150" y1="80" x2="180" y2="80" stroke="#222" stroke-width="1.6"/>
+<path d="M180,80 a8,8 0 0 1 16,0 a8,8 0 0 1 16,0 a8,8 0 0 1 16,0 a8,8 0 0 1 16,0" stroke="#222" stroke-width="1.6" fill="none"/>
+<line x1="244" y1="80" x2="290" y2="80" stroke="#222" stroke-width="1.6"/>
+<text x="125" y="66" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">R</text>
+<text x="212" y="64" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">L<tspan baseline-shift="sub" font-size="10" font-style="normal">1</tspan></text>
+<circle cx="290" cy="80" r="2.5" fill="#222"/>
+<circle cx="450" cy="80" r="2.5" fill="#222"/>
+<line x1="290" y1="80" x2="290" y2="40" stroke="#222" stroke-width="1.6"/>
+<line x1="290" y1="40" x2="338" y2="40" stroke="#222" stroke-width="1.6"/>
+<path d="M338,40 a8,8 0 0 1 16,0 a8,8 0 0 1 16,0 a8,8 0 0 1 16,0 a8,8 0 0 1 16,0" stroke="#222" stroke-width="1.6" fill="none"/>
+<line x1="402" y1="40" x2="450" y2="40" stroke="#222" stroke-width="1.6"/>
+<line x1="450" y1="40" x2="450" y2="80" stroke="#222" stroke-width="1.6"/>
+<line x1="290" y1="80" x2="290" y2="125" stroke="#222" stroke-width="1.6"/>
+<line x1="290" y1="125" x2="366" y2="125" stroke="#222" stroke-width="1.6"/>
+<line x1="366.0" y1="113.0" x2="366.0" y2="137.0" stroke="#222" stroke-width="1.6"/>
+<line x1="374.0" y1="113.0" x2="374.0" y2="137.0" stroke="#222" stroke-width="1.6"/>
+<line x1="374" y1="125" x2="450" y2="125" stroke="#222" stroke-width="1.6"/>
+<line x1="450" y1="125" x2="450" y2="80" stroke="#222" stroke-width="1.6"/>
+<text x="370" y="22" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">L<tspan baseline-shift="sub" font-size="10" font-style="normal">2</tspan></text>
+<text x="370" y="152" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">C</text>
+<line x1="305" y1="40" x2="330" y2="40" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="312" y="32" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf" text-anchor="middle">I<tspan baseline-shift="sub" font-size="10" font-style="normal">2</tspan></text>
+<line x1="450" y1="80" x2="500" y2="80" stroke="#222" stroke-width="1.6"/>
+<line x1="500" y1="80" x2="500" y2="210" stroke="#222" stroke-width="1.6"/>
+<line x1="500" y1="210" x2="296" y2="210" stroke="#222" stroke-width="1.6"/>
+<circle cx="280" cy="210" r="16" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M270,210 C274,200 278,200 280,210 C282,220 286,220 290,210" stroke="#222" stroke-width="1.4" fill="none"/>
+<line x1="264" y1="210" x2="60" y2="210" stroke="#222" stroke-width="1.6"/>
+<line x1="60" y1="210" x2="60" y2="80" stroke="#222" stroke-width="1.6"/>
+<text x="280" y="242" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">V<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+<text x="294" y="242" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">sin</text>
+<text x="316" y="242" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">ωt</text>
+<line x1="60" y1="170" x2="60" y2="130" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="42" y="155" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf" text-anchor="middle">I</text>
+</svg>

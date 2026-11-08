@@ -1,0 +1,134 @@
+{
+ "id": "ELM-CAP-001",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-02",
+ "topic": "極板の間隔を変えたコンデンサー",
+ "course": "物理",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "derivation",
+  "concept"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "面積 $S$ の2枚の極板を間隔 $d$ で平行に置いた平行板コンデンサーを，電圧 $V$ の電池につないで十分時間がたった．極板間は真空で，誘電率は $\\varepsilon_0$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "コンデンサーにたまった電気量 $Q$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "電池をつないだまま，極板の間隔を $2d$ にした．電気量は何倍になるか．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) のとき，静電エネルギーは何倍になるか．"
+     },
+     {
+      "id": "4",
+      "tex": "はじめの状態から電池を外し，その後に間隔を $2d$ にした．極板間の電位差は何倍になるか．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) のとき，静電エネルギーは何倍になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "circuit",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "面積 S の極板を間隔 d で向かい合わせたコンデンサーを、電圧 V の電池につないだ回路",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$Q=\\dfrac{\\varepsilon_0SV}{d}$",
+    "grading": "Q：ε_0 S V/d"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac12$ 倍",
+    "grading": "(1/2)倍"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac12$ 倍",
+    "grading": "(1/2)倍"
+   },
+   {
+    "id": "4",
+    "tex": "$2$ 倍",
+    "grading": "2倍"
+   },
+   {
+    "id": "5",
+    "tex": "$2$ 倍",
+    "grading": "2倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $C=\\varepsilon_0\\dfrac Sd$，$Q=CV=\\dfrac{\\varepsilon_0SV}d$．\n\n(2) 電池につないだままなら電位差 $V$ は一定．$C$ が $\\dfrac12$ 倍なので $Q$ も $\\dfrac12$ 倍．\n\n(3) $U=\\dfrac12CV^2$ も $\\dfrac12$ 倍．\n\n(4) 電池を外すと電荷の逃げ道がないので $Q$ は一定．$V=\\dfrac QC$ で $C$ が $\\dfrac12$ 倍なので $V$ は $2$ 倍．\n\n(5) $U=\\dfrac{Q^2}{2C}$ は $2$ 倍．増えた分は，極板を引き離す（引き合う力に逆らう）仕事．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電池につないだまま → $V$ 一定．電池を外す → $Q$ 一定．"
+ },
+ "concepts": [
+  "capacitor"
+ ],
+ "laws": [
+  "capacitance",
+  "capacitor-energy"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "コンデンサー",
+  "電気容量",
+  "静電エネルギー"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "id": "PHY-CAP-016",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-02",
+ "topic": "エレクトレットの等価電池と，電極の動かし方による取り出せる電気エネルギーの違い",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平な床に固定した面積 $S$ の金属板（下電極）の上に，厚さ $d$，誘電率 $\\varepsilon$ の誘電体の膜を密着させる．膜の上面のすぐ内側には，電荷 $-Q$ $(Q>0)$ が一様に固定されている（エレクトレット）．膜の上方には，面積 $S$ の金属板（上電極）が膜と平行に置かれ，膜の上面との距離 $z$ を外力で変えることができる．$z=0$ のとき上電極は膜の上面に接するが，膜内の固定電荷が移動することはない．上電極と下電極は抵抗値 $R$ の抵抗とスイッチ K を通してつながれており，2枚の電極の電荷の和は常に $+Q$ である．膜の外は真空で，真空の誘電率を $\\varepsilon_0$ とする．端の効果，上電極の重さ，電荷の移動にともなう電磁波の放射は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "K が開いていて，上電極の電荷が $q$，距離が $z$ であるとき，下電極を基準とした上電極の電位 $\\phi$ を求めよ．さらに，$\\phi$ が定数 $E_0$，$C_1$ と $z$ に依存する $C_2(z)$ を用いて $\\phi=q\\left(\\dfrac{1}{C_1}+\\dfrac{1}{C_2(z)}\\right)-E_0$ の形に書けることを示し，$E_0$，$C_1$，$C_2(z)$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "K を閉じて十分に時間がたったときの上電極の電荷 $q(z)$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "上電極の電荷が $q$ のとき，上電極が受ける静電気力の大きさと向きを求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "次の操作 P を 1 サイクルとする：$z=0$ で K を閉じて十分に時間がたった状態から，K を開いて上電極をすばやく $z=h$ まで動かす．K を閉じて十分に時間をおく．K を開いて上電極を $z=0$ に戻し，K を閉じて十分に時間をおく．1 サイクルで抵抗に発生するジュール熱 $H_{\\mathrm P}$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "操作 P のかわりに，次の操作 R を 1 サイクルとする：$z=0$ で K を閉じて十分に時間がたった状態から，K を閉じたまま上電極を非常にゆっくりと $z=h$ まで動かす．K を開いて上電極を $z=0$ に戻し，K を閉じて十分に時間をおく．1 サイクルで抵抗に発生するジュール熱 $H_{\\mathrm R}$ と，比 $H_{\\mathrm P}/H_{\\mathrm R}$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：エレクトレットの等価電池と，電極の動かし方による取り出せる電気エネルギーの違い",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：エレクトレットの等価電池と，電極の動かし方による取り出せる電気エネルギーの違い",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\phi=q\\left(\\dfrac{d}{\\varepsilon S}+\\dfrac{z}{\\varepsilon_0S}\\right)-\\dfrac{Qd}{\\varepsilon S}$，$E_0=\\dfrac{Qd}{\\varepsilon S}$，$C_1=\\dfrac{\\varepsilon S}{d}$，$C_2(z)=\\dfrac{\\varepsilon_0S}{z}$"
+   },
+   {
+    "id": "2",
+    "tex": "$q(z)=\\dfrac{\\varepsilon_0d}{\\varepsilon_0d+\\varepsilon z}Q$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{q^2}{2\\varepsilon_0S}$，膜に引き寄せられる向き（下向き）"
+   },
+   {
+    "id": "4",
+    "tex": "$H_{\\mathrm P}=\\dfrac{\\varepsilon Q^2h^2(2\\varepsilon_0d+\\varepsilon h)}{2\\varepsilon_0S(\\varepsilon_0d+\\varepsilon h)^2}$"
+   },
+   {
+    "id": "5",
+    "tex": "$H_{\\mathrm R}=\\dfrac{\\varepsilon Q^2h^2d}{2S(\\varepsilon_0d+\\varepsilon h)^2}$，$\\dfrac{H_{\\mathrm P}}{H_{\\mathrm R}}=2+\\dfrac{\\varepsilon h}{\\varepsilon_0d}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 電位と等価回路}　下電極の電荷は $Q-q$ である．十分に広い平面電荷の電場は，その面の上下で向きが逆の一様な電場であり，重ね合わせると次のようになる（上向きを正）．\n・膜の中（下電極と固定電荷の間）：電束密度は下電極の電荷だけで決まり $\\dfrac{Q-q}{S}$，電場は $\\dfrac{Q-q}{\\varepsilon S}$．\n・すき間（固定電荷と上電極の間）：下にある電荷の合計は $(Q-q)-Q=-q$ なので，電場は $-\\dfrac{q}{\\varepsilon_0S}$．\n・上電極より上：電荷の合計が $0$ なので電場は $0$．\n電位は電場を下から積分して符号を変えたものだから\n\\[ \\phi=-\\frac{(Q-q)d}{\\varepsilon S}+\\frac{qz}{\\varepsilon_0S}=\\boldsymbol{q\\left(\\frac{d}{\\varepsilon S}+\\frac{z}{\\varepsilon_0S}\\right)-\\frac{Qd}{\\varepsilon S}} \\]\nこれは，起電力 $E_0$ の電池と容量 $C_1$，$C_2(z)$ の2つのコンデンサーを直列につないだものの端子電圧と同じ形であり\n\\[ E_0=\\boldsymbol{\\frac{Qd}{\\varepsilon S}},\\qquad C_1=\\boldsymbol{\\frac{\\varepsilon S}{d}},\\qquad C_2(z)=\\boldsymbol{\\frac{\\varepsilon_0S}{z}} \\]\n外部回路から見ると，エレクトレットは「下電極側を正極とする起電力 $E_0$ の電池」と，膜・すき間の2つのコンデンサーの直列接続である（解答図）．\n\n\\textbf{(2) K を閉じたとき}　十分に時間がたつと電流が止まり，抵抗の両端の電位差は $0$，すなわち $\\phi=0$．\n\\[ q(z)=E_0\\cdot\\frac{1}{\\dfrac{1}{C_1}+\\dfrac{1}{C_2}}=\\boldsymbol{\\frac{\\varepsilon_0d}{\\varepsilon_0d+\\varepsilon z}Q} \\]\n$z=0$ では $q=Q$（固定電荷の相手の電荷がすべて上電極に集まる），$z$ が大きくなるほど上電極の電荷は減り，その分が抵抗を通って下電極へ移る．\n\n\\textbf{(3) 上電極にはたらく力}　上電極の位置での電場は，すき間の電場 $\\dfrac{q}{\\varepsilon_0S}$（下向き）のうち半分が上電極自身の電荷によるものなので，他の電荷による電場は $\\dfrac{q}{2\\varepsilon_0S}$．よって力の大きさは\n\\[ \\boldsymbol{\\frac{q^2}{2\\varepsilon_0S}} \\]\nで，向きは\\textbf{膜に引き寄せられる向き（下向き）}．$q$ の符号によらず引力である．（電荷一定でのエネルギー $U=\\dfrac{(Q-q)^2d}{2\\varepsilon S}+\\dfrac{q^2z}{2\\varepsilon_0S}$ を $z$ で微分しても同じ結果になる．）\n\n\\textbf{(4) 操作 P}　系の静電エネルギーは\n\\[ U(q,z)=\\frac{(Q-q)^2}{2C_1}+\\frac{q^2}{2C_2(z)} \\]\n（電場のエネルギーの和）である．K を閉じている間に外力が仕事をしなければ，抵抗の発熱は $U$ の減少に等しい．等価回路で見ると，起電力 $E_0$ の電池と合成容量 $C$ の回路で電荷が $q_{\\text{前}}$ から $q_{\\text{後}}=CE_0$ に変わるときの発熱 $\\dfrac{(q_{\\text{後}}-q_{\\text{前}})^2}{2C}$ と同じである．\n\n$q_h=q(h)=\\dfrac{\\varepsilon_0d}{\\varepsilon_0d+\\varepsilon h}Q$ とおくと，$Q-q_h=\\dfrac{\\varepsilon h}{\\varepsilon_0d+\\varepsilon h}Q$．\n・$z=h$ で K を閉じたとき：電荷が $Q\\to q_h$，合成容量 $C_h$ は $\\dfrac{1}{C_h}=\\dfrac{d}{\\varepsilon S}+\\dfrac{h}{\\varepsilon_0S}$．発熱 $\\dfrac{(Q-q_h)^2}{2C_h}$．\n・$z=0$ で K を閉じたとき：電荷が $q_h\\to Q$，合成容量は $C_1$（$C_2(0)$ は無限大）．発熱 $\\dfrac{(Q-q_h)^2}{2C_1}$．\nよって\n\\[ H_{\\mathrm P}=\\frac{(Q-q_h)^2}{2}\\left(\\frac{2d}{\\varepsilon S}+\\frac{h}{\\varepsilon_0S}\\right)=\\boldsymbol{\\frac{\\varepsilon Q^2h^2(2\\varepsilon_0d+\\varepsilon h)}{2\\varepsilon_0S(\\varepsilon_0d+\\varepsilon h)^2}} \\]\n別解（エネルギー収支）：1 サイクルで系はもとの状態に戻るので，発熱の合計は外力の仕事の合計に等しい．K を開いて動かす間は電荷一定で力も一定だから，外力の仕事は $\\dfrac{Q^2h}{2\\varepsilon_0S}-\\dfrac{q_h^2h}{2\\varepsilon_0S}$ で，これを整理すると上と一致する．\n\n\\textbf{(5) 操作 R}　K を閉じたまま非常にゆっくり動かすと，各瞬間で $q=q(z)$ がほぼ成り立ち，電流は非常に小さい．発熱は（電流）$^2\\times R\\times$（時間）で，電流は動かす時間に反比例するので，発熱は時間に反比例して $0$ に近づく．よってこの過程の発熱は無視でき，外力の仕事はすべて静電エネルギーの増加になる．発熱は $z=0$ で K を閉じたときだけで\n\\[ H_{\\mathrm R}=\\frac{(Q-q_h)^2}{2C_1}=\\boldsymbol{\\frac{\\varepsilon Q^2h^2d}{2S(\\varepsilon_0d+\\varepsilon h)^2}} \\]\n\\[ \\frac{H_{\\mathrm P}}{H_{\\mathrm R}}=\\frac{\\dfrac{2d}{\\varepsilon S}+\\dfrac{h}{\\varepsilon_0S}}{\\dfrac{d}{\\varepsilon S}}=\\boldsymbol{2+\\frac{\\varepsilon h}{\\varepsilon_0d}} \\]\n同じだけの電荷 $Q-q_h$ を往復させても，電荷の移動を「端の位置でまとめて一気に」起こす操作 P の方が多くの電気エネルギーを取り出せる（そのぶん外力の仕事も大きい）．どちらの場合も「発熱＝外力の仕事」が成り立つことは，(3) の力を用いて直接確かめられる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "誘電体中に固定された電荷は，外部回路から見ると「内蔵電池（起電力 $Qd/(\\varepsilon S)$）と膜・すき間の2つのコンデンサーの直列接続」と等価になる．電極を動かして電荷を往復させると抵抗で熱が出るが，その量は1サイクルの外力の仕事に等しく，電荷を端の位置で一気に動かすか，動かしながら少しずつ流すかで大きく変わる．"
+ },
+ "concepts": [
+  "capacitor",
+  "work-energy",
+  "heat-engine"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エレクトレット",
+  "等価回路",
+  "静電エネルギー",
+  "ジュール熱",
+  "準静的過程"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

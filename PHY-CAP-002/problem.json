@@ -1,0 +1,144 @@
+{
+ "id": "PHY-CAP-002",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-02",
+ "topic": "ばねで支えた極板の電圧一定での引き込み（静的・動的な不安定）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかな水平面上を左右に動ける質量 $m$ の金属極板 A が，ばね定数 $k$ の絶縁性のばねで壁につながれ，絶縁台に固定された金属極板 B と平行に向かい合っている．A，B はともに面積 $S$ の同形の極板で，極板間隔を $x$ とする．極板が帯電していないとき，A はばねが自然長の位置で静止しており，そのときの極板間隔は $d_0$ である．A，B は軽い導線とスイッチ S を通して起電力 $V$ の電池につながれている．極板間は真空で，真空の誘電率を $\\varepsilon_0$ とする．極板の端の効果は無視する．また，S を閉じたときの充電は A が動き出す前に瞬時に終わり，A が動いている間も S が閉じていれば極板間の電圧は常に $V$ に保たれ，回路で発生するジュール熱は無視できるものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "S を閉じたまま，A が極板間隔 $x$ の位置でつり合って静止しているとき，$V$ を $k,\\ d_0,\\ \\varepsilon_0,\\ S,\\ x$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "S を閉じたまま，A を手でゆっくり動かしてつり合いの位置を探したところ，$V$ がある値 $V_{\\mathrm c}$ を超えると，A が静止できる位置は存在しなかった．$V_{\\mathrm c}$ と，$V=V_{\\mathrm c}$ のときのつり合いの極板間隔を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$V<V_{\\mathrm c}$ のとき，つり合いの位置は 2 つある．そのうち極板間隔の大きい方の位置 $x=x_1$ で A を少しずらして放すと，A は単振動した．その角振動数 $\\omega_1$ を $k,\\ m,\\ d_0,\\ x_1$ で表せ．また，もう一方のつり合いの位置ではどうなるか．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の単振動の途中，A がつり合いの位置 $x=x_1$ を通過する瞬間に S を開いた．以後の A の運動の角振動数 $\\omega_2$ を求めよ．また，振動の中心は $x=x_1$ からずれるか．"
+     },
+     {
+      "id": "5",
+      "tex": "再び極板が帯電しておらず，A が $x=d_0$ で静止している状態に戻す．この状態から S を閉じたとき，A が B に衝突しないための $V$ の上限 $V_{\\mathrm d}$ を求めよ．また，$V_{\\mathrm d}/V_{\\mathrm c}$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ばねで支えた極板の電圧一定での引き込み（静的・動的な不安定）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：ばねで支えた極板の電圧一定での引き込み（静的・動的な不安定）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V=\\sqrt{\\dfrac{2kx^2(d_0-x)}{\\varepsilon_0 S}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$V_{\\mathrm c}=\\sqrt{\\dfrac{8kd_0^{\\,3}}{27\\varepsilon_0 S}}$，極板間隔 $\\dfrac23d_0$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\omega_1=\\sqrt{\\dfrac{k(3x_1-2d_0)}{mx_1}}$，もう一方（$x<\\frac23d_0$）は不安定なつり合いで，少しずれると戻らない"
+   },
+   {
+    "id": "4",
+    "tex": "$\\omega_2=\\sqrt{\\dfrac{k}{m}}$，中心はずれない（$x_1$ のまま）"
+   },
+   {
+    "id": "5",
+    "tex": "$V_{\\mathrm d}=\\sqrt{\\dfrac{kd_0^{\\,3}}{4\\varepsilon_0 S}}$，$\\dfrac{V_{\\mathrm d}}{V_{\\mathrm c}}=\\dfrac{3\\sqrt6}{8}\\ (\\approx0.92)$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{極板間引力}　極板間隔 $x$，電圧 $V$ のとき，電気量は $Q=\\dfrac{\\varepsilon_0S}{x}V$，極板間の電場は $E=\\dfrac Vx$ である．一方の極板がつくる電場は $\\dfrac E2$ なので，A が受ける引力は\n\\[ F=Q\\cdot\\frac E2=\\frac{\\varepsilon_0SV^2}{2x^2} \\]\n電圧一定では，間隔が縮むほど引力が $1/x^2$ で強くなる．\n\n(1) A にはたらく水平方向の力は，ばねの弾性力 $k(d_0-x)$（B から遠ざかる向き）と引力 $F$ だけである．つり合いより\n\\[ k(d_0-x)=\\frac{\\varepsilon_0SV^2}{2x^2}\\qquad\\therefore\\ \\boldsymbol{V=\\sqrt{\\frac{2kx^2(d_0-x)}{\\varepsilon_0S}}} \\]\n\n(2) (1) より $V^2=\\dfrac{2k}{\\varepsilon_0S}f(x)$，$f(x)=x^2(d_0-x)\\ (0<x<d_0)$ である．$f'(x)=x(2d_0-3x)$ より $f$ は $x=\\dfrac23d_0$ で最大値 $\\dfrac{4}{27}d_0^{\\,3}$ をとる．つり合いの位置が存在するのは $V^2$ がこの最大値に対応する値以下のときなので\n\\[ \\boldsymbol{V_{\\mathrm c}=\\sqrt{\\frac{8kd_0^{\\,3}}{27\\varepsilon_0S}}},\\qquad\\text{そのときの間隔は }\\boldsymbol{\\tfrac23d_0} \\]\n解答図のように，直線 $k(d_0-x)$ と曲線 $\\dfrac{\\varepsilon_0SV^2}{2x^2}$ が接する条件と見てもよい．\n\n(3) B から遠ざかる向きを正とする A にはたらく合力は $G(x)=k(d_0-x)-\\dfrac{\\varepsilon_0SV^2}{2x^2}$．$x=x_1+\\xi$（$|\\xi|\\ll x_1$）とすると，$\\dfrac1{(x_1+\\xi)^2}\\fallingdotseq\\dfrac1{x_1^{\\,2}}\\left(1-\\dfrac{2\\xi}{x_1}\\right)$ と $G(x_1)=0$ より\n\\[ G\\fallingdotseq-\\left(k-\\frac{\\varepsilon_0SV^2}{x_1^{\\,3}}\\right)\\xi \\]\n(1) の関係 $\\varepsilon_0SV^2=2kx_1^{\\,2}(d_0-x_1)$ を代入すると，実効的なばね定数は\n\\[ k'=k-\\frac{2k(d_0-x_1)}{x_1}=\\frac{k(3x_1-2d_0)}{x_1} \\]\n$x_1>\\dfrac23d_0$ なので $k'>0$ で単振動し\n\\[ \\boldsymbol{\\omega_1=\\sqrt{\\frac{k(3x_1-2d_0)}{mx_1}}} \\]\nもう一方のつり合いの位置は $x<\\dfrac23d_0$ なので $k'<0$ となり，少しずれると引力の増加がばねの弾性力の増加を上回ってずれが拡大する（\\textbf{不安定}）．電圧一定の引力は「負のばね定数をもつばね」のようにはたらき，ばねを弱めている．\n\n(4) S を開くと電気量が $Q_1=\\dfrac{\\varepsilon_0SV}{x_1}$ のまま一定になる．このとき電場は $E=\\dfrac{Q_1}{\\varepsilon_0S}$ で間隔によらず，引力 $F=\\dfrac{Q_1^{\\,2}}{2\\varepsilon_0S}$ も一定である．一定の力は振動の中心をずらすだけでばね定数を変えないので\n\\[ \\boldsymbol{\\omega_2=\\sqrt{\\frac km}} \\]\nまた，この一定の引力は S を開いた瞬間の位置 $x_1$ での引力に等しく，$x_1$ でばねの弾性力とつり合っている．よって振動の中心は $\\boldsymbol{x_1}$ \\textbf{のままでずれない}．（$\\omega_2>\\omega_1$ となる．）\n\n(5) \\textbf{エネルギーの収支}　電圧 $V$ を保ったまま間隔が $d_0$ から $x$ に変わると，電気容量は $C_0=\\dfrac{\\varepsilon_0S}{d_0}$ から $C=\\dfrac{\\varepsilon_0S}{x}$ に増える．電池のする仕事は $W_{\\mathrm b}=V\\cdot(C-C_0)V$，静電エネルギーの増加は $\\dfrac12(C-C_0)V^2$ だから，その差\n\\[ W_{\\mathrm b}-\\frac12(C-C_0)V^2=\\frac12(C-C_0)V^2=\\frac{\\varepsilon_0SV^2}{2}\\left(\\frac1x-\\frac1{d_0}\\right) \\]\nが引力が A にした仕事である（ジュール熱は無視できる）．A の運動エネルギーとばねの弾性エネルギーについて\n\\[ \\frac12mv^2+\\frac12k(d_0-x)^2=\\frac{\\varepsilon_0SV^2}{2}\\cdot\\frac{d_0-x}{xd_0} \\]\nA が B に当たらずに折り返すには，$0<x<d_0$ に $v=0$ となる点が必要である．$x\\neq d_0$ で両辺を $\\dfrac{d_0-x}{2}$ で割ると\n\\[ kx(d_0-x)=\\frac{\\varepsilon_0SV^2}{d_0} \\]\n左辺の最大値は $x=\\dfrac{d_0}2$ のときの $\\dfrac{kd_0^{\\,2}}4$ なので，折り返し点が存在する条件は $V^2\\leqq\\dfrac{kd_0^{\\,3}}{4\\varepsilon_0S}$ である．$d_0$ から縮んでいく A は大きい方の解（$\\geqq\\dfrac{d_0}2$）に先に達して折り返す．よって\n\\[ \\boldsymbol{V_{\\mathrm d}=\\sqrt{\\frac{kd_0^{\\,3}}{4\\varepsilon_0S}}},\\qquad \\frac{V_{\\mathrm d}}{V_{\\mathrm c}}=\\sqrt{\\frac{1/4}{8/27}}=\\boldsymbol{\\frac{3\\sqrt6}{8}}\\ (\\fallingdotseq0.92) \\]\n$V_{\\mathrm d}<V<V_{\\mathrm c}$ では，安定なつり合いの位置は存在するのに，静止状態から急に電圧をかけると A は勢いでつり合いの位置を行き過ぎ，不安定なつり合いの位置を越えて B に引き込まれる．静的な条件と動的な条件は一致しない．なお $V=V_{\\mathrm d}$ のときの折り返し点 $x=\\dfrac{d_0}2$ は，ちょうどその電圧での不安定なつり合いの位置になっている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電圧一定のコンデンサーの極板間引力は $1/x^2$ で強まり，ばねに対して負のばね定数としてはたらくので，つり合いが $x=\\frac23d_0$ を境に安定・不安定に分かれる．電荷一定に切り替えると引力は一定になり振動数が戻る．静止から急に電圧をかける場合は，電池の仕事の半分だけが力学的仕事になることを使ったエネルギー収支で，静的な限界より低い電圧で引き込みが起こる．"
+ },
+ "concepts": [
+  "capacitor",
+  "simple-harmonic-motion",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "極板間引力",
+  "電圧一定と電荷一定",
+  "安定性",
+  "単振動",
+  "エネルギー保存",
+  "プルイン"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "id": "PHY-CAP-009",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-02",
+ "topic": "共通の極板をもつ2つのコンデンサーにまたがる誘電体板の振動（電圧一定と電荷一定）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，長さ $2l$，幅 $w$ の長方形の金属板 P を上側の極板とし，その下に間隔 $d$ をあけて，長さ $l$，幅 $w$ の2枚の金属板 A，B を，互いに絶縁してすき間なく並べる．P と A，P と B はそれぞれ平行板コンデンサーとなる．極板間には，長さ $l$，幅 $w$，厚さ $d$，比誘電率 3，質量 $m$ の誘電体板があり，極板に沿って長さ方向にだけなめらかに動ける．A と B の境目から測った誘電体板の中心の位置を $x$（右向きを正，$|x|\\leqq\\frac l2$）とする．真空の誘電率を $\\varepsilon_0$ として $C_0=\\dfrac{\\varepsilon_0wl}{d}$ とおき，極板の端での電場の乱れ，重力，導線の抵抗と電磁波の放射は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A と B を導線でつなぎ，P との間を電位差 $V$ で充電してから電源を外した．このとき誘電体板が受ける $x$ 方向の静電気力を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "以下 (2)〜(4) では (1) とは別に，すべての極板の電荷が 0 の状態から始め，A と B は導線でつながず，図のように A と B の間に起電力 $V$ の電池をつなぐ（P はどこにもつながない）．まず，電池をつないだままにする．\n (i) A，B 間の合成容量 $C(x)$ を求めよ．\n (ii) 誘電体板が受ける静電気力を $x$ の関数として求め，誘電体板が（$|x|\\leqq\\frac l2$ の範囲で）単振動することを示して，その角振動数 $\\omega_V$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "誘電体板を $x=0$ に置いて十分に時間がたってから電池を外し，その後誘電体板を $x=0$ からわずかにずらして放した．微小振動の角振動数 $\\omega_Q$ を求めよ．また，$\\omega_Q$ と $\\omega_V$ の大小関係とその理由を述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "誘電体板を $x=\\frac l2$ で静かに放したとき，$x=0$ を通過する瞬間の速さを，(2) の場合（電池をつないだまま）$v_V$，(3) の場合（$x=0$ で充電してから電池を外した状態）$v_Q$ として，それぞれ求めよ．また，(2) の場合にこの間に電池がした仕事 $W$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：共通の極板をもつ2つのコンデンサーにまたがる誘電体板の振動（電圧一定と電荷一定）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "0"
+   },
+   {
+    "id": "2",
+    "tex": "(i) $C(x)=C_0\\left(1-\\dfrac{x^2}{l^2}\\right)$　(ii) $-\\dfrac{C_0V^2}{l^2}x$，$\\omega_V=\\dfrac{V}{l}\\sqrt{\\dfrac{C_0}{m}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\omega_Q=\\omega_V$（理由は解説）"
+   },
+   {
+    "id": "4",
+    "tex": "$v_V=\\dfrac V2\\sqrt{\\dfrac{C_0}{m}}$，$v_Q=V\\sqrt{\\dfrac{C_0}{3m}}$，$W=\\dfrac14C_0V^2$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{準備：各コンデンサーの容量}　誘電体板は $-\\frac l2+x$ から $\\frac l2+x$ までを占めるので，P と A の間に入っている長さは $\\frac l2-x$，P と B の間は $\\frac l2+x$．誘電体部分と空気部分の並列とみなして\n\\[ C_A=\\frac{\\varepsilon_0w}{d}\\left\\{\\left(\\frac l2+x\\right)+3\\left(\\frac l2-x\\right)\\right\\}=2C_0\\left(1-\\frac xl\\right),\\qquad C_B=2C_0\\left(1+\\frac xl\\right). \\]\n和 $C_A+C_B=4C_0$ は $x$ によらない．\n\n\\textbf{(1)}　A と B をつなぐと，P と (A，B) は長さ $2l$ の1つのコンデンサーで，容量 $C_A+C_B=4C_0$ は一定．電荷一定なので静電エネルギー $\\dfrac{Q^2}{2\\cdot4C_0}$ は $x$ によらず，誘電体板を動かしても仕事は生じない．よって力は $\\boldsymbol{0}$．（誘電体板が P–A 側と P–B 側に引き込まれる力は，両側の電圧が等しいので打ち消し合う．）\n\n\\textbf{(2)}　(i) P は孤立していて電荷の和が 0 なので，P を介した $C_A$ と $C_B$ の直列接続になる．\n\\[ C(x)=\\frac{C_AC_B}{C_A+C_B}=\\frac{4C_0^2(1-x^2/l^2)}{4C_0}=\\boldsymbol{C_0\\left(1-\\frac{x^2}{l^2}\\right)}. \\]\n(ii) 誘電体板を $\\Delta x$ だけ動かすとき，電池の仕事 $V\\Delta Q=V^2\\Delta C$ は静電エネルギーの増加 $\\frac12V^2\\Delta C$ と静電気力の仕事 $F\\Delta x$ に分かれる（抵抗は無視）．よって\n\\[ F=\\frac12V^2\\frac{dC}{dx}=\\frac12V^2\\cdot\\left(-\\frac{2C_0x}{l^2}\\right)=\\boldsymbol{-\\frac{C_0V^2}{l^2}x}. \\]\nこれは $x$ に比例する復元力そのもの（近似なし）なので，誘電体板は $|x|\\leqq\\frac l2$ の範囲で単振動し，\n\\[ \\boldsymbol{\\omega_V=\\sqrt{\\frac{C_0V^2}{ml^2}}=\\frac Vl\\sqrt{\\frac{C_0}{m}}}. \\]\n物理的には，$x>0$ のとき $C_B>C_A$ なので A 側の電圧 $V_A=\\frac{C_B}{C_A+C_B}V$ のほうが大きく，誘電体板は電圧の大きい P–A 側へより強く引き込まれる．\n\n\\textbf{(3)}　電池を外すと A，B の電荷 $Q=C(0)V=C_0V$ が一定になる．静電エネルギー\n\\[ U(x)=\\frac{Q^2}{2C(x)}=\\frac{C_0V^2}{2(1-x^2/l^2)} \\]\nから $F=-\\dfrac{dU}{dx}=-\\dfrac{C_0V^2x}{l^2(1-x^2/l^2)^2}\\fallingdotseq-\\dfrac{C_0V^2}{l^2}x$（$|x|\\ll l$）．よって $\\boldsymbol{\\omega_Q=\\omega_V}$（等しい）．\n理由：一般に力は $F=\\frac12V_{AB}^2\\dfrac{dC}{dx}$（$V_{AB}$ はその瞬間の A，B 間の電圧）と書ける．つり合いの位置 $x=0$ では $\\dfrac{dC}{dx}=0$ なので，電池を外していても $x$ の1次の範囲では電荷が変わらないときと電圧が変わらないときの区別がなく（$V_{AB}=Q/C$ の変化は $x^2$ の程度），力の1次の項が一致する．ただし大きな振幅では電荷一定のほうが復元力が強く，単振動ではなくなる．\n\n\\textbf{(4)}　(2) の場合：電池の仕事も含めたエネルギー収支 $W=\\Delta U_E+\\frac12mv_V^2$ を使う．\n\\[ C(0)-C\\!\\left(\\tfrac l2\\right)=C_0-\\tfrac34C_0=\\tfrac14C_0,\\qquad W=V^2\\cdot\\tfrac14C_0=\\boldsymbol{\\tfrac14C_0V^2},\\qquad \\Delta U_E=\\tfrac12V^2\\cdot\\tfrac14C_0=\\tfrac18C_0V^2 \\]\nより $\\frac12mv_V^2=\\frac18C_0V^2$，$\\boldsymbol{v_V=\\frac V2\\sqrt{\\frac{C_0}{m}}}$（単振動のエネルギー $\\frac12\\cdot\\frac{C_0V^2}{l^2}\\left(\\frac l2\\right)^2$ とも一致）．\n(3) の場合：電荷一定なので静電エネルギーの減少がすべて運動エネルギーになる．\n\\[ \\frac12mv_Q^2=U\\!\\left(\\tfrac l2\\right)-U(0)=\\frac{C_0V^2}{2}\\left(\\frac43-1\\right)=\\frac{C_0V^2}{6},\\qquad \\boldsymbol{v_Q=V\\sqrt{\\frac{C_0}{3m}}}. \\]\n$v_Q/v_V=2/\\sqrt3>1$ であり，大振幅では電荷一定の方が強く引き戻されることが確かめられる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "共通の浮いた極板をもつ2つのコンデンサーにまたがる誘電体板では，2つの容量の和が一定なので並列では力がはたらかず，直列では合成容量が $x$ の2次式になる．電圧一定ではエネルギー収支から力が $\\frac12V^2dC/dx$ となり厳密な単振動になる．つり合い点で $dC/dx=0$ なので，電荷一定に切り替えても微小振動の角振動数は変わらないが，大振幅では差が出る．"
+ },
+ "concepts": [
+  "capacitor",
+  "simple-harmonic-motion",
+  "work-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "誘電体",
+  "直列コンデンサー",
+  "電池の仕事",
+  "単振動",
+  "電圧一定と電荷一定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

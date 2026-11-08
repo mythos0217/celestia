@@ -1,0 +1,122 @@
+{
+ "id": "ELM-LOR-001",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "磁場中の陽子の円運動",
+ "course": "物理",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "磁束密度 $B$ の一様な磁場に垂直に，質量 $m$，電気量 $q\\ (>0)$ の粒子が速さ $v$ で入射し，等速円運動をした．重力は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "円運動の半径 $r$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "円運動の周期 $T$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "速さを $2$ 倍にすると，周期は何倍になるか．"
+     },
+     {
+      "id": "4",
+      "tex": "速さを $2$ 倍にすると，半径は何倍になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$r=\\dfrac{mv}{qB}$",
+    "grading": "r：m v/(q B)"
+   },
+   {
+    "id": "2",
+    "tex": "$T=\\dfrac{2\\pi m}{qB}$",
+    "grading": "T：2π m/(q B)"
+   },
+   {
+    "id": "3",
+    "tex": "$1$ 倍（変わらない）",
+    "grading": "1倍"
+   },
+   {
+    "id": "4",
+    "tex": "$2$ 倍",
+    "grading": "2倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) ローレンツ力 $qvB$ が向心力：$m\\dfrac{v^2}r=qvB$ より $r=\\dfrac{mv}{qB}$．\n\n(2) $T=\\dfrac{2\\pi r}v=\\dfrac{2\\pi m}{qB}$．\n\n(3) $T$ は $v$ を含まないので変わらない．\n\n(4) $r\\propto v$ なので $2$ 倍．速い粒子は大きな円を回るが，1周の時間は同じ．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ローレンツ力は速度に垂直で仕事をしない → 等速円運動．"
+ },
+ "simulation": {
+  "id": "elm.lorentz",
+  "preset": {
+   "A": 1,
+   "Z": 1,
+   "v": 10,
+   "B": 0.5
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "lorentz-force",
+  "circular-motion"
+ ],
+ "laws": [
+  "cyclotron-motion",
+  "lorentz-force",
+  "centripetal-acceleration"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "ローレンツ力",
+  "円運動",
+  "磁場"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

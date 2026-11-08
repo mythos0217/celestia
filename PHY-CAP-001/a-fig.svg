@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300">
+<defs>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+</defs>
+<line x1="70" y1="250" x2="430.0" y2="250" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+<text x="436.0" y="255" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start" >高さ</text>
+<line x1="70" y1="250" x2="70" y2="37.5" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+<text x="78" y="41.5" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start" ><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan></text>
+<line x1="180.0" y1="250" x2="180.0" y2="54.50000000000003" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="180.0" y="268" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle" ><tspan font-family="Times New Roman, serif" font-style="italic">d</tspan></text>
+<line x1="290.0" y1="250" x2="290.0" y2="54.50000000000003" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="290.0" y="268" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle" >2<tspan font-family="Times New Roman, serif" font-style="italic">d</tspan></text>
+<line x1="400.0" y1="250" x2="400.0" y2="54.50000000000003" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="400.0" y="268" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle" >3<tspan font-family="Times New Roman, serif" font-style="italic">d</tspan></text>
+<text x="64" y="268" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="end" >B</text>
+<line x1="70" y1="80" x2="400.0" y2="80" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="64" y="85" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="end" ><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<line x1="70" y1="117.77777777777777" x2="400.0" y2="117.77777777777777" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="64" y="122.77777777777777" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="end" >7<tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10">0</tspan>/9</text>
+<line x1="70" y1="61.111111111111114" x2="400.0" y2="61.111111111111114" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="64" y="66.11111111111111" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="end" >10<tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10">0</tspan>/9</text>
+<polyline fill="none" stroke="#1f5fbf" stroke-width="1.8" points="70.0,250.0 180.0,117.8 400.0,80.0"/>
+<polyline fill="none" stroke="#c0392b" stroke-width="1.8" stroke-dasharray="7,4" points="70.0,250.0 290.0,61.1 400.0,80.0"/>
+<text x="246.0" y="144.6" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#1f5fbf" text-anchor="start" ><tspan font-family="Times New Roman, serif" font-style="italic">x</tspan>=<tspan font-family="Times New Roman, serif" font-style="italic">d</tspan></text>
+<text x="290.0" y="51.10000000000002" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#c0392b" text-anchor="middle" ><tspan font-family="Times New Roman, serif" font-style="italic">x</tspan>=2<tspan font-family="Times New Roman, serif" font-style="italic">d</tspan></text>
+<text x="406.0" y="74" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start" >A</text>
+<text x="235.0" y="294" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle" >（<tspan font-family="Times New Roman, serif" font-style="italic">q</tspan>=2<tspan font-family="Times New Roman, serif" font-style="italic">C</tspan><tspan baseline-shift="sub" font-size="10">0</tspan><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10">0</tspan> のときの電位分布）</text>
+</svg>
