@@ -1,0 +1,143 @@
+{
+ "id": "PHY-ESF-013",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "極板間を往復する金属円板（導体表面の電荷が受ける力と離れた電荷が受ける力，電荷の運搬による電流）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，真空中で面積の十分に大きい2枚の金属板 A，B を間隔 $d$ で水平に向かい合わせて固定し，下の板 B を接地，上の板 A を電圧を自由に設定できる直流電源の正極につなぐ（A の電位を $V\\ (>0)$ とする）．B の上面の中央には，質量 $m$，面積 $a$ の薄い金属円板 P が置かれている．P の面積は A，B に比べて十分小さく，厚さは無視でき，P があっても極板間の電場は一様で強さ $V/d$ であるとみなす．真空の誘電率を $\\varepsilon_0$，重力加速度の大きさを $g$ とする．P は常に水平を保ち，空気抵抗は無視する．また，P が板に接触すると瞬時に電荷が移動してその板と等電位になり，接触した P は板に対して跳ね返らない（完全非弾性）とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P が B に接しているとき，P の上面に現れる電荷 $q$ を求めよ．また，P が電場から受ける力の大きさ $F_1$ を求めよ．ただし，「電荷 $\\times$ 電場の強さ」としてはいけない理由も説明すること．"
+     },
+     {
+      "id": "2",
+      "tex": "$V$ を $0$ からゆっくり大きくしたところ，$V=V_{\\rm L}$ で P が B から浮き上がった．$V_{\\rm L}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "以下では $V=\\sqrt{2}\\,V_{\\rm L}$ に保つ．P が B を離れた直後に P にはたらく電気力の大きさは $mg$ の何倍か．また，B から A へ向かうときと A から B へ向かうときの P の加速度の大きさをそれぞれ $g$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "P は A，B の間を往復し続ける．往復の周期 $T$ と，電源を流れる電流の時間平均 $\\bar I$ を，$\\varepsilon_0,\\ a,\\ m,\\ g,\\ d$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "1往復の間に電源がする仕事 $W$ と，A，B との衝突で失われる力学的エネルギーの和 $Q$ を $m,\\ g,\\ d$ で表し，両者の関係を説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：極板間を往復する金属円板（導体表面の電荷が受ける力と離れた電荷が受ける力，電荷の運搬による電流）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：極板間を往復する金属円板（導体表面の電荷が受ける力と離れた電荷が受ける力，電荷の運搬による電流）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$q=\\dfrac{\\varepsilon_0 aV}{d}$，$F_1=\\dfrac{\\varepsilon_0 aV^2}{2d^2}$（上向き）"
+   },
+   {
+    "id": "2",
+    "tex": "$V_{\\rm L}=d\\sqrt{\\dfrac{2mg}{\\varepsilon_0 a}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$4$ 倍，上昇時 $3g$，下降時 $5g$"
+   },
+   {
+    "id": "4",
+    "tex": "$T=\\left(\\dfrac{1}{\\sqrt3}+\\dfrac{1}{\\sqrt5}\\right)\\sqrt{\\dfrac{2d}{g}}$，$\\bar I=\\dfrac{4\\sqrt{\\varepsilon_0 amg}}{T}=\\dfrac{4\\sqrt{\\varepsilon_0 amg}}{\\left(\\frac{1}{\\sqrt3}+\\frac{1}{\\sqrt5}\\right)\\sqrt{2d/g}}$"
+   },
+   {
+    "id": "5",
+    "tex": "$W=8mgd$，$Q=8mgd$（$W=Q$）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　導体の表面にある電荷が受ける力と，導体から離れた電荷が受ける力の違い（因子 $\\frac12$）が鍵になる．離れた後は電荷が一定のまま一様な電場の中を動くので，等加速度運動になる．\n\n\\textbf{(1)}　極板間の電場の強さは $E=V/d$ で下向き（A$\\to$B）．P は B と一体の導体で，その上面は B の上面と同じく表面電荷密度 $\\sigma=\\varepsilon_0E$ の正電荷をもつ（ガウスの法則：導体内部の電場は $0$，外側は $E$）．よって\n\\[ q=\\sigma a=\\boldsymbol{\\frac{\\varepsilon_0 aV}{d}} \\]\n表面電荷の層は，層の外側に $\\frac{\\sigma}{2\\varepsilon_0}$，内側に逆向きの $\\frac{\\sigma}{2\\varepsilon_0}$ の電場を自分でつくる．外側で $E$，内側で $0$ となるには，層以外の電荷がつくる電場が $\\frac{E}{2}$ でなければならない．電荷が受ける力は自分以外がつくる電場によるから，\n\\[ F_1=q\\cdot\\frac{E}{2}=\\boldsymbol{\\frac{\\varepsilon_0 aV^2}{2d^2}} \\]\nで，向きは導体から外向き（上向き）．$qE$ とすると，層自身がつくる電場まで含めて数えてしまう．\n\n\\textbf{(2)}　浮き上がるのは $F_1=mg$ のときだから\n\\[ \\frac{\\varepsilon_0 aV_{\\rm L}^2}{2d^2}=mg\\quad\\therefore\\quad V_{\\rm L}=\\boldsymbol{d\\sqrt{\\frac{2mg}{\\varepsilon_0 a}}} \\]\n\n\\textbf{(3)}　$V=\\sqrt2V_{\\rm L}$ のとき，接触中の力は $F_1\\propto V^2$ より $2mg$ で，P は直ちに浮き上がる．離れた瞬間，P の電荷は $q$ のまま（P は孤立導体）で，P の位置の電場は A，B の電荷によるもの $E$ そのものになるから，電気力は\n\\[ qE=2F_1=4mg \\]\nすなわち $\\boldsymbol{4}$ \\textbf{倍}．接触しているときの2倍に跳ね上がる．上昇中の加速度は $(4mg-mg)/m=\\boldsymbol{3g}$（上向き）．\n\nA に接すると，P は A と等電位になり，A の下面と同じ表面電荷密度 $-\\sigma$ をもつので電荷は $-q$ に入れかわる．このとき P は A から下向きに $F_1=2mg$ で引かれ，重力も下向きなので直ちに離れる．下降中の電気力は下向きに $qE=4mg$ だから加速度は $(4mg+mg)/m=\\boldsymbol{5g}$（下向き）．B に接すると再び $+q$ になって上昇する．\n\n\\textbf{(4)}　どちらの区間も初速 $0$，距離 $d$ の等加速度運動だから\n\\[ T=\\sqrt{\\frac{2d}{3g}}+\\sqrt{\\frac{2d}{5g}}=\\boldsymbol{\\left(\\frac{1}{\\sqrt3}+\\frac{1}{\\sqrt5}\\right)\\sqrt{\\frac{2d}{g}}} \\]\n1往復ごとに，P は B で $+q$ を受け取って A へ運び，A で $-q$ に入れかわる．A は P に $2q$ の正電荷を渡す（P から $2q$ を受け取る）ので，1周期あたり電源を $2q$ の電気量が流れる．$V=\\sqrt2V_{\\rm L}$ のとき\n\\[ q=\\frac{\\varepsilon_0a}{d}\\cdot\\sqrt2\\,d\\sqrt{\\frac{2mg}{\\varepsilon_0a}}=2\\sqrt{\\varepsilon_0amg} \\]\nだから（P の B からの高さ $y$ の時間変化は解答図のようになる）\n\\[ \\bar I=\\frac{2q}{T}=\\boldsymbol{\\frac{4\\sqrt{\\varepsilon_0 amg}}{\\left(\\frac{1}{\\sqrt3}+\\frac{1}{\\sqrt5}\\right)\\sqrt{2d/g}}} \\]\n\n\\textbf{(5)}　電源の仕事は（起電力）$\\times$（電源を通った電気量）$=V\\cdot 2q$．$qV=2\\sqrt{\\varepsilon_0amg}\\cdot 2d\\sqrt{\\frac{mg}{\\varepsilon_0a}}=4mgd$ より $W=\\boldsymbol{8mgd}$．\n\n衝突直前の運動エネルギーは，上昇時 $m\\cdot3g\\cdot d=3mgd$，下降時 $m\\cdot5g\\cdot d=5mgd$ で，衝突のたびにすべて失われるから $Q=\\boldsymbol{8mgd}$．\n\n重力のする仕事は1往復で $0$ だから，電源の仕事がすべて衝突による損失（熱など）になる：$W=Q$．別の見方をすると，電気力は上昇時に $qE\\cdot d=qV$，下降時にも $qV$ の正の仕事をし，その合計 $2qV$ を電源が供給している．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "導体表面の電荷は自分以外がつくる電場 $E/2$ からしか力を受けないので，板に接した円板が受ける力は $\\frac12\\varepsilon_0E^2a$ だが，離れた瞬間に電荷はそのままで電場が $E$ になるため力は2倍に跳ね上がる．以後は一定の力による等加速度運動で往復し，1往復で $2q$ を運ぶので電源の平均電流が決まり，電源の仕事はすべて衝突で失われる．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "uniform-acceleration",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "導体表面の力",
+  "電場の圧力",
+  "電荷の運搬",
+  "等加速度運動",
+  "エネルギー収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

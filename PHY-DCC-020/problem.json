@@ -1,0 +1,144 @@
+{
+ "id": "PHY-DCC-020",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-03",
+ "topic": "折れ線特性の3端子素子による増幅回路の動作点とクリッピング",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，3つの端子 B，C，E をもつ素子 T を用いた回路がある．端子 E は接地されている（電位 $0$）．素子 T の性質は次のように理想化できるものとする．\n\\begin{itemize}\n  \\item B から T に流れ込む電流 $I_{\\rm B}$ は，E に対する B の電位 $V_{\\rm BE}$ が $V_{\\rm m}$ 以下なら $0$，$V_{\\rm m}$ を超えると $I_{\\rm B}=g(V_{\\rm BE}-V_{\\rm m})$ である（$g$，$V_{\\rm m}$ は正の定数）．\n  \\item C から T に流れ込み E から出ていく電流 $I_{\\rm C}$ は，E に対する C の電位 $V_{\\rm CE}$ が正である限り $I_{\\rm C}=\\beta I_{\\rm B}$（$\\beta$ は正の定数）である．ただし，$I_{\\rm C}=\\beta I_{\\rm B}$ とすると外部回路の条件から $V_{\\rm CE}<0$ となってしまう場合には，$V_{\\rm CE}=0$ となり，$I_{\\rm C}$ は外部回路で決まる値（$\\beta I_{\\rm B}$ より小さい）になる．\n\\end{itemize}\n入力端子 P と B の間に抵抗 $R_{\\rm A}$ を，起電力 $V_{\\rm S}$ の電池の正極と C の間に抵抗 $R_{\\rm C}$ をつなぎ，電池の負極は接地する．P の電位を入力電圧 $V_{\\rm in}$，C の電位を出力電圧 $V_{\\rm out}$ とする．電池の内部抵抗は無視でき，出力端子からは電流を取り出さないものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$V_{\\rm in}$ を $0$ から徐々に上げていく．$V_{\\rm out}$ を $V_{\\rm in}$ の関数として求めよ．$V_{\\rm out}$ が変化し始める $V_{\\rm in}$ の値を $V_1$，$V_{\\rm out}$ が $0$ になる $V_{\\rm in}$ の値を $V_2$ として，それぞれも答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$V_{\\rm in}=V_{\\rm b}+v_{\\rm s}\\sin\\omega t$（$V_{\\rm b}$ は直流のバイアス電圧，$v_{\\rm s}>0$）を入力したところ，出力も正弦波となった．出力の交流成分の振幅は $v_{\\rm s}$ の何倍か．また，入力と出力の交流成分の位相の関係を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "出力が正弦波からくずれない（ひずまない）ような $v_{\\rm s}$ の最大値 $v_{\\rm max}$ と，そのときの $V_{\\rm b}$ を $V_1$，$V_2$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "振幅を $v_{\\rm s}=v_{\\rm max}$ のまま，バイアスを $V_{\\rm b}=V_1+\\dfrac{V_2-V_1}{4}$ に下げた．1周期のうち，出力が $V_{\\rm S}$ に張りついて動かない時間は何分のいくらか．また，出力が $0$ に張りつく時間はあるか．"
+     },
+     {
+      "id": "5",
+      "tex": "最後に，端子 E と接地点の間に抵抗 $R_{\\rm E}$ を入れた（$V_{\\rm BE}$ は E に対する B の電位のまま）．$V_{\\rm CE}>0$，$V_{\\rm BE}>V_{\\rm m}$ の範囲で，接地点に対する C の電位の変化と $V_{\\rm in}$ の変化の比の大きさ（増幅度）$A'$ を求めよ．また，$\\beta$ が非常に大きい極限での $A'$ を求め，その特徴を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：折れ線特性の3端子素子による増幅回路の動作点とクリッピング",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：折れ線特性の3端子素子による増幅回路の動作点とクリッピング",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K=\\dfrac{\\beta gR_{\\rm C}}{1+gR_{\\rm A}}$ として，$V_{\\rm in}\\le V_1$ で $V_{\\rm out}=V_{\\rm S}$，$V_1<V_{\\rm in}<V_2$ で $V_{\\rm out}=V_{\\rm S}-K(V_{\\rm in}-V_{\\rm m})$，$V_{\\rm in}\\ge V_2$ で $V_{\\rm out}=0$．$V_1=V_{\\rm m}$，$V_2=V_{\\rm m}+\\dfrac{(1+gR_{\\rm A})V_{\\rm S}}{\\beta gR_{\\rm C}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{\\beta gR_{\\rm C}}{1+gR_{\\rm A}}$ 倍，逆位相（位相が $\\pi$ ずれる）"
+   },
+   {
+    "id": "3",
+    "tex": "$v_{\\rm max}=\\dfrac{V_2-V_1}{2}$，$V_{\\rm b}=\\dfrac{V_1+V_2}{2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac13$ 周期．$0$ に張りつく時間はない"
+   },
+   {
+    "id": "5",
+    "tex": "$A'=\\dfrac{\\beta gR_{\\rm C}}{1+gR_{\\rm A}+(1+\\beta)gR_{\\rm E}}$，$\\beta\\to\\infty$ で $A'\\to\\dfrac{R_{\\rm C}}{R_{\\rm E}}$（素子の定数 $\\beta$，$g$ によらず抵抗の比だけで決まる）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 3つの状態の区別}\n\n入力側の回路では，P から B を通って E（接地）に至る経路について\n\\[ V_{\\rm in}=R_{\\rm A}I_{\\rm B}+V_{\\rm BE} \\]\nが成り立つ．$V_{\\rm BE}\\le V_{\\rm m}$ なら $I_{\\rm B}=0$ で $V_{\\rm BE}=V_{\\rm in}$ だから，$V_{\\rm in}\\le V_{\\rm m}$ の間はベース電流もコレクタ電流も $0$（遮断）で，$R_{\\rm C}$ に電圧降下がないので $V_{\\rm out}=V_{\\rm S}$ である．\n\n$V_{\\rm in}>V_{\\rm m}$ では $V_{\\rm BE}=V_{\\rm m}+I_{\\rm B}/g$ を代入して\n\\[ I_{\\rm B}=\\frac{g(V_{\\rm in}-V_{\\rm m})}{1+gR_{\\rm A}} . \\]\n$V_{\\rm CE}>0$ の間は $I_{\\rm C}=\\beta I_{\\rm B}$（能動状態）で，出力側の回路から\n\\[ V_{\\rm out}=V_{\\rm S}-R_{\\rm C}I_{\\rm C}=V_{\\rm S}-K(V_{\\rm in}-V_{\\rm m}),\\qquad K=\\frac{\\beta gR_{\\rm C}}{1+gR_{\\rm A}} . \\]\nこれが $0$ になる $V_{\\rm in}$ が $V_2$ で，$V_2=V_{\\rm m}+V_{\\rm S}/K$．それより $V_{\\rm in}$ が大きいと $I_{\\rm C}=\\beta I_{\\rm B}$ では $V_{\\rm CE}<0$ になってしまうので，素子は $V_{\\rm CE}=0$（飽和）となり，$V_{\\rm out}=0$，$I_{\\rm C}=V_{\\rm S}/R_{\\rm C}$ にとどまる．以上より\n\\[ \\boldsymbol{V_1=V_{\\rm m}},\\qquad \\boldsymbol{V_2=V_{\\rm m}+\\frac{(1+gR_{\\rm A})V_{\\rm S}}{\\beta gR_{\\rm C}}} \\]\nで，入出力特性は解答図のような「水平—傾き $-K$ の直線—水平」の折れ線になる．\n\n\\textbf{(2) 小信号の増幅}\n\n出力が正弦波であるのは，$V_{\\rm in}$ が常に $V_1<V_{\\rm in}<V_2$ の範囲（能動状態）にあるときである．このとき $V_{\\rm out}=V_{\\rm S}-K(V_{\\rm b}-V_{\\rm m})-Kv_{\\rm s}\\sin\\omega t$ だから，交流成分の振幅は $\\boldsymbol{K=\\dfrac{\\beta gR_{\\rm C}}{1+gR_{\\rm A}}}$ 倍で，符号が負なので\\textbf{逆位相}である．\n\n\\textbf{(3) ひずまない最大振幅}\n\nひずまない条件は，入力の最小値・最大値がともに能動状態の範囲に入ること，すなわち\n\\[ V_1\\le V_{\\rm b}-v_{\\rm s},\\qquad V_{\\rm b}+v_{\\rm s}\\le V_2 . \\]\n2式を足すと $2v_{\\rm s}\\le V_2-V_1$．等号は2式がともに等号のときで，\n\\[ \\boldsymbol{v_{\\rm max}=\\frac{V_2-V_1}{2}},\\qquad \\boldsymbol{V_{\\rm b}=\\frac{V_1+V_2}{2}} \\]\n（バイアスを能動範囲の中央に置く）．\n\n\\textbf{(4) 状態が切りかわる時刻}\n\n$\\Delta=V_2-V_1$ とおくと，$V_{\\rm in}=V_1+\\dfrac{\\Delta}{4}+\\dfrac{\\Delta}{2}\\sin\\omega t$．出力が $V_{\\rm S}$ に張りつく（遮断）のは $V_{\\rm in}\\le V_1$，すなわち\n\\[ \\sin\\omega t\\le-\\frac12 \\quad\\Longleftrightarrow\\quad \\frac{7\\pi}{6}\\le\\omega t\\le\\frac{11\\pi}{6}\\pmod{2\\pi} \\]\nの間で，その長さは $\\dfrac{2\\pi}{3}$，つまり $\\boldsymbol{\\dfrac13}$ \\textbf{周期}である．一方，$V_{\\rm in}$ の最大値は $V_1+\\dfrac34\\Delta<V_2$ なので，飽和には達せず，\\textbf{出力が $0$ に張りつく時間はない}．\n\n\\textbf{(5) エミッター抵抗による負帰還}\n\nE の電位は $R_{\\rm E}(I_{\\rm B}+I_{\\rm C})$ になるので，入力側の式は\n\\[ V_{\\rm in}=R_{\\rm A}I_{\\rm B}+V_{\\rm m}+\\frac{I_{\\rm B}}{g}+R_{\\rm E}(1+\\beta)I_{\\rm B} \\]\n\\[ \\therefore\\ I_{\\rm B}=\\frac{g(V_{\\rm in}-V_{\\rm m})}{1+gR_{\\rm A}+(1+\\beta)gR_{\\rm E}} . \\]\nC の電位は $V_{\\rm S}-R_{\\rm C}\\beta I_{\\rm B}$ だから\n\\[ \\boldsymbol{A'=\\frac{\\beta gR_{\\rm C}}{1+gR_{\\rm A}+(1+\\beta)gR_{\\rm E}}} . \\]\n$\\beta\\to\\infty$ では分母・分子の $\\beta$ の項だけが残り，$\\boldsymbol{A'\\to\\dfrac{R_{\\rm C}}{R_{\\rm E}}}$．出力電流のほぼ全部が $R_{\\rm E}$ を流れ，その電圧降下が入力の変化をほとんど打ち消す（$V_{\\rm BE}$ はほぼ一定に保たれる）ため，増幅度は素子のばらつきやすい定数 $\\beta$，$g$ によらず，抵抗の比だけで決まる．増幅度は小さくなるが安定する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "しきい値と比例関係をもつ折れ線特性の3端子素子は「遮断・能動・飽和」の3状態をもち，入出力特性は傾き $-K$ の直線の両側が平らな折れ線になる．交流入力は能動範囲に収まる間だけ $K$ 倍の逆位相で増幅され，ひずまない最大振幅はバイアスを能動範囲の中央に置いたときで，範囲からはみ出す時間は正弦関数の値の条件から決まる．エミッター側の抵抗は入力を打ち消す負帰還となり，増幅度を $R_{\\rm C}/R_{\\rm E}$ に安定させる．"
+ },
+ "concepts": [
+  "series-parallel",
+  "string-resonance",
+  "wave-basics"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "非線形素子",
+  "トランジスター",
+  "増幅",
+  "バイアス",
+  "クリッピング",
+  "負帰還"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

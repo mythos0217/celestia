@@ -1,0 +1,142 @@
+{
+ "id": "PHY-DCC-014",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-03",
+ "topic": "太陽電池・コンデンサー・抵抗の並列回路（定電流源と電池の切り替わりによる時定数の変化と電気量の配分）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽電池の出力電圧を $V$，出力電流を $I$（図の矢印の向きを正）とする．強さ $P$ の光を当てているとき，$V$ と $I$ の関係は\n\\[ I=sP\\quad(0\\le V\\le V_0),\\qquad I=sP-\\frac{V-V_0}{r}\\quad(V>V_0) \\]\nで表されるとする（$s,\\ V_0,\\ r$ は正の定数）．光を当てないとき（$P=0$）もこの式が成り立ち，$V\\le V_0$ では電流は流れず，$V>V_0$ では太陽電池に逆向きの電流が流れ込む．\n\n図のように，この太陽電池に電気容量 $C$ のコンデンサーと抵抗値 $R$ の抵抗を並列につなぐ．はじめコンデンサーに電荷はない．時刻 $t=0$ から一定の強さ $P_0$ の光を当てる．ここで $r=R$，$sP_0R=2V_0$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "コンデンサーの電圧が $V_0$ に達する時刻 $t_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$t>t_1$ でのコンデンサーの電圧 $V(t)$ を求め，十分に時間がたったときの電圧 $V_\\infty$ と太陽電池の電流 $I_\\infty$ を求めよ．$t=t_1$ の前後で電圧の増え方の時定数はどう変わるか．"
+     },
+     {
+      "id": "3",
+      "tex": "十分に時間がたった後，光を急に遮った（この時刻を改めて $t=0$ とする）．遮った直後の太陽電池の電流を求めよ．また，コンデンサーの電圧が $V_0$ まで下がる時刻 $t_2$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "光を遮ってから $t_2$ までの間に，コンデンサーから流れ出た電気量のうち，抵抗を通った電気量 $Q_R$ と太陽電池に流れ込んだ電気量 $Q_{\\rm S}$ を，それぞれ $C,\\ V_0$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "$t>t_2$ では電圧はどのように変化するか．$t=0$ から十分に時間がたつまでに抵抗を通る電気量の合計を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：太陽電池・コンデンサー・抵抗の並列回路（定電流源と電池の切り替わりによる時定数の変化と電気量の配分）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：太陽電池・コンデンサー・抵抗の並列回路（定電流源と電池の切り替わりによる時定数の変化と電気量の配分）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$t_1=RC\\log 2$"
+   },
+   {
+    "id": "2",
+    "tex": "$V(t)=\\dfrac32V_0-\\dfrac12V_0e^{-\\frac{2(t-t_1)}{RC}}$，$V_\\infty=\\dfrac32V_0$，$I_\\infty=\\dfrac{3V_0}{2R}$，時定数は $RC$ から $\\dfrac{RC}{2}$ に変わる"
+   },
+   {
+    "id": "3",
+    "tex": "$-\\dfrac{V_0}{2R}$（太陽電池に流れ込む向きに $\\dfrac{V_0}{2R}$），$t_2=\\dfrac{RC}{2}\\log2$"
+   },
+   {
+    "id": "4",
+    "tex": "$Q_R=\\dfrac{1+\\log2}{4}CV_0$，$Q_{\\rm S}=\\dfrac{1-\\log2}{4}CV_0$"
+   },
+   {
+    "id": "5",
+    "tex": "$V=V_0e^{-\\frac{t-t_2}{RC}}$（時定数 $RC$ で $0$ へ），合計 $\\dfrac{5+\\log2}{4}CV_0$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　太陽電池は $V\\le V_0$ では「電流 $sP$ の定電流源」，$V>V_0$ では「起電力 $V_0+rsP$，内部抵抗 $r$ の電池」と同じはたらきをする（$I=\\frac{(V_0+rsP)-V}{r}$）．電圧が $V_0$ を横切る瞬間に，回路の式（時定数と行き先）が切り替わる．コンデンサーの電圧は連続に変わる．\n\nコンデンサーの電荷の増加率はコンデンサーに流れ込む電流で，$C\\frac{dV}{dt}=I-\\frac{V}{R}$．以下 $\\log$ は自然対数．\n\n\\textbf{(1)}　$V<V_0$ では $I=sP_0=\\frac{2V_0}{R}$ で一定だから\n\\[ C\\frac{dV}{dt}=\\frac{2V_0-V}{R}\\quad\\Rightarrow\\quad V=2V_0\\left(1-e^{-\\frac{t}{RC}}\\right) \\]\n（定電流 $sP_0$ が $R$ と $C$ に分かれる RC 回路で，行き先は $sP_0R=2V_0$，時定数 $RC$．）$V=V_0$ となるのは $e^{-t_1/RC}=\\frac12$ より\n\\[ t_1=\\boldsymbol{RC\\log2} \\]\n\n\\textbf{(2)}　$V>V_0$ では $I=sP_0-\\frac{V-V_0}{R}=\\frac{3V_0-V}{R}$ だから\n\\[ C\\frac{dV}{dt}=\\frac{3V_0-V}{R}-\\frac{V}{R}=\\frac{2}{R}\\left(\\frac32V_0-V\\right) \\]\n行き先は $\\frac32V_0$，時定数は $\\frac{RC}{2}$．$V(t_1)=V_0$ より\n\\[ V(t)=\\boldsymbol{\\frac32V_0-\\frac12V_0e^{-\\frac{2(t-t_1)}{RC}}},\\qquad V_\\infty=\\boldsymbol{\\frac32V_0},\\qquad I_\\infty=\\frac{V_\\infty}{R}=\\boldsymbol{\\frac{3V_0}{2R}} \\]\n時定数は $RC$ から $\\boldsymbol{\\frac{RC}{2}}$ に短くなる（太陽電池の内部抵抗 $r$ が $R$ と並列に加わるため）．$t=t_1$ の直前・直後とも $I=sP_0$ なので，$\\frac{dV}{dt}=\\frac{V_0}{RC}$ で傾きは連続である．\n\n\\textbf{(3)}　遮った直後も電圧は $\\frac32V_0$ のまま（コンデンサーの電圧は連続）．$P=0$，$V>V_0$ だから\n\\[ I=-\\frac{V-V_0}{r}=\\boldsymbol{-\\frac{V_0}{2R}} \\]\nで，太陽電池に $\\frac{V_0}{2R}$ が流れ込む（電流は $\\frac{3V_0}{2R}$ から不連続に変わる）．$V>V_0$ の間は\n\\[ C\\frac{dV}{dt}=-\\frac{V-V_0}{R}-\\frac{V}{R}=-\\frac{2}{R}\\left(V-\\frac{V_0}{2}\\right) \\]\nで，行き先 $\\frac{V_0}{2}$，時定数 $\\frac{RC}{2}$：$V=\\frac{V_0}{2}+V_0e^{-\\frac{2t}{RC}}$．$V=V_0$ となるのは\n\\[ t_2=\\boldsymbol{\\frac{RC}{2}\\log2} \\]\n\n\\textbf{(4)}　コンデンサーから流れ出た電気量は $C\\left(\\frac32V_0-V_0\\right)=\\frac12CV_0$ で，\n\\[ Q_R+Q_{\\rm S}=\\frac12CV_0 \\]\n一方，各瞬間の電流の差は $\\frac{V}{R}-\\frac{V-V_0}{R}=\\frac{V_0}{R}$ で\\textbf{一定}だから，$0\\sim t_2$ で積み上げると\n\\[ Q_R-Q_{\\rm S}=\\frac{V_0}{R}t_2=\\frac12CV_0\\log2 \\]\n2式より\n\\[ Q_R=\\boldsymbol{\\frac{1+\\log2}{4}CV_0},\\qquad Q_{\\rm S}=\\boldsymbol{\\frac{1-\\log2}{4}CV_0} \\]\n（指数関数を積分しなくても，電流の差が一定であることから求まる．）\n\n\\textbf{(5)}　$V\\le V_0$ になると太陽電池には電流が流れないので，コンデンサーは抵抗だけを通して放電し，\n\\[ V=\\boldsymbol{V_0e^{-\\frac{t-t_2}{RC}}} \\]\nと時定数 $RC$ で $0$ に近づく．この間に抵抗を通る電気量は $CV_0$ だから，合計は\n\\[ Q_R+CV_0=\\boldsymbol{\\frac{5+\\log2}{4}CV_0} \\]\n（確認：コンデンサーの電荷 $\\frac32CV_0$ のうち $Q_{\\rm S}$ だけが太陽電池に流れ込み，残りが抵抗を通る．$\\frac32-\\frac{1-\\log2}{4}=\\frac{5+\\log2}{4}$．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "太陽電池は出力電圧が $V_0$ 以下では定電流源，それを超えると内部抵抗 $r$ の電池として振る舞うので，コンデンサーの電圧が $V_0$ を横切る瞬間に RC 回路の行き先と時定数が切り替わる（電圧は連続，光を遮ると電流は不連続）．放電で太陽電池と抵抗に流れる電流の差が一定になることを使うと，指数関数を積分せずに電気量の配分が求まる．"
+ },
+ "concepts": [
+  "series-parallel",
+  "capacitor"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "太陽電池",
+  "RC回路",
+  "時定数",
+  "状態の切り替わり",
+  "電気量保存"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

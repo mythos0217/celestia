@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260" width="600" height="260"><defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<rect x="90" y="90" width="210" height="50" fill="none" stroke="#222" stroke-width="1.6"/>
+<rect x="300" y="90" width="210" height="50" fill="#888" fill-opacity="0.18" stroke="#222" stroke-width="1.6"/>
+<ellipse cx="90" cy="115.0" rx="9" ry="25.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<ellipse cx="300" cy="115.0" rx="9" ry="25.0" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="114" y="120.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">S</text>
+<text x="195.0" y="120.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">導体1</text>
+<text x="405.0" y="120.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">導体2</text>
+<text x="300" y="82" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">J</text>
+<line x1="90" y1="60" x2="300" y2="60" stroke="#888" stroke-width="1"/>
+<line x1="90" y1="54" x2="90" y2="66" stroke="#888" stroke-width="1"/>
+<line x1="300" y1="54" x2="300" y2="66" stroke="#888" stroke-width="1"/>
+<text x="195.0" y="54" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Times New Roman, serif" font-style="italic">l</tspan></text>
+<line x1="300" y1="60" x2="510" y2="60" stroke="#888" stroke-width="1"/>
+<line x1="300" y1="54" x2="300" y2="66" stroke="#888" stroke-width="1"/>
+<line x1="510" y1="54" x2="510" y2="66" stroke="#888" stroke-width="1"/>
+<text x="405.0" y="54" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Times New Roman, serif" font-style="italic">l</tspan></text>
+<text x="195.0" y="164" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Times New Roman, serif" font-style="italic">n</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif" font-style="normal">1</tspan><tspan>，</tspan><tspan font-family="Times New Roman, serif" font-style="italic">τ</tspan><tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<text x="405.0" y="164" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Times New Roman, serif" font-style="italic">n</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif" font-style="normal">2</tspan><tspan>，</tspan><tspan font-family="Times New Roman, serif" font-style="italic">τ</tspan><tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<line x1="81" y1="115.0" x2="50" y2="115.0" stroke="#222" stroke-width="1.6"/>
+<line x1="50" y1="115.0" x2="50" y2="225" stroke="#222" stroke-width="1.6"/>
+<line x1="50" y1="225" x2="280" y2="225" stroke="#222" stroke-width="1.6"/>
+<line x1="280" y1="225" x2="296.0" y2="225" stroke="#222" stroke-width="1.6"/>
+<line x1="304.0" y1="225" x2="320" y2="225" stroke="#222" stroke-width="1.6"/>
+<line x1="296.0" y1="211.0" x2="296.0" y2="239.0" stroke="#222" stroke-width="1.8"/>
+<line x1="304.0" y1="218.0" x2="304.0" y2="232.0" stroke="#222" stroke-width="3"/>
+<line x1="320" y1="225" x2="550" y2="225" stroke="#222" stroke-width="1.6"/>
+<line x1="550" y1="225" x2="550" y2="115.0" stroke="#222" stroke-width="1.6"/>
+<line x1="550" y1="115.0" x2="510" y2="115.0" stroke="#222" stroke-width="1.6"/>
+<text x="300" y="253" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan></text>
+<line x1="420" y1="22" x2="490" y2="22" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<text x="500" y="27" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start"><tspan font-family="Times New Roman, serif" font-style="italic">x</tspan></text>
+</svg>

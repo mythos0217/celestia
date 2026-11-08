@@ -1,0 +1,135 @@
+{
+ "id": "PHY-ESF-006",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "一様帯電球の内部の電子（トムソン模型のつり合いと2種類の振動）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "トムソンの原子模型にならい，半径 $R$ の球の内部に正電荷が一様に分布した「正電荷の球」を考える．球は固定されていて，電子（質量 $m$，電気量 $-e$）は正電荷に妨げられずに球の内部を自由に動けるものとする．クーロンの法則の比例定数を $k$ とし，重力と電磁波の放射は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "正電荷の総量を $2e$ とする．球の中心 O から距離 $r\\,(r<R)$ の点での電場の強さ $E(r)$ を，ガウスの法則を用いて求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この球の内部に電子を2個入れたところ，2個の電子は図のように O に関して対称な位置で静止してつり合った．O から各電子までの距離 $a$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) のつり合いの状態から，2個の電子をそれらを結ぶ直線に沿ってわずかにずらして静かに放すと，電子はこの直線上で振動した．\n (i) 2個の電子を同じ向きに同じ距離だけずらした場合，(ii) 2個の電子をともに O から遠ざかる向きに同じ距離だけずらした場合，のそれぞれについて，振動の角振動数 $\\omega_1$，$\\omega_2$ を求めよ．また，(i) の振動が振幅の大小によらず単振動になる理由を述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "正電荷の総量を $3e$（半径は $R$ のまま）とし，電子を3個入れたところ，3個の電子は O を中心とする正三角形の頂点で静止してつり合った．この正三角形の1辺の長さ $s$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一様帯電球の内部の電子（トムソン模型のつり合いと2種類の振動）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一様帯電球の内部の電子（トムソン模型のつり合いと2種類の振動）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$E(r)=\\dfrac{2ker}{R^3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$a=\\dfrac{R}{2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\omega_1=\\sqrt{\\dfrac{2ke^2}{mR^3}}$，$\\omega_2=\\sqrt{\\dfrac{6ke^2}{mR^3}}=\\sqrt3\\,\\omega_1$（理由は解説）"
+   },
+   {
+    "id": "4",
+    "tex": "$s=R$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) ガウスの法則}　球対称なので電場は放射状で，半径 $r$ の球面上で強さが一定．この球面の内部の電気量は $2e\\cdot\\dfrac{r^3}{R^3}$ だから，電気力線の本数について\n\\[ E(r)\\cdot4\\pi r^2=4\\pi k\\cdot 2e\\frac{r^3}{R^3}\\quad\\Longrightarrow\\quad \\boldsymbol{E(r)=\\frac{2ker}{R^3}}. \\]\n電子は O からの距離に比例する力 $\\dfrac{2ke^2}{R^3}r$ で O に引かれる．すなわち正電荷の球は電子に対して「O につながれたばね定数 $K=\\dfrac{2ke^2}{R^3}$ のばね」としてはたらく．\n\n\\textbf{(2) つり合い}　各電子にはたらく力は，O 向きの $Ka$ と，もう一方の電子（距離 $2a$）からの外向きの反発力 $\\dfrac{ke^2}{(2a)^2}$．つり合いより\n\\[ \\frac{2ke^2a}{R^3}=\\frac{ke^2}{4a^2}\\quad\\Longrightarrow\\quad a^3=\\frac{R^3}{8},\\qquad \\boldsymbol{a=\\frac R2}. \\]\n（$a<R$ なので電子は確かに球の内部にある．）\n\n\\textbf{(3) 2種類の振動}　直線を $x$ 軸とし，電子1，2の位置を $x_1$，$x_2\\,(x_1>x_2)$ とする．運動方程式は\n\\[ m\\ddot x_1=-Kx_1+\\frac{ke^2}{(x_1-x_2)^2},\\qquad m\\ddot x_2=-Kx_2-\\frac{ke^2}{(x_1-x_2)^2}. \\]\n(i) 2式を足すと電子間の力（内力）が打ち消し合い，重心 $X=\\frac{x_1+x_2}{2}$ について $2m\\ddot X=-2KX$ が厳密に成り立つ．同じ向きに同じだけずらして放すと間隔は保たれ，2個の電子は重心とともに動くので，振幅によらず単振動で\n\\[ \\boldsymbol{\\omega_1=\\sqrt{\\frac Km}=\\sqrt{\\frac{2ke^2}{mR^3}}}. \\]\n(ii) 対称性から $x_1=\\frac R2+u$，$x_2=-\\frac R2-u$ と書ける．$|u|\\ll R$ として\n\\[ \\frac{ke^2}{(R+2u)^2}\\fallingdotseq\\frac{ke^2}{R^2}\\left(1-\\frac{4u}{R}\\right) \\]\nを使うと，電子1の運動方程式は\n\\[ m\\ddot u=-K\\left(\\frac R2+u\\right)+\\frac{ke^2}{R^2}-\\frac{4ke^2}{R^3}u=-\\frac{6ke^2}{R^3}u \\]\n（つり合いの項は打ち消す）．よって $\\boldsymbol{\\omega_2=\\sqrt{\\frac{6ke^2}{mR^3}}=\\sqrt3\\,\\omega_1}$．\n間隔が広がると反発力が弱まり，その減少分 $\\frac{4ke^2}{R^3}u$ が球からの復元力 $\\frac{2ke^2}{R^3}u$ に上乗せされるため，(ii) のほうが「ばね」が強い．\n\n\\textbf{(4) 3個の電子}　O から各電子までの距離を $a'$ とすると $s=\\sqrt3a'$．正電荷 $3e$ の球による O 向きの力は (1) と同様に $\\dfrac{3ke^2a'}{R^3}$．他の2個からの反発力はそれぞれ $\\dfrac{ke^2}{s^2}=\\dfrac{ke^2}{3a'^2}$ で，O から外向きの方向と $30^\\circ$ をなすので，外向きの合力は $2\\cdot\\dfrac{ke^2}{3a'^2}\\cos30^\\circ=\\dfrac{ke^2}{\\sqrt3a'^2}$（垂直成分は打ち消す）．つり合いより\n\\[ \\frac{3ke^2a'}{R^3}=\\frac{ke^2}{\\sqrt3a'^2}\\quad\\Longrightarrow\\quad a'^3=\\frac{R^3}{3\\sqrt3},\\qquad a'=\\frac{R}{\\sqrt3}, \\]\nよって $\\boldsymbol{s=R}$．(2) でも電子間の距離は $2a=R$ であり，どちらも電子どうしの間隔は球の半径に等しくなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一様帯電球の内部ではガウスの法則により電場が中心からの距離に比例し，電子に対しては中心につながれたばねとしてはたらく．複数電子のつり合いはこのばねとクーロン反発で決まり，同じ向きの振動では内力が打ち消して重心が厳密に単振動するのに対し，逆向きの振動では反発力の変化が加わって角振動数が $\\sqrt3$ 倍になる．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "simple-harmonic-motion",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ガウスの法則",
+  "一様帯電球",
+  "トムソン模型",
+  "基準振動",
+  "重心運動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

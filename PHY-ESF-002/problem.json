@@ -1,0 +1,130 @@
+{
+ "id": "PHY-ESF-002",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "留め具が外れる瞬間に保存則が切り替わる2荷電粒子の接近と反発",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかで水平な絶縁体の面上の $x$ 軸上に，質量 $m$，電気量 $+Q$ $(Q>0)$ の小球 B が置かれ，B の右側にある留め具によって止められている．留め具は，B が留め具を $+x$ 向きに押す力の大きさが $F_0$ を超えた瞬間に外れ，それ以後 B は $x$ 軸上を自由に動ける（外れるまで B は動かない）．B から十分離れた $x$ 軸上の位置から，質量 $m$，電気量 $+q$ $(q>0)$ の小球 A が速さ $v_0$ で B に向かって（$+x$ 向きに）運動してきた．A，B は $x$ 軸上だけを運動し，クーロンの法則の比例定数を $k$ とする．小球の大きさ，摩擦，電磁波の放射，留め具が外れるのに要する時間は無視する．また，$U_0=\\sqrt{kqQF_0}$ とおく．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "留め具が外れるときの AB 間の距離 $r_{\\mathrm s}$ を求めよ．また，留め具が外れるための $v_0$ の条件を $m$，$U_0$ を用いて求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "以下，(1) の条件が満たされているとする．留め具が外れる瞬間の A の速さ $v_1$ を $v_0$，$m$，$U_0$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "その後の AB 間の距離の最小値 $r_{\\min}$ を $k$，$q$，$Q$，$m$，$v_0$，$U_0$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "十分時間がたった後の A，B の速度（$+x$ 向きを正）を $v_0$，$m$，$U_0$ で表せ．A は最終的にどちら向きに運動しているか．"
+     },
+     {
+      "id": "5",
+      "tex": "留め具がなく B が初めから自由に動ける場合には，十分時間がたった後の A の速度はいくらになるか．(4) との違いが生じる理由を，運動量と力学的エネルギーに注目して簡潔に説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：留め具が外れる瞬間に保存則が切り替わる2荷電粒子の接近と反発",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$r_{\\mathrm s}=\\sqrt{\\dfrac{kqQ}{F_0}}$，$v_0>\\sqrt{\\dfrac{2U_0}{m}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$v_1=\\sqrt{v_0^2-\\dfrac{2U_0}{m}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$r_{\\min}=\\dfrac{4kqQ}{mv_0^2+2U_0}$"
+   },
+   {
+    "id": "4",
+    "tex": "A：$\\dfrac12\\left(\\sqrt{v_0^2-\\dfrac{2U_0}{m}}-\\sqrt{v_0^2+\\dfrac{2U_0}{m}}\\right)$（負，$-x$ 向きに戻る），B：$\\dfrac12\\left(\\sqrt{v_0^2-\\dfrac{2U_0}{m}}+\\sqrt{v_0^2+\\dfrac{2U_0}{m}}\\right)$"
+   },
+   {
+    "id": "5",
+    "tex": "$0$（A は止まる）．留め具は外れるまでに B に力積を与えて系の運動量を減らすが，B は動かないので仕事はせず，力学的エネルギーは減らない．運動量が小さいのにエネルギーは同じなので，A は止まれず跳ね返る．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 留め具が外れる距離}　留め具が外れるまで B は静止しているので，B は A からのクーロン力 $\\dfrac{kqQ}{r^2}$（$+x$ 向き）で留め具を押す．これが $F_0$ に達するのは\n\\[ \\frac{kqQ}{r_{\\mathrm s}^2}=F_0\\quad\\therefore\\ r_{\\mathrm s}=\\boldsymbol{\\sqrt{\\frac{kqQ}{F_0}}} \\]\nこのとき静電気力の位置エネルギーは $\\dfrac{kqQ}{r_{\\mathrm s}}=\\sqrt{kqQF_0}=U_0$ である．\nB が固定されている間，A についての力学的エネルギー保存則が成り立つ（B は動かないので留め具は仕事をしない）．A が $r_{\\mathrm s}$ まで近づける条件は $\\frac12mv_0^2>U_0$，すなわち\n\\[ \\boldsymbol{v_0>\\sqrt{\\frac{2U_0}{m}}} \\]\n\n\\textbf{(2)}　$\\frac12mv_0^2=\\frac12mv_1^2+U_0$ より $v_1=\\boldsymbol{\\sqrt{v_0^2-\\dfrac{2U_0}{m}}}$．\n\n\\textbf{(3) 外れた後：保存則の切り替え}　留め具が外れるまでは，留め具が B に $-x$ 向きの力を加え続けるので，A と B の系の運動量は保存しない（運動量は $mv_0$ から $mv_1$ に減っている）．外れた後は水平方向の外力がないので，運動量保存則と（A・B 全体の）力学的エネルギー保存則が成り立つ．\n最も近づくのは相対速度が $0$ のときで，共通の速度を $u$ とすると $mv_1=2mu$ より $u=\\frac{v_1}{2}$．エネルギー保存より\n\\[ \\frac12mv_1^2+U_0=\\frac12(2m)u^2+\\frac{kqQ}{r_{\\min}} \\quad\\therefore\\ \\frac{kqQ}{r_{\\min}}=U_0+\\frac14mv_1^2=\\frac12U_0+\\frac14mv_0^2 \\]\nよって $r_{\\min}=\\boldsymbol{\\dfrac{4kqQ}{mv_0^2+2U_0}}$．((1) の条件より $\\frac{kqQ}{r_{\\min}}>U_0$，すなわち $r_{\\min}<r_{\\mathrm s}$ となっていて矛盾はない．)\n\n\\textbf{(4) 最終速度}　A，B の最終速度を $v_{\\mathrm A}$，$v_{\\mathrm B}$ とする．十分離れると位置エネルギーは $0$ だから\n\\[ v_{\\mathrm A}+v_{\\mathrm B}=v_1,\\qquad \\frac12mv_{\\mathrm A}^2+\\frac12mv_{\\mathrm B}^2=\\frac12mv_1^2+U_0 \\]\n第2式に $v_1^2=v_0^2-\\frac{2U_0}{m}$ を入れると $v_{\\mathrm A}^2+v_{\\mathrm B}^2=v_0^2$ となる（初めの運動エネルギーがそのまま残る）．\n\\[ (v_{\\mathrm B}-v_{\\mathrm A})^2=2(v_{\\mathrm A}^2+v_{\\mathrm B}^2)-(v_{\\mathrm A}+v_{\\mathrm B})^2=2v_0^2-v_1^2=v_0^2+\\frac{2U_0}{m} \\]\n反発して B が前に出るので $v_{\\mathrm B}>v_{\\mathrm A}$，よって\n\\[ v_{\\mathrm A}=\\boldsymbol{\\frac12\\left(\\sqrt{v_0^2-\\frac{2U_0}{m}}-\\sqrt{v_0^2+\\frac{2U_0}{m}}\\right)},\\quad v_{\\mathrm B}=\\boldsymbol{\\frac12\\left(\\sqrt{v_0^2-\\frac{2U_0}{m}}+\\sqrt{v_0^2+\\frac{2U_0}{m}}\\right)} \\]\n$v_{\\mathrm A}<0$ なので，A は最終的に\\textbf{$-x$ 向き（来た向き）に戻っていく}．\n\n\\textbf{(5) 留め具がない場合との比較}　初めから運動量保存が成り立つと，$v_{\\mathrm A}+v_{\\mathrm B}=v_0$，$v_{\\mathrm A}^2+v_{\\mathrm B}^2=v_0^2$ より $v_{\\mathrm A}=\\boldsymbol{0}$，$v_{\\mathrm B}=v_0$（等質量の弾性衝突と同じ速度交換）．\n留め具がある場合，留め具は B に力積を与えて系の運動量を $mv_0$ から $mv_1$ に減らすが，B は動かないので仕事をせず，力学的エネルギーは $\\frac12mv_0^2$ のまま保たれる．同じ運動エネルギーをより小さな運動量で実現するには，2球が逆向きに運動しなければならないので，A は止まれずに跳ね返る．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一方の物体が固定されている間は外力（留め具の力）がはたらくので運動量は保存せず，固定が外れた瞬間から運動量保存が使えるようになる．固定している力は力積を与えても仕事はしないので，力学的エネルギーは全過程で保存し，「運動量だけが減った」状態から反発することで，等質量でも入射粒子が跳ね返る．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "restitution",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "クーロン力",
+  "運動量保存",
+  "力学的エネルギー保存",
+  "保存則の切り替え",
+  "最接近距離"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

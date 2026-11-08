@@ -1,0 +1,135 @@
+{
+ "id": "PHY-DCC-017",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-03",
+ "topic": "一様な導体ブロックの表面での4探針法による抵抗率の測定と，側面の影響（電流の鏡像）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "抵抗率 $\\rho$ の一様な導体でできた，十分に大きな直方体のブロックがある．上面の1点に小さな電極を接触させて電流 $I$ を流し込み，十分遠くの電極から取り出すとき，電極の近くでは電流は半球面状に一様に広がり，電極から距離 $r$ の点での電流密度（単位面積あたりの電流）の大きさは $\\dfrac{I}{2\\pi r^2}$ になる．導体中の電場の大きさ $E$ と電流密度の大きさ $j$ の間には $E=\\rho j$ が成り立つ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この電極から距離 $r$ の点の電位 $\\phi(r)$ を，無限遠を基準として求めよ．必要なら，点電荷 $Q$ の電場 $\\dfrac{kQ}{r^2}$ と電位 $\\dfrac{kQ}{r}$ の関係を用いてよい．"
+     },
+     {
+      "id": "2",
+      "tex": "図1のように，ブロックの側面から十分離れた上面に，4つの小さな電極 P$_1$，P$_2$，P$_3$，P$_4$ を間隔 $a$ で一直線上に並べた．P$_1$ から電流 $I$ を流し込み P$_4$ から取り出したとき，P$_2$ と P$_3$ の間の電圧 $V$ を求めよ．また，$\\rho$ を $a,\\ I,\\ V$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "次に図2のように，同じ4つの電極を，ブロックの鉛直な側面（外は空気）から距離 $b$ の位置に，側面と平行に並べた．側面を通って電流は流れ出ない．このとき P$_2$P$_3$ 間の電圧 $V'$ を求めよ．側面の存在をどのように扱ったかも説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の測定値 $V'$ をそのまま (2) の式に入れて得られる「見かけの抵抗率」$\\rho'$ と真の $\\rho$ の比 $\\dfrac{\\rho'}{\\rho}$ を $a,\\ b$ で表せ．また，$b=a$ のときの比を有効数字3桁で求め，$b\\to0$ のときの比の値を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一様な導体ブロックの表面での4探針法による抵抗率の測定と，側面の影響（電流の鏡像）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一様な導体ブロックの表面での4探針法による抵抗率の測定と，側面の影響（電流の鏡像）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\phi(r)=\\dfrac{\\rho I}{2\\pi r}$"
+   },
+   {
+    "id": "2",
+    "tex": "$V=\\dfrac{\\rho I}{2\\pi a}$，$\\rho=\\dfrac{2\\pi aV}{I}$"
+   },
+   {
+    "id": "3",
+    "tex": "$V'=\\dfrac{\\rho I}{2\\pi}\\left(\\dfrac1a+\\dfrac{2}{\\sqrt{a^2+4b^2}}-\\dfrac{1}{\\sqrt{a^2+b^2}}\\right)$（側面に対して対称な位置に同じ電流の電極を置いた鏡像で扱う）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{\\rho'}{\\rho}=1+\\dfrac{2a}{\\sqrt{a^2+4b^2}}-\\dfrac{a}{\\sqrt{a^2+b^2}}$，$b=a$ で $1.19$，$b\\to0$ で $2$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 電場の大きさは $E=\\rho\\dfrac{I}{2\\pi r^2}=\\dfrac{\\rho I}{2\\pi}\\cdot\\dfrac{1}{r^2}$ で，電極から外向き．これは点電荷の電場 $\\dfrac{kQ}{r^2}$ で $kQ$ を $\\dfrac{\\rho I}{2\\pi}$ に置きかえた形なので，電位も同様に\n\\[ \\phi(r)=\\boldsymbol{\\dfrac{\\rho I}{2\\pi r}}. \\]\n\\textbf{(2)} 取り出す電極は流し込む電流 $-I$ の電極と考えられる．電流と電位の関係は線形なので，各電極による電位を重ね合わせてよい．\n\\[ \\phi_2=\\dfrac{\\rho I}{2\\pi}\\left(\\dfrac1a-\\dfrac1{2a}\\right),\\qquad \\phi_3=\\dfrac{\\rho I}{2\\pi}\\left(\\dfrac1{2a}-\\dfrac1a\\right) \\]\nより\n\\[ V=\\phi_2-\\phi_3=\\boldsymbol{\\dfrac{\\rho I}{2\\pi a}},\\qquad \\rho=\\boldsymbol{\\dfrac{2\\pi aV}{I}}. \\]\n\\textbf{(3)} 側面では電流が面を横切らないので，電場（電流密度）の側面に垂直な成分が 0 でなければならない．ブロックが側面の外まで続いていると仮想し，側面に関して P$_1$，P$_4$ と対称な位置に同じ電流 $+I$，$-I$ の電極（鏡像）を置くと，対称性から側面上で電場の垂直成分は打ち消し合い 0 になる．ブロックの内側では，この「実電極＋鏡像」がつくる電流分布が条件をすべて満たすので，実際の分布と一致する．\\\\\n鏡像は実電極から $2b$ 離れているので，P$_2$ から P$_1$ の鏡像までの距離は $\\sqrt{a^2+4b^2}$，P$_4$ の鏡像までは $\\sqrt{4a^2+4b^2}=2\\sqrt{a^2+b^2}$．\n\\[ \\phi_2'=\\dfrac{\\rho I}{2\\pi}\\left(\\dfrac1a+\\dfrac1{\\sqrt{a^2+4b^2}}-\\dfrac1{2a}-\\dfrac1{2\\sqrt{a^2+b^2}}\\right),\\qquad \\phi_3'=-\\phi_2' \\]\n（P$_3$ は P$_2$ と電極の配置に関して反対称な位置にある）．よって\n\\[ V'=2\\phi_2'=\\boldsymbol{\\dfrac{\\rho I}{2\\pi}\\left(\\dfrac1a+\\dfrac{2}{\\sqrt{a^2+4b^2}}-\\dfrac{1}{\\sqrt{a^2+b^2}}\\right)}. \\]\n\\textbf{(4)} $\\rho'=\\dfrac{2\\pi aV'}{I}$ なので\n\\[ \\dfrac{\\rho'}{\\rho}=\\boldsymbol{1+\\dfrac{2a}{\\sqrt{a^2+4b^2}}-\\dfrac{a}{\\sqrt{a^2+b^2}}}. \\]\n$b=a$ では $1+\\dfrac{2}{\\sqrt5}-\\dfrac1{\\sqrt2}=1+0.8944-0.7071\\fallingdotseq\\boldsymbol{1.19}$ で，約 19\\% 大きく見積もってしまう．$b\\to0$ では $1+2-1=\\boldsymbol{2}$：電極を側面の縁に並べると，電流の通り道が半分（4分の1の空間）になるので，電圧が2倍になる．$b\\to\\infty$ では $1$ に戻る．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "表面の点電極から流れ込む電流は半球状に広がり，$E=\\rho j$ から電位は点電荷と同じ $1/r$ 型になるので，4探針の電圧は各電極の電位の重ね合わせで決まる．電流が出入りしない側面の影響は，面に対して対称な位置に同符号の電流の鏡像電極を置けば取り込め，縁に近いほど見かけの抵抗率が大きくなる（縁の上で2倍）．"
+ },
+ "concepts": [
+  "series-parallel",
+  "superposition",
+  "coulomb-field"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "抵抗率",
+  "4探針法",
+  "重ね合わせ",
+  "鏡像法",
+  "電流密度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,115 @@
+{
+ "id": "PHY-DCC-010",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-03",
+ "topic": "コンデンサーを1辺に含む立方体の抵抗網（対称性による等電位点と，辺を除いた網の合成抵抗）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，立方体 ABCD-EFGH の形に導線を組み，12 本の辺のうち辺 AB 以外の 11 本にはそれぞれ抵抗値 $R$ の抵抗を，辺 AB には抵抗値 $R$ の抵抗と電気容量 $C$ のコンデンサーを直列にしたものを入れる．辺どうしは頂点以外では接続されていない．頂点 A と G の間に，スイッチ S と内部抵抗の無視できる起電力 $V$ の電池を，A が高電位側になるようにつなぐ．導線の抵抗は無視でき，はじめコンデンサーに電荷はない．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "S を閉じた直後に電池を流れる電流 $I_0$ と，辺 AB を流れる電流 $i_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "S を閉じて十分に時間がたったとき，コンデンサーに蓄えられた電気量 $Q$ と，電池を流れる電流 $I_1$ を求めよ．また，このとき辺 AB 以外で電流が流れていない抵抗をすべて答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次に S を開いた．S を開いた直後に辺 AB を流れる電流の大きさ $i_1$ と，S を開いてから十分に時間がたつまでに辺 AB の抵抗で発生するジュール熱 $J$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：コンデンサーを1辺に含む立方体の抵抗網（対称性による等電位点と，辺を除いた網の合成抵抗）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I_0=\\dfrac{6V}{5R}$，$i_0=\\dfrac{2V}{5R}$"
+   },
+   {
+    "id": "2",
+    "tex": "$Q=\\dfrac{8}{11}CV$，$I_1=\\dfrac{10V}{11R}$，辺 BC と辺 BF の抵抗"
+   },
+   {
+    "id": "3",
+    "tex": "$i_1=\\dfrac{10V}{33R}$，$J=\\dfrac{40}{363}CV^2$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　立方体の網は，対称性で等電位の点を見つけると未知数が大きく減る．コンデンサーは「直後は電圧 $0$（導線と同じ），十分後は電流 $0$（その枝を取り去ったのと同じ）」と扱う．S を開いた後の放電では，電池が切り離されるので，コンデンサーから見えるのは「辺 AB を除いた 11 本の抵抗の網」である．\n\n\\textbf{(1)}　直後はコンデンサーの電荷が $0$ なので電圧も $0$ で，辺 AB は抵抗 $R$ だけの辺と同じになる．すると 12 本すべてが $R$ の立方体で，A と G を結ぶ体対角線のまわりに $120^\\circ$ 回転させても回路は変わらない．よって B，D，E は等電位，C，F，H も等電位である．\\\\\nA から出る電流 $I_0$ は AB，AD，AE に $\\frac{I_0}{3}$ ずつ分かれ，B，D，E からはそれぞれ 2 本の辺に $\\frac{I_0}{6}$ ずつ流れ，C，F，H から G へ $\\frac{I_0}{3}$ ずつ流れ込む．経路 A→B→C→G の電圧降下の和が $V$ だから\n\\[ V=R\\left(\\frac{I_0}{3}+\\frac{I_0}{6}+\\frac{I_0}{3}\\right)=\\frac56RI_0\\quad\\therefore\\ \\boldsymbol{I_0=\\frac{6V}{5R}},\\qquad \\boldsymbol{i_0=\\frac{I_0}{3}=\\frac{2V}{5R}} \\]\n\n\\textbf{(2)}　十分に時間がたつとコンデンサーに電流は流れないので，辺 AB の抵抗にも電流は流れず，辺 AB を取り去った回路を考えればよい．コンデンサーの電圧は $V_{\\mathrm A}-V_{\\mathrm B}$ に等しい．\\\\\n辺 AB を除くと回転対称性は失われるが，A，B，G，H を含む平面に関する鏡映（D と E，C と F を入れかえる）では回路は変わらない．よって $V_{\\mathrm D}=V_{\\mathrm E}=y$，$V_{\\mathrm C}=V_{\\mathrm F}=z$ とおける（$V_{\\mathrm G}=0$，$V_{\\mathrm A}=V$）．\\\\\nB は辺 AB を除くと C と F だけにつながり，$V_{\\mathrm C}=V_{\\mathrm F}$ だから，B での電流保存 $\\frac{V_{\\mathrm B}-z}{R}\\times2=0$ より $V_{\\mathrm B}=z$．したがって\\textbf{辺 BC，BF の抵抗には電流が流れない}．\\\\\n残りの点での電流保存（$V_{\\mathrm H}=h$ とおく）：\n\\[ \\text{C：}\\ y-z=z-0,\\qquad \\text{H：}\\ 2(y-h)=h-0,\\qquad \\text{D：}\\ V-y=(y-z)+(y-h) \\]\nはじめの 2 式から $z=\\frac{y}{2}$，$h=\\frac{2y}{3}$．第 3 式に代入して $V=\\frac{11}{6}y$，すなわち $y=\\frac{6V}{11}$，$z=\\frac{3V}{11}$．よって\n\\[ V_{\\mathrm A}-V_{\\mathrm B}=V-\\frac{3V}{11}=\\frac{8V}{11}\\quad\\therefore\\ \\boldsymbol{Q=\\frac{8}{11}CV}\\ \\ (\\text{A 側の極板が正}) \\]\n電池の電流は A から AD，AE に流れ出る電流の和で\n\\[ I_1=2\\times\\frac{V-y}{R}=\\boldsymbol{\\frac{10V}{11R}} \\]\n（$I_0>I_1$：辺 AB の経路が断たれた分だけ合成抵抗が $\\frac56R$ から $\\frac{11}{10}R$ に増えた．）\n\n\\textbf{(3)}　S を開くと電池は回路から切り離される．コンデンサー（電圧 $\\frac{8V}{11}$）は，辺 AB の抵抗 $R$ と，「辺 AB を除いた 11 本の網の A–B 間の合成抵抗」$R'$ の直列回路に電流を流す．\n\n$R'$ を求めるために，まず 12 本すべてが $R$ の立方体の A–B 間の合成抵抗 $R_{\\mathrm{AB}}$ を求める．A に $V'$，B に $0$ を与えると，辺 AB の垂直二等分面に関する鏡映で A↔B，D↔C，E↔F，H↔G が入れかわり，電位は $\\varphi\\to V'-\\varphi$ と移る（反対称）．さらに平面 ABGH に関する対称性から $V_{\\mathrm D}=V_{\\mathrm E}=p$，$V_{\\mathrm H}=q$ とおけて，$V_{\\mathrm C}=V_{\\mathrm F}=V'-p$，$V_{\\mathrm G}=V'-q$．D と H での電流保存は\n\\[ V'-p=\\{p-(V'-p)\\}+(p-q),\\qquad 2(p-q)=q-(V'-q) \\]\nこれを解いて $p=\\frac{9}{14}V'$．A から流れ出る電流は $\\frac{V'}{R}+2\\cdot\\frac{V'-p}{R}=\\frac{12V'}{7R}$ なので $R_{\\mathrm{AB}}=\\frac{7}{12}R$．\\\\\n全体の網は「辺 AB の抵抗 $R$」と「残りの網 $R'$」の並列だから\n\\[ \\frac{1}{R_{\\mathrm{AB}}}=\\frac1R+\\frac1{R'}\\quad\\therefore\\ R'=\\frac{7}{5}R \\]\nよって S を開いた直後の電流は\n\\[ i_1=\\frac{\\frac{8V}{11}}{R+\\frac75R}=\\boldsymbol{\\frac{10V}{33R}} \\]\n放電の間，辺 AB の抵抗と網 $R'$ には各瞬間に同じ電流が流れるので，発生するジュール熱は抵抗値に比例して分配される．コンデンサーのエネルギー $\\frac{Q^2}{2C}=\\frac{32}{121}CV^2$ がすべてジュール熱になるから\n\\[ J=\\frac{R}{R+R'}\\cdot\\frac{32}{121}CV^2=\\frac{5}{12}\\cdot\\frac{32}{121}CV^2=\\boldsymbol{\\frac{40}{363}CV^2} \\]\n（S を閉じているときは電池が A–G 間の電圧を固定するので，放電時とは見える回路が異なることに注意．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "立方体の抵抗網は，回転・鏡映・反対称（電位 $\\varphi\\to V'-\\varphi$）の対称性で等電位点を見つけて未知数を減らす．コンデンサーを含む辺は十分後には取り去った枝と同じで，残った対称性から電流の流れない辺が現れる．放電時にコンデンサーから見える「その辺を除いた網」の抵抗は，全網の合成抵抗をその辺との並列に分解して求まる．"
+ },
+ "concepts": [
+  "series-parallel",
+  "torque",
+  "capacitor"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "抵抗網",
+  "対称性",
+  "等電位",
+  "コンデンサー",
+  "合成抵抗",
+  "ジュール熱"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

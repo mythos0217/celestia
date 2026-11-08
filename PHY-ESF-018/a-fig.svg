@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320">
+<defs>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<line x1="120.0" y1="40.0" x2="213.9" y2="216.6" stroke="#222" stroke-width="1.2"/>
+<line x1="120.0" y1="40.0" x2="120.0" y2="240.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="120.0" y1="240.0" x2="213.9" y2="216.6" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="120.0" cy="40.0" r="2.5" fill="#222" stroke="#222" stroke-width="1.6"/>
+<text x="100.0" y="45.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">O</text>
+<circle cx="120.0" cy="240.0" r="3.0" fill="#222" stroke="#222" stroke-width="1.6"/>
+<text x="100.0" y="245.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">C</text>
+<circle cx="213.9" cy="216.6" r="6.0" fill="#ffffff" stroke="#222" stroke-width="1.6"/>
+<text x="221.9" y="208.6" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">A</text>
+<line x1="213.9" y1="216.6" x2="213.9" y2="295.8" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<text x="219.9" y="296.6" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf" text-anchor="start">mg</text>
+<line x1="213.9" y1="216.6" x2="272.1" y2="202.1" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/>
+<text x="276.1" y="202.1" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#c0392b" text-anchor="start">F</text>
+<line x1="213.9" y1="216.6" x2="176.3" y2="146.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<text x="184.3" y="154.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf" text-anchor="start">T</text>
+<line x1="330.0" y1="60.0" x2="330.0" y2="200.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<line x1="330.0" y1="200.0" x2="395.7" y2="183.6" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/>
+<line x1="395.7" y1="183.6" x2="330.0" y2="60.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<text x="298.0" y="130.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf" text-anchor="start">mg</text>
+<text x="366.9" y="209.8" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#c0392b" text-anchor="start">F</text>
+<text x="370.9" y="121.8" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf" text-anchor="start">T</text>
+<text x="250.0" y="305.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">力の三角形 ∽ △OCA</text>
+</svg>

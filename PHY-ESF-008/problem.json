@@ -1,0 +1,123 @@
+{
+ "id": "PHY-ESF-008",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "振動する一様な電場の中で放された荷電粒子のドリフト（放す時刻による違い）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "真空中に $y$ 軸方向の一様な電場がかけられ，その $y$ 成分 $E(t)$ は時間とともに周期的に変化している．質量 $m$，電荷 $q\\ (q>0)$ の粒子を，時刻 $t_0$ に原点 O で静かに（速度 $0$ で）放す．粒子は $y$ 軸上を運動する．重力，磁場の影響，電磁波の放射は無視する．放した後の電場の1周期にわたって平均した粒子の速度（$y$ 成分）を $\\bar v$ とし，ドリフト速度とよぶ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "図の [A] のように，$E(t)$ が周期 $T$ の方形波（$0\\le t<\\frac T2$ で $E_0$，$\\frac T2\\le t<T$ で $-E_0$，以後これをくり返す．$E_0>0$）の場合を考える．$0\\le t_0<\\frac T2$ および $\\frac T2\\le t_0<T$ のそれぞれについて，$\\bar v$ を $t_0$ の関数として求めよ．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "\\textbf{A}　の場合に，$\\bar v=0$ となる $t_0\\ (0\\le t_0<T)$ をすべて求めよ．また，$t_0=\\frac T4$ の場合について，放した後の粒子の $y$ 座標の最大値と最小値を求めよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "2",
+      "tex": "図の [B] のように，$E(t)=E_0\\cos\\omega t\\ (\\omega>0)$ の場合を考える．時刻 $t\\ (t\\ge t_0)$ の粒子の速度 $v(t)$ とドリフト速度 $\\bar v$ を求めよ．また，$\\bar v=0$ となるのは，放す瞬間の電場がどのようなときか．さらに $t_0=0$ のとき，粒子の $y$ 座標がとりうる範囲を求めよ．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "\\textbf{B}　の場合に，粒子の運動エネルギーの1周期にわたる時間平均 $\\bar K$ を，$U_{\\rm p}=\\dfrac{q^2E_0^{\\,2}}{4m\\omega^2}$ と $\\omega t_0$ で表せ．また，ドリフト運動のエネルギー $\\frac12m\\bar v^2$ の最大値を $U_{\\rm p}$ で表し，それはどのような瞬間に放した場合かを答えよ．"
+   },
+   {
+    "type": "text",
+    "tex": "\\textbf{B}　の場合に，放す時刻 $t_0$ が1周期にわたって一様にばらついている多数の粒子を考える．ドリフト運動のエネルギー $\\frac12m\\bar v^2$ の平均値を $U_{\\rm p}$ で表せ．"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：振動する一様な電場の中で放された荷電粒子のドリフト（放す時刻による違い）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0\\le t_0<\\frac T2$：$\\bar v=\\dfrac{qE_0}m\\left(\\dfrac T4-t_0\\right)$，$\\frac T2\\le t_0<T$：$\\bar v=\\dfrac{qE_0}m\\left(t_0-\\dfrac{3T}4\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "$t_0=\\dfrac T4,\\ \\dfrac{3T}4$；最大値 $\\dfrac{qE_0T^2}{16m}$，最小値 $0$　(3) $v(t)=\\dfrac{qE_0}{m\\omega}(\\sin\\omega t-\\sin\\omega t_0)$，$\\bar v=-\\dfrac{qE_0}{m\\omega}\\sin\\omega t_0$；電場の大きさが最大（$|E|=E_0$）の瞬間に放したとき；$0\\le y\\le\\dfrac{2qE_0}{m\\omega^2}$　(4) $\\bar K=U_{\\rm p}(1+2\\sin^2\\omega t_0)$；最大値 $2U_{\\rm p}$，電場が $0$ になる瞬間に放したとき　(5) $U_{\\rm p}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　$F(t)=\\displaystyle\\int_0^tE(t')\\,dt'$ とおく．運動方程式 $m\\frac{dv}{dt}=qE(t)$ と $v(t_0)=0$ より\n\\[ v(t)=\\frac qm\\{F(t)-F(t_0)\\}. \\]\n$E$ の1周期の平均は $0$ なので $F$ も同じ周期の周期関数になる．その1周期の平均を $\\bar F$ とすると\n\\[ \\bar v=\\frac qm\\{\\bar F-F(t_0)\\}. \\]\nつまりドリフト速度は，放した時刻の $F$ の値が平均 $\\bar F$ からどれだけずれているかだけで決まる．粒子はその後，一定のドリフト $\\bar v$ に周期的な速度の振動 $\\frac qm\\{F(t)-\\bar F\\}$ が重なった運動をする．\n\n\\textbf{(1)}　方形波では $F(t)=E_0t\\ (0\\le t\\le\\frac T2)$，$F(t)=E_0(T-t)\\ (\\frac T2\\le t\\le T)$ の三角波で，$\\bar F=\\frac{E_0T}4$．よって\n\\[ 0\\le t_0<\\tfrac T2:\\ \\bar v=\\boldsymbol{\\frac{qE_0}m\\left(\\frac T4-t_0\\right)},\\qquad \\tfrac T2\\le t_0<T:\\ \\bar v=\\frac qm\\left\\{\\frac{E_0T}4-E_0(T-t_0)\\right\\}=\\boldsymbol{\\frac{qE_0}m\\left(t_0-\\frac{3T}4\\right)}. \\]\n$t_0=0$ で放すと $+y$ 向きに，$t_0=\\frac T2$ で放すと $-y$ 向きに最も速くドリフトする．\n\n\\textbf{(2)}　$\\bar v=0$ は $F(t_0)=\\bar F$ のときで，$t_0=\\boldsymbol{\\frac T4,\\ \\frac{3T}4}$（それぞれの半周期のちょうど中央）．\n$t_0=\\frac T4$ のとき，$v=\\frac{qE_0}m\\left(t-\\frac T4\\right)$ は $t=\\frac T2$ で最大値 $\\frac{qE_0T}{4m}$ となり，その後減少して $t=\\frac{3T}4$ で $0$，以後負になって $t=\\frac{5T}4$ で再び $0$ になる．$v\\ge0$ の区間 $\\frac T4\\le t\\le\\frac{3T}4$ の $v$-$t$ グラフは底辺 $\\frac T2$，高さ $\\frac{qE_0T}{4m}$ の三角形なので，$y$ の最大値は $\\frac12\\cdot\\frac T2\\cdot\\frac{qE_0T}{4m}=\\boldsymbol{\\frac{qE_0T^2}{16m}}$．続く $\\frac{3T}4\\le t\\le\\frac{5T}4$ の $v\\le0$ の部分も同じ面積の三角形なので $y$ は O に戻り，最小値は $\\boldsymbol0$．粒子は O と最大点の間を往復しつづける．\n\n\\textbf{(3)}　$F(t)=\\frac{E_0}{\\omega}\\sin\\omega t$，$\\bar F=0$ だから\n\\[ v(t)=\\boldsymbol{\\frac{qE_0}{m\\omega}(\\sin\\omega t-\\sin\\omega t_0)},\\qquad\\bar v=\\boldsymbol{-\\frac{qE_0}{m\\omega}\\sin\\omega t_0}. \\]\n$\\bar v=0$ は $\\sin\\omega t_0=0$，すなわち $\\cos\\omega t_0=\\pm1$ のとき：\\textbf{電場の大きさが最大の瞬間に放したとき}である．最も強く押される瞬間に放すとドリフトしないのは，そこが $F$ の値がちょうど平均に等しい時刻だからである．逆に，電場が $0$ の瞬間に放すと $|\\bar v|$ が最大になる．\n$t_0=0$ のとき $y=\\int_0^tv\\,dt=\\frac{qE_0}{m\\omega^2}(1-\\cos\\omega t)$ で，$\\boldsymbol{0\\le y\\le\\frac{2qE_0}{m\\omega^2}}$．粒子は最初に押された側だけで振動し，O より負の側には行かない．\n\n\\textbf{(4)}　$u=\\frac{qE_0}{m\\omega}$ とおくと $v=\\bar v+u\\sin\\omega t$．$\\sin\\omega t$ の1周期平均は $0$，$\\sin^2\\omega t$ の平均は $\\frac12$ だから\n\\[ \\bar K=\\frac12m\\bar v^2+\\frac14mu^2=\\frac12mu^2\\sin^2\\omega t_0+\\frac14mu^2. \\]\n$\\frac14mu^2=\\frac{q^2E_0^{\\,2}}{4m\\omega^2}=U_{\\rm p}$ より $\\bar K=\\boldsymbol{U_{\\rm p}(1+2\\sin^2\\omega t_0)}$．第1項 $U_{\\rm p}$ は放す時刻によらない振動のエネルギー，第2項がドリフトのエネルギーで，その最大値は $\\boldsymbol{2U_{\\rm p}}$（$\\sin^2\\omega t_0=1$，すなわち電場が $0$ になる瞬間に放したとき）．\n\n\\textbf{(5)}　$\\sin^2\\omega t_0$ の一様な平均は $\\frac12$ なので，ドリフトのエネルギーの平均は $2U_{\\rm p}\\cdot\\frac12=\\boldsymbol{U_{\\rm p}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "静止から放した粒子の速度は「電場の時間積分 $F(t)$ の，放した時刻からの増分」で決まるので，ドリフト速度は $F$ の時間平均と放した時刻の値 $F(t_0)$ の差になる．そのため正弦波の電場では，電場が最も強い瞬間に放すとドリフトせず，電場が $0$ の瞬間に放すとドリフトのエネルギーが最大の $2U_{\\rm p}$ になるという，直観に反する結果になる．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "string-resonance",
+  "wave-basics"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "荷電粒子",
+  "時間変化する電場",
+  "ドリフト",
+  "時間平均",
+  "放出の位相"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

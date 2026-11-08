@@ -1,0 +1,135 @@
+{
+ "id": "PHY-ESF-005",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "接地導体球と点電荷（電位 0 の球面と鏡像電荷，引き寄せの仕事が半分になる理由）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "真空中で，クーロンの法則の比例定数を $k$ とし，電位の基準は無限遠にとる．重力は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "点 O を中心とする半径 $R$ の球面を考える．O から距離 $D\\,(D>R)$ の点 P に電気量 $q\\,(q>0)$ の点電荷を置き，線分 OP 上の O から距離 $b\\,(0<b<R)$ の点 P$'$ に電気量 $-q'\\,(q'>0)$ の点電荷を置く．この2つの点電荷による電位が球面上のいたるところで 0 になるような $q'$ と $b$ を，$q$，$R$，$D$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "次に，図のように O を中心とする半径 $R$ の導体球を置いて接地し，点電荷 P$'$ は取り除く．点 P に電気量 $q$ の点電荷があるとき，導体球に誘導される電気量の総和 $Q_{\\text{ind}}$ と，点電荷が受ける静電気力の大きさ $F$ を $D$ の関数として求めよ．ただし，「導体の表面の電位が同じで，導体の外部にある電荷も同じならば，導体の外部の電場は同じになる」ことを用いてよい．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の点電荷を，無限遠から O から距離 $D$ の点まで導体球に向かって直線上をゆっくり運ぶ．このとき外力がする仕事 $W(D)$ を求めよ．また，(1) の点電荷 $-q'$ が点 P につくる電位を $V'$ とするとき，$W(D)$ を $q$，$V'$ で表し，$W(D)\\neq qV'$ となる理由を説明せよ．必要なら $\\displaystyle\\int\\frac{D}{(D^2-R^2)^2}\\,dD=-\\frac{1}{2(D^2-R^2)}+\\text{定数}$ を用いてよい．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の導体球に対し，質量 $m$，電気量 $q$ の小球を O から距離 $3R$ の点で静かに放した．小球は OP を結ぶ直線上を導体球に向かって動く．O から距離 $2R$ の点を通過するときの小球の速さ $v$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：接地導体球と点電荷（電位 0 の球面と鏡像電荷，引き寄せの仕事が半分になる理由）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：接地導体球と点電荷（電位 0 の球面と鏡像電荷，引き寄せの仕事が半分になる理由）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$q'=\\dfrac{R}{D}q$，$b=\\dfrac{R^2}{D}$"
+   },
+   {
+    "id": "2",
+    "tex": "$Q_{\\text{ind}}=-\\dfrac{R}{D}q$，$F=\\dfrac{kq^2RD}{(D^2-R^2)^2}$（導体球に引き寄せられる向き）"
+   },
+   {
+    "id": "3",
+    "tex": "$W(D)=-\\dfrac{kq^2R}{2(D^2-R^2)}=\\dfrac12qV'$（理由は解説）"
+   },
+   {
+    "id": "4",
+    "tex": "$v=q\\sqrt{\\dfrac{5k}{24mR}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 電位 0 の球面}　直線 OP 上の球面の2点（P に近い側と遠い側）で電位が 0 となる条件は\n\\[ \\frac{kq}{D-R}=\\frac{kq'}{R-b},\\qquad \\frac{kq}{D+R}=\\frac{kq'}{R+b}. \\]\n辺々割ると $\\dfrac{D+R}{D-R}=\\dfrac{R+b}{R-b}$ より $b=\\dfrac{R^2}{D}$，これを代入して $q'=q\\dfrac{R-b}{D-R}=\\dfrac{R}{D}q$．\n実際に球面上の任意の点 X（$\\angle\\text{XOP}=\\theta$）で確かめると\n\\[ \\text{P}'\\text{X}^2=R^2+\\frac{R^4}{D^2}-\\frac{2R^3}{D}\\cos\\theta=\\frac{R^2}{D^2}\\left(D^2+R^2-2RD\\cos\\theta\\right)=\\frac{R^2}{D^2}\\,\\text{PX}^2 \\]\nなので $\\dfrac{q'}{\\text{P}'\\text{X}}=\\dfrac{qR/D}{(R/D)\\text{PX}}=\\dfrac{q}{\\text{PX}}$ となり，球面全体で電位は 0 である．よって $\\boldsymbol{q'=\\frac{R}{D}q,\\ b=\\frac{R^2}{D}}$．\n\n\\textbf{(2) 導体球を「像電荷」で置き換える}　接地した導体球の表面の電位は 0 で，球の外にある電荷は P の $q$ だけである．(1) の2電荷の系も球面の電位が 0 で球の外の電荷は $q$ だけなので，与えられた事実により球の外の電場は (1) の2電荷の系の電場と同じになる．\n導体球をちょうど包む（P は含まない）閉曲面にガウスの法則を使うと，曲面を貫く電気力線の本数は両方の系で等しいから，内部の電気量も等しい．よって $\\boldsymbol{Q_{\\text{ind}}=-q'=-\\frac{R}{D}q}$．\n点電荷の位置の電場も同じなので，力は P$'$ の電荷からのクーロン力に等しい：\n\\[ F=\\frac{kq\\cdot q'}{(D-b)^2}=\\frac{kq^2(R/D)}{\\left(D-R^2/D\\right)^2}=\\boldsymbol{\\frac{kq^2RD}{(D^2-R^2)^2}} \\]\n（引力）．\n\n\\textbf{(3) 引き寄せる仕事}　ゆっくり運ぶので外力は静電気力とつり合い，大きさ $F$ で O から遠ざかる向きにはたらく．点電荷は O に近づく向きに動くので，外力の仕事は負で\n\\[ W(D)=-\\int_D^{\\infty}F\\,dD'=-kq^2R\\left[-\\frac{1}{2(D'^2-R^2)}\\right]_D^{\\infty}=\\boldsymbol{-\\frac{kq^2R}{2(D^2-R^2)}}. \\]\n一方 $V'=-\\dfrac{kq'}{D-b}=-\\dfrac{kqR}{D^2-R^2}$ だから $\\boldsymbol{W(D)=\\frac12qV'}$．\n$qV'$ は「誘導電荷の分布を最終状態のまま固定しておき，そこへ $q$ を無限遠から運ぶ」ときの仕事である．実際には，点電荷が遠いうちは誘導電荷は小さく（$|Q_{\\text{ind}}|=qR/D$），近づくにつれて増え，しかも球の P 側に寄っていく．つまり運ぶ途中で点電荷が受ける力は「最終状態の誘導電荷」から受ける力より常に弱いので，仕事の大きさは $|qV'|$ より小さくなる．誘導電荷は点電荷自身がつくったものであり，そのエネルギーはコンデンサーの充電と同様に $\\frac12$ がつく．\n\n\\textbf{(4) 速さ}　小球が受ける力は (2) の $F$ で，位置 $D$ だけで決まる．(3) の $W(D)$ は「無限遠を基準とした位置エネルギー」$U(D)=W(D)$ とみなせ（$F=-dU/dD$ で引力），運動エネルギーと $U$ の和が保存する．接地線を通って電荷が出入りするが，導体球は静止しているので小球の運動エネルギーの変化は $F$ の仕事だけで決まる．\n\\[ U(3R)=-\\frac{kq^2R}{2\\cdot8R^2}=-\\frac{kq^2}{16R},\\qquad U(2R)=-\\frac{kq^2R}{2\\cdot3R^2}=-\\frac{kq^2}{6R} \\]\n\\[ \\frac12mv^2=U(3R)-U(2R)=\\frac{kq^2}{R}\\left(\\frac16-\\frac1{16}\\right)=\\frac{5kq^2}{48R} \\]\nよって $\\boldsymbol{v=q\\sqrt{\\frac{5k}{24mR}}}$．（$qV'$ を位置エネルギーと誤ると速さは $\\sqrt2$ 倍になってしまう．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2つの点電荷の電位が 0 になる面はアポロニウスの球面であり，これを接地導体球に置き換えても外部の電場は変わらない（像電荷）．誘導電荷の総和はガウスの法則で像電荷に等しい．ただし誘導電荷は点電荷とともに増え動くので，引き寄せのエネルギーは $qV'$ ではなくその $\\frac12$ になる．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "mechanical-energy",
+  "work-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "鏡像法",
+  "電位0の等電位面",
+  "ガウスの法則",
+  "接地導体",
+  "エネルギー保存"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

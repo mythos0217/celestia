@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 220">
+<defs><marker id="a-ab" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#c0392b"/></marker></defs>
+<text x="20" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">(i) 同じ向き：間隔一定，反発は不変</text>
+<line x1="40" y1="70" x2="260" y2="70" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="150" cy="70" r="2.5" fill="#222"/><text x="144" y="92" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">O</text>
+<circle cx="100" cy="70" r="6" fill="#1f5fbf"/><circle cx="200" cy="70" r="6" fill="#1f5fbf"/>
+<line x1="108" y1="70" x2="140" y2="70" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<line x1="208" y1="70" x2="240" y2="70" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<text x="50" y="120" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">ω<tspan baseline-shift="sub" font-size="10">1</tspan><tspan font-style="normal">² = 2</tspan>ke<tspan baseline-shift="super" font-size="10">2</tspan><tspan font-style="normal">/(</tspan>mR<tspan baseline-shift="super" font-size="10">3</tspan><tspan font-style="normal">)</tspan></text>
+<text x="290" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">(ii) 逆向き：間隔が伸び反発が弱まる</text>
+<line x1="300" y1="70" x2="530" y2="70" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="415" cy="70" r="2.5" fill="#222"/><text x="409" y="92" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">O</text>
+<circle cx="365" cy="70" r="6" fill="#1f5fbf"/><circle cx="465" cy="70" r="6" fill="#1f5fbf"/>
+<line x1="357" y1="70" x2="322" y2="70" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<line x1="473" y1="70" x2="508" y2="70" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<text x="330" y="120" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">ω<tspan baseline-shift="sub" font-size="10">2</tspan><tspan font-style="normal">² = 6</tspan>ke<tspan baseline-shift="super" font-size="10">2</tspan><tspan font-style="normal">/(</tspan>mR<tspan baseline-shift="super" font-size="10">3</tspan><tspan font-style="normal">)</tspan></text>
+<text x="20" y="170" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">青：ずらす向き．復元力（1個あたり，ずれ <tspan font-family="Times New Roman, serif" font-style="italic">u</tspan>）：(i) 球の力だけ 2<tspan font-family="Times New Roman, serif" font-style="italic">ke</tspan>²<tspan font-family="Times New Roman, serif" font-style="italic">u</tspan>/<tspan font-family="Times New Roman, serif" font-style="italic">R</tspan>³</text>
+<text x="20" y="196" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">　(ii) 球の力 2<tspan font-family="Times New Roman, serif" font-style="italic">ke</tspan>²<tspan font-family="Times New Roman, serif" font-style="italic">u</tspan>/<tspan font-family="Times New Roman, serif" font-style="italic">R</tspan>³ ＋ 反発の減少 4<tspan font-family="Times New Roman, serif" font-style="italic">ke</tspan>²<tspan font-family="Times New Roman, serif" font-style="italic">u</tspan>/<tspan font-family="Times New Roman, serif" font-style="italic">R</tspan>³</text>
+</svg>

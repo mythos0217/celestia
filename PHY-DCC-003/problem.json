@@ -1,0 +1,122 @@
+{
+ "id": "PHY-DCC-003",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-03",
+ "topic": "2通りの接続の読みだけから抵抗値と計器の内部抵抗をすべて決める",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "内部抵抗の無視できる電池（起電力 $E$），抵抗値 $R$ の抵抗，内部抵抗 $r_{\\mathrm A}$ の電流計 A，内部抵抗 $r_{\\mathrm V}$ の電圧計 V がある．$E$，$R$，$r_{\\mathrm A}$，$r_{\\mathrm V}$ はいずれも未知である．これらを図1，図2のように接続したところ，計器の読みは次のとおりであった．\n図1：電流計 $I_1=120\\ \\mathrm{mA}$，電圧計 $V_1=5.70\\ \\mathrm{V}$　／　図2：電流計 $I_2=96.0\\ \\mathrm{mA}$，電圧計 $V_2=6.00\\ \\mathrm{V}$\n\n数値の答えは，特に指定がなければ有効数字3桁で答えよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "図1，図2のそれぞれで（電圧計の読み）÷（電流計の読み）を計算せよ．また，それぞれが真の $R$ より大きいか小さいかを，理由とともに答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "電池の起電力 $E$ と，電流計の内部抵抗 $r_{\\mathrm A}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "抵抗値 $R$ と，電圧計の内部抵抗 $r_{\\mathrm V}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "この電流計と電圧計を用いて，いろいろな抵抗値 $R'$ の抵抗を図1または図2の接続で測り，（電圧計の読み）÷（電流計の読み）を測定値とする．測定値の真の値からのずれの割合（相対誤差の大きさ）が，図1の接続の方が図2の接続より小さくなる $R'$ の範囲を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：2通りの接続の読みだけから抵抗値と計器の内部抵抗をすべて決める",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "図1：$47.5\\ \\Omega$（$R$ より小さい），図2：$62.5\\ \\Omega$（$R$ より大きい）"
+   },
+   {
+    "id": "2",
+    "tex": "$E=6.00\\ \\mathrm V$，$r_{\\mathrm A}=2.50\\ \\Omega$"
+   },
+   {
+    "id": "3",
+    "tex": "$R=60.0\\ \\Omega$，$r_{\\mathrm V}=228\\ \\Omega$"
+   },
+   {
+    "id": "4",
+    "tex": "$R'<25\\ \\Omega$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　どちらの計器も「目盛りつきの抵抗」とみなし，計器自身を流れる電流・計器自身にかかる電圧が読みになると考える．鍵は，図2では電圧計が電池の両端に直接つながっていることと，図1では電池の起電力のうち電流計にかかる分が $E-V_1$ であることに気づくことである．\n\n\\textbf{(1)}　図1：$\\frac{5.70}{0.120}=\\boldsymbol{47.5\\ \\Omega}$．電圧計は $R$ の電圧を正しく示すが，電流計は $R$ の電流に電圧計を流れる電流を加えたものを示すので，測定値は $R$ と $r_{\\mathrm V}$ の並列合成抵抗 $\\frac{Rr_{\\mathrm V}}{R+r_{\\mathrm V}}$ になり，$R$ より\\textbf{小さい}．\n\n図2：$\\frac{6.00}{0.0960}=\\boldsymbol{62.5\\ \\Omega}$．電流計は $R$ の電流を正しく示すが，電圧計は $R$ と電流計の電圧の和を示すので，測定値は $R+r_{\\mathrm A}$ で $R$ より\\textbf{大きい}．\n\n\\textbf{(2)}　図2では電圧計が電池の両端につながっており，電池の内部抵抗は無視できるので $E=V_2=\\boldsymbol{6.00\\ \\mathrm V}$．図1では電池の起電力のうち電圧計の示す $V_1$ を除いた残りが電流計にかかるので\n\\[ r_{\\mathrm A}=\\frac{E-V_1}{I_1}=\\frac{6.00-5.70}{0.120}=\\boldsymbol{2.50\\ \\Omega} \\]\n\n\\textbf{(3)}　図2より $R+r_{\\mathrm A}=62.5\\ \\Omega$ なので $R=62.5-2.50=\\boldsymbol{60.0\\ \\Omega}$．\n\n図1で $R$ を流れる電流は $\\frac{V_1}{R}=\\frac{5.70}{60.0}=0.0950\\ \\mathrm A$ だから，電圧計を流れる電流は $0.120-0.0950=0.0250\\ \\mathrm A$．電圧計の読みは自分の内部抵抗での電圧降下でもあるので\n\\[ r_{\\mathrm V}=\\frac{5.70}{0.0250}=\\boldsymbol{228\\ \\Omega} \\]\n（確認：$\\frac{60.0\\times228}{60.0+228}+2.50=50.0\\ \\Omega$ で，$\\frac{6.00}{50.0}=0.120\\ \\mathrm A$ となり図1の読みと一致する．）\n\n\\textbf{(4)}　図1の測定値は $\\frac{R'r_{\\mathrm V}}{R'+r_{\\mathrm V}}$ なので相対誤差の大きさは\n\\[ \\frac{R'-\\frac{R'r_{\\mathrm V}}{R'+r_{\\mathrm V}}}{R'}=\\frac{R'}{R'+r_{\\mathrm V}} \\]\n図2の測定値は $R'+r_{\\mathrm A}$ なので相対誤差は $\\frac{r_{\\mathrm A}}{R'}$．図1の方が小さい条件は\n\\[ \\frac{R'}{R'+r_{\\mathrm V}}<\\frac{r_{\\mathrm A}}{R'}\\iff R'^2-r_{\\mathrm A}R'-r_{\\mathrm A}r_{\\mathrm V}<0 \\]\n\\[ \\iff R'<\\frac{r_{\\mathrm A}+\\sqrt{r_{\\mathrm A}^2+4r_{\\mathrm A}r_{\\mathrm V}}}{2}=\\frac{2.50+\\sqrt{6.25+2280}}{2}\\approx25.2 \\]\nよって $\\boldsymbol{R'<25\\ \\Omega}$（およそ $\\sqrt{r_{\\mathrm A}r_{\\mathrm V}}$ より小さい抵抗では図1がよい）．本問の $R=60.0\\ \\Omega$ では図2の方が誤差が小さい（図1：約 $21\\%$，図2：約 $4\\%$）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電流計・電圧計は内部抵抗をもつ抵抗として扱い，読みは「計器自身の電流・計器自身の電圧」である．内部抵抗の無視できる電池なら，電圧計が電池に直接つながる接続で起電力が読め，もう一方の接続で電流計にかかる電圧が分かるので，2通りの接続の読みだけで測りたい抵抗と両計器の内部抵抗がすべて決まる．どちらの接続が正確かは $R^2$ と $r_{\\mathrm A}(R+r_{\\mathrm V})$ の大小で決まる．"
+ },
+ "concepts": [
+  "series-parallel",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電流計",
+  "電圧計",
+  "内部抵抗",
+  "測定誤差",
+  "オームの法則",
+  "接続方法の選択"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

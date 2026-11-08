@@ -1,0 +1,135 @@
+{
+ "id": "PHY-DCC-012",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-03",
+ "topic": "一部が影になった直列太陽電池とバイパスダイオード（動作状態の切り替わりと2つの電力極大）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽電池を図の記号で表し，記号の矢印の向き（電池の中を下の端子から上の端子へ）に流れる電流を出力電流 $I$，下の端子に対する上の端子の電位を出力電圧 $V$ とする．強さ $P$ の光を当てた太陽電池の $V$ と $I$ の関係を，次のように理想化する（$s,\\ V_0$ は正の定数）．\n\n・$V<V_0$ のとき（$V$ が負のときも含めて）$I=sP$．\n\n・$V=V_0$ のとき，$I$ は $0\\le I\\le sP$ のどの値もとりうる（外部の回路によって決まる）．\n\n・$V>V_0$ となることはなく，$I>sP$ や $I<0$ の電流も流れない．\n\n同じ特性の太陽電池1，2を直列につなぎ，抵抗値 $R$ の抵抗に接続した（図）．太陽電池1には強さ $P$ の光が当たっているが，太陽電池2は一部が影になり，強さ $\\alpha P$ $(0<\\alpha<1)$ の光しか当たらない．各太陽電池には図のようにダイオード D を並列につなぐことができる．D は理想的で，三角形の向き（図の下から上）にだけ電流を流し，流しているときの両端の電圧は $0$ である．導線の抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "D を2つともつながない場合について，抵抗を流れる電流 $I$ を $R$ の関数として求めよ．また，$R\\to0$ のときの太陽電池2の出力電圧 $V_2$ と，太陽電池2が回路から受け取る電力を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "D を2つともつないだ場合について，$I$ を $R$ の関数として求めよ（$R$ の範囲で場合分けせよ）．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の場合に，抵抗で消費される電力を最大にする $R$ と，その最大値を求めよ．$\\alpha$ の値によって場合分けすること．また，D をつながない場合の最大電力と比べ，D をつなぐと最大電力が増えるのは $\\alpha$ がどの範囲のときか．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の回路で抵抗を，帯電していない電気容量 $C$ のコンデンサーに取りかえて時刻 $0$ に光を当て始めた．コンデンサーの電圧が $V_0$ に達する時刻と，十分時間がたった後のコンデンサーの電気量，および電気量がその値に達する時刻を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一部が影になった直列太陽電池とバイパスダイオード（動作状態の切り替わりと2つの電力極大）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一部が影になった直列太陽電池とバイパスダイオード（動作状態の切り替わりと2つの電力極大）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$R\\le\\dfrac{2V_0}{\\alpha sP}$ のとき $I=\\alpha sP$，$R>\\dfrac{2V_0}{\\alpha sP}$ のとき $I=\\dfrac{2V_0}{R}$；$V_2=-V_0$，受け取る電力 $\\alpha sPV_0$"
+   },
+   {
+    "id": "2",
+    "tex": "$R\\le\\dfrac{V_0}{sP}$：$I=sP$；$\\dfrac{V_0}{sP}<R<\\dfrac{V_0}{\\alpha sP}$：$I=\\dfrac{V_0}{R}$；$\\dfrac{V_0}{\\alpha sP}\\le R\\le\\dfrac{2V_0}{\\alpha sP}$：$I=\\alpha sP$；$R>\\dfrac{2V_0}{\\alpha sP}$：$I=\\dfrac{2V_0}{R}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\alpha<\\dfrac12$：$R=\\dfrac{V_0}{sP}$ で $sPV_0$．$\\alpha>\\dfrac12$：$R=\\dfrac{2V_0}{\\alpha sP}$ で $2\\alpha sPV_0$．$\\alpha=\\dfrac12$：両方の $R$ で $sPV_0$．D で最大電力が増えるのは $0<\\alpha<\\dfrac12$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{CV_0}{sP}$；$2CV_0$；$\\dfrac{CV_0}{sP}\\left(1+\\dfrac1\\alpha\\right)$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　直列なので2つの太陽電池（と D の組）を同じ電流 $I$ が流れ，$V_1+V_2=RI$ が成り立つ．各電池が「$V<V_0$ で $I=sP$（電流源）」と「$V=V_0$ で $I\\le sP$（電圧源）」のどちらの状態にあるかを仮定し，矛盾がないか確かめる．\n\n\\textbf{(1) D なし}　電流は2つの電池の上限の小さい方 $\\alpha sP$ を超えられない．\n\n(i) $I=\\alpha sP$ と仮定する．電池1は $I<sP$ なので $V_1=V_0$．電池2は $I=\\alpha sP$ なので $V_2<V_0$ も許され，$V_2=RI-V_0=\\alpha sPR-V_0$．$V_2\\le V_0$ が条件で $R\\le\\dfrac{2V_0}{\\alpha sP}$．\n\n(ii) $I<\\alpha sP$ なら両方とも $V=V_0$ で $I=\\dfrac{2V_0}{R}$．$I<\\alpha sP$ より $R>\\dfrac{2V_0}{\\alpha sP}$．\n\nよって $\\boldsymbol{R\\le\\dfrac{2V_0}{\\alpha sP}}$ で $\\boldsymbol{I=\\alpha sP}$，$\\boldsymbol{R>\\dfrac{2V_0}{\\alpha sP}}$ で $\\boldsymbol{I=\\dfrac{2V_0}{R}}$．\n\n$R\\to0$ では $V_2=-V_1=\\boldsymbol{-V_0}$．電池2は電流 $\\alpha sP$ を矢印の向きに流しながら出力電圧が負なので，電力 $IV_2<0$ を「出力」する，すなわち回路から $\\boldsymbol{\\alpha sPV_0}$ の電力を受け取って熱に変える．影になった電池が明るい電池に逆向きの電圧をかけられて発熱する（ホットスポット）．\\hfill$\\square$\n\n\\textbf{(2) D あり}　D があると各電池の電圧は $V\\ge0$ に制限され，電流が電池の上限を超えた分は D を通る（そのとき $V=0$）．\n\n(i) $I>\\alpha sP$：電池2だけでは流せないので D が導通し $V_2=0$．このとき $I\\le sP$ であり，\n\n\\quad ・$I=sP$，$V_1=RI=sPR\\le V_0$：$\\boldsymbol{R\\le\\dfrac{V_0}{sP}}$ で $\\boldsymbol{I=sP}$．\n\n\\quad ・$\\alpha sP<I<sP$：$V_1=V_0$ で $I=\\dfrac{V_0}{R}$．範囲から $\\boldsymbol{\\dfrac{V_0}{sP}<R<\\dfrac{V_0}{\\alpha sP}}$ で $\\boldsymbol{I=\\dfrac{V_0}{R}}$．\n\n(ii) $I=\\alpha sP$：電池2は $0\\le V_2\\le V_0$，電池1は $V_1=V_0$ なので $V_0\\le RI\\le2V_0$，すなわち $\\boldsymbol{\\dfrac{V_0}{\\alpha sP}\\le R\\le\\dfrac{2V_0}{\\alpha sP}}$ で $\\boldsymbol{I=\\alpha sP}$．\n\n(iii) $I<\\alpha sP$：両方 $V_0$ で $\\boldsymbol{I=\\dfrac{2V_0}{R}}$，$\\boldsymbol{R>\\dfrac{2V_0}{\\alpha sP}}$．\n\nこれで $R>0$ がすべて覆われ，$I$ は $R$ について連続である．2つの電池全体の $I$–$V$ 特性は解答図の階段状になる．\\hfill$\\square$\n\n\\textbf{(3) 最大電力}　消費電力 $RI^2$ は，(2) の4つの範囲で順に $s^2P^2R$（増加），$\\dfrac{V_0^2}{R}$（減少），$\\alpha^2s^2P^2R$（増加），$\\dfrac{4V_0^2}{R}$（減少）となる．したがって極大は2つあり（解答図の2つの角），\n\\[ R=\\frac{V_0}{sP}\\ \\text{で}\\ sPV_0,\\qquad R=\\frac{2V_0}{\\alpha sP}\\ \\text{で}\\ 2\\alpha sPV_0 \\]\n大きい方が最大値で，\n\\[ \\boldsymbol{\\alpha<\\tfrac12}:\\ R=\\boldsymbol{\\frac{V_0}{sP}},\\ \\ \\boldsymbol{sPV_0}\\qquad \\boldsymbol{\\alpha>\\tfrac12}:\\ R=\\boldsymbol{\\frac{2V_0}{\\alpha sP}},\\ \\ \\boldsymbol{2\\alpha sPV_0} \\]\n（$\\alpha=\\frac12$ では両方で $sPV_0$．）影が濃いときは電池2を D で迂回して電池1だけを使い，影が薄いときは2つとも使って電流を電池2に合わせる方が得である．\n\nD がない場合，(1) より消費電力は $R=\\dfrac{2V_0}{\\alpha sP}$ で最大値 $2\\alpha sPV_0$ をとる．D によって最大電力が増えるのは $sPV_0>2\\alpha sPV_0$，すなわち $\\boldsymbol{0<\\alpha<\\dfrac12}$ のときである．なお，電力が2つの極大をもつため，$R$ を少しずつ変えて電力が増える方へ調整するだけでは，小さい方の極大で止まってしまうことがある．\\hfill$\\square$\n\n\\textbf{(4) コンデンサーの充電}　コンデンサーの電圧 $V_C$ が回路の電圧 $V_1+V_2$ に等しいので，(2) の特性で $V=V_C$ のときの電流が流れる．\n\n$0\\le V_C<V_0$：$I=\\alpha sP$ と仮定すると電池1は $V_1=V_0$ となり $V_1+V_2\\ge V_0>V_C$ で矛盾．よって D が導通し（$V_2=0$），電池1が $V_1=V_C<V_0$ で $I=sP$ を流す．一定電流なので $V_C=V_0$ に達する時刻は\n\\[ t_1=\\frac{CV_0}{sP} \\]\n$V_0<V_C<2V_0$：電池1は $V_0$ に固定され，$I\\le sP$ の電流は電池2の上限 $\\alpha sP$ に制限される（$I>\\alpha sP$ なら D が導通して $V_1+V_2=V_0<V_C$ となり矛盾）．よって一定電流 $\\alpha sP$ で充電が続き，$V_C=2V_0$ で電流が $0$ になる．十分時間がたった後の電気量は $\\boldsymbol{2CV_0}$，その値に達する時刻は\n\\[ t_2=t_1+\\frac{CV_0}{\\alpha sP}=\\boldsymbol{\\frac{CV_0}{sP}\\left(1+\\frac1\\alpha\\right)} \\]\n電流は $sP$ から $\\alpha sP$ へ階段状に切り替わり，$t_2$ で $0$ になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "太陽電池を「上限電流 $sP$ の電流源」と「電圧 $V_0$ の電圧源」の2つの状態をもつ素子とみなすと，直列回路では弱い電池が電流を制限し，ダイオードがなければ影の電池に逆電圧がかかって電力を消費する．バイパスダイオードは弱い電池を迂回する第3の状態をつくり，全体の特性が階段状になるため，消費電力が2つの極大をもち，影の濃さ $\\alpha=\\frac12$ を境に最適な動作点が切り替わる．状態は仮定と矛盾の確認で決める．"
+ },
+ "concepts": [
+  "series-parallel",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "太陽電池",
+  "非線形素子",
+  "ダイオード",
+  "直列接続",
+  "最大電力",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "id": "PHY-DCC-018",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-03",
+ "topic": "自由電子モデルの弱い電場と強い電場の2つの極限（オームの法則が成り立つ範囲と抵抗率の温度変化）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金属中の自由電子（質量 $m$，電荷 $-e$，数密度 $n$）について，次のモデルを考える．電子は熱運動により平均の速さ $u$ で飛び回り，陽イオンとの衝突から次の衝突までに平均の距離 $l$（平均自由行程．一定とする）だけ進む．衝突直後の電子の速度の電場方向の成分は，平均すると0になる．金属内の電場の強さを $E$，ボルツマン定数を $k_{\\rm B}$，絶対温度を $T$ とする．\n\n次の2つの場合を考える．\n\n\\textbf{I}　弱い電場の場合：電場による速度の変化は $u$ に比べて十分小さく，衝突の時間間隔は電場によらず $\\tau=\\dfrac{l}{u}$ で一定とみなす．\n\n\\textbf{II}　強い電場の場合：熱運動を無視し，電子は衝突のたびに静止して，電場で加速されて距離 $l$ 進むと次の衝突をするとみなす．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "（I の場合）電子の電場方向の平均の速度（ドリフト速度）の大きさ $\\bar v$ と，金属の抵抗率 $\\rho$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "（I の場合）1回の衝突から次の衝突までの間に電場が1個の電子にする仕事の平均値を求めよ．このエネルギーが衝突のたびに陽イオンに渡されるとして，単位体積あたりの発熱の仕事率 $P$ を求め，$P=\\rho j^2$（$j$ は電流密度の大きさ）となっていることを確かめよ．"
+     },
+     {
+      "id": "3",
+      "tex": "（I の場合）熱運動について $\\dfrac12mu^2=\\dfrac32k_{\\rm B}T$ が成り立つとすると，$\\rho$ は $T$ にどのように依存するか．実際の金属では室温付近で $\\rho$ はほぼ $T$ に比例する．このモデルで実験に合わせるには，$l$ は $T$ にどのように依存しなければならないか．"
+     },
+     {
+      "id": "4",
+      "tex": "（II の場合）$\\bar v$ を求め，このとき電流が電圧に比例しないことを示せ．"
+     },
+     {
+      "id": "5",
+      "tex": "I と II で求めた $\\bar v$ の式が等しくなる電場の強さを $E_{\\rm x}$ とする（2つの領域の境目の目安）．$E_{\\rm x}$ を $k_{\\rm B}$，$T$，$e$，$l$ で表せ．さらに $T=300$ K，$l=4.0\\times10^{-8}$ m，$k_{\\rm B}=1.38\\times10^{-23}$ J/K，$e=1.6\\times10^{-19}$ C として $E_{\\rm x}$ を有効数字2桁で求め，長さ 1.0 m の金属線に 1.0 V の電圧を加えた場合にオームの法則が成り立つかどうかを論ぜよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：自由電子モデルの弱い電場と強い電場の2つの極限（オームの法則が成り立つ範囲と抵抗率の温度変化）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：自由電子モデルの弱い電場と強い電場の2つの極限（オームの法則が成り立つ範囲と抵抗率の温度変化）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\bar v=\\dfrac{eEl}{2mu}$，$\\rho=\\dfrac{2mu}{ne^2l}$"
+   },
+   {
+    "id": "2",
+    "tex": "仕事 $\\dfrac{e^2E^2l^2}{2mu^2}$，$P=\\dfrac{ne^2E^2l}{2mu}=\\rho j^2$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\rho\\propto\\sqrt T$；$l\\propto T^{-\\frac12}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\bar v=\\sqrt{\\dfrac{eEl}{2m}}$（電流は電圧の $\\frac12$ 乗に比例）"
+   },
+   {
+    "id": "5",
+    "tex": "$E_{\\rm x}=\\dfrac{6k_{\\rm B}T}{el}=3.9\\times10^6$ V/m．1.0 V/m はこれよりはるかに小さいので I の領域で，オームの法則が成り立つ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 弱い電場でのドリフト速度と抵抗率}\n\n電子の加速度の大きさは $a=\\dfrac{eE}{m}$（電場と逆向き）．衝突直後の電場方向の速度は平均0なので，時間 $\\tau$ の間に電場方向の速度は $0$ から $a\\tau$ まで一様に増え，平均は\n\\[ \\bar v=\\frac12a\\tau=\\boldsymbol{\\frac{eEl}{2mu}} \\]\n電流密度は $j=en\\bar v=\\dfrac{ne^2l}{2mu}E$ で $E$ に比例する（オームの法則）．$E=\\rho j$ より\n\\[ \\boldsymbol{\\rho=\\frac{2mu}{ne^2l}} \\]\n\n\\textbf{(2) 電場の仕事と発熱}\n\n電場が電子にする仕事は，力 $eE$ と力の向きの変位の積である．熱運動による変位は向きがばらばらで平均0なので，電場による変位 $\\frac12a\\tau^2$ だけが効き\n\\[ w=eE\\cdot\\frac12a\\tau^2=\\frac12m(a\\tau)^2=\\boldsymbol{\\frac{e^2E^2l^2}{2mu^2}} \\]\nこれは電場で得た運動エネルギー $\\frac12m(a\\tau)^2$ に等しく，衝突でこれが陽イオンに渡されて熱になる．1個の電子は単位時間に $\\dfrac1\\tau$ 回衝突するので\n\\[ P=n\\cdot\\frac{w}{\\tau}=\\boldsymbol{\\frac{ne^2E^2l}{2mu}} \\]\n一方 $\\rho j^2=\\dfrac{2mu}{ne^2l}\\left(\\dfrac{ne^2l}{2mu}E\\right)^2=\\dfrac{ne^2E^2l}{2mu}$ で，$P=\\rho j^2$ となっている．ジュール熱は，電場が電子に与えたエネルギーが衝突で格子に渡される過程として理解できる．\n\n\\textbf{(3) 抵抗率の温度変化}\n\n$u=\\sqrt{\\dfrac{3k_{\\rm B}T}{m}}$ なので，$l$ が一定なら $\\rho\\propto u\\propto\\boldsymbol{\\sqrt T}$．実験の $\\rho\\propto T$ に合わせるには $\\dfrac{u}{l}\\propto T$，すなわち $\\boldsymbol{l\\propto T^{-\\frac12}}$ でなければならない．（実際には，陽イオンの熱振動が大きくなるほど電子が散乱されやすくなることが $\\rho\\propto T$ の原因である．）\n\n\\textbf{(4) 強い電場の場合}\n\n静止から加速度 $a$ で距離 $l$ 進むと，衝突直前の速さは $v_1=\\sqrt{2al}$．等加速度運動なので平均の速さは\n\\[ \\bar v=\\frac{v_1}{2}=\\boldsymbol{\\sqrt{\\frac{eEl}{2m}}} \\]\n長さ $L$ の導線に電圧 $V$ を加えると $E=\\dfrac VL$ で，電流 $I=enS\\bar v\\propto\\sqrt V$ となり，電圧に比例しない．I と違って衝突の時間間隔 $\\sqrt{2l/a}$ が電場で短くなるためである．\n\n\\textbf{(5) 境目の電場}\n\n$\\dfrac{eE_{\\rm x}l}{2mu}=\\sqrt{\\dfrac{eE_{\\rm x}l}{2m}}$ の両辺を2乗して $\\dfrac{eE_{\\rm x}l}{2m}=u^2$．よって\n\\[ E_{\\rm x}=\\frac{2mu^2}{el}=\\boldsymbol{\\frac{6k_{\\rm B}T}{el}} \\]\n（電子が1回の自由行程で電場から得るエネルギー $eE_{\\rm x}l$ が，熱運動のエネルギーの程度 $k_{\\rm B}T$ と比べられる大きさになる電場，という意味である．）数値を代入すると\n\\[ E_{\\rm x}=\\frac{6\\times1.38\\times10^{-23}\\times300}{1.6\\times10^{-19}\\times4.0\\times10^{-8}}\\approx\\boldsymbol{3.9\\times10^{6}\\ \\text{V/m}} \\]\n1.0 m の線に 1.0 V では $E=1.0$ V/m で，$E_{\\rm x}$ の約 $4\\times10^6$ 分の1にすぎない．したがって通常の導線は I の領域にあり，\\textbf{オームの法則が成り立つ}．II のような電流が電圧に比例しない振る舞いは，非常に強い電場のときにしか現れない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "自由電子モデルでは，衝突の時間間隔が熱運動で決まり電場によらない弱電場ではドリフト速度が電場に比例してオームの法則が成り立ち，熱運動を無視できる強電場では時間間隔が電場で縮んで $\\bar v\\propto\\sqrt E$ になる．2つの式が等しくなる電場は1自由行程で得るエネルギーが熱エネルギーと同程度になる値で，通常の導線ははるかに弱電場側にある．ジュール熱は衝突で格子に渡されるエネルギーとして再現できる．"
+ },
+ "concepts": [
+  "series-parallel",
+  "restitution",
+  "coulomb-field"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "自由電子",
+  "オームの法則",
+  "抵抗率",
+  "ジュール熱",
+  "極限"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

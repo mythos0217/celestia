@@ -1,0 +1,130 @@
+{
+ "id": "PHY-DCC-004",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-03",
+ "topic": "起電力の異なる2個の電池の並列接続（充電される条件と取り出せる最大電力）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，起電力 $E_1$，内部抵抗 $r_1$ の電池 A と，起電力 $E_2$，内部抵抗 $r_2$ の電池 B（$E_1>E_2>0$）を，正極どうし・負極どうしをつないで並列にし，抵抗値 $R$ の可変抵抗に電流 $I$ を流す．上下の導線の電位差（端子電圧）を $V$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$V$ を $I$ の関数として表すと $V=E_0-r_0I$ の形になる．$E_0$，$r_0$ を $E_1$，$E_2$，$r_1$，$r_2$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "電池 B が充電される（B の内部を正極から負極の向きに電流が流れる）のは，$R$ がどのような範囲にあるときか．"
+     },
+     {
+      "id": "3",
+      "tex": "可変抵抗での消費電力が最大になる $R$ の値と，そのときの消費電力 $P_{\\max}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "電池 B を取り外し，電池 A だけで可変抵抗に電流を流すときの消費電力の最大値を $P_{\\mathrm A}$ とする．$r_1=r_2$ のとき，$P_{\\max}>P_{\\mathrm A}$ となるための $\\frac{E_2}{E_1}$ の条件を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$E_1=1.6\\ \\mathrm V$，$E_2=0.90\\ \\mathrm V$，$r_1=r_2=0.40\\ \\Omega$ とする．(2) の範囲の境界の $R$ の値，$P_{\\max}$，$P_{\\mathrm A}$ を有効数字2桁で求めよ．また，消費電力が $P_{\\max}$ となる $R$ のとき，電池 B は充電されているか，放電しているかを答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：起電力の異なる2個の電池の並列接続（充電される条件と取り出せる最大電力）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$E_0=\\frac{E_1r_2+E_2r_1}{r_1+r_2}$，$r_0=\\frac{r_1r_2}{r_1+r_2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$R>\\frac{r_1E_2}{E_1-E_2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$R=\\frac{r_1r_2}{r_1+r_2}$，$P_{\\max}=\\frac{(E_1r_2+E_2r_1)^2}{4r_1r_2(r_1+r_2)}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\sqrt2-1<\\frac{E_2}{E_1}<1$"
+   },
+   {
+    "id": "5",
+    "tex": "$0.51\\ \\Omega$，$P_{\\max}=2.0\\ \\mathrm W$，$P_{\\mathrm A}=1.6\\ \\mathrm W$，放電している"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　2個の電池をまとめて「1個の電池」とみなせるかどうかを，端子電圧と電流の関係が1次式になるかで確かめる．1次式 $V=E_0-r_0I$ になれば，切片が等価な起電力，傾きの大きさが等価な内部抵抗であり，最大電力の条件など1個の電池の結果がそのまま使える．ただし電池 B は放電するとは限らない．\n\n\\textbf{(1)}　A，B の内部を負極から正極へ流れる電流をそれぞれ $I_{\\mathrm A}$，$I_{\\mathrm B}$ とする（負なら逆向き）．どちらの電池も端子電圧は $V$ なので\n\\[ V=E_1-r_1I_{\\mathrm A}=E_2-r_2I_{\\mathrm B},\\qquad I=I_{\\mathrm A}+I_{\\mathrm B} \\]\n\\[ I=\\frac{E_1-V}{r_1}+\\frac{E_2-V}{r_2}\\quad\\therefore\\ V=\\frac{E_1r_2+E_2r_1}{r_1+r_2}-\\frac{r_1r_2}{r_1+r_2}I \\]\nよって $E_0=\\boldsymbol{\\frac{E_1r_2+E_2r_1}{r_1+r_2}}$，$r_0=\\boldsymbol{\\frac{r_1r_2}{r_1+r_2}}$．等価な起電力は2つの起電力を内部抵抗の逆数で重みづけた平均，等価な内部抵抗は並列合成抵抗である．\n\n\\textbf{(2)}　B が充電されるのは $I_{\\mathrm B}<0$，すなわち $V>E_2$ のときである．$V=RI$ と (1) より $V=\\frac{R}{R+r_0}E_0$ なので\n\\[ \\frac{R}{R+r_0}E_0>E_2\\iff R(E_0-E_2)>r_0E_2 \\]\n$E_0-E_2=\\frac{(E_1-E_2)r_2}{r_1+r_2}>0$ を用いると\n\\[ R>\\frac{r_0E_2}{E_0-E_2}=\\boldsymbol{\\frac{r_1E_2}{E_1-E_2}} \\]\n$R$ が大きい（流れる電流が小さい）ほど端子電圧は $E_0$（$>E_2$）に近づくので，B は A によって充電される．\n\n\\textbf{(3)}　消費電力は\n\\[ P=RI^2=\\frac{RE_0^2}{(R+r_0)^2}=\\frac{E_0^2}{R+2r_0+\\frac{r_0^2}{R}} \\]\n分母は相加平均・相乗平均の関係より $R=\\frac{r_0^2}{R}$，すなわち $R=r_0$ で最小になる．よって $R=\\boldsymbol{\\frac{r_1r_2}{r_1+r_2}}$ のとき\n\\[ P_{\\max}=\\frac{E_0^2}{4r_0}=\\boldsymbol{\\frac{(E_1r_2+E_2r_1)^2}{4r_1r_2(r_1+r_2)}} \\]\n\n\\textbf{(4)}　同様に $P_{\\mathrm A}=\\frac{E_1^2}{4r_1}$．$r_1=r_2=r$ のとき $E_0=\\frac{E_1+E_2}{2}$，$r_0=\\frac r2$ なので $P_{\\max}=\\frac{(E_1+E_2)^2}{8r}$．\n\\[ P_{\\max}>P_{\\mathrm A}\\iff (E_1+E_2)^2>2E_1^2\\iff E_1+E_2>\\sqrt2E_1 \\]\n$E_2<E_1$ と合わせて $\\boldsymbol{\\sqrt2-1<\\frac{E_2}{E_1}<1}$．起電力が A の約 $41\\%$ を超えていれば，弱い電池 B を並列に加えても取り出せる最大電力は増える．（等価な起電力は下がるが，内部抵抗が半分になる効果がそれを上回る．）\n\n\\textbf{(5)}　境界は $\\frac{0.40\\times0.90}{1.6-0.90}=0.514\\cdots\\approx\\boldsymbol{0.51\\ \\Omega}$．$E_0=\\frac{1.6+0.90}{2}=1.25\\ \\mathrm V$，$r_0=0.20\\ \\Omega$ より\n\\[ P_{\\max}=\\frac{1.25^2}{4\\times0.20}=1.95\\cdots\\approx\\boldsymbol{2.0\\ \\mathrm W},\\qquad P_{\\mathrm A}=\\frac{1.6^2}{4\\times0.40}=\\boldsymbol{1.6\\ \\mathrm W} \\]\n$P_{\\max}$ となるのは $R=0.20\\ \\Omega$ で，これは境界 $0.51\\ \\Omega$ より小さいから B は\\textbf{放電している}（$V=\\frac{1.25}{2}=0.625\\ \\mathrm V<E_2$ で，$I_{\\mathrm B}=\\frac{0.90-0.625}{0.40}\\approx0.69\\ \\mathrm A$）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "起電力の異なる電池を並列にしても端子電圧は電流の1次式になるので，切片を等価な起電力，傾きを等価な内部抵抗とする1個の電池とみなせ，最大電力の条件（負荷＝内部抵抗）がそのまま使える．ただし負荷が大きいと端子電圧が弱い方の起電力を超えて弱い電池は充電され，弱い電池を加えると等価起電力は下がるが内部抵抗も下がるため，起電力比がある値を超えれば取り出せる最大電力は増える．"
+ },
+ "concepts": [
+  "series-parallel",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電池の並列接続",
+  "内部抵抗",
+  "端子電圧",
+  "最大電力",
+  "充電される電池",
+  "相加相乗平均"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

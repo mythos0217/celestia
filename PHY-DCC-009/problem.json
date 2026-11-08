@@ -1,0 +1,112 @@
+{
+ "id": "PHY-DCC-009",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-03",
+ "topic": "太さが一様でない抵抗線のメートルブリッジと入れ替え法",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，長さ $L=100.0\\,\\text{cm}$ の抵抗線 AB を用いたメートルブリッジで，未知抵抗 $R_x$ を測定する．AC 間に既知抵抗 $R_s=10.0\\,\\Omega$，CB 間に $R_x$ をつなぎ，C と抵抗線上の接点 D の間に検流計 G をつなぐ．A から D までの距離を $x$ とする．\nところがこの抵抗線は太さが一様でなく，断面は円で，その半径は A で $a$，B で $\\beta a$（$\\beta$ は未知の定数）であり，その間は A からの距離に比例して変化していた．抵抗線の抵抗率を $\\rho$ とし，導線や接点の抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A から距離 $x$ の点 D までの抵抗線の抵抗 $R_{\\text{AD}}$ と，AB 全体の抵抗 $R_{\\text{AB}}$ を求めよ．さらに，DB 間の抵抗を $R_{\\text{DB}}$ として，比 $\\dfrac{R_{\\text{AD}}}{R_{\\text{DB}}}$ を $x$，$L$，$\\beta$ で表せ．必要なら，$c$ を定数として $\\displaystyle\\int\\frac{ds}{(1+cs)^2}=-\\frac{1}{c(1+cs)}+\\text{定数}$ を用いてよい．"
+     },
+     {
+      "id": "2",
+      "tex": "検流計の振れが 0 になったのは $x_1=25.0\\,\\text{cm}$ のときであった．次に $R_s$ と $R_x$ を入れ替えると，振れが 0 になったのは $x_2=57.1\\,\\text{cm}$ のときであった．$\\beta$ と $R_x$ をそれぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "抵抗線の太さが一様であると思い込んだ生徒が，(a) 1回目の測定だけから計算した $R_x$ の値，(b) 入れ替え前後の測定からそれぞれ計算した2つの値の相乗平均を，有効数字2桁で求めよ．また，(b) が真の値と一致する理由を説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：太さが一様でない抵抗線のメートルブリッジと入れ替え法",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$R_{\\text{AD}}=\\dfrac{\\rho Lx}{\\pi a^2\\{L+(\\beta-1)x\\}}$，$R_{\\text{AB}}=\\dfrac{\\rho L}{\\pi a^2\\beta}$，$\\dfrac{R_{\\text{AD}}}{R_{\\text{DB}}}=\\dfrac{\\beta x}{L-x}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\beta=1.5$，$R_x=20\\,\\Omega$"
+   },
+   {
+    "id": "3",
+    "tex": "(a) $30\\,\\Omega$　(b) $20\\,\\Omega$（理由は解説）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　A から距離 $s$ の位置の半径は $r(s)=a(1+cs)$，$c=\\dfrac{\\beta-1}{L}$．長さ $ds$ の部分の抵抗は $\\dfrac{\\rho\\,ds}{\\pi r^2}$ なので\n\\[ R_{\\text{AD}}=\\frac{\\rho}{\\pi a^2}\\int_0^x\\frac{ds}{(1+cs)^2}=\\frac{\\rho}{\\pi a^2}\\cdot\\frac1c\\left(1-\\frac{1}{1+cx}\\right)=\\frac{\\rho}{\\pi a^2}\\cdot\\frac{x}{1+cx}=\\boldsymbol{\\frac{\\rho Lx}{\\pi a^2\\{L+(\\beta-1)x\\}}}. \\]\n$x=L$ として $\\boldsymbol{R_{\\text{AB}}=\\dfrac{\\rho L}{\\pi a^2\\beta}}$．\n\\[ R_{\\text{DB}}=R_{\\text{AB}}-R_{\\text{AD}}=\\frac{\\rho L}{\\pi a^2}\\cdot\\frac{L+(\\beta-1)x-\\beta x}{\\beta\\{L+(\\beta-1)x\\}}=\\frac{\\rho L}{\\pi a^2}\\cdot\\frac{L-x}{\\beta\\{L+(\\beta-1)x\\}} \\]\nより $\\boldsymbol{\\dfrac{R_{\\text{AD}}}{R_{\\text{DB}}}=\\dfrac{\\beta x}{L-x}}$．太さが一様なとき（$\\beta=1$）の比 $\\dfrac{x}{L-x}$ のちょうど $\\beta$ 倍になる．\n\n\\textbf{(2)}　検流計に電流が流れないとき C と D は等電位なので，ブリッジのつり合いの条件 $\\dfrac{R_{\\text{AC}}}{R_{\\text{CB}}}=\\dfrac{R_{\\text{AD}}}{R_{\\text{DB}}}$ が成り立つ．\n\\[ \\text{1回目：}\\ \\frac{R_s}{R_x}=\\frac{\\beta x_1}{L-x_1},\\qquad \\text{入れ替え後：}\\ \\frac{R_x}{R_s}=\\frac{\\beta x_2}{L-x_2}. \\]\n辺々掛けると $1=\\beta^2\\dfrac{x_1x_2}{(L-x_1)(L-x_2)}$ となり，未知の $R_x$ が消えて\n\\[ \\beta=\\sqrt{\\frac{(L-x_1)(L-x_2)}{x_1x_2}}=\\sqrt{\\frac{75.0\\times42.9}{25.0\\times57.1}}=\\sqrt{2.25}\\fallingdotseq\\boldsymbol{1.5}. \\]\n辺々割ると $\\beta$ が消えて $\\left(\\dfrac{R_x}{R_s}\\right)^2=\\dfrac{x_2(L-x_1)}{x_1(L-x_2)}$，\n\\[ R_x=R_s\\sqrt{\\frac{x_2(L-x_1)}{x_1(L-x_2)}}=10.0\\times\\sqrt{\\frac{57.1\\times75.0}{25.0\\times42.9}}\\fallingdotseq\\boldsymbol{20\\,\\Omega}. \\]\n\n\\textbf{(3)}　(a) 一様と仮定すると $\\dfrac{R_s}{R_x}=\\dfrac{x_1}{L-x_1}$ より $R_x=10.0\\times\\dfrac{75.0}{25.0}=\\boldsymbol{30\\,\\Omega}$（真の値の $\\beta$ 倍）．\n(b) 入れ替え後の測定からは $R_x=R_s\\dfrac{x_2}{L-x_2}=10.0\\times\\dfrac{57.1}{42.9}\\fallingdotseq13.3\\,\\Omega$（真の値の $1/\\beta$ 倍）．相乗平均は $\\sqrt{30\\times13.3}\\fallingdotseq\\boldsymbol{20\\,\\Omega}$ で真の値に一致する．\n理由：この抵抗線では，どの位置でも抵抗の比が一様な場合の $\\beta$ 倍になる（(1)）ので，一様と仮定した計算値は1回目では $\\beta$ 倍，入れ替え後では $1/\\beta$ 倍だけずれる．掛け合わせるとこの共通の因子が打ち消し合う．入れ替え法は，抵抗の比に一定の倍率がかかるような系統誤差を除く方法になっている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "断面が変化する抵抗線の抵抗は $\\int\\rho\\,ds/S$ で求まり，半径が直線的に変わる線では分割点の抵抗比が一様な線の比のちょうど $\\beta$（両端の半径比）倍になる．ブリッジの2つの量を入れ替えた2回の測定を掛ければ未知抵抗が消えて $\\beta$ が，割れば $\\beta$ が消えて未知抵抗が決まり，入れ替え法が一定倍率の系統誤差を打ち消すことがわかる．"
+ },
+ "concepts": [
+  "series-parallel"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ホイートストンブリッジ",
+  "抵抗率",
+  "断面積の変化",
+  "入れ替え法",
+  "系統誤差"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

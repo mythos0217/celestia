@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 220" width="560" height="220">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<line x1="30.0" y1="67.0" x2="530.0" y2="67.0" stroke="#222" stroke-width="1.2"/>
+<line x1="30.0" y1="73.0" x2="530.0" y2="73.0" stroke="#222" stroke-width="1.2"/>
+<line x1="30.0" y1="147.0" x2="530.0" y2="147.0" stroke="#222" stroke-width="1.2"/>
+<line x1="30.0" y1="153.0" x2="530.0" y2="153.0" stroke="#222" stroke-width="1.2"/>
+<circle cx="110" cy="70" r="10" fill="#fff" fill-opacity="0" stroke="#222" stroke-width="1.6"/>
+<circle cx="360" cy="150" r="17" fill="#fff" fill-opacity="0" stroke="#222" stroke-width="1.6"/>
+<line x1="125.0" y1="48.0" x2="185.0" y2="48.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="155" y="40" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">v<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<text x="110" y="100" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">A（<tspan font-family="Times New Roman, serif" font-style="italic" font-size="16">m</tspan>，<tspan font-family="Times New Roman, serif" font-style="italic" font-size="16">q</tspan>）</text>
+<text x="360" y="190" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">B（<tspan font-family="Times New Roman, serif" font-style="italic" font-size="16">M</tspan>，<tspan font-family="Times New Roman, serif" font-style="italic" font-size="16">Q</tspan>）静止</text>
+<line x1="500.0" y1="70.0" x2="500.0" y2="150.0" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+<text x="514.0" y="115.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">d</text>
+<text x="40.0" y="58.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">棒1</text>
+<text x="40.0" y="138.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">棒2</text>
+<text x="280.0" y="210.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">（水平面内を上から見た図）</text>
+</svg>

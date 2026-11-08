@@ -1,0 +1,129 @@
+{
+ "id": "PHY-DCC-021",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-03",
+ "topic": "電池の消耗と抵抗計のゼロ調整（直列抵抗で合わせるか分流抵抗で合わせるか）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図1の電流計 G は，磁束密度の大きさ $B$ の一様な磁場中に，磁場に垂直に置いた長さ $\\ell$ の水平な金属棒をばね定数 $k$ のばねでつるしたもので，棒に電流 $I$ を流すと棒は電磁力を受けて $x$ だけ下がって静止する．G の内部抵抗は $r=500\\ \\Omega$ で，$I=I_{\\rm g}=0.200\\ \\mathrm{mA}$ のとき $x$ が目盛りの右端 $x_{\\rm m}$ になる．電池の内部抵抗は無視でき，抵抗計の目盛りは G の変位 $x$ に対応させて抵抗値で記してあるものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$k$ を $B,\\ \\ell,\\ x_{\\rm m}$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "図2の抵抗計 A は，起電力 $E=1.50\\ \\mathrm V$ の電池，G，可変抵抗 $R_{\\rm v}$ を直列につないだものである．端子 a，b を導線で短絡して $x=x_{\\rm m}$ となるように $R_{\\rm v}$ を合わせ（ゼロ調整），その後 a，b 間に抵抗 $R$ をつなぐ．$x/x_{\\rm m}$ を $R$ と抵抗計の内部抵抗 $R_{\\rm A}=r+R_{\\rm v}$ で表し，目盛りの中央（$x=x_{\\rm m}/2$）に記すべき抵抗値 $R_{\\rm c}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "一般に，起電力と内部抵抗がどのような値でも，短絡でゼロ調整した抵抗計では，振れの割合は $x/x_{\\rm m}=R_{\\rm in}/(R_{\\rm in}+R)$（$R_{\\rm in}$ は短絡時の回路全体の抵抗）となることに注意せよ．A の電池が消耗して起電力が $E'=1.35\\ \\mathrm V$ になったので，$R_{\\rm v}$ でゼロ調整をし直した．この状態で真の値 $7500\\ \\Omega$ の抵抗をつなぐと，目盛りは何 $\\Omega$ を示すか．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "図3の抵抗計 B は，G に可変抵抗 $R_{\\rm s}$ を並列につなぎ，さらに固定抵抗 $R_1$ と起電力 $E=1.50\\ \\mathrm V$ の電池を直列につないだものである．新しい電池でゼロ調整したときに目盛りの中央が $1500\\ \\Omega$ となるように設計したい．ゼロ調整時の $R_{\\rm s}$ と，$R_1$ の値を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "B の電池も消耗して起電力が $1.35\\ \\mathrm V$ になったので，今度は $R_{\\rm s}$ だけを変えてゼロ調整をし直した．このときの $R_{\\rm s}$ を求めよ．また，真の値 $1500\\ \\Omega$ の抵抗をつないだときの目盛りの読みを有効数字3桁で求め，(3) と比べて B の方式の利点を説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：電池の消耗と抵抗計のゼロ調整（直列抵抗で合わせるか分流抵抗で合わせるか）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$k=\\dfrac{B\\ell I_{\\rm g}}{x_{\\rm m}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{x}{x_{\\rm m}}=\\dfrac{R_{\\rm A}}{R_{\\rm A}+R}$，$R_{\\rm c}=7.50\\times10^3\\ \\Omega$"
+   },
+   {
+    "id": "3",
+    "tex": "$8.33\\times10^3\\ \\Omega$"
+   },
+   {
+    "id": "4",
+    "tex": "$R_{\\rm s}=125\\ \\Omega$，$R_1=1400\\ \\Omega$"
+   },
+   {
+    "id": "5",
+    "tex": "$R_{\\rm s}=\\dfrac{14000}{97}\\ \\Omega\\fallingdotseq144\\ \\Omega$，読み $1.49\\times10^3\\ \\Omega$（目盛りは内部抵抗 $R_{\\rm in}$ だけで決まり，B では調整しても $R_{\\rm in}$ がほとんど変わらないので誤差が小さい）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 棒のつり合い $kx=BI\\ell$ より $x=\\dfrac{B\\ell}{k}I$（変位は電流に比例）．$I=I_{\\rm g}$ で $x=x_{\\rm m}$ だから $\\boldsymbol{k=\\dfrac{B\\ell I_{\\rm g}}{x_{\\rm m}}}$．\n\n\\textbf{(2)} ゼロ調整より $E=R_{\\rm A}I_{\\rm g}$．抵抗 $R$ をつなぐと電流は $\\dfrac{E}{R_{\\rm A}+R}$ で，$x$ は電流に比例するから\n\\[ \\frac{x}{x_{\\rm m}}=\\frac{E/(R_{\\rm A}+R)}{E/R_{\\rm A}}=\\boldsymbol{\\frac{R_{\\rm A}}{R_{\\rm A}+R}}. \\]\n$x/x_{\\rm m}=\\frac12$ となるのは $R=R_{\\rm A}$ のときで，$R_{\\rm A}=E/I_{\\rm g}=1.50/(2.00\\times10^{-4})$ より $\\boldsymbol{R_{\\rm c}=7.50\\times10^3\\ \\Omega}$．このように\\textbf{中央目盛りの値は抵抗計の内部抵抗そのもの}であり，目盛り全体（$R=R_{\\rm c}\\bigl(\\frac{x_{\\rm m}}{x}-1\\bigr)$）が $R_{\\rm in}$ だけで決まる．\n\n\\textbf{(3) 直列抵抗でゼロ調整した場合}\n\n並列部分があってもなくても，G の電流は回路全体の電流の一定割合なので，短絡時に右端に合わせれば $x/x_{\\rm m}=R_{\\rm in}/(R_{\\rm in}+R)$ である（起電力は比をとると消える）．目盛りは新品の電池の $R_{\\rm in}=R_{\\rm c}$ で刻まれているので，調整後の内部抵抗を $R_{\\rm in}'$ とすると，真の値 $R$ の読み $R_{\\rm read}$ は\n\\[ \\frac{R_{\\rm c}}{R_{\\rm c}+R_{\\rm read}}=\\frac{R_{\\rm in}'}{R_{\\rm in}'+R}\\quad\\Longrightarrow\\quad R_{\\rm read}=\\frac{R_{\\rm c}}{R_{\\rm in}'}R. \\]\nA では調整後 $R_{\\rm in}'=E'/I_{\\rm g}=6750\\ \\Omega$ に変わるので\n\\[ R_{\\rm read}=\\frac{7500}{6750}\\times7500=\\boldsymbol{8.33\\times10^3\\ \\Omega} \\]\nとなり，約 $11\\%$ 大きく読んでしまう．起電力が $10\\%$ 下がると内部抵抗も $10\\%$ 下げなければゼロ調整できないことが原因である．\n\n\\textbf{(4) 分流方式の設計}\n\nゼロ調整時の全電流は $I_{\\rm t}=E/R_{\\rm c}=1.50/1500=1.00\\ \\mathrm{mA}$．そのうち $I_{\\rm g}=0.200\\ \\mathrm{mA}$ が G を流れるから，電流の分配 $I_{\\rm g}=I_{\\rm t}\\dfrac{R_{\\rm s}}{r+R_{\\rm s}}$ より $\\dfrac{R_{\\rm s}}{500+R_{\\rm s}}=0.200$，$\\boldsymbol{R_{\\rm s}=125\\ \\Omega}$．並列部分の抵抗は $\\dfrac{500\\times125}{625}=100\\ \\Omega$ なので，$R_{\\rm in}=R_1+100=1500$ より $\\boldsymbol{R_1=1400\\ \\Omega}$．\n\n\\textbf{(5) 分流抵抗でゼロ調整した場合}\n\n短絡時に G の電流が $I_{\\rm g}$ になる条件は\n\\[ \\frac{1.35}{R_1+\\frac{500R_{\\rm s}}{500+R_{\\rm s}}}\\cdot\\frac{R_{\\rm s}}{500+R_{\\rm s}}=I_{\\rm g}\\ \\Longleftrightarrow\\ 1.35R_{\\rm s}=2.00\\times10^{-4}\\bigl(1400(500+R_{\\rm s})+500R_{\\rm s}\\bigr). \\]\nこれを解いて $\\boldsymbol{R_{\\rm s}=\\dfrac{14000}{97}\\fallingdotseq144\\ \\Omega}$．並列部分は $\\dfrac{500R_{\\rm s}}{500+R_{\\rm s}}=112\\ \\Omega$ となり，$R_{\\rm in}'=1512\\ \\Omega$．(3) の式から\n\\[ R_{\\rm read}=\\frac{1500}{1512}\\times1500\\fallingdotseq\\boldsymbol{1.49\\times10^3\\ \\Omega} \\]\nで，誤差は約 $-0.8\\%$ にすぎない．\n\n目盛りは内部抵抗 $R_{\\rm in}$ だけで決まる．A では感度を合わせる操作がそのまま $R_{\\rm in}$ を変えてしまうが，B では G に流れる割合（分流比）を変えて感度を合わせ，$R_{\\rm in}$ の大部分を占める $R_1$ は変えないので，$R_{\\rm in}$ がほとんど変わらず目盛りが狂わない．これが分流方式の利点である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "短絡でゼロ調整する抵抗計の振れの割合は $R_{\\rm in}/(R_{\\rm in}+R)$ で，目盛り（中央値）は起電力によらず内部抵抗 $R_{\\rm in}$ だけで決まる．電池が消耗したとき直列抵抗で合わせると $R_{\\rm in}$ が起電力に比例して変わり目盛りが狂うが，分流抵抗で G に流れる割合を変えて合わせれば $R_{\\rm in}$ をほぼ保てる．"
+ },
+ "concepts": [
+  "series-parallel",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "抵抗計",
+  "ゼロ調整",
+  "分流器",
+  "内部抵抗",
+  "電流計の原理"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,121 @@
+{
+ "id": "PHY-ESF-014",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "重力と一様な電場の中で打ち出した荷電粒子が出発点から離れ続ける条件",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鉛直面内に，水平右向きに $x$ 軸，鉛直上向きに $y$ 軸をとる．この空間には $x$ 軸の負の向きに強さ $E$ の一様な電場がある．質量 $m$，電荷 $q\\ (>0)$ の小球を原点 O から $x$ 軸の正の向きに速さ $v$ で打ち出す．重力加速度の大きさを $g$ とし，空気抵抗は無視する．小球は電場と重力以外の力を受けず，床などに当たることもないとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "打ち出してから時間 $t$ 後の O から小球までの距離を $r$ とする．$r^2$ を $t$ の式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "打ち出した後，$r$ が一度も減少しないための $E$ の条件を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$E=\\dfrac{3mg}{q}$ のとき，$r$ が減少する時間帯を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$E=\\dfrac{3mg}{q}$ のまま，打ち出す向きを $x$ 軸から反時計回りに角 $\\theta$（$-180^\\circ<\\theta\\le180^\\circ$）の向きに変える（速さは $v$ のまま）．$r$ が一度も減少しないための $\\theta$ の範囲を，$\\tan^{-1}$，$\\sin^{-1}$ を用いて表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：重力と一様な電場の中で打ち出した荷電粒子が出発点から離れ続ける条件",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$r^2=v^2t^2-\\dfrac{qEv}{m}t^3+\\dfrac14\\left\\{\\left(\\dfrac{qE}{m}\\right)^2+g^2\\right\\}t^4$"
+   },
+   {
+    "id": "2",
+    "tex": "$E\\le\\dfrac{2\\sqrt2\\,mg}{q}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{2v}{5g}<t<\\dfrac{v}{2g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\theta\\le\\tan^{-1}\\dfrac13-\\sin^{-1}\\dfrac13$ または $\\theta\\ge\\tan^{-1}\\dfrac13+\\sin^{-1}\\dfrac13$（およそ $\\theta\\le-1.0^\\circ$ または $\\theta\\ge37.9^\\circ$）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　小球の加速度は $\\vec a=\\left(-\\dfrac{qE}{m},\\,-g\\right)$ で一定（大きさ $g'=\\sqrt{(qE/m)^2+g^2}$）．$\\vec r=\\vec v\\,t+\\dfrac12\\vec a\\,t^2$ より\n\\[ r^2=v^2t^2+(\\vec v\\cdot\\vec a)t^3+\\frac14g'^2t^4=\\boldsymbol{v^2t^2-\\frac{qEv}{m}t^3+\\frac14\\left\\{\\left(\\frac{qE}{m}\\right)^2+g^2\\right\\}t^4} \\]\n\n\\textbf{(2)}　$r$ が減少しない $\\iff$ $t>0$ で $\\dfrac{\\Delta(r^2)}{\\Delta t}\\ge0$．\n\\[ \\frac{\\Delta(r^2)}{\\Delta t}=t\\left\\{g'^2t^2+3(\\vec v\\cdot\\vec a)t+2v^2\\right\\} \\]\n$\\vec v\\cdot\\vec a<0$ なので，中かっこの2次式が正の根をもたない条件は判別式 $\\le0$：\n\\[ 9(\\vec v\\cdot\\vec a)^2\\le8g'^2v^2 \\]\n$\\vec v\\cdot\\vec a=-g'v\\sin\\beta$（$\\beta$ は打ち出しの向きと「有効重力 $\\vec a$ に垂直な向き」とのなす角で，打ち出しが有効重力の逆向き側に $\\beta$ だけ傾いている）と書けば $\\sin\\beta\\le\\dfrac{2\\sqrt2}{3}$，すなわち $\\tan\\beta\\le2\\sqrt2$．水平に打ち出したので $\\tan\\beta=\\dfrac{qE/m}{g}$ となり\n\\[ \\boldsymbol{E\\le\\frac{2\\sqrt2\\,mg}{q}} \\]\n（重力だけのときの「仰角 $\\sin^{-1}\\frac{2\\sqrt2}{3}\\fallingdotseq70.5^\\circ$ 以下」という条件が，加速度の大きさによらず，有効重力を基準にした角の条件としてそのまま成り立つ．）\n\n\\textbf{(3)}　$qE/m=3g$ のとき $g'^2=10g^2$，$\\vec v\\cdot\\vec a=-3gv$ なので\n\\[ 10g^2t^2-9gvt+2v^2<0\\iff(5gt-2v)(2gt-v)<0\\iff \\boldsymbol{\\frac{2v}{5g}<t<\\frac{v}{2g}} \\]\n\n\\textbf{(4)}　有効重力の逆向き（「有効的な真上」）は $(3,1)$ の向きで，$x$ 軸から $\\theta_0=\\tan^{-1}\\dfrac13$．打ち出しの向きと有効的な真上とのなす角を $\\gamma$ とすると $\\beta=90^\\circ-\\gamma$ なので，条件 $\\sin\\beta\\le\\dfrac{2\\sqrt2}{3}$ は $\\cos\\gamma\\le\\dfrac{2\\sqrt2}{3}$，すなわち $\\gamma\\ge\\sin^{-1}\\dfrac13$（$\\cos(\\sin^{-1}\\frac13)=\\frac{2\\sqrt2}{3}$）．有効的な真上から $\\sin^{-1}\\dfrac13$ 以内の向きだけが禁止されるので\n\\[ \\boldsymbol{\\theta\\le\\tan^{-1}\\frac13-\\sin^{-1}\\frac13\\ \\ \\text{または}\\ \\ \\theta\\ge\\tan^{-1}\\frac13+\\sin^{-1}\\frac13} \\]\n数値では $\\theta\\le-1.0^\\circ$ または $\\theta\\ge37.9^\\circ$．水平（$\\theta=0$）は禁止範囲に入っており，(3) と矛盾しない．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "出発点からの距離の2乗は $t$ の4次式で，その増減は2次式の判別式で決まる．条件は打ち出しの向きと有効重力の向きのなす角だけで書け，加速度の大きさによらない（重力だけの場合の約 $70.5^\\circ$）ので，電場を加えて有効重力を傾けると，水平打ち出しでも距離が減少する時間帯が生じる．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "projectile-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一様な電場",
+  "有効重力",
+  "放物運動",
+  "判別式",
+  "距離の単調性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 250" width="580" height="250">
+<defs>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker>
+<marker id="q-aks" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,1 L0,5 L10,9 z" fill="#222"/></marker>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-abs" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,1 L0,5 L10,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker>
+<marker id="q-ars" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,1 L0,5 L10,9 z" fill="#c0392b"/></marker>
+<marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,1 L10,5 L0,9 z" fill="#888"/></marker>
+<marker id="q-ags" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,1 L0,5 L10,9 z" fill="#888"/></marker>
+</defs>
+<g transform="translate(0,-40)">
+<rect x="132.0" y="135.0" width="308.0" height="10.0" stroke="#222" stroke-width="1.4" fill="none"/>
+<rect x="88.0" y="129.0" width="44.0" height="22.0" stroke="#222" stroke-width="1.4" fill="none"/>
+<text x="99.0" y="145.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle">−</text>
+<text x="121.0" y="145.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle">+</text>
+<line x1="92.0" y1="114.0" x2="130.0" y2="114.0" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<text x="138.0" y="118.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#c0392b" text-anchor="start">p</text>
+<text x="76.0" y="145.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="end">C</text>
+<rect x="439.0" y="118.0" width="22.0" height="44.0" stroke="#222" stroke-width="1.4" fill="none"/>
+<text x="450.0" y="134.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle">+</text>
+<text x="450.0" y="157.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle">−</text>
+<line x1="474.0" y1="158.0" x2="474.0" y2="120.0" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<text x="474.0" y="114.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#c0392b" text-anchor="middle">p</text>
+<text x="486.0" y="145.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start">D</text>
+<circle cx="280.0" cy="140.0" r="4.0" stroke="#222" stroke-width="1.2" fill="#222"/>
+<text x="280.0" y="166.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">中点 M（糸でつるす点）</text>
+<line x1="110.0" y1="200.0" x2="450.0" y2="200.0" stroke="#222" stroke-width="1" marker-end="url(#q-ak)" marker-start="url(#q-aks)"/>
+<text x="280.0" y="218.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">L</text>
+<line x1="110.0" y1="148.0" x2="110.0" y2="206.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="450.0" y1="148.0" x2="450.0" y2="206.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="40.0" y1="265.0" x2="80.0" y2="265.0" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<text x="88.0" y="270.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">x</text>
+<line x1="40.0" y1="265.0" x2="40.0" y2="225.0" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<text x="34.0" y="227.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="end">y</text>
+<text x="400.0" y="275.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">真上から見た図（C，D の大きさは誇張）</text>
+</g>
+</svg>

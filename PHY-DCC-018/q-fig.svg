@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker></defs>
+<rect x="40" y="60" width="440" height="140" rx="10" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M80,150 L130,100 L175,170 L240,120 L290,175 L340,95 L400,140 L445,110" stroke="#c0392b" stroke-width="1.4" fill="none"/>
+<circle cx="130" cy="100" r="6" fill="#ccc" stroke="#222" stroke-width="1"/>
+<circle cx="175" cy="170" r="6" fill="#ccc" stroke="#222" stroke-width="1"/>
+<circle cx="240" cy="120" r="6" fill="#ccc" stroke="#222" stroke-width="1"/>
+<circle cx="290" cy="175" r="6" fill="#ccc" stroke="#222" stroke-width="1"/>
+<circle cx="340" cy="95" r="6" fill="#ccc" stroke="#222" stroke-width="1"/>
+<circle cx="400" cy="140" r="6" fill="#ccc" stroke="#222" stroke-width="1"/>
+<circle cx="80" cy="150" r="4" fill="#c0392b"/>
+<text x="70.0" y="174.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">電子</text>
+<line x1="175.0" y1="170.0" x2="240.0" y2="120.0" stroke="#888" stroke-width="1"/>
+<text x="214.0" y="165.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">l</text>
+<text x="160.0" y="215.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start"></text>
+<line x1="150.0" y1="35.0" x2="330.0" y2="35.0" stroke="#1f5fbf" stroke-width="1.8" marker-start="url(#q-ab)"/>
+<text x="340.0" y="40.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">E</text>
+<text x="350.0" y="40.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start"></text>
+<text x="60.0" y="235.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">灰色の丸：陽イオン（衝突の相手）</text>
+<text x="60.0" y="255.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">電子の速度の電場方向成分は衝突直後に平均 0 になる</text>
+</svg>

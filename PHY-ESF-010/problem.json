@@ -1,0 +1,143 @@
+{
+ "id": "PHY-ESF-010",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "2つの点電荷の電場が0になる点の安定性（軸方向と横方向の復元力，アーンショウの定理）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "真空中の $xy$ 平面上で，原点 O に電気量 $+Q\\ (Q>0)$ の点電荷を，点 A$(-a,\\ 0)\\ (a>0)$ に電気量 $-4Q$ の点電荷を固定する．クーロンの法則の比例定数を $k$ とし，電位の基準を無限遠にとる．重力は無視し，以下で考える小球の運動は $xy$ 平面内に限られるものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$x$ 軸上で電場が $0$ になる点 P の座標を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "図のように $x$ 軸に沿って（$x>0$ の部分に）細くてなめらかな絶縁体の管を置き，その中に質量 $m$，電気量 $+q\\ (q>0)$ の小球を入れると，小球は P でつり合った．小球を P から $x$ 方向にわずかにずらして放したときの振動の周期 $T_1$ を求めよ．必要なら $|\\varepsilon|\\ll1$ のとき $(1+\\varepsilon)^{-2}\\fallingdotseq1-2\\varepsilon$ を用いよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の管を取り除き，同じ小球を点 $(a,\\ y)$（$|y|\\ll a$）に置いた．小球が受ける静電気力の $y$ 成分 $F_y$ を，$y$ の1次の範囲で求めよ．また，管がないとき，P は小球にとって安定なつり合いの位置といえるか．理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "今度は，P を通り $y$ 軸に平行に置いた細くてなめらかな絶縁体の管の中に，質量 $m$，電気量 $-q$ の小球を入れる．この小球が P のまわりで微小振動するときの周期 $T_2$ を求め，$T_1$ との比 $\\frac{T_2}{T_1}$ を答えよ．また，管がなければ，この小球を P から $x$ 方向にわずかにずらしたときどうなるか答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(2) の管の中で，電気量 $+q$ の小球を P から $x$ 軸の正の向きに速さ $v$ で打ち出す．小球が無限遠まで遠ざかるための $v$ の最小値を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：2つの点電荷の電場が0になる点の安定性（軸方向と横方向の復元力，アーンショウの定理）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：2つの点電荷の電場が0になる点の安定性（軸方向と横方向の復元力，アーンショウの定理）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$(a,\\ 0)$"
+   },
+   {
+    "id": "2",
+    "tex": "$T_1=2\\pi\\sqrt{\\frac{ma^3}{kQq}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$F_y=\\frac{kQq}{2a^3}y$，安定ではない（$y$ 方向には P から遠ざける向きに力がはたらく）"
+   },
+   {
+    "id": "4",
+    "tex": "$T_2=2\\pi\\sqrt{\\frac{2ma^3}{kQq}}$，$\\frac{T_2}{T_1}=\\sqrt2$，P から $x$ 方向に遠ざかっていく（$x$ 方向には不安定）"
+   },
+   {
+    "id": "5",
+    "tex": "$\\sqrt{\\frac{2kQq}{ma}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　P は $x$ 軸上では電位の極小点だが，$y$ 方向にずらしたときの力を調べると逆に P から遠ざける向きになる．$x$ 方向と $y$ 方向の「ばね定数」を別々に求め，その符号の関係を確かめる．\n\n\\textbf{(1)}　$x>0$ では，O の電荷による電場は $+x$ 向きで大きさ $\\frac{kQ}{x^2}$，A の電荷による電場は $-x$ 向きで大きさ $\\frac{4kQ}{(x+a)^2}$．これらが等しいとき\n\\[ (x+a)^2=4x^2\\quad\\Longrightarrow\\quad x=a \\]\n$-a<x<0$ では2つの電場はともに $-x$ 向きで打ち消し合わず，$x<-a$ では常に A の電荷の電場の方が強い（A に近く，電気量も大きい）．よって P は $\\boldsymbol{(a,\\ 0)}$．\n\n\\textbf{(2)}　$x$ 軸上 $x=a+\\xi$ での力は\n\\[ F_x=kQq\\left\\{\\frac{1}{(a+\\xi)^2}-\\frac{4}{(2a+\\xi)^2}\\right\\}\\fallingdotseq kQq\\left\\{\\frac{1}{a^2}\\Bigl(1-\\frac{2\\xi}{a}\\Bigr)-\\frac{1}{a^2}\\Bigl(1-\\frac{\\xi}{a}\\Bigr)\\right\\}=-\\frac{kQq}{a^3}\\xi \\]\n復元力のばね定数 $K_x=\\frac{kQq}{a^3}$ の単振動なので\n\\[ T_1=2\\pi\\sqrt{\\frac{m}{K_x}}=\\boldsymbol{2\\pi\\sqrt{\\frac{ma^3}{kQq}}} \\]\n\n\\textbf{(3)}　点 $(a,\\ y)$ で，O の電荷からの斥力は向き $(a,\\ y)$，大きさ $\\frac{kQq}{a^2+y^2}$ なので，$y$ 成分は $\\frac{kQq\\,y}{(a^2+y^2)^{3/2}}\\fallingdotseq\\frac{kQq}{a^3}y$．A の電荷からの引力は A へ向かう向き $(-2a,\\ -y)$ で，大きさ $\\frac{4kQq}{4a^2+y^2}$ なので，$y$ 成分は $-\\frac{4kQq\\,y}{(4a^2+y^2)^{3/2}}\\fallingdotseq-\\frac{4kQq}{8a^3}y$．（$y^2$ は2次の微小量なので無視した．）合計して\n\\[ F_y=\\boldsymbol{\\frac{kQq}{2a^3}\\,y} \\]\n$F_y$ は $y$ と同符号，すなわち P から遠ざける向きなので，P は\\textbf{安定なつり合いの位置ではない}．$x$ 方向にはばね定数 $+\\frac{kQq}{a^3}$，$y$ 方向には $-\\frac{kQq}{2a^3}$（負のばね）がはたらく．\n（$x$ 成分は $y$ の1次の項をもたないので，$y$ 方向の運動とは切り離して考えてよい．）\n\n\\textbf{(4)}　電気量が $-q$ になると力はすべて逆向きになるので，$y$ 方向のばね定数は $+\\frac{kQq}{2a^3}$（復元力），$x$ 方向は $-\\frac{kQq}{a^3}$ となる．管の中では $y$ 方向の単振動になり\n\\[ T_2=2\\pi\\sqrt{\\frac{2ma^3}{kQq}},\\qquad \\frac{T_2}{T_1}=\\boldsymbol{\\sqrt2} \\]\n管がなければ，$x$ 方向にずれると P から遠ざける力を受けて\\textbf{離れていく}．正負どちらの電荷でも，P は必ずどこかの方向に不安定である．\n\\textbf{補足}　$x$ 方向と $y$ 方向のばね定数の関係 $K_x+2K_y=0$（$z$ 方向も $y$ 方向と同じ）は偶然ではなく，電荷のない場所では電位がどの方向にも極小になれないこと（アーンショウの定理）の表れである．\n\n\\textbf{(5)}　P の電位は $V(a)=\\frac{kQ}{a}-\\frac{4kQ}{2a}=-\\frac{kQ}{a}$．$x>a$ では電場が $-x$ 向きなので，電位は $x$ とともに単調に増加して無限遠の $0$ に近づく．したがって小球は，無限遠で運動エネルギーが $0$ 以上であれば途中で引き返さない．エネルギー保存より\n\\[ \\frac12mv^2+q\\Bigl(-\\frac{kQ}{a}\\Bigr)\\geqq0 \\quad\\Longrightarrow\\quad v\\geqq\\boldsymbol{\\sqrt{\\frac{2kQq}{ma}}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "点電荷がつくる電場が0になる点は，ある方向に電位の極小でも別の方向には必ず極大になる．軸方向の復元力のばね定数 $K$ に対して横方向は $-\\frac{K}{2}$ となり（アーンショウの定理），正電荷を軸上の管に閉じこめれば振動し，負電荷は横向きの管で $\\sqrt2$ 倍の周期で振動する．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "simple-harmonic-motion",
+  "equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "点電荷の電場",
+  "つり合いの安定性",
+  "単振動",
+  "電位",
+  "アーンショウの定理"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

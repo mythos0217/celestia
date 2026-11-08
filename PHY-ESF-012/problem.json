@@ -1,0 +1,143 @@
+{
+ "id": "PHY-ESF-012",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "電気力線の束の本数の保存による電気力線の行き先と向きの決定",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "真空中で，点 A に電気量 $4Q\\ (Q>0)$ の点電荷を，A から距離 $l$ の点 B に電気量 $-Q$ の点電荷を固定する．A を原点とし，A から B へ向かう向きに $x$ 軸をとる．真空の誘電率を $\\varepsilon_0$ とし，電気量 $q$ の点電荷からは $\\frac{q}{\\varepsilon_0}$ 本の電気力線が出る（負なら入る）ものとする．電気力線は点電荷と電場が $0$ の点以外では交わったり枝分かれしたりしない．\n電気力線は $x$ 軸のまわりに軸対称に分布するので，1本の電気力線を $x$ 軸のまわりに回転させると筒状の曲面ができる．この曲面を電気力線が横切ることはない．必要なら，半径 $r$ の球面のうち，中心から見て $x$ 軸となす角が $\\alpha$ 以内の部分の面積が $2\\pi r^2(1-\\cos\\alpha)$ であることを用いよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$x$ 軸上で電場が $0$ になる点 P の座標を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "A のごく近くでは B の電荷の影響は無視できる．A を中心とする小さな球面のうち，A から見て $x$ 軸の正の向きとなす角が $\\alpha$ 以内の部分を貫く電気力線の本数を，$Q,\\ \\varepsilon_0,\\ \\alpha$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "図のように，A から $x$ 軸の正の向きと角 $\\alpha$ をなす向きに出た電気力線を考える．A から出て B に入る電気力線は，$\\alpha$ がある角 $\\alpha_0$ より小さいものに限られる．$\\alpha_0$ を求めよ．また，$\\alpha=\\alpha_0$ の電気力線はどこへ向かうか答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\alpha<\\alpha_0$ の向きに A を出た電気力線は，B から A へ向かう向きと角 $\\varphi$ をなす向きから B に入る．B のごく近くでは A の電荷の影響は無視できるとして，$\\cos\\varphi$ を $\\cos\\alpha$ で表せ．また，B に $x$ 軸と垂直な向きから入る電気力線について，$\\cos\\alpha$ の値を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\alpha=90^\\circ$ の向きに A を出た電気力線は無限遠に達する．十分遠方では，2つの電荷は1つの点電荷 $3Q$ とみなせ，電気力線は放射状の直線に近づく．この電気力線が十分遠方で $x$ 軸の正の向きとなす角を $\\gamma$ とするとき，$\\cos\\gamma$ の値を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：電気力線の束の本数の保存による電気力線の行き先と向きの決定",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：電気力線の束の本数の保存による電気力線の行き先と向きの決定",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$(2l,\\ 0)$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\frac{2Q}{\\varepsilon_0}(1-\\cos\\alpha)$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\alpha_0=60^\\circ$，P に向かう"
+   },
+   {
+    "id": "4",
+    "tex": "$\\cos\\varphi=4\\cos\\alpha-3$，$\\cos\\alpha=\\frac34$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\cos\\gamma=\\frac13$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　1本の電気力線を回転させてできる筒状の曲面は，電気力線が横切らない「管」の壁になる．したがって管の一方の端から入った本数は，途中で電荷に吸い込まれた分を除いて，もう一方の端から出ていく．両端の本数を球面の一部（球冠）の面積の割合で数えれば，電気力線の向きどうしの関係が式で決まる．\n\n\\textbf{(1)}　$x>l$ では，A の電荷の電場（$+x$ 向き，$\\frac{4kQ}{x^2}$）と B の電荷の電場（$-x$ 向き，$\\frac{kQ}{(x-l)^2}$）が逆向きで，等しくなるのは $x=2(x-l)$，すなわち $x=2l$．$0<x<l$ では2つの電場はともに $+x$ 向きで打ち消さず，$x<0$ では A の電荷の電場の方が常に強い．よって P は $\\boldsymbol{(2l,\\ 0)}$．\n\n\\textbf{(2)}　A のごく近くでは電気力線は放射状に一様に出るので，本数は面積に比例する．全本数 $\\frac{4Q}{\\varepsilon_0}$ のうち球冠の割合 $\\frac{2\\pi r^2(1-\\cos\\alpha)}{4\\pi r^2}$ だけが通るので\n\\[ \\frac{4Q}{\\varepsilon_0}\\cdot\\frac{1-\\cos\\alpha}{2}=\\boldsymbol{\\frac{2Q}{\\varepsilon_0}(1-\\cos\\alpha)} \\]\n\n\\textbf{(3)}　角 $\\alpha$ の電気力線がつくる管の内側（$x$ 軸に近い側）には，A を角 $\\alpha$ 以内で出た電気力線が入り，外へは出られない．B に入る電気力線は全部で $\\frac{Q}{\\varepsilon_0}$ 本で，対称性から $x$ 軸に近いものほど先に（$\\alpha$ の小さいものから）B に入る．よって境目の角 $\\alpha_0$ は\n\\[ \\frac{2Q}{\\varepsilon_0}(1-\\cos\\alpha_0)=\\frac{Q}{\\varepsilon_0}\\quad\\Longrightarrow\\quad\\cos\\alpha_0=\\frac12,\\qquad \\alpha_0=\\boldsymbol{60^\\circ} \\]\n$\\alpha=\\alpha_0$ の管には B に入る電気力線がちょうどすべて含まれ，余りが $0$ なので，この電気力線は B に入らず無限遠へも行かずに $x$ 軸上の電場が $0$ の点，すなわち \\textbf{P に向かう}（P から先は $x$ 軸に沿って無限遠へ続く）．\n\n\\textbf{(4)}　$\\alpha<\\alpha_0$ の電気力線の管の中の $\\frac{2Q}{\\varepsilon_0}(1-\\cos\\alpha)$ 本は，すべて B に，B から A へ向かう向きを中心とした角 $\\varphi$ 以内の範囲から入る．B のごく近くでは電気力線は B に向かって放射状に一様に入るので\n\\[ \\frac{2Q}{\\varepsilon_0}(1-\\cos\\alpha)=\\frac{Q}{\\varepsilon_0}\\cdot\\frac{1-\\cos\\varphi}{2}\\quad\\Longrightarrow\\quad\\cos\\varphi=\\boldsymbol{4\\cos\\alpha-3} \\]\n$\\varphi=90^\\circ$ とすると $\\cos\\alpha=\\boldsymbol{\\frac34}$（$\\alpha\\fallingdotseq41^\\circ$）．なお，$\\alpha\\to\\alpha_0$ で $\\cos\\varphi\\to-1$（$\\varphi\\to180^\\circ$）となり，P の側から B に入る電気力線につながる．\n\n\\textbf{(5)}　$\\alpha=90^\\circ$ の管の内側には，A から $\\frac{2Q}{\\varepsilon_0}$ 本が入り，そのうち $\\frac{Q}{\\varepsilon_0}$ 本が B に吸い込まれるので，残る $\\frac{Q}{\\varepsilon_0}$ 本が無限遠で $x$ 軸の正の向きから角 $\\gamma$ 以内の範囲に出ていく．遠方では全体が点電荷 $3Q$ と同じで，電気力線は放射状に一様に分布するから\n\\[ \\frac{3Q}{\\varepsilon_0}\\cdot\\frac{1-\\cos\\gamma}{2}=\\frac{Q}{\\varepsilon_0}\\quad\\Longrightarrow\\quad\\cos\\gamma=\\boldsymbol{\\frac13} \\]\n（$\\gamma\\fallingdotseq71^\\circ$．A を出たときより $x$ 軸の側に曲げられる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "軸対称な電荷分布では，1本の電気力線を回転させた曲面が電気力線の「管」となり，管に入った本数は途中の電荷に吸い込まれる分を除いて保存する．点電荷の近くと遠方では電気力線が放射状に一様なので，本数を球冠の面積 $1-\\cos\\theta$ の割合で数えれば，出る角・入る角・遠方での漸近方向の関係が積分なしで求まる．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "torque",
+  "nuclear-decay"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気力線",
+  "ガウスの法則",
+  "点電荷",
+  "電場が0の点",
+  "軸対称"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

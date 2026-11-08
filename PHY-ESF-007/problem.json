@@ -1,0 +1,139 @@
+{
+ "id": "PHY-ESF-007",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "接触電位差による異種金属の平行板の帯電と，振動させた極板による仕事関数の測定（ケルビン法）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金属の表面では，内部の自由電子が表面の外側にわずかにしみ出しているため，表面のすぐ内側に正の電荷の層，すぐ外側に負の電荷の層ができている．この2つの層を，間隔 $t$ だけ離れた面密度 $+\\sigma$ と $-\\sigma$ の平行な面電荷で近似する（電気二重層）．金属内部の自由電子を表面のすぐ外（二重層の外側）まで取り出すのに必要な最小のエネルギーが仕事関数 $W$ であり，それはこの二重層を通り抜けるのに必要なエネルギーで決まるものとする．電気素量を $e$，真空の誘電率を $\\varepsilon_0$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$W$ を $\\sigma,\\ t,\\ e,\\ \\varepsilon_0$ で表せ．また，$W=4.5\\,\\mathrm{eV}$，$t=1.0\\times10^{-10}\\,\\mathrm{m}$ のとき $\\sigma$ の値を有効数字2桁で求めよ．$e=1.6\\times10^{-19}\\,\\mathrm{C}$，$\\varepsilon_0=8.85\\times10^{-12}\\,\\mathrm{F/m}$ とする．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "次に，図のように，仕事関数が $W_{\\rm A}$ の金属 A の板と $W_{\\rm B}$ の金属 B の板 $(W_{\\rm A}>W_{\\rm B})$ を，真空中で面積 $S$ の面を向かい合わせて間隔 $d$ で平行に置き，導線でつないだ．導線でつなぐと，両方の金属の内部で最も高いエネルギーをもつ電子のエネルギーが等しくなるまで電子が移動する．$d$ は二重層の厚さより十分大きく，向かい合う面の外側の電場や端の効果は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "2",
+      "tex": "導線を通って電子はどちらの金属からどちらの金属へ移動したか．また，移動が終わった後に B の向かい合う面に現れる電荷 $Q$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "B の板を板に垂直な方向に振動させ，間隔を $d=d_0+\\delta\\sin\\omega t$ $(0<\\delta\\ll d_0)$ と変化させる．導線を A から B の向きに流れる電流 $I$ を，$\\delta$ の1次までの近似で時刻 $t$ の関数として求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "導線の途中に起電力を調節できる電池を入れ，B を (3) と同じように振動させた．電流がつねに 0 になるのは，電池の正極を A，B のどちら側につなぎ，起電力 $E$ をいくらにしたときか．"
+     },
+     {
+      "id": "5",
+      "tex": "A の表面に別の種類の原子を吸着させると，吸着した原子は電子を A に与えて正イオンとなり，A の内部にはそれを打ち消す負電荷が現れる．これは A の表面に，正の端を外側に向けた電気双極子（双極子モーメントの大きさ $p$）が単位面積あたり $n$ 個並んだ層が新しく加わったものとみなせる．吸着の前後で (4) の $E$ を測ると，$0.62\\,\\mathrm{V}$ から $0.17\\,\\mathrm{V}$ に変化した（電池の向きは同じ）．$p=3.0\\times10^{-30}\\,\\mathrm{C\\cdot m}$ として $n$ を有効数字2桁で求めよ．また，吸着をさらに進めたとき，電池なしでも (3) の電流がつねに 0 になるのは $n$ がいくらのときか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：接触電位差による異種金属の平行板の帯電と，振動させた極板による仕事関数の測定（ケルビン法）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$W=\\dfrac{e\\sigma t}{\\varepsilon_0}$，$\\sigma=0.40\\,\\mathrm{C/m^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "B から A へ，$Q=\\dfrac{\\varepsilon_0S(W_{\\rm A}-W_{\\rm B})}{ed}$"
+   },
+   {
+    "id": "3",
+    "tex": "$I=-\\dfrac{\\varepsilon_0S(W_{\\rm A}-W_{\\rm B})\\,\\delta\\omega}{ed_0^{\\,2}}\\cos\\omega t$"
+   },
+   {
+    "id": "4",
+    "tex": "正極を A 側，$E=\\dfrac{W_{\\rm A}-W_{\\rm B}}{e}$"
+   },
+   {
+    "id": "5",
+    "tex": "$n=1.3\\times10^{18}\\,\\mathrm{m^{-2}}$，$n=1.8\\times10^{18}\\,\\mathrm{m^{-2}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　二重層は面電荷 $\\pm\\sigma$ の平行板コンデンサーと同じで，層の間には内側（正）から外側（負）に向かう強さ $\\sigma/\\varepsilon_0$ の電場がある．したがって表面のすぐ外の電位は金属内部より $\\sigma t/\\varepsilon_0$ だけ低く，電荷 $-e$ の電子の位置エネルギーは $e\\sigma t/\\varepsilon_0$ だけ高い．これを越えるのに必要なエネルギーが仕事関数なので\n\\[ W=\\boldsymbol{\\frac{e\\sigma t}{\\varepsilon_0}},\\qquad \\sigma=\\frac{\\varepsilon_0W}{et}=\\frac{8.85\\times10^{-12}\\times4.5}{1.0\\times10^{-10}}\\fallingdotseq\\boldsymbol{0.40\\,\\mathrm{C/m^2}} \\]\n（$W/e=4.5\\,\\mathrm{V}$ を用いた．）電子の数にすると $2.5\\times10^{18}\\,\\mathrm{m^{-2}}$ で，表面の原子1個あたり1個にも満たない程度のしみ出しで数 eV の仕事関数が生じる．\n\n\\textbf{(2)}　接続後，両金属の内部の最も高いエネルギーの電子のエネルギーは等しい．そこから表面のすぐ外まで出すのに A では $W_{\\rm A}$，B では $W_{\\rm B}$ 必要なので，表面のすぐ外での電子の位置エネルギーは A の前の方が $W_{\\rm A}-W_{\\rm B}$ だけ高い．すなわち A の面のすぐ外の電位は B の面のすぐ外より\n\\[ V_{\\rm c}=\\frac{W_{\\rm A}-W_{\\rm B}}{e} \\]\nだけ低い（接触電位差）．真空の隙間に電位差 $V_{\\rm c}$ を生じるには，向かい合う面が平行板コンデンサーとして帯電していなければならず，低電位の A の面が負，B の面が正である．したがって電子は導線を通って \\textbf{B から A へ}移動し，\n\\[ Q=\\frac{\\varepsilon_0S}{d}V_{\\rm c}=\\boldsymbol{\\frac{\\varepsilon_0S(W_{\\rm A}-W_{\\rm B})}{ed}} \\]\nここで $V_{\\rm c}$ は $d$ によらないことが重要である（仕事関数は金属の表面で決まる量なので）．\n\n\\textbf{(3)}　隙間の電位差は $V_{\\rm c}$ に保たれたまま $d$ だけが変わるので，B の電荷は\n\\[ Q(t)=\\frac{\\varepsilon_0SV_{\\rm c}}{d_0+\\delta\\sin\\omega t}\\fallingdotseq\\frac{\\varepsilon_0SV_{\\rm c}}{d_0}\\left(1-\\frac{\\delta}{d_0}\\sin\\omega t\\right) \\]\nA から B の向きの電流は B の正電荷を増やすので $I=\\dfrac{dQ}{dt}$ であり，\n\\[ I=\\boldsymbol{-\\frac{\\varepsilon_0S(W_{\\rm A}-W_{\\rm B})\\,\\delta\\omega}{ed_0^{\\,2}}\\cos\\omega t} \\]\n振動させない限り電流は流れないので，静的な電圧計では接触電位差は測れないが，このように振動させると交流電流として検出できる．\n\n\\textbf{(4)}　電池の正極を A 側につなぐと，A の内部の電位が B の内部より $E$ だけ高くなる．両面のすぐ外の電位は，それぞれの内部の電位から $W/e$ ずつ下がった値なので，隙間の電位差（B 側が高い向き）は\n\\[ \\left(-\\frac{W_{\\rm B}}{e}\\right)-\\left(E-\\frac{W_{\\rm A}}{e}\\right)=V_{\\rm c}-E \\]\nとなり，$Q=\\dfrac{\\varepsilon_0S(V_{\\rm c}-E)}{d}$．$d$ が変わっても電流が 0 であるためには $Q=0$，すなわち隙間の電位差が 0 でなければならない．よって\\textbf{正極を A 側}にして\n\\[ E=\\boldsymbol{\\frac{W_{\\rm A}-W_{\\rm B}}{e}} \\]\n（正極を B 側にすると隙間の電位差は $V_{\\rm c}+E$ となり，0 にできない．）このように電流が 0 になる起電力を探す零位法で，接触電位差（仕事関数の差）を測ることができる（ケルビン法）．\n\n\\textbf{(5)}　双極子が単位面積に $n$ 個並んだ層は，面電荷 $\\pm\\sigma'$ を間隔 $t'$ で置いた層で $\\sigma't'=np$ としたものと同じで，層をはさむ電位の差は $np/\\varepsilon_0$ である．正の端が外側なので，(1) の二重層とは逆に外側の電位を上げ，電子を外に出しやすくする．よって A の仕事関数は $\\Delta W=\\dfrac{enp}{\\varepsilon_0}$ だけ減り，(4) の $E$ も $np/\\varepsilon_0$ だけ減る：\n\\[ \\frac{np}{\\varepsilon_0}=0.62-0.17=0.45\\,\\mathrm{V},\\qquad n=\\frac{8.85\\times10^{-12}\\times0.45}{3.0\\times10^{-30}}\\fallingdotseq\\boldsymbol{1.3\\times10^{18}\\,\\mathrm{m^{-2}}} \\]\n電池なしで電流が 0 になるのは，A の仕事関数が B と等しくなり $E=0$ となるとき，すなわち $np/\\varepsilon_0=0.62\\,\\mathrm{V}$ のときで\n\\[ n=\\frac{8.85\\times10^{-12}\\times0.62}{3.0\\times10^{-30}}\\fallingdotseq\\boldsymbol{1.8\\times10^{18}\\,\\mathrm{m^{-2}}} \\]\nこれより多く吸着させると A の仕事関数は B より小さくなり，零位にするには電池の向きを逆にする必要がある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "導線でつないだ異種の金属の間には仕事関数の差だけの接触電位差が生じ，向かい合う面は間隔によらない電位差をもつコンデンサーとして帯電する．間隔を振動させると電荷が変わって交流電流が流れるので，それを打ち消す起電力を探す零位法で仕事関数の差が測れる．仕事関数そのものは表面の電気二重層の電位差で決まり，吸着による双極子層が加わるとその分だけ変わる．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "work-energy",
+  "capacitor"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "仕事関数",
+  "接触電位差",
+  "電気二重層",
+  "平行板コンデンサー",
+  "零位法"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

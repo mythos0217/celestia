@@ -1,0 +1,144 @@
+{
+ "id": "PHY-ESF-009",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "同心半球電極によるエネルギー分析器と光電子のエネルギー分布（ケプラー軌道としての電子の運動）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，点 P を中心とする半径 $a$ と $b$（$a<b$）の薄い半球形の導体電極が真空中に置かれ，内側の電極の電位が外側より $V_0$（$>0$）だけ高く保たれている．電極にはさまれた領域の電場は，同じ半径の完全な同心球の導体にはさまれた場合と同じであるとし，端の乱れは無視する．電子（質量 $m$，電気量 $-e$）は，P からの距離 $r_0$（$a<r_0<b$）の点 X にある細いスリット $\\mathrm S_1$ を通って，直線 PX に垂直に電極間へ入射し，紙面内を運動する．X と P について反対側の，P から距離 $r_0$ の点 Y を中心に，直線 PX に沿った幅 $w$（$w\\ll r_0$）のスリット $\\mathrm S_2$ があり，$\\mathrm S_2$ を通った電子が検出される．電子が X で領域に入るときの運動エネルギーを $K$ とし，重力と磁場は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電極間の P から距離 $r$ の点での電場の強さ $E(r)$ を $a$，$b$，$V_0$，$r$ で表せ．また，電子が半径 $r_0$ の円軌道を描いて Y に達するときの $K$ の値 $K_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$K=K_0(1+\\delta)$（$-1<\\delta<1$）の電子が X から入射した．この電子の軌道は，電場の力が P からの距離の2乗に反比例する引力であることから，惑星の軌道と同じ形になる．電子が P のまわりに角 $\\pi$ だけ回った（直線 PX 上に戻った）ときの P からの距離 $r_1$ を $r_0$ と $\\delta$ で表せ．また，そのとき電子の速度が直線 PX に垂直であることを説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の電子が途中で電極に当たらずに Y 側に達するための $\\delta$ の範囲を，$a$，$b$，$r_0$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\mathrm S_2$ を通過できる電子の $K$ の範囲の幅 $\\Delta K$ を，$w/r_0$ の1次までの近似で $K_0$，$w$，$r_0$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "仕事関数 $W$ が未知の金属試料に振動数 $\\nu$ の光を当て，出てきた光電子をこの分析器に入れる．金属内の電子のエネルギーは，最大値 $E_{\\rm M}$ から $E_{\\rm M}-\\varepsilon$ までの範囲に一様に分布しており，エネルギー $E_{\\rm i}$ の電子は光子1個のエネルギーをすべて受け取って，運動エネルギー $h\\nu-W-(E_{\\rm M}-E_{\\rm i})$ で金属を出るものとする（$h$ はプランク定数，$h\\nu>W+\\varepsilon$）．放出された光電子は運動エネルギーを変えずに X に達するとする．$V_0$ を変えながら検出数を記録したところ，$V_1\\le V_0\\le V_2$ の範囲でだけ電子が検出された（$\\Delta K$ は無視できるとする）．$W$ と $\\varepsilon$ を $h$，$\\nu$，$e$，$a$，$b$，$r_0$，$V_1$，$V_2$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：同心半球電極によるエネルギー分析器と光電子のエネルギー分布（ケプラー軌道としての電子の運動）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：同心半球電極によるエネルギー分析器と光電子のエネルギー分布（ケプラー軌道としての電子の運動）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$E(r)=\\dfrac{abV_0}{(b-a)r^2}$，$K_0=\\dfrac{eabV_0}{2(b-a)r_0}$"
+   },
+   {
+    "id": "2",
+    "tex": "$r_1=r_0\\dfrac{1+\\delta}{1-\\delta}$（X と Y は軌道の近点・遠点の組なので速度は PX に垂直）"
+   },
+   {
+    "id": "3",
+    "tex": "$-\\dfrac{r_0-a}{r_0+a}<\\delta<\\dfrac{b-r_0}{b+r_0}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\Delta K\\fallingdotseq\\dfrac{w}{2r_0}K_0$"
+   },
+   {
+    "id": "5",
+    "tex": "$W=h\\nu-\\dfrac{eabV_2}{2(b-a)r_0}$，$\\varepsilon=\\dfrac{eab(V_2-V_1)}{2(b-a)r_0}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 電場と円軌道}\n内側の電極が電気量 $Q$ をもつとすると，ガウスの法則より電極間の電場は $E=\\dfrac{kQ}{r^2}$（$k$ はクーロンの法則の比例定数）．電位差は\n\\[ V_0=kQ\\Bigl(\\frac1a-\\frac1b\\Bigr)\\quad\\Longrightarrow\\quad kQ=\\frac{abV_0}{b-a},\\qquad \\boldsymbol{E(r)=\\frac{abV_0}{(b-a)r^2}}. \\]\n電場は外向き（内側が高電位）なので，電子には P に向かう引力 $\\dfrac{\\alpha}{r^2}$（$\\alpha=\\dfrac{eabV_0}{b-a}$）がはたらく．半径 $r_0$ の円運動の式 $\\dfrac{mv_0^2}{r_0}=\\dfrac{\\alpha}{r_0^2}$ より\n\\[ \\boldsymbol{K_0=\\frac12mv_0^2=\\frac{\\alpha}{2r_0}=\\frac{eabV_0}{2(b-a)r_0}}. \\]\n\n\\textbf{(2) 反対側での距離}\n引力は $1/r^2$ に比例し，その位置エネルギーは $-\\dfrac{\\alpha}{r}$（$k\\cdot(-e)Q/r$）．力は P を向くので P のまわりの面積速度が一定，さらに力学的エネルギーも保存する．したがって電子の軌道は P を焦点とする楕円（または放物線・双曲線）であり，X では速度が動径に垂直なので X は近点または遠点である．楕円では近点と遠点は焦点 P について正反対（角 $\\pi$ 離れた位置）にあるので，角 $\\pi$ 回った点でも速度は動径に垂直である．\\\\\nX での速さを $v$，求める点での速さを $v_1$ とすると\n\\[ r_0v=r_1v_1,\\qquad \\frac12mv^2-\\frac{\\alpha}{r_0}=\\frac12mv_1^2-\\frac{\\alpha}{r_1}. \\]\n$\\frac12mv^2=K_0(1+\\delta)=\\dfrac{\\alpha(1+\\delta)}{2r_0}$ を代入して $v_1$ を消去すると\n\\[ \\frac{\\alpha(1+\\delta)}{2r_0}\\Bigl(1-\\frac{r_0^2}{r_1^2}\\Bigr)=\\alpha\\Bigl(\\frac1{r_0}-\\frac1{r_1}\\Bigr)\n\\;\\Longrightarrow\\;(1+\\delta)\\Bigl(1+\\frac{r_0}{r_1}\\Bigr)=2 \\]\n（$r_1=r_0$ の解は $\\delta=0$ の円軌道）．よって\n\\[ \\boldsymbol{r_1=r_0\\,\\frac{1+\\delta}{1-\\delta}}. \\]\n$\\delta>0$ なら X が近点で $r_1>r_0$，$\\delta<0$ なら X が遠点で $r_1<r_0$．（$\\delta\\ge1$ では楕円にならず戻ってこない．）\n\n\\textbf{(3) 電極に当たらない条件}\n軌道上の距離は X と角 $\\pi$ の点の間の値しかとらないので，$a<r_1<b$ であればよい．\n\\[ r_0\\frac{1+\\delta}{1-\\delta}<b\\iff\\delta<\\frac{b-r_0}{b+r_0},\\qquad r_0\\frac{1+\\delta}{1-\\delta}>a\\iff\\delta>-\\frac{r_0-a}{r_0+a}. \\]\nよって $\\boldsymbol{-\\dfrac{r_0-a}{r_0+a}<\\delta<\\dfrac{b-r_0}{b+r_0}}$．\n\n\\textbf{(4) エネルギー分解能}\n通過条件は $|r_1-r_0|\\le\\dfrac w2$．$|\\delta|\\ll1$ では $r_1\\fallingdotseq r_0(1+2\\delta)$ なので $|\\delta|\\le\\dfrac{w}{4r_0}$．$\\delta$ の範囲の幅は $\\dfrac{w}{2r_0}$ で，\n\\[ \\boldsymbol{\\Delta K\\fallingdotseq\\frac{w}{2r_0}K_0}. \\]\n（厳密には $\\delta=\\frac{s}{2+s}$ から $-\\frac{s}{2-s}$，$s=\\frac{w}{2r_0}$．）分解能 $\\Delta K/K_0$ は $V_0$ によらず，装置の大きさとスリット幅だけで決まる．\n\n\\textbf{(5) 光電子のエネルギー分布}\n光電子の運動エネルギーは $h\\nu-W-(E_{\\rm M}-E_{\\rm i})$ で，$E_{\\rm i}$ が $E_{\\rm M}-\\varepsilon$ から $E_{\\rm M}$ まで分布するので，$h\\nu-W-\\varepsilon$ から $h\\nu-W$ まで分布する．分析器は $K=K_0=cV_0$（$c=\\dfrac{eab}{2(b-a)r_0}$）の電子だけを通すから，検出される範囲の端は\n\\[ cV_2=h\\nu-W,\\qquad cV_1=h\\nu-W-\\varepsilon. \\]\nよって\n\\[ \\boldsymbol{W=h\\nu-\\frac{eabV_2}{2(b-a)r_0}},\\qquad \\boldsymbol{\\varepsilon=\\frac{eab(V_2-V_1)}{2(b-a)r_0}}. \\]\n上端 $V_2$ は金属内の最大エネルギーの電子，つまり仕事関数で決まる光電子の最大運動エネルギーに対応する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同心球電極間の電場は $1/r^2$ に比例するので，電子は惑星と同じケプラー軌道を描き，動径に垂直に入射すれば入射点が近点（遠点）となって角 $\\pi$ 先に遠点（近点）がくる．その距離は面積速度一定とエネルギー保存の2式だけで $r_0(1+\\delta)/(1-\\delta)$ と決まり，出口スリットの幅がエネルギーの選別幅 $\\Delta K/K_0=w/2r_0$ を決める．通過電圧の上下限から光電子のエネルギー分布の端（仕事関数と分布幅）が読める．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "universal-gravitation",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ガウスの法則",
+  "ケプラー軌道",
+  "面積速度",
+  "エネルギー分析器",
+  "光電効果",
+  "分解能"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

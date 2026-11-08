@@ -1,0 +1,135 @@
+{
+ "id": "PHY-ESF-001",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "電気双極子と一様電場を重ねた電位と管内の小球のつり合い・往復運動",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，$x$ 軸上の点 A$(-l,\\,0)$ に電気量 $+Q$ $(Q>0)$ の点電荷，点 B$(l,\\,0)$ に電気量 $-Q$ の点電荷が固定されている．線分 AB に沿って細くなめらかな絶縁体の管が水平に固定されており，管の中には質量 $m$，電気量 $+q$ $(q>0)$ の小球 P が入っていて，管に沿って $-l<x<l$ の範囲を動ける．さらに，空間全体に $-x$ 向き（B から A の向き）の強さ $E_0$ の一様な電場をかける．クーロンの法則の比例定数を $k$ とし，小球の大きさ，重力の影響，P の電荷が A，B の電荷や一様電場に及ぼす影響は無視する．電位は，点電荷による部分は無限遠を基準とし，一様電場による部分は原点 O を基準とする（したがって O の電位は $0$ である）．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "管内の位置 $x$ $(-l<x<l)$ における電位 $V(x)$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P を O に置いて静かに放したところ，P は A の側へ動き出した．このための $E_0$ の条件を求めよ．また，このとき P が折り返す位置の $x$ 座標を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "以下，$E_0=\\dfrac{40kQ}{9l^2}$ とする．管内で P がつり合いの位置にいられる点の $x$ 座標をすべて求め，それぞれ安定か不安定かを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の不安定なつり合いの位置に P を置き，O の向きにごくわずかな速さを与えた．P の速さの最大値と，P が到達する最も A に近い点の $x$ 座標を求めよ（与えた速さは $0$ とみなして計算してよい）．また，その後 P はどのような運動をするか，簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：電気双極子と一様電場を重ねた電位と管内の小球のつり合い・往復運動",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：電気双極子と一様電場を重ねた電位と管内の小球のつり合い・往復運動",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V(x)=\\dfrac{kQ}{l+x}-\\dfrac{kQ}{l-x}+E_0x=-\\dfrac{2kQx}{l^2-x^2}+E_0x$"
+   },
+   {
+    "id": "2",
+    "tex": "$E_0>\\dfrac{2kQ}{l^2}$，折り返す位置 $x=-\\sqrt{l^2-\\dfrac{2kQ}{E_0}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$x=-\\dfrac{l}{2}$（安定），$x=\\dfrac{l}{2}$（不安定）"
+   },
+   {
+    "id": "4",
+    "tex": "速さの最大値 $\\dfrac43\\sqrt{\\dfrac{2kQq}{ml}}$（$x=-\\frac{l}{2}$ を通過するとき），最も A に近い点 $x=-\\dfrac45l$，その後は引き返して $x=\\frac{l}{2}$ をわずかな速さで越え，B に向かって加速し続ける（B に衝突する）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 電位の重ね合わせ}　電位はスカラーなので，3つの寄与を足せばよい．A，B の点電荷までの距離はそれぞれ $l+x$，$l-x$ である．一様電場は $-x$ 向きなので，電位は $+x$ 向きに $E_0$ の割合で高くなり，O を基準とすると $E_0x$ である．よって\n\\[ V(x)=\\frac{kQ}{l+x}-\\frac{kQ}{l-x}+E_0x=\\boldsymbol{-\\frac{2kQx}{l^2-x^2}+E_0x} \\]\n$V(-x)=-V(x)$（奇関数）であることに注意しておく．\n\n\\textbf{(2) 動き出す向きと折り返し点}　P が受ける力（$+x$ 向きを正）は $F(x)=-q\\dfrac{dV}{dx}$ であり，\n\\[ F(x)=q\\left\\{\\frac{kQ}{(l+x)^2}+\\frac{kQ}{(l-x)^2}-E_0\\right\\} \\]\n（点電荷からの力はどちらも $+x$ 向き，一様電場からの力は $-x$ 向き）．O では $F(0)=q\\left(\\dfrac{2kQ}{l^2}-E_0\\right)$ で，これが負なら A の側へ動き出すから\n\\[ \\boldsymbol{E_0>\\frac{2kQ}{l^2}} \\]\nP にはたらく力は静電気力（保存力）と管からの垂直抗力（仕事をしない）だけなので，$\\frac12mv^2+qV(x)=qV(0)=0$ が成り立つ．折り返し点では $v=0$ だから $V(x)=0$，$x\\neq0$ より\n\\[ -\\frac{2kQ}{l^2-x^2}+E_0=0 \\quad\\therefore\\ x^2=l^2-\\frac{2kQ}{E_0} \\]\nA の側（$x<0$）なので $x=\\boldsymbol{-\\sqrt{l^2-\\dfrac{2kQ}{E_0}}}$．(2) の条件のもとで右辺は $0$ と $l^2$ の間にあり，この点は管内にある．なお，O とこの点の間では $V(x)=x\\left(E_0-\\dfrac{2kQ}{l^2-x^2}\\right)<0$ なので途中で止まることはなく，P はこの点と O の間を往復する．\n\n\\textbf{(3) つり合いの位置}　$u=x/l$ とおくと，$F=0$ は\n\\[ \\frac{1}{(1+u)^2}+\\frac{1}{(1-u)^2}=\\frac{40}{9}\\ \\Longleftrightarrow\\ 9(1+u^2)=20(1-u^2)^2\\ \\Longleftrightarrow\\ (4u^2-1)(5u^2-11)=0 \\]\n$|u|<1$ より $u^2=\\frac14$，すなわち $\\boldsymbol{x=\\pm\\dfrac{l}{2}}$．\n点電荷による力の大きさ $kQ\\left\\{\\frac{1}{(l+x)^2}+\\frac{1}{(l-x)^2}\\right\\}$ は $|x|$ が大きいほど大きい．$x=-\\frac l2$ から A 側（$|x|$ 増）へずれると $F>0$（O 向き），O 側（$|x|$ 減）へずれると $F<0$（A 向き）となり，もとに戻されるので\\textbf{安定}．$x=\\frac l2$ から B 側へずれると $F>0$ でさらに B 側へ，O 側へずれると $F<0$ でさらに O 側へ押されるので\\textbf{不安定}．（$V(x)$ は $x=-\\frac l2$ で極小，$x=\\frac l2$ で極大．）\n\n\\textbf{(4) 不安定点からの運動}　$E_0=\\dfrac{40kQ}{9l^2}$ のとき\n\\[ V\\!\\left(\\tfrac l2\\right)=-\\frac{2kQ\\cdot\\frac l2}{\\frac34l^2}+\\frac{40kQ}{9l^2}\\cdot\\frac l2=\\frac{8kQ}{9l},\\qquad V\\!\\left(-\\tfrac l2\\right)=-\\frac{8kQ}{9l} \\]\nエネルギー保存 $\\frac12mv^2=q\\left\\{V\\!\\left(\\tfrac l2\\right)-V(x)\\right\\}$ より，速さは $V$ が最小の $x=-\\frac l2$（力が $0$ になる点）で最大となり\n\\[ v_{\\max}=\\sqrt{\\frac{2q}{m}\\cdot\\frac{16kQ}{9l}}=\\boldsymbol{\\frac43\\sqrt{\\frac{2kQq}{ml}}} \\]\n最も A に近い点は $V(x)=\\dfrac{8kQ}{9l}$，$x<-\\frac l2$ を満たす点である．$u=x/l$ として整理すると\n\\[ -\\frac{2u}{1-u^2}+\\frac{40}{9}u=\\frac89\\ \\Longleftrightarrow\\ 20u^3-4u^2-11u+4=0\\ \\Longleftrightarrow\\ (2u-1)^2(5u+4)=0 \\]\n$u=\\frac12$ が重解になるのは，$x=\\frac l2$ が $V$ の極大点（$V'=0$）だからである．求める点は $\\boldsymbol{x=-\\dfrac45l}$．\nその後 P は引き返し，再び $x=\\frac l2$ に向かう．力学的エネルギーは $qV\\!\\left(\\frac l2\\right)$ よりわずかに大きい（初めにわずかな速さを与えた）ので，P は $x=\\frac l2$ をわずかな速さで越え，その先では $F>0$ なので\\textbf{B に向かって加速し続け，B に衝突する}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "点電荷による電位と一様電場による電位をスカラーとして重ね合わせると，$V(x)$ が奇関数となり，折り返し点（$V=0$ の点）や力のつり合いの点が簡単な式で求まる．電位の極小・極大がそれぞれ安定・不安定なつり合いに対応し，不安定点から出発した運動の折り返し点は，極大点を重根にもつ3次方程式から求まる．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "mechanical-energy",
+  "equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電位の重ね合わせ",
+  "電気双極子",
+  "一様電場",
+  "エネルギー保存",
+  "安定・不安定なつり合い"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "id": "PHY-ESF-017",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "帯電した導体球殻から切り離したキャップが浮き上がる条件（静電的な圧力と射影面積）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "半径 $R$ の薄い導体の球殻を，中心 O から上へ距離 $h$（$-R<h<R$，$h<0$ は O より下を表す）の水平面で切り，上側の部分（キャップ）を下側の部分の上に載せて，もとの球殻の形にした．下側の部分は絶縁台に固定されている．キャップの単位面積あたりの質量は $\\sigma_{\\rm m}$ である．この導体に電荷 $Q$（$>0$）を与える．切り口のすき間は無視でき，電荷は球面上に一様に分布するとしてよい．真空の誘電率を $\\varepsilon_0$，重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "球面の面電荷密度を $\\sigma$ とする．球面のすぐ外側の電場は $\\dfrac{\\sigma}{\\varepsilon_0}$，すぐ内側の電場は $0$ である．球面上の電荷が受ける力は，単位面積あたり外向きに $\\dfrac{\\sigma^2}{2\\varepsilon_0}$ であることを説明せよ．"
+     },
+     {
+      "id": "2",
+      "tex": "キャップが受ける電気力の合力の大きさ $F$ と向きを，$Q$，$R$，$h$，$\\varepsilon_0$ で表せ．（ヒント：閉じた曲面の各部分が，面に垂直で外向きに一様な大きさ $p$ の力を単位面積あたり受けるとき，その合力は $0$ である．）"
+     },
+     {
+      "id": "3",
+      "tex": "キャップが浮き上がるための $Q$ の条件を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "切る高さ $h$ を変えると，浮き上がりに必要な最小の電荷 $Q_{\\min}$ はどう変わるか．$h\\to R$ の極限で (3) の条件が表す意味を述べよ．また，$R=0.20\\,\\mathrm{m}$，$\\sigma_{\\rm m}=0.050\\,\\mathrm{kg/m^2}$，$h=0$（半球）のときの $Q_{\\min}$ を有効数字2桁で求めよ．$\\varepsilon_0=8.85\\times10^{-12}\\,\\mathrm{F/m}$，$g=9.8\\,\\mathrm{m/s^2}$ とする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：帯電した導体球殻から切り離したキャップが浮き上がる条件（静電的な圧力と射影面積）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "解説参照（自分以外の電荷がつくる電場 $\\dfrac{\\sigma}{2\\varepsilon_0}$ から力を受ける）"
+   },
+   {
+    "id": "2",
+    "tex": "$F=\\dfrac{Q^2(R^2-h^2)}{32\\pi\\varepsilon_0R^4}$，鉛直上向き"
+   },
+   {
+    "id": "3",
+    "tex": "$Q\\geqq8\\pi R^2\\sqrt{\\dfrac{\\varepsilon_0\\sigma_{\\rm m}gR}{R+h}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$h$ が大きい（キャップが小さい）ほど $Q_{\\min}$ は小さく，$h\\to R$ で $\\dfrac{\\sigma^2}{2\\varepsilon_0}=\\sigma_{\\rm m}g$（単位面積あたりの電気力と重さのつり合い）．$h=0$ で $Q_{\\min}\\approx2.1\\times10^{-6}\\,\\mathrm{C}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 面電荷が受ける力}\n\n球面上の微小部分（面積 $\\Delta S$，電荷 $\\sigma\\Delta S$）のすぐ近くの電場は，「その微小部分自身がつくる電場」と「それ以外のすべての電荷がつくる電場 $\\vec E'$」の和である．微小部分自身は，ごく近くでは無限に広い平面とみなせ，面の両側に大きさ $\\dfrac{\\sigma}{2\\varepsilon_0}$ の電場を面から遠ざかる向きにつくる．$\\vec E'$ は微小部分の内外でなめらかにつながるので，外側・内側の電場は\n\\[ E_{\\text{外}}=E'+\\frac{\\sigma}{2\\varepsilon_0}=\\frac{\\sigma}{\\varepsilon_0},\\qquad E_{\\text{内}}=E'-\\frac{\\sigma}{2\\varepsilon_0}=0 \\]\nよって $E'=\\dfrac{\\sigma}{2\\varepsilon_0}$（外向き）．微小部分が自分自身から受ける力は $0$ なので，受ける力は $\\sigma\\Delta S\\cdot E'$，すなわち単位面積あたり外向きに $\\dfrac{\\sigma^2}{2\\varepsilon_0}$ である．\n\n\\textbf{(2) キャップが受ける力}\n\n$p=\\dfrac{\\sigma^2}{2\\varepsilon_0}$ とおく．キャップの各部分は面に垂直で外向きに一様な $p$ の力を受ける．キャップに，切り口の円板（半径 $\\sqrt{R^2-h^2}$）を合わせた閉曲面を考えると，ヒントより「キャップが受ける力」＋「円板が受ける力」$=0$．円板が外向き（下向き）に受ける力は $p\\cdot\\pi(R^2-h^2)$ だから，キャップが受ける力は鉛直上向きに\n\\[ F=p\\cdot\\pi(R^2-h^2) \\]\n（水平成分は対称性から $0$）．$\\sigma=\\dfrac{Q}{4\\pi R^2}$ を代入して\n\\[ \\boldsymbol{F=\\frac{Q^2(R^2-h^2)}{32\\pi\\varepsilon_0R^4}}\\quad(\\text{鉛直上向き}) \\]\n一様な圧力が曲面に及ぼす合力は「圧力 $\\times$ 射影面積」になる．\n\n\\textbf{(3) 浮き上がる条件}\n\nキャップの面積は $2\\pi R(R-h)$（球帯の面積は高さに比例）なので，その重さは $2\\pi R(R-h)\\sigma_{\\rm m}g$．$F$ がこれ以上であればよい：\n\\[ \\frac{Q^2(R-h)(R+h)}{32\\pi\\varepsilon_0R^4}\\geqq2\\pi R(R-h)\\sigma_{\\rm m}g \\]\n\\[ \\boldsymbol{Q\\geqq8\\pi R^2\\sqrt{\\frac{\\varepsilon_0\\sigma_{\\rm m}gR}{R+h}}} \\]\n\n\\textbf{(4) 切る高さによる違い}\n\n$Q_{\\min}^2=\\dfrac{64\\pi^2\\varepsilon_0\\sigma_{\\rm m}gR^5}{R+h}$ は $h$ の減少関数で，\\textbf{キャップが小さいほど少ない電荷で浮く}．射影面積は $(R-h)(R+h)$，重さは $(R-h)$ に比例するので，比は $(R+h)$ に比例し，キャップが大きくなる（$h$ が小さくなる）ほど「横向きの面」が増えて上向きの力に寄与しにくくなるからである．$h\\to-R$（ほぼ全体がキャップ）では射影面積が重さに比べて $0$ に近づき，$Q_{\\min}\\to\\infty$ となる．\n\n$h\\to R$ では $Q_{\\min}^2\\to32\\pi^2\\varepsilon_0\\sigma_{\\rm m}gR^4$．$\\sigma=\\dfrac{Q}{4\\pi R^2}$ で書き直すと $\\boldsymbol{\\dfrac{\\sigma^2}{2\\varepsilon_0}=\\sigma_{\\rm m}g}$ で，頂上付近の小片について「単位面積あたりの電気力（外向き＝上向き）が単位面積あたりの重さとつり合う」という局所的な条件になる．どの高さで切っても，浮かせるにはこの極限の $\\sqrt{\\dfrac{2R}{R+h}}$ 倍の電荷が必要である．\n\n数値：$h=0$ のとき\n\\[ Q_{\\min}=8\\pi R^2\\sqrt{\\varepsilon_0\\sigma_{\\rm m}g}=8\\times3.14\\times0.040\\times\\sqrt{8.85\\times10^{-12}\\times0.050\\times9.8}\\approx\\boldsymbol{2.1\\times10^{-6}\\,\\mathrm{C}} \\]\n（このとき球の電位は $\\dfrac{Q}{4\\pi\\varepsilon_0R}\\approx9\\times10^4\\,\\mathrm{V}$ に達する．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "導体表面の電荷は自分以外がつくる電場（外側の電場の半分）から力を受けるので，表面には外向きの一様な「静電的な圧力」$\\sigma^2/2\\varepsilon_0$ がはたらく．一様な圧力が曲面に及ぼす合力は，切り口を閉じた閉曲面で考えると「圧力 $\\times$ 射影面積」になる．浮き上がりの条件は射影面積と重さ（面積）の比で決まり，小さいキャップほど浮きやすく，極限では局所的な圧力と重さのつり合いになる．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "静電場",
+  "導体表面の電荷",
+  "静電的圧力",
+  "射影面積",
+  "つり合い",
+  "極限"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

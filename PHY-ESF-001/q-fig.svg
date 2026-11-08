@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 220">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+</defs>
+<line x1="114" y1="112" x2="446" y2="112" stroke="#222" stroke-width="1.6"/>
+<line x1="114" y1="128" x2="446" y2="128" stroke="#222" stroke-width="1.6"/>
+<line x1="114" y1="112" x2="114" y2="128" stroke="#222" stroke-width="1"/>
+<line x1="446" y1="112" x2="446" y2="128" stroke="#222" stroke-width="1"/>
+<circle cx="100" cy="120" r="11" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="100" y="125" font-family="Noto Sans CJK JP, sans-serif" font-size="16" fill="#222" text-anchor="middle" >+</text>
+<circle cx="460" cy="120" r="11" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="460" y="125" font-family="Noto Sans CJK JP, sans-serif" font-size="16" fill="#222" text-anchor="middle" >−</text>
+<text x="100" y="100" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle" >+<tspan font-family="Times New Roman, serif" font-style="italic">Q</tspan></text>
+<text x="460" y="100" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle" >−<tspan font-family="Times New Roman, serif" font-style="italic">Q</tspan></text>
+<text x="100" y="152" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle" >A</text>
+<text x="460" y="152" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle" >B</text>
+<line x1="280" y1="108" x2="280" y2="132" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="280" y="152" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle" >O</text>
+<circle cx="215" cy="120" r="6" fill="#222"/>
+<text x="215" y="106" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle" >P</text>
+<line x1="100" y1="170" x2="280" y2="170" stroke="#222" stroke-width="1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<line x1="280" y1="170" x2="460" y2="170" stroke="#222" stroke-width="1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<text x="190.0" y="164" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle" >l</text>
+<text x="370.0" y="164" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle" >l</text>
+<line x1="100" y1="134" x2="100" y2="176" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="460" y1="134" x2="460" y2="176" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="280" y1="156" x2="280" y2="176" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="470" y1="200" x2="530" y2="200" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<text x="536" y="205" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start" >x</text>
+<line x1="400" y1="40" x2="170" y2="40" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<line x1="400" y1="62" x2="170" y2="62" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="410" y="56" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf" text-anchor="start" >E<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<text x="470" y="56" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf" text-anchor="start" >（一様電場）</text>
+</svg>

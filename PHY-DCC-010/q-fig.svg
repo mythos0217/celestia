@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 380">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<line x1="300.0" y1="150.0" x2="352.7" y2="113.5" stroke="#222" stroke-width="1.6"/>
+<line x1="377.3" y1="96.5" x2="430.0" y2="60.0" stroke="#222" stroke-width="1.6"/>
+<rect x="350.0" y="100.0" width="30" height="10" fill="none" stroke="#222" stroke-width="1.6" transform="rotate(-34.70 365.0 105.0)"/>
+<line x1="430.0" y1="60.0" x2="340.0" y2="60.0" stroke="#222" stroke-width="1.6"/>
+<line x1="310.0" y1="60.0" x2="220.0" y2="60.0" stroke="#222" stroke-width="1.6"/>
+<rect x="310.0" y="55.0" width="30" height="10" fill="none" stroke="#222" stroke-width="1.6" transform="rotate(180.00 325.0 60.0)"/>
+<line x1="220.0" y1="60.0" x2="167.3" y2="96.5" stroke="#222" stroke-width="1.6"/>
+<line x1="142.7" y1="113.5" x2="90.0" y2="150.0" stroke="#222" stroke-width="1.6"/>
+<rect x="140.0" y="100.0" width="30" height="10" fill="none" stroke="#222" stroke-width="1.6" transform="rotate(145.30 155.0 105.0)"/>
+<line x1="90.0" y1="350.0" x2="180.0" y2="350.0" stroke="#222" stroke-width="1.6"/>
+<line x1="210.0" y1="350.0" x2="300.0" y2="350.0" stroke="#222" stroke-width="1.6"/>
+<rect x="180.0" y="345.0" width="30" height="10" fill="none" stroke="#222" stroke-width="1.6" transform="rotate(0.00 195.0 350.0)"/>
+<line x1="300.0" y1="350.0" x2="352.7" y2="313.5" stroke="#222" stroke-width="1.6"/>
+<line x1="377.3" y1="296.5" x2="430.0" y2="260.0" stroke="#222" stroke-width="1.6"/>
+<rect x="350.0" y="300.0" width="30" height="10" fill="none" stroke="#222" stroke-width="1.6" transform="rotate(-34.70 365.0 305.0)"/>
+<line x1="430.0" y1="260.0" x2="386.2" y2="260.0" stroke="#222" stroke-width="1.6"/>
+<line x1="356.2" y1="260.0" x2="220.0" y2="260.0" stroke="#222" stroke-width="1.6"/>
+<rect x="356.2" y="255.0" width="30" height="10" fill="none" stroke="#222" stroke-width="1.6" transform="rotate(180.00 371.2 260.0)"/>
+<line x1="220.0" y1="260.0" x2="167.3" y2="296.5" stroke="#222" stroke-width="1.6"/>
+<line x1="142.7" y1="313.5" x2="90.0" y2="350.0" stroke="#222" stroke-width="1.6"/>
+<rect x="140.0" y="300.0" width="30" height="10" fill="none" stroke="#222" stroke-width="1.6" transform="rotate(145.30 155.0 305.0)"/>
+<line x1="90.0" y1="150.0" x2="90.0" y2="235.0" stroke="#222" stroke-width="1.6"/>
+<line x1="90.0" y1="265.0" x2="90.0" y2="350.0" stroke="#222" stroke-width="1.6"/>
+<rect x="75.0" y="245.0" width="30" height="10" fill="none" stroke="#222" stroke-width="1.6" transform="rotate(90.00 90.0 250.0)"/>
+<line x1="300.0" y1="150.0" x2="300.0" y2="279.0" stroke="#222" stroke-width="1.6"/>
+<line x1="300.0" y1="309.0" x2="300.0" y2="350.0" stroke="#222" stroke-width="1.6"/>
+<rect x="285.0" y="289.0" width="30" height="10" fill="none" stroke="#222" stroke-width="1.6" transform="rotate(90.00 300.0 294.0)"/>
+<line x1="430.0" y1="60.0" x2="430.0" y2="145.0" stroke="#222" stroke-width="1.6"/>
+<line x1="430.0" y1="175.0" x2="430.0" y2="260.0" stroke="#222" stroke-width="1.6"/>
+<rect x="415.0" y="155.0" width="30" height="10" fill="none" stroke="#222" stroke-width="1.6" transform="rotate(90.00 430.0 160.0)"/>
+<line x1="220.0" y1="60.0" x2="220.0" y2="189.0" stroke="#222" stroke-width="1.6"/>
+<line x1="220.0" y1="219.0" x2="220.0" y2="260.0" stroke="#222" stroke-width="1.6"/>
+<rect x="205.0" y="199.0" width="30" height="10" fill="none" stroke="#222" stroke-width="1.6" transform="rotate(90.00 220.0 204.0)"/>
+<rect x="138.0" y="145.0" width="30" height="10" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="90.0" y1="150.0" x2="138.0" y2="150.0" stroke="#222" stroke-width="1.6"/>
+<line x1="168.0" y1="150.0" x2="254.0" y2="150.0" stroke="#222" stroke-width="1.6"/>
+<line x1="254.0" y1="139.0" x2="254.0" y2="161.0" stroke="#222" stroke-width="2.2"/>
+<line x1="262.0" y1="139.0" x2="262.0" y2="161.0" stroke="#222" stroke-width="2.2"/>
+<line x1="262.0" y1="150.0" x2="300.0" y2="150.0" stroke="#222" stroke-width="1.6"/>
+<text x="153.0" y="140.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" text-anchor="middle" fill="#222">R</text>
+<text x="258.0" y="134.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" text-anchor="middle" fill="#222">C</text>
+<circle cx="90.0" cy="150.0" r="3" fill="#222"/>
+<text x="76.0" y="154.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">A</text>
+<circle cx="300.0" cy="150.0" r="3" fill="#222"/>
+<text x="306.0" y="140.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">B</text>
+<circle cx="430.0" cy="60.0" r="3" fill="#222"/>
+<text x="442.0" y="52.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">C</text>
+<circle cx="220.0" cy="60.0" r="3" fill="#222"/>
+<text x="206.0" y="52.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">D</text>
+<circle cx="90.0" cy="350.0" r="3" fill="#222"/>
+<text x="76.0" y="366.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">E</text>
+<circle cx="300.0" cy="350.0" r="3" fill="#222"/>
+<text x="304.0" y="370.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">F</text>
+<circle cx="430.0" cy="260.0" r="3" fill="#222"/>
+<text x="444.0" y="278.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">G</text>
+<circle cx="220.0" cy="260.0" r="3" fill="#222"/>
+<text x="204.0" y="264.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">H</text>
+<polyline points="90.0,150.0 40.0,150.0 40.0,30.0 300.0,30.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="300" cy="30" r="2.6" fill="none" stroke="#222" stroke-width="1.4"/>
+<circle cx="342" cy="30" r="2.6" fill="none" stroke="#222" stroke-width="1.4"/>
+<line x1="302.0" y1="29.0" x2="338.0" y2="16.0" stroke="#222" stroke-width="1.6"/>
+<text x="321.0" y="16.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">S</text>
+<polyline points="345.0,30.0 540.0,30.0 540.0,242.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="526.0" y1="246.0" x2="554.0" y2="246.0" stroke="#222" stroke-width="1.6"/>
+<line x1="533.0" y1="254.0" x2="547.0" y2="254.0" stroke="#222" stroke-width="3.2"/>
+<polyline points="540.0,254.0 540.0,320.0 430.0,320.0 430.0,260.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="566.0" y="254.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="middle" fill="#222">V</text>
+<text x="518.0" y="242.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="#222">+</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280">
+<defs><marker id="a-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#222"/></marker>
+<marker id="a-ar2" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 z" fill="#222"/></marker>
+<marker id="a-ab" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#1f5fbf"/></marker></defs>
+<line x1="20" y1="140" x2="500" y2="140" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="150" cy="140" r="90" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="60" y="58" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">電位 0 の球面</text>
+<circle cx="150" cy="140" r="2.5" fill="#222"/>
+<text x="140" y="162" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">O</text>
+<circle cx="180" cy="140" r="5" fill="#1f5fbf"/>
+<text x="166" y="124" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#1f5fbf">P′</text>
+<text x="190" y="124" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#1f5fbf">−<tspan font-family="Times New Roman, serif" font-style="italic">qR</tspan>/<tspan font-family="Times New Roman, serif" font-style="italic">D</tspan></text>
+<circle cx="420" cy="140" r="6" fill="#c0392b"/>
+<text x="413" y="124" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">q</text>
+<text x="430" y="162" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">P</text>
+<line x1="410" y1="140" x2="350" y2="140" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<text x="360" y="128" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">F</text>
+<line x1="152" y1="185" x2="178" y2="185" stroke="#222" stroke-width="1" marker-start="url(#a-ar2)" marker-end="url(#a-ar)"/>
+<line x1="150" y1="145" x2="150" y2="245" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="180" y1="145" x2="180" y2="195" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="420" y1="147" x2="420" y2="245" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="186" y="200" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">b<tspan font-style="normal" font-family="Noto Sans CJK JP, sans-serif"> = </tspan>R<tspan baseline-shift="super" font-size="10">2</tspan><tspan font-style="normal">/</tspan>D</text>
+<line x1="152" y1="235" x2="418" y2="235" stroke="#222" stroke-width="1" marker-start="url(#a-ar2)" marker-end="url(#a-ar)"/>
+<text x="280" y="256" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">D</text>
+<text x="230" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">球の外では「接地導体球」＝「像電荷 P′」</text>
+</svg>

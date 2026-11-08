@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260">
+<line x1="20" y1="130" x2="480" y2="130" stroke="#222" stroke-width="1.6"/>
+<text x="440" y="122"  font-family="Noto Sans CJK JP, sans-serif"  font-size="13" fill="#222">側面</text>
+<circle cx="100" cy="190" r="4" fill="#222"/>
+<text x="92" y="212" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">P<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<circle cx="200" cy="190" r="4" fill="#222"/>
+<text x="192" y="212" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">P<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<circle cx="300" cy="190" r="4" fill="#222"/>
+<text x="292" y="212" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">P<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<circle cx="400" cy="190" r="4" fill="#222"/>
+<text x="392" y="212" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">P<tspan baseline-shift="sub" font-size="10">4</tspan></text>
+<circle cx="100" cy="70" r="5" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+<circle cx="400" cy="70" r="5" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+<text x="110" y="60"  font-family="Noto Sans CJK JP, sans-serif"  font-size="13" fill="#c0392b">+I の鏡像</text>
+<text x="410" y="60"  font-family="Noto Sans CJK JP, sans-serif"  font-size="13" fill="#c0392b">−I の鏡像</text>
+<text x="110" y="230"  font-family="Noto Sans CJK JP, sans-serif"  font-size="14" fill="#222">+I</text>
+<text x="410" y="230"  font-family="Noto Sans CJK JP, sans-serif"  font-size="14" fill="#222">−I</text>
+<line x1="200" y1="190" x2="100" y2="70" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="90" y="180"  font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#888">√(a²+4b²)</text>
+<line x1="200" y1="190" x2="400" y2="70" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="360" y="105"  font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#888">2√(a²+b²)</text>
+<line x1="45" y1="130" x2="45" y2="190" stroke="#222" stroke-width="1"/>
+<text x="28" y="165"  font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">b</text>
+<line x1="45" y1="70" x2="45" y2="130" stroke="#c0392b" stroke-width="1"/>
+<text x="28" y="105"  font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#c0392b">b</text>
+</svg>

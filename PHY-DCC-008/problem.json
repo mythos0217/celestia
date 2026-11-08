@@ -1,0 +1,134 @@
+{
+ "id": "PHY-DCC-008",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-03",
+ "topic": "2つの電源をダイオードで並列につないだ回路の導通状態の切り替わり",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の回路で，$E_1$，$E_2$ は内部抵抗の無視できる起電力 $12\\ \\mathrm{V}$，$6\\ \\mathrm{V}$ の電池，$R$ は抵抗値を変えられる可変抵抗，その他の抵抗はすべて $10\\ \\Omega$ である．D$_1$，D$_2$ はダイオードで，D$_1$ は X→O，D$_2$ は Y→O の向きには抵抗 0 で電流を流すが，逆向きには電流を流さない．点 G の電位を 0 とし，数値は有効数字 2 桁で答えよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$R=1.0\\ \\Omega$ のとき，D$_1$，D$_2$ のそれぞれについて電流が流れるかどうかを判定し，点 O の電位を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "D$_1$，D$_2$ の両方に電流が流れるような $R$ の範囲を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$R=4.0\\ \\Omega$ のとき，D$_1$，D$_2$ を流れる電流の大きさをそれぞれ求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$R$ を $0$ から十分大きな値まで変えるとき，点 O の電位 $V_{\\mathrm O}$ を $R$ の関数として表し，そのグラフの概形をかけ．また，$R\\to\\infty$ で $V_{\\mathrm O}$ はどの値に近づくか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：2つの電源をダイオードで並列につないだ回路の導通状態の切り替わり",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：2つの電源をダイオードで並列につないだ回路の導通状態の切り替わり",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "D$_1$ には流れない，D$_2$ には流れる．$V_{\\mathrm O}=2.0\\ \\mathrm{V}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.0\\ \\Omega<R<5.0\\ \\Omega$"
+   },
+   {
+    "id": "3",
+    "tex": "D$_1$：$\\dfrac{3}{13}\\ \\mathrm{A}\\fallingdotseq0.23\\ \\mathrm{A}$，D$_2$：$\\dfrac{3}{65}\\ \\mathrm{A}\\fallingdotseq0.046\\ \\mathrm{A}$"
+   },
+   {
+    "id": "4",
+    "tex": "$V_{\\mathrm O}=2\\ (R\\le2)$，$\\dfrac{9R}{2R+5}\\ (2\\le R\\le5)$，$\\dfrac{6R}{R+5}\\ (R\\ge5)$（単位 V，$R$ は $\\Omega$ 単位の数値）．グラフは解答図．$R\\to\\infty$ で $6\\ \\mathrm{V}$ に近づく"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　ダイオードが 2 個あるので，導通（抵抗 0 の導線）か遮断（断線）かの組合せを\\textbf{仮定}して回路を解き，結果が仮定と矛盾しないか（導通なら順方向に電流が正，遮断なら順方向の電圧が正でない）を\\textbf{検証}する．理想ダイオードの回路ではこの条件を満たす状態がただ 1 つ定まる．電位を $V$ で表し，各点の電位をその記号で表す．\n\n\\textbf{各部分の関係}　D$_1$ の電流を $i_1$，D$_2$ の電流を $i_2$（いずれも O へ向かう向きを正）とすると，点 X，Y，O で\n\\[ \\frac{12-V_{\\mathrm X}}{10}=\\frac{V_{\\mathrm X}}{R}+i_1,\\qquad \\frac{6-V_{\\mathrm Y}}{10}=\\frac{V_{\\mathrm Y}}{10}+i_2,\\qquad i_1+i_2=\\frac{V_{\\mathrm O}}{10}. \\]\nダイオードをはずしたときの電位は $V_{\\mathrm X}^{(0)}=\\dfrac{12R}{R+10}$，$V_{\\mathrm Y}^{(0)}=3\\ \\mathrm{V}$ である．\n\n\\textbf{(1)} $R=1.0\\ \\Omega$ では $V_{\\mathrm X}^{(0)}=\\dfrac{12}{11}\\fallingdotseq1.1\\ \\mathrm{V}$，$V_{\\mathrm Y}^{(0)}=3\\ \\mathrm{V}$ で，どちらも O（はずした状態で 0）より高いが，両方が流れるとは限らない．\n\n\\textbf{仮定 A：両方導通}　$V_{\\mathrm X}=V_{\\mathrm Y}=V_{\\mathrm O}=V$ として 3 式を足すと $1.8=V\\left(0.4+\\dfrac{1}{R}\\right)$，$R=1$ で $V=\\dfrac{9}{7}\\ \\mathrm{V}$．このとき $i_1=\\dfrac{12-V}{10}-\\dfrac{V}{1}<0$ となり矛盾．\n\n\\textbf{仮定 B：D$_2$ のみ導通}　$i_1=0$，$V_{\\mathrm Y}=V_{\\mathrm O}$ で $\\dfrac{6-V}{10}=\\dfrac{V}{10}+\\dfrac{V}{10}$ より $V_{\\mathrm O}=2\\ \\mathrm{V}$，$i_2=0.2\\ \\mathrm{A}>0$．D$_1$ の両端は $V_{\\mathrm X}=\\dfrac{12}{11}\\ \\mathrm{V}<V_{\\mathrm O}$ で逆向きの電圧なので遮断と矛盾しない．\n\nよって \\textbf{D$_1$ には流れず，D$_2$ には流れる}．$V_{\\mathrm O}=\\boldsymbol{2.0\\ \\mathrm{V}}$．\n\n\\textbf{(2) 両方導通の条件}　仮定 A の式から一般に\n\\[ V=\\frac{1.8}{0.4+1/R}=\\frac{9R}{2R+5},\\qquad i_1=\\frac{12-V}{10}-\\frac{V}{R}=\\frac{3(R-2)}{2(2R+5)},\\qquad i_2=\\frac{6-2V}{10}=\\frac{3(5-R)}{5(2R+5)}. \\]\n$i_1>0$ かつ $i_2>0$ より $\\boldsymbol{2.0\\ \\Omega<R<5.0\\ \\Omega}$．\\\\\n（境界の意味：$R=2$ では D$_2$ だけのときの $V_{\\mathrm O}=2\\ \\mathrm{V}$ に $V_{\\mathrm X}^{(0)}$ が追いつき D$_1$ が流れ始める．$R=5$ では D$_1$ だけで O の電位が $3\\ \\mathrm{V}=V_{\\mathrm Y}^{(0)}$ まで上がり，D$_2$ の電流が 0 になる．）\n\n\\textbf{(3)} $R=4$ を (2) の式に代入すると $V_{\\mathrm O}=\\dfrac{36}{13}\\ \\mathrm{V}$，\n\\[ i_1=\\frac{3\\cdot2}{2\\cdot13}=\\boldsymbol{\\frac{3}{13}\\ \\mathrm{A}\\fallingdotseq0.23\\ \\mathrm{A}},\\qquad i_2=\\frac{3\\cdot1}{5\\cdot13}=\\boldsymbol{\\frac{3}{65}\\ \\mathrm{A}\\fallingdotseq0.046\\ \\mathrm{A}}. \\]\n\n\\textbf{(4)} \n・$R\\le2$：D$_2$ のみ導通で $V_{\\mathrm O}=2$．D$_1$ が遮断である条件 $V_{\\mathrm X}^{(0)}=\\dfrac{12R}{R+10}\\le2$ は $R\\le2$ と同じ．\\\\\n・$2\\le R\\le5$：両方導通で $V_{\\mathrm O}=\\dfrac{9R}{2R+5}$．\\\\\n・$R\\ge5$：D$_1$ のみ導通．$\\dfrac{12-V}{10}=\\dfrac{V}{R}+\\dfrac{V}{10}$ より $V_{\\mathrm O}=\\dfrac{6R}{R+5}$．D$_2$ が遮断である条件 $V_{\\mathrm O}\\ge3$ は $R\\ge5$ と同じ．\n\n各区間の式は境界 $R=2$（$V_{\\mathrm O}=2$），$R=5$（$V_{\\mathrm O}=3$）で連続につながり，$V_{\\mathrm O}$ は単調に増加する（解答図）．$R\\to\\infty$ では X と G の間が断線と同じになり，$12\\ \\mathrm{V}$ を $10\\ \\Omega$ と $10\\ \\Omega$ で分圧するので $V_{\\mathrm O}\\to\\boldsymbol{6\\ \\mathrm{V}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "理想ダイオードが複数あるときは，導通・遮断の組合せを仮定して解き，電流の符号と逆方向電圧で仮定を検証する．可変抵抗を変えると「片方だけ→両方→もう片方だけ」と導通状態が 2 回切り替わり，境界はそれぞれの側のダイオードの電流が 0 になる条件で決まる．"
+ },
+ "concepts": [
+  "series-parallel",
+  "coulomb-field"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ダイオード",
+  "キルヒホッフの法則",
+  "場合分け",
+  "電位",
+  "可変抵抗"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

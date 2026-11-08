@@ -1,0 +1,122 @@
+{
+ "id": "PHY-ESF-015",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "平行な棒に通した帯電小球のすれ違いと跳ね返り（相対運動のエネルギーと2通りの終状態）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水平面内に，距離 $d$ だけ離れた2本の平行でなめらかな細い棒が固定されている．棒1には質量 $m$，電荷 $q$ の小球 A，棒2には質量 $M$，電荷 $Q$ の小球 B が通してあり（$qQ>0$），それぞれ棒に沿ってだけ動ける．はじめ B は静止しており，A は十分遠方から速さ $v_0$ で B に近づいてくる．クーロンの法則の比例定数を $k$ とし，A と B の間のクーロン力と棒からの力以外は考えない．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A が B とすれ違って進むための $v_0$ の条件を求めよ．臨界の速さを $v_{\\mathrm c}$ とする．"
+     },
+     {
+      "id": "2",
+      "tex": "$v_0<v_{\\mathrm c}$ のとき，十分時間がたった後の A，B の速度を求めよ（A のはじめの進む向きを正とする）．また，A と B の距離の最小値 $r_{\\min}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$v_0>v_{\\mathrm c}$ のとき，十分時間がたった後の A，B の速度を求めよ．また，B の速さが最大になるのはどのような瞬間か．その最大値を $m,M,v_0,v_{\\mathrm c}$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$M=3m$ とする．B の速さの最大値が $\\dfrac{v_0}{8}$ であったとき，$v_0$ を $v_{\\mathrm c}$ で表せ．また，十分時間がたった後の B の速さが $\\dfrac{v_0}{2}$ であったとき，$v_0$ について何がいえるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：平行な棒に通した帯電小球のすれ違いと跳ね返り（相対運動のエネルギーと2通りの終状態）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_0>v_{\\mathrm c}=\\sqrt{\\dfrac{2kqQ(m+M)}{mMd}}$"
+   },
+   {
+    "id": "2",
+    "tex": "A：$\\dfrac{m-M}{m+M}v_0$，B：$\\dfrac{2m}{m+M}v_0$，$r_{\\min}=\\dfrac{2kqQ(m+M)}{mMv_0^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "A：$v_0$，B：$0$．A が B の真横を通る瞬間に最大で，$\\dfrac{m}{m+M}\\left(v_0-\\sqrt{v_0^2-v_{\\mathrm c}^2}\\right)$"
+   },
+   {
+    "id": "4",
+    "tex": "$v_0=\\dfrac{2}{\\sqrt3}v_{\\mathrm c}$．後者では $v_0<v_{\\mathrm c}$（跳ね返った）ことだけがわかり，$v_0$ の値は決まらない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{保存則}\n棒からの力は棒に垂直なので，棒の方向（$x$ 方向）の外力はなく，A と B の $x$ 方向の運動量の和が保存する．また，棒からの力は仕事をしないので，運動エネルギーとクーロン力の位置エネルギー $\\dfrac{kqQ}{r}$（$r$ は A，B 間の距離）の和が保存する．\n\n重心の速度は $V=\\dfrac{mv_0}{m+M}$ で一定．A の B に対する相対速度を $u$ とし，換算質量 $\\mu=\\dfrac{mM}{m+M}$ を用いると，運動エネルギーは $\\dfrac12(m+M)V^2+\\dfrac12\\mu u^2$ と分けられ，前の項は変わらない．位置エネルギーに変えられるのは相対運動のエネルギー $\\dfrac12\\mu u^2$ だけであり，はじめは $\\dfrac12\\mu v_0^2$ である．\n\n\\textbf{(1) すれ違う条件}\n$r\\ge d$ なので，位置エネルギーは A が B の真横に来たとき最大値 $\\dfrac{kqQ}{d}$ をとる．すれ違うには，そこでも $\\dfrac12\\mu u^2>0$ でなければならないので\n\\[ \\frac12\\mu v_0^2>\\frac{kqQ}{d}\\quad\\Longleftrightarrow\\quad v_0>v_{\\mathrm c}=\\boldsymbol{\\sqrt{\\frac{2kqQ(m+M)}{mMd}}}. \\]\n\n\\textbf{(2) 跳ね返る場合}\nA は真横に来る前に相対速度が $0$ になり，その後は離れていく．相対速度が $0$ の瞬間の距離が最小で，$\\dfrac12\\mu v_0^2=\\dfrac{kqQ}{r_{\\min}}$ より\n\\[ r_{\\min}=\\boldsymbol{\\frac{2kqQ(m+M)}{mMv_0^2}}. \\]\n十分離れると位置エネルギーは $0$ に戻るので，終状態の速度 $v_{\\mathrm A},v_{\\mathrm B}$ は\n\\[ mv_{\\mathrm A}+Mv_{\\mathrm B}=mv_0,\\qquad \\frac12mv_{\\mathrm A}^2+\\frac12Mv_{\\mathrm B}^2=\\frac12mv_0^2 \\]\nを満たす．この解は $(v_0,0)$ と弾性衝突の解の2つだけである．跳ね返った場合は相対速度の向きが逆転して $u=-v_0$ となるので，弾性衝突の解\n\\[ v_{\\mathrm A}=V+\\frac{M}{m+M}u=\\boldsymbol{\\frac{m-M}{m+M}v_0},\\qquad v_{\\mathrm B}=V-\\frac{m}{m+M}u=\\boldsymbol{\\frac{2m}{m+M}v_0} \\]\nになる．\n\n\\textbf{(3) すれ違う場合}\n相対速度は一度も $0$ にならず向きを保つので，十分離れたとき $u=+v_0$ に戻り，$v_{\\mathrm A}=\\boldsymbol{v_0}$，$v_{\\mathrm B}=\\boldsymbol{0}$．A は B を追い越して元の速度で進み，B は再び静止する．\n\n途中の B の速度は $v_{\\mathrm B}=V-\\dfrac{m}{m+M}u=\\dfrac{m}{m+M}(v_0-u)$ なので，$u$ が最小のとき最大．$u$ は位置エネルギーが最大のとき，すなわち \\textbf{A が B の真横を通る瞬間}に最小で，$\\dfrac12\\mu u^2=\\dfrac12\\mu v_0^2-\\dfrac{kqQ}{d}=\\dfrac12\\mu(v_0^2-v_{\\mathrm c}^2)$ より $u=\\sqrt{v_0^2-v_{\\mathrm c}^2}$．よって\n\\[ v_{\\mathrm B,\\max}=\\boldsymbol{\\frac{m}{m+M}\\left(v_0-\\sqrt{v_0^2-v_{\\mathrm c}^2}\\right)}. \\]\n\n\\textbf{(4) $M=3m$}\n跳ね返る場合の B の速さは単調に増えて最終的に $\\dfrac{2m}{4m}v_0=\\dfrac{v_0}{2}$ になるので，最大値が $\\dfrac{v_0}{8}$ となるのはすれ違う場合である．$\\dfrac14\\left(v_0-\\sqrt{v_0^2-v_{\\mathrm c}^2}\\right)=\\dfrac{v_0}{8}$ より $\\sqrt{v_0^2-v_{\\mathrm c}^2}=\\dfrac{v_0}{2}$，\n\\[ v_0=\\boldsymbol{\\frac{2}{\\sqrt3}v_{\\mathrm c}}\\quad(>v_{\\mathrm c}\\text{ で矛盾しない}). \\]\n後半：すれ違うと B は最終的に静止し，跳ね返ると $v_0$ によらず B の速さは $\\dfrac{v_0}{2}$ になる．よって最終的な速さが $\\dfrac{v_0}{2}$ なら\\textbf{跳ね返った，すなわち $v_0<v_{\\mathrm c}$} であることだけがわかり，$v_0$ の値そのものは決まらない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "棒からの力は運動方向に垂直なので，棒方向の運動量と力学的エネルギーが保存し，重心の運動エネルギーは変えられない．位置エネルギーに使えるのは相対運動のエネルギー $\\frac12\\mu v_0^2$ だけで，これが最接近時のクーロンエネルギー $kqQ/d$ を超えるかどうかで「すれ違い（速度は元に戻る）」と「跳ね返り（弾性衝突と同じ結果）」の2通りの終状態に分かれる．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "kinematics-components",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "クーロン力",
+  "運動量保存",
+  "重心系",
+  "相対運動",
+  "弾性衝突"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

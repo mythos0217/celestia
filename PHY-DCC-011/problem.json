@@ -1,0 +1,141 @@
+{
+ "id": "PHY-DCC-011",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-03",
+ "topic": "負性抵抗をもつ素子と抵抗の直列回路（負荷直線の交点と電流の跳び・ヒステリシス）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図1のように，起電力 $E$ を変えられる直流電源（内部抵抗は無視できる），抵抗値 $R$ の抵抗，素子 X を直列につなぐ．素子 X の電圧 $V$ と電流 $I$ の関係は図2の折れ線で，$V$ を〔V〕，$I$ を〔mA〕の単位で表すと\n\\[ I=\\begin{cases}10V & (0\\leqq V\\leqq1)\\\\ 14-4V & (1\\leqq V\\leqq3)\\\\ 4V-10 & (V\\geqq3)\\end{cases} \\]\nである．回路の条件を満たす素子の状態（折れ線上の点）のうち，右下がりの部分（$1<V<3$）にあるものは不安定で実現しない．また，$E$ や $R$ をゆっくり変えるとき，素子の状態は，そのとき属している右上がりの部分（$0\\leqq V\\leqq1$ の部分，または $V\\geqq3$ の部分）の上に回路の条件を満たす点がある限り，その部分の上を連続的に移動する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$R=500\\,\\Omega$，$E=5.0\\,\\mathrm{V}$ のとき，回路の条件を満たす素子の状態 $(V,\\,I)$ をすべて求め，そのうち実現しうるものを答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$R=500\\,\\Omega$ のまま，$E$ を $0$ から $8.0\\,\\mathrm V$ までゆっくり上げる．電流が不連続に変化するときの $E$ の値と，その直前・直後の電流を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "続いて $E$ を $8.0\\,\\mathrm V$ から $0$ までゆっくり下げる．電流が不連続に変化するときの $E$ の値と，その直前・直後の電流を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$R=500\\,\\Omega$，$E=5.0\\,\\mathrm{V}$ で，素子は電流の小さい方の状態にある．$E$ は変えずに，$R$ を一時的に変えてから $500\\,\\Omega$ に戻すことで，電流の大きい方の状態に移したい．$R$ をどのように変えればよいか．"
+     },
+     {
+      "id": "5",
+      "tex": "$R$ がある値 $R_{\\mathrm c}$ より小さければ，$E$ をどのように変えても電流は不連続に変化しない．$R_{\\mathrm c}$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：負性抵抗をもつ素子と抵抗の直列回路（負荷直線の交点と電流の跳び・ヒステリシス）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：負性抵抗をもつ素子と抵抗の直列回路（負荷直線の交点と電流の跳び・ヒステリシス）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\left(\\frac56\\,\\mathrm V,\\ \\frac{25}{3}\\,\\mathrm{mA}\\right)$，$(2\\,\\mathrm V,\\ 6\\,\\mathrm{mA})$，$\\left(\\frac{10}{3}\\,\\mathrm V,\\ \\frac{10}{3}\\,\\mathrm{mA}\\right)$．実現しうるのは第1と第3の状態（電流 $8.3\\,\\mathrm{mA}$ と $3.3\\,\\mathrm{mA}$）"
+   },
+   {
+    "id": "2",
+    "tex": "$E=6.0\\,\\mathrm V$ で $10\\,\\mathrm{mA}$ から $\\frac{14}{3}\\fallingdotseq4.7\\,\\mathrm{mA}$ に減少"
+   },
+   {
+    "id": "3",
+    "tex": "$E=4.0\\,\\mathrm V$ で $2.0\\,\\mathrm{mA}$ から $\\frac{20}{3}\\fallingdotseq6.7\\,\\mathrm{mA}$ に増加"
+   },
+   {
+    "id": "4",
+    "tex": "$R$ を一時的に $1.0\\,\\mathrm{k\\Omega}$ より大きくする（その後 $500\\,\\Omega$ に戻すと電流 $\\frac{25}{3}\\,\\mathrm{mA}$ の状態になる）"
+   },
+   {
+    "id": "5",
+    "tex": "$R_{\\mathrm c}=250\\,\\Omega$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　回路の式は $E=V+RI$，すなわち素子の状態は $I$–$V$ 図上で折れ線と負荷直線 $I=\\frac{E-V}{R}$ の交点である．$E$ を変えると負荷直線は傾き $-\\frac1R$ のまま平行移動し，$R$ を変えると点 $(E,\\,0)$ を中心に回転する．以下 $R$ は〔k$\\Omega$〕，$I$ は〔mA〕で計算する（$\\mathrm{V/k\\Omega=mA}$）．交点の存在は，折れ線上で\n\\[ E(V)=V+R\\,I(V) \\]\nを考えると見通しがよい．$R=0.5$ のとき $E(V)$ は $0\\leqq V\\leqq1$ で $E=6V$（増加），$1\\leqq V\\leqq3$ で $E=7-V$（減少），$V\\geqq3$ で $E=3V-5$（増加）であり，$V=1$ で極大 $6$，$V=3$ で極小 $4$ をとる．\n\n\\textbf{(1)}　$E=5$，$R=0.5$ の負荷直線 $I=2(5-V)$ との交点：\n\\[ 10V=2(5-V)\\Rightarrow V=\\tfrac56,\\ I=\\tfrac{25}{3};\\quad 14-4V=2(5-V)\\Rightarrow V=2,\\ I=6;\\quad 4V-10=2(5-V)\\Rightarrow V=\\tfrac{10}{3},\\ I=\\tfrac{10}{3} \\]\n第2の点は右下がりの部分にあるので実現しない．\\textbf{実現しうるのは $\\left(\\frac56\\,\\mathrm V,\\frac{25}{3}\\,\\mathrm{mA}\\right)$ と $\\left(\\frac{10}{3}\\,\\mathrm V,\\frac{10}{3}\\,\\mathrm{mA}\\right)$} で，どちらになるかは履歴で決まる．\n\n\\textbf{(2)}　はじめは $0\\leqq V\\leqq1$ の部分にあり，$E=6V$ だから $E\\leqq6$ の間はこの部分に交点がある．負荷直線が折れ線の頂点 P$(1\\,\\mathrm V,10\\,\\mathrm{mA})$ を通る $E=6.0\\,\\mathrm V$ を超えると，この部分の交点が消えるので，状態は唯一残る $V\\geqq3$ の部分の交点に跳ぶ．$E=6$ のときのその交点は\n\\[ 4V-10=2(6-V)\\quad\\therefore\\ V=\\tfrac{11}{3},\\ I=\\tfrac{14}{3} \\]\nよって \\textbf{$E=6.0\\,\\mathrm V$ で，電流は $10\\,\\mathrm{mA}$ から $\\frac{14}{3}\\fallingdotseq4.7\\,\\mathrm{mA}$ に減少する}．電源電圧を上げたのに電流が減ることに注意．\n\n\\textbf{(3)}　$V\\geqq3$ の部分では $E=3V-5\\geqq4$ なので，$E$ が $4.0\\,\\mathrm V$ を下回ると（負荷直線が谷の点 Q$(3\\,\\mathrm V,2\\,\\mathrm{mA})$ を通過すると）この部分の交点が消え，$0\\leqq V\\leqq1$ の部分に跳ぶ．$E=4$ のとき $10V=2(4-V)$ より $V=\\frac23$，$I=\\frac{20}{3}$．\\\\\nよって \\textbf{$E=4.0\\,\\mathrm V$ で，電流は $2.0\\,\\mathrm{mA}$ から $\\frac{20}{3}\\fallingdotseq6.7\\,\\mathrm{mA}$ に増加する}．$4<E<6$ では上げるときと下げるときで状態が異なる（ヒステリシス）．\n\n\\textbf{(4)}　$E=5$ のまま $R$ を変える．$V\\geqq3$ の部分の交点が存在する条件は，谷の点での $E(3)=3+2R$ が $5$ 以下，すなわち $R\\leqq1$．したがって \\textbf{$R$ を $1.0\\,\\mathrm{k\\Omega}$ より大きくする}と，この部分の交点が消えて状態は $0\\leqq V\\leqq1$ の部分に跳ぶ．\\\\\n$0\\leqq V\\leqq1$ の部分の交点が存在する条件は $E(1)=1+10R\\geqq5$，すなわち $R\\geqq0.4$ で，その後 $R$ を $0.5$ に戻す間も満たされるから，状態はこの部分にとどまり，(1) の電流 $\\frac{25}{3}\\,\\mathrm{mA}$ の状態になる．\\textbf{電流を増やすのに，いったん抵抗を大きくする}のがこの問題のポイントである．\n\n\\textbf{(5)}　電流の跳びは，$E(V)$ が極大・極小をもち，交点がある部分で消えることで生じる．$E(V)$ が $V$ について単調増加なら，各 $E$ に対して状態がただ1つに決まり，$E$ とともに連続的に動く．右上がりの部分では $E(V)$ は明らかに増加し，右下がりの部分では\n\\[ \\frac{\\Delta E}{\\Delta V}=1+R\\cdot(-4)=1-4R \\]\nこれが正，すなわち $R<0.25\\,\\mathrm{k\\Omega}$ なら単調増加で跳びは起こらない．$R=0.25$ のときは右下がりの部分全体で $E=3.5$ となり，$E$ を上げると $E=3.5\\,\\mathrm V$ で電流が $10\\,\\mathrm{mA}$ から $2\\,\\mathrm{mA}$ に跳ぶ．よって $\\boldsymbol{R_{\\mathrm c}=250\\,\\Omega}$．負荷直線の傾きの大きさ $\\frac1R$ が右下がりの部分の傾きの大きさ $4\\,\\mathrm{mA/V}$ より大きいことが条件である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "非線形素子と抵抗の直列回路の状態は，素子の特性曲線と負荷直線の交点（$E=V+RI(V)$）で決まる．負性抵抗の区間があり負荷直線の傾きがそれより緩いと $E(V)$ が極大・極小をもち，交点が消える瞬間に電流が跳んでヒステリシスが生じる．跳びが起こるかどうか・どちらへ跳ぶかは，負荷直線の傾き（$R$）と折れ線の頂点・谷の位置の比較で決まる．"
+ },
+ "concepts": [
+  "series-parallel"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "非線形抵抗",
+  "負荷直線",
+  "負性抵抗",
+  "ヒステリシス",
+  "動作点"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

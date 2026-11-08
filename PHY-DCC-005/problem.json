@@ -1,0 +1,123 @@
+{
+ "id": "PHY-DCC-005",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-03",
+ "topic": "電位差計の測定値の食い違いから端の接触抵抗を見抜き，起電力と内部抵抗を求める",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の装置で，AB は長さ $100\\ \\mathrm{cm}$，抵抗 $6.00\\ \\Omega$ の一様な抵抗線であり，電池 $E_0$ と可変抵抗によって一定の電流が流れている．抵抗線上の点 D（A の目盛り 0 から距離 $l$）に接点を当て，検流計 G の振れが 0 になる $l$（つり合いの位置）を読む．電池 X（起電力 $E_x$，内部抵抗 $r$）の位置には，起電力 $E_{\\mathrm s}=1.02\\ \\mathrm V$ の標準電池をつなぎかえることもできる．K はスイッチ，$R$ は抵抗である．測定の間，可変抵抗は動かさず，抵抗線を流れる電流は一定に保たれていた．測定結果は次のとおりである．\n\n標準電池：$l_{\\mathrm s}=30.0\\ \\mathrm{cm}$　／　電池 X（K を開く）：$l_1=46.0\\ \\mathrm{cm}$　／　電池 X（K を閉じ，$R=4.00\\ \\Omega$）：$l_2=36.0\\ \\mathrm{cm}$　／　電池 X（K を閉じ，$R=1.50\\ \\Omega$ に取り替え）：$l_3=26.0\\ \\mathrm{cm}$\n\n数値の答えは有効数字3桁で答えよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "つり合いの位置 $l_1$ が，検流計の内部抵抗や電池 X の内部抵抗 $r$ に影響されない理由を簡潔に述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "A–D 間の電位差が $l$ に比例すると仮定して，$E_x$ を求めよ．また，この仮定のもとで $l_1,l_2$ から求めた $r$ と，$l_1,l_3$ から求めた $r$ をそれぞれ計算せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の2つの $r$ は一致しない．実は端子 A と抵抗線の端（目盛り 0）の間に未知の接触抵抗 $\\delta$ があり，A–D 間の電位差は $k(l+u)$（$k$，$u$ は正の定数）と表される．$l_1$，$l_2$，$l_3$ と2つの $R$ の値から $u$ と $r$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$E_x$，抵抗線を流れる電流，接触抵抗 $\\delta$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：電位差計の測定値の食い違いから端の接触抵抗を見抜き，起電力と内部抵抗を求める",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "つり合いでは検流計と電池 X に電流が流れず，内部抵抗による電圧降下が 0 だから"
+   },
+   {
+    "id": "2",
+    "tex": "$E_x=1.56\\ \\mathrm V$，$r=1.11\\ \\Omega$（$l_1,l_2$ から），$r=1.15\\ \\Omega$（$l_1,l_3$ から）"
+   },
+   {
+    "id": "3",
+    "tex": "$u=4.00\\ \\mathrm{cm}$，$r=1.00\\ \\Omega$"
+   },
+   {
+    "id": "4",
+    "tex": "$E_x=1.50\\ \\mathrm V$，電流 $0.500\\ \\mathrm A$，$\\delta=0.240\\ \\Omega$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　電位差計は「電流を流さずに電位差を比べる」零位法である．つり合いの位置が示すのは，そのとき電池 X の端子間にかかっている電位差（端子電圧）である．$R$ をつないだときの端子電圧から内部抵抗が分かるが，抵抗線の目盛りと電位差の対応にずれ（接触抵抗）があると，2通りの $R$ で求めた $r$ が食い違う．その食い違いを逆に利用して，ずれと内部抵抗を同時に決める．\n\n\\textbf{(1)}　つり合いのとき検流計に電流が流れないので，検流計と電池 X（K は開）を通る枝には電流が流れない．内部抵抗による電圧降下 $(\\text{抵抗})\\times0=0$ なので，A–D 間の電位差は電池 X の起電力 $E_x$ にそのまま等しく，内部抵抗の値は $l_1$ に影響しない．また，この枝に電流が流れないので，抵抗線の電流もこの枝をつながないときと同じである．\n\n\\textbf{(2)}　A–D 間の電位差を $kl$ とすると，$E_{\\mathrm s}=kl_{\\mathrm s}$，$E_x=kl_1$ より\n\\[ E_x=E_{\\mathrm s}\\frac{l_1}{l_{\\mathrm s}}=1.02\\times\\frac{46.0}{30.0}=\\boldsymbol{1.56\\ \\mathrm V} \\]\nK を閉じると電池 X は $R$ に電流を流す．検流計に電流が流れないつり合いのとき，電池 X の電流はすべて $R$ を流れるので，端子電圧を $V$ とすると $V=\\frac{R}{R+r}E_x$，すなわち $\\frac{E_x}{V}=1+\\frac{r}{R}$．$\\frac{E_x}{V}=\\frac{l_1}{l_2}$ とすると\n\\[ r=R\\frac{l_1-l_2}{l_2}=4.00\\times\\frac{10.0}{36.0}=\\boldsymbol{1.11\\ \\Omega},\\qquad r=1.50\\times\\frac{20.0}{26.0}=\\boldsymbol{1.15\\ \\Omega} \\]\n同じ電池の内部抵抗なのに一致しないので，仮定のどこかが誤っている．\n\n\\textbf{(3)}　抵抗線を流れる電流を $I$，単位長さあたりの抵抗を $\\lambda$ とすると，A–D 間の電位差は $I(\\delta+\\lambda l)=k(l+u)$（$k=I\\lambda$，$u=\\frac{\\delta}{\\lambda}$）．電位差は $l$ ではなく $l+u$ に比例するので，(2) と同様にして\n\\[ 1+\\frac{r}{R}=\\frac{l_1+u}{l_2+u}\\quad\\therefore\\ r=\\frac{R(l_1-l_2)}{l_2+u} \\]\n2つの $R$ について同じ $r$ を与えるから（長さは cm 単位）\n\\[ \\frac{4.00\\times10.0}{36.0+u}=\\frac{1.50\\times20.0}{26.0+u}\\quad\\Longrightarrow\\quad 40.0(26.0+u)=30.0(36.0+u) \\]\n\\[ \\therefore\\ u=\\boldsymbol{4.00\\ \\mathrm{cm}},\\qquad r=\\frac{40.0}{40.0}=\\boldsymbol{1.00\\ \\Omega} \\]\n（$l_1,l_3$ からも $\\frac{30.0}{30.0}=1.00\\ \\Omega$ となり一致する．）\n\n\\textbf{(4)}　標準電池の測定から $k=\\frac{E_{\\mathrm s}}{l_{\\mathrm s}+u}=\\frac{1.02}{0.340\\ \\mathrm m}=3.00\\ \\mathrm{V/m}$．よって\n\\[ E_x=k(l_1+u)=3.00\\times0.500=\\boldsymbol{1.50\\ \\mathrm V} \\]\n$\\lambda=6.00\\ \\Omega/\\mathrm m$ だから，抵抗線を流れる電流は $I=\\frac{k}{\\lambda}=\\boldsymbol{0.500\\ \\mathrm A}$，接触抵抗は $\\delta=\\lambda u=6.00\\times0.0400=\\boldsymbol{0.240\\ \\Omega}$．\n\n（確認：$V=\\frac{4.00}{5.00}\\times1.50=1.20\\ \\mathrm V=3.00\\times(0.360+0.040)$，$V=\\frac{1.50}{2.50}\\times1.50=0.900\\ \\mathrm V=3.00\\times(0.260+0.040)$ で測定結果と一致する．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "零位法（電位差計）では，つり合いのとき測定する枝に電流が流れないので内部抵抗の影響を受けずに端子電圧が測れ，負荷をつないだときの端子電圧の比から内部抵抗が求まる．目盛りと電位差の対応にずれ（端の接触抵抗）があると，負荷を変えた2回の測定から求めた内部抵抗が食い違うので，「同じ電池の内部抵抗は1つ」という条件を逆に使ってずれを決定できる．"
+ },
+ "concepts": [
+  "series-parallel",
+  "equilibrium",
+  "coulomb-field"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電位差計",
+  "零位法",
+  "起電力",
+  "内部抵抗",
+  "接触抵抗",
+  "抵抗率"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

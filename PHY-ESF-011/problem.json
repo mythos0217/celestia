@@ -1,0 +1,143 @@
+{
+ "id": "PHY-ESF-011",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "偏向電極に高周波電圧を加えたときの電子の通過時間効果と比電荷の測定",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，静止していた電子（質量 $m$，電気量 $-e$）を電圧 $V_{\\rm a}$ で加速し，$z$ 軸に沿って，長さ $l$，間隔 $d$ の平行平板電極 X$_1$，X$_2$ の間に入射させる．電極の右端から距離 $D$ のところに $z$ 軸に垂直な蛍光面 S がある．X$_1$ の側を $x$ 軸の正の向きとし，X$_2$ に対する X$_1$ の電位を $V(t)=V_0\\sin\\omega t\\ (V_0>0)$ とする．\n電極間の電場は一様で，電圧の変化に遅れなく従い，電極の外には電場はないとする．重力，電極の端での電場の乱れ，電磁波の放射は無視する．$V_0$ は十分小さく電子は電極に当たらず，電子の $z$ 方向の速さ $v_0$ は変わらないとする．電子は時刻によらず連続的に入射するので，蛍光面には $x$ 方向に伸びた輝線が現れる．$\\tau=\\frac{l}{v_0}$ とおく．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$v_0$ を $e,\\ m,\\ V_{\\rm a}$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "時刻 $t_0$ に電極に入った電子が電極を出るときの速度の $x$ 成分 $u$ を求め，$u=U\\sin\\omega\\!\\left(t_0+\\frac{\\tau}{2}\\right)$ の形に表したときの $U$ を $e,\\ m,\\ d,\\ V_0,\\ \\omega,\\ \\tau$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$D\\gg l$ として，電極内での $x$ 方向の変位を無視し，電子が蛍光面に当たる位置の $x$ 座標を $\\frac{uD}{v_0}$ で近似する．輝線の長さ $L$ を求め，$\\omega\\to0$ の極限の長さ $L_0$ を用いて $L=L_0\\times g(\\omega\\tau)$ の形に表せ．$L_0$ は $V_0,\\ V_{\\rm a},\\ l,\\ d,\\ D$ で，関数 $g$ は具体的に答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\omega$ を $0$ から大きくしていくと，(3) の近似では輝線の長さが初めて $0$ になる．このときの周波数 $f_1=\\frac{\\omega_1}{2\\pi}$ を $l,\\ v_0$ で表せ．また，$l=2.0\\times10^{-2}$ m，$V_{\\rm a}=1.0\\times10^3$ V のとき，$f_1=9.4\\times10^8$ Hz であった．電子の比電荷 $\\frac{e}{m}$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "実際には $\\omega=\\omega_1$ でも輝線は完全には消えない．電極内での $x$ 方向の変位も考えて，$\\omega=\\omega_1$ のときの輝線の長さを $V_0,\\ V_{\\rm a},\\ l,\\ d$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：偏向電極に高周波電圧を加えたときの電子の通過時間効果と比電荷の測定",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：偏向電極に高周波電圧を加えたときの電子の通過時間効果と比電荷の測定",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_0=\\sqrt{\\frac{2eV_{\\rm a}}{m}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$U=\\frac{2eV_0}{md\\omega}\\sin\\frac{\\omega\\tau}{2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$L=\\frac{4eV_0D}{md\\omega v_0}\\left|\\sin\\frac{\\omega\\tau}{2}\\right|$，$L_0=\\frac{V_0lD}{dV_{\\rm a}}$，$g(\\omega\\tau)=\\left|\\frac{\\sin(\\omega\\tau/2)}{\\omega\\tau/2}\\right|$"
+   },
+   {
+    "id": "4",
+    "tex": "$f_1=\\frac{v_0}{l}$，$\\frac{e}{m}=1.8\\times10^{11}$ C/kg"
+   },
+   {
+    "id": "5",
+    "tex": "$\\frac{V_0l^2}{2\\pi dV_{\\rm a}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　電極を通過する時間 $\\tau$ の間に電圧が変わるので，出口での横向きの速度は「通過中の電場の時間積分」で決まる．電圧の1周期がちょうど通過時間に等しいと，積分が $0$ になって偏向が消える．この「消える周波数」から電子の速さ，さらに比電荷が求まる．\n\n\\textbf{(1)}　エネルギー保存 $\\frac12mv_0^2=eV_{\\rm a}$ より $v_0=\\boldsymbol{\\sqrt{\\frac{2eV_{\\rm a}}{m}}}$．\n\n\\textbf{(2)}　$V>0$ のとき電場は X$_1$ から X$_2$ へ（$-x$ 向き）なので，電子は $+x$ 向きに大きさ $\\frac{eV}{d}$ の力を受ける．$x$ 方向の運動方程式 $m\\frac{dv_x}{dt}=\\frac{eV_0}{d}\\sin\\omega t$ を $t_0$ から $t_0+\\tau$ まで積分して\n\\[ u=\\frac{eV_0}{md\\omega}\\{\\cos\\omega t_0-\\cos\\omega(t_0+\\tau)\\}=\\frac{2eV_0}{md\\omega}\\sin\\frac{\\omega\\tau}{2}\\,\\sin\\omega\\Bigl(t_0+\\frac{\\tau}{2}\\Bigr) \\]\n（和積の公式）．よって $U=\\boldsymbol{\\frac{2eV_0}{md\\omega}\\sin\\frac{\\omega\\tau}{2}}$．出口の速度は，電子が電極の中央にいた時刻 $t_0+\\frac{\\tau}{2}$ の電圧の位相で決まる．\n\n\\textbf{(3)}　$t_0$ はあらゆる値をとるので，$u$ は $-|U|$ から $|U|$ までのすべての値をとる．輝線の長さは\n\\[ L=\\frac{2|U|D}{v_0}=\\boldsymbol{\\frac{4eV_0D}{md\\omega v_0}\\left|\\sin\\frac{\\omega\\tau}{2}\\right|} \\]\n$\\omega\\to0$ では $\\sin\\frac{\\omega\\tau}{2}\\fallingdotseq\\frac{\\omega\\tau}{2}$ なので $L_0=\\frac{2eV_0\\tau D}{mdv_0}=\\frac{2eV_0lD}{mdv_0^2}$．(1) の $v_0^2=\\frac{2eV_{\\rm a}}{m}$ を代入して\n\\[ L_0=\\boldsymbol{\\frac{V_0lD}{dV_{\\rm a}}},\\qquad L=L_0\\left|\\frac{\\sin(\\omega\\tau/2)}{\\omega\\tau/2}\\right| \\]\nすなわち $g(\\omega\\tau)=\\boldsymbol{\\left|\\frac{\\sin(\\omega\\tau/2)}{\\omega\\tau/2}\\right|}$ である．直流（$L_0$）では比電荷が消え，偏向は電圧の比だけで決まることにも注意する．\n\n\\textbf{(4)}　$g=0$ となる最小の $\\omega$ は $\\frac{\\omega_1\\tau}{2}=\\pi$，すなわち $\\tau=\\frac{2\\pi}{\\omega_1}$（通過時間が電圧の1周期に等しい）．よって\n\\[ f_1=\\frac{1}{\\tau}=\\boldsymbol{\\frac{v_0}{l}} \\]\n$v_0=f_1l$ と (1) から\n\\[ \\frac{e}{m}=\\frac{v_0^2}{2V_{\\rm a}}=\\frac{(f_1l)^2}{2V_{\\rm a}}=\\frac{(9.4\\times10^8\\times2.0\\times10^{-2})^2}{2\\times1.0\\times10^3}\\fallingdotseq\\boldsymbol{1.8\\times10^{11}}\\ \\text{C/kg} \\]\n\n\\textbf{(5)}　$\\omega=\\omega_1$ では $u=0$ なので，電子は $z$ 軸に平行に電極を出て，出口での $x$ 座標のまま蛍光面に当たる．電極内の速度は $v_x(t)=\\frac{eV_0}{md\\omega_1}(\\cos\\omega_1t_0-\\cos\\omega_1t)$ なので，出口での変位は\n\\[ x_{\\rm out}=\\int_{t_0}^{t_0+\\tau}v_x\\,dt=\\frac{eV_0}{md\\omega_1}\\Bigl[\\tau\\cos\\omega_1t_0-\\frac{\\sin\\omega_1(t_0+\\tau)-\\sin\\omega_1t_0}{\\omega_1}\\Bigr]=\\frac{eV_0\\tau}{md\\omega_1}\\cos\\omega_1t_0 \\]\n（$\\omega_1\\tau=2\\pi$ より第2項は $0$）．これが $t_0$ によって $\\pm\\frac{eV_0\\tau}{md\\omega_1}$ の範囲で変わるので，輝線の長さは\n\\[ \\frac{2eV_0\\tau}{md\\omega_1}=\\frac{eV_0\\tau^2}{\\pi md}=\\frac{eV_0l^2}{\\pi mdv_0^2}=\\boldsymbol{\\frac{V_0l^2}{2\\pi dV_{\\rm a}}} \\]\nこれは $D$ によらず，直流のときの正確な長さ $\\frac{V_0l(l+2D)}{2dV_{\\rm a}}$ と比べて $\\frac{l}{\\pi(l+2D)}$ 倍と小さい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "偏向電極を通過する間に電圧が変化すると，出口での横向きの速度は通過中の電場の時間積分で決まり，正弦波では中央を通る時刻の位相と因子 $\\frac{\\sin(\\omega\\tau/2)}{\\omega\\tau/2}$ で表される．通過時間が1周期に等しいと偏向角がすべて0になり，その周波数から電子の速さと比電荷が求まる．ただし電極内での変位は残り，輝線は $D$ によらない小さな長さで残る．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "string-resonance",
+  "wave-basics"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "荷電粒子の運動",
+  "一様な電場",
+  "通過時間効果",
+  "比電荷",
+  "ブラウン管"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

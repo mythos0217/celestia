@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 240">
+<defs><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker></defs>
+<line x1="30.0" y1="150.0" x2="500.0" y2="150.0" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<text x="503.0" y="155.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">x</text>
+<circle cx="150.0" cy="150.0" r="10" fill="white" stroke="#222" stroke-width="1.6"/>
+<text x="150.0" y="155.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">+</text>
+<text x="136.0" y="180.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">A</text>
+<text x="110.0" y="134.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">4Q</text>
+<circle cx="300.0" cy="150.0" r="10" fill="white" stroke="#222" stroke-width="1.6"/>
+<text x="300.0" y="155.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">−</text>
+<text x="296.0" y="180.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">B</text>
+<text x="312.0" y="134.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">−Q</text>
+<line x1="150.0" y1="190.0" x2="300.0" y2="190.0" stroke="#222" stroke-width="1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<text x="225.0" y="206.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">l</text>
+<line x1="150.0" y1="150.0" x2="207.9" y2="81.1" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<path d="M 186.0,150.0 A 36 36 0 0 0 173.1,122.4" fill="none" stroke="#222" stroke-width="1"/>
+<text x="190.0" y="136.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">α</text>
+<text x="210.0" y="66.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#1f5fbf" text-anchor="start">電気力線の出る向き</text>
+</svg>

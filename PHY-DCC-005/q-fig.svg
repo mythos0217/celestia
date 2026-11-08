@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360"><defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<line x1="90" y1="140" x2="510" y2="140" stroke="#222" stroke-width="3"/>
+<circle cx="90" cy="140" r="4" fill="#222"/>
+<circle cx="510" cy="140" r="4" fill="#222"/>
+<text x="76" y="145" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle">A</text>
+<text x="524" y="145" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle">B</text>
+<line x1="90.0" y1="144" x2="90.0" y2="150" stroke="#888" stroke-width="1"/>
+<line x1="132.0" y1="144" x2="132.0" y2="147" stroke="#888" stroke-width="1"/>
+<line x1="174.0" y1="144" x2="174.0" y2="147" stroke="#888" stroke-width="1"/>
+<line x1="216.0" y1="144" x2="216.0" y2="147" stroke="#888" stroke-width="1"/>
+<line x1="258.0" y1="144" x2="258.0" y2="147" stroke="#888" stroke-width="1"/>
+<line x1="300.0" y1="144" x2="300.0" y2="150" stroke="#888" stroke-width="1"/>
+<line x1="342.0" y1="144" x2="342.0" y2="147" stroke="#888" stroke-width="1"/>
+<line x1="384.0" y1="144" x2="384.0" y2="147" stroke="#888" stroke-width="1"/>
+<line x1="426.0" y1="144" x2="426.0" y2="147" stroke="#888" stroke-width="1"/>
+<line x1="468.0" y1="144" x2="468.0" y2="147" stroke="#888" stroke-width="1"/>
+<line x1="510.0" y1="144" x2="510.0" y2="150" stroke="#888" stroke-width="1"/>
+<text x="102" y="164" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">0</text>
+<text x="510" y="164" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">100 cm</text>
+<line x1="90" y1="140" x2="90" y2="50" stroke="#222" stroke-width="1.6"/>
+<line x1="90" y1="50" x2="220" y2="50" stroke="#222" stroke-width="1.6"/>
+<line x1="220" y1="50" x2="236.0" y2="50" stroke="#222" stroke-width="1.6"/>
+<line x1="244.0" y1="50" x2="260" y2="50" stroke="#222" stroke-width="1.6"/>
+<line x1="236.0" y1="36.0" x2="236.0" y2="64.0" stroke="#222" stroke-width="1.8"/>
+<line x1="244.0" y1="43.0" x2="244.0" y2="57.0" stroke="#222" stroke-width="3"/>
+<text x="240" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Times New Roman, serif" font-style="italic">E</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif" font-style="normal">0</tspan></text>
+<line x1="260" y1="50" x2="330" y2="50" stroke="#222" stroke-width="1.6"/>
+<line x1="330" y1="50" x2="355.0" y2="50" stroke="#222" stroke-width="1.6"/>
+<line x1="405.0" y1="50" x2="430" y2="50" stroke="#222" stroke-width="1.6"/>
+<rect x="355.0" y="43.0" width="50" height="14" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="358" y1="64" x2="402" y2="32" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+<text x="380" y="85" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">可変抵抗</text>
+<line x1="430" y1="50" x2="510" y2="50" stroke="#222" stroke-width="1.6"/>
+<line x1="510" y1="50" x2="510" y2="140" stroke="#222" stroke-width="1.6"/>
+<line x1="90" y1="140" x2="90" y2="300" stroke="#222" stroke-width="1.6"/>
+<line x1="90" y1="300" x2="150" y2="300" stroke="#222" stroke-width="1.6"/>
+<line x1="150" y1="300" x2="166.0" y2="300" stroke="#222" stroke-width="1.6"/>
+<line x1="174.0" y1="300" x2="190" y2="300" stroke="#222" stroke-width="1.6"/>
+<line x1="166.0" y1="286.0" x2="166.0" y2="314.0" stroke="#222" stroke-width="1.8"/>
+<line x1="174.0" y1="293.0" x2="174.0" y2="307.0" stroke="#222" stroke-width="3"/>
+<line x1="190" y1="300" x2="210.0" y2="300" stroke="#222" stroke-width="1.6"/>
+<line x1="250.0" y1="300" x2="270" y2="300" stroke="#222" stroke-width="1.6"/>
+<rect x="210.0" y="293.0" width="40" height="14" fill="none" stroke="#222" stroke-width="1.6"/>
+<rect x="140" y="274" width="140" height="44" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="170" y="338" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Times New Roman, serif" font-style="italic">E</tspan><tspan baseline-shift="sub" font-size="10" font-family="Times New Roman, serif" font-style="italic">x</tspan></text>
+<text x="230" y="288" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Times New Roman, serif" font-style="italic">r</tspan></text>
+<text x="285" y="340" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">電池 X</text>
+<line x1="270" y1="300" x2="320" y2="300" stroke="#222" stroke-width="1.6"/>
+<circle cx="130" cy="300" r="3" fill="#222"/>
+<circle cx="300" cy="300" r="3" fill="#222"/>
+<line x1="130" y1="300" x2="130" y2="230" stroke="#222" stroke-width="1.6"/>
+<line x1="130" y1="230" x2="170" y2="230" stroke="#222" stroke-width="1.6"/>
+<line x1="170" y1="230" x2="180.0" y2="230" stroke="#222" stroke-width="1.6"/>
+<line x1="220.0" y1="230" x2="230" y2="230" stroke="#222" stroke-width="1.6"/>
+<rect x="180.0" y="223.0" width="40" height="14" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="200" y="216" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Times New Roman, serif" font-style="italic">R</tspan></text>
+<line x1="230" y1="230" x2="250" y2="230" stroke="#222" stroke-width="1.6"/>
+<circle cx="250" cy="230" r="2.5" fill="#222"/>
+<circle cx="290" cy="230" r="2.5" fill="#222"/>
+<line x1="250" y1="230" x2="287" y2="216" stroke="#222" stroke-width="1.6"/>
+<text x="270" y="214" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">K</text>
+<line x1="290" y1="230" x2="300" y2="230" stroke="#222" stroke-width="1.6"/>
+<line x1="300" y1="230" x2="300" y2="300" stroke="#222" stroke-width="1.6"/>
+<line x1="320" y1="300" x2="380" y2="300" stroke="#222" stroke-width="1.6"/>
+<circle cx="393" cy="300" r="13" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="393" y="305" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">G</text>
+<line x1="406" y1="300" x2="440" y2="300" stroke="#222" stroke-width="1.6"/>
+<line x1="440" y1="300" x2="440" y2="175" stroke="#222" stroke-width="1.6"/>
+<line x1="440" y1="175" x2="440" y2="143" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+<text x="455" y="170" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">D</text>
+</svg>

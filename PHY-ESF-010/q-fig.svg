@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300">
+<defs><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker></defs>
+<line x1="30.0" y1="170.0" x2="540.0" y2="170.0" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<text x="542.0" y="175.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">x</text>
+<line x1="200.0" y1="255.0" x2="200.0" y2="30.0" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<text x="206.0" y="34.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">y</text>
+<circle cx="200.0" cy="170.0" r="9" fill="white" stroke="#222" stroke-width="1.6"/>
+<text x="200.0" y="175.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">+</text>
+<text x="206.0" y="198.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">O</text>
+<text x="214.0" y="156.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">+Q</text>
+<circle cx="90.0" cy="170.0" r="9" fill="white" stroke="#222" stroke-width="1.6"/>
+<text x="90.0" y="175.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">−</text>
+<text x="76.0" y="198.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">A</text>
+<text x="56.0" y="156.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">−4Q</text>
+<text x="90.0" y="216.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">−a</text>
+<text x="296.0" y="200.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">a</text>
+<line x1="310.0" y1="166.0" x2="310.0" y2="174.0" stroke="#222" stroke-width="1.2"/>
+<line x1="240.0" y1="164.0" x2="520.0" y2="164.0" stroke="#888" stroke-width="1.2"/>
+<line x1="240.0" y1="176.0" x2="520.0" y2="176.0" stroke="#888" stroke-width="1.2"/>
+<text x="410.0" y="200.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">管（(2)，(5)）</text>
+<line x1="304.0" y1="50.0" x2="304.0" y2="158.0" stroke="#888" stroke-width="1.2" stroke-dasharray="5,4"/>
+<line x1="316.0" y1="50.0" x2="316.0" y2="158.0" stroke="#888" stroke-width="1.2" stroke-dasharray="5,4"/>
+<line x1="304.0" y1="182.0" x2="304.0" y2="255.0" stroke="#888" stroke-width="1.2" stroke-dasharray="5,4"/>
+<line x1="316.0" y1="182.0" x2="316.0" y2="255.0" stroke="#888" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="322.0" y="64.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">管（(4)）</text>
+<text x="20.0" y="285.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">（(2)と(4)の管は別々の場面で用いる）</text>
+</svg>

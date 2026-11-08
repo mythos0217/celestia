@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 290">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker></defs>
+<line x1="100.0" y1="70.0" x2="200.0" y2="70.0" stroke="#222" stroke-width="1.6"/>
+<line x1="100.0" y1="70.0" x2="100.0" y2="120.0" stroke="#222" stroke-width="1.6"/>
+<rect x="93.0" y="120.0" width="14" height="40" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="100.0" y1="160.0" x2="100.0" y2="210.0" stroke="#222" stroke-width="1.6"/>
+<line x1="100.0" y1="210.0" x2="100.0" y2="218.0" stroke="#222" stroke-width="1.6"/>
+<line x1="88.0" y1="218.0" x2="112.0" y2="218.0" stroke="#222" stroke-width="1.6"/>
+<line x1="92.0" y1="223.0" x2="108.0" y2="223.0" stroke="#222" stroke-width="1.6"/>
+<line x1="96.0" y1="228.0" x2="104.0" y2="228.0" stroke="#222" stroke-width="1.6"/>
+<text x="118.0" y="145.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">t</text>
+<line x1="200.0" y1="70.0" x2="245.0" y2="70.0" stroke="#222" stroke-width="1.6"/>
+<rect x="245.0" y="63.0" width="40" height="14" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="285.0" y1="70.0" x2="330.0" y2="70.0" stroke="#222" stroke-width="1.6"/>
+<text x="265.0" y="56.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">b</text>
+<line x1="330.0" y1="70.0" x2="375.0" y2="70.0" stroke="#222" stroke-width="1.6"/>
+<rect x="375.0" y="63.0" width="40" height="14" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="415.0" y1="70.0" x2="460.0" y2="70.0" stroke="#222" stroke-width="1.6"/>
+<text x="395.0" y="56.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">b</text>
+<circle cx="200" cy="70" r="3.5" fill="#222"/>
+<text x="196.0" y="60.0" font-size="15" fill="#222" text-anchor="end" xml:space="preserve"><tspan font-family="Noto Sans CJK JP, sans-serif" font-style="normal">P</tspan><tspan font-family="Noto Sans CJK JP, sans-serif" baseline-shift="sub" font-size="10">0</tspan></text>
+<line x1="200.0" y1="70.0" x2="200.0" y2="125.0" stroke="#222" stroke-width="1.6"/>
+<rect x="193.0" y="125.0" width="14" height="40" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="200.0" y1="165.0" x2="200.0" y2="220.0" stroke="#222" stroke-width="1.6"/>
+<text x="214.0" y="150.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">a</text>
+<circle cx="200" cy="225" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="200.0" y="248.0" font-size="15" fill="#222" text-anchor="middle" xml:space="preserve"><tspan font-family="Noto Sans CJK JP, sans-serif" font-style="normal">T</tspan><tspan font-family="Noto Sans CJK JP, sans-serif" baseline-shift="sub" font-size="10">0</tspan></text>
+<circle cx="330" cy="70" r="3.5" fill="#222"/>
+<text x="326.0" y="60.0" font-size="15" fill="#222" text-anchor="end" xml:space="preserve"><tspan font-family="Noto Sans CJK JP, sans-serif" font-style="normal">P</tspan><tspan font-family="Noto Sans CJK JP, sans-serif" baseline-shift="sub" font-size="10">1</tspan></text>
+<line x1="330.0" y1="70.0" x2="330.0" y2="125.0" stroke="#222" stroke-width="1.6"/>
+<rect x="323.0" y="125.0" width="14" height="40" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="330.0" y1="165.0" x2="330.0" y2="220.0" stroke="#222" stroke-width="1.6"/>
+<text x="344.0" y="150.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">a</text>
+<circle cx="330" cy="225" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="330.0" y="248.0" font-size="15" fill="#222" text-anchor="middle" xml:space="preserve"><tspan font-family="Noto Sans CJK JP, sans-serif" font-style="normal">T</tspan><tspan font-family="Noto Sans CJK JP, sans-serif" baseline-shift="sub" font-size="10">1</tspan></text>
+<circle cx="460" cy="70" r="3.5" fill="#222"/>
+<text x="456.0" y="60.0" font-size="15" fill="#222" text-anchor="end" xml:space="preserve"><tspan font-family="Noto Sans CJK JP, sans-serif" font-style="normal">P</tspan><tspan font-family="Noto Sans CJK JP, sans-serif" baseline-shift="sub" font-size="10">2</tspan></text>
+<line x1="460.0" y1="70.0" x2="460.0" y2="125.0" stroke="#222" stroke-width="1.6"/>
+<rect x="453.0" y="125.0" width="14" height="40" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="460.0" y1="165.0" x2="460.0" y2="220.0" stroke="#222" stroke-width="1.6"/>
+<text x="474.0" y="150.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">a</text>
+<circle cx="460" cy="225" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="460.0" y="248.0" font-size="15" fill="#222" text-anchor="middle" xml:space="preserve"><tspan font-family="Noto Sans CJK JP, sans-serif" font-style="normal">T</tspan><tspan font-family="Noto Sans CJK JP, sans-serif" baseline-shift="sub" font-size="10">2</tspan></text>
+<line x1="460.0" y1="70.0" x2="560.0" y2="70.0" stroke="#222" stroke-width="1.6"/>
+<circle cx="565" cy="70" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="548.0" y="56.0" font-size="16" fill="#222" text-anchor="middle" xml:space="preserve"><tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan font-family="Noto Sans CJK JP, sans-serif" baseline-shift="sub" font-size="10">out</tspan></text>
+<line x1="565.0" y1="110.0" x2="565.0" y2="118.0" stroke="#222" stroke-width="1.6"/>
+<line x1="553.0" y1="118.0" x2="577.0" y2="118.0" stroke="#222" stroke-width="1.6"/>
+<line x1="557.0" y1="123.0" x2="573.0" y2="123.0" stroke="#222" stroke-width="1.6"/>
+<line x1="561.0" y1="128.0" x2="569.0" y2="128.0" stroke="#222" stroke-width="1.6"/>
+<circle cx="565" cy="105" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="330.0" y="278.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">端子 T の電位は切り替えで決める（接地点が基準）</text>
+</svg>

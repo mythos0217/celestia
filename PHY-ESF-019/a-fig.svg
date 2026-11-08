@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300">
+<defs>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<line x1="60.0" y1="240.0" x2="440.0" y2="240.0" stroke="#222" stroke-width="3"/>
+<text x="104.0" y="262.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">A</text>
+<text x="394.0" y="262.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">B</text>
+<circle cx="200.0" cy="100.0" r="3.0" fill="#222" stroke="#222" stroke-width="1.6"/>
+<text x="182.0" y="94.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">C</text>
+<line x1="200.0" y1="100.0" x2="110.0" y2="240.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="200.0" y1="100.0" x2="400.0" y2="240.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="200.0" y1="100.0" x2="200.0" y2="240.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="204.0" y="170.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">d</text>
+<path d="M124.3,217.8 A140,140 0 0,0 314.7,180.3" fill="none" stroke="#c0392b" stroke-width="1.8"/>
+<text x="318.7" y="150.3" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#c0392b" text-anchor="start">半径 d の円弧（同じ線密度）</text>
+<line x1="200.0" y1="100.0" x2="186.5" y2="31.3" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<text x="192.5" y="31.3" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">E</text>
+<text x="250.0" y="290.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">各部分の視角 dα が等しければ電場も等しい</text>
+</svg>

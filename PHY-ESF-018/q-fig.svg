@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 400">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<line x1="120.0" y1="50.0" x2="240.0" y2="50.0" stroke="#222" stroke-width="1.6"/>
+<line x1="130.0" y1="50.0" x2="123.0" y2="40.0" stroke="#222" stroke-width="1"/>
+<line x1="140.0" y1="50.0" x2="133.0" y2="40.0" stroke="#222" stroke-width="1"/>
+<line x1="150.0" y1="50.0" x2="143.0" y2="40.0" stroke="#222" stroke-width="1"/>
+<line x1="160.0" y1="50.0" x2="153.0" y2="40.0" stroke="#222" stroke-width="1"/>
+<line x1="170.0" y1="50.0" x2="163.0" y2="40.0" stroke="#222" stroke-width="1"/>
+<line x1="180.0" y1="50.0" x2="173.0" y2="40.0" stroke="#222" stroke-width="1"/>
+<line x1="190.0" y1="50.0" x2="183.0" y2="40.0" stroke="#222" stroke-width="1"/>
+<line x1="200.0" y1="50.0" x2="193.0" y2="40.0" stroke="#222" stroke-width="1"/>
+<line x1="210.0" y1="50.0" x2="203.0" y2="40.0" stroke="#222" stroke-width="1"/>
+<line x1="220.0" y1="50.0" x2="213.0" y2="40.0" stroke="#222" stroke-width="1"/>
+<line x1="230.0" y1="50.0" x2="223.0" y2="40.0" stroke="#222" stroke-width="1"/>
+<line x1="240.0" y1="50.0" x2="233.0" y2="40.0" stroke="#222" stroke-width="1"/>
+<circle cx="180.0" cy="50.0" r="2.5" fill="#222" stroke="#222" stroke-width="1.6"/>
+<text x="158.0" y="66.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">O</text>
+<line x1="180.0" y1="50.0" x2="283.3" y2="244.2" stroke="#222" stroke-width="1.2"/>
+<line x1="180.0" y1="50.0" x2="180.0" y2="400.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="283.3" cy="244.2" r="9.0" fill="#ffffff" stroke="#222" stroke-width="1.6"/>
+<text x="295.3" y="248.2" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">A</text>
+<text x="295.3" y="266.2" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">(</text>
+<text x="301.3" y="266.2" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="start">m</text>
+<text x="313.3" y="266.2" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">,</text>
+<text x="319.3" y="266.2" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="start">q</text>
+<text x="329.3" y="266.2" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">)</text>
+<circle cx="180.0" cy="270.0" r="9.0" fill="#88888888" stroke="#222" stroke-width="1.6"/>
+<text x="114.0" y="275.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">B（</text>
+<text x="140.0" y="275.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="start">Q</text>
+<text x="152.0" y="275.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">）</text>
+<text x="188.0" y="296.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">C</text>
+<circle cx="180.0" cy="360.0" r="9.0" fill="none" stroke="#888" stroke-width="1.6" stroke-dasharray="5,4"/>
+<line x1="155.0" y1="380.0" x2="155.0" y2="330.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<line x1="225.0" y1="270.0" x2="225.0" y2="360.0" stroke="#222" stroke-width="1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<text x="232.0" y="320.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">s</text>
+<line x1="190.0" y1="360.0" x2="231.0" y2="360.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="293.3" y1="244.2" x2="353.3" y2="244.2" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="190.0" y1="270.0" x2="353.3" y2="270.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="343.3" y1="244.2" x2="343.3" y2="270.0" stroke="#222" stroke-width="1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<text x="349.3" y="262.1" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">h</text>
+<text x="237.6" y="147.1" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">l</text>
+<text x="166.0" y="160.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">l</text>
+</svg>

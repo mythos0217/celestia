@@ -1,0 +1,144 @@
+{
+ "id": "PHY-ESF-004",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "内外の球殻を導線で結んだ三重球殻（ガウスの法則と等電位条件）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，半径 $a$，$b$，$c$ $(a<b<c)$ の薄い金属球殻 A，B，C が，中心 O を共有するように置かれている．B には小さな穴があいていて，A と C はこの穴を通る細い導線で接続されている（導線は B に触れない）．初め A，B，C はいずれも帯電しておらず，C は周囲から絶縁されている．この状態で B に電気量 $Q$ $(Q>0)$ を与えた．クーロンの法則の比例定数を $k$，電位の基準を無限遠とし，穴や導線が電場に与える影響は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A の電気量 $q_{\\mathrm A}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "B の内側の面と外側の面，C の内側の面と外側の面の電気量をそれぞれ求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "中心からの距離 $r$ の各領域 $r<a$，$a<r<b$，$b<r<c$，$r>c$ で，電場の強さと向き（中心から外向きか内向きか）を求めよ．また，電位が最も高い場所はどこか．"
+     },
+     {
+      "id": "4",
+      "tex": "B と，導線で結ばれた A・C の組との間を1つのコンデンサーとみなしたときの電気容量を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "次に C を接地した．接地線を通って移動した電気量とその向き，およびこの間に発生したジュール熱を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：内外の球殻を導線で結んだ三重球殻（ガウスの法則と等電位条件）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：内外の球殻を導線で結んだ三重球殻（ガウスの法則と等電位条件）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$q_{\\mathrm A}=-\\dfrac{a(c-b)}{b(c-a)}Q$"
+   },
+   {
+    "id": "2",
+    "tex": "B 内側 $\\dfrac{a(c-b)}{b(c-a)}Q$，B 外側 $\\dfrac{c(b-a)}{b(c-a)}Q$，C 内側 $-\\dfrac{c(b-a)}{b(c-a)}Q$，C 外側 $Q$"
+   },
+   {
+    "id": "3",
+    "tex": "$r<a$：$0$；$a<r<b$：内向き $\\dfrac{ka(c-b)Q}{b(c-a)r^2}$；$b<r<c$：外向き $\\dfrac{kc(b-a)Q}{b(c-a)r^2}$；$r>c$：外向き $\\dfrac{kQ}{r^2}$．電位が最も高いのは B"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{b^2(c-a)}{k(b-a)(c-b)}$"
+   },
+   {
+    "id": "5",
+    "tex": "電気量 $Q$ が C から大地へ移動，ジュール熱 $\\dfrac{kQ^2}{2c}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 等電位条件}　A の電気量を $q_{\\mathrm A}$ とすると，A と C は導線で結ばれた1つの孤立導体で初め帯電していないから，C の電気量は $-q_{\\mathrm A}$ である．薄い球殻の電荷による電位は，殻の外では中心の点電荷と同じ $\\frac{kq}{r}$，殻の内部では一定値 $\\frac{kq}{R}$（$R$ は殻の半径）なので\n\\[ V_{\\mathrm A}=\\frac{kq_{\\mathrm A}}{a}+\\frac{kQ}{b}-\\frac{kq_{\\mathrm A}}{c},\\qquad V_{\\mathrm C}=\\frac{k(q_{\\mathrm A}+Q-q_{\\mathrm A})}{c}=\\frac{kQ}{c} \\]\n導線で結ばれているので $V_{\\mathrm A}=V_{\\mathrm C}$：\n\\[ q_{\\mathrm A}\\left(\\frac1a-\\frac1c\\right)=-Q\\left(\\frac1b-\\frac1c\\right)\\quad\\therefore\\ q_{\\mathrm A}=\\boldsymbol{-\\frac{a(c-b)}{b(c-a)}Q} \\]\nA は B と逆符号に帯電する（B の正電荷に引かれて負電荷が A へ集まる）．\n\n\\textbf{(2) 表面電荷}　導体内部の電場は $0$ なので，B の内部を通る球面についてガウスの法則を使うと，B の内側の面には A と逆符号の $-q_{\\mathrm A}$ が分布する．同様に C の内側の面には内部の全電荷 $q_{\\mathrm A}+Q$ と逆符号の電荷が分布する．\n\\[ \\text{B 内側}=\\boldsymbol{\\tfrac{a(c-b)}{b(c-a)}Q},\\quad \\text{B 外側}=Q+q_{\\mathrm A}=\\boldsymbol{\\tfrac{c(b-a)}{b(c-a)}Q} \\]\n\\[ \\text{C 内側}=\\boldsymbol{-\\tfrac{c(b-a)}{b(c-a)}Q},\\quad \\text{C 外側}=-q_{\\mathrm A}-(\\text{C 内側})=\\boldsymbol{Q} \\]\n\n\\textbf{(3) 電場と電位}　半径 $r$ の球面の内側にある全電荷を $q_{\\text{内}}$ とすると，電場は外向きに $\\dfrac{kq_{\\text{内}}}{r^2}$ である．\n$r<a$：$q_{\\text{内}}=0$ で $\\boldsymbol{0}$．\n$a<r<b$：$q_{\\text{内}}=q_{\\mathrm A}<0$ なので\\textbf{内向き}に $\\boldsymbol{\\dfrac{ka(c-b)Q}{b(c-a)r^2}}$．\n$b<r<c$：$q_{\\text{内}}=q_{\\mathrm A}+Q>0$ なので\\textbf{外向き}に $\\boldsymbol{\\dfrac{kc(b-a)Q}{b(c-a)r^2}}$．\n$r>c$：$q_{\\text{内}}=Q$ なので\\textbf{外向き}に $\\boldsymbol{\\dfrac{kQ}{r^2}}$．\n電位は電場の向きに下がるので，$a<r<b$ では外へ行くほど高く，$r>b$ では外へ行くほど低い．よって電位が最も高いのは\\textbf{球殻 B}である（A と C は等電位で，B より低い）．\n\n\\textbf{(4) 電気容量}　\n\\[ V_{\\mathrm B}-V_{\\mathrm A}=\\int_a^b(\\text{内向きの電場})\\,dr=-kq_{\\mathrm A}\\left(\\frac1a-\\frac1b\\right)=\\frac{kQ(b-a)(c-b)}{b^2(c-a)} \\]\nB の電気量は $Q$ なので\n\\[ C_{\\text{合成}}=\\frac{Q}{V_{\\mathrm B}-V_{\\mathrm A}}=\\boldsymbol{\\frac{b^2(c-a)}{k(b-a)(c-b)}} \\]\n\\textbf{別解}：B–A 間は容量 $\\frac{ab}{k(b-a)}$，B–C 間は容量 $\\frac{bc}{k(c-b)}$ の球形コンデンサーで，A と C が等電位なので両者は並列である．和は $\\frac{b\\{a(c-b)+c(b-a)\\}}{k(b-a)(c-b)}=\\frac{b^2(c-a)}{k(b-a)(c-b)}$ となり一致する．\n\n\\textbf{(5) 接地}　C を接地しても，A・C が等電位という条件は変わらない．C の外側の面の電荷は C の内部に一様な電位 $\\frac{kQ}{c}$ を加えるだけで，内部の電荷配置には影響しないので，内部の電荷配置は (1)(2) のままで，C の外側の面の電荷 $Q$ だけが大地へ逃げ，すべての電位が $\\frac{kQ}{c}$ ずつ下がる．よって\\textbf{電気量 $Q$ が C から大地へ}移動する．\n静電エネルギーは $U=\\frac12\\sum q_iV_i$ で，A と C は電気量の和が $0$ で等電位なので，$U=\\frac12QV_{\\mathrm B}$ となる．接地により $V_{\\mathrm B}$ が $\\frac{kQ}{c}$ 下がるので，発生したジュール熱は\n\\[ \\frac12Q\\cdot\\frac{kQ}{c}=\\boldsymbol{\\frac{kQ^2}{2c}} \\]\nこれは，接地前に $r>c$ の空間にあった電場のエネルギー（半径 $c$ の孤立導体球に $Q$ を与えたときのエネルギー）に等しい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "導線で結ばれた内外の球殻は等電位で電気量の和が一定という2条件から，内球には B と逆符号の電荷が誘導される．球殻の電位の重ね合わせとガウスの法則で各面の電荷と電場の向きが決まり，B から見ると内外2つの球形コンデンサーの並列とみなせる．外側の面の電荷は内部の配置に影響しないので，接地で外側の電荷だけが逃げる．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "superposition",
+  "capacitor"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ガウスの法則",
+  "球殻",
+  "等電位",
+  "静電誘導",
+  "球形コンデンサー",
+  "静電エネルギー"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

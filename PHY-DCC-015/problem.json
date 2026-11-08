@@ -1,0 +1,120 @@
+{
+ "id": "PHY-DCC-015",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-03",
+ "topic": "有限のはしご形抵抗回路の末端からの逆算と，無限の回路への近づき方・整合終端",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，直列の抵抗 $R$ と並列の抵抗 $R$ を1組（1段）として $n$ 段つないだはしご形回路がある．最後の段の並列抵抗を図の $X$ の位置の抵抗とよぶ．はじめ $X=R$ とする．$\\varphi=\\dfrac{1+\\sqrt5}{2}\\fallingdotseq1.6180340$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$n=5$ のとき，$X$ の位置の抵抗に流れる電流が $I_0$ であった．入力端子間の電圧 $V$，入力端子から流れ込む電流 $I$，および入力端子から見た合成抵抗 $R_5$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "段数を限りなく増やしたときの合成抵抗 $R_\\infty$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$n$ 段の回路の合成抵抗を $R_n$ とする．$R_{n+1}$ を $R_n$ で表し，\n  \\[ R_{n+1}-R_\\infty=\\dfrac{R^2\\,(R_n-R_\\infty)}{(R+R_n)(R+R_\\infty)} \\]\n  が成り立つことを示せ．これを用いて，$R_n$ が $R_\\infty$ より大きいか小さいか，$n$ とともにどう変化するかを答えよ．また，$R_n$ と $R_\\infty$ の差が $R_\\infty$ の $1.0\\times10^{-4}$ 倍以下になる最小の $n$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$X$ の位置の抵抗だけを別の値に取りかえたところ，入力端子から見た合成抵抗が段数 $n$ によらず等しくなった．$X$ の値と，そのときの合成抵抗を求めよ．また，$X=0$（その位置を導線にする）としたとき，$R_n$ は $R_\\infty$ より大きいか小さいか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：有限のはしご形抵抗回路の末端からの逆算と，無限の回路への近づき方・整合終端",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V=89RI_0$，$I=55I_0$，$R_5=\\dfrac{89}{55}R$"
+   },
+   {
+    "id": "2",
+    "tex": "$R_\\infty=\\varphi R=\\dfrac{1+\\sqrt5}{2}R$"
+   },
+   {
+    "id": "3",
+    "tex": "$R_{n+1}=R+\\dfrac{RR_n}{R+R_n}$．$R_n>R_\\infty$ で，$n$ とともに減少して $R_\\infty$ に近づく．最小の $n$ は $5$"
+   },
+   {
+    "id": "4",
+    "tex": "$X=\\dfrac{\\sqrt5-1}{2}R\\ (=R/\\varphi)$，合成抵抗は $\\dfrac{1+\\sqrt5}{2}R$．$X=0$ では $R_n<R_\\infty$（増加しながら近づく）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 末端から逆にたどる．$X$ の位置の抵抗の電圧は $RI_0$．その手前の直列抵抗にも $I_0$ が流れるので，1つ手前の節点の電圧は $RI_0+RI_0=2RI_0$．以下，各節点で「並列抵抗の電流（＝電圧$/R$）を加える → 直列抵抗の電圧降下を加える」をくり返すと，電流と電圧（$I_0,\\ RI_0$ を単位とする）は\n\\[ 1,\\ 2,\\ 3,\\ 5,\\ 8,\\ 13,\\ 21,\\ 34,\\ 55,\\ 89 \\]\nと交互に現れる（各数は直前の2数の和：フィボナッチ数）．5段では入力電流 $I=\\boldsymbol{55I_0}$，入力電圧 $V=\\boldsymbol{89RI_0}$ で，$R_5=\\boldsymbol{\\dfrac{89}{55}R}$．\\\\\n\\textbf{(2)} 無限の回路は先頭の1段を除いても同じ回路なので $R_\\infty=R+\\dfrac{RR_\\infty}{R+R_\\infty}$．整理して $R_\\infty^2-RR_\\infty-R^2=0$，正の解は\n\\[ R_\\infty=\\boldsymbol{\\dfrac{1+\\sqrt5}{2}R}=\\varphi R. \\]\n\\textbf{(3)} $n$ 段の回路の先頭に1段を加えると $n+1$ 段の回路になるので\n\\[ R_{n+1}=R+\\dfrac{RR_n}{R+R_n}. \\]\n同じ式は $R_\\infty$ でも成り立つ（(2)）から，辺々引いて\n\\[ R_{n+1}-R_\\infty=\\dfrac{RR_n}{R+R_n}-\\dfrac{RR_\\infty}{R+R_\\infty}=\\dfrac{R^2(R_n-R_\\infty)}{(R+R_n)(R+R_\\infty)}. \\]\n右辺の係数は正で $1$ より小さい（$\\dfrac{R^2}{(R+R_n)(R+R_\\infty)}<\\dfrac{1}{(1+\\varphi)}<1$）．したがって差の符号は段を増やしても変わらず，大きさは段ごとに縮む．$R_1=2R>R_\\infty$ なので，$R_n$ は常に $\\boldsymbol{R_\\infty}$ \\textbf{より大きく，$n$ とともに減少して $R_\\infty$ に近づく}．係数は $\\dfrac{1}{(1+\\varphi)^2}=\\dfrac{1}{\\varphi^4}\\fallingdotseq0.146$ に近づくので，1段ごとに差はおよそ $0.15$ 倍になる．\\\\\n(1) と同様にして $R_n=\\dfrac{2}{1}R,\\ \\dfrac53R,\\ \\dfrac{13}{8}R,\\ \\dfrac{34}{21}R,\\ \\dfrac{89}{55}R,\\ \\dots$ で，\n\\[ \\dfrac{R_4-R_\\infty}{R_\\infty}=\\dfrac{1.6190476-1.6180340}{1.6180340}\\fallingdotseq6.3\\times10^{-4},\\qquad \\dfrac{R_5-R_\\infty}{R_\\infty}=\\dfrac{1.6181818-1.6180340}{1.6180340}\\fallingdotseq9.1\\times10^{-5}. \\]\nよって最小の段数は $n=\\boldsymbol{5}$．\\\\\n\\textbf{(4)} 最後の段だけの回路（1段）の合成抵抗は $R+X$，2段では $R+\\dfrac{R(R+X)}{2R+X}$．これらが等しければ，以後は同じ1段を前に加えても値が変わらないので，すべての $n$ で等しくなる．$X=\\dfrac{R(R+X)}{2R+X}$ より $X^2+RX-R^2=0$，\n\\[ X=\\boldsymbol{\\dfrac{\\sqrt5-1}{2}R}\\ \\Bigl(=\\dfrac{R}{\\varphi}\\fallingdotseq0.618R\\Bigr). \\]\nこのとき合成抵抗は $R+X=\\boldsymbol{\\dfrac{1+\\sqrt5}{2}R}=R_\\infty$．$X$ は $R_\\infty$ そのものではなく，「並列抵抗 $R$ と，その先に続くはずの無限の回路 $R_\\infty$ の並列」$\\dfrac{R\\cdot\\varphi R}{R+\\varphi R}=\\dfrac{R}{\\varphi}$ に等しい．つまり末端で途切れた無限の回路の残りを1個の抵抗で置き換えたことになる．\\\\\n$X=0$ では $R_1=R<R_\\infty$．(3) の関係式は $R_1$ の値によらず成り立つから差の符号は保たれ，$\\boldsymbol{R_n<R_\\infty}$（$R,\\ \\dfrac32R,\\ \\dfrac85R,\\ \\dots$ と増加しながら近づく）．一般に $X$ が $R/\\varphi$ より大きいか小さいかで，上から近づくか下から近づくかが決まる．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "末端から逆算すると電流と電圧がフィボナッチ数として交互に現れ，有限の回路の合成抵抗は無限の回路の値に一定に近い比（約 $1/\\varphi^4$）で単調に近づく．差の符号は末端の抵抗が「途切れた無限の回路の残り」に相当する値 $R/\\varphi$ より大きいか小さいかで決まり，その値で終端すれば段数によらず合成抵抗が $R_\\infty$ になる．"
+ },
+ "concepts": [
+  "series-parallel"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "はしご形回路",
+  "合成抵抗",
+  "漸化式",
+  "フィボナッチ数",
+  "整合終端"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}
