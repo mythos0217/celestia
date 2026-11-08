@@ -1,0 +1,123 @@
+{
+ "id": "PHY-IND-004",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "直線電流から遠ざかるコイルの脱出速度（速度に比例する電磁ブレーキと運動量）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平でなめらかな絶縁体の床の上に十分に長い直線導線 L が固定され，$+y$ の向きに一定の電流 $I$ が流れている．同じ床の上に，1辺の長さ $a$，質量 $m$，電気抵抗 $R$ の正方形コイル ABCD を，辺 AD が L と平行で L からの距離が $a$ となる位置に置き，L から遠ざかる向き（$+x$ の向き）に初速 $v_0$ を与えた．コイルの位置は L から辺 AD までの距離 $x$ で表す．コイルは回転せず $x$ 方向にのみ動くものとし，コイルの自己誘導と，コイルの電流が L に及ぼす影響は無視する．真空の透磁率を $\\mu_0$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "コイルが位置 $x$ を速さ $v$ で通過するとき，コイルを貫く磁束の時間変化からコイルに流れる電流の大きさ $i$ を求め，その向きを答えよ（図の紙面を上から見て時計回りか反時計回りか）．"
+     },
+     {
+      "id": "2",
+      "tex": "このときコイル全体が磁場から受ける力の向きと大きさ $F$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "コイルの速さ $v$ を位置 $x$ の関数として表す関係を，微小時間 $\\Delta t$ の間の運動量の変化に着目して導け．その結果を用いて，コイルが L から無限に遠ざかることができるための $v_0$ の最小値 $v_{\\mathrm{c}}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$v_0=3v_{\\mathrm{c}}$ のとき，十分に遠方でのコイルの速さと，それまでにコイルで発生したジュール熱の総量を，$m$ と $v_{\\mathrm{c}}$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：直線電流から遠ざかるコイルの脱出速度（速度に比例する電磁ブレーキと運動量）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$i=\\dfrac{\\mu_0Ia^2v}{2\\pi Rx(x+a)}$，時計回り（辺 AD では L と同じ $+y$ の向き）"
+   },
+   {
+    "id": "2",
+    "tex": "L に引き寄せられる向き（$-x$ 向き），$F=\\left(\\dfrac{\\mu_0I}{2\\pi}\\right)^2\\dfrac{a^4v}{R\\,x^2(x+a)^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$v=v_0-\\left(\\dfrac{\\mu_0I}{2\\pi}\\right)^2\\dfrac{a^4}{mR}\\displaystyle\\int_a^{x}\\frac{dx'}{x'^2(x'+a)^2}$，$v_{\\mathrm{c}}=\\left(\\dfrac{\\mu_0I}{2\\pi}\\right)^2\\dfrac{a}{mR}\\left(\\dfrac32-2\\log 2\\right)$"
+   },
+   {
+    "id": "4",
+    "tex": "速さ $2v_{\\mathrm{c}}$，ジュール熱 $\\dfrac52mv_{\\mathrm{c}}^2$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} L から距離 $r$ の点の磁束密度は $\\dfrac{\\mu_0I}{2\\pi r}$ で，$x>0$ の側では紙面の表から裏の向き（$\\otimes$）．コイルを貫く磁束は，幅 $dr$ の細長い帯に分けて足し合わせると\n\\[ \\Phi(x)=\\int_x^{x+a}\\frac{\\mu_0I}{2\\pi r}\\,a\\,dr=\\frac{\\mu_0Ia}{2\\pi}\\log\\frac{x+a}{x}. \\]\nコイルが速さ $v$ で動くと $\\dfrac{d\\Phi}{dt}=\\dfrac{d\\Phi}{dx}v$ で，\n\\[ \\frac{d\\Phi}{dx}=\\frac{\\mu_0Ia}{2\\pi}\\left(\\frac{1}{x+a}-\\frac1x\\right)=-\\frac{\\mu_0Ia^2}{2\\pi x(x+a)}. \\]\nよって誘導起電力の大きさ $V=\\dfrac{\\mu_0Ia^2v}{2\\pi x(x+a)}$，電流は\n\\[ i=\\boldsymbol{\\frac{\\mu_0Ia^2v}{2\\pi Rx(x+a)}}. \\]\n$\\otimes$ 向きの磁束が減るので，それを補う $\\otimes$ 向きの磁場をつくる向き，すなわち\\textbf{時計回り}（D→C→B→A の向き．辺 AD では $+y$ 向き）に流れる．（辺ごとに $V=vBl$ を用いても，AD と BC の起電力の差として同じ結果になる．）\n\n\\textbf{(2)} AB と CD にはたらく力は打ち消し合う．AD（距離 $x$）と BC（距離 $x+a$）には逆向きの電流が流れ，L と同じ向きの電流が流れる辺 AD は引力，BC は斥力を受ける．AD の方が磁場が強いので合力は L に\\textbf{引き寄せられる向き}で\n\\[ F=ia\\left(\\frac{\\mu_0I}{2\\pi x}-\\frac{\\mu_0I}{2\\pi(x+a)}\\right)=\\boldsymbol{\\left(\\frac{\\mu_0I}{2\\pi}\\right)^2\\frac{a^4v}{R\\,x^2(x+a)^2}}. \\]\nこれは $F=\\dfrac{1}{R}\\left(\\dfrac{d\\Phi}{dx}\\right)^2v$ と書ける（レンツの法則どおり，運動を妨げる）．\n\n\\textbf{(3) 運動量で考える} 力が速さ $v$ に比例することがポイントである．微小時間 $\\Delta t$ の運動量変化は\n\\[ m\\Delta v=-F\\Delta t=-\\frac{1}{R}\\left(\\frac{d\\Phi}{dx}\\right)^2v\\Delta t=-\\frac1R\\left(\\frac{d\\Phi}{dx}\\right)^2\\Delta x \\]\nとなり，$v$ が消えて\\textbf{速さの減少は移動距離だけで決まる}．$k=\\left(\\dfrac{\\mu_0I}{2\\pi}\\right)^2\\dfrac{a^4}{mR}$ とおいて $x=a$ から足し合わせると\n\\[ v=v_0-k\\int_a^{x}\\frac{dx'}{x'^2(x'+a)^2}. \\]\n無限遠まで到達するには，$x\\to\\infty$ までの速さの減少分 $k\\displaystyle\\int_a^\\infty\\frac{dx}{x^2(x+a)^2}$ より $v_0$ が大きければよい．部分分数分解\n\\[ \\frac{1}{x^2(x+a)^2}=\\frac{1}{a^2}\\left(\\frac1{x^2}+\\frac1{(x+a)^2}-\\frac{2}{a}\\Big(\\frac1x-\\frac1{x+a}\\Big)\\right) \\]\nを用いると\n\\[ \\int_a^\\infty\\frac{dx}{x^2(x+a)^2}=\\frac1{a^2}\\left(\\frac1a+\\frac1{2a}-\\frac{2}{a}\\log2\\right)=\\frac{1}{a^3}\\left(\\frac32-2\\log2\\right). \\]\nよって\n\\[ v_{\\mathrm{c}}=\\boldsymbol{\\left(\\frac{\\mu_0I}{2\\pi}\\right)^2\\frac{a}{mR}\\left(\\frac32-2\\log 2\\right)}. \\]\n$v_0<v_{\\mathrm c}$ なら，速さが $0$ に近づくにつれて力も $0$ に近づき，コイルは有限の位置に限りなく近づいて止まる（戻ってはこない）．\n\n\\textbf{(4)} (3) より，無限遠までの速さの減少は初速によらず常に $v_{\\mathrm c}$ である．したがって最終の速さは $3v_{\\mathrm c}-v_{\\mathrm c}=\\boldsymbol{2v_{\\mathrm c}}$．床はなめらかで，失われた運動エネルギーはすべてジュール熱になるので\n\\[ \\frac12m(3v_{\\mathrm c})^2-\\frac12m(2v_{\\mathrm c})^2=\\boldsymbol{\\frac52mv_{\\mathrm c}^2}. \\]\nエネルギー保存則だけでは最終速度は決まらず，「速さの減少が距離だけで決まる」という運動量の関係が必要である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "非一様磁場中を動くコイルの起電力は磁束 $\\Phi(x)$ の変化 $\\frac{d\\Phi}{dx}v$ で求まり，電磁力も $\\frac1R(\\frac{d\\Phi}{dx})^2v$ と速さに比例する．そのため運動量変化 $m\\Delta v$ は移動距離 $\\Delta x$ だけで決まり，速さの減少量は初速によらない．これから「脱出速度」と最終速度が決まる．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "momentum-conservation",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "直線電流",
+  "非一様磁場",
+  "運動量",
+  "電磁ブレーキ",
+  "ジュール熱"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<circle cx="110" cy="55" r="4.0" fill="none" stroke="#888" stroke-width="1"/><circle cx="110" cy="55" r="1.6" fill="#888"/>
+<circle cx="110" cy="230" r="4.0" fill="none" stroke="#888" stroke-width="1"/><circle cx="110" cy="230" r="1.6" fill="#888"/>
+<circle cx="170" cy="55" r="4.5" fill="none" stroke="#888" stroke-width="1"/><circle cx="170" cy="55" r="1.6" fill="#888"/>
+<circle cx="170" cy="230" r="4.5" fill="none" stroke="#888" stroke-width="1"/><circle cx="170" cy="230" r="1.6" fill="#888"/>
+<circle cx="230" cy="55" r="5.1" fill="none" stroke="#888" stroke-width="1"/><circle cx="230" cy="55" r="1.6" fill="#888"/>
+<circle cx="230" cy="230" r="5.1" fill="none" stroke="#888" stroke-width="1"/><circle cx="230" cy="230" r="1.6" fill="#888"/>
+<circle cx="290" cy="55" r="5.6" fill="none" stroke="#888" stroke-width="1"/><circle cx="290" cy="55" r="1.6" fill="#888"/>
+<circle cx="290" cy="230" r="5.6" fill="none" stroke="#888" stroke-width="1"/><circle cx="290" cy="230" r="1.6" fill="#888"/>
+<circle cx="350" cy="55" r="6.2" fill="none" stroke="#888" stroke-width="1"/><circle cx="350" cy="55" r="1.6" fill="#888"/>
+<circle cx="350" cy="230" r="6.2" fill="none" stroke="#888" stroke-width="1"/><circle cx="350" cy="230" r="1.6" fill="#888"/>
+<circle cx="410" cy="55" r="6.7" fill="none" stroke="#888" stroke-width="1"/><circle cx="410" cy="55" r="1.6" fill="#888"/>
+<circle cx="410" cy="230" r="6.7" fill="none" stroke="#888" stroke-width="1"/><circle cx="410" cy="230" r="1.6" fill="#888"/>
+<circle cx="470" cy="55" r="7.3" fill="none" stroke="#888" stroke-width="1"/><circle cx="470" cy="55" r="1.6" fill="#888"/>
+<circle cx="470" cy="230" r="7.3" fill="none" stroke="#888" stroke-width="1"/><circle cx="470" cy="230" r="1.6" fill="#888"/>
+<circle cx="530" cy="55" r="7.8" fill="none" stroke="#888" stroke-width="1"/><circle cx="530" cy="55" r="1.6" fill="#888"/>
+<circle cx="530" cy="230" r="7.8" fill="none" stroke="#888" stroke-width="1"/><circle cx="530" cy="230" r="1.6" fill="#888"/>
+<line x1="50.0" y1="250.0" x2="580.0" y2="250.0" stroke="#222" stroke-width="1.4" marker-end="url(#q-ak)"/>
+<text x="588.0" y="255.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="start" fill="#222">x</text>
+<line x1="50.0" y1="250.0" x2="50.0" y2="30.0" stroke="#222" stroke-width="1.4" marker-end="url(#q-ak)"/>
+<text x="50.0" y="24.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="middle" fill="#222">y</text>
+<text x="40.0" y="266.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">O</text>
+<line x1="140.0" y1="90.0" x2="440.0" y2="90.0" stroke="#222" stroke-width="1.6"/>
+<line x1="140.0" y1="200.0" x2="440.0" y2="200.0" stroke="#222" stroke-width="1.6"/>
+<text x="454.0" y="95.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">N</text>
+<text x="454.0" y="205.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">S</text>
+<line x1="170.0" y1="90.0" x2="170.0" y2="127.0" stroke="#222" stroke-width="1.6"/>
+<line x1="170.0" y1="163.0" x2="170.0" y2="200.0" stroke="#222" stroke-width="1.6"/>
+<rect x="152.0" y="138.5" width="36" height="13" fill="none" stroke="#222" stroke-width="1.6" transform="rotate(90.00 170.0 145.0)"/>
+<text x="182.0" y="150.0" font-size="15" text-anchor="start" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">R</tspan></text>
+<text x="170.0" y="80.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">1</text>
+<line x1="170.0" y1="200.0" x2="170.0" y2="246.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="250.0" y1="90.0" x2="250.0" y2="127.0" stroke="#222" stroke-width="1.6"/>
+<line x1="250.0" y1="163.0" x2="250.0" y2="200.0" stroke="#222" stroke-width="1.6"/>
+<rect x="232.0" y="138.5" width="36" height="13" fill="none" stroke="#222" stroke-width="1.6" transform="rotate(90.00 250.0 145.0)"/>
+<text x="262.0" y="150.0" font-size="15" text-anchor="start" fill="#222"><tspan font-family="Noto Sans CJK JP, sans-serif">2</tspan><tspan font-family="Times New Roman, serif" font-style="italic">R</tspan></text>
+<text x="250.0" y="80.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">2</text>
+<line x1="250.0" y1="200.0" x2="250.0" y2="246.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="410.0" y1="90.0" x2="410.0" y2="127.0" stroke="#222" stroke-width="1.6"/>
+<line x1="410.0" y1="163.0" x2="410.0" y2="200.0" stroke="#222" stroke-width="1.6"/>
+<rect x="392.0" y="138.5" width="36" height="13" fill="none" stroke="#222" stroke-width="1.6" transform="rotate(90.00 410.0 145.0)"/>
+<text x="422.0" y="150.0" font-size="15" text-anchor="start" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">R</tspan></text>
+<text x="410.0" y="80.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">3</text>
+<line x1="410.0" y1="200.0" x2="410.0" y2="246.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="122.0" y1="90.0" x2="122.0" y2="200.0" stroke="#888" stroke-width="1" marker-end="url(#q-ak)"/>
+<line x1="122.0" y1="200.0" x2="122.0" y2="90.0" stroke="#888" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="112.0" y="150.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="end" fill="#222">d</text>
+<text x="170.0" y="270.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="middle" fill="#222">s</text>
+<text x="250.0" y="270.0" font-size="15" text-anchor="middle" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">s</tspan><tspan font-family="Noto Sans CJK JP, sans-serif">+</tspan><tspan font-family="Times New Roman, serif" font-style="italic">a</tspan></text>
+<text x="410.0" y="270.0" font-size="15" text-anchor="middle" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">s</tspan><tspan font-family="Noto Sans CJK JP, sans-serif">+3</tspan><tspan font-family="Times New Roman, serif" font-style="italic">a</tspan></text>
+<line x1="440.0" y1="150.0" x2="500.0" y2="150.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="512.0" y="155.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="start" fill="#1f5fbf">v</text>
+<text x="300.0" y="318.0" font-size="13" text-anchor="middle" fill="#222"><tspan font-family="Noto Sans CJK JP, sans-serif">磁場 </tspan><tspan font-family="Times New Roman, serif" font-style="italic">B</tspan><tspan font-family="Noto Sans CJK JP, sans-serif"> = </tspan><tspan font-family="Times New Roman, serif" font-style="italic">bx</tspan><tspan font-family="Noto Sans CJK JP, sans-serif">（紙面の裏から表の向き）</tspan></text>
+</svg>

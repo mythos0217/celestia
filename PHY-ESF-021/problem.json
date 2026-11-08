@@ -1,0 +1,123 @@
+{
+ "id": "PHY-ESF-021",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "電気双極子を囲む円形の壁に沿って動く荷電小球（一定になる垂直抗力と壁が不要になる放し方）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平面上に，半径 $R$ の円形のなめらかな壁が固定されている．壁の中心 O には，大きさの等しい正負の点電荷を短い距離だけ離して並べた電気双極子が固定されており，その向き（負電荷から正電荷への向き）と大きさを表すベクトルを $\\vec p$ とする．$\\vec p$ の向きから反時計回りに測った角を $\\theta$ とすると，O から距離 $r$（双極子の長さに比べて十分大きい）の点の電位と電場は，クーロンの法則の比例定数を $k$ として\n\\[ V=\\frac{kp\\cos\\theta}{r^2},\\qquad E_r=\\frac{2kp\\cos\\theta}{r^3},\\qquad E_\\theta=\\frac{kp\\sin\\theta}{r^3} \\]\nで与えられる．ここで $E_r$ は O から遠ざかる向き，$E_\\theta$ は $\\theta$ が増す向きの成分である．\n\n図のように，質量 $m$，電気量 $Q\\ (>0)$ の小球を，壁の内側に接する $\\theta=\\theta_0$ の位置に置き，静かに放す．壁は小球を O の向きに押すことはできるが，引くことはできない．小球の大きさ，小球が双極子に及ぼす影響，摩擦，および重力の影響は考えない（運動は水平面内で起こる）．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$0<\\theta_0<\\dfrac{\\pi}{2}$ とする．小球が動き出す向きを答え，小球が壁に沿って角 $\\theta$ の位置まで来たときの速さ $v$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) のとき，小球が角 $\\theta$ の位置で壁から受ける垂直抗力の大きさ $N$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$0<\\theta_0<\\pi$ の範囲で，放した直後から小球が壁に沿って動くための $\\theta_0$ の条件を求めよ．また，その条件のもとで小球が放されてからはじめて止まる位置の角と，その後の運動を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\theta_0=\\dfrac{\\pi}{2}$ のとき，壁を取り除いても小球の運動は変わらないことを示し，運動中の小球の速さの最大値を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：電気双極子を囲む円形の壁に沿って動く荷電小球（一定になる垂直抗力と壁が不要になる放し方）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\theta$ が増す向き，$v=\\sqrt{\\dfrac{2kQp(\\cos\\theta_0-\\cos\\theta)}{mR^2}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$N=\\dfrac{2kQp\\cos\\theta_0}{R^3}$（$\\theta$ によらず一定）"
+   },
+   {
+    "id": "3",
+    "tex": "$0<\\theta_0\\le\\dfrac{\\pi}{2}$．$\\theta=2\\pi-\\theta_0$ で止まり，以後 $\\theta_0$ と $2\\pi-\\theta_0$ の間を壁に沿って往復する（$\\theta_0>\\frac{\\pi}{2}$ では直ちに壁から離れる）"
+   },
+   {
+    "id": "4",
+    "tex": "垂直抗力が常に $0$ なので壁は不要．最大の速さ $\\sqrt{\\dfrac{2kQp}{mR^2}}$（$\\theta=\\pi$）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) エネルギー保存}　壁の垂直抗力は運動の向きに垂直で仕事をしないので，小球の運動エネルギーと静電気力による位置エネルギー $QV$ の和が保存する．壁に沿う間は $r=R$ なので\n\\[ \\frac12mv^2+\\frac{kQp\\cos\\theta}{R^2}=\\frac{kQp\\cos\\theta_0}{R^2}\n\\quad\\therefore\\quad \\boldsymbol{v=\\sqrt{\\frac{2kQp(\\cos\\theta_0-\\cos\\theta)}{mR^2}}}. \\]\n放した位置での接線方向の力は $QE_\\theta=\\dfrac{kQp\\sin\\theta_0}{R^3}>0$ なので，小球は \\textbf{$\\theta$ が増す向き}に動き出す（$\\cos\\theta<\\cos\\theta_0$ の側へ進む）．\n\n\\textbf{(2) 半径方向の運動方程式}　O に向かう向きを正とすると，小球にはたらく力の O 向き成分は $N-QE_r$ である．円運動の運動方程式は\n\\[ m\\frac{v^2}{R}=N-\\frac{2kQp\\cos\\theta}{R^3}. \\]\n(1) の $mv^2=\\dfrac{2kQp(\\cos\\theta_0-\\cos\\theta)}{R^2}$ を代入すると，$\\cos\\theta$ の項がちょうど打ち消し合って\n\\[ \\boldsymbol{N=\\frac{2kQp\\cos\\theta_0}{R^3}} \\]\nとなり，$N$ は位置によらず一定である．双極子の場では，速さの2乗と電場の半径方向成分がどちらも $\\cos\\theta$ の1次式で，係数がちょうど「向心力に必要な分 $=$ 電場が外向きに引く分の変化」になっているためである．\n\n\\textbf{(3) 壁から離れない条件}　壁は引けないので $N\\ge0$，すなわち $\\cos\\theta_0\\ge0$ が必要十分である（$N$ は一定なので，途中で離れることもない）．よって $\\boldsymbol{0<\\theta_0\\le\\dfrac{\\pi}{2}}$．$\\dfrac{\\pi}{2}<\\theta_0<\\pi$ では放した瞬間から $N<0$ が必要になり，小球は電場に引かれて直ちに壁から離れ，内側へ動く．\n\n条件を満たすとき，(1) より $v=0$ となるのは $\\cos\\theta=\\cos\\theta_0$ の位置で，$\\theta_0$ から $\\theta$ が増す向きに進んで最初に達するのは $\\boldsymbol{\\theta=2\\pi-\\theta_0}$（$\\vec p$ の軸について対称な点）である．そこでの接線方向の力は $QE_\\theta\\propto\\sin(2\\pi-\\theta_0)<0$ で $\\theta$ が減る向きなので小球は引き返し，以後 $\\theta_0$ と $2\\pi-\\theta_0$ の間を壁に沿って往復する．\n\n\\textbf{(4) $\\theta_0=\\frac{\\pi}{2}$ の場合}　(2) より $N=0$ が運動中ずっと成り立つ．すなわち，静電気力だけで半径 $R$ の円運動に必要な向心力がちょうどまかなわれており，壁を取り除いても同じ運動方程式に従うので運動は変わらない．小球は $\\theta=\\frac{\\pi}{2}$ から $\\frac{3\\pi}{2}$ まで半円を描いて往復する．速さは $-\\cos\\theta$ が最大の $\\theta=\\pi$ で最大となり\n\\[ \\boldsymbol{v_{\\max}=\\sqrt{\\frac{2kQp}{mR^2}}}. \\]\n双極子の対称面上で静止状態から放した荷電粒子は，電気力線に沿ってではなく，中心を通る円に沿って動くことになる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "双極子の場では，壁に沿う円運動の速さの2乗と電場の半径方向成分がともに $\\cos\\theta$ の1次式なので，半径方向の運動方程式で $\\theta$ 依存性が打ち消し合い，垂直抗力は放した位置だけで決まる一定値 $2kQp\\cos\\theta_0/R^3$ になる．その符号で壁から離れるかどうかが決まり，対称面上で放すと壁がなくても円軌道を描く．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "circular-motion",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気双極子",
+  "電位",
+  "エネルギー保存",
+  "円運動",
+  "垂直抗力",
+  "電場の成分"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

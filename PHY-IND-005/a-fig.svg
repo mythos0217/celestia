@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 470"><defs><marker id="a-ab" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#1f5fbf"/></marker><marker id="a-ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#c0392b"/></marker><marker id="a-ak" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#222"/></marker></defs>
+<line x1="80.0" y1="90.0" x2="520.0" y2="90.0" stroke="#222" stroke-width="1" marker-end="url(#a-ak)"/>
+<text x="530.0" y="95.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="start" fill="#222">t</text>
+<line x1="80.0" y1="145.0" x2="80.0" y2="25.0" stroke="#222" stroke-width="1" marker-end="url(#a-ak)"/>
+
+<text x="70.0" y="23.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="end" fill="#222">Φ</text>
+<line x1="180.0" y1="35.0" x2="180.0" y2="145.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="280.0" y1="35.0" x2="280.0" y2="145.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="380.0" y1="35.0" x2="380.0" y2="145.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="480.0" y1="35.0" x2="480.0" y2="145.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<path d="M80,90.0 L180,134.0 L280,46.0 L380,90.0 L480,90.0" stroke="#1f5fbf" stroke-width="2" fill="none"/>
+<text x="74.0" y="51.0" font-family="Times New Roman, serif" font-style="italic" font-size="13" text-anchor="end" fill="#222">πBl²/4</text>
+<text x="74.0" y="139.0" font-family="Times New Roman, serif" font-style="italic" font-size="13" text-anchor="end" fill="#222">−πBl²/4</text>
+<line x1="80.0" y1="250.0" x2="520.0" y2="250.0" stroke="#222" stroke-width="1" marker-end="url(#a-ak)"/>
+<text x="530.0" y="255.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="start" fill="#222">t</text>
+<line x1="80.0" y1="320.0" x2="80.0" y2="170.0" stroke="#222" stroke-width="1" marker-end="url(#a-ak)"/>
+
+<text x="70.0" y="168.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="end" fill="#222">I</text>
+<line x1="180.0" y1="180.0" x2="180.0" y2="320.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="280.0" y1="180.0" x2="280.0" y2="320.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="380.0" y1="180.0" x2="380.0" y2="320.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="480.0" y1="180.0" x2="480.0" y2="320.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<path d="M80,250 L80,222.0 L180,222.0 L180,306.0 L280,306.0 L280,222.0 L380,222.0 L380,250.0 L480,250.0" stroke="#1f5fbf" stroke-width="2" fill="none"/>
+<text x="74.0" y="227.0" font-family="Times New Roman, serif" font-style="italic" font-size="13" text-anchor="end" fill="#222">I<tspan baseline-shift="sub" font-size="10" font-style="normal" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="74.0" y="311.0" font-family="Times New Roman, serif" font-style="italic" font-size="13" text-anchor="end" fill="#222">−2I<tspan baseline-shift="sub" font-size="10" font-style="normal" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<line x1="80.0" y1="430.0" x2="520.0" y2="430.0" stroke="#222" stroke-width="1" marker-end="url(#a-ak)"/>
+<text x="530.0" y="435.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="start" fill="#222">t</text>
+<line x1="80.0" y1="500.0" x2="80.0" y2="350.0" stroke="#222" stroke-width="1" marker-end="url(#a-ak)"/>
+
+<text x="70.0" y="348.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="end" fill="#222">f</text>
+<line x1="180.0" y1="430.0" x2="180.0" y2="430.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="280.0" y1="430.0" x2="280.0" y2="430.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="380.0" y1="430.0" x2="380.0" y2="430.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="480.0" y1="430.0" x2="480.0" y2="430.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<path d="M80,430 L80,414.6 L180,414.6 L180,368.4 L280,368.4 L280,414.6 L380,414.6 L380,430.0 L480,430.0" stroke="#c0392b" stroke-width="2" fill="none"/>
+<text x="74.0" y="419.6" font-family="Times New Roman, serif" font-style="italic" font-size="13" text-anchor="end" fill="#222">f<tspan baseline-shift="sub" font-size="10" font-style="normal" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="74.0" y="373.4" font-family="Times New Roman, serif" font-style="italic" font-size="13" text-anchor="end" fill="#222">4f<tspan baseline-shift="sub" font-size="10" font-style="normal" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="180.0" y="450.0" font-family="Times New Roman, serif" font-style="italic" font-size="13" text-anchor="middle" fill="#222">T/4</text>
+<text x="280.0" y="450.0" font-family="Times New Roman, serif" font-style="italic" font-size="13" text-anchor="middle" fill="#222">T/2</text>
+<text x="380.0" y="450.0" font-family="Times New Roman, serif" font-style="italic" font-size="13" text-anchor="middle" fill="#222">3T/4</text>
+<text x="480.0" y="450.0" font-family="Times New Roman, serif" font-style="italic" font-size="13" text-anchor="middle" fill="#222">T</text>
+<text x="80.0" y="450.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" text-anchor="middle" fill="#222">0</text>
+</svg>

@@ -1,0 +1,136 @@
+{
+ "id": "PHY-IND-002",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "幅の広い磁場を通過する2区画回路で起電力をもつ辺のコンデンサーの電荷",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，1 辺 $l$ の正方形を 2 つ並べた形の長方形の回路 abcdef がある．辺 ab，bc，cd，de，ef，fa の抵抗はいずれも $R$ であり，中央の辺 be には電気容量 $C$ のコンデンサーが入っている（辺 be の導線の抵抗は無視できる）．平行な直線 L，L$'$ にはさまれた幅 $2l$ の領域には，紙面の裏から表の向きに磁束密度 $B$ の一様な磁場がかかっている．\n\n辺 cd を L に平行に保ちながら，回路を右向きに一定の速さ $v$ で動かす．辺 cd が L と一致した時刻を $t=0$ とし，このときコンデンサーは帯電していなかった．回路の自己誘導は無視でき，回路の時定数は $l/v$ に比べて十分に短く，それぞれの時間帯のほとんどで電流は一定とみなせるものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$0<t<l/v$ で電流が一定になったとき，辺 cd を流れる電流の大きさと向き（c→d か d→c か），およびコンデンサーの b 側の極板の電荷 $q_{\\mathrm b}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$l/v<t<2l/v$ で電流が一定になったときの $q_{\\mathrm b}$ と，回路に加えている外力の大きさを求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$2l/v<t<3l/v$ で電流が一定になったとき，辺 ab を流れる電流の向き（a→b か b→a か）と $q_{\\mathrm b}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "時刻 $t=0$ から，回路が磁場の領域を完全に出て十分に時間がたつまでに，外力がした仕事の総和 $W$ を求めよ．ただし，コンデンサーの電荷が変化する短い時間に外力がする仕事も含めること．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：幅の広い磁場を通過する2区画回路で起電力をもつ辺のコンデンサーの電荷",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：幅の広い磁場を通過する2区画回路で起電力をもつ辺のコンデンサーの電荷",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{vBl}{6R}$，c→d，$q_{\\mathrm b}=-\\dfrac{CvBl}{2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$q_{\\mathrm b}=\\dfrac{CvBl}{2}$，外力 $\\dfrac{vB^2l^2}{6R}$"
+   },
+   {
+    "id": "3",
+    "tex": "b→a，$q_{\\mathrm b}=\\dfrac{CvBl}{2}$（$t=2l/v$ の前後で変化しない）"
+   },
+   {
+    "id": "4",
+    "tex": "$W=\\dfrac{2vB^2l^3}{3R}+\\dfrac{5}{4}C(vBl)^2$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{準備}　磁場中にある縦の辺（長さ $l$）は，速度 $v$（右向き）と磁場（裏→表）により，正電荷を下向き（上の頂点→下の頂点）に押す誘導起電力 $\\varepsilon=vBl$ をもつ電池になる．各辺が磁場中にある時間は，cd：$0<t<2T$，be：$T<t<3T$，fa：$2T<t<4T$（$T=l/v$）．電流が一定のときコンデンサーには電流が流れないので，\\textbf{定常電流は外周 a→b→c→d→e→f→a（抵抗 $6R$）だけを流れる}．\n\n\\textbf{(1)} 起電力は cd のみ．外周に $I=\\dfrac{\\varepsilon}{6R}=\\boldsymbol{\\dfrac{vBl}{6R}}$ が流れ，cd では起電力の向き，すなわち \\textbf{c→d}．\\\\\nコンデンサーの電圧は b，e 間の電位差．b→c→d→e と電流の向きにたどると\n\\[ V_{\\mathrm e}-V_{\\mathrm b}=-RI+(\\varepsilon-RI)-RI=\\varepsilon-3RI=\\frac{\\varepsilon}{2}. \\]\nよって b 側の極板が低電位で $q_{\\mathrm b}=C(V_{\\mathrm b}-V_{\\mathrm e})=\\boldsymbol{-\\dfrac{CvBl}{2}}$．\n\n\\textbf{(2)} cd に加えて be も磁場に入るが，be はコンデンサーを含むので定常電流は流れず，外周の電流は (1) と同じ $I=\\dfrac{\\varepsilon}{6R}$，$V_{\\mathrm b}-V_{\\mathrm e}=-\\dfrac{\\varepsilon}{2}$ のまま．ところが辺 be の中では，起電力 $\\varepsilon$ とコンデンサーが直列になっている．b から be を下へたどると，起電力で $\\varepsilon$ 上がり，極板間で $\\dfrac{q_{\\mathrm b}}{C}$ 下がって e に着くから\n\\[ V_{\\mathrm e}=V_{\\mathrm b}+\\varepsilon-\\frac{q_{\\mathrm b}}{C}\\quad\\therefore\\ q_{\\mathrm b}=C\\left(V_{\\mathrm b}-V_{\\mathrm e}+\\varepsilon\\right)=C\\left(-\\frac{\\varepsilon}{2}+\\varepsilon\\right)=\\boldsymbol{\\frac{CvBl}{2}}. \\]\n磁場から力を受けるのは電流の流れる cd だけ（be の定常電流は 0）で，大きさ $IBl$，左向き．等速なので外力は右向きに\n\\[ F=IBl=\\boldsymbol{\\frac{vB^2l^2}{6R}}. \\]\n\n\\textbf{(3)} cd は磁場を出て，be と fa が磁場中にある．外周の起電力は fa だけで，fa では上→下（a→f）に起電力がはたらくので，電流 $I=\\dfrac{\\varepsilon}{6R}$ は a→f→e→d→c→b→a と流れる．ab では \\textbf{b→a}．\\\\\nb→a→f→e とたどると\n\\[ V_{\\mathrm e}-V_{\\mathrm b}=-RI+(\\varepsilon-RI)-RI=\\frac{\\varepsilon}{2}, \\]\nとなり (2) と同じ．be の中の起電力も同じなので $q_{\\mathrm b}=\\boldsymbol{\\dfrac{CvBl}{2}}$ で，\\textbf{$t=2T$ の前後で変化しない}．外周の電流の向きは逆転するが，b，e は外周を二等分する位置にあり，どちら回りでも「起電力のある辺を含む半周」と「含まない半周」の関係が同じだからである．\n\n\\textbf{(4) 外力の仕事}　外力の仕事率は，磁場中の辺の起電力がする仕事率 $\\sum\\varepsilon\\times(\\text{その辺の電流})$ に等しい（電磁力が速度と逆向きにする仕事を外力が補う）．\n\n\\textbf{定常部分}：$q_{\\mathrm b}$ の値は $t=0\\sim T$：$-\\dfrac{C\\varepsilon}{2}$，$T\\sim3T$：$+\\dfrac{C\\varepsilon}{2}$，$3T\\sim4T$：$-\\dfrac{C\\varepsilon}{2}$（be が出た後は (1) と同じ計算），$4T$ 以降：$0$（解答図）．どの時間帯でも起電力のある辺に外周の電流 $\\dfrac{\\varepsilon}{6R}$ が流れるので，$0<t<4T$ の間，仕事率は $\\dfrac{\\varepsilon^2}{6R}$ で\n\\[ W_1=\\frac{\\varepsilon^2}{6R}\\cdot\\frac{4l}{v}=\\frac{2vB^2l^3}{3R}. \\]\n\n\\textbf{切り替わりの部分}：電荷が $\\Delta q$ 変化する短い間，be を $|\\Delta q|$ の電荷が流れ，それが b と e の間の 2 つの経路 b-a-f-e，b-c-d-e（どちらも $3R$）に半分ずつ分かれて流れる．起電力 $\\varepsilon$ の辺を電荷 $Q$ が起電力の向き（上→下）に通ると仕事 $\\varepsilon Q$，逆向きなら $-\\varepsilon Q$．\\\\\n・$t=0$：$q_{\\mathrm b}:0\\to-\\dfrac{C\\varepsilon}{2}$．電荷は be を上向き（e→b）に流れ，b から e へ戻る半分 $\\dfrac{C\\varepsilon}{4}$ が cd を下向きに通る：$+\\dfrac{C\\varepsilon^2}{4}$．\\\\\n・$t=T$：$q_{\\mathrm b}:-\\dfrac{C\\varepsilon}{2}\\to+\\dfrac{C\\varepsilon}{2}$．$C\\varepsilon$ が be を下向き（起電力の向き）に流れ $+C\\varepsilon^2$，e から b へ戻る半分 $\\dfrac{C\\varepsilon}{2}$ が cd を上向きに通り $-\\dfrac{C\\varepsilon^2}{2}$．計 $+\\dfrac{C\\varepsilon^2}{2}$．\\\\\n・$t=2T$：電荷は変化しないので 0．\\\\\n・$t=3T$：$q_{\\mathrm b}:+\\dfrac{C\\varepsilon}{2}\\to-\\dfrac{C\\varepsilon}{2}$．be（もう磁場外）を $C\\varepsilon$ が上向きに流れ，b から e へ戻る半分 $\\dfrac{C\\varepsilon}{2}$ が fa を下向きに通る：$+\\dfrac{C\\varepsilon^2}{2}$．\\\\\n・$t=4T$：起電力のある辺がないので 0．\\\\\n合計 $W_2=\\left(\\dfrac14+\\dfrac12+\\dfrac12\\right)C\\varepsilon^2=\\dfrac54C(vBl)^2$．\n\nよって\n\\[ W=W_1+W_2=\\boldsymbol{\\frac{2vB^2l^3}{3R}+\\frac{5}{4}C(vBl)^2}. \\]\n最初と最後でコンデンサーの静電エネルギーは 0 なので，$W$ はすべてジュール熱になる．$W_2$ は時定数をいくら短くしても 0 にならないことに注意．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "定常状態のコンデンサーは開放とみなせるので電流は外周だけを流れ，コンデンサーの電圧は「回路の電位差」と「コンデンサーと同じ辺にある誘導起電力」の和で決まる．幅の広い磁場では起電力をもつ辺の組合せが変わり，電流が逆転しても電荷が変わらない区間が生じる．切り替わりで移動する電荷が起電力のある辺を通る分だけ，外力は時定数によらない仕事をする．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "work-energy",
+  "capacitor"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "誘導起電力",
+  "コンデンサー",
+  "定常電流",
+  "キルヒホッフの法則",
+  "外力の仕事",
+  "過渡現象"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

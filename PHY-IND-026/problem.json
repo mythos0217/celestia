@@ -1,0 +1,122 @@
+{
+ "id": "PHY-IND-026",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "直線電流のそばで広がるレール上を動く抵抗をもつ棒（位置の対数で減る速さ）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平面内に十分長い直線導線 P があり，$+y$ 向きに一定の電流 $I$ が流れている．P を $y$ 軸とし，P に垂直に $x$ 軸をとる．同じ水平面内に2本の直線レール Q，Q$'$ が $x$ 軸に関して対称に置かれており，P から距離 $x$ の位置でのレールの間隔は $kx$（$k$ は正の定数）である．レールは $x=x_1$ の位置で，P に平行な抵抗の無視できる導線でつながれている．レールの上に，P と平行な向きを保ったまま $x$ 方向になめらかに動く質量 $m$ の一様な導体棒 K をのせる．K は単位長さあたりの抵抗が $\\lambda$ の材料でできており，レールの間にある部分だけに電流が流れる．レール・つなぎの導線の抵抗，回路の自己誘導，回路を流れる電流がつくる磁場は無視する．真空の透磁率を $\\mu_0$ とする．\n\n時刻 0 に，$x=x_0\\ (>x_1)$ にある K に $+x$ 向きの初速度 $v_0$ を与えた．K は十分長く，レールから外れることはない．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "K が位置 $x$ にあるとき，K とレールとつなぎの導線で囲まれた部分を貫く磁束 $\\Phi$ を求めよ．また，K の速さが $v$ のときの誘導起電力の大きさ $V$ が $x$ によらないことを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "K が位置 $x$ を速さ $v$ で動いているとき，K を流れる電流の大きさ $i$ と，K が受ける電磁力の大きさ $F$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "K の速さ $v$ を位置 $x$ の関数として求めよ．また，K が最終的に止まる位置 $x_{\\rm f}$ を求め，K の速さが $\\dfrac{v_0}{2}$ になる位置が $\\sqrt{x_0x_{\\rm f}}$ であることを示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "K が動き始めてから止まるまでに K を流れた電気量 $Q$ を，電流の時間積分から求めよ．さらに，その結果を K が受けた力積を考えることで確かめよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：直線電流のそばで広がるレール上を動く抵抗をもつ棒（位置の対数で減る速さ）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Phi=\\dfrac{\\mu_0Ik}{2\\pi}(x-x_1)$，$V=\\dfrac{\\mu_0Ikv}{2\\pi}$"
+   },
+   {
+    "id": "2",
+    "tex": "$i=\\dfrac{\\mu_0Iv}{2\\pi\\lambda x}$，$F=\\dfrac{\\mu_0^{\\,2}I^2kv}{4\\pi^2\\lambda x}$"
+   },
+   {
+    "id": "3",
+    "tex": "$v=v_0-\\dfrac{\\mu_0^{\\,2}I^2k}{4\\pi^2\\lambda m}\\log\\dfrac{x}{x_0}$，$x_{\\rm f}=x_0\\exp\\left(\\dfrac{4\\pi^2\\lambda mv_0}{\\mu_0^{\\,2}I^2k}\\right)$"
+   },
+   {
+    "id": "4",
+    "tex": "$Q=\\dfrac{2\\pi mv_0}{\\mu_0Ik}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　P から距離 $s$ の位置の磁束密度は $B=\\dfrac{\\mu_0I}{2\\pi s}$ で，水平面に垂直である．幅 $ds$ の細長い帯（長さ $ks$）を貫く磁束は $B\\cdot ks\\,ds=\\dfrac{\\mu_0Ik}{2\\pi}ds$ と $s$ によらない．したがって\n\\[ \\Phi=\\int_{x_1}^{x}\\frac{\\mu_0Ik}{2\\pi}\\,ds=\\boldsymbol{\\frac{\\mu_0Ik}{2\\pi}(x-x_1)} \\]\n磁場は P から遠いほど弱いが，レールの間隔がちょうど距離に比例して広がるので，囲む磁束は一様な磁場のときと同じく $x$ の1次式になる．\n\\[ V=\\frac{d\\Phi}{dt}=\\boldsymbol{\\frac{\\mu_0Ikv}{2\\pi}} \\]\nは $x$ によらない（$Bkx\\cdot v$ と直接計算しても同じ）．以下 $K_0=\\dfrac{\\mu_0Ik}{2\\pi}$ とおく．\n\n\\textbf{(2)}　K のうち電流が流れる部分の長さは $kx$ で，その抵抗は $\\lambda kx$（他の抵抗は無視）なので\n\\[ i=\\frac{K_0v}{\\lambda kx}=\\boldsymbol{\\frac{\\mu_0Iv}{2\\pi\\lambda x}} \\]\n電磁力は $F=i\\cdot B\\cdot kx=iK_0$ より\n\\[ F=\\frac{K_0^{\\,2}v}{\\lambda kx}=\\boldsymbol{\\frac{\\mu_0^{\\,2}I^2kv}{4\\pi^2\\lambda x}} \\]\n向きはレンツの法則により運動を妨げる $-x$ 向きである．起電力は一様磁場と同じだが，抵抗が $x$ に比例して増えるため，速度に比例する抵抗力の係数が $1/x$ で弱まっていく．\n\n\\textbf{(3)}　$\\Gamma=\\dfrac{K_0^{\\,2}}{\\lambda k}=\\dfrac{\\mu_0^{\\,2}I^2k}{4\\pi^2\\lambda}$ とおくと，運動方程式は\n\\[ m\\frac{dv}{dt}=-\\frac{\\Gamma v}{x} \\]\n$v=\\dfrac{dx}{dt}$ なので $\\dfrac{v}{x}dt=\\dfrac{dx}{x}$ であり，$m\\,dv=-\\Gamma\\dfrac{dx}{x}$．両辺を積分して\n\\[ v=\\boldsymbol{v_0-\\frac{\\mu_0^{\\,2}I^2k}{4\\pi^2\\lambda m}\\log\\frac{x}{x_0}} \\]\n（$\\log$ は自然対数）．速さは移動距離ではなく位置の対数に比例して減る．$v=0$ となる位置は\n\\[ x_{\\rm f}=\\boldsymbol{x_0\\exp\\left(\\frac{4\\pi^2\\lambda mv_0}{\\mu_0^{\\,2}I^2k}\\right)} \\]\nである（$x\\to x_{\\rm f}$ では $v\\propto x_{\\rm f}-x$ となり，限りなく近づいていく）．$v=\\dfrac{v_0}{2}$ となるのは $\\log\\dfrac{x}{x_0}=\\dfrac12\\log\\dfrac{x_{\\rm f}}{x_0}$，すなわち $x=\\sqrt{x_0x_{\\rm f}}$ のときである．\n\n\\textbf{(4)}　$i\\,dt=\\dfrac{K_0}{\\lambda k}\\cdot\\dfrac{v\\,dt}{x}=\\dfrac{K_0}{\\lambda k}\\cdot\\dfrac{dx}{x}$ なので\n\\[ Q=\\int i\\,dt=\\frac{K_0}{\\lambda k}\\log\\frac{x_{\\rm f}}{x_0}=\\frac{K_0}{\\lambda k}\\cdot\\frac{mv_0\\lambda k}{K_0^{\\,2}}=\\frac{mv_0}{K_0}=\\boldsymbol{\\frac{2\\pi mv_0}{\\mu_0Ik}} \\]\n\\textbf{確かめ}　電磁力は (2) より $F=iK_0$ と，位置によらず電流に比例する．よって K が止まるまでに受けた力積の大きさは $\\int F\\,dt=K_0\\int i\\,dt=K_0Q$ で，これが K の運動量の変化 $mv_0$ に等しいので $Q=\\dfrac{mv_0}{K_0}$ となり一致する．抵抗の大きさ（$\\lambda$ や $x$ への依存）は止まるまでの道のりを変えるが，流れる電気量には影響しない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "直線電流の磁場は距離に反比例するが，間隔が距離に比例して広がるレールで囲む磁束は位置の1次式となり，起電力も電磁力の「電流あたりの大きさ」も位置によらない．棒の抵抗が電流の流れる長さに比例して増えると，速度に比例する制動力の係数が $1/x$ で弱まり，速さは位置の対数に比例して減る．流れる電気量は力積（運動量変化）だけで決まり抵抗によらない．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "momentum-conservation",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "直線電流の磁場",
+  "誘導起電力",
+  "電磁ブレーキ",
+  "力積",
+  "磁束"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

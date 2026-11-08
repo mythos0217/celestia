@@ -1,0 +1,136 @@
+{
+ "id": "PHY-ESF-019",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "一様に帯電した棒の電場の円弧への置きかえと，焦点を棒の両端とする楕円の等電位線（楕円の針金に沿うビーズ）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "真空中に，長さ $2c$ の細い絶縁体の棒 AB があり，正の電荷が線密度 $\\lambda$ で一様に分布している．クーロンの法則の比例定数を $k$ とし，重力は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "棒を含む直線から距離 $d$ の点 C を考え，$\\angle{\\rm ACB}=\\gamma$ とする．棒の微小部分が C につくる電場は，C を中心とする半径 $d$ の円弧のうち，C から見て同じ角度の範囲にある部分が，同じ線密度 $\\lambda$ で帯電しているときにつくる電場に等しいことを示せ．これを用いて，C での電場の向きと大きさを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "A，B を焦点とする楕円（棒を含む平面内）の上では，電位が一定であることを示せ．ただし，楕円上の点 C での楕円の法線は $\\angle{\\rm ACB}$ を二等分するという性質を用いてよい．"
+     },
+     {
+      "id": "3",
+      "tex": "図のように，A，B を焦点とし，長半径 $a$（$a>c$），短半径 $b=\\sqrt{a^2-c^2}$ の楕円を考える．短軸の端 D と長軸の端 E での電場の大きさ $E_{\\rm D}$，$E_{\\rm E}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の楕円の形に曲げたなめらかで細い絶縁体の針金を，棒を含む平面内に固定し，質量 $m$，電荷 $-q$（$q>0$）の小さなビーズを通す．D でビーズに針金に沿う向きの速さ $v_0$ を与えたところ，D ではビーズは針金から力を受けなかった．ビーズが針金を一周する間，速さが一定であることを説明し，$v_0$ を求めよ．また，E でビーズが針金から受ける力の向きと大きさを求めよ．楕円の曲率半径は，D で $\\dfrac{a^2}{b}$，E で $\\dfrac{b^2}{a}$ である．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一様に帯電した棒の電場の円弧への置きかえと，焦点を棒の両端とする楕円の等電位線（楕円の針金に沿うビーズ）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一様に帯電した棒の電場の円弧への置きかえと，焦点を棒の両端とする楕円の等電位線（楕円の針金に沿うビーズ）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "向きは $\\angle{\\rm ACB}$ の二等分線の方向で棒から遠ざかる向き，大きさ $\\dfrac{2k\\lambda}{d}\\sin\\dfrac{\\gamma}{2}$"
+   },
+   {
+    "id": "2",
+    "tex": "解説参照（電場が楕円に垂直）"
+   },
+   {
+    "id": "3",
+    "tex": "$E_{\\rm D}=\\dfrac{2k\\lambda c}{ab}$，$E_{\\rm E}=\\dfrac{2k\\lambda c}{b^2}$"
+   },
+   {
+    "id": "4",
+    "tex": "速さは一定（電場が針金に垂直），$v_0=\\dfrac1b\\sqrt{\\dfrac{2k\\lambda qca}{m}}$，E では楕円の中心向きに大きさ $\\dfrac{2k\\lambda qc^3}{b^4}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 円弧との置きかえ}\n\nC から棒を含む直線に下ろした垂線の足を原点とし，棒に沿って $x$ 軸をとる．棒上の点 $x$ を C から見た方向が垂線となす角を $\\alpha$ とすると $x=d\\tan\\alpha$，C からの距離は $\\dfrac{d}{\\cos\\alpha}$ である．$\\alpha\\sim\\alpha+d\\alpha$ に対応する微小部分の長さは $dx=\\dfrac{d}{\\cos^2\\alpha}d\\alpha$ だから，その部分が C につくる電場の大きさは\n\\[ dE=\\frac{k\\lambda\\,dx}{(d/\\cos\\alpha)^2}=\\frac{k\\lambda}{d}\\,d\\alpha \\]\nで，向きはその部分から C へ向かう向き．一方，半径 $d$ の円弧の同じ角度範囲の部分（長さ $d\\,d\\alpha$）が中心 C につくる電場は，同じ向きで大きさ $\\dfrac{k\\lambda\\cdot d\\,d\\alpha}{d^2}=\\dfrac{k\\lambda}{d}d\\alpha$ であり，一致する（解答図）．\n\nよって棒全体の電場は，C を中心とし C から見て A から B までの角 $\\gamma$ を張る半径 $d$ の円弧の電場に等しい．円弧の電場は対称性から円弧の二等分線方向で，その成分を加えて\n\\[ E=\\int_{-\\gamma/2}^{\\gamma/2}\\frac{k\\lambda}{d}\\cos\\beta\\,d\\beta=\\boldsymbol{\\frac{2k\\lambda}{d}\\sin\\frac\\gamma2} \\]\n向きは $\\boldsymbol{\\angle{\\rm ACB}}$ \\textbf{の二等分線の方向で，棒から遠ざかる向き}．\n\n\\textbf{(2) 楕円が等電位線であること}\n\n(1) より，楕円上の各点の電場は $\\angle{\\rm ACB}$ の二等分線の方向，すなわち楕円の法線方向を向く．したがって楕円に沿って試験電荷を動かすとき，電場は移動方向に垂直で仕事をしない．よって楕円上の任意の2点の電位差は $0$ で，電位は一定である．（光線の反射の性質「一方の焦点から出た光は楕円で反射してもう一方の焦点に集まる」と同じ幾何学的事実が，ここでは「電場が楕円に垂直」として現れている．）\n\n\\textbf{(3) D と E での電場}\n\nD：棒からの距離は $d=b$，$\\dfrac\\gamma2$ は $\\angle{\\rm ADO}$（O は中心）で $\\sin\\dfrac\\gamma2=\\dfrac{c}{\\sqrt{b^2+c^2}}=\\dfrac ca$．(1) より\n\\[ \\boldsymbol{E_{\\rm D}=\\frac{2k\\lambda}{b}\\cdot\\frac ca=\\frac{2k\\lambda c}{ab}} \\]\nE：棒の延長上で中心から $a$ の点なので，直接加えて\n\\[ E_{\\rm E}=\\int_{-c}^{c}\\frac{k\\lambda\\,dx}{(a-x)^2}=k\\lambda\\left(\\frac{1}{a-c}-\\frac{1}{a+c}\\right)=\\frac{2k\\lambda c}{a^2-c^2}=\\boldsymbol{\\frac{2k\\lambda c}{b^2}} \\]\n\n\\textbf{(4) 針金の上のビーズ}\n\nビーズにはたらく力は静電気力と針金からの垂直抗力だけである．(2) より楕円上で静電気力は針金に垂直，垂直抗力も針金に垂直なので，接線方向の力は $0$ で，\\textbf{速さは一定} $v_0$ に保たれる（電位が一定なので静電気力の位置エネルギーも変わらない）．\n\nビーズは負電荷なので，静電気力は電場と逆向き，すなわち楕円の内側（棒の側）を向き，大きさは $qE$ である．D で針金からの力が $0$ だから，円運動の式（曲率半径 $\\dfrac{a^2}{b}$）より\n\\[ \\frac{mv_0^2}{a^2/b}=qE_{\\rm D}=\\frac{2k\\lambda qc}{ab}\\qquad\\Longrightarrow\\qquad mv_0^2=\\frac{2k\\lambda qca}{b^2},\\quad \\boldsymbol{v_0=\\frac1b\\sqrt{\\frac{2k\\lambda qca}{m}}} \\]\nE では，中心向きに必要な力は $\\dfrac{mv_0^2}{b^2/a}=\\dfrac{2k\\lambda qca^2}{b^4}$ で，静電気力 $qE_{\\rm E}=\\dfrac{2k\\lambda qc}{b^2}=\\dfrac{2k\\lambda qcb^2}{b^4}$ では足りない．不足分を針金が中心向きに及ぼすので，その大きさは\n\\[ N=\\frac{2k\\lambda qc(a^2-b^2)}{b^4}=\\boldsymbol{\\frac{2k\\lambda qc^3}{b^4}}\\quad(\\textbf{楕円の中心向き}) \\]\n速さが一定でも，曲率と電場の強さの比が場所によって変わる（D と E で $\\dfrac{a^2}{b^2}$ 倍違う）ので，針金なしで楕円を回る運動はできない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "直線上の電荷の各部分は，視角が同じなら観測点を中心とする半径 $d$ の円弧の電荷と同じ電場をつくるので，棒の電場は円弧の電場として求まり，$\\angle{\\rm ACB}$ の二等分線を向く．これは楕円の法線の性質と同じなので，端点を焦点とする楕円が等電位線になり，楕円の針金に沿うビーズは速さを変えずに動く．垂直抗力は曲率半径と電場の強さの兼ね合いで決まる．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "circular-motion",
+  "normal-force"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "静電場",
+  "線電荷",
+  "等電位線",
+  "楕円",
+  "円運動",
+  "垂直抗力"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "id": "PHY-IND-007",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "ファラデー円板の電動機・発電機運転（回転円板とコンデンサーの対応）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，半径 $a$ の導体円板が，円板の中心を通る鉛直な導体の軸のまわりになめらかに回転できる．円板と軸を合わせた回転軸のまわりの慣性モーメントは $J$ である（回転の運動エネルギーは $\\dfrac12J\\omega^2$，力のモーメントの和を $N$ として $J\\dfrac{\\Delta\\omega}{\\Delta t}=N$ が成り立つ）．鉛直上向きに磁束密度 $B$ の一様な磁場がかかっている．軸と円板の縁にはそれぞれブラシ（摺動接点）が接しており，スイッチ S によって，縁のブラシを抵抗値 $R$ の抵抗を経て，起電力 $E$ の電池（端子 1 側）または電気容量 $C$ のコンデンサー（端子 2 側）につなぎかえられる．電池の正極は縁のブラシ側である．回路の抵抗は $R$ 以外は無視し，回路の自己誘導，円板を流れる電流がつくる磁場は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "円板が上から見て反時計回りに角速度 $\\omega$ で回転しているとき，円板の中心と縁ではどちらの電位が高いか．円板内の自由電子が受けるローレンツ力と静電気力のつり合いから，中心と縁の間の電位差を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "円板が静止した状態で，S を 1 に入れた．円板はどちら向きに回り始めるか．また，角速度 $\\omega$ の時間変化を求め，十分に時間がたったときの角速度 $\\omega_1$ と，$\\omega$ が $\\omega_1$ に近づく時定数 $\\tau$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で十分に時間がたつまでに抵抗で発生したジュール熱は，電池がした仕事の何倍か．"
+     },
+     {
+      "id": "4",
+      "tex": "その後 S を 2 に切りかえた（コンデンサーは初め帯電していない）．十分に時間がたったときの円板の角速度 $\\omega_2$ とコンデンサーの電気量 $q_2$，およびこの過程で抵抗で発生したジュール熱 $H$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ファラデー円板の電動機・発電機運転（回転円板とコンデンサーの対応）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "縁の方が高い．電位差 $\\dfrac12Ba^2\\omega$"
+   },
+   {
+    "id": "2",
+    "tex": "上から見て反時計回り．$\\omega=\\omega_1\\left(1-e^{-t/\\tau}\\right)$，$\\omega_1=\\dfrac{2E}{Ba^2}$，$\\tau=\\dfrac{4JR}{B^2a^4}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac12$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "$\\omega_2=\\dfrac{4J}{4J+B^2a^4C}\\cdot\\dfrac{2E}{Ba^2}=\\dfrac{8JE}{Ba^2(4J+B^2a^4C)}$，$q_2=\\dfrac{4JCE}{4J+B^2a^4C}$，$H=\\dfrac{2JCE^2}{4J+B^2a^4C}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 中心から距離 $r$ の自由電子（電気量 $-e$）は速さ $r\\omega$ で動き，大きさ $er\\omega B$ のローレンツ力を受ける．正電荷なら $\\vec v\\times\\vec B$ の向き，すなわち上から見て反時計回り・磁場上向きのとき外向きの力を受けるので，負電荷の電子は\\textbf{中心向き}に押される．電子が中心に集まり，縁は正に帯電するので\\textbf{縁の電位が高い}．こうして縁（正）から中心（負）の向きに電場 $E_r$ が生じ，電子はこの電場から外向きの静電気力 $eE_r$ を受ける．定常状態ではこれがローレンツ力とつり合い，$eE_r=er\\omega B$ より $E_r=\\omega Br$．電位差はこれを $0$ から $a$ まで足し合わせた（$E_r$–$r$ グラフの三角形の面積）\n\\[ V=\\int_0^a\\omega Br\\,dr=\\boldsymbol{\\frac12Ba^2\\omega}. \\]\n以下 $K=\\dfrac12Ba^2$ とおくと，誘導起電力は $K\\omega$ である．\n\n\\textbf{(2) 電動機として} 電池の正極は縁側なので，電流は回路から縁のブラシに入り，円板内を\\textbf{縁から中心へ}流れる．半径方向内向きの電流が上向きの磁場から受ける力は $I\\vec l\\times\\vec B$ より（上から見て）反時計回りの向きなので，円板は\\textbf{反時計回り}に回り始める．回転すると (1) より縁が高電位となる起電力 $K\\omega$ が生じ，これは電池と逆向き（逆起電力）．回路の電流（縁→中心の向きを正）は\n\\[ I=\\frac{E-K\\omega}{R}. \\]\n円板内の電流にはたらく力のモーメントは，半径 $r$ の部分の力 $IB\\,dr$ に腕 $r$ を掛けて足し合わせ $\\displaystyle\\int_0^aIBr\\,dr=KI$ である．よって\n\\[ J\\frac{d\\omega}{dt}=KI=\\frac{K(E-K\\omega)}{R}. \\]\n$\\omega(0)=0$ として解くと\n\\[ \\boldsymbol{\\omega=\\omega_1\\left(1-e^{-t/\\tau}\\right)},\\qquad \\omega_1=\\frac{E}{K}=\\boldsymbol{\\frac{2E}{Ba^2}},\\qquad \\tau=\\frac{JR}{K^2}=\\boldsymbol{\\frac{4JR}{B^2a^4}}. \\]\n十分時間がたつと逆起電力が電池の起電力とつり合い，電流は $0$ になる．\n\n\\textbf{(3) コンデンサーとの対応} 電池の仕事は $W=\\displaystyle\\int EI\\,dt=E\\int I\\,dt$．運動方程式より $\\displaystyle\\int KI\\,dt=J\\omega_1$ なので $\\displaystyle\\int I\\,dt=\\frac{J\\omega_1}{K}$，$W=\\dfrac{EJ\\omega_1}{K}=J\\omega_1^2$．一方，回転の運動エネルギーは $\\dfrac12J\\omega_1^2$．よってジュール熱は $W-\\dfrac12J\\omega_1^2=\\dfrac12J\\omega_1^2$ で，\\textbf{$\\boldsymbol{\\dfrac12}$ 倍}．\nこれは「電池で抵抗を通してコンデンサーを充電すると，電池の仕事の半分が熱になる」のと同じ構造である．実際，逆起電力 $V=K\\omega$ と円板を通過した電気量 $Q=\\int I\\,dt=\\dfrac{J}{K}\\omega=\\dfrac{J}{K^2}V$ が比例するので，回転円板は電気容量 $C_{\\text{円}}=\\dfrac{J}{K^2}=\\dfrac{4J}{B^2a^4}$ のコンデンサーのようにふるまう（エネルギー $\\dfrac12J\\omega^2=\\dfrac{Q^2}{2C_{\\text{円}}}$）．\n\n\\textbf{(4)} 回転中の円板が発電機として $C$ を充電する．$C$ の電気量を $q$ とし，充電電流 $I'=\\dfrac{dq}{dt}$（円板内を中心→縁の向き）は円板の回転を妨げる．\n\\[ J\\frac{d\\omega}{dt}=-KI'=-K\\frac{dq}{dt}\\quad\\Rightarrow\\quad J\\omega+Kq=J\\omega_1\\ (\\text{一定}). \\]\n（角運動量の減少が，流れた電気量に比例する．）十分時間がたつと電流が $0$ になり，起電力とコンデンサーの電圧が等しい：$K\\omega_2=\\dfrac{q_2}{C}$．連立して\n\\[ \\omega_2=\\frac{J}{J+K^2C}\\omega_1=\\boldsymbol{\\frac{8JE}{Ba^2(4J+B^2a^4C)}},\\qquad q_2=CK\\omega_2=\\boldsymbol{\\frac{4JCE}{4J+B^2a^4C}}. \\]\nジュール熱はエネルギーの減少分で\n\\[ H=\\frac12J\\omega_1^2-\\frac12J\\omega_2^2-\\frac{q_2^2}{2C}=\\boldsymbol{\\frac{2JCE^2}{4J+B^2a^4C}}. \\]\n(3) の対応でみると，これは電圧 $E$ に充電された容量 $C_{\\text{円}}$ のコンデンサーを，抵抗を通して容量 $C$ の空のコンデンサーにつないだときの熱 $\\dfrac12\\cdot\\dfrac{C_{\\text{円}}C}{C_{\\text{円}}+C}E^2$ に一致する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "回転円板の起電力 $\\frac12Ba^2\\omega$ はローレンツ力と電場のつり合いから求まり，円板内の電流が受ける力のモーメントは $\\frac12Ba^2I$ である．角運動量の変化が通過電気量に比例するので，回転円板は容量 $4J/(B^2a^4)$ のコンデンサーと同じ構造をもち，電池による加速での発熱が半分になることや，コンデンサーとの電荷の分け合いが同じ式で解ける．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "momentum-conservation",
+  "torque"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "ファラデー円板",
+  "ローレンツ力",
+  "逆起電力",
+  "慣性モーメント",
+  "コンデンサー"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

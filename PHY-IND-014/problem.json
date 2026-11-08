@@ -1,0 +1,135 @@
+{
+ "id": "PHY-IND-014",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "ダイオードで2次電流を止めた変圧器（フライバック）での磁束の連続とエネルギーの放出",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，環状の鉄心に巻き数 $n_1$ のコイル1と巻き数 $n_2$ のコイル2が巻かれている．コイル1には起電力 $V_0$ の電池とスイッチ S が，コイル2には抵抗値 $R$ の抵抗とダイオード D が接続されている．D はコイル2の外側の経路を Y$_2\\to$ R $\\to$ D $\\to$ X$_2$ の向きにだけ電流を通し，順方向の電圧降下は無視できる．コイル・導線・電池の抵抗も無視できる．\n\n磁束は鉄心内だけに生じ，鉄心内の磁束 $\\Phi$ と電流 $I_1$，$I_2$（いずれも図の矢印の向きを正とする）の間には，定数 $k$ を用いて $\\Phi=k(n_1I_1+n_2I_2)$ が成り立つ．また，微小時間 $\\Delta t$ の間に $\\Phi$ が $\\Delta\\Phi$ だけ変化するとき，端子 X$_1$ の Y$_1$ に対する電位は $n_1\\dfrac{\\Delta\\Phi}{\\Delta t}$，端子 X$_2$ の Y$_2$ に対する電位は $n_2\\dfrac{\\Delta\\Phi}{\\Delta t}$ である．必要なら，$\\dfrac{dx}{dt}=-\\dfrac{x}{\\tau}$ をみたす量は $x=x_0e^{-t/\\tau}$ と変化することを用いてよい．\n\nはじめ S は開いていて，電流は流れていない．時刻 $t=0$ に S を閉じ，時刻 $t=T$ に開いた．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$0<t<T$ における $I_1$ を $t$ の関数として求めよ．また，この間 $I_2=0$ である理由を述べ，D の両端にかかる電圧の大きさを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "S を開いた直後の $I_2$ を求めよ．また，その瞬間に S の両接点間にかかる電圧の大きさを，$\\tau=\\dfrac{kn_2^{\\,2}}{R}$ を用いて表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$t>T$ における $I_2$ を求めよ．また，$t=T$ 以降に抵抗で発生するジュール熱の総量が，$0<t<T$ の間に電池がした仕事に等しいことを示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "次に，S を「閉じている時間 $T$，開いている時間 $T'$」の周期でくり返し開閉した．十分に時間がたち，各周期の変化が同じになったとき，抵抗で消費される平均の電力 $\\bar P$ を求めよ．ただし，$T'$ は $\\tau$ に比べて十分長いとは限らない．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ダイオードで2次電流を止めた変圧器（フライバック）での磁束の連続とエネルギーの放出",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：ダイオードで2次電流を止めた変圧器（フライバック）での磁束の連続とエネルギーの放出",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I_1=\\dfrac{V_0t}{kn_1^{\\,2}}$，D の電圧 $\\dfrac{n_2}{n_1}V_0$"
+   },
+   {
+    "id": "2",
+    "tex": "$I_2=\\dfrac{V_0T}{kn_1n_2}$，S の電圧 $V_0\\left(1+\\dfrac{T}{\\tau}\\right)$"
+   },
+   {
+    "id": "3",
+    "tex": "$I_2=\\dfrac{V_0T}{kn_1n_2}e^{-(t-T)/\\tau}$，ジュール熱・電池の仕事ともに $\\dfrac{V_0^{\\,2}T^2}{2kn_1^{\\,2}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\bar P=\\dfrac{V_0^{\\,2}T^2}{2kn_1^{\\,2}(T+T')}\\cdot\\dfrac{1+e^{-T'/\\tau}}{1-e^{-T'/\\tau}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) S を閉じている間}\n\nコイル1の両端は電池に直結されるので，X$_1$ の Y$_1$ に対する電位は $V_0$ である．よって\n\\[ n_1\\frac{\\Delta\\Phi}{\\Delta t}=V_0 \\quad\\Longrightarrow\\quad \\Phi=\\frac{V_0}{n_1}t \\]\nと，2次側の状態によらず磁束の増え方が決まる．このときコイル2では X$_2$ が Y$_2$ より $n_2\\dfrac{\\Delta\\Phi}{\\Delta t}=\\dfrac{n_2}{n_1}V_0$ だけ高電位になる．もし $I_2>0$ なら，外側の経路 Y$_2\\to$ R $\\to$ D $\\to$ X$_2$ では電流の向きに電位が $RI_2$ 下がるので X$_2$ が Y$_2$ より低電位になり矛盾する．$I_2<0$ は D が許さない．したがって $I_2=0$ で，D には逆向きに $\\boldsymbol{\\dfrac{n_2}{n_1}V_0}$ の電圧がかかる．$I_2=0$ を $\\Phi=kn_1I_1$ に代入して\n\\[ I_1=\\frac{\\Phi}{kn_1}=\\boldsymbol{\\frac{V_0t}{kn_1^{\\,2}}} \\]\n（$t=T$ での値を $I_{1\\mathrm m}=\\dfrac{V_0T}{kn_1^{\\,2}}$ とおく）．\n\n\\textbf{(2) S を開いた直後}\n\nS を開くと $I_1=0$ となる．このとき連続でなければならないのは個々のコイルの電流ではなく，鉄心の磁束 $\\Phi$ である（$\\Phi$ が不連続に変われば端子電圧が無限大になるが，2次側の回路には有限の電圧しか生じえない）．よって $\\Phi(T)=\\dfrac{V_0T}{n_1}=kn_2I_2$ より\n\\[ I_2=\\boldsymbol{\\frac{V_0T}{kn_1n_2}}=\\frac{n_1}{n_2}I_{1\\mathrm m}\\ (\\equiv I_{20}) \\]\nアンペア回数 $n_1I_{1\\mathrm m}$ がそのまま $n_2I_2$ に引き継がれる．$I_2>0$ なので D は導通できる．\n\nこのとき2次回路では X$_2$ の Y$_2$ に対する電位が $-RI_2$ だから $n_2\\dfrac{\\Delta\\Phi}{\\Delta t}=-RI_{20}$．したがって X$_1$ の Y$_1$ に対する電位は\n\\[ n_1\\frac{\\Delta\\Phi}{\\Delta t}=-\\frac{n_1}{n_2}RI_{20}=-\\frac{RV_0T}{kn_2^{\\,2}}=-V_0\\frac{T}{\\tau} \\]\nと負に反転する．電池の正極は S を介して X$_1$ に，負極は Y$_1$ につながっているので，S の接点間の電圧は\n\\[ V_0-\\left(-V_0\\frac{T}{\\tau}\\right)=\\boldsymbol{V_0\\left(1+\\frac{T}{\\tau}\\right)} \\]\nとなり，電池の起電力を大きく超えうる．\n\n\\textbf{(3) $t>T$}\n\n$I_1=0$ なので $\\Phi=kn_2I_2$．2次回路について $n_2\\dfrac{\\Delta\\Phi}{\\Delta t}=-RI_2$ より\n\\[ kn_2^{\\,2}\\frac{\\Delta I_2}{\\Delta t}=-RI_2 \\quad\\Longrightarrow\\quad I_2=\\boldsymbol{\\frac{V_0T}{kn_1n_2}e^{-(t-T)/\\tau}} \\]\nジュール熱の総量は\n\\[ \\int_T^\\infty RI_2^{\\,2}\\,dt=RI_{20}^{\\,2}\\cdot\\frac{\\tau}{2}=\\frac{kn_2^{\\,2}}{2}\\left(\\frac{V_0T}{kn_1n_2}\\right)^2=\\frac{V_0^{\\,2}T^2}{2kn_1^{\\,2}} \\]\n一方，$0<t<T$ に電池がした仕事は\n\\[ \\int_0^T V_0I_1\\,dt=\\frac{V_0^{\\,2}}{kn_1^{\\,2}}\\cdot\\frac{T^2}{2}=\\frac{V_0^{\\,2}T^2}{2kn_1^{\\,2}} \\]\nで両者は等しい（どちらも $\\dfrac{\\Phi(T)^2}{2k}$ に等しく，S を閉じている間に鉄心にたくわえられた磁気エネルギーが，S を開いた後に2次側で放出される）．\n\n\\textbf{(4) くり返し開閉の定常状態}\n\nS を閉じる瞬間に磁束が $\\Phi_s$（$>0$）であったとする．S を閉じると (1) と同じく $\\dfrac{\\Delta\\Phi}{\\Delta t}=\\dfrac{V_0}{n_1}>0$ となるので $I_2$ は直ちに $0$ になり，磁束の連続性から $I_1$ は $\\dfrac{\\Phi_s}{kn_1}$ から増え始める．閉じている間の磁束の増加は $\\Delta\\Phi_0=\\dfrac{V_0T}{n_1}$．開いている間は (3) と同様に $\\Phi\\propto I_2$ が $e^{-t/\\tau}$ で減る．定常状態では\n\\[ \\Phi_s=(\\Phi_s+\\Delta\\Phi_0)e^{-T'/\\tau} \\quad\\Longrightarrow\\quad \\Phi_s=\\Delta\\Phi_0\\frac{e^{-T'/\\tau}}{1-e^{-T'/\\tau}} \\]\n1周期の始めと終わりで鉄心のエネルギーは同じなので，1周期のジュール熱は電池の仕事に等しい：\n\\[ W=\\int_0^T V_0\\cdot\\frac{1}{kn_1}\\left(\\Phi_s+\\frac{V_0}{n_1}t\\right)dt=\\frac{\\Delta\\Phi_0}{k}\\left(\\Phi_s+\\frac{\\Delta\\Phi_0}{2}\\right)=\\frac{\\Delta\\Phi_0^{\\,2}}{2k}\\cdot\\frac{1+e^{-T'/\\tau}}{1-e^{-T'/\\tau}} \\]\nよって\n\\[ \\bar P=\\frac{W}{T+T'}=\\boldsymbol{\\frac{V_0^{\\,2}T^2}{2kn_1^{\\,2}(T+T')}\\cdot\\frac{1+e^{-T'/\\tau}}{1-e^{-T'/\\tau}}} \\]\n$T'\\gg\\tau$ では (3) の1回分のエネルギーを周期で割ったものに一致する．$T'$ が短いと磁束が戻りきらずに残り（$\\Phi_s>0$），1周期に扱うエネルギーが増える．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "変圧器で連続なのは個々のコイル電流ではなく鉄心の磁束（アンペア回数の和）であり，1次側を断つと $n_1I_1$ が瞬時に $n_2I_2$ に引き継がれる．1次電圧が磁束の変化率を決めるので，ダイオードで2次電流を止めれば変圧器はエネルギーをためるコイルとして働き，断った瞬間に1次側の電圧が反転して電源を超える．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "ac-circuit"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "変圧器",
+  "磁束の連続性",
+  "アンペア回数",
+  "フライバック",
+  "ダイオード",
+  "過渡現象"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

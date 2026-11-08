@@ -1,0 +1,153 @@
+{
+ "id": "PHY-IND-017",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "コイルの電流の連続性による放電管の点灯（放電管をコイルに並列にする場合とスイッチに並列にする場合）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "起電力 $E$ の電池（内部抵抗は無視できる），自己インダクタンス $L$ で巻線の抵抗が $r$ のコイル，スイッチ S，放電管 D を用いて，図の配置 I，配置 II の2通りの回路をつくる．D は，両端の電圧の大きさが $V_0$ 以下のときは電流を流さず，大きさ $i$（$>0$）の電流が流れているときは両端の電圧の大きさが $V_0+\\rho i$（$\\rho$ は正の定数）となる素子で，電流の向きによらず同じ性質をもち，電流が流れている間だけ光る．ただし $E<V_0$ とする．D の電気容量，導線の抵抗と自己インダクタンスは無視できる．\n\n\\textbf{I}　配置 I で S を閉じ，十分に時間がたってから時刻 $t=0$ に S を開く．$R=\\rho+r$ とおく．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "S を閉じた直後に D が光らないことを示せ．また，S を開く直前のコイルの電流 $I_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "S を開いた直後の D の両端の電圧の大きさを求めよ．また，そのとき点 a と点 b のどちらの電位が高いか答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$t>0$ でコイルを流れる電流 $i(t)$ を求め，D が光っている時間 $T_1$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "D が光っている間に D を通過する電気量 $Q_1$ を $L$，$I_0$，$V_0$，$R$，$T_1$ で表せ．また，その間に D で消費されるエネルギー $W_1$ を $\\rho$，$r$，$R$，$L$，$I_0$，$V_0$，$Q_1$ で表せ．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "\\textbf{II}　次に配置 II（D を S の両端につなぐ）で，同様に S を閉じて十分に時間がたってから S を開く．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "5",
+      "tex": "D が光っている時間 $T_2$ を求め，$T_2>T_1$ であることを示せ．"
+     },
+     {
+      "id": "6",
+      "tex": "D が光っている間に D を通過する電気量を $Q_2$ とする．$Q_2$ を $L$，$I_0$，$V_0$，$E$，$R$，$T_2$ で表せ．また，その間に電池がした仕事 $W_{\\text{E}}$ と，D で消費されるエネルギー $W_2$ を求めよ（$W_2$ は $\\rho$，$r$，$R$，$L$，$I_0$，$V_0$，$E$，$Q_2$ で表せ）．"
+     },
+     {
+      "id": "7",
+      "tex": "$E=9.0\\ \\mathrm{V}$，$r=30\\ \\Omega$，$L=1.5\\ \\mathrm{H}$，$V_0=80\\ \\mathrm{V}$，$\\rho=200\\ \\Omega$ のとき，(2) の電圧，$T_1$，$T_2$，$W_1$，$W_2$ を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：コイルの電流の連続性による放電管の点灯（放電管をコイルに並列にする場合とスイッチに並列にする場合）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "直後の D の電圧は $E<V_0$，$I_0=\\dfrac{E}{r}$"
+   },
+   {
+    "id": "2",
+    "tex": "$V_0+\\rho I_0$，点 b"
+   },
+   {
+    "id": "3",
+    "tex": "$i(t)=\\left(I_0+\\dfrac{V_0}{R}\\right)e^{-\\frac{R}{L}t}-\\dfrac{V_0}{R}$，$T_1=\\dfrac{L}{R}\\log\\left(1+\\dfrac{RI_0}{V_0}\\right)$"
+   },
+   {
+    "id": "4",
+    "tex": "$Q_1=\\dfrac{LI_0-V_0T_1}{R}$，$W_1=\\dfrac{\\rho}{R}\\cdot\\dfrac12LI_0^2+\\dfrac{r}{R}V_0Q_1$"
+   },
+   {
+    "id": "5",
+    "tex": "$T_2=\\dfrac{L}{R}\\log\\left(1+\\dfrac{RI_0}{V_0-E}\\right)$"
+   },
+   {
+    "id": "6",
+    "tex": "$Q_2=\\dfrac{LI_0-(V_0-E)T_2}{R}$，$W_{\\text{E}}=EQ_2$，$W_2=\\dfrac{\\rho}{R}\\cdot\\dfrac12LI_0^2+\\dfrac{rV_0+\\rho E}{R}Q_2$"
+   },
+   {
+    "id": "7",
+    "tex": "$1.4\\times10^{2}\\ \\mathrm{V}$，$T_1=4.1\\times10^{-3}\\ \\mathrm{s}$，$T_2=4.4\\times10^{-3}\\ \\mathrm{s}$，$W_1=6.4\\times10^{-2}\\ \\mathrm{J}$，$W_2=6.9\\times10^{-2}\\ \\mathrm{J}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) S を閉じた直後と定常状態}　S を閉じた直後はコイルの電流が $0$ のまま連続なので，コイルは断線と同じで，コイルと並列な D には電池の電圧 $E$ がそのままかかる．$E<V_0$ だから D に電流は流れず，D は光らない．十分に時間がたつと電流は一定になり，コイルの誘導起電力は $0$．D の電圧はコイルの抵抗分の電圧 $rI_0=E<V_0$ なので D には電流が流れず\n\\[ I_0=\\boldsymbol{\\frac{E}{r}} \\]\nである．\n\n\\textbf{(2) S を開いた直後}　コイルの電流は急には変われないので，S を開いた直後もコイルには a から b の向きに $I_0$ が流れ続け，その電流は D を b から a の向きに流れて戻る．したがって D の電圧の大きさは\n\\[ \\boldsymbol{V_0+\\rho I_0} \\]\nで，D の中では電流が電位の高い方から低い方へ流れるので，\\textbf{点 b} の電位が高い．S を開く前（a が $E$ だけ高い）とは向きが逆転し，大きさは電池の起電力よりはるかに大きくなりうる．\n\n\\textbf{(3) 電流の変化と点灯時間}　コイル（起電力と抵抗 $r$）と D からなる閉回路について，キルヒホッフの第2法則より\n\\[ -L\\frac{di}{dt}=ri+(V_0+\\rho i)\\quad\\Longrightarrow\\quad L\\frac{di}{dt}=-(V_0+Ri) \\]\nである．$i+\\dfrac{V_0}{R}$ が時定数 $\\dfrac{L}{R}$ で指数関数的に減るから，$i(0)=I_0$ より\n\\[ i(t)=\\boldsymbol{\\left(I_0+\\frac{V_0}{R}\\right)e^{-\\frac{R}{L}t}-\\frac{V_0}{R}} \\]\nである．$i$ が $0$ になると D の電圧は $V_0$ 以下になり電流は止まる（D には逆向きの電流を流す仕組みがないので，以後電流は $0$ のまま）．$i(T_1)=0$ より\n\\[ T_1=\\boldsymbol{\\frac{L}{R}\\log\\left(1+\\frac{RI_0}{V_0}\\right)} \\]\nである．\n\n\\textbf{(4) 通過電気量とエネルギー}　回路の式 $L\\dfrac{di}{dt}=-V_0-Ri$ を $0\\le t\\le T_1$ で積分すると，左辺は $L(0-I_0)$，右辺は $-V_0T_1-RQ_1$ になるので\n\\[ Q_1=\\boldsymbol{\\frac{LI_0-V_0T_1}{R}} \\]\nである．次に $K=\\displaystyle\\int_0^{T_1}i^2\\,dt$ とおき，回路の式に $i$ をかけて積分すると（左辺は $\\frac{d}{dt}\\left(\\frac12Li^2\\right)$），エネルギー収支\n\\[ \\frac12LI_0^2=V_0Q_1+RK \\]\nが得られる．D で消費されるエネルギーは $W_1=\\displaystyle\\int(V_0+\\rho i)i\\,dt=V_0Q_1+\\rho K$ だから，$K=\\dfrac{1}{R}\\left(\\frac12LI_0^2-V_0Q_1\\right)$ を代入して\n\\[ W_1=\\boldsymbol{\\frac{\\rho}{R}\\cdot\\frac12LI_0^2+\\frac{r}{R}V_0Q_1} \\]\nとなる．コイルのエネルギー $\\frac12LI_0^2$ が，D と巻線の抵抗に分けられたことになる（$W_1+rK=\\frac12LI_0^2$）．\n\n\\textbf{(5) 配置 II}　S を閉じている間 D は S で短絡されているので電圧は $0$ で，(1) と同様に定常電流は $I_0=E/r$ である．S を開くと，電流は電池・コイル・D を一周する．この閉回路では電池が残るので\n\\[ E-L\\frac{di}{dt}=ri+(V_0+\\rho i)\\quad\\Longrightarrow\\quad L\\frac{di}{dt}=-\\{(V_0-E)+Ri\\} \\]\nとなり，(3) の $V_0$ を $V_0-E$（$>0$）に置き換えた式になる．よって\n\\[ T_2=\\boldsymbol{\\frac{L}{R}\\log\\left(1+\\frac{RI_0}{V_0-E}\\right)} \\]\nである．$0<V_0-E<V_0$ より $\\dfrac{RI_0}{V_0-E}>\\dfrac{RI_0}{V_0}$ であり，$\\log$ は増加関数だから $T_2>T_1$ である．配置 II では，電流を減らそうとする D の電圧の一部を電池が打ち消すので，電流の減り方が遅くなる．\n\n\\textbf{(6) 配置 II のエネルギー}　(4) と同様に回路の式を積分して\n\\[ Q_2=\\boldsymbol{\\frac{LI_0-(V_0-E)T_2}{R}} \\]\nである．電池を負極から正極へ通過した電気量は $Q_2$ なので，電池がした仕事は $W_{\\text{E}}=\\boldsymbol{EQ_2}$ である．エネルギー収支は $\\frac12LI_0^2+EQ_2=V_0Q_2+RK'$（$K'=\\int i^2dt$）だから $K'=\\dfrac1R\\left\\{\\frac12LI_0^2-(V_0-E)Q_2\\right\\}$ で，\n\\[ W_2=V_0Q_2+\\rho K'=\\boldsymbol{\\frac{\\rho}{R}\\cdot\\frac12LI_0^2+\\frac{rV_0+\\rho E}{R}Q_2} \\]\nとなる．\n\n\\textbf{(7) 数値}　$I_0=\\dfrac{9.0}{30}=0.30\\ \\mathrm{A}$，$R=230\\ \\Omega$，$\\dfrac{L}{R}=6.52\\times10^{-3}\\ \\mathrm{s}$，$\\frac12LI_0^2=6.75\\times10^{-2}\\ \\mathrm{J}$．\nS を開いた直後の D の電圧は $80+200\\times0.30=\\boldsymbol{1.4\\times10^{2}\\ \\mathrm{V}}$ で，電池の約15倍である．\n\\[ T_1=6.52\\times10^{-3}\\log\\frac{80+69}{80}\\fallingdotseq\\boldsymbol{4.1\\times10^{-3}\\ \\mathrm{s}},\\qquad T_2=6.52\\times10^{-3}\\log\\frac{71+69}{71}\\fallingdotseq\\boldsymbol{4.4\\times10^{-3}\\ \\mathrm{s}} \\]\n$Q_1=\\dfrac{1.5\\times0.30-80\\times4.06\\times10^{-3}}{230}\\fallingdotseq5.46\\times10^{-4}\\ \\mathrm{C}$，$Q_2=\\dfrac{0.45-71\\times4.43\\times10^{-3}}{230}\\fallingdotseq5.90\\times10^{-4}\\ \\mathrm{C}$ より\n\\[ W_1=\\frac{200\\times6.75\\times10^{-2}+30\\times80\\times5.46\\times10^{-4}}{230}\\fallingdotseq\\boldsymbol{6.4\\times10^{-2}\\ \\mathrm{J}},\\qquad W_2=\\frac{200\\times6.75\\times10^{-2}+4200\\times5.90\\times10^{-4}}{230}\\fallingdotseq\\boldsymbol{6.9\\times10^{-2}\\ \\mathrm{J}} \\]\nである．配置 II では，コイルのエネルギーに加えて電池の仕事 $W_{\\text{E}}=9.0\\times5.90\\times10^{-4}\\fallingdotseq5.3\\times10^{-3}\\ \\mathrm{J}$ も D に供給される．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "コイルの電流は連続なので，スイッチを開くとその電流が放電管に流れ込み，向きの逆転した電源より大きな電圧が生じる．放電管の電圧が「一定値＋抵抗」型なら電流は一定値に向かう指数関数で減って0で止まり，点灯時間・通過電気量・消費エネルギーは回路の式の積分（$L\\Delta I$ の収支）とエネルギー収支から求まる．放電管をスイッチの両端につなぐと電池が回路に残り，実効的なしきい電圧が $V_0-E$ に下がって点灯が長くなる．"
+ },
+ "concepts": [
+  "electromagnetic-induction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "自己誘導",
+  "コイルの電流の連続性",
+  "放電管",
+  "過渡現象",
+  "エネルギー収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

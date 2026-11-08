@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 440"><defs><marker id="q-ab" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#1f5fbf"/></marker><marker id="q-ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#c0392b"/></marker><marker id="q-ak" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#222"/></marker></defs>
+<path d="M385.0,220.0 A125,125 0 0,0 290.2,98.7" stroke="#222" stroke-width="1.8" fill="none"/>
+<path d="M229.8,98.7 A125,125 0 0,0 135.0,220.0" stroke="#222" stroke-width="1.8" fill="none"/>
+<path d="M135.0,220.0 A125,125 0 0,0 229.8,341.3" stroke="#222" stroke-width="1.8" fill="none"/>
+<path d="M290.2,341.3 A125,125 0 0,0 385.0,220.0" stroke="#222" stroke-width="1.8" fill="none"/>
+<rect x="230.0" y="87.0" width="60.0" height="16.0" stroke="#222" stroke-width="1.8" fill="none"/>
+<text x="260.0" y="79.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">R<tspan baseline-shift="sub" font-size="10" font-style="normal" font-family="Noto Sans CJK JP, sans-serif">1</tspan></text>
+<rect x="230.0" y="337.0" width="60.0" height="16.0" stroke="#222" stroke-width="1.8" fill="none"/>
+<text x="260.0" y="375.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">R<tspan baseline-shift="sub" font-size="10" font-style="normal" font-family="Noto Sans CJK JP, sans-serif">2</tspan></text>
+<circle cx="135.0" cy="220.0" r="3.5" stroke="#222" stroke-width="1.6" fill="#222"/>
+<circle cx="385.0" cy="220.0" r="3.5" stroke="#222" stroke-width="1.6" fill="#222"/>
+<text x="151.0" y="212.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">A</text>
+<text x="369.0" y="212.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">C</text>
+<circle cx="260.0" cy="220.0" r="55.0" stroke="#888" stroke-width="1" fill="none" stroke-dasharray="5,4"/>
+<circle cx="232.0" cy="192.0" r="5.0" stroke="#222" stroke-width="1.2" fill="none"/>
+<circle cx="232.0" cy="192.0" r="1.8" stroke="#222" stroke-width="0.5" fill="#222"/>
+<circle cx="260.0" cy="184.0" r="5.0" stroke="#222" stroke-width="1.2" fill="none"/>
+<circle cx="260.0" cy="184.0" r="1.8" stroke="#222" stroke-width="0.5" fill="#222"/>
+<circle cx="288.0" cy="192.0" r="5.0" stroke="#222" stroke-width="1.2" fill="none"/>
+<circle cx="288.0" cy="192.0" r="1.8" stroke="#222" stroke-width="0.5" fill="#222"/>
+<circle cx="224.0" cy="220.0" r="5.0" stroke="#222" stroke-width="1.2" fill="none"/>
+<circle cx="224.0" cy="220.0" r="1.8" stroke="#222" stroke-width="0.5" fill="#222"/>
+<circle cx="296.0" cy="220.0" r="5.0" stroke="#222" stroke-width="1.2" fill="none"/>
+<circle cx="296.0" cy="220.0" r="1.8" stroke="#222" stroke-width="0.5" fill="#222"/>
+<circle cx="232.0" cy="248.0" r="5.0" stroke="#222" stroke-width="1.2" fill="none"/>
+<circle cx="232.0" cy="248.0" r="1.8" stroke="#222" stroke-width="0.5" fill="#222"/>
+<circle cx="260.0" cy="256.0" r="5.0" stroke="#222" stroke-width="1.2" fill="none"/>
+<circle cx="260.0" cy="256.0" r="1.8" stroke="#222" stroke-width="0.5" fill="#222"/>
+<circle cx="288.0" cy="248.0" r="5.0" stroke="#222" stroke-width="1.2" fill="none"/>
+<circle cx="288.0" cy="248.0" r="1.8" stroke="#222" stroke-width="0.5" fill="#222"/>
+<text x="323.0" y="169.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="start" fill="#222">B = kt</text>
+<line x1="272.1" y1="215.1" x2="311.0" y2="199.4" stroke="#222" stroke-width="1"/>
+<text x="304.0" y="196.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" text-anchor="middle" fill="#222">b</text>
+<text x="246.0" y="244.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" text-anchor="middle" fill="#222">O</text>
+<line x1="135.0" y1="220.0" x2="246.0" y2="220.0" stroke="#888" stroke-width="1.2" stroke-dasharray="5,4"/>
+<line x1="274.0" y1="220.0" x2="385.0" y2="220.0" stroke="#888" stroke-width="1.2" stroke-dasharray="5,4"/>
+<circle cx="259.0" cy="220.0" r="13.0" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="259.0" y="225.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">V</text>
+<text x="190.0" y="212.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" text-anchor="middle" fill="#222">（イ）</text>
+<path d="M135,220 L100,195 L100,45 L246,45" stroke="#888" stroke-width="1.2" fill="none" stroke-dasharray="5,4"/>
+<path d="M274,45 L420,45 L420,195 L385,220" stroke="#888" stroke-width="1.2" fill="none" stroke-dasharray="5,4"/>
+<circle cx="260.0" cy="45.0" r="13.0" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="260.0" y="50.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">V</text>
+<text x="310.0" y="37.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" text-anchor="middle" fill="#222">（ア）</text>
+<path d="M135,220 L100,245 L100,400 L246,400" stroke="#888" stroke-width="1.2" fill="none" stroke-dasharray="5,4"/>
+<path d="M274,400 L420,400 L420,245 L385,220" stroke="#888" stroke-width="1.2" fill="none" stroke-dasharray="5,4"/>
+<circle cx="260.0" cy="400.0" r="13.0" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="260.0" y="405.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">V</text>
+<text x="310.0" y="392.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" text-anchor="middle" fill="#222">（ウ）</text>
+</svg>

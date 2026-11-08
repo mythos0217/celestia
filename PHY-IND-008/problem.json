@@ -1,0 +1,122 @@
+{
+ "id": "PHY-IND-008",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "ソレノイドの端の磁場と相互インダクタンスの相反性（小コイルを引き抜く誘導）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，長さ $2l$，半径 $a$（$a\\ll l$）の円筒に導線を一様に巻いたソレノイド X（単位長さあたりの巻数 $n$，自己インダクタンス $L$）の両端を抵抗値 $R$ の抵抗につなぎ，閉回路をつくる（X の導線の抵抗も含めて回路の全抵抗を $R$ とする）．X の中心を P，中心軸上の X の一端を E とする．また，巻数 $N$，断面積 $s$（$s\\ll\\pi a^2$）の小さなコイル Y を，X と中心軸をそろえて置く．真空の透磁率を $\\mu_0$ とし，相互インダクタンスはどちらのコイルを1次側としても等しいことを用いてよい．X は十分長く，X の外側の磁場および両端付近以外での磁場の不均一は無視できる．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X に電流 $I$ を流したとき，P での磁束密度を求めよ．また，E での磁束密度が P での値の何倍になるかを，X の E 側の外に同じソレノイドを継ぎ足した仮想的な状況との比較（重ね合わせ）によって求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "Y を P に置いた場合と E に置いた場合について，X と Y の相互インダクタンス $M_{\\mathrm P}$，$M_{\\mathrm E}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Y を P に固定し，Y に流す電流を毎秒 $k$ の一定の割合で増加させ続けた．十分に時間がたったとき，X の回路を流れる電流の大きさを求めよ．Y の電流がつくる磁場は一様でなく，X の各巻線を貫く磁束はまちまちであることに注意せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "Y に一定の電流 $i_0$ を流したまま，Y を P から中心軸に沿って動かし，E を通過させて X から十分遠くまで引き出した．X に電流が流れていない状態から始め，電流が再び $0$ になるまでの間に抵抗を通過した電気量 $Q$ を求めよ．また，Y を P から E まで動かしてそこで止めた場合の電気量 $Q'$ を求めよ．X の自己インダクタンス $L$ は無視しないこと．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ソレノイドの端の磁場と相互インダクタンスの相反性（小コイルを引き抜く誘導）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "P：$\\mu_0nI$，E：P の $\\dfrac12$ 倍（$\\dfrac12\\mu_0nI$）"
+   },
+   {
+    "id": "2",
+    "tex": "$M_{\\mathrm P}=\\mu_0nNs$，$M_{\\mathrm E}=\\dfrac12\\mu_0nNs$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{\\mu_0nNsk}{R}$"
+   },
+   {
+    "id": "4",
+    "tex": "$Q=\\dfrac{\\mu_0nNsi_0}{R}$，$Q'=\\dfrac{\\mu_0nNsi_0}{2R}$（いずれも $L$ によらない）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 重ね合わせ} X の内部は一様とみなせ，P での磁束密度は $\\boldsymbol{\\mu_0nI}$．\nE での値を求めるため，X の E 側の外に，同じ巻き方・同じ電流の半無限ソレノイド X$'$ をつないだ状況を考える．X と X$'$ を合わせると E は長いソレノイドの内部の点になるから，合成の磁束密度は $\\mu_0nI$．一方，E は X の端であると同時に X$'$ の端でもあり，E を境に左右を折り返す対称性から，X と X$'$ が E につくる軸方向の磁束密度は等しい（X のもう一方の端は E から $2l\\gg a$ 離れているので，X は E から見て半無限ソレノイドとみなせる）．よって X が E につくる磁束密度を $B_{\\mathrm E}$ として $2B_{\\mathrm E}=\\mu_0nI$，すなわち\n\\[ B_{\\mathrm E}=\\frac12\\mu_0nI\\quad(\\boldsymbol{P の \\tfrac12 倍}). \\]\n\n\\textbf{(2)} X に電流 $I$ を流したとき Y を貫く磁束鎖交数は $N\\times B\\times s$（$s$ が小さいので Y 内の磁場は一様とみなせる）．よって\n\\[ M_{\\mathrm P}=\\frac{N\\mu_0nIs}{I}=\\boldsymbol{\\mu_0nNs},\\qquad M_{\\mathrm E}=\\boldsymbol{\\frac12\\mu_0nNs}. \\]\n\n\\textbf{(3) 相反性を使う} Y の電流 $i_Y$ がつくる磁場は Y の近くで強く，Y から離れると向きも変わる複雑な形で，X の各巻線を貫く磁束を直接足し合わせるのは難しい．しかし相互インダクタンスは1次・2次を入れかえても等しいので，Y の電流による X の磁束鎖交数は $M_{\\mathrm P}i_Y$ と表せる．したがって X に生じる誘導起電力の大きさは $M_{\\mathrm P}k$．X の回路について（X の電流を $I_X$）\n\\[ L\\frac{dI_X}{dt}+RI_X=M_{\\mathrm P}k\\quad(\\text{向きの符号は省略}). \\]\n十分時間がたつと $I_X$ は一定になり $L\\dfrac{dI_X}{dt}=0$ なので\n\\[ I_X=\\frac{M_{\\mathrm P}k}{R}=\\boldsymbol{\\frac{\\mu_0nNsk}{R}}. \\]\n\n\\textbf{(4) 通過電気量は磁束鎖交数の変化だけで決まる} Y の位置が変わると $M$ が変わり，Y による X の磁束鎖交数 $Mi_0$ が変化する．X の回路では\n\\[ RI_X=-\\frac{d(Mi_0)}{dt}-L\\frac{dI_X}{dt}. \\]\n両辺を，電流 $0$ の状態から再び電流 $0$ になるまで時間で積分すると，$\\displaystyle\\int L\\frac{dI_X}{dt}dt=L(0-0)=0$ なので\n\\[ R\\int I_X\\,dt=-\\Delta(Mi_0)\\quad\\therefore\\quad Q=\\frac{|\\Delta M|\\,i_0}{R}. \\]\n自己インダクタンスは電流の流れ方（時間変化）を変えるが，通過電気量の総量には影響しない．十分遠くでは $M=0$ なので\n\\[ Q=\\frac{M_{\\mathrm P}i_0}{R}=\\boldsymbol{\\frac{\\mu_0nNsi_0}{R}},\\qquad Q'=\\frac{(M_{\\mathrm P}-M_{\\mathrm E})i_0}{R}=\\boldsymbol{\\frac{\\mu_0nNsi_0}{2R}}. \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ソレノイドの端の軸上の磁場は，仮想的に延長したソレノイドとの重ね合わせと対称性から内部の半分と求まる．小コイルがソレノイドにつくる磁束鎖交は直接計算できないが，相互インダクタンスの相反性で「ソレノイドが小コイルにつくる磁束」に置きかえられる．さらに電流が $0$ から $0$ に戻る過程の通過電気量は自己インダクタンスによらず磁束鎖交の変化だけで決まる．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "superposition"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "ソレノイド",
+  "重ね合わせ",
+  "相互インダクタンス",
+  "相反性",
+  "通過電気量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

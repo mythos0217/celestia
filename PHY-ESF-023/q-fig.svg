@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320">
+  <rect x="100" y="60" width="200" height="200" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <circle cx="100" cy="60" r="9" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+  <circle cx="300" cy="260" r="9" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+  <circle cx="300" cy="60" r="13" fill="none" stroke="#1f5fbf" stroke-width="1.6"/>
+  <circle cx="100" cy="260" r="13" fill="none" stroke="#1f5fbf" stroke-width="1.6"/>
+  <text x="70" y="45" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">A</text>
+  <text x="318" y="45" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">B</text>
+  <text x="318" y="287" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">C</text>
+  <text x="70" y="287" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">D</text>
+  <text x="112" y="88" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">陽電子 <tspan font-family="Times New Roman, serif" font-style="italic">m</tspan></text>
+  <text x="222" y="238" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">陽電子 <tspan font-family="Times New Roman, serif" font-style="italic">m</tspan></text>
+  <text x="226" y="92" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">陽子 <tspan font-family="Times New Roman, serif" font-style="italic">M</tspan></text>
+  <text x="118" y="244" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">陽子 <tspan font-family="Times New Roman, serif" font-style="italic">M</tspan></text>
+  <text x="195" y="52" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">a</text>
+  <text x="310" y="166" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">a</text>
+  <text x="120" y="308" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">（すべて電気量 <tspan font-family="Times New Roman, serif" font-style="italic">+e</tspan>）</text>
+</svg>

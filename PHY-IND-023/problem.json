@@ -1,0 +1,131 @@
+{
+ "id": "PHY-IND-023",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "直流で傾けた電磁ブランコの共鳴駆動：定常状態で交流電流が消え，振幅が抵抗によらない理由",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，長さ $L$，質量 $M$ の導体棒を，長さ $l$ の2本の軽い導線で水平に吊るしたブランコがある．導線の上端はなめらかな軸受けで，ブランコは棒に平行な水平軸のまわりに振れる．棒のある領域には鉛直上向きに磁束密度 $B$ の一様な磁場がかかっている．導線は，抵抗値 $R$ の抵抗器，起電力 $E_0$ の直流電源，起電力 $A\\sin\\omega t$ の交流電源と直列につながれている（電源の内部抵抗，導線と棒の抵抗，自己インダクタンス，空気抵抗は無視し，棒以外の回路は磁場の外にある）．鉛直下向きからの振れ角を $\\theta$ とし，電流の正の向きは，棒が受ける電磁力が $\\theta$ を増やす向きになる向きとする．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "はじめ交流電源の起電力を 0 にしておく（$A=0$）．ブランコが静止する角 $\\varphi$ について $\\tan\\varphi$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の状態から少しずらして放すと，ブランコは $\\varphi$ を中心に振動しながら振幅が小さくなる．振動の角振動数 $\\Omega$ を求めよ（減衰が角振動数に与える影響は無視してよい）．また，振幅は $e^{-t/\\tau}$ に比例して減少する．$\\tau$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次に，交流電源の角周波数を $\\omega=\\Omega$ にして $A\\,(>0)$ を加える．十分時間が経つと，ブランコは $\\varphi$ を中心に一定の小さな振幅 $\\beta$ で振動するようになった．$\\beta$ を求めよ．また，このとき回路を流れる電流を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の定常状態で，交流電源が供給する平均の仕事率と，抵抗器で発生するジュール熱の時間平均（単位時間あたり）を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(3) の状態から，抵抗値を $2R$ に，直流電源の起電力を $2E_0$ に変え，$A$ と $\\omega$ は変えなかった．十分時間が経った後の振幅 $\\beta'$ を求めよ．また，(2) の $\\tau$ に相当する時間は何倍になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：直流で傾けた電磁ブランコの共鳴駆動：定常状態で交流電流が消え，振幅が抵抗によらない理由",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\tan\\varphi=\\dfrac{BE_0L}{MgR}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Omega=\\sqrt{\\dfrac{g}{l\\cos\\varphi}}$，$\\tau=\\dfrac{2MR}{B^2L^2\\cos^2\\varphi}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\beta=\\dfrac{A}{BLl\\Omega\\cos\\varphi}=\\dfrac{A}{BL\\sqrt{gl\\cos\\varphi}}$，電流は一定値 $\\dfrac{E_0}{R}$（交流成分が 0）"
+   },
+   {
+    "id": "4",
+    "tex": "交流電源：0，ジュール熱：$\\dfrac{E_0^2}{R}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\beta'=\\beta$，$\\tau$ は 2 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{準備：運動方程式}\n棒の速さは $l\\dot\\theta$ で，その水平成分 $l\\dot\\theta\\cos\\theta$ だけが鉛直な磁場を横切るので，誘導起電力の大きさは $BLl\\dot\\theta\\cos\\theta$ であり，向きはレンツの法則により運動を妨げる電流（$\\theta$ を減らす力を生む向き）を流す向きである．よって\n\\[ RI=E_0+A\\sin\\omega t-BLl\\dot\\theta\\cos\\theta . \\]\n電磁力 $BIL$ は水平で，その円運動の接線成分は $BIL\\cos\\theta$．軸のまわりの回転（接線方向の運動方程式）は\n\\[ Ml\\ddot\\theta=-Mg\\sin\\theta+BIL\\cos\\theta . \\]\n\n\\textbf{(1)} 静止していれば誘導起電力は 0 で $I=\\dfrac{E_0}{R}$．接線方向のつり合い $Mg\\sin\\varphi=\\dfrac{BE_0L}{R}\\cos\\varphi$ より $\\boldsymbol{\\tan\\varphi=\\dfrac{BE_0L}{MgR}}$．重力と電磁力の合力（大きさ $\\dfrac{Mg}{\\cos\\varphi}$）の向きに傾いて静止する．\n\n\\textbf{(2)} 電流の一定部分 $\\dfrac{E_0}R$ による電磁力は一定の水平力なので，重力と合わせて大きさ $g'=\\dfrac{g}{\\cos\\varphi}$ の「見かけの重力」になる．よって $\\varphi$ のまわりの微小振動は長さ $l$，重力加速度 $g'$ の単振り子と同じで\n\\[ \\boldsymbol{\\Omega=\\sqrt{\\frac{g}{l\\cos\\varphi}}} . \\]\n（$\\theta=\\varphi+\\eta$ として線形化しても，復元力の係数は $Mg\\cos\\varphi+\\dfrac{BE_0L}{R}\\sin\\varphi=\\dfrac{Mg}{\\cos\\varphi}$ となる．）\n\n運動による電流 $-\\dfrac{BLl\\dot\\eta\\cos\\varphi}{R}$ は抵抗で熱を生み，単位時間あたりのジュール熱は $\\dfrac{(BLl\\cos\\varphi)^2\\dot\\eta^2}{R}$．振幅 $\\beta_0$ の振動の力学的エネルギーは $\\mathcal E=\\dfrac12Ml^2\\Omega^2\\beta_0^2$，$\\dot\\eta^2$ の1周期平均は $\\dfrac12\\Omega^2\\beta_0^2$ なので\n\\[ \\frac{d\\mathcal E}{dt}=-\\frac{(BL\\cos\\varphi)^2}{MR}\\,\\mathcal E . \\]\nエネルギーは $e^{-(BL\\cos\\varphi)^2t/(MR)}$ に比例し，振幅はその平方根に比例するので\n\\[ \\boldsymbol{\\tau=\\frac{2MR}{B^2L^2\\cos^2\\varphi}} . \\]\n\n\\textbf{(3) 共鳴駆動の定常状態}\n$\\theta=\\varphi+\\eta$ として線形化すると\n\\[ Ml^2\\ddot\\eta+\\frac{(BLl\\cos\\varphi)^2}{R}\\dot\\eta+\\frac{Mgl}{\\cos\\varphi}\\eta=\\frac{BLl\\cos\\varphi}{R}A\\sin\\Omega t . \\]\n$\\omega=\\Omega$ では慣性項と復元項が打ち消し合う（$Ml^2\\Omega^2=\\dfrac{Mgl}{\\cos\\varphi}$）ので，定常状態では抵抗項と駆動項がつり合う：\n\\[ \\frac{(BLl\\cos\\varphi)^2}{R}\\dot\\eta=\\frac{BLl\\cos\\varphi}{R}A\\sin\\Omega t\\quad\\Longrightarrow\\quad BLl\\dot\\eta\\cos\\varphi=A\\sin\\Omega t . \\]\nすなわち誘導起電力が交流電源の起電力と\\textbf{各瞬間で}等しくなる．$\\eta=-\\beta\\cos\\Omega t$ とおくと $BLl\\Omega\\beta\\cos\\varphi=A$ で\n\\[ \\boldsymbol{\\beta=\\frac{A}{BLl\\Omega\\cos\\varphi}=\\frac{A}{BL\\sqrt{gl\\cos\\varphi}}} . \\]\nこのとき回路の式から $RI=E_0$，つまり電流は\\textbf{一定値 $\\boldsymbol{\\dfrac{E_0}{R}}$} で，交流成分は 0 である．交流電流が流れないので抵抗による減衰もなく，ブランコは「抵抗のない単振り子」として振れ続ける．$\\beta$ に $R$ が含まれないのはこのためである（駆動力も減衰力も $1/R$ に比例し，比が $R$ によらない）．\n\n\\textbf{(4)} 交流電源の仕事率は $A\\sin\\Omega t\\cdot\\dfrac{E_0}{R}$ で，時間平均は $\\boldsymbol{0}$．ジュール熱は $RI^2=\\boldsymbol{\\dfrac{E_0^2}{R}}$ で一定（直流電源がすべて供給する）．定常状態では振動のエネルギーが失われないので，交流電源は平均として仕事をする必要がない．\n\n\\textbf{(5)} $\\dfrac{2E_0}{2R}=\\dfrac{E_0}{R}$ なので直流電流は変わらず，$\\varphi$ も $\\Omega$ も変わらない．よって交流は引き続き共鳴しており，(3) と同じ理由で $\\boldsymbol{\\beta'=\\beta}$（$R$ によらない）．一方，定常状態に近づく速さは減衰の速さで決まり，$\\tau\\propto R$ なので $\\tau$ に相当する時間は $\\boldsymbol{2}$ \\textbf{倍}になる（定常状態の振幅は同じだが，そこに達するまでに2倍の時間がかかる）．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "直流電流による一定の電磁力は重力と合成されて見かけの重力となり，つり合いの傾きと固有角振動数を決める．固有角振動数で交流駆動すると，定常状態では誘導起電力が交流起電力と各瞬間で等しくなって交流電流が消えるため，振幅は抵抗によらず（駆動力も減衰力も $1/R$ に比例），交流電源の平均仕事率は 0 になる．抵抗は定常状態に近づく時間だけを決める．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "work-energy",
+  "equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "共鳴",
+  "見かけの重力",
+  "減衰振動",
+  "ローレンツ力",
+  "ブランコ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

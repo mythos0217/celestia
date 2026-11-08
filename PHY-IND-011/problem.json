@@ -1,0 +1,143 @@
+{
+ "id": "PHY-IND-011",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "中心部の強い磁場をもつベータトロンの安定軌道半径",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，点 O を通り紙面に垂直な軸のまわりに対称な磁場が，紙面の裏から表向きにかかっている．磁束密度の大きさは，O を中心とする半径 $a$ の円の内部で $\\beta B$，その外側で $B$ である（$\\beta$ は 1 より大きい定数）．$\\beta$ を一定に保ったまま，$B$ を時間とともに変化させる．質量 $m$，電荷 $-e$ の電子を，O を中心とする半径 $r\\ (r>a)$ の円軌道上で運動させる．相対論的効果と，電子が放出する電磁波は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "半径 $r$ の円軌道を貫く磁束 $\\varPhi$ を $B,\\ \\beta,\\ a,\\ r$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$B$ が微小時間 $\\Delta t$ の間に $\\Delta B\\ (>0)$ だけ増加するとき，軌道上に生じる誘導電場の大きさ $E$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "電子が半径 $r$ の円運動をしているとき，その運動量の大きさ $p$ を $e,\\ B,\\ r$ で表せ．さらに，$B$ を増加させても電子が同じ半径 $r$ の円軌道を回り続けるための $r$ を $a,\\ \\beta$ で表せ．また，そのような軌道が存在するための $\\beta$ の条件を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の軌道上で，$B$ を時刻 $0$ の値 $0$ から時刻 $\\tau$ の値 $B_{\\mathrm f}$ まで一定の割合で増加させた（電子は時刻 $0$ にほぼ静止状態から加速されるとする）．時刻 $\\tau$ での電子の運動エネルギー $K$ と，この間に電子が軌道を回った回数 $N$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$B$ を $B=B_0\\sin\\dfrac{2\\pi t}{T}$ のように変化させる．$t=0$ にほぼ静止状態から (3) の軌道に入れた電子が加速されるのは，$t$ がいくらまでの間か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：中心部の強い磁場をもつベータトロンの安定軌道半径",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：中心部の強い磁場をもつベータトロンの安定軌道半径",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\varPhi=\\pi B\\{(\\beta-1)a^2+r^2\\}$"
+   },
+   {
+    "id": "2",
+    "tex": "$E=\\dfrac{\\{(\\beta-1)a^2+r^2\\}\\Delta B}{2r\\,\\Delta t}$"
+   },
+   {
+    "id": "3",
+    "tex": "$p=eBr$，$r=a\\sqrt{\\beta-1}$，$\\beta>2$"
+   },
+   {
+    "id": "4",
+    "tex": "$K=\\dfrac{(\\beta-1)e^2a^2B_{\\mathrm f}^2}{2m}$，$N=\\dfrac{eB_{\\mathrm f}\\tau}{4\\pi m}$"
+   },
+   {
+    "id": "5",
+    "tex": "$0<t<\\dfrac{T}{4}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　半径 $a$ の内部の磁束 $\\pi a^2\\cdot\\beta B$ と，$a<r'<r$ の円環部分の磁束 $\\pi(r^2-a^2)B$ の和：\n\\[ \\varPhi=\\pi a^2\\beta B+\\pi(r^2-a^2)B=\\boldsymbol{\\pi B\\{(\\beta-1)a^2+r^2\\}} \\]\n\n\\textbf{(2)}　ファラデーの法則より，軌道1周あたりの誘導起電力は $\\dfrac{\\Delta\\varPhi}{\\Delta t}$．磁場は軸対称なので，誘導電場は軌道に沿って一定の大きさ $E$ をもち，1周の起電力は $E\\cdot2\\pi r$．\n\\[ E=\\frac{1}{2\\pi r}\\frac{\\Delta\\varPhi}{\\Delta t}=\\boldsymbol{\\frac{\\{(\\beta-1)a^2+r^2\\}\\Delta B}{2r\\,\\Delta t}} \\]\n\n\\textbf{(3)}　軌道上の磁束密度は $B$．円運動の式 $m\\dfrac{v^2}{r}=evB$ より $\\boldsymbol{p=mv=eBr}$．\n半径 $r$ を保つには，$B$ が $\\Delta B$ 増えたとき $p$ が $\\Delta p=er\\Delta B$ だけ増えなければならない．一方，電子は軌道の接線方向に大きさ $eE$ の力を受け，その力積で\n\\[ \\Delta p=eE\\Delta t=\\frac{e\\{(\\beta-1)a^2+r^2\\}\\Delta B}{2r} \\]\nとなる．（$E$ の向き：$B$ の増加を妨げる向きに誘導電場が生じ，負電荷の電子は電場と逆向きの力を受ける．紙面表向きの磁場中で電子は反時計回りに回るので，力は運動の向きで，電子は加速される．）両者を等しいとおくと\n\\[ er\\Delta B=\\frac{e\\{(\\beta-1)a^2+r^2\\}\\Delta B}{2r}\\iff r^2=(\\beta-1)a^2\\quad\\therefore\\ \\boldsymbol{r=a\\sqrt{\\beta-1}} \\]\nこれは「軌道内の平均磁束密度 $\\dfrac{\\varPhi}{\\pi r^2}$ が軌道上の磁束密度の2倍」という条件である（解答図）．仮定 $r>a$ より $\\beta-1>1$，すなわち $\\boldsymbol{\\beta>2}$．$\\beta\\le2$ では，円の外側で平均磁束密度が常に $2B$ に届かず，加速が不足して軌道を保てない．\n\n\\textbf{(4)}　$R=a\\sqrt{\\beta-1}$ とする．$p=eB_{\\mathrm f}R$ より\n\\[ K=\\frac{p^2}{2m}=\\boldsymbol{\\frac{(\\beta-1)e^2a^2B_{\\mathrm f}^2}{2m}} \\]\n周期は $\\dfrac{2\\pi m}{eB}$ で，$B$ とともに短くなるので，回転数は $\\dfrac{eB}{2\\pi m}$ を時間で積分する．$B=\\dfrac{B_{\\mathrm f}t}{\\tau}$ のグラフの面積を考えて\n\\[ N=\\frac{e}{2\\pi m}\\cdot\\frac12B_{\\mathrm f}\\tau=\\boldsymbol{\\frac{eB_{\\mathrm f}\\tau}{4\\pi m}} \\]\n（検算：1周あたりの起電力は $\\dfrac{\\Delta\\varPhi}{\\Delta t}=\\dfrac{2\\pi(\\beta-1)a^2B_{\\mathrm f}}{\\tau}$ で一定．1周で電子が得るエネルギーはその $e$ 倍だから，$N$ 周で $e\\cdot\\dfrac{2\\pi(\\beta-1)a^2B_{\\mathrm f}}{\\tau}\\cdot\\dfrac{eB_{\\mathrm f}\\tau}{4\\pi m}=\\dfrac{(\\beta-1)e^2a^2B_{\\mathrm f}^2}{2m}=K$ となり一致する．）\n\n\\textbf{(5)}　(3) の関係 $p=eBR$ は $B$ が減少するときも成り立つ（誘導電場が逆向きになり減速するので，軌道はそのまま）．$p$ は $|B|$ とともに増減するので，加速されるのは $B$ が増加している $\\boldsymbol{0<t<\\dfrac{T}{4}}$ の間．$t=\\dfrac{T}{4}$ を過ぎると電子は減速し，$t=\\dfrac{T}{2}$ でほぼ静止するので，$t=\\dfrac{T}{4}$ 付近で取り出す必要がある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "円軌道の電子の運動量は軌道上の磁束密度に比例する（$p=eBr$）一方，誘導電場による加速は軌道内の全磁束の変化で決まるので，半径を保つには軌道内の平均磁束密度が軌道上の値の2倍でなければならない．中心部が強い磁場ではこの条件から軌道半径が決まり，その存在に磁場の比の条件が付く．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "circular-motion",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ベータトロン",
+  "誘導電場",
+  "ファラデーの法則",
+  "運動量と力積",
+  "円運動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

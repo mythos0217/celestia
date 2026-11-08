@@ -1,0 +1,136 @@
+{
+ "id": "PHY-IND-003",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "鉛直磁場中の斜面レールを上る棒（電磁力の垂直成分と摩擦の打ち消し合い）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平面と角 $\\theta$（$45^\\circ<\\theta<90^\\circ$）をなす斜面に沿って，2本の平行な導体レールが間隔 $l$ で敷かれ，レールの下端どうしは抵抗値 $R$ の抵抗でつながれている．空間には鉛直上向きに磁束密度の大きさ $B$ の一様な磁場がある．質量 $m$ の導体棒をレールに垂直に置き，レールに沿って斜面上向きに初速 $v_0$ を与えた．棒とレールの間の動摩擦係数を $\\mu$ とし，静止摩擦係数も $\\mu$ に等しいとする．棒は常にレールと垂直を保つものとし，抵抗以外の電気抵抗，回路の自己誘導，空気抵抗は無視する．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "棒が斜面に沿って上向きに速さ $v$ で動いているとき，回路を流れる電流の大きさ $I$ と，棒がレールから受ける垂直抗力の大きさ $N$ を求めよ．また，棒がレールから浮き上がらないための $v$ の条件を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "上っている間の棒の加速度 $a$（斜面に沿って上向きを正）を $v$ の関数として求めよ．また，$\\mu>\\dfrac{1}{\\tan\\theta}$ のときは，棒が速いほど減速の度合いが小さくなることを示し，その理由を棒にはたらく力の観点から説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "以下，$\\mu=\\dfrac{1}{\\tan\\theta}$ とし，$v_0$ は (1) の条件を満たすとする．棒が止まるまでの時間 $t_1$，その間に上った距離 $d$，およびその間に抵抗で発生したジュール熱 $Q$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で止まった後，棒は斜面を滑り下りるか．滑り下りる場合は，十分に時間がたったときの棒の速さ $u$ を求めよ．ただし，レールは十分に長いとする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：鉛直磁場中の斜面レールを上る棒（電磁力の垂直成分と摩擦の打ち消し合い）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：鉛直磁場中の斜面レールを上る棒（電磁力の垂直成分と摩擦の打ち消し合い）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I=\\dfrac{Blv\\cos\\theta}{R}$，$N=\\cos\\theta\\left(mg-\\dfrac{B^2l^2v\\sin\\theta}{R}\\right)$，浮き上がらない条件 $v<\\dfrac{mgR}{B^2l^2\\sin\\theta}$"
+   },
+   {
+    "id": "2",
+    "tex": "$a=-g(\\sin\\theta+\\mu\\cos\\theta)+\\dfrac{B^2l^2\\cos\\theta\\,(\\mu\\sin\\theta-\\cos\\theta)}{mR}\\,v$．$\\mu\\tan\\theta>1$ なら $v$ の係数が正で，速いほど減速が小さい（電磁力が垂直抗力を減らすことによる摩擦力の減少分が，電磁力の斜面方向の成分を上回る）"
+   },
+   {
+    "id": "3",
+    "tex": "$t_1=\\dfrac{v_0\\sin\\theta}{g}$，$d=\\dfrac{v_0^2\\sin\\theta}{2g}$，$Q=\\dfrac{B^2l^2v_0^3\\sin\\theta\\cos^2\\theta}{3gR}$"
+   },
+   {
+    "id": "4",
+    "tex": "滑り下りる．$u=\\dfrac{mgR(\\sin^2\\theta-\\cos^2\\theta)}{2B^2l^2\\sin\\theta\\cos^2\\theta}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{準備：電磁力は水平向き}\n磁場は鉛直なので，誘導起電力に効くのは速度の「磁場に垂直な成分」すなわち水平成分 $v\\cos\\theta$ である．電磁力 $\\vec F=I\\vec l\\times\\vec B$ も磁場に垂直，すなわち\\textbf{水平}であり，レールに平行ではない．レンツの法則より，電磁力は速度の水平成分を妨げる向きにはたらく．斜面が右上がりのとき，上りでは棒の速度の水平成分は右向きなので電磁力は左向き（水平）である．これを斜面方向と斜面に垂直な方向に分けると\n\\[ \\text{斜面下向き}：F\\cos\\theta,\\qquad \\text{斜面から離れる向き}：F\\sin\\theta \\]\nとなる（解答図）．上りでは電磁力が棒を斜面から\\textbf{引き離す}向きの成分をもつことが，この問題の要点である．\n\n\\textbf{(1)} 誘導起電力は $V=(v\\cos\\theta)Bl$ なので\n\\[ I=\\frac{Blv\\cos\\theta}{R},\\qquad F=IBl=\\frac{B^2l^2v\\cos\\theta}{R}. \\]\n斜面に垂直な方向の力のつり合い $N+F\\sin\\theta=mg\\cos\\theta$ より\n\\[ N=mg\\cos\\theta-\\frac{B^2l^2v\\sin\\theta\\cos\\theta}{R}=\\boldsymbol{\\cos\\theta\\left(mg-\\frac{B^2l^2v\\sin\\theta}{R}\\right)}. \\]\n$N>0$ が浮き上がらない条件なので $\\boldsymbol{v<\\dfrac{mgR}{B^2l^2\\sin\\theta}}$．\n\n\\textbf{(2)} 上りでは動摩擦力 $\\mu N$ は斜面下向き．斜面方向の運動方程式は\n\\[ ma=-mg\\sin\\theta-F\\cos\\theta-\\mu N. \\]\n(1) を代入して整理すると\n\\[ \\boldsymbol{a=-g(\\sin\\theta+\\mu\\cos\\theta)+\\frac{B^2l^2\\cos\\theta\\,(\\mu\\sin\\theta-\\cos\\theta)}{mR}\\,v}. \\]\n$\\mu>\\dfrac{1}{\\tan\\theta}$ すなわち $\\mu\\sin\\theta>\\cos\\theta$ のとき $v$ の係数は正なので，$v$ が大きいほど $a$（負）の絶対値は小さい．電磁力は斜面方向に $F\\cos\\theta$ だけ減速させる一方，垂直抗力を $F\\sin\\theta$ だけ減らして摩擦力を $\\mu F\\sin\\theta$ だけ小さくする．$\\mu\\sin\\theta>\\cos\\theta$ では後者が勝つので，電磁力は差し引きで棒の減速を\\textbf{弱める}．\n\n\\textbf{(3)} $\\mu=\\dfrac{\\cos\\theta}{\\sin\\theta}$ を代入すると $v$ の係数は $0$ になり，\n\\[ a=-g\\left(\\sin\\theta+\\frac{\\cos^2\\theta}{\\sin\\theta}\\right)=-\\frac{g}{\\sin\\theta} \\]\nと一定になる．したがって等加速度運動として\n\\[ t_1=\\boldsymbol{\\frac{v_0\\sin\\theta}{g}},\\qquad d=\\frac{v_0^2}{2\\,g/\\sin\\theta}=\\boldsymbol{\\frac{v_0^2\\sin\\theta}{2g}}. \\]\nジュール熱は $RI^2=\\dfrac{B^2l^2\\cos^2\\theta}{R}v^2$ を時間で積分する．$v=v_0-\\dfrac{g}{\\sin\\theta}t$ より\n\\[ Q=\\frac{B^2l^2\\cos^2\\theta}{R}\\int_0^{t_1}\\left(v_0-\\frac{g}{\\sin\\theta}t\\right)^2dt=\\frac{B^2l^2\\cos^2\\theta}{R}\\cdot\\frac{v_0^3\\sin\\theta}{3g}=\\boldsymbol{\\frac{B^2l^2v_0^3\\sin\\theta\\cos^2\\theta}{3gR}}. \\]\n（確認）エネルギーの収支は $\\frac12mv_0^2=mgd\\sin\\theta+W_{\\text{摩擦}}+Q$ である．摩擦熱は $W_{\\text{摩擦}}=\\int\\mu Nv\\,dt=\\dfrac{\\cos^2\\theta}{\\sin\\theta}mgd-Q$ となり（電磁力で垂直抗力が減った分，摩擦熱がちょうど $Q$ だけ減る），合計は $mgd\\left(\\sin\\theta+\\dfrac{\\cos^2\\theta}{\\sin\\theta}\\right)=\\dfrac{mgd}{\\sin\\theta}=\\dfrac12mv_0^2$ と一致する．\n\n\\textbf{(4)} 止まった瞬間は電流が流れず，電磁力は $0$．重力の斜面成分 $mg\\sin\\theta$ と最大静止摩擦力 $\\mu mg\\cos\\theta=\\dfrac{mg\\cos^2\\theta}{\\sin\\theta}$ を比べると，\n\\[ mg\\sin\\theta-\\frac{mg\\cos^2\\theta}{\\sin\\theta}=\\frac{mg(\\sin^2\\theta-\\cos^2\\theta)}{\\sin\\theta}>0\\quad(\\theta>45^\\circ) \\]\nなので棒は\\textbf{滑り下りる}．下りでは速度の水平成分が左向きになるので電磁力は右向き（水平）になり，斜面上向きに $F\\cos\\theta$，斜面に押しつける向きに $F\\sin\\theta$ の成分をもつ（このとき $N=mg\\cos\\theta+F\\sin\\theta>0$ で浮き上がりの心配はない）．十分時間がたつと等速になり，$F=\\dfrac{B^2l^2u\\cos\\theta}{R}$ として\n\\[ mg\\sin\\theta=F\\cos\\theta+\\mu(mg\\cos\\theta+F\\sin\\theta). \\]\n$\\mu=\\dfrac{\\cos\\theta}{\\sin\\theta}$ を代入すると $F\\cos\\theta+\\mu F\\sin\\theta=2F\\cos\\theta$ なので\n\\[ 2\\cdot\\frac{B^2l^2u\\cos^2\\theta}{R}=\\frac{mg(\\sin^2\\theta-\\cos^2\\theta)}{\\sin\\theta}\\quad\\therefore\\quad u=\\boldsymbol{\\frac{mgR(\\sin^2\\theta-\\cos^2\\theta)}{2B^2l^2\\sin\\theta\\cos^2\\theta}}. \\]\n上りと下りで，電磁力の「斜面に垂直な成分」の向きが逆転し，摩擦力への効き方が入れ替わる点に注意．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "鉛直磁場中の斜面レールでは電磁力が水平にはたらくため，その斜面垂直成分が垂直抗力ひいては摩擦力を変える．上りでは電磁力が棒を斜面から引き離して摩擦を減らし，$\\mu\\tan\\theta=1$ では摩擦の減少と電磁的な減速が打ち消し合って等加速度運動になる．下りでは垂直成分の向きが逆転する．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "uniform-acceleration",
+  "static-friction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "斜面レール",
+  "動摩擦",
+  "垂直抗力",
+  "ジュール熱",
+  "終端速度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

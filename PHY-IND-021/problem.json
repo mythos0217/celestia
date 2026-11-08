@@ -1,0 +1,144 @@
+{
+ "id": "PHY-IND-021",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "斜めの境界をもつ磁場に進入するコンデンサー付き回路（位置で変わる実効質量と速さの回復）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかな水平面上に $xy$ 座標をとり，$y<x$ の領域にだけ，鉛直上向き（紙面の裏から表の向き）に磁束密度の大きさ $B$ の一様な磁場がかかっている．1辺の長さ $a$ の正方形の硬い導線の枠 PQRS の辺 SP に電気容量 $C$ のコンデンサーが組み込まれた回路（全体の質量 $m$）がある．回路はなめらかなガイドによって，辺 PQ がつねに $x$ 軸上にあるように $x$ 軸方向にだけ動ける．点 Q の座標を $(X,0)$ とする．導線の抵抗，回路の自己インダクタンス，コンデンサーの大きさは無視でき，はじめコンデンサーは帯電していない．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "回路を一定の速さ $v$ で $x$ 軸の正の向きに動かす．$0<X<a$ のとき，回路を貫く磁束 $\\Phi$ を $X$ で表し，誘導起電力の大きさ $V$，回路を流れる電流の大きさ $I_1$，回路を一定の速さに保つために加える外力の $x$ 成分 $F_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "同じく一定の速さ $v$ で動かすとき，$a<X<2a$ における電流の大きさ $I_2$ を求め，その向きは (1) と同じか逆かを答えよ．また，外力の $x$ 成分 $F_2$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次に，コンデンサーが帯電していない回路に，$X<0$ の位置で $x$ 軸の正の向きの速さ $v_0$ を与え，あとは外力を加えずに運動させた．$0<X<a$ における回路の速さ $v$ を $X$ の関数として求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$CB^2a^2=m$ とする．(3) の運動で，回路の速さの最小値，コンデンサーの電気量の最大値，および回路が減速している間で加速度の大きさが最大になるときの $X$ とその加速度の大きさを求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(3) の運動で，回路全体が磁場に入った後（$X>2a$）の回路の速さとコンデンサーの電気量を求めよ．回路は磁場から $x$ 方向の力を受け続けたのに，なぜこうなるのかを簡潔に説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：斜めの境界をもつ磁場に進入するコンデンサー付き回路（位置で変わる実効質量と速さの回復）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：斜めの境界をもつ磁場に進入するコンデンサー付き回路（位置で変わる実効質量と速さの回復）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Phi=\\dfrac{BX^2}{2}$，$V=BvX$，$I_1=CBv^2$，$F_1=CB^2v^2X$"
+   },
+   {
+    "id": "2",
+    "tex": "$I_2=CBv^2$，向きは逆，$F_2=-CB^2v^2(2a-X)$（$x$ 軸の負の向きに大きさ $CB^2v^2(2a-X)$）"
+   },
+   {
+    "id": "3",
+    "tex": "$v=v_0\\sqrt{\\dfrac{m}{m+CB^2X^2}}$"
+   },
+   {
+    "id": "4",
+    "tex": "最小の速さ $\\dfrac{v_0}{\\sqrt2}$（$X=a$），電気量の最大値 $\\dfrac{mv_0}{\\sqrt2\\,Ba}$，$X=\\dfrac{a}{\\sqrt3}$ で加速度の大きさ $\\dfrac{3\\sqrt3\\,v_0^2}{16a}$"
+   },
+   {
+    "id": "5",
+    "tex": "速さ $v_0$，電気量 $0$（理由は解説参照）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{起電力の「有効な長さ」}　回路のうち磁場がかかる部分の面積を $A(X)$ とすると $\\Phi=BA$，誘導起電力の大きさは $V=\\left|\\dfrac{d\\Phi}{dt}\\right|=B\\dfrac{dA}{dX}v$．$\\ell(X)=\\dfrac{dA}{dX}$ を有効な長さとよぶことにする．\n\n$0<X<a$：回路内の $y<x$ の部分は，直角をはさむ2辺が $X$ の直角二等辺三角形なので $A=\\dfrac{X^2}{2}$，$\\ell=X$．\n\n$a<X<2a$：左の辺 $x=X-a$ は $0<X-a<a$．$x\\le a$ の部分は台形，$x>a$ の部分は全体が磁場中で\n\\[ A=\\frac{a^2-(X-a)^2}{2}+a(X-a),\\qquad \\ell=\\frac{dA}{dX}=2a-X \\]\n$X>2a$：$A=a^2$ で一定，$\\ell=0$．\n\n磁場から受ける $x$ 方向の力は，磁場中にある辺 QR（長さ $X$ または $a$）と辺 SP（長さ $X-a$）の部分の力の差で，大きさは $IB\\ell$ となる（$y$ 方向の力はガイドが支える）．エネルギーで見ると，この力の仕事率は $-IV$（$I$ を起電力の向きに測る）で，電気エネルギーへの変換を表す．\n\n\\textbf{(1)} $\\Phi=\\boldsymbol{\\dfrac{BX^2}{2}}$，$V=\\boldsymbol{BvX}$．抵抗がないので，コンデンサーの電圧はつねに起電力に等しく，電気量は $Q=CV=CBvX$．\n\\[ I_1=\\frac{dQ}{dt}=CBv\\frac{dX}{dt}=\\boldsymbol{CBv^2} \\]\nと一定になる．外力の仕事率がコンデンサーへの電力 $I_1V$ に等しいので $F_1v=I_1V$，\n\\[ F_1=\\boldsymbol{CB^2v^2X} \\]\n（磁場から受ける力 $I_1BX$ とつり合う外力）．\\hfill$\\square$\n\n\\textbf{(2)} $V=Bv(2a-X)$ は $X$ とともに減るので，$Q=CBv(2a-X)$ が減少し，コンデンサーは放電する：\n\\[ I_2=\\left|\\frac{dQ}{dt}\\right|=\\boldsymbol{CBv^2},\\quad \\textbf{向きは (1) と逆} \\]\n起電力の向き（磁束はまだ増えている）と電流の向きが逆なので，磁場から受ける力は運動の向き（$x$ 軸の正の向き）になる．$F_2v=-I_2V$ より\n\\[ F_2=\\boldsymbol{-CB^2v^2(2a-X)} \\]\nすなわち $x$ 軸の負の向きに引き止める外力が必要である．\\hfill$\\square$\n\n\\textbf{(3) 自由な運動}　抵抗がないのでジュール熱は生じない．磁場から受ける力の仕事は電気エネルギーに変わり（仕事率 $-IV$），コンデンサーは電力 $IV$ を受け取る．ガイドの力は運動の向きに垂直で仕事をしない．よって\n\\[ \\frac12mv^2+\\frac{Q^2}{2C}=\\frac12mv_0^2,\\qquad Q=CBv\\ell \\]\nが成り立つ（$Q=CV$ は抵抗がないので各瞬間に成り立つ）．$0<X<a$ では $\\ell=X$ なので\n\\[ \\frac12\\left(m+CB^2X^2\\right)v^2=\\frac12mv_0^2\\quad\\Longrightarrow\\quad v=\\boldsymbol{v_0\\sqrt{\\frac{m}{m+CB^2X^2}}} \\]\nコンデンサーは「位置によって変わる質量 $CB^2\\ell^2$」を付け加えるはたらきをする．運動方程式 $m\\dfrac{dv}{dt}=-B\\ell\\dfrac{dQ}{dt}$ に $Q=CBv\\ell$ を代入した $(m+CB^2\\ell^2)\\dfrac{dv}{dt}=-CB^2\\ell\\dfrac{d\\ell}{dX}v^2$ も，この結果を微分したものと一致する．$\\ell$ が変わるので，$(m+CB^2\\ell^2)v$（運動量に相当する量）は保存しないことに注意する．\\hfill$\\square$\n\n\\textbf{(4)} $CB^2=\\dfrac{m}{a^2}$ とおく．$v=\\dfrac{v_0}{\\sqrt{1+\\ell^2/a^2}}$ は $\\ell$ が最大の $X=a$（$\\ell=a$）で最小：\n\\[ v_{\\min}=\\boldsymbol{\\frac{v_0}{\\sqrt2}} \\]\n電気量 $Q=CBv\\ell=CBv_0\\dfrac{\\ell}{\\sqrt{1+\\ell^2/a^2}}$ は $\\ell$ の増加関数なので $\\ell=a$ で最大：\n\\[ Q_{\\max}=CBv_0\\frac{a}{\\sqrt2}=\\boldsymbol{\\frac{mv_0}{\\sqrt2\\,Ba}} \\]\n$0<X<a$ での加速度の大きさは，(3) の運動方程式に $v^2=\\dfrac{mv_0^2}{m+CB^2X^2}$ を代入して\n\\[ |\\alpha|=\\frac{CB^2Xv^2}{m+CB^2X^2}=\\frac{v_0^2}{a}\\cdot\\frac{X/a}{(1+X^2/a^2)^2} \\]\n$u=X/a$ として $\\dfrac{d}{du}\\dfrac{u}{(1+u^2)^2}=\\dfrac{1-3u^2}{(1+u^2)^3}=0$ より $u=\\dfrac{1}{\\sqrt3}$．$a<X<2a$ では $\\ell=2a-X$ について同じ形なので最大値も等しい（$X=2a-\\dfrac{a}{\\sqrt3}$ でも同じ大きさ）．よって\n\\[ X=\\boldsymbol{\\frac{a}{\\sqrt3}},\\qquad |\\alpha|_{\\max}=\\frac{v_0^2}{a}\\cdot\\frac{1/\\sqrt3}{(4/3)^2}=\\boldsymbol{\\frac{3\\sqrt3\\,v_0^2}{16a}} \\]\n（$X=2a-\\frac{a}{\\sqrt3}$ でも加速度の大きさは同じ値になるが，そこでは加速されている．減速している $0<X<a$ での最大は $X=\\frac{a}{\\sqrt3}$．）\\hfill$\\square$\n\n\\textbf{(5)} $X>2a$ では $\\ell=0$ なので，(3) のエネルギー保存より速さは $\\boldsymbol{v_0}$，$Q=CBv\\ell=\\boldsymbol{0}$．\n\n理由：前半（$0<X<a$）では磁場から受ける力が運動を妨げ，運動エネルギーが静電エネルギーとして蓄えられるが，後半（$a<X<2a$）ではコンデンサーが放電し，(2) で見たように磁場から受ける力が運動の向きになって，蓄えたエネルギーがすべて運動エネルギーに戻る．抵抗がないのでエネルギーは失われず，全体を通した $x$ 方向の力積も $0$ になる（解答図は $CB^2a^2=m$ のときの $v$ と $X$ の関係）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "斜めの境界をもつ磁場に入る回路では，回路を貫く磁束の $X$ による変化率（有効な長さ $\\ell(X)$）が位置とともに増減するので，起電力は $Bv\\ell$，磁場からの力は $IB\\ell$ となる．抵抗のない回路のコンデンサーは $Q=CBv\\ell$ を通じて位置によって変わる質量 $CB^2\\ell^2$ を付け加えたようにはたらき，運動量ではなくエネルギー $\\frac12(m+CB^2\\ell^2)v^2$ が保存する．$\\ell$ が減る後半では放電によって磁場からの力が推進力に変わり，速さは完全に元に戻る．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "momentum-conservation",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "誘導起電力",
+  "磁束の変化",
+  "コンデンサー",
+  "エネルギー保存",
+  "実効質量",
+  "ローレンツ力"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330">
+<defs><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker></defs>
+<rect x="27" y="50" width="36" height="22" fill="#ccc" stroke="#222" stroke-width="1.6"/>
+<text x="69" y="59" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">N</text>
+<text x="69" y="72" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">S</text>
+<rect x="35" y="72" width="20" height="40" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="3,2"/>
+<rect x="27" y="112" width="36" height="22" fill="#ccc" stroke="#222" stroke-width="1.6"/>
+<text x="69" y="121" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">N</text>
+<text x="69" y="134" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">S</text>
+<text x="45" y="165" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">組甲</text>
+<rect x="117" y="50" width="36" height="22" fill="#ccc" stroke="#222" stroke-width="1.6"/>
+<text x="159" y="59" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">S</text>
+<text x="159" y="72" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">N</text>
+<rect x="125" y="72" width="20" height="40" fill="none" stroke="#222" stroke-width="1" stroke-dasharray="3,2"/>
+<rect x="117" y="112" width="36" height="22" fill="#ccc" stroke="#222" stroke-width="1.6"/>
+<text x="159" y="121" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">N</text>
+<text x="159" y="134" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">S</text>
+<text x="135" y="165" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">組乙</text>
+<line x1="18" y1="61" x2="18" y2="123" stroke="#888" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+<text x="12" y="98" text-anchor="end" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">d</text>
+<text x="92" y="192" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">点線は非磁性の</text>
+<text x="92" y="210" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">スペーサー</text>
+<ellipse cx="255" cy="70" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<ellipse cx="255" cy="83" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<ellipse cx="255" cy="96" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<ellipse cx="255" cy="109" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<ellipse cx="255" cy="122" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<ellipse cx="255" cy="135" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<ellipse cx="255" cy="148" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<ellipse cx="255" cy="161" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<ellipse cx="255" cy="174" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<ellipse cx="255" cy="187" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<ellipse cx="255" cy="200" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<ellipse cx="255" cy="213" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<ellipse cx="255" cy="226" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<ellipse cx="255" cy="239" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<ellipse cx="255" cy="252" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<ellipse cx="255" cy="265" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<ellipse cx="255" cy="278" rx="42" ry="8" fill="none" stroke="#222" stroke-width="1.3"/>
+<text x="255" y="310" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">積み重ねたリング</text>
+<line x1="315" y1="70" x2="315" y2="278" stroke="#888" stroke-width="1"/>
+<text x="319" y="180" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">単位長さあたり</text>
+<text x="319" y="196" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">n</text>
+<text x="329" y="196" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">個</text>
+<line x1="255" y1="30" x2="255" y2="56" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+<text x="263" y="44" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">落下</text>
+<line x1="355" y1="240" x2="630" y2="240" stroke="#222" stroke-width="1.3" marker-end="url(#q-ak)"/>
+<line x1="490" y1="250" x2="490" y2="105" stroke="#222" stroke-width="1.3" marker-end="url(#q-ak)"/>
+<text x="622" y="262" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">z</text>
+<text x="496" y="112" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">Φ</text>
+<polyline points="360,240 385,240 455,150 525,150 595,240 620,240" fill="none" stroke="#1f5fbf" stroke-width="2"/>
+<line x1="455" y1="150" x2="455" y2="240" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="525" y1="150" x2="525" y2="240" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="455" y1="150" x2="490" y2="150" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="385" y="260" text-anchor="middle" font-family="Times New Roman, serif" font-size="16" fill="#222">−<tspan font-family="Times New Roman, serif" font-style="italic">b</tspan></text>
+<text x="455" y="260" text-anchor="middle" font-family="Times New Roman, serif" font-size="16" fill="#222">−<tspan font-family="Times New Roman, serif" font-style="italic">a</tspan></text>
+<text x="525" y="260" text-anchor="middle" font-family="Times New Roman, serif" font-size="16" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">a</tspan></text>
+<text x="595" y="260" text-anchor="middle" font-family="Times New Roman, serif" font-size="16" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">b</tspan></text>
+<text x="486" y="260" text-anchor="end" font-family="Times New Roman, serif" font-size="15" fill="#222">0</text>
+<text x="494" y="144" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">Φ<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+<text x="492" y="300" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">磁石1個がつくる，リングを貫く磁束</text>
+</svg>

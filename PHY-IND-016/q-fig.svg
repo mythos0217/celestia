@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 300">
+  <defs>
+    <marker id="q-ab" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f5fbf"/></marker>
+    <marker id="q-ak" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222"/></marker>
+    <pattern id="q-ins" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#888" stroke-width="1.2"/></pattern>
+  </defs>
+  <!-- magnetic field symbols -->
+  <g fill="none" stroke="#222" stroke-width="1">
+    <circle cx="70" cy="130" r="6"/><circle cx="200" cy="130" r="6"/><circle cx="420" cy="130" r="6"/><circle cx="540" cy="130" r="6"/>
+    <circle cx="70" cy="40" r="6"/><circle cx="540" cy="40" r="6"/><circle cx="250" cy="225" r="6"/><circle cx="420" cy="225" r="6"/>
+  </g>
+  <g fill="#222">
+    <circle cx="70" cy="130" r="1.8"/><circle cx="200" cy="130" r="1.8"/><circle cx="420" cy="130" r="1.8"/><circle cx="540" cy="130" r="1.8"/>
+    <circle cx="70" cy="40" r="1.8"/><circle cx="540" cy="40" r="1.8"/><circle cx="250" cy="225" r="1.8"/><circle cx="420" cy="225" r="1.8"/>
+  </g>
+  <text x="84" y="45" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+  <!-- rails -->
+  <g stroke="#222" stroke-width="1.6" fill="none">
+    <rect x="30" y="76" width="270" height="8"/>
+    <rect x="30" y="176" width="270" height="8"/>
+    <rect x="350" y="76" width="240" height="8"/>
+    <rect x="350" y="176" width="240" height="8"/>
+  </g>
+  <!-- insulators -->
+  <g stroke="#222" stroke-width="1.2" fill="url(#q-ins)">
+    <rect x="300" y="76" width="50" height="8"/>
+    <rect x="300" y="176" width="50" height="8"/>
+  </g>
+  <!-- crossing wires (insulated crossing) -->
+  <g stroke="#222" stroke-width="1.6" fill="none">
+    <path d="M300,84 L321.2,123 A8,8 0 0 1 328.8,137 L350,176"/>
+    <path d="M300,176 L350,84"/>
+  </g>
+  <!-- bars -->
+  <g stroke="#222" stroke-width="4" stroke-linecap="round">
+    <line x1="130" y1="68" x2="130" y2="192"/>
+    <line x1="470" y1="68" x2="470" y2="192"/>
+  </g>
+  <text x="114" y="62" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">棒1</text>
+  <text x="454" y="62" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">棒2</text>
+  <line x1="136" y1="105" x2="186" y2="105" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <text x="190" y="110" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">v<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+  <!-- rail labels -->
+  <g font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">
+    <text x="36" y="72">P</text><text x="36" y="202">Q</text>
+    <text x="566" y="72">P′</text><text x="566" y="202">Q′</text>
+    <text x="294" y="200" font-size="13">絶縁体</text>
+  </g>
+  <!-- dimension l -->
+  <line x1="20" y1="80" x2="20" y2="180" stroke="#888" stroke-width="1"/>
+  <line x1="15" y1="80" x2="25" y2="80" stroke="#888" stroke-width="1"/><line x1="15" y1="180" x2="25" y2="180" stroke="#888" stroke-width="1"/>
+  <text x="4" y="135" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">l</text>
+  <!-- dimension w -->
+  <line x1="300" y1="66" x2="300" y2="74" stroke="#888" stroke-width="1"/><line x1="350" y1="66" x2="350" y2="74" stroke="#888" stroke-width="1"/>
+  <line x1="300" y1="70" x2="350" y2="70" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="320" y="62" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">w</text>
+  <!-- x axis -->
+  <line x1="30" y1="260" x2="590" y2="260" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+  <text x="596" y="265" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+  <text x="40" y="285" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">（上から見た図．⊙ は鉛直上向きの磁場）</text>
+</svg>

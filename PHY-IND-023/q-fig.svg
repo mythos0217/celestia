@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330">
+<defs><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<text x="20" y="24" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">棒の方向から見た図</text>
+<!-- support -->
+<line x1="60" y1="60" x2="220" y2="60" stroke="#222" stroke-width="1.6"/>
+<g stroke="#222" stroke-width="1"><line x1="70" y1="60" x2="62" y2="50"/><line x1="90" y1="60" x2="82" y2="50"/><line x1="110" y1="60" x2="102" y2="50"/><line x1="130" y1="60" x2="122" y2="50"/><line x1="150" y1="60" x2="142" y2="50"/><line x1="170" y1="60" x2="162" y2="50"/><line x1="190" y1="60" x2="182" y2="50"/><line x1="210" y1="60" x2="202" y2="50"/></g>
+<circle cx="140" cy="66" r="5" fill="none" stroke="#222" stroke-width="1.4"/>
+<!-- vertical dashed -->
+<line x1="140" y1="66" x2="140" y2="250" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<!-- wire at theta ~ 30 deg, l = 170 -->
+<line x1="140" y1="66" x2="225" y2="213" stroke="#222" stroke-width="1.6"/>
+<circle cx="225" cy="213" r="9" fill="#222"/>
+<path d="M 140 116 A 50 50 0 0 0 165 109.3" fill="none" stroke="#222" stroke-width="1"/>
+<text x="146" y="134" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">θ</text>
+<text x="190" y="130" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">l</text>
+<text x="238" y="218" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">導体棒（</text>
+<text x="294" y="218" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">M, L</text>
+<text x="326" y="218" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">）</text>
+<!-- B arrows -->
+<g stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"><line x1="60" y1="300" x2="60" y2="240"/><line x1="270" y1="300" x2="270" y2="250"/></g>
+<text x="68" y="290" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+<line x1="330" y1="70" x2="330" y2="115" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+<text x="338" y="100" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">g</text>
+<!-- circuit -->
+<text x="390" y="24" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">回路</text>
+<rect x="400" y="50" width="160" height="230" fill="none" stroke="#222" stroke-width="1.4"/>
+<!-- rod on left side as thick segment -->
+<rect x="394" y="130" width="12" height="70" fill="#222"/>
+<text x="350" y="170" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">導体棒</text>
+<!-- resistor top -->
+<rect x="455" y="42" width="50" height="16" fill="#ffffff" stroke="#222" stroke-width="1.4"/>
+<text x="474" y="36" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">R</text>
+<!-- DC battery right side -->
+<rect x="550" y="120" width="20" height="30" fill="#ffffff" stroke="none"/>
+<line x1="540" y1="128" x2="580" y2="128" stroke="#222" stroke-width="1.6"/>
+<line x1="550" y1="140" x2="570" y2="140" stroke="#222" stroke-width="3"/>
+<text x="584" y="140" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">E<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+<!-- AC source bottom -->
+<circle cx="480" cy="280" r="16" fill="#ffffff" stroke="#222" stroke-width="1.4"/>
+<path d="M 470 280 Q 475 271 480 280 T 490 280" fill="none" stroke="#222" stroke-width="1.4"/>
+<text x="440" y="316" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">A</text>
+<text x="452" y="316" font-family="Times New Roman, serif" font-size="15" fill="#222">sin</text>
+<text x="476" y="316" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">ωt</text>
+</svg>

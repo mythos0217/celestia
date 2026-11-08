@@ -1,0 +1,139 @@
+{
+ "id": "PHY-IND-022",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "斜面レール上の2本の導体棒：重心の等加速度運動と相対速度の指数減衰",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平面と角 $\\theta$ をなす2本の平行な導体レールが間隔 $L$ で置かれ，鉛直上向きに磁束密度 $B$ の一様な磁場がかかっている．レール上には，レールに垂直に，質量 $m$・抵抗 $R$ の導体棒1と，質量 $2m$・抵抗 $R$ の導体棒2が置かれている．棒はレールに垂直なまま摩擦なく滑り，レールの抵抗，回路の自己インダクタンス，空気抵抗は無視する．レールどうしは2本の棒以外ではつながっていない．重力加速度の大きさを $g$ とし，速度・加速度はレールに沿って下向きを正とする．\n\nはじめ棒2は棒1より十分上方に固定されており，棒1を放すと棒1はやがて一定の速さ $u$ で滑り下りるようになった．この状態で時刻 $t=0$ に棒2の固定を静かにはずした．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$u$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$t=0$ の直後の棒1，棒2の加速度 $a_1$，$a_2$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "時刻 $t$ における棒1，棒2の速度を $v_1$，$v_2$ とする．$v_1+2v_2$ の時間変化を述べ，さらに $w=v_1-v_2$ が $\\dfrac{dw}{dt}=-\\dfrac{w}{\\tau}$ を満たすことを示して定数 $\\tau$ を $m,\\,R,\\,B,\\,L,\\,\\theta$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$v_1$，$v_2$ を $u,\\,g,\\,\\theta,\\,\\tau,\\,t$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "十分時間が経つと棒の間隔は一定値に近づく．その値は $t=0$ での間隔よりどれだけ大きいか．$m,\\,g,\\,R,\\,B,\\,L,\\,\\theta$ で表せ．"
+     },
+     {
+      "id": "6",
+      "tex": "$t=0$ 以後に2本の棒で発生するジュール熱の総量を $m,\\,u$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：斜面レール上の2本の導体棒：重心の等加速度運動と相対速度の指数減衰",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$u=\\dfrac{2mgR\\sin\\theta}{B^2L^2\\cos^2\\theta}$"
+   },
+   {
+    "id": "2",
+    "tex": "$a_1=0$，$a_2=\\dfrac32g\\sin\\theta$"
+   },
+   {
+    "id": "3",
+    "tex": "$v_1+2v_2$ は一定の割合 $3g\\sin\\theta$ で増加，$\\tau=\\dfrac{4mR}{3B^2L^2\\cos^2\\theta}$"
+   },
+   {
+    "id": "4",
+    "tex": "$v_1=\\dfrac u3+gt\\sin\\theta+\\dfrac{2u}{3}e^{-t/\\tau}$，$v_2=\\dfrac u3+gt\\sin\\theta-\\dfrac u3e^{-t/\\tau}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{8m^2gR^2\\sin\\theta}{3B^4L^4\\cos^4\\theta}$"
+   },
+   {
+    "id": "6",
+    "tex": "$\\dfrac13mu^2$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{誘導起電力と電磁力}\n磁場は鉛直なので，起電力に効くのは棒の速度の水平成分 $v\\cos\\theta$ で，起電力は $BLv\\cos\\theta$．電流は水平な棒を流れ，電磁力 $BIL$ は水平にはたらくので，そのレール方向成分は $BIL\\cos\\theta$ である（垂直成分はレールの垂直抗力が受け止める）．\n\n\\textbf{(1)} 棒2が固定されているとき，回路の抵抗は $2R$ で $I=\\dfrac{BLu\\cos\\theta}{2R}$．等速なのでレール方向の力のつり合い $mg\\sin\\theta=BIL\\cos\\theta$ より\n\\[ \\boldsymbol{u=\\frac{2mgR\\sin\\theta}{B^2L^2\\cos^2\\theta}}. \\]\n\n\\textbf{(2)} 固定をはずした瞬間，速度は連続なので電流も直前と同じ $I$ で，棒1の電磁力は $mg\\sin\\theta$（上向き）のままである．棒2には同じ電流が逆向きに流れるので，電磁力は同じ大きさで下向きになる．よって\n\\[ ma_1=mg\\sin\\theta-mg\\sin\\theta,\\qquad 2ma_2=2mg\\sin\\theta+mg\\sin\\theta \\]\nより $\\boldsymbol{a_1=0}$，$\\boldsymbol{a_2=\\dfrac32g\\sin\\theta}$．\n\n\\textbf{(3)} 2本の棒は1つの直列回路をなすので，電流 $I=\\dfrac{BL\\cos\\theta\\,(v_1-v_2)}{2R}$ は共通で，電磁力は大きさが等しく逆向き（内力の対）になる．運動方程式\n\\[ m\\frac{dv_1}{dt}=mg\\sin\\theta-BIL\\cos\\theta,\\qquad 2m\\frac{dv_2}{dt}=2mg\\sin\\theta+BIL\\cos\\theta \\]\nを加えると $\\dfrac{d}{dt}(v_1+2v_2)=3g\\sin\\theta$．すなわち $v_1+2v_2$（全運動量 $/m$）は一定の割合 $3g\\sin\\theta$ で増加し，重心は電磁力と無関係に加速度 $g\\sin\\theta$ で滑り下りる．\n\n一方，第1式を $m$ で，第2式を $2m$ で割って差をとると\n\\[ \\frac{dw}{dt}=-BIL\\cos\\theta\\left(\\frac1m+\\frac1{2m}\\right)=-\\frac{3B^2L^2\\cos^2\\theta}{4mR}\\,w, \\qquad \\boldsymbol{\\tau=\\frac{4mR}{3B^2L^2\\cos^2\\theta}}. \\]\n重力は2本に同じ加速度を与えるので相対運動には現れず，相対速度は換算質量 $\\frac{2m}{3}$ の物体が速度に比例する抵抗を受けるときと同じく指数関数的に減衰する．\n\n\\textbf{(4)} $w=ue^{-t/\\tau}$，また $v_1+2v_2=u+3gt\\sin\\theta$．これらを解いて\n\\[ \\boldsymbol{v_1=\\frac u3+gt\\sin\\theta+\\frac{2u}3e^{-t/\\tau}},\\qquad \\boldsymbol{v_2=\\frac u3+gt\\sin\\theta-\\frac u3e^{-t/\\tau}}. \\]\n\n\\textbf{(5)} 棒1は棒2より下にあり，$w>0$ の間は間隔が広がる．間隔の増加量は\n\\[ \\int_0^\\infty w\\,dt=u\\tau=\\frac{2mgR\\sin\\theta}{B^2L^2\\cos^2\\theta}\\cdot\\frac{4mR}{3B^2L^2\\cos^2\\theta}=\\boldsymbol{\\frac{8m^2gR^2\\sin\\theta}{3B^4L^4\\cos^4\\theta}}. \\]\n両棒とも限りなく加速し続けるが，間隔は有限の値に近づく．\n\n\\textbf{(6)} 全エネルギーを重心運動と相対運動に分ける．重心の運動エネルギーの変化は重力の仕事に等しい（重心の加速度がちょうど $g\\sin\\theta$ だから）．よって重力のした仕事はすべて重心運動に使われ，ジュール熱になるのは相対運動のエネルギー $\\dfrac12\\cdot\\dfrac{m\\cdot2m}{m+2m}w^2$ の減少分だけである．$w$ は $u$ から $0$ になるので\n\\[ Q=\\frac12\\cdot\\frac{2m}{3}u^2=\\boldsymbol{\\frac13mu^2}. \\]\n（$\\int_0^\\infty 2RI^2dt$ を直接計算しても一致する．）\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "棒どうしだけで閉じた回路では電流が共通なので電磁力は内力の対となり，重心は重力だけで等加速度運動する．相対速度は換算質量と $B^2L^2\\cos^2\\theta/R$ で決まる時定数で指数減衰し，間隔の増加は（初めの相対速度）×（時定数），ジュール熱は相対運動のエネルギーに等しい．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "uniform-acceleration",
+  "kinematics-components"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "導体棒",
+  "重心運動",
+  "相対運動",
+  "時定数",
+  "ジュール熱",
+  "斜面"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

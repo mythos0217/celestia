@@ -1,0 +1,130 @@
+{
+ "id": "PHY-ESF-020",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "接地した平行板の間で動く電荷の組（双極子）の誘導電荷と接地線の電流",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "十分に広い2枚の金属板 A，B が間隔 $d$ で平行に向かい合っており，A，B はそれぞれ導線で接地されている．A の導線には電流計がつながれている．図のように，板に垂直に A から B の向きに $y$ 軸をとり，A を $y=0$，B を $y=d$ とする．板の端の影響は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "板と同じ広さの薄い絶縁体の板に電気量 $Q$ を一様に帯電させ，$y=x$（$0<x<d$）の位置に A，B と平行に置いた．A，B に現れる電気量 $Q_{\\rm A}$，$Q_{\\rm B}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の板の代わりに，$y=x$ の位置に点電荷 $q$ を置いた．A に現れる電気量 $q_{\\rm A}$ は，(1) の $Q_{\\rm A}$ で $Q$ を $q$ に置き換えたものに等しい．その理由を説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "長さ $a$ の軽い絶縁体の棒の両端に点電荷 $+q$，$-q$ をつけた．棒の中点を $y=y_{\\rm c}$ の位置に置き，$-q$ から $+q$ へ向かう向きが $y$ 軸の正の向きと角 $\\theta$ をなすようにした．両端は板の間にあるとして，A に現れる電気量を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の棒を外から動かし，$y$ 軸を含む平面内で中点のまわりに一定の角速度 $\\omega$ で回転させながら，中点を一定の速さ $u$ で B に向かって動かす．時刻 $t$ に $\\theta=\\omega t$，$y_{\\rm c}=y_0+ut$ である．棒の両端が板に触れない間に，大地から導線を通って A に流れこむ電流 $I_{\\rm A}$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "棒の両端の電荷を，(3) の $+q$ の位置に $+2q$，$-q$ の位置に $-q$ と替えて，(4) と同じ運動をさせた．$I_{\\rm A}$ と，その1回転あたりの時間平均を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：接地した平行板の間で動く電荷の組（双極子）の誘導電荷と接地線の電流",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$Q_{\\rm A}=-\\dfrac{d-x}{d}Q$，$Q_{\\rm B}=-\\dfrac{x}{d}Q$"
+   },
+   {
+    "id": "2",
+    "tex": "解説参照（同じ高さに並べた点電荷の集まりは一様な帯電板と同じで，板が十分広いので各点電荷の寄与は等しい）"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{qa\\cos\\theta}{d}$（$y_{\\rm c}$ によらない）"
+   },
+   {
+    "id": "4",
+    "tex": "$I_{\\rm A}=-\\dfrac{qa\\omega}{d}\\sin\\omega t$（$u$ によらない）"
+   },
+   {
+    "id": "5",
+    "tex": "$I_{\\rm A}=\\dfrac{qu}{d}-\\dfrac{3qa\\omega}{2d}\\sin\\omega t$，時間平均 $\\dfrac{qu}{d}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 板の面積を $S$，真空の誘電率を $\\varepsilon_0$ とする．A と帯電板の間の電場を $E_1$，帯電板と B の間の電場を $E_2$（いずれも $y$ 軸の正の向きを正）とする．A，B はともに電位 $0$ なので，A から B まで電位を足し合わせて\n\\[ E_1x+E_2(d-x)=0 \\]\n帯電板の両側の電場の差は，ガウスの法則より $\\varepsilon_0S(E_2-E_1)=Q$．これらを解くと\n\\[ E_1=-\\frac{(d-x)Q}{\\varepsilon_0Sd},\\qquad E_2=\\frac{xQ}{\\varepsilon_0Sd} \\]\nA の内側の面から出る電気力線の本数から $Q_{\\rm A}=\\varepsilon_0SE_1$，B では向きが逆で $Q_{\\rm B}=-\\varepsilon_0SE_2$ なので\n\\[ \\boldsymbol{Q_{\\rm A}=-\\frac{d-x}{d}Q},\\qquad \\boldsymbol{Q_{\\rm B}=-\\frac{x}{d}Q} \\]\n和は $-Q$ で，帯電板から出た電気力線はすべて A か B で終わる．近い板ほど多くの電荷を引き受ける．\n\n\\textbf{(2)} 板が接地されているとき，置いた電荷を何倍かにすると誘導される電荷も同じ倍率になり，いくつかの電荷を置いたときの誘導電荷はそれぞれを単独で置いたときの和になる（重ね合わせ）．また板は十分広いので，点電荷を板に平行にずらしても A の電気量の総和は変わらない．そこで高さ $x$ の平面上に点電荷 $q$ を一様に $N$ 個並べると，A の電気量は $Nq_{\\rm A}$ であり，一方これは電気量 $Nq$ の一様な帯電板と同じなので (1) より $-\\frac{d-x}{d}Nq$ である．よって\n\\[ q_{\\rm A}=-\\frac{d-x}{d}q \\]\nすなわち A に現れる電気量は電荷の高さ $x$ の1次式である．\n\n\\textbf{(3)} 両端の高さは $y_\\pm=y_{\\rm c}\\pm\\frac a2\\cos\\theta$．(2) の結果を重ね合わせて\n\\[ Q_{\\rm A}=-\\frac{d-y_+}{d}q+\\frac{d-y_-}{d}q=\\frac{q(y_+-y_-)}{d}=\\boldsymbol{\\frac{qa\\cos\\theta}{d}} \\]\n誘導電荷が高さの1次式なので，正負等量の組では位置 $y_{\\rm c}$ が打ち消し合い，板に垂直な双極子モーメントの成分 $qa\\cos\\theta$ だけで決まる．\n\n\\textbf{(4)} 大地から A に流れこむ電流は A の電気量の増加の割合である．(3) に $\\theta=\\omega t$ を入れて時間で微分すると\n\\[ I_{\\rm A}=\\frac{d}{dt}\\left(\\frac{qa\\cos\\omega t}{d}\\right)=\\boldsymbol{-\\frac{qa\\omega}{d}\\sin\\omega t} \\]\n並進の速さ $u$ は現れない．$+q$ が B に近づくことで A の電気量は $+\\frac{qu}{d}$ の割合で増えるが，$-q$ も同じ速さで動くので $-\\frac{qu}{d}$ の寄与が打ち消すからである．\n\n\\textbf{(5)} (2) の結果を重ね合わせると\n\\[ Q_{\\rm A}=-\\frac{d-y_+}{d}\\cdot2q+\\frac{d-y_-}{d}q=-q+\\frac{q\\,y_{\\rm c}}{d}+\\frac{3qa\\cos\\theta}{2d} \\]\n$y_{\\rm c}=y_0+ut$，$\\theta=\\omega t$ を入れて微分し\n\\[ \\boldsymbol{I_{\\rm A}=\\frac{qu}{d}-\\frac{3qa\\omega}{2d}\\sin\\omega t} \\]\n第2項の1回転の平均は $0$ なので，時間平均は $\\boldsymbol{\\dfrac{qu}{d}}$．これは全電気量 $+q$ が速さ $u$ で B に近づくことによる電流で，平均の電流は全電気量だけで決まり，電荷の配置（双極子の部分）は振動する電流だけを生む．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "接地した平行板の間の電荷が一方の板に誘導する電気量は，同じ高さに並べた一様な帯電板に置き換える重ね合わせにより位置の1次式 $-q(d-x)/d$ になる．そのため正負等量の電荷の組では位置が打ち消し合い，誘導電荷は板に垂直な双極子モーメント成分だけで決まり，接地線の電流は並進によらず回転だけが生む（全電気量があれば平均電流 $qu/d$ が加わる）．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "torque",
+  "superposition"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "静電誘導",
+  "接地",
+  "重ね合わせ",
+  "電気双極子",
+  "誘導電流"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

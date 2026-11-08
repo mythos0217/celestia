@@ -1,0 +1,121 @@
+{
+ "id": "PHY-ESF-023",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "質量の大きく異なる荷電粒子の同時解放と放す順番（時間スケールの分離によるエネルギーの分配）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，一辺 $a$ の正方形 ABCD の頂点 A，C に陽電子（質量 $m$），頂点 B，D に陽子（質量 $M$）を固定する．4個の粒子の電気量はすべて $+e$ であり，$M$ は $m$ よりはるかに大きい（$M/m\\fallingdotseq1840$）．粒子は互いのクーロン力だけを受けるものとし，クーロンの法則の比例定数を $k$ とする．重力や電磁波の放射の影響は考えず，速さは光速よりも十分小さいとする．以下の答えは，$\\sqrt{m/M}$ 程度以下の小さな補正を無視した形で求めよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "4個の粒子を同時に放す．同じ程度の大きさの力を受けたとき，陽電子が距離 $a$ 程度動くのに要する時間 $t_e$ と，陽子が距離 $a$ 程度動くのに要する時間 $t_p$ の比 $t_p/t_e$ の目安を，$m$，$M$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の場合，十分に時間がたった後の陽電子の速さ $v$ と陽子の速さ $V$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "別の実験として，陽電子を固定したまま陽子だけを放し，陽子が十分に遠ざかってから陽電子を放す．十分に時間がたった後の陽電子の速さ $v'$ と陽子の速さ $V'$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) と (3) の陽電子1個の最終的な運動エネルギーの比を求めよ．また，(2) と (3) で4個の粒子の運動エネルギーの総和が等しいことを確かめよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：質量の大きく異なる荷電粒子の同時解放と放す順番（時間スケールの分離によるエネルギーの分配）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{t_p}{t_e}\\fallingdotseq\\sqrt{\\dfrac{M}{m}}\\ (\\fallingdotseq43)$"
+   },
+   {
+    "id": "2",
+    "tex": "$v=\\sqrt{\\dfrac{(8+\\sqrt2)ke^2}{2ma}}$，$V=\\sqrt{\\dfrac{ke^2}{\\sqrt2Ma}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$v'=\\sqrt{\\dfrac{ke^2}{\\sqrt2ma}}$，$V'=\\sqrt{\\dfrac{(8+\\sqrt2)ke^2}{2Ma}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$1+4\\sqrt2\\ (\\fallingdotseq6.7)$ 倍．総和はどちらも $(4+\\sqrt2)\\dfrac{ke^2}{a}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 時間の目安}　大きさ $F$ の力を受け続けると，静止から距離 $a$ 動くのに要する時間は $\\frac12\\frac{F}{\\mu}t^2=a$ より $t=\\sqrt{2\\mu a/F}$（$\\mu$ は質量）で，質量の平方根に比例する．よって\n\\[ \\boldsymbol{\\frac{t_p}{t_e}\\fallingdotseq\\sqrt{\\frac{M}{m}}}\\fallingdotseq43. \\]\n陽電子が遠くへ飛び去るまでの時間 $\\sim t_e$ の間に，陽子が動く距離は $a\\times(t_e/t_p)^2\\sim a\\times\\dfrac{m}{M}$ 程度にすぎない．したがって陽電子が飛び去る過程では，陽子は\\textbf{はじめの位置に固定されているとみなせる}．\n\n\\textbf{静電気力による位置エネルギー}　4個の粒子の組は6組あり，\n\\begin{itemize}\n\\item 陽電子と陽子の組（辺の両端）：4組，各 $\\dfrac{ke^2}{a}$\n\\item 陽電子どうし（対角線 AC）：$\\dfrac{ke^2}{\\sqrt2a}$　　陽子どうし（対角線 BD）：$\\dfrac{ke^2}{\\sqrt2a}$\n\\end{itemize}\nで，合計 $U_0=(4+\\sqrt2)\\dfrac{ke^2}{a}$ である．\n\n\\textbf{(2) 同時に放した場合}　まず陽電子が，固定された陽子のそばから飛び去る．この間に解放されるのは陽電子が関わる組の位置エネルギー，すなわち陽電子と陽子の4組と陽電子どうしの1組の和 $\\left(4+\\dfrac{1}{\\sqrt2}\\right)\\dfrac{ke^2}{a}$ で，対称性から2個の陽電子が等分する．陽子はこの間ほとんど動かないので運動エネルギーをほとんど受けとらない（運動量保存から陽子が受けとる速さは陽電子の $m/M$ 倍程度で，エネルギーはさらに小さい）．よって\n\\[ \\frac12mv^2=\\left(2+\\frac{\\sqrt2}{4}\\right)\\frac{ke^2}{a}\\quad\\therefore\\quad \\boldsymbol{v=\\sqrt{\\frac{(8+\\sqrt2)ke^2}{2ma}}}. \\]\n陽電子が遠ざかった後，陽子どうしは距離 $\\sqrt2a$ から反発し合い，残りの位置エネルギー $\\dfrac{ke^2}{\\sqrt2a}$ を等分する：\n\\[ \\frac12MV^2=\\frac{ke^2}{2\\sqrt2a}\\quad\\therefore\\quad \\boldsymbol{V=\\sqrt{\\frac{ke^2}{\\sqrt2Ma}}}. \\]\n\n\\textbf{(3) 陽子を先に放した場合}　陽電子が固定されているので，陽子は陽電子との4組と陽子どうしの1組の位置エネルギー $\\left(4+\\dfrac1{\\sqrt2}\\right)\\dfrac{ke^2}{a}$ を等分して飛び去る．その後に放された陽電子は，陽電子どうしの $\\dfrac{ke^2}{\\sqrt2a}$ だけを等分する．(2) と比べて，陽電子と陽子の役割がちょうど入れかわり，\n\\[ \\boldsymbol{v'=\\sqrt{\\frac{ke^2}{\\sqrt2ma}}},\\qquad \\boldsymbol{V'=\\sqrt{\\frac{(8+\\sqrt2)ke^2}{2Ma}}}. \\]\n(2) の「同時に放す」は，結果としては「軽い陽電子を先に放す」のと同じになるのである．\n\n\\textbf{(4) 比較}　陽電子1個の運動エネルギーの比は\n\\[ \\frac{\\left(2+\\frac{\\sqrt2}{4}\\right)}{\\frac{\\sqrt2}{4}}=\\frac{8}{\\sqrt2}+1=\\boldsymbol{1+4\\sqrt2}\\fallingdotseq6.7\\ \\text{倍}. \\]\n総和は (2) で $2\\left(2+\\dfrac{\\sqrt2}{4}\\right)\\dfrac{ke^2}{a}+2\\cdot\\dfrac{\\sqrt2}{4}\\dfrac{ke^2}{a}=(4+\\sqrt2)\\dfrac{ke^2}{a}$，(3) でも同じ値になり，どちらもはじめの位置エネルギー $U_0$ がすべて運動エネルギーになっている．エネルギー保存則だけでは分配は決まらず，放す順番（＝どちらが先に動けるか）が分配を決めている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "質量比が大きいと，軽い粒子は重い粒子がほとんど動かないうちに飛び去るので，同時に放しても「軽い粒子を先に放す」のと同じになり，軽い粒子は自分が関わる組の位置エネルギーをすべて受けとる．放す順番を逆にすると分配が入れかわり，エネルギー保存則だけでは決まらない分配が時間スケールの分離で決まる．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "クーロン力",
+  "静電気力による位置エネルギー",
+  "エネルギー保存",
+  "質量比",
+  "時間スケール"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "id": "PHY-IND-009",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "抵抗をもつコイルの自己インダクタンスの測定（2次コイルで誘導成分を分離する逆問題）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図1のように，長さ $0.50\\ \\mathrm{m}$，巻数 $N_1=2000$ のソレノイドコイル P の中央部に，P を取り巻くように巻数 $N_2=80$ のコイル Q が巻いてある．P の導線には無視できない抵抗 $r$ があり，P の自己インダクタンス $L$ も未知である．Q の両端は内部抵抗が非常に大きい電圧計につないであり，Q にはほとんど電流が流れない．P の内部の磁場は一様とし，P の外部の磁場は無視する．真空の透磁率を $\\mu_0=4\\pi\\times10^{-7}\\ \\mathrm{N/A^2}$ とする．\nP に電源をつなぎ，P を流れる電流 $I$ を図2のように変化させた（$0\\leqq t\\leqq0.40\\ \\mathrm{s}$ で $0$ から $2.0\\ \\mathrm{A}$ まで一定の割合で増加，$0.80\\ \\mathrm{s}$ まで一定，$0.90\\ \\mathrm{s}$ で $0$ まで一定の割合で減少）．このとき次の測定値が得られた．\n・$0.40\\ \\mathrm{s}<t<0.80\\ \\mathrm{s}$ での P の両端の電圧の大きさ：$0.60\\ \\mathrm{V}$\n・$0<t<0.40\\ \\mathrm{s}$ での Q の両端の電圧の大きさ：$0.020\\ \\mathrm{V}$（一定）\n数値は有効数字2桁で答えよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P の抵抗 $r$，P と Q の相互インダクタンス $M$，P の自己インダクタンス $L$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P の断面積 $S$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "P の両端の電圧 $V$（電流 $I$ を流し込む側の端子の，もう一方の端子に対する電位）の時間変化を $0\\leqq t\\leqq0.90\\ \\mathrm{s}$ について求め，$t=0$（直後），$0.40\\ \\mathrm{s}$（直前），$0.80\\ \\mathrm{s}$（直後），$0.90\\ \\mathrm{s}$（直前）での値を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$0.80\\ \\mathrm{s}\\leqq t\\leqq0.90\\ \\mathrm{s}$ の間に電源が P に供給したエネルギー，および $0\\leqq t\\leqq0.90\\ \\mathrm{s}$ の全体で電源が P に供給したエネルギーを求めよ．符号にも注意すること．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：抵抗をもつコイルの自己インダクタンスの測定（2次コイルで誘導成分を分離する逆問題）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：抵抗をもつコイルの自己インダクタンスの測定（2次コイルで誘導成分を分離する逆問題）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$r=0.30\\ \\Omega$，$M=4.0\\times10^{-3}\\ \\mathrm{H}$，$L=0.10\\ \\mathrm{H}$"
+   },
+   {
+    "id": "2",
+    "tex": "$S=9.9\\times10^{-3}\\ \\mathrm{m^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0<t<0.40$：$V=0.50+0.30I=0.50+1.5t\\ [\\mathrm V]$，$0.40<t<0.80$：$V=0.60\\ \\mathrm V$，$0.80<t<0.90$：$V=-2.0+0.30I\\ [\\mathrm V]$．$t=0$ 直後 $0.50\\ \\mathrm V$，$0.40\\ \\mathrm s$ 直前 $1.1\\ \\mathrm V$，$0.80\\ \\mathrm s$ 直後 $-1.4\\ \\mathrm V$，$0.90\\ \\mathrm s$ 直前 $-2.0\\ \\mathrm V$"
+   },
+   {
+    "id": "4",
+    "tex": "$0.80$〜$0.90\\ \\mathrm s$：$-0.16\\ \\mathrm J$（電源は $0.16\\ \\mathrm J$ を受け取る），全体：$0.68\\ \\mathrm J$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針} P の両端の電圧には，自己誘導による $L\\dfrac{\\Delta I}{\\Delta t}$ と抵抗による $rI$ が混ざっている．一方，電流がほぼ流れない Q の電圧は $M\\dfrac{\\Delta I}{\\Delta t}$ だけで，抵抗の影響を含まない．Q を「磁束の変化だけを測るセンサー」として使い，2つの成分を分離する．\n\n\\textbf{(1)} $0.40<t<0.80\\ \\mathrm s$ では $I$ が一定なので自己誘導の起電力はなく，$V=rI$．\n\\[ r=\\frac{0.60}{2.0}=\\boldsymbol{0.30\\ \\Omega}. \\]\n$0<t<0.40\\ \\mathrm s$ の電流の変化率は $\\dfrac{\\Delta I}{\\Delta t}=\\dfrac{2.0}{0.40}=5.0\\ \\mathrm{A/s}$．Q の電圧は $M\\dfrac{\\Delta I}{\\Delta t}$ なので\n\\[ M=\\frac{0.020}{5.0}=\\boldsymbol{4.0\\times10^{-3}\\ \\mathrm H}. \\]\nP 内の磁束密度を $B$ とすると，P の各巻線も Q の各巻線も同じ磁束 $\\Phi=BS$ に貫かれる（Q は P を取り巻き，P の外の磁場は無視できる）．P の磁束鎖交数は $N_1\\Phi$，Q は $N_2\\Phi$ なので\n\\[ \\frac{L}{M}=\\frac{N_1\\Phi/I}{N_2\\Phi/I}=\\frac{N_1}{N_2}\\quad\\therefore\\quad L=4.0\\times10^{-3}\\times\\frac{2000}{80}=\\boldsymbol{0.10\\ \\mathrm H}. \\]\n\n\\textbf{(2)} $L=\\dfrac{\\mu_0N_1^2S}{l}$（$l=0.50\\ \\mathrm m$）より\n\\[ S=\\frac{Ll}{\\mu_0N_1^2}=\\frac{0.10\\times0.50}{4\\pi\\times10^{-7}\\times(2000)^2}\\fallingdotseq\\boldsymbol{9.9\\times10^{-3}\\ \\mathrm{m^2}}. \\]\n\n\\textbf{(3)} 電流を流し込む側の端子の電位は，抵抗による降下 $rI$ と，電流の増加を妨げる自己誘導の起電力 $L\\dfrac{\\Delta I}{\\Delta t}$ の分だけ高い：\n\\[ V=L\\frac{\\Delta I}{\\Delta t}+rI. \\]\n・$0<t<0.40\\ \\mathrm s$：$\\dfrac{\\Delta I}{\\Delta t}=5.0$，$I=5.0t$．$V=0.50+0.30I=0.50+1.5t$．$t=0$ 直後 $\\boldsymbol{0.50\\ \\mathrm V}$，$0.40\\ \\mathrm s$ 直前 $\\boldsymbol{1.1\\ \\mathrm V}$．\n・$0.40<t<0.80\\ \\mathrm s$：$V=0.60\\ \\mathrm V$．\n・$0.80<t<0.90\\ \\mathrm s$：$\\dfrac{\\Delta I}{\\Delta t}=-\\dfrac{2.0}{0.10}=-20\\ \\mathrm{A/s}$．$V=-2.0+0.30I$．$0.80\\ \\mathrm s$ 直後 $\\boldsymbol{-1.4\\ \\mathrm V}$，$0.90\\ \\mathrm s$ 直前 $\\boldsymbol{-2.0\\ \\mathrm V}$．\n減少中は，電流は流れ込み続けているのに $V<0$ になる．コイルが電源のように電流を押し出し続けている（蓄えた磁気エネルギーを放出している）ためである．なお Q の電圧はこの間 $M\\times20=0.080\\ \\mathrm V$ で，増加中とは逆の極性になる．\n\n\\textbf{(4)} 電源が P に供給する仕事率は $VI=LI\\dfrac{\\Delta I}{\\Delta t}+rI^2$．$0.80$〜$0.90\\ \\mathrm s$ で積分すると，第1項は磁気エネルギーの変化 $0-\\dfrac12LI_0^2=-\\dfrac12\\times0.10\\times2.0^2=-0.20\\ \\mathrm J$，第2項は直線的に減る電流のジュール熱 $r\\cdot\\dfrac{I_0^2}{3}\\cdot0.10=0.30\\times\\dfrac{4.0}{3}\\times0.10=0.040\\ \\mathrm J$．よって\n\\[ -0.20+0.040=\\boldsymbol{-0.16\\ \\mathrm J} \\]\nで，この間は電源が P から $0.16\\ \\mathrm J$ を受け取る．\n全体では，最初と最後で電流は $0$ で磁気エネルギーの出入りは差し引き $0$ なので，供給エネルギーはジュール熱の総和に等しい：\n\\[ r\\left(\\frac{I_0^2}{3}\\times0.40+I_0^2\\times0.40+\\frac{I_0^2}{3}\\times0.10\\right)=0.30\\times(0.533+1.6+0.133)\\fallingdotseq\\boldsymbol{0.68\\ \\mathrm J}. \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "抵抗をもつコイルの端子電圧は $L\\frac{\\Delta I}{\\Delta t}+rI$ の和であり，電流をほぼ流さない2次コイルの電圧 $M\\frac{\\Delta I}{\\Delta t}$ は抵抗の影響を含まないので，これを用いて自己誘導の成分を分離できる．同じ磁束を共有するので $L:M=N_1:N_2$．電流減少中は端子電圧が負になり，コイルが電源にエネルギーを返す．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "series-parallel"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "自己誘導",
+  "相互誘導",
+  "ソレノイド",
+  "自己インダクタンス",
+  "エネルギー",
+  "逆問題"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

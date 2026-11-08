@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 440">
+<defs>
+<marker id="q-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="q-ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+</defs>
+<!-- coil -->
+<rect x="210" y="40" width="100" height="90" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="254" y="32" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">b</text>
+<text x="190" y="90" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">a</text>
+<text x="230" y="90" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">コイル</text>
+<!-- h -->
+<line x1="335" y1="130" x2="335" y2="200" stroke="#222" stroke-width="1" marker-start="url(#q-ah)" marker-end="url(#q-ah)"/>
+<line x1="310" y1="130" x2="345" y2="130" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="343" y="170" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">h</text>
+<!-- boundaries -->
+<line x1="60" y1="200" x2="460" y2="200" stroke="#222" stroke-width="1.6"/>
+<line x1="60" y1="290" x2="460" y2="290" stroke="#222" stroke-width="1.6"/>
+<line x1="60" y1="380" x2="460" y2="380" stroke="#222" stroke-width="1.6"/>
+<text x="40" y="205" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">P</text>
+<text x="40" y="295" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">Q</text>
+<text x="40" y="385" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">S</text>
+<!-- dims -->
+<line x1="480" y1="200" x2="480" y2="290" stroke="#222" stroke-width="1" marker-start="url(#q-ah)" marker-end="url(#q-ah)"/>
+<line x1="480" y1="290" x2="480" y2="380" stroke="#222" stroke-width="1" marker-start="url(#q-ah)" marker-end="url(#q-ah)"/>
+<text x="488" y="250" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">a</text>
+<text x="488" y="340" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">a</text>
+<!-- dots (out of page) -->
+<g fill="none" stroke="#222" stroke-width="1.2">
+<circle cx="120" cy="245" r="9"/><circle cx="220" cy="245" r="9"/><circle cx="320" cy="245" r="9"/><circle cx="420" cy="245" r="9"/>
+</g>
+<g fill="#222"><circle cx="120" cy="245" r="2.5"/><circle cx="220" cy="245" r="2.5"/><circle cx="320" cy="245" r="2.5"/><circle cx="420" cy="245" r="2.5"/></g>
+<!-- crosses (into page) -->
+<g fill="none" stroke="#222" stroke-width="1.2">
+<circle cx="120" cy="335" r="9"/><circle cx="220" cy="335" r="9"/><circle cx="320" cy="335" r="9"/><circle cx="420" cy="335" r="9"/>
+<path d="M114,329 L126,341 M126,329 L114,341 M214,329 L226,341 M226,329 L214,341 M314,329 L326,341 M326,329 L314,341 M414,329 L426,341 M426,329 L414,341"/>
+</g>
+<text x="140" y="251" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+<text x="140" y="341" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+<!-- g -->
+<line x1="420" y1="50" x2="420" y2="110" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ahb)"/>
+<text x="430" y="90" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">g</text>
+</svg>

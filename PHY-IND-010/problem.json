@@ -1,0 +1,143 @@
+{
+ "id": "PHY-IND-010",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "コイルでつながれたレール上の棒が有限幅の磁場領域を通過する運動",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平面内に間隔 $d$ で平行に置かれた2本の導体レールの左端が，自己インダクタンス $L$ のコイルで結ばれている．レール上を質量 $M$ の導体棒 P がレールと垂直を保って摩擦なく動く．レールに沿って $x$ 軸をとり，$0\\le x\\le w$ の帯状の領域にだけ，鉛直下向きで磁束密度の大きさ $B$ の一様な磁場がある．P を $x<0$ の位置から速さ $v_0$ で $x$ 軸の正の向きに滑らせた．はじめ回路に電流は流れていない．回路の電気抵抗とコイル以外の自己インダクタンスは無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P が磁場領域内の位置 $x$（$0\\le x\\le w$）にあるとき，回路を流れる電流の大きさ $I$ と P の速さ $v$ を $x$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "P が磁場領域を通り抜けて $x>w$ に出るための $v_0$ の条件を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の条件が満たされるとき，P が $x=w$ を通過した後の速さ $v_1$ と回路の電流の大きさ $I_1$，および P が磁場領域内にいた時間 $t_1$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の後，P は $x>w$ にある壁と弾性衝突してはね返り，再び磁場領域に入った．P が $x=0$ に戻ったときの速さと回路の電流の大きさを求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(2) の条件が満たされないとき，P が磁場領域に入ってから $x=0$ に戻ってくるまでの時間を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：コイルでつながれたレール上の棒が有限幅の磁場領域を通過する運動",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：コイルでつながれたレール上の棒が有限幅の磁場領域を通過する運動",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I=\\dfrac{Bd}{L}x$，$v=\\sqrt{v_0^2-\\dfrac{B^2d^2}{ML}x^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$v_0>\\dfrac{Bdw}{\\sqrt{ML}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$v_1=\\sqrt{v_0^2-\\dfrac{B^2d^2w^2}{ML}}$，$I_1=\\dfrac{Bdw}{L}$，$t_1=\\dfrac{\\sqrt{ML}}{Bd}\\sin^{-1}\\!\\left(\\dfrac{Bdw}{v_0\\sqrt{ML}}\\right)$"
+   },
+   {
+    "id": "4",
+    "tex": "速さ $v_0$，電流 $0$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{\\pi\\sqrt{ML}}{Bd}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 電流と位置の関係}\nP が磁場内で速さ $v$ のとき，P の誘導起電力は $vBd$．回路の抵抗が 0 なので，キルヒホッフの法則より P の起電力はコイルの自己誘導起電力とつり合う：\n\\[ vBd-L\\frac{\\Delta I}{\\Delta t}=0\\quad\\Longrightarrow\\quad L\\,\\Delta I=Bd\\,\\Delta x \\]\n（回路を貫く全磁束が一定に保たれる，と見てもよい．）$x=0$ で $I=0$ だから\n\\[ I=\\boldsymbol{\\frac{Bd}{L}x} \\]\n抵抗がないのでエネルギーは失われず，$\\dfrac12Mv^2+\\dfrac12LI^2=\\dfrac12Mv_0^2$ より\n\\[ v=\\boldsymbol{\\sqrt{v_0^2-\\frac{B^2d^2}{ML}x^2}} \\]\n\n\\textbf{(2) 通過条件}\nP が受ける力は $-IBd=-\\dfrac{B^2d^2}{L}x$．これはばね定数 $K=\\dfrac{B^2d^2}{L}$ の復元力で，振動の中心は磁場の入口 $x=0$ である（磁場の中央ではない）．角振動数 $\\omega=\\dfrac{Bd}{\\sqrt{ML}}$，振幅 $A=\\dfrac{v_0}{\\omega}=\\dfrac{v_0\\sqrt{ML}}{Bd}$．通り抜けるには $A>w$：\n\\[ \\boldsymbol{v_0>\\frac{Bdw}{\\sqrt{ML}}} \\]\n\n\\textbf{(3) 通過後}\n(1) で $x=w$ とおいて\n\\[ v_1=\\boldsymbol{\\sqrt{v_0^2-\\frac{B^2d^2w^2}{ML}}},\\qquad I_1=\\boldsymbol{\\frac{Bdw}{L}} \\]\n$x>w$ では P に起電力が生じないので $L\\dfrac{\\Delta I}{\\Delta t}=0$，電流 $I_1$ は流れ続ける（P に磁場の力ははたらかず，P は等速）．\n磁場内の運動は $x=A\\sin\\omega t$ だから，$A\\sin\\omega t_1=w$ より\n\\[ t_1=\\boldsymbol{\\frac{\\sqrt{ML}}{Bd}\\sin^{-1}\\!\\left(\\frac{Bdw}{v_0\\sqrt{ML}}\\right)} \\]\n\n\\textbf{(4) はね返った後}\n弾性衝突で P は速さ $v_1$ のまま向きを変え，電流 $I_1$ のまま $x=w$ から磁場に入る．(1) の関係 $L\\Delta I=Bd\\,\\Delta x$ は向きによらず成り立ち，$x=w$ で $I=I_1=\\dfrac{Bdw}{L}$ だから，磁場内では再び $I=\\dfrac{Bd}{L}x$．したがって $x=0$ で電流は $\\boldsymbol{0}$，エネルギー保存より速さは $\\boldsymbol{v_0}$ に戻る．電流は「P の位置だけで決まる」ことがポイントである．\n\n\\textbf{(5) はね返される場合}\n単振動の半周期で $x=0$ に戻る（そのとき速さ $v_0$，電流 0）：\n\\[ \\frac{T}{2}=\\frac{\\pi}{\\omega}=\\boldsymbol{\\frac{\\pi\\sqrt{ML}}{Bd}} \\]\n解答図は $v$–$x$ グラフ（青：通過する場合，赤：はね返される場合）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "抵抗0の回路ではコイルの自己誘導起電力と棒の誘導起電力が常に等しく LI=Bd·x（回路の全磁束保存）となり，電流は棒の位置だけで決まる．磁場内の棒は入口を中心とする ばね定数 B²d²/L の単振動をし，磁場の外へ出るとその瞬間の電流が保存される．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "simple-harmonic-motion",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "自己誘導",
+  "磁束保存",
+  "単振動",
+  "状態の切り替わり"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

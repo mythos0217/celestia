@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380">
+<defs>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+</defs>
+<!-- rails: slope direction (dx,dy)=(300,-160); depth offset (110,45) -->
+<line x1="40" y1="250" x2="360" y2="80" stroke="#222" stroke-width="1.6"/>
+<line x1="150" y1="295" x2="470" y2="125" stroke="#222" stroke-width="1.6"/>
+<text x="8" y="232" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">レール</text>
+<!-- horizontal reference & angle at lower end of near rail -->
+<line x1="150" y1="295" x2="260" y2="295" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<path d="M 200 295 A 50 50 0 0 0 194.2 271.6" fill="none" stroke="#222" stroke-width="1"/>
+<text x="206" y="290" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">θ</text>
+<!-- rod 1 (lower) at s=0.30 ; rod 2 (upper) at s=0.72 -->
+<line x1="136" y1="199" x2="246" y2="244" stroke="#222" stroke-width="5"/>
+<line x1="270.4" y1="127.6" x2="380.4" y2="172.6" stroke="#222" stroke-width="7"/>
+<text x="250" y="262" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">棒1（</text>
+<text x="290" y="262" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">m, R</text>
+<text x="322" y="262" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">）</text>
+<text x="388" y="190" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">棒2（</text>
+<text x="428" y="190" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">2m, R</text>
+<text x="468" y="190" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">）</text>
+<!-- velocity of rod1 down slope -->
+<line x1="191" y1="221" x2="135" y2="251" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="112" y="270" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">u</text>
+<!-- L dimension -->
+<line x1="372" y1="74" x2="482" y2="119" stroke="#888" stroke-width="1"/>
+<text x="430" y="88" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">L</text>
+<!-- B arrows -->
+<g stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)">
+<line x1="500" y1="330" x2="500" y2="250"/><line x1="530" y1="330" x2="530" y2="250"/></g>
+<text x="508" y="350" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+<line x1="60" y1="310" x2="60" y2="360" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+<text x="68" y="345" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">g</text>
+</svg>

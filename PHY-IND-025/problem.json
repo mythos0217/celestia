@@ -1,0 +1,130 @@
+{
+ "id": "PHY-IND-025",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "半径方向の磁場中を落下するコイルによる質量測定（キッブル天びんの原理と内部抵抗の消去）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，天井に固定した軽い滑車に糸をかけ，一方の端に吊り具（コイルを含む）を，他方の端におもりをつるす．吊り具とおもりの質量はどちらも $M$ である．コイルは半径 $a$，巻数 $N$，抵抗 $r$ の円形で，水平を保ったまま磁石の円筒状のすき間の中を鉛直方向にだけ動く．コイルの導線の位置では，磁場は水平で半径方向外向き，大きさ $B$ は一定であるが，その値はわかっていない．コイルの両端は抵抗値 $R$ の抵抗につながれ，抵抗の両端の電圧を内部抵抗の十分大きい電圧計で測る．\n\n吊り具の上に質量 $m$ の物体をのせて静かに放すと，吊り具は下降を始め，やがて一定の速さ（終端速度）で運動するようになった．滑車と糸の質量，摩擦，空気抵抗，コイルの自己インダクタンスは無視し，重力加速度の大きさを $g$ とする．$K=2\\pi aNB$ とおく（$B$ が未知なので $K$ も未知である）．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "終端速度で運動しているときにコイルを流れる電流 $I$ を $m$，$g$，$K$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "終端速度 $v$ を $m$，$g$，$K$，$R$，$r$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "抵抗を $R_1$，$R_2$ $(R_1>R_2)$ に取り替えて2回測定したところ，終端速度はそれぞれ $v_1$，$v_2$，電圧計の読みはそれぞれ $V_1$，$V_2$ であった．$\\dfrac{V_1}{R_1}=\\dfrac{V_2}{R_2}$ となることを示せ．また，$m$ を $V_1$，$R_1$，$R_2$，$v_1$，$v_2$，$g$ で表し，コイルの抵抗 $r$ を $R_1$，$R_2$，$v_1$，$v_2$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$R_1=100\\ \\Omega$，$R_2=50.0\\ \\Omega$ のとき，$V_1=0.200\\ \\text{V}$，$V_2=0.100\\ \\text{V}$，$v_1=3.00\\ \\text{mm/s}$，$v_2=2.00\\ \\text{mm/s}$ であった．$g=9.80\\ \\text{m/s}^2$ として，$m$，$r$，$K$ を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) の1回目の測定で，放してから速さが終端速度の $\\left(1-\\dfrac1e\\right)$ 倍になるまでの時間は $0.150\\ \\text{s}$ であった（$e$ は自然対数の底）．$M$ を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：半径方向の磁場中を落下するコイルによる質量測定（キッブル天びんの原理と内部抵抗の消去）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I=\\dfrac{mg}{K}$"
+   },
+   {
+    "id": "2",
+    "tex": "$v=\\dfrac{mg(R+r)}{K^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$m=\\left(\\dfrac{V_1}{R_1}\\right)^2\\dfrac{R_1-R_2}{g(v_1-v_2)}$，$r=\\dfrac{R_1v_2-R_2v_1}{v_1-v_2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$m=2.04\\times10^{-2}\\ \\text{kg}$，$r=50.0\\ \\Omega$，$K=1.00\\times10^2\\ \\text{T·m}$"
+   },
+   {
+    "id": "5",
+    "tex": "$M\\fallingdotseq5.0\\ \\text{kg}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{起電力と力}　コイルが速さ $v$ で下降すると，導線の各部分は半径方向の磁場を垂直に横切るので，導線に沿って（周方向に）起電力が生じる．全長は $2\\pi aN$ なので起電力は $Bv\\cdot2\\pi aN=Kv$．逆に電流 $I$ が流れると，周方向の電流と半径方向の磁場から，各部分に鉛直方向の力がはたらき，合計 $BI\\cdot2\\pi aN=KI$ となる．レンツの法則より，この力は運動を妨げる向き（上向き）である．同じ $K$ が「起電力＝$K\\times$速さ」と「力＝$K\\times$電流」の両方に現れることが鍵である．\n\n\\textbf{(1)}　糸の張力を $T$，吊り具側の下向きの加速度を $\\alpha$ とすると\n\\[ (M+m)\\alpha=(M+m)g-T-KI,\\qquad M\\alpha=T-Mg \\]\n辺々加えて $(2M+m)\\alpha=mg-KI$．終端速度では $\\alpha=0$ なので\n\\[ I=\\boldsymbol{\\frac{mg}{K}} \\]\nおもりと吊り具の重さは打ち消し合い，電流は物体の重さだけで決まって $R$ によらない．\n\n\\textbf{(2)}　電圧計には電流が流れないので，起電力 $Kv$ が抵抗 $R+r$ に電流 $I$ を流す：$Kv=I(R+r)$．よって\n\\[ v=\\boldsymbol{\\frac{mg(R+r)}{K^2}} \\]\n両辺に $I$ をかけた $mgv=I^2(R+r)$ は，物体の重力がする仕事率がすべてジュール熱になることを表す．\n\n\\textbf{(3)}　電圧計の読みは $V_i=IR_i$ で，(1) より $I$ は2回とも同じなので $\\dfrac{V_1}{R_1}=\\dfrac{V_2}{R_2}=I$．\n\n2回の (2) の式 $Kv_1=I(R_1+r)$，$Kv_2=I(R_2+r)$ の差をとると未知の $r$ が消えて\n\\[ K(v_1-v_2)=I(R_1-R_2)\\quad\\Longrightarrow\\quad K=\\frac{I(R_1-R_2)}{v_1-v_2} \\]\n(1) の $mg=KI$ に代入すると未知の $K$ も消えて\n\\[ m=\\frac{KI}{g}=\\boldsymbol{\\left(\\frac{V_1}{R_1}\\right)^2\\frac{R_1-R_2}{g(v_1-v_2)}} \\]\nまた $Kv_1=I(R_1+r)$ より\n\\[ r=\\frac{Kv_1}{I}-R_1=\\frac{(R_1-R_2)v_1}{v_1-v_2}-R_1=\\boldsymbol{\\frac{R_1v_2-R_2v_1}{v_1-v_2}} \\]\n磁場の強さやコイルの寸法（$K$）を知らなくても，電圧・抵抗・速さだけで質量が決まる．これは「力のモード」の $mg=KI$ と「速さのモード」の（起電力）$=Kv$ で同じ $K$ を消去する，キッブルの天びん（ワット天びん）の考え方である．\n\n\\textbf{(4)}　$I=\\dfrac{0.200}{100}=2.00\\times10^{-3}\\ \\text{A}$（$\\dfrac{0.100}{50.0}$ と一致）．\n\\[ K=\\frac{2.00\\times10^{-3}\\times50.0}{1.00\\times10^{-3}}=\\boldsymbol{1.00\\times10^2\\ \\text{T·m}},\\qquad m=\\frac{KI}{g}=\\frac{0.200}{9.80}\\fallingdotseq\\boldsymbol{2.04\\times10^{-2}\\ \\text{kg}} \\]\n\\[ r=\\frac{100\\times2.00-50.0\\times3.00}{3.00-2.00}=\\boldsymbol{50.0\\ \\Omega} \\]\n（確認：$mgv_1=0.200\\times3.00\\times10^{-3}=6.00\\times10^{-4}\\ \\text{W}$，$I^2(R_1+r)=4.00\\times10^{-6}\\times150=6.00\\times10^{-4}\\ \\text{W}$．）\n\n\\textbf{(5) 慣性と重さ}　加速中も $I=\\dfrac{Kv}{R_1+r}$ なので，(1) の式は\n\\[ (2M+m)\\frac{\\Delta v}{\\Delta t}=mg-\\frac{K^2}{R_1+r}v=\\frac{mg}{v_1}(v_1-v) \\]\nとなり，$v_1-v$ がその大きさに比例する割合で減っていく．よって $v=v_1\\left(1-e^{-t/\\tau}\\right)$，時定数は\n\\[ \\tau=\\frac{(2M+m)v_1}{mg} \\]\n速さを決める重さは $mg$ だけだが，加速されるのは全質量 $2M+m$ である．$mg=KI=0.200\\ \\text{N}$ を用いて\n\\[ 2M+m=\\frac{mg\\tau}{v_1}=\\frac{0.200\\times0.150}{3.00\\times10^{-3}}=10.0\\ \\text{kg}\\qquad\\therefore\\quad M=\\frac{10.0-0.0204}{2}\\fallingdotseq\\boldsymbol{5.0\\ \\text{kg}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "磁場中のコイルでは同じ係数 $K=2\\pi aNB$ が「起電力 $=K\\times$速さ」と「力 $=K\\times$電流」の両方に現れるので，終端速度の状態（$mg=KI$，$Kv=I(R+r)$）を抵抗を変えて2回測れば，電流が抵抗によらず一定であることから未知の $K$ とコイルの内部抵抗の両方が消え，電圧・抵抗・速さだけで質量が決まる（$mgv$＝電力）．加速の時定数には重さでなく全慣性 $2M+m$ が現れる．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "work-energy",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "終端速度",
+  "キッブル天びん",
+  "電力と仕事率",
+  "測定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 330">
+<defs><marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker></defs>
+<line x1="70" y1="95" x2="600" y2="95" stroke="#222" stroke-width="1.3" marker-end="url(#a-ak)"/>
+<line x1="70" y1="160" x2="70" y2="25" stroke="#222" stroke-width="1.3" marker-end="url(#a-ak)"/>
+<text x="592" y="115" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">t</text>
+<text x="76" y="37" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">I</text>
+<text x="62" y="15" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">組甲</text>
+<polyline points="70,95 80,95 80,120 120,120 120,95 220,95 220,70 260,70 260,95 590,95" fill="none" stroke="#1f5fbf" stroke-width="2"/>
+<line x1="66" y1="70" x2="74" y2="70" stroke="#222" stroke-width="1"/>
+<text x="62" y="75" text-anchor="end" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">I<tspan baseline-shift="sub" font-size="10" font-style="normal">1</tspan></text>
+<text x="62" y="125" text-anchor="end" font-family="Times New Roman, serif" font-size="15" fill="#222">−<tspan font-style="italic">I</tspan><tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<line x1="70" y1="245" x2="600" y2="245" stroke="#222" stroke-width="1.3" marker-end="url(#a-ak)"/>
+<line x1="70" y1="310" x2="70" y2="175" stroke="#222" stroke-width="1.3" marker-end="url(#a-ak)"/>
+<text x="592" y="265" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">t</text>
+<text x="76" y="187" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">I</text>
+<text x="62" y="165" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">組乙</text>
+<polyline points="70,245 80,245 80,270 120,270 120,245 150,245 150,195 190,195 190,245 220,245 220,270 260,270 260,245 590,245" fill="none" stroke="#1f5fbf" stroke-width="2"/>
+<line x1="66" y1="195" x2="74" y2="195" stroke="#222" stroke-width="1"/>
+<text x="62" y="200" text-anchor="end" font-family="Times New Roman, serif" font-size="15" fill="#222">2<tspan font-style="italic">I</tspan><tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<line x1="66" y1="270" x2="74" y2="270" stroke="#222" stroke-width="1"/>
+<text x="62" y="275" text-anchor="end" font-family="Times New Roman, serif" font-size="15" fill="#222">−<tspan font-style="italic">I</tspan><tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<text x="100.0" y="297" text-anchor="middle" font-family="Times New Roman, serif" font-size="15" fill="#222"><tspan font-style="italic">τ</tspan></text>
+<text x="135.0" y="297" text-anchor="middle" font-family="Times New Roman, serif" font-size="15" fill="#222"><tspan font-style="italic">τ</tspan><tspan baseline-shift="sub" font-size="10">a</tspan></text>
+<text x="170.0" y="297" text-anchor="middle" font-family="Times New Roman, serif" font-size="15" fill="#222"><tspan font-style="italic">τ</tspan></text>
+<text x="205.0" y="297" text-anchor="middle" font-family="Times New Roman, serif" font-size="15" fill="#222"><tspan font-style="italic">τ</tspan><tspan baseline-shift="sub" font-size="10">a</tspan></text>
+<text x="240.0" y="297" text-anchor="middle" font-family="Times New Roman, serif" font-size="15" fill="#222"><tspan font-style="italic">τ</tspan></text>
+<line x1="80" y1="275" x2="80" y2="285" stroke="#888" stroke-width="1"/>
+<line x1="120" y1="275" x2="120" y2="285" stroke="#888" stroke-width="1"/>
+<line x1="150" y1="275" x2="150" y2="285" stroke="#888" stroke-width="1"/>
+<line x1="190" y1="275" x2="190" y2="285" stroke="#888" stroke-width="1"/>
+<line x1="220" y1="275" x2="220" y2="285" stroke="#888" stroke-width="1"/>
+<line x1="260" y1="275" x2="260" y2="285" stroke="#888" stroke-width="1"/>
+<text x="330" y="297" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">τ</tspan>＝(<tspan font-family="Times New Roman, serif" font-style="italic">b</tspan>−<tspan font-family="Times New Roman, serif" font-style="italic">a</tspan>)/<tspan font-family="Times New Roman, serif" font-style="italic">v</tspan>，<tspan font-family="Times New Roman, serif" font-style="italic">τ</tspan><tspan font-family="Times New Roman, serif" baseline-shift="sub" font-size="10">a</tspan>＝2<tspan font-family="Times New Roman, serif" font-style="italic">a</tspan>/<tspan font-family="Times New Roman, serif" font-style="italic">v</tspan>，<tspan font-family="Times New Roman, serif" font-style="italic">I</tspan><tspan font-family="Times New Roman, serif" baseline-shift="sub" font-size="10">1</tspan>＝<tspan font-family="Times New Roman, serif" font-style="italic">v</tspan>Φ<tspan font-family="Times New Roman, serif" baseline-shift="sub" font-size="10">0</tspan>/{<tspan font-family="Times New Roman, serif" font-style="italic">R</tspan>(<tspan font-family="Times New Roman, serif" font-style="italic">b</tspan>−<tspan font-family="Times New Roman, serif" font-style="italic">a</tspan>)}</text>
+</svg>

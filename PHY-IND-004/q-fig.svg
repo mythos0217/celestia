@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 330"><defs><marker id="q-ab" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#1f5fbf"/></marker><marker id="q-ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#c0392b"/></marker><marker id="q-ak" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#222"/></marker></defs>
+<line x1="90.0" y1="300.0" x2="90.0" y2="30.0" stroke="#222" stroke-width="2.2"/>
+<line x1="72.0" y1="200.0" x2="72.0" y2="120.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="58.0" y="165.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">I</text>
+<text x="76.0" y="318.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">L</text>
+<line x1="40.0" y1="250.0" x2="500.0" y2="250.0" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="495.0" y="270.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">x</text>
+<line x1="90.0" y1="250.0" x2="90.0" y2="25.0" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="104.0" y="30.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">y</text>
+<text x="78.0" y="268.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="#222">O</text>
+<rect x="210.0" y="130.0" width="120.0" height="120.0" stroke="#222" stroke-width="1.8" fill="none"/>
+<text x="198.0" y="268.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">A</text>
+<text x="342.0" y="268.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">B</text>
+<text x="342.0" y="124.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">C</text>
+<text x="198.0" y="124.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">D</text>
+<line x1="350.0" y1="190.0" x2="410.0" y2="190.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="382.0" y="180.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">v<tspan baseline-shift="sub" font-size="10" font-style="normal" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<line x1="90.0" y1="290.0" x2="210.0" y2="290.0" stroke="#222" stroke-width="1"/>
+<path d="M99,285 L90,290 L99,295" stroke="#222" fill="none" stroke-width="1"/>
+<path d="M201,285 L210,290 L201,295" stroke="#222" fill="none" stroke-width="1"/>
+<text x="150.0" y="308.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="middle" fill="#222">x</text>
+<line x1="210.0" y1="108.0" x2="330.0" y2="108.0" stroke="#222" stroke-width="1"/>
+<path d="M219,103 L210,108 L219,113" stroke="#222" fill="none" stroke-width="1"/>
+<path d="M321,103 L330,108 L321,113" stroke="#222" fill="none" stroke-width="1"/>
+<text x="270.0" y="100.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="middle" fill="#222">a</text>
+<line x1="210.0" y1="250.0" x2="210.0" y2="290.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="256.0" y="195.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">m</text>
+<text x="284.0" y="195.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">R</text>
+</svg>

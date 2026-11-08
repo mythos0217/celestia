@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 360">
+<defs><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="q-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker></defs>
+<circle cx="200" cy="180" r="62" fill="#888" fill-opacity="0.18" stroke="#222" stroke-width="1.2"/>
+<circle cx="200" cy="180" r="130" fill="none" stroke="#1f5fbf" stroke-width="1.8" stroke-dasharray="7,4"/>
+<circle cx="175" cy="155" r="6" fill="none" stroke="#222" stroke-width="1"/><circle cx="175" cy="155" r="1.8" fill="#222"/>
+<circle cx="225" cy="155" r="6" fill="none" stroke="#222" stroke-width="1"/><circle cx="225" cy="155" r="1.8" fill="#222"/>
+<circle cx="175" cy="205" r="6" fill="none" stroke="#222" stroke-width="1"/><circle cx="175" cy="205" r="1.8" fill="#222"/>
+<circle cx="225" cy="205" r="6" fill="none" stroke="#222" stroke-width="1"/><circle cx="225" cy="205" r="1.8" fill="#222"/>
+<circle cx="200" cy="30" r="6" fill="none" stroke="#222" stroke-width="1"/><circle cx="200" cy="30" r="1.8" fill="#222"/>
+<circle cx="295" cy="85" r="6" fill="none" stroke="#222" stroke-width="1"/><circle cx="295" cy="85" r="1.8" fill="#222"/>
+<circle cx="105" cy="275" r="6" fill="none" stroke="#222" stroke-width="1"/><circle cx="105" cy="275" r="1.8" fill="#222"/>
+<circle cx="295" cy="275" r="6" fill="none" stroke="#222" stroke-width="1"/><circle cx="295" cy="275" r="1.8" fill="#222"/>
+<circle cx="40" cy="180" r="6" fill="none" stroke="#222" stroke-width="1"/><circle cx="40" cy="180" r="1.8" fill="#222"/>
+<circle cx="360" cy="180" r="6" fill="none" stroke="#222" stroke-width="1"/><circle cx="360" cy="180" r="1.8" fill="#222"/>
+<circle cx="200" cy="340" r="6" fill="none" stroke="#222" stroke-width="1"/><circle cx="200" cy="340" r="1.8" fill="#222"/>
+<line x1="200" y1="180" x2="243.8" y2="223.8" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="214" y="230" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">a</text>
+<line x1="200" y1="180" x2="70" y2="180" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="120" y="174" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">r</text>
+<circle cx="122.0" cy="76.0" r="6" fill="none" stroke="#222" stroke-width="1.4"/><line x1="119.0" y1="76.0" x2="125.0" y2="76.0" stroke="#222"/>
+<text x="108.0" y="64.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">電子</text>
+<circle cx="200" cy="180" r="2.5" fill="#222"/><text x="192" y="172" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">O</text>
+<text x="390" y="60" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">中心軸上から見た図</text>
+<text x="390" y="90" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">灰色の円板（</text><text x="472" y="90" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">r</text><text x="480" y="90" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222"> &lt; </text><text x="496" y="90" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">a</text><text x="504" y="90" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">）：</text>
+<text x="400" y="112" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">磁束密度</text><text x="460" y="112" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">βB</text>
+<text x="390" y="140" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">その外側（</text><text x="460" y="140" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">r</text><text x="468" y="140" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222"> ≧ </text><text x="486" y="140" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">a</text><text x="494" y="140" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">）：</text>
+<text x="400" y="162" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">磁束密度</text><text x="460" y="162" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+<text x="390" y="192" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">いずれも紙面の裏から表向き</text>
+<text x="390" y="222" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">破線：半径</text><text x="460" y="222" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">r</text><text x="470" y="222" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">の円軌道</text></svg>

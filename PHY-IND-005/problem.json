@@ -1,0 +1,136 @@
+{
+ "id": "PHY-IND-005",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-05",
+ "topic": "逆向きの磁場領域をまたいで回転する扇形コイル（2辺の起電力の強め合い）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，$xy$ 平面（紙面）に垂直な磁場が，第1象限（$x>0,\\ y>0$）では紙面の表から裏の向き（$\\otimes$），第4象限（$x>0,\\ y<0$）では紙面の裏から表の向き（$\\odot$）に，いずれも磁束密度の大きさ $B$ で一様にかかっている．$x<0$ の領域には磁場はない．原点 O を中心とする半径 $l$ の4分の1円形のコイル OPQ（抵抗値 $R$）が，O のまわりに一定の角速度 $\\omega$ で反時計回りに回転している．時刻 $t=0$ にコイルは第3象限にあり，辺 OP は $y$ 軸の負の部分に，辺 OQ は $x$ 軸の負の部分に重なっていた．自己誘導は無視する．以下，$T=\\dfrac{2\\pi}{\\omega}$ とし，$0\\leqq t\\leqq T$ について答えよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "コイルを紙面の表から裏の向き（$\\otimes$）に貫く磁束 $\\Phi$ の時間変化をグラフに描け．"
+     },
+     {
+      "id": "2",
+      "tex": "コイルを流れる電流 $I$ を，辺 OP を O→P の向きに流れるときを正として，グラフに描け．"
+     },
+     {
+      "id": "3",
+      "tex": "1回転の間にコイルで発生するジュール熱 $W$ を求めよ．また，第4象限の磁場も第1象限と同じ $\\otimes$ 向きであった場合のジュール熱 $W'$ との比 $\\dfrac{W}{W'}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "コイルを一定の角速度で回し続けるため，点 P に円の接線方向（反時計回りの向き）に外力 $f$ を加える．$f$ の時間変化を，$f_0=\\dfrac{B^2l^3\\omega}{4R}$ を用いて答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：逆向きの磁場領域をまたいで回転する扇形コイル（2辺の起電力の強め合い）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：逆向きの磁場領域をまたいで回転する扇形コイル（2辺の起電力の強め合い）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0\\to\\dfrac{T}{4}$：$0$ から $-\\dfrac{\\pi Bl^2}{4}$ まで直線的に減少，$\\dfrac{T}{4}\\to\\dfrac{T}{2}$：$-\\dfrac{\\pi Bl^2}{4}$ から $+\\dfrac{\\pi Bl^2}{4}$ まで直線的に増加，$\\dfrac{T}{2}\\to\\dfrac{3T}{4}$：$\\dfrac{\\pi Bl^2}{4}$ から $0$ まで直線的に減少，$\\dfrac{3T}{4}\\to T$：$0$"
+   },
+   {
+    "id": "2",
+    "tex": "$I_0=\\dfrac{Bl^2\\omega}{2R}$ として，順に $+I_0$，$-2I_0$，$+I_0$，$0$ の階段状"
+   },
+   {
+    "id": "3",
+    "tex": "$W=\\dfrac{3\\pi B^2l^4\\omega}{4R}$，$\\dfrac{W}{W'}=3$"
+   },
+   {
+    "id": "4",
+    "tex": "順に $f_0$，$4f_0$，$f_0$，$0$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 重なり角で磁束を表す} 中心角 $\\alpha$ の扇形の面積は $\\dfrac12l^2\\alpha$ なので，コイルと各象限の重なりの中心角を $\\alpha_1$（第1象限），$\\alpha_4$（第4象限）とすると\n\\[ \\Phi=\\frac12Bl^2(\\alpha_1-\\alpha_4). \\]\nOP は OQ より $\\dfrac{\\pi}{2}$ だけ回転の向きに先行している．時刻 $t$ に OP は $y$ 軸負の向きから $\\omega t$ だけ回っている．\n・$0<t<\\dfrac T4$：OP が第4象限を掃き，$\\alpha_4=\\omega t$，$\\alpha_1=0$．$\\Phi=-\\dfrac12Bl^2\\omega t$ で，$-\\dfrac{\\pi Bl^2}{4}$ まで減少．\n・$\\dfrac T4<t<\\dfrac T2$：OP が第1象限，OQ が第4象限にあり，$\\alpha_1$ が増え，同時に $\\alpha_4$ が減る．$\\dfrac{d\\Phi}{dt}=\\dfrac12Bl^2(\\omega+\\omega)=Bl^2\\omega$ で，$+\\dfrac{\\pi Bl^2}{4}$ まで増加．\n・$\\dfrac T2<t<\\dfrac{3T}4$：OP は第2象限（磁場なし），OQ が第1象限を抜けていく．$\\Phi$ は $\\dfrac{\\pi Bl^2}{4}$ から $0$ へ減少．\n・$\\dfrac{3T}4<t<T$：コイルは磁場の外で $\\Phi=0$．\n\n\\textbf{(2)} 辺 OP を O→P の向きに流れ，弧 PQ，辺 QO と回る向きは紙面上で時計回りで，この電流は $\\otimes$ 向きの磁場をつくる．よって正の向きの起電力は $-\\dfrac{d\\Phi}{dt}$ で，$I=-\\dfrac1R\\dfrac{d\\Phi}{dt}$．$I_0=\\dfrac{Bl^2\\omega}{2R}$ とおくと，各区間の $\\dfrac{d\\Phi}{dt}$ は $-\\dfrac12Bl^2\\omega,\\ Bl^2\\omega,\\ -\\dfrac12Bl^2\\omega,\\ 0$ なので\n\\[ I=\\boldsymbol{+I_0,\\ -2I_0,\\ +I_0,\\ 0}. \\]\n第2区間では，OP と OQ の2辺がともに逆向きの磁場を切り，2つの起電力（それぞれ $\\dfrac12Bl^2\\omega$．回転する棒の起電力は中点の速さ $\\dfrac{l\\omega}{2}$ を用いて $\\dfrac{l\\omega}{2}Bl$）が\\textbf{同じ向きに加わる}．磁場の向きが逆だからこそ打ち消さずに強め合う点に注意．\n\n\\textbf{(3)} 各区間の長さは $\\dfrac T4=\\dfrac{\\pi}{2\\omega}$ なので\n\\[ W=RI_0^2\\cdot\\frac{\\pi}{2\\omega}(1+4+1)=3\\pi\\frac{RI_0^2}{\\omega}=\\boldsymbol{\\frac{3\\pi B^2l^4\\omega}{4R}}. \\]\n第4象限も $\\otimes$ なら，磁場領域は半平面 $x>0$ で，起電力が生じるのは OP が入る間と OQ が出る間だけ（第2区間では2辺の起電力が打ち消し合う）なので $W'=RI_0^2\\cdot\\dfrac{\\pi}{2\\omega}\\cdot 2$．よって $\\dfrac{W}{W'}=\\boldsymbol{3}$．\n\n\\textbf{(4)} 磁場中にある辺には電流 $|I|$ による力 $|I|Bl$ が辺に垂直にはたらき，その作用点は辺の中点（O からの距離 $\\dfrac l2$）である．この力のモーメントは常に回転を妨げる向き（レンツの法則）．等角速度なので O のまわりの力のモーメントがつり合い，\n・第1・第3区間：磁場中の辺は1本，電流 $I_0$．$fl=I_0Bl\\cdot\\dfrac l2$ より $f=\\dfrac{B^2l^3\\omega}{4R}=f_0$．\n・第2区間：2本の辺がともに磁場中にあり，電流 $2I_0$．$fl=2\\times 2I_0Bl\\cdot\\dfrac l2$ より $f=4f_0$．\n・第4区間：$f=0$．\nしたがって $f=\\boldsymbol{f_0,\\ 4f_0,\\ f_0,\\ 0}$．\n（確認）外力の仕事率 $f\\cdot l\\omega$ は各区間で $RI^2$ に等しく，1回転の仕事は $f_0l\\omega\\cdot\\dfrac{\\pi}{2\\omega}(1+4+1)=\\dfrac{3\\pi B^2l^4\\omega}{4R}=W$ となる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "回転する扇形コイルの磁束は各磁場領域との重なりの中心角で表され，半径の辺1本が磁場を切ると $\\frac12Bl^2\\omega$ の起電力が生じる．隣り合う領域の磁場が逆向きだと，境界をまたぐ間は2辺の起電力が強め合って電流が2倍・発熱率と外力のモーメントが4倍になる．電磁力の作用点は辺の中点である．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "torque",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "回転コイル",
+  "扇形",
+  "磁束",
+  "ジュール熱",
+  "力のモーメント"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

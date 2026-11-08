@@ -1,0 +1,144 @@
+{
+ "id": "PHY-ESF-025",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-01",
+ "topic": "一様な体積電荷の層の重ね合わせで見る pn 接合の空乏層（三角形の電場と電圧で幅が変わる容量）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "半導体の pn 接合の境界付近（空乏層）を次のように理想化する．十分に広い平面の境界を $x=0$ とし，$-w_{\\rm p}<x<0$ の層（p側）には密度 $-eN_{\\rm A}$ の電荷が，$0<x<w_{\\rm n}$ の層（n側）には密度 $+eN_{\\rm D}$ の電荷が一様に分布している（$e$ は電気素量，$N_{\\rm A}$，$N_{\\rm D}$ は正の定数）．この層の外側（$x<-w_{\\rm p}$ と $x>w_{\\rm n}$）は導体とみなせ，電場は0である．層の厚さ $w_{\\rm p}$，$w_{\\rm n}$ は，加える電圧によって変わる．半導体の誘電率を $\\varepsilon$ とする．必要なら次を用いよ：厚さ $h$ の十分に広い板の中に密度 $\\rho$ の電荷が一様に分布しているとき，板の外側の電場は板に垂直で，強さは $\\dfrac{\\rho h}{2\\varepsilon}$ である．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "層の外側で電場が0であることから，$w_{\\rm n}$ と $w_{\\rm p}$ の関係を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "層の中の位置 $x$ での電場 $E(x)$（$x$ 軸の正の向きを正とする）を，$-w_{\\rm p}<x<0$ と $0<x<w_{\\rm n}$ のそれぞれについて求めよ．また，電場の強さが最大になる位置とその最大値を $N_{\\rm D}$，$w_{\\rm n}$ などで表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "p側の端 $x=-w_{\\rm p}$ に対する n側の端 $x=w_{\\rm n}$ の電位を $V$ とする．層全体の厚さ $W=w_{\\rm p}+w_{\\rm n}$ を $V$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "境界に平行な面積 $S$ の部分を考え，n側の層にある電気量を $Q$ とする．$V$ をわずかに $\\Delta V$ だけ大きくしたときの $Q$ の増加を $\\Delta Q$ とする．$\\dfrac{\\Delta Q}{\\Delta V}$ が，極板間隔 $W$ の平行板コンデンサーの電気容量 $\\dfrac{\\varepsilon S}{W}$ に等しいことを示せ．また，電荷が層全体に広がっているのに極板間隔 $W$ の平行板と同じになる理由を，増えた電荷がどこに現れるかに着目して説明せよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$N_{\\rm A}\\gg N_{\\rm D}$ の接合では $W\\approx w_{\\rm n}$ とみなせる．外部から逆向きの電圧 $V_{\\rm r}$（n側を高くする向き）を加えると $V=V_{\\rm bi}+V_{\\rm r}$ となる（$V_{\\rm bi}$ は電圧を加えないときの $V$）．(4)の容量 $C=\\dfrac{\\Delta Q}{\\Delta V}$ を測ったところ，$V_{\\rm r}=V_1$ で $C_1$，$V_{\\rm r}=V_2$ で $C_2$ であった．$N_{\\rm D}$ と $V_{\\rm bi}$ を求めよ．さらに，$V_1=0.20$ V，$V_2=2.6$ V で $C_1=2C_2$ であったとき，$V_{\\rm bi}$ の値を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一様な体積電荷の層の重ね合わせで見る pn 接合の空乏層（三角形の電場と電圧で幅が変わる容量）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一様な体積電荷の層の重ね合わせで見る pn 接合の空乏層（三角形の電場と電圧で幅が変わる容量）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$N_{\\rm D}w_{\\rm n}=N_{\\rm A}w_{\\rm p}$"
+   },
+   {
+    "id": "2",
+    "tex": "$-w_{\\rm p}<x<0$：$E=-\\dfrac{eN_{\\rm A}(x+w_{\\rm p})}{\\varepsilon}$，$0<x<w_{\\rm n}$：$E=-\\dfrac{eN_{\\rm D}(w_{\\rm n}-x)}{\\varepsilon}$；$x=0$ で最大，強さ $\\dfrac{eN_{\\rm D}w_{\\rm n}}{\\varepsilon}$（向きは $x$ 軸の負の向き）"
+   },
+   {
+    "id": "3",
+    "tex": "$W=\\sqrt{\\dfrac{2\\varepsilon(N_{\\rm A}+N_{\\rm D})V}{eN_{\\rm A}N_{\\rm D}}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{\\Delta Q}{\\Delta V}=\\dfrac{\\varepsilon S}{W}$（増えた電荷は層の両端に $\\pm\\Delta Q$ として現れ，その間隔が $W$）"
+   },
+   {
+    "id": "5",
+    "tex": "$N_{\\rm D}=\\dfrac{2(V_2-V_1)}{e\\varepsilon S^2}\\cdot\\dfrac{C_1^2C_2^2}{C_1^2-C_2^2}$，$V_{\\rm bi}=\\dfrac{C_2^2V_2-C_1^2V_1}{C_1^2-C_2^2}$，$V_{\\rm bi}=0.60$ V"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 電気的中性}\n\n層全体は，面密度 $-eN_{\\rm A}w_{\\rm p}$ の板と $+eN_{\\rm D}w_{\\rm n}$ の板の重ね合わせである．層の右側（$x>w_{\\rm n}$）では，2枚の板の電場がそれぞれ $\\dfrac{-eN_{\\rm A}w_{\\rm p}}{2\\varepsilon}$，$\\dfrac{eN_{\\rm D}w_{\\rm n}}{2\\varepsilon}$（右向きを正）で，和が0になるには\n\\[ \\boldsymbol{N_{\\rm D}w_{\\rm n}=N_{\\rm A}w_{\\rm p}} \\]\n（層全体の電気量が0）．左側でも同じ条件になる．\n\n\\textbf{(2) 層の中の電場}\n\n$-w_{\\rm p}<x<0$ の点では，p側の層を厚さ $x+w_{\\rm p}$（点の左）と $-x$（点の右）の2枚に分けて考える．左の部分は点の右側にある板として，右の部分は点の左側にある板として電場をつくり，n側の層全体は点の右にある．右向きを正として\n\\[ E=\\frac{-eN_{\\rm A}(x+w_{\\rm p})}{2\\varepsilon}-\\frac{-eN_{\\rm A}(-x)}{2\\varepsilon}-\\frac{eN_{\\rm D}w_{\\rm n}}{2\\varepsilon} \\]\n(1)の $eN_{\\rm D}w_{\\rm n}=eN_{\\rm A}w_{\\rm p}$ を用いて整理すると\n\\[ \\boldsymbol{E=-\\frac{eN_{\\rm A}(x+w_{\\rm p})}{\\varepsilon}}\\quad(-w_{\\rm p}<x<0) \\]\n同様に $0<x<w_{\\rm n}$ では\n\\[ \\boldsymbol{E=-\\frac{eN_{\\rm D}(w_{\\rm n}-x)}{\\varepsilon}}\\quad(0<x<w_{\\rm n}) \\]\n電場は両端で0，境界 $x=0$ で強さが最大の三角形の分布になる（解答図）．最大値は $\\boldsymbol{E_{\\max}=\\dfrac{eN_{\\rm D}w_{\\rm n}}{\\varepsilon}}$（$=\\dfrac{eN_{\\rm A}w_{\\rm p}}{\\varepsilon}$）で，向きは n側から p側へ（$x$ 軸の負の向き）．\n\n\\textbf{(3) 電圧と層の厚さ}\n\n電場は $-x$ 向きなので，$x$ が増えるほど電位は高い．電位差は $E$–$x$ グラフの三角形の面積に等しく\n\\[ V=\\frac12E_{\\max}W=\\frac{eN_{\\rm D}w_{\\rm n}W}{2\\varepsilon} \\]\n(1)より $w_{\\rm n}=\\dfrac{N_{\\rm A}}{N_{\\rm A}+N_{\\rm D}}W$ なので\n\\[ V=\\frac{eN_{\\rm A}N_{\\rm D}}{2\\varepsilon(N_{\\rm A}+N_{\\rm D})}W^2\\quad\\Longrightarrow\\quad \\boldsymbol{W=\\sqrt{\\frac{2\\varepsilon(N_{\\rm A}+N_{\\rm D})V}{eN_{\\rm A}N_{\\rm D}}}} \\]\n層の厚さは $\\sqrt V$ に比例して広がる．\n\n\\textbf{(4) 微小変化に対する容量}\n\n$Q=eN_{\\rm D}w_{\\rm n}S=\\dfrac{eN_{\\rm A}N_{\\rm D}S}{N_{\\rm A}+N_{\\rm D}}W$ である．$W$ が $\\Delta W$ 変わると，$\\Delta Q=\\dfrac{eN_{\\rm A}N_{\\rm D}S}{N_{\\rm A}+N_{\\rm D}}\\Delta W$．一方，(3)の $V\\propto W^2$ より $\\Delta V=\\dfrac{eN_{\\rm A}N_{\\rm D}}{\\varepsilon(N_{\\rm A}+N_{\\rm D})}W\\Delta W$．したがって\n\\[ \\frac{\\Delta Q}{\\Delta V}=\\boldsymbol{\\frac{\\varepsilon S}{W}} \\]\n\n理由：電圧を上げると，層は両端で広がる．増えた正電荷 $\\Delta Q$ は n側の端 $x=w_{\\rm n}$ のすぐ内側の薄い層に，増えた負電荷 $-\\Delta Q$ は p側の端 $x=-w_{\\rm p}$ のすぐ内側の薄い層に現れ，層の内部の電荷分布は変わらない．つまり，増えた分だけを見れば，間隔 $W$ だけ離れた2枚の平面に $\\pm\\Delta Q$ を置いたことになり，平行板コンデンサーと同じ関係 $\\Delta Q=\\dfrac{\\varepsilon S}{W}\\Delta V$ が成り立つ．ただし $W$ が電圧で変わるので，$C$ は $V$ によって変わる（$C\\propto V^{-1/2}$）．\n\n\\textbf{(5) 容量の測定から不純物濃度と $V_{\\rm bi}$ を求める}\n\n$N_{\\rm A}\\gg N_{\\rm D}$ のとき，(3)は $W=\\sqrt{\\dfrac{2\\varepsilon V}{eN_{\\rm D}}}$ となり，$C=\\dfrac{\\varepsilon S}{W}$ より\n\\[ \\frac1{C^2}=\\frac{W^2}{\\varepsilon^2S^2}=\\frac{2(V_{\\rm bi}+V_{\\rm r})}{e\\varepsilon N_{\\rm D}S^2} \\]\n$\\dfrac1{C^2}$ は $V_{\\rm r}$ の1次関数である．2つの測定値を代入して差をとると\n\\[ \\frac1{C_2^2}-\\frac1{C_1^2}=\\frac{2(V_2-V_1)}{e\\varepsilon N_{\\rm D}S^2}\\quad\\Longrightarrow\\quad \\boldsymbol{N_{\\rm D}=\\frac{2(V_2-V_1)}{e\\varepsilon S^2}\\cdot\\frac{C_1^2C_2^2}{C_1^2-C_2^2}} \\]\nまた比をとると $\\dfrac{C_1^2}{C_2^2}=\\dfrac{V_{\\rm bi}+V_2}{V_{\\rm bi}+V_1}$ より\n\\[ \\boldsymbol{V_{\\rm bi}=\\frac{C_2^2V_2-C_1^2V_1}{C_1^2-C_2^2}} \\]\n（$\\frac1{C^2}$–$V_{\\rm r}$ グラフの直線が横軸と交わる点が $V_{\\rm r}=-V_{\\rm bi}$ である．）\n$C_1=2C_2$ のとき $V_{\\rm bi}=\\dfrac{V_2-4V_1}{3}=\\dfrac{2.6-0.80}{3}=\\boldsymbol{0.60\\ \\text{V}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一様な体積電荷の層は厚さを分けた板の重ね合わせで扱え，正負の層が接すると電場は境界で最大の三角形になり，電圧は幅の2乗に比例する．電圧をわずかに変えると増えた電荷は層の両端にだけ現れるので，微小変化に対する容量は現在の幅を間隔とする平行板と同じ $\\varepsilon S/W$ になり，$1/C^2$ が電圧の1次式になることから逆に濃度と内蔵電位を求められる．"
+ },
+ "concepts": [
+  "coulomb-field",
+  "superposition",
+  "capacitor"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ガウスの法則",
+  "重ね合わせ",
+  "体積電荷",
+  "空乏層",
+  "電気容量",
+  "逆算"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

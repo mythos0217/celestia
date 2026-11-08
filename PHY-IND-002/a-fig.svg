@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260"><defs><marker id="a-ab" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#1f5fbf"/></marker><marker id="a-ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#c0392b"/></marker><marker id="a-ak" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#222"/></marker></defs>
+<line x1="60.0" y1="130.0" x2="520.0" y2="130.0" stroke="#222" stroke-width="1.6" marker-end="url(#a-ak)"/>
+<line x1="60.0" y1="230.0" x2="60.0" y2="20.0" stroke="#222" stroke-width="1.6" marker-end="url(#a-ak)"/>
+<text x="526.0" y="135.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">t</text>
+<text x="52.0" y="18.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">q<tspan baseline-shift="sub" font-size="10" font-style="normal">b</tspan></text>
+<polyline points="60.0,130.0 60.0,170.0 155.7,170.0 155.7,90.0 251.3,90.0 251.3,90.0 347.0,90.0 347.0,170.0 442.6,170.0 442.6,130.0 490.4,130.0" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+<line x1="155.7" y1="80.0" x2="155.7" y2="180.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="159.7" y="148.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="start">l/v</text>
+<line x1="251.3" y1="80.0" x2="251.3" y2="180.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="255.3" y="148.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="start">2l/v</text>
+<line x1="347.0" y1="80.0" x2="347.0" y2="180.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="351.0" y="148.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="start">3l/v</text>
+<line x1="442.6" y1="80.0" x2="442.6" y2="180.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="446.6" y="148.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="start">4l/v</text>
+<line x1="56.0" y1="90.0" x2="60.0" y2="90.0" stroke="#222" stroke-width="1"/>
+<text x="54.0" y="95.0" font-family="Times New Roman, serif" font-style="italic" font-size="13" fill="#222" text-anchor="end">CvBl/2</text>
+<line x1="56.0" y1="170.0" x2="60.0" y2="170.0" stroke="#222" stroke-width="1"/>
+<text x="54.0" y="175.0" font-family="Times New Roman, serif" font-style="italic" font-size="13" fill="#222" text-anchor="end">−CvBl/2</text>
+<text x="265.7" y="80.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#c0392b" text-anchor="start">変化しない</text>
+</svg>

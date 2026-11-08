@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380">
+<defs><marker id="q-ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<line x1="60" y1="50" x2="300" y2="50" stroke="#222" stroke-width="1.6"/>
+<line x1="60" y1="330" x2="300" y2="330" stroke="#222" stroke-width="1.6"/>
+<line x1="60" y1="50" x2="60" y2="183" stroke="#222" stroke-width="1.6"/>
+<line x1="42" y1="183" x2="78" y2="183" stroke="#222" stroke-width="1.6"/>
+<line x1="51" y1="193" x2="69" y2="193" stroke="#222" stroke-width="3"/>
+<line x1="60" y1="193" x2="60" y2="330" stroke="#222" stroke-width="1.6"/>
+<text x="84" y="193" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">E</text>
+<line x1="170" y1="50" x2="170" y2="88.0" stroke="#222" stroke-width="1.6"/><rect x="162" y="88.0" width="16" height="44" fill="none" stroke="#222" stroke-width="1.6"/><line x1="170" y1="132.0" x2="170" y2="170" stroke="#222" stroke-width="1.6"/><text x="184" y="115.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">R</text>
+<line x1="170" y1="170" x2="170" y2="228.0" stroke="#222" stroke-width="1.6"/><rect x="162" y="228.0" width="16" height="44" fill="none" stroke="#222" stroke-width="1.6"/><line x1="170" y1="272.0" x2="170" y2="330" stroke="#222" stroke-width="1.6"/><text x="184" y="255.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">2R</text>
+<line x1="300" y1="50" x2="300" y2="103.0" stroke="#222" stroke-width="1.6"/><rect x="292" y="103.0" width="16" height="44" fill="none" stroke="#222" stroke-width="1.6"/><line x1="300" y1="147.0" x2="300" y2="200" stroke="#222" stroke-width="1.6"/>
+<line x1="300" y1="200" x2="300" y2="243.0" stroke="#222" stroke-width="1.6"/><rect x="292" y="243.0" width="16" height="44" fill="none" stroke="#222" stroke-width="1.6"/><line x1="300" y1="287.0" x2="300" y2="330" stroke="#222" stroke-width="1.6"/><text x="314" y="270.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">R</text>
+<text x="315" y="105" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">R<tspan baseline-shift="sub" font-size="10">x</tspan></text>
+<circle cx="170" cy="170" r="3" fill="#222"/><circle cx="300" cy="200" r="3" fill="#222"/>
+<text x="148" y="166" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">X</text><text x="282" y="214" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">M</text>
+<text x="48" y="44" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">L</text><text x="48" y="350" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">Y</text>
+<path d="M170,170 L292,170 A8,8 0 0,1 308,170 L370,170" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M300,200 L340,200 L340,260 L370,260" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="370" y1="170" x2="620" y2="170" stroke="#222" stroke-width="3"/>
+<line x1="370" y1="260" x2="620" y2="260" stroke="#222" stroke-width="3"/>
+<rect x="474" y="160" width="10" height="110" fill="#ddd" stroke="#222" stroke-width="1.6"/>
+<text x="440" y="292" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">棒（抵抗</text><text x="503" y="292" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">R</text><text x="514" y="292" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">）</text>
+<line x1="489" y1="215" x2="545" y2="215" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ahb)"/>
+<text x="550" y="220" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">F</text>
+<line x1="600" y1="170" x2="600" y2="260" stroke="#222" stroke-width="1" marker-start="url(#q-ah)" marker-end="url(#q-ah)"/>
+<text x="606" y="220" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">l</text>
+
+
+
+
+
+
+<text x="434" y="145" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">B</text>
+<circle cx="420" cy="140" r="8" fill="none" stroke="#222" stroke-width="1.2"/><path d="M414.5,134.5 L425.5,145.5 M425.5,134.5 L414.5,145.5" stroke="#222" stroke-width="1.2"/><circle cx="420" cy="320" r="8" fill="none" stroke="#222" stroke-width="1.2"/><path d="M414.5,314.5 L425.5,325.5 M425.5,314.5 L414.5,325.5" stroke="#222" stroke-width="1.2"/><circle cx="520" cy="140" r="8" fill="none" stroke="#222" stroke-width="1.2"/><path d="M514.5,134.5 L525.5,145.5 M525.5,134.5 L514.5,145.5" stroke="#222" stroke-width="1.2"/><circle cx="520" cy="320" r="8" fill="none" stroke="#222" stroke-width="1.2"/><path d="M514.5,314.5 L525.5,325.5 M525.5,314.5 L514.5,325.5" stroke="#222" stroke-width="1.2"/><circle cx="580" cy="140" r="8" fill="none" stroke="#222" stroke-width="1.2"/><path d="M574.5,134.5 L585.5,145.5 M585.5,134.5 L574.5,145.5" stroke="#222" stroke-width="1.2"/><circle cx="580" cy="320" r="8" fill="none" stroke="#222" stroke-width="1.2"/><path d="M574.5,314.5 L585.5,325.5 M585.5,314.5 L574.5,325.5" stroke="#222" stroke-width="1.2"/><circle cx="420" cy="200" r="8" fill="none" stroke="#222" stroke-width="1.2"/><path d="M414.5,194.5 L425.5,205.5 M425.5,194.5 L414.5,205.5" stroke="#222" stroke-width="1.2"/><circle cx="430" cy="245" r="8" fill="none" stroke="#222" stroke-width="1.2"/><path d="M424.5,239.5 L435.5,250.5 M435.5,239.5 L424.5,250.5" stroke="#222" stroke-width="1.2"/></svg>
