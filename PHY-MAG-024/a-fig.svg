@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12 0 472 340">
+  <defs>
+    <marker id="a-ax" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+    <marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+  </defs>
+  <g stroke="#222" stroke-width="1.2" fill="none">
+    <line x1="20" y1="310" x2="440" y2="310" marker-end="url(#a-ax)"/>
+    <line x1="110" y1="330" x2="110" y2="20" marker-end="url(#a-ax)"/>
+  </g>
+  <g stroke="#888" stroke-width="1" stroke-dasharray="5,4" fill="none">
+    <circle cx="110" cy="173.2" r="113.2"/>
+    <line x1="110" y1="173.2" x2="206" y2="233.2"/>
+    <line x1="223.2" y1="173.2" x2="223.2" y2="310"/>
+    <line x1="206" y1="233.2" x2="206" y2="310"/>
+  </g>
+  <path d="M110,310 Q158,310 206,233.2" stroke="#1f5fbf" stroke-width="2.2" fill="none"/>
+  <path d="M206,233.2 A113.2,113.2 0 0 0 110,60" stroke="#c0392b" stroke-width="2.2" fill="none"/>
+  <line x1="110" y1="60" x2="40" y2="60" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ab)"/>
+  <circle cx="110" cy="173.2" r="3.5" fill="#222"/>
+  <circle cx="206" cy="233.2" r="3.5" fill="#222"/>
+  <g font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">
+    <text x="96" y="328">O</text>
+    <text x="214" y="246">P（電場を切る）</text>
+    <text x="118" y="168">中心（y 軸上）</text>
+        <text x="150" y="292" fill="#1f5fbf">放物線</text>
+    <text x="236" y="110" fill="#c0392b">円運動</text>
+    <text x="-8" y="40">境界に垂直に出る</text>
+  </g>
+  <g font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">
+    <text x="430" y="330">x</text>
+    <text x="118" y="28">y</text>
+    <text x="200" y="328">L</text>
+    <text x="226" y="328">x<tspan baseline-shift="sub" font-size="10" font-style="normal">max</tspan></text>
+    <text x="78" y="82">y<tspan baseline-shift="sub" font-size="10" font-style="normal">out</tspan></text>
+  </g>
+</svg>

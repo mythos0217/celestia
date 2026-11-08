@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 400">
+<defs><marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker><marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker><marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker><marker id="a-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#888"/></marker></defs>
+<circle cx="230.0" cy="215.0" r="120.0" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="230.0" cy="185.0" r="90.0" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+<circle cx="230.0" cy="245.0" r="150.0" fill="none" stroke="#c0392b" stroke-width="1.8"/>
+<circle cx="230.0" cy="215.0" r="3" fill="#222"/>
+<text x="240.0" y="219.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">O</text>
+<circle cx="230.0" cy="185.0" r="3" fill="#1f5fbf"/>
+<text x="222.0" y="189.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf" text-anchor="end">C<tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">A</tspan></text>
+<circle cx="230.0" cy="245.0" r="3" fill="#c0392b"/>
+<text x="222.0" y="249.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#c0392b" text-anchor="end">C<tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">B</tspan></text>
+<circle cx="230.0" cy="95.0" r="4" fill="#222"/>
+<text x="216.0" y="87.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">P</text>
+<text x="30" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">例：A を前方に放出（<tspan font-family="Times New Roman, serif" font-style="italic">u</tspan>＝<tspan font-family="Times New Roman, serif" font-style="italic">V</tspan><tspan baseline-shift="sub" font-size="10">0</tspan>/2 の場合）</text>
+<text x="30.0" y="385.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">青：A の軌道　赤：B の軌道　破線：分裂前の X</text>
+</svg>

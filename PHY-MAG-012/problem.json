@@ -1,0 +1,144 @@
+{
+ "id": "PHY-MAG-012",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "四重極磁場による粒子ビームの集束（一方向集束・他方向発散と2枚組の交互勾配集束）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "荷電粒子のビームを磁場で絞る装置を考える．図のように $x$ 軸をビームの中心軸にとり，$y$ 軸，$z$ 軸（紙面の裏から表の向き）をとる．$|x|\\le\\dfrac d2$ の薄い領域（レンズ1）には，$x$ 軸の近くで\n\\[ B_x=0,\\quad B_y=bz,\\quad B_z=by\\qquad(b\\ \\text{は正の定数}) \\]\nと表される磁場がある．質量 $m$，正の電荷 $q$ の粒子が，$x$ 軸に平行に速さ $v$ で入射する．粒子は $x$ 軸のすぐ近くを通り，レンズを通る間の $y,\\ z$ 座標の変化，$x$ 方向の速さの変化，速度の $y,\\ z$ 成分が受ける力への影響はいずれも無視できる．また，曲がる角は小さく，$d$ は以下に現れる距離に比べて十分小さい．重力は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "点 $(x,y,z)$ にある粒子がレンズ1内で受ける力の $y$ 成分と $z$ 成分を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "点 $(y_0,z_0)$ を通って入射した粒子について，レンズ1を出た後の速度の向きが $x$ 軸となす角を，$xy$ 面に投影した場合と $xz$ 面に投影した場合のそれぞれについて（$y$，$z$ が増える向きを正として）求めよ．さらに，$f=\\dfrac{mv}{qbd}$ とおくとき，$xy$ 面に投影した軌道が $x$ 軸と交わる点の $x$ 座標と，$xz$ 面に投影した軌道を後ろ向きに延長した直線が $x$ 軸と交わる点の $x$ 座標を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次に，$x=L$ $(0<L<f)$ を中心とする幅 $d$ の領域（レンズ2）に，レンズ1と逆向きの磁場 $B_y=-bz,\\ B_z=-by$ を加えた．$x$ 軸に平行に入射した粒子がレンズ2を出た後に，$xy$ 面に投影した軌道が $x$ 軸と交わる点，$xz$ 面に投影した軌道が $x$ 軸と交わる点は，それぞれレンズ2の中心からどれだけ後方か．$f,\\ L$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で，$xy$ 面に投影した軌道がレンズ2の中心の後方 $f$ の点で $x$ 軸と交わるように $L$ を選んだ．$L$ と，$xz$ 面に投影した軌道が $x$ 軸と交わる点のレンズ2の中心からの距離を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) の装置に，電荷 $q$，速さ $v$ で質量 $m'$ の別の粒子を $x$ 軸に平行に入射させる．レンズ2の後方で，$xy$ 面に投影した軌道が $x$ 軸と交わるための $m'$ の条件を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：四重極磁場による粒子ビームの集束（一方向集束・他方向発散と2枚組の交互勾配集束）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：四重極磁場による粒子ビームの集束（一方向集束・他方向発散と2枚組の交互勾配集束）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$F_y=-qvb\\,y$，$F_z=qvb\\,z$"
+   },
+   {
+    "id": "2",
+    "tex": "$xy$ 面：$-\\dfrac{qbd}{mv}y_0$，$xz$ 面：$+\\dfrac{qbd}{mv}z_0$；$x=f$（集束），$x=-f$（発散）"
+   },
+   {
+    "id": "3",
+    "tex": "$xy$ 面：$\\dfrac{f(f-L)}{L}$，$xz$ 面：$\\dfrac{f(f+L)}{L}$"
+   },
+   {
+    "id": "4",
+    "tex": "$L=\\dfrac f2$，$3f$"
+   },
+   {
+    "id": "5",
+    "tex": "$m'>\\dfrac{m}{2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 速度 $(v,0,0)$ と磁場 $(0,bz,by)$ のローレンツ力 $q\\vec v\\times\\vec B$ の成分は\n\\[ F_x=0,\\qquad F_y=q(0\\cdot0-v\\cdot by)=\\boldsymbol{-qvb\\,y},\\qquad F_z=q(v\\cdot bz-0\\cdot0)=\\boldsymbol{qvb\\,z} \\]\n$F_y$ は $y$ だけ，$F_z$ は $z$ だけで決まるので，$y$ 方向と $z$ 方向の運動は互いに独立に扱える．$y$ 方向には軸に引き戻す（集束），$z$ 方向には軸から遠ざける（発散）力である．なお，この磁場は電流のない空間の磁場として矛盾がない（電流がなければ一方向だけを集束させる磁場しかつくれない）．\\hfill$\\square$\n\n\\textbf{(2) 薄いレンズとしてのはたらき}　レンズを通る時間は $\\dfrac dv$．$y$ 方向の運動量変化（力積）は $-qvby_0\\cdot\\dfrac dv=-qbdy_0$ なので，出た後の角は\n\\[ \\theta_y\\fallingdotseq\\frac{v_y}{v}=\\boldsymbol{-\\frac{qbd}{mv}y_0}=-\\frac{y_0}{f},\\qquad \\theta_z=\\boldsymbol{+\\frac{qbd}{mv}z_0}=\\frac{z_0}{f} \\]\n曲がる角が入射位置に比例するので，凸レンズ・凹レンズと同じはたらきをする．$xy$ 面では高さ $y_0$ から傾き $-\\dfrac{y_0}{f}$ で進むので，入射位置によらず $\\boldsymbol{x=f}$ で軸と交わる（焦点距離 $f$ の凸レンズ）．$xz$ 面では傾き $+\\dfrac{z_0}{f}$ で遠ざかり，後ろに延長すると $\\boldsymbol{x=-f}$ で軸と交わる（焦点距離 $f$ の凹レンズ）．\\hfill$\\square$\n\n\\textbf{(3) 2枚組}　レンズ2では $b$ が $-b$ になるので，$y$ 方向は凹レンズ（曲がる角 $+\\dfrac{y}{f}$），$z$ 方向は凸レンズ（$-\\dfrac{z}{f}$）となる．\n\n$xy$ 面：レンズ1を出た傾き $-\\dfrac{y_0}{f}$，レンズ2での高さ $y_1=y_0\\left(1-\\dfrac Lf\\right)$（$L<f$ なので $y_1>0$）．レンズ2を出た傾きは\n\\[ -\\frac{y_0}{f}+\\frac{y_1}{f}=-\\frac{y_0L}{f^2} \\]\nよって軸と交わるのはレンズ2の後方 $\\dfrac{y_1}{y_0L/f^2}=\\boldsymbol{\\dfrac{f(f-L)}{L}}$．\n\n$xz$ 面：レンズ1を出た傾き $+\\dfrac{z_0}{f}$，レンズ2での高さ $z_1=z_0\\left(1+\\dfrac Lf\\right)$，出た傾きは $\\dfrac{z_0}{f}-\\dfrac{z_1}{f}=-\\dfrac{z_0L}{f^2}$．軸と交わるのは後方 $\\dfrac{z_1}{z_0L/f^2}=\\boldsymbol{\\dfrac{f(f+L)}{L}}$．\n\nどちらも正なので，「集束＋発散」と「発散＋集束」の組はいずれも全体として集束する．発散レンズでの光線の高さが，$y$ 方向では低く（弱く発散），$z$ 方向では高い位置で集束レンズを通る（強く集束）ためである（交互勾配による集束）．ただし2つの方向で焦点の位置は異なる（解答図）．\\hfill$\\square$\n\n\\textbf{(4)} $\\dfrac{f(f-L)}{L}=f$ より $f-L=L$，$L=\\boldsymbol{\\dfrac f2}$．このとき $xz$ 面の交点は $\\dfrac{f\\cdot\\frac32f}{\\frac12f}=\\boldsymbol{3f}$ 後方．\\hfill$\\square$\n\n\\textbf{(5)} 焦点距離は $f'=\\dfrac{m'v}{qbd}=\\dfrac{m'}{m}f$ で，運動量に比例する．$f'\\le L$ のとき，$xy$ 面の軌道はレンズ2に達する前に軸を横切り（$y_1=y_0(1-L/f')\\le0$），レンズ2を出た傾き $-\\dfrac{y_0L}{f'^2}$ も負なので，軸から遠ざかる一方で後方では軸と交わらない．$f'>L$ なら (3) と同様に後方 $\\dfrac{f'(f'-L)}{L}>0$ で交わる．よって条件は $f'>L=\\dfrac f2$，すなわち\n\\[ \\boldsymbol{m'>\\frac m2} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "軸からの距離に比例する磁場（$B_z=by$）は，粒子をその距離に比例した角だけ曲げる薄いレンズ（焦点距離 $mv/(qbd)$）としてはたらくが，電流のない空間ではもう一方の方向（$B_y=bz$）に必ず発散させる．集束・発散を入れかえた2枚を間隔 $L$ で並べると，発散レンズを通る高さの違いによって両方向とも集束し，焦点の位置は $f(f\\mp L)/L$ と方向で異なる．焦点距離が運動量に比例するので，軽い粒子は過集束になる．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "momentum-conservation",
+  "lens-imaging"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ローレンツ力",
+  "磁気レンズ",
+  "焦点距離",
+  "薄いレンズ近似",
+  "交互勾配集束",
+  "運動量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

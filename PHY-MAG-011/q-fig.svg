@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <marker id="q-ak" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222"/></marker>
+    <marker id="q-ab" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f5fbf"/></marker>
+    <marker id="q-ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#c0392b"/></marker>
+  </defs>
+  <!-- accelerating electrodes -->
+  <g stroke="#222" stroke-width="2.4">
+    <line x1="60" y1="100" x2="60" y2="145"/><line x1="60" y1="155" x2="60" y2="200"/>
+    <line x1="120" y1="100" x2="120" y2="145"/><line x1="120" y1="155" x2="120" y2="200"/>
+  </g>
+  <!-- battery: long line = + at left electrode -->
+  <g stroke="#222" stroke-width="1.6" fill="none">
+    <path d="M60,200 L60,240 L82,240"/><path d="M98,240 L120,240 L120,200"/>
+    <line x1="84" y1="228" x2="84" y2="252"/><line x1="96" y1="234" x2="96" y2="246"/>
+  </g>
+  <text x="80" y="272" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">V</text>
+  <circle cx="60" cy="150" r="3" fill="#222"/>
+  <text x="14" y="125" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">イオン</text>
+  <!-- path to origin -->
+  <line x1="60" y1="150" x2="200" y2="150" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="130" y1="135" x2="175" y2="135" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <text x="140" y="128" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">v<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+  <!-- plates -->
+  <g stroke="#222" stroke-width="3"><line x1="200" y1="70" x2="560" y2="70"/><line x1="200" y1="230" x2="560" y2="230"/></g>
+  <text x="470" y="62" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">z = h</text>
+  <text x="470" y="250" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">z = −h</text>
+  <!-- E field arrows -->
+  <g stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)">
+    <line x1="300" y1="215" x2="300" y2="180"/><line x1="420" y1="215" x2="420" y2="180"/><line x1="520" y1="215" x2="520" y2="180"/>
+  </g>
+  <text x="282" y="205" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#c0392b">E</text>
+  <!-- B out of page -->
+  <g fill="none" stroke="#222" stroke-width="1"><circle cx="260" cy="100" r="6"/><circle cx="360" cy="100" r="6"/><circle cx="460" cy="100" r="6"/><circle cx="360" cy="200" r="6"/><circle cx="470" cy="200" r="6"/></g>
+  <g fill="#222"><circle cx="260" cy="100" r="1.8"/><circle cx="360" cy="100" r="1.8"/><circle cx="460" cy="100" r="1.8"/><circle cx="360" cy="200" r="1.8"/><circle cx="470" cy="200" r="1.8"/></g>
+  <text x="470" y="105" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+  <!-- axes -->
+  <line x1="200" y1="150" x2="570" y2="150" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+  <text x="574" y="155" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">y</text>
+  <line x1="200" y1="250" x2="200" y2="40" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+  <text x="206" y="46" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">z</text>
+  <text x="184" y="168" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">O</text>
+  <!-- h dimension -->
+  <g stroke="#888" stroke-width="1"><line x1="230" y1="72" x2="230" y2="148"/><line x1="230" y1="152" x2="230" y2="228"/></g>
+  <text x="235" y="115" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">h</text>
+  <text x="235" y="195" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">h</text>
+  <text x="300" y="290" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">⊙：<tspan font-family="Times New Roman, serif" font-style="italic">x</tspan> 軸の正の向き（紙面の手前向き）の磁場</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260">
+  <defs>
+    <marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+    <marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+  </defs>
+  <line x1="30" y1="200" x2="490" y2="200" stroke="#222" stroke-width="3"/>
+  <line x1="380" y1="220" x2="450" y2="220" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+  <text x="408" y="244" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">I</text>
+  <text x="30" y="226" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">導線（<tspan font-family="Times New Roman, serif" font-style="italic">z</tspan> 軸）</text>
+  <line x1="470" y1="185" x2="500" y2="185" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+  <text x="496" y="178" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">z</text>
+  <!-- electron 1 : toward wire -->
+  <circle cx="130" cy="80" r="6" fill="none" stroke="#222" stroke-width="1.6"/>
+  <text x="104" y="74" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">e⁻</text>
+  <line x1="130" y1="88" x2="130" y2="150" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <text x="138" y="135" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">v<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+  <text x="90" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">(2) 導線に向かって</text>
+  <!-- electron 2 : parallel -->
+  <circle cx="330" cy="80" r="6" fill="none" stroke="#222" stroke-width="1.6"/>
+  <text x="304" y="74" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">e⁻</text>
+  <line x1="338" y1="80" x2="400" y2="80" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <line x1="322" y1="80" x2="262" y2="80" stroke="#c0392b" stroke-width="1.8" stroke-dasharray="6,3" marker-end="url(#q-ar)"/>
+  <text x="380" y="70" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">v<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+  <text x="262" y="70" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#c0392b">v<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+  <text x="270" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">(3) 導線に平行に</text>
+  <!-- r0 dims -->
+  <line x1="200" y1="80" x2="200" y2="200" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="140" y1="80" x2="250" y2="80" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="200" y1="84" x2="200" y2="196" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+  <text x="206" y="150" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">r<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+</svg>

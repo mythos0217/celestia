@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 240" width="520" height="240">
+<defs>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker>
+</defs>
+<rect x="60" y="60" width="400" height="120" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="110" y1="180" x2="140.0" y2="60" stroke="#1f5fbf" stroke-width="1.4"/>
+<line x1="190" y1="180" x2="220.0" y2="60" stroke="#1f5fbf" stroke-width="1.4"/>
+<line x1="270" y1="180" x2="300.0" y2="60" stroke="#1f5fbf" stroke-width="1.4"/>
+<line x1="350" y1="180" x2="380.0" y2="60" stroke="#1f5fbf" stroke-width="1.4"/>
+<line x1="430" y1="180" x2="460.0" y2="60" stroke="#1f5fbf" stroke-width="1.4"/>
+<circle cx="190" cy="180" r="3.5" fill="#222"/>
+<circle cx="220.0" cy="60" r="3.5" fill="#222"/>
+<text x="190" y="200" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">P</text>
+<text x="220.0" y="52" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">Q</text>
+<line x1="190" y1="180" x2="190" y2="60" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<path d="M190,130 A50,50 0 0 1 202.1,131.5" stroke="#c0392b" stroke-width="1.2" fill="none"/>
+<text x="198" y="124" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#c0392b" text-anchor="start">φ</text>
+<line x1="20" y1="120" x2="55" y2="120" stroke="#222" stroke-width="1.8" marker-end="url(#a-ak)"/>
+<text x="24" y="110" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">I</text>
+<text x="260" y="220" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf" text-anchor="middle">青線：B = B* のときの等電位線（傾きは誇張）</text>
+</svg>

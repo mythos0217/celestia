@@ -1,0 +1,161 @@
+{
+ "id": "PHY-MAG-021",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "電圧一定で駆動するホール素子と，傾けた素子の回転による地磁気の水平・鉛直成分の測定",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図(a)のように，長さ $L$，幅 $d$，厚さ $h$ の直方体の p 型半導体（ホール素子）に，長さの方向に電源で一定の電圧 $V_{\\rm E}$ を加える．キャリアである正孔の電気量を $q$（$q>0$），単位体積あたりの数を $n$，半導体の抵抗率を $\\rho$ とする．正孔は，電場から受ける力と速さ $v$ に比例する抵抗力 $cv$（$c$ は正の定数）がつり合って，一定の速さで動くものとする．素子の正面（$L\\times d$ の面）の外向きの法線の向きを $\\vec e$ とし，磁束密度の $\\vec e$ 方向の成分を $B_e$ とすると，幅の方向の側面 A，B の間にホール電圧が生じる．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$c$ を $n$，$q$，$\\rho$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "ホール電圧の大きさ $V_{\\rm H}$ を $V_{\\rm E}$，$L$，$d$，$n$，$q$，$\\rho$，$|B_e|$ で表せ．また，厚さ $h$ だけを半分にした素子に取りかえたとき，(i) 電圧 $V_{\\rm E}$ を一定にして使う場合，(ii) 素子を流れる電流を一定にして使う場合のそれぞれについて，$V_{\\rm H}$ と素子の消費電力は何倍になるか．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "以下，この素子で地磁気を測る．$V_{\\rm E}=10.0$ V，$L=d=1.00\\times10^{-2}$ m，$n=5.00\\times10^{19}$ /m$^3$，$q=1.60\\times10^{-19}$ C，$\\rho=2.00\\ \\Omega\\cdot$m とする．電圧計の読み $V$ は，(2) の比例定数 $K=V_{\\rm H}/|B_e|$ を用いて $V=KB_e$（$B_e$ の符号を含む）と表されるように接続してある．図(b)のように，$\\vec e$ が水平面から上向きに角 $\\varepsilon=30^\\circ$ だけ傾くように素子を台に固定し，台を鉛直な回転軸のまわりに回す．$\\vec e$ の水平成分の向きが，上から見て基準の向きから反時計回りに角 $\\theta$ の方位を向くとする．地磁気は，水平成分 $B_{\\rm h}$（磁北の向き）と鉛直下向きの成分 $B_{\\rm v}$ をもつ．$\\theta$ を変えて測ると，$V$ は $\\theta=70^\\circ$ で最大値 $+5.0\\ \\mu$V，$\\theta=250^\\circ$ で最小値 $-27.0\\ \\mu$V をとった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "3",
+      "tex": "$V$ を $\\theta$ の関数として，$K$，$B_{\\rm h}$，$B_{\\rm v}$，$\\varepsilon$ と磁北の方位 $\\theta_{\\rm N}$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$K$ の値を求め，$\\theta_{\\rm N}$，$B_{\\rm h}$，$B_{\\rm v}$ と伏角 $I$（$\\tan I=B_{\\rm v}/B_{\\rm h}$）を求めよ（磁束密度は有効数字2桁，$I$ は整数の度で）．"
+     },
+     {
+      "id": "5",
+      "tex": "$V>0$ となる $\\theta$ の範囲を求めよ（整数の度で）．"
+     },
+     {
+      "id": "6",
+      "tex": "$\\varepsilon$ だけを大きくしていくと，ある角を超えたところで $\\theta$ によらず $V\\le0$ となった．この角を求め，その意味を $\\vec e$ と地磁気の向きの関係で説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：電圧一定で駆動するホール素子と，傾けた素子の回転による地磁気の水平・鉛直成分の測定",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：電圧一定で駆動するホール素子と，傾けた素子の回転による地磁気の水平・鉛直成分の測定",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$c=nq^2\\rho$"
+   },
+   {
+    "id": "2",
+    "tex": "$V_{\\rm H}=\\dfrac{V_{\\rm E}d\\,|B_e|}{nq\\rho L}$；(i) $V_{\\rm H}$ は1倍（変わらない），消費電力は $\\dfrac12$ 倍　(ii) $V_{\\rm H}$ は2倍，消費電力は2倍"
+   },
+   {
+    "id": "3",
+    "tex": "$V=K\\{B_{\\rm h}\\cos\\varepsilon\\cos(\\theta-\\theta_{\\rm N})-B_{\\rm v}\\sin\\varepsilon\\}$"
+   },
+   {
+    "id": "4",
+    "tex": "$K=0.625$ V/T，$\\theta_{\\rm N}=70^\\circ$，$B_{\\rm h}=3.0\\times10^{-5}$ T，$B_{\\rm v}=3.5\\times10^{-5}$ T，$I=50^\\circ$"
+   },
+   {
+    "id": "5",
+    "tex": "$23^\\circ<\\theta<117^\\circ$"
+   },
+   {
+    "id": "6",
+    "tex": "$\\varepsilon=90^\\circ-I=40^\\circ$（$\\vec e$ を水平から $90^\\circ-I$ 以上起こすと，$\\vec e$ と地磁気のなす角がどの方位でも $90^\\circ$ 以上になる）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　電場は $E=\\dfrac{V_{\\rm E}}{L}$．つり合い $qE=cv$ より $v=\\dfrac{qE}{c}$．電流密度は $nqv=\\dfrac{nq^2E}{c}$ で，これがオームの法則 $\\dfrac{E}{\\rho}$ に等しいから $c=\\boldsymbol{nq^2\\rho}$．\n\n\\textbf{(2)}　十分時間がたつと，側面にたまった電荷による幅方向の電場 $E_{\\rm H}$ の力がローレンツ力 $qv|B_e|$ とつり合う：$qE_{\\rm H}=qv|B_e|$．よって\n\\[ V_{\\rm H}=E_{\\rm H}d=v|B_e|d=\\frac{q}{c}\\cdot\\frac{V_{\\rm E}}{L}|B_e|d=\\boldsymbol{\\frac{V_{\\rm E}d\\,|B_e|}{nq\\rho L}}. \\]\n電圧を決めると正孔の速さ $v$ が決まり，$V_{\\rm H}$ は $v$ と幅 $d$ だけで決まるので，厚さ $h$ によらない．一方，電流 $I=nqv\\,dh$ を使うと $V_{\\rm H}=\\dfrac{I|B_e|}{nqh}$ とも書ける．\n(i) $V_{\\rm E}$ 一定：$V_{\\rm H}$ は\\textbf{変わらない}．抵抗 $\\dfrac{\\rho L}{dh}$ が2倍になるので，消費電力 $\\dfrac{V_{\\rm E}^2}{R}$ は $\\boldsymbol{\\dfrac12}$ \\textbf{倍}．\n(ii) 電流一定：$V_{\\rm H}=\\dfrac{I|B_e|}{nqh}$ は $\\boldsymbol{2}$ \\textbf{倍}（同じ電流を細い断面に流すので $v$ が2倍）．消費電力 $I^2R$ も $\\boldsymbol{2}$ \\textbf{倍}．\n\n\\textbf{(3)}　$\\vec e$ は水平成分 $\\cos\\varepsilon$（方位 $\\theta$），鉛直上向き成分 $\\sin\\varepsilon$ をもつ．地磁気は水平成分 $B_{\\rm h}$（方位 $\\theta_{\\rm N}$）と鉛直成分 $-B_{\\rm v}$（上向きを正）をもつので，内積をとって\n\\[ V=KB_e=\\boldsymbol{K\\{B_{\\rm h}\\cos\\varepsilon\\cos(\\theta-\\theta_{\\rm N})-B_{\\rm v}\\sin\\varepsilon\\}}. \\]\n傾けたために，地磁気の鉛直成分が $\\theta$ によらない一定のずれ（解答図の中心線 $-KB_{\\rm v}\\sin\\varepsilon$）として現れる．\n\n\\textbf{(4)}　$K=\\dfrac{V_{\\rm E}d}{nq\\rho L}=\\dfrac{10.0\\times1.00\\times10^{-2}}{5.00\\times10^{19}\\times1.60\\times10^{-19}\\times2.00\\times1.00\\times10^{-2}}=\\boldsymbol{0.625}$ \\textbf{V/T}．\n$V$ が最大になるのは $\\cos(\\theta-\\theta_{\\rm N})=1$ のときなので $\\theta_{\\rm N}=\\boldsymbol{70^\\circ}$．最大値と最小値は\n\\[ V_{\\max}=K(B_{\\rm h}\\cos\\varepsilon-B_{\\rm v}\\sin\\varepsilon),\\qquad V_{\\min}=K(-B_{\\rm h}\\cos\\varepsilon-B_{\\rm v}\\sin\\varepsilon) \\]\nだから，振幅と中心線から\n\\[ KB_{\\rm h}\\cos\\varepsilon=\\frac{V_{\\max}-V_{\\min}}{2}=16.0\\ \\mu\\text{V},\\qquad KB_{\\rm v}\\sin\\varepsilon=-\\frac{V_{\\max}+V_{\\min}}{2}=11.0\\ \\mu\\text{V}. \\]\nよって $B_{\\rm h}=\\dfrac{16.0\\times10^{-6}}{0.625\\times0.866}=2.96\\times10^{-5}\\fallingdotseq\\boldsymbol{3.0\\times10^{-5}}$ \\textbf{T}，$B_{\\rm v}=\\dfrac{11.0\\times10^{-6}}{0.625\\times0.500}=3.52\\times10^{-5}\\fallingdotseq\\boldsymbol{3.5\\times10^{-5}}$ \\textbf{T}．$\\tan I=\\dfrac{3.52}{2.96}=1.19$ より $I\\fallingdotseq\\boldsymbol{50^\\circ}$．\n\n\\textbf{(5)}　$V=16.0\\cos(\\theta-70^\\circ)-11.0$（$\\mu$V）$>0$ より $\\cos(\\theta-70^\\circ)>\\dfrac{11.0}{16.0}=0.6875$，すなわち $|\\theta-70^\\circ|<46.6^\\circ$．よって $\\boldsymbol{23^\\circ<\\theta<117^\\circ}$．（中心線がずれているので，$V=0$ の2つの方位は $180^\\circ$ 離れていない．ただし磁北はその2方位のちょうど中央にある．）\n\n\\textbf{(6)}　$\\theta$ によらず $V\\le0$ となる条件は，最大値について $B_{\\rm h}\\cos\\varepsilon-B_{\\rm v}\\sin\\varepsilon\\le0$，すなわち\n\\[ \\tan\\varepsilon\\ge\\frac{B_{\\rm h}}{B_{\\rm v}}=\\frac{1}{\\tan I}\\quad\\Longleftrightarrow\\quad \\varepsilon\\ge 90^\\circ-I. \\]\nよって $\\boldsymbol{\\varepsilon=90^\\circ-I\\fallingdotseq40^\\circ}$．地磁気の向きは水平から下向きに $I$ だけ傾いているので，$\\vec e$ を水平から上向きに $90^\\circ-I$ 以上起こすと，$\\vec e$ が磁北を向いたとき（地磁気に最も近づくとき）でさえ $\\vec e$ と地磁気のなす角は $90^\\circ$ 以上になり，$B_e\\le0$ となる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電圧一定で駆動したホール素子では，正孔の速さが電場で決まるのでホール電圧は抵抗率と幅/長さの比だけで決まり厚さによらない（電流一定とは逆の依存性）．素子の法線を水平から傾けて鉛直軸のまわりに回すと，読みは正弦波に地磁気の鉛直成分による一定のずれが加わった形になり，振幅とずれから水平成分・鉛直成分（伏角）を分離できる．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "torque",
+  "string-resonance"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ホール効果",
+  "抵抗率",
+  "キャリアの移動度",
+  "地磁気",
+  "伏角",
+  "ベクトルの成分"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

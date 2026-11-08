@@ -1,0 +1,138 @@
+{
+ "id": "PHY-MAG-025",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "交流電圧で2回加減速する周回型質量分析器（戻ってくる条件と高調波による同位体の除去）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，紙面に垂直で一様な磁束密度 $B$ の磁場の中に，点 O を通る直線上に，O をはさんで反対側にスリット X と，狭い加速領域 Y がある．電荷 $q\\,(>0)$，質量 $M$ のイオンは，X の中心から直線に垂直な向きに速さ $v_0$ で入射し，磁場中で円運動して Y を直線に垂直に横切る．Y には交流電圧 $V(t)=V_0\\cos(2\\pi ft)$ がかかっており，時刻 $t$ に Y を横切ったイオンの運動エネルギーは瞬時に $qV(t)$ だけ変化する（負なら減少）．イオンは Y を 2 回横切った後に X の位置に戻り，X の中心からのずれが $\\frac d2$ 以下なら X を通り抜けて検出される．イオンの入射時刻は交流電圧の位相と無関係にばらばらである．$|qV_0|$ はイオンの運動エネルギーより十分小さく，Y の幅とスリットの厚さは無視し，イオンは障害物に当たらないものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "イオンが Y を横切る点は，速さが変わっても毎回同じ点であることを示せ．また，Y を横切る時間間隔 $T$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "2 回目に Y を横切った後の運動エネルギーが，入射時より $\\Delta K$ だけ変化していたとする．X の位置に戻ったときの，X の中心からのずれ $\\Delta y$ を $\\Delta K,q,B,v_0$ で表せ（$\\Delta K$ の 1 次まで）．"
+     },
+     {
+      "id": "3",
+      "tex": "入射時刻によらずすべてのイオンが X の中心に戻るための周波数 $f$ をすべて求め，小さい方から $f_0,f_1,\\dots,f_n,\\dots$ とする．$f_n$ を $n,q,B,M$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "周波数を質量 $M=m$ のイオンに対する $f_n$ に合わせたまま，質量 $m'=m(1+\\varepsilon)$（$\\varepsilon>0$）の同位体イオンを同じ速さ $v_0$ で入射させる．1 回目に Y を横切るときの電圧の位相を $\\phi$（$V=V_0\\cos\\phi$）とするとき，2 回目を横切った後の運動エネルギーの変化 $\\Delta K$ を $q,V_0,\\phi$ と $\\alpha=\\pi(2n+1)\\varepsilon$ を用いて表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "前問の同位体イオンのうち検出されるものの割合 $P$ を求めよ．ただし $\\phi$ は $0\\le\\phi<2\\pi$ に一様に分布し，$s=\\dfrac{dBv_0}{8V_0\\sin(\\alpha/2)}$ は $1$ より小さいとする．"
+     },
+     {
+      "id": "6",
+      "tex": "$m$ を質量数 $100$ のイオン，$\\varepsilon=0.010$，$B=0.50\\,{\\rm T}$，$v_0=2.0\\times10^5\\,{\\rm m/s}$，$V_0=1.0\\times10^2\\,{\\rm V}$，$d=1.0\\times10^{-3}\\,{\\rm m}$ とする．同位体イオンの検出される割合を $\\frac13$ 以下にするための最小の $n$ を求め，そのときの $f_n$ を有効数字 2 桁で求めよ．ただし $q=1.6\\times10^{-19}\\,{\\rm C}$，質量数 $1$ あたりの質量を $1.66\\times10^{-27}\\,{\\rm kg}$ とする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：交流電圧で2回加減速する周回型質量分析器（戻ってくる条件と高調波による同位体の除去）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "（解説参照）$T=\\dfrac{2\\pi M}{qB}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Delta y=\\dfrac{2\\Delta K}{qBv_0}$"
+   },
+   {
+    "id": "3",
+    "tex": "$f_n=\\dfrac{(2n+1)qB}{4\\pi M}$（$n=0,1,2,\\dots$）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\Delta K=qV_0\\{\\cos\\phi-\\cos(\\phi+\\alpha)\\}=2qV_0\\sin\\dfrac\\alpha2\\sin\\left(\\phi+\\dfrac\\alpha2\\right)$"
+   },
+   {
+    "id": "5",
+    "tex": "$P=\\dfrac2\\pi\\sin^{-1}s$"
+   },
+   {
+    "id": "6",
+    "tex": "$n=8$，$f_8\\approx6.5\\times10^5\\,{\\rm Hz}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　X で直線に垂直に入射するので，円の中心はこの直線上にあり，Y を横切る点は直線と円の反対側の交点で，そこでも速度は直線に垂直である．Y で速さだけが変わると，新しい円も同じ点で同じ向きの速度をもつので，中心はやはりこの直線上にあり，1 周して同じ点に戻る．よって Y を横切る点は毎回同じである．周期 $T=\\dfrac{2\\pi r}{v}=\\boldsymbol{\\dfrac{2\\pi M}{qB}}$ は速さによらないので，横切る時間間隔は常に $T$ である（X から最初に Y までは $T/2$）．\n\n\\textbf{(2)}　Y を横切る点を P とすると，X の位置に戻るときの点は P から直径 $2r$ だけ離れた点である．入射時は $2r_0$ で X の中心に一致していたので $\\Delta y=2(r-r_0)$．$r=\\dfrac{Mv}{qB}$，$\\Delta K=Mv_0\\Delta v$（1次）より\n\\[ \\Delta y=\\frac{2M\\Delta v}{qB}=\\boldsymbol{\\frac{2\\Delta K}{qBv_0}} . \\]\nX に戻るかどうかは，2 回の加減速の正味のエネルギー変化だけで決まる．\n\n\\textbf{(3)}　1 回目を時刻 $t_1$ に横切ると 2 回目は $t_1+T$．すべての $t_1$ で $\\Delta K=qV_0\\{\\cos2\\pi ft_1+\\cos2\\pi f(t_1+T)\\}=0$ となるには，$\\cos(\\theta+2\\pi fT)=-\\cos\\theta$ が恒等的に成り立てばよく，$2\\pi fT=(2n+1)\\pi$．よって\n\\[ \\boldsymbol{f_n=\\frac{2n+1}{2T}=\\frac{(2n+1)qB}{4\\pi M}}\\quad(n=0,1,2,\\dots) . \\]\n逆に，検出が起こる $f_n$ を見つければ $M=\\dfrac{(2n+1)qB}{4\\pi f_n}$ から質量が決まる．\n\n\\textbf{(4)}　同位体の周期は $T'=T(1+\\varepsilon)$ なので $2\\pi f_nT'=(2n+1)\\pi(1+\\varepsilon)=(2n+1)\\pi+\\alpha$．\n\\[ \\Delta K=qV_0\\{\\cos\\phi+\\cos(\\phi+(2n+1)\\pi+\\alpha)\\}=\\boldsymbol{qV_0\\{\\cos\\phi-\\cos(\\phi+\\alpha)\\}=2qV_0\\sin\\frac\\alpha2\\,\\sin\\!\\left(\\phi+\\frac\\alpha2\\right)} . \\]\n（質量が違っても (1)(2) の議論はそのまま使え，入射点が X の中心なので戻る位置のずれは $\\Delta K$ だけで決まる．）\n\n\\textbf{(5)}　(2)(4) より $|\\Delta y|=\\dfrac{4V_0\\sin(\\alpha/2)}{Bv_0}\\left|\\sin\\left(\\phi+\\frac\\alpha2\\right)\\right|$．検出条件 $|\\Delta y|\\le\\frac d2$ は\n\\[ \\left|\\sin\\left(\\phi+\\tfrac\\alpha2\\right)\\right|\\le\\frac{dBv_0}{8V_0\\sin(\\alpha/2)}=s . \\]\n$\\phi+\\frac\\alpha2$ も一様に分布するので，$|\\sin\\psi|\\le s$ を満たす $\\psi$ の割合は，$0\\le\\psi<2\\pi$ のうち $\\sin^{-1}s$ の幅の区間が 4 つ：\n\\[ P=\\frac{4\\sin^{-1}s}{2\\pi}=\\boldsymbol{\\frac2\\pi\\sin^{-1}s} . \\]\n$\\sin\\psi=0$ 付近の位相（加速と減速がほぼ打ち消す位相）で入る同位体はどんな $n$ でも必ず検出されてしまうので，完全には除けない．\n\n\\textbf{(6)}　$P\\le\\frac13$ は $\\sin^{-1}s\\le\\frac\\pi6$，すなわち $s\\le\\frac12$：\n\\[ \\sin\\frac\\alpha2\\ge\\frac{dBv_0}{4V_0}=\\frac{1.0\\times10^{-3}\\times0.50\\times2.0\\times10^5}{4\\times1.0\\times10^2}=0.25 . \\]\n$\\frac\\alpha2=\\frac{\\pi(2n+1)\\times0.010}{2}\\ge\\sin^{-1}0.25=0.2527$ より $2n+1\\ge16.1$，最小の $\\boldsymbol{n=8}$（$2n+1=17$，$\\frac\\alpha2=0.267<\\frac\\pi2$ で $\\sin$ は増加の範囲）．\n\\[ f_8=\\frac{17\\times1.6\\times10^{-19}\\times0.50}{4\\pi\\times100\\times1.66\\times10^{-27}}\\approx\\boldsymbol{6.5\\times10^5\\,{\\rm Hz}} . \\]\n高い次数 $n$ ほど，同じ質量差による周期のずれが電圧の位相差として $(2n+1)$ 倍に拡大されるので，分解能が上がる．なお $qV_0=100\\,{\\rm eV}$ は運動エネルギー $\\frac12mv_0^2\\approx2.1\\times10^4\\,{\\rm eV}$ より十分小さく，(2) の近似は妥当である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一様磁場中の周期は速さによらず，加減速点も毎回同じなので，戻る位置のずれは2回の加減速の正味のエネルギー変化だけで決まる．どの入射位相でも打ち消し合う条件 $2\\pi fT=(2n+1)\\pi$ から質量が決まり，質量の異なる同位体では周期のずれが $(2n+1)$ 倍の位相差になって正味のエネルギー変化が残るので，高次の $f_n$ ほど同位体をよく除ける（ただし打ち消す位相のものは必ず残る）．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "wave-basics",
+  "ac-circuit"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "サイクロトロン運動",
+  "周期の速さ依存性",
+  "交流電圧",
+  "質量分析",
+  "分解能"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

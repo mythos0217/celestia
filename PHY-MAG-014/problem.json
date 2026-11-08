@@ -1,0 +1,143 @@
+{
+ "id": "PHY-MAG-014",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "一様磁場中で円運動する原子核の分裂（娘核の円軌道の中心と再会の時刻）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "紙面に垂直に裏から表の向きに，磁束密度 $B$ の一様な磁場がかかっている．質量 $4m$，電気量 $2q$ $(q>0)$ の原子核 X が，紙面内で点 O を中心とする半径 $R_0$ の等速円運動をしている（図）．X は点 P で，原子核 A（質量 $m$，電気量 $q$）と原子核 B（質量 $3m$，電気量 $q$）に分裂した．分裂は瞬間的に起こり，分裂直前の X とともに動く観測者から見て，A と B の運動エネルギーの和は $Q$ である．分裂後の A，B は紙面内を運動し，A と B の間にはたらく力，重力，電磁波の放射は無視する．速さは光速に比べて十分小さい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X の速さ $V_0$ を $q$，$B$，$R_0$，$m$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "一般に，正の電気量 $e$ をもつ粒子が運動量 $\\vec p$ で運動しているとき，その円軌道の中心は，粒子から見てどの向きにどれだけ離れたところにあるか．これを用いて，分裂後の A，B の円軌道の中心をそれぞれ $\\mathrm C_{\\mathrm A}$，$\\mathrm C_{\\mathrm B}$ とすると，線分 $\\mathrm C_{\\mathrm A}\\mathrm C_{\\mathrm B}$ の中点は，放出の向きや $Q$ によらず O に一致することを示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "A が X の進む向き（前方）に放出された場合を考える．X とともに動く観測者から見た A の速さを $u$ $(0<u<3V_0)$ とする．$Q$ を $m$，$u$ で表せ．また，A，B の円軌道の半径 $r_{\\mathrm A}$，$r_{\\mathrm B}$ を，$R_0$ と $w=\\dfrac{mu}{qB}$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の場合で $u\\ne V_0$ とする．分裂後，A と B が初めて出会うのは分裂の何秒後か．また，それはどの点か．"
+     },
+     {
+      "id": "5",
+      "tex": "(3) の場合に，B の円軌道が点 O を通るための $Q$ を $q$，$B$，$R_0$，$m$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一様磁場中で円運動する原子核の分裂（娘核の円軌道の中心と再会の時刻）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一様磁場中で円運動する原子核の分裂（娘核の円軌道の中心と再会の時刻）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V_0=\\dfrac{qBR_0}{2m}$"
+   },
+   {
+    "id": "2",
+    "tex": "速度の向きを時計回りに $90^\\circ$ 回した向きに，距離 $\\dfrac{p}{eB}$ のところ（中点が O になることの証明は解説参照）"
+   },
+   {
+    "id": "3",
+    "tex": "$Q=\\dfrac23mu^2$，$r_{\\mathrm A}=\\dfrac{R_0}{2}+w$，$r_{\\mathrm B}=\\dfrac{3R_0}{2}-w$"
+   },
+   {
+    "id": "4",
+    "tex": "分裂の $\\dfrac{6\\pi m}{qB}$ 後，点 P"
+   },
+   {
+    "id": "5",
+    "tex": "$Q=\\dfrac{2q^2B^2R_0^2}{3m}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　X の円運動の運動方程式 $4m\\dfrac{V_0^2}{R_0}=2qV_0B$ より $V_0=\\boldsymbol{\\dfrac{qBR_0}{2m}}$．\n\n\\textbf{(2) 円軌道の中心と運動量}　電気量 $e>0$，運動量 $\\vec p$（速さ $v$，質量 $\\mu$）の粒子が受けるローレンツ力 $e\\vec v\\times\\vec B$ は，磁場が紙面の表向きなので，速度の向きを\\textbf{時計回りに $90^\\circ$ 回した向き}を向く（粒子は時計回りに回る）．円の中心はこの向きにあり，半径は $\\mu\\dfrac{v^2}{\\rho}=evB$ より\n\\[ \\rho=\\frac{\\mu v}{eB}=\\boldsymbol{\\frac{p}{eB}} \\]\nしたがって，ベクトル $\\vec p$ を時計回りに $90^\\circ$ 回したものを $\\vec p^{\\,*}$ と書くと，中心の位置ベクトルは\n\\[ \\vec r_{\\mathrm C}=\\vec r+\\frac{\\vec p^{\\,*}}{eB} \\]\nで，$\\vec p\\mapsto\\vec p^{\\,*}$ は和を保つ（$(\\vec p_1+\\vec p_2)^*=\\vec p_1^{\\,*}+\\vec p_2^{\\,*}$）．\n\n分裂直前の X の運動量を $\\vec P$，P の位置ベクトルを $\\vec r_{\\mathrm P}$ とすると，X の円の中心 O は $\\vec r_{\\mathrm O}=\\vec r_{\\mathrm P}+\\dfrac{\\vec P^{\\,*}}{2qB}$．分裂は瞬間的なので運動量が保存し $\\vec p_{\\mathrm A}+\\vec p_{\\mathrm B}=\\vec P$．A，B はどちらも電気量 $q$ で P から出発するので\n\\[ \\vec r_{\\mathrm C_A}+\\vec r_{\\mathrm C_B}=2\\vec r_{\\mathrm P}+\\frac{(\\vec p_{\\mathrm A}+\\vec p_{\\mathrm B})^*}{qB}=2\\left(\\vec r_{\\mathrm P}+\\frac{\\vec P^{\\,*}}{2qB}\\right)=2\\vec r_{\\mathrm O} \\]\nよって $\\mathrm C_{\\mathrm A}\\mathrm C_{\\mathrm B}$ の中点は O に一致する．使ったのは運動量保存と電気量の配分（$q+q=2q$）だけなので，放出の向きや $Q$ によらない．（一般に $\\sum e_i\\vec r_{\\mathrm C_i}$ が分裂の前後で保存する．）\n\n\\textbf{(3) 前方放出}　X とともに動く観測者から見ると，分裂前の運動量は $0$ なので，B は後方に速さ $\\dfrac{u}{3}$ で出る．\n\\[ Q=\\frac12mu^2+\\frac12(3m)\\left(\\frac{u}{3}\\right)^2=\\boldsymbol{\\frac23mu^2} \\]\n分裂の瞬間の速度は X とともに動く観測者の速度 $V_0$ を加えて，A は前方に $V_0+u$，B は前方に $V_0-\\dfrac{u}{3}$（$u<3V_0$ より正）．$\\dfrac{mV_0}{qB}=\\dfrac{R_0}{2}$ を用いて\n\\[ r_{\\mathrm A}=\\frac{m(V_0+u)}{qB}=\\boldsymbol{\\frac{R_0}{2}+w},\\qquad r_{\\mathrm B}=\\frac{3m(V_0-u/3)}{qB}=\\boldsymbol{\\frac{3R_0}{2}-w} \\]\nどちらの中心も P から O の向き（P での速度を時計回りに $90^\\circ$ 回した向き）にあり，P からの距離の平均は $\\dfrac{r_{\\mathrm A}+r_{\\mathrm B}}{2}=R_0$ で，(2) と一致する．\n\n\\textbf{(4) 再会}　2つの円はどちらも P を通り，中心がともに直線 PO 上にあるので，P で接している．$u\\ne V_0$ なら $r_{\\mathrm A}\\ne r_{\\mathrm B}$ で2つの円は異なり，共有点は P だけである．したがって A と B が出会えるのは P だけ．\n\n一様磁場中の円運動の周期は速さによらず，A は $T_{\\mathrm A}=\\dfrac{2\\pi m}{qB}$，B は $T_{\\mathrm B}=\\dfrac{2\\pi(3m)}{qB}=3T_{\\mathrm A}$ ごとに P に戻る．両者が同時に P にいる最初の時刻は\n\\[ t=3T_{\\mathrm A}=\\boldsymbol{\\frac{6\\pi m}{qB}}\\quad\\text{後，点 P} \\]\nこれは $u$（すなわち $Q$）によらない．なお $u=V_0$ のときは $r_{\\mathrm A}=r_{\\mathrm B}=R_0$ で2つの円が X の円と一致し，速い A が B に追いつく $\\dfrac{3\\pi m}{qB}$ 後に P の反対側で出会う（このため除外した）．\n\n\\textbf{(5) B が O を通る条件}　$\\mathrm C_{\\mathrm B}$ は直線 PO 上，P から距離 $r_{\\mathrm B}$ の点なので，O との距離は $|R_0-r_{\\mathrm B}|$．B の円が O を通る条件は $|R_0-r_{\\mathrm B}|=r_{\\mathrm B}$，すなわち $r_{\\mathrm B}=\\dfrac{R_0}{2}$．(3) より $\\dfrac{3R_0}{2}-w=\\dfrac{R_0}{2}$，$w=R_0$，$u=\\dfrac{qBR_0}{m}=2V_0$（$<3V_0$ を満たす）．よって\n\\[ Q=\\frac23m\\left(\\frac{qBR_0}{m}\\right)^2=\\boldsymbol{\\frac{2q^2B^2R_0^2}{3m}} \\]\nこのとき $r_{\\mathrm A}=\\dfrac{3R_0}{2}$ で，$\\mathrm C_{\\mathrm A}$，$\\mathrm C_{\\mathrm B}$ は O から逆向きに $\\dfrac{R_0}{2}$ ずつ離れた点にある（(2) の確認）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一様磁場中の荷電粒子の円の中心は「位置＋運動量を $90^\\circ$ 回したもの$/(eB)$」で，運動量の1次式なので，分裂で運動量が保存すると電気量で重みをつけた中心の和が保存し，等しい電気量に分かれれば娘核の中心の中点が親の中心に一致する．前方・後方放出では2つの円は分裂点で接し，周期が質量だけで決まるため，再会は放出エネルギーによらず周期の最小公倍数の時刻に分裂点で起こる．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "circular-motion",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ローレンツ力",
+  "円運動",
+  "運動量保存",
+  "原子核の分裂",
+  "周期"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

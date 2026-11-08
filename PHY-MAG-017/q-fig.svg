@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 360">
+  <defs>
+    <marker id="q-ab" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f5fbf"/></marker>
+  </defs>
+  <circle cx="210" cy="190" r="120" fill="none" stroke="#222" stroke-width="1.6"/>
+  <circle cx="210" cy="190" r="2.5" fill="#222"/>
+  <line x1="210" y1="190" x2="210" y2="70" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <line x1="210" y1="190" x2="287.1" y2="98.1" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <line x1="210" y1="190" x2="125.1" y2="274.9" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <path d="M210,160 A30,30 0 0 1 229.3,167.0" fill="none" stroke="#222" stroke-width="1"/>
+  <text x="217" y="152" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">θ</text>
+  <text x="152" y="240" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">r</text>
+  <circle cx="291.6" cy="92.7" r="7" fill="#888" stroke="#222" stroke-width="1.6"/>
+  <text x="302" y="86" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">m</text>
+  <text x="316" y="86" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">,</text>
+  <text x="322" y="86" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">q</text>
+  <text x="312" y="118" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">Q</text>
+  <text x="194" y="62" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">P</text>
+  <line x1="216" y1="54" x2="252" y2="54" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <text x="216" y="208" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">O</text>
+  <g stroke="#222" stroke-width="1.2" fill="none">
+    <circle cx="45" cy="50" r="8"/><circle cx="375" cy="50" r="8"/>
+    <circle cx="45" cy="190" r="8"/><circle cx="375" cy="190" r="8"/>
+    <circle cx="45" cy="320" r="8"/><circle cx="375" cy="320" r="8"/>
+  </g>
+  <g fill="#222">
+    <circle cx="45" cy="50" r="2.2"/><circle cx="375" cy="50" r="2.2"/>
+    <circle cx="45" cy="190" r="2.2"/><circle cx="375" cy="190" r="2.2"/>
+    <circle cx="45" cy="320" r="2.2"/><circle cx="375" cy="320" r="2.2"/>
+  </g>
+  <text x="358" y="345" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+  <text x="58" y="345" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">（中心軸 O は水平で紙面に垂直）</text>
+</svg>

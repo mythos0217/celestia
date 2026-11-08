@@ -1,0 +1,143 @@
+{
+ "id": "PHY-MAG-020",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "直交する電場・磁場中に後ろ向きに打ち出した荷電粒子（ドリフト系での円運動と戻ってくる位置）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，$xy$ 平面（紙面）内で，十分に広い2枚の金属板 P$_1$（$y=0$）と P$_2$（$y=d$）を平行に置き，P$_1$ の電位が P$_2$ より $V$ だけ高くなるように電池をつなぐ．極板間には一様な電場のほか，紙面の裏から表へ向かう（$z$ 軸正の向きの）磁束密度 $B$ の一様な磁場がかかっている．質量 $m$，電荷 $q$（$q>0$）の粒子を，P$_1$ 上の原点 O から $x$ 軸方向に速度 $u$ で打ち出す（$u$ は $x$ 成分で，負のときは $-x$ 向き）．以下 $w=\\dfrac{V}{Bd}$ とおき，$u<w$ とする．重力は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$x$ 軸の正の向きに一定の速さ $w$ で動く観測者から見ると，粒子は等速円運動をする．その理由を，この観測者から見た粒子にはたらく力を考えて説明せよ．また，この観測者から見た円運動の半径と，円の中心の位置（打ち出した瞬間の O に対して）を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "粒子が到達する $y$ 座標の最大値 $y_{\\max}$ を $m$，$q$，$B$，$w$，$u$ で表せ．また，粒子を $-x$ 向きに速さ $s$ で打ち出す（$u=-s$）とき，粒子が P$_2$ に当たらないための $s$ の条件を $m$，$q$，$B$，$V$，$d$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "粒子が初めて P$_1$（$y=0$）に戻ってくる点の $x$ 座標 $x_1$ と，そのときの粒子の速度を求めよ．$x_1$ は $u$ によるか．"
+     },
+     {
+      "id": "4",
+      "tex": "$u=-w$ のとき，粒子はいったん $x<0$ の側へ進んでから向きを変える．粒子の $x$ 座標の最小値を $m$，$q$，$B$，$V$，$d$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "$y=y_{\\max}$ の点での粒子の運動エネルギーを $m$，$w$，$u$ で表し，打ち出したときとの差が電場のした仕事に等しいことを確かめよ．さらに，比電荷のわからない正の荷電粒子を $u=-w$ で打ち出したところ，ちょうど P$_2$ に触れて戻ってきた．この粒子の比電荷を $V$，$B$，$d$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：直交する電場・磁場中に後ろ向きに打ち出した荷電粒子（ドリフト系での円運動と戻ってくる位置）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：直交する電場・磁場中に後ろ向きに打ち出した荷電粒子（ドリフト系での円運動と戻ってくる位置）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "観測者の系では速度が $\\vec v'=\\vec v-(w,0)$ となり，ローレンツ力 $q\\vec v\\times\\vec B=q\\vec v'\\times\\vec B+q(w,0)\\times\\vec B$ の第2項 $(0,-qwB)$ が電場の力 $(0,qV/d)$ をちょうど打ち消すので，磁場だけによる等速円運動になる．半径 $\\dfrac{m(w-u)}{qB}$，中心は O の真上 $\\left(0,\\dfrac{m(w-u)}{qB}\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "$y_{\\max}=\\dfrac{2m(w-u)}{qB}$；$s<\\dfrac{qBd}{2m}-\\dfrac{V}{Bd}$"
+   },
+   {
+    "id": "3",
+    "tex": "$x_1=\\dfrac{2\\pi mV}{qB^2d}$，速度は $(u,0)$（打ち出したときと同じ）；$u$ によらない"
+   },
+   {
+    "id": "4",
+    "tex": "$-\\dfrac{mV}{qB^2d}\\left(\\sqrt3-\\dfrac{\\pi}{3}\\right)$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac12m(2w-u)^2$（差 $2mw(w-u)=\\dfrac{qV}{d}y_{\\max}$）；比電荷 $\\dfrac{4V}{B^2d^2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　電場は $+y$ 向きで大きさ $E=V/d$．粒子の速度を $\\vec v=(v_x,v_y)$ とすると，ローレンツ力は $q\\vec v\\times\\vec B=(qv_yB,\\,-qv_xB)$．速さ $w$ で動く観測者から見た速度 $\\vec v'=(v_x-w,\\,v_y)$ を用いると，力の合計は\n\\[ \\vec F=(qv_y'B,\\,-qv_x'B)+(0,\\,-qwB+qE). \\]\n$w=\\dfrac{E}{B}=\\dfrac{V}{Bd}$ なので第2項は $0$ になり，観測者から見た運動方程式は「磁場だけの中の運動」と同じ形になる（等速度で動く観測者から見ても加速度は同じ）．よって等速円運動をする．\n\n打ち出した瞬間の観測者に対する速度は $(u-w,0)$ で，$u<w$ よりこれは $-x$ 向き，速さ $w-u$．このとき力は $(0,\\,-q(u-w)B)=(0,\\,q(w-u)B)$ で $+y$ 向きなので，円の中心は O の真上にある．半径は $\\boldsymbol{\\dfrac{m(w-u)}{qB}}$，中心は $\\boldsymbol{\\left(0,\\dfrac{m(w-u)}{qB}\\right)}$（紙面に向かって時計回り）．\n\n\\textbf{(2)}　$y$ 座標は観測者によらないので，最高点は円の直径の上端：$y_{\\max}=\\boldsymbol{\\dfrac{2m(w-u)}{qB}}$．$u=-s$ として $y_{\\max}<d$ を解くと\n\\[ \\frac{2m(w+s)}{qB}<d\\quad\\Longleftrightarrow\\quad \\boldsymbol{s<\\frac{qBd}{2m}-\\frac{V}{Bd}}. \\]\n（右辺が負なら，静止から放しても P$_2$ に当たる．）\n\n\\textbf{(3)}　円運動の周期は $T=\\dfrac{2\\pi m}{qB}$ で速さによらない．観測者の系で1周して O の位置（観測者に対して）に戻る時刻 $T$ に，粒子は床から見て $wT$ だけ $x$ 方向に移動している．よって\n\\[ x_1=wT=\\boldsymbol{\\frac{2\\pi mV}{qB^2d}}. \\]\nこのとき観測者に対する速度は打ち出し時と同じ $(u-w,0)$ だから，床から見た速度は $\\boldsymbol{(u,0)}$．$x_1$ は $\\boldsymbol{u}$ \\textbf{によらない}：どの向きに打ち出しても，1周期の平均の速度は $w$ である（$-x$ 向きに打ち出しても $+x$ 側に戻ってくる）．\n\n\\textbf{(4)}　$\\Omega=\\dfrac{qB}{m}$ とする．観測者の系では O から時計回りに円運動するので，床から見た $x$ 座標は\n\\[ x(t)=wt+\\frac{u-w}{\\Omega}\\sin\\Omega t=wt-\\frac{2w}{\\Omega}\\sin\\Omega t\\quad(u=-w). \\]\n$\\dfrac{dx}{dt}=w(1-2\\cos\\Omega t)=0$ より $\\cos\\Omega t=\\dfrac12$，すなわち $\\Omega t=\\dfrac{\\pi}{3}$ で $x$ は最小：\n\\[ x_{\\min}=\\frac{w}{\\Omega}\\left(\\frac{\\pi}{3}-\\sqrt3\\right)=\\boldsymbol{-\\frac{mV}{qB^2d}\\left(\\sqrt3-\\frac{\\pi}{3}\\right)}. \\]\n\n\\textbf{(5)}　最高点では観測者に対する速度が $(w-u,0)$ なので，床から見た速さは $w+(w-u)=2w-u$，運動エネルギーは $\\boldsymbol{\\dfrac12m(2w-u)^2}$．打ち出し時との差は\n\\[ \\frac12m(2w-u)^2-\\frac12mu^2=2mw(w-u). \\]\n一方，磁場の力は仕事をしないので，電場のした仕事は $qE\\,y_{\\max}=\\dfrac{qV}{d}\\cdot\\dfrac{2m(w-u)}{qB}=2m\\cdot\\dfrac{V}{Bd}(w-u)=2mw(w-u)$ で一致する．\n\n比電荷のわからない粒子（比電荷 $k$）を $u=-w$ で打ち出してちょうど P$_2$ に触れるのは $y_{\\max}=d$：$\\dfrac{2\\cdot2w}{kB}=d$．よって\n\\[ k=\\frac{4w}{Bd}=\\boldsymbol{\\frac{4V}{B^2d^2}}. \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "直交する一様な電場と磁場の中では，ドリフト速度 $E/B$ で動く観測者から見ると電場の力がローレンツ力の一部と打ち消し合い，粒子は磁場だけによる等速円運動をする．打ち出し速度は円の半径（到達高さ）だけを変え，周期と1周期あたりの移動距離 $wT$ は打ち出し速度によらない（後ろ向きに打ち出しても前方に戻る）．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "circular-motion",
+  "coulomb-field"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ローレンツ力",
+  "ドリフト",
+  "座標変換",
+  "サイクロイド",
+  "比電荷"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

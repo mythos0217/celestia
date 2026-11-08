@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker></defs>
+<line x1="129.2" y1="136.0" x2="299.2" y2="136.0" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="129.2" y1="136.0" x2="90.8" y2="164.0" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="129.2" y1="136.0" x2="129.2" y2="110.0" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<polygon points="90.8,164.0 260.8,164.0 260.8,138.0 90.8,138.0" fill="#888" fill-opacity="0.15" stroke="#222" stroke-width="1.6"/>
+<polygon points="129.2,110.0 299.2,110.0 260.8,138.0 90.8,138.0" fill="none" fill-opacity="0" stroke="#222" stroke-width="1.6"/>
+<polygon points="260.8,164.0 299.2,136.0 299.2,110.0 260.8,138.0" fill="none" fill-opacity="0" stroke="#222" stroke-width="1.6"/>
+<line x1="60.0" y1="250.0" x2="120.0" y2="250.0" stroke="#222" stroke-width="1.4" marker-end="url(#q-ak)"/>
+<text x="128.0" y="250.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">y</text>
+<line x1="60.0" y1="250.0" x2="60.0" y2="200.0" stroke="#222" stroke-width="1.4" marker-end="url(#q-ak)"/>
+<text x="56.0" y="192.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">z</text>
+<line x1="60.0" y1="250.0" x2="29.7" y2="272.0" stroke="#222" stroke-width="1.4" marker-end="url(#q-ak)"/>
+<text x="19.9" y="280.8" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">x</text>
+<line x1="60.0" y1="137.0" x2="110.0" y2="137.0" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<line x1="280.0" y1="137.0" x2="320.0" y2="137.0" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<text x="68.0" y="127.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#c0392b" text-anchor="start">I</text>
+<line x1="195.0" y1="124.0" x2="195.0" y2="54.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="203.0" y="62.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf" text-anchor="start">B</text>
+<text x="218.2" y="156.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle">P</text>
+<line x1="180.2" y1="110.0" x2="170.2" y2="60.0" stroke="#888" stroke-width="1"/>
+<text x="168.2" y="56.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">Q（奥の面）</text>
+<text x="168.1" y="169.6" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">b</text>
+<text x="296.0" y="158.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">a</text>
+<text x="272.8" y="151.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start"></text>
+<text x="74.8" y="155.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="end">c</text>
+<text x="160.0" y="290.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">(a) ホール素子</text>
+<line x1="492.0" y1="134.0" x2="622.0" y2="134.0" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="492.0" y1="134.0" x2="448.0" y2="166.0" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="492.0" y1="134.0" x2="492.0" y2="84.0" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<polygon points="448.0,166.0 578.0,166.0 578.0,116.0 448.0,116.0" fill="none" fill-opacity="0" stroke="#222" stroke-width="1.6"/>
+<polygon points="492.0,84.0 622.0,84.0 578.0,116.0 448.0,116.0" fill="none" fill-opacity="0" stroke="#222" stroke-width="1.6"/>
+<polygon points="578.0,166.0 622.0,134.0 622.0,84.0 578.0,116.0" fill="none" fill-opacity="0" stroke="#222" stroke-width="1.6"/>
+<line x1="430.0" y1="135.0" x2="465.0" y2="135.0" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<line x1="430.0" y1="115.0" x2="465.0" y2="115.0" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<text x="426.0" y="109.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#c0392b" text-anchor="end">u</text>
+<rect x="507.0" y="133.0" width="12" height="16" fill="#222"/>
+<text x="531.0" y="169.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">電極 G</text>
+<rect x="551.0" y="101.0" width="12" height="16" fill="none" stroke="#222" stroke-width="1.2" stroke-dasharray="3,2"/>
+<text x="561.0" y="73.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">電極 K（奥）</text>
+<line x1="557.0" y1="101.0" x2="559.0" y2="79.0" stroke="#888" stroke-width="1"/>
+<line x1="574.0" y1="100.0" x2="574.0" y2="40.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="582.0" y="48.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf" text-anchor="start">B</text>
+<text x="604.0" y="170.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">D</text>
+<text x="588.0" y="145.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">h</text>
+<text x="470.0" y="290.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">(b) 電磁流量計（管の断面は長方形）</text>
+</svg>

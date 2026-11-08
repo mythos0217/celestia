@@ -1,0 +1,135 @@
+{
+ "id": "ESY-CAP-001",
+ "schema": "celestia.problem/1",
+ "field": "ESY",
+ "unit": "ESY-01",
+ "topic": "抵抗とコンデンサーを含む回路のエネルギー",
+ "course": "物理",
+ "level": 2,
+ "minutes": 12,
+ "format": [
+  "derivation",
+  "synthesis"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "起電力 $E$ の電池（内部抵抗は無視），抵抗値 $R_1$，$R_2$ の抵抗，電気容量 $C$ のコンデンサー，スイッチ S を図のようにつなぐ．はじめコンデンサーに電荷はなく，S は開いている．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-circuit"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "S を閉じた直後に $R_1$ を流れる電流の大きさを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "S を閉じて十分に時間がたったとき，$R_1$ を流れる電流の大きさ $I$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "そのときコンデンサーにたくわえられている電気量 $Q$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "その後 S を開いた．S を開いてからコンデンサーの電荷がなくなるまでに，$R_2$ で発生するジュール熱 $J$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-circuit",
+   "role": "question",
+   "kind": "circuit",
+   "format": "svg",
+   "src": "q-circuit.svg",
+   "alt": "電池・スイッチ S・抵抗 R₁ を直列につなぎ、その先に抵抗 R₂ とコンデンサー C を並列につないだ回路",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{E}{R_1}$",
+    "grading": "E/R_1"
+   },
+   {
+    "id": "2",
+    "tex": "$I=\\dfrac{E}{R_1+R_2}$",
+    "grading": "I：E/(R_1+R_2)"
+   },
+   {
+    "id": "3",
+    "tex": "$Q=\\dfrac{CER_2}{R_1+R_2}$",
+    "grading": "Q：C E R_2/(R_1+R_2)"
+   },
+   {
+    "id": "4",
+    "tex": "$J=\\dfrac{CE^2R_2^2}{2(R_1+R_2)^2}$",
+    "grading": "J：C E^2 R_2^2/(2(R_1+R_2)^2)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 閉じた直後はコンデンサーの電荷が $0$ で，その両端の電位差も $0$．$R_2$ の両端も同じ電位差（並列）なので $R_2$ には電流が流れず，電流は $R_1$ を通ってコンデンサーに流れ込む．キルヒホッフの第2法則 $E=R_1I_0$ より $I_0=\\dfrac E{R_1}$．\n\n(2) 十分時間がたつとコンデンサーに電流は流れない．電流は $R_1$ と $R_2$ を直列に流れるので $I=\\dfrac E{R_1+R_2}$．\n\n(3) コンデンサーの電圧は $R_2$ の電圧 $R_2I$ に等しい：$Q=CR_2I=\\dfrac{CER_2}{R_1+R_2}$．\n\n(4) S を開くと電池と $R_1$ は回路から切り離され，コンデンサーは $R_2$ だけを通して放電する．たくわえられていた静電エネルギーがすべて $R_2$ のジュール熱になる：\\[J=\\frac{Q^2}{2C}=\\frac{CE^2R_2^2}{2(R_1+R_2)^2}\\]"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "閉じた直後：コンデンサーは電位差 $0$（導線と同じ）．十分時間後：コンデンサーに電流は流れない（切れた導線と同じ）．"
+ },
+ "simulation": {
+  "id": "elm.rc",
+  "preset": {},
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "capacitor",
+  "electric-power",
+  "series-parallel"
+ ],
+ "laws": [
+  "kirchhoff-2nd",
+  "capacitor-energy",
+  "joule-heat",
+  "ohm-law"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "コンデンサー",
+  "直流回路",
+  "ジュール熱",
+  "融合"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

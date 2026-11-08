@@ -1,0 +1,135 @@
+{
+ "id": "PHY-MAG-016",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "動く斜面台から出た小球と磁場中で円運動する荷電粒子の合体（軌道半径・中心の逆算）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平な床の上の全域に，鉛直上向きで磁束密度の大きさ $B$ の一様な磁場がかかっている．床の上に，なめらかな斜面をもつ質量 $M$ の台が置かれていて，台は床の上をなめらかに動ける．斜面の下端は床になめらかにつながっている．重力加速度の大きさを $g$ とする．\n\n床の上では，質量 $m$，電荷 $q\\ (q>0)$ の小球 C が，点 O を中心とする半径 $R$ の円周上を速さ $V$ で等速円運動している．図 (b) のように，円周上で O から最も離れた向きの点を P とし，P を原点，P における円の接線を $x$ 軸，P から O の向きを $y$ 軸の正の向きとする（O の座標は $(0,\\ R)$）．\n\n台を静止させ，電荷をもたない質量 $m$ の小球 A を斜面上の高さ $h$ の位置で静かにはなすと，A は台をすべり下りて床に移り，$x$ 軸上を $x$ 軸の正の向きに進んだ．タイミングを調節しておいたので，A は点 P で C と正面衝突し，両者は一体となって小球 F（質量 $2m$，電荷 $q$）になった．衝突は瞬間的に起こり，A，C，F の大きさ，および小球が運動することによる電磁波の放射は無視できる．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "台を離れた後の A の速さ $v$ を $m,\\ M,\\ g,\\ h$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "C は上から見て時計回り・反時計回りのどちらに回っているか．また，衝突直後の F の速度の $x$ 成分を $v,\\ V$ で表し，F が描く円の半径 $R_{\\rm F}$ を $R,\\ v,\\ V$ で表せ．F が回る向きも答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$R_{\\rm F}=\\dfrac{R}{2}$ となるような $h$ は2つある．それぞれを $m,\\ M,\\ g,\\ V$ で表し，それぞれの場合の F の円の中心の座標を答えよ．また，F の軌道が点 O を通るのはどちらの場合か．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で F の軌道が O を通る場合について，衝突直後の F の運動エネルギーは衝突直前の A と C の運動エネルギーの和の何倍か．また，衝突してから F が初めて O に達するまでの時間を $R,\\ V$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：動く斜面台から出た小球と磁場中で円運動する荷電粒子の合体（軌道半径・中心の逆算）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：動く斜面台から出た小球と磁場中で円運動する荷電粒子の合体（軌道半径・中心の逆算）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v=\\sqrt{\\dfrac{2Mgh}{M+m}}$"
+   },
+   {
+    "id": "2",
+    "tex": "時計回り，$v_{{\\rm F}x}=\\dfrac{v-V}{2}$，$R_{\\rm F}=\\dfrac{|v-V|}{V}R$，F も時計回り"
+   },
+   {
+    "id": "3",
+    "tex": "$h=\\dfrac{(M+m)V^2}{8Mg}$（中心 $\\left(0,\\ \\dfrac{R}{2}\\right)$）と $h=\\dfrac{9(M+m)V^2}{8Mg}$（中心 $\\left(0,\\ -\\dfrac{R}{2}\\right)$），O を通るのは前者"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{1}{10}$ 倍，$\\dfrac{2\\pi R}{V}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　斜面の部分は「水平方向の運動量保存＋力学的エネルギー保存」．衝突は瞬間的なので磁場の力の力積は無視でき，運動量保存で F の速度が決まる．F の円運動は「運動量の大きさ $\\div$（電荷 $\\times B$）」で半径が決まり，回る向きは電荷の符号だけで決まる．\n\n\\textbf{(1)}　床も斜面もなめらかなので，A と台の水平方向の運動量は保存し，力学的エネルギーも保存する．台が離れた後の台の速さを $u$（逆向き）とすると\n\\[ mv-Mu=0,\\qquad \\frac12mv^2+\\frac12Mu^2=mgh \\]\n$u=\\dfrac{m}{M}v$ を代入して $\\dfrac12mv^2\\left(1+\\dfrac mM\\right)=mgh$，よって\n\\[ v=\\boldsymbol{\\sqrt{\\frac{2Mgh}{M+m}}} \\]\n\n\\textbf{(2)}　C にはたらくローレンツ力 $q\\vec v\\times\\vec B$ が O を向く．P では O が $y$ 軸の正の側にあるので，力は $+y$ 向き．$\\vec B$ が上向き（$+z$），$q>0$ で $\\vec v\\times\\vec B$ が $+y$ 向きになるのは $\\vec v$ が $-x$ 向きのとき（$(-\\hat x)\\times\\hat z=+\\hat y$）．P で $-x$ 向きに動いて中心が $+y$ 側にある回り方は，上から見て\\textbf{時計回り}である．\n半径は $R=\\dfrac{mV}{qB}$，すなわち $qB=\\dfrac{mV}{R}$．\n衝突の直前，A の速度は $+v$，C の速度は $-V$（$x$ 成分）．運動量保存より\n\\[ 2m\\,v_{{\\rm F}x}=mv-mV\\quad\\Longrightarrow\\quad v_{{\\rm F}x}=\\boldsymbol{\\frac{v-V}{2}} \\]\nF の円運動の半径は\n\\[ R_{\\rm F}=\\frac{2m|v_{{\\rm F}x}|}{qB}=\\frac{m|v-V|}{qB}=\\boldsymbol{\\frac{|v-V|}{V}R} \\]\n（半径は質量によらず，運動量の大きさ $m|v-V|$ だけで決まる．）F の電荷も正なので，F も上から見て\\textbf{時計回り}に回る．\n\n\\textbf{(3)}　$R_{\\rm F}=\\dfrac R2$ となるのは $|v-V|=\\dfrac V2$，すなわち $v=\\dfrac V2$ または $v=\\dfrac{3V}{2}$ のとき．(1) より $h=\\dfrac{(M+m)v^2}{2Mg}$ なので\n・$v=\\dfrac V2$ のとき $h=\\boldsymbol{\\dfrac{(M+m)V^2}{8Mg}}$．F は $-x$ 向き（速さ $\\dfrac V4$）に動き出す．C と同じ向きなので力は $+y$ 向きで，中心は $\\boldsymbol{\\left(0,\\ \\dfrac R2\\right)}$．\n\n・$v=\\dfrac{3V}{2}$ のとき $h=\\boldsymbol{\\dfrac{9(M+m)V^2}{8Mg}}$．F は $+x$ 向き（速さ $\\dfrac V4$）に動き出し，$(+\\hat x)\\times\\hat z=-\\hat y$ より力は $-y$ 向きで，中心は $\\boldsymbol{\\left(0,\\ -\\dfrac R2\\right)}$．\n\nF の円はどちらも P を通り，前者は $y=0$ から $y=R$ までにわたるので，最も高い点が $(0,\\ R)$，すなわち O を通る．後者は $y\\le0$ の側にあるので O を通らない．O を通るのは\\textbf{$v=\\dfrac V2$（小さい方の $h$）の場合}である．\n\n\\textbf{(4)}　衝突直前の運動エネルギーの和は $\\dfrac12m\\left(\\dfrac V2\\right)^2+\\dfrac12mV^2=\\dfrac58mV^2$，衝突直後は $\\dfrac12(2m)\\left(\\dfrac V4\\right)^2=\\dfrac1{16}mV^2$．よって\n\\[ \\frac{\\frac1{16}}{\\frac58}=\\boldsymbol{\\frac{1}{10}}\\ \\text{倍} \\]\nF の周期は $T_{\\rm F}=\\dfrac{2\\pi(2m)}{qB}=\\dfrac{4\\pi m}{qB}=\\dfrac{4\\pi R}{V}$（質量が2倍なので C の周期 $\\dfrac{2\\pi R}{V}$ の2倍）．O は F の円上で P と直径の両端にあるので，O に達するのは半周後で\n\\[ \\frac{T_{\\rm F}}{2}=\\boldsymbol{\\frac{2\\pi R}{V}} \\]\nすなわち，衝突がなかった場合に C が1周して P に戻ってくる時間と同じである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一様磁場中の円運動の半径は運動量の大きさを（電荷 $\\times B$）で割ったもので，回る向きは電荷の符号だけで決まる．中性の小球と正面衝突して一体になると，運動量保存で新しい運動量の大きさと向きが決まり，同じ半径でも速度の向きによって円の中心が接線の反対側に移る．斜面台からの速さを経由して，望む軌道から高さを逆算する．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "circular-motion",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ローレンツ力",
+  "等速円運動",
+  "運動量保存",
+  "完全非弾性衝突",
+  "動く斜面"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

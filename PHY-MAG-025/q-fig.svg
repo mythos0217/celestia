@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 420">
+<defs>
+<marker id="q-ab" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f5fbf"/></marker>
+<marker id="q-ak" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222"/></marker>
+</defs>
+<circle cx="220" cy="210" r="185" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="220" y1="15" x2="220" y2="405" stroke="#888" stroke-width="1" stroke-dasharray="6,4"/>
+<circle cx="220" cy="210" r="3" fill="#222"/>
+<text x="228" y="206" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">O</text>
+<!-- orbit -->
+<circle cx="220" cy="210" r="140" fill="none" stroke="#1f5fbf" stroke-width="1.6"/>
+<line x1="185" y1="70" x2="214" y2="70" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<path d="M 340 140 A 140 140 0 0 1 345 270" fill="none" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="140" y="62" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">v<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+<!-- slit X -->
+<rect x="216" y="50" width="8" height="12" fill="#222"/>
+<rect x="216" y="78" width="8" height="12" fill="#222"/>
+<text x="232" y="56" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">X</text>
+<line x1="232" y1="62" x2="232" y2="78" stroke="#222" stroke-width="1"/>
+<text x="238" y="76" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">d</text>
+<!-- gap Y -->
+<rect x="214" y="320" width="12" height="70" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="232" y="380" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">Y</text>
+<text x="240" y="398" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">V<tspan font-style="normal">(</tspan>t<tspan font-style="normal">) = </tspan>V<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan><tspan font-style="normal"> cos 2π</tspan>ft</text>
+<line x1="238" y1="350" x2="200" y2="350" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<!-- B -->
+<circle cx="100" cy="160" r="9" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="100" cy="160" r="2.5" fill="#222"/>
+<text x="114" y="166" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+<text x="300" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">磁場の領域</text>
+</svg>

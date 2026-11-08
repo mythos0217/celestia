@@ -1,0 +1,143 @@
+{
+ "id": "PHY-MAG-004",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "円錐状に放出された電子線の磁場による集束（磁気収束法による比電荷測定）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，$+z$ 方向を向く磁束密度 $B$ の一様な磁場の中で，原点 O にある小さな電子源から，質量 $m$，電荷 $-e$ の電子が，$z$ 軸と角 $\\alpha\\ (0<\\alpha<\\frac{\\pi}{2})$ をなすあらゆる向き（$z$ 軸を軸とする円錐面上の全方位）に，同じ速さ $v$ で放出される．O から距離 $L$ の位置に $z$ 軸に垂直なスクリーンがある．座標軸は図のとおりとする（$x$ 軸は紙面の表から裏向き）．重力と電子どうしの相互作用は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$B=0$ のとき，スクリーン上の電子の到達点はどんな図形をつくるか．"
+     },
+     {
+      "id": "2",
+      "tex": "$B>0$ のとき，到達点は $z$ 軸を中心とする円をつくる．その半径 $\\rho$ を $m,\\ e,\\ v,\\ \\alpha,\\ L,\\ B$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$B$ を $0$ から増していくと，(2) の円は途中で初めて1点に縮む．そのときの磁束密度 $B_1$ を求めよ．また，電子が静止状態から電圧 $V$ で加速されて速さ $v$ を得たとすると，比電荷 $\\dfrac{e}{m}$ は $V,\\ \\alpha,\\ L,\\ B_1$ でどう表されるか．"
+     },
+     {
+      "id": "4",
+      "tex": "放出時の速度の $xy$ 平面内の成分が $+y$ 向きであった電子に着目する．$B=\\dfrac{B_1}{2}$ のとき，この電子のスクリーン上の到達点の座標 $(x,\\ y)$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$B=\\dfrac{3}{2}B_1$ のとき，(2) の円の半径は $B=0$ のときの何倍か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：円錐状に放出された電子線の磁場による集束（磁気収束法による比電荷測定）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：円錐状に放出された電子線の磁場による集束（磁気収束法による比電荷測定）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$z$ 軸上に中心をもつ半径 $L\\tan\\alpha$ の円"
+   },
+   {
+    "id": "2",
+    "tex": "$\\rho=\\dfrac{2mv\\sin\\alpha}{eB}\\left|\\sin\\dfrac{eBL}{2mv\\cos\\alpha}\\right|$"
+   },
+   {
+    "id": "3",
+    "tex": "$B_1=\\dfrac{2\\pi mv\\cos\\alpha}{eL}$，$\\dfrac{e}{m}=\\dfrac{8\\pi^2V\\cos^2\\alpha}{B_1^2L^2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\left(-\\dfrac{2L\\tan\\alpha}{\\pi},\\ 0\\right)$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{2}{3\\pi}$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{運動の分解}　ローレンツ力 $-e\\vec v\\times\\vec B$ は $\\vec B$（$z$ 方向）に垂直なので，速度の $z$ 成分 $u=v\\cos\\alpha$ は変わらない．一方，$xy$ 面内の成分 $w=v\\sin\\alpha$ は大きさを保ったまま向きを変え，$xy$ 面に射影した運動は等速円運動になる．円運動の式 $m\\dfrac{w^2}{r}=ewB$ より\n\\[ r=\\frac{mw}{eB}=\\frac{mv\\sin\\alpha}{eB},\\qquad \\omega=\\frac{w}{r}=\\frac{eB}{m} \\]\n角速度 $\\omega$ は $w$ によらない．スクリーンまでの時間は $t=\\dfrac{L}{u}$ なので，その間に円周上を回る角は\n\\[ \\theta=\\omega t=\\frac{eBL}{mv\\cos\\alpha} \\]\nで，放出方向によらず全電子に共通である．\n\n\\textbf{(1)}　直進するので，到達点は $z$ 軸から $L\\tan\\alpha$ の距離にあり，方位はあらゆる向き．よって\\textbf{半径 $L\\tan\\alpha$ の円}（中心は $z$ 軸上）．\n\n\\textbf{(2)}　射影した円軌道は出発点（$z$ 軸上の点）を通る．中心角 $\\theta$ だけ回った点と出発点を結ぶ弦の長さが，$z$ 軸からの距離になる：\n\\[ \\rho=2r\\left|\\sin\\frac{\\theta}{2}\\right|=\\boldsymbol{\\frac{2mv\\sin\\alpha}{eB}\\left|\\sin\\frac{eBL}{2mv\\cos\\alpha}\\right|} \\]\n$r,\\ \\theta$ は全電子で共通なので，到達点はすべて $z$ 軸から等距離にあり，円をつくる．\n\n\\textbf{(3)}　$\\rho=0$ となるのは $\\theta=2\\pi n$（$n$ は正の整数）のときで，初めては $\\theta=2\\pi$：\n\\[ \\frac{eB_1L}{mv\\cos\\alpha}=2\\pi\\quad\\therefore\\ \\boldsymbol{B_1=\\frac{2\\pi mv\\cos\\alpha}{eL}} \\]\nこのとき全電子がちょうど1回転して $z$ 軸上に戻る（磁場による収束）．$\\frac12mv^2=eV$ より $v^2=\\dfrac{2eV}{m}$．$B_1^2=\\dfrac{4\\pi^2m^2v^2\\cos^2\\alpha}{e^2L^2}=\\dfrac{8\\pi^2 m V\\cos^2\\alpha}{eL^2}$ から\n\\[ \\boldsymbol{\\frac{e}{m}=\\frac{8\\pi^2V\\cos^2\\alpha}{B_1^2L^2}} \\]\n\n\\textbf{(4)}　初めの $xy$ 成分は $+y$ 向き．力は $-e\\vec v\\times\\vec B$ で，$(+y)\\times(+z)=+x$ だから力は $-x$ 向き．よって射影円の中心は $(-r,\\ 0)$．$B=\\dfrac{B_1}{2}$ では $\\theta=\\pi$（半周）なので，到達点は中心に関して出発点と反対側の $(-2r,\\ 0)$．このとき\n\\[ r=\\frac{mv\\sin\\alpha}{e\\cdot B_1/2}=\\frac{2mv\\sin\\alpha}{e}\\cdot\\frac{eL}{2\\pi mv\\cos\\alpha}=\\frac{L\\tan\\alpha}{\\pi} \\]\nよって到達点は $\\boldsymbol{\\left(-\\dfrac{2L\\tan\\alpha}{\\pi},\\ 0\\right)}$．$B=0$ のときの到達点 $(0,\\ L\\tan\\alpha)$ から，方位が $90^\\circ$（$=\\theta/2$）回り，距離は $\\dfrac{2}{\\pi}$ 倍になっている．\n\n\\textbf{(5)}　$B=\\dfrac32B_1$ では $\\theta=3\\pi$，$r=\\dfrac{mv\\sin\\alpha}{e\\cdot\\frac32B_1}=\\dfrac{L\\tan\\alpha}{3\\pi}$．よって $\\rho=2r|\\sin\\frac{3\\pi}{2}|=\\dfrac{2L\\tan\\alpha}{3\\pi}$ で，$B=0$ のときの $\\boldsymbol{\\dfrac{2}{3\\pi}}$ 倍．\n一般に $\\rho=L\\tan\\alpha\\cdot\\left|\\dfrac{\\sin(\\theta/2)}{\\theta/2}\\right|$ と書け，円は $\\theta=2\\pi,4\\pi,\\dots$ で点に縮み，その間で再び広がる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "磁場に平行な速度成分は変わらず，垂直成分は出発点を通る等速円運動になるので，到達点の軸からの距離は弦の長さ $2r|\\sin(\\theta/2)|$ となる．回転角 $\\theta=eBL/(mv\\cos\\alpha)$ は横方向の速さによらないため，$\\theta=2\\pi$ で全電子が軸上に収束し，そこから比電荷が決まる．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "circular-motion",
+  "torque"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "らせん運動",
+  "ローレンツ力",
+  "磁気収束",
+  "比電荷",
+  "円運動の射影"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

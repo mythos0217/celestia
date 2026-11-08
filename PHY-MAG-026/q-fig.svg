@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 340">
+<defs><marker id="q-ak" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222"/></marker>
+<marker id="q-ab" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f5fbf"/></marker></defs>
+<line x1="40" y1="190" x2="410" y2="190" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+<line x1="180" y1="320" x2="180" y2="20" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="415" y="195" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+<text x="186" y="24" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">y</text>
+<text x="164" y="208" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">O</text>
+<circle cx="320" cy="120" r="8" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="330" y="112" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">m<tspan font-style="normal">, </tspan>q</text>
+<line x1="312" y1="124" x2="232" y2="164" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="250" y="138" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf">kr</text>
+<line x1="180" y1="190" x2="312" y2="124" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="232" y="182" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">r</text>
+<g><circle cx="80" cy="80" r="9" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="80" cy="80" r="2.5" fill="#222"/></g>
+<g><circle cx="80" cy="280" r="9" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="80" cy="280" r="2.5" fill="#222"/></g>
+<g><circle cx="360" cy="280" r="9" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="360" cy="280" r="2.5" fill="#222"/></g>
+<text x="96" y="86" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+<text x="230" y="310" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">上（<tspan font-family="Times New Roman, serif" font-style="italic">z</tspan> 軸の正の側）から見た図</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 275">
+<defs><marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<line x1="70" y1="220" x2="360" y2="220" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+<line x1="70" y1="220" x2="70" y2="15" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+<text x="366" y="225" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">r</text>
+<text x="78" y="20" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">電場の大きさ（中心軸向き）</text>
+<path d="M70,220 L150,220 M150,148.0 L270,40.0 M270,220 L350,220" fill="none" stroke="#1f5fbf" stroke-width="2.2"/>
+<line x1="150" y1="220" x2="150" y2="148.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="270" y1="220" x2="270" y2="40.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="70" y1="40.0" x2="270" y2="40.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="70" y1="148.0" x2="150" y2="148.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="64" y="45.0" text-anchor="end" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">ωBb</text>
+<text x="64" y="153.0" text-anchor="end" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">ωBa</text>
+<text x="150" y="240" text-anchor="middle" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">a</text>
+<text x="270" y="240" text-anchor="middle" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">b</text>
+<text x="128" y="262" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">σ<tspan baseline-shift="sub" font-size="10">a</tspan> &lt; 0</text>
+<text x="210.0" y="262" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">ρ &lt; 0（一様）</text>
+<text x="280" y="262" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">σ<tspan baseline-shift="sub" font-size="10">b</tspan> &gt; 0</text>
+<text x="110.0" y="210" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">中空部</text>
+<text x="210.0" y="210" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">金属</text>
+<text x="310" y="210" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">外部</text>
+</svg>

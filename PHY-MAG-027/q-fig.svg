@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400">
+  <defs>
+    <marker id="q-ak" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M0,1 L9,5 L0,9 z" fill="#222"/>
+    </marker>
+  </defs>
+  <!-- floor -->
+  <line x1="30" y1="340" x2="530" y2="340" stroke="#222" stroke-width="1.6"/>
+  <g stroke="#222" stroke-width="1">
+    <line x1="40" y1="340" x2="30" y2="352"/><line x1="60" y1="340" x2="50" y2="352"/><line x1="80" y1="340" x2="70" y2="352"/><line x1="100" y1="340" x2="90" y2="352"/><line x1="120" y1="340" x2="110" y2="352"/><line x1="140" y1="340" x2="130" y2="352"/><line x1="160" y1="340" x2="150" y2="352"/><line x1="180" y1="340" x2="170" y2="352"/><line x1="200" y1="340" x2="190" y2="352"/><line x1="220" y1="340" x2="210" y2="352"/><line x1="240" y1="340" x2="230" y2="352"/><line x1="260" y1="340" x2="250" y2="352"/><line x1="280" y1="340" x2="270" y2="352"/><line x1="300" y1="340" x2="290" y2="352"/><line x1="320" y1="340" x2="310" y2="352"/><line x1="340" y1="340" x2="330" y2="352"/><line x1="360" y1="340" x2="350" y2="352"/><line x1="380" y1="340" x2="370" y2="352"/><line x1="400" y1="340" x2="390" y2="352"/><line x1="420" y1="340" x2="410" y2="352"/><line x1="440" y1="340" x2="430" y2="352"/><line x1="460" y1="340" x2="450" y2="352"/><line x1="480" y1="340" x2="470" y2="352"/><line x1="500" y1="340" x2="490" y2="352"/><line x1="520" y1="340" x2="510" y2="352"/><line x1="540" y1="340" x2="530" y2="352"/>
+  </g>
+  <text x="200" y="372" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">なめらかな床</text>
+  <!-- base -->
+  <rect x="110" y="310" width="330" height="30" fill="none" stroke="#222" stroke-width="1.6"/>
+  <text x="250" y="330" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">土台</text>
+  <!-- frame -->
+  <rect x="130" y="110" width="160" height="200" fill="none" stroke="#222" stroke-width="1.6"/>
+  <!-- winch -->
+  <circle cx="210" cy="95" r="12" fill="none" stroke="#222" stroke-width="1.6"/>
+  <line x1="210" y1="107" x2="210" y2="210" stroke="#222" stroke-width="1"/>
+  <text x="228" y="92" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">巻き上げ機（絶縁）</text>
+  <!-- plates -->
+  <rect x="140" y="296" width="140" height="6" fill="#999" stroke="#222" stroke-width="1"/>
+  <rect x="140" y="210" width="140" height="6" fill="#999" stroke="#222" stroke-width="1"/>
+  <text x="70" y="216" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">上極板</text>
+  <text x="70" y="302" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">下極板</text>
+  <!-- z dimension -->
+  <line x1="120" y1="213" x2="120" y2="296" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+  <text x="104" y="260" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">z</text>
+  <!-- wiring: upper plate -> right horizontal -> vertical down -->
+  <polyline points="280,213 340,213 340,240" fill="none" stroke="#222" stroke-width="1.6"/>
+  <!-- switch S1 (battery branch) -->
+  <line x1="340" y1="240" x2="340" y2="250" stroke="#222" stroke-width="1.6"/>
+  <circle cx="340" cy="250" r="2.5" fill="#222"/>
+  <line x1="340" y1="250" x2="352" y2="268" stroke="#222" stroke-width="1.6"/>
+  <circle cx="340" cy="272" r="2.5" fill="#222"/>
+  <text x="352" y="258" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">S<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+  <!-- battery -->
+  <line x1="340" y1="272" x2="340" y2="282" stroke="#222" stroke-width="1.6"/>
+  <line x1="328" y1="282" x2="352" y2="282" stroke="#222" stroke-width="1.6"/>
+  <line x1="334" y1="288" x2="346" y2="288" stroke="#222" stroke-width="3"/>
+  <line x1="340" y1="288" x2="340" y2="299" stroke="#222" stroke-width="1.6"/>
+  <text x="300" y="290" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">V</text>
+  <!-- branch to resistor -->
+  <polyline points="340,240 400,240 400,250" fill="none" stroke="#222" stroke-width="1.6"/>
+  <circle cx="400" cy="250" r="2.5" fill="#222"/>
+  <line x1="400" y1="250" x2="412" y2="266" stroke="#222" stroke-width="1.6"/>
+  <circle cx="400" cy="270" r="2.5" fill="#222"/>
+  <text x="414" y="258" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">S<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+  <rect x="393" y="272" width="14" height="20" fill="none" stroke="#222" stroke-width="1.6"/>
+  <line x1="400" y1="270" x2="400" y2="272" stroke="#222" stroke-width="1.6"/>
+  <line x1="400" y1="292" x2="400" y2="299" stroke="#222" stroke-width="1.6"/>
+  <text x="414" y="288" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">抵抗</text>
+  <!-- bottom common wire to lower plate -->
+  <polyline points="280,299 400,299" fill="none" stroke="#222" stroke-width="1.6"/>
+  <!-- B field symbols -->
+  <g stroke="#222" stroke-width="1.2" fill="none">
+    <circle cx="470" cy="70" r="8"/><circle cx="510" cy="70" r="8"/><circle cx="470" cy="110" r="8"/><circle cx="510" cy="110" r="8"/>
+  </g>
+  <g fill="#222"><circle cx="470" cy="70" r="2"/><circle cx="510" cy="70" r="2"/><circle cx="470" cy="110" r="2"/><circle cx="510" cy="110" r="2"/></g>
+  <text x="472" y="146" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">磁場 <tspan font-family="Times New Roman, serif" font-style="italic">B</tspan></text>
+  <!-- axes -->
+  <circle cx="40" cy="120" r="7" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="40" cy="120" r="2" fill="#222"/>
+  <line x1="40" y1="120" x2="40" y2="55" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+  <line x1="40" y1="120" x2="100" y2="120" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+  <text x="46" y="60" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">z</text>
+  <text x="96" y="112" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">y</text>
+  <text x="22" y="140" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">x</text>
+  <!-- g -->
+  <line x1="480" y1="200" x2="480" y2="250" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+  <text x="490" y="230" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">g</text>
+  <text x="300" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">装置全体（質量 <tspan font-family="Times New Roman, serif" font-style="italic">M</tspan>）</text>
+</svg>

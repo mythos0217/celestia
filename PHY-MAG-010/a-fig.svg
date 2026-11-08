@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360">
+  <defs>
+    <marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/>
+    </marker>
+    <marker id="a-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#888"/>
+    </marker>
+  </defs>
+  <!-- trajectory circle -->
+  <circle cx="250" cy="180" r="100" fill="none" stroke="#c0392b" stroke-width="1.8"/>
+  <!-- tube positions -->
+  <line x1="40" y1="180" x2="400" y2="180" stroke="#222" stroke-width="1.6"/>
+  <g transform="rotate(30 150 180)"><line x1="40" y1="180" x2="400" y2="180" stroke="#888" stroke-width="1" stroke-dasharray="6,4"/></g>
+  <g transform="rotate(60 150 180)"><line x1="60" y1="180" x2="310" y2="180" stroke="#888" stroke-width="1" stroke-dasharray="6,4"/></g>
+  <!-- particle positions -->
+  <circle cx="350" cy="180" r="5.5" fill="#222"/>
+  <circle cx="300" cy="266.6" r="5.5" fill="#222"/>
+  <circle cx="200" cy="266.6" r="5.5" fill="#222"/>
+  <circle cx="150" cy="180" r="3" fill="#222"/>
+  <circle cx="250" cy="180" r="2" fill="#c0392b"/>
+  <text x="128" y="172" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">C</text>
+  <text x="356" y="172" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">出発点</text>
+  <!-- velocity at start (clockwise on screen = downward at right) -->
+  <line x1="350" y1="180" x2="350" y2="240" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+  <text x="356" y="236" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf">v</text>
+  <!-- angle phi -->
+  <path d="M 200 180 A 50 50 0 0 1 193.3 205" fill="none" stroke="#222" stroke-width="1"/>
+  <text x="203" y="204" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">φ</text>
+  <!-- labels -->
+  <text x="304" y="296" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">r = r<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan><tspan font-style="normal"> cos</tspan> φ</text>
+  <line x1="250" y1="180" x2="250" y2="80" stroke="#888" stroke-width="1" marker-end="url(#a-ag)"/>
+  <text x="256" y="128" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#888">r<tspan baseline-shift="sub" font-size="10">0</tspan>/2</text>
+  <text x="20" y="340" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">ω = ω<tspan baseline-shift="sub" font-size="10">c</tspan>/2：地面から見た小球の軌道（赤）と管の位置（破線）</text>
+</svg>

@@ -1,0 +1,115 @@
+{
+ "id": "SYN-MSP-001",
+ "schema": "celestia.problem/1",
+ "field": "ESY",
+ "unit": "ESY-01",
+ "topic": "質量分析器（加速と磁場中の円運動）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "derivation",
+  "synthesis"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "質量 $m$，電気量 $q\\ (>0)$ のイオンを，静止した状態から電位差 $V$ で加速し，磁束密度 $B$ の一様な磁場に垂直に入射させた．イオンは半円を描いて検出器に達した．重力は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "磁場に入射するときのイオンの速さ $v$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "磁場中の円運動の半径 $r$ を，$m$，$q$，$V$，$B$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ電気量で質量が $4m$ のイオンでは，半径は何倍になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v=\\sqrt{\\dfrac{2qV}m}$",
+    "grading": "v：sqrt(2q V/m)"
+   },
+   {
+    "id": "2",
+    "tex": "$r=\\dfrac1B\\sqrt{\\dfrac{2mV}q}$",
+    "grading": "r：sqrt(2m V/q)/B"
+   },
+   {
+    "id": "3",
+    "tex": "$2$ 倍",
+    "grading": "2倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 電場がする仕事 $qV$ が運動エネルギーに：$\\dfrac12mv^2=qV$ より $v=\\sqrt{\\dfrac{2qV}m}$．\n\n(2) ローレンツ力が向心力：$r=\\dfrac{mv}{qB}=\\dfrac mqB\\sqrt{\\dfrac{2qV}m}=\\dfrac1B\\sqrt{\\dfrac{2mV}q}$．\n\n(3) $r\\propto\\sqrt m$ なので $\\sqrt4=2$ 倍．同じ電気量なら，質量の違いが半径の違いになって分けられる（同位体の分析）．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "加速はエネルギー保存，曲がり方は円運動の運動方程式．"
+ },
+ "simulation": {
+  "id": "elm.lorentz",
+  "preset": {
+   "A": 1,
+   "Z": 1,
+   "v": 10,
+   "B": 0.5
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "lorentz-force",
+  "coulomb-field",
+  "circular-motion"
+ ],
+ "laws": [
+  "cyclotron-motion",
+  "uniform-field-potential",
+  "work-energy-theorem"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "質量分析器",
+  "ローレンツ力",
+  "融合"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,134 @@
+{
+ "id": "ESY-SEL-001",
+ "schema": "celestia.problem/1",
+ "field": "ESY",
+ "unit": "ESY-01",
+ "topic": "速度選別器と磁場中の円運動",
+ "course": "物理",
+ "level": 2,
+ "minutes": 12,
+ "format": [
+  "derivation",
+  "synthesis"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "間隔 $d$ の平行な2枚の極板の間に電位差 $V$ をかける（上の極板が高電位）．極板の間には，紙面の表から裏に向かう磁束密度 $B$ の一様な磁場もかけてある．質量 $m$，電気量 $q\\ (>0)$ の粒子を，極板に平行に（左から右へ）いろいろな速さで入射させる．極板の右方にある境界線（図の破線）より右の領域には，紙面の表から裏に向かう磁束密度 $B_2$ の一様な磁場だけがあり，極板と境界線の間には電場も磁場もない．重力は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "極板の間で粒子が電場から受ける力の大きさを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "極板の間を直進する粒子の速さ $v_0$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "極板の間を直進して右の領域に入った粒子は，半円を描いた．その半径 $R$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "粒子が右の領域で半円を描くのにかかる時間 $t$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "apparatus",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "上が高電位の平行板の間に、紙面の表から裏へ向かう磁場 B。粒子が左から速さ v で入射し、極板を出た先の磁場 B₂ の領域で半円を描く",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{qV}{d}$",
+    "grading": "q V/d"
+   },
+   {
+    "id": "2",
+    "tex": "$v_0=\\dfrac{V}{Bd}$",
+    "grading": "v_0：V/(B d)"
+   },
+   {
+    "id": "3",
+    "tex": "$R=\\dfrac{mV}{qBB_2d}$",
+    "grading": "R：m V/(q B B_2 d)"
+   },
+   {
+    "id": "4",
+    "tex": "$t=\\dfrac{\\pi m}{qB_2}$",
+    "grading": "t：π m/(q B_2)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 極板間の電場は $E=\\dfrac Vd$（下向き）．力の大きさは $qE=\\dfrac{qV}d$．\n\n(2) 磁場から受けるローレンツ力 $qvB$ は，フレミングの左手の法則で上向き．電場からの力（下向き）とつり合えば直進する：$qv_0B=\\dfrac{qV}d$ より $v_0=\\dfrac V{Bd}$．速さが $v_0$ と違う粒子は曲がって極板に当たるので，この装置は特定の速さの粒子だけを通す（速度選別器）．\n\n(3) 右の領域ではローレンツ力が向心力：$m\\dfrac{v_0^2}R=qv_0B_2$ より $R=\\dfrac{mv_0}{qB_2}=\\dfrac{mV}{qBB_2d}$．\n\n(4) 周期 $T=\\dfrac{2\\pi R}{v_0}=\\dfrac{2\\pi m}{qB_2}$ の半分：$t=\\dfrac{\\pi m}{qB_2}$．速さによらない．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "直進する条件は「電場からの力 = ローレンツ力」．極板を出たら磁場だけなので等速円運動．"
+ },
+ "simulation": {
+  "id": "elm.lorentz",
+  "preset": {},
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "lorentz-force",
+  "coulomb-field",
+  "circular-motion"
+ ],
+ "laws": [
+  "lorentz-force",
+  "uniform-field-potential",
+  "cyclotron-motion"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "速度選別器",
+  "ローレンツ力",
+  "一様な電場",
+  "融合"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

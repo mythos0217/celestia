@@ -1,0 +1,145 @@
+{
+ "id": "PHY-EMX-003",
+ "schema": "celestia.problem/1",
+ "field": "ESY",
+ "unit": "ESY-01",
+ "topic": "磁場中で回転する厚い金属円筒の内部・表面に現れる電荷分布（ローレンツ力とつり合う電場とガウスの法則）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation",
+  "synthesis"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "十分に長い金属の厚い円筒（内半径 $a$，外半径 $b$）が，中心軸のまわりに一定の角速度 $\\omega$ で回転している．円筒は中心軸に平行な一様な磁場（磁束密度の大きさ $B$）の中にあり，回転の向きは，図のように磁場の向きに右ねじが進むときにねじを回す向きである．円筒は全体として電気的に中性である．\n\n十分に時間がたった定常状態では，金属中の自由電子も円筒とともに回転し，半径 $r$ の位置の電子は半径 $r$，速さ $r\\omega$ の等速円運動をしている．電子の電荷を $-e$，質量を $m$ とし，金属内でも誘電率は真空の誘電率 $\\varepsilon_0$ と同じとみなす．電場は中心軸から遠ざかる向き，または近づく向きで，その大きさは $r$ だけで決まる．回転による磁場の変化は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "まず，電子の質量を無視する（電子にはたらく力がつり合うとする）．金属中の半径 $r$ の位置での電場の大きさと向きを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "中空部（$r<a$）と円筒の外部（$r>b$）では電場は $0$ である．中心軸を軸とする半径 $r$，長さ $h$ の円筒面にガウスの法則（この面から出る電気力線の本数は，内部の電荷を $\\varepsilon_0$ で割ったものに等しい）を用いて，金属内部の電荷密度 $\\rho$，内側の表面の面電荷密度 $\\sigma_a$，外側の表面の面電荷密度 $\\sigma_b$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "内側の表面と外側の表面の電位差を求め，どちらの電位が高いか答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$B=0.50\\ \\mathrm{T}$，$\\omega=1.0\\times10^{2}\\ \\mathrm{rad/s}$ のとき，金属内部の電子の数密度は回転していないときと比べてどれだけ増えるか，または減るか．$\\varepsilon_0=8.85\\times10^{-12}\\ \\mathrm{F/m}$，$e=1.60\\times10^{-19}\\ \\mathrm{C}$ として有効数字2桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "電子の質量 $m$ を考慮すると，(2) の $\\rho$ はどう表されるか．回転の向きを図と同じ向き，逆向きのそれぞれの場合について，$\\rho=0$ となる角速度が存在するかを調べ，存在するならその値を求めよ．また，$B=0.50\\ \\mathrm{T}$ のときのその値を，$m=9.11\\times10^{-31}\\ \\mathrm{kg}$ として有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：磁場中で回転する厚い金属円筒の内部・表面に現れる電荷分布（ローレンツ力とつり合う電場とガウスの法則）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：磁場中で回転する厚い金属円筒の内部・表面に現れる電荷分布（ローレンツ力とつり合う電場とガウスの法則）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "大きさ $\\omega Br$，向きは中心軸に向かう向き"
+   },
+   {
+    "id": "2",
+    "tex": "$\\rho=-2\\varepsilon_0\\omega B$，$\\sigma_a=-\\varepsilon_0\\omega Ba$，$\\sigma_b=\\varepsilon_0\\omega Bb$"
+   },
+   {
+    "id": "3",
+    "tex": "外側の表面の方が $\\dfrac12\\omega B(b^2-a^2)$ だけ高い"
+   },
+   {
+    "id": "4",
+    "tex": "$5.5\\times10^{9}\\ \\mathrm{m^{-3}}$ だけ増える"
+   },
+   {
+    "id": "5",
+    "tex": "$\\rho=-2\\varepsilon_0\\omega\\left(B-\\dfrac{m\\omega}{e}\\right)$（$\\omega$ は図の向きを正とした符号つき）；図と同じ向きのときだけ $\\omega=\\dfrac{eB}{m}$ で $\\rho=0$（逆向きでは存在しない）；$8.8\\times10^{10}\\ \\mathrm{rad/s}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 電子にはたらく力}\n\n半径 $r$ の電子は回転の向きに速さ $r\\omega$ で動く．正電荷がこの向きに動くと，磁場が回転軸の右ねじの向きなので，ローレンツ力は中心から遠ざかる向きになる．電子は負電荷なので，ローレンツ力 $e(r\\omega)B$ は\\textbf{中心軸に向かう向き}である．\n\n電子の質量を無視すると，電子にはたらく力はつり合わなければならないので，電場から外向きに $e\\omega Br$ の力を受ける必要がある．電子は電場と逆向きに力を受けるから，電場は\n\\[ \\text{大きさ}\\ \\boldsymbol{\\omega Br},\\qquad \\text{向き：}\\boldsymbol{\\text{中心軸に向かう向き}} \\]\nである．\n\n\\textbf{(2) ガウスの法則}\n\n$a<r<b$ の半径 $r$，長さ $h$ の円筒面を考える．電場は中心軸向きなので，この面から「出る」電気力線の本数は $-\\omega Br\\cdot2\\pi rh$（底面は電場と平行で寄与しない）．内部の電荷を $Q(r)$ とすると\n\\[ Q(r)=-\\varepsilon_0\\cdot2\\pi\\omega Bh\\,r^2 \\]\n$r\\to a$ のとき内部の電荷は内側の表面の電荷だけになるので\n\\[ \\sigma_a\\cdot2\\pi ah=-2\\pi\\varepsilon_0\\omega Bha^2\\quad\\therefore\\ \\sigma_a=\\boldsymbol{-\\varepsilon_0\\omega Ba} \\]\n（中空部の電場が0であることとも合う：中空部には電荷がないので $r<a$ の円筒面の内部の電荷は0．）\n\n$a<r$ の部分の電荷は $\\rho\\pi(r^2-a^2)h=Q(r)-Q(a)=-2\\pi\\varepsilon_0\\omega Bh(r^2-a^2)$ だから\n\\[ \\rho=\\boldsymbol{-2\\varepsilon_0\\omega B} \\]\n（$r$ によらず一様．）外部の電場が0なので，$r>b$ の円筒面の内部の電荷は0である．よって\n\\[ \\sigma_b\\cdot2\\pi bh=-Q(b)=2\\pi\\varepsilon_0\\omega Bhb^2\\quad\\therefore\\ \\sigma_b=\\boldsymbol{\\varepsilon_0\\omega Bb} \\]\n内側の表面と内部には電子が余り，外側の表面では電子が不足している．\n\n\\textbf{(3)} 電場は中心軸に向かう向きなので，外側ほど電位が高い．$r$ から $r+\\Delta r$ への電位の上昇は $\\omega Br\\Delta r$ だから\n\\[ V_b-V_a=\\int_a^b\\omega Br\\,dr=\\boldsymbol{\\frac12\\omega B(b^2-a^2)} \\]\nで，\\textbf{外側の表面の方が高い}．これは，半径 $a$ から $b$ までの回転する導体棒（ファラデー円板）に生じる誘導起電力 $\\frac12\\omega B(b^2-a^2)$ と一致し，その起電力をつくっているのが (2) の電荷であることがわかる．\n\n\\textbf{(4)} $\\rho<0$ なので電子の数密度は増える．その増加は\n\\[ \\Delta n=\\frac{|\\rho|}{e}=\\frac{2\\varepsilon_0\\omega B}{e}=\\frac{2\\times8.85\\times10^{-12}\\times1.0\\times10^{2}\\times0.50}{1.60\\times10^{-19}}\\approx\\boldsymbol{5.5\\times10^{9}\\ \\mathrm{m^{-3}}} \\]\n金属の自由電子の数密度（$10^{28}\\ \\mathrm{m^{-3}}$ 程度）に比べるときわめて小さい．\n\n\\textbf{(5) 電子の質量を考える}\n\n回転の向きを図の向きを正とした符号つきの $\\omega$ で表す．中心から遠ざかる向きを正として電場を $E_r$ とすると，電子の運動方程式（中心向きの加速度 $r\\omega^2$）は\n\\[ -mr\\omega^2=(-e)E_r+(\\text{ローレンツ力})=-eE_r-e\\omega Br \\]\n（ローレンツ力 $-e\\omega Br$ は $\\omega>0$ で中心向き，$\\omega<0$ で外向き）．よって\n\\[ E_r=\\omega\\left(\\frac{m\\omega}{e}-B\\right)r \\]\n$E_r$ は $r$ に比例するので，(2) と同じ計算（$\\omega B$ を $-\\omega\\left(\\frac{m\\omega}{e}-B\\right)$ におきかえる）で\n\\[ \\rho=\\boldsymbol{-2\\varepsilon_0\\omega\\left(B-\\frac{m\\omega}{e}\\right)} \\]\n・図と同じ向き（$\\omega>0$）：$\\boldsymbol{\\omega=\\dfrac{eB}{m}}$ で $\\rho=0$ となる．このとき $E_r=0$ で表面の電荷も0になる．ローレンツ力だけでちょうど円運動の向心力がまかなえる状態で，電子が磁場中で自然に行う円運動（サイクロトロン運動）の角速度と回転の角速度が一致している．\n\n・逆向き（$\\omega<0$）：$\\rho=2\\varepsilon_0|\\omega|\\left(B+\\dfrac{m|\\omega|}{e}\\right)>0$ で，ローレンツ力が外向きになるため，電場が向心力とローレンツ力の両方を打ち消さなければならず，$\\rho=0$ となる角速度は\\textbf{存在しない}．\n$B=0.50\\ \\mathrm{T}$ では\n\\[ \\omega=\\frac{eB}{m}=\\frac{1.60\\times10^{-19}\\times0.50}{9.11\\times10^{-31}}\\approx\\boldsymbol{8.8\\times10^{10}\\ \\mathrm{rad/s}} \\]\nで，現実の物体を回転させることはできない．ふつうの回転速度では $\\frac{m\\omega}{e}\\ll B$ なので，(1)〜(4) のように電子の質量を無視してよい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "磁場中で回転する導体内の電子には回転速度によるローレンツ力がはたらき，定常状態ではそれと（向心力の分を除いて）つり合う中心向きの電場 $\\omega Br$ が生じる．電場が $r$ に比例するので，ガウスの法則から内部には一様な電荷密度 $-2\\varepsilon_0\\omega B$ が，内外の表面には逆符号の面電荷が現れ，電子の質量を含めると回転の向きによっては角速度 $eB/m$ で電荷が消える．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "circular-motion",
+  "torque"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ローレンツ力",
+  "ガウスの法則",
+  "回転する導体",
+  "電荷分布",
+  "ファラデー円板",
+  "サイクロトロン角振動数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

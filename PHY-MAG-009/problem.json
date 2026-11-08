@@ -1,0 +1,135 @@
+{
+ "id": "PHY-MAG-009",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "電極がずれたホール素子：磁場の反転による抵抗分とホール電圧の分離，ホール角と移動度",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は，幅 $w=2.0\\ \\mathrm{mm}$（$y$ 方向），厚さ $h=0.50\\ \\mathrm{mm}$（$z$ 方向）の細長い直方体の半導体試料を上から見たものである．$x$ 軸の正の向きに電流 $I=2.0\\ \\mathrm{mA}$ を流し，$z$ 軸方向に一様な磁場をかける（磁束密度 $B$ は $z$ 軸の正の向き，すなわち紙面の裏から表の向きを正とする）．側面 $y=0$ 上の点 P と側面 $y=w$ 上の点 Q の間の電位差 $V=V_{\\mathrm P}-V_{\\mathrm Q}$ を電圧計で測る．P と Q は $x$ 座標が等しくなるように取り付けるはずであったが，Q は P より電流の下流側に $s=0.20\\ \\mathrm{mm}$ ずれていた．\n\n試料内の電流は一様で，電荷を運ぶ粒子（キャリア）は1種類，その電荷の大きさは $e=1.6\\times10^{-19}\\ \\mathrm C$ とする．測定の結果，$B=+0.50\\ \\mathrm T$ のとき $V=+0.30\\ \\mathrm{mV}$，$B=-0.50\\ \\mathrm T$ のとき $V=+2.10\\ \\mathrm{mV}$ であった．数値は有効数字2桁で答えよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$B=0$ のときの $V$ を求めよ．また，$V$ のうち $B$ に比例する部分の大きさを $B=0.50\\ \\mathrm T$ について求め，キャリアの電荷が正か負かを理由とともに答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "キャリアの数密度 $n$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "試料の抵抗率 $\\rho$ と，キャリアの移動度 $\\mu$（電流の向きの電場の強さに対する，キャリアの平均の速さの比）を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$V=0$ となる磁束密度 $B^*$ を求めよ．また，$B=B^*$ のときの試料内の等電位線が $y$ 軸となす角を $\\varphi$ として，$\\tan\\varphi$ を $w$，$s$ で表し，$\\mu B^*$ と比較せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：電極がずれたホール素子：磁場の反転による抵抗分とホール電圧の分離，ホール角と移動度",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：電極がずれたホール素子：磁場の反転による抵抗分とホール電圧の分離，ホール角と移動度",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V=1.2\\ \\mathrm{mV}$；$B$ に比例する部分は $0.90\\ \\mathrm{mV}$（$B>0$ で P 側が低くなる向き），キャリアは負（電子）"
+   },
+   {
+    "id": "2",
+    "tex": "$n=1.4\\times10^{22}\\ \\mathrm{m^{-3}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\rho=3.0\\times10^{-3}\\ \\Omega\\cdot\\mathrm m$，$\\mu=0.15\\ \\mathrm{m^2/(V\\cdot s)}$"
+   },
+   {
+    "id": "4",
+    "tex": "$B^*=+0.67\\ \\mathrm T$，$\\tan\\varphi=\\dfrac{s}{w}=0.10$ で $\\mu B^*$ に等しい"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{$V$ の2つの成分}\n\n試料内の電場の $x$ 成分を $E_x$ とすると，電流は $+x$ 向きなので電位は下流ほど低い．Q は P より $s$ 下流にあるので，磁場がなくても $V_{\\mathrm P}-V_{\\mathrm Q}=E_xs$（抵抗による成分 $V_0$）が現れる．磁場があると，キャリアがローレンツ力で側面に寄せられ，$y$ 方向の電場（ホール電場）が生じる．ホール電圧は $B$ に比例し，$B$ の向きを反転すると符号が変わる．したがって\n\\[ V(B)=V_0+V_{\\mathrm H}(B),\\qquad V_{\\mathrm H}(-B)=-V_{\\mathrm H}(B) \\]\n\n\\textbf{(1)}\n\n2つの測定の和と差から\n\\[ V_0=\\frac{0.30+2.10}{2}=\\boldsymbol{1.2\\ \\mathrm{mV}},\\qquad V_{\\mathrm H}(+0.50\\ \\mathrm T)=\\frac{0.30-2.10}{2}=-0.90\\ \\mathrm{mV} \\]\n$B$ に比例する部分の大きさは $\\boldsymbol{0.90\\ \\mathrm{mV}}$ で，$B>0$ では P（$y=0$ 側）が Q 側より低電位になる向きである．\n\nキャリアが正なら $+x$ 向きに動き，$B>0$ ではローレンツ力 $q\\vec v\\times\\vec B$ は $-y$ 向きで，正電荷が $y=0$ 側にたまり P 側が高電位になるはずである．キャリアが負なら $-x$ 向きに動き，力 $(-e)(-v\\hat x)\\times(B\\hat z)$ もやはり $-y$ 向きで，負電荷が $y=0$ 側にたまり P 側が低電位になる．測定は後者なので，キャリアは\\textbf{負（電子）}である．\n\n\\textbf{(2)}\n\nキャリアの平均の速さを $v_{\\mathrm d}$ とすると $I=nev_{\\mathrm d}wh$．定常状態では $y$ 方向にキャリアが動かないので，ホール電場の力とローレンツ力がつり合い $E_y=v_{\\mathrm d}B$．よってホール電圧の大きさは\n\\[ |V_{\\mathrm H}|=v_{\\mathrm d}Bw=\\frac{IB}{neh} \\]\n\\[ n=\\frac{IB}{eh|V_{\\mathrm H}|}=\\frac{2.0\\times10^{-3}\\times0.50}{1.6\\times10^{-19}\\times0.50\\times10^{-3}\\times0.90\\times10^{-3}}=\\boldsymbol{1.4\\times10^{22}\\ \\mathrm{m^{-3}}} \\]\n\n\\textbf{(3)}\n\n$E_x=\\rho\\dfrac{I}{wh}$ なので $V_0=E_xs=\\rho\\dfrac{Is}{wh}$．\n\\[ \\rho=\\frac{V_0wh}{Is}=\\frac{1.2\\times10^{-3}\\times2.0\\times10^{-3}\\times0.50\\times10^{-3}}{2.0\\times10^{-3}\\times0.20\\times10^{-3}}=\\boldsymbol{3.0\\times10^{-3}\\ \\Omega\\cdot\\mathrm m} \\]\n\\[ \\mu=\\frac{v_{\\mathrm d}}{E_x}=\\frac{I/(newh)}{\\rho I/(wh)}=\\frac{1}{ne\\rho}=\\boldsymbol{0.15\\ \\mathrm{m^2/(V\\cdot s)}} \\]\n\n\\textbf{(4)}\n\n$V(B)=V_0-\\dfrac{IB}{neh}$（$B$ はテスラ単位で $V=1.2-1.8B$ [mV]）が $0$ になるのは\n\\[ B^*=\\frac{neh\\,V_0}{I}=\\frac{1.2}{1.8}=\\boldsymbol{+0.67\\ \\mathrm T} \\]\n\n$V=0$ は P と Q が同じ等電位線上にあることを意味する．P から Q へは $x$ 方向に $s$，$y$ 方向に $w$ 進むので，等電位線が $y$ 軸となす角は $\\tan\\varphi=\\boldsymbol{\\dfrac{s}{w}}=0.10$．一方，電場は $E_x$ と $E_y=v_{\\mathrm d}B$ の合成で，等電位線は電場に垂直だから，等電位線が $y$ 軸となす角は電場が $x$ 軸となす角に等しく\n\\[ \\tan\\varphi=\\frac{E_y}{E_x}=\\frac{v_{\\mathrm d}B}{E_x}=\\mu B \\]\n$B=B^*$ では $\\mu B^*=0.15\\times\\dfrac23=0.10$ となり，$\\dfrac sw$ と\\textbf{一致する}．磁場は電流の向きを変えずに電場（等電位線）の向きを $\\mu B$ だけ傾けるので，ずれた電極の組がちょうど等電位線に乗る磁場で読みが $0$ になる，と幾何学的にも理解できる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ずれた電極間の電圧は，磁場に依存しない抵抗分と，磁場の向きで符号が変わるホール電圧の和なので，磁場を反転した2回の測定で分離できる．ホール電場は等電位線を電流方向に対して $\\tan\\varphi=\\mu B$（ホール角）だけ傾けるため，電極のずれがちょうど等電位線に乗る磁場で読みが0になり，そこから移動度が読み取れる．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "coulomb-field"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ホール効果",
+  "ホール角",
+  "移動度",
+  "抵抗率",
+  "磁場の反転",
+  "測定誤差"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

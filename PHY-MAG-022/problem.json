@@ -1,0 +1,113 @@
+{
+ "id": "PHY-MAG-022",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "厚い巻線のソレノイドの発熱：導線の太さによらないことと，内外の層で太さを変える最適化",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "長さ $\\ell$ の長いソレノイドの巻線が，図のように内半径 $a$，外半径 $b$ の2つの共軸円筒の間の空間をすき間なく満たしている．導線の断面は1辺の長さ $d$ の正方形で（$d\\ll b-a$），導線の抵抗率は $\\rho$ とし，被覆の厚さは無視する．$\\ell\\gg b$ とし，端の効果は無視する．巻線を何層に重ねても，中空部（半径 $a$ より内側）の磁束密度は，真空の透磁率を $\\mu_0$，全巻数を $N$，電流を $I$ として $B=\\mu_0\\dfrac{N}{\\ell}I$ で与えられる．また，半径 $r_1$ から $r_2$ までの範囲に同じ巻数の層を重ねて巻いた部分では，1巻きの長さの平均を $\\pi(r_1+r_2)$ としてよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "全体を1種類の導線（1辺 $d$）で巻き，中空部に磁束密度 $B$ をつくる．必要な電流 $I$，電源電圧 $V$，巻線での消費電力 $P_1$ を求めよ．$P_1$ が $d$ によらないことを確かめよ．"
+     },
+     {
+      "id": "2",
+      "tex": "次に，$a<r<c$ の部分を1辺 $d_1$ の導線で，$c<r<b$ の部分を1辺 $d_2$ の導線で巻き，両者を直列につなぐ．同じ $B$ をつくるときの消費電力 $P_2$ を最小にする $\\dfrac{d_1}{d_2}$ と，$P_2$ の最小値を $a,b,c,\\rho,\\ell,B,\\mu_0$ で表せ．さらに $c=2a$，$b=3a$ のとき，$\\dfrac{d_1}{d_2}$ と $\\dfrac{P_2}{P_1}$ の最小値を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の考えを層の数を増やして進めると，最適な巻き方では半径 $r$ の位置の電流密度（導線の単位断面積あたりの電流）$j(r)$ が $r$ に反比例することがわかる．$j(r)=\\dfrac{A}{r}$（$A$ は定数）として，同じ $B$ をつくるときの消費電力 $P_\\infty$ を求め，$b=3a$ のときの $\\dfrac{P_\\infty}{P_1}$ を有効数字2桁で求めよ．ただし，中空部の磁束密度は $\\dfrac{B}{\\mu_0}=\\displaystyle\\int_a^b j(r)\\,dr$，消費電力は $P_\\infty=\\rho\\ell\\displaystyle\\int_a^b j(r)^2\\cdot2\\pi r\\,dr$ で与えられるものとする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：厚い巻線のソレノイドの発熱：導線の太さによらないことと，内外の層で太さを変える最適化",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$I=\\dfrac{Bd^2}{\\mu_0(b-a)}$，$V=\\dfrac{\\pi\\rho\\ell B(a+b)}{\\mu_0d^2}$，$P_1=\\dfrac{\\pi\\rho\\ell B^2}{\\mu_0^2}\\cdot\\dfrac{b+a}{b-a}$（$d$ によらない）"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{d_1}{d_2}=\\sqrt{\\dfrac{c+a}{b+c}}$，$P_2$ の最小値 $\\dfrac{\\pi\\rho\\ell B^2}{\\mu_0^2}\\cdot\\dfrac{(c+a)(b+c)}{2c(b-a)}$；$c=2a,\\ b=3a$ のとき $\\dfrac{d_1}{d_2}=\\sqrt{\\dfrac35}\\approx0.77$，$\\dfrac{P_2}{P_1}=\\dfrac{15}{16}$"
+   },
+   {
+    "id": "3",
+    "tex": "$P_\\infty=\\dfrac{2\\pi\\rho\\ell B^2}{\\mu_0^2\\log(b/a)}$，$\\dfrac{P_\\infty}{P_1}=\\dfrac{1}{\\log3}\\approx0.91$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "以下 $K=\\dfrac{\\pi\\rho\\ell B^2}{\\mu_0^2}$ とおく．\n\n\\textbf{(1)} 巻線の断面（中心軸を含む断面の片側）は $(b-a)\\times\\ell$ の長方形で，導線1本が $d^2$ を占めるので全巻数は $N=\\dfrac{(b-a)\\ell}{d^2}$．導線の全長は $\\pi(a+b)N$ だから，抵抗は\n\\[ R_{\\rm w}=\\rho\\frac{\\pi(a+b)N}{d^2}=\\frac{\\pi\\rho(a+b)(b-a)\\ell}{d^4} \\]\n$B=\\mu_0\\dfrac{N}{\\ell}I$ より\n\\[ I=\\frac{B\\ell}{\\mu_0N}=\\boldsymbol{\\frac{Bd^2}{\\mu_0(b-a)}},\\qquad V=IR_{\\rm w}=\\boldsymbol{\\frac{\\pi\\rho\\ell B(a+b)}{\\mu_0d^2}} \\]\n\\[ P_1=IV=\\boldsymbol{K\\,\\frac{b+a}{b-a}} \\]\nとなり，$d$ を含まない．導線を細くすると巻数は $d^{-2}$ に比例して増えるので必要な電流は $d^2$ に比例して減るが，抵抗が $d^{-4}$ に比例して増えるので，$I^2R_{\\rm w}$ は変わらない．言いかえると，$B$ は電流密度 $j=I/d^2$ と巻線の厚さで決まり（$B/\\mu_0=j(b-a)$），発熱は単位体積あたり $\\rho j^2$ で巻線の体積だけで決まるので，導線の太さは電源の電圧と電流の配分を変えるだけである．\n\n\\textbf{(2)} 各層の電流密度を $j_1=\\dfrac{I}{d_1^2}$，$j_2=\\dfrac{I}{d_2^2}$ とする．(1) と同様に，各層の巻数は $N_1=\\dfrac{(c-a)\\ell}{d_1^2}$，$N_2=\\dfrac{(b-c)\\ell}{d_2^2}$ なので\n\\[ \\frac{B}{\\mu_0}=\\frac{(N_1+N_2)I}{\\ell}=j_1(c-a)+j_2(b-c) \\]\n各層の消費電力は「単位体積あたり $\\rho j^2$ $\\times$ 体積」である（(1) の $P_1$ が $\\rho j^2\\cdot\\pi(b^2-a^2)\\ell$ に等しいことからもわかる）：\n\\[ P_2=\\rho\\ell\\pi\\{j_1^2(c^2-a^2)+j_2^2(b^2-c^2)\\} \\]\n$x_1=j_1(c-a)$，$x_2=j_2(b-c)$ とおくと，$x_1+x_2=\\dfrac{B}{\\mu_0}$ が一定で\n\\[ P_2=\\pi\\rho\\ell(w_1x_1^2+w_2x_2^2),\\qquad w_1=\\frac{c+a}{c-a},\\quad w_2=\\frac{b+c}{b-c} \\]\n$x_2=\\dfrac{B}{\\mu_0}-x_1$ を代入した $x_1$ の2次関数は $x_1=\\dfrac{w_2}{w_1+w_2}\\cdot\\dfrac{B}{\\mu_0}$ で最小になる．つまり $w_1x_1=w_2x_2$ のときで，最小値は\n\\[ P_2=\\pi\\rho\\ell\\frac{w_1w_2}{w_1+w_2}\\left(\\frac{B}{\\mu_0}\\right)^2=K\\cdot\\frac{1}{\\frac{1}{w_1}+\\frac{1}{w_2}}=\\boldsymbol{K\\,\\frac{(c+a)(b+c)}{2c(b-a)}} \\]\n（$\\frac1{w_1}+\\frac1{w_2}=\\frac{(c-a)(b+c)+(b-c)(c+a)}{(c+a)(b+c)}=\\frac{2c(b-a)}{(c+a)(b+c)}$ を用いた．）このとき\n\\[ \\frac{j_1}{j_2}=\\frac{x_1/(c-a)}{x_2/(b-c)}=\\frac{w_2}{w_1}\\cdot\\frac{b-c}{c-a}=\\frac{b+c}{c+a} \\]\nで，$\\dfrac{j_1}{j_2}=\\dfrac{d_2^2}{d_1^2}$ だから $\\dfrac{d_1}{d_2}=\\boldsymbol{\\sqrt{\\dfrac{c+a}{b+c}}}$．内側の層ほど細い導線（大きい電流密度）にするのがよい．内側の1巻きは短く，同じ電流密度でも発熱が少ないので，そこに電流を集めた方が得なのである．\n\n$c=2a$，$b=3a$ では $\\dfrac{d_1}{d_2}=\\boldsymbol{\\sqrt{\\dfrac35}}\\approx0.77$，$P_2=K\\dfrac{3a\\cdot5a}{4a\\cdot2a}=\\dfrac{15}{8}K$，$P_1=K\\dfrac{4a}{2a}=2K$ だから $\\dfrac{P_2}{P_1}=\\boldsymbol{\\dfrac{15}{16}}$．\n\n\\textbf{(3)} 層を細かく分けると，(2) と同じ計算で各層の電流密度は $\\dfrac{1}{(\\text{層の内半径})+(\\text{層の外半径})}$，すなわち層の半径に反比例する．$j=\\dfrac{A}{r}$ とすると\n\\[ \\frac{B}{\\mu_0}=\\int_a^b\\frac{A}{r}\\,dr=A\\log\\frac{b}{a}\\quad\\therefore\\ A=\\frac{B}{\\mu_0\\log(b/a)} \\]\n\\[ P_\\infty=\\rho\\ell\\int_a^b\\frac{A^2}{r^2}\\,2\\pi r\\,dr=2\\pi\\rho\\ell A^2\\log\\frac ba=\\boldsymbol{\\frac{2\\pi\\rho\\ell B^2}{\\mu_0^2\\log(b/a)}}=\\frac{2K}{\\log(b/a)} \\]\n$b=3a$ では $P_1=2K$ なので $\\dfrac{P_\\infty}{P_1}=\\dfrac{1}{\\log3}=\\boldsymbol{0.91}$．2層に分けただけで（$\\frac{15}{16}\\approx0.94$），理想的な巻き方による節約（約9\\%）の大部分が得られている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "巻線の空間が決まっていれば，中空部の磁場は電流密度×巻線の厚さで，発熱は単位体積あたり $\\rho j^2$ で決まるので，導線の太さは発熱に影響せず電源の電圧・電流の配分を変えるだけである．一方，1巻きの長さは半径に比例するので，同じ磁場を少ない発熱でつくるには内側ほど電流密度を大きくすればよく，2層なら重みつき2乗和の最小化，極限では $j\\propto1/r$ が最適になる．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "electric-power"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ソレノイド",
+  "ジュール熱",
+  "電流密度",
+  "最適化",
+  "抵抗率"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

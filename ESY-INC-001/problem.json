@@ -1,0 +1,121 @@
+{
+ "id": "ESY-INC-001",
+ "schema": "celestia.problem/1",
+ "field": "ESY",
+ "unit": "ESY-01",
+ "topic": "斜面のレールをすべり下りる導体棒",
+ "course": "物理",
+ "level": 2,
+ "minutes": 12,
+ "format": [
+  "derivation",
+  "synthesis"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水平と角 $\\theta$ をなす斜面に，間隔 $l$ の2本の平行な導体のレールを最大傾斜の向きに置き，上端を抵抗値 $R$ の抵抗でつなぐ．斜面に垂直な向きに磁束密度 $B$ の一様な磁場をかける．質量 $m$ の導体棒をレールに垂直に置いて静かに放すと，棒はレールに垂直なまますべり下りた．レールと棒の電気抵抗，摩擦，回路を流れる電流がつくる磁場は無視し，重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "棒の速さが $v$ のとき，棒に生じる誘導起電力の大きさを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "そのとき棒が磁場から受ける力の大きさ $F$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "十分に時間がたつと棒の速さは一定値 $v_f$ になる．$v_f$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "速さが $v_f$ のとき，抵抗で1秒あたりに発生するジュール熱 $P$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$Blv$",
+    "grading": "B l v"
+   },
+   {
+    "id": "2",
+    "tex": "$F=\\dfrac{B^2l^2v}{R}$",
+    "grading": "F：B^2 l^2 v/R"
+   },
+   {
+    "id": "3",
+    "tex": "$v_f=\\dfrac{mgR\\sin\\theta}{B^2l^2}$",
+    "grading": "v_f：m g R sin(θ)/(B^2 l^2)"
+   },
+   {
+    "id": "4",
+    "tex": "$P=\\dfrac{(mg\\sin\\theta)^2R}{B^2l^2}$",
+    "grading": "P：(m g sin(θ))^2 R/(B^2 l^2)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 磁場は斜面に垂直，棒の速度は斜面に沿う．棒が1秒間に横切る面積は $lv$ なので，誘導起電力は $V=Blv$．\n\n(2) 電流 $I=\\dfrac{Blv}R$．電流が磁場から受ける力 $F=IBl=\\dfrac{B^2l^2v}R$．レンツの法則より，この力は棒の運動を妨げる向き（斜面に沿って上向き）．\n\n(3) 斜面に沿った運動方程式は $ma=mg\\sin\\theta-\\dfrac{B^2l^2v}R$．速さが増えると加速度が小さくなり，$a=0$ で一定の速さになる：$v_f=\\dfrac{mgR\\sin\\theta}{B^2l^2}$．\n\n(4) $P=RI^2=\\dfrac{(Blv_f)^2}R$．$v_f$ を代入して $P=\\dfrac{(mg\\sin\\theta)^2R}{B^2l^2}$．これは重力が1秒あたりにする仕事 $mg\\sin\\theta\\cdot v_f$ に等しい：速さが一定なので，重力がした仕事がすべてジュール熱になる．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "誘導起電力 → 電流 → 電流が受ける力 → 運動方程式．一定の速さでは，重力の仕事率 = ジュール熱．"
+ },
+ "simulation": {
+  "id": "elm.induction",
+  "preset": {},
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "equation-of-motion",
+  "electric-power"
+ ],
+ "laws": [
+  "motional-emf",
+  "current-force",
+  "newton-2nd",
+  "joule-heat"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "電磁誘導",
+  "終端速度",
+  "斜面",
+  "融合"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

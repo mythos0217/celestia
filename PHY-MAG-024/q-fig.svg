@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360">
+  <defs>
+    <marker id="q-ax" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+    <marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+    <marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <g id="q-ot"><circle cx="0" cy="0" r="7"/><line x1="-5" y1="-5" x2="5" y2="5"/><line x1="-5" y1="5" x2="5" y2="-5"/></g>
+  </defs>
+  <rect x="180" y="30" width="320" height="310" fill="#888" fill-opacity="0.08" stroke="none"/>
+  <g stroke="#222" stroke-width="1.2" fill="none">
+    <line x1="30" y1="250" x2="505" y2="250" marker-end="url(#q-ax)"/>
+    <line x1="180" y1="345" x2="180" y2="25" marker-end="url(#q-ax)"/>
+  </g>
+  <g stroke="#222" stroke-width="1.1" fill="none">
+    <use href="#q-ot" x="240" y="80"/><use href="#q-ot" x="320" y="80"/><use href="#q-ot" x="400" y="80"/><use href="#q-ot" x="470" y="80"/>
+    <use href="#q-ot" x="240" y="160"/><use href="#q-ot" x="320" y="160"/><use href="#q-ot" x="400" y="160"/><use href="#q-ot" x="470" y="160"/>
+    <use href="#q-ot" x="240" y="310"/><use href="#q-ot" x="320" y="310"/><use href="#q-ot" x="400" y="310"/><use href="#q-ot" x="470" y="310"/>
+  </g>
+  <circle cx="70" cy="250" r="6" fill="#222"/>
+  <line x1="78" y1="250" x2="130" y2="250" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <line x1="300" y1="210" x2="420" y2="210" stroke="#c0392b" stroke-width="1.8" marker-start="url(#q-ar)" marker-end="url(#q-ar)"/>
+  <g font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">
+    <text x="496" y="272">x</text>
+    <text x="188" y="34">y</text>
+    <text x="100" y="240" fill="#1f5fbf">v</text>
+    <text x="52" y="280">m, q</text>
+    <text x="352" y="200" fill="#c0392b">E</text>
+    <text x="486" y="118">B</text>
+  </g>
+  <g font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">
+    <text x="164" y="270">O</text>
+    <text x="272" y="236" fill="#c0392b" font-size="13">電場（x 方向，時間で変える）</text>
+    <text x="300" y="56" font-size="13">磁場（紙面の表→裏）</text>
+    <text x="40" y="60" font-size="13">磁場なし</text>
+  </g>
+</svg>

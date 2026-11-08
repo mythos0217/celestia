@@ -1,0 +1,144 @@
+{
+ "id": "PHY-MAG-026",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "距離に比例する中心力と一様磁場の中の荷電粒子（逆回りの2つの円運動の重ね合わせと回転する観測者）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平面を $xy$ 平面とし，鉛直上向きに $z$ 軸をとる．質量 $m$，電荷 $q\\,(>0)$ の小球は，この面上を動き，原点 O からの距離 $r$ に比例する大きさ $kr$（$k>0$）の O に向かう力を受ける．さらに $z$ 軸の正の向きに磁束密度 $B$ の一様な磁場がかかっている．以下，回転の向きは $z$ 軸の正の側（上）から見たものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小球が O を中心とする半径 $r$ の等速円運動をするとき，時計回りの場合の角速度 $\\omega_1$ と反時計回りの場合の角速度 $\\omega_2$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\omega_1-\\omega_2$ と $\\omega_1\\omega_2$ はいずれも $r$ によらないことを示し，$m,k,q,B$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "O のまわりに一定の角速度 $\\Omega$ で時計回りに回転する観測者から見ると，(1) の 2 つの円運動がどちらも同じ大きさの角速度 $\\omega'$ に見えた．$\\Omega$ と $\\omega'$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "この小球の一般の運動は，O を中心とする角速度 $\\omega_1$ の時計回りの等速円運動（半径 $a_1$）と，角速度 $\\omega_2$ の反時計回りの等速円運動（半径 $a_2$）の位置ベクトルの和で表されることが知られている．時刻 $t=0$ に点 $(r_0,0)$ で小球を静かに放した．$a_1,a_2$ を $r_0,\\omega_1,\\omega_2$ で表し，その後の O からの距離の最小値 $r_{\\min}$ と，初めて最小になる時刻 $t_1$ を $r_0,m,q,B,\\omega'$ を用いて表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "$k=\\dfrac{2q^2B^2}{m}$ のとき，小球の軌道は閉じた曲線になる．その周期 $T$ を求めよ．また，1 周期の間に小球の速さが $0$ になる回数，$r_{\\min}$，および速さの最大値を $r_0,q,B,m$ で表し，速さの最大値をエネルギー保存の観点からも確かめよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：距離に比例する中心力と一様磁場の中の荷電粒子（逆回りの2つの円運動の重ね合わせと回転する観測者）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：距離に比例する中心力と一様磁場の中の荷電粒子（逆回りの2つの円運動の重ね合わせと回転する観測者）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\omega_1=\\dfrac{qB}{2m}+\\sqrt{\\dfrac km+\\left(\\dfrac{qB}{2m}\\right)^2}$，$\\omega_2=-\\dfrac{qB}{2m}+\\sqrt{\\dfrac km+\\left(\\dfrac{qB}{2m}\\right)^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\omega_1-\\omega_2=\\dfrac{qB}m$，$\\omega_1\\omega_2=\\dfrac km$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\Omega=\\dfrac{qB}{2m}$，$\\omega'=\\sqrt{\\dfrac km+\\dfrac{q^2B^2}{4m^2}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$a_1=\\dfrac{\\omega_2r_0}{\\omega_1+\\omega_2}$，$a_2=\\dfrac{\\omega_1r_0}{\\omega_1+\\omega_2}$，$r_{\\min}=\\dfrac{qB}{2m\\omega'}r_0$，$t_1=\\dfrac{\\pi}{2\\omega'}$"
+   },
+   {
+    "id": "5",
+    "tex": "$T=\\dfrac{2\\pi m}{qB}$；3 回，$r_{\\min}=\\dfrac{r_0}3$，速さの最大値 $\\dfrac{4qBr_0}{3m}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　磁場が $+z$ 向き，$q>0$ なので，時計回りの円運動では速度 $\\vec v$ と $\\vec B$ の外積 $q\\vec v\\times\\vec B$ は O 向き，反時計回りでは外向きになる．$\\omega_c=\\dfrac{qB}m$ とおくと，向心方向の運動方程式は\n\\[ \\text{時計回り：}m\\omega_1^2r=kr+qB\\omega_1r,\\qquad \\text{反時計回り：}m\\omega_2^2r=kr-qB\\omega_2r . \\]\n$r$ が約分され，正の解をとって\n\\[ \\boldsymbol{\\omega_1=\\frac{\\omega_c}2+\\sqrt{\\frac km+\\frac{\\omega_c^2}4}},\\qquad \\boldsymbol{\\omega_2=-\\frac{\\omega_c}2+\\sqrt{\\frac km+\\frac{\\omega_c^2}4}} . \\]\n\n\\textbf{(2)}　(1) の結果から直ちに $\\boldsymbol{\\omega_1-\\omega_2=\\omega_c=\\frac{qB}m}$．また $\\omega_1\\omega_2=\\left(\\frac km+\\frac{\\omega_c^2}4\\right)-\\frac{\\omega_c^2}4=\\boldsymbol{\\frac km}$．どちらも $r$ を含まない（中心力が $r$ に比例し，ローレンツ力も $r\\omega$ に比例するため）．\n\n\\textbf{(3)}　時計回りに $\\Omega$ で回る観測者からは，時計回りの運動は $\\omega_1-\\Omega$，反時計回りの運動は $\\omega_2+\\Omega$ の角速度に見える．これらが等しいから\n\\[ \\boldsymbol{\\Omega=\\frac{\\omega_1-\\omega_2}2=\\frac{qB}{2m}},\\qquad \\boldsymbol{\\omega'=\\frac{\\omega_1+\\omega_2}2=\\sqrt{\\frac km+\\frac{q^2B^2}{4m^2}}} . \\]\nこの観測者から見ると，磁場の効果が消えて，ばね定数が $k+\\frac{q^2B^2}{4m}$ に強まった単振動（等方的な振動）と同じに見える．\n\n\\textbf{(4)}　$t=0$ で 2 つの位置ベクトルはともに $+x$ 向きなので $a_1+a_2=r_0$．時計回りの円運動の速度は $-y$ 向きに $a_1\\omega_1$，反時計回りは $+y$ 向きに $a_2\\omega_2$ で，静かに放したので $a_1\\omega_1=a_2\\omega_2$．よって\n\\[ \\boldsymbol{a_1=\\frac{\\omega_2r_0}{\\omega_1+\\omega_2}},\\qquad \\boldsymbol{a_2=\\frac{\\omega_1r_0}{\\omega_1+\\omega_2}}\\quad(a_2>a_1) . \\]\n2 つのベクトルのなす角は $(\\omega_1+\\omega_2)t$ で増えるので，距離は逆向きになったとき最小で\n\\[ r_{\\min}=a_2-a_1=\\frac{\\omega_1-\\omega_2}{\\omega_1+\\omega_2}r_0=\\boldsymbol{\\frac{qB}{2m\\omega'}r_0},\\qquad t_1=\\frac{\\pi}{\\omega_1+\\omega_2}=\\boldsymbol{\\frac{\\pi}{2\\omega'}} . \\]\n（(3) の観測者から見ると，小球ははじめ速さ $\\Omega r_0$ で動き出す楕円振動をし，$\\frac14$ 周期後に短軸の端 $\\frac{\\Omega r_0}{\\omega'}$ に達する，と見ることもできる．）\n\n\\textbf{(5)}　$k=2m\\omega_c^2$ なら $\\omega_1-\\omega_2=\\omega_c$，$\\omega_1\\omega_2=2\\omega_c^2$ より $\\omega_1=2\\omega_c$，$\\omega_2=\\omega_c$．2 つの円運動の周期 $\\frac{\\pi}{\\omega_c}$ と $\\frac{2\\pi}{\\omega_c}$ の最小公倍数で元に戻るので $\\boldsymbol{T=\\frac{2\\pi}{\\omega_c}=\\frac{2\\pi m}{qB}}$．$a_1=\\frac{r_0}3$，$a_2=\\frac{2r_0}3$ で，2 つの速度ベクトル（大きさは等しく $\\frac23r_0\\omega_c$）が打ち消すのはなす角が $2\\pi$ の整数倍のとき，すなわち $3\\omega_ct=2\\pi j$ のときなので，1 周期に $\\boldsymbol{3}$ 回止まる（軌道は 3 つのとがった点をもつ曲線になる；解答図）．\n\\[ r_{\\min}=a_2-a_1=\\boldsymbol{\\frac{r_0}3},\\qquad v_{\\max}=a_1\\omega_1+a_2\\omega_2=\\frac{4}{3}r_0\\omega_c=\\boldsymbol{\\frac{4qBr_0}{3m}} . \\]\n\\textbf{エネルギーによる確認}：ローレンツ力は仕事をしないので $\\frac12mv^2+\\frac12kr^2=\\frac12kr_0^2$．速さ最大は 2 つの速度が同じ向き，すなわち位置ベクトルが逆向きの $r=r_{\\min}=\\frac{r_0}3$ のときで，\n\\[ v^2=\\frac km\\left(r_0^2-\\frac{r_0^2}9\\right)=2\\omega_c^2\\cdot\\frac89r_0^2\\quad\\therefore\\ v=\\frac43r_0\\omega_c \\]\nとなり一致する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "距離に比例する中心力と一様磁場の中では，円運動の角速度が回る向きで異なるが，差 $qB/m$ と積 $k/m$ は半径によらない．角速度 $qB/2m$ で回る観測者からは2つの向きが同じ角速度に見え（磁場の効果が消えてばねが強まる），一般の運動は逆回りの2つの円運動の和で表される．静かに放すと速度を打ち消す半径の配分が決まり，最小距離や止まる回数が角速度の比から読み取れる．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "simple-harmonic-motion",
+  "circular-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ローレンツ力",
+  "中心力",
+  "単振動",
+  "回転する観測者",
+  "運動の重ね合わせ",
+  "エネルギー保存"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

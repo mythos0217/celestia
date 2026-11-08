@@ -1,0 +1,131 @@
+{
+ "id": "PHY-EMX-001",
+ "schema": "celestia.problem/1",
+ "field": "ESY",
+ "unit": "ESY-01",
+ "topic": "平行な2枚の金属帯に働く電気的引力と磁気的斥力のつり合いと光速",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation",
+  "synthesis"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，真空中に幅 $w$，長さ $\\ell$ の2枚の薄い金属帯 P（上），Q（下）が間隔 $h$ で平行に向かい合っている（$h\\ll w\\ll\\ell$）．一端で P，Q の間に起電力 $V$ の電池を P が高電位になるようにつなぎ，他端に抵抗値 $R$ の抵抗をつなぐ．金属帯・導線の抵抗と電池の内部抵抗は無視し，電流が一定になった後を考える．このとき P，Q はそれぞれ一様に正・負に帯電し，P には電池側から抵抗側へ，Q には逆向きに，大きさ $I$ の電流が幅方向に一様に流れている．端の効果は無視し，真空の誘電率を $\\varepsilon_0$，透磁率を $\\mu_0$ とする．必要なら次の事実を用いよ．\n・面密度 $\\sigma$ で一様に帯電した広い平面は，その両側に，面に垂直で大きさ $\\dfrac{\\sigma}{2\\varepsilon_0}$ の電場をつくる．\n・幅 $1$ あたり $K$ の電流が一様に流れる広い平面は，その両側に，面に平行で電流に垂直な大きさ $\\dfrac{\\mu_0K}{2}$ の磁束密度をつくる（向きは面の両側で逆）．\n・磁束密度 $B$ の磁場がある空間には，体積 $1$ あたり $\\dfrac{B^2}{2\\mu_0}$ の磁気的エネルギーがたくわえられている．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P が Q から受ける電気的な力の大きさ $F_E$ を $\\varepsilon_0,\\ V,\\ h,\\ w,\\ \\ell$ で表せ．また，それは引力か斥力か．"
+     },
+     {
+      "id": "2",
+      "tex": "P が Q から受ける磁気的な力の大きさ $F_B$ を $\\mu_0,\\ V,\\ R,\\ w,\\ \\ell$ で表せ．また，それは引力か斥力か．"
+     },
+     {
+      "id": "3",
+      "tex": "P が Q から受ける力の合力が $0$ になる抵抗値 $R_0$ を，真空中の光速 $c=\\dfrac{1}{\\sqrt{\\varepsilon_0\\mu_0}}$ と $\\mu_0,\\ h,\\ w$ で表せ．また，合力が引力になる $R$ の範囲を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "2枚の金属帯の間にたくわえられた電気的エネルギー $U_E$ と磁気的エネルギー $U_B$ の比 $\\dfrac{U_B}{U_E}$ を $R,\\ R_0$ で表せ．また，$\\dfrac{F_B}{F_E}$ と比べ，その関係が成り立つ理由を簡潔に述べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "ある実験で $\\dfrac{h}{w}=0.016$ の金属帯を用いたところ，$R=6.0\\,\\Omega$ のとき P にはたらく電磁気的な力の合力が $0$ になった．$\\mu_0=4\\pi\\times10^{-7}\\,\\mathrm{N/A^2}$ として，光速 $c$ を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：平行な2枚の金属帯に働く電気的引力と磁気的斥力のつり合いと光速",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$F_E=\\dfrac{\\varepsilon_0w\\ell V^2}{2h^2}$，引力"
+   },
+   {
+    "id": "2",
+    "tex": "$F_B=\\dfrac{\\mu_0\\ell V^2}{2wR^2}$，斥力"
+   },
+   {
+    "id": "3",
+    "tex": "$R_0=\\mu_0c\\,\\dfrac{h}{w}$，$R>R_0$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{U_B}{U_E}=\\left(\\dfrac{R_0}{R}\\right)^2$，$\\dfrac{F_B}{F_E}$ に等しい（どちらの力も面積あたりの大きさがその場のエネルギー密度に等しく，同じ体積 $wh\\ell$ をもつため）"
+   },
+   {
+    "id": "5",
+    "tex": "$c=3.0\\times10^8\\,\\mathrm{m/s}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　P，Q の間の電場の大きさは $\\dfrac{V}{h}$ で，これは両面の電荷がつくる電場の和 $\\dfrac{\\sigma}{\\varepsilon_0}$ に等しいので，P の電荷面密度は $\\sigma=\\dfrac{\\varepsilon_0V}{h}$，電荷は $\\sigma w\\ell$．P にはたらく力を求めるときは，P 自身がつくる電場は除き，Q がつくる電場 $\\dfrac{\\sigma}{2\\varepsilon_0}$ だけを用いる（自分自身の電場から合力は受けない）．\n\\[ F_E=\\sigma w\\ell\\cdot\\frac{\\sigma}{2\\varepsilon_0}=\\boldsymbol{\\frac{\\varepsilon_0w\\ell V^2}{2h^2}} \\]\n正負の電荷なので\\textbf{引力}．\n\n\\textbf{(2)}　電流は $I=\\dfrac{V}{R}$（金属帯の抵抗は0なので P，Q の間の電圧はどこでも $V$）．幅あたりの電流は $K=\\dfrac{I}{w}$．P の位置で Q がつくる磁束密度は $\\dfrac{\\mu_0K}{2}$ で，P の電流に垂直．P の面積 $1$ あたりの力は $K\\cdot\\dfrac{\\mu_0K}{2}$ なので\n\\[ F_B=\\frac{\\mu_0K^2}{2}\\,w\\ell=\\frac{\\mu_0\\ell I^2}{2w}=\\boldsymbol{\\frac{\\mu_0\\ell V^2}{2wR^2}} \\]\n逆向きの電流は反発し合うので\\textbf{斥力}．ここでも P 自身がつくる磁場は除く．\n\n\\textbf{(3)}　$F_E=F_B$ より\n\\[ \\frac{\\varepsilon_0w}{h^2}=\\frac{\\mu_0}{wR_0^2}\\quad\\Longrightarrow\\quad R_0=\\frac{h}{w}\\sqrt{\\frac{\\mu_0}{\\varepsilon_0}}=\\frac{h}{w}\\,\\mu_0\\cdot\\frac{1}{\\sqrt{\\varepsilon_0\\mu_0}}=\\boldsymbol{\\mu_0c\\,\\frac{h}{w}} \\]\n$F_E$ は $R$ によらず，$F_B\\propto\\dfrac{1}{R^2}$ なので，$R$ が大きい（電流が小さい）ほど電気的引力がまさる．合力が引力となるのは $\\boldsymbol{R>R_0}$．\n\n\\textbf{(4)}　金属帯の間は電気容量 $C=\\dfrac{\\varepsilon_0w\\ell}{h}$ のコンデンサーなので $U_E=\\dfrac12CV^2=\\dfrac{\\varepsilon_0w\\ell V^2}{2h}$．磁場は，2枚の電流がつくる磁場が間では強め合って $B=\\mu_0K$，外側では打ち消し合って $0$ になる．よって\n\\[ U_B=\\frac{(\\mu_0K)^2}{2\\mu_0}\\,wh\\ell=\\frac{\\mu_0h\\ell I^2}{2w} \\]\n\\[ \\frac{U_B}{U_E}=\\frac{\\mu_0h^2}{\\varepsilon_0w^2R^2}=\\boldsymbol{\\left(\\frac{R_0}{R}\\right)^2} \\]\n一方 (1)(2) より $\\dfrac{F_B}{F_E}=\\dfrac{\\mu_0h^2}{\\varepsilon_0w^2R^2}$ で，\\textbf{両者は等しい}．実際，$F_E=\\dfrac{U_E}{h}$，$F_B=\\dfrac{U_B}{h}$ であり，面積あたりの力（$\\dfrac{\\varepsilon_0E^2}{2}$，$\\dfrac{B^2}{2\\mu_0}$）はその場所のエネルギー密度に等しい．電場は間隔を縮める向きに，磁場は間隔を広げる向きに面を押す．$R=R_0$ では電場と磁場のエネルギーが等しくなり，力がちょうど打ち消す．\n\n（参考：$R_0$ は，この2枚の金属帯を伝わる電気信号の「特性インピーダンス」と呼ばれる量に一致する．）\n\n\\textbf{(5)}　(3) より $c=\\dfrac{R_0}{\\mu_0}\\cdot\\dfrac{w}{h}$ なので\n\\[ c=\\frac{6.0}{4\\pi\\times10^{-7}\\times0.016}=2.98\\times10^8\\ \\longrightarrow\\ \\boldsymbol{3.0\\times10^8\\ \\mathrm{m/s}} \\]\n力のつり合いと抵抗値だけから，$\\varepsilon_0$ を直接測ることなく光速が求まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "平行な2枚の導体に電荷と逆向きの電流があると，電気的引力 $\\propto\\varepsilon_0E^2$ と磁気的斥力 $\\propto B^2/\\mu_0$ が競合し，それぞれ面積あたりの大きさがエネルギー密度に等しい．両者は終端抵抗が $\\mu_0c\\,h/w$ のときちょうど打ち消し合うので，力のつり合いと抵抗値から $c=1/\\sqrt{\\varepsilon_0\\mu_0}$ が決まる．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "equilibrium",
+  "coulomb-field"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電場の力",
+  "電流間の力",
+  "エネルギー密度",
+  "光速",
+  "特性インピーダンス"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

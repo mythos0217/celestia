@@ -1,0 +1,143 @@
+{
+ "id": "PHY-MAG-017",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "一様磁場中で円筒面をすべり落ちる荷電小物体が面から離れる点",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，半径 $r$ のなめらかな円筒が，中心軸 O を水平にして両端で支えられ，固定されている（円筒の外側には，小物体の運動をさまたげるものはない）．空間には，円筒の中心軸に平行で紙面の裏から表へ向かう向き（⊙）に，磁束密度の大きさ $B$ の一様な磁場がかかっている．円筒の最高点 P に質量 $m$，電気量 $q\\ (q>0)$ の小物体を置き，図の右向きにごくわずかな速さを与えたところ，小物体は中心軸に垂直な鉛直面内で円筒の外側の表面に沿ってすべり始めた．円筒表面上の点 Q を $\\angle\\mathrm{POQ}=\\theta$ となるようにとる．重力加速度の大きさを $g$ とし，小物体の大きさ，空気抵抗，および小物体の運動による電磁波の放射は無視する．また，P での速さは $0$ とみなしてよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小物体が円筒表面から離れずに点 Q を通過するときの速さ $v$ を，$g,\\ r,\\ \\theta$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) のとき，小物体が円筒表面から受ける垂直抗力の大きさ $N$ を，$m,\\ q,\\ B,\\ g,\\ r,\\ \\theta$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$B=\\dfrac{m}{2q}\\sqrt{\\dfrac{g}{r}}$ のとき，小物体が円筒表面から離れる点の角を $\\theta=\\theta_1$ とする．$\\cos\\theta_1$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "磁場の大きさを (3) と同じにしたまま向きだけを逆（⊗）にして同じ実験を行ったところ，小物体は $\\theta=\\theta_2$ の点で円筒表面から離れた．$\\cos\\theta_2$ を求めよ．また，磁場がない場合に離れる点の角を $\\theta_0$ として，$\\theta_0,\\ \\theta_1,\\ \\theta_2$ を小さい順に並べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "磁場の向きを⊙にもどし，大きさ $B$ だけを変える．小物体が最下点に達するまで，垂直抗力が常に正である（円筒表面から離れない）ための $B$ の条件を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一様磁場中で円筒面をすべり落ちる荷電小物体が面から離れる点",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一様磁場中で円筒面をすべり落ちる荷電小物体が面から離れる点",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v=\\sqrt{2gr(1-\\cos\\theta)}$"
+   },
+   {
+    "id": "2",
+    "tex": "$N=mg(3\\cos\\theta-2)+qB\\sqrt{2gr(1-\\cos\\theta)}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\cos\\theta_1=\\dfrac12$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\cos\\theta_2=\\dfrac79$，$\\theta_2<\\theta_0<\\theta_1$（$\\cos\\theta_0=\\dfrac23$）"
+   },
+   {
+    "id": "5",
+    "tex": "$B>\\dfrac{5m}{2q}\\sqrt{\\dfrac{g}{r}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 速さ}　小物体にはたらく力は重力，垂直抗力，ローレンツ力である．垂直抗力は面に垂直で速度に垂直，ローレンツ力 $q\\vec v\\times\\vec B$ も常に速度に垂直なので，どちらも仕事をしない．したがって磁場があっても力学的エネルギーは保存し，P から高さ $r(1-\\cos\\theta)$ だけ下がった Q では\n\\[ \\frac12mv^2=mgr(1-\\cos\\theta)\\qquad\\therefore\\ v=\\boldsymbol{\\sqrt{2gr(1-\\cos\\theta)}} \\]\n磁場は「速さ」には影響せず，影響するのは次の (2) の中心方向の力のつり合いだけである．\n\n\\textbf{(2) 垂直抗力}　磁場は運動面に垂直なので，ローレンツ力（大きさ $qvB$）は運動面内で速度に垂直，すなわち円筒の半径方向を向く．小物体は P から右回り（時計回り）に動くので，P での速度は右向き，磁場は紙面の手前向きであり，$q\\vec v\\times\\vec B$ は下向き，つまり中心 O を向く．以後も速度と磁場の関係は同じなので，ローレンツ力は常に O を向く（解答図）．中心向きの運動方程式は\n\\[ m\\frac{v^2}{r}=mg\\cos\\theta-N+qvB \\]\n(1) を代入して\n\\[ N=mg\\cos\\theta+qvB-\\frac{mv^2}{r}=\\boldsymbol{mg(3\\cos\\theta-2)+qB\\sqrt{2gr(1-\\cos\\theta)}} \\]\n\n\\textbf{(3) 離れる点}　無次元の量 $u=\\dfrac{v}{\\sqrt{gr}}$，$\\beta=\\dfrac{qB}{m}\\sqrt{\\dfrac rg}$ を用いると，(1) より $\\cos\\theta=1-\\dfrac{u^2}{2}$ であり，\n\\[ \\frac{N}{mg}=\\cos\\theta+\\beta u-u^2=1+\\beta u-\\frac32u^2 \\]\n小物体が下がるほど $u$ は単調に増えるので，$N$ を $u$ の2次関数として調べればよい．$u=0$ で $N/mg=1>0$ であり，上に凸の2次関数なので，$N=0$ となる正の解\n\\[ 3u^2-2\\beta u-2=0\\qquad\\therefore\\ u=\\frac{\\beta+\\sqrt{\\beta^2+6}}{3} \\]\nで初めて $N=0$ となり，そこで離れる．$B=\\dfrac{m}{2q}\\sqrt{\\dfrac gr}$ は $\\beta=\\dfrac12$ にあたるので $u=\\dfrac{\\frac12+\\frac52}{3}=1$，\n\\[ \\cos\\theta_1=1-\\frac12=\\boldsymbol{\\frac12}\\quad(\\theta_1=60^\\circ) \\]\n\n\\textbf{(4) 磁場を逆向きにした場合}　ローレンツ力は外向きになるので，(2) の式で $qvB$ の符号が変わり，\n\\[ \\frac{N}{mg}=1-\\beta u-\\frac32u^2=0\\quad\\Rightarrow\\quad u=\\frac{-\\beta+\\sqrt{\\beta^2+6}}{3}=\\frac{-\\frac12+\\frac52}{3}=\\frac23 \\]\n\\[ \\cos\\theta_2=1-\\frac12\\cdot\\frac49=\\boldsymbol{\\frac79} \\]\n磁場がないとき（$\\beta=0$）は $u^2=\\dfrac23$ より $\\cos\\theta_0=\\dfrac23$ である．$\\dfrac79>\\dfrac23>\\dfrac12$ だから $\\boldsymbol{\\theta_2<\\theta_0<\\theta_1}$．中心向きのローレンツ力は「面に押しつける力」を補って離れにくくし，外向きの力は離れやすくする．速さはどの場合も同じ (1) の値であることに注意する．\n\n\\textbf{(5) 最下点まで離れない条件}　最下点は $\\cos\\theta=-1$，すなわち $u=2$ である．$f(u)=1+\\beta u-\\dfrac32u^2$ は上に凸で $f(0)=1>0$ だから，区間 $0\\le u\\le 2$ で $f(u)>0$ となる条件は端点で $f(2)>0$ となることである：\n\\[ f(2)=1+2\\beta-6=2\\beta-5>0\\qquad\\therefore\\ \\beta>\\frac52 \\]\nよって\n\\[ \\boldsymbol{B>\\frac{5m}{2q}\\sqrt{\\frac gr}} \\]\n（なお，最下点を過ぎて上る間も $N$ は同じ高さで下るときと同じ値をとるので，この条件のもとでは小物体は円筒を離れずに反対側を上っていく．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ローレンツ力は仕事をしないので速さは磁場によらず力学的エネルギー保存で決まり，磁場は速さに比例する半径方向の力として「面から離れる条件（垂直抗力 $0$）」だけを変える．垂直抗力を速さの2次関数として扱うと，離れる点や最下点まで離れない臨界磁場が端点条件から求まる．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "mechanical-energy",
+  "work-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ローレンツ力",
+  "円筒面",
+  "垂直抗力",
+  "面から離れる条件",
+  "力学的エネルギー保存"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

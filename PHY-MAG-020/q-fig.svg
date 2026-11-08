@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 290"><defs><marker id="q-ak" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker>
+<marker id="q-ab" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#c0392b"/></marker></defs>
+<rect x="120" y="60" width="400" height="8" fill="none" stroke="#222" stroke-width="1.6"/>
+<rect x="120" y="212" width="400" height="8" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="526" y="70" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">P<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<text x="526" y="222" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">P<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<!-- wires and battery: left side, P1 (bottom) connected to + (long line) -->
+<polyline points="120,64 60,64 60,128" fill="none" stroke="#222" stroke-width="1.6"/>
+<polyline points="60,152 60,216 120,216" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="44" y1="128" x2="76" y2="128" stroke="#222" stroke-width="1.6"/>
+<line x1="38" y1="152" x2="82" y2="152" stroke="#222" stroke-width="1.6"/>
+<line x1="44" y1="142" x2="76" y2="142" stroke="#222" stroke-width="0"/>
+<text x="16" y="146" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">V</text>
+<g><circle cx="300" cy="110" r="7" fill="none" stroke="#222" stroke-width="1"/><circle cx="300" cy="110" r="1.8" fill="#222"/></g><g><circle cx="300" cy="170" r="7" fill="none" stroke="#222" stroke-width="1"/><circle cx="300" cy="170" r="1.8" fill="#222"/></g><g><circle cx="420" cy="110" r="7" fill="none" stroke="#222" stroke-width="1"/><circle cx="420" cy="110" r="1.8" fill="#222"/></g><g><circle cx="420" cy="170" r="7" fill="none" stroke="#222" stroke-width="1"/><circle cx="420" cy="170" r="1.8" fill="#222"/></g>
+<text x="436" y="146" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+<!-- axes -->
+<line x1="200" y1="260" x2="200" y2="30" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="206" y="34" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">y</text>
+<line x1="140" y1="212" x2="545" y2="212" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="520" y1="245" x2="550" y2="245" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="536" y="265" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+<text x="184" y="240" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">O</text>
+<circle cx="200" cy="212" r="3" fill="#222"/>
+<line x1="200" y1="200" x2="150" y2="200" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="140" y="192" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">u</text>
+<text x="132" y="182" font-family="Noto Sans CJK JP, sans-serif" font-size="11" fill="#1f5fbf"></text>
+<line x1="240" y1="72" x2="240" y2="208" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+<text x="246" y="150" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">d</text>
+<text x="300" y="285" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">（図の <tspan font-family="Times New Roman, serif" font-style="italic">u</tspan> は負の場合．P<tspan baseline-shift="sub" font-size="9">1</tspan> 側が高電位）</text>
+</svg>

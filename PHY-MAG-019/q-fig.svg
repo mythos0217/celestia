@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 310">
+<defs>
+<marker id="q-ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker>
+<marker id="q-bl" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#1f5fbf"/></marker>
+</defs>
+<!-- incline plane -->
+<polygon points="60,270 400,270 480,140 140,140" fill="none" stroke="#222" stroke-width="1.6"/>
+<polygon points="400,270 480,140 480,270" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="30" y1="270" x2="530" y2="270" stroke="#222" stroke-width="1"/>
+<path d="M 430 270 A 30 30 0 0 0 416 244" fill="none" stroke="#222" stroke-width="1"/>
+<text x="436" y="258" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">θ</text>
+<!-- O and axes -->
+<circle cx="150" cy="245" r="3" fill="#222"/>
+<text x="130" y="262" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">O</text>
+<line x1="150" y1="245" x2="350" y2="245" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+<text x="354" y="250" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+<line x1="150" y1="245" x2="203" y2="159" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+<text x="206" y="158" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">y</text>
+<line x1="150" y1="245" x2="95" y2="205" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+<text x="80" y="204" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">z</text>
+<!-- ball and velocity -->
+<circle cx="150" cy="245" r="6" fill="#222"/>
+<line x1="158" y1="232" x2="240" y2="232" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-bl)"/>
+<text x="196" y="224" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">u</text>
+<!-- B arrows -->
+<g stroke="#222" stroke-width="1.2">
+<line x1="280" y1="20" x2="280" y2="90" marker-end="url(#q-ar)"/>
+<line x1="340" y1="20" x2="340" y2="90" marker-end="url(#q-ar)"/>
+<line x1="400" y1="20" x2="400" y2="90" marker-end="url(#q-ar)"/>
+</g>
+<text x="300" y="50" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+<text x="30" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">x</tspan>：水平，<tspan font-family="Times New Roman, serif" font-style="italic">y</tspan>：斜面に沿って上向き，</text>
+<text x="30" y="60" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">z</tspan>：斜面に垂直で上向き</text>
+<text x="200" y="300" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">なめらかな絶縁体の斜面</text>
+</svg>

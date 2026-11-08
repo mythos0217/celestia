@@ -1,0 +1,143 @@
+{
+ "id": "PHY-MAG-006",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "平行な電場・磁場によるイオンの放物線分析と共通加速電圧の効果",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，イオン源で生じた正イオン（電荷 $q$，質量 $m$）が加速部で加速され，$z$ 軸に沿って速さ $v$ で進む．イオンは長さ $l$ の区間で，ともに鉛直上向き（$+y$ 向き）の一様な電場 $E$ と一様な磁場（磁束密度 $B$）を受けたのち，距離 $D$ だけ真空中を進んでスクリーンに当たる．スクリーン上に，$z$ 軸との交点を原点 O とし，鉛直上向きに $y$ 軸，正イオンが磁場によって曲げられる向きに $x$ 軸をとる．偏向は小さいとし，区間内でイオンの $z$ 方向の速さは $v$ のまま，磁気力は大きさ $qvB$ で $+x$ 向きとみなしてよい．重力は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "イオンの到達点の座標 $(x,\\ y)$ を $q,\\ m,\\ v,\\ E,\\ B,\\ l,\\ D$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$q/m$ が同じで速さの異なるイオンの到達点は，放物線 $y=kx^2$ 上に並ぶ．$k$ を求めよ．また，速さが同じで $q/m$ の異なるイオンの到達点は，どのような図形の上に並ぶか．"
+     },
+     {
+      "id": "3",
+      "tex": "イオンが静止状態から電圧 $V$ で加速された場合，到達点の $y$ 座標はイオンの種類によらないことを示し，その値 $y_0$ を求めよ．また，そのときの $x$ 座標を $q/m$ を含む式で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "実際の加速部では，イオンは加速電場中のいろいろな位置で生じるため，電圧 $V$ の全部で加速されたものと，その一部だけで加速されたものとが混在する．このとき，同じ種類のイオンがスクリーン上につくる跡は，(2) の放物線のどの部分か．"
+     },
+     {
+      "id": "5",
+      "tex": "$E=2.0\\times10^{3}\\ \\mathrm{V/m}$，$B=1.0\\times10^{-2}\\ \\mathrm{T}$，$l=4.0\\ \\mathrm{cm}$，$D=30\\ \\mathrm{cm}$，$V=2.0\\times10^{3}\\ \\mathrm{V}$ とする．スクリーン上に3本の跡が現れ，それらの下端の $x$ 座標は $19.8\\ \\mathrm{mm}$，$14.0\\ \\mathrm{mm}$，$9.9\\ \\mathrm{mm}$ であった．最も外側の跡をつくるイオンの $q/m$ を有効数字2桁で求めよ．また，H$^+$，H$_2^+$，D$^+$，$^4$He$^+$，$^4$He$^{2+}$ のうち，残りの2本の跡をつくりうるイオンをそれぞれすべて挙げよ．陽子と中性子の質量は等しく，電子の質量は無視できるとする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：平行な電場・磁場によるイオンの放物線分析と共通加速電圧の効果",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：平行な電場・磁場によるイオンの放物線分析と共通加速電圧の効果",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$x=\\dfrac{qBl(l+2D)}{2mv}$，$y=\\dfrac{qEl(l+2D)}{2mv^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$k=\\dfrac{2mE}{qB^2l(l+2D)}$，原点を通る直線 $y=\\dfrac{E}{Bv}x$ 上"
+   },
+   {
+    "id": "3",
+    "tex": "$y_0=\\dfrac{El(l+2D)}{4V}$，$x=\\dfrac{Bl(l+2D)}{2}\\sqrt{\\dfrac{q}{2mV}}$"
+   },
+   {
+    "id": "4",
+    "tex": "放物線のうち $y\\ge y_0$ の部分（下端が直線 $y=y_0$ 上）"
+   },
+   {
+    "id": "5",
+    "tex": "$9.6\\times10^{7}\\ \\mathrm{C/kg}$（H$^+$）．$14.0$ mm：H$_2^+$，D$^+$，$^4$He$^{2+}$　$9.9$ mm：$^4$He$^+$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$y$ 方向：静電気力 $qE$ による加速度 $\\dfrac{qE}{m}$．区間の通過時間 $t_1=\\dfrac{l}{v}$ の間の変位と，出口での速度成分は\n\\[ y_1=\\frac12\\frac{qE}{m}\\Big(\\frac{l}{v}\\Big)^2,\\qquad v_y=\\frac{qE}{m}\\cdot\\frac{l}{v} \\]\nその後 $\\dfrac{D}{v}$ の間は等速なので\n\\[ y=y_1+v_y\\frac{D}{v}=\\frac{qEl}{mv^2}\\Big(\\frac{l}{2}+D\\Big)=\\boldsymbol{\\frac{qEl(l+2D)}{2mv^2}} \\]\n$x$ 方向：磁気力 $qvB$ による加速度 $\\dfrac{qvB}{m}$ で，同様に\n\\[ x=\\frac{qvB}{m}\\cdot\\frac{l}{v^2}\\Big(\\frac l2+D\\Big)=\\boldsymbol{\\frac{qBl(l+2D)}{2mv}} \\]\n（磁場は $y$ 方向なので $y$ 方向の運動には影響せず，電場は $x$ 方向の運動に影響しない．）\n\n\\textbf{(2)}　$G=\\dfrac{l(l+2D)}{2}$ とおくと $x=\\dfrac{qBG}{mv}$，$y=\\dfrac{qEG}{mv^2}$．$v$ を消去すると $\\dfrac{1}{v}=\\dfrac{mx}{qBG}$ より\n\\[ y=\\frac{qEG}{m}\\cdot\\frac{m^2x^2}{q^2B^2G^2}=\\frac{mE}{qB^2G}x^2\\quad\\therefore\\ \\boldsymbol{k=\\frac{2mE}{qB^2l(l+2D)}} \\]\n$k$ は $q/m$ だけで決まる．一方，$\\dfrac{y}{x}=\\dfrac{E}{Bv}$ は $q/m$ によらないので，速さが同じイオンは\\textbf{原点を通る直線} $y=\\dfrac{E}{Bv}x$ 上に並ぶ．\n\n\\textbf{(3)}　$\\dfrac12mv^2=qV$ より $v^2=\\dfrac{2qV}{m}$．これを代入すると\n\\[ y=\\frac{qEG}{m}\\cdot\\frac{m}{2qV}=\\frac{EG}{2V}=\\boldsymbol{\\frac{El(l+2D)}{4V}} \\]\nで $q,\\ m$ が消えるので，種類によらない．一方\n\\[ x=\\frac{qBG}{m}\\sqrt{\\frac{m}{2qV}}=\\boldsymbol{\\frac{Bl(l+2D)}{2}\\sqrt{\\frac{q}{2mV}}}\\quad(\\propto\\sqrt{q/m}) \\]\n\n\\textbf{(4)}　電圧 $V'\\ (0<V'\\le V)$ で加速されたイオンも (2) の同じ放物線上に来るが，$y=\\dfrac{EG}{2V'}\\ge\\dfrac{EG}{2V}=y_0$．よって跡は放物線の \\textbf{$y\\ge y_0$ の部分}で，下端（全電圧で加速されたもの）は種類によらず直線 $y=y_0$ 上に並ぶ（解答図）．\n\n\\textbf{(5)}　$y_0=\\dfrac{2.0\\times10^3\\times0.040\\times0.64}{4\\times2.0\\times10^3}=6.4\\times10^{-3}$ m．(3) を解くと\n\\[ \\frac{q}{m}=\\frac{8Vx^2}{B^2l^2(l+2D)^2}=\\frac{8\\times2.0\\times10^3\\times(19.8\\times10^{-3})^2}{(1.0\\times10^{-2})^2\\times(0.040)^2\\times(0.64)^2}\\fallingdotseq\\boldsymbol{9.6\\times10^{7}\\ \\mathrm{C/kg}} \\]\nこれは $\\dfrac{e}{m_p}\\fallingdotseq\\dfrac{1.6\\times10^{-19}}{1.67\\times10^{-27}}\\fallingdotseq9.6\\times10^7$ C/kg に一致し，H$^+$ である．\n$x\\propto\\sqrt{q/m}$ より，$q/m$ の比は $x^2$ の比：\n\\[ \\Big(\\frac{14.0}{19.8}\\Big)^2\\fallingdotseq\\frac12,\\qquad\\Big(\\frac{9.9}{19.8}\\Big)^2=\\frac14 \\]\n陽子の質量を $m_p$ とすると，$q/m$ は H$^+$：$e/m_p$，H$_2^+$：$e/2m_p$，D$^+$：$e/2m_p$，$^4$He$^+$：$e/4m_p$，$^4$He$^{2+}$：$2e/4m_p=e/2m_p$．\nよって $14.0$ mm の跡は \\textbf{H$_2^+$，D$^+$，$^4$He$^{2+}$}（$q/m$ が等しく，この方法では区別できない），$9.9$ mm の跡は \\textbf{$^4$He$^+$}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "平行な電場と磁場による偏向は $y\\propto q/(mv^2)$，$x\\propto q/(mv)$ なので，同じ比電荷は放物線，同じ速さは原点を通る直線上に並ぶ．共通の電圧で加速すると $mv^2\\propto q$ となって $y$ が種類によらなくなり，放物線の下端が一直線上にそろって $x\\propto\\sqrt{q/m}$ で比電荷を読み取れる．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "projectile-motion",
+  "coulomb-field"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "トムソンの放物線法",
+  "比電荷",
+  "ローレンツ力",
+  "偏向",
+  "加速電圧"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

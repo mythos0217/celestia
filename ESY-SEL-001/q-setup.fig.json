@@ -1,0 +1,202 @@
+{
+ "schema": "celestia.figure/1",
+ "size": [
+  420,
+  240
+ ],
+ "items": [
+  {
+   "t": "line",
+   "from": [
+    80,
+    110
+   ],
+   "to": [
+    250,
+    110
+   ],
+   "style": "thick"
+  },
+  {
+   "t": "text",
+   "at": [
+    70,
+    114
+   ],
+   "text": "+",
+   "italic": false,
+   "size": 15,
+   "anchor": "end"
+  },
+  {
+   "t": "line",
+   "from": [
+    80,
+    190
+   ],
+   "to": [
+    250,
+    190
+   ],
+   "style": "thick"
+  },
+  {
+   "t": "text",
+   "at": [
+    70,
+    194
+   ],
+   "text": "−",
+   "italic": false,
+   "size": 15,
+   "anchor": "end"
+  },
+  {
+   "t": "line",
+   "from": [
+    262,
+    110
+   ],
+   "to": [
+    262,
+    190
+   ],
+   "style": "thin"
+  },
+  {
+   "t": "text",
+   "at": [
+    270,
+    156
+   ],
+   "text": "d",
+   "italic": true,
+   "size": 14,
+   "anchor": "start"
+  },
+  {
+   "t": "text",
+   "at": [
+    125,
+    134
+   ],
+   "text": "⊗",
+   "italic": false,
+   "size": 13,
+   "anchor": "middle"
+  },
+  {
+   "t": "text",
+   "at": [
+    205,
+    134
+   ],
+   "text": "⊗",
+   "italic": false,
+   "size": 13,
+   "anchor": "middle"
+  },
+  {
+   "t": "text",
+   "at": [
+    125,
+    176
+   ],
+   "text": "⊗",
+   "italic": false,
+   "size": 13,
+   "anchor": "middle"
+  },
+  {
+   "t": "text",
+   "at": [
+    205,
+    176
+   ],
+   "text": "⊗",
+   "italic": false,
+   "size": 13,
+   "anchor": "middle"
+  },
+  {
+   "t": "text",
+   "at": [
+    165,
+    134
+   ],
+   "text": "B",
+   "italic": true,
+   "size": 14,
+   "anchor": "middle"
+  },
+  {
+   "t": "ball",
+   "at": [
+    36,
+    150
+   ],
+   "r": 5,
+   "phys": "body:q"
+  },
+  {
+   "t": "arrow",
+   "from": [
+    42,
+    150
+   ],
+   "dir": 0,
+   "len": 34,
+   "style": "velocity",
+   "label": "v",
+   "labelPos": "end",
+   "labelOffset": [
+    0,
+    -12
+   ]
+  },
+  {
+   "t": "line",
+   "from": [
+    300,
+    20
+   ],
+   "to": [
+    300,
+    230
+   ],
+   "style": "dash"
+  },
+  {
+   "t": "text",
+   "at": [
+    360,
+    200
+   ],
+   "text": "⊗",
+   "italic": false,
+   "size": 13,
+   "anchor": "middle"
+  },
+  {
+   "t": "text",
+   "at": [
+    390,
+    220
+   ],
+   "text": "B₂",
+   "italic": true,
+   "size": 14,
+   "anchor": "middle"
+  },
+  {
+   "t": "arc",
+   "at": [
+    300,
+    100
+   ],
+   "r": 50,
+   "from": -90,
+   "to": 90
+  }
+ ]
+}

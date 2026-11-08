@@ -1,0 +1,144 @@
+{
+ "id": "PHY-MAG-005",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "質量分析器の半円収束と同位体の分離条件",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，質量 $M$，電荷 $Q\\ (>0)$ のイオンがスリット P$_1$，P$_2$ を通り，極板 X，Y の間（一様な電場 $E$ と，紙面の表から裏向きで磁束密度 $B_1$ の一様な磁場がかかっている）を直進したのち，スリット P$_3$ から，境界線より下側の領域（紙面の表から裏向きで磁束密度 $B_2$ の一様な磁場がかかっている）に入る．境界線上の P$_3$ の右側には検出器が置かれている．重力は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "極板 X，Y の間を直進するイオンの速さ $v$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "速さ $v$ のイオンが，境界線の法線（鉛直下向き）と角 $\\varphi$ をなす向きに P$_3$ から入射した（図）．イオンが検出器に達する点と P$_3$ との距離を，$M,\\ Q,\\ E,\\ B_1,\\ B_2,\\ \\varphi$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "P$_3$ から入射するイオンの向きが $-\\delta\\le\\varphi\\le\\delta$ の範囲でばらつくとする（$\\delta>0$）．$\\varphi=0$ のときの到達距離を $D_0$ として，検出器上で到達点が分布する範囲の幅を $D_0,\\ \\delta$ で表せ．また，$\\delta$ が小さいとき，$\\cos\\delta\\fallingdotseq1-\\dfrac{\\delta^2}{2}$ を用いてこの幅を近似せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "質量数 35 と 37 の同位体の1価の陽イオンを同時に入射させる．入射方向のばらつきだけがあるとき，2種類のイオンの到達点の分布が重ならないための $\\delta$ の最大値を，(3) の近似を用いて有効数字2桁で求めよ（単位 rad）．イオンの質量は質量数に比例するとしてよい．"
+     },
+     {
+      "id": "5",
+      "tex": "スリットの幅が有限なため，極板間を通過するイオンの速さにも $v$ を中心に相対的に $\\pm0.50\\%$ のばらつきがある．このとき (4) の $\\delta$ の最大値を有効数字2桁で求めよ．また，$\\delta$ が小さいとき，入射方向のばらつきが到達点を $\\delta$ の1次ではなく2次の程度でしか広げないのはなぜか，簡潔に説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：質量分析器の半円収束と同位体の分離条件",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：質量分析器の半円収束と同位体の分離条件",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v=\\dfrac{E}{B_1}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{2ME}{QB_1B_2}\\cos\\varphi$"
+   },
+   {
+    "id": "3",
+    "tex": "$D_0(1-\\cos\\delta)\\fallingdotseq\\dfrac{D_0\\delta^2}{2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$0.33\\ \\mathrm{rad}$"
+   },
+   {
+    "id": "5",
+    "tex": "$0.30\\ \\mathrm{rad}$．到達距離 $D_0\\cos\\varphi$ は $\\varphi=0$ で最大（極値）となり，$\\varphi$ の1次の変化が消えるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　直進するには静電気力とローレンツ力がつり合えばよい：$QE=QvB_1$ より $\\boldsymbol{v=\\dfrac{E}{B_1}}$．$M,\\ Q$ によらず速さがそろう．\n\n\\textbf{(2)}　磁場 $B_2$ 中では等速円運動で，$M\\dfrac{v^2}{R}=QvB_2$ より\n\\[ R=\\frac{Mv}{QB_2}=\\frac{ME}{QB_1B_2} \\]\n円の中心 C は P$_3$ から速度に垂直な方向に距離 $R$ の点で，速度が法線と角 $\\varphi$ をなすので，CP$_3$ は境界線と角 $\\varphi$ をなす（解答図）．境界線は円の弦を切り取り，弦の垂直二等分線は C を通るから，弦の長さ（＝到達距離）は\n\\[ 2R\\cos\\varphi=\\boldsymbol{\\frac{2ME}{QB_1B_2}\\cos\\varphi} \\]\n$\\varphi$ の正負（左右どちらに傾くか）によらない．\n\n\\textbf{(3)}　$D_0=2R$ とおくと到達距離は $D_0\\cos\\varphi$．$|\\varphi|\\le\\delta$ では $D_0\\cos\\delta\\le D_0\\cos\\varphi\\le D_0$ なので，分布は $D_0$ を端として P$_3$ 側にのみ広がり，幅は\n\\[ \\boldsymbol{D_0(1-\\cos\\delta)\\fallingdotseq\\frac{D_0\\delta^2}{2}} \\]\n\n\\textbf{(4)}　$D_0\\propto M$（$Q$ 共通）．質量数 35，37 の $D_0$ を $D_{35},\\ D_{37}=\\frac{37}{35}D_{35}$ とすると，分布はそれぞれ $[D_{35}\\cos\\delta,\\ D_{35}]$，$[D_{37}\\cos\\delta,\\ D_{37}]$．重ならない条件は\n\\[ D_{37}\\cos\\delta>D_{35}\\iff\\cos\\delta>\\frac{35}{37} \\]\n近似を使うと $1-\\dfrac{\\delta^2}{2}>\\dfrac{35}{37}$，$\\delta^2<\\dfrac{4}{37}$，$\\delta<0.329$．よって最大値は $\\boldsymbol{0.33\\ \\mathrm{rad}}$（約 $19^\\circ$）．\n\n\\textbf{(5)}　$D_0\\propto v$ なので，速さが $(1\\pm\\varepsilon)v$（$\\varepsilon=0.0050$）にばらつくと分布は $[D\\,(1-\\varepsilon)\\cos\\delta,\\ D\\,(1+\\varepsilon)]$ に広がる．重ならない条件は\n\\[ 37(1-\\varepsilon)\\cos\\delta>35(1+\\varepsilon)\\iff\\cos\\delta>\\frac{35\\times1.005}{37\\times0.995}\\fallingdotseq0.9555 \\]\n$1-\\dfrac{\\delta^2}{2}>0.9555$ より $\\delta^2<0.0891$，$\\delta<0.298$．よって $\\boldsymbol{0.30\\ \\mathrm{rad}}$．\n速さのばらつきは到達距離を $\\varepsilon$ の1次で変えるのに対し，方向のばらつきの影響は $\\delta$ の2次である．これは，到達距離 $D_0\\cos\\varphi$ が $\\varphi=0$ で最大値をとり（極値なので接線の傾きが0），$\\varphi$ を少し変えても1次の変化が生じないためである．図形的には，少し傾いて入射した円も，ほぼ同じ点（直径の端）に戻ってくる（半円による方向収束）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一様磁場中の円軌道と境界線の交点間の距離は弦の長さ $2R\\cos\\varphi$ であり，入射方向のずれに対して極大なので，方向のばらつきは到達点を2次の微小量 $D_0\\delta^2/2$ だけ，しかも片側にしか広げない．一方，速さ（質量）の違いは1次で効くため，これが同位体を分離できる条件を決める．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "circular-motion",
+  "string-resonance"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "質量分析器",
+  "速度選択器",
+  "円運動",
+  "半円収束",
+  "同位体",
+  "分解能"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

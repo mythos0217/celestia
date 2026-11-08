@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 545 340">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<pattern id="q-h" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#888" stroke-width="1"/></pattern></defs>
+<path d="M90,180 a130,130 0 1 0 260,0 a130,130 0 1 0 -260,0 Z M165,180 a55,55 0 1 1 110,0 a55,55 0 1 1 -110,0 Z" fill="url(#q-h)" fill-rule="evenodd" stroke="none"/>
+<circle cx="220" cy="180" r="130" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="220" cy="180" r="55" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="220" cy="180" r="2" fill="#222"/>
+<line x1="220" y1="180" x2="168.3" y2="161.2" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="182" y="178" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">a</text>
+<line x1="220" y1="180" x2="285.0" y2="292.6" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="262" y="236" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">b</text>
+<path d="M362.8,128.0 A152,152 0 0 0 246.4,30.3" fill="none" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="325.7" y="59.6" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">ω</text>
+<circle cx="410" cy="90" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="410" cy="90" r="1.8" fill="#222"/>
+<circle cx="460" cy="90" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="460" cy="90" r="1.8" fill="#222"/>
+<circle cx="410" cy="140" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="410" cy="140" r="1.8" fill="#222"/>
+<circle cx="460" cy="140" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="460" cy="140" r="1.8" fill="#222"/>
+<text x="480" y="122" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+<circle cx="220" cy="272" r="6" fill="none" stroke="#222" stroke-width="1.2"/><circle cx="220" cy="272" r="1.8" fill="#222"/>
+<text x="380" y="200" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">磁場は紙面の手前向き</text>
+<text x="380" y="220" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">（中心軸に平行）</text>
+<text x="380" y="260" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">斜線部：金属</text>
+<text x="380" y="280" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">中心軸に垂直な断面</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 330">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<line x1="70.0" y1="20.0" x2="70.0" y2="310.0" stroke="#222" stroke-width="2.0"/>
+<line x1="56.0" y1="200.0" x2="56.0" y2="130.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="40.0" y="170.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="middle" fill="#1f5fbf">I<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<text x="84.0" y="30.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="start" fill="#222">P</text>
+<line x1="190.0" y1="250.0" x2="190.0" y2="70.0" stroke="#222" stroke-width="1.6"/>
+<line x1="190.0" y1="70.0" x2="350.0" y2="70.0" stroke="#222" stroke-width="1.6"/>
+<line x1="350.0" y1="70.0" x2="350.0" y2="148.0" stroke="#222" stroke-width="1.6"/>
+<line x1="350.0" y1="172.0" x2="350.0" y2="250.0" stroke="#222" stroke-width="1.6"/>
+<line x1="350.0" y1="250.0" x2="190.0" y2="250.0" stroke="#222" stroke-width="1.6"/>
+<line x1="343.0" y1="152.0" x2="357.0" y2="152.0" stroke="#222" stroke-width="3.2"/>
+<line x1="336.0" y1="166.0" x2="364.0" y2="166.0" stroke="#222" stroke-width="1.6"/>
+<line x1="350.0" y1="148.0" x2="350.0" y2="152.0" stroke="#222" stroke-width="1.6"/>
+<line x1="350.0" y1="166.0" x2="350.0" y2="172.0" stroke="#222" stroke-width="1.6"/>
+<text x="372.0" y="180.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="#222">+</text>
+<line x1="204.0" y1="200.0" x2="204.0" y2="120.0" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<text x="220.0" y="165.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="middle" fill="#c0392b">I<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<line x1="240.0" y1="60.0" x2="300.0" y2="60.0" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<text x="178.0" y="266.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">a</text>
+<text x="178.0" y="64.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">b</text>
+<text x="362.0" y="64.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">c</text>
+<text x="362.0" y="266.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="#222">d</text>
+<line x1="70.0" y1="290.0" x2="190.0" y2="290.0" stroke="#888" stroke-width="1" marker-end="url(#q-ak)"/>
+<line x1="190.0" y1="290.0" x2="70.0" y2="290.0" stroke="#888" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="130.0" y="284.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="middle" fill="#222">r</text>
+<line x1="190.0" y1="290.0" x2="350.0" y2="290.0" stroke="#888" stroke-width="1" marker-end="url(#q-ak)"/>
+<line x1="350.0" y1="290.0" x2="190.0" y2="290.0" stroke="#888" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="270.0" y="284.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="middle" fill="#222">w</text>
+<line x1="190.0" y1="250.0" x2="190.0" y2="296.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="350.0" y1="250.0" x2="350.0" y2="296.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="400.0" y1="70.0" x2="400.0" y2="250.0" stroke="#888" stroke-width="1" marker-end="url(#q-ak)"/>
+<line x1="400.0" y1="250.0" x2="400.0" y2="70.0" stroke="#888" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="414.0" y="165.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="middle" fill="#222">L</text>
+<line x1="350.0" y1="70.0" x2="406.0" y2="70.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="350.0" y1="250.0" x2="406.0" y2="250.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+</svg>

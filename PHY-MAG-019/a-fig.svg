@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 330">
+<defs>
+<marker id="a-ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker>
+<marker id="a-bl" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#1f5fbf"/></marker>
+</defs>
+<text x="20" y="22" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">速度の終点が描く円（<tspan font-family="Times New Roman, serif" font-style="italic">v</tspan><tspan baseline-shift="sub" font-size="10">x</tspan>–<tspan font-family="Times New Roman, serif" font-style="italic">v</tspan><tspan baseline-shift="sub" font-size="10">y</tspan> 平面）</text>
+<line x1="30" y1="180" x2="500" y2="180" stroke="#222" stroke-width="1" marker-end="url(#a-ar)"/>
+<text x="490" y="200" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">v<tspan baseline-shift="sub" font-size="10">x</tspan></text>
+<line x1="200" y1="320" x2="200" y2="40" stroke="#222" stroke-width="1" marker-end="url(#a-ar)"/>
+<text x="206" y="48" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">v<tspan baseline-shift="sub" font-size="10">y</tspan></text>
+<text x="184" y="198" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">0</text>
+<!-- center vd at x=260, radius w=130 ; u at 390 -->
+<circle cx="260" cy="180" r="130" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+<circle cx="260" cy="180" r="3" fill="#222"/>
+<text x="250" y="200" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">v<tspan baseline-shift="sub" font-size="10">d</tspan></text>
+<circle cx="390" cy="180" r="4" fill="#1f5fbf"/>
+<text x="396" y="198" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">u</text>
+<path d="M 375 120 A 130 130 0 0 0 330 72" fill="none" stroke="#1f5fbf" stroke-width="1.4" marker-end="url(#a-bl)"/>
+<text x="352" y="80" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#1f5fbf">反時計回り</text>
+<line x1="260" y1="180" x2="352" y2="88" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="292" y="125" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">w</text>
+<!-- leaving line vx=-c at x=160 -->
+<line x1="160" y1="40" x2="160" y2="320" stroke="#c0392b" stroke-width="1.4" stroke-dasharray="6,4"/>
+<text x="40" y="70" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b"><tspan font-family="Times New Roman, serif" font-style="italic">v</tspan><tspan baseline-shift="sub" font-size="10">x</tspan>＝−<tspan font-family="Times New Roman, serif" font-style="italic">c</tspan></text>
+<text x="40" y="90" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">（<tspan font-family="Times New Roman, serif" font-style="italic">N</tspan>＝0）</text>
+<circle cx="160" cy="97" r="4" fill="#c0392b"/>
+<text x="166" y="116" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#c0392b">ここで離れる</text>
+</svg>

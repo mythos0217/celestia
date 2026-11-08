@@ -1,0 +1,129 @@
+{
+ "id": "PHY-EMX-004",
+ "schema": "celestia.problem/1",
+ "field": "ESY",
+ "unit": "ESY-01",
+ "topic": "磁場中を流れる誘電体の液体と平行板の電圧・電荷（動く誘電体の分極と，流れ込む間の直流電流）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation",
+  "synthesis"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，長さ $\\ell$，幅 $w$（面積 $S=\\ell w$）の2枚の金属板 X（上），Y（下）を，間隔 $d$ で水平に向かい合わせる．極板間には紙面に垂直に表から裏へ向かう磁束密度 $B$ の一様な磁場がかかっており，比誘電率 $\\varepsilon_r$ の電気を通さない液体（誘電体）が，極板に平行に一定の速さ $v$ で右向きに流れる．真空の誘電率を $\\varepsilon_0$ とし，端の効果は無視する．\n\n液体の分子の中の電荷は分子とともに速度 $v$ で動くので，電場からの力のほかにローレンツ力も受ける．そこで，電荷 $1\\ \\mathrm C$ あたりにはたらく力（電場とローレンツ力の和を電荷で割ったもの）を $\\vec E'$ とすると，液体は $\\vec E'$ に応じて分極し，液体の上下の表面には，$\\vec E'$ の極板に垂直な成分の大きさを $E'_\\perp$ として，面密度 $\\varepsilon_0(\\varepsilon_r-1)E'_\\perp$ の分極電荷が現れる（$\\vec E'$ が向く側の表面が正）とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X，Y を理想的な電圧計（電流を流さない）につなぐ．電圧計が示す電圧を求め，X と Y のどちらの電位が高いかを答えよ．また，$\\varepsilon_r$ を大きくしていくと電圧は何に近づくか．"
+     },
+     {
+      "id": "2",
+      "tex": "X，Y を導線で直結したとき，X に蓄えられる電気量を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) のように X，Y を導線で直結した状態で，はじめ極板間を空気（比誘電率 $1$）で満たしておき，液体を左端から流し込む．液体の先端は極板に垂直な平面のまま速さ $v$ で右へ進む．先端が極板間を進んでいる間に導線を流れる電流の大きさと向き（X→Y か Y→X か）を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：磁場中を流れる誘電体の液体と平行板の電圧・電荷（動く誘電体の分極と，流れ込む間の直流電流）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：磁場中を流れる誘電体の液体と平行板の電圧・電荷（動く誘電体の分極と，流れ込む間の直流電流）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\left(1-\\dfrac{1}{\\varepsilon_r}\\right)vBd$，X の方が高い．$\\varepsilon_r\\to\\infty$ で $vBd$ に近づく"
+   },
+   {
+    "id": "2",
+    "tex": "$-\\varepsilon_0(\\varepsilon_r-1)vBS$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\varepsilon_0(\\varepsilon_r-1)v^2Bw$，導線中を X→Y の向き（流し込む間の $\\ell/v$ だけ流れる）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{ローレンツ力の向き}　右向きに動く正電荷は，表から裏向きの磁場からフレミングの左手の法則により上向き（X の側）に大きさ $qvB$ の力を受ける．極板間の電場を下向きを正として $E$ と書くと，$\\vec E'$ の上向き成分は $E'_\\perp=vB-E$ である．このとき液体の上面に $+\\sigma_p$，下面に $-\\sigma_p$\n\\[ \\sigma_p=\\varepsilon_0(\\varepsilon_r-1)(vB-E) \\]\nの分極電荷が現れる（解答図）．\n\n\\textbf{(1) 電圧計につないだとき}　電圧計は電流を流さないので，X，Y は帯電していない．極板間の電場をつくるのは分極電荷 $\\pm\\sigma_p$ だけで，上面が正，下面が負の2枚の面電荷がつくる電場は下向きに $\\sigma_p/\\varepsilon_0$ である．よって\n\\[ E=\\frac{\\sigma_p}{\\varepsilon_0}=(\\varepsilon_r-1)(vB-E)\\quad\\therefore\\quad E=\\left(1-\\frac1{\\varepsilon_r}\\right)vB. \\]\n電場は下向き（X→Y）なので\\textbf{X の電位が高く}，電圧は\n\\[ \\boldsymbol{V=Ed=\\left(1-\\frac1{\\varepsilon_r}\\right)vBd}. \\]\n電場 $E$ はローレンツ力を一部しか打ち消さず，分子には上向きの正味の力 $vB-E=vB/\\varepsilon_r$ が残る．$\\varepsilon_r$ が大きい（分極しやすい）ほど打ち消しが完全に近づき，$\\boldsymbol{\\varepsilon_r\\to\\infty}$ \\textbf{で $V\\to vBd$} となる．これは導電性の液体（電荷が自由に動き，ローレンツ力を電場が完全に打ち消すまで移動する）の電磁流量計の電圧に等しい．\n\n\\textbf{(2) 導線で直結したとき}　X と Y は同電位なので $V=0$，すなわち極板間の電場は $E=0$ である．そのためには，極板の電荷が分極電荷の電場を打ち消さなければならない．$E=0$ のとき $\\sigma_p=\\varepsilon_0(\\varepsilon_r-1)vB$ で，X の面密度を $\\sigma_X$ とすると極板間の電場は $(\\sigma_X+\\sigma_p)/\\varepsilon_0=0$．よって X の電気量は\n\\[ \\boldsymbol{Q_X=-\\varepsilon_0(\\varepsilon_r-1)vBS} \\]\n（Y には $+\\varepsilon_0(\\varepsilon_r-1)vBS$）である．\n\n\\textbf{(3) 流し込む間の電流}　X，Y は同電位のままなので，極板間のどこでも $E=0$ である．液体が入った部分だけに (2) と同じ分極電荷が現れ，それを打ち消す電荷が X，Y のその部分に集まる．液体の先端が左端から $x$ まで進んだとき，X の電気量は\n\\[ Q_X=-\\varepsilon_0(\\varepsilon_r-1)vB\\,wx \\]\nで，$x$ は単位時間に $v$ ずつ増える．したがって X の電気量は単位時間あたり $\\varepsilon_0(\\varepsilon_r-1)vB\\,wv$ ずつ減り，この分だけ X から導線を通って Y へ電荷が移る．電流は\n\\[ \\boldsymbol{I=\\varepsilon_0(\\varepsilon_r-1)v^2Bw}\\quad(\\textbf{導線中を X→Y の向き}) \\]\nで，先端が右端に達するまでの時間 $\\ell/v$ だけ流れる．運ばれる電気量は $I\\cdot\\dfrac{\\ell}{v}=\\varepsilon_0(\\varepsilon_r-1)vBS$ で (2) と一致する．電気を通さない液体の流れでも，流れ込む間は一定の電流が取り出せることになる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "動く誘電体の分子はローレンツ力を電場と同じように感じて分極するので，分極の原因は $E+vB$ になる．極板が帯電していなければ分極電荷の電場が $vB$ の一部だけを打ち消して電圧は $(1-1/\\varepsilon_r)vBd$ にとどまり（導体なら完全に打ち消して $vBd$），短絡すれば液体のある部分にだけ打ち消し電荷が集まるので，液体が流れ込む間は面積の増加率に比例する一定の電流が流れる．"
+ },
+ "concepts": [
+  "electromagnetic-induction",
+  "capacitor",
+  "coulomb-field"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "誘電体",
+  "分極電荷",
+  "ローレンツ力",
+  "電磁流量計",
+  "平行板",
+  "動く媒質"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

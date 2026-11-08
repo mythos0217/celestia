@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400">
+  <defs>
+    <marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#222"/>
+    </marker>
+  </defs>
+  <!-- B field symbols (out of page) -->
+  <g fill="none" stroke="#222" stroke-width="1.2">
+    <circle cx="60" cy="60" r="9"/><circle cx="180" cy="60" r="9"/><circle cx="340" cy="60" r="9"/><circle cx="460" cy="60" r="9"/>
+    <circle cx="60" cy="340" r="9"/><circle cx="180" cy="340" r="9"/><circle cx="340" cy="340" r="9"/><circle cx="460" cy="340" r="9"/>
+    <circle cx="60" cy="200" r="9"/><circle cx="460" cy="200" r="9"/>
+  </g>
+  <g fill="#222">
+    <circle cx="60" cy="60" r="2.6"/><circle cx="180" cy="60" r="2.6"/><circle cx="340" cy="60" r="2.6"/><circle cx="460" cy="60" r="2.6"/>
+    <circle cx="60" cy="340" r="2.6"/><circle cx="180" cy="340" r="2.6"/><circle cx="340" cy="340" r="2.6"/><circle cx="460" cy="340" r="2.6"/>
+    <circle cx="60" cy="200" r="2.6"/><circle cx="460" cy="200" r="2.6"/>
+  </g>
+  <text x="476" y="66" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">B</text>
+  <!-- tube, rotated by -30 deg about C(260,200) -->
+  <g transform="rotate(-30 260 200)">
+    <line x1="100" y1="193" x2="420" y2="193" stroke="#222" stroke-width="1.6"/>
+    <line x1="100" y1="207" x2="420" y2="207" stroke="#222" stroke-width="1.6"/>
+    <circle cx="370" cy="200" r="6" fill="#222"/>
+    <!-- r0 dimension -->
+    <line x1="260" y1="226" x2="370" y2="226" stroke="#888" stroke-width="1" marker-start="url(#q-ar)" marker-end="url(#q-ar)"/>
+    <line x1="260" y1="207" x2="260" y2="232" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="370" y1="207" x2="370" y2="232" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+  </g>
+  <circle cx="260" cy="200" r="3" fill="#222"/>
+  <text x="246" y="186" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">C</text>
+  <text x="332" y="244" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">r<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+  <text x="376" y="116" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">小球（<tspan font-family="Times New Roman, serif" font-style="italic">m</tspan>, <tspan font-family="Times New Roman, serif" font-style="italic">q</tspan>）</text>
+  <line x1="390" y1="122" x2="361" y2="140" stroke="#222" stroke-width="1"/>
+  <!-- rotation indicator without direction -->
+  <path d="M 200 120 A 100 100 0 0 0 180 160" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="166" y="128" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">ω</text>
+  <text x="130" y="390" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">上から見た図（磁場は紙面の裏から表へ）</text>
+</svg>

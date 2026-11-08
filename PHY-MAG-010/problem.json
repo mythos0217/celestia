@@ -1,0 +1,143 @@
+{
+ "id": "PHY-MAG-010",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "磁場中で回転する管の中の荷電粒子（ローレンツ力による復元力と，管が力を及ぼさない回転）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，鉛直上向き（紙面の裏から表への向き）に磁束密度の大きさ $B$ の一様な磁場がかかった水平面内で，なめらかで細い直線状の管が，その中点 C を通る鉛直軸のまわりに，モーターによって一定の大きさ $\\omega$ の角速度で回転している．管の中には質量 $m$，電荷 $q\\,(q>0)$ の小球が1個入っている．時刻 $t=0$ に，小球は C から距離 $r_0$ の位置で管に対して静止していた（管とともに回っていた）．管は十分に長く，小球が管の端に達することはない．小球にはたらく重力は管からの鉛直方向の力とつり合っており，水平面内の運動には関係しない．小球の運動による電磁波の放射は無視する．$\\omega_c=\\dfrac{qB}{m}$ とおく．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "管とともに回転する観測者から見た，管に沿った方向の小球の運動を考える．小球が C から遠ざかって飛び出していくことなく，C の両側を往復し続けるためには，管の回転の向き（上から見て時計回りか反時計回りか）と $\\omega$ がどのような条件を満たせばよいか．また，そのときの往復運動の周期 $T$ を $\\omega,\\ \\omega_c$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の条件のもとで $\\omega$ だけを変えるとき，$T$ が最小になる $\\omega$ と，$T$ の最小値を $\\omega_c$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "(1) の条件のもとで，時刻 $t$ に管が小球に及ぼす力の水平成分（管に垂直な向き）の大きさ $N$ を，$m,\\ \\omega,\\ \\omega_c,\\ r_0,\\ t$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\omega$ が (2) で求めた値のとき，(3) の $N$ は常に $0$ になる．このとき地面に対して小球が描く軌道の形と大きさ，および地面に対する小球の速さを答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(1) の条件のもとで，時刻 $t=0$ から小球がはじめて C を通過するまでに，モーターが管を通して小球にした仕事 $W$ を $m,\\ \\omega,\\ \\omega_c,\\ r_0$ で表せ．また，$W<0$ となる $\\omega$ の範囲を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：磁場中で回転する管の中の荷電粒子（ローレンツ力による復元力と，管が力を及ぼさない回転）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：磁場中で回転する管の中の荷電粒子（ローレンツ力による復元力と，管が力を及ぼさない回転）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "上から見て時計回り，$0<\\omega<\\omega_c$，$T=\\dfrac{2\\pi}{\\sqrt{\\omega(\\omega_c-\\omega)}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\omega=\\dfrac{\\omega_c}{2}$，$T_{\\min}=\\dfrac{4\\pi}{\\omega_c}$"
+   },
+   {
+    "id": "3",
+    "tex": "$N=m\\,|\\omega_c-2\\omega|\\,r_0\\Omega\\,|\\sin\\Omega t|$（$\\Omega=\\sqrt{\\omega(\\omega_c-\\omega)}$）"
+   },
+   {
+    "id": "4",
+    "tex": "出発点と C を直径の両端とする半径 $\\dfrac{r_0}{2}$ の円，速さ $\\dfrac{\\omega_c r_0}{2}$（一定）"
+   },
+   {
+    "id": "5",
+    "tex": "$W=\\dfrac12m\\omega(\\omega_c-2\\omega)r_0^2$，$\\dfrac{\\omega_c}{2}<\\omega<\\omega_c$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　小球には重力・管からの力・ローレンツ力がはたらく．管はなめらかなので，管からの力は管に垂直である．したがって管に沿った方向の運動は，管とともに回る観測者から見た「遠心力」と「ローレンツ力の管方向成分」だけで決まる．ローレンツ力は地面に対する速度で計算する．\n\n\\textbf{(1)}　C からの距離を $r$（C をはさんで反対側は負）とする．地面に対する小球の速度は，管に沿った成分 $\\dfrac{dr}{dt}$ と，管に垂直な成分 $r\\omega$（管とともに回る分）の和である．ローレンツ力 $q\\vec v\\times\\vec B$ のうち，管に沿った成分を生むのは管に垂直な速度成分 $r\\omega$ の方で，その大きさは $qBr\\omega$ である．$\\dfrac{dr}{dt}$ によるローレンツ力は管に垂直なので，管に沿った運動には関係しない（回転系で現れるコリオリの力も管に垂直である）．\n\n$\\vec B$ が上向きで $q>0$ のとき，$\\vec v\\times\\vec B$ が C を向くのは，小球が上から見て\\textbf{時計回り}に動くときである．反時計回りではローレンツ力も遠心力も外向きとなり，小球は必ず飛び出す．時計回りのとき，管とともに回る観測者から見た管方向の運動方程式は\n\\[ m\\frac{d^2r}{dt^2}=mr\\omega^2-qBr\\omega=-m\\omega(\\omega_c-\\omega)\\,r \\]\n右辺が $r$ に比例する復元力になるのは $\\omega(\\omega_c-\\omega)>0$，すなわち $\\boldsymbol{0<\\omega<\\omega_c}$ のときで，小球は C を中心に角振動数 $\\Omega=\\sqrt{\\omega(\\omega_c-\\omega)}$ の単振動をする．\n\\[ T=\\boldsymbol{\\frac{2\\pi}{\\sqrt{\\omega(\\omega_c-\\omega)}}} \\]\n$\\omega\\ge\\omega_c$ では遠心力がローレンツ力に勝ち（等号では力0で静止を続けるが少しでもずれると等速で離れていく），往復しない．\n\n\\textbf{(2)}　$\\omega(\\omega_c-\\omega)=\\dfrac{\\omega_c^2}{4}-\\left(\\omega-\\dfrac{\\omega_c}{2}\\right)^2$ は $\\omega=\\boldsymbol{\\dfrac{\\omega_c}{2}}$ で最大値 $\\dfrac{\\omega_c^2}{4}$ をとるので，$T_{\\min}=\\boldsymbol{\\dfrac{4\\pi}{\\omega_c}}$．$\\omega$ を大きくすると，ローレンツ力（$\\propto\\omega$）による復元力は強まるが遠心力（$\\propto\\omega^2$）がそれ以上に効いてくるため，「ばね定数」$m\\omega(\\omega_c-\\omega)$ は単調でない．\n\n\\textbf{(3)}　初期条件（$t=0$ で $r=r_0$，$\\dfrac{dr}{dt}=0$）から $r=r_0\\cos\\Omega t$，$\\dfrac{dr}{dt}=-r_0\\Omega\\sin\\Omega t$．\n\n管に垂直な方向の力をエネルギーで求める．地面に対する運動エネルギーは $K=\\dfrac12m\\left\\{\\left(\\dfrac{dr}{dt}\\right)^2+r^2\\omega^2\\right\\}$．ローレンツ力は仕事をせず，重力と鉛直方向の力も仕事をしないので，$K$ を変えるのは管が及ぼす水平な力 $N$（管に垂直）だけである．管のその場所は速さ $r\\omega$ で $N$ の向き（管に垂直）に動いているので，$N$ の仕事率は $N_{\\parallel}\\,r\\omega$（$N_{\\parallel}$ は管の進む向きを正とした成分）．一方，運動方程式 $\\dfrac{d^2r}{dt^2}=-\\Omega^2r$ を使うと\n\\[ \\frac{dK}{dt}=m\\frac{dr}{dt}\\left(\\frac{d^2r}{dt^2}+r\\omega^2\\right)=m\\frac{dr}{dt}\\,r(\\omega^2-\\Omega^2)=-m\\omega(\\omega_c-2\\omega)\\,r\\frac{dr}{dt} \\]\nこれを $N_{\\parallel}r\\omega$ と等しいとおくと $N_{\\parallel}=-m(\\omega_c-2\\omega)\\dfrac{dr}{dt}$．したがって\n\\[ N=\\boldsymbol{m\\,|\\omega_c-2\\omega|\\,r_0\\Omega\\,|\\sin\\Omega t|},\\qquad \\Omega=\\sqrt{\\omega(\\omega_c-\\omega)} \\]\n（慣性系の角運動量の変化率からも同じ結果になる．管に垂直な方向には，管が及ぼす力と，$\\dfrac{dr}{dt}$ によるローレンツ力 $qB\\dfrac{dr}{dt}$ がはたらき，その合力が $2m\\omega\\dfrac{dr}{dt}$ に等しい．）\n\n\\textbf{(4)}　$\\omega=\\dfrac{\\omega_c}{2}$ のとき $\\Omega=\\omega$ となり，$N=0$ である．管が力を及ぼさないので，小球は磁場の中を自由に運動しており，その軌道は等速円運動のはずである．実際，地面に対する小球の位置を極座標で表すと，管の回転角 $\\varphi=\\omega t$ に対して\n\\[ r=r_0\\cos\\varphi \\]\nこれは C を通り，出発点と C を直径の両端とする円（直径 $r_0$）の式である（円周角の定理：直径を見込む角が直角）．よって軌道は\\textbf{出発点と C を直径の両端とする半径 $\\boldsymbol{\\dfrac{r_0}{2}}$ の円}である．速さは\n\\[ \\sqrt{\\left(\\frac{dr}{dt}\\right)^2+r^2\\omega^2}=r_0\\omega\\sqrt{\\sin^2\\omega t+\\cos^2\\omega t}=r_0\\omega=\\boldsymbol{\\frac{\\omega_c r_0}{2}} \\]\nで一定であり，半径 $\\dfrac{mv}{qB}=\\dfrac{r_0}{2}$ のサイクロトロン運動と一致する．円周上の点の C からの方向（円周角）は円の中心のまわりの回転角の半分の速さで回るので，管の角速度はサイクロトロン角振動数のちょうど半分になる．\n\n\\textbf{(5)}　$t=0$ では $K_0=\\dfrac12mr_0^2\\omega^2$，C 通過時（$r=0$）は $K_1=\\dfrac12m(r_0\\Omega)^2$．仕事をするのは管の力だけなので\n\\[ W=K_1-K_0=\\frac12mr_0^2(\\Omega^2-\\omega^2)=\\boldsymbol{\\frac12m\\omega(\\omega_c-2\\omega)r_0^2} \\]\n$W<0$ となるのは $\\boldsymbol{\\dfrac{\\omega_c}{2}<\\omega<\\omega_c}$ のときである．このとき管は小球に引きずられる向きに力を受け，モーターは小球からエネルギーを受け取る．$\\omega=\\dfrac{\\omega_c}{2}$ を境に，管が小球を「押して回す」か「小球に押される」かが入れかわる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "磁場中で回転する管の中の荷電粒子には，管とともに回る速度成分によるローレンツ力 $qBr\\omega$ が中心向きにはたらき，遠心力と合わせて「ばね定数」$m\\omega(\\omega_c-\\omega)$ の復元力となる．このばね定数は $\\omega=\\omega_c/2$ で最大となり，そのとき管は粒子に力を及ぼさず，粒子は C を通るサイクロトロン円を描く（円周角の定理）．管の力の仕事の符号もここで入れかわる．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "simple-harmonic-motion",
+  "circular-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ローレンツ力",
+  "回転座標系",
+  "単振動",
+  "サイクロトロン運動",
+  "仕事とエネルギー"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

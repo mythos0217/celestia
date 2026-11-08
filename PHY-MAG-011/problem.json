@@ -1,0 +1,144 @@
+{
+ "id": "PHY-MAG-011",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "直交する電場・磁場中のイオンの折り返し点と比電荷による振り分け",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，質量 $m$，電荷 $q\\ (>0)$ のイオンを静止状態から電圧 $V$ で加速し，原点 O から $y$ 軸の正の向きに速さ $v_0$ で偏向部へ入射させる．偏向部は $z=h$ と $z=-h$ にある平行な極板にはさまれた領域で，$y$ 方向には十分長い．偏向部には $z$ 軸の正の向きに強さ $E$ の一様な電場と，$x$ 軸の正の向きに磁束密度 $B$ の一様な磁場がかけられている．真空中で，重力は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "偏向部内のイオンの速度を $(0,\\,v_y,\\,v_z)$，位置の $z$ 座標を $z$ とする．イオンが受ける力の $y$ 成分を考えて，偏向部内では常に $v_y=v_0+\\dfrac{qB}{m}z$ が成り立つことを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) とエネルギー保存則を用いて，$v_z^2$ を $z$ の式で表し，イオンの $z$ 座標がとりうる範囲の O 以外の端 $z^*$ を $E,\\,B,\\,V,\\,q,\\,m$ で表せ．ただし，イオンは極板に当たらないものとする．"
+     },
+     {
+      "id": "3",
+      "tex": "偏向部を直進するイオンの比電荷 $q/m$ を $E,\\,B,\\,V$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$E,\\,B,\\,V,\\,h$ を固定し，いろいろな比電荷のイオンを入射させる．上の極板に当たる（接する場合を含む）イオンの比電荷 $q/m$ の範囲を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "比電荷をどのように選んでも下の極板に当たらない（接しない）ための $h$ の条件を求めよ．また，最も下まで達するイオンの比電荷は，(3) で求めた比電荷の何倍か．エネルギーに注目して理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：直交する電場・磁場中のイオンの折り返し点と比電荷による振り分け",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：直交する電場・磁場中のイオンの折り返し点と比電荷による振り分け",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "略（$y$ 成分の運動方程式 $m\\dfrac{dv_y}{dt}=qBv_z$ を積分）"
+   },
+   {
+    "id": "2",
+    "tex": "$v_z^2=\\left(\\dfrac{qB}{m}\\right)^2z(z^*-z)$，$z^*=\\dfrac{2mE}{qB^2}-\\dfrac{2}{B}\\sqrt{\\dfrac{2mV}{q}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{q}{m}=\\dfrac{E^2}{2VB^2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$0<\\dfrac{q}{m}\\le\\dfrac{2\\left(\\sqrt{V+hE}-\\sqrt V\\right)^2}{h^2B^2}$"
+   },
+   {
+    "id": "5",
+    "tex": "$h>\\dfrac{V}{E}$，4倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　イオンにはたらく力は $\\vec F=q(\\vec E+\\vec v\\times\\vec B)$ である．$\\vec v=(0,\\,v_y,\\,v_z)$，$\\vec B=(B,\\,0,\\,0)$ より $\\vec v\\times\\vec B=(0,\\,Bv_z,\\,-Bv_y)$ なので\n\\[ F_x=0,\\qquad F_y=qBv_z,\\qquad F_z=q(E-Bv_y) \\]\n$F_x=0$ よりイオンは $yz$ 平面内を運動する．$y$ 成分の運動方程式 $m\\dfrac{dv_y}{dt}=qB\\dfrac{dz}{dt}$ を，入射時（$v_y=v_0$，$z=0$）から積分すると\n\\[ v_y=v_0+\\frac{qB}{m}z \\]\nとなる．\\hfill（証明終）\n\n\\textbf{(2)}　ローレンツ力は仕事をしない．電場は $+z$ 向きなので，$z$ だけ上がると静電気力が $qEz$ の仕事をする．よって $\\dfrac12m(v_y^2+v_z^2)=\\dfrac12mv_0^2+qEz$．$\\omega=\\dfrac{qB}{m}$ として (1) を代入すると\n\\[ v_z^2=v_0^2+\\frac{2qE}{m}z-(v_0+\\omega z)^2=\\omega^2z\\left\\{\\frac{2(qE/m-v_0\\omega)}{\\omega^2}-z\\right\\} \\]\nしたがって $v_z^2=\\omega^2z(z^*-z)$ の形で，\n\\[ z^*=\\frac{2m(E-Bv_0)}{qB^2} \\]\n$v_z^2\\ge0$ より $z$ は $0$ と $z^*$ の間だけを動き，両端で $v_z=0$ となって折り返す．$v_0=\\sqrt{\\dfrac{2qV}{m}}$ を代入して\n\\[ z^*=\\boldsymbol{\\frac{2mE}{qB^2}-\\frac{2}{B}\\sqrt{\\frac{2mV}{q}}} \\]\n（$E>Bv_0$ なら上側，$E<Bv_0$ なら下側に振れる．）\n\n\\textbf{(3)}　直進するのは $z^*=0$，すなわち $E=Bv_0$ のときで，$v_0^2=\\dfrac{2qV}{m}$ より\n\\[ \\frac{q}{m}=\\boldsymbol{\\frac{E^2}{2VB^2}} \\]\n\n\\textbf{(4)}　偏向部は十分長いので，上の極板に当たる条件は $z^*\\ge h$．$s=\\sqrt{q/m}$ とおくと $z^*=\\dfrac{2(E-B\\sqrt{2V}\\,s)}{B^2s^2}$ で，$z^*>0$ となる範囲 $s<\\dfrac{E}{B\\sqrt{2V}}$ では $s$ について単調減少である（$\\dfrac{dz^*}{ds}=\\dfrac{2(\\sqrt{2V}Bs-2E)}{B^2s^3}<0$）．$z^*\\ge h$ は\n\\[ hB^2s^2+2\\sqrt{2V}\\,Bs-2E\\le0 \\]\n$s>0$ で解くと $s\\le\\dfrac{\\sqrt{2V+2hE}-\\sqrt{2V}}{hB}$．よって\n\\[ \\boldsymbol{0<\\frac{q}{m}\\le\\frac{2\\left(\\sqrt{V+hE}-\\sqrt V\\right)^2}{h^2B^2}} \\]\n（この上限は (3) の値より小さく，直進するイオンが当たらないことと整合する．）\n\n\\textbf{(5)}　\\textbf{エネルギーによる限界}　下側の折り返し点 $z=-|z^*|$ では $v_z=0$ で，エネルギー保存より\n\\[ \\frac12mv_y^2=qV-qE|z^*|\\ge0 \\quad\\Longrightarrow\\quad |z^*|\\le\\frac{V}{E} \\]\nイオンは加速で得た運動エネルギー $qV$ 以上に電場に逆らって下がることはできない．等号は最下点で $v_y=0$（速さ $0$）となるときで，(1) より $0=v_0-\\dfrac{qB}{m}|z^*|$，すなわち $|z^*|=\\dfrac{mv_0}{qB}$．これと $|z^*|=\\dfrac VE$ から $v_0=\\dfrac{qBV}{mE}$，2乗して $v_0^2=\\dfrac{2qV}{m}$ と比べると\n\\[ \\frac{q}{m}=\\frac{2E^2}{VB^2}=4\\times\\frac{E^2}{2VB^2} \\]\nこの比電荷のイオンは実際に深さ $\\dfrac VE$ に達し（(2) の式に代入しても $z^*=-\\dfrac VE$），それ以外の比電荷では最下点で $v_y\\neq0$ なので深さは $\\dfrac VE$ より浅い．したがって，どの比電荷でも下の極板に当たらない条件は\n\\[ \\boldsymbol{h>\\frac{V}{E}} \\]\nで，最も下まで達するイオンの比電荷は (3) の \\textbf{4倍} である．このとき $v_0=\\dfrac{2E}{B}$ で，軌道は最下点がとがったサイクロイドになる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "直交する一様な電場と磁場の中では，ローレンツ力の $y$ 成分から $v_y=v_0+\\frac{qB}{m}z$ という1次の関係が得られ，エネルギー保存と組み合わせると軌道を解かずに折り返し点が決まる．電場に逆らって下がれる深さは運動エネルギーが尽きる $V/E$ が上限で，比電荷によらない．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "mechanical-energy",
+  "coulomb-field"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ローレンツ力",
+  "直交電磁場",
+  "サイクロイド",
+  "エネルギー保存",
+  "比電荷",
+  "折り返し点"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

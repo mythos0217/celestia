@@ -1,0 +1,143 @@
+{
+ "id": "PHY-MAG-001",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "2本の平行電流の反発力で浮く導線の静止位置と安定性",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は，水平に張られた十分に長い 3 本の平行な直線導線 P，Q，W を，導線に垂直な鉛直断面で見たものである．P と Q は同じ高さに距離 $2a$ 離して固定されており，どちらにも紙面の表から裏の向きに大きさ $I$ の電流が流れている．W は単位長さあたりの質量が $\\lambda$ で，P，Q の中点 O を通る鉛直線（PQ の垂直二等分線）上だけをなめらかに動けるようにガイドで支えられており，紙面の裏から表の向きに大きさ $I'$ の電流が流れている．電流の大きさは W が動いても常に一定に保たれるものとする．真空の透磁率を $\\mu_0$，重力加速度の大きさを $g$ とし，W の O からの高さを $y\\ (>0)$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "W の長さ 1 あたりに P，Q の電流がおよぼす力の合力の大きさと向きを，$y$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "W をガイド上のどこかに静止させることができるための $I'$ の最小値 $I'_0$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$I'=\\dfrac{5}{4}I'_0$ のとき，W が静止できる高さ $y$ をすべて求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で求めたそれぞれの位置から，W を鉛直上向きにわずかにずらして静かに放すと，W はその後どうなるか．"
+     },
+     {
+      "id": "5",
+      "tex": "(3) の状況で，W を安定な静止位置から鉛直方向にわずかにずらして放すと，W は単振動をする．その周期を $a$，$g$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：2本の平行電流の反発力で浮く導線の静止位置と安定性",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：2本の平行電流の反発力で浮く導線の静止位置と安定性",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{\\mu_0II'y}{\\pi(a^2+y^2)}$，鉛直上向き"
+   },
+   {
+    "id": "2",
+    "tex": "$I'_0=\\dfrac{2\\pi a\\lambda g}{\\mu_0 I}$"
+   },
+   {
+    "id": "3",
+    "tex": "$y=\\dfrac{a}{2}$，$2a$"
+   },
+   {
+    "id": "4",
+    "tex": "$y=\\dfrac{a}{2}$ からは上昇を続け（不安定），$y=2a$ からはもとの位置に引き戻されて振動する（安定）"
+   },
+   {
+    "id": "5",
+    "tex": "$2\\pi\\sqrt{\\dfrac{10a}{3g}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} P と W の距離は $r=\\sqrt{a^2+y^2}$．逆向きの電流は反発し合うので，P が W の長さ 1 あたりにおよぼす力は P→W の向きに大きさ\n\\[ f_1=I'\\cdot\\mu_0\\frac{I}{2\\pi r}=\\frac{\\mu_0II'}{2\\pi\\sqrt{a^2+y^2}}. \\]\nQ からの力も同じ大きさで Q→W の向き．2 力の水平成分は打ち消し合い，鉛直成分は $\\dfrac{y}{r}$ 倍ずつ加わるので\n\\[ F(y)=2f_1\\cdot\\frac{y}{\\sqrt{a^2+y^2}}=\\boldsymbol{\\frac{\\mu_0II'y}{\\pi(a^2+y^2)}}\\quad\\textbf{（鉛直上向き）}. \\]\n水平方向の力はつり合っているが，その方向の安定性はガイドが保証している．\n\n\\textbf{(2)} 静止の条件は $F(y)=\\lambda g$．$F$ の最大値を調べる．$\\dfrac{y}{a^2+y^2}=\\dfrac{1}{y+a^2/y}$ で，相加・相乗平均より $y+\\dfrac{a^2}{y}\\ge2a$（等号 $y=a$）．よって $F$ は $y=a$ で最大値 $\\dfrac{\\mu_0II'}{2\\pi a}$ をとる（$y\\to0$ でも $y\\to\\infty$ でも $F\\to0$：真下では 2 力が水平になり，遠方では力そのものが弱まる）．静止できるのは最大値が $\\lambda g$ 以上のときなので\n\\[ \\frac{\\mu_0II'}{2\\pi a}\\ge\\lambda g\\qquad\\therefore\\ I'_0=\\boldsymbol{\\frac{2\\pi a\\lambda g}{\\mu_0 I}}. \\]\n\n\\textbf{(3)} $\\lambda g=\\dfrac{\\mu_0II'_0}{2\\pi a}$ を用いると，$I'=\\dfrac{5}{4}I'_0$ のとき\n\\[ F(y)=\\frac{5}{4}\\cdot\\frac{\\mu_0II'_0}{2\\pi a}\\cdot\\frac{2ay}{a^2+y^2}=\\frac{5}{2}\\lambda g\\,\\frac{ay}{a^2+y^2}. \\]\n$F=\\lambda g$ より $2y^2-5ay+2a^2=0$，$(2y-a)(y-2a)=0$．よって $\\boldsymbol{y=\\dfrac{a}{2},\\ 2a}$．\n\n\\textbf{(4) 安定性}　$F(y)$ は $0<y<a$ で増加，$y>a$ で減少する（解答図）．\\\\\n・$y=\\dfrac{a}{2}$ から少し上にずらすと $F>\\lambda g$ となり，W は上向きに加速されてさらに上がる．\\textbf{不安定}で，W は上昇を続け，$y=2a$ を越えたところで減速して，$y=2a$ のまわりを往復する（力学的エネルギーが保存されるので，下は $y=\\dfrac{a}{2}$ 付近まで戻ってくる大きな振動になる）．\\\\\n・$y=2a$ から少し上にずらすと $F<\\lambda g$ で，合力は下向き．下にずらせば上向き．もとの位置に引き戻される\\textbf{安定}なつり合いで，W はその付近で振動する．\n\n\\textbf{(5)} $y=2a+\\xi$（$|\\xi|\\ll a$）とする．$F$ を $y$ で微分すると\n\\[ \\frac{dF}{dy}=\\frac{5}{2}\\lambda g\\,a\\cdot\\frac{a^2-y^2}{(a^2+y^2)^2},\\qquad \\left.\\frac{dF}{dy}\\right|_{y=2a}=\\frac{5}{2}\\lambda g\\,a\\cdot\\frac{-3a^2}{25a^4}=-\\frac{3\\lambda g}{10a}. \\]\nよって W の長さ 1 あたりの運動方程式は\n\\[ \\lambda\\ddot\\xi=F(2a+\\xi)-\\lambda g\\fallingdotseq-\\frac{3\\lambda g}{10a}\\xi. \\]\n角振動数 $\\omega=\\sqrt{\\dfrac{3g}{10a}}$ の単振動で，周期は\n\\[ T=\\boldsymbol{2\\pi\\sqrt{\\frac{10a}{3g}}}. \\]\n電流や $\\lambda$ によらないのは，$I'$ が「$y=2a$ でつり合う」という条件で $\\lambda g$ と結びついているからである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "平行電流間の力をベクトルで合成すると，対称な 2 本から受ける反発力は距離とともに増えてから減る．重力とのつり合い点は 2 つでき，力の傾き（距離による変化）の符号で安定・不安定が分かれ，安定点のまわりでは復元力の傾きから単振動の周期が決まる．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "simple-harmonic-motion",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "平行電流間の力",
+  "磁場の重ね合わせ",
+  "つり合いの安定性",
+  "単振動",
+  "相加相乗平均"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

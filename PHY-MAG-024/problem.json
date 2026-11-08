@@ -1,0 +1,135 @@
+{
+ "id": "PHY-MAG-024",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "磁場中で x 方向の電場を操作される荷電粒子と電場を切った後の円軌道の中心",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，$xy$ 平面内の $x>0$ の領域にだけ，紙面の表から裏へ向かう磁束密度の大きさ $B$ の一様な磁場がある．質量 $m$，電荷 $q\\ (>0)$ の粒子が $x<0$ の領域を $x$ 軸に沿って $+x$ 向きに速さ $v$ で進み，時刻 $t=0$ に原点 O を通過した．$x>0$ の領域には，$x$ 軸に平行で空間的に一様な電場を加えることができ，その強さと向きは時間とともに自由に変えられる．電場の $x$ 成分を $E$ とする（$+x$ 向きを正）．重力は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "粒子が $x>0$ の領域にいる間，$E$ をどのように変化させても，粒子の速度の $y$ 成分 $v_y$ と $x$ 座標の間に $v_y=\\dfrac{qB}{m}x$ の関係が成り立つことを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "粒子の速度の $x$ 成分が常に $v$ に保たれるように $E$ を調整する．$E$ を粒子の $x$ 座標の関数として表せ．また，粒子の軌道を表す式 $y=y(x)$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2)の操作で粒子が $x=L$ に達するまでに，電場がした仕事 $W_E$ を求めよ．また，同じ間にローレンツ力の $x$ 成分がした仕事 $W_x$ と $y$ 成分がした仕事 $W_y$ をそれぞれ求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2)の操作を続け，粒子が $x=L$ に達した瞬間に電場を $0$ にした．その後，粒子が到達する $x$ 座標の最大値 $x_{\\max}$ を求めよ．また，粒子が $x>0$ の領域から出ていく点の $y$ 座標 $y_{\\rm out}$ と，そのときの速度の向きを求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：磁場中で x 方向の電場を操作される荷電粒子と電場を切った後の円軌道の中心",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：磁場中で x 方向の電場を操作される荷電粒子と電場を切った後の円軌道の中心",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "磁場の力の $y$ 成分だけが $v_y$ を変え，$m\\dfrac{dv_y}{dt}=qBv_x=qB\\dfrac{dx}{dt}$ を積分して $mv_y-qBx=0$（O での値）"
+   },
+   {
+    "id": "2",
+    "tex": "$E=\\dfrac{qB^2}{m}x$，$y=\\dfrac{qB}{2mv}x^2$"
+   },
+   {
+    "id": "3",
+    "tex": "$W_E=\\dfrac{q^2B^2L^2}{2m}$，$W_x=-\\dfrac{q^2B^2L^2}{2m}$，$W_y=\\dfrac{q^2B^2L^2}{2m}$"
+   },
+   {
+    "id": "4",
+    "tex": "$x_{\\max}=\\sqrt{L^2+\\left(\\dfrac{mv}{qB}\\right)^2}$，$y_{\\rm out}=\\dfrac{qBL^2}{2mv}+\\dfrac{mv}{qB}+\\sqrt{L^2+\\left(\\dfrac{mv}{qB}\\right)^2}$，速度は $-x$ 向き（境界 $x=0$ に垂直）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 電場によらない関係}\n\n磁場は $-z$ 向き（紙面の表から裏）なので，速度 $(v_x,v_y)$ の粒子が受けるローレンツ力は\n\\[ q\\vec v\\times\\vec B=(-qv_yB,\\ qv_xB) \\]\nである．電場は $x$ 方向だけなので，$y$ 方向の運動方程式には電場が現れない：\n\\[ m\\frac{dv_y}{dt}=qBv_x=qB\\frac{dx}{dt} . \\]\n両辺を時間で積分すると $mv_y-qBx$ は一定で，O を通過するとき $v_y=0$，$x=0$ だから\n\\[ \\boldsymbol{v_y=\\frac{qB}{m}x} \\]\nが $E$ の変化のしかたによらず成り立つ．\n\n\\textbf{(2) $v_x$ を一定に保つ電場}\n\n$x$ 方向の運動方程式は $m\\dfrac{dv_x}{dt}=qE-qv_yB$．$v_x$ を一定にするには右辺を $0$ にすればよく，(1)を使って\n\\[ \\boldsymbol{E=v_yB=\\frac{qB^2}{m}x} \\]\n（$+x$ 向き）．$x=vt$ だから $v_y=\\dfrac{qBv}{m}t$，$y=\\dfrac{qBv}{2m}t^2$ で，$t=x/v$ を代入すると\n\\[ \\boldsymbol{y=\\frac{qB}{2mv}x^2} \\]\nの放物線になる．\n\n\\textbf{(3) 仕事の内訳}\n\nローレンツ力全体は速度に垂直で仕事をしないから，運動エネルギーの増加はすべて電場の仕事である．$x=L$ で $v_y=qBL/m$ なので\n\\[ \\boldsymbol{W_E=\\frac12m\\left(\\frac{qBL}{m}\\right)^2=\\frac{q^2B^2L^2}{2m}} . \\]\n成分ごとには，$x$ 成分 $-qv_yB=-\\dfrac{q^2B^2}{m}x$ は $x$ の関数なので\n\\[ \\boldsymbol{W_x=\\int_0^L\\left(-\\frac{q^2B^2}{m}x\\right)dx=-\\frac{q^2B^2L^2}{2m}} , \\]\n$y$ 成分 $qvB$ は一定で，$y$ 方向の移動距離は $\\dfrac{qBL^2}{2mv}$ だから\n\\[ \\boldsymbol{W_y=qvB\\cdot\\frac{qBL^2}{2mv}=\\frac{q^2B^2L^2}{2m}} . \\]\n$W_x+W_y=0$ でローレンツ力全体の仕事は $0$ だが，成分ごとには $0$ でない．$x$ 成分は電場の仕事をちょうど打ち消してエネルギーを $y$ 方向の運動へ受け渡している．\n\n\\textbf{(4) 電場を切った後の円運動}\n\n電場を切った後は速さ $V=\\sqrt{v^2+(qBL/m)^2}$ の等速円運動で，半径は\n\\[ \\rho=\\frac{mV}{qB}=\\sqrt{\\left(\\frac{mv}{qB}\\right)^2+L^2} . \\]\n円の中心は，速度 $(v_x,v_y)$ を左へ $90^\\circ$ 回した向き $(-v_y,v_x)$ に距離 $\\rho$ のところで，その $x$ 座標は\n\\[ x_{\\rm c}=x-\\frac{m v_y}{qB}=x-x=0 \\]\nとなる（(1)の関係）．つまり，中心は\\textbf{電場をどう操作しても必ず $y$ 軸上}にある．ここでは中心は $\\left(0,\\ \\dfrac{qBL^2}{2mv}+\\dfrac{mv}{qB}\\right)$．\n\nしたがって $x$ の最大値は中心の $x$ 座標に半径を足して\n\\[ \\boldsymbol{x_{\\max}=\\sqrt{L^2+\\left(\\frac{mv}{qB}\\right)^2}} . \\]\n粒子は円の右下の点から反時計回りに回り，右端を通って円の最上点に達したとき $x=0$ の境界に戻る．中心が $x=0$ 上にあるので，そこで速度は $\\boldsymbol{-x}$ \\textbf{向き}（境界に垂直）であり，\n\\[ \\boldsymbol{y_{\\rm out}=\\frac{qBL^2}{2mv}+\\frac{mv}{qB}+\\sqrt{L^2+\\left(\\frac{mv}{qB}\\right)^2}} . \\]\nその後は $x<0$ の領域を $-x$ 向きに速さ $V$ で直進する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電場が $x$ 方向だけのとき，$y$ 方向の運動方程式に電場は現れず，$m\\,dv_y/dt=qB\\,dx/dt$ から $mv_y-qBx$ が保存する．そのため電場の時間変化のさせ方によらず，電場を切った後の円軌道の中心は磁場の境界（$y$ 軸）上にあり，粒子は必ず境界に垂直に出ていく．ローレンツ力は全体として仕事をしないが，成分ごとには電場の仕事を打ち消す $x$ 成分と運動エネルギーを運ぶ $y$ 成分に分かれる．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "circular-motion",
+  "work-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ローレンツ力",
+  "保存量",
+  "円運動",
+  "電場の仕事",
+  "磁場の境界"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

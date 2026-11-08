@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240" width="420" height="240" font-family="'Times New Roman', serif">
+<line x1="80" y1="110" x2="250" y2="110" stroke="currentColor" stroke-width="2.4"/>
+<text x="70" y="114" font-size="15" text-anchor="end" dominant-baseline="middle" class="f-label" fill="currentColor">+</text>
+<line x1="80" y1="190" x2="250" y2="190" stroke="currentColor" stroke-width="2.4"/>
+<text x="70" y="194" font-size="15" text-anchor="end" dominant-baseline="middle" class="f-label" fill="currentColor">−</text>
+<line x1="262" y1="110" x2="262" y2="190" stroke="currentColor" stroke-width="1.2"/>
+<text x="270" y="156" font-size="14" text-anchor="start" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">d</text>
+<text x="125" y="134" font-size="13" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">⊗</text>
+<text x="205" y="134" font-size="13" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">⊗</text>
+<text x="125" y="176" font-size="13" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">⊗</text>
+<text x="205" y="176" font-size="13" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">⊗</text>
+<text x="165" y="134" font-size="14" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">B</text>
+<circle cx="36" cy="150" r="5" class="f-body" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.4" data-phys="body:q"/>
+<g class="f-vel" data-dir="0" data-len="34">
+<line x1="42" y1="150" x2="66" y2="150" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="76,150 66,154.66 66,145.34" fill="currentColor"/>
+<text x="88" y="138" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">v</text>
+</g>
+<line x1="300" y1="20" x2="300" y2="230" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="360" y="200" font-size="13" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">⊗</text>
+<text x="390" y="220" font-size="14" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">B₂</text>
+<path d="M300,150 A50,50 0 0 0 300,50" fill="none" stroke="currentColor" stroke-width="1.2"/>
+</svg>

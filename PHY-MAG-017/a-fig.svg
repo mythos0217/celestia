@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 340">
+  <defs>
+    <marker id="a-ab" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f5fbf"/></marker>
+    <marker id="a-ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#c0392b"/></marker>
+  </defs>
+  <path d="M90,260 A150,150 0 0 1 390,260" fill="none" stroke="#222" stroke-width="1.6"/>
+  <circle cx="240" cy="260" r="2.5" fill="#222"/>
+  <text x="234" y="282" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">O</text>
+  <line x1="240" y1="260" x2="240" y2="110" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <line x1="240" y1="260" x2="336.4" y2="145.1" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <path d="M240,220 A40,40 0 0 1 265.7,229.4" fill="none" stroke="#222" stroke-width="1"/>
+  <text x="247" y="212" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">θ</text>
+  <circle cx="336.4" cy="145.1" r="6" fill="#888" stroke="#222" stroke-width="1.6"/>
+  <!-- gravity -->
+  <line x1="336.4" y1="145.1" x2="336.4" y2="215" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+  <text x="342" y="214" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf">mg</text>
+  <!-- normal outward -->
+  <line x1="336.4" y1="145.1" x2="368.5" y2="106.8" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+  <text x="372" y="104" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf">N</text>
+  <!-- Lorentz inward -->
+  <line x1="330" y1="152.8" x2="301.6" y2="186.6" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/>
+  <text x="262" y="186" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#c0392b">qvB</text>
+  <!-- velocity tangent -->
+  <line x1="336.4" y1="145.1" x2="381.4" y2="182.9" stroke="#222" stroke-width="1.4" marker-end="url(#a-ab)"/>
+  <text x="386" y="192" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">v</text>
+  <text x="20" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">⊙ の磁場：時計回りの正電荷には中心向きの力</text>
+  <text x="20" y="320" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">中心向き：</text>
+  <text x="96" y="320" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">mv²/r = mg <tspan font-style="normal">cos</tspan>θ − N + qvB</text>
+</svg>

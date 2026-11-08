@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400">
+  <defs>
+    <marker id="q-ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,4 L0,8 z" fill="#1f5fbf"/>
+    </marker>
+    <marker id="q-dim" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4 L0,8" fill="none" stroke="#222" stroke-width="1"/>
+    </marker>
+  </defs>
+  <!-- D1 (left), D2 (right) ; gap between x=262 and x=298 -->
+  <path d="M262,40 A160,160 0 0 0 262,360 Z" fill="none" stroke="#222" stroke-width="1.6"/>
+  <path d="M298,40 A160,160 0 0 1 298,360 Z" fill="none" stroke="#222" stroke-width="1.6"/>
+  <text x="150" y="70" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">D<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+  <text x="395" y="70" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">D<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+  <!-- B field dots -->
+  <g fill="none" stroke="#222" stroke-width="1">
+    <circle cx="140" cy="130" r="6"/><circle cx="140" cy="270" r="6"/><circle cx="200" cy="320" r="6"/>
+    <circle cx="420" cy="130" r="6"/><circle cx="420" cy="270" r="6"/><circle cx="360" cy="320" r="6"/>
+  </g>
+  <g fill="#222">
+    <circle cx="140" cy="130" r="1.8"/><circle cx="140" cy="270" r="1.8"/><circle cx="200" cy="320" r="1.8"/>
+    <circle cx="420" cy="130" r="1.8"/><circle cx="420" cy="270" r="1.8"/><circle cx="360" cy="320" r="1.8"/>
+  </g>
+  <text x="152" y="135" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">B</text>
+  <text x="432" y="135" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">B</text>
+  <!-- source S -->
+  <circle cx="262" cy="200" r="3.5" fill="#222"/>
+  <text x="214" y="216" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">S</text>
+  <!-- sample path (schematic) -->
+  <path d="M262,200 L298,200 A22,22 0 0 1 298,244 L262,244 A31,31 0 0 1 262,182 L298,182 A38,38 0 0 1 298,258" fill="none" stroke="#1f5fbf" stroke-width="1.4" stroke-dasharray="0"/>
+  <path d="M266,200 L292,200" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ar)"/>
+  <path d="M298,258 L290,258" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ar)"/>
+  <!-- gap width d -->
+  <line x1="262" y1="372" x2="262" y2="388" stroke="#888" stroke-width="1"/>
+  <line x1="298" y1="372" x2="298" y2="388" stroke="#888" stroke-width="1"/>
+  <line x1="240" y1="382" x2="262" y2="382" stroke="#222" stroke-width="1" marker-end="url(#q-dim)"/>
+  <line x1="320" y1="382" x2="298" y2="382" stroke="#222" stroke-width="1" marker-end="url(#q-dim)"/>
+  <text x="274" y="398" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">d</text>
+  <!-- R0 indication -->
+  <!-- power supply -->
+  <line x1="200" y1="40" x2="200" y2="18" stroke="#222" stroke-width="1"/>
+  <line x1="360" y1="40" x2="360" y2="18" stroke="#222" stroke-width="1"/>
+  <line x1="200" y1="18" x2="240" y2="18" stroke="#222" stroke-width="1"/>
+  <line x1="320" y1="18" x2="360" y2="18" stroke="#222" stroke-width="1"/>
+  <rect x="240" y="6" width="80" height="24" fill="none" stroke="#222" stroke-width="1.2"/>
+  <text x="249" y="23" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">電圧 <tspan font-family="Times New Roman, serif" font-style="italic">V</tspan></text>
+</svg>

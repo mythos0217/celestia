@@ -1,0 +1,144 @@
+{
+ "id": "PHY-MAG-013",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "回転電場によるサイクロトロン共鳴：吸収電力の共鳴曲線と回転の向き・直線偏りの電場",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，紙面に垂直に表から裏へ向かう磁束密度 $B$ の一様な磁場と，紙面内の大きさ $E$ の一様な電場がある．電場の大きさは一定で，その向きが一定の角速度 $\\omega$ で回転している．この空間で，電荷 $q\\,(q>0)$，質量 $m$ の粒子が紙面内を運動する．粒子は気体から速度と逆向きで大きさ $kv$（$v$ は速さ，$k$ は正の定数）の抵抗力を受ける．十分時間が経つと，粒子は電場と同じ角速度 $\\omega$・同じ回転の向きで等速円運動をするようになる（定常状態）．粒子が放射する電磁波や重力は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電場が反時計回りに回転する場合を考える．定常状態で，電場の向きが粒子の速度の向きより反時計回りに角 $\\delta$ だけ進んでいるとする．速度に平行な方向と，円の中心に向かう方向の運動方程式（つり合いの式）を書き，速さ $v$ と $\\tan\\delta$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "電場が粒子にする仕事率 $P$ を $\\omega$ の関数として求めよ．$P$ が最大となる角速度 $\\omega_0$ と最大値 $P_0$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$P=\\dfrac{P_0}{2}$ となる角速度を $\\omega_1,\\,\\omega_2\\ (\\omega_1<\\omega_2)$ とする．$\\omega_1+\\omega_2=2\\omega_0$ が厳密に成り立つことを示し，比電荷 $\\dfrac qm$ と $\\dfrac km$ を $\\omega_1,\\,\\omega_2,\\,B$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "電場が時計回りに角速度 $\\omega$ で回転する場合，定常状態での仕事率 $P'$ を求めよ．また $\\omega=\\omega_0$ のときの $\\dfrac{P'}{P_0}$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "回転する電場の代わりに，向きが一定で大きさが $E_0\\cos\\omega t$ と振動する電場をかける．$\\omega=\\omega_0$ のとき，電場がする仕事率の時間平均 $\\overline{P}$ を求めよ．また $k\\ll qB$ のとき，$\\overline{P}$ は大きさ $E_0$ の反時計回りの回転電場による $P_0$ の何倍か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：回転電場によるサイクロトロン共鳴：吸収電力の共鳴曲線と回転の向き・直線偏りの電場",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：回転電場によるサイクロトロン共鳴：吸収電力の共鳴曲線と回転の向き・直線偏りの電場",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "速度方向：$qE\\cos\\delta=kv$，中心方向：$mv\\omega=qvB+qE\\sin\\delta$；$v=\\dfrac{qE}{\\sqrt{k^2+(m\\omega-qB)^2}}$，$\\tan\\delta=\\dfrac{m\\omega-qB}{k}$"
+   },
+   {
+    "id": "2",
+    "tex": "$P=\\dfrac{q^2E^2k}{k^2+(m\\omega-qB)^2}$，$\\omega_0=\\dfrac{qB}{m}$，$P_0=\\dfrac{q^2E^2}{k}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\omega_{1,2}=\\omega_0\\mp\\dfrac km$ より和は $2\\omega_0$；$\\dfrac qm=\\dfrac{\\omega_1+\\omega_2}{2B}$，$\\dfrac km=\\dfrac{\\omega_2-\\omega_1}{2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$P'=\\dfrac{q^2E^2k}{k^2+(m\\omega+qB)^2}$，$\\dfrac{P'}{P_0}=\\dfrac{k^2}{k^2+4q^2B^2}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\overline{P}=\\dfrac{q^2E_0^2}{4k}\\left(1+\\dfrac{k^2}{k^2+4q^2B^2}\\right)$，約 $\\dfrac14$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 定常円運動の力}\n粒子は反時計回りに角速度 $\\omega$ で回る．磁場は紙面の表から裏向きなので，正電荷の速度に対するローレンツ力 $qvB$ は速度から反時計回りに $90^\\circ$ の向き，すなわち円の中心向きである（磁場だけのとき粒子が反時計回りに回ることと対応する）．電場の速度方向成分は $E\\cos\\delta$，中心向き成分は $E\\sin\\delta$，抵抗力は速度と逆向きである．等速円運動なので\n\\[ \\text{速度方向：}\\ qE\\cos\\delta-kv=0,\\qquad \\text{中心方向：}\\ m v\\omega=qvB+qE\\sin\\delta . \\]\n第2式から $qE\\sin\\delta=v(m\\omega-qB)$．第1式と2乗して加えると\n\\[ \\boldsymbol{v=\\frac{qE}{\\sqrt{k^2+(m\\omega-qB)^2}}},\\qquad \\boldsymbol{\\tan\\delta=\\frac{m\\omega-qB}{k}} . \\]\n$m\\omega<qB$ なら $\\delta<0$（電場が速度より遅れる）となる．\n\n\\textbf{(2)} 磁場は仕事をしないので，電場の仕事率は $P=qEv\\cos\\delta=kv^2$（抵抗力による損失と等しい）：\n\\[ \\boldsymbol{P=\\frac{q^2E^2k}{k^2+(m\\omega-qB)^2}} . \\]\n分母が最小となる $\\boldsymbol{\\omega_0=\\dfrac{qB}{m}}$（サイクロトロン角振動数）で最大となり，$\\boldsymbol{P_0=\\dfrac{q^2E^2}{k}}$．このとき $\\delta=0$ で，電場は常に速度と同じ向きを向いて粒子を押し続ける．\n\n\\textbf{(3)} $P=\\dfrac{P_0}2$ は $(m\\omega-qB)^2=k^2$，すなわち $\\omega=\\omega_0\\pm\\dfrac km$．よって\n\\[ \\omega_1+\\omega_2=2\\omega_0,\\qquad \\omega_2-\\omega_1=\\frac{2k}{m} \\]\nが厳密に成り立つ．$\\omega_0=\\dfrac{qB}{m}$ を用いて\n\\[ \\boldsymbol{\\frac qm=\\frac{\\omega_1+\\omega_2}{2B}},\\qquad \\boldsymbol{\\frac km=\\frac{\\omega_2-\\omega_1}{2}} . \\]\n\\textbf{注}　RLC 直列回路では仕事率が $\\dfrac{V^2R}{R^2+(\\omega L-\\frac1{\\omega C})^2}$ の形で，半値の2つの角周波数の\\textbf{積}が $\\omega_0^2$（相乗平均が $\\omega_0$）になる．ここでは「リアクタンス」にあたる $m\\omega-qB$ が $\\omega$ の1次式なので，共鳴曲線が $\\omega_0$ について完全に対称になり，\\textbf{和}が $2\\omega_0$（相加平均）になる．\n\n\\textbf{(4) 時計回りの電場}\n粒子が時計回りに回ると，ローレンツ力 $qvB$ は円の外向きになる．中心方向の式は $mv\\omega=-qvB+qE\\sin\\delta'$ となり，(1) の $qB$ を $-qB$ に置き換えればよい：\n\\[ \\boldsymbol{P'=\\frac{q^2E^2k}{k^2+(m\\omega+qB)^2}} . \\]\n分母は $\\omega$ とともに増えるだけで，共鳴は起こらない．$\\omega=\\omega_0$ では $m\\omega_0+qB=2qB$ なので\n\\[ \\boldsymbol{\\frac{P'}{P_0}=\\frac{k^2}{k^2+4q^2B^2}} . \\]\n\n\\textbf{(5) 直線的に振動する電場}\n$E_0\\cos\\omega t$（一定方向）は，大きさ $\\dfrac{E_0}{2}$ で反時計回りに回る電場と，大きさ $\\dfrac{E_0}{2}$ で時計回りに回る電場の和である（2つのベクトルの和は回転方向に垂直な成分が打ち消し合う）．運動方程式は電場について線形なので，定常状態の速度はそれぞれの電場による定常速度 $\\vec v_+$，$\\vec v_-$ の和になる．仕事率は\n\\[ q(\\vec E_++\\vec E_-)\\cdot(\\vec v_++\\vec v_-) \\]\nで，交差項 $\\vec E_+\\cdot\\vec v_-$，$\\vec E_-\\cdot\\vec v_+$ は互いに逆向きに回るベクトルの内積なので角振動数 $2\\omega$ で振動し，時間平均は 0 になる．よって時間平均は (2)，(4) で $E\\to\\dfrac{E_0}{2}$ としたものの和：\n\\[ \\boldsymbol{\\overline{P}=\\frac{q^2E_0^2}{4k}\\left(1+\\frac{k^2}{k^2+4q^2B^2}\\right)} . \\]\n$k\\ll qB$ では第2項が無視でき，$\\overline{P}\\approx\\dfrac{q^2E_0^2}{4k}=\\boldsymbol{\\dfrac14}P_0$．振動電場のうち粒子の回転と同じ向きに回る半分だけが共鳴に寄与し，仕事率は振幅の2乗に比例するので $\\left(\\frac12\\right)^2=\\frac14$ になる．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "回転電場中の荷電粒子の定常円運動では，磁場の力が「角振動数によらない復元項」$qB$ として働き，仕事率は $\\frac{q^2E^2k}{k^2+(m\\omega-qB)^2}$ という $\\omega$ について対称な共鳴曲線になる（半値の角振動数の和が $2\\omega_0$，RLC 回路の相乗平均との違い）．共鳴は粒子の回転と同じ向きに回る電場にだけ起こり，直線振動する電場はその半分の振幅しか共鳴に使えない．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "circular-motion",
+  "work-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "サイクロトロン共鳴",
+  "ローレンツ力",
+  "共鳴曲線",
+  "半値幅",
+  "回転電場",
+  "重ね合わせ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

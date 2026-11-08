@@ -1,0 +1,136 @@
+{
+ "id": "PHY-MAG-008",
+ "schema": "celestia.problem/1",
+ "field": "ELM",
+ "unit": "ELM-04",
+ "topic": "電場の層をはさむ強さの異なる2つの磁場領域を往復する荷電粒子のドリフトと閉じた軌道",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，$xy$ 平面内で，$y>0$ の領域には磁束密度 $B$，$y<-l$ の領域には磁束密度 $\\dfrac{B}{2}$ の一様な磁場が，いずれも紙面の裏から表の向きにかかっている．$-l<y<0$ の領域には磁場はなく，$y$ 軸の正の向きに強さ $E$ の一様な電場がある．質量 $m$，電荷 $q$（$q>0$）の粒子を，原点 O から $y$ 軸の正の向きに速さ $v$ で打ち出す．重力は無視でき，粒子は $xy$ 平面内を運動する．$v_0=\\sqrt{\\dfrac{2qEl}{m}}$ とおく．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "粒子が $y<-l$ の領域に入るための $v$ の条件を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$v>v_0$ のとき，粒子が打ち出された後に初めて $y=0$ を $y$ 軸の正の向きに通過する点の $x$ 座標 $X$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "粒子の軌道が閉じて，粒子が周期的に原点 O を同じ向きに通過するような $v$ の値 $v_{\\mathrm c}$ と，そのときの運動の周期を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "十分長い時間でみた粒子の速度の $x$ 成分の平均 $\\bar u$ を，$v<v_0$ と $v>v_0$ のそれぞれについて $v$ の関数として求めよ．また，$v$ を $v_0$ より小さい側から $v_0$ に近づけたときと，大きい側から近づけたときの $\\bar u$ の極限をそれぞれ求めよ．さらに，$\\bar u<0$ となる $v$ の範囲を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：電場の層をはさむ強さの異なる2つの磁場領域を往復する荷電粒子のドリフトと閉じた軌道",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：電場の層をはさむ強さの異なる2つの磁場領域を往復する荷電粒子のドリフトと閉じた軌道",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v>v_0$"
+   },
+   {
+    "id": "2",
+    "tex": "$X=\\dfrac{2m}{qB}\\left(v-2\\sqrt{v^2-v_0^{\\,2}}\\right)$"
+   },
+   {
+    "id": "3",
+    "tex": "$v_{\\mathrm c}=\\dfrac{2}{\\sqrt3}v_0=\\sqrt{\\dfrac{8qEl}{3m}}$，周期 $\\dfrac{3\\pi m}{qB}+\\dfrac{mv_{\\mathrm c}}{qE}$"
+   },
+   {
+    "id": "4",
+    "tex": "$v<v_0$：$\\bar u=\\dfrac{2v}{\\pi+2vB/E}$，$v>v_0$：$\\bar u=\\dfrac{2(v-2v')}{3\\pi+2(v-v')B/E}$（$v'=\\sqrt{v^2-v_0^{\\,2}}$）；$v\\to v_0-0$ で $\\dfrac{2v_0}{\\pi+2v_0B/E}$，$v\\to v_0+0$ で $\\dfrac{2v_0}{3\\pi+2v_0B/E}$；$\\bar u<0$ は $v>v_{\\mathrm c}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{各領域での運動}\n\n$y>0$：速さ $v$ の等速円運動で半径 $r=\\dfrac{mv}{qB}$．$y$ 軸正の向きに入ると，ローレンツ力 $q\\vec v\\times\\vec B$ は $x$ 軸正の向きなので，$+x$ 側に半円を描き，$x$ 座標が $2r$ だけ進んだ点で $y=0$ を $-y$ 向きに通過する．所要時間は $\\dfrac{\\pi m}{qB}$（速さによらない）．\n\n$-l<y<0$：電場の力 $qE$ は $+y$ 向きで，$-y$ 向きに進む粒子を減速する．$x$ 方向の速度は $0$ のままなので，粒子は $y$ 軸に平行に直線運動する．加速度の大きさは $a=\\dfrac{qE}{m}$．\n\n\\textbf{(1)}\n\n$y=-l$ まで止まらずに達する条件は $\\dfrac12mv^2>qEl$，すなわち $\\boldsymbol{v>v_0}$．\n\n\\textbf{(2)}\n\n$y=-l$ での速さは $v'=\\sqrt{v^2-v_0^{\\,2}}$．$y<-l$ では磁束密度が $\\dfrac B2$ で，$-y$ 向きに進む粒子が受けるローレンツ力は $-x$ 向きなので，半径 $r'=\\dfrac{mv'}{q(B/2)}=\\dfrac{2mv'}{qB}$ の半円を $-x$ 側に描き，$x$ 座標が $2r'$ だけ戻って $+y$ 向きに $y=-l$ に戻る．所要時間は $\\dfrac{\\pi m}{q(B/2)}=\\dfrac{2\\pi m}{qB}$．電場の層では加速されて，速さ $v$ で $y=0$ を $+y$ 向きに通過する．よって\n\\[ X=2r-2r'=\\boldsymbol{\\frac{2m}{qB}\\left(v-2\\sqrt{v^2-v_0^{\\,2}}\\right)} \\]\nこの点からは最初と同じ運動がくり返される．\n\n\\textbf{(3)}\n\n$v<v_0$ のときは，電場の層で止まって引き返し，再び速さ $v$ で $y=0$ を通過して同じ半円をくり返すので，1周期ごとに $x$ が $2r>0$ 進み，軌道は閉じない．$v>v_0$ で軌道が閉じるのは $X=0$，すなわち $v=2v'$ のときで\n\\[ v^2=4(v^2-v_0^{\\,2})\\quad\\Longrightarrow\\quad v_{\\mathrm c}=\\boldsymbol{\\frac{2}{\\sqrt3}v_0=\\sqrt{\\frac{8qEl}{3m}}} \\]\nこのとき $r=r'$ で，2つの半円を電場の層の2本の線分でつないだ閉じた軌道になる．電場の層の通過時間は片道 $\\dfrac{v-v'}{a}=\\dfrac{m(v_{\\mathrm c}-v_{\\mathrm c}/2)}{qE}=\\dfrac{mv_{\\mathrm c}}{2qE}$ なので，周期は\n\\[ \\frac{\\pi m}{qB}+\\frac{2\\pi m}{qB}+2\\cdot\\frac{mv_{\\mathrm c}}{2qE}=\\boldsymbol{\\frac{3\\pi m}{qB}+\\frac{mv_{\\mathrm c}}{qE}} \\]\n\n\\textbf{(4)}\n\n1周期の $x$ 方向の変位を周期で割ればよい．\n\n$v<v_0$：変位 $2r=\\dfrac{2mv}{qB}$，周期は半円 $\\dfrac{\\pi m}{qB}$ と電場の層での往復 $2\\cdot\\dfrac{v}{a}=\\dfrac{2mv}{qE}$ の和．\n\\[ \\bar u=\\frac{2mv/(qB)}{\\pi m/(qB)+2mv/(qE)}=\\boldsymbol{\\frac{2v}{\\pi+2vB/E}} \\]\n$v>v_0$：変位は (2) の $X$，周期は $\\dfrac{3\\pi m}{qB}+\\dfrac{2m(v-v')}{qE}$．\n\\[ \\bar u=\\boldsymbol{\\frac{2(v-2v')}{3\\pi+2(v-v')B/E}} \\]\n$v\\to v_0$ では $v'\\to0$ なので\n\\[ v\\to v_0-0:\\ \\bar u\\to\\boldsymbol{\\frac{2v_0}{\\pi+2v_0B/E}},\\qquad v\\to v_0+0:\\ \\bar u\\to\\boldsymbol{\\frac{2v_0}{3\\pi+2v_0B/E}} \\]\nと一致しない．$v$ がわずかに $v_0$ を超えると，$y<-l$ での半円の半径は $0$ に近くても，その所要時間 $\\dfrac{2\\pi m}{qB}$ は速さによらず有限なので，周期が不連続に長くなるためである．\n\n$\\bar u$ の符号は $v-2v'$ の符号で決まる．$v<v_0$ では常に正，$v>v_0$ では $v<2v'\\iff v>v_{\\mathrm c}$ のとき負．よって $\\bar u<0$ となるのは $\\boldsymbol{v>v_{\\mathrm c}}$．（解答図：$v=v_{\\mathrm c}$ の閉じた軌道と，$v>v_{\\mathrm c}$ で $-x$ 向きに移動していく軌道．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "磁場中の半円は速さによらない時間で一定の方向にずれ，そのずれ幅は半径（$v/B$）に比例する．電場の層で速さが変わり，さらに磁束密度も違う2つの領域を往復すると，半径の差だけ粒子が横に進むので，$v/B$ がそろう条件で軌道が閉じ，その前後で平均の移動の向きが逆転する．減速で引き返すか通過するかの境界では，半径0に近い半円にも有限の時間がかかるため平均速度が不連続に変わる．"
+ },
+ "concepts": [
+  "lorentz-force",
+  "circular-motion",
+  "coulomb-field"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ローレンツ力",
+  "等速円運動",
+  "ドリフト",
+  "電場による加速",
+  "場合分け",
+  "閉じた軌道"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}
