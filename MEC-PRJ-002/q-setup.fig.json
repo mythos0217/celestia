@@ -1,0 +1,85 @@
+{
+ "schema": "celestia.figure/1",
+ "size": [
+  340,
+  230
+ ],
+ "items": [
+  {
+   "t": "line",
+   "from": [
+    20,
+    200
+   ],
+   "to": [
+    330,
+    200
+   ],
+   "style": "ground"
+  },
+  {
+   "t": "poly",
+   "points": [
+    [
+     20,
+     200
+    ],
+    [
+     20,
+     90
+    ],
+    [
+     90,
+     90
+    ],
+    [
+     90,
+     200
+    ]
+   ],
+   "style": "hatch"
+  },
+  {
+   "t": "curve",
+   "f": "parabola",
+   "from": [
+    90,
+    90
+   ],
+   "dir": 0,
+   "speed": 80,
+   "g": 30,
+   "until_y": 200,
+   "style": "dash"
+  },
+  {
+   "t": "ball",
+   "at": [
+    90,
+    90
+   ],
+   "r": 6,
+   "phys": "body:ball"
+  },
+  {
+   "t": "arrow",
+   "from": [
+    90,
+    90
+   ],
+   "dir": 0,
+   "len": 50,
+   "style": "velocity",
+   "phys": "velocity:v0",
+   "label": "v₀"
+  },
+  {
+   "t": "text",
+   "at": [
+    60,
+    145
+   ],
+   "text": "h"
+  }
+ ]
+}

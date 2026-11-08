@@ -1,0 +1,121 @@
+{
+ "id": "PHY-ENG-008",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-04",
+ "topic": "台を蹴って加速する車に必要なエネルギーと観測者の速度（台の運動エネルギーの変化を見落とす誤り）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな氷の上に質量 $M$ の長い台が静止しており，その上に質量 $m$ の模型の車が静止している．車はモーターで車輪を回し，台との間の摩擦力で加速する（台は逆向きに動く）．電池から取り出したエネルギーはすべて車と台の運動エネルギーになるものとし，車の運動は一直線上で考える．速度は進行方向を正とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "車を氷に対して静止から速さ $u$ まで加速するのに要するエネルギー $E_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "続けて，車を氷に対して速さ $u$ から $2u$ まで加速するのに要するエネルギー $E_2$ を求め，$\\dfrac{E_2}{E_1}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "氷に対して負の向きに一定の速さ $w$ で動く観測者から見て，(2) の段階での車の運動エネルギーの変化 $\\Delta K_{\\text{車}}'$ と台の運動エネルギーの変化 $\\Delta K_{\\text{台}}'$ を求め，その和が $E_2$ に等しいことを確かめよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$M\\to\\infty$（台が地面のように重い）とする．氷に対して静止した観測者と (3) の観測者のそれぞれについて，(2) の段階での台の運動エネルギーの変化の極限を求めよ．これをもとに，「(3) の観測者から見ると車の速さは $u+w$ から $2u+w$ に変わるので，必要なエネルギーは $\\frac12m\\{(2u+w)^2-(u+w)^2\\}$ である」という考えの誤りを説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：台を蹴って加速する車に必要なエネルギーと観測者の速度（台の運動エネルギーの変化を見落とす誤り）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$E_1=\\dfrac12mu^2\\left(1+\\dfrac mM\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "$E_2=\\dfrac32mu^2\\left(1+\\dfrac mM\\right)$，$\\dfrac{E_2}{E_1}=3$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\Delta K_{\\text{車}}'=\\dfrac32mu^2+muw$，$\\Delta K_{\\text{台}}'=-muw+\\dfrac{3m^2u^2}{2M}$，和は $E_2$"
+   },
+   {
+    "id": "4",
+    "tex": "静止した観測者：$0$，(3)の観測者：$-muw$．台の運動エネルギーの変化は観測者によっては無視できない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　車と台の間の摩擦力は内力で，氷はなめらかなので，車＋台の運動量は保存する．車の速度が $v$ のとき台の速度は $V=-\\dfrac{m}{M}v$．\n\\[ E_1=\\frac12mu^2+\\frac12M\\left(\\frac{mu}{M}\\right)^2=\\boldsymbol{\\frac12mu^2\\left(1+\\frac mM\\right)} \\]\n\n\\textbf{(2)}　車の速度が $2u$ のとき台は $-\\dfrac{2mu}{M}$ で，全運動エネルギーは $2mu^2\\left(1+\\dfrac mM\\right)$．\n\\[ E_2=2mu^2\\left(1+\\frac mM\\right)-E_1=\\boldsymbol{\\frac32mu^2\\left(1+\\frac mM\\right)},\\qquad \\boldsymbol{\\frac{E_2}{E_1}=3} \\]\n\n\\textbf{(3)}　観測者から見た速度は，氷に対する速度に $w$ を加えたもの．\n\\[ \\Delta K_{\\text{車}}'=\\frac12m\\{(2u+w)^2-(u+w)^2\\}=\\boldsymbol{\\frac32mu^2+muw} \\]\n\\[ \\Delta K_{\\text{台}}'=\\frac12M\\left\\{\\left(w-\\frac{2mu}{M}\\right)^2-\\left(w-\\frac{mu}{M}\\right)^2\\right\\}=\\boldsymbol{-muw+\\frac{3m^2u^2}{2M}} \\]\n和は $\\dfrac32mu^2+\\dfrac{3m^2u^2}{2M}=E_2$．一般に，運動量が保存する系では，速度 $w$ の差がある2つの観測者から見た運動エネルギーの変化の差は $w\\times(\\text{全運動量の変化})=0$ なので，電池が出したエネルギーはどの観測者から見ても同じになる．\n\n\\textbf{(4)}　$M\\to\\infty$ では台の速度の変化 $\\dfrac{mu}{M}\\to0$ だが，\n・氷に対して静止した観測者：$\\Delta K_{\\text{台}}=\\dfrac{3m^2u^2}{2M}\\to\\boldsymbol{0}$．\n・(3) の観測者：$\\Delta K_{\\text{台}}'\\to\\boldsymbol{-muw}$（有限の値）．\n台はこの観測者に対して速さ $w$ で動いているので，速度のわずかな変化 $\\delta V$ でも運動エネルギーは約 $Mw\\,\\delta V=w\\times(\\text{台の運動量の変化})=-muw$ だけ変わる．運動量の変化は台が重くても車と同じ大きさなので，この項は消えない．したがって「台（地面）の運動エネルギーの変化は無視できる」という近似が使えるのは台が静止している観測者に限られ，引用した考えは台が失う運動エネルギー $muw$ を見落としているので誤りである．正しくは $E_2=\\dfrac32mu^2$（$M\\to\\infty$）で，どの観測者から見ても同じ．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "内力で加速するときに必要なエネルギーは，運動量が保存するので観測者によらない．しかし重い相手（台・地面）の運動エネルギーの変化は，相手が静止して見える観測者でだけ無視でき，相手が動いて見える観測者では $w\\times$（運動量の変化）という有限の量として残る．"
+ },
+ "concepts": [
+  "work-energy",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動量保存",
+  "運動エネルギー",
+  "座標系の選択",
+  "ガリレイ変換",
+  "内力"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

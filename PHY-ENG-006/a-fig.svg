@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <defs>
+    <marker id="a-ax" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+  </defs>
+  <line x1="60" y1="300" x2="480" y2="300" stroke="#222" stroke-width="1.6" marker-end="url(#a-ax)"/>
+  <line x1="60" y1="300" x2="60" y2="30" stroke="#222" stroke-width="1.6" marker-end="url(#a-ax)"/>
+  <text x="470" y="322" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+  <text x="32" y="38" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">力</text>
+  <!-- levels -->
+  <line x1="60" y1="60" x2="440" y2="60" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <line x1="60" y1="285" x2="440" y2="285" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <text x="2" y="65" font-family="Times New Roman, serif" font-size="15" fill="#222"><tspan font-family="Noto Sans CJK JP, sans-serif">(</tspan><tspan font-style="italic">n</tspan>+1)<tspan font-style="italic">mg</tspan></text>
+  <text x="30" y="290" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">mg</text>
+  <!-- (i) spring without preload -->
+  <line x1="60" y1="300" x2="420" y2="60" stroke="#222" stroke-width="1.6"/>
+  <line x1="420" y1="60" x2="420" y2="300" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="392" y="340" font-family="Times New Roman, serif" font-size="14" fill="#222"><tspan font-style="italic">v</tspan><tspan baseline-shift="super" font-size="10">2</tspan><tspan font-family="Noto Sans CJK JP, sans-serif" font-size="13">/</tspan>((<tspan font-style="italic">n</tspan>−1)<tspan font-style="italic">g</tspan>)</text>
+  <!-- (ii) preloaded spring -->
+  <polyline points="60,300 60,210 312,60 312,300" fill="none" stroke="#c0392b" stroke-width="1.8"/>
+  <text x="66" y="205" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#c0392b">F<tspan baseline-shift="sub" font-size="10" font-style="normal">0,min</tspan></text>
+  <text x="306" y="320" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">ℓ</text>
+  <!-- (iii) constant force -->
+  <polyline points="60,60 228,60 228,300" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+  <text x="206" y="340" font-family="Times New Roman, serif" font-size="14" fill="#222"><tspan font-style="italic">v</tspan><tspan baseline-shift="super" font-size="10">2</tspan><tspan font-family="Noto Sans CJK JP, sans-serif" font-size="13">/</tspan>(2<tspan font-style="italic">ng</tspan>)</text>
+  <!-- legend -->
+  <g font-family="Noto Sans CJK JP, sans-serif" font-size="13">
+    <line x1="450" y1="150" x2="475" y2="150" stroke="#222" stroke-width="1.6"/><text x="480" y="155" fill="#222">予圧なしのばね</text>
+    <line x1="450" y1="175" x2="475" y2="175" stroke="#c0392b" stroke-width="1.8"/><text x="480" y="180" fill="#222">予圧をかけたばね</text>
+    <line x1="450" y1="200" x2="475" y2="200" stroke="#1f5fbf" stroke-width="1.8"/><text x="480" y="205" fill="#222">一定の力（緩衝材）</text>
+  </g>
+  <text x="80" y="356" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">どの場合も，囲む面積 − mg×（押し込み）＝ 運動エネルギー（図は n=15 の例）</text>
+</svg>

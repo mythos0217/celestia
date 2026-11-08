@@ -1,0 +1,95 @@
+{
+ "schema": "celestia.figure/1",
+ "size": [
+  340,
+  230
+ ],
+ "items": [
+  {
+   "t": "line",
+   "from": [
+    20,
+    200
+   ],
+   "to": [
+    320,
+    200
+   ],
+   "style": "ground"
+  },
+  {
+   "t": "poly",
+   "points": [
+    [
+     40,
+     200
+    ],
+    [
+     300,
+     200
+    ],
+    [
+     300,
+     49.89
+    ]
+   ],
+   "style": "hatch",
+   "phys": "incline"
+  },
+  {
+   "t": "line",
+   "from": [
+    40,
+    200
+   ],
+   "to": [
+    300,
+    49.89
+   ],
+   "style": "ground",
+   "phys": "surface"
+  },
+  {
+   "t": "block",
+   "at": [
+    170,
+    124.94
+   ],
+   "w": 44,
+   "h": 30,
+   "angle": 30,
+   "phys": "body:block",
+   "label": "m"
+  },
+  {
+   "t": "arc",
+   "at": [
+    40,
+    200
+   ],
+   "r": 34,
+   "from": 0,
+   "to": 30,
+   "label": "θ",
+   "labelGap": 12
+  },
+  {
+   "t": "arrow",
+   "from": [
+    215,
+    68
+   ],
+   "dir": 210,
+   "len": 40,
+   "style": "velocity",
+   "phys": "velocity:v",
+   "label": "運動の向き",
+   "italic": false,
+   "labelOffset": [
+    -38,
+    -4
+   ],
+   "labelPos": "end"
+  }
+ ]
+}

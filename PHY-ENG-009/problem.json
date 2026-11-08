@@ -1,0 +1,122 @@
+{
+ "id": "PHY-ENG-009",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-04",
+ "topic": "向きだけを変えるはね返しを使った速い経路（直線より速い経路と所要時間の下限）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鉛直な板の上の点 A から小球を静かに放し，A から水平に $L$，鉛直下向きに $H$ 離れた点 B まで運ぶ．B は板の下端にあり，小球は B の高さより下には行けない．板には，小球の速さを変えずに向きだけを瞬間的に変えるなめらかな「はね返し板」や，なめらかなレールを自由に取り付けることができる．空気抵抗は無視し，重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A と B を結ぶまっすぐななめらかなレールに沿って小球が滑る場合の所要時間 $T_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "図の折れ線のように，小球をまず深さ $h$（$0<h\\le H$）まで鉛直に落とし，はね返し板で水平に向きを変えて水平なレールを B の真上まで進ませ，そこで再び鉛直下向きに向きを変えて B まで落とす．所要時間 $T(h)$ を求め，$T(h)$ を最小にする $h$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で最小となる経路が (1) の直線経路より短い時間で B に着くための，$L$ と $H$ の条件を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "どのような経路をつくっても，所要時間は $\\dfrac{L}{\\sqrt{2gH}}$ より長いことを示せ．$L=2.0\\,\\mathrm{m}$，$H=1.0\\,\\mathrm{m}$，$g=9.8\\,\\mathrm{m/s^2}$ のとき，$T_0$，(2) の最小時間，この下限をそれぞれ有効数字2桁で求め，「$0.40\\,\\mathrm{s}$ 以内に B に着く経路」がつくれるかどうか答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：向きだけを変えるはね返しを使った速い経路（直線より速い経路と所要時間の下限）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T_0=\\sqrt{\\dfrac{2(L^2+H^2)}{gH}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$T(h)=\\sqrt{\\dfrac{2H}{g}}+\\dfrac{L}{\\sqrt{2gh}}$，$h=H$"
+   },
+   {
+    "id": "3",
+    "tex": "$L>\\dfrac43H$"
+   },
+   {
+    "id": "4",
+    "tex": "$T_0=1.0\\,\\mathrm{s}$，最小時間 $0.90\\,\\mathrm{s}$，下限 $0.45\\,\\mathrm{s}$．下限が $0.40\\,\\mathrm{s}$ より長いので，つくれない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{基本：速さは深さだけで決まる}\nなめらかなレールやはね返し板が小球におよぼす力は運動の向きに垂直なので仕事をしない．よって力学的エネルギーが保存し，A から深さ $y$ の点での速さは経路によらず $v=\\sqrt{2gy}$ である．\n\n\\textbf{(1) 直線経路}\nレールの長さは $s=\\sqrt{L^2+H^2}$，傾きの角を $\\beta$ とすると加速度は $g\\sin\\beta=\\dfrac{gH}{s}$．$s=\\dfrac12\\cdot\\dfrac{gH}{s}T_0^2$ より\n\\[ T_0=\\boldsymbol{\\sqrt{\\frac{2(L^2+H^2)}{gH}}}. \\]\n\n\\textbf{(2) 折れ線経路}\n深さ $h$ までの落下時間は $\\sqrt{2h/g}$ で，そのときの速さは $\\sqrt{2gh}$．水平なレール上では重力も垂直抗力も運動の向きに垂直なので等速で，時間は $\\dfrac{L}{\\sqrt{2gh}}$．最後に速さ $\\sqrt{2gh}$ で下向きに投げ下ろされ，B で速さ $\\sqrt{2gH}$ になるので，その時間は $\\dfrac{\\sqrt{2gH}-\\sqrt{2gh}}{g}$．合計すると\n\\[ T(h)=\\sqrt{\\frac{2h}{g}}+\\frac{L}{\\sqrt{2gh}}+\\sqrt{\\frac{2H}{g}}-\\sqrt{\\frac{2h}{g}}=\\boldsymbol{\\sqrt{\\frac{2H}{g}}+\\frac{L}{\\sqrt{2gh}}}. \\]\n鉛直部分の時間の和は $h$ によらず，水平部分の時間だけが $h$ とともに減るので，$T(h)$ は $\\boldsymbol{h=H}$（はじめに B の高さまで落としてから水平に進む）で最小となり，\n\\[ T(H)=\\frac{2H+L}{\\sqrt{2gH}}. \\]\n\n\\textbf{(3) 直線より速い条件}\n$T(H)<T_0$ を2乗して比べると\n\\[ \\frac{(2H+L)^2}{2gH}<\\frac{2(L^2+H^2)}{gH}\\iff 4H^2+4HL+L^2<4L^2+4H^2\\iff \\boldsymbol{L>\\frac43H}. \\]\n横に長いときは，先に深く落として速さを稼ぐ方が有利になる．\n\n\\textbf{(4) 所要時間の下限}\n小球は B の高さより下に行けないので，どこでも速さは $v\\le\\sqrt{2gH}$，したがって速度の水平成分も $\\sqrt{2gH}$ 以下である．しかも出発直後は速さがほぼ $0$ なので，水平成分が常に $\\sqrt{2gH}$ に等しいことはない．所要時間を $T$ とすると，水平に進む距離について\n\\[ L=\\int_0^T v_x\\,dt<\\sqrt{2gH}\\,T\\quad\\Longrightarrow\\quad T>\\frac{L}{\\sqrt{2gH}}. \\]\n数値は\n\\[ T_0=\\sqrt{\\frac{2\\times5.0}{9.8}}=\\boldsymbol{1.0\\,\\mathrm{s}},\\quad T(H)=\\frac{4.0}{\\sqrt{19.6}}=\\boldsymbol{0.90\\,\\mathrm{s}},\\quad \\frac{L}{\\sqrt{2gH}}=\\frac{2.0}{\\sqrt{19.6}}=\\boldsymbol{0.45\\,\\mathrm{s}}. \\]\nどんな経路でも $0.45\\,\\mathrm{s}$ より長くかかるので，$0.40\\,\\mathrm{s}$ 以内に着く経路は\\textbf{つくれない}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "なめらかな面や向きだけ変えるはね返しは仕事をしないので，速さは深さだけで $\\sqrt{2gy}$ と決まる．そのため先に深く落として速さを稼いでから水平に進む経路が直線経路より速くなりうる（$L>4H/3$）．逆に速さの上限 $\\sqrt{2gH}$ から水平速度の上限が決まり，経路によらない所要時間の下限 $L/\\sqrt{2gH}$ が得られる．"
+ },
+ "concepts": [
+  "work-energy",
+  "mechanical-energy",
+  "normal-force"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "力学的エネルギー保存",
+  "垂直抗力の仕事",
+  "最速経路",
+  "不等式評価",
+  "所要時間"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

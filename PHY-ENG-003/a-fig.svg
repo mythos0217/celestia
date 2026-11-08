@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300">
+<defs><marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker></defs>
+<polygon points="60.0,250.0 162.5,147.5 233.2,218.2 233.2,250.0" fill="#1f5fbf" fill-opacity="0.15" stroke="none"/>
+<polyline points="60.0,250.0 162.5,147.5 233.2,218.2" fill="none" stroke="#1f5fbf" stroke-width="2"/>
+<polyline points="60.0,250.0 130.0,195.0 208.2,195.0 233.2,218.2" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="6,4"/>
+<line x1="60" y1="250" x2="310" y2="250" stroke="#222" stroke-width="1.3" marker-end="url(#a-ak)"/>
+<line x1="60" y1="260" x2="60" y2="100" stroke="#222" stroke-width="1.3" marker-end="url(#a-ak)"/>
+<text x="312" y="268" font-family="Times New Roman, serif" font-size="16" font-style="italic">t</text>
+<text x="68" y="108" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">v</text>
+<line x1="162.5" y1="147.5" x2="162.5" y2="250" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="162.5" y="270" text-anchor="middle" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">τ</text>
+<line x1="233.2" y1="218.2" x2="233.2" y2="250" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="233.2" y="270" text-anchor="middle" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">T</text>
+<text x="239.2" y="222.2" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">v<tspan baseline-shift="sub" font-size="10">T</tspan></text>
+<text x="66" y="160" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">傾き <tspan font-family="Times New Roman, serif" font-style="italic">g</tspan></text>
+<text x="182.5" y="139.5" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">傾き −<tspan font-family="Times New Roman, serif" font-style="italic">g</tspan></text>
+<text x="150" y="225" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">面積 <tspan font-family="Times New Roman, serif" font-style="italic">H</tspan></text>
+<text x="330" y="80" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">実線：最初に <tspan font-family="Times New Roman, serif" font-style="italic">F</tspan><tspan font-family="Times New Roman, serif" baseline-shift="sub" font-size="10">0</tspan> で押し，</text>
+<text x="330" y="100" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">　　　あとは力を加えない</text>
+<text x="330" y="130" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#c0392b">破線：同じ <tspan font-family="Times New Roman, serif" font-style="italic">v</tspan><tspan font-family="Times New Roman, serif" baseline-shift="sub" font-size="10">T</tspan> で終わる</text>
+<text x="330" y="150" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#c0392b">　　　別の加え方（面積が小さい）</text>
+</svg>

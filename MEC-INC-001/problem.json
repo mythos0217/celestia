@@ -1,0 +1,180 @@
+{
+ "id": "MEC-INC-001",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-02",
+ "topic": "あらい斜面上の物体",
+ "course": "物理基礎",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "傾きの角 $\\theta$ のあらい斜面上に質量 $m$ の小物体を静かに置いたところ，物体は静止したままであった．重力加速度の大きさを $g$，物体と斜面の間の静止摩擦係数を $\\mu$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "物体が斜面から受ける垂直抗力の大きさ $N$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "物体が斜面から受ける静止摩擦力の大きさ $f$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "斜面の傾きをゆっくり大きくしていく．物体が滑り出さないための条件を $\\mu$ と $\\theta$ の関係で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "傾きの角 θ の斜面上に置かれた質量 m の物体",
+   "caption": "",
+   "physics": {
+    "angle_deg": 30
+   }
+  },
+  {
+   "id": "a-forces",
+   "role": "answer",
+   "kind": "vector",
+   "format": "svg",
+   "src": "a-forces.svg",
+   "alt": "物体にはたらく重力 mg・垂直抗力 N・静止摩擦力 f と、重力の斜面方向・垂直方向の成分",
+   "caption": "重力を斜面に平行な成分と垂直な成分に分解する（静止しているので3力はつり合う）",
+   "physics": {
+    "angle_deg": 30,
+    "equilibrium": true,
+    "forces": [
+     {
+      "name": "mg",
+      "dir_deg": 270
+     },
+     {
+      "name": "N",
+      "dir_deg": 120
+     },
+     {
+      "name": "f",
+      "dir_deg": 30
+     }
+    ],
+    "decompositions": [
+     {
+      "of": "force:mg",
+      "into": [
+       "component:mg-parallel",
+       "component:mg-normal"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$N=mg\\cos\\theta$",
+    "grading": "N：m g cos(θ)"
+   },
+   {
+    "id": "2",
+    "tex": "$f=mg\\sin\\theta$",
+    "grading": "f：m g sin(θ)"
+   },
+   {
+    "id": "3",
+    "tex": "$\\tan\\theta\\le\\mu$",
+    "grading": "tan(θ)<=μ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "物体には重力 $mg$，垂直抗力 $N$，静止摩擦力 $f$ がはたらく．重力を斜面に平行な成分 $mg\\sin\\theta$（斜面下向き）と垂直な成分 $mg\\cos\\theta$ に分解する．"
+    },
+    {
+     "type": "figure",
+     "ref": "a-forces"
+    },
+    {
+     "type": "text",
+     "tex": "(1) 斜面に垂直な方向のつり合いより $N=mg\\cos\\theta$．\n\n(2) 斜面に平行な方向のつり合いより $f=mg\\sin\\theta$．$\\mu N$ ではないことに注意（$\\mu N$ は最大摩擦力）．\n\n(3) 滑り出さない条件は $f\\le\\mu N$，すなわち $mg\\sin\\theta\\le\\mu mg\\cos\\theta$．よって $\\tan\\theta\\le\\mu$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "垂直抗力も静止摩擦力も「つり合いで決まる未知の力」．$\\mu N$ は静止摩擦力の上限にすぎない．"
+ },
+ "simulation": {
+  "id": "mech.incline",
+  "preset": {
+   "theta": 30,
+   "mu": 0.6,
+   "m": 1
+  },
+  "locked": [
+   "g"
+  ],
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "force-decomposition",
+  "normal-force",
+  "static-friction",
+  "equilibrium"
+ ],
+ "laws": [
+  "newton-1st",
+  "friction-law"
+ ],
+ "misconceptions": [
+  "MC-NORMAL-EQ-MG",
+  "MC-FRICTION-MAX"
+ ],
+ "tags": [
+  "斜面",
+  "摩擦",
+  "力の分解"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

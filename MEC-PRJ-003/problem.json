@@ -1,0 +1,160 @@
+{
+ "id": "MEC-PRJ-003",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "v-t グラフから放物運動を読む",
+ "course": "物理基礎",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "graph-read",
+  "numeric"
+ ],
+ "examStyle": "common-test",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水平な地面上の点から小球を斜め上に投げ上げた．図は，小球の速度の鉛直成分 $v_y$（上向きを正）と時刻 $t$ の関係を表す．小球は時刻 $2.0\\,\\mathrm{s}$ に地面に落ちた．初速度の水平成分は $10\\sqrt3\\,\\mathrm{m/s}$ で，空気抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-graph"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "初速度の鉛直成分を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "小球が最高点に達した時刻を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "重力加速度の大きさをグラフから求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "最高点の高さを，グラフの面積から求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "投げ上げた点から落下点までの水平距離を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-graph",
+   "role": "question",
+   "kind": "graph",
+   "format": "sim-plot",
+   "sim": {
+    "id": "mech.projectile",
+    "preset": {
+     "v0": 20,
+     "theta": 30,
+     "h0": 0,
+     "g": 10
+    }
+   },
+   "plot": {
+    "x": "t",
+    "y": [
+     "vy"
+    ]
+   },
+   "alt": "速度の鉛直成分 vy と時刻 t のグラフ。t=0 で 10 m/s、時間とともに一定の割合で減り、t=1 s で 0、t=2 s で −10 m/s になる直線"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$10\\,\\mathrm{m/s}$",
+    "grading": "10 [m/s]"
+   },
+   {
+    "id": "2",
+    "tex": "$1.0\\,\\mathrm{s}$",
+    "grading": "1 [s]"
+   },
+   {
+    "id": "3",
+    "tex": "$10\\,\\mathrm{m/s^2}$",
+    "grading": "10 [m/s^2]"
+   },
+   {
+    "id": "4",
+    "tex": "$5.0\\,\\mathrm{m}$",
+    "grading": "5 [m]"
+   },
+   {
+    "id": "5",
+    "tex": "$20\\sqrt3\\,\\mathrm{m}\\ (\\fallingdotseq35\\,\\mathrm{m})$",
+    "grading": "20sqrt(3) [m]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $t=0$ でのグラフの値（縦軸の切片）が初速度の鉛直成分：$10\\,\\mathrm{m/s}$．\n\n(2) 最高点では速度の鉛直成分が $0$．グラフが $t$ 軸と交わる $t=1.0\\,\\mathrm{s}$．\n\n(3) $v_y$-$t$ グラフの傾きが鉛直方向の加速度：$\\dfrac{0-10}{1.0-0}=-10\\,\\mathrm{m/s^2}$．大きさは $10\\,\\mathrm{m/s^2}$．\n\n(4) $v$-$t$ グラフと $t$ 軸の間の面積が変位．$0\\le t\\le1.0$ の三角形の面積：$\\dfrac12\\times1.0\\times10=5.0\\,\\mathrm{m}$．\n\n(5) 水平方向は等速度運動なので $10\\sqrt3\\times2.0=20\\sqrt3\\fallingdotseq35\\,\\mathrm{m}$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "$v$-$t$ グラフでは，傾き＝加速度，面積＝変位．"
+ },
+ "simulation": {
+  "id": "mech.projectile",
+  "preset": {
+   "v0": 20,
+   "theta": 30,
+   "h0": 0,
+   "g": 10
+  },
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "projectile-motion",
+  "uniform-acceleration",
+  "acceleration-concept"
+ ],
+ "laws": [
+  "uniform-acceleration-eq"
+ ],
+ "misconceptions": [
+  "MC-ACCEL-ZERO-AT-TOP"
+ ],
+ "tags": [
+  "グラフ",
+  "v-tグラフ",
+  "放物運動"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

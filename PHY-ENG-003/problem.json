@@ -1,0 +1,142 @@
+{
+ "id": "PHY-ENG-003",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-04",
+ "topic": "時刻を指定して物体を持ち上げる最小の仕事（加えられる力に上限がある場合）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水平な床の上に質量 $m$ の小物体が静止している．時刻 $0$ から小物体に鉛直上向きの力 $F(t)$ を加えて持ち上げ，ちょうど時刻 $T$ に床からの高さ $H$ の点を通過させたい（時刻 $T$ にちょうど高さ $H$ に達して一瞬止まる場合も通過に含める）．加えることのできる力は $0\\le F(t)\\le F_0$ を満たす鉛直上向きの力だけで，$F_0>mg$ である．この範囲で力の大きさは時間とともに自由に変えてよい．重力加速度の大きさを $g$ とし，空気抵抗は無視する．時刻 $0$ から $T$ までに力 $F(t)$ がした仕事を $W$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "このように持ち上げることが可能な $T$ の最小値 $T_{\\min}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "時刻 $T$ での小物体の速さを $v_T$ とすると，$W=mgH+\\dfrac12mv_T^2$ であることを示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$T$ が十分に長ければ，$W$ の最小値は $mgH$ になる．$W$ の最小値が $mgH$ となる $T$ の範囲を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "以下では $F_0=2mg$ とする．(3) の範囲の下限を $T^*$ とする．$T_{\\min}<T<T^*$ のとき，$W$ を最小にする力の加え方を答え，$W$ の最小値を $m$，$g$，$H$，$T$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "$T=\\sqrt{\\dfrac{3H}{g}}$ のとき，(4) の $W$ の最小値を求めよ．また，一定の大きさの力を加え続けて同じ条件を満たす場合の仕事と比べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：時刻を指定して物体を持ち上げる最小の仕事（加えられる力に上限がある場合）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：時刻を指定して物体を持ち上げる最小の仕事（加えられる力に上限がある場合）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T_{\\min}=\\sqrt{\\dfrac{2mH}{F_0-mg}}$"
+   },
+   {
+    "id": "2",
+    "tex": "解説参照（運動エネルギーと仕事の関係）"
+   },
+   {
+    "id": "3",
+    "tex": "$T\\ge\\sqrt{\\dfrac{2F_0H}{g(F_0-mg)}}$"
+   },
+   {
+    "id": "4",
+    "tex": "時刻 $0\\le t\\le\\tau$ で $F=2mg$，その後 $F=0$（$\\tau=T-\\sqrt{\\dfrac{T^2}{2}-\\dfrac{H}{g}}$）．$W_{\\min}=mg^2\\left(T-\\sqrt{\\dfrac{T^2}{2}-\\dfrac{H}{g}}\\right)^2$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\left(\\dfrac72-\\sqrt6\\right)mgH\\fallingdotseq1.05\\,mgH$．一定の力では $\\dfrac53mgH$ で，約 $1.6$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{$v$–$t$ グラフで考える}　上向きを正とすると，小物体の加速度は $a=\\dfrac{F}{m}-g$ で，$0\\le F\\le F_0$ より\n\\[ -g\\le a\\le\\frac{F_0}{m}-g\\equiv a_0 \\]\nである．$v$–$t$ グラフでは，傾きが $-g$ 以上 $a_0$ 以下で，$0\\le t\\le T$ の面積（上昇距離）が $H$ になればよい（小物体は床より下には行けないので，$v(0)=0$ から始まる）．\n\n\\textbf{(1)}　面積をできるだけ大きくするには，常に最大の傾き $a_0$ で加速すればよい（$F=F_0$ を加え続ける）．そのときの面積 $\\frac12a_0T^2$ が $H$ 以上であることが必要十分なので\n\\[ T_{\\min}=\\sqrt{\\frac{2H}{a_0}}=\\boldsymbol{\\sqrt{\\frac{2mH}{F_0-mg}}} \\]\nである．\n\n\\textbf{(2)}　時刻 $0$ から $T$ までに，小物体にはたらく力は $F$ と重力（と，持ち上がるまでの床の垂直抗力）である．垂直抗力は小物体が床にある間だけはたらき，小物体は動かないので仕事をしない．重力の仕事は $-mgH$ だから，運動エネルギーの変化と仕事の関係より\n\\[ \\frac12mv_T^2-0=W-mgH\\quad\\Longrightarrow\\quad W=mgH+\\frac12mv_T^2 \\]\nである．したがって $W$ を小さくすることは，時刻 $T$ での速さ $v_T$ を小さくすることと同じである．\n\n\\textbf{(3) $W=mgH$ となる条件}　(2) より $W\\ge mgH$ で，等号は $v_T=0$，すなわち時刻 $T$ にちょうど高さ $H$ で止まるときに限る．$v(0)=v(T)=0$ で傾きが $-g$ 以上 $a_0$ 以下の $v$–$t$ グラフの面積が最大になるのは，まず傾き $a_0$ で加速し，次に傾き $-g$ で減速する三角形のときである．頂点の速さを $v_{\\max}$ とすると $T=\\dfrac{v_{\\max}}{a_0}+\\dfrac{v_{\\max}}{g}$ なので\n\\[ v_{\\max}=\\frac{a_0g}{a_0+g}T,\\qquad (\\text{面積の最大値})=\\frac12v_{\\max}T=\\frac{a_0g}{2(a_0+g)}T^2 \\]\nこれが $H$ 以上であることが必要で，$a_0+g=\\dfrac{F_0}{m}$ より\n\\[ T\\ge\\sqrt{\\frac{2(a_0+g)H}{a_0g}}=\\boldsymbol{\\sqrt{\\frac{2F_0H}{g(F_0-mg)}}}\\ (=T^*) \\]\nである．逆にこのとき，一定の力 $F_1$ を時間 $\\tau$ だけ加えて放し，あとは投げ上げの運動で時刻 $T$ にちょうど最高点 $H$ に達するようにできる：減速の時間 $T-\\tau$ と最高点の高さの条件から $\\tau=T-\\dfrac{2H}{gT}$，$F_1=\\dfrac{mgT}{\\tau}$ となり，$T\\ge T^*$ ならば $\\tau>0$ かつ $mg<F_1\\le F_0$ を満たす．よって $W$ の最小値が $mgH$ となる範囲は $T\\ge T^*$ である．\n\n\\textbf{(4) $F_0=2mg$，$T_{\\min}<T<T^*$}　このとき $a_0=g$ で，$T_{\\min}=\\sqrt{\\dfrac{2H}{g}}$，$T^*=2\\sqrt{\\dfrac{H}{g}}$ である．$v_T=0$ にはできないので，できるだけ小さい $v_T(>0)$ で面積 $H$ を実現したい．$v_T$ を決めたとき，傾きが $-g$ 以上 $g$ 以下で $v(0)=0$，$v(T)=v_T$ となるグラフの面積が最大になるのは，前半は傾き $g$ で上がり，後半は傾き $-g$ で下がる「山形」のグラフである（どの時刻の $v$ も，$0$ から最大の傾きで上がる線と，$v_T$ から時間をさかのぼって最大の傾きで上がる線の低い方を超えられないため）．山形の面積は $v_T$ とともに増えるので，面積がちょうど $H$ になる山形が $v_T$ を最小にする（解答図）．すなわち\n\n\\textbf{時刻 $0$ から $\\tau$ まで最大の力 $F=2mg$ を加え，その後は力を加えない（$F=0$）}\n\nのが最適である．$u=T-\\tau$ とおくと，$v(\\tau)=g\\tau$，$v_T=g\\tau-gu$ で，面積は\n\\[ H=\\frac12g\\tau^2+g\\tau u-\\frac12gu^2=g\\left(\\frac{T^2}{2}-u^2\\right)\\quad\\Longrightarrow\\quad u=\\sqrt{\\frac{T^2}{2}-\\frac{H}{g}} \\]\nとなる（$T>T_{\\min}$ で $u>0$，$T<T^*$ で $v_T=g(T-2u)>0$）．力がする仕事は，力 $2mg$ が加速中の移動距離 $\\frac12g\\tau^2$ だけはたらくので\n\\[ W_{\\min}=2mg\\cdot\\frac12g\\tau^2=\\boldsymbol{mg^2\\left(T-\\sqrt{\\frac{T^2}{2}-\\frac{H}{g}}\\right)^2} \\]\nである．（確認：$mgH+\\frac12m\\{g(T-2u)\\}^2=mg^2\\left(\\frac{T^2}{2}-u^2\\right)+\\frac12mg^2(T-2u)^2=mg^2(T-u)^2$ で (2) と一致する．$T\\to T_{\\min}$ で $2mgH$，$T\\to T^*$ で $mgH$ となる．）\n\n\\textbf{(5)}　$T=\\sqrt{\\dfrac{3H}{g}}$ は $T_{\\min}<T<T^*$ を満たす．$u=\\sqrt{\\dfrac{3H}{2g}-\\dfrac{H}{g}}=\\sqrt{\\dfrac{H}{2g}}$ より\n\\[ W_{\\min}=mg^2\\cdot\\frac{H}{g}\\left(\\sqrt3-\\frac{1}{\\sqrt2}\\right)^2=\\boldsymbol{\\left(\\frac72-\\sqrt6\\right)mgH}\\fallingdotseq1.05\\,mgH \\]\nである．一定の力 $F$ を加え続ける場合，$\\frac12\\left(\\frac{F}{m}-g\\right)T^2=H$ より $F=m\\left(g+\\dfrac{2H}{T^2}\\right)=\\dfrac53mg$（$\\le2mg$ を満たす），仕事は $FH=\\dfrac53mgH\\fallingdotseq1.67\\,mgH$ で，最適な加え方の約 $1.6$ 倍になる．一定の力では最後まで加速し続けるので $v_T$ が大きく，その運動エネルギーの分だけ仕事が余分になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "仕事と運動エネルギーの関係から $W=mgH+\\frac12mv_T^2$ なので，最小の仕事は到達時の速さを最小にする問題になる．$v$–$t$ グラフの傾きが力の上限と下限で挟まれることを使うと，面積（距離）を稼ぐには最初に最大の力で押してあとは放すのが最適で，時間に余裕があれば $v_T=0$ にできて $W=mgH$ となる境目の時刻 $T^*$ が決まる．"
+ },
+ "concepts": [
+  "work-energy",
+  "projectile-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "仕事と運動エネルギー",
+  "最小の仕事",
+  "v-tグラフ",
+  "最適化",
+  "鉛直投げ上げ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

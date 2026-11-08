@@ -1,0 +1,143 @@
+{
+ "id": "PHY-ENG-005",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-04",
+ "topic": "一定の速さで走る台車上の円弧面をすべる物体（垂直抗力の仕事と座標系）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水平な床の上を，台車が一定の速さ $u$ で右向きに走っている．台車はモーターによって速さを $u$ に保たれており，床からの抵抗などはないので，台車の上に何もないときモーターは仕事をしない．台車の後部には，図のように中心 O，半径 $R$ の $\\frac14$ 円弧のなめらかな面がある．円弧の上端 P は O と同じ高さで O の右側にあり，P で面は鉛直である．円弧の下端 B は O の真下にあって面は水平で，B は台車の後端にあり，床からの高さは $H$ である．質量 $m$ の小物体を P で台車に対して静かにはなすと，小物体は円弧をすべり下り，B から台車の後方へ飛び出した．重力加速度の大きさを $g$ とし，空気抵抗は無視する．円弧上の小物体の位置を Q とし，$\\angle{\\rm BOQ}=\\varphi$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小物体が B に達したときの台車に対する小物体の速さ $w$ と，B で小物体が面から受ける垂直抗力の大きさ $N_{\\rm B}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "床に対して静止した観測者から見て，小物体が P から B に達するまでに面からの垂直抗力が小物体にした仕事 $W$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "小物体が P から B に達するまでにモーターが台車にした仕事 $W_{\\rm M}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "床から見て，B を飛び出した小物体が真下に落下するための $u$ を求めよ．また，このとき小物体が床に達した瞬間の，落下点と点 B の真下の床の点との距離を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) の場合，床から見た小物体の速さは P から B までの間で単調には変化しない．床から見た小物体の速さが最大になる位置の $\\cos\\varphi$ と，その最大の速さを求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一定の速さで走る台車上の円弧面をすべる物体（垂直抗力の仕事と座標系）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一定の速さで走る台車上の円弧面をすべる物体（垂直抗力の仕事と座標系）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$w=\\sqrt{2gR}$，$N_{\\rm B}=3mg$"
+   },
+   {
+    "id": "2",
+    "tex": "$W=-mu\\sqrt{2gR}$"
+   },
+   {
+    "id": "3",
+    "tex": "$W_{\\rm M}=-mu\\sqrt{2gR}$（モーターは負の仕事をする）"
+   },
+   {
+    "id": "4",
+    "tex": "$u=\\sqrt{2gR}$，距離 $2\\sqrt{RH}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\cos\\varphi=\\frac19$，最大の速さ $\\frac{2\\sqrt{42}}{9}\\sqrt{gR}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 台車の系で考える}　台車は等速直線運動をしているので，台車とともに動く観測者の座標系も慣性系であり，慣性力は現れない．この系では面は静止しているので，垂直抗力は小物体の速度に垂直で仕事をせず，力学的エネルギーが保存する．P から B まで高さ $R$ だけ下るから\n\\[ \\frac12mw^2=mgR \\qquad\\therefore\\quad w=\\boldsymbol{\\sqrt{2gR}} \\]\n角 $\\varphi$ の位置 Q での台車に対する速さを $w_\\varphi$ とすると，同様に $w_\\varphi^{\\,2}=2gR\\cos\\varphi$．中心方向の運動方程式は\n\\[ m\\frac{w_\\varphi^{\\,2}}{R}=N-mg\\cos\\varphi \\qquad\\therefore\\quad N=3mg\\cos\\varphi\\ (\\ge0) \\]\nよって小物体は面から離れず，$N_{\\rm B}=\\boldsymbol{3mg}$．\n\n\\textbf{(2) 床の系で考える}　床から見ると面は速度 $u$ で動いているので，面に垂直な垂直抗力でも小物体の（床に対する）速度には垂直でなく，仕事をする．右向きを正とすると，B での小物体の床に対する速度は $u-w$．床の系で運動エネルギーと仕事の関係を使うと，重力のする仕事は $mgR$ なので\n\\[ \\frac12m(u-w)^2-\\frac12mu^2=mgR+W \\]\n\\[ W=-muw+\\frac12mw^2-mgR=\\boldsymbol{-mu\\sqrt{2gR}} \\]\n\\textbf{別の見方}　床から見た小物体の速度は $\\vec u+\\vec w_\\varphi$ で，垂直抗力 $\\vec N$ は相対速度 $\\vec w_\\varphi$ に垂直だから，仕事率は $\\vec N\\cdot(\\vec u+\\vec w_\\varphi)=\\vec N\\cdot\\vec u=uN_x$．したがって $W=u\\times$（垂直抗力の力積の水平成分）である．重力は水平成分をもたないので，力積の水平成分は小物体の水平方向の運動量の変化 $m(u-w)-mu=-mw$ に等しく，$W=-muw$ と一致する．\n\n\\textbf{(3)}　小物体が台車を押す力は $-\\vec N$ で，その作用点（面上の接触点）は台車とともに速度 $\\vec u$ で動くから，この力が台車にする仕事は $-u\\int N_x\\,dt=-W$ である．台車の運動エネルギーは変わらないので\n\\[ W_{\\rm M}+(-W)=0 \\qquad\\therefore\\quad W_{\\rm M}=W=\\boldsymbol{-mu\\sqrt{2gR}} \\]\n小物体に押されて台車が速くなろうとするのを，モーターがブレーキとしておさえている．小物体と台車を合わせた系では，垂直抗力の作用・反作用のする仕事の和は $W+(-W)=0$ であり，「小物体の（床の系での）力学的エネルギーの変化＝モーターの仕事」となっている．\n\n\\textbf{(4)}　真下に落下するのは，B での床に対する速度が $0$，すなわち $u-w=0$ のときで $u=\\boldsymbol{\\sqrt{2gR}}$．落下時間 $\\sqrt{2H/g}$ の間に台車は $u\\sqrt{2H/g}$ 進むので，求める距離は $\\sqrt{2gR}\\sqrt{2H/g}=\\boldsymbol{2\\sqrt{RH}}$．\nこのとき，B の高さを基準とした小物体の力学的エネルギーは P で $\\frac12mu^2+mgR=2mgR$，B で $0$ であり，確かに $W_{\\rm M}=-mu\\sqrt{2gR}=-2mgR$ だけモーターに吸収されている．\n\n\\textbf{(5)}　Q での相対速度は大きさ $w_\\varphi=\\sqrt{2gR\\cos\\varphi}$，向きは円弧の接線方向で左下向きの単位ベクトル $(-\\cos\\varphi,\\,-\\sin\\varphi)$ である．床に対する速度は $(u-w_\\varphi\\cos\\varphi,\\ -w_\\varphi\\sin\\varphi)$ なので，$u=\\sqrt{2gR}$，$c=\\cos\\varphi$ とおくと\n\\[ v^2=u^2-2uw_\\varphi c+w_\\varphi^{\\,2}=2gR\\left(1+c-2c^{3/2}\\right) \\]\n$s=\\sqrt c\\ (0\\le s\\le1)$ とおくと $f(s)=1+s^2-2s^3$，$f'(s)=2s(1-3s)$ なので $s=\\frac13$ で最大となる．よって $\\cos\\varphi=\\boldsymbol{\\frac19}$ で\n\\[ v_{\\max}^{\\,2}=2gR\\left(1+\\frac19-\\frac2{27}\\right)=\\frac{56}{27}gR \\qquad\\therefore\\quad v_{\\max}=\\boldsymbol{\\frac{2\\sqrt{42}}{9}\\sqrt{gR}} \\]\nすべり始めは重力の仕事が垂直抗力の負の仕事を上回って床から見た速さが増すが，下端に近づくと相対速度が後ろ向きに大きくなって垂直抗力の負の仕事が勝ち，速さは $0$ まで減る．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一定速度で動く面からの垂直抗力は，面に対する相対速度には垂直でも床から見た速度には垂直でないので仕事をし，その仕事は「面の速度×力積の成分」になる．仕事は座標系で変わるが，台車の系（慣性系）でのエネルギー保存と，床の系でのモーターの仕事を含めた勘定は矛盾なくつながる．"
+ },
+ "concepts": [
+  "work-energy",
+  "kinematics-components",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "座標系と仕事",
+  "垂直抗力の仕事",
+  "動く面",
+  "エネルギー保存",
+  "相対速度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

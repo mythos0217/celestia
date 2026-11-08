@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" width="520" height="280">
+<defs>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker>
+<marker id="a-aks" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,1 L0,5 L10,9 z" fill="#222"/></marker>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="a-abs" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,1 L0,5 L10,9 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker>
+<marker id="a-ars" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,1 L0,5 L10,9 z" fill="#c0392b"/></marker>
+<marker id="a-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,1 L10,5 L0,9 z" fill="#888"/></marker>
+<marker id="a-ags" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,1 L0,5 L10,9 z" fill="#888"/></marker>
+</defs>
+<line x1="60.0" y1="240.0" x2="500.0" y2="240.0" stroke="#222" stroke-width="1.4" marker-end="url(#a-ak)"/>
+<text x="508.0" y="245.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">t</text>
+<line x1="60.0" y1="240.0" x2="60.0" y2="25.0" stroke="#222" stroke-width="1.4" marker-end="url(#a-ak)"/>
+<text x="52.0" y="25.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="end">v</text>
+<text x="54.0" y="258.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="end">O</text>
+<polyline points="60.0,240.0 62.1,234.6 64.2,229.2 66.3,223.8 68.4,218.4 70.6,213.1 72.7,207.8 74.8,202.6 76.9,197.4 79.0,192.3 81.1,187.3 83.2,182.4 85.3,177.6 87.4,172.9 89.5,168.2 91.7,163.7 93.8,159.3 95.9,155.1 98.0,150.9 100.1,146.9 102.2,142.9 104.3,139.2 106.4,135.5 108.5,132.0 110.7,128.6 112.8,125.3 114.9,122.1 117.0,119.1 119.1,116.2 121.2,113.4 123.3,110.7 125.4,108.1 127.5,105.6 129.6,103.3 131.8,101.0 133.9,98.9 136.0,96.9 138.1,94.9 140.2,93.1 142.3,91.3 144.4,89.6 146.5,88.0 148.6,86.5 150.8,85.1 152.9,83.7 155.0,82.4 157.1,81.2 159.2,80.0 161.3,78.9 163.4,77.8 165.5,76.8 167.6,75.9 169.7,75.0 171.9,74.2 174.0,73.4 176.1,72.6 178.2,71.9 180.3,71.2 182.4,70.6 184.5,70.0 186.6,69.4 188.7,68.9 190.9,68.4 193.0,67.9 195.1,67.4 197.2,67.0 199.3,66.6 201.4,66.2 203.5,65.9 205.6,65.5 207.7,65.2 209.8,64.9 212.0,64.6 214.1,64.4 216.2,64.1 218.3,63.9 220.4,63.6 222.5,63.4 224.6,63.2 226.7,63.0 228.8,62.9 231.0,62.7 233.1,62.5 235.2,62.4 237.3,62.3 239.4,62.1 241.5,62.0 243.6,61.9 245.7,61.8 247.8,61.7 249.9,61.6 252.1,61.5 254.2,61.4 256.3,61.3 258.4,61.2 260.5,61.2 262.6,61.1 264.7,61.0 266.8,61.0 268.9,60.9 271.1,60.9 273.2,60.8 275.3,60.8 277.4,60.7 279.5,60.7 281.6,60.6 283.7,60.6 285.8,60.6 287.9,60.5 290.1,60.5 292.2,60.5 294.3,60.4 296.4,60.4 298.5,60.4 300.6,60.4 302.7,60.4 304.8,60.3 306.9,60.3 309.0,60.3 311.2,60.3 313.3,60.3 315.4,60.2 317.5,60.2 319.6,60.2 321.7,60.2 323.8,60.2 325.9,60.2 328.0,60.2 330.2,60.2 332.3,60.2 334.4,60.1 336.5,60.1 338.6,60.1 340.7,60.1 342.8,60.1 344.9,60.1 347.0,60.1 349.1,60.1 351.3,60.1 353.4,60.1 355.5,60.1 357.6,60.1 359.7,60.1 361.8,60.1 363.9,60.1 366.0,60.1 368.1,60.1 370.3,60.1 372.4,60.0 374.5,60.0 376.6,60.0 378.7,60.0 380.8,60.0 382.9,60.0 385.0,60.0 387.1,60.0 389.2,60.0 391.4,60.0 393.5,60.0 395.6,60.0 397.7,60.0 399.8,60.0 401.9,60.0 404.0,60.0 406.1,60.0 408.2,60.0 410.4,60.0 412.5,60.0 414.6,60.0 416.7,60.0 418.8,60.0 420.9,60.0 423.0,60.0 425.1,60.0 427.2,60.0 429.3,60.0 431.5,60.0 433.6,60.0 435.7,60.0 437.8,60.0 439.9,60.0 442.0,60.0 444.1,60.0 446.2,60.0 448.3,60.0 450.5,60.0 452.6,60.0 454.7,60.0 456.8,60.0 458.9,60.0 461.0,60.0 463.1,60.0 465.2,60.0 467.3,60.0 469.4,60.0 471.6,60.0 473.7,60.0 475.8,60.0 477.9,60.0 480.0,60.0" stroke="#c0392b" stroke-width="2.0" fill="none"/>
+<line x1="60.0" y1="60.0" x2="490.0" y2="60.0" stroke="#888" stroke-width="1" stroke-dasharray="5,3"/>
+<text x="54" y="65.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="end">V</text>
+<line x1="60.0" y1="240.0" x2="130.0" y2="60.0" stroke="#1f5fbf" stroke-width="1.2" stroke-dasharray="5,3"/>
+<line x1="130.0" y1="60.0" x2="130.0" y2="240.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="130.0" y="258.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">τ</text>
+<text x="150.0" y="141.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">傾き <tspan font-family="Times New Roman, serif" font-style="italic">gH</tspan> / <tspan font-family="Times New Roman, serif" font-style="italic">L</tspan></text>
+<line x1="60.0" y1="78.0" x2="163.1" y2="78.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="163.1" y1="78.0" x2="163.1" y2="240.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="163.1" y="258" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">1.47<tspan font-family="Times New Roman, serif" font-style="italic">τ</tspan></text>
+<text x="54" y="83.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="end">0.9<tspan font-family="Times New Roman, serif" font-style="italic">V</tspan></text>
+</svg>

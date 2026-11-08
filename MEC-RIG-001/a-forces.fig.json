@@ -1,0 +1,197 @@
+{
+ "schema": "celestia.figure/1",
+ "size": [
+  320,
+  250
+ ],
+ "items": [
+  {
+   "t": "line",
+   "from": [
+    40,
+    10
+   ],
+   "to": [
+    40,
+    190
+   ],
+   "style": "thick"
+  },
+  {
+   "t": "poly",
+   "points": [
+    [
+     30,
+     10
+    ],
+    [
+     40,
+     10
+    ],
+    [
+     40,
+     190
+    ],
+    [
+     30,
+     190
+    ]
+   ],
+   "style": "hatch"
+  },
+  {
+   "t": "line",
+   "from": [
+    40,
+    150
+   ],
+   "to": [
+    260,
+    150
+   ],
+   "style": "thick",
+   "phys": "rod"
+  },
+  {
+   "t": "line",
+   "from": [
+    260,
+    150
+   ],
+   "to": [
+    40,
+    22.98
+   ],
+   "style": "thin",
+   "phys": "string"
+  },
+  {
+   "t": "dot",
+   "at": [
+    40,
+    150
+   ]
+  },
+  {
+   "t": "text",
+   "at": [
+    52,
+    166
+   ],
+   "text": "A",
+   "italic": false,
+   "size": 13
+  },
+  {
+   "t": "text",
+   "at": [
+    268,
+    166
+   ],
+   "text": "B",
+   "italic": false,
+   "size": 13
+  },
+  {
+   "t": "text",
+   "at": [
+    54,
+    22
+   ],
+   "text": "C",
+   "italic": false,
+   "size": 13
+  },
+  {
+   "t": "arc",
+   "at": [
+    260,
+    150
+   ],
+   "r": 34,
+   "from": 150,
+   "to": 180,
+   "label": "θ",
+   "labelGap": 11
+  },
+  {
+   "t": "arrow",
+   "from": [
+    150,
+    150
+   ],
+   "dir": 270,
+   "len": 60,
+   "style": "force",
+   "phys": "force:Mg",
+   "label": "Mg"
+  },
+  {
+   "t": "arrow",
+   "from": [
+    260,
+    150
+   ],
+   "dir": 150,
+   "len": 60,
+   "style": "force",
+   "phys": "force:T",
+   "label": "T",
+   "labelPos": "mid",
+   "labelOffset": [
+    10,
+    -12
+   ]
+  },
+  {
+   "t": "arrow",
+   "from": [
+    40,
+    150
+   ],
+   "dir": 30,
+   "len": 60,
+   "style": "force",
+   "phys": "force:R",
+   "label": "R",
+   "labelOffset": [
+    4,
+    -6
+   ]
+  },
+  {
+   "t": "arrow",
+   "from": [
+    40,
+    150
+   ],
+   "dir": 0,
+   "len": 51.96,
+   "style": "component",
+   "phys": "component:H",
+   "label": "H",
+   "labelPos": "mid",
+   "labelOffset": [
+    0,
+    14
+   ]
+  },
+  {
+   "t": "arrow",
+   "from": [
+    40,
+    150
+   ],
+   "dir": 90,
+   "len": 30,
+   "style": "component",
+   "phys": "component:V",
+   "label": "V",
+   "labelPos": "end",
+   "labelOffset": [
+    -12,
+    0
+   ]
+  }
+ ]
+}

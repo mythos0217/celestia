@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 240">
+<defs><marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<line x1="120" y1="150" x2="230" y2="150" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+<text x="175.0" y="140" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">u</text>
+<line x1="230" y1="150" x2="173.43469034758454" y2="217.41191099447008" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/>
+<text x="229.71734517379227" y="191.70595549723504" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">w<tspan baseline-shift="sub" font-size="10" font-style="normal">φ</tspan></text>
+<line x1="120" y1="150" x2="173.4" y2="217.4" stroke="#222" stroke-width="1.8" marker-end="url(#a-ak)"/>
+<text x="130" y="200" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">v</text>
+<text x="300" y="60" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">床から見た速度 ＝ 台車の速度 ＋ 相対速度</text>
+<text x="300" y="90" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">相対速度は円弧の接線方向（左下向き）</text>
+<text x="300" y="120" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">垂直抗力は相対速度に垂直</text>
+<text x="300" y="150" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">→ 仕事率は垂直抗力と台車の速度の内積</text>
+<line x1="230" y1="150" x2="170" y2="150" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<path d="M200,150 A30,30 0 0,0 210.7,173.0" fill="none" stroke="#888" stroke-width="1"/><text x="190" y="172" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="middle">φ</text>
+</svg>

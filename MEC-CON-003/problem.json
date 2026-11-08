@@ -1,0 +1,137 @@
+{
+ "id": "MEC-CON-003",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "円運動中に糸が切れると",
+ "course": "物理",
+ "level": 0,
+ "minutes": 5,
+ "format": [
+  "concept",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平面上で，糸につないだ小球を点 O のまわりに等速円運動させている（図は真上から見たもの）．図の位置で糸が切れた．ある生徒は「遠心力がはたらいているので，小球は O から遠ざかる向き（外向き）に飛んでいく」と言った．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "糸が切れた後，小球はどのような運動をするか．向きとともに答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "生徒の考えの誤りを説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "点 O のまわりを等速円運動する小球。図の位置で糸が切れる",
+   "caption": "",
+   "physics": {
+    "vectors": [
+     {
+      "name": "velocity:v",
+      "dir_deg": 90
+     }
+    ]
+   }
+  },
+  {
+   "id": "a-path",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-path.svg",
+   "alt": "糸が切れた小球は、その瞬間の速度の向き（円の接線方向）にまっすぐ進む。外向きには飛ばない",
+   "caption": "糸が切れると水平方向の力がなくなり，その瞬間の速度のまま等速直線運動",
+   "physics": {
+    "vectors": [
+     {
+      "name": "velocity:v",
+      "dir_deg": 90
+     }
+    ]
+   }
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "切れた瞬間の速度の向き（円の接線方向）に，速さ $v$ の等速直線運動をする．"
+   },
+   {
+    "id": "2",
+    "tex": "静止した観測者から見ると遠心力ははたらいていない．小球にはたらく水平方向の力は糸の張力（中心向き）だけで，それがなくなれば慣性の法則により等速直線運動する．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-path"
+    },
+    {
+     "type": "text",
+     "tex": "(1) 糸が切れると，水平方向にはたらく力はなくなる．慣性の法則より，小球はその瞬間の速度（円の接線方向，大きさ $v$）のまま等速直線運動をする．\n\n(2) 遠心力は，小球と一緒に回る観測者が感じる見かけの力（慣性力）で，静止した観測者から見るとはたらいていない．もし外向きの力がはたらいていたなら，糸が切れる前から張力とつり合って円運動できないはず．実際は中心向きの張力が向心力として小球を曲げていただけである．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "円運動している物体にはたらく実際の力は中心向き．力がなくなれば接線方向にまっすぐ進む．"
+ },
+ "concepts": [
+  "circular-motion",
+  "equilibrium"
+ ],
+ "laws": [
+  "newton-1st",
+  "centripetal-acceleration"
+ ],
+ "misconceptions": [
+  "MC-FLY-OUTWARD"
+ ],
+ "tags": [
+  "円運動",
+  "遠心力",
+  "誤概念"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

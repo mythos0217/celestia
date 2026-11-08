@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 270" width="400" height="270" font-family="'Times New Roman', serif">
+<line x1="20" y1="200" x2="330" y2="200" stroke="currentColor" stroke-width="2"/>
+<polygon points="20,200 20,90 90,90 90,200" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.6"/>
+<polyline points="90,90 91.6,90.01 93.2,90.02 94.8,90.05 96.4,90.1 98,90.15 99.6,90.22 101.2,90.29 102.8,90.38 104.4,90.49 106,90.6 107.6,90.73 109.2,90.86 110.8,91.01 112.4,91.18 114,91.35 115.6,91.54 117.2,91.73 118.8,91.94 120.4,92.17 122,92.4 123.6,92.65 125.2,92.9 126.8,93.17 128.4,93.46 130,93.75 131.6,94.06 133.2,94.37 134.8,94.7 136.4,95.05 138,95.4 139.6,95.77 141.2,96.14 142.8,96.53 144.4,96.94 146,97.35 147.6,97.78 149.2,98.21 150.8,98.66 152.4,99.13 154,99.6 155.6,100.09 157.2,100.58 158.8,101.09 160.4,101.62 162,102.15 163.6,102.7 165.2,103.25 166.8,103.82 168.4,104.41 170,105 171.6,105.61 173.2,106.22 174.8,106.85 176.4,107.5 178,108.15 179.6,108.82 181.2,109.49 182.8,110.18 184.4,110.89 186,111.6 187.6,112.33 189.2,113.06 190.8,113.81 192.4,114.58 194,115.35 195.6,116.14 197.2,116.93 198.8,117.74 200.4,118.57 202,119.4 203.6,120.25 205.2,121.1 206.8,121.97 208.4,122.86 210,123.75 211.6,124.66 213.2,125.57 214.8,126.5 216.4,127.45 218,128.4 219.6,129.37 221.2,130.34 222.8,131.33 224.4,132.34 226,133.35 227.6,134.38 229.2,135.41 230.8,136.46 232.4,137.53 234,138.6 235.6,139.69 237.2,140.78 238.8,141.89 240.4,143.02 242,144.15 243.6,145.3 245.2,146.45 246.8,147.62 248.4,148.81 250,150 251.6,151.21 253.2,152.42 254.8,153.65 256.4,154.9 258,156.15 259.6,157.42 261.2,158.69 262.8,159.98 264.4,161.29 266,162.6 267.6,163.93 269.2,165.26 270.8,166.61 272.4,167.98 274,169.35 275.6,170.74 277.2,172.13 278.8,173.54 280.4,174.97 282,176.4 283.6,177.85 285.2,179.3 286.8,180.77 288.4,182.26 290,183.75 291.6,185.26 293.2,186.77 294.8,188.3 296.4,189.85 298,191.4 299.6,192.97 301.2,194.54 302.8,196.13 304.4,197.74 306,199.35 306.64,200" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4" data-phys="trajectory"/>
+<g class="f-vel" data-phys="velocity:v" data-dir="314.56" data-len="68.41">
+<line x1="306.64" y1="200" x2="347.62" y2="241.62" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="354.64,248.74 344.3,244.89 350.95,238.35" fill="currentColor"/>
+<text x="373.06" y="257.29" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">v</text>
+</g>
+<g class="f-comp" data-phys="component:vx" data-dir="0" data-len="48">
+<line x1="306.64" y1="200" x2="344.64" y2="200" stroke="currentColor" stroke-width="2.2" stroke-dasharray="5 4"/>
+<polygon points="354.64,200 344.64,204.66 344.64,195.34" fill="currentColor"/>
+<text x="330.64" y="184" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">v₀</text>
+</g>
+<g class="f-comp" data-phys="component:vy" data-dir="270" data-len="48.74">
+<line x1="306.64" y1="200" x2="306.64" y2="238.74" stroke="currentColor" stroke-width="2.2" stroke-dasharray="5 4"/>
+<polygon points="306.64,248.74 301.98,238.74 311.3,238.74" fill="currentColor"/>
+<text x="268.64" y="224.37" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">gt</text>
+</g>
+<text x="180" y="225" font-size="12" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">着地点での速度</text>
+</svg>

@@ -1,0 +1,122 @@
+{
+ "id": "PHY-ENG-007",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-04",
+ "topic": "踏み切り中にも重力が仕事をする跳躍（月面での走り高跳びの記録）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "質量 $m$ の走り高跳びの選手の踏み切りを，次のように単純化して考える．踏み切りでは，脚を曲げて静止した状態から，脚を伸ばして重心を鉛直に距離 $d$ だけ持ち上げる．この間，選手は地面から一定の大きさ $F$ の鉛直上向きの力を受ける．足が地面を離れる瞬間の重心の高さは $h_0$ で，その後，重心は鉛直に投げ上げられた物体と同じ運動をする．選手がバーを越えられるのは，重心の最高点の高さがバーの高さより $\\delta$ 以上高いときとする．水平方向の運動や空気抵抗は考えない．\n地球上の重力加速度の大きさを $g$，月面上の重力加速度の大きさを $\\dfrac{g}{6}$ とし，選手は月面上でも地球上と同じ $F$，$d$，$h_0$，$\\delta$ で跳ぶものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "地球上で越えられるバーの高さの最大値は $H$ であった．$\\dfrac{F}{mg}$ を $H$，$h_0$，$d$，$\\delta$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "月面上で越えられるバーの高さの最大値 $H'$ を $H$，$h_0$，$d$，$\\delta$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$H=2.45\\ \\mathrm{m}$，$h_0=1.25\\ \\mathrm{m}$，$\\delta=0.05\\ \\mathrm{m}$，$d=0.40\\ \\mathrm{m}$ のとき，$H'$ を有効数字3桁で求めよ．また，「月面では地球上の記録の6倍跳べる」とした予想 $6H$ と比べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の条件で，月面上で足が地面を離れる瞬間の重心の速さは，地球上の何倍か．有効数字3桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：踏み切り中にも重力が仕事をする跳躍（月面での走り高跳びの記録）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{F}{mg}=1+\\dfrac{H-h_0+\\delta}{d}$"
+   },
+   {
+    "id": "2",
+    "tex": "$H'=6H-5h_0+5\\delta+5d$"
+   },
+   {
+    "id": "3",
+    "tex": "$H'=10.7\\ \\mathrm{m}$（$6H=14.7\\ \\mathrm{m}$ より $4.0\\ \\mathrm{m}$ 低い）"
+   },
+   {
+    "id": "4",
+    "tex": "$1.13$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{踏み切り中の仕事とエネルギー}　踏み切りの間，重心には地面からの力 $F$（上向き）と重力 $mg$（下向き）がはたらき，重心は静止から距離 $d$ だけ上昇する．仕事と運動エネルギーの関係より，足が離れる瞬間の重心の速さ $v$ は\n\\[ \\frac12 mv^2=(F-mg)d \\]\nを満たす．ここで重力も踏み切り中に負の仕事 $-mgd$ をすることが大事で，重力が小さい月面では，同じ $F$ でも離地の速さそのものが大きくなる．\n\n\\textbf{(1)}　離地後の重心の上昇は $\\dfrac{v^2}{2g}=\\left(\\dfrac{F}{mg}-1\\right)d$．最高点がバーより $\\delta$ 高いとき限界なので\n\\[ h_0+\\left(\\frac{F}{mg}-1\\right)d-\\delta=H \\quad\\therefore\\quad \\boldsymbol{\\frac{F}{mg}=1+\\frac{H-h_0+\\delta}{d}} \\]\n\n\\textbf{(2)}　月面では $\\dfrac12mv'^2=\\left(F-\\dfrac{mg}{6}\\right)d$，上昇は\n\\[ \\frac{v'^2}{2\\cdot\\frac{g}{6}}=\\left(\\frac{6F}{mg}-1\\right)d=6(d+H-h_0+\\delta)-d \\]\nよって\n\\[ H'=h_0-\\delta+5d+6(H-h_0+\\delta)=\\boldsymbol{6H-5h_0+5\\delta+5d} \\]\n「離地後の上昇 $H-h_0+\\delta$」だけが6倍になるのではなく，踏み切り中に重力がする負の仕事が減る分 $5d$ が加わり，一方で $h_0-\\delta$ は6倍にならない．\n\n\\textbf{(3)}　$H-h_0+\\delta=1.25\\ \\mathrm{m}$ なので $H'=1.20+2.00+7.50=\\boldsymbol{10.7\\ \\mathrm{m}}$．素朴な予想 $6H=14.7\\ \\mathrm{m}$ より $4.0\\ \\mathrm{m}$ 低い（離地時の重心の高さ $h_0$ の分まで6倍してしまうのが誤り）．\n\n\\textbf{(4)}　$\\dfrac{F}{mg}=1+\\dfrac{1.25}{0.40}=4.125$ なので\n\\[ \\frac{v'}{v}=\\sqrt{\\frac{F/(mg)-1/6}{F/(mg)-1}}=\\sqrt{\\frac{3.958}{3.125}}\\fallingdotseq\\boldsymbol{1.13} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "踏み切りの間も重力は負の仕事をするので，一定の力で押し出す跳躍では離地の速さ自体が重力に依存する．さらに離地時の重心の高さは重力によらないため，記録は「上昇分の6倍」でも「全体の6倍」でもなく $6H-5h_0+5\\delta+5d$ になる．"
+ },
+ "concepts": [
+  "work-energy",
+  "projectile-motion",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "仕事と運動エネルギーの関係",
+  "鉛直投げ上げ",
+  "重心",
+  "月面",
+  "概算"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

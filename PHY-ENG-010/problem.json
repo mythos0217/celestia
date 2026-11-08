@@ -1,0 +1,142 @@
+{
+ "id": "PHY-ENG-010",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-04",
+ "topic": "水槽につないだ長い管の流れの立ち上がり（水柱の慣性とトリチェリの速さ）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，大きな水槽の底の側面に，断面積が一様で長さ $L$ の細い水平な管がつながれ，管の先端の栓が閉じている．水面は管の高さより $H$ だけ高い．時刻 $t=0$ に栓を開くと，水が流れ出し始める．水槽は十分大きく，水面の高さの変化と水槽内の水の運動エネルギーは無視できるとする．水は縮まず，粘性や管の入口での損失は無視する．管内の水は管全体で同じ速さ $v$ で流れ，管の出口の圧力は大気圧 $p_0$ に等しい．重力加速度の大きさを $g$，水の密度を $\\rho$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "栓を開いた直後（$v=0$）の管内の水の加速度の大きさを求めよ．ただし，このとき管の入口の圧力は水槽内の静水圧 $p_0+\\rho gH$ に等しいとしてよい．"
+     },
+     {
+      "id": "2",
+      "tex": "短い時間 $\\Delta t$ の間のエネルギーの収支を考えて，$v$ と加速度 $\\dfrac{dv}{dt}$ の関係式を導け．"
+     },
+     {
+      "id": "3",
+      "tex": "十分時間がたったときの流出の速さ $V$ を求めよ．また，$v(t)=V\\tanh\\dfrac{t}{\\tau}$ が (2) の式を満たすように定数 $\\tau$ を定めよ．ただし $\\tanh x=\\dfrac{e^x-e^{-x}}{e^x+e^{-x}}$ で，$\\dfrac{d}{dx}\\tanh x=1-\\tanh^2x$ である．"
+     },
+     {
+      "id": "4",
+      "tex": "流れの速さが $v$ のとき，管の入口の圧力 $p_{\\rm in}$ はいくらか．また，それが $p_0+\\rho gH-\\dfrac12\\rho v^2$ に等しいことを確かめ，その意味を述べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$H=5.0\\ {\\rm m}$，$L=20\\ {\\rm m}$，$g=9.8\\ {\\rm m/s^2}$ とする．流出の速さが $V$ の $90\\,\\%$ に達する時刻と，それまでに出口から出た水の量を「管の中での水柱の長さ」で表した値を，それぞれ有効数字2桁で求めよ．必要なら $\\tanh x=0.90$ となる $x$ は $\\dfrac12\\log_e19=1.47$，$\\cosh x=\\dfrac{e^x+e^{-x}}{2}$ に対して $\\log_e\\cosh(1.47)=0.83$ を用いよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：水槽につないだ長い管の流れの立ち上がり（水柱の慣性とトリチェリの速さ）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：水槽につないだ長い管の流れの立ち上がり（水柱の慣性とトリチェリの速さ）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{gH}{L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$L\\dfrac{dv}{dt}=gH-\\dfrac12v^2$"
+   },
+   {
+    "id": "3",
+    "tex": "$V=\\sqrt{2gH}$，$\\tau=\\dfrac{2L}{\\sqrt{2gH}}=L\\sqrt{\\dfrac{2}{gH}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$p_{\\rm in}=p_0+\\rho L\\dfrac{dv}{dt}=p_0+\\rho\\left(gH-\\dfrac12v^2\\right)$．水槽内（ほぼ定常）でのベルヌーイの定理の関係で，水槽の静水圧のうち $\\frac12\\rho v^2$ が入口までの加速に使われ，残りが管内の水を加速する．"
+   },
+   {
+    "id": "5",
+    "tex": "$5.9\\ {\\rm s}$，$33\\ {\\rm m}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 開いた直後} \\\\\n管の断面積を $s$ とすると，管内の水の質量は $\\rho sL$．管の両端の圧力差による力 $(p_0+\\rho gH-p_0)s=\\rho gHs$ だけが水平にはたらくので\n\\[ \\rho sL\\,a=\\rho gHs\\qquad\\therefore\\quad \\boldsymbol{a=\\frac{gH}{L}} \\]\n\\hfill$\\square$\n\n\\textbf{(2) エネルギー収支} \\\\\n水全体を系とする．時間 $\\Delta t$ の間に出口から出る水の質量は $\\rho sv\\Delta t$ である．水は縮まないので，その結果は「水面付近にあった質量 $\\rho sv\\Delta t$ の水が，管の出口の高さまで $H$ 下がって速さ $v$ で出ていった」のと同じである（水槽内の水の運動エネルギーは無視）．大気圧が水面でする仕事 $p_0\\cdot sv\\Delta t$ と出口で水がする仕事 $p_0\\cdot sv\\Delta t$ は打ち消し合う．したがって，重力のした仕事が「管内の水の運動エネルギーの増加」と「出ていく水の運動エネルギー」になる：\n\\[ \\rho sv\\Delta t\\cdot gH=\\Delta\\!\\left(\\frac12\\rho sL v^2\\right)+\\frac12(\\rho sv\\Delta t)v^2 \\]\n$\\Delta\\!\\left(\\frac12\\rho sLv^2\\right)=\\rho sLv\\,\\Delta v$ を代入し，$\\rho sv\\Delta t$ で割ると\n\\[ \\boldsymbol{L\\frac{dv}{dt}=gH-\\frac12v^2} \\]\n$v=0$ では (1) と一致する．\\hfill$\\square$\n\n\\textbf{(3) 終端の速さと時定数} \\\\\n十分時間がたつと $\\dfrac{dv}{dt}\\to0$ なので $\\boldsymbol{V=\\sqrt{2gH}}$（トリチェリの定理の速さ）．$v=V\\tanh(t/\\tau)$ を代入すると\n\\[ L\\frac{dv}{dt}=\\frac{LV}{\\tau}\\left(1-\\tanh^2\\frac t\\tau\\right),\\qquad gH-\\frac12v^2=\\frac{V^2}{2}\\left(1-\\tanh^2\\frac t\\tau\\right) \\]\n（$gH=V^2/2$ を用いた）．両者が等しいためには $\\dfrac{LV}{\\tau}=\\dfrac{V^2}{2}$，すなわち\n\\[ \\boldsymbol{\\tau=\\frac{2L}{V}=\\frac{2L}{\\sqrt{2gH}}=L\\sqrt{\\frac{2}{gH}}} \\]\n初期値 $v(0)=0$ も満たす．\\hfill$\\square$\n\n\\textbf{(4) 入口の圧力} \\\\\n管内の水だけに運動方程式を立てると，水平な力は両端の圧力差だけなので $\\rho sL\\dfrac{dv}{dt}=(p_{\\rm in}-p_0)s$．よって (2) を使って\n\\[ \\boldsymbol{p_{\\rm in}=p_0+\\rho L\\frac{dv}{dt}=p_0+\\rho gH-\\frac12\\rho v^2} \\]\nこれは水槽の水面から管の入口までの流れ（水槽内はほぼ定常）にベルヌーイの定理を当てはめた式と同じである．水槽の静水圧 $\\rho gH$ のうち $\\frac12\\rho v^2$ は入口までに水を速さ $v$ に加速するのに使われ，残りの $\\rho gH-\\frac12\\rho v^2$ だけが管内の水柱をさらに加速する．$v\\to V$ でこれが $0$ になり，管内の圧力はどこでも $p_0$ になる．（逆に (1) は $v=0$ のときのこの式である．）\\hfill$\\square$\n\n\\textbf{(5) 数値} \\\\\n$V=\\sqrt{2\\times9.8\\times5.0}=9.90\\ {\\rm m/s}$，$\\tau=\\dfrac{2\\times20}{9.90}=4.04\\ {\\rm s}$．$\\tanh(t/\\tau)=0.90$ より $t/\\tau=1.47$ なので\n\\[ t=1.47\\times4.04\\fallingdotseq\\boldsymbol{5.9\\ {\\rm s}} \\]\n出た水の水柱の長さは\n\\[ X=\\int_0^t v\\,dt=V\\tau\\log_e\\cosh\\frac t\\tau=2L\\log_e\\cosh\\frac{t}{\\tau}=40\\times0.83\\fallingdotseq\\boldsymbol{33\\ {\\rm m}} \\]\n（$\\dfrac{d}{dx}\\log_e\\cosh x=\\tanh x$ を用いた．）管の長さ $L=20\\ {\\rm m}$ の $1.7$ 倍もの水が出るまで，流れは定常に達しない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "管の中の水柱の慣性があるため，栓を開いても流れはすぐにはトリチェリの速さにならない．エネルギー収支（重力の仕事＝管内の水の運動エネルギーの増加＋流出する運動エネルギー）から $L\\,dv/dt=gH-\\frac12v^2$ が得られ，速さは時定数 $2L/\\sqrt{2gH}$ で $\\tanh$ 型に立ち上がる．管の入口の圧力は静水圧から動圧を引いた値で，その残りだけが水柱を加速する．"
+ },
+ "concepts": [
+  "work-energy",
+  "equation-of-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エネルギー収支",
+  "流体",
+  "トリチェリの定理",
+  "時定数",
+  "運動方程式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

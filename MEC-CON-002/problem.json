@@ -1,0 +1,106 @@
+{
+ "id": "MEC-CON-002",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "最高点での加速度",
+ "course": "物理基礎",
+ "level": 0,
+ "minutes": 5,
+ "format": [
+  "concept",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "小球を真上に投げ上げた．空気抵抗は無視する．ある生徒は「最高点では小球が一瞬止まるので，そのときの加速度は $0$ である」と言った．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この考えの誤りを指摘し，最高点での加速度の大きさと向きを答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "もし最高点で加速度が本当に $0$ だとすると，その後の小球はどうなるはずか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "加速度は速度の変化の割合で，速度が $0$ でも変化していれば $0$ ではない．最高点でも重力だけがはたらくので，加速度は鉛直下向きに大きさ $g$．"
+   },
+   {
+    "id": "2",
+    "tex": "速度 $0$ のまま変化しない，つまり最高点で止まり続けることになる（実際には落ちてくる）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 加速度は「速度の変化の割合」．最高点の前後で，速度は上向きから下向きへと変化し続けている．運動方程式 $ma=-mg$ より，投げ上げてから落ちるまでずっと $a=-g$（下向きに $g$）で一定．速度が $0$ であることと，加速度が $0$ であることは別．\n\n(2) 加速度 $0$ は速度が変わらないこと．最高点で速度 $0$，加速度 $0$ なら，速度は $0$ のまま，つまりそこに静止し続けるはず．実際は落下するので，加速度は $0$ ではない．\n\n$v$-$t$ グラフで見ると，最高点は直線が $t$ 軸を横切る点で，傾き（加速度）は $-g$ のまま．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "速度と加速度は別の量．$v=0$ でも $a\\ne0$ になりうる．"
+ },
+ "simulation": {
+  "id": "mech.projectile",
+  "preset": {
+   "v0": 10,
+   "theta": 90,
+   "h0": 0
+  },
+  "locked": [
+   "theta"
+  ],
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "acceleration-concept",
+  "uniform-acceleration"
+ ],
+ "laws": [
+  "newton-2nd",
+  "uniform-acceleration-eq"
+ ],
+ "misconceptions": [
+  "MC-ACCEL-ZERO-AT-TOP"
+ ],
+ "tags": [
+  "加速度",
+  "誤概念",
+  "鉛直投げ上げ"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

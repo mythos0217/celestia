@@ -1,0 +1,143 @@
+{
+ "id": "PHY-ENG-002",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-04",
+ "topic": "くぎに掛けた糸でつながる3物体の最大降下と糸の長さの条件",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，同じ高さで距離 $2a$ 離れた 2 本の滑らかで細いくぎ E，F がある．全長 $\\ell$ の軽い糸の中点に質量 $M$ の小さいおもり B を取り付け，糸を E，F に掛けて，糸の両端に質量 $m$ の小さいおもり A，C をつるした．ただし $M<2m$ とする．B は線分 EF の垂直二等分線上を，A，C は鉛直線上を運動し，B が床などに当たることはない．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "つり合いの状態で，B が EF よりどれだけ下にあるか．その距離 $y_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "B を EF の中点まで持ち上げて支え，全体を静止させてから静かに放した．B が EF より最も下がったときの距離 $y_1$ を求めよ．ただし，A，C はくぎに達しないものとする．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で $y_1$ がちょうど $y_0$ の 4 倍になった．$\\dfrac{M}{m}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の場合に，B が深さ $y_0$ の位置を通過するときの B の速さ $v$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(3) の場合に，(2) の運動の途中で A，C がくぎに達しないための $\\ell$ の条件を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：くぎに掛けた糸でつながる3物体の最大降下と糸の長さの条件",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：くぎに掛けた糸でつながる3物体の最大降下と糸の長さの条件",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$y_0=\\dfrac{Ma}{\\sqrt{4m^2-M^2}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$y_1=\\dfrac{4mMa}{4m^2-M^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{M}{m}=\\sqrt3$"
+   },
+   {
+    "id": "4",
+    "tex": "$v=2\\sqrt{\\dfrac{(2\\sqrt3-3)ga}{3}}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ell>14a$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "B の EF からの深さを $y$，E から B までの糸の長さを $r=\\sqrt{a^2+y^2}$，糸 EB と鉛直線のなす角を $\\theta$（$\\cos\\theta=\\dfrac{y}{r}$）とする．\n\n\\textbf{(1)}　A のつり合いより糸の張力は $mg$（くぎは滑らかなので糸の両側で張力は等しい）．B の鉛直方向のつり合いは\n\\[ 2mg\\cos\\theta=Mg\\quad\\therefore\\ \\frac{y_0}{\\sqrt{a^2+y_0^{\\,2}}}=\\frac{M}{2m}. \\]\n2 乗して整理すると $(4m^2-M^2)y_0^{\\,2}=M^2a^2$ より $\\boldsymbol{y_0=\\dfrac{Ma}{\\sqrt{4m^2-M^2}}}$．（$M<2m$ はつり合いが存在する条件である．）\n\n\\textbf{(2)}　くぎは滑らかで糸は伸びないので，非保存力は仕事をしない．3 物体の系で力学的エネルギーが保存される．B が $y$ 下がると，EB が $a$ から $r$ に伸びるので A，C はそれぞれ $r-a$ 上がる．最下点では B が一瞬止まり，同時に A，C も止まる（A，C の速さは $r$ の変化の速さで，B の速さの $\\cos\\theta$ 倍）．よって\n\\[ Mgy_1=2mg\\left(\\sqrt{a^2+y_1^{\\,2}}-a\\right). \\]\n$k=\\dfrac{M}{2m}$ とおくと $ky_1+a=\\sqrt{a^2+y_1^{\\,2}}$．2 乗して $y_1\\ne0$ で割ると\n\\[ y_1=\\frac{2ka}{1-k^2}=\\boldsymbol{\\frac{4mMa}{4m^2-M^2}}. \\]\n\n\\textbf{(3)}　(1)(2) より\n\\[ \\frac{y_1}{y_0}=\\frac{4m}{\\sqrt{4m^2-M^2}}=4\\quad\\therefore\\ 4m^2-M^2=m^2,\\ \\ \\boldsymbol{\\frac{M}{m}=\\sqrt3}. \\]\nばねにつるした物体なら「静かに放したときの最大の変位はつり合いの変位の 2 倍」だが，ここでは比が $\\dfrac{4m}{\\sqrt{4m^2-M^2}}>2$ で質量比によって変わる．張力の鉛直成分 $2mg\\cos\\theta$ が $y$ に比例しない（深くなるほど $mg$ ずつの 2 力が鉛直に近づき，復元力が頭打ちになる）からである．\n\n\\textbf{(4)}　$M=\\sqrt3m$ のとき $y_0=\\sqrt3a$，$r_0=2a$，$\\cos\\theta=\\dfrac{\\sqrt3}{2}$．A，C の速さは $v\\cos\\theta=\\dfrac{\\sqrt3}{2}v$．出発点と深さ $y_0$ の点の間でエネルギー保存則を用いると\n\\[ \\sqrt3mg\\cdot\\sqrt3a-2mg(2a-a)=\\frac12\\sqrt3m v^2+2\\cdot\\frac12m\\left(\\frac{\\sqrt3}{2}v\\right)^2 \\]\n\\[ mga=\\frac{2\\sqrt3+3}{4}mv^2\\quad\\therefore\\ v^2=\\frac{4ga}{3+2\\sqrt3}=\\frac{4(2\\sqrt3-3)}{3}ga \\]\n\\[ \\boldsymbol{v=2\\sqrt{\\frac{(2\\sqrt3-3)ga}{3}}}. \\]\nA，C の運動エネルギーを忘れたり，A，C の速さを B と同じとしたりしないこと．\n\n\\textbf{(5)}　(3) の場合 $y_1=4\\sqrt3a$，このとき $r_1=\\sqrt{a^2+48a^2}=7a$．はじめ（B が EF の中点）E から A までの糸の長さは $\\dfrac{\\ell}{2}-a$ で，B が最下点のとき $\\dfrac{\\ell}{2}-7a$ になる．A がくぎに達しないためには\n\\[ \\frac{\\ell}{2}-7a>0\\quad\\therefore\\ \\boldsymbol{\\ell>14a}. \\]\n（(2) の答えには $\\ell$ は現れないが，その答えが成り立つ前提として糸の長さの条件が必要になる．なお，運動の途中で糸の張力が正に保たれることも確かめられる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "くぎに掛けた糸でつながる系では，各物体の速さの関係（$\\cos\\theta$ 倍）と高さの関係を幾何から求め，系全体の力学的エネルギー保存則を使う．張力の鉛直成分が変位に比例しないので，最大降下とつり合い位置の比は 2 にならず，質量比で決まる．答えの前提になる糸の長さの条件も確かめる．"
+ },
+ "concepts": [
+  "work-energy",
+  "mechanical-energy",
+  "equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "力学的エネルギー保存則",
+  "束縛条件",
+  "つり合い",
+  "物体系",
+  "非線形な復元力"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

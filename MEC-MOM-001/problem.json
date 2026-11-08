@@ -1,0 +1,141 @@
+{
+ "id": "MEC-MOM-001",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "一体になる衝突",
+ "course": "物理基礎",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平面上で，速さ $v$ で右向きに進む質量 $m$ の台車が，静止している質量 $M$ の台車に衝突し，2台は連結して一体となって動いた．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "衝突後の2台の速さ $V$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "衝突によって失われた運動エネルギー $\\Delta K$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "右向きに速さ v で進む質量 m の台車と、静止した質量 M の台車",
+   "caption": ""
+  },
+  {
+   "id": "a-after",
+   "role": "answer",
+   "kind": "state",
+   "format": "svg",
+   "src": "a-after.svg",
+   "alt": "衝突後、2台が連結して速さ V で右向きに進む",
+   "caption": "運動量は保存するが，運動エネルギーは減る"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V=\\dfrac{mv}{m+M}$",
+    "grading": "V：m v/(m+M)"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Delta K=\\dfrac{mMv^2}{2(m+M)}$",
+    "grading": "ΔK：m M v^2/(2(m+M))"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 水平方向には外力がはたらかないので，運動量が保存する．\\[mv=(m+M)V\\quad\\Longrightarrow\\quad V=\\frac{mv}{m+M}\\]"
+    },
+    {
+     "type": "figure",
+     "ref": "a-after"
+    },
+    {
+     "type": "text",
+     "tex": "(2) \\[\\Delta K=\\frac12mv^2-\\frac12(m+M)V^2=\\frac12mv^2-\\frac{m^2v^2}{2(m+M)}=\\frac{mMv^2}{2(m+M)}\\] 失われたエネルギーは連結器の変形や熱，音になる．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "衝突では運動量は保存するが，運動エネルギーはふつう保存しない．"
+ },
+ "simulation": {
+  "id": "mech.collision",
+  "preset": {
+   "m1": 1,
+   "m2": 2,
+   "v1": 3,
+   "v2": 0,
+   "e": 0
+  },
+  "locked": [
+   "e",
+   "v2"
+  ],
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "restitution"
+ ],
+ "laws": [
+  "momentum-conservation",
+  "restitution"
+ ],
+ "misconceptions": [
+  "MC-KE-ALWAYS-CONSERVED"
+ ],
+ "tags": [
+  "衝突",
+  "運動量保存",
+  "完全非弾性衝突"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

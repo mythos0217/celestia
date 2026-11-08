@@ -1,0 +1,140 @@
+{
+ "schema": "celestia.figure/1",
+ "size": [
+  340,
+  230
+ ],
+ "items": [
+  {
+   "t": "line",
+   "from": [
+    20,
+    200
+   ],
+   "to": [
+    330,
+    200
+   ],
+   "style": "ground"
+  },
+  {
+   "t": "curve",
+   "f": "parabola",
+   "from": [
+    50,
+    200
+   ],
+   "dir": 50,
+   "speed": 100,
+   "g": 40,
+   "until_y": 200,
+   "style": "dash"
+  },
+  {
+   "t": "ball",
+   "at": [
+    50,
+    200
+   ],
+   "r": 6,
+   "phys": "body:ball"
+  },
+  {
+   "t": "arrow",
+   "from": [
+    50,
+    200
+   ],
+   "dir": 50,
+   "len": 70,
+   "style": "velocity",
+   "phys": "velocity:v0",
+   "label": "v₀"
+  },
+  {
+   "t": "arrow",
+   "from": [
+    50,
+    200
+   ],
+   "dir": 0,
+   "len": 45.0,
+   "style": "component",
+   "phys": "component:v0x",
+   "label": "v₀cosθ",
+   "labelPos": "mid",
+   "labelOffset": [
+    0,
+    16
+   ]
+  },
+  {
+   "t": "arrow",
+   "from": [
+    50,
+    200
+   ],
+   "dir": 90,
+   "len": 53.62,
+   "style": "component",
+   "phys": "component:v0y",
+   "label": "v₀sinθ",
+   "labelPos": "mid",
+   "labelOffset": [
+    -44,
+    0
+   ]
+  },
+  {
+   "t": "line",
+   "from": [
+    95.0,
+    200
+   ],
+   "to": [
+    95.0,
+    146.38
+   ],
+   "style": "dash"
+  },
+  {
+   "t": "line",
+   "from": [
+    50,
+    146.38
+   ],
+   "to": [
+    95.0,
+    146.38
+   ],
+   "style": "dash"
+  },
+  {
+   "t": "arrow",
+   "from": [
+    173.1,
+    126.65
+   ],
+   "dir": 0,
+   "len": 45.0,
+   "style": "velocity",
+   "phys": "velocity:v-top",
+   "label": "v₀cosθ",
+   "labelPos": "mid",
+   "labelOffset": [
+    0,
+    -28
+   ]
+  },
+  {
+   "t": "text",
+   "at": [
+    173.1,
+    142.65
+   ],
+   "text": "最高点",
+   "italic": false,
+   "size": 12
+  }
+ ]
+}

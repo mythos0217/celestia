@@ -1,0 +1,163 @@
+{
+ "id": "MEC-RIG-001",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-08",
+ "topic": "壁に取り付けた棒のつり合い",
+ "course": "物理",
+ "level": 2,
+ "minutes": 12,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "長さ $l$，質量 $M$ の一様な棒 AB の端 A を，鉛直な壁にちょうつがいで取り付けた．端 B に軽い糸をつけ，糸の他端を壁の点 C に結んだところ，棒は水平になって静止した．糸と棒のなす角は $\\theta$，重力加速度の大きさは $g$ である．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "糸の張力の大きさ $T$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "ちょうつがいが棒に及ぼす力の水平成分の大きさ $H$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ちょうつがいが棒に及ぼす力の鉛直成分の大きさ $V$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "壁に A 端をちょうつがいで取り付けた水平な棒 AB と、B 端から壁の点 C へ張った糸。糸と棒のなす角は θ",
+   "caption": ""
+  },
+  {
+   "id": "a-forces",
+   "role": "answer",
+   "kind": "vector",
+   "format": "svg",
+   "src": "a-forces.svg",
+   "alt": "棒にはたらく力：中点の重力 Mg、B 端の張力 T、A 端でちょうつがいから受ける力 R（水平成分 H と鉛直成分 V）",
+   "caption": "3力がつり合い，A のまわりのモーメントの和も $0$",
+   "physics": {
+    "equilibrium": true,
+    "torque": {
+     "about": [
+      40,
+      150
+     ]
+    },
+    "forces": [
+     {
+      "name": "Mg",
+      "dir_deg": 270
+     },
+     {
+      "name": "T",
+      "dir_deg": 150
+     }
+    ],
+    "decompositions": [
+     {
+      "of": "force:R",
+      "into": [
+       "component:H",
+       "component:V"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T=\\dfrac{Mg}{2\\sin\\theta}$",
+    "grading": "T：M g/(2sin(θ))"
+   },
+   {
+    "id": "2",
+    "tex": "$H=\\dfrac{Mg}{2\\tan\\theta}$",
+    "grading": "H：M g/(2tan(θ))"
+   },
+   {
+    "id": "3",
+    "tex": "$V=\\dfrac{Mg}2$",
+    "grading": "V：M g/2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ちょうつがいからの力は向きがわからないので，水平成分 $H$ と鉛直成分 $V$ に分けて未知数にする．"
+    },
+    {
+     "type": "figure",
+     "ref": "a-forces"
+    },
+    {
+     "type": "text",
+     "tex": "(1) 未知の力 $H$，$V$ がはたらく A のまわりのモーメントのつり合いを考えると，$H$，$V$ が式に入らない．重力は中点（腕の長さ $\\dfrac l2$）にはたらく．張力の鉛直成分 $T\\sin\\theta$ の腕の長さは $l$．\\[T\\sin\\theta\\cdot l=Mg\\cdot\\frac l2\\quad\\Longrightarrow\\quad T=\\frac{Mg}{2\\sin\\theta}\\]\n\n(2) 水平方向のつり合い：$H=T\\cos\\theta=\\dfrac{Mg}{2\\tan\\theta}$（壁から離れる向き）．\n\n(3) 鉛直方向のつり合い：$V+T\\sin\\theta=Mg$ より $V=\\dfrac{Mg}2$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "未知の力がはたらく点のまわりのモーメントを考えると，未知数が減る．"
+ },
+ "concepts": [
+  "torque",
+  "equilibrium",
+  "force-decomposition"
+ ],
+ "laws": [
+  "torque-equilibrium"
+ ],
+ "misconceptions": [
+  "MC-TORQUE-FORCE-ONLY"
+ ],
+ "tags": [
+  "剛体",
+  "力のモーメント",
+  "つり合い"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

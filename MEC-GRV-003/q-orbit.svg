@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" width="360" height="240" font-family="'Times New Roman', serif">
+<polygon points="310,120 309.51,110.45 308.03,100.98 305.57,91.65 302.16,82.53 297.82,73.7 292.58,65.23 286.49,57.17 279.59,49.59 271.92,42.54 263.56,36.08 254.56,30.27 245,25.13 234.94,20.72 224.46,17.06 213.65,14.19 202.57,12.12 191.33,10.87 180,10.46 168.67,10.87 157.43,12.12 146.35,14.19 135.54,17.06 125.06,20.72 115,25.13 105.44,30.27 96.44,36.08 88.08,42.54 80.41,49.59 73.51,57.17 67.42,65.23 62.18,73.7 57.84,82.53 54.43,91.65 51.97,100.98 50.49,110.45 50,120 50.49,129.55 51.97,139.02 54.43,148.35 57.84,157.47 62.18,166.3 67.42,174.77 73.51,182.83 80.41,190.41 88.08,197.46 96.44,203.92 105.44,209.73 115,214.87 125.06,219.28 135.54,222.94 146.35,225.81 157.43,227.88 168.67,229.13 180,229.54 191.33,229.13 202.57,227.88 213.65,225.81 224.46,222.94 234.94,219.28 245,214.87 254.56,209.73 263.56,203.92 271.92,197.46 279.59,190.41 286.49,182.83 292.58,174.77 297.82,166.3 302.16,157.47 305.57,148.35 308.03,139.02 309.51,129.55" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<circle cx="110" cy="120" r="10" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="1.4"/>
+<text x="110" y="146" font-size="12" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">太陽</text>
+<circle cx="50" cy="120" r="3" fill="currentColor"/>
+<text x="40" y="112" font-size="14" text-anchor="end" dominant-baseline="middle" class="f-label" fill="currentColor">P</text>
+<circle cx="310" cy="120" r="3" fill="currentColor"/>
+<text x="320" y="112" font-size="14" text-anchor="start" dominant-baseline="middle" class="f-label" fill="currentColor">Q</text>
+<line x1="50" y1="120" x2="100" y2="120" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="78" y="112" font-size="14" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">r₁</text>
+<line x1="120" y1="120" x2="310" y2="120" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="215" y="112" font-size="14" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">r₂</text>
+<g class="f-vel" data-dir="270" data-len="66">
+<line x1="50" y1="120" x2="50" y2="176" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="50,186 45.34,176 54.66,176" fill="currentColor"/>
+<text x="36" y="198" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">v₁</text>
+</g>
+<g class="f-vel" data-dir="90" data-len="20">
+<line x1="310" y1="120" x2="310" y2="107" stroke="currentColor" stroke-width="2.2"/>
+<polygon points="310,100 313.26,107 306.74,107" fill="currentColor"/>
+<text x="324" y="88" font-size="15" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">v₂</text>
+</g>
+</svg>

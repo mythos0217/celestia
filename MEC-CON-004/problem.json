@@ -1,0 +1,93 @@
+{
+ "id": "MEC-CON-004",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-08",
+ "topic": "力がつり合っても回る",
+ "course": "物理",
+ "level": 0,
+ "minutes": 5,
+ "format": [
+  "concept",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平面上に置いた長さ $l$ の棒の両端に，同じ大きさ $F$ で逆向きの力を，棒に垂直に加えた．ある生徒は「力がつり合っているので，棒は静止したままである」と言った．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "棒はどのように動くか．"
+     },
+     {
+      "id": "2",
+      "tex": "生徒の考えの誤りを説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "重心は静止したまま，重心のまわりに回転し始める．"
+   },
+   {
+    "id": "2",
+    "tex": "力のつり合い（合力 $0$）は並進しない条件にすぎない．大きさのある物体が回転しないためには，力のモーメントの和も $0$ でなければならない．この2力（偶力）のモーメントの和は $Fl\\ne0$．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 合力は $0$ なので，重心は動かない（はじめ静止していれば静止のまま）．一方，2つの力は作用線がずれているので，重心のまわりのモーメントの和は $F\\cdot\\dfrac l2+F\\cdot\\dfrac l2=Fl$（$l$：棒の長さ）で $0$ でない．棒は回転し始める．\n\n(2) 剛体のつり合いには「合力 $0$」と「モーメントの和 $0$」の両方が必要．このような大きさが等しく逆向きで作用線の異なる2力を偶力とよぶ．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "剛体のつり合い＝並進のつり合い＋回転のつり合い．"
+ },
+ "concepts": [
+  "torque",
+  "equilibrium"
+ ],
+ "laws": [
+  "torque-equilibrium"
+ ],
+ "misconceptions": [
+  "MC-TORQUE-FORCE-ONLY"
+ ],
+ "tags": [
+  "偶力",
+  "誤概念",
+  "剛体"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

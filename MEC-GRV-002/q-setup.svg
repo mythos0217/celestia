@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220" font-family="'Times New Roman', serif">
+<circle cx="130" cy="130" r="70" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="1.4"/>
+<text x="130" y="150" font-size="12" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor">地球</text>
+<line x1="130" y1="130" x2="200" y2="130" stroke="currentColor" stroke-width="1.2"/>
+<text x="165" y="122" font-size="14" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">R</text>
+<circle cx="130" cy="130" r="3" fill="currentColor"/>
+<circle cx="130" cy="54" r="6" class="f-body" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.4" data-phys="body:m1"/>
+<text x="150" y="50" font-size="13" text-anchor="start" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">m</text>
+<circle cx="262" cy="76" r="6" class="f-body" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.4" data-phys="body:m2"/>
+<text x="272" y="70" font-size="13" text-anchor="start" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">m</text>
+<line x1="194.79" y1="103.5" x2="255.87" y2="78.51" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="238" y="104" font-size="14" text-anchor="middle" dominant-baseline="middle" class="f-label" fill="currentColor" font-style="italic">h</text>
+</svg>

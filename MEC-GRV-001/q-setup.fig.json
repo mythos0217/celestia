@@ -1,0 +1,96 @@
+{
+ "schema": "celestia.figure/1",
+ "size": [
+  320,
+  230
+ ],
+ "items": [
+  {
+   "t": "circle",
+   "at": [
+    150,
+    120
+   ],
+   "r": 45,
+   "style": "fill"
+  },
+  {
+   "t": "text",
+   "at": [
+    150,
+    140
+   ],
+   "text": "地球",
+   "italic": false,
+   "size": 12
+  },
+  {
+   "t": "circle",
+   "at": [
+    150,
+    120
+   ],
+   "r": 95,
+   "style": "dash"
+  },
+  {
+   "t": "ball",
+   "at": [
+    222.77,
+    58.94
+   ],
+   "r": 6,
+   "phys": "body:sat"
+  },
+  {
+   "t": "text",
+   "at": [
+    238.77,
+    50.94
+   ],
+   "text": "人工衛星",
+   "italic": false,
+   "size": 11
+  },
+  {
+   "t": "line",
+   "from": [
+    150,
+    120
+   ],
+   "to": [
+    105,
+    120
+   ],
+   "style": "thin"
+  },
+  {
+   "t": "text",
+   "at": [
+    128,
+    111
+   ],
+   "text": "R"
+  },
+  {
+   "t": "line",
+   "from": [
+    150,
+    120
+   ],
+   "to": [
+    150,
+    215
+   ],
+   "style": "thin"
+  },
+  {
+   "t": "text",
+   "at": [
+    160,
+    180
+   ],
+   "text": "2R"
+  }
+ ]
+}

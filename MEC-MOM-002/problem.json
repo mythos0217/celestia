@@ -1,0 +1,132 @@
+{
+ "id": "MEC-MOM-002",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "反発係数と衝突後の速度",
+ "course": "物理",
+ "level": 2,
+ "minutes": 10,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平面上で，速さ $v$ で進む質量 $m$ の小球 A が，静止している質量 $m$ の小球 B に正面衝突した．A と B の間の反発係数を $e$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-setup"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "衝突後の A の速度 $v_{\\mathrm{A}}$ を求めよ（はじめの A の向きを正とする）．"
+     },
+     {
+      "id": "2",
+      "tex": "衝突後の B の速度 $v_{\\mathrm{B}}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "衝突で失われた運動エネルギー $\\Delta K$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-setup",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-setup.svg",
+   "alt": "速さ v で進む小球 A と、静止した同じ質量の小球 B",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_{\\mathrm A}=\\dfrac{(1-e)v}{2}$",
+    "grading": "v_A：(1-e)v/2"
+   },
+   {
+    "id": "2",
+    "tex": "$v_{\\mathrm B}=\\dfrac{(1+e)v}{2}$",
+    "grading": "v_B：(1+e)v/2"
+   },
+   {
+    "id": "3",
+    "tex": "$\\Delta K=\\dfrac14(1-e^2)mv^2$",
+    "grading": "ΔK：(1-e^2)m v^2/4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "運動量保存：$mv=mv_{\\mathrm A}+mv_{\\mathrm B}$，つまり $v_{\\mathrm A}+v_{\\mathrm B}=v$．\n\n反発係数の式：$v_{\\mathrm A}-v_{\\mathrm B}=-e(v-0)$．\n\n(1)(2) 2式を足し引きして $v_{\\mathrm A}=\\dfrac{(1-e)v}{2}$，$v_{\\mathrm B}=\\dfrac{(1+e)v}{2}$．$e=1$ なら A は止まり B が速さ $v$ で進む（速度の入れかわり）．\n\n(3) \\[\\Delta K=\\frac12mv^2-\\frac12m\\cdot\\frac{(1-e)^2+(1+e)^2}{4}v^2=\\frac12mv^2-\\frac{(1+e^2)mv^2}{4}=\\frac14(1-e^2)mv^2\\] $e=1$ のときだけ $0$（弾性衝突）．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "未知数2つ（衝突後の速度）に対して，式も2つ：運動量保存と反発係数の式．"
+ },
+ "simulation": {
+  "id": "mech.collision",
+  "preset": {
+   "m1": 1,
+   "m2": 1,
+   "v1": 3,
+   "v2": 0,
+   "e": 0.5
+  },
+  "locked": [
+   "v2"
+  ],
+  "show": "after-attempt"
+ },
+ "concepts": [
+  "restitution",
+  "momentum-conservation"
+ ],
+ "laws": [
+  "momentum-conservation",
+  "restitution"
+ ],
+ "misconceptions": [
+  "MC-KE-ALWAYS-CONSERVED"
+ ],
+ "tags": [
+  "衝突",
+  "反発係数",
+  "運動量保存"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

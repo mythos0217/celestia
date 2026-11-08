@@ -1,0 +1,91 @@
+{
+ "id": "MEC-RIG-002",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-08",
+ "topic": "軽い棒の重心と支点",
+ "course": "物理",
+ "level": 0,
+ "minutes": 6,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "長さ $l$ の軽い棒の左端に質量 $m_1$，右端に質量 $m_2$ の小さなおもりをつけた．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "棒を水平に支えるには，左端から距離 $x$ の点で支えればよい．$x$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "そのとき支点が棒を支える力の大きさ $N$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$x=\\dfrac{m_2l}{m_1+m_2}$",
+    "grading": "x：m_2 l/(m_1+m_2)"
+   },
+   {
+    "id": "2",
+    "tex": "$N=(m_1+m_2)g$",
+    "grading": "N：(m_1+m_2)g"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 支点のまわりのモーメントのつり合い：$m_1g\\cdot x=m_2g\\cdot(l-x)$ より $x=\\dfrac{m_2l}{m_1+m_2}$．これは重心の位置（重心の式で $x_1=0$，$x_2=l$）．\n\n(2) 鉛直方向の力のつり合い：$N=(m_1+m_2)g$．"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "支点は重心の真下に置く．"
+ },
+ "concepts": [
+  "torque"
+ ],
+ "laws": [
+  "torque-equilibrium",
+  "center-of-mass"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "重心",
+  "力のモーメント"
+ ],
+ "provenance": {
+  "created": "2026-11-07"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": true,
+   "figures": "auto",
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

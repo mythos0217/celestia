@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360">
+  <defs>
+    <marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+    <marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+  </defs>
+  <g fill="none" stroke="#222" stroke-width="1.6">
+    <!-- (a) -->
+    <path d="M70,40 Q140,0 210,40"/>
+    <line x1="70" y1="40" x2="125" y2="150" stroke-width="1"/>
+    <line x1="210" y1="40" x2="155" y2="150" stroke-width="1"/>
+    <line x1="140" y1="22" x2="140" y2="150" stroke-width="1"/>
+    <rect x="110" y="150" width="60" height="45"/>
+    <polyline points="140,195 140,203 125,210 155,220 125,230 155,240 125,250 155,260 140,267 140,275"/>
+    <line x1="120" y1="275" x2="160" y2="275"/>
+    <line x1="40" y1="300" x2="240" y2="300"/>
+  </g>
+  <g stroke="#222" stroke-width="1">
+    <line x1="50" y1="300" x2="40" y2="312"/><line x1="70" y1="300" x2="60" y2="312"/><line x1="90" y1="300" x2="80" y2="312"/><line x1="110" y1="300" x2="100" y2="312"/><line x1="130" y1="300" x2="120" y2="312"/><line x1="150" y1="300" x2="140" y2="312"/><line x1="170" y1="300" x2="160" y2="312"/><line x1="190" y1="300" x2="180" y2="312"/><line x1="210" y1="300" x2="200" y2="312"/><line x1="230" y1="300" x2="220" y2="312"/>
+  </g>
+  <line x1="200" y1="150" x2="200" y2="200" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ar)"/>
+  <text x="207" y="182" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">v<tspan baseline-shift="sub" font-size="10" font-style="normal">f</tspan></text>
+  <text x="130" y="178" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">m</text>
+  <text x="163" y="242" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">k</text>
+  <text x="125" y="345" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">(a)</text>
+
+  <!-- (b) -->
+  <g fill="none" stroke="#222" stroke-width="1.6">
+    <path d="M330,40 Q400,0 470,40"/>
+    <line x1="330" y1="40" x2="385" y2="130" stroke-width="1"/>
+    <line x1="470" y1="40" x2="415" y2="130" stroke-width="1"/>
+    <line x1="400" y1="22" x2="400" y2="130" stroke-width="1"/>
+    <rect x="370" y="130" width="60" height="40"/>
+    <!-- frame (case) -->
+    <polyline points="365,170 365,250 378,250"/>
+    <polyline points="435,170 435,250 422,250"/>
+    <line x1="365" y1="170" x2="435" y2="170"/>
+    <!-- push plate on stoppers -->
+    <rect x="368" y="242" width="64" height="6" fill="#fff"/>
+    <!-- spring between frame top and plate -->
+    <polyline points="400,170 400,176 386,183 414,193 386,203 414,213 386,223 414,233 400,238 400,242"/>
+    <!-- foot -->
+    <line x1="400" y1="248" x2="400" y2="270"/>
+    <line x1="380" y1="270" x2="420" y2="270"/>
+    <line x1="300" y1="300" x2="520" y2="300"/>
+  </g>
+  <g stroke="#222" stroke-width="1">
+    <line x1="310" y1="300" x2="300" y2="312"/><line x1="330" y1="300" x2="320" y2="312"/><line x1="350" y1="300" x2="340" y2="312"/><line x1="370" y1="300" x2="360" y2="312"/><line x1="390" y1="300" x2="380" y2="312"/><line x1="410" y1="300" x2="400" y2="312"/><line x1="430" y1="300" x2="420" y2="312"/><line x1="450" y1="300" x2="440" y2="312"/><line x1="470" y1="300" x2="460" y2="312"/><line x1="490" y1="300" x2="480" y2="312"/><line x1="510" y1="300" x2="500" y2="312"/>
+  </g>
+  <rect x="365" y="248" width="13" height="5" fill="#222"/>
+  <rect x="422" y="248" width="13" height="5" fill="#222"/>
+  <text x="390" y="157" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">m</text>
+  <text x="418" y="208" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">k</text>
+  <text x="440" y="270" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">ストッパー</text>
+  <line x1="438" y1="262" x2="432" y2="254" stroke="#222" stroke-width="1"/>
+  <text x="300" y="242" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">押し板</text>
+  <line x1="342" y1="238" x2="368" y2="244" stroke="#222" stroke-width="1"/>
+  <text x="310" y="196" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">枠</text>
+  <line x1="324" y1="192" x2="364" y2="200" stroke="#222" stroke-width="1"/>
+  <text x="385" y="345" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">(b)</text>
+  <text x="250" y="296" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">地面</text>
+</svg>

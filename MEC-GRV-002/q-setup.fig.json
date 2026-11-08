@@ -1,0 +1,122 @@
+{
+ "schema": "celestia.figure/1",
+ "size": [
+  320,
+  220
+ ],
+ "items": [
+  {
+   "t": "circle",
+   "at": [
+    130,
+    130
+   ],
+   "r": 70,
+   "style": "fill"
+  },
+  {
+   "t": "text",
+   "at": [
+    130,
+    150
+   ],
+   "text": "地球",
+   "italic": false,
+   "size": 12,
+   "anchor": "middle"
+  },
+  {
+   "t": "line",
+   "from": [
+    130,
+    130
+   ],
+   "to": [
+    200,
+    130
+   ],
+   "style": "thin"
+  },
+  {
+   "t": "text",
+   "at": [
+    165,
+    122
+   ],
+   "text": "R",
+   "italic": true,
+   "size": 14,
+   "anchor": "middle"
+  },
+  {
+   "t": "dot",
+   "at": [
+    130,
+    130
+   ]
+  },
+  {
+   "t": "ball",
+   "at": [
+    130,
+    54
+   ],
+   "r": 6,
+   "phys": "body:m1"
+  },
+  {
+   "t": "text",
+   "at": [
+    150,
+    50
+   ],
+   "text": "m",
+   "italic": true,
+   "size": 13,
+   "anchor": "start"
+  },
+  {
+   "t": "ball",
+   "at": [
+    262,
+    76
+   ],
+   "r": 6,
+   "phys": "body:m2"
+  },
+  {
+   "t": "text",
+   "at": [
+    272,
+    70
+   ],
+   "text": "m",
+   "italic": true,
+   "size": 13,
+   "anchor": "start"
+  },
+  {
+   "t": "line",
+   "from": [
+    194.79,
+    103.5
+   ],
+   "to": [
+    255.87,
+    78.51
+   ],
+   "style": "dash"
+  },
+  {
+   "t": "text",
+   "at": [
+    238,
+    104
+   ],
+   "text": "h",
+   "italic": true,
+   "size": 14,
+   "anchor": "middle"
+  }
+ ]
+}
