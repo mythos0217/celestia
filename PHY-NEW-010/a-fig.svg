@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280">
+  <defs><marker id="a-ax" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 z" fill="#222"/></marker></defs>
+  <line x1="60" y1="230" x2="500" y2="230" stroke="#222" stroke-width="1" marker-end="url(#a-ax)"/>
+  <line x1="60" y1="230" x2="60" y2="20" stroke="#222" stroke-width="1" marker-end="url(#a-ax)"/>
+  <text x="502" y="248" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">t</text><text x="68" y="28" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">v</text>
+  <path d="M60.0,50.0 L250.5,190.0 L326.7,230.0" fill="none" stroke="#222" stroke-width="1.8"/>
+  <path d="M60.0,230.0 L250.5,190.0 L441.0,230.0" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+  <text x="246.5" y="248" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">t<tspan baseline-shift="sub" font-size="9" font-style="normal">1</tspan></text>
+  <text x="322.7" y="248" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">t<tspan baseline-shift="sub" font-size="9" font-style="normal">b</tspan></text>
+  <text x="437.0" y="248" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">t<tspan baseline-shift="sub" font-size="9" font-style="normal">s</tspan></text>
+  <line x1="250.5" y1="190.0" x2="250.5" y2="230" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="345.7" y1="170" x2="345.7" y2="230" stroke="#c0392b" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="305.7" y="164" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#c0392b">運動量からの予想 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#c0392b">T</tspan></text>
+  <text x="72.0" y="54.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">板</text>
+  <text x="190.8" y="190.8" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#1f5fbf">小物体</text>
+  <text x="30" y="55.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">v<tspan baseline-shift="sub" font-size="9" font-style="normal">0</tspan></text>
+  <text x="260" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">（<tspan font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">μ</tspan><tspan baseline-shift="sub" font-size="9">1</tspan> &gt; <tspan font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">μ</tspan><tspan baseline-shift="sub" font-size="9">2</tspan> の場合の例）</text>
+</svg>

@@ -1,0 +1,135 @@
+{
+ "id": "PHY-OSC-006",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "加速度が途中で反転する台車内の振り子と見かけの重力",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水平な直線レール上に台車があり，台車の天井の点Oから長さ $l$ の軽い糸で質量 $m$ の小球Pがつるされている．はじめ台車もPも静止しており，糸は鉛直である．時刻 $0$ に，台車は図の右向きに一定の加速度 $a$ で動き出した．重力加速度の大きさを $g$ とし，$a=g\\tan\\alpha$ $\\left(0<\\alpha<\\dfrac{\\pi}{4}\\right)$ で角 $\\alpha$ を定める．Pの運動は台車内の観測者から見たものとし，空気抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "加速中に糸が鉛直となす角の最大値と，Pの台車に対する速さの最大値 $v_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "Pが初めて(1)の最大角の位置に達した瞬間に，台車の加速度が左向きで大きさ $a$ のものに切り替わり，以後この加速度が保たれた．糸がたるまないとすると，その後，糸は鉛直から右側へ最大でどれだけの角まで振れるか．"
+     },
+     {
+      "id": "3",
+      "tex": "(2)の運動で糸がたるまないための $\\alpha$ の条件を求めよ．また，その条件のもとで，(2)の運動における糸の張力の最大値を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2)とは別に，Pの台車に対する速さが初めて最大になった瞬間に，台車の加速度が左向きで大きさ $a$ のものに切り替わり，以後この加速度が保たれたとする．ただし $\\alpha$ は(3)の条件を満たすとする．切り替え後，糸が「切り替え後の見かけの鉛直方向」となす角の最大値を $\\varphi$ として，$\\cos\\varphi$ を $\\alpha$ で表せ．また，切り替え後に糸が鉛直から左側へ振れる最大の角を $\\alpha$，$\\varphi$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：加速度が途中で反転する台車内の振り子と見かけの重力",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：加速度が途中で反転する台車内の振り子と見かけの重力",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "最大角 $2\\alpha$（左側），$v_1=\\sqrt{2gl\\left(\\dfrac{1}{\\cos\\alpha}-1\\right)}$"
+   },
+   {
+    "id": "2",
+    "tex": "$4\\alpha$"
+   },
+   {
+    "id": "3",
+    "tex": "$0<\\alpha\\le\\dfrac{\\pi}{6}$，張力の最大値 $\\dfrac{mg(3-2\\cos3\\alpha)}{\\cos\\alpha}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\cos\\varphi=\\cos\\alpha+\\cos2\\alpha-1$，左側へ $\\varphi-\\alpha$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{見かけの重力}　台車とともに動く観測者から見ると，Pには重力 $mg$（鉛直下向き）と慣性力 $ma$（台車の加速度と逆向き）がはたらく．この合力は位置や速度によらない一定の力で，大きさは $m\\sqrt{g^2+a^2}=\\dfrac{mg}{\\cos\\alpha}$，向きは鉛直下向きから慣性力の側へ角 $\\alpha$ だけ傾いている（$\\tan\\alpha=a/g$）．そこで\n\\[ g'=\\frac{g}{\\cos\\alpha} \\]\nとおくと，Pは「重力加速度の大きさ $g'$，鉛直方向が $\\alpha$ だけ傾いた世界」での単振り子とみなせる．一定の力は保存力なので，この見かけの重力の位置エネルギーを使って力学的エネルギー保存則が成り立つ（張力は常に速度に垂直で仕事をしない）．以下，糸が鉛直となす角を右側を正として $\\theta$ で表す．\n\n\\textbf{(1)}　右向きに加速している間，慣性力は左向きなので，見かけの鉛直方向は $\\theta=-\\alpha$（鉛直から左へ $\\alpha$）．Pは $\\theta=0$，すなわち見かけの鉛直から角 $\\alpha$ の位置で静かに放されたのと同じだから，見かけの鉛直を中心に角振幅 $\\alpha$ で振れる．よって左側への最大角は\n\\[ \\alpha+\\alpha=\\boldsymbol{2\\alpha} \\]\n速さが最大になるのは見かけの最下点 $\\theta=-\\alpha$ である．そこまでに見かけの重力の方向に下がる高さは $l(1-\\cos\\alpha)$ なので\n\\[ \\frac12mv_1^2=mg'l(1-\\cos\\alpha)\\qquad\\therefore\\quad v_1=\\boldsymbol{\\sqrt{2gl\\left(\\dfrac{1}{\\cos\\alpha}-1\\right)}} \\]\n\n\\textbf{(2)}　台車の加速度が不連続に変わっても台車の速度は連続なので，切り替えの瞬間にPの台車に対する速度は変化しない（ここでは $0$ のまま）．切り替え後の慣性力は右向きで大きさ $ma$ なので，見かけの重力の大きさは同じ $mg'$，見かけの鉛直方向は $\\theta=+\\alpha$ に跳ぶ．Pは $\\theta=-2\\alpha$ で静止しているから，新しい見かけの鉛直から測って角 $3\\alpha$ の位置で静かに放されたのと同じで，反対側の $3\\alpha$ まで振れる．よって右側への最大角は\n\\[ \\alpha+3\\alpha=\\boldsymbol{4\\alpha} \\]\n\n\\textbf{(3)}　新しい見かけの鉛直からの角を $\\psi$，糸の張力を $S$，Pの速さを $v$ とする．見かけの重力のもとでの円運動の中心方向の運動方程式と，力学的エネルギー保存則は\n\\[ m\\frac{v^2}{l}=S-mg'\\cos\\psi,\\qquad \\frac12mv^2=mg'l(\\cos\\psi-\\cos3\\alpha) \\]\nこれより\n\\[ S=mg'(3\\cos\\psi-2\\cos3\\alpha) \\]\n$\\psi$ は $-3\\alpha\\le\\psi\\le3\\alpha$ を動くので，$S$ が最小になるのは両端 $\\psi=\\pm3\\alpha$ で $S_{\\min}=mg'\\cos3\\alpha$．糸がたるまない条件は $S_{\\min}\\ge0$，すなわち $3\\alpha\\le\\dfrac{\\pi}{2}$ で\n\\[ \\boldsymbol{0<\\alpha\\le\\frac{\\pi}{6}} \\]\n（$3\\alpha>\\dfrac{\\pi}{2}$ なら切り替えの直後から $S<0$ となり，糸はただちにたるむ．）張力が最大になるのは $\\psi=0$（新しい見かけの最下点）で\n\\[ S_{\\max}=mg'(3-2\\cos3\\alpha)=\\boldsymbol{\\frac{mg(3-2\\cos3\\alpha)}{\\cos\\alpha}} \\]\n\n\\textbf{(4)}　速さが初めて最大になるのは $\\theta=-\\alpha$ のときで，Pは左向き（$\\theta$ が減る向き）に速さ $v_1$ で動いている．切り替えの瞬間にこの速度は変わらない．切り替え後の見かけの鉛直は $\\theta=+\\alpha$ なので，Pは新しい見かけの鉛直から左へ角 $2\\alpha$ の位置にあり，さらに左へ（中心から遠ざかる向きに）動いている．切り替え後の見かけの重力についての力学的エネルギー保存則より\n\\[ \\frac12mv_1^2+mg'l(1-\\cos2\\alpha)=mg'l(1-\\cos\\varphi) \\]\n$v_1^2=2g'l(1-\\cos\\alpha)$ を代入して\n\\[ \\cos\\varphi=\\boldsymbol{\\cos\\alpha+\\cos2\\alpha-1} \\]\nPは左側で新しい見かけの鉛直から角 $\\varphi$ まで振れるので，鉛直からは左側へ $\\boldsymbol{\\varphi-\\alpha}$ である．なお $0<\\alpha\\le\\dfrac{\\pi}{6}$ では $\\cos\\varphi\\ge\\dfrac{\\sqrt3-1}{2}>0$ なので $\\varphi<\\dfrac{\\pi}{2}$ で，端での張力 $mg'\\cos\\varphi$ は正であり糸はたるまない．\n\n\\textbf{注意}　「切り替えの瞬間の位置と速度はそのまま，振動の中心（見かけの鉛直）だけが跳ぶ」と考えるのが要点である．同じ切り替えでも，(2)のように端で切り替えると振幅が $\\alpha\\to3\\alpha$ に増え，(4)のように中心で切り替えると振れる向きが中心から遠ざかる向きになる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一様な加速度系では重力と慣性力の合力を一定の「見かけの重力」とみなせ，振り子は傾いた見かけの鉛直を中心に振れる．加速度が途中で切り替わると台車に対する位置・速度は連続のまま振動中心だけが跳ぶので，その瞬間の状態から新しい振幅を決め直し，張力の符号で糸がたるまない条件を確かめる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "simple-pendulum",
+  "equation-of-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "慣性力",
+  "見かけの重力",
+  "振り子",
+  "糸のたるみ",
+  "加速度の切り替え"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

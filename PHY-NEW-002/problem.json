@@ -1,0 +1,136 @@
+{
+ "id": "PHY-NEW-002",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "斜面を滑る台の水平な上面に載った物体（滑らない条件と滑り出した後の連成運動）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平面と角 $\\theta$ をなす滑らかな斜面上に，上面が水平な質量 $M$ の台 A を置き，A の上面の前端（斜面の下る側の端）に質量 $m$ の小物体 C を載せる．A の上面は粗く，A と C の間の静止摩擦係数と動摩擦係数はともに $\\mu$ である．A の上面の長さは $L$ で，A は斜面から離れずに斜面に沿って動くものとする．A，C を同時に静かに放す．重力加速度の大きさを $g$ とし，C の大きさは無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "C が A の上で滑らないとき，C が A から受ける垂直抗力と摩擦力の大きさを求めよ．また，C が A の上で滑らないための $\\mu$ の条件を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "以下，$\\theta=30^\\circ$，$\\mu=\\dfrac{\\sqrt3}{6}$，$M=2m$ とする．C は A の上をどちら向きに滑るか．また，A の加速度の大きさと，C が A から受ける垂直抗力の大きさを求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で求めた A の加速度は，C を載せずに A だけを放した場合の加速度より大きいか小さいか．その理由を，A が C から受ける力をもとに説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "C が A の上面の後端に達するまでの時間と，その間に A と C の間の摩擦によって発生する熱を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：斜面を滑る台の水平な上面に載った物体（滑らない条件と滑り出した後の連成運動）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：斜面を滑る台の水平な上面に載った物体（滑らない条件と滑り出した後の連成運動）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "垂直抗力 $mg\\cos^2\\theta$，摩擦力 $mg\\sin\\theta\\cos\\theta$，条件 $\\mu\\geqq\\tan\\theta$（質量によらない）"
+   },
+   {
+    "id": "2",
+    "tex": "A に対して後方（斜面の上る側）へ滑る．A の加速度 $\\dfrac{10}{17}g$，垂直抗力 $\\dfrac{12}{17}mg$"
+   },
+   {
+    "id": "3",
+    "tex": "大きい（$\\frac{10}{17}g>\\frac12g$）．C から受ける力の斜面方向成分 $N(\\sin\\theta-\\mu\\cos\\theta)$ が斜面下向きにはたらくため"
+   },
+   {
+    "id": "4",
+    "tex": "時間 $\\sqrt{\\dfrac{34\\sqrt3\\,L}{9g}}$，熱 $\\dfrac{2\\sqrt3}{17}mgL$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 滑らない場合}\nA と C を一体とみなすと，斜面に沿った外力は $(M+m)g\\sin\\theta$ だけなので，加速度は斜面に沿って下向きに $g\\sin\\theta$．\nC の加速度を\\textbf{水平・鉛直に分解}すると，水平（斜面の下る側）に $g\\sin\\theta\\cos\\theta$，鉛直下向きに $g\\sin^2\\theta$．C にはたらく力は重力，垂直抗力 $N$（上向き），静止摩擦力 $f$（水平）だけなので\n\\[ \\text{水平：}f=mg\\sin\\theta\\cos\\theta,\\qquad \\text{鉛直：}mg-N=mg\\sin^2\\theta\\ \\Rightarrow\\ N=mg\\cos^2\\theta. \\]\n垂直抗力 $\\boldsymbol{mg\\cos^2\\theta}$，摩擦力 $\\boldsymbol{mg\\sin\\theta\\cos\\theta}$（向きは斜面の下る側）．$f\\leqq\\mu N$ より $\\boldsymbol{\\mu\\geqq\\tan\\theta}$．この条件は $M$，$m$ によらない．\n\n\\textbf{(2) 滑る場合}\n$\\tan30^\\circ=\\frac{\\sqrt3}{3}>\\mu=\\frac{\\sqrt3}{6}$ なので C は滑る．C を水平に加速させる力は摩擦力だけで，それが足りないので C は A の加速に遅れる．よって C は\\textbf{ A に対して後方（斜面の上る側）へ}滑り，C が受ける動摩擦力は前向き（斜面の下る側）で大きさ $\\mu N$ である．\nA の加速度（斜面に沿って下向き）を $\\beta$ とする．C は A の上面から離れないので，C の鉛直方向の加速度は A と同じく下向き $\\beta\\sin\\theta$ である．\n\\[ \\text{C 鉛直：}m\\beta\\sin\\theta=mg-N, \\qquad \\text{C 水平：}ma_C=\\mu N. \\]\nA が C から受ける力は，垂直抗力の反作用 $N$（鉛直下向き）と動摩擦力の反作用 $\\mu N$（水平後ろ向き）である．A の斜面方向（下向き正）の運動方程式は\n\\[ M\\beta=Mg\\sin\\theta+N\\sin\\theta-\\mu N\\cos\\theta. \\]\n$\\theta=30^\\circ$，$\\mu=\\frac{\\sqrt3}{6}$，$M=2m$ を代入すると $\\mu\\cos\\theta=\\frac14$，$\\sin\\theta=\\frac12$ で\n\\[ N=m\\left(g-\\frac{\\beta}{2}\\right),\\qquad 2m\\beta=mg+\\frac14N . \\]\nこれを解いて $\\beta=\\boldsymbol{\\dfrac{10}{17}g}$，$N=\\boldsymbol{\\dfrac{12}{17}mg}$（$N>0$ なので C は A から離れない）．\n\n\\textbf{(3)}\nC がないときの A の加速度は $g\\sin30^\\circ=\\frac12g$ で，$\\frac{10}{17}>\\frac12$ だから (2) の方が\\textbf{大きい}．A が C から受ける力の斜面方向（下向き）成分は\n\\[ N\\sin\\theta-\\mu N\\cos\\theta=N(\\sin\\theta-\\mu\\cos\\theta)>0\\quad(\\mu<\\tan\\theta). \\]\nC が載っていると，C に押される力の分だけ A は斜面下向きに余分に加速される．なお C が滑らない場合 ((1)) は $N\\sin\\theta-f\\cos\\theta=mg\\cos^2\\theta\\sin\\theta-mg\\sin\\theta\\cos^2\\theta=0$ となり，A の加速度はちょうど $g\\sin\\theta$ である．\n\n\\textbf{(4)}\nA の水平方向の加速度は $\\beta\\cos\\theta=\\frac{5\\sqrt3}{17}g$，C の水平方向の加速度は $a_C=\\frac{\\mu N}{m}=\\frac{\\sqrt3}{6}\\cdot\\frac{12}{17}g=\\frac{2\\sqrt3}{17}g$．鉛直方向の加速度は等しいので，A から見た C の加速度は水平後ろ向きに\n\\[ a_{\\mathrm{rel}}=\\frac{5\\sqrt3}{17}g-\\frac{2\\sqrt3}{17}g=\\frac{3\\sqrt3}{17}g \\]\nで一定である．A から見て C は静止状態から距離 $L$ だけ等加速度で動くので\n\\[ \\frac12a_{\\mathrm{rel}}t^2=L\\ \\Rightarrow\\ t=\\sqrt{\\frac{34L}{3\\sqrt3\\,g}}=\\boldsymbol{\\sqrt{\\frac{34\\sqrt3\\,L}{9g}}}. \\]\n摩擦による発熱は「動摩擦力の大きさ × 相対的な滑りの距離」で\n\\[ \\mu N\\cdot L=\\frac{\\sqrt3}{6}\\cdot\\frac{12}{17}mg\\cdot L=\\boldsymbol{\\frac{2\\sqrt3}{17}mgL}. \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "斜面に沿って加速する台の水平な上面に載った物体には，加速度の水平成分を摩擦力が，鉛直成分を重力と垂直抗力の差が担う．摩擦が足りず滑り出すと，台と物体の加速度は接触の拘束（鉛直加速度の一致）と作用・反作用を通して連成して決まる．"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "kinematics-components",
+  "static-friction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動方程式",
+  "作用反作用",
+  "加速度の分解",
+  "動摩擦",
+  "相対運動",
+  "斜面"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

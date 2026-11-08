@@ -1,0 +1,122 @@
+{
+ "id": "PHY-NEW-016",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "成長しながら上昇する泡の終端速度（半径の成長と位置の関係，泡の列の間隔から読みとる発生周期）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "粘りけの大きい炭酸飲料の中で，容器の底の一点から泡が一定の時間間隔 $T$ で次々に生まれ，一列になって鉛直に上昇している．泡は球形で，半径 $r$ の泡が速さ $v$ で動くとき，液体から大きさ $6\\pi\\eta rv$ の抵抗力を受ける（$\\eta$ は液体の粘性率）．液体の密度を $\\rho$，重力加速度の大きさを $g$ とし，泡の中の気体の質量は無視する．泡は液体に溶けている気体を取り込んで成長し，その半径は時間とともに一定の割合 $k$ で増える（生まれた直後の半径は無視でき，生まれてから時間 $t$ 後の半径は $r=kt$）．泡の速さは，各瞬間の半径に対する終端速度（浮力と抵抗力がつり合う速さ）に等しいとしてよい．(4) 以外では，液体の圧力の変化による泡の体積変化は考えない．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "半径 $r$ の泡の速さ $v$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "生まれてから時間 $t$ 後の泡の底からの高さ $h$ を求めよ．また，泡の速さ $v$ を高さ $h$ の関数として表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "高さ $1.0\\ \\mathrm{cm}$ 付近では，隣り合う泡の間隔が $2.0\\ \\mathrm{mm}$ であった．高さ $8.0\\ \\mathrm{cm}$ 付近での隣り合う泡の間隔を求めよ．また，$\\rho=1.0\\times10^3\\ \\mathrm{kg/m^3}$，$\\eta=0.10\\ \\mathrm{Pa\\cdot s}$，$k=1.0\\times10^{-5}\\ \\mathrm{m/s}$，$g=9.8\\ \\mathrm{m/s^2}$ として $T$ を求めよ．泡の間隔は高さに比べて十分小さいとし，答えは有効数字2桁とする．"
+     },
+     {
+      "id": "4",
+      "tex": "仮に泡が気体を取り込まず，液体の圧力が下がることによって等温的に膨張するだけだとすると，深さ $10\\ \\mathrm{cm}$ から液面まで上昇する間に泡の半径は何\\%増えるか，有効数字2桁で求めよ．大気圧を $1.0\\times10^5\\ \\mathrm{Pa}$ とし，表面張力は無視する．この結果から，泡が上昇とともに速くなる主な原因を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：成長しながら上昇する泡の終端速度（半径の成長と位置の関係，泡の列の間隔から読みとる発生周期）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v=\\dfrac{2\\rho gr^2}{9\\eta}$"
+   },
+   {
+    "id": "2",
+    "tex": "$h=\\dfrac{2\\rho gk^2t^3}{27\\eta}$，$v=\\left(\\dfrac{2\\rho gk^2h^2}{\\eta}\\right)^{\\frac13}$（$h^{2/3}$ に比例）"
+   },
+   {
+    "id": "3",
+    "tex": "$8.0\\ \\mathrm{mm}$，$T=1.6\\ \\mathrm s$"
+   },
+   {
+    "id": "4",
+    "tex": "約 $0.33\\%$．速くなる主な原因は気体の取り込みによる泡の成長（浮力が $r^3$，抵抗が $r$ に比例するので $v\\propto r^2$）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 終端速度}　泡が押しのけた液体の重さに等しい浮力 $\\frac43\\pi r^3\\rho g$ と抵抗力がつり合うので\n\\[ \\frac43\\pi r^3\\rho g=6\\pi\\eta rv\\quad\\therefore\\quad \\boldsymbol{v=\\frac{2\\rho gr^2}{9\\eta}}. \\]\n浮力は $r^3$，抵抗力は $r$ に比例するので，速さは $r^2$ に比例し，半径が少し増えるだけで大きく速くなる．\n\n\\textbf{(2) 高さと速さ}　$r=kt$ を代入すると $v=\\dfrac{2\\rho gk^2}{9\\eta}t^2$．$v$-$t$ グラフの面積が高さなので\n\\[ h=\\frac{2\\rho gk^2}{9\\eta}\\cdot\\frac{t^3}{3}=\\boldsymbol{\\frac{2\\rho gk^2t^3}{27\\eta}}. \\]\n$t=\\left(\\dfrac{27\\eta h}{2\\rho gk^2}\\right)^{1/3}$ を $v$ に代入して\n\\[ v=\\frac{2\\rho gk^2}{9\\eta}\\left(\\frac{27\\eta h}{2\\rho gk^2}\\right)^{\\frac23}=\\boldsymbol{\\left(\\frac{2\\rho gk^2h^2}{\\eta}\\right)^{\\frac13}}, \\]\nすなわち $v\\propto h^{2/3}$ である．（加速度は $\\dfrac{dv}{dt}=\\dfrac{4\\rho gk^2t}{9\\eta}$ で，等加速度ではない．）\n\n\\textbf{(3) 泡の列の間隔}　どの泡も同じ $h(t)$ に従って上昇し，時間 $T$ だけ遅れて次の泡が続く．ある高さを1個の泡が通過してから，次の泡が同じ高さを通過するまでの時間は $T$ なので，間隔が高さに比べて小さければ，その高さでの泡の間隔は $\\Delta h\\fallingdotseq vT$ で，$v$ に比例する．$v\\propto h^{2/3}$ より\n\\[ \\Delta h_{8.0\\,\\mathrm{cm}}=2.0\\ \\mathrm{mm}\\times\\left(\\frac{8.0}{1.0}\\right)^{\\frac23}=2.0\\times4=\\boldsymbol{8.0\\ \\mathrm{mm}}. \\]\n高さ $1.0\\ \\mathrm{cm}$ での速さは\n\\[ v=\\left(\\frac{2(1.0\\times10^3)(9.8)(1.0\\times10^{-5})^2(1.0\\times10^{-2})^2}{0.10}\\right)^{\\frac13}=(1.96\\times10^{-9})^{\\frac13}=1.25\\times10^{-3}\\ \\mathrm{m/s} \\]\nなので\n\\[ T=\\frac{\\Delta h}{v}=\\frac{2.0\\times10^{-3}}{1.25\\times10^{-3}}\\fallingdotseq\\boldsymbol{1.6\\ \\mathrm s}. \\]\n（このとき泡の半径は $0.24\\ \\mathrm{mm}$ 程度，高さ $8.0\\ \\mathrm{cm}$ でも $0.48\\ \\mathrm{mm}$ 程度で，抵抗力の式が使える遅い流れの範囲にある．）\n\n\\textbf{(4) 圧力変化の効果}　深さ $10\\ \\mathrm{cm}$ での圧力は $P_0+\\rho gD=1.0\\times10^5+980\\ \\mathrm{Pa}$．等温変化では $PV$ が一定なので体積は $1+\\dfrac{980}{1.0\\times10^5}=1.0098$ 倍，半径はその3乗根で\n\\[ (1.0098)^{\\frac13}\\fallingdotseq1.0033\\quad\\text{より約}\\ \\boldsymbol{0.33\\%} \\]\nしか増えない．速さは $r^2$ に比例するので約 $0.65\\%$ しか増えず，(3) のように泡の間隔が数倍にもなることは説明できない．泡が上昇とともに速くなる主な原因は，\\textbf{液体に溶けている気体を取り込んで泡が成長すること}である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "終端速度で動く泡では，浮力が $r^3$・抵抗力が $r$ に比例するので速さは $r^2$ に比例し，半径が時間に比例して増えると高さは $t^3$，速さは $h^{2/3}$ に比例する．一定周期で生まれる泡の列では，ある高さでの間隔が「その高さでの速さ $\\times$ 周期」になるので，間隔の変化から速さの法則と周期が読みとれ，水圧の減少による膨張では加速を説明できないことも数値で確かめられる．"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "終端速度",
+  "粘性抵抗",
+  "浮力",
+  "泡の成長",
+  "ボイルの法則",
+  "オーダー評価"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "id": "PHY-NEW-004",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "時間とともに増す力で引かれる箱と内部の小物体の滑り出し",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，滑らかな水平面上に質量 $M$ の箱 Q を置き，その内部の底面上に質量 $m$ の小物体 P を置く．P と Q の底面との間の静止摩擦係数を $\\mu_0$，動摩擦係数を $\\mu$（$\\mu<\\mu_0$）とする．時刻 $t=0$ に P，Q は静止しており，この時刻から Q に水平右向きの力 $F=kt$（$k$ は正の定数）を加え続ける．P ははじめ Q の左の壁から十分に離れた位置にあり，以下で考える時間内に壁に達することはない．重力加速度の大きさを $g$ とし，右向きを正とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P が Q に対して滑り始める時刻 $t_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "滑り始める直前と直後のそれぞれについて，P の加速度と Q の加速度を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "時刻 $2t_1$ における，Q に対する P の相対速度を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "時刻 $t_1$ から $2t_1$ までの間に，P と Q の間の摩擦によって発生した熱量 $W$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：時間とともに増す力で引かれる箱と内部の小物体の滑り出し",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：時間とともに増す力で引かれる箱と内部の小物体の滑り出し",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$t_1=\\dfrac{\\mu_0(m+M)g}{k}$"
+   },
+   {
+    "id": "2",
+    "tex": "直前：P，Q ともに $\\mu_0 g$；直後：P は $\\mu g$，Q は $\\dfrac{\\mu_0(m+M)-\\mu m}{M}g$"
+   },
+   {
+    "id": "3",
+    "tex": "$-\\dfrac{\\mu_0(3\\mu_0-2\\mu)(m+M)^2g^2}{2Mk}$（左向きに大きさ $\\dfrac{\\mu_0(3\\mu_0-2\\mu)(m+M)^2g^2}{2Mk}$）"
+   },
+   {
+    "id": "4",
+    "tex": "$W=\\dfrac{\\mu\\mu_0^{\\,2}(4\\mu_0-3\\mu)\\,m(m+M)^3g^4}{6Mk^2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 一体で動く間}　P と Q が一体のとき，加速度は $a=\\dfrac{kt}{m+M}$．P を動かしているのは Q からの静止摩擦力 $f$ だけなので $f=ma=\\dfrac{mkt}{m+M}$．$f$ は時間とともに増え，最大摩擦力 $\\mu_0 mg$ に達した瞬間に滑り始める：\n\\[ \\frac{mkt_1}{m+M}=\\mu_0 mg\\quad\\therefore\\ \\boldsymbol{t_1=\\frac{\\mu_0(m+M)g}{k}}. \\]\n\n\\textbf{(2) 加速度の不連続}　直前は一体なので P，Q ともに $a=\\dfrac{kt_1}{m+M}=\\boldsymbol{\\mu_0 g}$．\n\n直後，P は Q に対して左へ滑る（Q の方が速く加速する）ので，P には右向きに動摩擦力 $\\mu mg$，Q にはその反作用として左向きに $\\mu mg$ が働く．\n\\[ \\text{P：}\\ ma_{\\rm P}=\\mu mg\\ \\ \\therefore\\ a_{\\rm P}=\\boldsymbol{\\mu g} \\]\n\\[ \\text{Q：}\\ Ma_{\\rm Q}=kt_1-\\mu mg\\ \\ \\therefore\\ a_{\\rm Q}=\\boldsymbol{\\frac{\\mu_0(m+M)-\\mu m}{M}g} \\]\n摩擦力が $\\mu_0 mg$ から $\\mu mg$ に急に減るため，P の加速度は下がり，Q の加速度は $\\mu_0 g$ から $\\mu_0 g+\\dfrac{(\\mu_0-\\mu)m}{M}g$ へ跳ね上がる．力 $F$ 自体は連続でも，加速度は不連続になる．\n\n\\textbf{(3) 相対運動}　$\\tau=t-t_1$ とおくと，Q に対する P の相対加速度は\n\\[ \\beta=a_{\\rm P}-a_{\\rm Q}=\\mu g-\\frac{k(t_1+\\tau)-\\mu mg}{M}=-\\frac{(\\mu_0-\\mu)(m+M)g+k\\tau}{M}. \\]\n$\\beta<0$ は常に成り立つので，P は滑り始めてから Q に対して左向きに滑り続け，再び一体になることはない（動摩擦力の向きは変わらない）．相対速度は $\\tau=0$ で $0$ だから，$\\beta$ を積分して（$\\beta$–$t$ グラフの面積）\n\\[ u(\\tau)=-\\frac{(\\mu_0-\\mu)(m+M)g\\,\\tau+\\frac12 k\\tau^{2}}{M}. \\]\n$\\tau=t_1$（時刻 $2t_1$）では\n\\[ u(t_1)=-\\frac{(\\mu_0-\\mu)(m+M)g\\,t_1+\\frac12 kt_1^{\\,2}}{M}=-\\frac{(m+M)g\\,t_1}{M}\\cdot\\frac{3\\mu_0-2\\mu}{2}. \\]\n$t_1$ を代入して\n\\[ \\boldsymbol{u(t_1)=-\\frac{\\mu_0(3\\mu_0-2\\mu)(m+M)^2g^2}{2Mk}}\\quad(\\text{左向き}). \\]\n\n\\textbf{(4) 摩擦熱}　摩擦熱は「動摩擦力の大きさ × 相対的に滑った距離」である．相対変位の大きさは\n\\[ s=\\int_0^{t_1}|u(\\tau)|\\,d\\tau=\\frac{1}{M}\\left[\\frac{(\\mu_0-\\mu)(m+M)g\\,t_1^{\\,2}}{2}+\\frac{kt_1^{\\,3}}{6}\\right]=\\frac{(4\\mu_0-3\\mu)(m+M)g\\,t_1^{\\,2}}{6M}. \\]\nよって\n\\[ W=\\mu mg\\,s=\\boldsymbol{\\frac{\\mu\\mu_0^{\\,2}(4\\mu_0-3\\mu)\\,m(m+M)^3g^4}{6Mk^2}}. \\]\n床に対する P の移動距離を使うのは誤り．床が滑らかなので，系の熱はすべて P–Q 間の相対滑りから生じる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "徐々に増える力で引くと，静止摩擦力が最大値に達した瞬間に滑りが始まる．摩擦力が最大静止摩擦力から動摩擦力へ急に下がるので，力が連続でも加速度は不連続になる．その後は時間に比例して増える相対加速度を積分して，相対速度と滑った距離（摩擦熱）を求める．"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "kinematics-components",
+  "static-friction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動方程式",
+  "静止摩擦と動摩擦",
+  "相対運動",
+  "時間変化する力",
+  "摩擦熱"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

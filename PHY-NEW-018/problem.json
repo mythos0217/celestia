@@ -1,0 +1,127 @@
+{
+ "id": "PHY-NEW-018",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "加速する台車上の粗い斜面の小物体（摩擦角と見かけの重力，加速度によらず滑らない自己ロック）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水平面上を直線運動する台車の水平な床に，傾斜角 $\\theta$ の粗い斜面が固定されている．図のように斜面は台車の後方（図の右）ほど高い．台車の加速度は外力によって自由に変えられ，前方（図の左）向きを正として $a$ で表す．斜面上の質量 $m$ の小物体と斜面の間の静止摩擦係数を $\\mu$，動摩擦係数を $\\mu'$ とし，重力加速度の大きさを $g$ とする．小物体の運動は台車上で観測し，斜面は十分に長いものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$a=0$ で小物体は斜面上に静止していた（$\\tan\\theta\\le\\mu$，$\\mu\\tan\\theta<1$ とする）．$a$ を $0$ からゆっくり大きくしていくと，ある値 $a_1$ を超えたとき小物体は斜面をのぼり始めた．$a_1$ を求め，$\\tan\\varphi=\\mu$ で定まる摩擦角 $\\varphi$ を用いた簡潔な形にも直せ．"
+     },
+     {
+      "id": "2",
+      "tex": "斜面の角 $\\theta$ をうまく選ぶと，$a=0$ でも，$a\\ge0$ のどんなに大きな加速度でも，小物体が台車に対して静止し続けるようにできる場合がある．それが可能であるための $\\mu$ の条件と，そのときの $\\tan\\theta$ の範囲を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "以下では $\\sin\\theta=0.28$，$\\cos\\theta=0.96$，$\\mu=0.50$，$\\mu'=0.25$ とする．台車が静止し，小物体が斜面上の点 P に静止している状態から，台車が一定の加速度 $a=2g$ で動き始めた．小物体が P から斜面に沿って距離 $s$ だけのぼった点 R を通過した瞬間に，台車は加速度 $a=-\\dfrac g2$ の運動に切り替わり，以後この加速度を保った．\n  \\begin{enumerate}\n    \\item R を通過するときの小物体の速さ $v_{\\rm R}$ を $g,\\ s$ で表せ．\n    \\item 切り替え後も小物体が斜面から離れないことを確かめ，R からさらにのぼる距離を $s$ で表せ（分数で答えよ）．\n    \\item 最高点に達した後，小物体は斜面上に静止し続けるか．静止しない場合は，P に戻ったときの速さを有効数字2桁で $\\sqrt{gs}$ の何倍かで答えよ．\n  \\end{enumerate}"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：加速する台車上の粗い斜面の小物体（摩擦角と見かけの重力，加速度によらず滑らない自己ロック）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：加速する台車上の粗い斜面の小物体（摩擦角と見かけの重力，加速度によらず滑らない自己ロック）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$a_1=\\dfrac{\\sin\\theta+\\mu\\cos\\theta}{\\cos\\theta-\\mu\\sin\\theta}\\,g=g\\tan(\\theta+\\varphi)$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\mu\\ge1$，$\\dfrac1\\mu\\le\\tan\\theta\\le\\mu$"
+   },
+   {
+    "id": "3",
+    "tex": "(a) $v_{\\rm R}=\\sqrt{\\dfrac{63}{25}gs}\\ (\\fallingdotseq1.6\\sqrt{gs})$　(b) 垂直抗力 $0.82mg>0$，さらに $\\dfrac{252}{193}s$　(c) 静止しない（滑り下りる），$1.6\\sqrt{gs}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{台車の系での力}\n\n加速度 $a$ の台車の系では，小物体に後方（右）向きの慣性力 $ma$ がはたらく．斜面に沿って上向き（右上向き）を正とすると，重力と慣性力の\n\\[ \\text{斜面方向成分：}\\ m(a\\cos\\theta-g\\sin\\theta),\\qquad \\text{斜面に押しつける成分：}\\ m(g\\cos\\theta+a\\sin\\theta) \\]\nとなる．垂直抗力は $N=m(g\\cos\\theta+a\\sin\\theta)$ である（$a<0$ では慣性力が斜面から引き離す向きの成分をもつ）．\n\n\\textbf{(1)} 静止している間，必要な静止摩擦力の大きさは $|m(a\\cos\\theta-g\\sin\\theta)|$．のぼり始める直前は摩擦力が斜面下向きに最大で\n\\[ a_1\\cos\\theta-g\\sin\\theta=\\mu(g\\cos\\theta+a_1\\sin\\theta)\\quad\\Longrightarrow\\quad \\boldsymbol{a_1=\\frac{\\sin\\theta+\\mu\\cos\\theta}{\\cos\\theta-\\mu\\sin\\theta}g}. \\]\n$\\mu=\\tan\\varphi$ を代入し分母分子を $\\cos\\varphi$ 倍すると，加法定理より $\\boldsymbol{a_1=g\\tan(\\theta+\\varphi)}$．\n\n見かけの重力 $\\vec g'=\\vec g-\\vec a$（大きさ $\\sqrt{g^2+a^2}$）は鉛直から後方へ角 $\\gamma$（$\\tan\\gamma=a/g$）だけ傾く．小物体が静止できるのは，$\\vec g'$ と斜面の法線のなす角が摩擦角 $\\varphi$ 以下のときである（摩擦円錐）．法線は鉛直から前方へ $\\theta$ 傾いているから，$\\vec g'$ と法線のなす角は $\\gamma-\\theta$ で，$\\gamma-\\theta=\\varphi$ のときにのぼり始める．これが $a_1=g\\tan(\\theta+\\varphi)$ の意味である．\n\n\\textbf{(2) 自己ロック}\n\n$a$ を大きくしても $\\gamma$ は $90^\\circ$ に近づくだけで超えない．$\\gamma-\\theta\\le\\varphi$ がすべての $\\gamma<90^\\circ$ で成り立つ条件は $90^\\circ-\\theta\\le\\varphi$，すなわち $\\tan\\theta\\ge\\dfrac1\\mu$（式では $\\cos\\theta-\\mu\\sin\\theta\\le0$ で (1) の分母が正にならない）．このとき慣性力がいくら大きくても，それによる垂直抗力の増加がつくる最大摩擦力が，斜面をのぼらせる成分を常に上回る．\n\n一方，$a=0$ で静止するには $\\theta\\le\\varphi$，すなわち $\\tan\\theta\\le\\mu$．両方を満たす $\\theta$ が存在する条件は $\\dfrac1\\mu\\le\\mu$ で，\n\\[ \\boldsymbol{\\mu\\ge1},\\qquad \\boldsymbol{\\frac1\\mu\\le\\tan\\theta\\le\\mu}. \\]\n（摩擦角が $45^\\circ$ 以上なら，$\\vec g'$ のとりうる向き（鉛直から水平まで）をすべて摩擦円錐に収められる．）\n\n\\textbf{(3)(a) 加速度 $2g$ の間}\n\n$a_1=\\dfrac{0.28+0.48}{0.96-0.14}g=\\dfrac{38}{41}g<2g$ なので，小物体はすぐにのぼり始める．動摩擦力は斜面下向きに $\\mu'N$ で，のぼる向きの加速度は\n\\[ A_1=2g(\\cos\\theta-\\mu'\\sin\\theta)-g(\\sin\\theta+\\mu'\\cos\\theta)=2g(0.96-0.07)-g(0.28+0.24)=\\frac{63}{50}g. \\]\n等加速度運動より $v_{\\rm R}^2=2A_1s$，$\\boldsymbol{v_{\\rm R}=\\sqrt{\\dfrac{63}{25}gs}\\fallingdotseq1.6\\sqrt{gs}}$．\n\n\\textbf{(b) 減速に切り替わった後}\n\n$a=-\\dfrac g2$ では慣性力は前方（左）向き $\\dfrac{mg}2$ で，斜面から引き離す向きの成分 $\\dfrac{mg}2\\sin\\theta$ をもつ．\n\\[ N=m\\Bigl(g\\cos\\theta-\\frac g2\\sin\\theta\\Bigr)=m(0.96-0.14)g=\\boldsymbol{0.82mg>0} \\]\nなので斜面から離れない．慣性力の斜面方向成分 $\\dfrac{mg}2\\cos\\theta$ も斜面下向きになり，のぼっている間の減速度は\n\\[ A_2=g\\sin\\theta+\\frac g2\\cos\\theta+\\mu'\\cdot0.82g=(0.28+0.48+0.205)g=\\frac{193}{200}g. \\]\nさらにのぼる距離は $\\dfrac{v_{\\rm R}^2}{2A_2}=\\dfrac{A_1}{A_2}s=\\boldsymbol{\\dfrac{252}{193}s}\\ (\\fallingdotseq1.31s)$．\n\n\\textbf{(c) 最高点の後}\n\n静止に必要な摩擦力は $m(g\\sin\\theta+\\frac g2\\cos\\theta)=0.76mg$，最大静止摩擦力は $\\mu N=0.41mg$ で足りないので，\\textbf{静止せずに滑り下りる}（$\\vec g'$ が摩擦円錐の外にある）．下りる向きの加速度は\n\\[ A_3=0.76g-\\mu'\\cdot0.82g=\\frac{111}{200}g. \\]\nP までの距離は $s+\\dfrac{252}{193}s=\\dfrac{445}{193}s$ なので\n\\[ v_{\\rm P}^2=2A_3\\cdot\\frac{445}{193}s=\\frac{9879}{3860}gs,\\qquad v_{\\rm P}\\fallingdotseq\\boldsymbol{1.6\\sqrt{gs}}. \\]\n（台車の加速度の向きが変わると，摩擦力だけでなく垂直抗力も変わること，最高点で摩擦の向きが反転することに注意．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "加速する台車上では重力と慣性力の合力（見かけの重力）が鉛直から $\\arctan(a/g)$ 傾き，小物体が静止できるのはその向きが斜面の法線から摩擦角 $\\varphi$ 以内のときなので，滑り出す加速度は $g\\tan(\\theta+\\varphi)$ になる．傾きは $90^\\circ$ を超えないため，$\\theta\\ge90^\\circ-\\varphi$ ならどんな加速度でも押し上げられない（自己ロック）．加速度を切り替えると垂直抗力と摩擦の向きが同時に変わる．"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "static-friction",
+  "normal-force"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "慣性力",
+  "見かけの重力",
+  "摩擦角",
+  "自己ロック",
+  "状態の切り替わり"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "id": "PHY-NEW-006",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "粗い床上の三角台となめらかな斜面上の物体",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，粗い水平な床の上に，傾角 $\\theta$ のなめらかな斜面をもつ質量 $M$ の三角台 Q を置き，斜面上に質量 $m$ の小物体 P をのせて静かに放す．Q と床との間の静止摩擦係数を $\\mu_0$，動摩擦係数を $\\mu'$ とする．Q は傾いたり床から浮き上がったりしないものとし，重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Q が動かない場合に，Q が床から受ける垂直抗力の大きさ $R_0$ と静止摩擦力の大きさ $f_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "Q が動かないための $\\mu_0$ の条件を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "以下，$\\theta=45^\\circ$，$M=m$，$\\mu_0=\\dfrac14$，$\\mu'=\\dfrac15$ とする．Q の加速度の大きさ $A$，P が Q から受ける垂直抗力の大きさ $N$，Q が床から受ける垂直抗力の大きさ $R$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の場合に，P が Q に対して斜面に沿って距離 $L$ だけ滑るのに要する時間を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：粗い床上の三角台となめらかな斜面上の物体",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：粗い床上の三角台となめらかな斜面上の物体",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$R_0=(M+m\\cos^2\\theta)g$，$f_0=mg\\sin\\theta\\cos\\theta$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\mu_0\\ge\\dfrac{m\\sin\\theta\\cos\\theta}{M+m\\cos^2\\theta}$"
+   },
+   {
+    "id": "3",
+    "tex": "$A=\\dfrac g7$，$N=\\dfrac{3\\sqrt2}{7}mg$，$R=\\dfrac{10}{7}mg$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\sqrt{\\dfrac{7\\sqrt2\\,L}{4g}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　Q が動くかどうかで P の受ける垂直抗力が変わる．まず Q が静止していると仮定して必要な静止摩擦力を求め，最大摩擦力と比べる．Q が動く場合は，加速度 $A$ で動く Q とともに動く観測者から見て，P に慣性力 $mA$ を加えて考える．Q が床から受ける垂直抗力は $(M+m)g$ ではないことに注意する．\n\n\\textbf{(1)}　Q が静止していれば，P は固定斜面を滑るので $N_0=mg\\cos\\theta$．P は Q を斜面に垂直に $N_0$ で押す．その水平成分 $N_0\\sin\\theta$ が Q を P の滑り降りる向きと逆向き（図の左）に押し，鉛直成分 $N_0\\cos\\theta$ が Q を下に押す．Q のつり合いより\n\\[ \\boldsymbol{R_0=Mg+N_0\\cos\\theta=(M+m\\cos^2\\theta)g},\\qquad \\boldsymbol{f_0=N_0\\sin\\theta=mg\\sin\\theta\\cos\\theta} \\]\n\n\\textbf{(2)}　$f_0\\le\\mu_0R_0$ が条件だから\n\\[ \\boldsymbol{\\mu_0\\ge\\frac{m\\sin\\theta\\cos\\theta}{M+m\\cos^2\\theta}} \\]\n\n\\textbf{(3)}　与えられた数値では右辺は $\\dfrac{1/2}{1+1/2}=\\dfrac13$ であり，$\\mu_0=\\dfrac14<\\dfrac13$ なので Q は左へ滑り出す．Q の加速度を左向き $A$ とする．\n\nQ とともに動く観測者から見ると，P には右向きの慣性力 $mA$ がはたらく．P は Q に対して斜面に沿って動くので，斜面に垂直な方向の力はつり合う：\n\\[ N+mA\\sin\\theta=mg\\cos\\theta\\quad\\cdots\\text{①} \\]\nQ（床に対する運動方程式）：P から受ける力の水平成分 $N\\sin\\theta$（左向き），動摩擦力 $\\mu'R$（右向き），$R=Mg+N\\cos\\theta$ より\n\\[ MA=N\\sin\\theta-\\mu'(Mg+N\\cos\\theta)\\quad\\cdots\\text{②} \\]\n$\\theta=45^\\circ$，$M=m$，$\\mu'=\\dfrac15$ を代入：\n\\[ \\text{①}:\\ N=\\frac{mg-mA}{\\sqrt2},\\qquad \\text{②}:\\ mA=\\frac{N}{\\sqrt2}\\cdot\\frac45-\\frac{mg}{5} \\]\n①を②に代入して $mA=\\dfrac25(mg-mA)-\\dfrac{mg}5$，よって $\\dfrac75A=\\dfrac g5$，\n\\[ \\boldsymbol{A=\\frac g7},\\qquad \\boldsymbol{N=\\frac{3\\sqrt2}{7}mg},\\qquad \\boldsymbol{R=mg+\\frac{N}{\\sqrt2}=\\frac{10}{7}mg} \\]\n$A>0$ なので Q は確かに左へ動き続け，$N>0$ なので P は斜面から離れない．$R<2mg$ であり，P が加速度の鉛直成分をもつ分だけ床を押す力が小さい．\n\n\\textbf{(4)}　Q の系で，P の斜面に沿って下向きの加速度は重力と慣性力の斜面方向成分から\n\\[ a=g\\sin\\theta+A\\cos\\theta=\\frac{g}{\\sqrt2}+\\frac{g}{7\\sqrt2}=\\frac{4\\sqrt2}{7}g \\]\n初速 $0$ で距離 $L$ 滑る時間は $L=\\dfrac12at^2$ より\n\\[ t=\\sqrt{\\frac{2L}{a}}=\\boldsymbol{\\sqrt{\\frac{7\\sqrt2\\,L}{4g}}} \\]\n（別解：床に対する P の加速度 $(a_x,a_y)$，Q の加速度 $A$，$N$，$R$ を未知数とし，P と Q の運動方程式に「Q に対する P の相対加速度が斜面に平行」という条件を加えて連立しても同じ結果になる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "なめらかな斜面上の物体が台を押す力の水平成分と床の最大摩擦力を比べて台が動くかを判定し，動く場合は台の系で慣性力を入れて斜面に垂直な方向のつり合いを立てる．床からの垂直抗力は全重量にならず，動摩擦力もそれに比例する．"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "static-friction",
+  "normal-force"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "慣性力",
+  "可動台",
+  "摩擦",
+  "滑り出しの判定",
+  "垂直抗力"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

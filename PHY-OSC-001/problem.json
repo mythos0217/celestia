@@ -1,0 +1,136 @@
+{
+ "id": "PHY-OSC-001",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "ゴムひもでつながれた小球の床上の円運動から円すい振り子への移行",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかな水平な床から高さ $H$ の点 O に，自然長 $l_0=\\dfrac{15}{16}H$，弾性定数（ばね定数に相当）$k=\\dfrac{4mg}{H}$ のゴムひもの一端を固定し，他端に質量 $m$ の小球をつける．ゴムひもは自然長より伸びているときだけ伸びに比例する張力をおよぼし，その質量と小球の大きさは無視できる．重力加速度の大きさを $g$ とする．小球に，O の真下の点を中心とする水平面内の等速円運動をさせる．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小球が床の上で角速度 $\\omega$ の等速円運動をしているとき，ゴムひもの長さ $l$ と，小球が床から受ける垂直抗力の大きさ $N$ を，$\\omega$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "小球が床の上で半径が $0$ でない等速円運動をすることができる $\\omega$ の範囲を求めよ．また，その範囲の上限での円運動の半径を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "角速度をゆっくり大きくしていくと，やがて小球は床から離れる．その後 $\\omega=\\sqrt{\\dfrac{2g}{H}}$ となったときの，小球の床からの高さとゴムひもの長さを求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "床から離れた後も角速度をゆっくり大きくし続けるとき，このような等速円運動が可能な $\\omega$ の上限を求めよ．また，$\\omega$ がその上限に近づくとき，小球の床からの高さはどんな値に近づくか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ゴムひもでつながれた小球の床上の円運動から円すい振り子への移行",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：ゴムひもでつながれた小球の床上の円運動から円すい振り子への移行",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$l=\\dfrac{15gH}{4(4g-H\\omega^2)}$，$N=m(g-H\\omega^2)$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac12\\sqrt{\\dfrac gH}<\\omega\\le\\sqrt{\\dfrac gH}$，半径 $\\dfrac34H$"
+   },
+   {
+    "id": "3",
+    "tex": "高さ $\\dfrac12H$，長さ $\\dfrac{15}{8}H$"
+   },
+   {
+    "id": "4",
+    "tex": "上限 $2\\sqrt{\\dfrac gH}$，高さは $\\dfrac34H$ に近づく"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} ゴムひもが鉛直となす角を $\\theta$，張力を $T=k(l-l_0)$ とする．円運動の半径は $l\\sin\\theta$ だから，水平方向（向心方向）の運動方程式は\n\\[ T\\sin\\theta=m(l\\sin\\theta)\\omega^2\\qquad\\therefore\\ T=ml\\omega^2 \\]\n（$\\theta$ によらず張力が $ml\\omega^2$ と書けるのがポイント．）$k(l-l_0)=ml\\omega^2$ に $k=\\dfrac{4mg}{H}$，$l_0=\\dfrac{15}{16}H$ を代入して\n\\[ l=\\frac{kl_0}{k-m\\omega^2}=\\boldsymbol{\\frac{15gH}{4(4g-H\\omega^2)}} \\]\n鉛直方向のつり合いは，$\\cos\\theta=\\dfrac Hl$ を用いて\n\\[ N=mg-T\\cos\\theta=mg-ml\\omega^2\\cdot\\frac Hl=\\boldsymbol{m(g-H\\omega^2)} \\]\n$N$ は $k$，$l_0$ によらない．\n\n\\textbf{(2)} 床の上で半径が正の円運動をするには $l>H$，かつ床から離れないために $N\\ge0$ が必要．\n$l>H\\iff 15g>4(4g-H\\omega^2)\\iff \\omega^2>\\dfrac{g}{4H}$，$N\\ge0\\iff\\omega^2\\le\\dfrac gH$．よって\n\\[ \\boldsymbol{\\frac12\\sqrt{\\frac gH}<\\omega\\le\\sqrt{\\frac gH}} \\]\n（$\\omega$ が下限以下では，O の真下で静止したゴムひもの張力 $k(H-l_0)=\\dfrac14mg$ だけで向心力が足りてしまい，小球は中心に引き寄せられる．）上限 $\\omega^2=\\dfrac gH$ では $l=\\dfrac{15gH}{4\\cdot3g}=\\dfrac54H$ だから，半径は $\\sqrt{l^2-H^2}=\\boldsymbol{\\dfrac34H}$．\n\n\\textbf{(3)} 床から離れた後は円すい振り子である．O からの深さを $z=l\\cos\\theta$ とすると，(1) と同様に $T=ml\\omega^2$，鉛直方向のつり合い $T\\cos\\theta=mg$ より\n\\[ ml\\omega^2\\cdot\\frac zl=mg\\qquad\\therefore\\ z=\\frac{g}{\\omega^2} \\]\n深さはゴムひもの性質によらず $\\omega$ だけで決まる（(2) の上限 $\\omega^2=\\dfrac gH$ で $z=H$ となり，床を離れる瞬間とつながる）．$\\omega^2=\\dfrac{2g}{H}$ では $z=\\dfrac H2$ なので，床からの高さは $H-z=\\boldsymbol{\\dfrac12H}$．ゴムひもの長さは (1) と同じ式 $l=\\dfrac{kl_0}{k-m\\omega^2}$ が成り立つので\n\\[ l=\\frac{15gH}{4(4g-2g)}=\\boldsymbol{\\frac{15}{8}H} \\]\n\n\\textbf{(4)} $l=\\dfrac{kl_0}{k-m\\omega^2}$ が正の有限値であるためには $m\\omega^2<k$，すなわち $\\omega<\\sqrt{\\dfrac km}=\\boldsymbol{2\\sqrt{\\dfrac gH}}$．$\\omega$ がこれに近づくとゴムひもの長さ（と円の半径）は限りなく大きくなるが，深さは $z=\\dfrac{g}{\\omega^2}\\to\\dfrac H4$ なので，床からの高さは $\\boldsymbol{\\dfrac34H}$ に近づく．物理的には，張力 $ml\\omega^2$ に対してゴムの復元力 $k(l-l_0)$ の増え方が追いつかなくなる角速度が上限である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ひもの張力が角度によらず $T=ml\\omega^2$ と書けることから，床の垂直抗力は $m(g-H\\omega^2)$ となり，床を離れる角速度はゴムの性質によらず $\\sqrt{g/H}$ に決まる．離れた後は円すい振り子の深さが $g/\\omega^2$ となり，ゴムの伸びは半径だけを決める．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "simple-pendulum",
+  "circular-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "等速円運動",
+  "円すい振り子",
+  "弾性力",
+  "垂直抗力",
+  "状態の切り替わり",
+  "極限"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

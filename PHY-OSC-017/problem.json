@@ -1,0 +1,144 @@
+{
+ "id": "PHY-OSC-017",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "上部を切り取ったループの飛び越し（切り口の角度と最低の出発高さ）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかなレールが，水平な床上の点 B で半径 $R$ の鉛直な円形ループ（中心 O）につながっている．ループの上部は，O を通る水平線から上へ角 $\\alpha\\ (0<\\alpha<90^\\circ)$ の位置にある2点 P，Q の間（最高点を含む部分）が左右対称に切り取られている．質量 $m$ の小球を，床からの高さ $h$ の点 A から静かにはなすと，小球はレールをすべり降り，B からループの内側に入って右側の部分を上り，P から空中に飛び出した．摩擦と空気抵抗は無視し，小球の大きさは考えない．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P での小球の速さを $v_{\\mathrm P}$ とする．$v_{\\mathrm P}$ を $g,\\ h,\\ R,\\ \\alpha$ で表せ．また，小球が B から P までループから離れずに上るための $h$ の条件を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P から飛び出した小球が，ちょうど Q に達してループに戻るための $h$ を $R,\\ \\alpha$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の $h$ で小球を放したとき，小球は Q でループの接線の向きに速度をもち，その後もループから離れずに運動できることを示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "切り口の角 $\\alpha$ を自由に選べるとき，小球が P から Q へ飛び移れる出発点の高さ $h$ の最小値と，そのときの $\\alpha$ を求めよ．これを，切り取りのないループを1周するのに必要な出発点の高さの最小値と比べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$h$ が $(1+\\sqrt2)R<h<\\dfrac52R$ を満たす一定値のとき，小球が P から Q へ飛び移れる切り口の角は2つある．それらを $\\alpha_1,\\ \\alpha_2$ とすると，$\\sin\\alpha_1\\sin\\alpha_2$ は $h$ によらない一定値になることを示し，その値を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：上部を切り取ったループの飛び越し（切り口の角度と最低の出発高さ）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：上部を切り取ったループの飛び越し（切り口の角度と最低の出発高さ）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_{\\mathrm P}=\\sqrt{2g\\{h-R(1+\\sin\\alpha)\\}}$，条件 $h\\geqq R\\left(1+\\dfrac32\\sin\\alpha\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "$h=R\\left(1+\\sin\\alpha+\\dfrac{1}{2\\sin\\alpha}\\right)$"
+   },
+   {
+    "id": "3",
+    "tex": "解説参照"
+   },
+   {
+    "id": "4",
+    "tex": "$\\alpha=45^\\circ$ で最小値 $(1+\\sqrt2)R$（切り取りのないループの $\\dfrac52R$ より小さい）"
+   },
+   {
+    "id": "5",
+    "tex": "$\\sin\\alpha_1\\sin\\alpha_2=\\dfrac12$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "O を原点とし，P は O から見て水平線より角 $\\alpha$ 上，右側にある．P の床からの高さは $R(1+\\sin\\alpha)$．\n\n\\textbf{(1) P での速さと，ループから離れない条件}\n力学的エネルギー保存則より\n\\[ \\frac12mv_{\\mathrm P}^{\\,2}=mg\\{h-R(1+\\sin\\alpha)\\}\\qquad\\therefore\\ \\boldsymbol{v_{\\mathrm P}=\\sqrt{2g\\{h-R(1+\\sin\\alpha)\\}}}. \\]\nO を通る水平線より角 $\\varphi$ だけ上の点（$0\\leqq\\varphi\\leqq\\alpha$）で，垂直抗力を $N$，速さを $v$ とすると，重力の O 向き成分は $mg\\sin\\varphi$ なので\n\\[ m\\frac{v^2}{R}=N+mg\\sin\\varphi,\\qquad v^2=2g\\{h-R(1+\\sin\\varphi)\\} \\]\n\\[ N=\\frac{2mg(h-R)}{R}-3mg\\sin\\varphi . \\]\n$N$ は $\\varphi$ とともに減少するので，P で $N\\geqq0$ ならよい．水平線より下では重力の成分も外向きなので $N>0$ は明らか．よって $\\boldsymbol{h\\geqq R\\left(1+\\frac32\\sin\\alpha\\right)}$．\n\n\\textbf{(2) P から Q への放物運動}\nP での速度はループの接線方向で，水平から $90^\\circ-\\alpha$ の向き（左上）である．同じ高さの Q までの水平距離は $2R\\cos\\alpha$ なので，水平到達距離の式より\n\\[ \\frac{v_{\\mathrm P}^{\\,2}\\sin\\{2(90^\\circ-\\alpha)\\}}{g}=2R\\cos\\alpha\\quad\\Longrightarrow\\quad v_{\\mathrm P}^{\\,2}=\\frac{gR}{\\sin\\alpha}. \\]\n(1) と合わせて\n\\[ \\boldsymbol{h=R\\left(1+\\sin\\alpha+\\frac{1}{2\\sin\\alpha}\\right)}. \\]\n\n\\textbf{(3) Q での速度とその後}\n放物運動は最高点を通る鉛直線について左右対称なので，Q での速度は P での速度を左右反転したもの，すなわち水平から $90^\\circ-\\alpha$ の向き（左下）で，これは OQ に垂直，つまりループの接線方向である．よって小球はなめらかにループに戻る．Q での速さも $v_{\\mathrm P}$ であり，(1) の条件を確かめると\n\\[ \\frac{2(h-R)}{R}-3\\sin\\alpha=\\frac{1}{\\sin\\alpha}-\\sin\\alpha=\\frac{\\cos^2\\alpha}{\\sin\\alpha}>0 \\]\nなので P・Q で $N>0$ である．Q から下る間は高さが下がって速さが増し，$\\varphi$ が小さくなるので $N$ はさらに大きく，ループから離れない．（P のすぐ先では軌道の曲率半径 $v_{\\mathrm P}^{\\,2}/(g\\sin\\alpha)=R/\\sin^2\\alpha$ が $R$ より大きいので，小球は円の外側＝切り取った部分の上を飛び，残ったループに触れない．）\n\n\\textbf{(4) 最小の高さ}\n$s=\\sin\\alpha\\ (0<s<1)$ として $f(s)=s+\\dfrac1{2s}$ を最小にすればよい．相加平均・相乗平均の関係より\n\\[ s+\\frac{1}{2s}\\geqq2\\sqrt{\\frac12}=\\sqrt2 \\]\nで，等号は $s=\\dfrac1{\\sqrt2}$．よって $\\boldsymbol{\\alpha=45^\\circ}$ で $\\boldsymbol{h_{\\min}=(1+\\sqrt2)R}\\approx2.41R$．\n\n切り取りのないループでは最高点で $N\\geqq0$，すなわち $v^2\\geqq gR$ が必要で，$h\\geqq2R+\\frac{R}{2}=\\frac52R$．切り口をうまく選べば，1周に必要な高さより低い位置から放しても向こう側へ渡れる．（(2) の式で $\\alpha=90^\\circ$ とすると $h=\\frac52R$ となり，切り取りのない場合に一致する．）\n\n\\textbf{(5) 2つの切り口の角}\n$h$ を与えると $s$ は\n\\[ s+\\frac{1}{2s}=\\frac hR-1\\quad\\Longleftrightarrow\\quad 2s^2-2\\left(\\frac hR-1\\right)s+1=0 \\]\nを満たす．$h>(1+\\sqrt2)R$ ならこの2次方程式は異なる2つの正の解をもつ．左辺の $f(s)=s+\\frac1{2s}$ は $0<s<\\frac1{\\sqrt2}$ で減少，$\\frac1{\\sqrt2}<s<1$ で増加し $f(1)=\\frac32$ なので，$\\frac hR-1<\\frac32$，すなわち $h<\\frac52R$ なら2つの解がともに $0<s<1$ にあり，2つの $\\alpha$ が実現する．解と係数の関係より\n\\[ \\boldsymbol{\\sin\\alpha_1\\sin\\alpha_2=\\frac12} \\]\nで，$h$ によらない．境界の $h=\\frac52R$ では解は $s=\\frac12,\\ 1$ で，$\\alpha=30^\\circ$ と切り取りのない場合（$\\alpha=90^\\circ$）が同じ高さに対応する．$h>\\frac52R$ では一方の解が $1$ を超え，切り口の角は1つだけになる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "切り口から接線方向に飛び出した小球が対岸に届く条件は放物運動の到達距離と弦の長さの一致で決まり，$v^2=gR/\\sin\\alpha$ となる．出発高さは $R(1+\\sin\\alpha+1/(2\\sin\\alpha))$ と切り口の角の関数になって $\\alpha=45^\\circ$ で最小となり，切り取りのない1周の条件 $\\frac52R$ より低くてよい．同じ高さを与える2つの切り口は $\\sin\\alpha_1\\sin\\alpha_2=\\frac12$ で結ばれる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "projectile-motion",
+  "circular-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "鉛直面内の円運動",
+  "放物運動",
+  "垂直抗力",
+  "力学的エネルギー保存",
+  "最小値",
+  "ループの飛び越し"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

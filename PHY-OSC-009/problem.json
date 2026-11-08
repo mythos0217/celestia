@@ -1,0 +1,142 @@
+{
+ "id": "PHY-OSC-009",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "上下2本のゴムひもでつながれたおもりの，片方がたるむ区間をもつ振動",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，天井の点Oとその真下の床の点Fの間で，質量 $m$ の小さなおもりPを2本の軽いゴムひもX，Yでつなぐ．XはOとPを，YはPとFを結んでいる．X，Yはどちらも自然長からの伸びに比例する弾性力（比例定数 $k$）を生じ，自然長より短くなるとたるんで力を生じない．Pが静止しているとき，X，Yはどちらも鉛直に張っていて，Yの自然長からの伸びは $b$ であった．重力加速度の大きさを $g$ とし，Pは鉛直線上だけを運動するものとする．(2)以降では，(1)の条件が成り立つとし，Pを静止位置から鉛直上向きに $\\sqrt3\\,b$ だけ持ち上げて静かに放す．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Pが静止しているときのXの自然長からの伸びを求めよ．また，Pを静止位置から鉛直上向きに $\\sqrt3\\,b$ だけ持ち上げてもXがたるまないための条件を，$m$，$g$，$k$，$b$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "Yが初めて自然長になる瞬間のPの速さ $v$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Pの最下点は，静止位置から何だけ下か．"
+     },
+     {
+      "id": "4",
+      "tex": "Pの1周期のうち，Yがたるんでいる時間を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "Pの振動の周期を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：上下2本のゴムひもでつながれたおもりの，片方がたるむ区間をもつ振動",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：上下2本のゴムひもでつながれたおもりの，片方がたるむ区間をもつ振動",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$b+\\dfrac{mg}{k}$，$mg>(\\sqrt3-1)kb$"
+   },
+   {
+    "id": "2",
+    "tex": "$v=2b\\sqrt{\\dfrac{k}{m}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$(2\\sqrt2-1)b$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{\\pi}{2}\\sqrt{\\dfrac{m}{k}}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\left\\{\\dfrac{\\pi}{2}+\\sqrt2\\left(\\pi-\\arccos\\dfrac{1}{\\sqrt3}\\right)\\right\\}\\sqrt{\\dfrac{m}{k}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{座標と力}　静止位置を原点として鉛直下向きに $x$ 軸をとる．静止時のXの伸びを $s$ とする．\n\n\\textbf{(1)}　静止時のPのつり合い（上向きにXの弾性力，下向きに重力とYの弾性力）より\n\\[ ks=mg+kb\\qquad\\therefore\\quad s=\\boldsymbol{b+\\frac{mg}{k}} \\]\nPが $x$ にあるとき，Xの伸びは $s+x$，Yの伸びは $b-x$ である．$x=-\\sqrt3\\,b$ でXの伸びが正であればよいので\n\\[ b+\\frac{mg}{k}-\\sqrt3\\,b>0\\qquad\\therefore\\quad \\boldsymbol{mg>(\\sqrt3-1)kb} \\]\n（このときYは $x<b$ の範囲では伸びている．）\n\n\\textbf{区間ごとの運動方程式}　Pにはたらく力（下向き正）を $F$ とすると\n\\[ x\\le b\\ (\\text{X，Yとも張る})：\\ F=mg-k(s+x)+k(b-x)=-2kx \\]\n\\[ x>b\\ (\\text{Yがたるむ})：\\ F=mg-k(s+x)=-k(x+b) \\]\nよって，$x\\le b$ では原点を中心とする角振動数 $\\omega_2=\\sqrt{\\dfrac{2k}{m}}$ の単振動，$x>b$ では $x=-b$ を中心とする角振動数 $\\omega_1=\\sqrt{\\dfrac{k}{m}}$ の単振動の一部である．後者の中心 $x=-b$ はYがたるむ区間 $x>b$ の外にあり，この区間でPはつねに上向きの力を受けている．\n\n\\textbf{(2)}　$x=-\\sqrt3\\,b$ から $x=b$ までは角振動数 $\\omega_2$（合成ばね定数 $2k$）の単振動なので，単振動のエネルギー保存則より\n\\[ \\frac12(2k)(\\sqrt3\\,b)^2=\\frac12mv^2+\\frac12(2k)b^2\\qquad\\therefore\\quad v=\\boldsymbol{2b\\sqrt{\\frac{k}{m}}} \\]\n\n\\textbf{(3)}　$x>b$ では中心 $x=-b$，ばね定数 $k$ の単振動なので，中心からの変位 $2b$ で速さ $v$ をもつことから，この単振動の振幅 $A_1$ は\n\\[ \\frac12kA_1^2=\\frac12mv^2+\\frac12k(2b)^2\\qquad\\therefore\\quad A_1=\\sqrt{4b^2+4b^2}=2\\sqrt2\\,b \\]\n最下点は中心 $x=-b$ から $A_1$ 下なので，静止位置から\n\\[ -b+2\\sqrt2\\,b=\\boldsymbol{(2\\sqrt2-1)b} \\]\n下である．（別解：重力の位置エネルギーとX，Yの弾性エネルギーをすべて書いて，放した位置と最下点で等しいとおいても同じ結果になる．$\\frac12(2k)(\\cdots)$ のように振動中心を原点のまま計算すると誤りになる．）\n\n\\textbf{(4)}　Yがたるんでいる区間の運動を，中心 $x=-b$，半径 $A_1=2\\sqrt2\\,b$ の参照円で考える．$x=b$ は中心から $2b$ の位置なので，参照円の半径が振動方向となす角を $\\phi$ とすると $\\cos\\phi=\\dfrac{2b}{2\\sqrt2\\,b}=\\dfrac{1}{\\sqrt2}$，$\\phi=\\dfrac{\\pi}{4}$．Pは $x=b$ から最下点まで角 $\\dfrac{\\pi}{4}$，戻りも $\\dfrac{\\pi}{4}$ 回るので，たるんでいる時間は\n\\[ \\frac{\\pi/2}{\\omega_1}=\\boldsymbol{\\frac{\\pi}{2}\\sqrt{\\frac{m}{k}}} \\]\n\n\\textbf{(5)}　X，Yがともに張っている区間では $x=-\\sqrt3\\,b\\cos\\omega_2t$（放した時刻を $0$）．$x=b$ となるのは $\\cos\\omega_2t=-\\dfrac{1}{\\sqrt3}$，すなわち $\\omega_2t=\\pi-\\arccos\\dfrac{1}{\\sqrt3}$ のときである．この区間を下りと上りで1回ずつ通るので，1周期のうち張っている時間は\n\\[ \\frac{2}{\\omega_2}\\left(\\pi-\\arccos\\frac{1}{\\sqrt3}\\right)=\\sqrt2\\left(\\pi-\\arccos\\frac{1}{\\sqrt3}\\right)\\sqrt{\\frac{m}{k}} \\]\n(4)と合わせて，周期は\n\\[ T=\\boldsymbol{\\left\\{\\frac{\\pi}{2}+\\sqrt2\\left(\\pi-\\arccos\\frac{1}{\\sqrt3}\\right)\\right\\}\\sqrt{\\frac{m}{k}}} \\]\n上下の区間で角振動数も振動中心も異なるので，「半周期ずつの和」にはならず，各区間で参照円の回転角を数える必要がある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弾性体がたるむ系では区間ごとに合成ばね定数と振動中心が変わる．たるんだ区間の振動中心はその区間の外にあることがあり，その区間の運動は「中心外にある単振動の一部」として振幅を決め直し，参照円の回転角で時間を数える．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "torque"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "単振動",
+  "ゴムひも",
+  "合成ばね定数",
+  "振動中心の移動",
+  "参照円"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

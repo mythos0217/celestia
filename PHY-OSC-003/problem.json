@@ -1,0 +1,127 @@
+{
+ "id": "PHY-OSC-003",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "くぎにかかった振り子の糸がたるんだ後，小球がくぎに当たる条件",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "長さ $l$ の軽くて伸びない糸の一端を点 A に固定し，他端に質量 $m$ の小球をつける．A の鉛直下方 $x$（$0<x<l$）の点 B には，細くてなめらかなくぎが糸の運動面に垂直に固定されている．図のように糸を水平に張った状態から小球を静かに放すと，小球は最下点 C を通過すると同時に糸がくぎにかかり，以後 B を中心とする円運動を始めた．重力加速度の大きさを $g$ とし，$R=l-x$ とおく．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "糸がくぎにかかる直前と直後の糸の張力を，それぞれ $m$，$g$，$l$，$R$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "小球が B より高い点 D に達したとき糸がたるんだ．線分 BD が水平となす角を $\\alpha$ として，$\\sin\\alpha$ を $l$，$R$ で表せ．また，このように B より高い位置で糸がたるむための $x$ の範囲を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "糸がたるんだ後，小球は放物運動をして，ちょうどくぎ B に当たった．$\\sin\\alpha$ の値を求め，$x$ を $l$ で表せ．また，このとき (1) の直後の張力は $mg$ の何倍か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：くぎにかかった振り子の糸がたるんだ後，小球がくぎに当たる条件",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：くぎにかかった振り子の糸がたるんだ後，小球がくぎに当たる条件",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "直前 $3mg$，直後 $mg\\left(1+\\dfrac{2l}{R}\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\sin\\alpha=\\dfrac{2(l-R)}{3R}$，$0<x<\\dfrac35l$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\sin\\alpha=\\dfrac{1}{\\sqrt3}$，$x=(2\\sqrt3-3)l$，$3+\\sqrt3$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 力学的エネルギー保存則より，C での速さ $v_0$ は $\\dfrac12mv_0^2=mgl$，$v_0^2=2gl$．\n糸がくぎにかかる前後で小球の位置と速さは変わらないが，円運動の半径が $l$ から $R$ に変わるので，張力は不連続に変化する．C での半径方向の運動方程式より\n\\[ \\text{直前：}\\ T=mg+m\\frac{v_0^2}{l}=\\boldsymbol{3mg},\\qquad \\text{直後：}\\ T'=mg+m\\frac{v_0^2}{R}=\\boldsymbol{mg\\left(1+\\frac{2l}{R}\\right)} \\]\n\n\\textbf{(2)} D での速さを $v$ とする．糸がたるむ瞬間は張力が $0$ なので，中心 B 向きの力は重力の成分 $mg\\sin\\alpha$ だけで\n\\[ m\\frac{v^2}{R}=mg\\sin\\alpha \\]\nD は C より $R+R\\sin\\alpha$ 高いので，力学的エネルギー保存則より\n\\[ \\frac12mv^2=mgl-mg(R+R\\sin\\alpha)\\quad\\Longrightarrow\\quad gR\\sin\\alpha=2g(l-R-R\\sin\\alpha) \\]\n\\[ \\therefore\\ \\boldsymbol{\\sin\\alpha=\\frac{2(l-R)}{3R}} \\]\nB より高い位置でたるむには $0<\\sin\\alpha<1$ が必要．$\\sin\\alpha>0\\iff R<l\\iff x>0$．$\\sin\\alpha<1\\iff 2(l-R)<3R\\iff R>\\dfrac25l\\iff x<\\dfrac35l$．よって $\\boldsymbol{0<x<\\dfrac35l}$．（$x\\ge\\dfrac35l$ なら一回転し，B より高くまで上がらない場合は単に往復する．）\n\n\\textbf{(3)} D を原点とし，水平右向きに $X$，鉛直上向きに $Y$ をとる．B は D から見て $(R\\cos\\alpha,\\,-R\\sin\\alpha)$ にある．D での速度は BD に垂直で，大きさ $v$，向きは右上に水平と $90^\\circ-\\alpha$ の角をなす：$(v\\sin\\alpha,\\ v\\cos\\alpha)$．B に達する時刻を $t$ とすると\n\\[ R\\cos\\alpha=v\\sin\\alpha\\cdot t,\\qquad -R\\sin\\alpha=v\\cos\\alpha\\cdot t-\\frac12gt^2 \\]\n第 1 式の $t=\\dfrac{R\\cos\\alpha}{v\\sin\\alpha}$ を第 2 式に代入し，$v^2=gR\\sin\\alpha$ を用いると\n\\[ -R\\sin\\alpha=\\frac{R\\cos^2\\alpha}{\\sin\\alpha}-\\frac{gR^2\\cos^2\\alpha}{2gR\\sin^3\\alpha} \\]\n両辺に $\\dfrac{\\sin^3\\alpha}{R}$ をかけ，$s=\\sin\\alpha$ とおくと\n\\[ -s^4=(1-s^2)s^2-\\frac12(1-s^2)\\quad\\Longrightarrow\\quad \\frac32s^2=\\frac12\\qquad\\therefore\\ \\boldsymbol{\\sin\\alpha=\\frac1{\\sqrt3}} \\]\nこれは $R$ によらない．(2) の結果に代入して $\\dfrac{2(l-R)}{3R}=\\dfrac1{\\sqrt3}$ より\n\\[ R=\\frac{2l}{2+\\sqrt3}=2(2-\\sqrt3)l,\\qquad \\boldsymbol{x=l-R=(2\\sqrt3-3)l}\\ (\\approx0.46l) \\]\nこれは (2) の範囲 $0<x<\\dfrac35l$ に入っている．直後の張力は\n\\[ mg\\left(1+\\frac{2l}{R}\\right)=mg\\{1+(2+\\sqrt3)\\}=\\boldsymbol{(3+\\sqrt3)}\\,mg \\]\nで，$\\boldsymbol{3+\\sqrt3}$ 倍．\nなお，放物運動の間に小球と B の距離は $R$ より小さいまま減少していくので，糸が途中で再び張ることはない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "くぎにかかる瞬間は速さが連続で半径だけが変わるので張力が跳ぶ．糸がたるむ点は「張力 0 の半径方向の運動方程式」と力学的エネルギー保存で決まり，そこからの放物運動が円の中心を通る条件は半径によらず $\\sin\\alpha=1/\\sqrt3$ となるので，くぎの位置は逆算で求まる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "projectile-motion",
+  "simple-pendulum"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "鉛直面内の円運動",
+  "糸のたるみ",
+  "放物運動",
+  "張力の不連続",
+  "条件の逆算"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

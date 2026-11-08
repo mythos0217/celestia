@@ -1,0 +1,122 @@
+{
+ "id": "PHY-NEW-013",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "一定の力で引き上げる箱の中で糸を切った小球（相対加速度が g によらないことと重心の運動）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，質量 $M$ の箱を軽いひもでつり下げ，箱の天井から軽い糸で質量 $m$ の小球をつるす．小球の箱の底からの高さは $h$ である．ひもを一定の大きさ $F$（$F>(M+m)g$）の力で鉛直上向きに引き続けると，箱と小球は一体となって上昇した．上昇の速さが $u$ になった瞬間に糸を切ると，小球は箱の底に落ち，底に付着して箱と一体になった．ひもと糸は同じ鉛直線上にあり，空気の抵抗は無視する．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "糸を切る前の箱の加速度の大きさと，糸の張力の大きさを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "糸を切った後の箱の加速度と，箱から見た小球の加速度を求めよ．また，糸を切ってから小球が底に達するまでの時間 $t_1$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "小球が付着した直後の箱の速さ $V$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "付着によって失われる力学的エネルギー $\\Delta E$ を求めよ．$\\Delta E$ は $u$ にも $g$ にもよらない．その理由を，重心とともに動く観測者の立場から説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一定の力で引き上げる箱の中で糸を切った小球（相対加速度が g によらないことと重心の運動）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "加速度 $\\dfrac{F}{M+m}-g$，張力 $\\dfrac{mF}{M+m}$"
+   },
+   {
+    "id": "2",
+    "tex": "箱：上向きに $\\dfrac FM-g$，箱から見た小球：下向きに $\\dfrac FM$；$t_1=\\sqrt{\\dfrac{2Mh}{F}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$V=u+\\Bigl(\\dfrac{F}{M+m}-g\\Bigr)\\sqrt{\\dfrac{2Mh}{F}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\Delta E=\\dfrac{mFh}{M+m}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　糸を切った後，箱と小球は別々の等加速度運動をする．相対運動は加速度の差で決まり，重力加速度は両者に共通なので打ち消し合う．付着は短時間の完全非弾性衝突で，その瞬間の運動量保存を使う．全体にはたらく外力（$F$ と重力）は一定なので，全体の重心は常に一定の加速度 $\\dfrac{F}{M+m}-g$ で運動する．\n\n\\textbf{(1)}　全体について $(M+m)a_0=F-(M+m)g$ より $a_0=\\boldsymbol{\\dfrac{F}{M+m}-g}$．小球について $T-mg=ma_0$ より $T=\\boldsymbol{\\dfrac{mF}{M+m}}$．\n\n\\textbf{(2)}　箱：$Ma_{\\mathrm B}=F-Mg$ より \\textbf{上向きに} $\\boldsymbol{\\dfrac FM-g}$．小球の加速度は下向き $g$ なので，箱から見た小球の加速度は\n\\[ (-g)-\\Bigl(\\frac FM-g\\Bigr)=-\\frac FM\\quad\\text{すなわち}\\quad\\textbf{下向きに }\\boldsymbol{\\frac FM}. \\]\n切った瞬間の相対速度は $0$ なので，$\\dfrac12\\cdot\\dfrac FM t_1^2=h$ より $t_1=\\boldsymbol{\\sqrt{\\dfrac{2Mh}{F}}}$（$g$ によらない）．\n\n\\textbf{(3)}　付着直前の速度（上向き正）は，箱 $u+\\Bigl(\\dfrac FM-g\\Bigr)t_1$，小球 $u-gt_1$．付着の瞬間は内力が大きく $F$ や重力の力積は無視できるので，運動量保存より\n\\[ (M+m)V=M\\Bigl(u+\\frac FMt_1-gt_1\\Bigr)+m(u-gt_1)=(M+m)(u-gt_1)+Ft_1. \\]\nよって\n\\[ V=\\boldsymbol{u+\\Bigl(\\frac{F}{M+m}-g\\Bigr)\\sqrt{\\frac{2Mh}{F}}}. \\]\nこれはちょうど重心の速度 $u+a_0t_1$ である（付着後は全体が重心と同じ運動をするから）．\n\n\\textbf{(4)}　完全非弾性衝突で失われるエネルギーは，相対速度 $w=\\dfrac FMt_1=\\sqrt{\\dfrac{2Fh}{M}}$ を用いて\n\\[ \\Delta E=\\frac12\\cdot\\frac{Mm}{M+m}w^2=\\frac12\\cdot\\frac{Mm}{M+m}\\cdot\\frac{2Fh}{M}=\\boldsymbol{\\frac{mFh}{M+m}}. \\]\n\\textbf{理由}　重心とともに動く観測者（加速度 $a_0$）から見ると，慣性力 $-ma_0$，$-Ma_0$ が加わり，小球には下向きに $mg+ma_0=\\dfrac{mF}{M+m}$，箱には上向きに $F-Mg-Ma_0=\\dfrac{mF}{M+m}$ の一定の力がはたらく．この系では糸を切る前も付着した後も全体が静止しているので，切ってから付着までに2つの力がした仕事（大きさが等しく向きが逆の力が相対変位 $h$ だけ近づける：$\\dfrac{mF}{M+m}h$）がすべて付着で失われる．この量には $u$ も $g$ も入らない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一定の外力で引かれる系の中で物体を切り離すと，相対加速度は「引く力 ÷ 箱の質量」となって重力加速度が消える．一方，外力が一定なので重心は切り離しや付着に関係なく等加速度運動を続け，付着直後の速度は重心の速度になる．重心系では内部の一対の一定の力の仕事として，失われるエネルギーが速さや $g$ によらず決まる．"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "uniform-acceleration",
+  "kinematics-components"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "相対運動",
+  "重心の運動",
+  "運動方程式",
+  "完全非弾性衝突",
+  "加速度系"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,144 @@
+{
+ "id": "PHY-OSC-011",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "自由落下する2物体系の重心系での単振動とゴムひものたるみ",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "自然長 $L$ の軽いゴムひもがある．ゴムひもは伸びに比例する弾性力（比例定数 $k$）を生じるが，ゆるんだ状態では力を生じない．図のように，ゴムひもの上端に質量 $2m$ の小球Q，下端に質量 $m$ の小球Pをつなぎ，Qを手で支えて静止させ，Pをつり下げて静止させておく．時刻 $t=0$ に手を静かにはなしてQを解放した．P，Qは同一鉛直線上を運動するものとし，重力加速度の大きさを $g$，空気抵抗は無視する．速度・加速度は鉛直下向きを正とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "解放直前のゴムひもの自然長からの伸び $x_0$ を求めよ．また，解放直後のQとPの加速度 $a_{\\mathrm{Q}}$，$a_{\\mathrm{P}}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "解放後，ゴムひもがはじめて自然長に戻る時刻 $t_1$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "時刻 $t_1$ における，Qに対するPの相対速度の大きさ $u$ と，地面に対するQ，Pの速度 $v_{\\mathrm{Q}}$，$v_{\\mathrm{P}}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "PとQが衝突する時刻 $T$ と，解放から衝突までにQが落下した距離 $H$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$0\\le t\\le t_1$ における地面に対するPの速度 $v_{\\mathrm{P}}(t)$ を $t$ の関数として求めよ．また，解放から衝突までの間，Pが一度も上向きに動かないことを示せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：自由落下する2物体系の重心系での単振動とゴムひものたるみ",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：自由落下する2物体系の重心系での単振動とゴムひものたるみ",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$x_0=\\dfrac{mg}{k}$，$a_{\\mathrm{Q}}=\\dfrac{3}{2}g$，$a_{\\mathrm{P}}=0$"
+   },
+   {
+    "id": "2",
+    "tex": "$t_1=\\dfrac{\\pi}{2}\\sqrt{\\dfrac{2m}{3k}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$u=g\\sqrt{\\dfrac{3m}{2k}}$，$v_{\\mathrm{Q}}=\\dfrac{\\pi+1}{2}g\\sqrt{\\dfrac{2m}{3k}}$，$v_{\\mathrm{P}}=\\dfrac{\\pi-2}{2}g\\sqrt{\\dfrac{2m}{3k}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$T=\\dfrac{\\pi}{2}\\sqrt{\\dfrac{2m}{3k}}+\\dfrac{L}{g}\\sqrt{\\dfrac{2k}{3m}}$，$H=\\dfrac{kL^2}{3mg}+\\dfrac{(\\pi+1)L}{3}+\\dfrac{(\\pi^2+4)mg}{12k}$"
+   },
+   {
+    "id": "5",
+    "tex": "$v_{\\mathrm{P}}(t)=g\\left(t-\\sqrt{\\dfrac{2m}{3k}}\\sin\\sqrt{\\dfrac{3k}{2m}}\\,t\\right)$（$\\sin\\theta\\le\\theta$ より常に $v_{\\mathrm{P}}\\ge0$）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 解放前，Pのつり合いより $kx_0=mg$，よって $\\boldsymbol{x_0=\\dfrac{mg}{k}}$．\n解放直後もゴムひもの長さは変わらないので，張力は $kx_0=mg$ のままである．Qには重力 $2mg$ と下向きの張力 $mg$，Pには重力 $mg$ と上向きの張力 $mg$ が働くから\n\\[ 2ma_{\\mathrm{Q}}=2mg+mg,\\qquad ma_{\\mathrm{P}}=mg-mg \\]\nよって $\\boldsymbol{a_{\\mathrm{Q}}=\\dfrac{3}{2}g}$，$\\boldsymbol{a_{\\mathrm{P}}=0}$．\n\n\\textbf{(2) 重心系で見る}　解放後，P，Q全体に働く外力は重力 $3mg$ だけ（ゴムひもの力は内力）なので，重心Gは加速度 $g$ で自由落下する．Gとともに落下する観測者から見ると，各小球には慣性力（大きさ $2mg$，$mg$，上向き）が働き，重力とちょうど打ち消し合う．したがってこの観測者には，Gは静止し，P，Qはゴムひもの弾性力だけで運動するように見える．\n\nゴムひもの長さを $L+s$ とする．Gは QP を $1:2$ に内分する点だから，Qから $\\dfrac{L+s}{3}$ の位置にある．ゴムひもは一様なので，Gに重なるゴムひもの点で2つに分けると，Q側の部分は自然長 $\\dfrac{L}{3}$，伸び $\\dfrac{s}{3}$ で，ばね定数は自然長に反比例して $3k$ となる（張力 $3k\\cdot\\dfrac{s}{3}=ks$ で全体と一致）．Qの，Gから見た「自然長の位置」からのずれを $\\xi=\\dfrac{s}{3}$ とすると\n\\[ 2m\\ddot{\\xi}=-3k\\,\\xi \\qquad\\therefore\\quad \\omega=\\sqrt{\\frac{3k}{2m}} \\]\n（P側でも，自然長 $\\dfrac{2L}{3}$，ばね定数 $\\dfrac{3}{2}k$，ずれ $\\dfrac{2s}{3}$ で $m\\ddot{(\\tfrac{2s}{3})}=-\\tfrac32k\\cdot\\tfrac{2s}{3}$ となり同じ $\\omega$．換算質量 $\\dfrac{2m\\cdot m}{3m}$ を用いても同じ．）\nゴムひもが張っている間（$s>0$）は，$s$ は角振動数 $\\omega$ の単振動をし，$t=0$ で $s=x_0$，$\\dot s=0$ だから $s=x_0\\cos\\omega t$．はじめて $s=0$ となるのは $\\omega t_1=\\dfrac{\\pi}{2}$ のときで\n\\[ t_1=\\frac{\\pi}{2}\\sqrt{\\frac{2m}{3k}} \\]\nよって $\\boldsymbol{t_1=\\dfrac{\\pi}{2}\\sqrt{\\dfrac{2m}{3k}}}$．\n\n\\textbf{(3)} $\\dot s=-x_0\\omega\\sin\\omega t$ より，$t=t_1$ で\n\\[ u=x_0\\omega=\\frac{mg}{k}\\sqrt{\\frac{3k}{2m}}=\\boldsymbol{g\\sqrt{\\frac{3m}{2k}}} \\]\n重心系では全運動量が0なので，Qは下向きに $\\dfrac{u}{3}$，Pは上向きに $\\dfrac{2u}{3}$ で動く（$2m\\cdot\\dfrac{u}{3}=m\\cdot\\dfrac{2u}{3}$）．Gの速度は $gt_1$ だから，$\\tau=\\sqrt{\\dfrac{2m}{3k}}$ とおくと $u=\\dfrac{3}{2}g\\tau$，$gt_1=\\dfrac{\\pi}{2}g\\tau$ で\n\\[ v_{\\mathrm{Q}}=gt_1+\\frac{u}{3}=\\boldsymbol{\\frac{\\pi+1}{2}g\\sqrt{\\frac{2m}{3k}}},\\qquad v_{\\mathrm{P}}=gt_1-\\frac{2u}{3}=\\boldsymbol{\\frac{\\pi-2}{2}g\\sqrt{\\frac{2m}{3k}}} \\]\n\n\\textbf{(4)} $t>t_1$ ではゴムひもがゆるみ，P，Qとも加速度 $g$ の自由落下となる．相対加速度が0なので，PはQに対して速さ $u$ の等速度で近づく．このとき間隔は $L$ なので，衝突までの時間は $\\dfrac{L}{u}$ で\n\\[ T=t_1+\\frac{L}{u}=\\boldsymbol{\\frac{\\pi}{2}\\sqrt{\\frac{2m}{3k}}+\\frac{L}{g}\\sqrt{\\frac{2k}{3m}}} \\]\nQの落下距離は「Gの落下距離」と「Gに対するQの変位」の和である．Gは $\\dfrac12gT^2$ 落下する．一方，QははじめGより $\\dfrac{L+x_0}{3}$ 上にあり，衝突時にはGの位置にある（衝突点は重心）．よって\n\\[ H=\\frac12gT^2+\\frac{L+x_0}{3} \\]\n$\\dfrac12 gt_1^2=\\dfrac{\\pi^2mg}{12k}$，$\\dfrac{gt_1L}{u}=\\dfrac{\\pi L}{3}$，$\\dfrac{gL^2}{2u^2}=\\dfrac{kL^2}{3mg}$ を用いて\n\\[ H=\\boldsymbol{\\frac{kL^2}{3mg}+\\frac{(\\pi+1)L}{3}+\\frac{(\\pi^2+4)mg}{12k}} \\]\n\n\\textbf{(5)} 重心系でPは上向きに速さ $\\dfrac{2}{3}|\\dot s|=\\dfrac23x_0\\omega\\sin\\omega t$ で動くから\n\\[ v_{\\mathrm{P}}(t)=gt-\\frac23x_0\\omega\\sin\\omega t \\]\nここで $\\dfrac23x_0\\omega=\\dfrac{2mg}{3k}\\omega=\\dfrac{g}{\\omega}\\cdot\\dfrac{2m\\omega^2}{3k}=\\dfrac{g}{\\omega}$ なので\n\\[ v_{\\mathrm{P}}(t)=\\boldsymbol{g\\left(t-\\frac{\\sin\\omega t}{\\omega}\\right)},\\qquad \\omega=\\sqrt{\\frac{3k}{2m}} \\]\n$\\theta\\ge0$ で $\\sin\\theta\\le\\theta$（等号は $\\theta=0$ のみ）だから，$0<t\\le t_1$ で $v_{\\mathrm{P}}>0$．$t>t_1$ ではPは自由落下で $v_{\\mathrm{P}}$ は増加し続ける．よってPは衝突まで一度も上向きに動かない（解放直後は $a_{\\mathrm{P}}=0$ で，ゴムひもの張力は減る一方なので，Pの加速度は $0$ 以上を保つ，と見てもよい）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "自由落下する系を重心とともに落下する観測者から見ると重力が消え，2物体はゴムひもの弾性力だけで単振動する（周期は換算質量で決まり，重心で分けたゴムひもの各部分はばね定数が自然長に反比例する）．地面系の量は重心の自由落下と重心系の運動の重ね合わせで求め，ゴムひもがたるんだ後は相対等速運動に切り替わる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "kinematics-components",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "重心系",
+  "自由落下",
+  "単振動",
+  "ゴムひも",
+  "換算質量",
+  "相対運動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

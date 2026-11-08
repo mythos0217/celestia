@@ -1,0 +1,142 @@
+{
+ "id": "PHY-NEW-005",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "加速するトラック内での投射と見かけの斜面",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平な直線道路上をトラックが前方へ一定の加速度 $\\alpha$ で走っている．荷台の箱の中は無風で，天井は十分高く，床は水平で十分長い．荷台の床上の点 P から，トラックに対する速さ $u$ で小球を投げ出す．投げる向きはトラックの進行方向を含む鉛直面内とし，荷台の床の前方の向きから測った角を $\\beta$（$0<\\beta<180^\\circ$）とする．空気抵抗は無視し，重力加速度の大きさを $g$ とする．以下，「着地点」は荷台の床上の位置をいう．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "トラックとともに動く観測者から見た，小球にはたらく見かけの重力加速度の大きさ $g'$ を求めよ．また，その向きは鉛直下向きから前方・後方のどちらへ傾いているか．傾きの角を $\\varphi$ として $\\tan\\varphi$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\beta=90^\\circ$ で投げたとき，着地点は P から前方・後方のどちらへどれだけ離れているか．"
+     },
+     {
+      "id": "3",
+      "tex": "小球が P に落ちてくるようにするには，$\\beta$ をいくらにすればよいか．$\\tan\\beta$ で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$u$ を一定に保ち $\\beta$ を変えるとき，着地点が P より前方で最も遠くなるときの距離 $L_{\\mathrm f}$ と，後方で最も遠くなるときの距離 $L_{\\mathrm b}$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$L_{\\mathrm b}=3L_{\\mathrm f}$ となる $\\alpha$ を $g$ で表し，そのとき前方へ最も遠くまで届く $\\beta$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：加速するトラック内での投射と見かけの斜面",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：加速するトラック内での投射と見かけの斜面",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$g'=\\sqrt{g^2+\\alpha^2}$，後方へ傾く，$\\tan\\varphi=\\dfrac{\\alpha}{g}$"
+   },
+   {
+    "id": "2",
+    "tex": "後方へ $\\dfrac{2\\alpha u^2}{g^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\tan\\beta=\\dfrac{g}{\\alpha}$（前方へ投げる）"
+   },
+   {
+    "id": "4",
+    "tex": "$L_{\\mathrm f}=\\dfrac{u^2}{\\sqrt{g^2+\\alpha^2}+\\alpha}$，$L_{\\mathrm b}=\\dfrac{u^2}{\\sqrt{g^2+\\alpha^2}-\\alpha}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\alpha=\\dfrac{g}{\\sqrt3}$，$\\beta=30^\\circ$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　トラックの中で見ると，小球には重力 $mg$（下向き）と慣性力 $m\\alpha$（後ろ向き）がはたらき，その合力は一定である．これを「見かけの重力」とみなせば，トラック内の運動は\\textbf{傾いた重力のもとでの放物運動}になり，水平な床は見かけ上「前方が高い斜面」になる．\n\n\\textbf{(1)}　合力の大きさは $m\\sqrt{g^2+\\alpha^2}$ なので $\\boldsymbol{g'=\\sqrt{g^2+\\alpha^2}}$．慣性力が後ろ向きなので，見かけの重力は鉛直下向きから\\textbf{後方}へ傾き，$\\boldsymbol{\\tan\\varphi=\\dfrac{\\alpha}{g}}$．見かけの「鉛直上向き」は前方へ $\\varphi$ 傾き，床は見かけ上，前方が角 $\\varphi$ だけ高い斜面である．\n\n\\textbf{(2)}　トラックに対する加速度は水平後方 $\\alpha$，鉛直下向き $g$．鉛直方向の運動は通常と同じなので，滞空時間は $t=\\dfrac{2u}{g}$．水平方向は初速 $0$ で後ろ向きに加速するから，\n\\[ \\frac12\\alpha t^2=\\boldsymbol{\\frac{2\\alpha u^2}{g^2}}\\quad\\text{（後方）} \\]\n\n\\textbf{(3)}　見かけの重力と逆向き，すなわち「見かけの鉛直上向き」に投げれば，小球は同じ直線上を往復して P に戻る．この向きは鉛直から前方へ $\\varphi$ 傾いているので，$\\beta=90^\\circ-\\varphi$，\n\\[ \\boldsymbol{\\tan\\beta=\\frac{g}{\\alpha}} \\]\n（確認：着地点の式 (4) で $\\sin\\beta\\cos\\beta=\\dfrac{\\alpha}{g}\\sin^2\\beta$ となり $0$．）\n\n\\textbf{(4)}　一般の $\\beta$ では，滞空時間 $t=\\dfrac{2u\\sin\\beta}{g}$，前方への着地点の位置は\n\\[ x=u\\cos\\beta\\cdot t-\\frac12\\alpha t^2=\\frac{2u^2}{g}\\left(\\sin\\beta\\cos\\beta-\\frac{\\alpha}{g}\\sin^2\\beta\\right)=\\frac{u^2}{g^2}\\left(g\\sin2\\beta+\\alpha\\cos2\\beta-\\alpha\\right) \\]\n$g\\sin2\\beta+\\alpha\\cos2\\beta=g'\\sin(2\\beta+\\varphi)$（$\\tan\\varphi=\\alpha/g$）と合成すると\n\\[ x=\\frac{u^2}{g^2}\\left\\{g'\\sin(2\\beta+\\varphi)-\\alpha\\right\\} \\]\n前方最大は $2\\beta+\\varphi=90^\\circ$ のときで，$(g'-\\alpha)(g'+\\alpha)=g^2$ を用いて\n\\[ L_{\\mathrm f}=\\frac{u^2(g'-\\alpha)}{g^2}=\\boldsymbol{\\frac{u^2}{\\sqrt{g^2+\\alpha^2}+\\alpha}} \\]\n後方最大は $2\\beta+\\varphi=270^\\circ$ のときで\n\\[ L_{\\mathrm b}=\\frac{u^2(g'+\\alpha)}{g^2}=\\boldsymbol{\\frac{u^2}{\\sqrt{g^2+\\alpha^2}-\\alpha}} \\]\n見かけの斜面で考えると，前方は「上り斜面」，後方は「下り斜面」への投射であり，最適な向きは床と見かけの鉛直上向きのなす角の二等分線（前方は床から $45^\\circ-\\varphi/2$，後方は床から $45^\\circ+\\varphi/2$）である（解答図）．\n\n\\textbf{(5)}　$\\dfrac{L_{\\mathrm b}}{L_{\\mathrm f}}=\\dfrac{g'+\\alpha}{g'-\\alpha}=3$ より $g'=2\\alpha$，すなわち $g^2+\\alpha^2=4\\alpha^2$．\n\\[ \\boldsymbol{\\alpha=\\frac{g}{\\sqrt3}} \\]\nこのとき $\\tan\\varphi=\\dfrac1{\\sqrt3}$，$\\varphi=30^\\circ$ で，前方最遠の向きは $\\beta=45^\\circ-\\dfrac{\\varphi}{2}=\\boldsymbol{30^\\circ}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "加速する系では重力と慣性力の合力が見かけの重力となり，その方向が見かけの鉛直になる．水平な床は見かけ上の斜面となり，前後の最大到達距離は斜面への投射の問題と同じ構造で求まる．"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "projectile-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "慣性力",
+  "見かけの重力",
+  "放物運動",
+  "斜面への投射",
+  "最大到達距離"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

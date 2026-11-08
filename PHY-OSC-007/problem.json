@@ -1,0 +1,123 @@
+{
+ "id": "PHY-OSC-007",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "片方にだけ摩擦がはたらく2物体のばねによる押し出しと分離",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平面上で，ばね定数 $k$ の軽いばねの左端を壁に固定し，右端に質量 $m$ の小物体Aを取り付ける．Aの右側には質量 $M$ の小物体Bを接して置く．Aと水平面の間の摩擦は無視できるが，Bと水平面の間には摩擦があり，静止摩擦係数・動摩擦係数はともに $\\mu$ である．ばねが自然長のときのAの位置を原点Oとして，右向きに $x$ 軸をとる．AとBをいっしょに押してAを $x=-d$ の位置まで動かし，静かに放したところ，AとBは一体となって右へ動き出した．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "AとBが一体となって右へ動いている間，AがBを押す力の大きさ $N$ をAの位置 $x$ の関数として表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "AとBが離れるときのAの位置 $x_1$ を求めよ．また，AとBが離れるために $d$ が満たすべき条件を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2)の条件が満たされているとする．離れる瞬間のA，Bの速さ $v_1$ と，放してから離れるまでの時間 $t_1$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "離れた後，Bが静止する位置 $x_{\\mathrm B}$ を求めよ．さらに，離れた後にAがBに再び接触することはないことを示せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：片方にだけ摩擦がはたらく2物体のばねによる押し出しと分離",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$N=\\dfrac{M(\\mu mg-kx)}{m+M}$"
+   },
+   {
+    "id": "2",
+    "tex": "$x_1=\\dfrac{\\mu mg}{k}$，$d>\\dfrac{\\mu(m+2M)g}{k}$"
+   },
+   {
+    "id": "3",
+    "tex": "$v_1=\\sqrt{\\dfrac{(kd+\\mu mg)\\{kd-\\mu(m+2M)g\\}}{k(m+M)}}$，$t_1=\\sqrt{\\dfrac{m+M}{k}}\\left(\\pi-\\arccos\\dfrac{\\mu(m+M)g}{kd-\\mu Mg}\\right)$"
+   },
+   {
+    "id": "4",
+    "tex": "$x_{\\mathrm B}=\\dfrac{k^2d^2-2\\mu Mgkd+\\mu^2m^2g^2}{2\\mu gk(m+M)}$（再接触しないことは解説参照）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　右向きを正とし，一体となって動くときの加速度を $a$ とする．Bは右へ動いているので，Bには左向きに動摩擦力 $\\mu Mg$ がはたらく．Aの位置が $x$ のときばねの弾性力は $-kx$ と表せる（$x<0$ でも $x>0$ でも同じ式）．\n\\[ \\text{A}：\\ ma=-kx-N,\\qquad \\text{B}：\\ Ma=N-\\mu Mg \\]\n2式を加えて $(m+M)a=-kx-\\mu Mg$．これをBの式に用いると\n\\[ N=Ma+\\mu Mg=\\frac{M(-kx-\\mu Mg)+\\mu Mg(m+M)}{m+M}=\\boldsymbol{\\frac{M(\\mu mg-kx)}{m+M}} \\]\n\n\\textbf{(2)}　$N$ は $x$ とともに減少し，$x=\\dfrac{\\mu mg}{k}$ で $0$，それより先では負になる．押す力は負になれないので，ここで離れる：\n\\[ x_1=\\boldsymbol{\\frac{\\mu mg}{k}} \\]\n$N=0$ のときAとBの加速度はともに $-\\mu g$ である．Bの減速は摩擦による一定値 $\\mu g$ だが，Aの減速 $kx/m$ は自然長を過ぎてから増えていき，$\\mu g$ を超えた瞬間からAのほうが強く減速するので離れる．摩擦がなければ自然長 $x=0$ で離れるが，Bにだけ摩擦があると，その先 $\\dfrac{\\mu mg}{k}$ の位置まで一体で進む．\n\n次に条件を調べる．一体の間の運動方程式は\n\\[ (m+M)a=-k\\left(x+\\frac{\\mu Mg}{k}\\right) \\]\nと書けるので，右へ動いている間は $x_{\\mathrm c}=-\\dfrac{\\mu Mg}{k}$ を中心とする角振動数 $\\omega=\\sqrt{\\dfrac{k}{m+M}}$ の単振動である（動摩擦力が一定なので中心がずれるだけ）．$x=-d$ で静かに放したので振幅は $d-\\dfrac{\\mu Mg}{k}$（動き出すには $kd>\\mu Mg$ が必要），右端は $x=d-\\dfrac{2\\mu Mg}{k}$ である．離れるためには，右へ動いている間に $x_1$ に達すればよいので\n\\[ d-\\frac{2\\mu Mg}{k}>\\frac{\\mu mg}{k}\\qquad\\therefore\\quad \\boldsymbol{d>\\frac{\\mu(m+2M)g}{k}} \\]\n（このとき $kd>\\mu Mg$ も満たされる．）\n\n\\textbf{(3)}　中心 $x_{\\mathrm c}$ からの変位を用いた単振動のエネルギー保存則より\n\\[ \\frac12k\\left(d-\\frac{\\mu Mg}{k}\\right)^2=\\frac12(m+M)v_1^2+\\frac12k\\left(x_1+\\frac{\\mu Mg}{k}\\right)^2 \\]\n$x_1+\\dfrac{\\mu Mg}{k}=\\dfrac{\\mu(m+M)g}{k}$ を用いて整理すると\n\\[ v_1=\\boldsymbol{\\sqrt{\\frac{(kd+\\mu mg)\\{kd-\\mu(m+2M)g\\}}{k(m+M)}}} \\]\n（別解：弾性エネルギーの減少が運動エネルギーと摩擦による損失になるとして $\\frac12kd^2-\\frac12kx_1^2-\\mu Mg(d+x_1)=\\frac12(m+M)v_1^2$ からも同じ結果を得る．）\n\n時間は，$x-x_{\\mathrm c}=-\\left(d-\\dfrac{\\mu Mg}{k}\\right)\\cos\\omega t$ と表せることから，$x=x_1$ のとき\n\\[ \\cos\\omega t_1=-\\frac{\\mu(m+M)g}{kd-\\mu Mg} \\]\n(2)の条件よりこの右辺は $-1$ と $0$ の間にあり，$\\omega t_1$ は $\\dfrac{\\pi}{2}$ と $\\pi$ の間にある（参照円で中心を過ぎてから端に達するまでの間）．よって\n\\[ t_1=\\boldsymbol{\\sqrt{\\frac{m+M}{k}}\\left(\\pi-\\arccos\\frac{\\mu(m+M)g}{kd-\\mu Mg}\\right)} \\]\n\n\\textbf{(4)}　離れた後，Bは加速度 $-\\mu g$ の等加速度運動をして距離 $\\dfrac{v_1^2}{2\\mu g}$ 進んで止まり，その後は水平方向に力を受けないので静止し続ける．\n\\[ x_{\\mathrm B}=x_1+\\frac{v_1^2}{2\\mu g}=\\boldsymbol{\\frac{k^2d^2-2\\mu Mgkd+\\mu^2m^2g^2}{2\\mu gk(m+M)}} \\]\n一方，Aは摩擦を受けず，原点を中心とする角振動数 $\\sqrt{k/m}$ の単振動をする．Aの右端を $x_{\\mathrm A}$ とすると，エネルギー保存則より $\\frac12mv_1^2=\\frac12k(x_{\\mathrm A}^2-x_1^2)$．\n\n\\textbf{再接触しないことの証明}　離れた直後からAが右端に達するまでの間，$x>x_1$ なのでAの減速の大きさ $\\dfrac{kx}{m}$ は $\\mu g$ より大きい．Bが動いている間はBの減速の大きさは $\\mu g$ だから，同じ速さ $v_1$ から出発したAの速さはつねにBより小さく，AとBの間隔は広がり続ける．Bが止まった後については，\n\\[ x_{\\mathrm A}-x_1=\\frac{mv_1^2}{k(x_{\\mathrm A}+x_1)}<\\frac{mv_1^2}{k\\cdot2x_1}=\\frac{v_1^2}{2\\mu g}=x_{\\mathrm B}-x_1 \\]\n（$x_{\\mathrm A}>x_1$ を用いた）より $x_{\\mathrm A}<x_{\\mathrm B}$ なので，Aは静止したBに届かない．Aはその後も同じ振幅で振動し，右端 $x_{\\mathrm A}$ を越えることはない．したがって，AがBに再び接触することはない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "接触して押し合う2物体が離れるのは抗力が $0$ になる位置，すなわち両者の加速度が等しくなる位置であり，片方にだけ摩擦がはたらくとそれはばねの自然長からずれる．一体の間は一定の摩擦力で中心がずれた単振動として位置・速さ・時間（位相）を求め，離れた後は別々の運動として比較する．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "static-friction",
+  "normal-force"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "単振動",
+  "動摩擦",
+  "離れる条件",
+  "振動中心のずれ",
+  "垂直抗力",
+  "参照円"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

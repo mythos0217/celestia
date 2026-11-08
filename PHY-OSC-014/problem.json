@@ -1,0 +1,142 @@
+{
+ "id": "PHY-OSC-014",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "細い容器中の浮きの振動（水位上昇を含む単振動と完全水没後の等加速度運動）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，鉛直に立てた断面積 $3S$ の円筒容器に密度 $\\rho$ の水が入っている．断面積 $S$，高さ $h$，密度 $\\dfrac{2}{3}\\rho$ の一様な円柱Bを，軸を鉛直に保ったまま，底面がちょうど水面に接する位置で静かに支え，時刻 $t=0$ に静かにはなした．Bは傾かず，容器の側面や底には触れないものとする（容器は十分深い）．水の抵抗や水の運動の影響は無視し，水面はつねに水平とする．重力加速度の大きさを $g$ とし，はなした位置から測ったBの鉛直下向きの変位を $y$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Bの上面が水面より上にあるとき，容器内の水面のはじめからの上昇量を $y$ で表せ．また，Bが受ける浮力の大きさを $y$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "Bのつり合いの位置 $y_0$ と，その位置のまわりのBの振動の周期 $T_0$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Bの上面がちょうど水面と一致するときの $y$ の値と，そのときのBの速さ $v_1$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "Bが最も深く沈んだとき，Bの上面の水面からの深さ $d$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "はなしてから，Bがはじめてはなした位置に戻るまでの時間 $T_1$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：細い容器中の浮きの振動（水位上昇を含む単振動と完全水没後の等加速度運動）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：細い容器中の浮きの振動（水位上昇を含む単振動と完全水没後の等加速度運動）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "上昇量 $\\dfrac{y}{2}$，浮力 $\\dfrac32\\rho Sgy$"
+   },
+   {
+    "id": "2",
+    "tex": "$y_0=\\dfrac49h$，$T_0=\\dfrac{4\\pi}{3}\\sqrt{\\dfrac hg}$"
+   },
+   {
+    "id": "3",
+    "tex": "$y=\\dfrac23h$，$v_1=\\sqrt{\\dfrac{gh}{3}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$d=\\dfrac h3$"
+   },
+   {
+    "id": "5",
+    "tex": "$T_1=\\left(\\dfrac{8\\pi}{9}+\\dfrac{4\\sqrt3}{3}\\right)\\sqrt{\\dfrac hg}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 水面の上昇量を $\\delta$ とすると，Bの水中部分の深さは $y+\\delta$．新しい水面より下の容器内の体積は「水の体積」と「Bの水中部分の体積 $S(y+\\delta)$」の和である．はじめはBが水中になかったので，水の体積ははじめの水面より下の容器の体積に等しい．よって，はじめの水面と新しい水面の間の容器の体積 $3S\\delta$ が，Bの水中部分の体積に等しい（はじめの水面より上の層の水 $2S\\delta$ が，はじめの水面より下でBが押しのけた体積 $Sy$ に等しい，と考えても同じ）．\n\\[ 3S\\delta=S(y+\\delta)\\qquad\\therefore\\quad \\delta=\\boldsymbol{\\frac{y}{2}} \\]\n水中部分の深さは $\\dfrac32y$ なので，浮力は $\\boldsymbol{\\dfrac32\\rho Sgy}$．\n\n\\textbf{(2)} Bの質量は $m=\\dfrac23\\rho Sh$．運動方程式は\n\\[ m\\ddot y=mg-\\frac32\\rho Sg\\,y=-\\frac32\\rho Sg\\left(y-\\frac{2m}{3\\rho S}\\right) \\]\nつり合いの位置は $y_0=\\dfrac{2m}{3\\rho S}=\\boldsymbol{\\dfrac49h}$（このとき水中部分の深さ $\\dfrac23h$，上面は水面上にある）．復元力の比例定数は $K=\\dfrac32\\rho Sg$ で，容器が細いため水位上昇の分だけ $\\rho Sg$ より大きい．\n\\[ \\omega^2=\\frac{K}{m}=\\frac{9g}{4h},\\qquad T_0=\\frac{2\\pi}{\\omega}=\\boldsymbol{\\frac{4\\pi}{3}\\sqrt{\\frac hg}} \\]\n\n\\textbf{(3)} 上面が水面と一致するのは水中部分の深さが $h$，すなわち $\\dfrac32y=h$ のときで $\\boldsymbol{y=\\dfrac23h}$．\n$t=0$ で $y=0$，速度 $0$ なので，ここまでの運動は中心 $y_0=\\dfrac49h$，振幅 $\\dfrac49h$ の単振動である．単振動のエネルギー保存より\n\\[ v_1^2=\\omega^2\\left\\{\\left(\\frac49h\\right)^2-\\left(\\frac23h-\\frac49h\\right)^2\\right\\}=\\frac{9g}{4h}\\cdot\\frac{12h^2}{81}=\\frac{gh}{3} \\]\nよって $v_1=\\boldsymbol{\\sqrt{\\dfrac{gh}{3}}}$．\n（単振動を続けたとすると最下点は $y=\\dfrac89h>\\dfrac23h$ なので，Bは確かに完全に水没する．）\n\n\\textbf{(4)} 完全に水没すると，水中の体積は $Sh$ で一定となり，水面もそれ以上変化しない．浮力は $\\rho Shg$ で一定となり，運動は単振動から等加速度運動に切り替わる．加速度は\n\\[ m a=mg-\\rho Shg\\qquad\\therefore\\quad a=g-\\frac{3}{2}g=-\\frac g2 \\]\n水没後に沈む距離 $s$ は $0-v_1^2=2\\left(-\\dfrac g2\\right)s$ より $s=\\dfrac{v_1^2}{g}=\\dfrac h3$．水面は動かないので，上面の深さは $d=\\boldsymbol{\\dfrac h3}$．\n\n\\textbf{(5)} 単振動の部分：$y-y_0=-\\dfrac49h\\cos\\omega t$ が $+\\dfrac29h$ となるのは $\\cos\\omega t=-\\dfrac12$，$\\omega t=\\dfrac{2\\pi}{3}$ のときで，$t_a=\\dfrac{2\\pi}{3\\omega}=\\dfrac{4\\pi}{9}\\sqrt{\\dfrac hg}$．\n等加速度の部分：$t_b=\\dfrac{v_1}{g/2}=2\\sqrt{\\dfrac{h}{3g}}=\\dfrac{2\\sqrt3}{3}\\sqrt{\\dfrac hg}$．\n抵抗がなく，力は位置だけで決まるので，最深点から戻る運動は行きの逆再生であり，同じ時間で $y=0$ に戻る．\n\\[ T_1=2(t_a+t_b)=\\boldsymbol{\\left(\\frac{8\\pi}{9}+\\frac{4\\sqrt3}{3}\\right)\\sqrt{\\frac hg}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "浮力は水中の体積に比例するので，浮きの変位に対して線形な復元力となり単振動する．ただし容器が細いと水位上昇で水中部分が変位の $3/2$ 倍に増え，実効ばね定数が大きくなる．完全に水没した瞬間に浮力が一定になり，運動が単振動から等加速度運動に切り替わる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "uniform-acceleration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "浮力",
+  "単振動",
+  "水位変化",
+  "状態の切り替え",
+  "等加速度運動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

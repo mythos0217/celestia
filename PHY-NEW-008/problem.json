@@ -1,0 +1,122 @@
+{
+ "id": "PHY-NEW-008",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "動滑車を含む2段アトウッドの機械で各おもりの運動の向きが入れ替わる条件",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，天井からつるした軽い滑車 Q に糸 2 をかけ，一端に軽い滑車 P を，他端に質量 $M$ のおもり C をつるす．さらに P に糸 1 をかけ，両端に質量 $m$ のおもり A と質量 $2m$ のおもり B をつるす．滑車はなめらかに回り，糸は軽くて伸びない．重力加速度の大きさを $g$ とし，全体を静止させた状態から静かに放す．以下，加速度は鉛直上向きを正とし，糸がたるむことはないものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "糸 1 の張力 $T_1$ と，P，A，B の加速度 $a_{\\mathrm P}$，$a_{\\mathrm A}$，$a_{\\mathrm B}$ を $M$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "P，A，B のそれぞれについて，加速度が上向きとなる $M$ の範囲を求めよ．また，C が上昇するにもかかわらず A も上昇するような $M$ の範囲を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$M$ を限りなく大きくしたとき，B の加速度はどんな値に近づくか．P とともに動く観測者の立場から，その値になる理由を説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$M=4m$ のとき，滑車 Q をつるす糸が天井を引く力の大きさ $F$ を求めよ．また，$F$ が全体の重さ $7mg$ より小さくなる理由を，系全体の重心の運動から説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：動滑車を含む2段アトウッドの機械で各おもりの運動の向きが入れ替わる条件",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T_1=\\dfrac{8Mmg}{3M+8m}$，$a_{\\mathrm P}=\\dfrac{3M-8m}{3M+8m}g$，$a_{\\mathrm A}=\\dfrac{5M-8m}{3M+8m}g$，$a_{\\mathrm B}=\\dfrac{M-8m}{3M+8m}g$"
+   },
+   {
+    "id": "2",
+    "tex": "P：$M>\\dfrac83m$，A：$M>\\dfrac85m$，B：$M>8m$；$\\dfrac85m<M<\\dfrac83m$"
+   },
+   {
+    "id": "3",
+    "tex": "上向きに $\\dfrac13g$"
+   },
+   {
+    "id": "4",
+    "tex": "$F=\\dfrac{32}{5}mg$（重心が下向きに加速するため）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{滑車 P のつり合い}\nP は質量が無視できるので，加速度運動していても P にはたらく力の合力は $0$ である（$0\\cdot a_{\\mathrm P}=T_2-2T_1$）．よって糸 2 の張力は $T_2=2T_1$．\n\n\\textbf{(1)} P とともに動く観測者から見ると，A，B には下向きに慣性力 $ma_{\\mathrm P}$，$2ma_{\\mathrm P}$ がはたらくので，「重力加速度」が $g+a_{\\mathrm P}$ になったのと同じである．A が P に対して上向きに，B が下向きに同じ大きさ $\\beta$ で動くとすると\n\\[ \\text{A：}\\ m\\beta=T_1-m(g+a_{\\mathrm P}),\\qquad \\text{B：}\\ 2m\\beta=2m(g+a_{\\mathrm P})-T_1 \\]\nより $\\beta=\\dfrac13(g+a_{\\mathrm P})$，$T_1=\\dfrac43m(g+a_{\\mathrm P})$．\n一方，C は P と逆向きに同じ大きさで動くので，C の加速度は $-a_{\\mathrm P}$．C の運動方程式は\n\\[ -Ma_{\\mathrm P}=2T_1-Mg=\\frac83m(g+a_{\\mathrm P})-Mg \\]\n\\[ \\therefore\\ \\boldsymbol{a_{\\mathrm P}=\\frac{3M-8m}{3M+8m}g},\\qquad \\boldsymbol{T_1=\\frac{8Mmg}{3M+8m}} \\]\n$\\beta=\\dfrac13(g+a_{\\mathrm P})=\\dfrac{2Mg}{3M+8m}$ だから，床から見ると\n\\[ \\boldsymbol{a_{\\mathrm A}=a_{\\mathrm P}+\\beta=\\frac{5M-8m}{3M+8m}g},\\qquad \\boldsymbol{a_{\\mathrm B}=a_{\\mathrm P}-\\beta=\\frac{M-8m}{3M+8m}g} \\]\n（確認：糸 1 の長さ一定から $a_{\\mathrm A}+a_{\\mathrm B}=2a_{\\mathrm P}$ が成り立っている．）\n\n\\textbf{(2)} 分母は正なので分子の符号で決まる．\n\\[ a_{\\mathrm P}>0\\iff \\boldsymbol{M>\\frac83m},\\qquad a_{\\mathrm A}>0\\iff \\boldsymbol{M>\\frac85m},\\qquad a_{\\mathrm B}>0\\iff \\boldsymbol{M>8m} \\]\nC が上昇するのは P が下降するとき，すなわち $M<\\dfrac83m$ のときである．したがって C と A がともに上昇するのは $\\boldsymbol{\\dfrac85m<M<\\dfrac83m}$．このとき P は下向きに加速しているが，A が P に対して上向きに動く速さの増え方 $\\beta$ のほうが大きい．\n\n\\textbf{(3)} $M\\to\\infty$ で $a_{\\mathrm P}\\to g$，$\\beta\\to\\dfrac23g$ だから $a_{\\mathrm B}\\to g-\\dfrac23g=\\boldsymbol{\\dfrac13g}$（上向き）．\nP とともに動く観測者には，P が上向きに $g$ で加速するので「見かけの重力加速度」が $g+g=2g$ に見え，A，B は通常のアトウッドの機械として P に対し $\\beta=\\dfrac{2m-m}{3m}\\cdot2g=\\dfrac23g$ で動く．B は P に対して下向きに $\\dfrac23g$ だが，P 自身が上向きに $g$ で加速しているので，床から見ると上向き $\\dfrac13g$ となる．つまり A より重い B でさえ，C が十分重ければ上昇する．\n\n\\textbf{(4)} $M=4m$ のとき $T_1=\\dfrac{32m^2g}{20m}=\\dfrac85mg$．Q は質量が無視できるので，Q をつるす糸の張力は $2T_2=4T_1$ であり\n\\[ F=4T_1=\\boldsymbol{\\frac{32}{5}mg} \\]\nこのとき $a_{\\mathrm A}=\\dfrac35g$，$a_{\\mathrm B}=-\\dfrac15g$，$a_{\\mathrm C}=-a_{\\mathrm P}=-\\dfrac15g$．A，B，C（と軽い滑車）からなる系全体に外からはたらく力は，重力 $7mg$ と天井からの力 $F$ だけだから，系全体の運動方程式は\n\\[ F-7mg=m\\cdot\\frac35g+2m\\left(-\\frac15g\\right)+4m\\left(-\\frac15g\\right)=-\\frac35mg \\]\nとなり，確かに $F=\\dfrac{32}{5}mg$．右辺（運動量の変化率）が負，すなわち系の重心が下向きに加速しているので，天井が支える力は全体の重さより小さい．（一般の $M$ でも $(M+3m)g-4T_1=\\dfrac{3g(M^2-5Mm+8m^2)}{3M+8m}>0$ で，常に重心は下向きに加速する．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "質量の無視できる動滑車は加速していても力がつり合う（$T_2=2T_1$）．動滑車とともに動く観測者には重力加速度が $g+a_{\\mathrm P}$ に変わったように見え，下段は通常のアトウッドの機械になるので，床から見た運動は「滑車の加速度＋相対加速度」として組み立てられる．"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "kinematics-components",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "動滑車",
+  "慣性力",
+  "アトウッドの機械",
+  "相対加速度",
+  "重心の運動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

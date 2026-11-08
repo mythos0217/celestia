@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 330">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<path d="M60,120 L60,250 A40,40 0 0 0 125.7,280.6 L317.2,120.0" fill="none" stroke="#c9d7ea" stroke-width="18"/>
+<path d="M50,30 L50,250 A50,50 0 0 0 132.1,288.3 L358.1,98.7" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M70,30 L70,250 A30,30 0 0 0 119.3,273.0 L345.2,83.4" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="50.0" y1="120.0" x2="70.0" y2="120.0" stroke="#222" stroke-width="1.6"/>
+<line x1="310.7" y1="112.3" x2="323.6" y2="127.7" stroke="#222" stroke-width="1.6"/>
+<line x1="74.0" y1="120.0" x2="303.2" y2="120.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="156.4" y1="254.9" x2="226.4" y2="254.9" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<path d="M196.4,254.9 A40,40 0 0 0 187.0,229.2" fill="none" stroke="#222" stroke-width="1"/>
+<text x="208.35328211222068" y="246.93027333729754" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">θ</text>
+<text x="160" y="320" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">図1（両端開放）</text>
+<path d="M400,120 L400,250 A40,40 0 0 0 465.7,280.6 L657.2,120.0" fill="none" stroke="#c9d7ea" stroke-width="18"/>
+<path d="M390,30 L390,250 A50,50 0 0 0 472.1,288.3 L698.1,98.7" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M410,30 L410,250 A30,30 0 0 0 459.3,273.0 L685.2,83.4" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="390.0" y1="120.0" x2="410.0" y2="120.0" stroke="#222" stroke-width="1.6"/>
+<line x1="650.7" y1="112.3" x2="663.6" y2="127.7" stroke="#222" stroke-width="1.6"/>
+<line x1="414.0" y1="120.0" x2="643.2" y2="120.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="496.4" y1="254.9" x2="566.4" y2="254.9" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<path d="M536.4,254.9 A40,40 0 0 0 527.0,229.2" fill="none" stroke="#222" stroke-width="1"/>
+<text x="548.3532821122207" y="246.93027333729754" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">θ</text>
+<line x1="387.0" y1="30.0" x2="413.0" y2="30.0" stroke="#222" stroke-width="3.2"/>
+<rect x="391" y="31.6" width="18" height="87.6" fill="#e9edf3"/>
+<line x1="376" y1="32" x2="376" y2="120" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+<text x="366" y="80.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">l</text>
+<text x="500" y="320" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">図2（左管の上端を閉じる）</text>
+</svg>

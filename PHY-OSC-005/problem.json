@@ -1,0 +1,127 @@
+{
+ "id": "PHY-OSC-005",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "一様電場のかかった斜面上の円運動と，見かけの重力の向きに傾いた「最高点」",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水平面と角 $\\alpha$ をなすなめらかな絶縁体の斜面がある．図のように，斜面上の点 O を原点とし，斜面に沿って水平に $x$ 軸，斜面に沿って最大傾斜の上向きに $y$ 軸をとる．$x$ 軸の正の向きに強さ $E$ の一様な電場がかけられている．質量 $m$，電気量 $q\\,(q>0)$ の小球 P を長さ $r$ の軽い絶縁体の糸で O につなぎ，斜面上で O を中心として図の矢印の向き（$x$ 軸から $y$ 軸へ向かう向き）に円運動させる．P の位置を $x$ 軸から矢印の向きに測った角 $\\theta$ で表す．$qE=mg\\sin\\alpha$ であり，重力加速度の大きさを $g$ とする．P は斜面から離れないものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\theta=0$ での P の速さを $v_0$ とする．糸の張力 $T$ を $\\theta$ の関数として表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$T$ が最小となる $\\theta$（$0\\le\\theta<2\\pi$）を求めよ．また，糸がたるまずに P が円運動を続けるための $v_0$ の条件を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$v_0$ が (2) の条件を満たす最小値のとき，$T$ が最小となる位置で糸を切った．その後 P が直線 $y=x$ を横切る点の座標と，そのときの P の速さを求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一様電場のかかった斜面上の円運動と，見かけの重力の向きに傾いた「最高点」",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一様電場のかかった斜面上の円運動と，見かけの重力の向きに傾いた「最高点」",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T=\\dfrac{mv_0^2}{r}+mg\\sin\\alpha\\,(3\\cos\\theta-3\\sin\\theta-2)$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\theta=\\dfrac34\\pi$，$v_0\\ge\\sqrt{(2+3\\sqrt2)gr\\sin\\alpha}$"
+   },
+   {
+    "id": "3",
+    "tex": "$(-r,\\,-r)$，$\\sqrt{3\\sqrt2\\,gr\\sin\\alpha}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{斜面内の見かけの重力}\n斜面に垂直な方向では，重力の成分 $mg\\cos\\alpha$ と垂直抗力がつり合う（電場は斜面に平行なので関係しない）．斜面内で P にはたらく糸以外の力は，重力の斜面成分 $mg\\sin\\alpha$（$-y$ 向き）と静電気力 $qE=mg\\sin\\alpha$（$+x$ 向き）で，ともに一定である．その合力は\n\\[ \\vec F=mg\\sin\\alpha\\,(1,\\,-1),\\qquad |\\vec F|=\\sqrt2\\,mg\\sin\\alpha \\]\nこれは斜面内で一様な「見かけの重力」で，その加速度の大きさは $g'=\\sqrt2\\,g\\sin\\alpha$，向きは $x$ 軸から $-45^\\circ$ である（解答図）．したがって鉛直面内の円運動と同じ扱いができるが，「最高点」は $y$ 軸方向ではなく $\\vec F$ と逆向き，すなわち $\\theta=135^\\circ$ の点になる．\n\n\\textbf{(1)} $\\vec F$ は一定の力なので位置エネルギー $U=-\\vec F\\cdot\\vec r=mgr\\sin\\alpha(\\sin\\theta-\\cos\\theta)$ をもつ．$\\theta=0$ と $\\theta$ の間で力学的エネルギー保存則より\n\\[ \\frac12mv^2=\\frac12mv_0^2-mgr\\sin\\alpha(\\sin\\theta-\\cos\\theta+1) \\]\n半径方向の運動方程式は，$\\vec F$ の外向き（O から P 向き）成分 $F_r=mg\\sin\\alpha(\\cos\\theta-\\sin\\theta)$ を用いて\n\\[ m\\frac{v^2}{r}=T-F_r \\]\nよって\n\\[ T=\\frac{mv^2}{r}+F_r=\\boldsymbol{\\frac{mv_0^2}{r}+mg\\sin\\alpha\\,(3\\cos\\theta-3\\sin\\theta-2)} \\]\n\n\\textbf{(2)} $3\\cos\\theta-3\\sin\\theta=3\\sqrt2\\cos\\left(\\theta+\\dfrac\\pi4\\right)$ なので，$T$ は $\\theta+\\dfrac\\pi4=\\pi$，すなわち $\\boldsymbol{\\theta=\\dfrac34\\pi}$ で最小となり\n\\[ T_{\\min}=\\frac{mv_0^2}{r}-(2+3\\sqrt2)\\,mg\\sin\\alpha \\]\n円運動を続ける条件は $T_{\\min}\\ge0$ だから $\\boldsymbol{v_0\\ge\\sqrt{(2+3\\sqrt2)gr\\sin\\alpha}}$．\n（別解：見かけの最高点 $\\theta=135^\\circ$ で $m\\dfrac{v_1^2}{r}\\ge mg'$．$\\theta=0$ の点はそこから見かけの重力の向きに $r+\\dfrac{r}{\\sqrt2}$ だけ「低い」ので $v_0^2=v_1^2+2g'\\left(r+\\dfrac{r}{\\sqrt2}\\right)\\ge g'r(3+\\sqrt2)=(2+3\\sqrt2)gr\\sin\\alpha$ となり一致．）\n\n\\textbf{(3)} 糸を切る点 Q は $\\left(-\\dfrac{r}{\\sqrt2},\\,\\dfrac{r}{\\sqrt2}\\right)$ で，速さは $v_1=\\sqrt{g'r}$，速度の向きは円の接線方向で $-(1,1)/\\sqrt2$ の向き，すなわち直線 $y=x$ に平行である．糸を切った後は加速度 $\\vec g'$ の放物運動になる．$\\vec g'$ は直線 $y=x$ に垂直で，Q と直線 $y=x$ の距離は $r$ である．したがって，「見かけの水平投射」として\n\\[ \\text{$\\vec g'$ 方向：}\\ r=\\frac12g't^2\\quad\\therefore\\ t=\\sqrt{\\frac{2r}{g'}} \\]\n\\[ \\text{直線 $y=x$ に沿う方向：}\\ v_1t=\\sqrt{g'r}\\sqrt{\\frac{2r}{g'}}=\\sqrt2\\,r \\]\nQ を直線 $y=x$ に正射影した点は O なので，横切る点は O から $-(1,1)/\\sqrt2$ の向きに $\\sqrt2\\,r$ 進んだ点 $\\boldsymbol{(-r,\\,-r)}$．\n速さはエネルギー保存（見かけの重力の向きに $r$ 下がる）より\n\\[ v^2=v_1^2+2g'r=3g'r\\qquad\\therefore\\ v=\\boldsymbol{\\sqrt{3\\sqrt2\\,gr\\sin\\alpha}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "斜面内で一定の力（重力の斜面成分と一様電場の静電気力）の合力を「見かけの重力」とみなすと，斜面上の円運動は鉛直面内の円運動と同じ構造になる．ただし張力が最小になる「最高点」は見かけの重力と逆向きの点であり，糸を切った後の運動も見かけの重力に対する水平投射として扱える．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "projectile-motion",
+  "circular-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "見かけの重力",
+  "斜面上の円運動",
+  "一様電場",
+  "張力最小",
+  "放物運動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560" height="300">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker>
+<marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#888"/></marker>
+</defs>
+<line x1="20.00" y1="250.00" x2="540.00" y2="250.00" stroke="#222" stroke-width="1.6"/>
+<line x1="30.00" y1="250.00" x2="22.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="40.00" y1="250.00" x2="32.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="50.00" y1="250.00" x2="42.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="60.00" y1="250.00" x2="52.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="70.00" y1="250.00" x2="62.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="80.00" y1="250.00" x2="72.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="90.00" y1="250.00" x2="82.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="100.00" y1="250.00" x2="92.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="110.00" y1="250.00" x2="102.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="120.00" y1="250.00" x2="112.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="130.00" y1="250.00" x2="122.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="140.00" y1="250.00" x2="132.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="150.00" y1="250.00" x2="142.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="160.00" y1="250.00" x2="152.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="170.00" y1="250.00" x2="162.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="180.00" y1="250.00" x2="172.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="190.00" y1="250.00" x2="182.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="200.00" y1="250.00" x2="192.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="210.00" y1="250.00" x2="202.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="220.00" y1="250.00" x2="212.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="230.00" y1="250.00" x2="222.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="240.00" y1="250.00" x2="232.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="250.00" y1="250.00" x2="242.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="260.00" y1="250.00" x2="252.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="270.00" y1="250.00" x2="262.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="280.00" y1="250.00" x2="272.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="290.00" y1="250.00" x2="282.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="300.00" y1="250.00" x2="292.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="310.00" y1="250.00" x2="302.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="320.00" y1="250.00" x2="312.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="330.00" y1="250.00" x2="322.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="340.00" y1="250.00" x2="332.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="350.00" y1="250.00" x2="342.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="360.00" y1="250.00" x2="352.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="370.00" y1="250.00" x2="362.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="380.00" y1="250.00" x2="372.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="390.00" y1="250.00" x2="382.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="400.00" y1="250.00" x2="392.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="410.00" y1="250.00" x2="402.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="420.00" y1="250.00" x2="412.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="430.00" y1="250.00" x2="422.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="440.00" y1="250.00" x2="432.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="450.00" y1="250.00" x2="442.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="460.00" y1="250.00" x2="452.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="470.00" y1="250.00" x2="462.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="480.00" y1="250.00" x2="472.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="490.00" y1="250.00" x2="482.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="500.00" y1="250.00" x2="492.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="510.00" y1="250.00" x2="502.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="520.00" y1="250.00" x2="512.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="530.00" y1="250.00" x2="522.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<line x1="540.00" y1="250.00" x2="532.00" y2="258.00" stroke="#222" stroke-width="1"/>
+<path d="M85.3,250 Q115.3,250 145.4,216.6 L235.5,116.5 A80,80 0 0 1 354.5,116.5 L444.6,216.6 Q474.7,250 504.7,250" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="295.0" y="225.0" font-family="Noto Sans CJK JP, sans-serif" font-size="16" fill="#222" text-anchor="middle">B</text>
+<text x="317.0" y="225.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">M</text>
+<circle cx="295.00" cy="170.00" r="2.5" fill="#222"/>
+<line x1="295.00" y1="170.00" x2="295.00" y2="90.00" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<line x1="295.00" y1="170.00" x2="235.55" y2="116.47" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="267.0" y="122.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">R</text>
+<line x1="524.68" y1="250.00" x2="524.68" y2="90.00" stroke="#888" stroke-width="1" marker-end="url(#q-ag)" marker-start="url(#q-ag)"/>
+<line x1="299.00" y1="90.00" x2="532.68" y2="90.00" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="538.7" y="175.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">H</text>
+<circle cx="50.00" cy="241.00" r="9.00" stroke="#222" stroke-width="1.6" fill="#222"/>
+<text x="50.0" y="224.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle">P</text>
+<text x="68.0" y="224.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">m</text>
+<line x1="64.00" y1="241.00" x2="124.00" y2="241.00" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="110" y="228" font-size="15" fill="#1f5fbf"><tspan font-family="Times New Roman, serif" font-style="italic">v</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="295.0" y="74.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">頂上 T</text>
+</svg>

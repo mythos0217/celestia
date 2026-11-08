@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 290">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker>
+<marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#888"/></marker>
+</defs>
+<line x1="20.0" y1="240.0" x2="460.0" y2="240.0" stroke="#222" stroke-width="1.6"/>
+<line x1="20.0" y1="240.0" x2="14.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="30.0" y1="240.0" x2="24.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="40.0" y1="240.0" x2="34.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="50.0" y1="240.0" x2="44.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="60.0" y1="240.0" x2="54.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="70.0" y1="240.0" x2="64.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="80.0" y1="240.0" x2="74.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="240.0" x2="84.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="100.0" y1="240.0" x2="94.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="110.0" y1="240.0" x2="104.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="120.0" y1="240.0" x2="114.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="130.0" y1="240.0" x2="124.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="140.0" y1="240.0" x2="134.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="150.0" y1="240.0" x2="144.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="160.0" y1="240.0" x2="154.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="170.0" y1="240.0" x2="164.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="180.0" y1="240.0" x2="174.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="190.0" y1="240.0" x2="184.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="200.0" y1="240.0" x2="194.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="210.0" y1="240.0" x2="204.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="220.0" y1="240.0" x2="214.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="230.0" y1="240.0" x2="224.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="240.0" y1="240.0" x2="234.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="250.0" y1="240.0" x2="244.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="260.0" y1="240.0" x2="254.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="270.0" y1="240.0" x2="264.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="280.0" y1="240.0" x2="274.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="290.0" y1="240.0" x2="284.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="300.0" y1="240.0" x2="294.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="310.0" y1="240.0" x2="304.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="320.0" y1="240.0" x2="314.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="330.0" y1="240.0" x2="324.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="340.0" y1="240.0" x2="334.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="350.0" y1="240.0" x2="344.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="360.0" y1="240.0" x2="354.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="370.0" y1="240.0" x2="364.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="380.0" y1="240.0" x2="374.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="390.0" y1="240.0" x2="384.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="400.0" y1="240.0" x2="394.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="410.0" y1="240.0" x2="404.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="420.0" y1="240.0" x2="414.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="430.0" y1="240.0" x2="424.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="440.0" y1="240.0" x2="434.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<line x1="450.0" y1="240.0" x2="444.4" y2="248.0" stroke="#222" stroke-width="1"/>
+<polygon points="120.0,240.0 330.0,240.0 330.0,30.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="270.0" y="210.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">2m</text>
+<path d="M156.0,240.0 A36,36 0 0 0 145.5,214.5" fill="none" stroke="#222" stroke-width="1"/>
+<text x="162.0" y="230.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">45°</text>
+<polygon points="136.3,223.7 146.2,213.8 136.3,203.9 126.4,213.8" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="122.3" y="207.8" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="end">m</text>
+<line x1="136.3" y1="194.0" x2="182.9" y2="147.4" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="157.5" y="150.2" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">v</text>
+<text x="207.7" y="115.5" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="end">μ，μ′</text>
+<text x="240.0" y="278.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">なめらかな床</text>
+</svg>

@@ -1,0 +1,123 @@
+{
+ "id": "PHY-OSC-016",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "斜管U字管の液柱振動と空気ばねによる大気圧の測定",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "一様な断面積 $S$ の細い管を図1のように曲げ，左側は鉛直，右側は水平と角 $\\theta$ をなす直線の斜管にした U 字管をつくる．この管に密度 $\\rho$ の液体を，管に沿った長さが $L$ になるように入れた．液体と管の摩擦，表面張力，液体の蒸発は無視でき，重力加速度の大きさを $g$，大気圧を $P$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "両端を開いた状態（図1）で，液体が管に沿って $s$ だけずれ，左管の液面がつり合いの位置から $s$ だけ上がったとき，液体全体を管に沿って押し戻す力の大きさを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "両端を開いた状態での微小振動の周期 $\\tau_0$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次に，液体がつり合いの位置で静止しているときに左管の上端を閉じた（図2）．閉じこめられた空気柱の長さは $l$ で，空気は理想気体とみなせ，温度は一定に保たれる．このときの微小振動の周期 $\\tau_1$ を求めよ．ただし，微小量の2次以上は無視する．"
+     },
+     {
+      "id": "4",
+      "tex": "この装置で $\\tau_0$ と $\\tau_1$ を測ると $\\dfrac{\\tau_0}{\\tau_1}=r$ であった．大気圧 $P$ を $r,\\ \\rho,\\ g,\\ l,\\ \\theta$ で表せ．また，$\\rho=1.0\\times10^3\\ \\mathrm{kg/m^3}$，$g=9.8\\ \\mathrm{m/s^2}$，$\\theta=30^\\circ$，$l=0.20\\ \\mathrm{m}$，$r=5.9$ のとき，$P$ を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：斜管U字管の液柱振動と空気ばねによる大気圧の測定",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\rho Sg(1+\\sin\\theta)s$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\tau_0=2\\pi\\sqrt{\\dfrac{L}{g(1+\\sin\\theta)}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\tau_1=2\\pi\\sqrt{\\dfrac{\\rho Ll}{\\rho gl(1+\\sin\\theta)+P}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$P=(r^2-1)\\rho gl(1+\\sin\\theta)$，$P\\approx9.9\\times10^4\\ \\mathrm{Pa}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 管の断面積が一様なので，液体は管に沿って一体となって同じ速さで動く．管に沿った方向の重力成分を液体全体で足し合わせると，「液柱の両端の高さの差 $\\times\\rho gS$」になる（各微小部分の $\\rho S\\,\\Delta s\\,g\\sin\\varphi$ の和で，$\\sum\\Delta s\\sin\\varphi$ が高さの差）．大気圧による力は両端で $PS$ ずつ打ち消し合う．左液面は $s$ 上がり，右液面は斜管に沿って $s$ 下がるので高さは $s\\sin\\theta$ 下がる．高さの差は $s(1+\\sin\\theta)$ で\n\\[ \\boldsymbol{F=\\rho Sg(1+\\sin\\theta)s} \\]\n\\textbf{別解（エネルギー）} 右端の長さ $s$ の液体を左端に移したのと同じで，その重心は $\\dfrac s2+\\dfrac{s\\sin\\theta}{2}$ 上がる．位置エネルギーの増加 $\\rho Ssg\\cdot\\dfrac{(1+\\sin\\theta)s}{2}=\\dfrac12\\rho Sg(1+\\sin\\theta)s^2$ から，ばね定数 $k_0=\\rho Sg(1+\\sin\\theta)$ を得る．\n\n\\textbf{(2)} 液体全体の質量は $\\rho SL$．復元力は $s$ に比例するので単振動で\n\\[ \\boldsymbol{\\tau_0=2\\pi\\sqrt{\\frac{\\rho SL}{\\rho Sg(1+\\sin\\theta)}}=2\\pi\\sqrt{\\frac{L}{g(1+\\sin\\theta)}}} \\]\n$\\theta=90^\\circ$ で通常の U 字管の $2\\pi\\sqrt{L/2g}$ に一致する．\n\n\\textbf{(3)} 左液面が $s$ 上がると空気柱は $l-s$ に縮む．温度一定なのでボイルの法則より $PlS=(P+\\Delta P)(l-s)S$．2次の微小量 $\\Delta P\\cdot s$ を無視して $\\Delta P=\\dfrac{P}{l}s$．閉じた空気は液体を押し戻す力 $\\Delta P\\cdot S=\\dfrac{PS}{l}s$ を加える（液面が下がれば圧力が下がって引き戻す）．重力による復元力と並列のばねになり，$k_1=\\rho Sg(1+\\sin\\theta)+\\dfrac{PS}{l}$．\n\\[ \\boldsymbol{\\tau_1=2\\pi\\sqrt{\\frac{\\rho SL}{k_1}}=2\\pi\\sqrt{\\frac{\\rho Ll}{\\rho gl(1+\\sin\\theta)+P}}} \\]\n\n\\textbf{(4)} $\\left(\\dfrac{\\tau_0}{\\tau_1}\\right)^2=\\dfrac{k_1}{k_0}=1+\\dfrac{P}{\\rho gl(1+\\sin\\theta)}=r^2$ より\n\\[ \\boldsymbol{P=(r^2-1)\\rho gl(1+\\sin\\theta)} \\]\n$L$ と $S$ は消えるので，液体の量を正確に知らなくても測定できる．数値を代入して $P=(5.9^2-1)\\times1.0\\times10^3\\times9.8\\times0.20\\times1.5\\approx\\boldsymbol{9.9\\times10^4\\ \\mathrm{Pa}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "U字管の液柱の復元力は「両液面の高さの差」で決まり，斜管側では管に沿った変位の $\\sin\\theta$ 倍だけ高さが変わる．閉じた空気柱は等温変化のばね（ばね定数 $PS/l$）として並列に加わり，周期の比から大気圧を逆算できる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "first-law",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "U字管",
+  "液柱の振動",
+  "単振動",
+  "ボイルの法則",
+  "気体ばね",
+  "逆算"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

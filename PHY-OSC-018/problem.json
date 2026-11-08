@@ -1,0 +1,144 @@
+{
+ "id": "PHY-OSC-018",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "一定の角速度で回る輪に通したビーズの底からのずれ出し（回転系のエネルギー保存とモーターの仕事）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，半径 $R$ の細い円形の輪が，鉛直な直径を回転軸として，モーターにより一定の角速度 $\\omega$ で回されている．輪には質量 $m$ の小球が通されていて，輪に沿ってなめらかに動くことができる．輪の中心を O とし，輪の最下点から測った小球の位置を，O から見た角 $\\theta\\ (0\\leqq\\theta\\leqq\\pi)$ で表す．重力加速度の大きさを $g$ とし，小球の大きさは無視する．モーターは小球の運動にかかわらず $\\omega$ を一定に保つ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "輪とともに回転する立場で考える．小球が輪に対して最下点以外の位置 $\\theta_0\\ (0<\\theta_0<\\pi)$ で静止できるための $\\omega$ の条件を求め，$\\cos\\theta_0$ を $g,\\ R,\\ \\omega$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の条件が満たされているとする．はじめ最下点で輪に対して静止していた小球を，輪に沿ってごくわずかにずらしたところ，小球は輪に沿って上がっていった．輪とともに回転する立場で成り立つエネルギーの関係を，理由を示して書き，小球が達する最大の角 $\\theta_{\\mathrm m}$ について，$\\cos\\theta_{\\mathrm m}$ を $\\cos\\theta_0$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の運動で，輪に対する小球の速さの最大値を $R,\\ \\omega,\\ \\theta_0$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の運動で，小球が最下点を出てから初めて $\\theta_{\\mathrm m}$ に達するまでに，モーターが輪を通してした仕事 $W$ を $m,\\ g,\\ R,\\ \\theta_0$ で表せ．また，この間に小球の回転軸のまわりの角運動量が $\\Delta L$ だけ増えたとすると，$W=\\omega\\,\\Delta L$ が成り立つことを示せ．"
+     },
+     {
+      "id": "5",
+      "tex": "小球が $\\theta_0$ のまわりで輪に沿って微小振動するときの周期を，$\\omega,\\ \\theta_0$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一定の角速度で回る輪に通したビーズの底からのずれ出し（回転系のエネルギー保存とモーターの仕事）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一定の角速度で回る輪に通したビーズの底からのずれ出し（回転系のエネルギー保存とモーターの仕事）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\omega>\\sqrt{\\dfrac gR}$，$\\cos\\theta_0=\\dfrac{g}{R\\omega^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\cos\\theta_{\\mathrm m}=2\\cos\\theta_0-1$"
+   },
+   {
+    "id": "3",
+    "tex": "$R\\omega(1-\\cos\\theta_0)$"
+   },
+   {
+    "id": "4",
+    "tex": "$W=4mgR(1-\\cos\\theta_0)$（$W=\\omega\\Delta L$ は解説参照）"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{2\\pi}{\\omega\\sin\\theta_0}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "小球の回転軸からの距離は $x=R\\sin\\theta$，O を基準とした高さは $y=-R\\cos\\theta$ である．$\\theta$ が増す向きの輪の接線方向の単位ベクトルは（軸から外向き，上向き）$=(\\cos\\theta,\\ \\sin\\theta)$．\n\n\\textbf{(1) 回転系でのつり合い}\n輪とともに回転する立場では，小球に重力 $mg$，輪からの垂直抗力，遠心力 $mx\\omega^2=mR\\omega^2\\sin\\theta$（軸から遠ざかる水平の向き），および動いているときはコリオリの力がはたらく．静止していればコリオリの力は $0$ で，垂直抗力は接線方向の成分をもたないので，接線方向のつり合いは\n\\[ -mg\\sin\\theta+mR\\omega^2\\sin\\theta\\cos\\theta=m\\sin\\theta\\,(R\\omega^2\\cos\\theta-g)=0 . \\]\n$\\sin\\theta_0\\neq0$ のつり合いは $\\cos\\theta_0=\\dfrac{g}{R\\omega^2}$ で，これが $1$ 未満となるのは $\\boldsymbol{\\omega>\\sqrt{g/R}}$ のとき．$\\boldsymbol{\\cos\\theta_0=\\dfrac{g}{R\\omega^2}}$．\n\n\\textbf{(2) 回転系のエネルギー保存}\n回転する立場では，垂直抗力は輪に垂直で，コリオリの力は相対速度に垂直なので，どちらも輪に沿った運動に対して仕事をしない（輪は一定の角速度で回るので，この立場での輪は静止した束縛と同じ）．仕事をするのは重力と遠心力で，ともに位置だけで決まる力なので，位置エネルギー\n\\[ U(\\theta)=-mgR\\cos\\theta-\\frac12mR^2\\omega^2\\sin^2\\theta \\]\n（第2項は遠心力 $mx\\omega^2$ の位置エネルギー $-\\frac12m\\omega^2x^2$）を用いて，輪に対する速さを $v$ として\n\\[ \\frac12mv^2+U(\\theta)=\\text{一定} \\]\nが成り立つ．最下点で $v=0$ だから，$\\theta_{\\mathrm m}$ では $U(\\theta_{\\mathrm m})=U(0)=-mgR$．$c=\\cos\\theta_{\\mathrm m}$ とおくと\n\\[ mgR(1-c)=\\frac12mR^2\\omega^2(1-c)(1+c) . \\]\n$c\\neq1$ より $1+c=\\dfrac{2g}{R\\omega^2}=2\\cos\\theta_0$，すなわち $\\boldsymbol{\\cos\\theta_{\\mathrm m}=2\\cos\\theta_0-1}$．\n\n\\textbf{(3) 相対速さの最大}\n$\\frac12mv^2=U(0)-U(\\theta)$ は $U$ が最小となる $\\theta_0$（$dU/d\\theta=0$ はつり合いの条件と同じ）で最大．$g=R\\omega^2\\cos\\theta_0$ を用いて，$c_0=\\cos\\theta_0$ とすると\n\\[ U(0)-U(\\theta_0)=mR^2\\omega^2\\left\\{-c_0+c_0^{\\,2}+\\frac12(1-c_0^{\\,2})\\right\\}=\\frac12mR^2\\omega^2(1-c_0)^2 \\]\n\\[ \\therefore\\ v_{\\max}=\\boldsymbol{R\\omega(1-\\cos\\theta_0)}. \\]\n\n\\textbf{(4) モーターの仕事}\n静止した立場（慣性系）では，輪は一定の角速度で回るので輪自身の運動エネルギーは変わらず，摩擦もないから，モーターの仕事 $W$ はすべて小球の力学的エネルギーの増加になる．$\\theta_{\\mathrm m}$ では輪に対する速度が $0$ なので，小球の速度は輪とともに回る速さ $R\\omega\\sin\\theta_{\\mathrm m}$ だけである．\n\\[ W=\\frac12m(R\\omega\\sin\\theta_{\\mathrm m})^2+mgR(1-\\cos\\theta_{\\mathrm m}). \\]\n(2) の式 $mgR(1-c)=\\frac12mR^2\\omega^2\\sin^2\\theta_{\\mathrm m}$ より，2つの項は等しく\n\\[ W=mR^2\\omega^2\\sin^2\\theta_{\\mathrm m}. \\]\n$\\sin^2\\theta_{\\mathrm m}=1-(2c_0-1)^2=4c_0(1-c_0)$，$R\\omega^2c_0=g$ より\n\\[ \\boldsymbol{W=4mgR(1-\\cos\\theta_0)}. \\]\n小球の回転軸のまわりの角運動量は $L=m(R\\sin\\theta)^2\\omega$ で，最下点で $0$ だから $\\Delta L=mR^2\\omega\\sin^2\\theta_{\\mathrm m}$．よって $W=\\omega\\,\\Delta L$．\nこれは一般に成り立つ：モーターが輪に与える回転軸まわりの力のモーメントを $\\Gamma$ とすると，仕事率は $\\Gamma\\omega$．輪の角運動量は一定なので $\\Gamma$ はすべて小球の角運動量の変化に使われ，$\\Gamma=\\dfrac{dL}{dt}$．$\\omega$ が一定だから $W=\\int\\Gamma\\omega\\,dt=\\omega\\Delta L$．回転する立場ではこの仕事が見えず，代わりに遠心力の位置エネルギーが現れる，というのが (2) のエネルギー保存の意味である．\n\n\\textbf{(5) 微小振動}\n回転する立場での接線方向の運動方程式は\n\\[ mR\\ddot\\theta=m\\sin\\theta\\,(R\\omega^2\\cos\\theta-g). \\]\n$\\theta=\\theta_0+\\varphi$（$\\varphi$ は微小）とおくと，$R\\omega^2\\cos\\theta-g\\approx R\\omega^2(\\cos\\theta_0-\\varphi\\sin\\theta_0)-g=-R\\omega^2\\sin\\theta_0\\,\\varphi$ なので\n\\[ R\\ddot\\varphi=-R\\omega^2\\sin^2\\theta_0\\,\\varphi . \\]\n角振動数は $\\omega\\sin\\theta_0$ で，周期は $\\boldsymbol{\\dfrac{2\\pi}{\\omega\\sin\\theta_0}}$．$\\omega\\to\\sqrt{g/R}$（$\\theta_0\\to0$）で周期は限りなく長くなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一定角速度で回る輪の上では，垂直抗力とコリオリの力が仕事をしないので，遠心力の位置エネルギー $-\\frac12m\\omega^2x^2$ を加えたエネルギー保存が成り立ち，つり合いの安定性・折り返し点・最大相対速さがこれで決まる．慣性系ではこの間にモーターが仕事 $W=\\omega\\Delta L$ をし，その半分が回転の運動エネルギー，半分が重力の位置エネルギーになる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "circular-motion",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "回転座標系",
+  "遠心力の位置エネルギー",
+  "コリオリの力",
+  "つり合いの安定性",
+  "角運動量",
+  "微小振動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

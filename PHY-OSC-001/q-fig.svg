@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" width="420" height="320">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker>
+<marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#888"/></marker>
+</defs>
+<path d="M40,290 L320,290 L390,220 L110,220 Z" stroke="#222" stroke-width="1.6" fill="none"/>
+<circle cx="215.00" cy="40.00" r="3.5" fill="#222"/>
+<text x="201.0" y="60.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle">O</text>
+<line x1="175.00" y1="36.00" x2="255.00" y2="36.00" stroke="#222" stroke-width="1.6"/>
+<line x1="184.00" y1="36.00" x2="177.00" y2="29.00" stroke="#222" stroke-width="1"/>
+<line x1="193.00" y1="36.00" x2="186.00" y2="29.00" stroke="#222" stroke-width="1"/>
+<line x1="202.00" y1="36.00" x2="195.00" y2="29.00" stroke="#222" stroke-width="1"/>
+<line x1="211.00" y1="36.00" x2="204.00" y2="29.00" stroke="#222" stroke-width="1"/>
+<line x1="220.00" y1="36.00" x2="213.00" y2="29.00" stroke="#222" stroke-width="1"/>
+<line x1="229.00" y1="36.00" x2="222.00" y2="29.00" stroke="#222" stroke-width="1"/>
+<line x1="238.00" y1="36.00" x2="231.00" y2="29.00" stroke="#222" stroke-width="1"/>
+<line x1="247.00" y1="36.00" x2="240.00" y2="29.00" stroke="#222" stroke-width="1"/>
+<line x1="215.00" y1="36.00" x2="215.00" y2="40.00" stroke="#222" stroke-width="1.6"/>
+<line x1="215.00" y1="40.00" x2="215.00" y2="255.00" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<ellipse cx="215" cy="255" rx="120" ry="26" stroke="#888" stroke-width="1" fill="none" stroke-dasharray="4 4"/>
+<line x1="215.00" y1="40.00" x2="323.76" y2="265.99" stroke="#222" stroke-width="1.6"/>
+<circle cx="323.76" cy="265.99" r="6.00" stroke="#222" stroke-width="1.6" fill="#222"/>
+<text x="339.8" y="270.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">m</text>
+<line x1="215.00" y1="255.00" x2="323.76" y2="265.99" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<line x1="145.00" y1="40.00" x2="145.00" y2="255.00" stroke="#888" stroke-width="1" marker-end="url(#q-ag)" marker-start="url(#q-ag)"/>
+<line x1="137.00" y1="255.00" x2="211.00" y2="255.00" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<line x1="137.00" y1="40.00" x2="211.00" y2="40.00" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="131.0" y="152.5" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">H</text>
+<text x="291.4" y="153.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">k</text>
+<text x="299.378467222199" y="174.9940374026291" font-size="14" fill="#222"><tspan font-family="Noto Sans CJK JP, sans-serif">（自然長 </tspan><tspan font-family="Times New Roman, serif" font-style="italic">l</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif">0</tspan><tspan font-family="Noto Sans CJK JP, sans-serif">）</tspan></text>
+<path d="M111.1,268.0 L113.2,268.8 L115.5,269.5 L117.9,270.3 L120.4,271.0 L123.1,271.7 L125.8,272.4 L128.7,273.1 L131.6,273.7 L134.7,274.3 L137.9,274.9 L141.1,275.5 L144.5,276.0 L147.9,276.6 L151.4,277.0 L155.0,277.5 L158.7,278.0 L162.4,278.4 L166.2,278.8 L170.0,279.1 L174.0,279.4 L177.9,279.7 L181.9,280.0 L186.0,280.2 L190.1,280.4" stroke="#1f5fbf" stroke-width="1.8" fill="none" marker-end="url(#q-ab)"/>
+<text x="105.1" y="292.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf" text-anchor="middle">ω</text>
+<text x="355.0" y="280.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">床</text>
+</svg>

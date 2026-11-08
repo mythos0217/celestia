@@ -1,0 +1,134 @@
+{
+ "id": "PHY-NEW-001",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "台の角から垂れ下がる重い綱と物体（綱の張力分布と最大張力の場合分け）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，滑らかな水平な台の上に質量 $M$ の物体を置き，これに質量 $m$，長さ $l$ の一様で伸び縮みしない綱の一端をつなぐ．綱は台上で水平に張られ，台の滑らかな角 E を通って鉛直に垂れ下がっている．角 E の大きさ，物体の大きさは無視でき，綱は角 E で滑らかに曲がるものとする．垂れ下がった部分の長さが $\\dfrac l4$ の状態で全体を静かに放した．垂れ下がった部分の長さが $x$ のときを考える（$\\dfrac l4\\leqq x\\leqq l$，物体はまだ台上にある）．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "物体の加速度の大きさ $a$ を $x$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "台上の綱の，物体から綱に沿って距離 $s$ の点での張力 $T_1(s)$ と，垂れ下がった綱の，E から距離 $y$ だけ下の点での張力 $T_2(y)$ を求めよ．また，綱の張力が最大となるのは綱のどの点か．"
+     },
+     {
+      "id": "3",
+      "tex": "角 E の位置での綱の張力を $T_E$ とする．物体が E に達するまでの間の $T_E$ の最大値を，$M\\geqq m$ の場合と $M<m$ の場合に分けて求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "物体が E に達する直前の物体の速さを求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：台の角から垂れ下がる重い綱と物体（綱の張力分布と最大張力の場合分け）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：台の角から垂れ下がる重い綱と物体（綱の張力分布と最大張力の場合分け）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$a=\\dfrac{mgx}{(M+m)l}$"
+   },
+   {
+    "id": "2",
+    "tex": "$T_1(s)=\\left(M+\\dfrac{ms}{l}\\right)\\dfrac{mgx}{(M+m)l}$，$T_2(y)=\\dfrac{m(x-y)}{l}\\cdot\\dfrac{(M+m)l-mx}{(M+m)l}g$．張力最大は角 E の点"
+   },
+   {
+    "id": "3",
+    "tex": "$M\\geqq m$ のとき $\\dfrac{Mm}{M+m}g$（物体が E に達する直前），$M<m$ のとき $\\dfrac{M+m}{4}g$（$x=\\dfrac{(M+m)l}{2m}$ のとき）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\sqrt{\\dfrac{15mgl}{16(M+m)}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "綱の単位長さあたりの質量は $\\lambda=\\dfrac ml$ である．綱は伸び縮みしないので，物体と綱のすべての部分は同じ大きさの加速度 $a$ で動く（台上では水平に，垂れた部分では鉛直下向きに）．\n\n\\textbf{(1)}\n物体と綱全体を，綱に沿った 1 本の運動とみなす．運動方向の外力は，垂れた部分の重力 $\\lambda xg$ だけである（台上の部分の重力と垂直抗力はつり合い，角 E からの力は綱の向きを変えるだけで，綱に沿った成分をもたない）．\n\\[ (M+m)a=\\lambda xg\\quad\\therefore\\ a=\\boldsymbol{\\frac{mgx}{(M+m)l}}. \\]\n$x$ とともに $a$ が変わるので，等加速度運動ではない．\n\n\\textbf{(2)}\n\\textbf{台上}：物体と，物体から長さ $s$ までの綱をひとまとめにすると，水平方向にはたらく力はその先の綱が引く張力 $T_1(s)$ だけなので\n\\[ T_1(s)=\\left(M+\\lambda s\\right)a=\\boldsymbol{\\left(M+\\frac{ms}{l}\\right)\\frac{mgx}{(M+m)l}}. \\]\n\\textbf{垂れた部分}：E から $y$ より下の綱（質量 $\\lambda(x-y)$）に注目すると，下向きを正として $\\lambda(x-y)a=\\lambda(x-y)g-T_2(y)$ より\n\\[ T_2(y)=\\lambda(x-y)(g-a)=\\boldsymbol{\\frac{m(x-y)}{l}\\cdot\\frac{(M+m)l-mx}{(M+m)l}g}. \\]\n$T_1$ は $s$ とともに増え，$T_2$ は $y$ とともに減る（$a<g$ より $g-a>0$）．E では $s=l-x$，$y=0$ で両者は一致する（(1) の式を使うと確かめられる）．よって張力は\\textbf{角 E の点で最大}である．質量のある綱では張力は場所によって異なり，「綱のどこでも張力が等しい」のは質量が無視できるときだけである．\n\n\\textbf{(3)}\n\\[ T_E=T_2(0)=\\frac{mg}{(M+m)l^2}\\,x\\,\\{(M+m)l-mx\\}. \\]\nこれは $x$ の 2 次関数で，頂点は $x^*=\\dfrac{(M+m)l}{2m}$．$x^*>\\dfrac l4$ は常に成り立つ．\n\\textbf{(i)} $M\\geqq m$ のとき $x^*\\geqq l$ なので，$\\frac l4\\leqq x\\leqq l$ で $T_E$ は単調に増加し，最大は $x=l$ で $T_E=\\boldsymbol{\\dfrac{Mm}{M+m}g}$．\n\\textbf{(ii)} $M<m$ のとき $\\frac l4<x^*<l$ なので，最大は $x=x^*$ で\n\\[ T_E=\\frac{mg}{(M+m)l^2}\\cdot\\frac{(M+m)l}{2m}\\cdot\\frac{(M+m)l}{2}=\\boldsymbol{\\frac{M+m}{4}g}. \\]\n垂れた部分が増えると加速度は増すが，E より下の綱が「自由落下に近づく」ため，E の張力はやがて減少に転じる．どちらの効果が勝つかが質量比で決まる．\n\n\\textbf{(4)}\n台も角も滑らかで綱は伸びないので，力学的エネルギーが保存する．垂れた部分（長さ $x$）の重心は E から $\\frac x2$ 下にあるので，その位置エネルギーは E の高さを基準に $-\\lambda x g\\cdot\\frac x2=-\\dfrac{mgx^2}{2l}$．$x=\\frac l4$ から $x=l$ まで変化する間に\n\\[ \\frac12(M+m)v^2=\\frac{mg}{2l}\\left(l^2-\\frac{l^2}{16}\\right)\\quad\\therefore\\ v=\\boldsymbol{\\sqrt{\\frac{15mgl}{16(M+m)}}}. \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "質量のある綱では，綱の一部分を取り出して運動方程式を立てると張力が位置によって変わることがわかる．垂れ下がる長さとともに加速度も変わるため，角での張力は加速度の増加と垂れた部分の質量の効果の兼ね合いで決まり，最大値の位置が質量比で場合分けされる．"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動方程式",
+  "質量のある綱",
+  "張力分布",
+  "場合分け",
+  "力学的エネルギー保存"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

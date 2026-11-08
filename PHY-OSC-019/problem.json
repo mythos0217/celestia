@@ -1,0 +1,143 @@
+{
+ "id": "PHY-OSC-019",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "ばね上の板から跳び上がった物体の再着地と完全非弾性衝突後の再分離",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，鉛直に立てたばね定数 $k$ の軽いばねの下端を床に固定し，上端に質量 $M$ の板 A を取り付ける．A の上に質量 $m$ の小物体 B をのせる（B は A に固定されていない）．ばねが自然の長さのときの A の上面の位置を原点として，鉛直上向きに $y$ 軸をとる．A を押し下げて上面を $y=-D$ の位置で静止させ，静かにはなす．重力加速度の大きさを $g$ とし，A は鉛直方向にだけ動き，空気抵抗は無視する．ばねは十分に長く，A が床に達することはない．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "B が A から離れるための $D$ の条件を求めよ．また，B が離れる位置を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "B が A から離れる瞬間の速さ $u$ を $M,\\ m,\\ k,\\ g,\\ D$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "B が離れた後，A は B より先に $y=0$ に戻ってくることを示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "B が離れた後，A が初めて上向きに $y=0$ を通過する瞬間に，ちょうど B が落ちてきて A と衝突した．このときの $u$ と $D$ を $M,\\ m,\\ k,\\ g$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) の衝突が完全非弾性衝突であったとする（$M\\neq m$）．衝突後に B が到達する最高点の $y$ 座標を $M,\\ m,\\ k,\\ g$ で表せ．また，この衝突で失われた力学的エネルギーを求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ばね上の板から跳び上がった物体の再着地と完全非弾性衝突後の再分離",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：ばね上の板から跳び上がった物体の再着地と完全非弾性衝突後の再分離",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$D>\\dfrac{2(M+m)g}{k}$，$y=0$（ばねが自然の長さの位置）"
+   },
+   {
+    "id": "2",
+    "tex": "$u=\\sqrt{\\dfrac{kD^2}{M+m}-2gD}$"
+   },
+   {
+    "id": "3",
+    "tex": "略（解説参照）"
+   },
+   {
+    "id": "4",
+    "tex": "$u=\\pi g\\sqrt{\\dfrac{M}{k}}$，$D=\\dfrac{(M+m)g}{k}\\left(1+\\sqrt{1+\\dfrac{\\pi^2M}{M+m}}\\right)$"
+   },
+   {
+    "id": "5",
+    "tex": "$y=\\dfrac{\\pi^2Mg}{2k}\\left(\\dfrac{M-m}{M+m}\\right)^2$，失われたエネルギー $\\dfrac{2\\pi^2M^2mg^2}{k(M+m)}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 離れる位置と条件}\n\nA と B が一体で動いているとき，加速度を $\\alpha$ とすると全体について\n\\[ (M+m)\\alpha=-ky-(M+m)g \\]\nB が A から受ける垂直抗力を $N$ とすると，B について $m\\alpha=N-mg$．よって\n\\[ N=m(g+\\alpha)=-\\frac{mk}{M+m}\\,y \\]\n$N\\geqq0$ は $y\\leqq0$ と同じである．したがって B が離れるのは \\textbf{$y=0$（ばねが自然の長さの位置）} を上向きに通過するときで，その位置は質量によらない．（$y=0$ で B の加速度は $-g$，ばねの力がないので A の加速度も $-g$ であり，$y>0$ では A だけがばねに引き下げられる．）\n\n一体の運動はつり合いの位置 $y=-d_0$，$d_0=\\dfrac{(M+m)g}{k}$ を中心とする単振動で，$y=-D$ から静かにはなすので振幅は $D-d_0$．$y=0$ を速さをもって通過するには $D-d_0>d_0$：\n\\[ \\boldsymbol{D>\\frac{2(M+m)g}{k}} \\]\n\n\\textbf{(2)}\n\n$y=-D$ から $y=0$ まで，力学的エネルギー保存より\n\\[ \\frac12kD^2=\\frac12(M+m)u^2+(M+m)gD\\quad\\Longrightarrow\\quad u=\\boldsymbol{\\sqrt{\\frac{kD^2}{M+m}-2gD}} \\]\n\n\\textbf{(3) A が先に戻ること}\n\n離れた後，B の加速度は常に $-g$．A の加速度は $-g-\\dfrac{k}{M}y_{\\mathrm A}$ で，A が $y>0$ にいる間は $-g$ より小さい（下向きに大きい）．離れた瞬間は位置も速度も同じなので，A が $y>0$ にいる間はつねに $v_{\\mathrm A}<v_{\\mathrm B}$，したがって $y_{\\mathrm A}<y_{\\mathrm B}$ である．A が $y=0$ に戻った瞬間にも $y_{\\mathrm B}>0$ だから，A が先に戻る．\n\n（式で確かめると：$\\omega=\\sqrt{k/M}$，A のつり合いの位置 $-\\dfrac{Mg}{k}$ に対して，A が戻るまでの時間は $t_{\\mathrm A}=\\dfrac{2}{\\omega}\\tan^{-1}\\dfrac{\\omega u}{g}$，B は $t_{\\mathrm B}=\\dfrac{2u}{g}$．$z>0$ で $\\tan^{-1}z<z$ なので $t_{\\mathrm A}<t_{\\mathrm B}$．A のつり合いのずれ $Mg/k$ と $\\omega^2$ の積がちょうど $g$ になるので，質量によらず成り立つ．）\n\n\\textbf{(4)}\n\nA は $y=0$ を下向きに通過した後 $y<0$ にあり，B は $y>0$ にいるので，この間は衝突しない．A は単振動の周期 $T_{\\mathrm A}=2\\pi\\sqrt{\\dfrac{M}{k}}$ ごとに同じ状態に戻るので，A が初めて上向きに $y=0$ を通過するのは離れてから $T_{\\mathrm A}$ 後である．B が $y=0$ に戻る時間 $\\dfrac{2u}{g}$ がこれに等しいから\n\\[ u=\\frac{gT_{\\mathrm A}}{2}=\\boldsymbol{\\pi g\\sqrt{\\frac{M}{k}}} \\]\n(2) の式に代入して\n\\[ \\frac{kD^2}{M+m}-2gD-\\frac{\\pi^2g^2M}{k}=0\\quad\\Longrightarrow\\quad D=\\boldsymbol{\\frac{(M+m)g}{k}\\left(1+\\sqrt{1+\\frac{\\pi^2M}{M+m}}\\right)} \\]\n（正の解．これは (1) の条件を満たす．）\n\n\\textbf{(5) 衝突後}\n\n衝突直前，A は上向きに $u$，B は下向きに $u$ で，ともに $y=0$ にある（A は単振動で同じ状態に戻っているので速さは $u$）．一瞬の衝突では重力・ばねの力の力積は無視でき，運動量が保存するので，衝突直後の共通の速度 $V$ は\n\\[ V=\\frac{Mu-mu}{M+m}=\\frac{M-m}{M+m}u \\]\n衝突の位置は $y=0$ であり，(1) で見たように一体の物体は $y=0$ を上向きに通過するときに離れる．\n\n・$M>m$ なら $V>0$ で，衝突直後に一体のまま $y>0$ に入ることはできず（$N<0$ が必要になる），\\textbf{B はただちに A から離れて}速さ $V$ で上昇する．\n\n・$M<m$ なら一体のまま下向きに動いて単振動し，力学的エネルギー保存により再び $y=0$ を上向きに速さ $|V|$ で通過して，そこで B が離れる．\n\nどちらの場合も B は $y=0$ から速さ $|V|$ で投げ上げられるので，最高点は\n\\[ y=\\frac{V^2}{2g}=\\boldsymbol{\\frac{\\pi^2Mg}{2k}\\left(\\frac{M-m}{M+m}\\right)^2} \\]\n失われた力学的エネルギーは衝突前後の運動エネルギーの差（換算質量 $\\dfrac{Mm}{M+m}$ と相対速度 $2u$ による）：\n\\[ \\frac12\\cdot\\frac{Mm}{M+m}(2u)^2=\\frac{2Mm}{M+m}u^2=\\boldsymbol{\\frac{2\\pi^2M^2mg^2}{k(M+m)}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ばねにつながる板にのった物体は，垂直抗力が $0$ になる「ばねの自然長」で質量によらず離れる．離れた後，板は自然長より上で重力以上の下向きの力を受けるので必ず物体より先に戻り，再会は板の単振動の周期と物体の滞空時間の比較で決まる．自然長の位置で一体になっても，上向きの速度があれば同じ理由で直ちに再び離れる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "projectile-motion",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "単振動",
+  "垂直抗力",
+  "分離条件",
+  "鉛直投げ上げ",
+  "完全非弾性衝突"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

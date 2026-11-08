@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+</defs>
+<path d="M150,40 Q150,22 168,22 L196,22 Q212,22 212,40 L212,52 L150,52 Z" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="232.0" y="42.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="start" fill="#222">手</text>
+<circle cx="180.0" cy="72.0" r="18.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="180.0" y="78.0" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="#222">Q</text>
+<text x="206.0" y="78.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="start" fill="#222">2m</text>
+<line x1="180.0" y1="90.0" x2="180.0" y2="262.0" stroke="#222" stroke-width="1.6"/>
+<text x="196.0" y="180.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="start" fill="#222">ゴムひも</text>
+<circle cx="180.0" cy="276.0" r="14.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="180.0" y="282.0" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="#222">P</text>
+<text x="202.0" y="282.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="start" fill="#222">m</text>
+<line x1="300.0" y1="150.0" x2="300.0" y2="215.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="314.0" y="190.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="start" fill="#222">g</text>
+<text x="180.0" y="330.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="middle" fill="#222">Q を支え，P をつり下げて静止</text>
+</svg>

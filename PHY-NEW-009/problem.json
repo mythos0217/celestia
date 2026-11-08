@@ -1,0 +1,152 @@
+{
+ "id": "PHY-NEW-009",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "動く三角台の粗い斜面を上って滑り戻る物体（摩擦の向きの反転と台の加速度の切り替わり）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかな水平な床の上に，傾斜角 $45^\\circ$ の粗い斜面をもつ質量 $2m$ の三角台が置かれている．斜面の下端に質量 $m$ の小物体を置き，台が静止した状態で，小物体に斜面に沿って上向きに，床に対する速さ $v$ を与えた．小物体と斜面の間の静止摩擦係数を $\\mu$ $(\\mu<1)$，動摩擦係数を $\\mu'=\\dfrac13$ とする．小物体は斜面から離れず，台は回転したり床から浮いたりせず，斜面は十分に長い．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小物体が斜面を上っている間に，小物体が斜面から受ける垂直抗力の大きさ $N_1$ と，台の加速度の大きさ $A_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "小物体が台に対して一瞬静止したときの台の速さ $V$ と，それまでに小物体が台に対して斜面に沿って移動した距離 $S$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この瞬間の後，小物体は台に対して静止し続けることはなく，斜面を滑り下りる．その理由を説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "小物体が斜面の下端に戻ったときの，台に対する小物体の速さ $w$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "このときの床に対する小物体の速度の水平成分の向きと大きさを求めよ．また，台の質量を $M$ とし，傾斜角と摩擦係数も一般の値にしたとき，戻った小物体の速度の水平成分が打ち出した向きと逆向きになるための条件を，$M,m,v,w$ の関係として表せ．"
+     },
+     {
+      "id": "6",
+      "tex": "小物体を打ち出してから斜面の下端に戻るまでに，摩擦によって発生した熱量 $Q$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：動く三角台の粗い斜面を上って滑り戻る物体（摩擦の向きの反転と台の加速度の切り替わり）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：動く三角台の粗い斜面を上って滑り戻る物体（摩擦の向きの反転と台の加速度の切り替わり）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$N_1=\\dfrac{3\\sqrt2}{8}mg$，$A_1=\\dfrac{g}{4}$"
+   },
+   {
+    "id": "2",
+    "tex": "$V=\\dfrac{\\sqrt2}{6}v$，$S=\\dfrac{\\sqrt2\\,v^2}{3g}$"
+   },
+   {
+    "id": "3",
+    "tex": "解説参照（静止すれば全体が等速運動になり，台の座標系が慣性系となるので，静止には $\\mu\\ge\\tan45^\\circ=1$ が必要）"
+   },
+   {
+    "id": "4",
+    "tex": "$w=\\dfrac{2\\sqrt7}{7}v$"
+   },
+   {
+    "id": "5",
+    "tex": "打ち出した向きと逆向きに $\\dfrac{4\\sqrt{14}-7\\sqrt2}{42}v$（$\\fallingdotseq0.12v$）．条件は $Mw>mv$"
+   },
+   {
+    "id": "6",
+    "tex": "$Q=\\dfrac{5}{28}mv^2$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "斜面は右上がりで，小物体を右上向きに打ち出すとする．水平右向きを正とする．$\\sin45^\\circ=\\cos45^\\circ=\\dfrac{1}{\\sqrt2}$．\n\n\\textbf{(1) 上っている間}　小物体は斜面に対して上向きに滑るので，小物体が受ける動摩擦力 $\\mu'N_1$ は斜面に沿って下向き．その反作用として台は斜面に沿って上向き（水平成分は右向き）の摩擦力を受け，さらに小物体から押される力 $N_1$ の水平成分も右向きなので，台は右向きに加速する．台の運動方程式（水平）：\n\\[ 2mA_1=N_1\\sin45^\\circ+\\mu'N_1\\cos45^\\circ=\\frac{4}{3}\\cdot\\frac{N_1}{\\sqrt2} \\]\n台とともに動く観測者から見ると，小物体には左向きの慣性力 $mA_1$ がはたらき，斜面に垂直な方向には動かないので，この方向の力がつり合う：\n\\[ N_1+mA_1\\sin45^\\circ=mg\\cos45^\\circ \\]\n（慣性力は斜面から離れる向きの成分をもつ）．2式から $A_1=\\dfrac{\\sqrt2N_1}{3m}$，$N_1+\\dfrac{N_1}{3}=\\dfrac{mg}{\\sqrt2}$ より\n\\[ N_1=\\boldsymbol{\\frac{3\\sqrt2}{8}mg},\\qquad A_1=\\boldsymbol{\\frac{g}{4}} \\]\n\n\\textbf{(2) 台に対して静止する瞬間}　台に対する小物体の斜面方向の加速度（下向き）は，重力・動摩擦力・慣性力の斜面方向成分から\n\\[ a_1=g\\sin45^\\circ+\\frac{\\mu'N_1}{m}+A_1\\cos45^\\circ=\\frac{g}{\\sqrt2}+\\frac{\\sqrt2}{8}g+\\frac{\\sqrt2}{8}g=\\frac{3\\sqrt2}{4}g \\]\nで一定．$N_1$ が一定なので台に対する運動は等加速度運動で，$S=\\dfrac{v^2}{2a_1}=\\boldsymbol{\\dfrac{\\sqrt2\\,v^2}{3g}}$．\n\n床はなめらかなので，小物体と台を合わせた系の水平方向の運動量は保存する（斜面との力は内力）．はじめの水平方向の運動量は $mv\\cos45^\\circ$，台に対して静止した瞬間は両者の水平速度が等しく（小物体の鉛直速度は $0$），\n\\[ 3mV=\\frac{mv}{\\sqrt2}\\quad\\Longrightarrow\\quad V=\\boldsymbol{\\frac{\\sqrt2}{6}v} \\]\n（$V=A_1\\cdot\\dfrac{v}{a_1}$ とも一致する．）\n\n\\textbf{(3) 静止し続けない理由}　仮にこの瞬間から小物体が台に対して静止し続けたとすると，系全体は一体となり，水平方向の外力がないので等速度で動く．すると台とともに動く座標系は慣性系で，慣性力ははたらかない．このとき小物体が静止するには，固定された斜面上と同じく $\\mu mg\\cos45^\\circ\\ge mg\\sin45^\\circ$，すなわち $\\mu\\ge1$ が必要である．$\\mu<1$ なのでこれは成り立たず，小物体は台に対して静止できない．台の質量によらない結論である．\\hfill$\\square$\n\n\\textbf{(4) 下りている間}　滑る向きが逆になるので，小物体が受ける動摩擦力は斜面に沿って上向きになり，\\textbf{台の加速度と垂直抗力が変わる}．(1) と同様に\n\\[ 2mA_2=N_2\\sin45^\\circ-\\mu'N_2\\cos45^\\circ=\\frac23\\cdot\\frac{N_2}{\\sqrt2},\\qquad N_2+mA_2\\sin45^\\circ=mg\\cos45^\\circ \\]\nより $N_2=\\dfrac{3\\sqrt2}{7}mg$，$A_2=\\dfrac{g}{7}$（台は右向きに加速し続ける）．台に対する斜面下向きの加速度は\n\\[ a_2=g\\sin45^\\circ-\\frac{\\mu'N_2}{m}+A_2\\cos45^\\circ=\\frac{3\\sqrt2}{7}g \\]\nで一定．上りと下りで台に対する移動距離 $S$ は等しいので（解答図）\n\\[ w^2=2a_2S=2\\cdot\\frac{3\\sqrt2}{7}g\\cdot\\frac{\\sqrt2\\,v^2}{3g}=\\frac47v^2,\\qquad w=\\boldsymbol{\\frac{2\\sqrt7}{7}v} \\]\n\n\\textbf{(5) 戻った小物体の向き}　戻った瞬間の台の速度を $W$（右向き）とすると，床に対する小物体の速度の水平成分は $W-w\\cos45^\\circ$．水平方向の運動量保存より\n\\[ m\\left(W-\\frac{w}{\\sqrt2}\\right)+2mW=\\frac{mv}{\\sqrt2}\\quad\\Longrightarrow\\quad W=\\frac{v+w}{3\\sqrt2} \\]\n\\[ W-\\frac{w}{\\sqrt2}=\\frac{v-2w}{3\\sqrt2}=\\frac{\\sqrt7-4}{3\\sqrt{14}}v<0 \\]\nよって小物体は\\textbf{打ち出した向きと逆向き（左向き）}に，大きさ $\\boldsymbol{\\dfrac{4\\sqrt{14}-7\\sqrt2}{42}v}\\ (\\fallingdotseq0.12v)$ の水平速度で動いている．\n\n一般に，台の質量 $M$，傾斜角 $\\theta$ のときも，運動量保存 $m(W-w\\cos\\theta)+MW=mv\\cos\\theta$ から\n\\[ W-w\\cos\\theta=\\frac{(mv-Mw)\\cos\\theta}{M+m} \\]\nなので，逆向きになる条件は $\\boldsymbol{Mw>mv}$ である（傾斜角によらない形になる）．\n\n\\textbf{(6) 発熱}　動摩擦力による発熱は（動摩擦力の大きさ）$\\times$（台に対して滑った距離）なので\n\\[ Q=\\mu'(N_1+N_2)S=\\frac13\\left(\\frac{3\\sqrt2}{8}+\\frac{3\\sqrt2}{7}\\right)mg\\cdot\\frac{\\sqrt2\\,v^2}{3g}=\\boldsymbol{\\frac{5}{28}mv^2} \\]\n\\textbf{検算}　エネルギー保存から，戻った瞬間の運動エネルギーの和は\n\\[ \\frac12m\\left\\{\\left(\\frac{v-2w}{3\\sqrt2}\\right)^2+\\left(\\frac{w}{\\sqrt2}\\right)^2\\right\\}+\\frac12(2m)\\left(\\frac{v+w}{3\\sqrt2}\\right)^2=\\frac{9}{28}mv^2 \\]\nとなり，$\\dfrac12mv^2-\\dfrac{9}{28}mv^2=\\dfrac{5}{28}mv^2$ と一致する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "動く台の粗い斜面上の物体は，台の座標系で斜面に垂直な方向のつり合い（慣性力込み）から垂直抗力が一定に決まり，台に対して等加速度運動をする．滑る向きが反転すると摩擦の向きとともに台の加速度・垂直抗力が切り替わり，上りと下りで加速度が異なる．台に対して静止した瞬間に一体化できるかは「一体なら等速＝慣性系」なので固定斜面と同じ $\\mu\\ge\\tan\\theta$ で判定でき，戻った物体の向きは運動量保存から $Mw$ と $mv$ の大小で決まる．"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "uniform-acceleration",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "慣性力",
+  "動く斜面",
+  "動摩擦力",
+  "運動量保存",
+  "摩擦熱",
+  "状態の切り替わり"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

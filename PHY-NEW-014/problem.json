@@ -1,0 +1,114 @@
+{
+ "id": "PHY-NEW-014",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "粗い針金に沿って斜面へ最短時間で滑り降りる経路（摩擦角による有効重力の傾きと場合分け）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平と角 $\\alpha$（$0<\\alpha<90^\\circ$）をなす右上がりの平らな斜面と，斜面から垂直距離 $D$ だけ離れた点 P がある．P と斜面上の点 Q の間に細い針金をまっすぐに張り，針金に通した質量 $m$ の小さなビーズを P で静かに放す．針金は斜面の最大傾斜線を含む鉛直面内にあり，鉛直下向きから角 $\\psi$ だけ傾いている（斜面の上り側，すなわち図の右側に傾くときを $\\psi>0$ とする）．ビーズと針金の間の動摩擦係数を $\\mu=\\tan\\lambda$（$0<\\lambda<90^\\circ$）とし，ビーズは針金から大きさ $mg\\sin|\\psi|$ の垂直抗力を受けるものとする．ビーズは P で放すと必ず滑り出すとし，重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\psi\\ge0$ のとき，ビーズの加速度の大きさを $g$，$\\psi$，$\\lambda$ で表し，P から Q までの所要時間 $t$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "摩擦がない場合（$\\lambda=0$）に，$t$ を最小にする $\\psi$ と，$t$ の最小値を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "摩擦がある場合に，$t$ を最小にする $\\psi$ と $t$ の最小値を求めよ．$\\alpha>\\lambda$ の場合と $\\alpha\\le\\lambda$ の場合に分けて答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：粗い針金に沿って斜面へ最短時間で滑り降りる経路（摩擦角による有効重力の傾きと場合分け）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$a=g(\\cos\\psi-\\mu\\sin\\psi)=\\dfrac{g\\cos(\\psi+\\lambda)}{\\cos\\lambda}$，$t=\\sqrt{\\dfrac{2D\\cos\\lambda}{g\\cos(\\psi-\\alpha)\\cos(\\psi+\\lambda)}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\psi=\\dfrac{\\alpha}{2}$，$t_{\\min}=\\dfrac{1}{\\cos(\\alpha/2)}\\sqrt{\\dfrac{2D}{g}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\alpha>\\lambda$：$\\psi=\\dfrac{\\alpha-\\lambda}{2}$，$t_{\\min}=\\dfrac{1}{\\cos\\frac{\\alpha+\\lambda}{2}}\\sqrt{\\dfrac{2D\\cos\\lambda}{g}}$；$\\alpha\\le\\lambda$：$\\psi=0$（鉛直），$t_{\\min}=\\sqrt{\\dfrac{2D}{g\\cos\\alpha}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　針金に沿った重力の成分は $mg\\cos\\psi$，垂直抗力は $mg\\sin\\psi$ なので動摩擦力は $\\mu mg\\sin\\psi$．加速度は\n\\[ a=g(\\cos\\psi-\\tan\\lambda\\sin\\psi)=\\boldsymbol{\\frac{g\\cos(\\psi+\\lambda)}{\\cos\\lambda}} \\]\nで一定．斜面の内向きの法線は鉛直下向きから右へ $\\alpha$ 傾いているので，針金と法線のなす角は $\\psi-\\alpha$ で，$\\mathrm{PQ}=\\dfrac{D}{\\cos(\\psi-\\alpha)}$．$\\mathrm{PQ}=\\dfrac12at^2$ より\n\\[ \\boldsymbol{t=\\sqrt{\\frac{2D\\cos\\lambda}{g\\cos(\\psi-\\alpha)\\cos(\\psi+\\lambda)}}} \\]\n$\\psi<0$ のときは $\\sin|\\psi|$ を使うので，$\\cos(\\psi+\\lambda)$ が $\\cos(\\psi-\\lambda)$ に代わる．摩擦は「鉛直下向きからのずれ」に応じて効くので，右側の針金では有効な重力が左へ $\\lambda$，左側の針金では右へ $\\lambda$ 傾いたのと同じになる．\n\n\\textbf{(2)}　$\\lambda=0$ では $t^2=\\dfrac{2D}{g\\,f(\\psi)}$，$f(\\psi)=\\cos(\\psi-\\alpha)\\cos\\psi=\\dfrac12\\{\\cos\\alpha+\\cos(2\\psi-\\alpha)\\}$．$f$ は $2\\psi=\\alpha$ で最大値 $\\dfrac{1+\\cos\\alpha}{2}=\\cos^2\\dfrac{\\alpha}{2}$ をとる．よって $\\boldsymbol{\\psi=\\dfrac{\\alpha}{2}}$（鉛直と斜面の法線の二等分線），$\\boldsymbol{t_{\\min}=\\dfrac{1}{\\cos(\\alpha/2)}\\sqrt{\\dfrac{2D}{g}}}$．\n\n\\textbf{(3)}　$t$ 最小 $\\iff$ 次の $F(\\psi)$ が最大．\n\\[ \\psi\\ge0:\\ F=\\cos(\\psi-\\alpha)\\cos(\\psi+\\lambda)=\\tfrac12\\{\\cos(\\alpha+\\lambda)+\\cos(2\\psi-\\alpha+\\lambda)\\} \\]\n\\[ \\psi<0:\\ F=\\cos(\\psi-\\alpha)\\cos(\\psi-\\lambda)=\\tfrac12\\{\\cos(\\alpha-\\lambda)+\\cos(2\\psi-\\alpha-\\lambda)\\} \\]\n$\\psi\\ge0$ の式は $\\psi=\\dfrac{\\alpha-\\lambda}{2}$ で最大となる形，$\\psi<0$ の式は $\\psi=\\dfrac{\\alpha+\\lambda}{2}\\,(>0)$ で最大となる形なので，$\\psi<0$ の範囲では $F$ は単調に増加し，$\\psi<0$ に最小時間の経路はない．\n\n・$\\alpha>\\lambda$ のとき：$\\dfrac{\\alpha-\\lambda}{2}>0$ が $\\psi\\ge0$ の範囲にあり，そこで最大値 $\\dfrac{1+\\cos(\\alpha+\\lambda)}{2}=\\cos^2\\dfrac{\\alpha+\\lambda}{2}$．よって\n\\[ \\boldsymbol{\\psi=\\frac{\\alpha-\\lambda}{2}},\\qquad \\boldsymbol{t_{\\min}=\\frac{1}{\\cos\\frac{\\alpha+\\lambda}{2}}\\sqrt{\\frac{2D\\cos\\lambda}{g}}} \\]\n\n・$\\alpha\\le\\lambda$ のとき：$\\psi\\ge0$ の範囲でも $F$ は単調減少になり，最大は境目の $\\boldsymbol{\\psi=0}$（鉛直）．このとき摩擦は $0$，加速度は $g$，$\\mathrm{PQ}=\\dfrac{D}{\\cos\\alpha}$ で\n\\[ \\boldsymbol{t_{\\min}=\\sqrt{\\frac{2D}{g\\cos\\alpha}}} \\]\n$\\alpha=\\lambda$ で2つの式は一致し，最適な向きは連続につながる．摩擦のある針金では，鉛直からわずかに傾けるだけで摩擦が1次の効果で効くため，傾きの小さな斜面では「斜面側へ傾けて距離を縮める」得よりも摩擦の損が勝ち，鉛直が最速になる．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "直線経路の所要時間は「経路長÷加速度」の形で，最小化は2つの余弦の積の最大化（積和公式）に帰着する（摩擦なしなら鉛直と法線の二等分線）．摩擦は有効重力を摩擦角 $\\lambda$ だけ傾けるのと同等だが，その向きが鉛直の左右で逆になるため，最適解は $\\alpha>\\lambda$ では二等分線，$\\alpha\\le\\lambda$ では鉛直に貼り付くという場合分けが生じる．"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "uniform-acceleration",
+  "static-friction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "最短時間",
+  "摩擦角",
+  "積和公式",
+  "等加速度運動",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,142 @@
+{
+ "id": "PHY-NEW-015",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "動ける三角台のあらい斜面を滑る物体にのせたコップの水面（見かけの重力と摩擦角）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平面上に，傾斜角 $\\alpha$ の斜面をもつ質量 $M$ の三角台が置かれている．斜面はあらく，斜面と物体の間の動摩擦係数は $\\mu$（$\\mu<\\tan\\alpha$）である．斜面上に，水を半分ほど入れたコップを固定した小物体（コップと水を含めた全質量 $m$）がある．コップの底は斜面に平行である．水の揺れはすぐにおさまり，水はコップに対して常に静止しているとみなす．重力加速度の大きさを $g$ とし，$\\lambda$ を $\\tan\\lambda=\\mu$（$0<\\lambda<\\dfrac\\pi2$）で定める．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "三角台が静止した状態から，小物体に斜面に沿って上向きの初速度を与えた．小物体が斜面を上っている間，水面がコップの底となす角を求めよ．また，水が深くなるのはコップの斜面の上側と下側のどちらか．水面が水平面となす角も答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "小物体は最高点に達した後，斜面を滑り下りた．下っている間について (1) と同じことを答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の間の三角台の加速度の大きさを求めよ．また，その向きは図の左右のどちらか．"
+     },
+     {
+      "id": "4",
+      "tex": "ある三角台と小物体でこの実験を行ったところ，水面が水平面となす角は上っている間 $40^\\circ$，下っている間 $20^\\circ$ であった．$\\alpha$ と $\\mu$ を求めよ．$\\mu$ は有効数字2桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "小物体が斜面を下っている間に，三角台の取っ手を持って三角台を水平方向にでたらめに揺り動かした．ただし，小物体は斜面から離れず，斜面に対して下向きに滑り続けたとする．水面の傾きはどうなるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：動ける三角台のあらい斜面を滑る物体にのせたコップの水面（見かけの重力と摩擦角）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：動ける三角台のあらい斜面を滑る物体にのせたコップの水面（見かけの重力と摩擦角）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "底となす角 $\\lambda$（$\\tan\\lambda=\\mu$），斜面の上側が深い．水平面となす角 $\\alpha+\\lambda$"
+   },
+   {
+    "id": "2",
+    "tex": "底となす角 $\\lambda$，斜面の下側が深い．水平面となす角 $\\alpha-\\lambda$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{mg\\cos\\alpha(\\sin\\alpha-\\mu\\cos\\alpha)}{M+m\\sin\\alpha(\\sin\\alpha-\\mu\\cos\\alpha)}$，左向き（斜面が下っていく向きと反対）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\alpha=30^\\circ$，$\\mu=\\tan10^\\circ\\fallingdotseq0.18$"
+   },
+   {
+    "id": "5",
+    "tex": "変わらない（底となす角 $\\lambda$，水平面となす角 $\\alpha-\\lambda$ のまま）．小物体にはたらく力は重力と斜面からの力だけで，斜面からの力の向きは垂直抗力の向きから常に $\\lambda$ 傾いているため．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{見かけの重力と水面} \\\\\n小物体（コップと水を含む）にはたらく力は，重力 $m\\vec g$ と，斜面からの力 $\\vec R$（垂直抗力 $N$ と動摩擦力 $\\mu N$ の合力）だけである．小物体の加速度を $\\vec a$ とすると $m\\vec a=m\\vec g+\\vec R$．小物体とともに動く観測者から見ると，水には重力と慣性力 $-m'\\vec a$（$m'$ は水の質量）がはたらき，その「見かけの重力加速度」は\n\\[ \\vec g_{\\rm eff}=\\vec g-\\vec a=-\\frac{\\vec R}{m} \\]\nとなる．水面は $\\vec g_{\\rm eff}$ に垂直だから，\\textbf{水面は斜面からの力 $\\vec R$ に垂直}である．$\\vec R$ は斜面の法線から，摩擦力の向き（滑る向きと反対）へ角 $\\lambda$（$\\tan\\lambda=\\mu N/N=\\mu$）だけ傾いている．この結論には三角台の質量 $M$ も，三角台の運動も入らない．\\hfill$\\square$\n\n\\textbf{(1) 上っている間} \\\\\n摩擦力は斜面に沿って下向きなので，$\\vec R$ は法線から斜面の下側へ $\\lambda$ 傾き，$\\vec g_{\\rm eff}=-\\vec R/m$ は斜面に垂直に押しつける向きから斜面の上側へ $\\lambda$ 傾く．水面はこれに垂直なので，コップの底（斜面）と角 $\\boldsymbol{\\lambda}$ をなし，見かけの重力が向かう\\textbf{斜面の上側が深く}なる（減速しながら上るので水が前へ寄る，と考えてもよい）．\\\\\n水面と水平面の角は，$\\vec g_{\\rm eff}$ と鉛直線の角に等しい．斜面の法線は鉛直から斜面の上側へ $\\alpha$ 傾いており，$\\vec g_{\\rm eff}$ はそこからさらに同じ側へ $\\lambda$ 傾くので，$\\boldsymbol{\\alpha+\\lambda}$．\\hfill$\\square$\n\n\\textbf{(2) 下っている間} \\\\\n摩擦力が斜面に沿って上向きになるので，$\\vec R$ は法線から斜面の上側へ，$\\vec g_{\\rm eff}$ は斜面の下側へ $\\lambda$ 傾く．水面は底と角 $\\boldsymbol{\\lambda}$ をなし，\\textbf{斜面の下側が深く}なる．水平面とのなす角は $\\boldsymbol{\\alpha-\\lambda}$．（$\\mu<\\tan\\alpha$ より $\\lambda<\\alpha$．）\\hfill$\\square$\n\n\\textbf{(3) 三角台の加速度} \\\\\n三角台の加速度を左向きに $A$，小物体の三角台に対する加速度を斜面に沿って下向きに $b$ とする．三角台から見ると小物体には右向きの慣性力 $mA$ がはたらく． \\\\\n小物体，斜面に垂直：$N=mg\\cos\\alpha-mA\\sin\\alpha$ \\\\\n小物体，斜面に沿って：$mb=mg\\sin\\alpha+mA\\cos\\alpha-\\mu N$ \\\\\n三角台，水平（床はなめらか）：三角台が小物体から受ける力の水平成分は，垂直抗力の反作用が左向きに $N\\sin\\alpha$，摩擦力の反作用（三角台を斜面の下向きに引く）が右向きに $\\mu N\\cos\\alpha$ なので\n\\[ MA=N(\\sin\\alpha-\\mu\\cos\\alpha) \\]\n1式目を代入して $MA=(mg\\cos\\alpha-mA\\sin\\alpha)(\\sin\\alpha-\\mu\\cos\\alpha)$，\n\\[ \\boldsymbol{A=\\frac{mg\\cos\\alpha(\\sin\\alpha-\\mu\\cos\\alpha)}{M+m\\sin\\alpha(\\sin\\alpha-\\mu\\cos\\alpha)}}\\quad(\\boldsymbol{\\text{左向き}}) \\]\n$\\mu<\\tan\\alpha$ より $A>0$．$\\mu=0$ とすると，よく知られた $\\dfrac{mg\\sin\\alpha\\cos\\alpha}{M+m\\sin^2\\alpha}$ になる．また $N=\\dfrac{Mmg\\cos\\alpha}{M+m\\sin\\alpha(\\sin\\alpha-\\mu\\cos\\alpha)}>0$ で，小物体は斜面から離れない．\\hfill$\\square$\n\n\\textbf{(4) 観測から逆算} \\\\\n(1)(2) より $\\alpha+\\lambda=40^\\circ$，$\\alpha-\\lambda=20^\\circ$．よって $\\boldsymbol{\\alpha=30^\\circ}$，$\\lambda=10^\\circ$，$\\boldsymbol{\\mu=\\tan10^\\circ\\fallingdotseq0.18}$．$\\mu<\\tan30^\\circ$ なので，最高点から実際に滑り下りることとも矛盾しない．水面の傾きの「平均」が斜面の傾き，「差の半分」が摩擦角を与える．\\hfill$\\square$\n\n\\textbf{(5) 三角台を揺り動かす} \\\\\n手の力は三角台にはたらき，小物体には直接はたらかない．小物体にはたらく力は依然として重力と斜面からの力 $\\vec R$ だけで，$\\vec g_{\\rm eff}=-\\vec R/m$ が成り立つ．小物体が斜面に接したまま下向きに滑っている限り，動摩擦力は $\\mu N$ で斜面に沿って上向きなので，$\\vec R$ の大きさ $N\\sqrt{1+\\mu^2}$ は揺り方によって変わっても，その向きは法線から斜面の上側へ $\\lambda$ 傾いたままである．したがって\\textbf{水面の傾きは変わらず}，底と角 $\\lambda$，水平面と角 $\\alpha-\\lambda$ をなす（変わるのは見かけの重力の大きさだけ）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "重力以外に接触力 $\\vec R$ だけを受けて運動する物体の中では，見かけの重力は $-\\vec R/m$ で，水面は接触力に垂直になる．動摩擦力を受けて滑る間は $\\vec R$ が法線から摩擦角 $\\lambda$ だけ傾くので，水面は斜面と角 $\\lambda$ をなし，その向きは滑る向きだけで決まり，台の質量や台の動かし方によらない．"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "static-friction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "見かけの重力",
+  "慣性力",
+  "摩擦角",
+  "動く斜面",
+  "水面の傾き"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

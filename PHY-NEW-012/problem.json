@@ -1,0 +1,133 @@
+{
+ "id": "PHY-NEW-012",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "水平に加速する密閉水槽の中の軽い球と重い球（浮力も見かけの重力の向きにはたらく）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，密度 $\\rho_0$ の液体で満たした密閉容器を台車に固定する．容器の中には，体積 $V$ で密度 $\\rho_1$（$\\rho_1<\\rho_0$）の小球 P が軽い糸で容器の底につながれ，体積 $V$ で密度 $\\rho_2$（$\\rho_2>\\rho_0$）の小球 Q がばね定数 $k$ の軽いばねで容器の天井からつるされている．糸とばねの体積は無視する．台車を水平右向きに大きさ $a$ の一定の加速度で運動させると，十分時間がたった後，P，Q は容器に対して静止した．重力加速度の大きさを $g$ とする（図は台車が静止しているときのようす）．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "容器とともに動く観測者から見て，P にはたらく浮力の大きさと向きを求めよ．また，P をつなぐ糸は鉛直からどちら向きにどれだけ傾くか（傾きの角を $\\varphi$ として $\\tan\\varphi$ で答えよ），糸の張力の大きさも求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "Q をつるすばねの傾きの向きと，ばねの伸びを求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "加速度 $a$ を保ったまま P の糸を切った．切った直後の P の容器に対する加速度の大きさと向きを求めよ．ただし，液体から受ける抵抗や，P のまわりの液体の動きの影響は無視する．"
+     },
+     {
+      "id": "4",
+      "tex": "ばねの伸びが台車の静止時の $\\dfrac54$ 倍であった．$a$ を $g$ で表せ．また，このときの P の糸の傾きの角 $\\varphi$ の $\\tan\\varphi$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：水平に加速する密閉水槽の中の軽い球と重い球（浮力も見かけの重力の向きにはたらく）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：水平に加速する密閉水槽の中の軽い球と重い球（浮力も見かけの重力の向きにはたらく）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "大きさ $\\rho_0V\\sqrt{g^2+a^2}$，鉛直上向きから進行方向（右）へ $\\tan\\varphi=\\dfrac ag$ だけ傾いた向き；糸は進行方向（右）へ傾き $\\tan\\varphi=\\dfrac ag$，張力 $(\\rho_0-\\rho_1)V\\sqrt{g^2+a^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "進行方向と逆（左）へ $\\tan\\varphi=\\dfrac ag$ だけ傾く；伸び $\\dfrac{(\\rho_2-\\rho_0)V\\sqrt{g^2+a^2}}{k}$"
+   },
+   {
+    "id": "3",
+    "tex": "大きさ $\\dfrac{\\rho_0-\\rho_1}{\\rho_1}\\sqrt{g^2+a^2}$，(1) の糸の方向に沿って斜め右上向き"
+   },
+   {
+    "id": "4",
+    "tex": "$a=\\dfrac34g$，$\\tan\\varphi=\\dfrac34$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　容器とともに動く観測者には，重力と慣性力の合力が「見かけの重力」として一様にはたらく．その加速度は大きさ $g'=\\sqrt{g^2+a^2}$，向きは鉛直下向きから進行方向と逆（左）へ $\\tan\\varphi=a/g$ だけ傾く．液体はこの見かけの重力の中で静止しているので，圧力は「見かけの鉛直」方向に $\\rho_0g'$ の割合で増え，浮力は見かけの重力と逆向きに $\\rho_0Vg'$ になる．\n\n\\textbf{(1)}　浮力は大きさ $\\boldsymbol{\\rho_0V\\sqrt{g^2+a^2}}$，向きは見かけの重力と逆，すなわち\\textbf{鉛直上向きから進行方向（右）へ $\\tan\\varphi=a/g$ だけ傾いた向き}．P には見かけの重力 $\\rho_1Vg'$（左下向き）と浮力（右上向き）と張力がはたらき，前の2つは同じ直線上にあって合力は右上向きに $(\\rho_0-\\rho_1)Vg'$．張力はこれとつり合うので，糸は\\textbf{進行方向（右）へ $\\tan\\varphi=\\dfrac ag$} だけ傾き，張力は $\\boldsymbol{(\\rho_0-\\rho_1)V\\sqrt{g^2+a^2}}$．加速する車内でヘリウム風船が前へ傾くのと同じ現象である．\n\n\\textbf{地上から見た確認}　P は加速度 $a$ で右へ動く．浮力の水平成分は，周りの液体（同じ体積なら質量 $\\rho_0V$）に加速度 $a$ を与えるのに必要な圧力差に等しく $\\rho_0Va$，鉛直成分は $\\rho_0Vg$．張力を $(T_x,T_y)$ として\n\\[ \\rho_0Va+T_x=\\rho_1Va,\\qquad \\rho_0Vg-\\rho_1Vg+T_y=0 \\]\nから $T_x=-(\\rho_0-\\rho_1)Va$，$T_y=-(\\rho_0-\\rho_1)Vg$ で，張力は左下（底の方へ）向き，すなわち糸は右上へ傾き，同じ結果になる．\n\n\\textbf{(2)}　Q では見かけの重力 $\\rho_2Vg'$ が浮力 $\\rho_0Vg'$ より大きく，合力 $(\\rho_2-\\rho_0)Vg'$ は見かけの重力の向き（左下）．よってばねは\\textbf{進行方向と逆（左）へ $\\tan\\varphi=a/g$ だけ傾き}，伸びは\n\\[ \\boldsymbol{\\frac{(\\rho_2-\\rho_0)V\\sqrt{g^2+a^2}}{k}}. \\]\nP の糸と Q のばねは平行になるが，P は上端が前へ，Q は下端が後ろへ傾く．\n\n\\textbf{(3)}　切った直後，P には (1) の合力 $(\\rho_0-\\rho_1)Vg'$ だけが残るので，容器に対する加速度は\n\\[ \\boldsymbol{\\frac{\\rho_0-\\rho_1}{\\rho_1}\\sqrt{g^2+a^2}}, \\]\n向きは (1) の糸の方向に沿って\\textbf{斜め右上}（見かけの重力と逆向き）．\n\n\\textbf{(4)}　静止時の伸びは $\\dfrac{(\\rho_2-\\rho_0)Vg}{k}$ なので，比は $\\dfrac{\\sqrt{g^2+a^2}}{g}=\\dfrac54$ より $\\boldsymbol{a=\\dfrac34g}$．このとき $\\boldsymbol{\\tan\\varphi=\\dfrac34}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "加速する容器内の液体では，圧力が見かけの重力の向きに増えるので，浮力も見かけの重力と逆向きに $\\rho_0Vg'$ になる．そのため液体より軽い物体は加速の向きへ，重い物体は逆向きへ，同じ角度だけ傾く．浮力の水平成分は，同じ体積の液体を加速させる力として地上系でも説明できる．"
+ },
+ "concepts": [
+  "equation-of-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "浮力",
+  "慣性力",
+  "見かけの重力",
+  "加速度系",
+  "圧力"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

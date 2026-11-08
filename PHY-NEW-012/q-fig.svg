@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300">
+<defs><marker id="q-ab" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-ak" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker></defs>
+<line x1="20" y1="270" x2="500" y2="270" stroke="#222" stroke-width="1.6"/>
+<g stroke="#222" stroke-width="1"><line x1="30" y1="270" x2="20" y2="282"/><line x1="60" y1="270" x2="50" y2="282"/><line x1="90" y1="270" x2="80" y2="282"/><line x1="120" y1="270" x2="110" y2="282"/><line x1="150" y1="270" x2="140" y2="282"/><line x1="180" y1="270" x2="170" y2="282"/><line x1="210" y1="270" x2="200" y2="282"/><line x1="240" y1="270" x2="230" y2="282"/><line x1="270" y1="270" x2="260" y2="282"/><line x1="300" y1="270" x2="290" y2="282"/><line x1="330" y1="270" x2="320" y2="282"/><line x1="360" y1="270" x2="350" y2="282"/><line x1="390" y1="270" x2="380" y2="282"/><line x1="420" y1="270" x2="410" y2="282"/><line x1="450" y1="270" x2="440" y2="282"/><line x1="480" y1="270" x2="470" y2="282"/></g>
+<rect x="80" y="230" width="300" height="20" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="120" cy="259" r="11" fill="none" stroke="#222" stroke-width="1.6"/><circle cx="340" cy="259" r="11" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="210" y="245" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">台車</text>
+<rect x="100" y="40" width="260" height="190" fill="none" stroke="#222" stroke-width="2.2"/>
+<text x="250" y="216" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">液体（密度 <tspan font-family="Times New Roman, serif" font-style="italic">ρ</tspan><tspan baseline-shift="sub" font-size="10">0</tspan>）</text>
+<!-- P tethered to bottom -->
+<line x1="170" y1="230" x2="170" y2="150" stroke="#222" stroke-width="1"/>
+<circle cx="170" cy="138" r="12" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="188" y="134" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">P</text>
+<text x="186" y="152" font-family="Times New Roman, serif" font-style="italic" font-size="13" fill="#222">ρ<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<!-- Q on spring from ceiling -->
+<polyline points="290,40 290,52 280,58 300,66 280,74 300,82 280,90 300,98 290,104 290,112" fill="none" stroke="#222" stroke-width="1.4"/>
+<circle cx="290" cy="124" r="12" fill="#222" fill-opacity="0.15" stroke="#222" stroke-width="1.6"/>
+<text x="308" y="120" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">Q</text>
+<text x="306" y="140" font-family="Times New Roman, serif" font-style="italic" font-size="13" fill="#222">ρ<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<text x="306" y="78" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">k</text>
+<line x1="400" y1="140" x2="470" y2="140" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="420" y="130" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">加速度 <tspan font-family="Times New Roman, serif" font-style="italic">a</tspan></text>
+<line x1="470" y1="30" x2="470" y2="80" stroke="#222" stroke-width="1.8" marker-end="url(#q-ak)"/>
+<text x="478" y="62" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">g</text>
+</svg>

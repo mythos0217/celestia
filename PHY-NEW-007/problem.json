@@ -1,0 +1,128 @@
+{
+ "id": "PHY-NEW-007",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "摩擦のある床上で動き出す滑車付き台と，溝にはまったおもりの連成運動",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平な床の上に質量 $M$ の直方体 A が置かれている．A の上面の右端には軽い滑車が取り付けられており，A の上面に置いた質量 $m$ の物体 B に結んだ糸を水平に張って滑車にかけ，糸の他端に質量 $m$ の物体 C をつるす．A の右側面には鉛直な溝が切ってあり，C はこの溝にはまって，A に対しては鉛直方向にだけなめらかに動ける（溝の壁は C に水平方向の力を及ぼすことができる）．A と B の間，C と溝の間に摩擦はなく，床と A の間の静止摩擦係数と動摩擦係数はともに $\\mu$ とする．重力加速度の大きさを $g$ とする．全体を静止させた状態から静かに放す．B が滑車に達することや C が床に達することはないものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A が床に対して静止したままであるとする．糸の張力 $T_0$ と，床が A に及ぼす垂直抗力の大きさ $R_0$ を求めよ．また，A が静止したままであるための $\\mu$ の条件を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\mu$ が (1) の条件を満たさないとき，A は床の上をすべり始める．A の加速度の向きと大きさ $\\alpha$，および糸の張力 $T$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\mu=0$ のとき，C が A に対して $h$ だけ下がる間に A が床に対して移動する向きと距離を，運動方程式を解かずに求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：摩擦のある床上で動き出す滑車付き台と，溝にはまったおもりの連成運動",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：摩擦のある床上で動き出す滑車付き台と，溝にはまったおもりの連成運動",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T_0=\\dfrac12mg$，$R_0=\\left(M+\\dfrac32m\\right)g$，$\\mu\\ge\\dfrac{m}{2M+3m}$"
+   },
+   {
+    "id": "2",
+    "tex": "左向き（滑車と反対向き），$\\alpha=\\dfrac{m-\\mu(2M+3m)}{2M+3m-\\mu m}\\,g$，$T=\\dfrac{(1+\\mu)(M+m)}{2M+3m-\\mu m}\\,mg$"
+   },
+   {
+    "id": "3",
+    "tex": "左向きに $\\dfrac{m}{M+2m}\\,h$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{A にはたらく力を漏れなく数える}\n滑車は A に取り付けられているので，糸が滑車を引く力は A にはたらく．滑車には B 側（左向き）と C 側（下向き）の 2 本の糸がかかっているから，A は糸から左向きに $T$，下向きに $T$ の力を受ける．このほか A には，重力 $Mg$，B からの垂直抗力 $mg$（B は鉛直方向に加速しない），溝の壁を通して C から受ける水平な力，床からの垂直抗力 $R$ と摩擦力がはたらく（解答図）．\n\n\\textbf{(1)} A が静止していれば，B と C は同じ大きさ $b_0$ の加速度で動き（B は右向き，C は下向き），C は水平方向に加速しないので溝の壁から水平な力を受けない．\n\\[ \\text{B：}\\ mb_0=T_0,\\qquad \\text{C：}\\ mb_0=mg-T_0 \\]\nより $b_0=\\dfrac g2$，$\\boldsymbol{T_0=\\dfrac12mg}$．A の鉛直方向のつり合いは\n\\[ R_0=Mg+mg+T_0=\\boldsymbol{\\left(M+\\frac32m\\right)g} \\]\n（C が下向きに加速しているぶん，全体の重さ $(M+2m)g$ より $mb_0$ だけ小さい．）A の水平方向には滑車から左向きに $T_0$ がはたらくので，静止摩擦力は右向きに $T_0$ 必要である．$T_0\\le\\mu R_0$ より\n\\[ \\boldsymbol{\\mu\\ge\\frac{m}{2M+3m}} \\]\n\n\\textbf{(2)} A は糸に引かれて左向き（滑車と反対向き）にすべる．A の加速度を左向きに $\\alpha$ とし，A とともに動く観測者から見る．B，C には右向きに慣性力 $m\\alpha$ がはたらき，B と C は A に対して同じ大きさ $b$ の加速度で動く．\n\\[ \\text{B（水平）：}\\ mb=T+m\\alpha,\\qquad \\text{C（鉛直）：}\\ mb=mg-T \\]\nC は A に対して水平には動かないので，溝の壁は C に左向きに $m\\alpha$ の力を及ぼし，その反作用として C は A を右向きに $m\\alpha$ で押す．床からの動摩擦力 $\\mu R$ は右向きで，$R=(M+m)g+T$．よって床から見た A の運動方程式（左向き正）は\n\\[ M\\alpha=T-m\\alpha-\\mu\\{(M+m)g+T\\} \\]\nB，C の式から $T=\\dfrac{m(g-\\alpha)}{2}$．これを代入して整理すると\n\\[ \\alpha\\{2(M+m)+(1-\\mu)m\\}=(1-\\mu)mg-2\\mu(M+m)g \\]\n\\[ \\therefore\\ \\boldsymbol{\\alpha=\\frac{m-\\mu(2M+3m)}{2M+3m-\\mu m}\\,g},\\qquad \\boldsymbol{T=\\frac{(1+\\mu)(M+m)}{2M+3m-\\mu m}\\,mg} \\]\n$\\mu<\\dfrac{m}{2M+3m}$ のとき確かに $\\alpha>0$ であり，$\\mu$ が (1) の境界値のとき $\\alpha=0$ となって (1) とつながる．\n\n\\textbf{(3)} $\\mu=0$ では A，B，C 全体に水平方向の外力がはたらかないので，全体の重心は水平方向に動かない（はじめ静止）．C が A に対して $h$ 下がると，糸の長さが一定なので B は A に対して右向きに $h$ 動く．A の変位を右向き正で $X$ とすると，B の変位は $X+h$，C の水平変位は $X$ だから\n\\[ MX+m(X+h)+mX=0\\qquad\\therefore\\ X=-\\frac{m}{M+2m}h \\]\nよって A は \\textbf{左向きに} $\\boldsymbol{\\dfrac{m}{M+2m}h}$ 動く．\n（確認：(2) で $\\mu=0$ とすると $\\alpha=\\dfrac{mg}{2M+3m}$，$b=g-\\dfrac Tm=\\dfrac{g+\\alpha}{2}$ で，同じ時間の変位の比は加速度の比に等しいから $h\\cdot\\dfrac{\\alpha}{b}=\\dfrac{2\\alpha h}{g+\\alpha}=\\dfrac{m}{M+2m}h$ となり一致する．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "滑車が台に固定されていれば，2 本の糸の張力（水平・鉛直）がともに台にはたらき，溝で台と一緒に動くおもりからの水平力も台に返ってくる．台とともに動く観測者の立場で慣性力を入れると相対運動が扱いやすく，床の垂直抗力が全重量より小さくなることが摩擦の判定に効く．"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "kinematics-components",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "慣性力",
+  "滑車",
+  "運動方程式",
+  "摩擦",
+  "重心",
+  "束縛条件"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

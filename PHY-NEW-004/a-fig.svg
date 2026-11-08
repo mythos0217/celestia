@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" width="480" height="320"><defs><marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<line x1="70.0" y1="270.0" x2="460.0" y2="270.0" stroke="#222" stroke-width="1.8" marker-end="url(#a-ak)"/>
+<line x1="70.0" y1="270.0" x2="70.0" y2="20.0" stroke="#222" stroke-width="1.8" marker-end="url(#a-ak)"/>
+<text x="465.0" y="275.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">t</text>
+<text x="78.0" y="26.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">加速度（右向き正）</text>
+<text x="64.0" y="288.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="end">O</text>
+<line x1="70.0" y1="270.0" x2="220.0" y2="170.0" stroke="#222" stroke-width="1.8"/>
+<line x1="220.0" y1="200.0" x2="370.0" y2="200.0" stroke="#1f5fbf" stroke-width="1.8"/>
+<line x1="220.0" y1="150.0" x2="370.0" y2="70.0" stroke="#c0392b" stroke-width="1.8"/>
+<line x1="220.0" y1="270.0" x2="220.0" y2="150.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="370.0" y1="270.0" x2="370.0" y2="70.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="70.0" y1="170.0" x2="220.0" y2="170.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="70.0" y1="200.0" x2="220.0" y2="200.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="220.0" y="292.0" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Times New Roman, serif" font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif" font-style="normal">1</tspan></text>
+<text x="370.0" y="292.0" font-size="15" fill="#222" text-anchor="middle"><tspan font-family="Times New Roman, serif" font-style="normal">2</tspan><tspan font-family="Times New Roman, serif" font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif" font-style="normal">1</tspan></text>
+<text x="64.0" y="175.0" font-size="15" fill="#222" text-anchor="end"><tspan font-family="Times New Roman, serif" font-style="italic">μ</tspan><tspan baseline-shift="sub" font-size="10" font-family="Noto Sans CJK JP, sans-serif" font-style="normal">0</tspan><tspan font-family="Times New Roman, serif" font-style="italic">g</tspan></text>
+<text x="64.0" y="205.0" font-size="15" fill="#222" text-anchor="end"><tspan font-family="Times New Roman, serif" font-style="italic">μg</tspan></text>
+<text x="378.0" y="75.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#c0392b" text-anchor="start">Q</text>
+<text x="378.0" y="205.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#1f5fbf" text-anchor="start">P</text>
+<text x="150.0" y="240.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">P，Q 一体</text>
+<text x="234.0" y="116.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#c0392b" text-anchor="start">Q の加速度は跳ね上がる</text>
+<text x="410.0" y="110.0" font-size="13" fill="#c0392b" text-anchor="middle"><tspan font-family="Noto Sans CJK JP, sans-serif" font-style="normal">傾き </tspan><tspan font-family="Times New Roman, serif" font-style="italic">k</tspan><tspan font-family="Times New Roman, serif" font-style="normal">/</tspan><tspan font-family="Times New Roman, serif" font-style="italic">M</tspan></text>
+</svg>

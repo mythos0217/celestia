@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+</defs>
+<polygon points="42.4,208.7 459.7,96.9 458.1,91.1 40.8,202.9" fill="#ccc" stroke="#222" stroke-width="1.6"/>
+<circle cx="170.8" cy="201.2" r="26.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="170.8" cy="201.2" r="2.5" fill="#222"/>
+<line x1="170.8" y1="201.2" x2="162.8" y2="267.2" stroke="#222" stroke-width="1.4"/>
+<line x1="170.8" y1="201.2" x2="178.8" y2="267.2" stroke="#222" stroke-width="1.4"/>
+<line x1="144.8" y1="267.2" x2="196.8" y2="267.2" stroke="#222" stroke-width="1.6"/>
+<line x1="144.8" y1="267.2" x2="141.2" y2="262.4" stroke="#222" stroke-width="1"/>
+<line x1="153.5" y1="267.2" x2="149.9" y2="262.4" stroke="#222" stroke-width="1"/>
+<line x1="162.2" y1="267.2" x2="158.6" y2="262.4" stroke="#222" stroke-width="1"/>
+<line x1="170.8" y1="267.2" x2="167.2" y2="262.4" stroke="#222" stroke-width="1"/>
+<line x1="179.5" y1="267.2" x2="175.9" y2="262.4" stroke="#222" stroke-width="1"/>
+<line x1="188.2" y1="267.2" x2="184.6" y2="262.4" stroke="#222" stroke-width="1"/>
+<line x1="196.8" y1="267.2" x2="193.2" y2="262.4" stroke="#222" stroke-width="1"/>
+<path d="M153.9,195.0 A18,18 0 0 1 186.4,192.2" fill="none" stroke="#1f5fbf" stroke-width="1.6" marker-end="url(#q-ab)"/>
+<text x="130.8" y="231.2" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="#222">R<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<circle cx="402.6" cy="139.1" r="26.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="402.6" cy="139.1" r="2.5" fill="#222"/>
+<line x1="402.6" y1="139.1" x2="394.6" y2="205.1" stroke="#222" stroke-width="1.4"/>
+<line x1="402.6" y1="139.1" x2="410.6" y2="205.1" stroke="#222" stroke-width="1.4"/>
+<line x1="376.6" y1="205.1" x2="428.6" y2="205.1" stroke="#222" stroke-width="1.6"/>
+<line x1="376.6" y1="205.1" x2="373.0" y2="200.3" stroke="#222" stroke-width="1"/>
+<line x1="385.3" y1="205.1" x2="381.7" y2="200.3" stroke="#222" stroke-width="1"/>
+<line x1="394.0" y1="205.1" x2="390.4" y2="200.3" stroke="#222" stroke-width="1"/>
+<line x1="402.6" y1="205.1" x2="399.0" y2="200.3" stroke="#222" stroke-width="1"/>
+<line x1="411.3" y1="205.1" x2="407.7" y2="200.3" stroke="#222" stroke-width="1"/>
+<line x1="420.0" y1="205.1" x2="416.4" y2="200.3" stroke="#222" stroke-width="1"/>
+<line x1="428.6" y1="205.1" x2="425.0" y2="200.3" stroke="#222" stroke-width="1"/>
+<path d="M419.6,132.9 A18,18 0 0 0 387.1,130.1" fill="none" stroke="#1f5fbf" stroke-width="1.6" marker-end="url(#q-ab)"/>
+<text x="442.6" y="169.1" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="#222">R<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<circle cx="319.8" cy="131.2" r="3.5" fill="#c0392b"/>
+<text x="323.8" y="153.2" font-family="Times New Roman, serif" font-size="15" text-anchor="middle" fill="#c0392b">G</text>
+<line x1="46.3" y1="153.8" x2="452.0" y2="45.1" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+<text x="462.0" y="45.1" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="start" fill="#222">x</text>
+<line x1="267.6" y1="98.6" x2="265.5" y2="90.9" stroke="#222" stroke-width="1.2"/>
+<text x="261.5" y="83.7" font-family="Times New Roman, serif" font-size="14" text-anchor="middle" fill="#222">O</text>
+<line x1="162.5" y1="170.3" x2="156.8" y2="149.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="394.4" y1="108.1" x2="388.7" y2="86.9" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="278.4" y1="139.2" x2="272.8" y2="118.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="158.4" y1="154.8" x2="274.3" y2="123.7" stroke="#888" stroke-width="1" marker-end="url(#q-ag)" marker-start="url(#q-ag)"/>
+<line x1="274.3" y1="123.7" x2="390.2" y2="92.7" stroke="#888" stroke-width="1" marker-end="url(#q-ag)" marker-start="url(#q-ag)"/>
+<text x="214.8" y="133.5" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">l</text>
+<text x="330.7" y="102.4" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">l</text>
+<line x1="42.4" y1="208.7" x2="192.4" y2="208.7" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<path d="M112.4,208.7 A70,70 0 0 0 110.0,190.6" fill="none" stroke="#222" stroke-width="1"/>
+<text x="124.4" y="202.7" font-family="Times New Roman, serif" font-style="italic" font-size="15" text-anchor="middle" fill="#222">θ</text>
+<line x1="520.0" y1="60.0" x2="520.0" y2="120.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="532.0" y="100.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="start" fill="#222">g</text>
+<text x="453.2" y="119.3" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">M</text>
+</svg>

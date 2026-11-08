@@ -1,0 +1,122 @@
+{
+ "id": "PHY-OSC-012",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "回転する傾いた管の中のばね振り子（遠心力による実効ばね定数の低下）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，鉛直な回転軸上の点Oから，鉛直上向きと角 $\\theta$ $\\left(0<\\theta<\\dfrac{\\pi}{2}\\right)$ をなす向きに，細くまっすぐな管が伸びている．管は回転軸のまわりに一定の角速度 $\\omega$ で回転している．管の中には，ばね定数 $k$，自然長 $l$ の軽いばねが入っており，一端はOに固定され，他端には質量 $m$ の小球Pがつながれている．Pは管の内面をなめらかに動くことができ，Oから管に沿ってPまで測った距離を $r$ とする．重力加速度の大きさを $g$ とし，$kl>2mg\\cos\\theta$ とする．管とともに回転する観測者の立場で考えよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Pが管に対して静止できる位置 $r_0$ を求めよ．また，その位置からPを管に沿って少しずらして放したとき，Pが $r_0$ を中心に振動する（安定である）ための $\\omega$ の条件を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$r_0$ がばねの自然長 $l$ に一致するときの $\\omega$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(1)の条件のもとで，Pをばねが自然長となる位置で管に対して静かに放した．管に対するPの運動の周期 $T$ を求めよ．また，Pが往復する範囲（$r$ の範囲）を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3)の周期 $T$ が，管を回転させないとき（$\\omega=0$）の同様の振動の周期のちょうど2倍であった．このときの $\\omega$ と，(3)の運動における $r$ の最大値を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：回転する傾いた管の中のばね振り子（遠心力による実効ばね定数の低下）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$r_0=\\dfrac{kl-mg\\cos\\theta}{k-m\\omega^2\\sin^2\\theta}$，$\\omega<\\dfrac{1}{\\sin\\theta}\\sqrt{\\dfrac{k}{m}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\omega=\\dfrac{1}{\\sin\\theta}\\sqrt{\\dfrac{g\\cos\\theta}{l}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$T=2\\pi\\sqrt{\\dfrac{m}{k-m\\omega^2\\sin^2\\theta}}$，$r$ は $l$ と $2r_0-l=\\dfrac{kl-2mg\\cos\\theta+m\\omega^2l\\sin^2\\theta}{k-m\\omega^2\\sin^2\\theta}$ の間を往復"
+   },
+   {
+    "id": "4",
+    "tex": "$\\omega=\\dfrac{1}{\\sin\\theta}\\sqrt{\\dfrac{3k}{4m}}$，$r$ の最大値 $7l-\\dfrac{8mg\\cos\\theta}{k}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{管方向の力}　回転する観測者から見ると，Pには重力，ばねの弾性力，管からの垂直抗力，遠心力が働く（Pが管に対して動くときは速度に垂直な見かけの力（コリオリの力）も働くが，管に垂直なので管方向の運動には効かず，垂直抗力とともに管に垂直な方向でつり合う）．\nPの回転半径は $r\\sin\\theta$ なので，遠心力は水平外向きに $m(r\\sin\\theta)\\omega^2$．その管方向（外向き）成分は $mr\\omega^2\\sin^2\\theta$．重力の管方向成分は内向きに $mg\\cos\\theta$．よって管方向外向きを正として\n\\[ m\\ddot r=-k(r-l)+m\\omega^2r\\sin^2\\theta-mg\\cos\\theta=-(k-m\\omega^2\\sin^2\\theta)\\,r+kl-mg\\cos\\theta \\]\n\n\\textbf{(1)} $\\ddot r=0$ とおいて\n\\[ r_0=\\boldsymbol{\\frac{kl-mg\\cos\\theta}{k-m\\omega^2\\sin^2\\theta}} \\]\n$K=k-m\\omega^2\\sin^2\\theta$ とおくと，運動方程式は $m\\ddot r=-K(r-r_0)$．$K>0$ ならこれは $r_0$ を中心とする単振動で安定，$K\\le0$ なら $r_0$ からずれると戻らない（遠心力の増え方がばねの力の増え方に勝つ）．また $kl>mg\\cos\\theta$ なので $K>0$ のとき $r_0>0$ である．よって条件は\n\\[ \\boldsymbol{\\omega<\\frac{1}{\\sin\\theta}\\sqrt{\\frac{k}{m}}} \\]\n\n\\textbf{(2)} $r_0=l$ とすると $kl-mg\\cos\\theta=(k-m\\omega^2\\sin^2\\theta)l$，すなわち $m\\omega^2l\\sin^2\\theta=mg\\cos\\theta$．\n\\[ \\boldsymbol{\\omega=\\frac{1}{\\sin\\theta}\\sqrt{\\frac{g\\cos\\theta}{l}}} \\]\nこれは $k$ によらず，ばねが自然長の位置で遠心力の管方向成分が重力の管方向成分とつり合う条件である．$kl>mg\\cos\\theta$ よりこの $\\omega$ は(1)の条件を満たす．\n\n\\textbf{(3)} 運動方程式 $m\\ddot r=-K(r-r_0)$ より周期は\n\\[ T=\\boldsymbol{2\\pi\\sqrt{\\frac{m}{k-m\\omega^2\\sin^2\\theta}}} \\]\n$r=l$ で管に対して静止させて放したので，$r=l$ が振動の端で，振幅は $|r_0-l|$．もう一方の端は $2r_0-l$ だから，$r$ は $l$ と\n\\[ 2r_0-l=\\frac{kl-2mg\\cos\\theta+m\\omega^2l\\sin^2\\theta}{k-m\\omega^2\\sin^2\\theta} \\]\nの間を往復する．ここで $kl>2mg\\cos\\theta$ より $2r_0-l>0$ であり，PがOに達することはない．\n\n\\textbf{(4)} $\\omega=0$ のときの周期は $2\\pi\\sqrt{\\dfrac{m}{k}}$．$T$ がその2倍となるのは $K=\\dfrac{k}{4}$，すなわち $m\\omega^2\\sin^2\\theta=\\dfrac34k$ のときで\n\\[ \\boldsymbol{\\omega=\\frac{1}{\\sin\\theta}\\sqrt{\\frac{3k}{4m}}} \\]\n（これは(1)の条件を満たす．）このとき\n\\[ r_0=\\frac{kl-mg\\cos\\theta}{k/4}=4l-\\frac{4mg\\cos\\theta}{k} \\]\n$r_0-l=3l-\\dfrac{4mg\\cos\\theta}{k}>3l-2l>0$ なので $r_0>l$ であり，最大値は\n\\[ 2r_0-l=\\boldsymbol{7l-\\frac{8mg\\cos\\theta}{k}} \\]\n（管はこの位置まで十分長いとする．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "回転系では遠心力の管方向成分が $r$ に比例するため，ばねの復元力を弱める「負のばね」として働き，実効ばね定数が $k-m\\omega^2\\sin^2\\theta$ に下がる．一定の力（重力成分）は振動中心をずらすだけで周期を変えないが，$r$ に比例する力は周期を変える．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "simple-pendulum",
+  "circular-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "回転座標系",
+  "遠心力",
+  "単振動",
+  "実効ばね定数",
+  "安定性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

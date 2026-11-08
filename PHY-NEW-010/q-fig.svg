@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200">
+  <defs><marker id="q-ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#1f5fbf"/></marker></defs>
+  <line x1="20" y1="150" x2="500" y2="150" stroke="#222" stroke-width="1.6"/>
+  <line x1="25" y1="150" x2="15" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="39" y1="150" x2="29" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="53" y1="150" x2="43" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="67" y1="150" x2="57" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="81" y1="150" x2="71" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="95" y1="150" x2="85" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="109" y1="150" x2="99" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="123" y1="150" x2="113" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="137" y1="150" x2="127" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="151" y1="150" x2="141" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="165" y1="150" x2="155" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="179" y1="150" x2="169" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="193" y1="150" x2="183" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="207" y1="150" x2="197" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="221" y1="150" x2="211" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="235" y1="150" x2="225" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="249" y1="150" x2="239" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="263" y1="150" x2="253" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="277" y1="150" x2="267" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="291" y1="150" x2="281" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="305" y1="150" x2="295" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="319" y1="150" x2="309" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="333" y1="150" x2="323" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="347" y1="150" x2="337" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="361" y1="150" x2="351" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="375" y1="150" x2="365" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="389" y1="150" x2="379" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="403" y1="150" x2="393" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="417" y1="150" x2="407" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="431" y1="150" x2="421" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="445" y1="150" x2="435" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="459" y1="150" x2="449" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="473" y1="150" x2="463" y2="162" stroke="#222" stroke-width="1"/>
+  <line x1="487" y1="150" x2="477" y2="162" stroke="#222" stroke-width="1"/>
+  <rect x="80" y="125" width="300" height="25" fill="none" stroke="#222" stroke-width="1.6"/>
+  <rect x="150" y="95" width="40" height="30" fill="none" stroke="#222" stroke-width="1.6"/>
+  <text x="200" y="143" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">板 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">M</tspan></text>
+  <text x="152" y="88" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">小物体 <tspan font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">m</tspan></text>
+  <line x1="390" y1="137" x2="450" y2="137" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ar)"/>
+  <text x="410" y="128" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">v<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+  <text x="230" y="115" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">板と小物体：<tspan font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">μ</tspan><tspan baseline-shift="sub" font-size="10">2</tspan></text>
+  <text x="230" y="185" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">床と板：<tspan font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">μ</tspan><tspan baseline-shift="sub" font-size="10">1</tspan></text>
+  <text x="30" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">時刻 0 に板だけに速さ <tspan font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">v</tspan><tspan baseline-shift="sub" font-size="10">0</tspan> を与える（小物体は静止）</text>
+</svg>

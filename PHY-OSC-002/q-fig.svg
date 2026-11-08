@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" width="360" height="360">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker>
+<marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#888"/></marker>
+</defs>
+<line x1="130.00" y1="335.00" x2="130.00" y2="25.00" stroke="#222" stroke-width="1" stroke-dasharray="10 3 2 3"/>
+<line x1="130.00" y1="320.00" x2="302.07" y2="74.25" stroke="#222" stroke-width="2.4"/>
+<circle cx="130.00" cy="320.00" r="3.5" fill="#222"/>
+<text x="114.0" y="326.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle">O</text>
+<circle cx="244.72" cy="156.17" r="7.00" stroke="#222" stroke-width="1.6" fill="#222"/>
+<text x="264.7" y="160.2" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle">P</text>
+<line x1="148.02" y1="332.62" x2="262.74" y2="168.79" stroke="#888" stroke-width="1" marker-end="url(#q-ag)" marker-start="url(#q-ag)"/>
+<text x="217.4" y="258.7" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">s</text>
+<path d="M130.00,270.00 A50,50 0 0 1 158.68,279.04" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="146.0" y="262.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">θ</text>
+<path d="M87.7,58.4 L88.9,59.1 L90.3,59.7 L91.8,60.3 L93.6,60.9 L95.5,61.4 L97.6,61.9 L99.9,62.4 L102.3,62.9 L104.8,63.3 L107.5,63.7 L110.3,64.0 L113.1,64.3 L116.1,64.5 L119.1,64.7 L122.2,64.8 L125.3,64.9 L128.4,65.0 L131.6,65.0 L134.7,64.9 L137.8,64.8 L140.9,64.7 L143.9,64.5 L146.9,64.3 L149.7,64.0 L152.5,63.7 L155.2,63.3 L157.7,62.9 L160.1,62.4 L162.4,61.9 L164.5,61.4 L166.4,60.9 L168.2,60.3 L169.7,59.7 L171.1,59.1" stroke="#1f5fbf" stroke-width="1.8" fill="none" marker-end="url(#q-ab)"/>
+<text x="192.0" y="65.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf" text-anchor="middle">ω</text>
+<text x="96.0" y="40.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">鉛直軸</text>
+</svg>

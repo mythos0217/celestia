@@ -1,0 +1,142 @@
+{
+ "id": "PHY-OSC-010",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "3本のばねでつながれた2球の連成振動とエネルギーの完全な移動",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，滑らかな水平面上で向かい合う2つの壁の間に，質量 $m$ の小球A，Bと3本の軽いばね $\\mathrm{S_1}$，$\\mathrm{S_2}$，$\\mathrm{S_3}$ を，壁−$\\mathrm{S_1}$−A−$\\mathrm{S_2}$−B−$\\mathrm{S_3}$−壁の順に一直線につなぐ．$\\mathrm{S_1}$，$\\mathrm{S_3}$ はどちらも自然長 $l$，ばね定数 $k$ である．$\\mathrm{S_2}$ は $\\mathrm{S_1}$ と同じ材質・同じ太さのばねから切り出したもので，自然長は $L$ である．はじめ3本のばねはすべて自然長で，A，Bは静止している．右向きを正とし，A，Bのはじめの位置からの変位をそれぞれ $x_{\\mathrm A}$，$x_{\\mathrm B}$ とする．(2)以降では，$L$ は(1)で求めた値とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A，Bを同じ向きに同じ大きさだけ変位させて同時に静かに放したときのAの振動の角振動数を $\\omega_1$，互いに逆向きに同じ大きさだけ変位させて同時に静かに放したときのAの振動の角振動数を $\\omega_2$ とする．$\\omega_2=2\\omega_1$ となるような $L$ を $l$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "Bをはじめの位置に固定したまま，Aに外力を加えて右へ $d$ だけゆっくり変位させた．この外力がした仕事を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "続いて，AとBを同時に静かに放した．放した時刻を $t=0$ として，$x_{\\mathrm A}$，$x_{\\mathrm B}$ を $d$，$k$，$m$，$t$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "放した後，Aがはじめの位置で初めて静止する時刻を求めよ．また，その時刻のBの位置と速度を答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "放してから(4)の時刻までの間に，Bが右向きに最も大きく変位したときの $x_{\\mathrm B}$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：3本のばねでつながれた2球の連成振動とエネルギーの完全な移動",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：3本のばねでつながれた2球の連成振動とエネルギーの完全な移動",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$L=\\dfrac{2}{3}l$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{5}{4}kd^2$"
+   },
+   {
+    "id": "3",
+    "tex": "$x_{\\mathrm A}=\\dfrac{d}{2}\\left(\\cos\\sqrt{\\dfrac{k}{m}}\\,t+\\cos2\\sqrt{\\dfrac{k}{m}}\\,t\\right)$，$x_{\\mathrm B}=\\dfrac{d}{2}\\left(\\cos\\sqrt{\\dfrac{k}{m}}\\,t-\\cos2\\sqrt{\\dfrac{k}{m}}\\,t\\right)$"
+   },
+   {
+    "id": "4",
+    "tex": "$t=\\pi\\sqrt{\\dfrac{m}{k}}$，Bははじめの位置から左へ $d$ の位置で，速度 $0$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{9}{16}d$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　ばねの弾性力は伸びの割合（伸び／自然長）で決まるので，同じ材質・太さのばねのばね定数は自然長に反比例する．よって $\\mathrm{S_2}$ のばね定数は $k_2=\\dfrac{l}{L}k$．\n\n同じ向きに同じだけ変位させると $\\mathrm{S_2}$ の長さは変わらず，以後もA，Bは同じ運動をするので，Aは $\\mathrm{S_1}$ だけによって振動する：$\\omega_1=\\sqrt{\\dfrac{k}{m}}$．\n\n逆向きに同じだけ変位させると，対称性からA，Bはつねに逆向きに同じだけ動き，$\\mathrm{S_2}$ の中点は動かない．Aは $\\mathrm{S_1}$ と $\\mathrm{S_2}$ の左半分（自然長 $\\dfrac{L}{2}$，ばね定数 $\\dfrac{2l}{L}k$）にはさまれて振動するので\n\\[ \\omega_2=\\sqrt{\\frac{1}{m}\\left(k+\\frac{2l}{L}k\\right)} \\]\n（確認：$x_{\\mathrm B}=-x_{\\mathrm A}$ のとき，Aにはたらく力は $-kx_{\\mathrm A}-k_2(x_{\\mathrm A}-x_{\\mathrm B})=-(k+2k_2)x_{\\mathrm A}$．）$\\omega_2=2\\omega_1$ より $1+\\dfrac{2l}{L}=4$，\n\\[ L=\\boldsymbol{\\frac{2}{3}l} \\]\nこのとき $k_2=\\dfrac{3}{2}k$ である．\n\n\\textbf{(2)}　ゆっくり動かすので，外力の仕事はばねの弾性エネルギーの増加に等しい（Bは動かないので，Bを固定する力は仕事をしない）．$\\mathrm{S_1}$ は $d$ 伸び，$\\mathrm{S_2}$ は $d$ 縮むので\n\\[ W=\\frac12kd^2+\\frac12\\cdot\\frac32k\\,d^2=\\boldsymbol{\\frac54kd^2} \\]\n\n\\textbf{(3)}　$\\omega_1=\\sqrt{\\dfrac{k}{m}}$ とする．初期変位 $(x_{\\mathrm A},x_{\\mathrm B})=(d,0)$ を\n\\[ (d,\\ 0)=\\left(\\frac d2,\\ \\frac d2\\right)+\\left(\\frac d2,\\ -\\frac d2\\right) \\]\nと，同じ向きの変位と逆向きの変位に分ける．運動方程式は $x_{\\mathrm A}$，$x_{\\mathrm B}$ について1次なので，それぞれを静かに放した運動（角振動数 $\\omega_1$ と $2\\omega_1$ の単振動）の和が実際の運動になる：\n\\[ x_{\\mathrm A}=\\boldsymbol{\\frac d2\\left(\\cos\\omega_1t+\\cos2\\omega_1t\\right)},\\qquad x_{\\mathrm B}=\\boldsymbol{\\frac d2\\left(\\cos\\omega_1t-\\cos2\\omega_1t\\right)} \\]\n（$\\omega_1=\\sqrt{k/m}$）．実際に $m\\ddot x_{\\mathrm A}=-kx_{\\mathrm A}-\\frac32k(x_{\\mathrm A}-x_{\\mathrm B})$ などを満たし，$t=0$ で $x_{\\mathrm A}=d$，$x_{\\mathrm B}=0$，速度 $0$ である．\n\n\\textbf{(4)}　$\\theta=\\omega_1t$ とおくと，Aの速度は\n\\[ v_{\\mathrm A}=-\\frac{d\\omega_1}{2}(\\sin\\theta+2\\sin2\\theta)=-\\frac{d\\omega_1}{2}\\sin\\theta\\,(1+4\\cos\\theta) \\]\n$v_{\\mathrm A}=0$ となるのは $\\cos\\theta=-\\dfrac14$ または $\\sin\\theta=0$ のとき．$\\cos\\theta=-\\dfrac14$ では $x_{\\mathrm A}=\\dfrac d2\\left(-\\dfrac14+2\\cdot\\dfrac1{16}-1\\right)=-\\dfrac{9}{16}d\\neq0$．$\\theta=\\pi$ では $x_{\\mathrm A}=\\dfrac d2(-1+1)=0$ である．よって求める時刻は\n\\[ t=\\boldsymbol{\\pi\\sqrt{\\frac{m}{k}}} \\]\nこのとき $x_{\\mathrm B}=\\dfrac d2(-1-1)=-d$，$v_{\\mathrm B}=-\\dfrac{d\\omega_1}{2}(\\sin\\pi-2\\sin2\\pi)=0$．Bは\\textbf{はじめの位置から左へ $d$ の位置で静止}している．Aのエネルギーがすべて B の側に移り，はじめの状態をちょうど左右反転した状態になっている（弾性エネルギー $\\frac12\\cdot\\frac32kd^2+\\frac12kd^2=\\frac54kd^2$ で，(2)と一致）．これは $\\omega_2=2\\omega_1$ と整数比にしたので，$\\theta=\\pi$ で同方向の成分は符号が反転し，逆方向の成分はもとに戻るからである．\n\n\\textbf{(5)}　$c=\\cos\\theta$ とおくと，$\\cos2\\theta=2c^2-1$ より\n\\[ x_{\\mathrm B}=\\frac d2\\left(c-2c^2+1\\right)=\\frac d2\\left\\{\\frac98-2\\left(c-\\frac14\\right)^2\\right\\} \\]\n$0<\\theta<\\pi$ で $c$ は $1$ から $-1$ まで変わるので，$c=\\dfrac14$ のとき最大で\n\\[ x_{\\mathrm B}=\\boldsymbol{\\frac{9}{16}d} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "対称な連成振動は「同方向」と「逆方向」の2つの基準振動の重ね合わせで書け，逆方向の振動では中央のばねの中点が動かない（半分の長さのばねはばね定数2倍）．2つの角振動数が整数比になるように設計すると，一方の振動エネルギーが他方へ完全に移る瞬間が現れる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "superposition"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "連成振動",
+  "基準振動",
+  "重ね合わせ",
+  "ばね定数と自然長",
+  "エネルギーの移動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

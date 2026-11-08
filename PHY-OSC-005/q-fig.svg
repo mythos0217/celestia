@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 340" width="560" height="340">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker>
+<marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#888"/></marker>
+</defs>
+<rect x="30" y="30" width="360" height="290" stroke="#888" stroke-width="1" fill="none"/>
+<text x="150.0" y="22.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">斜面に垂直な方向から見た図</text>
+<line x1="60.00" y1="180.00" x2="375.00" y2="180.00" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<text x="382.0" y="185.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">x</text>
+<line x1="210.00" y1="310.00" x2="210.00" y2="40.00" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<text x="222.0" y="52.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">y</text>
+<text x="218" y="308" font-size="12" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">y</tspan><tspan font-family="Noto Sans CJK JP, sans-serif"> 軸：斜面の最大傾斜の上向き</tspan></text>
+<circle cx="210.00" cy="180.00" r="3" fill="#222"/>
+<text x="198.0" y="198.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle">O</text>
+<circle cx="210.00" cy="180.00" r="100.00" stroke="#888" stroke-width="1" fill="none" stroke-dasharray="5 4"/>
+<line x1="210.00" y1="180.00" x2="286.60" y2="115.72" stroke="#222" stroke-width="1.4"/>
+<circle cx="286.60" cy="115.72" r="7.00" stroke="#222" stroke-width="1.6" fill="#222"/>
+<text x="302.6" y="109.7" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle">P</text>
+<text x="242.3" y="139.9" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">r</text>
+<path d="M240.00,180.00 A30,30 0 0 0 232.98,160.72" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="252.0" y="170.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">θ</text>
+<path d="M267.00,81.27 A114,114 0 0 0 200.06,66.43" stroke="#1f5fbf" stroke-width="1.8" fill="none" marker-end="url(#q-ab)"/>
+<line x1="60.00" y1="75.00" x2="150.00" y2="75.00" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<line x1="60.00" y1="290.00" x2="150.00" y2="290.00" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<text x="165.0" y="80.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#c0392b" text-anchor="middle">E</text>
+<text x="165.0" y="295.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#c0392b" text-anchor="middle">E</text>
+<line x1="420.00" y1="250.00" x2="540.00" y2="250.00" stroke="#222" stroke-width="1.6"/>
+<line x1="420.00" y1="250.00" x2="540.00" y2="180.72" stroke="#222" stroke-width="1.6"/>
+<line x1="540.00" y1="250.00" x2="540.00" y2="180.72" stroke="#222" stroke-width="1.6"/>
+<path d="M456.00,250.00 A36,36 0 0 0 451.18,232.00" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="468.0" y="244.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">α</text>
+<text x="480.0" y="274.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">横から見た斜面</text>
+<line x1="440.00" y1="224.45" x2="520.00" y2="178.26" stroke="#888" stroke-width="1" marker-end="url(#q-ag)" marker-start="url(#q-ag)"/>
+<text x="470.0" y="187.4" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="middle">y</text>
+</svg>

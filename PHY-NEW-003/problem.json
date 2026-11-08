@@ -1,0 +1,120 @@
+{
+ "id": "PHY-NEW-003",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "動滑車つきゴンドラ上の人が綱をたぐる運動と体重計の読み",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，天井に固定された定滑車 A と，ゴンドラ G に支柱で固定された動滑車 B がある．軽い綱の一端を天井の点 C に固定し，綱を B に下から掛けたのち A に掛けて下へ垂らし，その下端を，G の床に置かれた体重計 H に乗った人が握っている．綱はすべて鉛直であり，人の手は G とともに動くものとする．人の質量を $m$，G の質量（B，H を含む）を $M$，重力加速度の大きさを $g$ とする．綱・滑車の質量および摩擦は無視できる．また，体重計の「読み」とは，体重計が人から受ける力の大きさを $g$ で割った値（質量の値）とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "人と G が静止しているとき，綱の張力の大きさ $T_0$ と体重計の読み $w_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "人が体重計に乗ったまま，人と G を静止させておくことができるための，$M$ と $m$ の間の条件を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "人が綱をたぐり，G を鉛直上向きに一定の加速度で上昇させたところ，体重計の読みは $w$ であった（人は体重計に乗ったままである）．G の加速度の大きさ $\\alpha$ を $w,\\ m,\\ M,\\ g$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の運動で，静止状態から G が高さ $h$ だけ上昇する間に人の手元を通過する綱の長さ $L$ を求めよ．また，綱の張力の大きさを $T$ として，積 $TL$ を $m,\\ M,\\ g,\\ \\alpha,\\ h$ で表し，それがこの間の「人と G」の力学的エネルギーの増加 $\\Delta E$ とどのような関係にあるか答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：動滑車つきゴンドラ上の人が綱をたぐる運動と体重計の読み",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T_0=\\dfrac{(m+M)g}{3}$，$w_0=\\dfrac{2m-M}{3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$M\\le 2m$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\alpha=\\left(\\dfrac{3w}{2m-M}-1\\right)g$"
+   },
+   {
+    "id": "4",
+    "tex": "$L=3h$，$TL=(m+M)(g+\\alpha)h$，$TL=\\Delta E$（等しい）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{注目物体の取り方}　人と G（B，H を含む）を一体とみると，体重計と人の間の力は内力になる．この一体に綱がおよぼす上向きの力は，B に掛かる 2 本と人の手が握る 1 本の計 3 本分，すなわち $3T$ である（C から B へ下りる部分，B から A へ上る部分，A から手へ下りる部分）．A は天井に固定されているので，A を支える力は「人と G」には働かない．\n\n上向きを正とし，G と人の加速度を $\\alpha$，体重計が人を押す力（垂直抗力）を $N$ とすると，\n\\[ \\text{人と G の一体：}\\quad (m+M)\\alpha = 3T-(m+M)g \\]\n\\[ \\text{人のみ：}\\quad m\\alpha = T+N-mg \\]\n（人には綱が手を上へ引く力 $T$ が働く．作用・反作用で，人は綱を下へ引いている．）\nこれより\n\\[ T=\\frac{(m+M)(g+\\alpha)}{3},\\qquad N=m(g+\\alpha)-T=\\frac{(2m-M)(g+\\alpha)}{3}. \\]\n（確認：G のみの運動方程式 $M\\alpha=2T-Mg-N$ にこれらを代入すると成り立つ．）\n\n\\textbf{(1)}　$\\alpha=0$ として\n\\[ \\boldsymbol{T_0=\\frac{(m+M)g}{3}},\\qquad w_0=\\frac{N}{g}=\\boldsymbol{\\frac{2m-M}{3}}. \\]\n\n\\textbf{(2)}　体重計は人を押すことしかできないので $N\\ge 0$ が必要である．$N=\\dfrac{(2m-M)g}{3}\\ge 0$ より $\\boldsymbol{M\\le 2m}$．$M>2m$ では，つり合いに必要な張力 $T_0$ が $mg$ を超え，人は綱に引き上げられて体重計から離れてしまう．\n\n\\textbf{(3)}　$N=wg$ とおくと $wg=\\dfrac{(2m-M)(g+\\alpha)}{3}$ より\n\\[ \\boldsymbol{\\alpha=\\left(\\frac{3w}{2m-M}-1\\right)g}. \\]\n体重計の読みは「$g+\\alpha$」に比例し，静止時の $w_0$ の $\\dfrac{g+\\alpha}{g}$ 倍になる．加速しても体重計から離れる（$N=0$）ことはなく，離れるかどうかは $M$ と $2m$ の大小だけで決まる点に注意．\n\n\\textbf{(4)}　G が $h$ 上昇すると，C–B 間，B–A 間，A–手 間の 3 本の綱がそれぞれ $h$ ずつ短くなるので，手元を通過する綱は $\\boldsymbol{L=3h}$．よって\n\\[ TL=\\frac{(m+M)(g+\\alpha)}{3}\\cdot 3h=\\boldsymbol{(m+M)(g+\\alpha)h}. \\]\n一方，静止から加速度 $\\alpha$ で $h$ 上昇したときの速さを $v$ とすると $v^2=2\\alpha h$ なので\n\\[ \\Delta E=\\frac12(m+M)v^2+(m+M)gh=(m+M)(g+\\alpha)h. \\]\nしたがって $\\boldsymbol{TL=\\Delta E}$ であり，人が綱をたぐる仕事がそのまま人と G の力学的エネルギーの増加になっている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "人とゴンドラを一体として選べば，体重計の力は内力となり，綱の本数（動滑車で 3 本）だけで張力が決まる．人だけの運動方程式と組み合わせると，体重計の読みは $g+\\alpha$ に比例し，人が乗っていられるかどうかは質量比だけで決まる．"
+ },
+ "concepts": [
+  "equation-of-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動方程式",
+  "動滑車",
+  "系の取り方",
+  "作用反作用",
+  "見かけの重さ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

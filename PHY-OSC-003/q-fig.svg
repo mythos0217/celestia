@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" width="420" height="320">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker>
+<marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#888"/></marker>
+</defs>
+<line x1="120.00" y1="48.00" x2="178.00" y2="48.00" stroke="#222" stroke-width="1.6"/>
+<line x1="129.00" y1="48.00" x2="122.00" y2="41.00" stroke="#222" stroke-width="1"/>
+<line x1="138.00" y1="48.00" x2="131.00" y2="41.00" stroke="#222" stroke-width="1"/>
+<line x1="147.00" y1="48.00" x2="140.00" y2="41.00" stroke="#222" stroke-width="1"/>
+<line x1="156.00" y1="48.00" x2="149.00" y2="41.00" stroke="#222" stroke-width="1"/>
+<line x1="165.00" y1="48.00" x2="158.00" y2="41.00" stroke="#222" stroke-width="1"/>
+<line x1="174.00" y1="48.00" x2="167.00" y2="41.00" stroke="#222" stroke-width="1"/>
+<circle cx="170.00" cy="50.00" r="3" fill="#222"/>
+<text x="154.0" y="66.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle">A</text>
+<line x1="170.00" y1="50.00" x2="170.00" y2="260.00" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<line x1="170.00" y1="50.00" x2="370.00" y2="50.00" stroke="#222" stroke-width="1.4"/>
+<circle cx="370.00" cy="50.00" r="8.00" stroke="#222" stroke-width="1.6" fill="#222"/>
+<text x="388.0" y="55.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">m</text>
+<text x="270.0" y="40.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">l</text>
+<path d="M370.00,50.00 A200,200 0 0 1 170.00,250.00" stroke="#888" stroke-width="1" fill="none" stroke-dasharray="3 4"/>
+<circle cx="170.00" cy="145.00" r="4.50" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="186.0" y="150.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle">B</text>
+<line x1="130.00" y1="50.00" x2="130.00" y2="145.00" stroke="#888" stroke-width="1" marker-end="url(#q-ag)" marker-start="url(#q-ag)"/>
+<line x1="122.00" y1="145.00" x2="164.00" y2="145.00" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="118.0" y="102.5" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">x</text>
+<circle cx="170.00" cy="250.00" r="3" fill="#222"/>
+<text x="184.0" y="266.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="middle">C</text>
+<text x="350.0" y="80.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">静かに放す</text>
+</svg>

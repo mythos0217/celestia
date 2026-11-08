@@ -1,0 +1,123 @@
+{
+ "id": "PHY-OSC-004",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "なめらかな床上で動ける台の山形曲面の頂上で小球が離れない条件",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかな水平な床の上に質量 $M$ の台 B が置かれている．B の上面はなめらかな曲面で，左側では床となめらかにつながり，頂上 T の付近は半径 $R$ の円弧（中心は B に固定されている）になっている．T の床からの高さは $H$ である．質量 $m$ の小球 P が床の上を速さ $v_0$ で右向きに進み，静止していた B の曲面を上っていく．P は B の鉛直断面内を運動し，T に達するまでは曲面から離れないものとする．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P が T に達した瞬間の，床に対する P と B の速度 $v$，$V$（右向きを正）と，B に対する P の相対速度の大きさ $u$ を，$v_0$ などを用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "P が T にある瞬間の B の加速度を求めよ．また，そのとき P が曲面から受ける垂直抗力の大きさ $N$ を $u$ を用いて表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "P が T に達し，かつ T で曲面から離れないための $v_0$ の範囲を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$M=m$，$H=R$ のとき，(3) の範囲を $g$，$R$ で表せ．また，B を床に固定した場合の同じ条件を満たす $v_0$ の範囲と比べ，両者に共通部分があるか答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：なめらかな床上で動ける台の山形曲面の頂上で小球が離れない条件",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$u=\\sqrt{v_0^2-2gH\\left(1+\\dfrac mM\\right)}$，$v=\\dfrac{mv_0+Mu}{M+m}$，$V=\\dfrac{m(v_0-u)}{M+m}$"
+   },
+   {
+    "id": "2",
+    "tex": "B の加速度は $0$，$N=m\\left(g-\\dfrac{u^2}{R}\\right)$"
+   },
+   {
+    "id": "3",
+    "tex": "$2gH\\left(1+\\dfrac mM\\right)<v_0^2\\le gR+2gH\\left(1+\\dfrac mM\\right)$"
+   },
+   {
+    "id": "4",
+    "tex": "$2\\sqrt{gR}<v_0\\le\\sqrt{5gR}$；固定した場合は $\\sqrt{2gR}<v_0\\le\\sqrt{3gR}$ で，共通部分はない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} P と B からなる系には水平方向の外力がはたらかない（床はなめらか）ので，水平方向の運動量が保存される．また，垂直抗力は P と B の間で互いに仕事を打ち消し合い（相対速度は曲面の接線方向），床の垂直抗力は仕事をしないので，力学的エネルギーも保存される．T では曲面の接線が水平なので，P の床に対する速度も水平である．\n\\[ mv_0=mv+MV,\\qquad \\frac12mv_0^2=\\frac12mv^2+\\frac12MV^2+mgH \\]\n$u=v-V$ とおくと，$v=\\dfrac{mv_0+Mu}{M+m}$，$V=\\dfrac{m(v_0-u)}{M+m}$ で，エネルギーの式は重心運動と相対運動に分けて\n\\[ \\frac12\\cdot\\frac{mM}{M+m}u^2=\\frac12\\cdot\\frac{mM}{M+m}v_0^2-mgH\\qquad\\therefore\\ \\boldsymbol{u=\\sqrt{v_0^2-2gH\\left(1+\\frac mM\\right)}} \\]\nP は B を越えようとして B に対して右向きに動いているので $u>0$ の根をとる．このとき $\\boldsymbol{v=\\dfrac{mv_0+Mu}{M+m}}$，$\\boldsymbol{V=\\dfrac{m(v_0-u)}{M+m}}$．\n\n\\textbf{(2)} P が T にあるとき，曲面の法線は鉛直なので，P と B が及ぼし合う垂直抗力は鉛直である．B にはたらく水平な力はないから，\\textbf{B の加速度はこの瞬間 $\\boldsymbol{0}$} である．\nしたがってこの瞬間，B とともに動く観測者は慣性系にいるのと同じで，慣性力を考える必要がない．B から見た P は半径 $R$ の円弧上を速さ $u$ で動いているので，P の鉛直下向きの加速度は向心加速度 $\\dfrac{u^2}{R}$ に等しい．P の鉛直方向の運動方程式は\n\\[ m\\frac{u^2}{R}=mg-N\\qquad\\therefore\\ \\boldsymbol{N=m\\left(g-\\frac{u^2}{R}\\right)} \\]\n向心加速度に入るのは，床に対する速さ $v$ ではなく B に対する相対速度 $u$ である点に注意．\n\n\\textbf{(3)} T に達するには $u^2>0$，T で離れないためには $N\\ge0$，すなわち $u^2\\le gR$ が必要．よって\n\\[ \\boldsymbol{2gH\\left(1+\\frac mM\\right)<v_0^2\\le gR+2gH\\left(1+\\frac mM\\right)} \\]\n\n\\textbf{(4)} $M=m$，$H=R$ を代入すると $4gR<v_0^2\\le5gR$，すなわち $\\boldsymbol{2\\sqrt{gR}<v_0\\le\\sqrt{5gR}}$．\nB を固定した場合は $u=v=\\sqrt{v_0^2-2gH}$ で，同じ条件は $2gR<v_0^2\\le3gR$，すなわち $\\sqrt{2gR}<v_0\\le\\sqrt{3gR}$．$\\sqrt{3gR}<2\\sqrt{gR}$ なので，\\textbf{共通部分はない}．台が動けると，入射の運動エネルギーの一部が重心の運動として残り相対運動に使えないため，必要な $v_0$ 全体が大きい側にずれる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "動く台の凸面から物体が離れる条件では，向心加速度に台に対する相対速度を使う必要がある．頂上では垂直抗力が鉛直で台の加速度が $0$ になるため，その瞬間の台の系は慣性系とみなせ，相対速度は運動量保存とエネルギー保存（重心運動と相対運動の分離）で求まる．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "kinematics-components",
+  "circular-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "円運動",
+  "垂直抗力",
+  "運動量保存",
+  "相対速度",
+  "面から離れる条件",
+  "重心系"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

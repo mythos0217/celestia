@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 360">
+<defs>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="a-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+</defs>
+<circle cx="160.0" cy="50.0" r="16.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="160.0" y="56.0" font-family="Times New Roman, serif" font-size="15" text-anchor="middle" fill="#222">Q</text>
+<text x="184.0" y="56.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" text-anchor="start" fill="#222">2m</text>
+<line x1="160.0" y1="66.0" x2="160.0" y2="286.0" stroke="#222" stroke-width="1.6"/>
+<circle cx="160" cy="126" r="4" fill="#c0392b" stroke="none"/>
+<text x="148.0" y="131.0" font-family="Times New Roman, serif" font-size="15" text-anchor="end" fill="#c0392b">G</text>
+<circle cx="160.0" cy="300.0" r="14.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="160.0" y="306.0" font-family="Times New Roman, serif" font-size="15" text-anchor="middle" fill="#222">P</text>
+<text x="182.0" y="306.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" text-anchor="start" fill="#222">m</text>
+<line x1="96.0" y1="50.0" x2="142.0" y2="50.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="96.0" y1="126.0" x2="140.0" y2="126.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="96.0" y1="300.0" x2="144.0" y2="300.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="104.0" y1="52.0" x2="104.0" y2="124.0" stroke="#888" stroke-width="1" marker-end="url(#a-ag)" marker-start="url(#a-ag)"/>
+<line x1="104.0" y1="128.0" x2="104.0" y2="298.0" stroke="#888" stroke-width="1" marker-end="url(#a-ag)" marker-start="url(#a-ag)"/>
+<text x="58.0" y="95.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" text-anchor="middle" fill="#222">(L+s)/3</text>
+<text x="58.0" y="218.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" text-anchor="middle" fill="#222">2(L+s)/3</text>
+<text x="252.0" y="92.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="start" fill="#222">ばね定数 3<tspan font-family="Times New Roman, serif" font-style="italic">k</tspan></text>
+<text x="252.0" y="112.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="start" fill="#222">（自然長 <tspan font-family="Times New Roman, serif" font-style="italic">L</tspan>/3）</text>
+<text x="252.0" y="212.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" text-anchor="start" fill="#222">ばね定数 3<tspan font-family="Times New Roman, serif" font-style="italic">k</tspan>/2</text>
+<text x="252.0" y="232.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="start" fill="#222">（自然長 2<tspan font-family="Times New Roman, serif" font-style="italic">L</tspan>/3）</text>
+<path d="M232,62 Q242,62 242,80 L242,112 Q242,122 232,122" fill="none" stroke="#888" stroke-width="1"/>
+<path d="M232,132 Q242,132 242,150 L242,276 Q242,292 232,292" fill="none" stroke="#888" stroke-width="1"/>
+<text x="220.0" y="340.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="#222">重心系：重力と慣性力が打ち消し合い，G は静止</text>
+</svg>

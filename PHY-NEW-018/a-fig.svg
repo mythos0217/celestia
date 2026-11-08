@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 330">
+<defs><marker id="a-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker></defs>
+<g font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">
+<line x1="108.0" y1="226.0" x2="492.0" y2="114.0" stroke="#222" stroke-width="1.6"/>
+<g transform="translate(300,170) rotate(-16.26)"><rect x="-20" y="-30" width="40" height="30" fill="#888" stroke="#222" stroke-width="1.6"/></g>
+<line x1="295.8" y1="155.6" x2="295.8" y2="265.6" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ah)"/>
+<text x="301.8" y="260.6" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">mg</text>
+<line x1="295.8" y1="155.6" x2="405.8" y2="155.6" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ah)"/>
+<text x="385.8" y="147.6" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#1f5fbf">慣性力 <tspan font-family="Times New Roman, serif" font-style="italic">ma</tspan></text>
+<line x1="291.6" y1="141.2" x2="263.6" y2="45.2" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ah)"/>
+<text x="239.6" y="45.2" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">N</text>
+<line x1="280.8" y1="175.6" x2="213.6" y2="195.2" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/>
+<text x="178.8" y="224.6" fill="#c0392b">動摩擦力 <tspan font-family="Times New Roman, serif" font-style="italic">μ′N</tspan></text>
+<line x1="295.8" y1="155.6" x2="189.8" y2="49.5" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="79.8" y="59.5" fill="#888">−<tspan font-family="Times New Roman, serif" font-style="italic">g′</tspan> の向き</text>
+<text x="20" y="320">台車の系（図は <tspan font-family="Times New Roman, serif" font-style="italic">a</tspan>＝<tspan font-family="Times New Roman, serif" font-style="italic">g</tspan> の場合．のぼっているとき）</text>
+</g></svg>

@@ -1,0 +1,127 @@
+{
+ "id": "PHY-OSC-002",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-06",
+ "topic": "回転する傾いた棒上のビーズが静止できる条件と棒の傾きによる場合分け",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，鉛直軸と角 $\\theta$（$0^\\circ<\\theta<90^\\circ$）をなす細い棒の下端 O を鉛直軸上に固定し，棒を鉛直軸のまわりに一定の角速度 $\\omega$ で回転させる．棒には質量 $m$ の小さなビーズ P が通してあり，P と棒の間の静止摩擦係数は $\\mu$（$0<\\mu<1$）である．P は O から棒に沿って距離 $s$ の位置で，棒に対して静止しているとする．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\tan\\theta<\\dfrac1\\mu$ のとき，P が棒に沿ってすべり落ちないための $\\omega$ の条件を求めよ．また，$\\tan\\theta\\ge\\dfrac1\\mu$ のときはどうなるか．"
+     },
+     {
+      "id": "2",
+      "tex": "P が棒に沿ってすべり上がらないための $\\omega$ の条件を，$\\tan\\theta$ と $\\mu$ の大小で場合分けして求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\theta=45^\\circ$ とし，$\\omega$ を一定に保ったまま，P を棒上のいろいろな位置で棒に対して静止させて放す実験をした．P が棒に対して静止し続けたのは $s_1\\le s\\le s_2$ の位置に置いたときだけであり，$s_2=9s_1$ であった．$\\mu$ と $\\omega$ を求めよ（$\\omega$ は $g$，$s_1$ で表せ）．また，P が棒から受ける摩擦力が $0$ となる位置 $s_0$ を $s_1$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：回転する傾いた棒上のビーズが静止できる条件と棒の傾きによる場合分け",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：回転する傾いた棒上のビーズが静止できる条件と棒の傾きによる場合分け",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\omega^2\\ge\\dfrac{g(\\cos\\theta-\\mu\\sin\\theta)}{s\\sin\\theta(\\sin\\theta+\\mu\\cos\\theta)}$；$\\tan\\theta\\ge\\dfrac1\\mu$ なら $\\omega$ によらずすべり落ちない"
+   },
+   {
+    "id": "2",
+    "tex": "$\\tan\\theta\\le\\mu$ なら $\\omega$ によらずすべり上がらない；$\\tan\\theta>\\mu$ なら $\\omega^2\\le\\dfrac{g(\\cos\\theta+\\mu\\sin\\theta)}{s\\sin\\theta(\\sin\\theta-\\mu\\cos\\theta)}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\mu=\\dfrac12$，$\\omega=\\sqrt{\\dfrac{\\sqrt2\\,g}{3s_1}}$，$s_0=3s_1$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{回転する観測者から見た力}\n棒とともに回転する観測者から見ると，P は静止しており，重力 $mg$，遠心力 $mr\\omega^2$（$r=s\\sin\\theta$，水平外向き），棒からの垂直抗力 $N$，静止摩擦力 $f$（棒に沿う向き）がつり合う（解答図）．棒に沿って上向き，棒に垂直な方向に分けると\n\\[ \\text{棒に沿う方向（上向き正）：}\\ f+mr\\omega^2\\sin\\theta-mg\\cos\\theta=0 \\]\n\\[ \\text{棒に垂直な方向：}\\ N=mr\\omega^2\\cos\\theta+mg\\sin\\theta\\ (>0) \\]\n遠心力は棒に沿って P を上へ押し上げ，同時に棒に押し付ける（$N$ を増やす）働きもする．静止の条件は $|f|\\le\\mu N$．\n\n\\textbf{(1)} すべり落ちる直前は摩擦力が上向きに最大（$f=\\mu N$）．すべり落ちない条件は\n\\[ mg\\cos\\theta-mr\\omega^2\\sin\\theta\\le\\mu(mr\\omega^2\\cos\\theta+mg\\sin\\theta) \\]\n\\[ r\\omega^2(\\sin\\theta+\\mu\\cos\\theta)\\ge g(\\cos\\theta-\\mu\\sin\\theta) \\]\n$\\tan\\theta<\\dfrac1\\mu$ なら右辺は正なので\n\\[ \\boldsymbol{\\omega^2\\ge\\frac{g(\\cos\\theta-\\mu\\sin\\theta)}{s\\sin\\theta(\\sin\\theta+\\mu\\cos\\theta)}} \\]\n$\\tan\\theta\\ge\\dfrac1\\mu$ なら右辺は $0$ 以下で，任意の $\\omega$（$\\omega=0$ も含む）で成り立つ．すなわち \\textbf{棒が十分寝ていれば回転させなくてもすべり落ちない}．\n\n\\textbf{(2)} すべり上がる直前は摩擦力が下向きに最大（$f=-\\mu N$）．すべり上がらない条件は\n\\[ mr\\omega^2\\sin\\theta-mg\\cos\\theta\\le\\mu(mr\\omega^2\\cos\\theta+mg\\sin\\theta) \\]\n\\[ r\\omega^2(\\sin\\theta-\\mu\\cos\\theta)\\le g(\\cos\\theta+\\mu\\sin\\theta) \\]\n右辺は常に正である．\n・$\\tan\\theta\\le\\mu$ のとき：左辺は $0$ 以下なので，\\textbf{$\\omega$ をいくら大きくしてもすべり上がらない}．棒が鉛直に近いと，遠心力の棒方向成分（$\\propto\\sin\\theta$）よりも，棒に押し付ける成分がつくる最大摩擦力（$\\propto\\mu\\cos\\theta$）のほうが速く増えるからである．\n・$\\tan\\theta>\\mu$ のとき：$\\boldsymbol{\\omega^2\\le\\dfrac{g(\\cos\\theta+\\mu\\sin\\theta)}{s\\sin\\theta(\\sin\\theta-\\mu\\cos\\theta)}}$．\n\n\\textbf{(3)} $\\theta=45^\\circ$ では $r=\\dfrac{s}{\\sqrt2}$，(1)(2) の条件は\n\\[ \\frac{1-\\mu}{1+\\mu}\\,g\\le\\frac{s}{\\sqrt2}\\,\\omega^2\\le\\frac{1+\\mu}{1-\\mu}\\,g \\]\n（$\\mu<1$ なので $\\tan45^\\circ=1$ は $\\mu<1<\\dfrac1\\mu$ を満たし，両側に境界がある．）$\\omega$ を固定すると，静止できる位置は $s_1\\le s\\le s_2$ で\n\\[ \\frac{s_2}{s_1}=\\left(\\frac{1+\\mu}{1-\\mu}\\right)^2=9\\qquad\\therefore\\ \\frac{1+\\mu}{1-\\mu}=3,\\quad \\boldsymbol{\\mu=\\frac12} \\]\n$s=s_1$ で左の等号が成り立つので $\\dfrac{s_1}{\\sqrt2}\\omega^2=\\dfrac13g$，よって $\\boldsymbol{\\omega=\\sqrt{\\dfrac{\\sqrt2\\,g}{3s_1}}}$．\n摩擦力が $0$ になるのは $r\\omega^2\\sin\\theta=g\\cos\\theta$，すなわち $\\dfrac{s_0}{\\sqrt2}\\omega^2=g$ のときで，$\\dfrac{s_0}{s_1}=3$，$\\boldsymbol{s_0=3s_1}$（$s_0=\\sqrt{s_1s_2}$ になっている）．\nなお，$s>s_2$ に置くと遠心力が勝って外へすべり出し，外へ行くほど遠心力が増すので戻らない．$s<s_1$ に置くとすべり落ちる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "遠心力は棒方向の成分で物体を押し上げると同時に，棒に垂直な成分で垂直抗力（最大摩擦力）も増やす．両者の増え方の比が $\\tan\\theta$ と $\\mu$ の大小で決まるため，棒の傾きによってはすべり上がり・すべり落ちのどちらかが決して起こらない．"
+ },
+ "concepts": [
+  "simple-harmonic-motion",
+  "circular-motion",
+  "torque"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "遠心力",
+  "静止摩擦",
+  "回転座標系",
+  "場合分け",
+  "条件の逆算"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

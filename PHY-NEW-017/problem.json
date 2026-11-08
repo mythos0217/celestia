@@ -1,0 +1,121 @@
+{
+ "id": "PHY-NEW-017",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-03",
+ "topic": "途中でパラシュートを開く落下：速度に比例する抵抗力の力積と変位",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水平に速さ $u$ で飛ぶ飛行機から，地面からの高さ $h_0$ の点 P で人がとび出す．とび出した直後の人の速度は，水平で大きさ $u$ である．人とパラシュートを合わせた質量を $m$，重力加速度の大きさを $g$ とする．図のように，パラシュートを開くまでは空気の抵抗は無視でき，P から鉛直方向に距離 $s$ だけ落下したところでパラシュートを瞬間的に開く．開いた後は，速度 $\\vec v$ に対して $-k\\vec v$（$k$ は正の定数）の抵抗力を受ける．風はなく，運動は鉛直面内で起こるとし，$v_{\\mathrm T}=\\dfrac{mg}{k}$ とおく．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "パラシュートを開いてから着地するまでの時間を $T$，その間の水平移動距離を $X_1$，着地直前の速度の水平成分を $w$，鉛直下向き成分を $V$ とする．$T$ と $X_1$ を，$h_0,\\ s,\\ g,\\ u,\\ v_{\\mathrm T},\\ w,\\ V$ のうち必要なものを用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "P を出てから着地するまでの時間 $t_{\\mathrm L}$ を，$h_0,\\ s,\\ g,\\ v_{\\mathrm T},\\ V$ で表せ．さらに，開いてから着地までの時間が $m/k$ に比べて十分長く，着地直前の速度が $(w,\\,V)=(0,\\,v_{\\mathrm T})$ とみなせるとき，$t_{\\mathrm L}$ を $h_0,\\ s,\\ g,\\ v_{\\mathrm T}$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の近似のもとで，パラシュートを開く位置を $\\Delta s$ だけ低くすると，着地の時刻はどれだけ早まるか．自由落下の時間は長くなるのに，その時間が結果に現れない理由を簡潔に説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の近似のもとで，P から水平距離 $D$ だけ前方の目標地点 T に着地したい．必要な $s$ を $D,\\ u,\\ g,\\ v_{\\mathrm T}$ で表せ．また，そのような $s$ が存在するための $D$ の条件を答えよ（$s<h_0$ は満たされているとする）．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：途中でパラシュートを開く落下：速度に比例する抵抗力の力積と変位",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T=\\dfrac{V-\\sqrt{2gs}}{g}+\\dfrac{h_0-s}{v_{\\mathrm T}}$，$X_1=\\dfrac{v_{\\mathrm T}(u-w)}{g}$"
+   },
+   {
+    "id": "2",
+    "tex": "$t_{\\mathrm L}=\\dfrac{V}{g}+\\dfrac{h_0-s}{v_{\\mathrm T}}$，近似のもとで $t_{\\mathrm L}=\\dfrac{v_{\\mathrm T}}{g}+\\dfrac{h_0-s}{v_{\\mathrm T}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{\\Delta s}{v_{\\mathrm T}}$ だけ早まる（理由は解説参照）"
+   },
+   {
+    "id": "4",
+    "tex": "$s=\\dfrac{g}{2}\\left(\\dfrac{D}{u}-\\dfrac{v_{\\mathrm T}}{g}\\right)^2$，条件 $D>\\dfrac{uv_{\\mathrm T}}{g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{抵抗力の力積は変位に比例する}\n\nパラシュートを開いた後，抵抗力は $-k\\vec v$ なので，微小時間 $\\Delta t$ の力積は $-k\\vec v\\,\\Delta t=-k\\,\\Delta\\vec r$（$\\Delta\\vec r$ はその間の変位）である．したがって，ある時間の間の抵抗力の力積は，速度の変わり方によらず\n\\[ (\\text{抵抗力の力積})=-k\\times(\\text{その間の変位}) \\]\nとなり，水平・鉛直の各成分ごとに成り立つ．速度の時間変化（指数関数）を求めなくても，運動量と力積の関係だけで時間と距離が結びつく．なお $\\dfrac mk=\\dfrac{v_{\\mathrm T}}{g}$ である．\n\n\\textbf{(1)} 開く瞬間の速度は，水平成分 $u$（自由落下中は水平方向に力がない），鉛直下向き成分 $\\sqrt{2gs}$ である．開いた後の鉛直落下距離は $h_0-s$．鉛直下向きを正として運動量と力積の関係を書くと\n\\[ m\\left(V-\\sqrt{2gs}\\right)=mgT-k(h_0-s) \\]\n\\[ \\therefore\\ T=\\boldsymbol{\\frac{V-\\sqrt{2gs}}{g}+\\frac{h_0-s}{v_{\\mathrm T}}} \\]\n水平方向には抵抗力だけがはたらくので\n\\[ m(w-u)=-kX_1\\qquad\\therefore\\ X_1=\\frac mk(u-w)=\\boldsymbol{\\frac{v_{\\mathrm T}(u-w)}{g}} \\]\n\n\\textbf{(2)} 自由落下の時間は $t_0=\\sqrt{2s/g}=\\dfrac{\\sqrt{2gs}}{g}$ なので\n\\[ t_{\\mathrm L}=t_0+T=\\boldsymbol{\\frac{V}{g}+\\frac{h_0-s}{v_{\\mathrm T}}} \\]\n（運動の全体に対して，鉛直方向に「$mV-0=mg\\,t_{\\mathrm L}-k(h_0-s)$」と書いても同じ結果がただちに得られる．抵抗力は落下距離 $h_0-s$ の間だけはたらくからである．）\n開いた後の速度は時間 $m/k$ 程度で終端速度 $(0,\\,v_{\\mathrm T})$ に近づくので，十分長く降下すれば $V=v_{\\mathrm T}$ とおけて\n\\[ t_{\\mathrm L}=\\boldsymbol{\\frac{v_{\\mathrm T}}{g}+\\frac{h_0-s}{v_{\\mathrm T}}} \\]\n\n\\textbf{(3)} (2) より $t_{\\mathrm L}$ は $s$ の1次式で，$s$ を $\\Delta s$ 増やすと $t_{\\mathrm L}$ は $\\boldsymbol{\\Delta s/v_{\\mathrm T}}$ だけ減る．\n理由：自由落下を長くすると，その時間の分だけ重力の力積で余分な下向きの運動量 $mg\\,t_0$ を得るが，着地時の運動量は終端速度で決まって変わらない．運動の全体で見ると，重力の力積 $mg\\,t_{\\mathrm L}$ は「着地時の運動量 $mv_{\\mathrm T}$」と「抵抗力の力積の大きさ $k(h_0-s)$」の和に等しく，抵抗力の力積は時間ではなくパラシュートを開いて落ちた距離だけで決まる．そのため，自由落下の時間そのものは結果に現れず，抵抗を受けて落ちる距離 $\\Delta s$ が減った分（それを速さ $v_{\\mathrm T}$ で落ちる時間）だけ早まる．\n\n\\textbf{(4)} (1) で $w=0$ として，着地点までの水平距離は\n\\[ X=u t_0+X_1=u\\sqrt{\\frac{2s}{g}}+\\frac{uv_{\\mathrm T}}{g} \\]\nこれが $D$ に等しいので\n\\[ \\sqrt{\\frac{2s}{g}}=\\frac Du-\\frac{v_{\\mathrm T}}{g}\\qquad\\therefore\\ s=\\boldsymbol{\\frac g2\\left(\\frac Du-\\frac{v_{\\mathrm T}}{g}\\right)^2} \\]\n左辺は正なので，$\\boldsymbol{D>\\dfrac{uv_{\\mathrm T}}{g}}$ が必要（十分でもある）．すぐに開いても，水平方向の運動量 $mu$ を抵抗力で失うまでに $\\dfrac{m u}{k}=\\dfrac{uv_{\\mathrm T}}{g}$ だけは進んでしまうからである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "速度に比例する抵抗力の力積は $-k\\times$（変位）なので，指数関数を解かずに運動量と力積の関係だけで時間と距離が結びつく．途中から抵抗がはたらく落下では，全体の時間が「着地時の速さ $/g$＋抵抗下の落下距離 $/v_{\\mathrm T}$」となって自由落下の時間が消え，水平方向の移動距離も $\\frac mk\\times$（速度変化）で決まる．"
+ },
+ "concepts": [
+  "equation-of-motion",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "空気抵抗",
+  "終端速度",
+  "運動量と力積",
+  "パラシュート",
+  "逆算"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

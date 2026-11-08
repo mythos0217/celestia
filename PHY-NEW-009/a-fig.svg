@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300">
+<defs>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker>
+<marker id="a-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#888"/></marker>
+</defs>
+<line x1="70.0" y1="130.0" x2="445.0" y2="130.0" stroke="#222" stroke-width="1.2"/>
+<line x1="437.5" y1="130.0" x2="452.5" y2="130.0" stroke="#222" stroke-width="1.8" marker-end="url(#a-ak)"/>
+<line x1="70.0" y1="220.0" x2="70.0" y2="26.5" stroke="#222" stroke-width="1.2"/>
+<line x1="70.0" y1="31.0" x2="70.0" y2="22.0" stroke="#222" stroke-width="1.8" marker-end="url(#a-ak)"/>
+<text x="458.5" y="135.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">t</text>
+<text x="64.0" y="22.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">(台に対する斜面上向きの速度)</text>
+<line x1="70.0" y1="40.0" x2="211.4" y2="130.0" stroke="#c0392b" stroke-width="1.8"/>
+<line x1="211.4" y1="130.0" x2="398.5" y2="198.0" stroke="#1f5fbf" stroke-width="1.8"/>
+<text x="64.0" y="45.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="end">v</text>
+<text x="64.0" y="135.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="end">0</text>
+<line x1="70.0" y1="198.0" x2="398.5" y2="198.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="64.0" y="203.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="end">−w</text>
+<line x1="398.5" y1="130.0" x2="398.5" y2="198.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="145.0" y="74.2" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">傾き −a₁（上り）</text>
+<text x="231.4" y="179.5" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">傾き −a₂（下り）</text>
+<text x="211.4" y="122.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">最高点</text>
+<text x="70.0" y="280.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">a₁ = 3√2g/4，a₂ = 3√2g/7：上りと下りで面積（移動距離 S）が等しい</text>
+</svg>
