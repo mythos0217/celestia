@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300">
+<defs><marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="a-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker></defs>
+<line x1="30.0" y1="60.0" x2="500.0" y2="60.0" stroke="#888" stroke-width="1" marker-end="url(#a-ag)"/>
+<text x="502.0" y="78.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">x</text>
+<line x1="70.0" y1="295.0" x2="70.0" y2="20.0" stroke="#888" stroke-width="1" marker-end="url(#a-ag)"/>
+<text x="56.0" y="28.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">y</text>
+<path d="M70.0,285.0 L70.1,276.0 L70.4,267.0 L70.8,258.0 L71.5,249.0 L72.4,240.1 L73.5,231.2 L74.9,222.3 L76.4,213.4 L78.3,204.6 L80.4,195.8 L82.7,187.1 L85.4,178.5 L88.3,170.0 L91.5,161.6 L95.1,153.4 L99.0,145.3 L103.2,137.3 L107.8,129.6 L112.7,122.0 L118.0,114.8 L123.7,107.8 L129.7,101.1 L136.1,94.8 L142.9,88.8 L150.0,83.4 L157.5,78.3 L165.3,73.9 L173.4,69.9 L181.8,66.6 L190.3,64.0 L199.1,61.9 L208.0,60.6 L217.0,60.0 L220.0,60.0" fill="none" stroke="#c0392b" stroke-width="1.8"/>
+<circle cx="70.0" cy="285.0" r="4" fill="#c0392b"/>
+<text x="80.0" y="289.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">A（出発点）</text>
+<circle cx="220.0" cy="60.0" r="4" fill="#222"/>
+<text x="190.0" y="48.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">捕獲点</text>
+<text x="56.0" y="78.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">O</text>
+<line x1="70.0" y1="34.0" x2="220.0" y2="34.0" stroke="#888" stroke-width="1" marker-end="url(#a-ag)" marker-start="url(#a-ag)"/>
+<text x="145.0" y="28.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">vT</text>
+<line x1="75.6" y1="217.8" x2="103.8" y2="60.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="103.8" cy="60.0" r="3" fill="#222"/>
+<line x1="95.1" y1="153.4" x2="137.5" y2="60.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="137.5" cy="60.0" r="3" fill="#222"/>
+<line x1="132.9" y1="97.9" x2="171.3" y2="60.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="171.3" cy="60.0" r="3" fill="#222"/>
+<text x="300" y="200" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">u</tspan> = 2<tspan font-family="Times New Roman, serif" font-style="italic">v</tspan> のときの A の軌跡</text>
+<text x="300.0" y="222.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">（破線は同時刻の A と B を結ぶ線）</text>
+</svg>

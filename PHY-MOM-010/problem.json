@@ -1,0 +1,123 @@
+{
+ "id": "PHY-MOM-010",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "ばねで支えられた板の並ぶ階段を弾性衝突で下る小球（定常状態のエネルギー収支と逆問題）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，階段の各段に，ばね定数 $k$ の同じばねで支えられた質量 $M$ の水平な板があり，小球が来るまではどの板も静止している．隣り合う板の静止位置の高さの差は $h$，水平方向の間隔は一定である．質量 $m\\ (m<M)$ の小球が，各板の中心に順に1回ずつ衝突しながら階段を下っており，どの衝突でも衝突直前の小球の速度が等しい定常的な運動をしている．小球と板の衝突は弾性衝突で，瞬間的に起こるものとし，衝突中のばねの弾性力と重力の力積は無視できる．板は鉛直方向にのみ動く．重力加速度の大きさを $g$ とし，空気抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "衝突直前の小球の速度の鉛直成分の大きさを $v$（下向き）とする．衝突直後の小球の速度の鉛直成分は上向きで大きさ $ev$ と表せることを示し，$e$ を $m,\\ M$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "定常的な運動での $v$ を $m,\\ M,\\ g,\\ h$ で表せ．また，1回の衝突で板が得る運動エネルギーを求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ある衝突から次の衝突までの時間 $\\tau$ を $m,\\ M,\\ g,\\ h$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "ある実験で $h$ と $m$ が分からなかったので，次の量を測定した．小球が通過した後の各板は振幅 $A$，周期 $T_0$ の単振動を続け，衝突の時間間隔は $\\tau$ であった．$h$ と $m$ を $A,\\ T_0,\\ \\tau,\\ k,\\ g$ のうち必要なものを用いて表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ばねで支えられた板の並ぶ階段を弾性衝突で下る小球（定常状態のエネルギー収支と逆問題）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$e=\\dfrac{M-m}{M+m}$"
+   },
+   {
+    "id": "2",
+    "tex": "$v=(M+m)\\sqrt{\\dfrac{gh}{2Mm}}$，板の運動エネルギー $mgh$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\tau=\\sqrt{\\dfrac{2Mh}{mg}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$h=\\dfrac{\\pi A\\tau}{T_0}$，$m=\\dfrac{kAT_0}{2\\pi g\\tau}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 動ける板との弾性衝突}\n衝突は瞬間的で，ばねの力と重力の力積は無視できるので，小球と板の鉛直方向の運動量が保存する．上向きを正とし，衝突直後の小球と板の速度を $v',\\ V$ とする．弾性衝突（反発係数 $1$）なので\n\\[ m(-v)=mv'+MV,\\qquad v'-V=-(-v-0)=v . \\]\nこれを解いて\n\\[ v'=\\frac{M-m}{M+m}\\,v,\\qquad V=-\\frac{2m}{M+m}\\,v . \\]\n$M>m$ より $v'>0$（上向き）で，$\\boldsymbol{e=\\dfrac{M-m}{M+m}}$ となる．小球だけに注目すると，動ける板との弾性衝突は反発係数 $e\\ (<1)$ の固定面との衝突と同じにふるまい，小球が失う運動エネルギーはすべて板に移る．\n\n\\textbf{(2) 定常状態のエネルギー収支}\n衝突から次の衝突まで小球は放物運動をし，水平成分は変わらない．高さが $h$ だけ下がるので，鉛直成分について\n\\[ v^2=(ev)^2+2gh,\\qquad v^2=\\frac{2gh}{1-e^2}. \\]\n$1-e^2=\\dfrac{4Mm}{(M+m)^2}$ より $\\boldsymbol{v=(M+m)\\sqrt{\\dfrac{gh}{2Mm}}}$．\n板の運動エネルギーは\n\\[ \\frac12MV^2=\\frac12M\\cdot\\frac{4m^2v^2}{(M+m)^2}=\\frac{2Mm^2}{(M+m)^2}\\cdot\\frac{gh(M+m)^2}{2Mm}=\\boldsymbol{mgh}. \\]\nこれは「1段下りる間に重力がした仕事 $mgh$ を，衝突でそっくり板に渡す」から定常になる，という収支そのものであり，$M$ や $k$ によらない．\n\n\\textbf{(3) 衝突の時間間隔}\n鉛直速度は上向き $ev$ から下向き $v$ まで加速度 $-g$ で一様に変わるので\n\\[ \\tau=\\frac{ev+v}{g}=\\frac{2M}{M+m}\\cdot\\frac{(M+m)}{g}\\sqrt{\\frac{gh}{2Mm}}=\\boldsymbol{\\sqrt{\\frac{2Mh}{mg}}}. \\]\n\n\\textbf{(4) 測定値から $h$，$m$ を求める}\n板の単振動の周期から $T_0=2\\pi\\sqrt{M/k}$，すなわち $M=\\dfrac{kT_0^{\\,2}}{4\\pi^2}$．衝突直後の板は振動の中心（静止位置）にあって速さ $|V|$ をもつので，振動のエネルギーは $\\frac12MV^2=\\frac12kA^2$．(2) とあわせて\n\\[ \\tfrac12kA^2=mgh \\quad\\cdots① \\]\n(3) に $M$ を代入して\n\\[ \\tau^2=\\frac{2Mh}{mg}=\\frac{kT_0^{\\,2}h}{2\\pi^2mg}\\quad\\cdots② \\]\n① より $m=\\dfrac{kA^2}{2gh}$ を ② に代入すると $\\tau^2=\\dfrac{T_0^{\\,2}h^2}{\\pi^2A^2}$ となり\n\\[ \\boldsymbol{h=\\frac{\\pi A\\tau}{T_0}},\\qquad \\boldsymbol{m=\\frac{kA^2}{2gh}=\\frac{kAT_0}{2\\pi g\\tau}}. \\]\n段差 $h$ は $k$ や $g$ を使わず，板の振幅・周期と衝突の間隔だけで決まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ばねで支えられた板への弾性衝突は，小球から見ると反発係数 $(M-m)/(M+m)$ の衝突と同じで，定常的に段を下るには1段で得る位置エネルギー $mgh$ がちょうど板の振動エネルギーに移らなければならない．そのため板の振動エネルギーは質量によらず $mgh$ となり，板の振幅・周期と衝突間隔から段差と小球の質量を逆算できる．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "simple-harmonic-motion",
+  "simple-pendulum"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "弾性衝突",
+  "実効的な反発係数",
+  "定常状態",
+  "エネルギー収支",
+  "ばね振り子",
+  "逆問題"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

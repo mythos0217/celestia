@@ -1,0 +1,134 @@
+{
+ "id": "PHY-KIN-013",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "直線上を等速で進む標的を一定の速さで追う追跡（距離と遅れの一次結合の一様な減少）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水平面上に $xy$ 座標をとる．小物体Bは $x$ 軸上を正の向きに一定の速さ $v$ で進み，時刻 $t=0$ に原点Oを通過する．同じ時刻に点 $(0,\\,-\\ell)$ にいた追跡体Aは，一定の速さ $u$ で，つねにその瞬間のBの位置に向かって進む（Aは速さを変えずに向きだけを連続的に変える）．図は時刻 $0$ の位置関係である．\n\n時刻 $t$ におけるAB間の距離を $r$，Bの $x$ 座標からAの $x$ 座標を引いた量を $s$，AからBへ向かう向きが $x$ 軸の正の向きとなす角を $\\theta$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\dfrac{dr}{dt}$ と $\\dfrac{ds}{dt}$ を $u$，$v$，$\\theta$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$ur+vs$ の時間変化率を求めよ．これを用いて，$u>v$ のとき，AがBに追いつく時刻 $T$ と，それまでにAが進む道のり $L$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$u>v$ のとき，AがBに追いつく地点の $x$ 座標を求めよ．また，追いつく直前にAはBをどの向きから追っているか．理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$u=v$ のとき，AはBに追いつけない．十分に時間がたったときのAB間の距離を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：直線上を等速で進む標的を一定の速さで追う追跡（距離と遅れの一次結合の一様な減少）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：直線上を等速で進む標的を一定の速さで追う追跡（距離と遅れの一次結合の一様な減少）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{dr}{dt}=-u+v\\cos\\theta$，$\\dfrac{ds}{dt}=v-u\\cos\\theta$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{d}{dt}(ur+vs)=-(u^2-v^2)$（一定），$T=\\dfrac{u\\ell}{u^2-v^2}$，$L=\\dfrac{u^2\\ell}{u^2-v^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$x=\\dfrac{uv\\ell}{u^2-v^2}$，Bの真後ろから（$\\theta\\to0$）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{\\ell}{2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 距離と $x$ 方向のずれの変化率}\n\nAの速度はAからBへ向かう向き（単位ベクトルを $\\vec e$ とする）に大きさ $u$，Bの速度は $x$ 軸方向に大きさ $v$ である．$\\vec e$ と $x$ 軸のなす角が $\\theta$ なので，BのAに対する相対速度の $\\vec e$ 方向成分が距離 $r$ の変化率である：\n\\[ \\frac{dr}{dt}=v\\cos\\theta-u \\]\n（Aの速度は $\\vec e$ 方向なので $-u$，Bの速度の $\\vec e$ 方向成分は $v\\cos\\theta$．）\n一方，$s=x_{\\rm B}-x_{\\rm A}$ で，$\\dfrac{dx_{\\rm B}}{dt}=v$，$\\dfrac{dx_{\\rm A}}{dt}=u\\cos\\theta$ だから\n\\[ \\frac{ds}{dt}=v-u\\cos\\theta \\]\n\n\\textbf{(2) 一定の割合で減る組み合わせ}\n\n$\\theta$ は時々刻々変わるので，(1)の式は単独では積分できない．そこで $\\cos\\theta$ が消える組み合わせをつくる：\n\\[ \\frac{d}{dt}(ur+vs)=u(v\\cos\\theta-u)+v(v-u\\cos\\theta)=\\boldsymbol{-(u^2-v^2)} \\]\nこれは $\\theta$ によらない定数である．$t=0$ では $r=\\ell$，$s=0$，追いついた瞬間は $r=0$，$s=0$ なので\n\\[ 0-u\\ell=-(u^2-v^2)T\\quad\\Longrightarrow\\quad \\boldsymbol{T=\\frac{u\\ell}{u^2-v^2}} \\]\nAは一定の速さ $u$ で進むから，道のりは $\\boldsymbol{L=uT=\\dfrac{u^2\\ell}{u^2-v^2}}$．\n\n\\textbf{(3) 追いつく地点と向き}\n\n追いつく地点はその時刻のBの位置なので $x=vT=\\boldsymbol{\\dfrac{uv\\ell}{u^2-v^2}}$．\n\n向きについては，線分ABの向きの変化を考える．Aの速度はAB方向なのでABを回転させない．ABを回転させるのはBの速度のAB に垂直な成分 $v\\sin\\theta$ だけで，これはABを $x$ 軸に近づける向きに回すから\n\\[ \\frac{d\\theta}{dt}=-\\frac{v\\sin\\theta}{r} \\]\n$\\theta$ は減り続け，しかも $r\\to0$ では $\\theta$ を $0$ に引き寄せる割合がいくらでも大きくなる．したがって追いつく直前には $\\theta\\to0$，すなわち\\textbf{AはBの真後ろから（$x$ 軸に沿って）追う}．\n\n\\textbf{(4) $u=v$ の場合}\n\n$u=v$ のとき(2)の結果は $\\dfrac{d}{dt}(r+s)=0$ となり，$r+s=\\ell$（一定）．(1)より $\\dfrac{dr}{dt}=-u(1-\\cos\\theta)\\leqq0$ で，$r$ は減るが $0$ にはならない（$r=0$ なら $s=0$ で $r+s=\\ell$ に反する）．十分に時間がたつと(3)と同じ理由で $\\theta\\to0$ となり，AはBの真後ろを追う形になるので $s\\to r$．よって $2r\\to\\ell$ より，AB間の距離は\n\\[ \\boldsymbol{\\frac{\\ell}{2}} \\]\nに近づく（はじめ真横にいた追跡者が，同じ速さでは最終的に $\\ell/2$ 遅れの真後ろにつく）．\n\n（解答図は $u=2v$ のときのAの軌跡である．）\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "追跡曲線そのものは求めなくても，距離の変化率 $-u+v\\cos\\theta$ と $x$ 方向のずれの変化率 $v-u\\cos\\theta$ を $u$，$v$ 倍して足すと $\\theta$ が消え，$ur+vs$ が一定の割合 $u^2-v^2$ で減ることから追跡時間が決まる．同じ速さ（$u=v$）では $r+s$ が保存され，最終的に真後ろで距離 $\\ell/2$ に落ち着く．"
+ },
+ "concepts": [
+  "uniform-acceleration",
+  "kinematics-components"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "追跡曲線",
+  "相対速度",
+  "保存量",
+  "極限",
+  "運動の表し方"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 215">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<line x1="30" y1="170" x2="470" y2="170" stroke="#222" stroke-width="1.6"/>
+<line x1="38.0" y1="170" x2="30.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="48.0" y1="170" x2="40.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="58.0" y1="170" x2="50.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="68.0" y1="170" x2="60.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="78.0" y1="170" x2="70.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="88.0" y1="170" x2="80.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="98.0" y1="170" x2="90.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="108.0" y1="170" x2="100.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="118.0" y1="170" x2="110.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="128.0" y1="170" x2="120.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="138.0" y1="170" x2="130.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="148.0" y1="170" x2="140.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="158.0" y1="170" x2="150.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="168.0" y1="170" x2="160.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="178.0" y1="170" x2="170.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="188.0" y1="170" x2="180.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="198.0" y1="170" x2="190.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="208.0" y1="170" x2="200.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="218.0" y1="170" x2="210.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="228.0" y1="170" x2="220.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="238.0" y1="170" x2="230.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="248.0" y1="170" x2="240.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="258.0" y1="170" x2="250.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="268.0" y1="170" x2="260.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="278.0" y1="170" x2="270.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="288.0" y1="170" x2="280.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="298.0" y1="170" x2="290.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="308.0" y1="170" x2="300.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="318.0" y1="170" x2="310.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="328.0" y1="170" x2="320.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="338.0" y1="170" x2="330.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="348.0" y1="170" x2="340.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="358.0" y1="170" x2="350.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="368.0" y1="170" x2="360.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="378.0" y1="170" x2="370.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="388.0" y1="170" x2="380.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="398.0" y1="170" x2="390.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="408.0" y1="170" x2="400.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="418.0" y1="170" x2="410.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="428.0" y1="170" x2="420.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="438.0" y1="170" x2="430.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="448.0" y1="170" x2="440.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="458.0" y1="170" x2="450.0" y2="178" stroke="#222" stroke-width="1"/>
+<line x1="468.0" y1="170" x2="460.0" y2="178" stroke="#222" stroke-width="1"/>
+<text x="400" y="200" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">滑らかな床</text>
+<rect x="230" y="80" width="200" height="90" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="330" y="132" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">M</text>
+<line x1="230" y1="62" x2="430" y2="62" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+<text x="330" y="55" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">l</text>
+<path d="M70,119 L110,119 Q122,125 110,131 L70,131 z" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="88" y="112" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">m</text>
+<line x1="128" y1="125" x2="200" y2="125" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="165" y="150" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">v<tspan baseline-shift="sub" font-size="10" font-style="normal" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<text x="330" y="155" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">抵抗力の大きさ<tspan font-family="Times New Roman, serif" font-style="italic">F</tspan>（一定）</text>
+</svg>

@@ -1,0 +1,135 @@
+{
+ "id": "PHY-KIN-003",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "壁越しの投射（到達可能領域の包絡線と，壁をかすめる2つの軌道による落下範囲）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水平な地面上の点 O から，小球を速さ $V$ で，鉛直面内の任意の向きに投げ出すことができる．図のように，O から水平距離 $d$ の位置に，高さ $H$ の薄い壁が，投げ出す鉛直面に垂直に立っている．O を原点とし，壁に向かって水平に $x$ 軸，鉛直上向きに $y$ 軸をとる．投げ出す角（水平となす角）を $\\theta$ $(0<\\theta<\\frac{\\pi}{2})$ とし，$\\tan\\theta=T$ とおく．空気抵抗，小球の大きさ，壁の厚さは無視でき，重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小球の軌道の式を $T$ を用いて表せ．また，$x>0$ の点 $(x,\\,y)$ を通る軌道が（$\\theta$ をうまく選べば）存在するための条件を，$x,y,V,g$ の不等式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "小球が壁を越えて向こう側に届くための $V$ の最小値 $V_1$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$V^2=3gd$，$H=d$ とする．壁を越えた小球が地面に落ちる点の $x$ 座標の範囲を求めよ．また，その範囲の両端に落ちるのはそれぞれどのような軌道か．"
+     },
+     {
+      "id": "4",
+      "tex": "$V$ を自由に選べるとき，壁の向こう側の地面上の点 $(D,\\,0)$ $(D>d)$ に小球を落とすための $V$ の最小値を求めよ．$H$ の大小によって場合分けして答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：壁越しの投射（到達可能領域の包絡線と，壁をかすめる2つの軌道による落下範囲）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：壁越しの投射（到達可能領域の包絡線と，壁をかすめる2つの軌道による落下範囲）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$y=Tx-\\dfrac{g(1+T^2)}{2V^2}x^2$，条件 $y\\le\\dfrac{V^2}{2g}-\\dfrac{g}{2V^2}x^2$"
+   },
+   {
+    "id": "2",
+    "tex": "$V_1=\\sqrt{g\\left(H+\\sqrt{H^2+d^2}\\right)}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\left(2-\\dfrac{\\sqrt2}{2}\\right)d\\le x\\le\\left(2+\\dfrac{\\sqrt2}{2}\\right)d$．近い端は壁の上端をかすめる高角の軌道（$\\tan\\theta=3+\\sqrt2$），遠い端は壁の上端をかすめる低角の軌道（$\\tan\\theta=3-\\sqrt2$）"
+   },
+   {
+    "id": "4",
+    "tex": "$H\\le\\dfrac{d(D-d)}{D}$ のとき $\\sqrt{gD}$，$H>\\dfrac{d(D-d)}{D}$ のとき $\\sqrt{\\dfrac{g\\{D^2H^2+d^2(D-d)^2\\}}{2Hd(D-d)}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 軌道と到達可能な領域}　$x=Vt\\cos\\theta$，$y=Vt\\sin\\theta-\\frac12gt^2$ から $t$ を消去し，$\\dfrac{1}{\\cos^2\\theta}=1+T^2$ を用いて\n\\[ y=Tx-\\frac{g(1+T^2)}{2V^2}x^2 \\]\n点 $(x,y)$ を通る軌道があることは，これを $T$ の2次方程式\n\\[ \\frac{gx^2}{2V^2}T^2-xT+\\left(y+\\frac{gx^2}{2V^2}\\right)=0 \\]\nとみたとき実数解をもつことと同じである．判別式 $\\geqq0$ より $x^2-\\dfrac{2gx^2}{V^2}\\left(y+\\dfrac{gx^2}{2V^2}\\right)\\geqq0$，すなわち\n\\[ \\boldsymbol{y\\le\\frac{V^2}{2g}-\\frac{g}{2V^2}x^2} \\]\n右辺の放物線（包絡線）はすべての軌道に接し，その内側（下側）が到達可能な領域である．境界上の点には1つの軌道だけが，内部の点には高角・低角の2つの軌道が通る．\n\n\\textbf{(2) 壁を越える条件}　小球が壁の位置 $x=d$ を $y\\geqq H$ で通過すればよい．到達可能な領域は「ある点に届けばその真下の点にも届く」形なので，条件は壁の上端 $(d,H)$ が到達可能であることと同じで\n\\[ H\\le\\frac{V^2}{2g}-\\frac{gd^2}{2V^2}\\iff V^4-2gHV^2-g^2d^2\\geqq0\\iff V^2\\geqq g\\left(H+\\sqrt{H^2+d^2}\\right) \\]\nよって $V_1=\\boldsymbol{\\sqrt{g\\left(H+\\sqrt{H^2+d^2}\\right)}}$．\n\n\\textbf{(3) 落下点の範囲}　$V^2=3gd$，$H=d$ のとき，壁を越える条件 $y(d)\\geqq d$ は\n\\[ Td-\\frac{1+T^2}{6}d\\geqq d\\iff T^2-6T+7\\le0\\iff 3-\\sqrt2\\le T\\le3+\\sqrt2 \\]\n落下点は $y=0$ とおいて $x=R(T)=\\dfrac{2V^2T}{g(1+T^2)}=\\dfrac{6Td}{1+T^2}$．$\\dfrac{dR}{dT}=\\dfrac{6d(1-T^2)}{(1+T^2)^2}<0$（$T>1$）なので，この区間で $R$ は単調に減少する．端の値は，$(3\\mp\\sqrt2)^2+1=6(2\\mp\\sqrt2)$ を用いて\n\\[ R(3-\\sqrt2)=\\frac{3-\\sqrt2}{2-\\sqrt2}d=\\left(2+\\frac{\\sqrt2}{2}\\right)d,\\qquad R(3+\\sqrt2)=\\frac{3+\\sqrt2}{2+\\sqrt2}d=\\left(2-\\frac{\\sqrt2}{2}\\right)d \\]\nよって\n\\[ \\boldsymbol{\\left(2-\\frac{\\sqrt2}{2}\\right)d\\le x\\le\\left(2+\\frac{\\sqrt2}{2}\\right)d} \\]\n両端はいずれも\\textbf{壁の上端をかすめる軌道}で，\\textbf{遠い端は低角の軌道}（$\\tan\\theta=3-\\sqrt2$），\\textbf{近い端は高角の軌道}（$\\tan\\theta=3+\\sqrt2$）による（解答図）．壁がなければ最も遠くに届く $45^\\circ$（$T=1$）の軌道は，$x=d$ で高さ $\\frac23d<d$ しかなく壁に当たるので，最大到達距離 $\\frac{V^2}{g}=3d$ には届かない．近い端も $\\left(2-\\frac{\\sqrt2}{2}\\right)d>d$ で，壁の向こう側にある．\n\n\\textbf{(4) 点 $(D,0)$ に落とす最小の速さ}　$(D,0)$ を通る軌道は $y=Tx\\left(1-\\dfrac{x}{D}\\right)$ と書け，このとき必要な速さは $\\dfrac{g(1+T^2)}{2V^2}=\\dfrac{T}{D}$ から\n\\[ V^2=gD\\cdot\\frac{1+T^2}{2T} \\]\n$\\dfrac{1+T^2}{2T}$ は $T=1$ で最小値 $1$ をとり，$T>1$ では増加する．壁を越える条件 $y(d)\\geqq H$ は\n\\[ T\\geqq T^*=\\frac{HD}{d(D-d)} \\]\n\\begin{itemize}\n  \\item $T^*\\le1$，すなわち $\\boldsymbol{H\\le\\dfrac{d(D-d)}{D}}$ のとき：$T=1$（$45^\\circ$）が許されるので，最小値は $\\boldsymbol{\\sqrt{gD}}$．\n  \\item $T^*>1$，すなわち $\\boldsymbol{H>\\dfrac{d(D-d)}{D}}$ のとき：$T=T^*$（壁の上端をかすめる軌道）で最小となり\n  \\[ V^2=gD\\cdot\\frac{1+T^{*2}}{2T^*}=\\frac{g\\{D^2H^2+d^2(D-d)^2\\}}{2Hd(D-d)},\\qquad V_{\\min}=\\boldsymbol{\\sqrt{\\frac{g\\{D^2H^2+d^2(D-d)^2\\}}{2Hd(D-d)}}} \\]\n\\end{itemize}\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一定の速さで投げた軌道の族は，$\\tan\\theta$ の2次方程式の判別式から得られる包絡線（安全放物線）の内側だけを満たす．障害物を越える条件は障害物の頂点がこの領域に入ることで，越えた後の落下範囲や最小の速さは「頂点をかすめる軌道」が端を与え，落下距離の $\\tan\\theta$ に対する単調性を確かめて，高角・低角のどちらが近い端・遠い端になるか，$45^\\circ$ が許されるかで場合分けする．"
+ },
+ "concepts": [
+  "uniform-acceleration",
+  "projectile-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "放物運動",
+  "包絡線",
+  "判別式",
+  "到達可能領域",
+  "最小の初速",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

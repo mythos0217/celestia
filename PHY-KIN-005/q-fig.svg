@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 340">
+<defs><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker></defs>
+<rect x="150" y="48" width="140" height="12" fill="#ccc" stroke="#222" stroke-width="1.6"/>
+<text x="298" y="58" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">板</text>
+<line x1="60" y1="60" x2="150" y2="60" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="60" y1="280" x2="180" y2="280" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="20" y="65" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">z<tspan font-style="normal"> = </tspan>D</text>
+<text x="20" y="285" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">z<tspan font-style="normal"> = 0</tspan></text>
+<rect x="190" y="280" width="60" height="18" fill="white" stroke="#222" stroke-width="1.6"/>
+<text x="258" y="295" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">打ち上げ点・検出器</text>
+<circle cx="220" cy="272" r="5" fill="#222"/>
+<line x1="220" y1="264" x2="220" y2="190" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="228" y="220" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">V</text>
+<line x1="360" y1="140" x2="360" y2="200" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+<text x="370" y="176" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">g</text>
+<line x1="100" y1="60" x2="100" y2="280" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+<text x="106" y="170.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">D</text>
+</svg>

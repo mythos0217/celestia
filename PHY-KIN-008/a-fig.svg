@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320">
+<defs><marker id="a-ak" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker></defs>
+<polygon points="60,60 140,60 300,204 " fill="#1f5fbf" fill-opacity="0.15" stroke="none"/>
+<line x1="60" y1="260" x2="490" y2="260" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+<line x1="60" y1="260" x2="60" y2="30" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+<text x="494" y="265" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">t</text>
+<text x="470" y="282" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">[s]</text>
+<text x="40" y="34" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">v</text>
+<text x="66" y="34" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">[m/s]</text>
+<line x1="60" y1="60" x2="393.3" y2="260" stroke="#1f5fbf" stroke-width="1.8"/>
+<polyline points="60,60 140,60 362.2,260" fill="none" stroke="#c0392b" stroke-width="1.8"/>
+<text x="400" y="240" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#1f5fbf">A</text>
+<text x="330" y="250" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#c0392b">B</text>
+<line x1="300" y1="204" x2="300" y2="260" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="140" y1="60" x2="140" y2="260" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="52" y="278" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">0</text>
+<text x="128" y="278" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">1.0</text>
+<text x="288" y="278" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">3.0</text>
+<text x="350" y="278" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">3.8</text>
+<text x="388" y="278" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">4.2</text>
+<text x="28" y="65" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">25</text>
+<text x="205" y="88" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">← 網掛けの面積＝縮んだ車間</text>
+<text x="225" y="105" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">＝9.0 m</text>
+<circle cx="300" cy="204" r="3" fill="#222"/>
+<text x="306" y="196" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">相対速度 0</text>
+<text x="60" y="305" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">(2) の場合（<tspan font-family="Times New Roman, serif" font-style="italic">a</tspan><tspan baseline-shift="sub" font-size="10">B</tspan>＝9.0 m/s²）</text>
+</svg>

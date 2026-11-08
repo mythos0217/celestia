@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380">
+<defs><marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker></defs>
+<circle cx="260" cy="195" r="150" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="80" y1="195" x2="450" y2="195" stroke="#222" stroke-width="1" marker-end="url(#a-ak)"/>
+<text x="444" y="187" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+<line x1="260" y1="365" x2="260" y2="15" stroke="#222" stroke-width="1" marker-end="url(#a-ak)"/>
+<text x="268" y="25" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">y</text>
+<circle cx="260" cy="195" r="4" fill="#222"/>
+<text x="240" y="189" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">O</text>
+<polyline points="260.0,232.5 262.2,232.5 264.3,232.5 266.5,232.6 268.7,232.7 270.8,232.8 273.0,232.9 275.2,233.0 277.3,233.2 279.5,233.3 281.7,233.5 283.8,233.8 286.0,234.0 288.1,234.3 290.3,234.5 292.5,234.8 294.6,235.2 296.8,235.5 299.0,235.9 301.1,236.3 303.3,236.7 305.5,237.1 307.6,237.5 309.8,238.0 312.0,238.5 314.1,239.0 316.3,239.5 318.5,240.1 320.6,240.7 322.8,241.3 325.0,241.9 327.1,242.5 329.3,243.2 331.4,243.8 333.6,244.5 335.8,245.3 337.9,246.0 340.1,246.8 342.3,247.5 344.4,248.3 346.6,249.2 348.8,250.0 350.9,250.9 353.1,251.8 355.3,252.7 357.4,253.6 359.6,254.5 361.8,255.5 363.9,256.5 366.1,257.5 368.3,258.5 370.4,259.6 372.6,260.7 374.7,261.8 376.9,262.9 379.1,264.0 381.2,265.2 383.4,266.3 385.6,267.5 387.7,268.8 389.9,270.0" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+<polyline points="260.0,232.5 257.8,232.5 255.7,232.5 253.5,232.6 251.3,232.7 249.2,232.8 247.0,232.9 244.8,233.0 242.7,233.2 240.5,233.3 238.3,233.5 236.2,233.8 234.0,234.0 231.9,234.3 229.7,234.5 227.5,234.8 225.4,235.2 223.2,235.5 221.0,235.9 218.9,236.3 216.7,236.7 214.5,237.1 212.4,237.5 210.2,238.0 208.0,238.5 205.9,239.0 203.7,239.5 201.5,240.1 199.4,240.7 197.2,241.3 195.0,241.9 192.9,242.5 190.7,243.2 188.6,243.8 186.4,244.5 184.2,245.3 182.1,246.0 179.9,246.8 177.7,247.5 175.6,248.3 173.4,249.2 171.2,250.0 169.1,250.9 166.9,251.8 164.7,252.7 162.6,253.6 160.4,254.5 158.2,255.5 156.1,256.5 153.9,257.5 151.7,258.5 149.6,259.6 147.4,260.7 145.3,261.8 143.1,262.9 140.9,264.0 138.8,265.2 136.6,266.3 134.4,267.5 132.3,268.8 130.1,270.0" fill="none" stroke="#888" stroke-width="1.2"/>
+<line x1="260" y1="195" x2="424.5" y2="290.0" stroke="#c0392b" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="260.0" cy="232.5" r="5" fill="#222"/>
+<text x="238.0" y="252.5" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">C</text>
+<circle cx="389.9" cy="270.0" r="5" fill="#222"/>
+<text x="399.9" y="290.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">D</text>
+<circle cx="130.1" cy="270.0" r="5" fill="#222"/>
+<text x="106.1" y="290.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">E</text>
+<line x1="359.6" y1="252.5" x2="386.9" y2="269.0" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/>
+<text x="399.9" y="260.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">速度は OD に平行</text>
+<text x="268.0" y="224.5" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">−l/4</text>
+<text x="329.9" y="310.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">（<tspan font-family="Times New Roman, serif" font-style="italic">√3 l/2</tspan>，<tspan font-family="Times New Roman, serif" font-style="italic">−l/2</tspan>）</text>
+</svg>

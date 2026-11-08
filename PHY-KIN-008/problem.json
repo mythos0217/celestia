@@ -1,0 +1,126 @@
+{
+ "id": "PHY-KIN-008",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "反応の遅れとブレーキ性能の違う2台の車の追突回避（最小車間距離の場合分け）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "まっすぐな道路を，車 A とその後ろの車 B がともに速さ $V=25\\ \\mathrm{m/s}$ で走っている．車間距離（A の後端と B の前端の距離）は $D$ である．時刻 $t=0$ に A が大きさ $a_{\\mathrm A}=6.0\\ \\mathrm{m/s^2}$ の一定の減速を始めて停止した．B の運転手は $\\tau=1.0\\ \\mathrm{s}$ 遅れてブレーキをかけ，大きさ $a_{\\mathrm B}$ の一定の減速で停止した．停止した車はそのまま止まっているものとする．答えは有効数字2桁で求めよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$a_{\\mathrm B}=5.0\\ \\mathrm{m/s^2}$ のとき，追突しないための $D$ の最小値を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$a_{\\mathrm B}=9.0\\ \\mathrm{m/s^2}$ のとき，追突しないための $D$ の最小値と，そのとき2台が最も近づく時刻を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$a_{\\mathrm B}>a_{\\mathrm A}$ のとき，追突しないための $D$ の最小値 $D_{\\min}$ を $V$，$\\tau$，$a_{\\mathrm A}$，$a_{\\mathrm B}$ を用いて表せ．$a_{\\mathrm B}$ がある値 $a_{\\mathrm c}$ 以上では $D_{\\min}$ が $V$ によらないことを示し，$a_{\\mathrm c}$ を $V$，$\\tau$，$a_{\\mathrm A}$ で表して数値も求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：反応の遅れとブレーキ性能の違う2台の車の追突回避（最小車間距離の場合分け）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：反応の遅れとブレーキ性能の違う2台の車の追突回避（最小車間距離の場合分け）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$35\\ \\mathrm{m}$"
+   },
+   {
+    "id": "2",
+    "tex": "$9.0\\ \\mathrm{m}$，$t=3.0\\ \\mathrm{s}$"
+   },
+   {
+    "id": "3",
+    "tex": "$a_{\\mathrm B}\\geqq a_{\\mathrm c}$ のとき $D_{\\min}=\\dfrac{a_{\\mathrm A}a_{\\mathrm B}\\tau^2}{2(a_{\\mathrm B}-a_{\\mathrm A})}$（$V$ によらない），$a_{\\mathrm A}<a_{\\mathrm B}<a_{\\mathrm c}$ のとき $D_{\\min}=V\\tau+\\dfrac{V^2}{2a_{\\mathrm B}}-\\dfrac{V^2}{2a_{\\mathrm A}}$；$a_{\\mathrm c}=\\dfrac{Va_{\\mathrm A}}{V-a_{\\mathrm A}\\tau}\\fallingdotseq7.9\\ \\mathrm{m/s^2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　A に対する B の相対速度 $w=v_{\\mathrm B}-v_{\\mathrm A}$（正なら近づく）を時刻の関数として追う．車間距離は $w>0$ の間減り続け，$w$ が $0$ になる瞬間（または両方停止した後）に最小になる．どちらの車が先に止まるかで $w$ の式が切り替わる点に注意する．\n\n\\textbf{相対速度}　A は $t_{\\mathrm A}=V/a_{\\mathrm A}\\fallingdotseq4.17\\ \\mathrm{s}$ に止まり，B は $t_{\\mathrm B}=\\tau+V/a_{\\mathrm B}$ に止まる．両方が動いている間，\n\\[ w(t)=\\begin{cases} a_{\\mathrm A}t & (0\\leqq t\\leqq\\tau)\\\\ a_{\\mathrm A}\\tau-(a_{\\mathrm B}-a_{\\mathrm A})(t-\\tau) & (\\tau\\leqq t)\\end{cases} \\]\n\n\\textbf{(1)}　$a_{\\mathrm B}=5.0<a_{\\mathrm A}$ では，両方が動いている間 $w$ は増え続け，A が止まった後も B が止まるまで $w=v_{\\mathrm B}>0$．したがって最も近づくのは B が止まったときで，必要な $D$ は停止までの走行距離の差である：\n\\[ D_{\\min}=\\Bigl(V\\tau+\\frac{V^2}{2a_{\\mathrm B}}\\Bigr)-\\frac{V^2}{2a_{\\mathrm A}}=25+62.5-52.1\\fallingdotseq\\boldsymbol{35\\ \\mathrm{m}}. \\]\n\n\\textbf{(2)}　$a_{\\mathrm B}=9.0$ では $w$ は $t=\\tau$ から減り，\n\\[ t^*=\\tau+\\frac{a_{\\mathrm A}\\tau}{a_{\\mathrm B}-a_{\\mathrm A}}=\\frac{a_{\\mathrm B}\\tau}{a_{\\mathrm B}-a_{\\mathrm A}}=3.0\\ \\mathrm{s} \\]\nで $0$ になる．$t^*<t_{\\mathrm A}$ なので，この時刻には A はまだ動いており，上の式が使える．$t^*$ 以後は B の方が遅く，車間は広がる．よって最接近は $\\boldsymbol{t=3.0\\ \\mathrm{s}}$ で，その間に縮んだ距離は $w$-$t$ グラフの面積（解答図の三角形）：\n\\[ D_{\\min}=\\frac12\\cdot t^*\\cdot a_{\\mathrm A}\\tau=\\frac12\\times3.0\\times6.0=\\boldsymbol{9.0\\ \\mathrm{m}}. \\]\n（$w$ は $0\\to a_{\\mathrm A}\\tau\\to0$ と変わる山形なので，面積は底辺 $t^*$，高さ $a_{\\mathrm A}\\tau$ の三角形．）なお，停止距離の差は $25+34.7-52.1\\fallingdotseq7.6\\ \\mathrm{m}$ で，これを $D$ にしても途中の $t=3.0\\ \\mathrm{s}$ で追突してしまう．「止まった位置で比べる」方法は使えない．\n\n\\textbf{(3)}　$a_{\\mathrm B}>a_{\\mathrm A}$ では $w$ は $t^*=\\dfrac{a_{\\mathrm B}\\tau}{a_{\\mathrm B}-a_{\\mathrm A}}$ で $0$ になろうとする．\n\\begin{itemize}\n  \\item $t^*\\leqq t_{\\mathrm A}$（A が動いているうちに相対速度が $0$）のとき：(2) と同様に三角形の面積で\n  \\[ D_{\\min}=\\frac12t^*\\cdot a_{\\mathrm A}\\tau=\\boldsymbol{\\frac{a_{\\mathrm A}a_{\\mathrm B}\\tau^2}{2(a_{\\mathrm B}-a_{\\mathrm A})}}. \\]\n  これは $V$ を含まない．速さが違っても，ブレーキ中は相対加速度だけで相対運動が決まるからである．\n  \\item $t^*>t_{\\mathrm A}$ のとき：A が先に止まり，その後 $w=v_{\\mathrm B}>0$ のまま B が止まるので，(1) と同じく $D_{\\min}=V\\tau+\\dfrac{V^2}{2a_{\\mathrm B}}-\\dfrac{V^2}{2a_{\\mathrm A}}$．\n\\end{itemize}\n境目は $t^*=t_{\\mathrm A}$，すなわち $\\dfrac{a_{\\mathrm B}\\tau}{a_{\\mathrm B}-a_{\\mathrm A}}=\\dfrac{V}{a_{\\mathrm A}}$ より\n\\[ a_{\\mathrm c}=\\boldsymbol{\\frac{Va_{\\mathrm A}}{V-a_{\\mathrm A}\\tau}}=\\frac{25\\times6.0}{25-6.0}\\fallingdotseq\\boldsymbol{7.9\\ \\mathrm{m/s^2}}. \\]\n（$a_{\\mathrm B}=a_{\\mathrm c}$ で2つの式は一致し，$D_{\\min}$ は連続につながる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2台の追突判定は相対速度で考え，車間が最小になるのは相対速度が0になる瞬間である．後ろの車のブレーキが十分強いと，前の車がまだ動いているうちに相対速度が0になり，必要な車間は相対加速度だけで決まって速さによらない．弱いと前の車が先に止まり，停止距離の差で決まる．"
+ },
+ "concepts": [
+  "uniform-acceleration",
+  "kinematics-components"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "相対速度",
+  "等加速度運動",
+  "v-tグラフ",
+  "場合分け",
+  "追突"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

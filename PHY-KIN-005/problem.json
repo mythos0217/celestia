@@ -1,0 +1,129 @@
+{
+ "id": "PHY-KIN-005",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "原子の噴水と高さ D の板（吸着する板とはね返す板での到着時刻の上限）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "レーザーで十分に冷やした原子の集まりを，高さ $z=0$ の点から時刻 $t=0$ にいっせいに鉛直上向きに打ち上げる（原子の噴水）．打ち上げの速さ $V$ は原子ごとにばらついている．$z=0$ には検出器があり，落ちてきた原子が到着した時刻を記録する．原子は鉛直方向にだけ運動し，重力以外の力（原子どうしの衝突など）は受けないものとする．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "速さ $V$ で打ち上げた原子が $z=0$ に戻る時刻 $t$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "図のように高さ $z=D$ に水平な板を置く．板に達した原子は板に吸着されて戻らない．検出器に原子が到着する時刻には上限 $t_{\\rm c}$ がある．$t_{\\rm c}$ を $D,\\ g$ で表せ．また，$D=0.800\\,\\mathrm{m}$，$t_{\\rm c}=0.808\\,\\mathrm{s}$ と測定されたとき，$g$ を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "板を，原子を弾性的にはね返す板（速度の向きだけを瞬時に逆にする）に取りかえる．板に達する原子の打ち上げの速さを $V$ として，その原子が $z=0$ に戻る時刻 $t$ を $V,\\ g,\\ D$ で表せ．さらに，この $t$ は $V$ とともに増えるか減るかを答え，到着時刻の上限は (2) の $t_{\\rm c}$ のまま変わらないことを示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の板で，はね返った原子のうち時刻 $\\dfrac{t_{\\rm c}}{2}$ に戻るものの打ち上げの速さを，$V_D=\\sqrt{2gD}$ を用いて表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "(3) の板のもとで，打ち上げの速さが $0$ から $\\dfrac54V_D$ までの範囲に一様に分布しているとき，時刻 $\\dfrac{t_{\\rm c}}{2}$ から $t_{\\rm c}$ までの間に検出器に到着する原子は全体の何割か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：原子の噴水と高さ D の板（吸着する板とはね返す板での到着時刻の上限）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$t=\\dfrac{2V}{g}$"
+   },
+   {
+    "id": "2",
+    "tex": "$t_{\\rm c}=2\\sqrt{\\dfrac{2D}{g}}$，$g=9.80\\,\\mathrm{m/s^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$t=\\dfrac{2\\left(V-\\sqrt{V^2-2gD}\\right)}{g}$，$V$ とともに減る（上限は $V=V_D$ の原子の $t_{\\rm c}$）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac54V_D$"
+   },
+   {
+    "id": "5",
+    "tex": "6割"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　鉛直投げ上げなので，$Vt-\\frac12gt^2=0$ より $t=\\boldsymbol{\\dfrac{2V}{g}}$．戻る時刻は打ち上げの速さに比例する．\n\n\\textbf{(2)}　板に届かない（戻ってくる）のは最高点の高さ $\\dfrac{V^2}{2g}$ が $D$ より小さい原子，すなわち $V<V_D=\\sqrt{2gD}$ の原子だけである．(1) より戻る時刻は $V$ とともに増えるので，上限は $V\\to V_D$ の原子で決まり\n\\[ t_{\\rm c}=\\frac{2V_D}{g}=\\boldsymbol{2\\sqrt{\\frac{2D}{g}}} \\]\n到着時刻の分布は $t_{\\rm c}$ で鋭く途切れる．この途切れる時刻は速さの分布の形によらず $D$ と $g$ だけで決まるので，\n\\[ g=\\frac{8D}{t_{\\rm c}^{\\,2}}=\\frac{8\\times0.800}{0.808^2}\\fallingdotseq\\boldsymbol{9.80\\,\\mathrm{m/s^2}} \\]\n\n\\textbf{(3)}　$V>V_D$ の原子は時刻 $t_1$ に板に達し，そのときの速さは $u=\\sqrt{V^2-2gD}$ である．$V-gt_1=u$ より $t_1=\\dfrac{V-u}{g}$．はね返った後は $z=D$ から下向きに速さ $u$ で投げ下ろされたのと同じで，$z=0$ に着いたときの速さはエネルギー保存より $V$ である．かかる時間 $t_2$ は $V=u+gt_2$ より $t_2=\\dfrac{V-u}{g}$（上りと下りで同じ時間）．よって\n\\[ t=t_1+t_2=\\boldsymbol{\\frac{2\\left(V-\\sqrt{V^2-2gD}\\right)}{g}}=\\frac{4D}{V+\\sqrt{V^2-2gD}} \\]\n右の形から，$V$ が大きいほど分母が大きく，$t$ は\\textbf{減る}．$V\\to V_D$ で $t\\to\\dfrac{4D}{V_D}=\\dfrac{2V_D}{g}=t_{\\rm c}$ となる．板に届かない原子の到着時刻 $\\dfrac{2V}{g}$ も $t_{\\rm c}$ 未満なので，到着時刻は $V=V_D$ で最大となり，上限は $t_{\\rm c}$ のまま変わらない．はね返す板にすると $t_{\\rm c}$ より前の時刻に2種類の原子（届かないものとはね返ったもの）が重なって到着するが，分布の端の位置は同じなので，$g$ の測定には影響しない．\n\n\\textbf{(4)}　$\\dfrac{4D}{V+\\sqrt{V^2-2gD}}=\\dfrac{t_{\\rm c}}{2}=\\dfrac{V_D}{g}$ に $2gD=V_D^{\\,2}$ を使うと\n\\[ V+\\sqrt{V^2-V_D^{\\,2}}=2V_D\\ \\Longrightarrow\\ V^2-V_D^{\\,2}=(2V_D-V)^2\\ \\Longrightarrow\\ V=\\boldsymbol{\\frac54V_D} \\]\n（このとき $\\sqrt{V^2-V_D^{\\,2}}=\\frac34V_D>0$ で確かに成り立つ．）\n\n\\textbf{(5)}　到着時刻が $\\dfrac{t_{\\rm c}}{2}\\le t\\le t_{\\rm c}$ となる原子は，板に届かないもののうち $\\dfrac{2V}{g}\\ge\\dfrac{V_D}{g}$，すなわち $\\dfrac12V_D\\le V\\le V_D$ のものと，はね返るもののうち (3)(4) より $V_D\\le V\\le\\dfrac54V_D$ のものである．速さは $0$ から $\\dfrac54V_D$ に一様に分布しているので，その割合は\n\\[ \\frac{\\left(V_D-\\frac12V_D\\right)+\\left(\\frac54V_D-V_D\\right)}{\\frac54V_D}=\\frac{\\frac34}{\\frac54}=\\frac35 \\]\nすなわち \\textbf{6割}である．はね返る原子は全部この時間帯に到着することになる（最も速い $\\frac54V_D$ の原子がちょうど $\\frac{t_{\\rm c}}{2}$ に戻る）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "板で吸着される噴水では，戻ってくる原子の到着時刻の上限が板にぎりぎり届く原子の往復時間で決まり，速さの分布によらず $D$ と $g$ だけで決まる．板が原子をはね返す場合，はね返った原子の往復時間は上りと下りが等しく $\\frac{4D}{V+\\sqrt{V^2-2gD}}$ と速いほど短くなるので，到着時刻は板にぎりぎり届く速さで最大となり，分布の端はやはり同じ位置に現れる．"
+ },
+ "concepts": [
+  "uniform-acceleration",
+  "projectile-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "鉛直投げ上げ",
+  "到着時刻分布",
+  "弾性的な反射",
+  "重力加速度の測定",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

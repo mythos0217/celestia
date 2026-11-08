@@ -1,0 +1,135 @@
+{
+ "id": "PHY-KIN-002",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "滑らかな斜面を跳ねながら上る小球（跳ね終わりと折り返しの前後関係）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平面と角 $\\theta$ をなす滑らかで十分に長い斜面上の点 O から，質量 $m$ の小球を，斜面に沿って上向きの方向から角 $\\alpha$ だけ上方に傾けた向きに速さ $v_0$ で打ち出した（$0<\\alpha<\\frac{\\pi}{2}$，$\\alpha+\\theta<\\frac{\\pi}{2}$）．小球は斜面と衝突をくり返しながら斜面を上り，やがて斜面に沿って下りてくる．小球と斜面の反発係数を $e$（$0<e<1$），重力加速度の大きさを $g$ とし，運動は斜面の最大傾斜線を含む鉛直面内で起こるものとする．斜面は O より下方にも続いている．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "打ち出してから最初に斜面に衝突するまでの時間 $t_1$ と，打ち出してから小球が跳ね終わる（斜面から離れなくなる）までの時間 $T$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "小球が到達する，O から斜面に沿って測った最高点までの距離 $x_{\\max}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "小球が斜面上の最高点に達する前に跳ね終わるための条件を，$\\alpha$，$\\theta$，$e$ の関係として求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "小球が下りてきて再び O を通過するとき，すでに跳ね終わって斜面上を滑っているための条件を求めよ．また，その条件のもとで，O を通過するときの小球の速さと，打ち出してからそれまでに失われた力学的エネルギーを求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：滑らかな斜面を跳ねながら上る小球（跳ね終わりと折り返しの前後関係）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：滑らかな斜面を跳ねながら上る小球（跳ね終わりと折り返しの前後関係）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$t_1=\\dfrac{2v_0\\sin\\alpha}{g\\cos\\theta}$，$T=\\dfrac{2v_0\\sin\\alpha}{(1-e)g\\cos\\theta}$"
+   },
+   {
+    "id": "2",
+    "tex": "$x_{\\max}=\\dfrac{v_0^2\\cos^2\\alpha}{2g\\sin\\theta}$（$e$ によらない）"
+   },
+   {
+    "id": "3",
+    "tex": "$\\tan\\alpha\\tan\\theta\\leqq\\dfrac{1-e}{2}$"
+   },
+   {
+    "id": "4",
+    "tex": "条件 $\\tan\\alpha\\tan\\theta\\leqq1-e$，速さ $v_0\\cos\\alpha$，失われた力学的エネルギー $\\dfrac12mv_0^2\\sin^2\\alpha$（$e$ によらない）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{座標の取り方}\n斜面に沿って上向きに $x$ 軸，斜面に垂直上向きに $y$ 軸をとる．重力加速度の成分は $(-g\\sin\\theta,\\,-g\\cos\\theta)$ である．斜面は滑らかなので，衝突で変わるのは $y$ 成分だけで，\\textbf{$x$ 方向の運動は衝突に一切影響されず，加速度 $-g\\sin\\theta$ の等加速度運動が最初から最後まで続く}．跳ね終わった後も斜面は滑らかなので，$x$ 方向の運動方程式は変わらない．\n\n\\textbf{(1)}\n$y$ 方向は初速 $v_0\\sin\\alpha$，加速度 $-g\\cos\\theta$ の運動で，$y=0$ に戻るまでの時間は\n\\[ t_1=\\boldsymbol{\\frac{2v_0\\sin\\alpha}{g\\cos\\theta}}. \\]\nU ターン型の等加速度運動なので，衝突直前の $y$ 成分の大きさは打ち出し時と等しく $v_0\\sin\\alpha$，はね返った直後は $ev_0\\sin\\alpha$ となる．以後同様に，各回の滞空時間は直前の $e$ 倍になる．よって跳ね終わるまでの時間は無限等比級数で\n\\[ T=t_1(1+e+e^2+\\cdots)=\\boldsymbol{\\frac{2v_0\\sin\\alpha}{(1-e)g\\cos\\theta}}. \\]\n\n\\textbf{(2)}\n$x$ 方向の運動は初速 $v_0\\cos\\alpha$，加速度 $-g\\sin\\theta$ の等加速度運動のままなので，$x$ 方向の速度が 0 になる時刻 $t_{\\mathrm{top}}=\\dfrac{v_0\\cos\\alpha}{g\\sin\\theta}$ に最高点に達し\n\\[ x_{\\max}=\\boldsymbol{\\frac{v_0^2\\cos^2\\alpha}{2g\\sin\\theta}}. \\]\n衝突が何回起ころうと（また途中で跳ね終わろうと），この値は $e$ によらない．\n\n\\textbf{(3)}\n$T\\leqq t_{\\mathrm{top}}$ が条件である：\n\\[ \\frac{2v_0\\sin\\alpha}{(1-e)g\\cos\\theta}\\leqq\\frac{v_0\\cos\\alpha}{g\\sin\\theta}\\iff\\boldsymbol{\\tan\\alpha\\tan\\theta\\leqq\\frac{1-e}{2}}. \\]\n\n\\textbf{(4)}\n$x=0$ に戻る時刻は $x$ 方向の運動だけで決まり，$t_R=2t_{\\mathrm{top}}=\\dfrac{2v_0\\cos\\alpha}{g\\sin\\theta}$ である．この時刻にすでに跳ね終わっている条件は $T\\leqq t_R$ で，\n\\[ \\boldsymbol{\\tan\\alpha\\tan\\theta\\leqq1-e}. \\]\nこのとき $y$ 方向の速度は 0 で，$x$ 方向の速度は等加速度運動の対称性から $-v_0\\cos\\alpha$．よって O を通過する速さは $\\boldsymbol{v_0\\cos\\alpha}$．O は打ち出し点と同じ高さなので，失われた力学的エネルギーは運動エネルギーの差に等しく\n\\[ \\frac12mv_0^2-\\frac12m(v_0\\cos\\alpha)^2=\\boldsymbol{\\frac12mv_0^2\\sin^2\\alpha}. \\]\nこれは打ち出し時の運動エネルギーのうち $y$ 成分の分そのものであり，$e$ によらない．$e$ が 1 に近いほど衝突 1 回あたりの損失は小さいが，衝突回数が増えて，最終的に $y$ 方向の運動エネルギーがすべて失われるからである．なお，$\\tan\\alpha\\tan\\theta>1-e$ のときは，小球はまだ跳ねながら O の上空（または O 上での衝突）を通過する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "滑らかな斜面との衝突は斜面に垂直な成分だけを変えるので，斜面方向の等加速度運動は衝突をまたいで連続する．垂直方向の滞空時間は公比 e の等比数列となり有限時間で跳ね終わるので，斜面方向の運動との時間の前後関係で状態が決まる．"
+ },
+ "concepts": [
+  "uniform-acceleration",
+  "restitution",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "斜面",
+  "反発係数",
+  "等比級数",
+  "座標の取り方",
+  "力学的エネルギー"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

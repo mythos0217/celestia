@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker><marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker></defs>
+<line x1="30.0" y1="90.0" x2="460.0" y2="90.0" stroke="#888" stroke-width="1" marker-end="url(#q-ag)"/>
+<text x="462.0" y="108.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">x</text>
+<line x1="80.0" y1="240.0" x2="80.0" y2="30.0" stroke="#888" stroke-width="1" marker-end="url(#q-ag)"/>
+<text x="66.0" y="36.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">y</text>
+<text x="64.0" y="108.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start">O</text>
+<circle cx="80.0" cy="90.0" r="5" fill="#222"/>
+<text x="86.0" y="80.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start">B</text>
+<line x1="88.0" y1="64.0" x2="150.0" y2="64.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="156.0" y="68.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">v</text>
+<circle cx="80.0" cy="230.0" r="5" fill="#c0392b"/>
+<text x="90.0" y="248.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start">A</text>
+<line x1="86.0" y1="224.0" x2="86.0" y2="170.0" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<text x="94.0" y="190.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#c0392b" text-anchor="start">u</text>
+<line x1="50.0" y1="90.0" x2="50.0" y2="230.0" stroke="#888" stroke-width="1" marker-end="url(#q-ag)" marker-start="url(#q-ag)"/>
+<text x="34.0" y="165.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">ℓ</text>
+<text x="300.0" y="200.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">A はつねに B の方へ進む</text>
+<text x="300.0" y="222.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">（時刻 0 の位置）</text>
+</svg>

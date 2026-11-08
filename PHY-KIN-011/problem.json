@@ -1,0 +1,141 @@
+{
+ "id": "PHY-KIN-011",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "駅間を走る電車の台形の v–t グラフ：所要時間を合わせる巡航速度の決定と解の吟味",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，直線のレール上で距離 $L$ 離れた駅 S から駅 G まで電車が走る．電車（乗客を含む全質量 $M$）は駅 S で静止した状態から一定の駆動力 $F$ で加速し，設定速度 $v$ に達すると加速をやめて速度 $v$ で走り続け（巡航），最後に一定の制動力 $2F$ で減速して駅 G にちょうど止まる．走行中の抵抗は無視する．路線の制限速度は $V_{\\rm m}$ で，設定速度は $v\\le V_{\\rm m}$ でなければならない．また，巡航区間の長さが 0（加速の直後に減速）になってもよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "設定速度 $V_{\\rm m}$ まで加速できる（巡航区間の長さが負にならない）ような全質量の最大値 $M_0$ を $F$，$L$，$V_{\\rm m}$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "全質量 $M_0$，設定速度 $V_{\\rm m}$ のときの所要時間 $T_0$ を $L$，$V_{\\rm m}$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "全質量 $M$，設定速度 $v$ のときの所要時間 $T(v)$ を求め，$\\dfrac{dT}{dv}$ が「巡航区間の長さ」を用いて簡潔に書けることを示せ．これを用いて，$T(v)$ の式を（巡航区間の長さが負になる場合も含めて）形式的に最小にする $v$ が，実際に到達できる最大の設定速度に一致する理由を説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "乗客が減って全質量が $M=\\mu M_0$（$0<\\mu<1$）になった．所要時間を $T_0$ に保つための設定速度 $v$ を $V_{\\rm m}$，$\\mu$ で表せ．所要時間の式から得られるもう1つの解が不適である理由を，この質量で到達できる最大の設定速度と比べて説明せよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\mu=\\dfrac34$ のとき，(4) の設定速度は $V_{\\rm m}$ の何倍か．また，駆動力が1回の運行でする仕事は，$M_0$・設定速度 $V_{\\rm m}$ の場合の何倍か．さらに，この質量で制限速度を守るときの最短の所要時間を $L$，$V_{\\rm m}$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：駅間を走る電車の台形の v–t グラフ：所要時間を合わせる巡航速度の決定と解の吟味",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：駅間を走る電車の台形の v–t グラフ：所要時間を合わせる巡航速度の決定と解の吟味",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$M_0=\\dfrac{4FL}{3V_{\\rm m}^{2}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$T_0=\\dfrac{2L}{V_{\\rm m}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$T(v)=\\dfrac Lv+\\dfrac{3Mv}{4F}$，$\\dfrac{dT}{dv}=-\\dfrac{\\ell}{v^{2}}$（$\\ell=L-\\dfrac{3Mv^{2}}{4F}$ は巡航区間の長さ）．$\\ell=0$ となる $v$ で $dT/dv=0$ になり，それが到達できる最大の設定速度だから"
+   },
+   {
+    "id": "4",
+    "tex": "$v=\\dfrac{V_{\\rm m}}{1+\\sqrt{1-\\mu}}$．もう1つの解 $\\dfrac{V_{\\rm m}}{1-\\sqrt{1-\\mu}}$ は到達できる最大の設定速度 $\\dfrac{V_{\\rm m}}{\\sqrt\\mu}$ を超え，巡航区間の長さが負になる"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac23$ 倍，$\\dfrac13$ 倍，最短時間 $\\dfrac{7L}{4V_{\\rm m}}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}\\quad 加速度の大きさは加速時 $a=F/M$，減速時 $b=2F/M$．速度 $v$ までの加速距離と $v$ からの制動距離の和は\n\\[ \\frac{v^2}{2a}+\\frac{v^2}{2b}=\\frac{3Mv^2}{4F}. \\]\nこれが $L$ 以下なら巡航区間がとれる．$v=V_{\\rm m}$ で等号とおいて $\\boldsymbol{M_0=\\dfrac{4FL}{3V_{\\rm m}^2}}$．\n\n\\textbf{(2)}\\quad 巡航区間 0 の三角形の $v$–$t$ グラフで，平均の速さは $V_{\\rm m}/2$（加速・減速ともに等加速度なので，各区間の平均が $V_{\\rm m}/2$）．よって $T_0=L\\big/\\frac{V_{\\rm m}}2=\\boldsymbol{\\dfrac{2L}{V_{\\rm m}}}$．\n\n\\textbf{(3)}\\quad 加速と減速にかかる時間は $\\frac va+\\frac vb=\\frac{3Mv}{2F}$，その間の距離は $\\frac{3Mv^2}{4F}$．巡航区間の長さ $\\ell=L-\\frac{3Mv^2}{4F}$ を速さ $v$ で走るので\n\\[ T(v)=\\frac{3Mv}{2F}+\\frac{\\ell}{v}=\\boldsymbol{\\frac Lv+\\frac{3Mv}{4F}},\\qquad \\frac{dT}{dv}=-\\frac L{v^2}+\\frac{3M}{4F}=\\boldsymbol{-\\frac{\\ell}{v^2}}. \\]\n$\\ell>0$ の間は $T$ は $v$ とともに減り，$\\ell=0$ で $dT/dv=0$ となる．一方 $\\ell=0$ は加速の直後に減速する場合で，これが到達できる最大の設定速度である．$\\ell<0$（形式的に $T$ が増える範囲）は実現しない．つまり，設定速度を上げて得をするのは巡航区間を速く走れる分だけで，巡航区間がなくなった瞬間に得がなくなる．\n\n\\textbf{(4)}\\quad $M=\\mu M_0$ のとき $\\frac{3Mv^2}{4F}=\\mu L\\frac{v^2}{V_{\\rm m}^2}$．$x=v/V_{\\rm m}$ とおくと $T(v)=T_0$ は\n\\[ \\frac{L}{xV_{\\rm m}}+\\frac{\\mu Lx}{V_{\\rm m}}=\\frac{2L}{V_{\\rm m}}\\quad\\Longleftrightarrow\\quad \\mu x^2-2x+1=0,\\qquad x=\\frac{1\\pm\\sqrt{1-\\mu}}{\\mu}. \\]\nこの質量で到達できる最大の設定速度は $\\ell=0$ から $x=1/\\sqrt\\mu$ である．大きい方の解は $\\frac{1+\\sqrt{1-\\mu}}{\\mu}=\\frac{1}{1-\\sqrt{1-\\mu}}$ で，$1-\\sqrt{1-\\mu}<\\sqrt\\mu$（両辺を2乗して比べると $\\sqrt{1-\\mu}\\,(1-\\sqrt{1-\\mu})>0$ と同値）だから $1/\\sqrt\\mu$ より大きく，$\\ell<0$ となって不適（制限速度 $V_{\\rm m}$ も超える）．小さい方の解は\n\\[ x=\\frac{1-\\sqrt{1-\\mu}}{\\mu}=\\frac{1}{1+\\sqrt{1-\\mu}}\\quad(<1),\\qquad \\boldsymbol{v=\\frac{V_{\\rm m}}{1+\\sqrt{1-\\mu}}}. \\]\n(3) の結果からも，$T$ は $x<1/\\sqrt\\mu$ で単調に減るので，実現できる解はちょうど1つである．\n\n\\textbf{(5)}\\quad $\\mu=\\frac34$ では $\\sqrt{1-\\mu}=\\frac12$ で $v=\\boldsymbol{\\dfrac23}V_{\\rm m}$．\n駆動力の仕事は（抵抗がないので）設定速度での運動エネルギーに等しく $\\frac12Mv^2$．比は\n\\[ \\frac{\\frac12\\cdot\\frac34M_0\\cdot\\left(\\frac23V_{\\rm m}\\right)^2}{\\frac12M_0V_{\\rm m}^2}=\\boldsymbol{\\frac13}. \\]\n制限速度 $V_{\\rm m}$ で走る（$\\frac34M_0<M_0$ なので到達できる）と最短で，$T=\\frac{L}{V_{\\rm m}}+\\frac{\\mu L}{V_{\\rm m}}=\\boldsymbol{\\dfrac{7L}{4V_{\\rm m}}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "加速・巡航・減速の台形の $v$–$t$ グラフでは $dT/dv=-(\\text{巡航区間の長さ})/v^2$ となり，所要時間の式の形式的な最小は巡航区間が消える三角形の場合に一致する．所要時間を指定して設定速度を逆算すると2次方程式の2解が出るが，到達できる最大速度との比較で一方だけが物理的に許される．"
+ },
+ "concepts": [
+  "uniform-acceleration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "v-tグラフ",
+  "等加速度運動",
+  "解の吟味",
+  "所要時間",
+  "条件の逆算"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

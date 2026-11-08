@@ -1,0 +1,121 @@
+{
+ "id": "PHY-KIN-015",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "一様に伸びるひもの上を進む虫（ひもの速度分布と相対速度，伸び方による到達の可否）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "よく伸びるひもの一端 O を鉛直な壁に固定し，ひもを水平に張る．ひもはどの瞬間も全体が一様に伸び，ひもの各点の速度は O からの距離に比例する．時刻 $t=0$ に壁から距離 $x_0$ の位置にいた小さな虫が，その場所のひもに対して一定の速さ $c$ で壁に向かってはい始める．壁から離れる向きを正とし，虫の位置を壁からの距離 $x$ で表す．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "図1のように，壁から距離 $L$ の位置に固定した巻き取り機が，ひもの他端を一定の速さ $v_0$ で巻き取り続ける（巻き取り機の位置でひもは速さ $v_0$ で巻き取り機に入る）．虫の速度 $\\dfrac{dx}{dt}$ を $x$ で表し，虫が壁にたどり着くための $x_0$ の条件を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) で $x_0=\\dfrac{cL}{2v_0}$ のとき，虫が壁に着くまでの時間を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "図2のように，巻き取り機を使わず，はじめ壁から $L$ の位置にあったひもの他端を一定の速さ $v_0$ で壁から遠ざける．この場合は $x_0\\,(\\le L)$ によらず虫が必ず壁にたどり着くことを示し，着くまでの時間 $T$ を求めよ．（ヒント：$x$ をそのときのひもの長さ $\\ell$ で割った量の時間変化を考えよ．）"
+     },
+     {
+      "id": "4",
+      "tex": "$L=1.0\\,\\mathrm{m}$，$v_0=1.0\\,\\mathrm{cm/s}$，$c=1.0\\,\\mathrm{mm/s}$，$x_0=50\\,\\mathrm{cm}$ とする．(1) の場合に虫はどうなるか．何秒後にどこに着くかを含めて答えよ．また，(3) の場合の $T$ と，虫が壁から最も離れるときの距離 $x_{\\max}$ を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一様に伸びるひもの上を進む虫（ひもの速度分布と相対速度，伸び方による到達の可否）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{dx}{dt}=\\dfrac{v_0}{L}x-c$，$x_0<\\dfrac{cL}{v_0}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{L}{v_0}\\log 2$"
+   },
+   {
+    "id": "3",
+    "tex": "$T=\\dfrac{L}{v_0}\\left(e^{v_0x_0/(cL)}-1\\right)$"
+   },
+   {
+    "id": "4",
+    "tex": "(1) では虫は壁から遠ざかり，$81\\,\\mathrm{s}$ 後に巻き取り機に達する．(3) では $T=1.5\\times10^4\\,\\mathrm{s}$，$x_{\\max}=5.5\\,\\mathrm{m}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 虫の速度}\nひもは一様に伸びるので，ひもの点の速度は O からの距離に比例し，$x=L$ で $v_0$ だから，位置 $x$ のひもの速度は $\\dfrac{v_0}{L}x$（壁から離れる向き）．虫の速度は「その場所のひもの速度＋ひもに対する速度」なので\n\\[ \\frac{dx}{dt}=\\boldsymbol{\\frac{v_0}{L}x-c}. \\]\n$X=\\dfrac{cL}{v_0}$ とおくと $\\dfrac{d}{dt}(x-X)=\\dfrac{v_0}{L}(x-X)$ より\n\\[ x=X+(x_0-X)e^{v_0t/L}. \\]\n$x_0<X$ なら $x$ は減少し続けて $0$ に達し，$x_0\\ge X$ なら減少しない．よって条件は $\\boldsymbol{x_0<\\dfrac{cL}{v_0}}$．壁の近くではひもがほとんど動かないので，そこまでたどり着ければよい，という見方もできる．\n\n\\textbf{(2) 到着時刻}\n$x_0=X/2$ のとき $x=X\\left(1-\\frac12e^{v_0t/L}\\right)=0$ より $e^{v_0t/L}=2$，\n\\[ t=\\boldsymbol{\\frac{L}{v_0}\\log2}. \\]\n\n\\textbf{(3) 端が遠ざかる場合}\nひもの長さは $\\ell=L+v_0t$ で，位置 $x$ のひもの速度は $\\dfrac{v_0}{\\ell}x$．よって $\\dfrac{dx}{dt}=\\dfrac{v_0}{\\ell}x-c$．ここで $u=\\dfrac{x}{\\ell}$ とおくと，$\\dfrac{d\\ell}{dt}=v_0$ より\n\\[ \\frac{du}{dt}=\\frac1\\ell\\frac{dx}{dt}-\\frac{x}{\\ell^2}v_0=-\\frac{c}{\\ell}=-\\frac{c}{L+v_0t}. \\]\nひもの伸びによる部分が打ち消され，$u$（ひもの上での相対的な位置）は虫自身の歩みだけで減る．積分して\n\\[ \\frac{x}{\\ell}=\\frac{x_0}{L}-\\frac{c}{v_0}\\log\\frac{\\ell}{L}. \\]\n右辺は $\\ell$ が大きくなるといくらでも小さくなるので，必ず $x=0$ となる時刻がある．それは $\\ell=Le^{v_0x_0/(cL)}$ のときで，\n\\[ T=\\boldsymbol{\\frac{L}{v_0}\\left(e^{v_0x_0/(cL)}-1\\right)}. \\]\n(1) では伸びの割合 $v_0/L$ が一定なので遠くの虫は戻れないが，(3) では伸びの割合 $v_0/\\ell$ が時間とともに減っていくことが本質的な違いである．\n\n\\textbf{(4) 数値}\n$X=\\dfrac{cL}{v_0}=\\dfrac{1.0\\times10^{-3}\\times1.0}{1.0\\times10^{-2}}=0.10\\,\\mathrm{m}$ で，$x_0=0.50\\,\\mathrm{m}>X$．したがって (1) では虫は壁から遠ざかり，$x=0.10+0.40e^{t/100\\,\\mathrm{s}}=1.0$ より $e^{t/100\\,\\mathrm s}=2.25$，$t=100\\log2.25=\\boldsymbol{81\\,\\mathrm{s}}$ 後に巻き取り機に達する．\n\n(3) では $\\dfrac{v_0x_0}{cL}=5$ なので $T=100\\times(e^5-1)\\,\\mathrm{s}=\\boldsymbol{1.5\\times10^4\\,\\mathrm{s}}$（約4.1時間）．\n$x$ が最大になるのは $\\dfrac{dx}{dt}=0$，すなわち $x=\\dfrac{c\\ell}{v_0}$ のとき．これを $\\dfrac{x}{\\ell}=\\dfrac{c}{v_0}$ として (3) の式に代入すると $\\log\\dfrac{\\ell}{L}=\\dfrac{v_0x_0}{cL}-1=4$，よって\n\\[ x_{\\max}=\\frac{c}{v_0}Le^{4}=0.10\\times e^4\\,\\mathrm{m}=\\boldsymbol{5.5\\,\\mathrm{m}}. \\]\n虫ははじめ壁から遠くへ運ばれるが，やがて引き返して壁に着く．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一様に伸びるひもの上の点の速度は固定端からの距離に比例するので，虫の速度は $dx/dt=(\\text{伸びの割合})\\times x-c$ となる．伸びの割合 $v_0/L$ が一定なら臨界距離 $cL/v_0$ より遠い虫は戻れないが，端が等速で遠ざかると伸びの割合が時間とともに減るため，$x/\\ell$ が対数的に減って必ず壁に着く．"
+ },
+ "concepts": [
+  "uniform-acceleration",
+  "kinematics-components"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "相対速度",
+  "速度場",
+  "微分方程式",
+  "指数関数",
+  "伸びるひも"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "id": "PHY-KIN-001",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "滑り落ちる標的をねらう投射（相対加速度が斜面に垂直になる系）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平面と角 $\\phi$（$0<\\phi<\\frac{\\pi}{2}$）をなす滑らかで十分に長い斜面がある．斜面上の点 O から斜面に沿って上方へ距離 $D$ の位置に小物体 Q を置き，手で支えておく．時刻 $t=0$ に Q を静かに放すと同時に，O から小球 P を，斜面に沿って上向きの方向から角 $\\alpha$（$0<\\alpha<\\frac{\\pi}{2}$）だけ上方に傾けた向きに速さ $v$ で投げ出した．P の運動は斜面の最大傾斜線を含む鉛直面内で起こるものとし，P，Q の大きさと空気抵抗は無視する．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Q とともに動く観測者から見た P の加速度の大きさと向きを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P が Q に衝突するための $v$，$\\alpha$，$D$ の間の関係式と，衝突する時刻 $t_1$ を求めよ．また，この場合 P は衝突までに斜面に触れないことを示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$D$ が与えられたとき，P を Q に衝突させるのに必要な $v$ の最小値 $v_1$ を求めよ．また，Q を斜面上の最初の位置に固定しておいた場合に，P をその位置に命中させるのに必要な $v$ の最小値を $v_2$ とする．$\\dfrac{v_1}{v_2}$ を $\\phi$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$v=v_1$ で P を Q に衝突させたとき，衝突が起こる点の O からの距離を，斜面に沿って上向きを正として求めよ．また，衝突点が O より下方になるのは $\\phi$ がどのような範囲にあるときか．そのとき P は水平方向に見てどちら向きに投げ出されているかも答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：滑り落ちる標的をねらう投射（相対加速度が斜面に垂直になる系）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：滑り落ちる標的をねらう投射（相対加速度が斜面に垂直になる系）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "大きさ $g\\cos\\phi$，斜面に垂直で斜面に向かう向き"
+   },
+   {
+    "id": "2",
+    "tex": "$v^2\\sin2\\alpha=gD\\cos\\phi$，$t_1=\\dfrac{2v\\sin\\alpha}{g\\cos\\phi}$"
+   },
+   {
+    "id": "3",
+    "tex": "$v_1=\\sqrt{gD\\cos\\phi}$，$\\dfrac{v_1}{v_2}=\\sqrt{\\dfrac{\\cos\\phi}{1+\\sin\\phi}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$D(1-\\tan\\phi)$．$\\dfrac{\\pi}{4}<\\phi<\\dfrac{\\pi}{2}$ のとき．このとき P は水平方向に見て Q から遠ざかる向き（斜め後方上向き）に投げ出されている"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 相対加速度}\n斜面に沿って上向きの単位ベクトルを $\\vec{e}_s$，斜面に垂直で上向きの単位ベクトルを $\\vec{e}_n$ とする．P の加速度は重力加速度 $\\vec{g}$ そのもので，成分に分けると\n\\[ \\vec{a}_{\\mathrm P}=-g\\sin\\phi\\,\\vec{e}_s-g\\cos\\phi\\,\\vec{e}_n . \\]\nQ は滑らかな斜面を滑り下りるので，斜面方向の加速度は $-g\\sin\\phi$，斜面に垂直な方向には動かない：$\\vec{a}_{\\mathrm Q}=-g\\sin\\phi\\,\\vec{e}_s$．よって\n\\[ \\vec{a}_{\\mathrm P}-\\vec{a}_{\\mathrm Q}=-g\\cos\\phi\\,\\vec{e}_n . \\]\nQ から見た P の加速度は大きさ $\\boldsymbol{g\\cos\\phi}$，\\textbf{斜面に垂直で斜面に向かう向き}である．斜面方向の重力成分は P と Q に共通なので，相対運動からは消える．\n\n\\textbf{(2) 衝突条件}\nQ から見ると，P は「斜面を床とし，床に垂直な重力 $g\\cos\\phi$ がはたらく世界」で，床から角 $\\alpha$，速さ $v$ で打ち出された放物運動をする（$t=0$ で Q は静止しているので，初速度は地面から見たものと同じ）．Q はこの世界の床の上，距離 $D$ の点に静止している．\n斜面に垂直な方向の相対座標は\n\\[ y=v\\sin\\alpha\\cdot t-\\frac12 g\\cos\\phi\\cdot t^2 \\]\nで，$y=0$ に戻るのは $t_1=\\boldsymbol{\\dfrac{2v\\sin\\alpha}{g\\cos\\phi}}$．斜面方向の相対座標は等速で $x=v\\cos\\alpha\\cdot t$ だから，衝突条件 $x(t_1)=D$ より\n\\[ \\frac{2v^2\\sin\\alpha\\cos\\alpha}{g\\cos\\phi}=D\\quad\\therefore\\ \\boldsymbol{v^2\\sin2\\alpha=gD\\cos\\phi}. \\]\nQ は斜面上を動くので，Q から見た「斜面からの高さ」$y$ は地面から見た P の斜面からの高さそのものである．$0<t<t_1$ で $y>0$ だから，P は衝突まで斜面に触れない．\n\n\\textbf{(3) 最小の速さ}\n(2) より $v^2=\\dfrac{gD\\cos\\phi}{\\sin2\\alpha}$ は $\\sin2\\alpha=1$，すなわち $\\alpha=\\dfrac{\\pi}{4}$ で最小となり $v_1=\\boldsymbol{\\sqrt{gD\\cos\\phi}}$．\nQ を固定した場合は地面から見て考える．$\\vec{e}_s,\\vec{e}_n$ 方向の加速度は $-g\\sin\\phi$，$-g\\cos\\phi$ だから，斜面に戻る時刻は同じく $t_1$ で，そのときの斜面方向の位置は\n\\[ R=v\\cos\\alpha\\,t_1-\\frac12 g\\sin\\phi\\,t_1^2=\\frac{2v^2\\sin\\alpha\\cos(\\alpha+\\phi)}{g\\cos^2\\phi}=\\frac{v^2\\{\\sin(2\\alpha+\\phi)-\\sin\\phi\\}}{g\\cos^2\\phi}. \\]\nこれは $2\\alpha+\\phi=\\dfrac{\\pi}{2}$ で最大値 $\\dfrac{v^2(1-\\sin\\phi)}{g\\cos^2\\phi}=\\dfrac{v^2}{g(1+\\sin\\phi)}$ をとる．$R=D$ に届く最小の速さは $v_2=\\sqrt{gD(1+\\sin\\phi)}$．よって\n\\[ \\frac{v_1}{v_2}=\\boldsymbol{\\sqrt{\\frac{\\cos\\phi}{1+\\sin\\phi}}}\\ (<1). \\]\n標的が逃げるように滑り下りてくるため，固定した標的より小さな速さで当てられる．\n\n\\textbf{(4) 衝突点}\n$v=v_1$，$\\alpha=\\dfrac{\\pi}{4}$ のとき $t_1^2=\\dfrac{2v_1^2}{g^2\\cos^2\\phi}=\\dfrac{2D}{g\\cos\\phi}$．この間に Q は斜面に沿って $\\dfrac12 g\\sin\\phi\\,t_1^2=D\\tan\\phi$ だけ滑り下りるから，衝突点の位置は\n\\[ \\boldsymbol{D(1-\\tan\\phi)}. \\]\nこれが負になるのは $\\tan\\phi>1$，すなわち $\\boldsymbol{\\dfrac{\\pi}{4}<\\phi<\\dfrac{\\pi}{2}}$ のときである．このとき P の打ち出し方向の水平面からの角は $\\phi+\\dfrac{\\pi}{4}>\\dfrac{\\pi}{2}$ なので，P は水平方向に見て Q とは反対側（斜面の下る側）へ斜め上向きに投げ出されている．Q から見れば P はいつも Q に向かって「床」の上を放物運動しているが，地面から見ると Q が O を通り越して下まで滑ってくるため，後ろ向きに投げた P と O より下で出会う．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一様重力のもとで斜面を滑る物体から見ると，重力の斜面方向成分が打ち消され，投射物は斜面に垂直な一様な「有効重力」$g\\cos\\phi$ のもとで放物運動する．モンキーハンティングの相対運動の考え方を，相対加速度が 0 でない場合に拡張したもの．"
+ },
+ "concepts": [
+  "uniform-acceleration",
+  "projectile-motion",
+  "kinematics-components"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "相対運動",
+  "相対加速度",
+  "放物運動",
+  "斜面",
+  "最小初速"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

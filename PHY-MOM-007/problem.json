@@ -1,0 +1,122 @@
+{
+ "id": "PHY-MOM-007",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "箱の中の振り子の糸を切った後の落下点と重心の不動",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，滑らかな水平な床の上に質量 $M$ の箱が置かれている．箱の天井から下げた棒の先の点 O に長さ $l$ の軽い糸の一端をつけ，他端に質量 $m$ の小球をつける．糸を水平に張った状態で全体を静止させ，小球を静かに放した．小球が最下点に達した瞬間に糸を切ったところ，小球は箱の中を飛んで，最下点より $H$ だけ低い箱の床に落下した．箱は十分大きく，小球は箱の壁や棒に当たらない．空気抵抗は無視し，重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小球が最下点に達したとき，箱ははじめの位置から左右どちら向きにどれだけ動いているか．"
+     },
+     {
+      "id": "2",
+      "tex": "小球が最下点に達したときの，床に対する小球の速さ $v$ と箱の速さ $V$ を求めよ．また，糸を切る直前の糸の張力の大きさ $T$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "小球が箱の床に落下した点は，O の真下の点から左右どちら向きにどれだけ離れているか．"
+     },
+     {
+      "id": "4",
+      "tex": "小球の落下点が，床（地面）に対して，はじめに O があった位置の真下の点とちょうど一致した．$H$ を $m$，$M$，$l$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：箱の中の振り子の糸を切った後の落下点と重心の不動",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "右向きに $\\dfrac{m}{m+M}l$"
+   },
+   {
+    "id": "2",
+    "tex": "$v=\\sqrt{\\dfrac{2Mgl}{m+M}}$，$V=\\dfrac{m}{M}\\sqrt{\\dfrac{2Mgl}{m+M}}$，$T=\\left(3+\\dfrac{2m}{M}\\right)mg$"
+   },
+   {
+    "id": "3",
+    "tex": "左向きに $2\\sqrt{\\dfrac{(m+M)lH}{M}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$H=\\dfrac{m^2l}{4M(m+M)}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　小球と箱の系には，糸を切る前も後も水平方向の外力がはたらかない（床は滑らか）．はじめ全体が静止しているので，水平方向の運動量は常に $0$ で，\\textbf{系の重心の水平位置は最後まで動かない}．これと，糸を切った後は箱が等速・小球が放物運動をすることを組み合わせる．\n\n床に固定した $x$ 軸を右向きにとり，はじめの O の位置を原点とする．はじめ小球は $x=l$ にある．\n\n\\textbf{(1)}　最下点で小球は O の真下にある．このときの箱（O）の変位を $D$ とすると，小球の位置は $D$．重心不動より\n\\[ m\\cdot l+M\\cdot 0=m D+M D\\quad\\therefore\\quad D=\\frac{m}{m+M}l \\]\nよって箱は右向きに $\\boldsymbol{\\dfrac{m}{m+M}l}$ 動いている．\n\n\\textbf{(2)}　最下点では小球の速度は水平．小球は左へ $v$，箱は右へ $V$ で動き，運動量保存 $mv=MV$ と力学的エネルギー保存 $mgl=\\frac12mv^2+\\frac12MV^2$ より\n\\[ \\boldsymbol{v=\\sqrt{\\frac{2Mgl}{m+M}}},\\qquad \\boldsymbol{V=\\frac mM\\sqrt{\\frac{2Mgl}{m+M}}} \\]\n張力：最下点では糸は鉛直なので，箱が糸から受ける力に水平成分がなく，この瞬間の箱の加速度は $0$ である．よってこの瞬間，箱とともに動く座標系は慣性系とみなせ，その系で小球は O を中心に相対速度 $w=v+V$ の円運動をしている．\n\\[ w=v\\left(1+\\frac mM\\right)=\\sqrt{\\frac{2(m+M)gl}{M}} \\]\n中心方向の運動方程式 $\\dfrac{mw^2}{l}=T-mg$ より\n\\[ \\boldsymbol{T=mg+\\frac{2(m+M)mg}{M}=\\left(3+\\frac{2m}{M}\\right)mg} \\]\n（$M\\to\\infty$ で固定された振り子の $3mg$ に一致する．）\n\n\\textbf{(3)}　糸を切った後，箱には水平方向の力がはたらかないので速度 $V$ の等速運動，小球は水平に速度 $-v$ の放物運動をする．落下時間は $t=\\sqrt{2H/g}$．箱に対する小球の相対速度は左向きに $w$ で一定だから，O の真下からのずれは\n\\[ wt=\\sqrt{\\frac{2(m+M)gl}{M}}\\sqrt{\\frac{2H}{g}}=\\boldsymbol{2\\sqrt{\\frac{(m+M)lH}{M}}}\\quad\\text{（左向き）} \\]\n\n\\textbf{(4)}　この距離を $d=wt$ とする．落下の瞬間の O の位置を $X$ とすると，小球の位置は $X-d$．重心不動より\n\\[ m l=m(X-d)+MX\\quad\\therefore\\quad X=\\frac{m(l+d)}{m+M} \\]\n小球の落下点 $X-d=\\dfrac{ml-Md}{m+M}$ が原点に一致する条件は $d=\\dfrac mMl$．(3)より\n\\[ 2\\sqrt{\\frac{(m+M)lH}{M}}=\\frac mMl\\quad\\therefore\\quad \\boldsymbol{H=\\frac{m^2l}{4M(m+M)}} \\]\n（別解：落下の瞬間の小球の位置は，最下点での位置 $D$ から左へ $vt$ 進んだ $D-vt$ である．$D-vt=0$ より $\\sqrt{\\dfrac{2H}{g}}=\\dfrac Dv$，これを整理しても同じ結果になる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水平方向に外力がないので，糸を切る前後を通して系の重心の水平位置は動かない．最下点で箱の加速度が0になる瞬間は箱の系が慣性系となり，相対速度で張力が求まる．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "projectile-motion",
+  "kinematics-components"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "重心不動",
+  "運動量保存",
+  "相対速度",
+  "放物運動",
+  "張力"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

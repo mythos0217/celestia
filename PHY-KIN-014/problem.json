@@ -1,0 +1,127 @@
+{
+ "id": "PHY-KIN-014",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "断面が楕円のタンクを飛び越す最小の投げ出しの速さ（高さごとの必要条件と接する点）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，断面が楕円（水平方向の半軸 $A$，鉛直方向の半軸 $B$）の長いタンクが，中心軸を水平にして，中心が地面から高さ $c$（$c\\ge B$）の位置になるように置かれている．タンクの下は台でふさがれていて，小球はタンクの下をくぐれない．地面上の点から，タンクの軸に垂直な鉛直面内で小球を投げ，タンクに触れずに反対側へ飛び越えさせたい．重力加速度の大きさを $g$ とし，空気抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "楕円の中心より上の高さ $y$ での楕円の水平方向の幅を $w(y)$ とする．飛び越える軌道が高さ $y$ を通過するときの小球の速さを $u$ とすると，$u^2\\ge g\\,w(y)$ でなければならないことを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "飛び越えるのに必要な投げ出しの速さの最小値 $v_{\\min}$ を，$A$，$B$，$c$，$g$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$A=0.80\\ \\mathrm{m}$，$B=0.60\\ \\mathrm{m}$，$c=1.00\\ \\mathrm{m}$，$g=9.8\\ \\mathrm{m/s^2}$ のとき，$v_{\\min}$ を有効数字3桁で求めよ．また，$v_{\\min}$ で投げるときの軌道が楕円に接する点の座標（楕円の中心を原点とする）と，投げ出しの角 $\\theta_0$ の $\\tan\\theta_0$ の値を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：断面が楕円のタンクを飛び越す最小の投げ出しの速さ（高さごとの必要条件と接する点）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：断面が楕円のタンクを飛び越す最小の投げ出しの速さ（高さごとの必要条件と接する点）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "略（高さ $y$ より上にある軌道の部分の水平の幅が $w(y)$ 以上で，それは速さ $u$ の投射の水平到達距離 $\\le u^2/g$）"
+   },
+   {
+    "id": "2",
+    "tex": "$v_{\\min}=\\sqrt{2g\\left(c+\\sqrt{A^2+B^2}\\right)}$"
+   },
+   {
+    "id": "3",
+    "tex": "$v_{\\min}=6.26\\ \\mathrm{m/s}$，接点 $(\\pm0.64\\ \\mathrm{m},\\ 0.36\\ \\mathrm{m})$，$\\tan\\theta_0=\\dfrac{\\sqrt{21}}{2}\\fallingdotseq2.29$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　軌道は放物線なので，高さ $y$ より上にある部分は1つの区間 $x_1<x<x_2$ にあり，その外では $y$ より下にある．楕円の高さ $y$ の水平な弦（幅 $w(y)$）の真上を小球が $y$ より低い高さで通ると，そこではタンクの上面より低いので，タンクに当たるか下をくぐるしかない．したがって弦は区間 $(x_1,x_2)$ に含まれ，$x_2-x_1\\ge w(y)$．一方 $x_2-x_1$ は，高さ $y$ を速さ $u$ で通る放物運動の「同じ高さに戻るまでの水平距離」で，$\\dfrac{u^2\\sin2\\phi}{g}\\le\\dfrac{u^2}{g}$（$\\phi$ はそこでの速度の仰角）．よって $\\boldsymbol{u^2\\ge g\\,w(y)}$．\n\n\\textbf{(2)}　楕円の上半分を $x=A\\sin\\varphi$，$y=B\\cos\\varphi$（$0\\le\\varphi\\le90^\\circ$）と表すと，高さ $c+B\\cos\\varphi$（地面から）での幅は $2A\\sin\\varphi$．力学的エネルギー保存と (1) より，すべての $\\varphi$ について\n\\[ v^2=u^2+2g(c+B\\cos\\varphi)\\ge2g\\left(c+A\\sin\\varphi+B\\cos\\varphi\\right) \\]\n右辺の最大値は $A\\sin\\varphi+B\\cos\\varphi=\\sqrt{A^2+B^2}\\sin(\\varphi+\\varphi_1)$ より $\\sqrt{A^2+B^2}$（$\\tan\\varphi=A/B$ のとき）．よって $v^2\\ge2g(c+\\sqrt{A^2+B^2})$．\n\n\\textbf{等号が実現できること}　$\\tan\\varphi^*=A/B$ の高さで仰角 $45^\\circ$，速さ $u^2=2gA\\sin\\varphi^*$ で通る軌道を考える．この軌道は弦の両端 $(\\pm A\\sin\\varphi^*,\\,B\\cos\\varphi^*)$ を通り，そこでの傾きは $\\mp1$．楕円の接線の傾きは $-\\dfrac{B\\sin\\varphi^*}{A\\cos\\varphi^*}=-\\dfrac{B}{A}\\cdot\\dfrac{A}{B}=-1$ なので，軌道は2点で楕円に接する．さらに，楕円の中心を原点とし $S=\\sqrt{A^2+B^2}$ とおくと，接点は $x_t=\\dfrac{A^2}{S}$，$y_t=\\dfrac{B^2}{S}$ で，軌道は $y_p=y_t+\\dfrac{x_t^2-x^2}{2x_t}$．$X=x^2$ とおくと $h(X)=y_p^2-B^2\\left(1-\\dfrac{X}{A^2}\\right)$ は $X$ の2次式（$X^2$ の係数は正）で，接点 $X=x_t^2$ で値も傾きも $0$ だから $h(X)=\\dfrac{S^2}{4A^4}(X-x_t^2)^2\\ge0$．また $|x|\\le A$ で $y_p\\ge\\dfrac{B^2}{2S}>0$ なので，$|x|\\le A$ の全体で軌道は楕円の上側の外にある．よって\n\\[ \\boldsymbol{v_{\\min}=\\sqrt{2g\\left(c+\\sqrt{A^2+B^2}\\right)}} \\]\n\n\\textbf{(3)}　$\\sqrt{A^2+B^2}=1.00\\ \\mathrm{m}$ より $v_{\\min}=\\sqrt{2\\times9.8\\times2.00}\\fallingdotseq\\boldsymbol{6.26\\ \\mathrm{m/s}}$．$\\sin\\varphi^*=0.80$，$\\cos\\varphi^*=0.60$ なので接点は $(\\pm A\\sin\\varphi^*,\\,B\\cos\\varphi^*)=\\boldsymbol{(\\pm0.64\\ \\mathrm{m},\\ 0.36\\ \\mathrm{m})}$．接点での速さは $u^2=2g\\times0.64$，速度成分は $u_x=u_y=\\dfrac{u}{\\sqrt2}$．地面では $v_x=u_x$，$v_y^2=u_y^2+2g(c+0.36)$ なので\n\\[ \\tan^2\\theta_0=1+\\frac{4g\\times1.36}{u^2}=1+\\frac{4\\times1.36}{2\\times0.64}=5.25,\\qquad \\boldsymbol{\\tan\\theta_0=\\frac{\\sqrt{21}}{2}\\fallingdotseq2.29} \\]\n（$\\theta_0\\fallingdotseq66.4^\\circ$．投げ出す点はタンクの中心の真下から約 $1.47\\ \\mathrm{m}$ 手前．）\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "障害物を越える最小の速さは「どの高さでも，そこを通る速さは障害物の幅を越えられるだけ必要」という高さごとの必要条件を全高さで比べ，最も厳しいものを選べば求まる．楕円では $A\\sin\\varphi+B\\cos\\varphi$ の最大化になり，その高さで仰角 $45^\\circ$ の軌道が自動的に楕円に接するので，下限が実際に達成される．"
+ },
+ "concepts": [
+  "uniform-acceleration",
+  "projectile-motion",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "放物運動",
+  "最小の速さ",
+  "力学的エネルギー保存",
+  "三角関数の合成",
+  "障害物越え"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "id": "PHY-MOM-001",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "近づいてくる滑らかな壁との斜め衝突と，速さを保つ反射の条件",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平な床上の点 O から，質量 $m$ の小球を床と角 $\\theta$（$0<\\theta<\\frac{\\pi}{2}$）をなす向きに速さ $v_0$ で投げ出す．投げ出した時刻 $t=0$ に，O から水平距離 $l$ の位置に鉛直な滑らかな壁があり，壁は小球の運動面に垂直なまま，一定の速さ $V$ で O に向かって水平に動いている．壁の運動は小球との衝突によって変化しないものとする．小球と壁の間の反発係数を $e$（$0<e<1$），重力加速度の大きさを $g$ とし，空気抵抗は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小球が床に落ちる前に壁に衝突するための $l$ の条件を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "衝突直後の小球の速度の水平成分（O に向かう向きを正）と鉛直成分（上向きを正）を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "衝突の直前と直後で小球の速さが変わらないような $V$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$V$ が (3) の値のとき，小球が床に落ちる点がちょうど O となるような $l$ を求めよ．また，このとき衝突は小球の軌道のどの点で起こるか．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) の場合について，衝突の間に壁の速さを一定に保つために外部が壁にした仕事 $W$ と，衝突によって失われた（熱などに変わった）力学的エネルギー $E_{\\mathrm{loss}}$ をそれぞれ求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：近づいてくる滑らかな壁との斜め衝突と，速さを保つ反射の条件",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：近づいてくる滑らかな壁との斜め衝突と，速さを保つ反射の条件",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$l<\\dfrac{2v_0\\sin\\theta\\,(v_0\\cos\\theta+V)}{g}$"
+   },
+   {
+    "id": "2",
+    "tex": "水平成分 $e(v_0\\cos\\theta+V)+V$，鉛直成分 $v_0\\sin\\theta-\\dfrac{gl}{v_0\\cos\\theta+V}$"
+   },
+   {
+    "id": "3",
+    "tex": "$V=\\dfrac{1-e}{1+e}v_0\\cos\\theta$"
+   },
+   {
+    "id": "4",
+    "tex": "$l=\\dfrac{v_0^2\\sin2\\theta}{(1+e)g}$，軌道の最高点"
+   },
+   {
+    "id": "5",
+    "tex": "$W=E_{\\mathrm{loss}}=\\dfrac{2(1-e)}{1+e}mv_0^2\\cos^2\\theta$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "以下 $u=v_0\\cos\\theta$，$w=v_0\\sin\\theta$ とおく．壁は鉛直で滑らかなので，衝突で変わるのは速度の水平成分だけであり，\\textbf{鉛直方向の運動は衝突の有無に関係なく初速 $w$ の投げ上げ運動}のままである．\n\n\\textbf{(1)}\n小球と壁の水平距離は $t=0$ で $l$，近づく速さは $u+V$ なので，衝突時刻は $t_1=\\dfrac{l}{u+V}$．床に落ちる時刻は $T=\\dfrac{2w}{g}$ だから，$t_1<T$ より\n\\[ \\boldsymbol{l<\\frac{2v_0\\sin\\theta\\,(v_0\\cos\\theta+V)}{g}}. \\]\n\n\\textbf{(2)}\n反発係数は\\textbf{壁に対する相対速度}で定義される．壁とともに動く慣性系（速度一定なので慣性系）では，小球は速さ $u+V$ で壁に近づき，衝突後は $e(u+V)$ で遠ざかる．地面に戻すと，O 向きの速さは壁の速さ $V$ を加えて\n\\[ \\boldsymbol{e(v_0\\cos\\theta+V)+V}. \\]\n鉛直成分は変わらず $w-gt_1=\\boldsymbol{v_0\\sin\\theta-\\dfrac{gl}{v_0\\cos\\theta+V}}$．\n\n\\textbf{(3)}\n鉛直成分は衝突で変わらないので，速さが等しい条件は水平成分の大きさが等しいこと：$e(u+V)+V=u$（左辺は正なので $-u$ に等しくなることはない）．よって\n\\[ V=\\boldsymbol{\\frac{1-e}{1+e}v_0\\cos\\theta}. \\]\n壁が近づいてくることで，反発による減速がちょうど補われる．\n\n\\textbf{(4)}\n(3) のとき，衝突後の水平速度は大きさ $u$ で向きが反転するだけである．衝突時の小球の位置は O から $ut_1$，衝突後に床に落ちるまでの時間は $T-t_1$ なので，O に落ちる条件は $ut_1=u(T-t_1)$，すなわち $t_1=\\dfrac{T}{2}=\\dfrac{w}{g}$．この時刻は鉛直速度が 0 になる時刻だから，\\textbf{衝突は軌道の最高点で起こる}．このとき\n\\[ l=(u+V)t_1=\\frac{2u}{1+e}\\cdot\\frac{w}{g}=\\boldsymbol{\\frac{v_0^2\\sin2\\theta}{(1+e)g}}. \\]\n衝突後の運動は行きの運動を時間反転したものと同じなので，小球は\\textbf{行きと同じ軌道}を引き返して O に戻る．なお，衝突後の壁と小球の間隔は $(u-V)(t-t_1)$ で増加するので，再衝突は起こらず，壁が O に達するのは小球の着地より後である（$t=T$ で壁の位置は $(u-V)t_1>0$）．\n\n\\textbf{(5)}\n壁から小球への力積の大きさは，壁の系での速度変化から $J=m(1+e)(u+V)=m(1+e)\\cdot\\dfrac{2u}{1+e}=2mu$（地面系で $-u\\to u$ と見ても同じ）．壁は速度一定なので，外部は衝突中ずっと小球から受ける力とつり合う力を壁に加え，その間に壁は O 向きに速さ $V$ で動く．よって\n\\[ W=JV=2mu\\cdot\\frac{1-e}{1+e}u=\\boldsymbol{\\frac{2(1-e)}{1+e}mv_0^2\\cos^2\\theta}. \\]\n一方，失われた力学的エネルギーは，壁の系（慣性系で壁は仕事をしない）で見た運動エネルギーの減少に等しく\n\\[ E_{\\mathrm{loss}}=\\frac12m(1-e^2)(u+V)^2=\\frac12m(1-e^2)\\frac{4u^2}{(1+e)^2}=\\boldsymbol{\\frac{2(1-e)}{1+e}mv_0^2\\cos^2\\theta}. \\]\n地面系では小球の運動エネルギーは衝突の前後で変わらないので，外部が壁を通して注ぎ込んだ仕事 $W$ がすべて熱などに変わったことになり，$W=E_{\\mathrm{loss}}$ と整合する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "滑らかな鉛直面との衝突では鉛直方向の運動は影響を受けず，水平成分だけが反発係数に従って変わる．壁が動くときは壁の静止系で反発係数を適用し，地面系に戻す．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "projectile-motion",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "斜め衝突",
+  "反発係数",
+  "動く壁",
+  "放物運動",
+  "エネルギー収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

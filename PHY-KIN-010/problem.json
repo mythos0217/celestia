@@ -1,0 +1,130 @@
+{
+ "id": "PHY-KIN-010",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "エレベーター内の台から飛び出して斜面に落ちる小球（加速度が飛び出しの瞬間に切り替わる場合の到達距離）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，エレベーターの床に台が固定されている．台の表面は，なめらかな曲面と，それにつながる水平な面 BC，および C から下る傾きの角 $\\theta$ の斜面からなる．小球を，C より高さ $H$ だけ高い曲面上の点 P に（エレベーターに対して）静かに置くと，小球は台の表面に沿って運動し，C から水平に飛び出して斜面上の点 Q に落ちた．摩擦や空気の抵抗はなく，小球は C に着くまで台から離れないものとする．重力加速度の大きさを $g$ とし，以下の距離・速度はすべてエレベーターに対するものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "エレベーターが静止しているとき，距離 CQ を $H$，$\\theta$ で表せ．また，Q に落ちる直前の小球の速度が水平となす角を $\\varphi$ として，$\\tan\\varphi$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "エレベーターが，小球を置く前から上向きに大きさ $a$ の一定の加速度で運動し続けているとき，CQ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "小球を置いたときエレベーターは静止していたが，小球が C を飛び出した瞬間から上向きに大きさ $a$ の一定の加速度で動き始めた．CQ は (1) の何倍か．"
+     },
+     {
+      "id": "4",
+      "tex": "小球を置いたときエレベーターは上向きに大きさ $a$ の一定の加速度で運動していたが，小球が C を飛び出した瞬間から等速度運動になった．CQ は (1) の何倍か．"
+     },
+     {
+      "id": "5",
+      "tex": "小球が台の上を運動している間はエレベーターが下向きに大きさ $a$（$a<g$）の一定の加速度で運動し，小球が C を飛び出した瞬間から上向きに大きさ $a$ の一定の加速度で運動した．CQ が (1) の $\\dfrac12$ 倍であったとき，$a$ を $g$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：エレベーター内の台から飛び出して斜面に落ちる小球（加速度が飛び出しの瞬間に切り替わる場合の到達距離）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\mathrm{CQ}=\\dfrac{4H\\tan\\theta}{\\cos\\theta}$，$\\tan\\varphi=2\\tan\\theta$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{4H\\tan\\theta}{\\cos\\theta}$（(1) と同じ）"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{g}{g+a}$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{g+a}{g}$ 倍"
+   },
+   {
+    "id": "5",
+    "tex": "$a=\\dfrac g3$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　エレベーターとともに動く観測者から見ると，加速度 $\\vec\\alpha$ のエレベーター内では慣性力 $-m\\vec\\alpha$ が加わり，重力と合わせて「見かけの重力加速度」$g'$（上向き加速度 $a$ なら $g'=g+a$，下向き加速度 $a$ なら $g'=g-a$）の一様な重力場になる．台の上を滑る区間と飛んでいる区間で $g'$ が別々の値をとりうることに注意する．エレベーターの速度は連続なので，加速度が切り替わる瞬間に小球の（エレベーターに対する）速度は跳ばない．\n\n\\textbf{一般式}　滑走中の見かけの重力加速度を $g_1$，飛行中を $g_2$ とする．台はなめらかで，エレベーター内では見かけの重力 $mg_1$ と垂直抗力（仕事をしない）だけがはたらくので，力学的エネルギー保存より C での速さは $v_{\\mathrm C}=\\sqrt{2g_1H}$．C から水平に飛び出し，時間 $t$ 後に斜面に落ちる条件は\n\\[ \\frac{\\frac12g_2t^2}{v_{\\mathrm C}t}=\\tan\\theta\\quad\\Longrightarrow\\quad t=\\frac{2v_{\\mathrm C}\\tan\\theta}{g_2}. \\]\nよって\n\\[ \\mathrm{CQ}=\\frac{v_{\\mathrm C}t}{\\cos\\theta}=\\frac{2v_{\\mathrm C}^2\\tan\\theta}{g_2\\cos\\theta}=\\frac{g_1}{g_2}\\cdot\\frac{4H\\tan\\theta}{\\cos\\theta}. \\]\n\n\\textbf{(1)}　$g_1=g_2=g$ で $\\mathrm{CQ}=\\boldsymbol{\\dfrac{4H\\tan\\theta}{\\cos\\theta}}$．Q での速度は水平成分 $v_{\\mathrm C}$，鉛直成分 $g_2t=2v_{\\mathrm C}\\tan\\theta$ なので $\\boldsymbol{\\tan\\varphi=2\\tan\\theta}$．これは $H$ にも $g$ にもよらない．\n\n\\textbf{(2)}　$g_1=g_2=g+a$ なので比 $g_1/g_2=1$，$\\mathrm{CQ}$ は \\textbf{(1) と同じ}である．C での速さは $\\sqrt{g+a}$ に比例して大きくなるが，飛行中の落下も同じ割合で速くなり，打ち消し合う．\n\n\\textbf{(3)}　$g_1=g$，$g_2=g+a$ なので $\\boldsymbol{\\dfrac{g}{g+a}}$ 倍．\n\n\\textbf{(4)}　$g_1=g+a$，$g_2=g$ なので $\\boldsymbol{\\dfrac{g+a}{g}}$ 倍．\n\n\\textbf{(5)}　$g_1=g-a$，$g_2=g+a$ なので\n\\[ \\frac{g-a}{g+a}=\\frac12\\quad\\Longrightarrow\\quad \\boldsymbol{a=\\frac g3}. \\]\n$a<g$ なので滑走中も見かけの重力は下向きで，小球は台の上を P から C へ運動できる．\n\n\\textbf{別解（地上から見る）}　(3) を地上で考える．飛び出した瞬間のエレベーターの速度を $U$（上向き）とすると，小球は水平に $v_{\\mathrm C}$，鉛直に初速 $U$ で投げ出され加速度 $-g$．台は初速 $U$，加速度 $+a$．台に対する小球の鉛直変位は $-\\frac12(g+a)t^2$ で，(3) の式と一致する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "なめらかな台から飛び出す小球の到達距離は「滑走中の見かけの重力加速度 $g_1$／飛行中の見かけの重力加速度 $g_2$」の比だけで決まり，両者が同じなら重力の強さによらない．エレベーターの加速度が飛び出しの瞬間に切り替わると，速度は連続のまま $g_2$ だけが変わり，距離が $g_1/g_2$ 倍になる．"
+ },
+ "concepts": [
+  "uniform-acceleration",
+  "projectile-motion",
+  "equation-of-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "水平投射",
+  "斜面への落下",
+  "慣性力",
+  "見かけの重力",
+  "状態の切り替わり"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "id": "PHY-MOM-008",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "つり合った滑車系でとび上がる物体と1次元化した運動量保存",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，天井からつるした軽い滑車に軽い糸をかけ，両端に質量 $m$ の皿 A，B をつるす．皿 A には質量 $M$ のばね仕掛けのおもちゃ P を，皿 B には質量 $M$ のおもり W をのせ，全体を静止させておく．あるとき P は内部のばねを瞬間的に解放して鉛直上向きにとび上がった．とび上がった直後の，皿 A に対する P の相対速度の大きさは $u$ であった．滑車はなめらかに回り，糸はたるまず，皿が床や滑車にぶつかることはない．P は鉛直線上を運動し，その大きさは無視できる．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "とび上がった直後の，床に対する P の速さ $V$ と皿 A の速さ $v$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P が皿 A から最も離れたときの，P と皿 A の間の距離を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "P がとび上がってから再び皿 A に落ちてくるまでの時間を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "P は皿 A に落ちると，はね返らずに皿と一体になった．その直後の皿 A の速度と，そのときの皿 A の高さ（はじめの高さとの関係）を求めよ．また，この着地で失われた力学的エネルギーを求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：つり合った滑車系でとび上がる物体と1次元化した運動量保存",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V=\\dfrac{(M+2m)u}{2(M+m)}$，$v=\\dfrac{Mu}{2(M+m)}$（皿 A は下向き）"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{(M+2m)u^2}{4(M+m)g}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{(M+2m)u}{(M+m)g}$"
+   },
+   {
+    "id": "4",
+    "tex": "速度 $0$（全体が静止する），皿 A ははじめと同じ高さ．失われた力学的エネルギー $\\dfrac{M(M+2m)u^2}{4(M+m)}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　糸に沿って「A 側は上向き，B 側は下向き」を正とする U 字形の座標をとり，系を1次元化する．滑車がなめらかで糸が軽ければ，糸の張力は系の内力である．外力は重力だけで，正の向きの成分は\n\\[ \\text{P}:-Mg,\\quad \\text{皿A}:-mg,\\quad \\text{皿B}+\\text{W}:+(m+M)g \\]\nで，\\textbf{合計は $0$}．これは P が皿にのっているときだけでなく，\\textbf{P が空中にいる間も}成り立つ（P の重力 $Mg$ も系に含めているから）．したがって，この1次元化した運動量は常に保存し，はじめの値 $0$ のままである．\n\nP の上向きの変位を $y_{\\mathrm P}$，皿 A の上向きの変位を $y_{\\mathrm A}$（皿 B は $y_{\\mathrm A}$ だけ下がる）とすると，運動量 $0$ より常に\n\\[ M\\dot y_{\\mathrm P}+(2m+M)\\dot y_{\\mathrm A}=0,\\qquad M y_{\\mathrm P}+(2m+M)y_{\\mathrm A}=0 \\quad\\cdots(\\ast) \\]\n\n\\textbf{(1)}　P は上へ $V$，皿 A は下へ $v$ で動くから，$MV=(2m+M)v$．相対速度の条件 $V+v=u$ と連立して\n\\[ \\boldsymbol{V=\\frac{(M+2m)u}{2(M+m)}},\\qquad \\boldsymbol{v=\\frac{Mu}{2(M+m)}} \\]\n\n\\textbf{(2)}　P が離れた後，皿 A，B と W の系では B 側が $Mg$ だけ重いので，皿 A は上向きの加速度\n\\[ a=\\frac{Mg}{2m+M} \\]\nで動く（このとき張力 $m(g+a)>0$ で糸はたるまない）．P の加速度は下向き $g$ なので，皿 A に対する P の相対加速度は下向きに $g+a=\\dfrac{2(M+m)g}{M+2m}$，相対初速度は上向き $u$．最も離れるのは相対速度が $0$ のときで，\n\\[ 0-u^2=-2(g+a)d\\quad\\therefore\\quad \\boldsymbol{d=\\frac{(M+2m)u^2}{4(M+m)g}} \\]\n\n\\textbf{(3)}　相対運動は初速 $u$，加速度 $-(g+a)$ の等加速度運動だから，相対変位が再び $0$ になる時間は\n\\[ t=\\frac{2u}{g+a}=\\boldsymbol{\\frac{(M+2m)u}{(M+m)g}} \\]\n\n\\textbf{(4)}　着地の瞬間に大きな力（P と皿の間の力，糸の張力の急増）がはたらくが，すべて内力であり，重力の合力は $0$ なので，($\\ast$) の運動量保存は着地の前後でも成り立つ．一体となった後は P と皿 A の速度が等しいので，$(M+2m+M)\\dot y=0$ より\\textbf{全体が静止する}．皿 A の速度は $\\boldsymbol{0}$．\n\nさらに着地の瞬間は $y_{\\mathrm P}=y_{\\mathrm A}$ だから，($\\ast$) の第2式より $(2M+2m)y_{\\mathrm A}=0$，すなわち $\\boldsymbol{y_{\\mathrm A}=0}$：皿 A は\\textbf{はじめと同じ高さ}にある．\n\n失われた力学的エネルギー：最終状態は位置も速度もはじめと同じなので，P のばねが与えた運動エネルギーがすべて失われた．\n\\[ \\frac12MV^2+\\frac12(2m+M)v^2=\\boldsymbol{\\frac{M(M+2m)u^2}{4(M+m)}} \\]\n（直接に計算しても，着地直前の P と皿 A の速度は (1) の値の向きを逆にしたものになり，同じ結果になる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "滑車でつながった系をU字形の座標で1次元化すると，重力の合力が0になり，物体が空中にいる間も運動量が保存する．その結果，1次元の重心は動かず，完全非弾性の着地で全体が元の位置で静止する．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "kinematics-components",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動量保存",
+  "滑車",
+  "1次元化",
+  "相対運動",
+  "重心",
+  "完全非弾性衝突"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

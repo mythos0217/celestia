@@ -1,0 +1,130 @@
+{
+ "id": "PHY-KIN-004",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "水平の長さが一定のジャンプ台から飛び出す小球の最大到達距離（角度で変わる発射速度）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかな軌道の上で，床からの高さ $H$ の点から小球を静かに放す．小球は曲面をすべり下りて水平な床を進み，床上の点 O から始まる傾斜角 $\\theta$ $\\left(0<\\theta<\\dfrac{\\pi}{2}\\right)$ のまっすぐな斜面を上る．斜面の水平方向の長さは $b$ で一定とし，$\\theta$ を変えると斜面の上端 P の高さ $b\\tan\\theta$ が変わる．P から先は P と同じ高さの水平な台になっており，小球は P から斜面に沿った向きに飛び出して，台の上に落下する．P から落下点までの水平距離を $s$ とする．軌道のつなぎ目はなめらかで，摩擦，空気抵抗，小球の大きさは無視する．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小球が P に達するための $\\theta$ の条件と，P での速さ $v$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$s$ を $H,\\ b,\\ \\theta$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$H,\\ b$ を一定にして $\\theta$ を変える．$s$ を最大にする角 $\\theta^*$ は $\\tan2\\theta^*=\\dfrac{H}{b}$ を満たすことを示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$s$ の最大値 $s_{\\max}$ を $H,\\ b$ で表せ．また，$\\theta=\\theta^*$ のとき，P での速度の水平成分は $b$ によらないことを示し，その値を求めよ．さらに $H=\\sqrt3\\,b$ のときの $\\theta^*$ と $s_{\\max}$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$H$ が $b$ に比べて十分大きいとき，$\\theta^*$ は $\\dfrac{\\pi}{4}$ に近づく．その差 $\\dfrac{\\pi}{4}-\\theta^*$ を $\\dfrac bH$ の1次の近似で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：水平の長さが一定のジャンプ台から飛び出す小球の最大到達距離（角度で変わる発射速度）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\tan\\theta<\\dfrac Hb$，$v=\\sqrt{2g(H-b\\tan\\theta)}$"
+   },
+   {
+    "id": "2",
+    "tex": "$s=2(H-b\\tan\\theta)\\sin2\\theta$"
+   },
+   {
+    "id": "3",
+    "tex": "解説参照"
+   },
+   {
+    "id": "4",
+    "tex": "$s_{\\max}=2\\left(\\sqrt{H^2+b^2}-b\\right)$；水平成分 $\\sqrt{gH}$；$\\theta^*=\\dfrac{\\pi}{6}$，$s_{\\max}=2b$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{\\pi}{4}-\\theta^*\\fallingdotseq\\dfrac{b}{2H}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 力学的エネルギー保存（軌道はなめらかで垂直抗力は仕事をしない）より，P（高さ $b\\tan\\theta$）での速さは\n\\[ \\frac12mv^2=mg(H-b\\tan\\theta)\\quad\\Longrightarrow\\quad v=\\boldsymbol{\\sqrt{2g(H-b\\tan\\theta)}} \\]\nP に達するには $H>b\\tan\\theta$，すなわち $\\boldsymbol{\\tan\\theta<\\dfrac Hb}$．\\hfill$\\square$\n\n\\textbf{(2)} P から仰角 $\\theta$，速さ $v$ で投げ出され，同じ高さに落ちるので，飛行時間 $\\dfrac{2v\\sin\\theta}{g}$，\n\\[ s=v\\cos\\theta\\cdot\\frac{2v\\sin\\theta}{g}=\\frac{v^2\\sin2\\theta}{g}=\\boldsymbol{2(H-b\\tan\\theta)\\sin2\\theta} \\]\n速さが一定なら $\\theta=\\dfrac\\pi4$ で最大だが，ここでは $\\theta$ を大きくすると P が高くなって $v$ が減るので，最大となる角は $\\dfrac\\pi4$ より小さくなるはずである．\\hfill$\\square$\n\n\\textbf{(3)} $T=\\tan\\theta$ とおくと $\\sin2\\theta=\\dfrac{2T}{1+T^2}$ より\n\\[ s=\\frac{4(H-bT)T}{1+T^2} \\]\n$T$ について微分すると\n\\[ \\frac{ds}{dT}=\\frac{4\\left[(H-2bT)(1+T^2)-(H-bT)T\\cdot2T\\right]}{(1+T^2)^2}=\\frac{4\\left(H-2bT-HT^2\\right)}{(1+T^2)^2} \\]\n分子 $H(1-T^2)-2bT$ は $T$ の減少関数で，$T=0$ で正，$T=\\dfrac Hb$ で負なので，ただ1つの正の解で $s$ は最大になる．その解は\n\\[ H(1-T^2)=2bT\\quad\\Longleftrightarrow\\quad \\tan2\\theta^*=\\frac{2T}{1-T^2}=\\boldsymbol{\\frac Hb} \\]\n（$T<1$ なので $\\theta^*<\\dfrac\\pi4$．）つまり最適な角は，O から「P の真上で床からの高さ $H$ の点」を見上げる角の半分である．\\hfill$\\square$\n\n\\textbf{(4)} $T^*=\\tan\\theta^*$ は $HT^2+2bT-H=0$ の正の解 $T^*=\\dfrac{\\sqrt{H^2+b^2}-b}{H}$．$bT^*=\\dfrac{H(1-T^{*2})}{2}$ より\n\\[ H-bT^*=\\frac{H(1+T^{*2})}{2} \\]\nこれを代入すると\n\\[ s_{\\max}=\\frac{4\\cdot\\frac{H(1+T^{*2})}{2}\\cdot T^*}{1+T^{*2}}=2HT^*=\\boldsymbol{2\\left(\\sqrt{H^2+b^2}-b\\right)} \\]\nP での速度の水平成分は\n\\[ (v\\cos\\theta^*)^2=2g(H-bT^*)\\cos^2\\theta^*=gH(1+T^{*2})\\cos^2\\theta^*=gH \\]\n（$1+\\tan^2=\\dfrac{1}{\\cos^2}$）より，$b$ によらず $\\boldsymbol{\\sqrt{gH}}$ である．\n\n$H=\\sqrt3\\,b$ のとき $\\tan2\\theta^*=\\sqrt3$ より $\\theta^*=\\boldsymbol{\\dfrac\\pi6}$，$s_{\\max}=2(2b-b)=\\boldsymbol{2b}$．（実際，$s=2\\left(\\sqrt3b-\\dfrac{b}{\\sqrt3}\\right)\\cdot\\dfrac{\\sqrt3}{2}=2b$．）\\hfill$\\square$\n\n\\textbf{(5)} $2\\theta^*=\\tan^{-1}\\dfrac Hb=\\dfrac\\pi2-\\tan^{-1}\\dfrac bH$ なので\n\\[ \\frac\\pi4-\\theta^*=\\frac12\\tan^{-1}\\frac bH\\fallingdotseq\\boldsymbol{\\frac{b}{2H}} \\]\n（$\\tan^{-1}\\varepsilon=\\varepsilon-\\dfrac{\\varepsilon^3}{3}+\\cdots$ なので，誤差は $\\left(\\dfrac bH\\right)^3$ の程度．）$H\\to\\infty$ では P の高さによる減速が無視でき，通常の $\\dfrac\\pi4$ に戻る．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "発射の速さが角度によって変わる（斜面を上る分だけ運動エネルギーが減る）ので，到達距離を最大にする角は $45^\\circ$ より小さくなる．斜面の水平の長さが一定のとき，$\\tan\\theta$ を変数にすると最適条件は $\\tan2\\theta^*=H/b$ ときれいにまとまり，最大距離は $2H\\tan\\theta^*$，そのとき発射速度の水平成分は $\\sqrt{gH}$ と $b$ によらない．$H\\gg b$ では $45^\\circ$ からのずれが $b/(2H)$ となる．"
+ },
+ "concepts": [
+  "uniform-acceleration",
+  "projectile-motion",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "放物運動",
+  "エネルギー保存",
+  "最大到達距離",
+  "最適化",
+  "近似"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

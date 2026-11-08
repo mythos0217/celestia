@@ -1,0 +1,143 @@
+{
+ "id": "PHY-MOM-009",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "壁と床に接して滑り落ちる亜鈴（壁を離れる瞬間からの水平運動量保存）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "長さ $l$ の軽い棒の両端に，質量がともに $m$ の小球 A，B を取り付けた．図のように，なめらかな鉛直の壁となめらかな水平の床があり，A を壁に，B を床に接触させて，棒が鉛直と角 $\\theta_0$ をなす状態で静かに放した．運動は壁に垂直な1つの鉛直面内で起こる．棒が鉛直となす角を $\\theta$，その時間変化率（角速度）を $\\omega=\\dfrac{d\\theta}{dt}$ とし，$c=\\cos\\theta_0$ とおく．運動中 B は床から離れず，A がいったん壁から離れると再び壁に触れることはない．小球の大きさは無視し，重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A が壁に接している間の B の速さ $v_{\\mathrm B}$ を $\\theta$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "A が壁から受ける垂直抗力の大きさ $N$ を $\\theta$ を用いて表せ．また，A が壁から離れるときの $\\cos\\theta$ の値を $c$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "A が壁から離れた後，A が床に衝突する直前の B の速さ $u$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "A が床に衝突する直前の A の速さ $v_{\\mathrm A}$ と，その速度が水平となす角 $\\phi$ について $\\tan\\phi$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "壁がなく，同じ状態から静かに放した場合（B は床上，A は支えなし）と比べると，A が床に衝突する直前の A の運動エネルギーはどれだけ小さいか．また，その差のエネルギーは衝突直前にどのような形で存在しているか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：壁と床に接して滑り落ちる亜鈴（壁を離れる瞬間からの水平運動量保存）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：壁と床に接して滑り落ちる亜鈴（壁を離れる瞬間からの水平運動量保存）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_{\\mathrm B}=\\cos\\theta\\sqrt{2gl(c-\\cos\\theta)}$"
+   },
+   {
+    "id": "2",
+    "tex": "$N=mg\\sin\\theta\\,(3\\cos\\theta-2c)$，$\\cos\\theta=\\dfrac{2}{3}c$"
+   },
+   {
+    "id": "3",
+    "tex": "$u=\\sqrt{\\dfrac{2glc^3}{27}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$v_{\\mathrm A}=\\sqrt{2glc\\left(1-\\dfrac{c^2}{27}\\right)}$，$\\tan\\phi=\\dfrac{\\sqrt{27-2c^2}}{c}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{mglc^3}{27}$ だけ小さい．B の（水平方向の）運動エネルギーとして存在する"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 壁に接している間}　壁を $x=0$，床を $y=0$ とすると，A は $(0,\\ l\\cos\\theta)$，B は $(l\\sin\\theta,\\ 0)$ にある．時間で微分して，A の速度は鉛直で大きさ $l\\omega\\sin\\theta$，B の速度は水平で大きさ $l\\omega\\cos\\theta$．壁も床もなめらかで，垂直抗力は運動の向きに垂直なので仕事をしない．力学的エネルギー保存則より\n\\[ mgl(c-\\cos\\theta)=\\frac12m(l\\omega\\sin\\theta)^2+\\frac12m(l\\omega\\cos\\theta)^2=\\frac12ml^2\\omega^2 \\]\nよって $l\\omega=\\sqrt{2gl(c-\\cos\\theta)}$ で\n\\[ v_{\\mathrm B}=\\boldsymbol{\\cos\\theta\\sqrt{2gl(c-\\cos\\theta)}} \\]\n\n\\textbf{(2) 壁の垂直抗力}　系にはたらく水平方向の外力は壁の垂直抗力 $N$ だけである（床はなめらか）．水平方向の運動量は A が $0$，B が $mv_{\\mathrm B}$ なので\n\\[ N=\\frac{d}{dt}(mv_{\\mathrm B})=ml\\frac{d}{dt}(\\omega\\cos\\theta)=ml\\left(\\cos\\theta\\frac{d\\omega}{dt}-\\omega^2\\sin\\theta\\right) \\]\n$\\omega^2=\\dfrac{2g(c-\\cos\\theta)}{l}$ を時間で微分すると $2\\omega\\dfrac{d\\omega}{dt}=\\dfrac{2g\\sin\\theta}{l}\\omega$，すなわち $\\dfrac{d\\omega}{dt}=\\dfrac{g\\sin\\theta}{l}$．代入して\n\\[ N=\\boldsymbol{mg\\sin\\theta\\,(3\\cos\\theta-2c)} \\]\n$N$ は $\\cos\\theta=\\frac23c$ で $0$ になり，その先も壁に接していると仮定すると $N<0$（壁が A を引く）となって不合理である．よって A は $\\boldsymbol{\\cos\\theta=\\dfrac23c}$ で壁から離れる．これは $v_{\\mathrm B}$ が最大になる瞬間でもある（B を加速していた壁の力がなくなる）．\n\n\\textbf{(3) 壁を離れた後}　壁を離れた後は水平方向の外力がはたらかないので，\\textbf{水平方向の運動量が保存する}．離れる瞬間の B の速さは (1) に $\\cos\\theta=\\frac23c$ を代入して $v_1=\\dfrac{2c}{3}\\sqrt{\\dfrac{2glc}{3}}$ で，A の水平速度は $0$ であるから，水平方向の運動量は $mv_1$．\n\nA が床に衝突する直前（$\\theta=\\frac{\\pi}{2}$，棒は水平）には，B の速度は水平で，B に対する A の相対速度は棒に垂直，すなわち鉛直である．よって A と B の速度の水平成分は等しく，ともに $u$ である（解答図）．運動量保存より $2mu=mv_1$：\n\\[ u=\\frac{v_1}{2}=\\frac{c}{3}\\sqrt{\\frac{2glc}{3}}=\\boldsymbol{\\sqrt{\\frac{2glc^3}{27}}} \\]\n\n\\textbf{(4) A の速さと向き}　A の速度は水平成分 $u$，鉛直成分 $l\\omega$（下向き）．全過程で力学的エネルギーが保存するので\n\\[ mglc=\\frac12mu^2+\\frac12m\\left(u^2+l^2\\omega^2\\right) \\]\nよって $v_{\\mathrm A}^2=u^2+l^2\\omega^2=2glc-u^2$：\n\\[ v_{\\mathrm A}=\\boldsymbol{\\sqrt{2glc\\left(1-\\frac{c^2}{27}\\right)}} \\]\nまた $l^2\\omega^2=2glc-2u^2=2glc\\left(1-\\dfrac{2c^2}{27}\\right)$ より\n\\[ \\tan\\phi=\\frac{l\\omega}{u}=\\boldsymbol{\\frac{\\sqrt{27-2c^2}}{c}} \\]\n\n\\textbf{(5) 壁がない場合との比較}　壁がないと水平方向の外力が最初から $0$ で，水平方向の運動量は $0$ のまま保存する．衝突直前の A，B の水平速度は (3) と同じ理由で等しいので，ともに $0$．B は静止していて，A の運動エネルギーは $mglc$ になる．壁がある場合の A の運動エネルギーは $mglc-\\frac12mu^2$ なので，差は\n\\[ \\frac12mu^2=\\boldsymbol{\\frac{mglc^3}{27}} \\]\nこれは\\textbf{衝突直前に B がもつ運動エネルギー}（水平に動く B）である．壁が A を押している間に系が得た水平方向の運動量が，壁を離れた後も保存されて，重心の水平運動のエネルギーとして残るためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "壁と床がなめらかでも，壁の垂直抗力は水平方向の外力なので，壁に接している間は水平運動量が保存せず，その時間変化率が垂直抗力に等しい．垂直抗力が $0$（B の速さが最大）になる瞬間に A は壁を離れ，そこから水平運動量保存が使えるようになる．棒が水平になる瞬間は両端の水平速度が等しいことと，エネルギー保存を合わせて衝突直前の速度が決まる．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "restitution",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動量保存",
+  "力学的エネルギー保存",
+  "垂直抗力が0になる条件",
+  "剛体棒の拘束",
+  "保存則の切り替わり"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

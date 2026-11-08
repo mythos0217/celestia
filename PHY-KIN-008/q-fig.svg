@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200">
+<defs><marker id="q-ab" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-ak" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker></defs>
+<line x1="20" y1="150" x2="500" y2="150" stroke="#222" stroke-width="1.6"/>
+<g stroke="#222" stroke-width="1"><line x1="30" y1="150" x2="20" y2="162"/><line x1="60" y1="150" x2="50" y2="162"/><line x1="90" y1="150" x2="80" y2="162"/><line x1="120" y1="150" x2="110" y2="162"/><line x1="150" y1="150" x2="140" y2="162"/><line x1="180" y1="150" x2="170" y2="162"/><line x1="210" y1="150" x2="200" y2="162"/><line x1="240" y1="150" x2="230" y2="162"/><line x1="270" y1="150" x2="260" y2="162"/><line x1="300" y1="150" x2="290" y2="162"/><line x1="330" y1="150" x2="320" y2="162"/><line x1="360" y1="150" x2="350" y2="162"/><line x1="390" y1="150" x2="380" y2="162"/><line x1="420" y1="150" x2="410" y2="162"/><line x1="450" y1="150" x2="440" y2="162"/><line x1="480" y1="150" x2="470" y2="162"/></g>
+<!-- car B -->
+<rect x="60" y="112" width="100" height="28" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M80,112 L95,92 L135,92 L148,112" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="82" cy="142" r="8" fill="none" stroke="#222" stroke-width="1.6"/><circle cx="140" cy="142" r="8" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="100" y="132" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">B</text>
+<!-- car A -->
+<rect x="320" y="112" width="100" height="28" fill="none" stroke="#222" stroke-width="1.6"/>
+<path d="M332,112 L345,92 L385,92 L400,112" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="340" cy="142" r="8" fill="none" stroke="#222" stroke-width="1.6"/><circle cx="398" cy="142" r="8" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="362" y="132" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">A</text>
+<!-- velocities -->
+<line x1="110" y1="70" x2="170" y2="70" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="176" y="76" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">V</text>
+<line x1="370" y1="70" x2="430" y2="70" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="436" y="76" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">V</text>
+<!-- gap D -->
+<line x1="160" y1="105" x2="160" y2="182" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="320" y1="105" x2="320" y2="182" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="164" y1="178" x2="316" y2="178" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+<text x="234" y="195" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">D</text>
+<text x="200" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">進行方向 →</text>
+</svg>

@@ -1,0 +1,135 @@
+{
+ "id": "PHY-MOM-002",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "容器内で跳ねる小球による容器の浮き上がりと空中での再衝突",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平な床の上に，上下をふたと底でふさいだ質量 $M$ の円筒容器が鉛直に立っている．容器の内部の高さ（底の上面からふたの下面まで）は $h$ で，底の上に質量 $m$ の小球が置かれている．小球と容器のふた・底との間の反発係数を $e$（$0<e<1$）とする．小球に鉛直上向きの初速 $v_0$（$v_0^{\\,2}>2gh$）を与えたところ，小球はふたに衝突した．小球は容器の中心軸上を運動して側面には触れず，小球の大きさと空気抵抗は無視できる．衝突は瞬間的に起こるものとし，重力加速度の大きさを $g$，鉛直上向きを正とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小球がふたに衝突する直前の速さ $w$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "衝突直後の小球の速度 $v_1$ と容器の速度 $V_1$ を，$w$ を用いて求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "衝突後，容器は床から離れる．容器が空中にある間，容器から見た小球はどのような運動をするか．また，容器が床に戻る前に小球が容器の底に衝突するための $w$ の条件を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の条件が満たされるとき，小球が容器の底に衝突する瞬間の，容器の底面の床からの高さ $H$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：容器内で跳ねる小球による容器の浮き上がりと空中での再衝突",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：容器内で跳ねる小球による容器の浮き上がりと空中での再衝突",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$w=\\sqrt{v_0^{\\,2}-2gh}$"
+   },
+   {
+    "id": "2",
+    "tex": "$v_1=\\dfrac{m-eM}{m+M}w$，$V_1=\\dfrac{(1+e)m}{m+M}w$"
+   },
+   {
+    "id": "3",
+    "tex": "速さ $ew$ の下向きの等速直線運動；$w^2>\\dfrac{(m+M)gh}{2e(1+e)m}$"
+   },
+   {
+    "id": "4",
+    "tex": "$H=\\dfrac{(1+e)mh}{e(m+M)}-\\dfrac{gh^2}{2e^2w^2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　小球がふたに達するまで容器は床の上で静止している（小球は容器に力をおよぼさない）．等加速度運動の式より $w^2=v_0^{\\,2}-2gh$，$\\boldsymbol{w=\\sqrt{v_0^{\\,2}-2gh}}$．\n\n\\textbf{(2)}　衝突の瞬間，小球は容器を上向きに押す．床は容器を押すことはできても引くことはできないので，この撃力に対して床からの撃力は働かない．重力の力積は衝突時間が短いので無視できる．したがって小球と容器の系で鉛直方向の運動量が保存される：\n\\[ mv_1+MV_1=mw,\\qquad v_1-V_1=-e(w-0). \\]\nこれを解いて\n\\[ \\boldsymbol{v_1=\\frac{m-eM}{m+M}w},\\qquad \\boldsymbol{V_1=\\frac{(1+e)m}{m+M}w}. \\]\n$V_1>0$ なので容器は床から離れる．\n\n\\textbf{(3)}　容器が床から離れたあとは，小球も容器も重力だけを受け，加速度はともに $-g$ である．したがって容器から見た小球の相対加速度は $0$ で，相対速度は衝突直後の値\n\\[ v_1-V_1=-ew \\]\nのまま一定である．容器から見ると小球は\\textbf{速さ $ew$ で下向きに等速直線運動}をする．重力があっても，同じ加速度で落下する物体どうしの相対運動は等速になる．\n\n小球が底に達するまでの時間は $\\tau_{\\rm b}=\\dfrac{h}{ew}$．一方，容器が床に戻るまでの時間は（鉛直投げ上げとして）$\\tau_{\\rm c}=\\dfrac{2V_1}{g}=\\dfrac{2(1+e)mw}{(m+M)g}$．条件 $\\tau_{\\rm b}<\\tau_{\\rm c}$ より\n\\[ \\frac{h}{ew}<\\frac{2(1+e)mw}{(m+M)g}\\quad\\therefore\\ \\boldsymbol{w^2>\\frac{(m+M)gh}{2e(1+e)m}}. \\]\n（$v_0$ で表せば $v_0^{\\,2}>2gh+\\dfrac{(m+M)gh}{2e(1+e)m}$．）\n\n\\textbf{(4)}　容器の底は時刻 $t$ に高さ $V_1t-\\dfrac12gt^2$ にある．$t=\\tau_{\\rm b}=\\dfrac{h}{ew}$ を代入して\n\\[ H=\\frac{(1+e)mw}{m+M}\\cdot\\frac{h}{ew}-\\frac12g\\left(\\frac{h}{ew}\\right)^2=\\boldsymbol{\\frac{(1+e)mh}{e(m+M)}-\\frac{gh^2}{2e^2w^2}}. \\]\n(3) の条件は $H>0$ と同値であり，結果は整合している．（小球の地面に対する運動は $v_1$ の符号によって上向きにも下向きにもなるが，相対運動で考えればその場合分けは不要である．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "衝突では，相対速度が $-e$ 倍になる関係と運動量保存を連立する．床は引けないので，ふたへの衝突で容器は浮き上がる．衝突後は両者とも加速度 $-g$ なので相対運動は等速になり，「空中で再び衝突するか」は 2 つの時間を比べるだけで決まる．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "kinematics-components",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動量保存則",
+  "反発係数",
+  "相対運動",
+  "自由落下系",
+  "状態の切り替わり"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

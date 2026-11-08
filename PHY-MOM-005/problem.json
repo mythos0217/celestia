@@ -1,0 +1,135 @@
+{
+ "id": "PHY-MOM-005",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "一定抵抗力による貫通と木材の最終速度の最大",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，滑らかな水平面上に質量 $M$，長さ $l$ の木材が静止している．質量 $m$ の弾丸を速さ $v_0$ で木材の左端面に垂直に撃ち込む．弾丸は木材の中心軸に沿って水平に進み，木材の中を進む間，木材から一定の大きさ $F$ の抵抗力を受ける．弾丸の大きさと木材の回転は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "弾丸が木材を貫通するための $v_0$ の条件を求めよ．その境界の速さを $v_{\\mathrm c}$ とする．"
+     },
+     {
+      "id": "2",
+      "tex": "$v_0>v_{\\mathrm c}$ のとき，弾丸が木材を抜け出た直後の弾丸の速さ $v$ と木材の速さ $V$ を，$m$，$M$，$v_0$，$v_{\\mathrm c}$ を用いて表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$v_0$ をいろいろ変えるとき，最終的な木材の速さ $V$ が最大になるのは $v_0$ がいくらのときか．また，その最大値 $V_{\\max}$ を $m$，$M$，$F$，$l$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "最終的な木材の速さが $V_{\\max}$ のちょうど半分になる $v_0$ をすべて求め，$v_{\\mathrm c}$ を用いて表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一定抵抗力による貫通と木材の最終速度の最大",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一定抵抗力による貫通と木材の最終速度の最大",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_0>v_{\\mathrm c}=\\sqrt{\\dfrac{2(m+M)Fl}{mM}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$v=\\dfrac{mv_0+M\\sqrt{v_0^2-v_{\\mathrm c}^2}}{m+M}$，$V=\\dfrac{m\\left(v_0-\\sqrt{v_0^2-v_{\\mathrm c}^2}\\right)}{m+M}$"
+   },
+   {
+    "id": "3",
+    "tex": "$v_0=v_{\\mathrm c}$ のとき，$V_{\\max}=\\sqrt{\\dfrac{2mFl}{M(m+M)}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$v_0=\\dfrac12v_{\\mathrm c},\\ \\dfrac54v_{\\mathrm c}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　抵抗力は弾丸と木材の間の内力であり，水平方向に外力ははたらかないので運動量は常に保存する．一方，抵抗力がする仕事の和は $-F\\times$（相対的にずれた距離）なので，力学的エネルギーはその分だけ熱に変わる．相対運動に注目すると見通しがよい．\n\n\\textbf{相対運動の準備}　弾丸の加速度は $-F/m$，木材の加速度は $+F/M$ だから，木材に対する弾丸の相対加速度は\n\\[ -F\\left(\\frac1m+\\frac1M\\right)=-\\frac{F}{\\mu},\\qquad \\mu=\\frac{mM}{m+M} \\]\nである．相対初速度は $v_0$ で，相対的にずれた距離を $s$ とすると，相対速度 $w$ は $w^2=v_0^2-\\dfrac{2F}{\\mu}s$ をみたす．これは「全運動エネルギー＝重心の運動エネルギー＋$\\frac12\\mu w^2$」と，重心の運動エネルギーが運動量保存のため一定であることからも分かる．\n\n\\textbf{(1)}　ちょうど貫通しないぎりぎりは，$s=l$ で $w=0$（右端で一体化）となる場合で，\n\\[ 0=v_{\\mathrm c}^2-\\frac{2F}{\\mu}l\\quad\\therefore\\quad v_{\\mathrm c}=\\sqrt{\\frac{2(m+M)Fl}{mM}} \\]\n$v_0=v_{\\mathrm c}$ では右端で一体化して貫通しないので，貫通の条件は $\\boldsymbol{v_0>v_{\\mathrm c}}$．\n\n\\textbf{(2)}　抜け出た瞬間 $s=l$ の相対速度は $w=\\sqrt{v_0^2-v_{\\mathrm c}^2}\\,(>0)$．重心速度は $V_G=\\dfrac{mv_0}{m+M}$ で一定だから，\n\\[ v=V_G+\\frac{M}{m+M}w,\\qquad V=V_G-\\frac{m}{m+M}w \\]\n\\[ \\therefore\\ \\boldsymbol{v=\\frac{mv_0+M\\sqrt{v_0^2-v_{\\mathrm c}^2}}{m+M}},\\qquad \\boldsymbol{V=\\frac{m\\left(v_0-\\sqrt{v_0^2-v_{\\mathrm c}^2}\\right)}{m+M}} \\]\n（運動量保存 $mv_0=mv+MV$ とエネルギー保存 $\\frac12mv_0^2=\\frac12mv^2+\\frac12MV^2+Fl$ を連立しても同じで，2解のうち弾丸が木材より速い $v>V$ の方を選ぶ．）\n\n\\textbf{(3)}　場合分けする．\n\\begin{itemize}\n\\item $v_0\\le v_{\\mathrm c}$：弾丸は木材内で一体化し，$V=\\dfrac{mv_0}{m+M}$．$v_0$ とともに増加する．\n\\item $v_0>v_{\\mathrm c}$：$V=\\dfrac{m}{m+M}\\cdot\\dfrac{v_{\\mathrm c}^2}{v_0+\\sqrt{v_0^2-v_{\\mathrm c}^2}}$ と変形でき，$v_0$ とともに減少する．\n\\end{itemize}\n速い弾丸ほど木材内にいる時間が短く，木材が受ける力積 $F\\times$（時間）が小さくなるためである．よって $V$ は $\\boldsymbol{v_0=v_{\\mathrm c}}$ で最大となり，\n\\[ V_{\\max}=\\frac{mv_{\\mathrm c}}{m+M}=\\boldsymbol{\\sqrt{\\frac{2mFl}{M(m+M)}}} \\]\n（解答図）．なお，発生する熱は $v_0\\le v_{\\mathrm c}$ で $\\frac12\\mu v_0^2$，$v_0>v_{\\mathrm c}$ では $v_0$ によらず $Fl$ である．\n\n\\textbf{(4)}　$v_0\\le v_{\\mathrm c}$ の側では $V\\propto v_0$ だから $v_0=\\dfrac12v_{\\mathrm c}$．$v_0>v_{\\mathrm c}$ の側では\n\\[ v_0-\\sqrt{v_0^2-v_{\\mathrm c}^2}=\\frac12v_{\\mathrm c}\\ \\Longrightarrow\\ v_0^2-v_{\\mathrm c}^2=v_0^2-v_0v_{\\mathrm c}+\\frac14v_{\\mathrm c}^2\\ \\Longrightarrow\\ v_0=\\frac54v_{\\mathrm c} \\]\n（$v_0-\\frac12v_{\\mathrm c}>0$ をみたし適する）．よって $\\boldsymbol{v_0=\\dfrac12v_{\\mathrm c},\\ \\dfrac54v_{\\mathrm c}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "抵抗力は内力なので運動量は保存し，熱は $F\\times$（相対的なずれの距離）で決まる．相対運動で見ると貫通後の木材の速さは初速の増加とともに減少し，最終速度は貫通ぎりぎりで最大になるという場合分けが鍵．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "kinematics-components",
+  "static-friction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動量保存",
+  "摩擦熱",
+  "相対運動",
+  "貫通条件",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

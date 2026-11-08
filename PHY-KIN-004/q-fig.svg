@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker><marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#888"/></marker></defs>
+<path d="M40,60 C60,200 100,260 170,260 L230,260 L370.0,179.2 L590,179.2" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="370.0" y1="179.2" x2="370.0" y2="260.0" stroke="#222" stroke-width="1.6"/>
+<line x1="20.0" y1="260.0" x2="370.0" y2="260.0" stroke="#222" stroke-width="1.6"/>
+<line x1="20.0" y1="260.0" x2="15.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="32.0" y1="260.0" x2="27.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="44.0" y1="260.0" x2="39.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="56.0" y1="260.0" x2="51.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="68.0" y1="260.0" x2="63.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="80.0" y1="260.0" x2="75.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="92.0" y1="260.0" x2="87.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="104.0" y1="260.0" x2="99.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="116.0" y1="260.0" x2="111.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="128.0" y1="260.0" x2="123.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="140.0" y1="260.0" x2="135.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="152.0" y1="260.0" x2="147.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="164.0" y1="260.0" x2="159.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="176.0" y1="260.0" x2="171.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="188.0" y1="260.0" x2="183.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="200.0" y1="260.0" x2="195.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="212.0" y1="260.0" x2="207.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="224.0" y1="260.0" x2="219.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="236.0" y1="260.0" x2="231.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="248.0" y1="260.0" x2="243.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="260.0" y1="260.0" x2="255.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="272.0" y1="260.0" x2="267.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="284.0" y1="260.0" x2="279.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="296.0" y1="260.0" x2="291.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="308.0" y1="260.0" x2="303.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="320.0" y1="260.0" x2="315.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="332.0" y1="260.0" x2="327.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="344.0" y1="260.0" x2="339.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="356.0" y1="260.0" x2="351.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<line x1="368.0" y1="260.0" x2="363.8" y2="265.6" stroke="#222" stroke-width="1"/>
+<rect x="370" y="179.2" width="220" height="80.8" fill="#888" fill-opacity="0.15" stroke="none"/>
+<circle cx="46.0" cy="72.0" r="7" fill="#888" stroke="#222" stroke-width="1.6"/>
+<text x="62.0" y="70.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">小球</text>
+<line x1="46.0" y1="79.0" x2="46.0" y2="260.0" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="30.0" y1="79.0" x2="30.0" y2="260.0" stroke="#222" stroke-width="1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<text x="22.0" y="170.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="end">H</text>
+<path d="M264.0,260.0 A34,34 0 0 0 259.4,243.0" fill="none" stroke="#222" stroke-width="1"/>
+<text x="270.0" y="254.0" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="start">θ</text>
+<line x1="230.0" y1="260.0" x2="370.0" y2="260.0" stroke="#888" stroke-width="0"/>
+<line x1="230.0" y1="278.0" x2="370.0" y2="278.0" stroke="#222" stroke-width="1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<text x="300.0" y="294.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">b</text>
+<line x1="230.0" y1="263.0" x2="230.0" y2="284.0" stroke="#888" stroke-width="1"/>
+<text x="226.0" y="276.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="end">O</text>
+<text x="376.0" y="171.2" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">P</text>
+<polyline points="370.0,179.2 375.1,176.3 380.2,173.5 385.4,171.0 390.5,168.5 395.6,166.2 400.8,164.1 405.9,162.1 411.0,160.2 416.1,158.5 421.2,157.0 426.4,155.6 431.5,154.3 436.6,153.2 441.8,152.2 446.9,151.4 452.0,150.8 457.1,150.2 462.2,149.9 467.4,149.7 472.5,149.6 477.6,149.7 482.8,149.9 487.9,150.2 493.0,150.8 498.1,151.4 503.2,152.2 508.4,153.2 513.5,154.3 518.6,155.6 523.8,157.0 528.9,158.5 534.0,160.2 539.1,162.1 544.2,164.1 549.4,166.2 554.5,168.5 559.6,171.0 564.8,173.5 569.9,176.3 575.0,179.2" fill="none" stroke="#888" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="370.0" y1="179.2" x2="404.6" y2="159.2" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<line x1="370.0" y1="199.2" x2="575.0" y2="199.2" stroke="#222" stroke-width="1" marker-end="url(#q-ak)" marker-start="url(#q-ak)"/>
+<text x="472.5" y="217.2" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">s</text>
+<line x1="575.0" y1="179.2" x2="575.0" y2="205.2" stroke="#888" stroke-width="1"/>
+</svg>

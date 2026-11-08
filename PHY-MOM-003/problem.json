@@ -1,0 +1,142 @@
+{
+ "id": "PHY-MOM-003",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "最高点での分裂と着地時刻から決まる破片の速度・重心の運動",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平な地面上の点 O から，質量 $2m$ の物体 P を水平と角 $\\theta$ をなす向きに初速 $v_0$ で打ち出した．P は鉛直面内を運動し，最高点 A に達した瞬間に，内部の火薬によって質量 $m$ ずつの 2 つの破片 $\\mathrm{P_1}$，$\\mathrm{P_2}$ に瞬間的に分裂した．分裂後も $\\mathrm{P_1}$，$\\mathrm{P_2}$ は同じ鉛直面内を運動した．$\\mathrm{P_1}$ は A の真下の地点 D に着地し，分裂してから着地するまでの時間は，P が分裂しなかったとした場合に A から地面に達するまでの時間のちょうど半分であった．$\\mathrm{P_1}$ は着地後その場に静止する．分裂しなかった場合の P の着地点を B とする．火薬の質量と空気抵抗は無視し，重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "分裂直後の $\\mathrm{P_1}$ の速度の向きと大きさを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "分裂直後の $\\mathrm{P_2}$ の速度の水平成分と鉛直成分を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\mathrm{P_2}$ が着地するのは分裂の何秒後か．また，$\\mathrm{P_2}$ の着地点の O からの距離を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "分裂によって増加した運動エネルギーの和 $\\Delta K$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\mathrm{P_2}$ が着地した瞬間の $\\mathrm{P_1}$ と $\\mathrm{P_2}$ の重心を G とする．G と B の距離を求めよ．また，G が B に一致しない理由を簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：最高点での分裂と着地時刻から決まる破片の速度・重心の運動",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：最高点での分裂と着地時刻から決まる破片の速度・重心の運動",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "鉛直下向きに $\\dfrac34v_0\\sin\\theta$"
+   },
+   {
+    "id": "2",
+    "tex": "水平成分 $2v_0\\cos\\theta$（O から遠ざかる向き），鉛直成分 上向きに $\\dfrac34v_0\\sin\\theta$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{2v_0\\sin\\theta}{g}$ 後，$\\dfrac{5v_0^{\\,2}\\sin\\theta\\cos\\theta}{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\Delta K=mv_0^{\\,2}\\left(\\cos^2\\theta+\\dfrac{9}{16}\\sin^2\\theta\\right)$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{v_0^{\\,2}\\sin\\theta\\cos\\theta}{g}$（G は B より O から遠い側）；$\\mathrm{P_1}$ が着地した後は地面からの力（重力以外の外力）が働くため"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "$V=v_0\\cos\\theta$，$T=\\dfrac{v_0\\sin\\theta}{g}$（O から A までの時間）とおく．A の高さは $h=\\dfrac12gT^2$，分裂しなかった場合 A から地面までの時間も $T$ である．また $\\mathrm{OD}=VT$，$\\mathrm{OB}=2VT$．\n\n\\textbf{(1)}　$\\mathrm{P_1}$ は A の真下の D に落ちたので，分裂直後の速度の水平成分は $0$．鉛直下向きの速さを $u$ とすると，時間 $\\dfrac T2$ で高さ $h$ を落ちるから\n\\[ h=u\\cdot\\frac T2+\\frac12g\\left(\\frac T2\\right)^2\\quad\\Longrightarrow\\quad \\frac12gT^2-\\frac18gT^2=\\frac{uT}{2}\\quad\\therefore\\ u=\\frac34gT. \\]\nよって\\textbf{鉛直下向きに} $\\boldsymbol{\\dfrac34v_0\\sin\\theta}$．\n\n\\textbf{(2)}　分裂は瞬間的なので重力の力積は無視でき，分裂の前後で運動量が保存される（内力のみ）．分裂直前の P の速度は水平に $V$．\n\\[ \\text{水平：}\\ 2mV=m\\cdot0+mV_{2x}\\ \\ \\therefore\\ V_{2x}=\\boldsymbol{2v_0\\cos\\theta} \\]\n\\[ \\text{鉛直：}\\ 0=m(-u)+mV_{2z}\\ \\ \\therefore\\ V_{2z}=u=\\boldsymbol{\\frac34v_0\\sin\\theta}\\ (\\text{上向き}) \\]\n\n\\textbf{(3)}　$\\mathrm{P_2}$ が着地するまでの時間を $t$ とすると\n\\[ h+\\frac34gT\\,t-\\frac12gt^2=0\\ \\Longrightarrow\\ t^2-\\frac32Tt-T^2=0\\ \\Longrightarrow\\ (t-2T)\\left(t+\\frac T2\\right)=0. \\]\n$t>0$ より $t=2T=\\boldsymbol{\\dfrac{2v_0\\sin\\theta}{g}}$．（$\\mathrm{P_1}$ の方程式 $t^2+\\dfrac32Tt-T^2=0$ の正の解 $\\dfrac T2$ と対になっている．）着地点の O からの距離は\n\\[ VT+2V\\cdot2T=5VT=\\boldsymbol{\\frac{5v_0^{\\,2}\\sin\\theta\\cos\\theta}{g}}. \\]\n\n\\textbf{(4)}　分裂直前の運動エネルギーは $\\dfrac12(2m)V^2=mV^2$．分裂直後は\n\\[ \\frac12mu^2+\\frac12m\\left\\{(2V)^2+u^2\\right\\}=mu^2+2mV^2. \\]\nよって\n\\[ \\Delta K=mV^2+mu^2=\\boldsymbol{mv_0^{\\,2}\\left(\\cos^2\\theta+\\frac{9}{16}\\sin^2\\theta\\right)}. \\]\n運動量は保存されるが，運動エネルギーは火薬のエネルギーの分だけ増える．\n\n\\textbf{(5)}　$\\mathrm{P_2}$ が着地したとき，$\\mathrm{P_1}$ は D（O から $VT$），$\\mathrm{P_2}$ は O から $5VT$ にあり，ともに地面上にある．質量が等しいので重心 G は O から $3VT$．B は O から $2VT$ だから\n\\[ \\mathrm{GB}=VT=\\boldsymbol{\\frac{v_0^{\\,2}\\sin\\theta\\cos\\theta}{g}}\\quad(\\text{B より O から遠い側}). \\]\n両方の破片が空中にある間は，外力は重力だけなので重心は分裂しなかった場合の P と同じ放物線上を動く（実際，$\\mathrm{P_1}$ 着地の瞬間の重心は $(\\tfrac32VT,\\ \\tfrac34h)$ で，元の放物線上にある）．しかし $\\mathrm{P_1}$ の着地後は，\\textbf{地面が $\\mathrm{P_1}$ に重力以外の外力（垂直抗力など）をおよぼし $\\mathrm{P_1}$ を静止させる}ため，重心の運動はもとの放物線からずれる．「重心は分裂しなかった場合の着地点に落ちる」が成り立つのは，両破片が同時に着地する場合に限られる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "瞬間的な分裂では重力の力積を無視して，成分ごとに運動量保存を使う．着地時刻の条件を逆に用いると，破片の鉛直速度が決まる．両破片が空中にある間だけ重心は元の放物線をたどり，一方が着地すると地面からの外力で重心の運動がずれる．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "projectile-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動量保存則",
+  "分裂",
+  "放物運動",
+  "重心の運動",
+  "外力の有無"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

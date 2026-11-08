@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 330">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker>
+<marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#888"/></marker>
+</defs>
+<line x1="90.0" y1="30.0" x2="90.0" y2="290.0" stroke="#222" stroke-width="1.6"/>
+<line x1="90.0" y1="34.0" x2="82.0" y2="39.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="44.0" x2="82.0" y2="49.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="54.0" x2="82.0" y2="59.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="64.0" x2="82.0" y2="69.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="74.0" x2="82.0" y2="79.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="84.0" x2="82.0" y2="89.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="94.0" x2="82.0" y2="99.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="104.0" x2="82.0" y2="109.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="114.0" x2="82.0" y2="119.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="124.0" x2="82.0" y2="129.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="134.0" x2="82.0" y2="139.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="144.0" x2="82.0" y2="149.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="154.0" x2="82.0" y2="159.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="164.0" x2="82.0" y2="169.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="174.0" x2="82.0" y2="179.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="184.0" x2="82.0" y2="189.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="194.0" x2="82.0" y2="199.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="204.0" x2="82.0" y2="209.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="214.0" x2="82.0" y2="219.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="224.0" x2="82.0" y2="229.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="234.0" x2="82.0" y2="239.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="244.0" x2="82.0" y2="249.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="254.0" x2="82.0" y2="259.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="264.0" x2="82.0" y2="269.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="274.0" x2="82.0" y2="279.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="284.0" x2="82.0" y2="289.6" stroke="#222" stroke-width="1"/>
+<line x1="90.0" y1="290.0" x2="400.0" y2="290.0" stroke="#222" stroke-width="1.6"/>
+<line x1="90.0" y1="290.0" x2="84.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="100.0" y1="290.0" x2="94.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="110.0" y1="290.0" x2="104.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="120.0" y1="290.0" x2="114.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="130.0" y1="290.0" x2="124.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="140.0" y1="290.0" x2="134.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="150.0" y1="290.0" x2="144.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="160.0" y1="290.0" x2="154.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="170.0" y1="290.0" x2="164.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="180.0" y1="290.0" x2="174.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="190.0" y1="290.0" x2="184.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="200.0" y1="290.0" x2="194.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="210.0" y1="290.0" x2="204.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="220.0" y1="290.0" x2="214.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="230.0" y1="290.0" x2="224.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="240.0" y1="290.0" x2="234.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="250.0" y1="290.0" x2="244.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="260.0" y1="290.0" x2="254.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="270.0" y1="290.0" x2="264.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="280.0" y1="290.0" x2="274.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="290.0" y1="290.0" x2="284.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="300.0" y1="290.0" x2="294.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="310.0" y1="290.0" x2="304.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="320.0" y1="290.0" x2="314.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="330.0" y1="290.0" x2="324.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="340.0" y1="290.0" x2="334.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="350.0" y1="290.0" x2="344.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="360.0" y1="290.0" x2="354.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="370.0" y1="290.0" x2="364.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="380.0" y1="290.0" x2="374.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="390.0" y1="290.0" x2="384.4" y2="298.0" stroke="#222" stroke-width="1"/>
+<line x1="103.8" y1="119.2" x2="205.5" y2="273.8" stroke="#222" stroke-width="1.6"/>
+<circle cx="99.0" cy="111.9" r="9" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="210.3" cy="281.0" r="9" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="115.0" y="105.9" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start">A</text>
+<text x="224.3" y="269.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222" text-anchor="start">B</text>
+<text x="115.0" y="127.9" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">m</text>
+<text x="224.3" y="287.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">m</text>
+<text x="164.6" y="196.5" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">l</text>
+<line x1="99.0" y1="111.9" x2="99.0" y2="201.9" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<path d="M99.0,156.9 A45,45 0 0 0 122.8,150.1" fill="none" stroke="#222" stroke-width="1"/>
+<text x="111.0" y="173.9" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">θ<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+<text x="300.0" y="120.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">g</text>
+<line x1="320.0" y1="100.0" x2="320.0" y2="150.0" stroke="#222" stroke-width="1.8" marker-end="url(#q-ak)"/>
+<text x="150.0" y="320.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">なめらかな床</text>
+<text x="102.0" y="40.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">なめらかな壁</text>
+</svg>

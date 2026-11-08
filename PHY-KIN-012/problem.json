@@ -1,0 +1,144 @@
+{
+ "id": "PHY-KIN-012",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "離れた位置の塀を越える車：向きだけ変えるジャンプ台と，一定の鉛直方向の速度を加えるジャンプ装置（助走距離の上限と下限）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水平な地面上の点 P から水平距離 $d$ 離れたところに，高さ $h$（$h<d$），厚さの無視できる塀がある．車（質点とみなす）は P より手前の地点で静止した状態から，地面上を一定の加速度の大きさ $a$ で P までまっすぐ加速し（この距離を助走距離 $s$ とよぶ），P で地面を離れて宙を飛ぶ．宙にいる間は重力（重力加速度の大きさ $g$）だけを受ける．塀の上端をちょうどかすめる場合も「越えた」とする．\n次の2通りの方法を考える．\n\\begin{itemize}\n  \\item 方法 I：P に大きさの無視できるジャンプ台を置く．ジャンプ台は車の速さを変えずに，速度の向きだけを仰角 $\\theta$ の向きに瞬間的に変える．\n  \\item 方法 II：ジャンプ台の代わりに，P で車に鉛直上向きの速度 $u$（一定値）を瞬間的に加えるジャンプ装置を使う．水平方向の速度は変わらない．\n\\end{itemize}"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "方法 I で $\\theta=45^\\circ$ のとき，塀を越えるのに必要な最小の助走距離 $s_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "方法 I で $\\theta$ を自由に選べるとき，必要な最小の助走距離 $s_2$ と，そのときの $\\tan\\theta$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "方法 II で，塀を越えられる助走距離 $s$ があるための $u$ の条件を求めよ．その条件のもとで，塀を越えられる $s$ の範囲を $u$，$g$，$h$，$d$，$a$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$u=2\\sqrt{gh}$ のとき，(3) の範囲を簡単な形で表せ．また，助走距離を範囲の下限にしたとき，車は塀の真上を上昇中・下降中のどちらで通過するか．上限のときはどうか．"
+     },
+     {
+      "id": "5",
+      "tex": "$d=3h$ のとき，$s_1$，$s_2$ と (4) の下限を $\\dfrac{gh}{a}$ の何倍かで比べよ（小数第2位まで）．ジャンプ台と装置で，ジャンプの直前・直後に保存される量がそれぞれ何かに触れて，差が生じる理由を説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：離れた位置の塀を越える車：向きだけ変えるジャンプ台と，一定の鉛直方向の速度を加えるジャンプ装置（助走距離の上限と下限）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：離れた位置の塀を越える車：向きだけ変えるジャンプ台と，一定の鉛直方向の速度を加えるジャンプ装置（助走距離の上限と下限）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$s_1=\\dfrac{gd^2}{2a(d-h)}$"
+   },
+   {
+    "id": "2",
+    "tex": "$s_2=\\dfrac{g\\left(h+\\sqrt{h^2+d^2}\\right)}{2a}$，$\\tan\\theta=\\dfrac{h+\\sqrt{h^2+d^2}}{d}$"
+   },
+   {
+    "id": "3",
+    "tex": "$u\\ge\\sqrt{2gh}$．$\\dfrac{g^2d^2}{2a\\left(u+\\sqrt{u^2-2gh}\\right)^2}\\le s\\le\\dfrac{g^2d^2}{2a\\left(u-\\sqrt{u^2-2gh}\\right)^2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{(3-2\\sqrt2)gd^2}{4ah}\\le s\\le\\dfrac{(3+2\\sqrt2)gd^2}{4ah}$．下限では下降中，上限では上昇中"
+   },
+   {
+    "id": "5",
+    "tex": "$s_1=2.25\\,\\dfrac{gh}a$，$s_2\\approx2.08\\,\\dfrac{gh}a$，下限 $\\approx0.39\\,\\dfrac{gh}a$．ジャンプ台は速さ（力学的エネルギー）を保存し水平方向の運動量を減らすが，装置は水平方向の運動量を保存して鉛直方向の運動エネルギー $\\frac12mu^2$ を外から加えるため"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}\\quad P を原点，水平に $x$，鉛直上向きに $y$ をとる．P での速さ $v$ は $v^2=2as$．仰角 $\\theta$ の放物運動の軌道は\n\\[ y=x\\tan\\theta-\\frac{g x^2}{2v^2\\cos^2\\theta}. \\]\n$\\theta=45^\\circ$ で $x=d$ のとき $y\\ge h$：$d-\\dfrac{gd^2}{v^2}\\ge h$ より $v^2\\ge\\dfrac{gd^2}{d-h}$．よって $\\boldsymbol{s_1=\\dfrac{gd^2}{2a(d-h)}}$．（$v$ が大きいほど $x=d$ での高さは増えるので，越えられる $s$ に上限はない．）\n\n\\textbf{(2)}\\quad $\\tau=\\tan\\theta$ とおき $\\frac1{\\cos^2\\theta}=1+\\tau^2$ を使うと，条件は\n\\[ \\frac{gd^2}{2v^2}\\tau^2-d\\tau+\\frac{gd^2}{2v^2}+h\\le0. \\]\nこれを満たす $\\tau$ が存在する条件は判別式 $\\ge0$：$d^2-4\\cdot\\frac{gd^2}{2v^2}\\left(\\frac{gd^2}{2v^2}+h\\right)\\ge0$，整理して $v^4-2ghv^2-g^2d^2\\ge0$．$v^2>0$ より\n\\[ v^2\\ge g\\left(h+\\sqrt{h^2+d^2}\\right),\\qquad \\boldsymbol{s_2=\\frac{g\\left(h+\\sqrt{h^2+d^2}\\right)}{2a}}. \\]\n等号のとき2次式は重解 $\\tau=\\dfrac{d}{2\\cdot\\frac{gd^2}{2v^2}}=\\dfrac{v^2}{gd}$ をもち，$\\boldsymbol{\\tan\\theta=\\dfrac{h+\\sqrt{h^2+d^2}}{d}}$．\n\n\\textbf{(3)}\\quad 水平方向の速さは $v_x=\\sqrt{2as}$ のまま，鉛直方向は初速 $u$ の投げ上げ．塀に達する時刻は $t=d/v_x$ で，そのとき $ut-\\frac12gt^2\\ge h$，すなわち\n\\[ \\tfrac12gt^2-ut+h\\le0\\quad\\Longleftrightarrow\\quad t_1\\le t\\le t_2,\\qquad t_{1,2}=\\frac{u\\mp\\sqrt{u^2-2gh}}{g}. \\]\n実数解が必要なので $\\boldsymbol{u\\ge\\sqrt{2gh}}$（最高点の高さ $u^2/2g$ が $h$ 以上）．$t=d/\\sqrt{2as}$ が $[t_1,t_2]$ にあることから\n\\[ \\boldsymbol{\\frac{g^2d^2}{2a\\left(u+\\sqrt{u^2-2gh}\\right)^2}\\le s\\le\\frac{g^2d^2}{2a\\left(u-\\sqrt{u^2-2gh}\\right)^2}}. \\]\n助走が長すぎても，まだ高さ $h$ まで上がらないうちに塀に着いてしまうので越えられない．\n\n\\textbf{(4)}\\quad $u=2\\sqrt{gh}$ では $\\sqrt{u^2-2gh}=\\sqrt{2gh}$，$u\\pm\\sqrt{u^2-2gh}=(2\\pm\\sqrt2)\\sqrt{gh}$．$(2\\pm\\sqrt2)^2=2(3\\pm2\\sqrt2)$ と $\\frac{1}{3\\pm2\\sqrt2}=3\\mp2\\sqrt2$ を使うと\n\\[ \\boldsymbol{\\frac{(3-2\\sqrt2)gd^2}{4ah}\\le s\\le\\frac{(3+2\\sqrt2)gd^2}{4ah}}. \\]\n最高点に達する時刻は $u/g$ で，$t_1<u/g<t_2$．下限の助走では塀に着くのが遅い時刻 $t_2$ なので\\textbf{下降中}，上限では早い時刻 $t_1$ なので\\textbf{上昇中}に塀の真上を通る．\n\n\\textbf{(5)}\\quad $d=3h$ を代入：$s_1=\\frac{9h^2g}{2a\\cdot2h}=\\boldsymbol{2.25}\\,\\frac{gh}{a}$，$s_2=\\frac{1+\\sqrt{10}}{2}\\frac{gh}a\\approx\\boldsymbol{2.08}\\,\\frac{gh}a$，(4) の下限 $=\\frac{9(3-2\\sqrt2)}{4}\\frac{gh}a\\approx\\boldsymbol{0.39}\\,\\frac{gh}a$．\nジャンプ台では，なめらかな面からの抗力は速度に垂直で仕事をしないので，ジャンプの前後で\\textbf{速さ（力学的エネルギー）}が保存される．その代わり水平方向の運動量は減る（地面が力積を受け持つ）．上る高さの分のエネルギーも水平に進む分もすべて助走で得なければならない．\nジャンプ装置では，加わる力積が鉛直なので\\textbf{水平方向の運動量}が保存され，鉛直方向の運動エネルギー $\\frac12mu^2=2mgh$ は装置が外から加える．このため助走は水平方向の速さを得るためだけでよく，ずっと短くてすむ．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "向きだけを変えるジャンプ台は速さを保存し，鉛直に力積を加える装置は水平方向の速度を保存する．離れた塀を越える条件は，前者では仰角についての2次不等式の判別式から最小の速さが決まり，後者では鉛直方向の速さが一定なので塀に着く時刻に許される範囲があり，助走距離に下限だけでなく上限も生じる．"
+ },
+ "concepts": [
+  "uniform-acceleration",
+  "projectile-motion",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "放物運動",
+  "判別式",
+  "保存量の比較",
+  "力積",
+  "助走距離",
+  "条件の逆算"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

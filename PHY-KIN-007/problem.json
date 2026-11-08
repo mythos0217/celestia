@@ -1,0 +1,134 @@
+{
+ "id": "PHY-KIN-007",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-01",
+ "topic": "流れが船より速い川の横断（最小の流され距離と，同じ着岸点に至る2つの船首方向）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，幅 $W$ のまっすぐな川が一様な速さ $v$ で流れている．静水に対する速さが $u$（$u<v$）の船が，岸の点 A から対岸へ向かう．船首の向きは一定に保ち，船首が上流向きの岸の方向となす角を $\\beta$（$0<\\beta<\\pi$）とする．船の大きさは無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "対岸に着くまでに船が下流へ流される距離 $X$ を $W$，$u$，$v$，$\\beta$ で表せ．また，$\\beta$ を変えたときの $X$ の最小値 $X_{\\min}$ と，そのときの $\\cos\\beta$，および所要時間を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) で $X$ が最小になるとき，岸から見た船の速度（合成速度）の向きと船首の向きはどのような関係にあるか．速度の合成の図を用いて説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$v=2u$ とする．A の真向かいの点から下流へ $2W$ の位置にある桟橋 B に直線的に着きたい．これが可能な船首の向き $\\beta$ をすべて求め（$\\sin\\beta$，$\\cos\\beta$ の値で答えてよい），それぞれの所要時間を $W$，$u$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$v$ と $W$ は変えずに別の船で同じことを試みたところ，A から B へ直線的に着ける船首の向きがただ1つしかなかった．この船の静水に対する速さ $u'$ を $v$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：流れが船より速い川の横断（最小の流され距離と，同じ着岸点に至る2つの船首方向）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：流れが船より速い川の横断（最小の流され距離と，同じ着岸点に至る2つの船首方向）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$X=\\dfrac{W(v-u\\cos\\beta)}{u\\sin\\beta}$，$X_{\\min}=\\dfrac{W\\sqrt{v^2-u^2}}{u}$（$\\cos\\beta=\\dfrac{u}{v}$），所要時間 $\\dfrac{Wv}{u\\sqrt{v^2-u^2}}$"
+   },
+   {
+    "id": "2",
+    "tex": "合成速度が船首の向きと垂直になる（合成速度が半径 $u$ の円への接線になる）"
+   },
+   {
+    "id": "3",
+    "tex": "$\\beta=90^\\circ$（所要時間 $\\dfrac{W}{u}$）と $\\sin\\beta=\\dfrac35$，$\\cos\\beta=\\dfrac45$（所要時間 $\\dfrac{5W}{3u}$）"
+   },
+   {
+    "id": "4",
+    "tex": "$u'=\\dfrac{v}{\\sqrt5}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　岸から見た船の速度は「水の速度 $\\vec v$」と「水に対する船の速度 $\\vec u$」の和である．$\\vec u$ の大きさは一定で向きだけ選べるので，合成速度の終点は $\\vec v$ の終点を中心とする半径 $u$ の円周上を動く（解答図）．\n\n\\textbf{(1)}　下流向きに $x$ 軸，対岸向きに $y$ 軸をとると，合成速度は\n\\[ (v-u\\cos\\beta,\\ u\\sin\\beta). \\]\n対岸に着くまでの時間は $t=\\dfrac{W}{u\\sin\\beta}$ だから\n\\[ X=(v-u\\cos\\beta)t=\\boldsymbol{\\frac{W(v-u\\cos\\beta)}{u\\sin\\beta}}. \\]\n$\\dfrac{dX}{d\\beta}=\\dfrac{W}{u}\\cdot\\dfrac{u\\sin^2\\beta-(v-u\\cos\\beta)\\cos\\beta}{\\sin^2\\beta}=\\dfrac{W}{u}\\cdot\\dfrac{u-v\\cos\\beta}{\\sin^2\\beta}$ より，$\\cos\\beta=\\dfrac uv$ で $X$ は減少から増加に転じ，最小となる．このとき $\\sin\\beta=\\dfrac{\\sqrt{v^2-u^2}}{v}$ で\n\\[ X_{\\min}=\\frac{W\\left(v-\\frac{u^2}{v}\\right)}{u\\cdot\\frac{\\sqrt{v^2-u^2}}{v}}=\\boldsymbol{\\frac{W\\sqrt{v^2-u^2}}{u}},\\qquad t=\\boldsymbol{\\frac{Wv}{u\\sqrt{v^2-u^2}}}. \\]\nなお，$u<v$ なので合成速度の $x$ 成分 $v-u\\cos\\beta$ は常に正であり，真向かいや上流側にはどの向きでも着けない．\n\n\\textbf{(2)}　合成速度の向きが下流側の岸となす角を $\\varphi$ とすると $X=W/\\tan\\varphi$ なので，$X$ 最小は $\\varphi$ 最大と同じである．円の外の点（$\\vec v$ の始点）から円周上の点へ引いた直線の傾きが最大になるのは，直線が円に接するときである．接線は接点での半径に垂直なので，\\textbf{合成速度と船首の向き（$\\vec u$）は垂直}になる．実際，$\\cos\\beta=u/v$ のとき $(v-u\\cos\\beta)(-\\cos\\beta)+u\\sin\\beta\\cdot\\sin\\beta=u-v\\cos\\beta=0$ である．\n\n\\textbf{(3)}　$v=2u$，$X=2W$ を (1) に代入して\n\\[ \\frac{2-\\cos\\beta}{\\sin\\beta}=2\\quad\\Longleftrightarrow\\quad 2\\sin\\beta+\\cos\\beta=2. \\]\n$\\cos\\beta=2-2\\sin\\beta$ を $\\sin^2\\beta+\\cos^2\\beta=1$ に入れると $5\\sin^2\\beta-8\\sin\\beta+3=0$，よって $\\sin\\beta=1$ または $\\sin\\beta=\\dfrac35$．\n\\begin{itemize}\n  \\item $\\sin\\beta=1$：$\\cos\\beta=0$，すなわち $\\boldsymbol{\\beta=90^\\circ}$（岸に垂直）．所要時間 $\\boldsymbol{\\dfrac{W}{u}}$．\n  \\item $\\sin\\beta=\\dfrac35$：$\\cos\\beta=\\dfrac45$（$\\beta\\fallingdotseq37^\\circ$，上流寄り）．所要時間 $\\dfrac{W}{u\\cdot\\frac35}=\\boldsymbol{\\dfrac{5W}{3u}}$．\n\\end{itemize}\n図では，A から B へ向かう直線が円と2点で交わることに対応する．合成速度が長い方（$\\beta=90^\\circ$）が速く着く．$X_{\\min}=\\sqrt3\\,W<2W$ なので確かに2つある．\n\n\\textbf{(4)}　向きがただ1つになるのは，A から B への直線が円に接するとき，すなわち $X_{\\min}=2W$ のときである：\n\\[ \\frac{W\\sqrt{v^2-u'^2}}{u'}=2W\\quad\\Longrightarrow\\quad v^2=5u'^2,\\qquad \\boldsymbol{u'=\\frac{v}{\\sqrt5}}. \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水に対する速さが一定で向きだけ選べるとき，岸から見た速度の終点は半径 $u$ の円周上を動く．$u<v$ では A から引いた直線が円と2点で交わる（同じ着岸点へ2つの船首方向がある）か接する（流され距離最小で，合成速度と船首が直交）かで場合が分かれ，接する条件から逆に船の速さが決まる．"
+ },
+ "concepts": [
+  "uniform-acceleration",
+  "kinematics-components"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "速度の合成",
+  "相対速度",
+  "川の横断",
+  "接線条件",
+  "最小値"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

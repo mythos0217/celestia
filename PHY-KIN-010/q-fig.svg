@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320">
+<defs><marker id="q-ab" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#1f5fbf"/></marker>
+<marker id="q-ak" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker></defs>
+<!-- elevator -->
+<rect x="30" y="20" width="400" height="280" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="230" y1="20" x2="230" y2="2" stroke="#222" stroke-width="1.6"/>
+<text x="36" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">エレベーター</text>
+<line x1="470" y1="200" x2="470" y2="120" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="478" y="160" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">加速度</text>
+<text x="482" y="178" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">a</text>
+<!-- table: curve from P region down to B, BC flat, CD slope down -->
+<path d="M60,70 Q90,170 170,170 L250,170 L390,270 L390,300 L60,300 Z" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="81" cy="101" r="7" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="92" y="92" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">P</text>
+<text x="160" y="190" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">B</text>
+<text x="246" y="162" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">C</text>
+<!-- trajectory dashed C->Q : slope tan(theta)=100/140=0.714 ; Q on slope -->
+<path d="M250,170 Q300,170 345,237.9" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<circle cx="345" cy="237.9" r="3" fill="#222"/>
+<text x="352" y="234" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">Q</text>
+<!-- theta -->
+<line x1="250" y1="170" x2="320" y2="170" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<path d="M290,170 A40,40 0 0 1 282.6,193.2" fill="none" stroke="#222" stroke-width="1"/>
+<text x="292" y="190" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">θ</text>
+<!-- H -->
+<line x1="81" y1="101" x2="230" y2="101" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="210" y1="105" x2="210" y2="166" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+<text x="216" y="142" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">H</text>
+<!-- g -->
+<line x1="400" y1="50" x2="400" y2="100" stroke="#222" stroke-width="1.8" marker-end="url(#q-ak)"/>
+<text x="408" y="82" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">g</text>
+</svg>
