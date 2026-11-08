@@ -1,5 +1,5 @@
 :root {
-  --celestia-version: '0.3.0';
+  --celestia-version: '0.5.0';
   --paper: #f6f4ee;
   --card: #ffffff;
   --ink: #1c1d21;
@@ -580,6 +580,7 @@ figure.pfig { margin: 14px 0; text-align: center; color: var(--ink); }
 figure.pfig[hidden] { display: none; }
 figure.pfig .fig-body { display: inline-block; width: 100%; max-width: var(--fig-w, 440px); }
 figure.pfig .fig-body svg { width: 100%; height: auto; display: block; overflow: visible; }
+figure.pfig .fig-body.paper { background: #fff; color: #222; border-radius: 10px; padding: 8px; box-sizing: border-box; }
 figure.pfig .fig-body img { width: 100%; height: auto; border-radius: 8px; }
 figure.pfig .fig-body.loading { min-height: 120px; background: var(--line); opacity: .4; border-radius: 8px; }
 figure.pfig figcaption { font-size: 13.5px; color: var(--ink-2); margin-top: 6px; line-height: 1.6; text-align: center; }

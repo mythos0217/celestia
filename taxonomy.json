@@ -7,29 +7,34 @@
    "order": 1
   },
   {
+   "key": "MSY",
+   "name": "力学総合",
+   "order": 2
+  },
+  {
    "key": "THM",
    "name": "熱力学",
-   "order": 2
+   "order": 3
   },
   {
    "key": "WAV",
    "name": "波動",
-   "order": 3
+   "order": 4
   },
   {
    "key": "ELM",
    "name": "電磁気",
-   "order": 4
+   "order": 5
+  },
+  {
+   "key": "ESY",
+   "name": "電磁気学総合",
+   "order": 6
   },
   {
    "key": "ATM",
    "name": "原子",
-   "order": 5
-  },
-  {
-   "key": "SYN",
-   "name": "分野横断",
-   "order": 6
+   "order": 7
   }
  ],
  "units": [
@@ -78,8 +83,14 @@
   {
    "key": "MEC-08",
    "field": "MEC",
-   "name": "剛体のつり合い",
+   "name": "剛体の運動",
    "order": 108
+  },
+  {
+   "key": "MSY-01",
+   "field": "MSY",
+   "name": "力学総合",
+   "order": 151
   },
   {
    "key": "THM-01",
@@ -96,7 +107,7 @@
   {
    "key": "THM-03",
    "field": "THM",
-   "name": "気体の状態変化と熱力学第1法則",
+   "name": "気体の状態変化と熱力学第一法則",
    "order": 203
   },
   {
@@ -154,6 +165,12 @@
    "order": 406
   },
   {
+   "key": "ESY-01",
+   "field": "ESY",
+   "name": "電磁気学総合",
+   "order": 451
+  },
+  {
    "key": "ATM-01",
    "field": "ATM",
    "name": "電子と光",
@@ -164,13 +181,9 @@
    "field": "ATM",
    "name": "原子と原子核",
    "order": 502
-  },
-  {
-   "key": "SYN-01",
-   "field": "SYN",
-   "name": "融合問題",
-   "order": 601
   }
  ],
- "retired": []
+ "retired": [
+  "SYN-01"
+ ]
 }

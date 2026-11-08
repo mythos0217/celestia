@@ -227,7 +227,9 @@
    ],
    "laws": [
     "universal-gravitation",
-    "kepler-3rd"
+    "kepler-3rd",
+    "kepler-2nd",
+    "gravitational-potential"
    ]
   },
   {

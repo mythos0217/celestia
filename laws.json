@@ -339,6 +339,64 @@
    ]
   },
   {
+   "id": "kepler-2nd",
+   "name": "ケプラーの第2法則（面積速度一定）",
+   "tex": "\\frac12rv\\sin\\theta=\\text{一定}",
+   "conditions": "中心の天体からの万有引力だけを受けて運動する天体（力がいつも中心を向く）．$\\theta$ は中心から天体へ向かう線分と速度のなす角",
+   "concepts": [
+    "universal-gravitation"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "天体と中心を結ぶ線分が，短い時間 $\\Delta t$ に掃く面積は，2辺が $r$ と $v\\Delta t$ でその間の角が $\\theta$ の三角形の面積 \\[\\Delta S=\\frac12r\\cdot v\\Delta t\\sin\\theta\\] よって面積速度は $\\dfrac{\\Delta S}{\\Delta t}=\\dfrac12rv\\sin\\theta$．"
+    },
+    {
+     "tex": "力がはたらかなければ天体は等速直線運動をする．等しい時間に進む距離は等しく，中心からその直線までの距離（三角形の高さ）も変わらないので，等しい時間に掃く面積は等しい．"
+    },
+    {
+     "tex": "ある瞬間に中心向きの力積を受けて速度が変わったとする．速度の変化は中心向きなので，新しい位置は，力を受けなかった場合の位置から，中心と今の位置（力積を受けた点）を結ぶ線分に平行にずれる．底辺（中心と今の位置を結ぶ線分）が共通で，頂点が底辺に平行に動くだけなので，三角形の高さは変わらず，面積も変わらない．"
+    },
+    {
+     "tex": "万有引力は連続して中心向きにはたらくが，短い時間ごとに区切ると同じことがいえる．よって面積速度 $\\dfrac12rv\\sin\\theta$ は一定．近日点と遠日点では速度が線分に垂直（$\\sin\\theta=1$）なので \\[\\frac12r_1v_1=\\frac12r_2v_2\\] 中心から遠いほど遅い．"
+    }
+   ],
+   "simulations": [
+    "mech.gravitation"
+   ]
+  },
+  {
+   "id": "gravitational-potential",
+   "name": "万有引力による位置エネルギー",
+   "tex": "U=-G\\frac{Mm}{r}",
+   "conditions": "無限遠を基準（$U=0$）とする．$M$ は一様な球（または質点），$r$ は中心からの距離で，球の外部（$r\\ge R$）",
+   "concepts": [
+    "universal-gravitation",
+    "mechanical-energy"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "質量 $m$ の物体を，中心から距離 $r$ の点から無限遠まで，万有引力とつり合う外力でゆっくり運ぶ．外力がした仕事の分だけ位置エネルギーが増え，無限遠で $0$ になる．万有引力の大きさ $G\\dfrac{Mm}{x^2}$ は距離 $x$ で変わるので，区間に分けて仕事を足し合わせる．"
+    },
+    {
+     "tex": "$x$ から $x+\\Delta x$ までの短い区間では，力の大きさを $G\\dfrac{Mm}{x(x+\\Delta x)}$（両端の値の間にある）とみなせる．この区間で外力がする仕事は \\[G\\frac{Mm}{x(x+\\Delta x)}\\Delta x=GMm\\left(\\frac1x-\\frac1{x+\\Delta x}\\right)\\]"
+    },
+    {
+     "tex": "$r$ から無限遠まで足し合わせると，隣どうしの項が打ち消し合って \\[W=GMm\\left(\\frac1r-\\frac1\\infty\\right)=\\frac{GMm}{r}\\] よって $U(r)+W=U(\\infty)=0$ より $U(r)=-G\\dfrac{Mm}{r}$．"
+    },
+    {
+     "tex": "力学的エネルギー $\\dfrac12mv^2-G\\dfrac{Mm}{r}$ は一定に保たれる．地表（$r=R$）から無限遠まで届く条件は $\\dfrac12mv^2-G\\dfrac{Mm}R\\ge0$，すなわち $v\\ge\\sqrt{\\dfrac{2GM}R}=\\sqrt{2gR}\\fallingdotseq11.2\\,\\mathrm{km/s}$（第2宇宙速度）．"
+    },
+    {
+     "tex": "地表付近（$r=R+h$，$h\\ll R$）では $U(R+h)-U(R)=GMm\\dfrac{h}{R(R+h)}\\fallingdotseq\\dfrac{GMm}{R^2}h=mgh$ となり，おなじみの $mgh$ に一致する．"
+    }
+   ],
+   "simulations": [
+    "mech.gravitation"
+   ]
+  },
+  {
    "id": "ohm-law",
    "name": "オームの法則",
    "tex": "V=RI",
