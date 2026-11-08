@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 360">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1f5fbf"/></marker><marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c0392b"/></marker><marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#222"/></marker><marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#888"/></marker></defs>
+<circle cx="150.0" cy="190.0" r="80.0" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="150.0" cy="190.0" r="3" fill="#222"/>
+<text x="138.0" y="208.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">O</text>
+<line x1="20.0" y1="152.0" x2="79.6" y2="152.0" stroke="#1f5fbf" stroke-width="1.8"/>
+<line x1="79.6" y1="152.0" x2="229.1" y2="178.1" stroke="#1f5fbf" stroke-width="1.8"/>
+<line x1="229.1" y1="178.1" x2="304.4" y2="205.2" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<line x1="30.0" y1="152.0" x2="70.0" y2="152.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<line x1="79.6" y1="152.0" x2="309.1" y2="152.0" stroke="#888" stroke-width="1" stroke-dasharray="4,4"/>
+<line x1="252.0" y1="190.0" x2="252.0" y2="152.0" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+<line x1="150.0" y1="190.0" x2="260.0" y2="190.0" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="260.0" y="176.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">b</text>
+<text x="150.0" y="298.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">半径 <tspan font-family="Times New Roman, serif" font-style="italic">r</tspan>，屈折率 <tspan font-family="Times New Roman, serif" font-style="italic">n</tspan></text>
+<text x="150.0" y="298.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle"></text>
+<text x="40.0" y="142.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">P</text>
+<text x="55.0" y="142.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">（光の仕事率）</text>
+<text x="150.0" y="40.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">（a）光線1本</text>
+<text x="460.0" y="40.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">（b）2本の光線と重力</text>
+<line x1="385.0" y1="299.9" x2="520.0" y2="66.1" stroke="#1f5fbf" stroke-width="1.8"/>
+<line x1="385.0" y1="299.9" x2="405.0" y2="265.3" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<line x1="535.0" y1="299.9" x2="400.0" y2="66.1" stroke="#1f5fbf" stroke-width="1.8"/>
+<line x1="535.0" y1="299.9" x2="515.0" y2="265.3" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<line x1="460.0" y1="240.0" x2="460.0" y2="60.0" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="404.0" y1="267.0" x2="404.0" y2="212.0" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<path d="M404.0,237.0 A30.0,30.0 0 0 1 419.0,241.0" fill="none" stroke="#222" stroke-width="1"/>
+<text x="396.0" y="231.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">α</text>
+<line x1="516.0" y1="267.0" x2="516.0" y2="212.0" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<path d="M516.0,237.0 A30.0,30.0 0 0 0 501.0,241.0" fill="none" stroke="#222" stroke-width="1"/>
+<text x="524.0" y="231.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">α</text>
+<circle cx="455.0" cy="192.0" r="50.0" fill="none" stroke="#222" stroke-width="1.4"/>
+<circle cx="455.0" cy="192.0" r="3" fill="#222"/>
+<text x="441.0" y="198.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="middle">O</text>
+<circle cx="460.0" cy="170.0" r="3" fill="#222"/>
+<text x="472.0" y="164.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">F</text>
+<line x1="455.0" y1="192.0" x2="455.0" y2="237.0" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<text x="447.0" y="236.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#c0392b" text-anchor="end">Mg</text>
+<text x="350.0" y="321.9" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle"></text>
+<text x="365.0" y="301.9" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="end">光線1（<tspan font-family="Times New Roman, serif" font-style="italic">P</tspan>）</text>
+<text x="555.0" y="301.9" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">光線2（<tspan font-family="Times New Roman, serif" font-style="italic">βP</tspan>）</text>
+<line x1="560.0" y1="110.0" x2="595.0" y2="110.0" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<text x="602.0" y="115.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">x</text>
+<line x1="560.0" y1="110.0" x2="560.0" y2="75.0" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<text x="560.0" y="68.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="middle">y</text>
+</svg>

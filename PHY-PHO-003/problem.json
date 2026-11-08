@@ -1,0 +1,129 @@
+{
+ "id": "PHY-PHO-003",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "コンプトン散乱の多段化と散乱角の分割によるエネルギー損失の比較",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "静止している電子（質量 $m$）に光子が当たって散乱される現象（コンプトン効果）では，入射光子のエネルギーを $E$，散乱角 $\\theta$ の方向に散乱された光子のエネルギーを $E'$ とすると，相対論まで考えた正確な関係\n\\[ \\frac{1}{E'}-\\frac{1}{E}=\\frac{1-\\cos\\theta}{mc^2} \\]\nが成り立つ（$c$ は真空中の光速）．以下，散乱される前の電子はすべて静止しており，1個の電子による散乱は1回だけ起こるものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "エネルギー $E_0$ の光子が1個の電子で散乱されるとき，はね飛ばされた電子の運動エネルギーの最大値を $E_0$，$mc^2$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "図(a)のように散乱させたところ，$\\theta=90^\\circ$ の方向に散乱された光子のエネルギーは $E_0$ のちょうど $\\frac13$ であった．$E_0$ を $mc^2$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の散乱 ($\\theta=90^\\circ$) で，はね飛ばされた電子の進む向きが入射光子の向きとなす角を $\\varphi$ とする．$\\tan\\varphi$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "以下，$E_0$ は (2) で求めた値とする．図(b)のように，同じ平面内に配置した静止電子 $e_1$，$e_2$，$\\cdots$ によって光子を次々に散乱させ，そのたびに同じ回転の向きに同じ角 $\\alpha$ だけ進む向きを変える．光子の向きを全体で $2\\alpha$（$0<\\alpha\\leqq 90^\\circ$）変えるのに，(ア) 2個の電子で $\\alpha$ ずつ2回散乱させる場合と，(イ) 1個の電子で1回 $2\\alpha$ 散乱させる場合とを比べる．最後の光子のエネルギーはどちらが大きいか．等しくなる場合があればその条件も答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "光子の進む向きを正反対に変える（全体で $180^\\circ$）のに，$N$ 個の電子でそれぞれ $\\alpha=\\frac{180^\\circ}{N}$ ずつ曲げる．最後の光子のエネルギー $E_N$ を $N$ と $mc^2$ で表し，$N=1,2,3$ のときの値を求めよ．また，$N\\to\\infty$ のときの $E_N$ の極限を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：コンプトン散乱の多段化と散乱角の分割によるエネルギー損失の比較",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{2E_0^{\\,2}}{mc^2+2E_0}$"
+   },
+   {
+    "id": "2",
+    "tex": "$E_0=2mc^2$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\tan\\varphi=\\dfrac13$"
+   },
+   {
+    "id": "4",
+    "tex": "(ア) の方が大きい（$\\alpha=90^\\circ$ のときだけ等しい）"
+   },
+   {
+    "id": "5",
+    "tex": "$E_N=\\dfrac{2mc^2}{1+2N\\left(1-\\cos\\frac{180^\\circ}{N}\\right)}$；$E_1=E_2=\\dfrac25mc^2$，$E_3=\\dfrac12mc^2$；$N\\to\\infty$ で $E_N\\to 2mc^2$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　与えられた式は「$\\dfrac1E$ が散乱のたびに $\\dfrac{1-\\cos\\theta}{mc^2}$ ずつ増える」と読める．したがって何回散乱しても，最後の $\\dfrac1E$ は各回の $(1-\\cos\\theta)$ の\\textbf{和}だけで決まる．この「逆数の足し算」の構造が (4)(5) の鍵である．\n\n\\textbf{(1)}　エネルギー保存則より，電子の運動エネルギーは $K=E_0-E'$．$K$ が最大になるのは $E'$ が最小，すなわち $\\dfrac1{E'}$ が最大になるとき，$1-\\cos\\theta$ が最大の $\\theta=180^\\circ$（正面衝突ではね返る）ときである．\n\\[ \\frac1{E'}=\\frac1{E_0}+\\frac{2}{mc^2}=\\frac{mc^2+2E_0}{E_0\\,mc^2}\\quad\\therefore\\ E'=\\frac{E_0\\,mc^2}{mc^2+2E_0} \\]\n\\[ K_{\\max}=E_0-E'=\\boldsymbol{\\frac{2E_0^{\\,2}}{mc^2+2E_0}} \\]\n\n\\textbf{(2)}　$\\theta=90^\\circ$ で $E'=\\dfrac{E_0}{3}$ だから\n\\[ \\frac{3}{E_0}-\\frac{1}{E_0}=\\frac{1}{mc^2}\\quad\\therefore\\ \\boldsymbol{E_0=2mc^2} \\]\n（「答え」から入射エネルギーを逆算する問い方．$E_0\\approx1.0\\,\\mathrm{MeV}$ の $\\gamma$ 線にあたる．）\n\n\\textbf{(3)}　散乱光子のエネルギーは $E'=\\dfrac23mc^2$．光子の運動量の大きさは $\\dfrac{E}{c}$ である．電子の運動量の大きさを $p$ とし，入射方向を $x$ 軸，散乱光子の進む側を $y$ 軸の負の向きとすると，運動量保存則（電子の運動量の式の形によらずベクトルとして成立）は\n\\[ x\\text{ 方向：}\\ \\frac{E_0}{c}=p\\cos\\varphi,\\qquad y\\text{ 方向：}\\ 0=-\\frac{E'}{c}+p\\sin\\varphi \\]\n\\[ \\therefore\\ \\tan\\varphi=\\frac{E'}{E_0}=\\boldsymbol{\\frac13} \\]\n電子は散乱光子と反対側（$x$ 軸の上側）にはね飛ばされる．\n\n\\textbf{(4)}　(ア) では各回で $\\dfrac1E$ が $\\dfrac{1-\\cos\\alpha}{mc^2}$ ずつ増えるので\n\\[ \\frac1{E_{\\text{ア}}}=\\frac1{E_0}+\\frac{2(1-\\cos\\alpha)}{mc^2} \\]\n(イ) では\n\\[ \\frac1{E_{\\text{イ}}}=\\frac1{E_0}+\\frac{1-\\cos2\\alpha}{mc^2}=\\frac1{E_0}+\\frac{2(1-\\cos\\alpha)(1+\\cos\\alpha)}{mc^2} \\]\n（$1-\\cos2\\alpha=2\\sin^2\\alpha=2(1-\\cos\\alpha)(1+\\cos\\alpha)$ を用いた．）差をとると\n\\[ \\frac1{E_{\\text{イ}}}-\\frac1{E_{\\text{ア}}}=\\frac{2\\cos\\alpha\\,(1-\\cos\\alpha)}{mc^2}\\ \\geqq 0 \\]\n$0<\\alpha\\leqq90^\\circ$ では $\\cos\\alpha\\geqq0$，$1-\\cos\\alpha>0$ なので，$E_{\\text{ア}}\\geqq E_{\\text{イ}}$．したがって\\textbf{2回に分けた (ア) の方が大きい}．等号は $\\cos\\alpha=0$，すなわち $\\boldsymbol{\\alpha=90^\\circ}$（全体で真後ろに返す場合）のときだけ成り立つ．\n\n\\textbf{(5)}　$N$ 回の散乱で $\\dfrac1E$ は $N\\cdot\\dfrac{1-\\cos\\frac{180^\\circ}{N}}{mc^2}$ だけ増えるので\n\\[ \\frac1{E_N}=\\frac1{2mc^2}+\\frac{N\\left(1-\\cos\\frac{180^\\circ}{N}\\right)}{mc^2}\\quad\\therefore\\ \\boldsymbol{E_N=\\frac{2mc^2}{1+2N\\left(1-\\cos\\frac{180^\\circ}{N}\\right)}} \\]\n$N=1$：$1-\\cos180^\\circ=2$ より $E_1=\\dfrac{2mc^2}{5}$．\\\\\n$N=2$：$1-\\cos90^\\circ=1$ より $E_2=\\dfrac{2mc^2}{5}$（(4) の等号の場合にあたる）．\\\\\n$N=3$：$1-\\cos60^\\circ=\\dfrac12$ より $E_3=\\dfrac{2mc^2}{4}=\\dfrac{mc^2}{2}$．\\\\\n以上より $\\boldsymbol{E_1=E_2=\\frac25mc^2,\\ E_3=\\frac12mc^2}$．\n\n$N\\to\\infty$ では $1-\\cos\\dfrac{\\pi}{N}=2\\sin^2\\dfrac{\\pi}{2N}\\approx2\\left(\\dfrac{\\pi}{2N}\\right)^2$ だから\n\\[ N\\left(1-\\cos\\frac{\\pi}{N}\\right)\\approx\\frac{\\pi^2}{2N}\\ \\to\\ 0 \\]\nよって $\\boldsymbol{E_N\\to 2mc^2=E_0}$．小さな角での散乱を多数回くり返すと，向きは大きく変えられるのにエネルギーはほとんど失われない．1回あたりの損失が角の2乗に比例するのに対し，回数は角の1乗に反比例するためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "コンプトンの式は「散乱1回ごとに $1/E$ が $(1-\\cos\\theta)/mc^2$ だけ加算される」と読めるので，多段散乱の最終エネルギーは各回の $1-\\cos\\theta$ の和で決まる．同じ全振れ角でも分割すると損失が減り（$90^\\circ$ ずつの2回だけが1回の $180^\\circ$ と等しい），細かく分割した極限ではエネルギー損失が0に近づく．"
+ },
+ "concepts": [
+  "photon",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "コンプトン効果",
+  "運動量保存",
+  "多段散乱",
+  "極限",
+  "光子"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

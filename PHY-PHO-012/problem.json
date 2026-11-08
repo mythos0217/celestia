@@ -1,0 +1,135 @@
+{
+ "id": "PHY-PHO-012",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "光電管の電流-電圧特性の形を決める放出方向の分布と電極の形",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "光電管の電流 $I$ と電極間の電圧の関係（特性曲線）が，阻止電圧に向かってなだらかに減る理由を，簡単なモデルで調べる．電子の電気量を $-e$，質量を $m$ とする．\n\n陰極 K に一定の強さの単色光を当てると，単位時間あたり $N$ 個の光電子が K の表面から飛び出す．このモデルでは，光電子はすべて同じ運動エネルギー $K_0$ で飛び出すとし，飛び出す向きと表面の法線のなす角 $\\theta\\ (0\\le\\theta<\\frac{\\pi}{2})$ の分布として次の 2 通りを考える．\n\\begin{itemize}\n  \\item 分布 (a)：角 $\\theta$ 以下で飛び出す電子の割合が $1-\\cos\\theta$．\n  \\item 分布 (b)：角 $\\theta$ 以下で飛び出す電子の割合が $\\sin^2\\theta$．\n\\end{itemize}\n陽極 P の電位は K より $V$ だけ低い（$V>0$ が電子を押し戻す逆電圧）．P に達した電子はすべて電流になり，電子どうしの力と重力は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "図1のように，K と P が十分に広い平行平板のとき，角 $\\theta$ で飛び出した電子が P に達するための条件を $K_0,\\ e,\\ V,\\ \\theta$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "図1の場合に，$0\\le eV\\le K_0$ での電流 $I$ を，分布 (a)，(b) のそれぞれについて $e,\\ N,\\ V,\\ K_0$ で表せ．また，電流が $V=0$ のときの半分になる逆電圧はそれぞれ阻止電圧の何倍か．"
+     },
+     {
+      "id": "3",
+      "tex": "ある光電管（平行平板）で測定すると，逆電圧 $0.30\\ \\mathrm{V}$ で電流が $V=0$ のときの半分になり，$1.20\\ \\mathrm{V}$ で $0$ になった．分布 (a)，(b) のどちらと矛盾しないか答え，そのモデルで逆電圧 $0.75\\ \\mathrm{V}$ のときの電流は $V=0$ のときの何倍か，有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "図2のように，半径 $a$ の球形の陰極 K を，半径 $b$ の同心の球殻の陽極 P で囲んだ場合を考える．分布 (a) のもとで，K の表面から角 $\\theta$（その点の外向き法線から測る）で飛び出した電子が P に達する条件を求めよ．ただし，電子は中心からの距離が $b$ の位置で中心向きでない速度成分をもてば P に達し，それより手前で引き返すことはないとしてよい．さらに，$0\\le eV\\le K_0$ での電流 $I$ を求め，$a\\ll b$ の極限で特性曲線がどのような形になるか答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：光電管の電流-電圧特性の形を決める放出方向の分布と電極の形",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：光電管の電流-電圧特性の形を決める放出方向の分布と電極の形",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K_0\\cos^2\\theta\\ge eV$"
+   },
+   {
+    "id": "2",
+    "tex": "(a) $I=eN\\left(1-\\sqrt{\\dfrac{eV}{K_0}}\\right)$，(b) $I=eN\\left(1-\\dfrac{eV}{K_0}\\right)$；半分になる逆電圧は (a) $\\dfrac14$ 倍，(b) $\\dfrac12$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "分布 (a)，約 $0.21$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "条件 $K_0\\left(1-\\dfrac{a^2}{b^2}\\sin^2\\theta\\right)\\ge eV$；$0\\le eV\\le K_0\\left(1-\\dfrac{a^2}{b^2}\\right)$ で $I=eN$，$K_0\\left(1-\\dfrac{a^2}{b^2}\\right)\\le eV\\le K_0$ で $I=eN\\left\\{1-\\sqrt{1-\\dfrac{b^2}{a^2}\\left(1-\\dfrac{eV}{K_0}\\right)}\\right\\}$；$a\\ll b$ では $eV<K_0$ で $I=eN$，$eV=K_0$ で急に $0$ になる階段状"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　電子のエネルギーは全部で $K_0$ でも，電場に逆らって使えるのは電場の向きの速度成分の運動エネルギーだけである．電場に垂直な成分（平行平板では板に平行な成分，同心球では角運動量に伴う成分）は電場から仕事をされないので，どれだけ「無駄」になるかが電極の形と放出方向で決まる．\n\n\\textbf{(1)}　平行平板の間の電場は板に垂直で一様なので，板に平行な速度成分 $v\\sin\\theta$ は変わらない．板に垂直な成分の運動エネルギー $K_0\\cos^2\\theta$ が，逆電圧による位置エネルギーの増加 $eV$ 以上なら P に達する：\n\\[ \\boldsymbol{K_0\\cos^2\\theta\\ge eV} \\]\n（この条件は極板間隔によらない．）\n\n\\textbf{(2)}　条件は $\\cos\\theta\\ge\\sqrt{\\dfrac{eV}{K_0}}$．この $\\theta$ の範囲の電子の割合を求めればよい．\n\n分布 (a)：$\\theta\\le\\theta_c$（$\\cos\\theta_c=\\sqrt{eV/K_0}$）の割合は $1-\\cos\\theta_c$ なので\n\\[ I=\\boldsymbol{eN\\left(1-\\sqrt{\\frac{eV}{K_0}}\\right)} \\]\n分布 (b)：割合は $\\sin^2\\theta_c=1-\\cos^2\\theta_c$ なので\n\\[ I=\\boldsymbol{eN\\left(1-\\frac{eV}{K_0}\\right)} \\]\nどちらも $eV=K_0$ で $0$ になるので，阻止電圧は $V_0=\\dfrac{K_0}{e}$ で分布によらない（$\\theta=0$ の電子だけで決まる）．電流が半分になるのは，(a) では $\\sqrt{V/V_0}=\\dfrac12$ より $V=\\boldsymbol{\\dfrac14}V_0$，(b) では $V=\\boldsymbol{\\dfrac12}V_0$．\n\n\\textbf{(3)}　阻止電圧 $1.20\\ \\mathrm{V}$ の $\\dfrac14$ が $0.30\\ \\mathrm{V}$ なので\\textbf{分布 (a)} と矛盾しない（(b) なら $0.60\\ \\mathrm{V}$ になるはず）．このとき $K_0=1.20\\ \\mathrm{eV}$ で，$V=0.75\\ \\mathrm{V}$ では\n\\[ \\frac{I}{eN}=1-\\sqrt{\\frac{0.75}{1.20}}=1-0.790\\cdots\\fallingdotseq\\boldsymbol{0.21} \\]\nすべての電子が同じエネルギーをもつのに電流がなだらかに減るのは，平行平板では放出方向によって「使えるエネルギー」が違うためである．\n\n\\textbf{(4)}　電場は中心から放射状なので，電子が受ける力は中心力で，中心のまわりの角運動量が保存される．K の表面での速度の接線成分は $v_0\\sin\\theta$（$\\frac12mv_0^2=K_0$）なので，P の位置での接線成分 $v_t$ は\n\\[ m(v_0\\sin\\theta)a=mv_tb\\quad\\Longrightarrow\\quad \\frac12mv_t^2=K_0\\frac{a^2}{b^2}\\sin^2\\theta \\]\nエネルギー保存より，P の位置での動径方向の運動エネルギーは $K_0-eV-K_0\\dfrac{a^2}{b^2}\\sin^2\\theta$．これが $0$ 以上であることが条件：\n\\[ \\boldsymbol{K_0\\left(1-\\frac{a^2}{b^2}\\sin^2\\theta\\right)\\ge eV} \\]\nすべての $\\theta$ で成り立つのは $eV\\le K_0\\left(1-\\dfrac{a^2}{b^2}\\right)$ のときで，このとき $I=\\boldsymbol{eN}$．それより大きい $eV$ では $\\sin^2\\theta\\le\\dfrac{b^2}{a^2}\\left(1-\\dfrac{eV}{K_0}\\right)$，すなわち $\\cos\\theta\\ge\\sqrt{1-\\dfrac{b^2}{a^2}\\left(1-\\dfrac{eV}{K_0}\\right)}$ の電子だけが達するので，分布 (a) より\n\\[ I=\\boldsymbol{eN\\left\\{1-\\sqrt{1-\\frac{b^2}{a^2}\\left(1-\\frac{eV}{K_0}\\right)}\\right\\}}\\qquad\\left(K_0\\left(1-\\frac{a^2}{b^2}\\right)\\le eV\\le K_0\\right) \\]\n$eV=K_0$ で $0$ になる．$a\\ll b$ では $1-\\dfrac{a^2}{b^2}\\to1$ なので，$eV<K_0$ では電流は $eN$ のまま一定で，$eV=K_0$ で急に $0$ に落ちる\\textbf{階段状}になる．接線方向の運動エネルギーが $\\dfrac{a^2}{b^2}$ 倍に縮んでほとんど動径方向に回収されるため，電子のエネルギーそのものが電流の変化に現れる．したがって光電子のエネルギー分布を調べるには，平行平板より小さな陰極を大きな球で囲む電極が適している（図は $a/b=\\frac12$ の例）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "逆電圧に逆らって使えるのは電場の向きの速度成分の運動エネルギーだけなので，全電子が同じエネルギーでも平行平板では放出方向の分布に応じて電流がなだらかに減り，その形（半分になる電圧）から分布がわかる．同心球では角運動量保存で接線成分のエネルギーが $a^2/b^2$ 倍に縮むので，$a\\ll b$ で特性曲線は階段状になる．"
+ },
+ "concepts": [
+  "photon",
+  "momentum-conservation",
+  "coulomb-field"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "光電効果",
+  "阻止電圧",
+  "特性曲線",
+  "角運動量保存",
+  "放出方向の分布"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

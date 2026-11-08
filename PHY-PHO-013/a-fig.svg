@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320">
+  <defs>
+    <marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+  </defs>
+  <line x1="50" y1="250" x2="530" y2="250" stroke="#222" stroke-width="1" marker-end="url(#a-ak)"/>
+  <line x1="50" y1="250" x2="50" y2="30" stroke="#222" stroke-width="1" marker-end="url(#a-ak)"/>
+  <text x="400" y="312" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">原子が見る振動数 →</text>
+  <text x="58" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">散乱の頻度</text>
+  <!-- ローレンツ曲線 中心 x=380, 半値半幅 60px, 高さ 180px -->
+  <path d="M60,243.5 L70,243.1 L80,242.7 L90,242.2 L100,241.7 L110,241.1 L120,240.4 L130,239.7 L140,238.8 L150,237.9 L160,236.8 L170,235.7 L180,234.3 L190,232.8 L200,231.0 L210,229.0 L220,226.6 L230,223.8 L240,220.5 L250,216.6 L260,212.0 L270,206.4 L280,199.7 L290,191.5 L300,181.6 L310,169.5 L320,155.0 L330,137.9 L340,118.5 L350,98.0 L360,79.0 L370,65.1 L380,60.0 L390,65.1 L400,79.0 L410,98.0 L420,118.5 L430,137.9 L440,155.0 L450,169.5 L460,181.6 L470,191.5 L480,199.7 L490,206.4 L500,212.0 L510,216.6 L520,220.5" fill="none" stroke="#222" stroke-width="1.6"/>
+  <line x1="380" y1="250" x2="380" y2="60" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="368" y="290" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">ν<tspan baseline-shift="sub" font-size="10">A</tspan></text>
+  <!-- レーザー振動数 ν0 = 中心 -60 (δ=γ) -->
+  <line x1="320" y1="250" x2="320" y2="155" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="306" y="290" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">ν<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+  <!-- 見かけの振動数 -->
+  <line x1="295" y1="250" x2="295" y2="186.8" stroke="#c0392b" stroke-width="1.8"/>
+  <line x1="345" y1="250" x2="345" y2="108.2" stroke="#1f5fbf" stroke-width="1.8"/>
+  <text x="110" y="175" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">光 1（追いかける光）</text>
+  <text x="110" y="148" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#1f5fbf">光 2（向かってくる光）</text>
+  <line x1="320" y1="258" x2="380" y2="258" stroke="#222" stroke-width="1"/>
+  <text x="340" y="276" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">δ</text>
+</svg>

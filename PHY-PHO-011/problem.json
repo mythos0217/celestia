@@ -1,0 +1,136 @@
+{
+ "id": "PHY-PHO-011",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "中性子干渉計の重力による位相差と，単色化結晶の2次反射で混じる半波長成分の影響",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "中性子（質量 $m$）の物質波（ド・ブロイ波）の干渉で重力の効果を調べる．図 (a) のように，薄い結晶板を A，B，C，D の4か所に置き，中性子の波を A で2つに分ける．一方は経路 A→B→C，他方は経路 A→D→C を進み，C で再び重なって検出器 E に入る．ABCD は平行四辺形で，$\\mathrm{AB}=\\mathrm{DC}=\\ell$，辺 AB と辺 DC の間隔を $s$ とする．入射ビーム NA と辺 AB は同一直線上にあって水平である．平行四辺形を含む平面 Σ は，直線 AB を軸として回転でき，図 (b) のように Σ が水平面となす角を $\\alpha\\ (0\\le\\alpha\\le\\frac{\\pi}{2})$ とする（DC は AB より高い）．\n\n中性子は A に速さ $v_0$ で入射し，そのド・ブロイ波長を $\\lambda_0=\\dfrac{h}{mv_0}$ とする（$h$ はプランク定数）．重力加速度の大きさを $g$ とし，$gs\\ll v_0^{\\,2}$ とする．中性子の経路が重力で曲がる効果，結晶板の中での波長の変化は無視し，結晶板で反射するときの位相の変化は2つの経路で同じとする．また，波の振動数は経路によらないので，2つの経路を通った波の位相の差は経路上の波長の違いだけから生じるものとする．必要なら，$|x|\\ll1$ のとき $(1+x)^p\\fallingdotseq 1+px$ を用いてよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "辺 DC 上での中性子の速さ $v_1$ を求めよ．また，辺 DC 上でのド・ブロイ波長 $\\lambda_1$ を，$gs/v_0^{\\,2}$ の1次までの近似で $\\lambda_0,\\ g,\\ s,\\ v_0,\\ \\alpha$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "辺 AD と辺 BC の部分は2つの経路の位相差に寄与しない．その理由を述べ，C での2つの波の位相差 $\\Delta\\varphi_1$ を $m,\\ g,\\ h,\\ \\ell,\\ s,\\ \\lambda_0,\\ \\alpha$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "実際の中性子ビームは，格子面の間隔 $d$ の単色化用の結晶でブラッグ反射させて作る．このとき，入射角を $2d\\sin\\theta=\\lambda_0$ となるように合わせても，波長 $\\frac{\\lambda_0}{2}$ の中性子も同じ角度で反射されてビームに混じり，干渉計の結晶板でも同様に反射される．その理由を述べ，波長 $\\frac{\\lambda_0}{2}$ の成分についての C での位相差 $\\Delta\\varphi_2$ を $\\Delta\\varphi_1$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "ビームには波長 $\\lambda_0$ と $\\frac{\\lambda_0}{2}$ の中性子が同じ数ずつ含まれ，それぞれの成分の E での計数は（1 + その成分の位相差の余弦）に比例する（比例係数は両成分で等しい）とする．異なる波長の成分どうしは干渉せず，計数は単に足し合わされる．$m=1.67\\times10^{-27}\\,\\mathrm{kg}$，$h=6.63\\times10^{-34}\\,\\mathrm{J\\cdot s}$，$g=9.80\\,\\mathrm{m/s^2}$，平行四辺形の面積 $\\ell s=7.0\\times10^{-4}\\,\\mathrm{m^2}$，$\\lambda_0=2.0\\times10^{-10}\\,\\mathrm{m}$ とする．\n  \\begin{enumerate}\n    \\item $\\alpha$ を0から $\\frac{\\pi}{2}$ まで増やすとき，E での計数が $\\alpha=0$ のときの値に再び等しくなるのは何回か（$\\alpha=0$ は数えない）．\n    \\item $\\alpha$ を0から増やしていくとき，E での計数が初めて極小になるときの $\\sin\\alpha$ の値と，そのときの計数の $\\alpha=0$ のときの計数に対する比を，それぞれ有効数字2桁で求めよ．ビームが波長 $\\lambda_0$ だけを含む場合と比べて，何が違うか．\n  \\end{enumerate}"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：中性子干渉計の重力による位相差と，単色化結晶の2次反射で混じる半波長成分の影響",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：中性子干渉計の重力による位相差と，単色化結晶の2次反射で混じる半波長成分の影響",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_1=\\sqrt{v_0^{\\,2}-2gs\\sin\\alpha}$，$\\lambda_1\\fallingdotseq\\lambda_0\\left(1+\\dfrac{gs\\sin\\alpha}{v_0^{\\,2}}\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "AD と BC は同じ長さで高さの変化も同じなので，2経路で同じ位相が加わる；$\\Delta\\varphi_1=\\dfrac{2\\pi m^2g\\ell s\\lambda_0\\sin\\alpha}{h^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2d\\sin\\theta=2\\cdot\\dfrac{\\lambda_0}{2}$ で2次の反射条件を満たすから；$\\Delta\\varphi_2=\\dfrac{\\Delta\\varphi_1}{2}$"
+   },
+   {
+    "id": "4",
+    "tex": "(a) 4回　(b) $\\sin\\alpha\\fallingdotseq6.7\\times10^{-2}$，比 $\\dfrac{7}{32}\\fallingdotseq0.22$；$\\lambda_0$ のみなら $\\sin\\alpha\\fallingdotseq5.7\\times10^{-2}$ で計数が0になるが，混入があると極小の位置がずれ，計数は0にならない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　波の振動数（中性子のエネルギー）は経路によらず一定で，位置エネルギーが高いところでは運動エネルギーが小さく，速さが小さく，波長が長い．波長が違うと同じ長さの経路に含まれる波の数が違い，それが位相差になる．\n\n\\textbf{(1)}　DC は AB より $s\\sin\\alpha$ だけ高い．力学的エネルギー保存から\n\\[ \\frac12mv_1^{\\,2}=\\frac12mv_0^{\\,2}-mgs\\sin\\alpha\\quad\\Longrightarrow\\quad \\boldsymbol{v_1=\\sqrt{v_0^{\\,2}-2gs\\sin\\alpha}} \\]\n\\[ \\lambda_1=\\frac{h}{mv_1}=\\lambda_0\\left(1-\\frac{2gs\\sin\\alpha}{v_0^{\\,2}}\\right)^{-1/2}\\fallingdotseq\\boldsymbol{\\lambda_0\\left(1+\\frac{gs\\sin\\alpha}{v_0^{\\,2}}\\right)} \\]\n\n\\textbf{(2)}　経路 A→B→C は AB（高さ0）と BC，経路 A→D→C は AD と DC（高さ $s\\sin\\alpha$）からなる．AD と BC は平行で長さが等しく，どちらも高さ0から $s\\sin\\alpha$ まで同じように上るので，各点の波長の分布がまったく同じであり，含まれる波の数（位相）が等しい．したがって位相差は AB と DC の違いだけで決まる．長さ $\\ell$ の区間の位相は $2\\pi\\ell/\\lambda$ なので\n\\[ \\Delta\\varphi_1=2\\pi\\ell\\left(\\frac1{\\lambda_0}-\\frac1{\\lambda_1}\\right)\\fallingdotseq\\frac{2\\pi\\ell}{\\lambda_0}\\cdot\\frac{gs\\sin\\alpha}{v_0^{\\,2}} \\]\n$v_0=\\dfrac{h}{m\\lambda_0}$ を代入して\n\\[ \\boldsymbol{\\Delta\\varphi_1=\\frac{2\\pi m^2g\\ell s\\lambda_0\\sin\\alpha}{h^2}} \\]\n位相差は平行四辺形の面積 $\\ell s$ と $\\sin\\alpha$ に比例し，波長 $\\lambda_0$ に比例する（遅い中性子ほど，DC を通る時間が長く，重力の効果が大きい）．\n\n\\textbf{(3)}　ブラッグ反射の条件は $2d\\sin\\theta=k\\lambda\\ (k=1,2,\\dots)$ である．$2d\\sin\\theta=\\lambda_0$ なら $2d\\sin\\theta=2\\times\\dfrac{\\lambda_0}{2}$ も成り立ち，波長 $\\frac{\\lambda_0}{2}$ の波は2次の反射条件を満たして同じ向きに反射される．干渉計の結晶板でも角度は同じなので同様である．(2) の結果は $\\lambda_0$ に比例するから\n\\[ \\boldsymbol{\\Delta\\varphi_2=\\frac{\\Delta\\varphi_1}{2}} \\]\n\n\\textbf{(4)}　$q\\equiv\\dfrac{2\\pi m^2g\\ell s\\lambda_0}{h^2}$ とおくと $\\Delta\\varphi_1=q\\sin\\alpha$．\n\\[ \\frac{m^2g\\ell s\\lambda_0}{h^2}=\\frac{(1.67\\times10^{-27})^2\\times9.80\\times7.0\\times10^{-4}\\times2.0\\times10^{-10}}{(6.63\\times10^{-34})^2}\\fallingdotseq8.70 \\]\nより $q\\fallingdotseq2\\pi\\times8.70\\fallingdotseq54.7$．計数は\n\\[ I\\propto(1+\\cos\\Delta\\varphi_1)+\\left(1+\\cos\\frac{\\Delta\\varphi_1}{2}\\right) \\]\n（なお $v_0=h/(m\\lambda_0)\\fallingdotseq2.0\\times10^3\\,\\mathrm{m/s}$ で，$s$ が数 cm なら $gs/v_0^{\\,2}\\sim10^{-7}$ であり，近似は十分よい．）\n\n\\textbf{(a)}　$\\alpha=0$ の計数は最大値（両成分とも強め合い）である．再び同じ値になるのは，両成分がともに強め合うとき，すなわち $\\dfrac{\\Delta\\varphi_1}{2}$ が $2\\pi$ の整数倍，$\\Delta\\varphi_1=4\\pi k$ のときに限る（$\\Delta\\varphi_1=2\\pi,6\\pi,\\dots$ では $\\lambda_0$ 成分は強め合うが $\\frac{\\lambda_0}{2}$ 成分が弱め合い，計数は半分になる）．$q\\sin\\alpha=4\\pi k\\le q$ より $k\\le\\dfrac{q}{4\\pi}\\fallingdotseq4.35$，よって $\\boldsymbol{4}$ 回．（$\\lambda_0$ だけなら $k\\le8.70$ で8回である．）\n\n\\textbf{(b)}　$u=\\cos\\dfrac{\\Delta\\varphi_1}{2}$ とおくと $\\cos\\Delta\\varphi_1=2u^2-1$ なので\n\\[ I\\propto 2u^2+u+1=2\\left(u+\\frac14\\right)^2+\\frac78 \\]\n$\\alpha=0$（$u=1$）では4．$\\alpha$ を増やすと $u$ は1から減り，初めて極小になるのは $u=-\\dfrac14$，すなわち\n\\[ \\frac{\\Delta\\varphi_1}{2}=\\cos^{-1}\\!\\left(-\\frac14\\right)\\fallingdotseq1.823,\\qquad \\Delta\\varphi_1\\fallingdotseq3.647 \\]\nのときである．$\\sin\\alpha=\\dfrac{3.647}{54.7}\\fallingdotseq\\boldsymbol{6.7\\times10^{-2}}$．このときの計数の比は $\\dfrac{7/8}{4}=\\boldsymbol{\\dfrac{7}{32}\\fallingdotseq0.22}$．\n\nビームが $\\lambda_0$ だけなら，初めての極小は $\\Delta\\varphi_1=\\pi$，$\\sin\\alpha=\\pi/q\\fallingdotseq5.7\\times10^{-2}$ で，計数は0になる．$\\frac{\\lambda_0}{2}$ の成分が混じると，その成分はまだ十分に弱め合っていないため，極小の位置が $\\Delta\\varphi_1=\\pi$ より後ろへずれ，計数も0まで下がらない．極小の位置から $\\lambda_0$ を求めると誤差が生じるので，混入を見落とさないことが重要である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "重力場中の物質波は，振動数が一定のまま高い所で波長が伸びるので，高さの異なる2本の平行な経路を通った波には，（経路の長さ）×（高さの差）すなわち囲む面積に比例し，波長に比例する位相差 $2\\pi m^2g\\lambda A\\sin\\alpha/h^2$ が生じる．ブラッグ反射で単色化したビームには2次反射で波長 $\\lambda/2$ の成分が混じり，その成分は位相差が半分になるので，計数は $\\cos(\\Delta\\varphi/2)$ の2次式となり，最大値に戻る角度が半分に減り，極小の位置もずれて計数が0にならなくなる．"
+ },
+ "concepts": [
+  "photon",
+  "interference",
+  "wave-basics"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "物質波",
+  "ド・ブロイ波長",
+  "干渉",
+  "ブラッグ反射",
+  "重力",
+  "近似"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

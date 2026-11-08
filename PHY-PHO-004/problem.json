@@ -1,0 +1,123 @@
+{
+ "id": "PHY-PHO-004",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "角度固定のブラッグ反射で見るX線の段階的増加と電子線の屈折（内部電位）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "プランク定数を $h=6.6\\times10^{-34}\\,\\mathrm{J\\cdot s}$，電気素量を $e=1.6\\times10^{-19}\\,\\mathrm{C}$，真空中の光速を $c=3.0\\times10^{8}\\,\\mathrm{m/s}$，電子の質量を $m=9.0\\times10^{-31}\\,\\mathrm{kg}$ とする．\n\n図(a)のように，X線管（加速電圧 $V_X$）から出たX線を，原子面の間隔が $d$ の結晶に，原子面とのなす角 $\\theta=30^\\circ$ で入射させ，反対側の同じ角 $\\theta$ の方向に置いた検出器で反射X線を測定する．角度は固定したままとする．X線管の陽極金属の固有X線は，この配置ではどれもブラッグの条件を満たさないものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$V_X$ を $0$ から徐々に上げていくと，$V_X=6.2\\,\\mathrm{kV}$ で初めて検出器が反応し，その後 $12.4\\,\\mathrm{kV}$，$18.6\\,\\mathrm{kV}$，$\\cdots$ を超えるたびに検出される強度が段階的に跳ね上がった．跳ね上がる理由を説明し，$d$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$V_X=20\\,\\mathrm{kV}$ のとき，検出器に入るX線の波長をすべて有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "X線の代わりに，電圧 $V$ で加速した電子線を図(b)のように同じ結晶に同じ角 $\\theta=30^\\circ$ で入射させ，同じ角 $\\theta$ の方向で反射電子線の強度を測定する．結晶の内部では電子の位置エネルギーが外部より $eV_1$（$V_1>0$）だけ低いため，電子は結晶表面で屈折し，結晶内で原子面とのなす角が $\\varphi$ になる．表面を通過するとき，電子の運動量の表面に平行な成分は変わらない．結晶内の電子波についてのブラッグの条件から，反射電子線が強め合うための条件を，$\\varphi$ を含まない形で $V$，$V_1$，$\\theta$，$d$，$m$，$e$，$h$ と自然数 $n$ を用いて表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$d$ は (1) の値とする．(3) で $V$ を $1.0\\,\\mathrm{kV}$ から $2.0\\,\\mathrm{kV}$ まで変えたところ，反射電子線の強度の極大は $V=1.30\\times10^{3}\\,\\mathrm{V}$ と $1.79\\times10^{3}\\,\\mathrm{V}$ の2回だけ現れた．低い方の極大に対応する $n$ と，$V_1$ の値（有効数字2桁）を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：角度固定のブラッグ反射で見るX線の段階的増加と電子線の屈折（内部電位）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "連続X線の最短波長 $\\frac{hc}{eV_X}$ が $\\frac{2d\\sin\\theta}{n}$ 以下になるたびに $n$ 次の反射をする波長が新たに加わるから．$d=2.0\\times10^{-10}\\,\\mathrm{m}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.0\\times10^{-10}\\,\\mathrm{m}$，$1.0\\times10^{-10}\\,\\mathrm{m}$，$6.7\\times10^{-11}\\,\\mathrm{m}$"
+   },
+   {
+    "id": "3",
+    "tex": "$V\\sin^2\\theta+V_1=\\dfrac{n^2h^2}{8med^2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$n=6$，$V_1=15\\,\\mathrm{V}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　角度を固定すると，ブラッグ条件 $2d\\sin\\theta=n\\lambda$ を満たす波長は $\\lambda_n=\\dfrac{2d\\sin\\theta}{n}$ と飛び飛びに決まる．X線では「その波長が連続X線に含まれるか」，電子線では「加速電圧で波長を掃引して条件を満たすか」が問題になる．\n\n\\textbf{(1)}　加速された電子の運動エネルギー $eV_X$ がすべて1個の光子に移ったときが連続X線の最短波長 $\\lambda_{\\min}$ で，\n\\[ \\frac{hc}{\\lambda_{\\min}}=eV_X\\quad\\therefore\\ \\lambda_{\\min}=\\frac{hc}{eV_X} \\]\n連続X線は $\\lambda\\geqq\\lambda_{\\min}$ のすべての波長を含む．検出器に入れるのは $\\lambda_n=\\dfrac{2d\\sin\\theta}{n}$（$n=1,2,\\cdots$）だけなので，$V_X$ を上げて $\\lambda_{\\min}$ が $\\lambda_1,\\lambda_2,\\lambda_3,\\cdots$ を順に下回るたびに，\\textbf{新たな次数の反射が1つずつ加わり強度が段階的に増える}．$n$ 次が加わる電圧は\n\\[ eV_n=\\frac{hc}{\\lambda_n}\\quad\\therefore\\ V_n=\\frac{hc}{e\\lambda_n}=n\\cdot\\frac{hc}{2ed\\sin\\theta} \\]\nで，等間隔に並ぶ．間隔が $6.2\\times10^{3}\\,\\mathrm{V}$，$\\sin30^\\circ=\\frac12$ より\n\\[ d=\\frac{hc}{e\\cdot 6.2\\times10^{3}}=\\frac{6.6\\times10^{-34}\\times3.0\\times10^{8}}{1.6\\times10^{-19}\\times6.2\\times10^{3}}\\fallingdotseq\\boldsymbol{2.0\\times10^{-10}\\,\\mathrm{m}} \\]\n\n\\textbf{(2)}　$\\lambda_{\\min}=\\dfrac{hc}{e\\times2.0\\times10^{4}}\\fallingdotseq6.2\\times10^{-11}\\,\\mathrm{m}$．$\\lambda_n=\\dfrac{d}{n}=\\dfrac{2.0\\times10^{-10}}{n}\\,\\mathrm{m}$ のうち $\\lambda_n\\geqq\\lambda_{\\min}$ を満たすのは $n\\leqq3.2$，すなわち $n=1,2,3$ である．\n\\[ \\boldsymbol{2.0\\times10^{-10}\\,\\mathrm{m},\\ 1.0\\times10^{-10}\\,\\mathrm{m},\\ 6.7\\times10^{-11}\\,\\mathrm{m}} \\]\n\n\\textbf{(3)}　結晶外での電子の運動量の大きさは $eV=\\dfrac{p^2}{2m}$ より $p=\\sqrt{2meV}$．結晶内では運動エネルギーが $eV_1$ だけ増えるので $p'=\\sqrt{2me(V+V_1)}$，波長は $\\lambda'=\\dfrac{h}{p'}$．\\\\\n表面に平行な成分が保存されるので $p\\cos\\theta=p'\\cos\\varphi$．よって結晶内での表面に垂直な成分は\n\\[ p'\\sin\\varphi=\\sqrt{p'^2-p^2\\cos^2\\theta}=\\sqrt{2me\\,(V+V_1)-2meV\\cos^2\\theta}=\\sqrt{2me\\,(V\\sin^2\\theta+V_1)} \\]\n結晶内で隣り合う原子面からの反射波の経路差は $2d\\sin\\varphi$ だから，強め合う条件は\n\\[ 2d\\sin\\varphi=n\\lambda'=\\frac{nh}{p'}\\iff 2d\\,p'\\sin\\varphi=nh \\]\nこれに上式を代入して2乗すると\n\\[ \\boldsymbol{V\\sin^2\\theta+V_1=\\frac{n^2h^2}{8med^2}}\\quad(n=1,2,\\cdots) \\]\n（反射波は表面で再び屈折し，対称性から外部では角 $\\theta$ の向きに出ていく．$V_1=0$ なら通常のブラッグ条件 $2d\\sin\\theta=\\dfrac{nh}{\\sqrt{2meV}}$ に戻る．）\n\n\\textbf{(4)}　$K=\\dfrac{h^2}{8med^2}=\\dfrac{(6.6\\times10^{-34})^2}{8\\times9.0\\times10^{-31}\\times1.6\\times10^{-19}\\times(2.0\\times10^{-10})^2}\\fallingdotseq9.45\\,\\mathrm{V}$，$\\sin^2\\theta=\\dfrac14$ とおくと，極大の条件は\n\\[ \\frac{V_n}{4}+V_1=Kn^2 \\]\n2つの極大は範囲内で続けて現れているから，$n$ と $n+1$ に対応する．差をとると $V_1$ が消えて\n\\[ \\frac{V_{n+1}-V_n}{4}=K(2n+1)\\quad\\therefore\\ 2n+1=\\frac{(1.79-1.30)\\times10^{3}}{4\\times9.45}\\fallingdotseq13.0 \\]\nよって $\\boldsymbol{n=6}$．これを低い方の極大に代入して\n\\[ V_1=36K-\\frac{1.30\\times10^{3}}{4}\\fallingdotseq340-325\\fallingdotseq\\boldsymbol{15\\,\\mathrm{V}} \\]\n（確認：高い方からも $49K-\\dfrac{1.79\\times10^3}{4}\\fallingdotseq16\\,\\mathrm{V}$ でほぼ一致．また $n=5$ の極大は $4(25K-V_1)\\fallingdotseq8.8\\times10^{2}\\,\\mathrm{V}$，$n=8$ は $\\fallingdotseq2.4\\times10^{3}\\,\\mathrm{V}$ で，いずれも測定範囲外なので「2回だけ」と矛盾しない．）\\\\\nもし $V_1$ を無視すると極大は $4Kn^2\\fallingdotseq1.36\\,\\mathrm{kV},\\ 1.85\\,\\mathrm{kV}$ に現れるはずで，実測はそれより低電圧側にずれている．このずれが内部電位による屈折の効果である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "角度を固定したブラッグ反射では反射できる波長が $\\lambda_n=2d\\sin\\theta/n$ と離散的に決まり，連続X線の最短波長 $hc/(eV)$ が各 $\\lambda_n$ を下回るたびに強度が段階的に増える（閾電圧が等間隔）．電子線では表面に平行な運動量の保存から屈折を扱うと，強め合いの条件が $V\\sin^2\\theta+V_1=n^2h^2/(8med^2)$ となり，連続した2つの極大の差から内部電位を消去して次数 $n$ を決められる．"
+ },
+ "concepts": [
+  "photon",
+  "momentum-conservation",
+  "refraction-light"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "X線",
+  "ブラッグ反射",
+  "物質波",
+  "電子線回折",
+  "内部電位",
+  "屈折"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

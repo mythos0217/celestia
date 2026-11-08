@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380">
+<defs><marker id="q-ar" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker><marker id="q-ab" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#1f5fbf"/></marker></defs>
+<line x1="182.4" y1="314.9" x2="50.1" y2="226.7" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="272.5" y1="315.0" x2="50.0" y2="166.7" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="362.3" y1="314.9" x2="50.1" y2="106.7" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="449.8" y1="313.2" x2="50.2" y2="46.8" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="449.9" y1="253.3" x2="137.6" y2="45.1" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="449.9" y1="193.3" x2="227.7" y2="45.1" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="449.9" y1="133.3" x2="317.7" y2="45.2" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="449.8" y1="73.2" x2="407.6" y2="45.1" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="70" cy="300" r="5" fill="#222"/>
+<circle cx="70" cy="240" r="5" fill="#222"/>
+<circle cx="70" cy="180" r="5" fill="#222"/>
+<circle cx="70" cy="120" r="5" fill="#222"/>
+<circle cx="70" cy="60" r="5" fill="#222"/>
+<circle cx="160" cy="300" r="5" fill="#222"/>
+<circle cx="160" cy="240" r="5" fill="#222"/>
+<circle cx="160" cy="180" r="5" fill="#222"/>
+<circle cx="160" cy="120" r="5" fill="#222"/>
+<circle cx="160" cy="60" r="5" fill="#222"/>
+<circle cx="250" cy="300" r="5" fill="#222"/>
+<circle cx="250" cy="240" r="5" fill="#222"/>
+<circle cx="250" cy="180" r="5" fill="#222"/>
+<circle cx="250" cy="120" r="5" fill="#222"/>
+<circle cx="250" cy="60" r="5" fill="#222"/>
+<circle cx="340" cy="300" r="5" fill="#222"/>
+<circle cx="340" cy="240" r="5" fill="#222"/>
+<circle cx="340" cy="180" r="5" fill="#222"/>
+<circle cx="340" cy="120" r="5" fill="#222"/>
+<circle cx="340" cy="60" r="5" fill="#222"/>
+<circle cx="430" cy="300" r="5" fill="#222"/>
+<circle cx="430" cy="240" r="5" fill="#222"/>
+<circle cx="430" cy="180" r="5" fill="#222"/>
+<circle cx="430" cy="120" r="5" fill="#222"/>
+<circle cx="430" cy="60" r="5" fill="#222"/>
+<circle cx="115.0" cy="270.0" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="115.0" cy="210.0" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="115.0" cy="150.0" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="115.0" cy="90.0" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="205.0" cy="270.0" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="205.0" cy="210.0" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="205.0" cy="150.0" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="205.0" cy="90.0" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="295.0" cy="270.0" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="295.0" cy="210.0" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="295.0" cy="150.0" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="295.0" cy="90.0" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="385.0" cy="270.0" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="385.0" cy="210.0" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="385.0" cy="150.0" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<circle cx="385.0" cy="90.0" r="5" fill="none" stroke="#222" stroke-width="1.6"/>
+<line x1="70" y1="300" x2="470" y2="300" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+<line x1="70" y1="300" x2="70" y2="35" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+<text x="475" y="305" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+<text x="64" y="30" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">y</text>
+<text x="52" y="318" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">O</text>
+<line x1="115.0" y1="328" x2="160" y2="328" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+<line x1="115.0" y1="328" x2="70" y2="328" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+<text x="110.0" y="348" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">a</text>
+<line x1="42" y1="270.0" x2="42" y2="240" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+<line x1="42" y1="270.0" x2="42" y2="300" stroke="#222" stroke-width="1" marker-end="url(#q-ar)"/>
+<text x="24" y="275.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">b</text>
+<circle cx="490" cy="80" r="5" fill="#222"/><text x="502" y="85" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">頂点の原子</text>
+<circle cx="490" cy="110" r="5" fill="none" stroke="#222" stroke-width="1.6"/><text x="502" y="115" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">中心の原子</text>
+<line x1="482" y1="140" x2="498" y2="140" stroke="#888" stroke-dasharray="5,4"/><text x="502" y="145" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">格子面</text>
+<text x="482" y="166" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">(1, 1) の例</text>
+</svg>

@@ -1,0 +1,130 @@
+{
+ "id": "PHY-PHO-016",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "結晶分光器でコンプトン散乱線を分離する角度（高次のブラッグ反射の利用）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "波長 $\\lambda_0=71.1\\ \\mathrm{pm}$ の単色X線を石墨に当て，入射方向から角 $\\varphi$ の向きに散乱されたX線をスリットで細い平行線束にして，結晶分光器に入れる．分光器では，格子面の間隔 $d=0.201\\ \\mathrm{nm}$ の結晶の表面（格子面に平行）とX線のなす角を $\\theta$ とし，検出器を常に入射方向から $2\\theta$ の向きに置く．$\\theta$ を変えながら強度を測ると，$n$ 次のブラッグ反射 $2d\\sin\\theta=n\\lambda$（$n=1,2,\\dots$）を満たす角でピークが現れる．散乱X線には，波長 $\\lambda_0$ のままの成分と，コンプトン効果で波長が $\\lambda_0+\\lambda_{\\rm C}(1-\\cos\\varphi)$ に変わった成分が含まれる．ここで $\\lambda_{\\rm C}=2.43\\ \\mathrm{pm}$ である．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "波長が $\\lambda$ から $\\lambda+\\Delta\\lambda$（$\\Delta\\lambda\\ll\\lambda$）に変わると，同じ次数 $n$ のピークの角度は $\\Delta\\theta$ だけずれる．$\\Delta\\theta$（ラジアン）を $\\theta,\\ \\lambda,\\ \\Delta\\lambda$ だけで表せ（$d$ と $n$ を含まない形にせよ）．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\varphi=90^\\circ$，$n=1$ のとき，波長の変わらない成分のピーク角 $\\theta_0$ と，2つのピークの角度差を (1) の近似式で求めよ．角度は度で，有効数字3桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この分光器は機構上 $\\theta\\le75^\\circ$ でしか使えない．$\\varphi=90^\\circ$ のとき，2つのピークの角度差を最も大きくできる次数 $n$ と，そのときの角度差（近似を使わず，度で有効数字3桁）を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の次数のまま散乱角 $\\varphi$ を変えたところ，波長の変わった成分のピークが $\\theta=64.0^\\circ$ に現れた．$\\varphi$ を度で有効数字3桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "波長 $500\\ \\mathrm{nm}$ の可視光で $\\varphi=90^\\circ$ の散乱を調べ，回折格子で同じように $\\theta=75^\\circ$ 付近で分光したとすると，角度差はおよそ何度になるか．有効数字2桁で答え，コンプトン効果がX線で初めて見つかった理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：結晶分光器でコンプトン散乱線を分離する角度（高次のブラッグ反射の利用）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Delta\\theta=\\dfrac{\\Delta\\lambda}{\\lambda}\\tan\\theta$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\theta_0=10.2^\\circ$，角度差 $0.352^\\circ$"
+   },
+   {
+    "id": "3",
+    "tex": "$n=5$，$3.97^\\circ$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\varphi=58.6^\\circ$"
+   },
+   {
+    "id": "5",
+    "tex": "約 $1.0\\times10^{-3}$ 度（波長の相対変化 $\\lambda_{\\rm C}(1-\\cos\\varphi)/\\lambda$ が可視光では $10^{-5}$ 程度しかなく，角度の差として分離できない）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 角度のずれ}\n\n$2d\\sin\\theta=n\\lambda$ の両辺の微小変化をとると $2d\\cos\\theta\\,\\Delta\\theta=n\\,\\Delta\\lambda$．$n=2d\\sin\\theta/\\lambda$ を代入して\n\\[ \\Delta\\theta=\\frac{n\\Delta\\lambda}{2d\\cos\\theta}=\\boldsymbol{\\frac{\\Delta\\lambda}{\\lambda}\\tan\\theta}. \\]\n角度の分離は\\textbf{波長の相対変化 $\\Delta\\lambda/\\lambda$ と，そのピークの角 $\\theta$ だけ}で決まり，結晶の $d$ や次数 $n$ は「どの $\\theta$ で観測するか」を通してしか効かない．$\\tan\\theta$ は $\\theta\\to90^\\circ$ で急増するので，大きな角で観測するほど分離がよい．\n\n\\textbf{(2)} $\\sin\\theta_0=\\dfrac{\\lambda_0}{2d}=\\dfrac{71.1}{402}=0.1769$ より $\\boldsymbol{\\theta_0=10.2^\\circ}$．$\\varphi=90^\\circ$ では $\\Delta\\lambda=\\lambda_{\\rm C}=2.43\\ \\mathrm{pm}$，$\\Delta\\lambda/\\lambda_0=0.0342$ なので\n\\[ \\Delta\\theta=0.0342\\times\\tan10.19^\\circ=6.14\\times10^{-3}\\ \\mathrm{rad}=\\boldsymbol{0.352^\\circ}. \\]\n\n\\textbf{(3) 最適な次数}\n\n$\\sin\\theta=n\\times0.1769$ なので，$n=5$ で $\\sin\\theta_0=0.884$，$n=6$ では $1.06>1$ となりピークが存在しない．変化した成分 $\\lambda'=73.53\\ \\mathrm{pm}$ も $n=5$ で $\\sin\\theta'=\\dfrac{5\\times73.53}{402}=0.9146$ と1未満で，\n\\[ \\theta_0=62.17^\\circ,\\qquad \\theta'=66.14^\\circ\\ (\\le75^\\circ) \\]\nとなり，どちらも使用範囲内にある．(1) より角度差は $\\tan\\theta$ の大きい高次ほど大きいので，$\\boldsymbol{n=5}$ が最適で，角度差は $\\boldsymbol{3.97^\\circ}$（$n=1$ の約11倍）である．なお，(1) の近似式では $3.71^\\circ$ となる．$\\theta$ が大きいと $\\tan\\theta$ の変化が急なので，ここでは近似が粗くなる．\n\n\\textbf{(4) 散乱角の逆算}\n\n$\\lambda'=\\dfrac{2d\\sin64.0^\\circ}{5}=\\dfrac{402\\times0.8988}{5}\\ \\mathrm{pm}=72.26\\ \\mathrm{pm}$，$\\Delta\\lambda=1.163\\ \\mathrm{pm}$．$1-\\cos\\varphi=\\dfrac{1.163}{2.43}=0.4786$ より $\\cos\\varphi=0.521$，$\\boldsymbol{\\varphi=58.6^\\circ}$．\n\n\\textbf{(5) 可視光の場合}\n\n$\\Delta\\lambda/\\lambda=\\dfrac{2.43\\times10^{-12}}{500\\times10^{-9}}=4.9\\times10^{-6}$．回折格子でも同じ式 $\\Delta\\theta=\\dfrac{\\Delta\\lambda}{\\lambda}\\tan\\theta$ が成り立つ（$d\\sin\\theta=n\\lambda$ でも結果は同じ形）ので，\n\\[ \\Delta\\theta=4.9\\times10^{-6}\\times\\tan75^\\circ=1.8\\times10^{-5}\\ \\mathrm{rad}\\fallingdotseq\\boldsymbol{1.0\\times10^{-3}\\ \\text{度}}. \\]\nコンプトン効果による波長の変化は散乱角だけで決まり，波長によらず $\\lambda_{\\rm C}$ 程度である．分光器で角度として現れるのは相対変化 $\\Delta\\lambda/\\lambda$ なので，$\\lambda$ が $\\lambda_{\\rm C}$ に近いX線では数 \\% の変化として容易に分離できるが，可視光では $10^{-5}$ 程度にすぎず，スペクトル線の幅や装置の分解能に埋もれて検出できない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ブラッグ反射のピークのずれは $\\Delta\\theta=(\\Delta\\lambda/\\lambda)\\tan\\theta$ で，結晶の面間隔や次数によらず「相対的な波長変化」と「観測する角」だけで決まる．コンプトン効果の波長変化は波長によらず $\\lambda_{\\rm C}$ 程度なので，分離には $\\lambda$ の短いX線と，$\\tan\\theta$ の大きい高次・大角度の反射が有利になる．"
+ },
+ "concepts": [
+  "photon",
+  "wave-basics",
+  "matter-wave"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "コンプトン効果",
+  "ブラッグ反射",
+  "結晶分光器",
+  "角度分散",
+  "次数の選択"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

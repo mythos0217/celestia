@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 330">
+<defs><marker id="a-ar" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#222"/></marker><marker id="a-arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#c0392b"/></marker></defs>
+<text x="20" y="24" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">格子面 (1, 0)：直線 x = 0, a, 2a, …</text>
+<g stroke="#222" stroke-width="1.6">
+<line x1="60" y1="45" x2="60" y2="285"/><line x1="200" y1="45" x2="200" y2="285"/><line x1="340" y1="45" x2="340" y2="285"/>
+</g>
+<g stroke="#888" stroke-width="1" stroke-dasharray="5,4">
+<line x1="130" y1="45" x2="130" y2="285"/><line x1="270" y1="45" x2="270" y2="285"/>
+</g>
+<g fill="#222">
+<circle cx="60" cy="70" r="5"/><circle cx="60" cy="160" r="5"/><circle cx="60" cy="250" r="5"/>
+<circle cx="200" cy="70" r="5"/><circle cx="200" cy="160" r="5"/><circle cx="200" cy="250" r="5"/>
+<circle cx="340" cy="70" r="5"/><circle cx="340" cy="160" r="5"/><circle cx="340" cy="250" r="5"/>
+</g>
+<g fill="none" stroke="#222" stroke-width="1.6">
+<circle cx="130" cy="115" r="5"/><circle cx="130" cy="205" r="5"/>
+<circle cx="270" cy="115" r="5"/><circle cx="270" cy="205" r="5"/>
+</g>
+<line x1="130" y1="300" x2="200" y2="300" stroke="#222" stroke-width="1" marker-end="url(#a-ar)"/>
+<line x1="130" y1="300" x2="60" y2="300" stroke="#222" stroke-width="1" marker-end="url(#a-ar)"/>
+<text x="112" y="322" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">d = a</text>
+<line x1="235" y1="300" x2="270" y2="300" stroke="#c0392b" stroke-width="1" marker-end="url(#a-arr)"/>
+<line x1="235" y1="300" x2="200" y2="300" stroke="#c0392b" stroke-width="1" marker-end="url(#a-arr)"/>
+<text x="222" y="322" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#c0392b">d/2</text>
+<text x="370" y="80" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">中心の原子の列は</text>
+<text x="370" y="100" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">面と面のちょうど中間</text>
+<text x="370" y="135" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">経路差 2(d/2)sinθ = nλ/2</text>
+<text x="370" y="170" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#c0392b">n が奇数 → 半波長ずれて</text>
+<text x="370" y="190" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#c0392b">打ち消し合う</text>
+<text x="370" y="225" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">n が偶数 → 強め合う</text>
+<text x="370" y="260" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">（H + K = n が奇数で消える）</text>
+</svg>

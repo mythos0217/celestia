@@ -1,0 +1,131 @@
+{
+ "id": "PHY-PHO-008",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "重力の中を落下する原子の二重スリット干渉（縞の間隔を決める飛行時間）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "レーザー冷却によってほぼ静止させた原子（質量 $m$）の集団を，図のように，水平に置いた二重スリットの高さ $H$ だけ上方で静かに放す．2つのスリットは $y$ 軸（紙面に垂直）に平行で，間隔は $d$ である．スリットの $l$ だけ下方に水平なスクリーンがあり，原子が当たった位置を記録する．スクリーン上に図のように $x$ 軸をとる．原子は重力だけを受けて運動し，初速度は無視できるものとする．プランク定数を $h$，重力加速度の大きさを $g$ とする．\n\nスリットを通過した原子の波について，次のことを用いてよい：スリットを通過した直後の原子の運動量の，スリットが並ぶ方向の成分を $p_\\perp$ とすると，2つのスリットを通る波の位相差は $\\dfrac{2\\pi d\\,p_\\perp}{h}$ である（ド・ブロイ波長 $h/p$ と経路差 $d\\sin\\theta$ の関係を運動量の成分で書き直したもの）．また，$d$ は縞の間隔より十分小さく，縞の間隔は $l$ より十分小さい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "原子がスリットを通過するときの速さ $v_1$，スクリーンに達するときの速さ $v_2$ を求めよ．また，スリットからスクリーンまでの時間 $T$ を $l,\\,v_1,\\,v_2$ だけで表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "スクリーン上の点 $x$ に達する原子の運動量の $x$ 成分を考えて，干渉縞の間隔 $\\Delta x$ を $h,\\,m,\\,d,\\,T$ で表せ．さらに $l,\\,v_1,\\,v_2$ を用いて表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "スリットを通過するときのド・ブロイ波長 $\\lambda_1$ を用いて光の場合と同じように計算した $\\Delta x_1=\\dfrac{\\lambda_1l}{d}$ に対する比 $\\dfrac{\\Delta x}{\\Delta x_1}$ を $H,\\,l$ で表せ．また，$\\Delta x$ は，どのような速さに対応するド・ブロイ波長を用いて $\\dfrac{\\lambda l}{d}$ と計算したものに等しいか．"
+     },
+     {
+      "id": "4",
+      "tex": "$m=3.3\\times10^{-26}\\ \\mathrm{kg}$，$H=5.0\\ \\mathrm{cm}$，$l=85\\ \\mathrm{cm}$，$d=6.0\\ \\mu\\mathrm{m}$，$h=6.6\\times10^{-34}\\ \\mathrm{J\\,s}$，$g=9.8\\ \\mathrm{m/s^2}$ のとき，$\\Delta x$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "装置を変え，原子を水平に速さ $v$ で飛ばして，水平な2つのスリット（上下に間隔 $d$）を通し，距離 $L$ だけ離れた鉛直なスクリーンに当てる．スクリーン上の縞（鉛直方向に並ぶ）の間隔 $\\Delta z$ を求めよ．また，重力がない場合と比べて縞模様の位置はどう変わるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：重力の中を落下する原子の二重スリット干渉（縞の間隔を決める飛行時間）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_1=\\sqrt{2gH}$，$v_2=\\sqrt{2g(H+l)}$，$T=\\dfrac{2l}{v_1+v_2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Delta x=\\dfrac{hT}{md}=\\dfrac{2hl}{md(v_1+v_2)}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{\\Delta x}{\\Delta x_1}=\\dfrac{2\\sqrt H}{\\sqrt H+\\sqrt{H+l}}$，平均の速さ $\\dfrac{v_1+v_2}{2}$ に対する波長"
+   },
+   {
+    "id": "4",
+    "tex": "$1.1\\times10^{-3}\\ \\mathrm{m}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\Delta z=\\dfrac{hL}{mdv}$（重力によらない），模様全体が $\\dfrac{gL^2}{2v^2}$ だけ下にずれる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　自由落下なので $v_1=\\boldsymbol{\\sqrt{2gH}}$，$v_2=\\boldsymbol{\\sqrt{2g(H+l)}}$（スリットで生じる $x$ 方向の速度はごくわずかで，鉛直方向の運動には影響しない）．等加速度運動では平均の速さが $\\dfrac{v_1+v_2}{2}$ なので\n\\[ T=\\frac{v_2-v_1}{g}=\\boldsymbol{\\frac{2l}{v_1+v_2}} \\]\n\n\\textbf{(2)}　スリットを通過した後，$x$ 方向には力がはたらかないので，原子の運動量の $x$ 成分 $p_x$ は一定である．スリット（$x\\approx0$，$d$ は $x$ に比べて小さい）を出て時間 $T$ の後に点 $x$ に達する原子は $x$ 方向に速さ $\\dfrac xT$ で動いてきたので，$p_x=\\dfrac{mx}{T}$．2つのスリットを通る波の位相差は\n\\[ \\frac{2\\pi d\\,p_x}{h}=\\frac{2\\pi mdx}{hT} \\]\nで，これが $2\\pi$ の整数倍の点が明線になる．位相差が $2\\pi$ 変わる $x$ の間隔が縞の間隔だから\n\\[ \\Delta x=\\boldsymbol{\\frac{hT}{md}}=\\boldsymbol{\\frac{2hl}{md(v_1+v_2)}} \\]\n（重力がなく速さ $v$ が一定なら $T=l/v$ で，$\\Delta x=\\dfrac{h}{mv}\\cdot\\dfrac ld=\\dfrac{\\lambda l}{d}$ となり，光の場合と一致する．）\n\n\\textbf{(3)}　$\\lambda_1=\\dfrac{h}{mv_1}$ より $\\Delta x_1=\\dfrac{hl}{mv_1d}$．よって\n\\[ \\frac{\\Delta x}{\\Delta x_1}=\\frac{2v_1}{v_1+v_2}=\\boldsymbol{\\frac{2\\sqrt H}{\\sqrt H+\\sqrt{H+l}}} \\]\n（$l\\to0$ で $1$ に近づき，$l$ が大きいほど小さくなる．）縞の間隔を決めるのは途中の波長そのものではなく，スリットからスクリーンまでの\\textbf{時間} $T$ であり，$\\Delta x=\\dfrac{h}{m\\bar v}\\cdot\\dfrac ld$ と書けば $\\bar v=\\dfrac lT$，すなわち\\textbf{平均の速さ $\\dfrac{v_1+v_2}{2}$ に対するド・ブロイ波長}を用いたものに等しい．\n\n\\textbf{(4)}　$v_1=\\sqrt{2\\times9.8\\times0.050}=0.990\\ \\mathrm{m/s}$，$v_2=\\sqrt{2\\times9.8\\times0.90}=4.20\\ \\mathrm{m/s}$，$T=\\dfrac{4.20-0.990}{9.8}=0.328\\ \\mathrm s$．\n\\[ \\Delta x=\\frac{6.6\\times10^{-34}\\times0.328}{3.3\\times10^{-26}\\times6.0\\times10^{-6}}=1.09\\times10^{-3}\\ \\mathrm m\\approx\\boldsymbol{1.1\\times10^{-3}\\ \\mathrm{m}} \\]\n\n\\textbf{(5)}　水平方向の速さは $v$ のままなので，どの原子もスクリーンまで同じ時間 $T=\\dfrac Lv$ で到達する．スリットを出た直後の鉛直方向の速度を $u_z$ とすると，到達点の高さ（2つのスリットの中央を基準）は\n\\[ z=u_zT-\\frac12gT^2\\quad\\Longrightarrow\\quad u_z=\\frac{z+\\frac12gT^2}{T} \\]\n位相差は $\\dfrac{2\\pi d\\,mu_z}{h}=\\dfrac{2\\pi md}{hT}\\left(z+\\dfrac12gT^2\\right)$ で，これが $2\\pi$ 変わる間隔は\n\\[ \\Delta z=\\boldsymbol{\\frac{hT}{md}=\\frac{hL}{mdv}} \\]\nで重力によらない．一方，明線の位置は $z=n\\dfrac{hT}{md}-\\dfrac12gT^2$（$n$ は整数）なので，縞模様全体が\\textbf{そのままの間隔で $\\boldsymbol{\\dfrac{gL^2}{2v^2}}$ だけ下にずれる}．（原子がスリットを通過した瞬間から自由落下する観測者から見れば重力は消えるので，模様の形は変わらず，全体がその観測者とともに落ちる，と解釈できる．(1)〜(4) では重力が縞の方向に垂直で，到達時間 $T$ を変えることだけを通して縞の間隔に効いていた．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "物質波の二重スリットの縞の間隔は，横方向の運動量 $mx/T$ から決まるので $\\Delta x=hT/(md)$ と飛行時間 $T$ で表される．重力が原子線に沿っていれば $T$ を通して平均の速さの波長が効き，重力が縞の方向にあれば間隔は変わらず模様全体が $\\frac12gT^2$ だけ落ちる．"
+ },
+ "concepts": [
+  "photon",
+  "momentum-conservation",
+  "interference"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "物質波",
+  "ド・ブロイ波長",
+  "二重スリット",
+  "原子干渉",
+  "自由落下",
+  "飛行時間"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

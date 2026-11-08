@@ -1,0 +1,144 @@
+{
+ "id": "PHY-PHO-013",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "対向する2本のレーザー光による原子の冷却（光学的糖蜜の摩擦力と反跳による加熱のつり合い）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "原子をレーザー光で冷やす方法を，1次元のモデルで考える．質量 $M$ の原子が $x$ 軸上を速度 $v$（$|v|\\ll c$）で運動している．図のように，振動数 $\\nu_0$ の2本のレーザー光のうち，光1は $x$ 軸の正の向きに，光2は負の向きに進んで原子に当たっている．$c$ は光速，$h$ はプランク定数，$k_{\\rm B}$ はボルツマン定数である．\n\n原子は光子を1個吸収するとすぐに光子を1個放出する（これを散乱1回とよぶ）．放出される光子は $+x$ 向きか $-x$ 向きに，それぞれ確率 $\\frac12$ で出る．吸収・放出される光子の運動量の大きさはすべて $p=\\dfrac{h\\nu_0}{c}$ とみなしてよい．原子が光1，光2のそれぞれを単位時間あたりに散乱する回数（散乱率）は，原子から見たその光の振動数 $\\nu'$ によって\n\\[ R=R_0\\{1+\\beta(\\nu'-\\nu_0)\\} \\]\nで与えられるとする．$R_0$，$\\beta$ は正の定数で，$|\\beta(\\nu'-\\nu_0)|\\ll1$ の範囲で考える（$\\beta>0$ なのは，$\\nu_0$ を原子の共鳴振動数 $\\nu_{\\rm A}$ より少し低く選んであるためである）．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "原子から見た光1，光2の振動数 $\\nu_1'$，$\\nu_2'$ を，$v/c$ の1次までの近似で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "吸収による運動量の受け渡しを時間平均すると，原子は $F=-\\alpha v$ の形の力を受ける．$\\alpha$ を $h,\\nu_0,c,R_0,\\beta$ で表せ．放出による反跳は平均すると $0$ になることを用いてよい．"
+     },
+     {
+      "id": "3",
+      "tex": "一方，散乱はでたらめな時刻に起こり，原子は光子を吸収・放出するたびに大きさ $p$ の「けり」を受ける．1回のけりで $(Mv)^2$ が平均として $p^2$ だけ増えることを示し，$v\\approx0$ の原子について，運動エネルギーの平均値 $\\langle K\\rangle$ がこの「けり」によって単位時間あたりに増える量（加熱率）を $R_0,p,M$ で表せ．ただし，けりの平均の向きの偏り（(2)の力）はここでは別に扱うものとして無視し，けりの向きは $\\pm$ が等確率としてよい．"
+     },
+     {
+      "id": "4",
+      "tex": "(2)の力による冷却と(3)の加熱がつり合った定常状態での $\\langle K\\rangle$ を求めよ．これを $\\frac12k_{\\rm B}T$ とおいて，到達温度 $T$ を $h,\\beta,k_{\\rm B}$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "散乱率が共鳴曲線 $R\\propto\\dfrac{1}{1+(\\nu'-\\nu_{\\rm A})^2/\\gamma^2}$（$\\gamma$ は正の定数）に従うとき，$\\nu_0=\\nu_{\\rm A}-\\delta$（$\\delta>0$）とすると $\\beta=\\dfrac{2\\delta}{\\gamma^2+\\delta^2}$ となることを示せ．さらに，到達温度を最も低くする $\\delta$ と，そのときの温度 $T_{\\min}$ を求めよ．また，$\\gamma=4.9\\times10^{6}\\ \\mathrm{Hz}$，$h=6.63\\times10^{-34}\\ \\mathrm{J\\cdot s}$，$k_{\\rm B}=1.38\\times10^{-23}\\ \\mathrm{J/K}$ として $T_{\\min}$ の値を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：対向する2本のレーザー光による原子の冷却（光学的糖蜜の摩擦力と反跳による加熱のつり合い）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：対向する2本のレーザー光による原子の冷却（光学的糖蜜の摩擦力と反跳による加熱のつり合い）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\nu_1'=\\nu_0\\left(1-\\dfrac{v}{c}\\right)$，$\\nu_2'=\\nu_0\\left(1+\\dfrac{v}{c}\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\alpha=\\dfrac{2h\\nu_0^{2}R_0\\beta}{c^{2}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{2R_0p^{2}}{M}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\langle K\\rangle=\\dfrac{h}{2\\beta}$，$T=\\dfrac{h}{\\beta k_{\\rm B}}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\delta=\\gamma$，$T_{\\min}=\\dfrac{h\\gamma}{k_{\\rm B}}\\approx2.4\\times10^{-4}\\ \\mathrm{K}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 原子から見た振動数}\n\n光1は原子を後ろから追いかける光なので，原子から見ると波が追いつく速さは $c-v$ になり，振動数は $\\nu_1'=\\nu_0\\dfrac{c-v}{c}$．光2は向かってくる光なので $\\nu_2'=\\nu_0\\dfrac{c+v}{c}$．\n\\[ \\boldsymbol{\\nu_1'=\\nu_0\\left(1-\\frac vc\\right),\\quad \\nu_2'=\\nu_0\\left(1+\\frac vc\\right)} \\]\n（$v>0$ の原子には，向かってくる光2のほうが共鳴に近く見える．）\n\n\\textbf{(2) 平均の力}\n\n光1を吸収すると $+p$，光2を吸収すると $-p$ の運動量を受ける．放出の反跳は $\\pm p$ が等確率なので平均 $0$．よって平均の力は\n\\[ F=p(R_1-R_2)=pR_0\\beta(\\nu_1'-\\nu_2')=pR_0\\beta\\left(-\\frac{2\\nu_0 v}{c}\\right)=-\\frac{2h\\nu_0^2R_0\\beta}{c^2}\\,v \\]\n\\[ \\boldsymbol{\\alpha=\\frac{2h\\nu_0^{2}R_0\\beta}{c^{2}}} \\]\n原子がどちらに動いても，向かってくる光をより多く散乱するので，速度に比例する摩擦力（粘性抵抗）が生じる．これは $\\nu_0<\\nu_{\\rm A}$（$\\beta>0$）だから起こることで，$\\nu_0>\\nu_{\\rm A}$ に選ぶと逆に加速されてしまう．\n\n\\textbf{(3) 反跳による加熱}\n\nけりの前の運動量を $P=Mv$ とすると，けりの後は $P\\pm p$ で\n\\[ \\langle (P\\pm p)^2\\rangle-P^2=\\langle\\pm2Pp\\rangle+p^2=p^2 \\]\n（$\\pm$ が等確率なので交差項は平均 $0$）．つまり運動量の平均はけりで変わらなくても，$(Mv)^2$ の平均は1回ごとに必ず $p^2$ 増える（酔歩と同じ）．\n\n散乱1回で吸収と放出の2回のけりがあり，$v\\approx0$ では2本の光の散乱率の和は $2R_0$ なので，単位時間あたりのけりの回数は $4R_0$．したがって\n\\[ \\frac{d\\langle (Mv)^2\\rangle}{dt}=4R_0p^2,\\qquad \\frac{d\\langle K\\rangle}{dt}=\\frac{1}{2M}\\cdot4R_0p^2=\\boldsymbol{\\frac{2R_0p^{2}}{M}} \\]\n\n\\textbf{(4) 到達温度}\n\n摩擦力による $K$ の減少率は，力の仕事率から\n\\[ \\frac{d\\langle K\\rangle}{dt}=\\langle Fv\\rangle=-\\alpha\\langle v^2\\rangle=-\\frac{2\\alpha}{M}\\langle K\\rangle \\]\n定常状態では加熱と冷却がつり合うので\n\\[ \\frac{2R_0p^2}{M}=\\frac{2\\alpha}{M}\\langle K\\rangle\\quad\\Longrightarrow\\quad \\langle K\\rangle=\\frac{R_0p^2}{\\alpha}=\\frac{R_0h^2\\nu_0^2/c^2}{2h\\nu_0^2R_0\\beta/c^2}=\\boldsymbol{\\frac{h}{2\\beta}} \\]\n$\\langle K\\rangle=\\frac12k_{\\rm B}T$ より\n\\[ \\boldsymbol{T=\\frac{h}{\\beta k_{\\rm B}}} \\]\n加熱も冷却も散乱の頻度 $R_0$ と運動量 $p\\propto\\nu_0$ について同じ形で効くので，到達温度は光の強さにも振動数にもよらず，散乱率の振動数に対する「感度」$\\beta$ だけで決まる．\n\n\\textbf{(5) 最適な離調}\n\n$\\Delta=\\nu'-\\nu_{\\rm A}$ とおくと $R=\\dfrac{R_{\\max}}{1+\\Delta^2/\\gamma^2}$ で，$\\beta$ は $R$ の相対的な変化率 $\\dfrac{1}{R}\\dfrac{dR}{d\\nu'}$ を $\\Delta=-\\delta$ で評価したものだから\n\\[ \\beta=\\frac{1}{R}\\frac{dR}{d\\Delta}\\bigg|_{\\Delta=-\\delta}=\\frac{-2\\Delta/\\gamma^2}{1+\\Delta^2/\\gamma^2}\\bigg|_{\\Delta=-\\delta}=\\frac{2\\delta}{\\gamma^2+\\delta^2} \\]\nよって\n\\[ T=\\frac{h}{k_{\\rm B}}\\cdot\\frac{\\gamma^2+\\delta^2}{2\\delta}=\\frac{h}{2k_{\\rm B}}\\left(\\frac{\\gamma^2}{\\delta}+\\delta\\right)\\ \\geqq\\ \\frac{h}{2k_{\\rm B}}\\cdot2\\gamma \\]\n（相加・相乗平均の関係）．等号は $\\delta=\\gamma$ のときで\n\\[ \\boldsymbol{\\delta=\\gamma,\\qquad T_{\\min}=\\frac{h\\gamma}{k_{\\rm B}}} \\]\n離調が小さすぎると共鳴曲線の頂上付近で傾きが小さく，大きすぎると裾で散乱そのものが減るので，曲線の傾きが相対的に最大になる半値の位置が最適になる．数値は\n\\[ T_{\\min}=\\frac{6.63\\times10^{-34}\\times4.9\\times10^{6}}{1.38\\times10^{-23}}\\approx\\boldsymbol{2.4\\times10^{-4}\\ \\mathrm{K}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "対向する2本の光を共鳴より少し低い振動数にすると，ドップラー効果で原子は常に向かってくる光をより多く散乱し，速度に比例する摩擦力 $-\\alpha v$ を受ける．一方，吸収・放出のたびの反跳はでたらめな向きなので $(Mv)^2$ を1回ごとに $p^2$ ずつ増やす加熱になり，両者のつり合いから到達温度 $k_{\\rm B}T=h/\\beta$ が光の強さによらず決まる（最適な離調は共鳴曲線の半値の位置）．"
+ },
+ "concepts": [
+  "photon",
+  "momentum-conservation",
+  "static-friction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "レーザー冷却",
+  "光子の運動量",
+  "ドップラー効果",
+  "反跳",
+  "酔歩",
+  "到達温度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200">
+  <defs>
+    <marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+    <marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+  </defs>
+  <!-- 左からのレーザー光 1 -->
+  <path d="M30,90 q7.5,-10 15,0 t15,0 t15,0 t15,0 t15,0 t15,0 t15,0 t15,0 t15,0 t15,0 t15,0 t15,0" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+  <line x1="210" y1="90" x2="232" y2="90" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+  <text x="30" y="65" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">光 1</text>
+  <!-- 右からのレーザー光 2 -->
+  <path d="M530,90 q-7.5,-10 -15,0 t-15,0 t-15,0 t-15,0 t-15,0 t-15,0 t-15,0 t-15,0 t-15,0 t-15,0 t-15,0 t-15,0" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+  <line x1="350" y1="90" x2="328" y2="90" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+  <text x="490" y="65" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">光 2</text>
+  <!-- 原子 -->
+  <circle cx="280" cy="90" r="14" fill="none" stroke="#222" stroke-width="1.6"/>
+  <text x="273" y="60" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">M</text>
+  <line x1="280" y1="122" x2="330" y2="122" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <text x="336" y="127" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">v</text>
+  <!-- x 軸 -->
+  <line x1="40" y1="170" x2="520" y2="170" stroke="#222" stroke-width="1" marker-end="url(#q-ak)"/>
+  <text x="526" y="175" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">x</text>
+</svg>

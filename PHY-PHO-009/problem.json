@@ -1,0 +1,143 @@
+{
+ "id": "PHY-PHO-009",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "光の運動量による透明球の捕捉（凸レンズとしての球と，強さの異なる2本の光線による重力下のつり合い）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "真空中にある屈折率 $n$ $(n>1)$，半径 $r$，質量 $M$ の透明な球に，細いレーザー光線を当てる．光は光子の流れで，仕事率 $P$ の光線は単位時間あたり大きさ $P/c$ の運動量を運ぶ（$c$ は真空中の光速）．球の表面での反射や光の吸収は無視し，光線が球を通り抜ける間に光子の運動量が変化した分と逆向きの力積を，球が受けるものとする．光線の太さは無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "図 (a) のように，入射光線の延長と球の中心 O との距離を $b$ とする．$b\\ll r$ のとき，光線が球を通過して向きを変える角 $\\delta$ を $n$，$r$，$b$ で表せ．小さい角 $x$ には $\\sin x\\fallingdotseq\\tan x\\fallingdotseq x$ を用いてよい．また，この球を「中心から距離 $b$ の光線を角 $b/f$ だけ曲げる薄い凸レンズ」とみなしたときの焦点距離 $f$ を $n$，$r$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の光線（仕事率 $P$）から球が受ける力の大きさ $F$ を $n$，$r$，$b$，$P$，$c$ で表し，その向きを答えよ．ただし，力のうち光線に平行な成分は $\\delta^2$ 程度の大きさなので無視する．"
+     },
+     {
+      "id": "3",
+      "tex": "図 (b) のように，鉛直面内で，鉛直線とそれぞれ角 $\\alpha$ $\\left(0<\\alpha<\\frac{\\pi}{2}\\right)$ をなして下から入射する光線1（仕事率 $P$）と光線2（仕事率 $\\beta P$，$0<\\beta\\le1$）が点 F で交わるように調整し，その近くに球を置いた．重力加速度の大きさを $g$ とし，F を原点として水平右向きに $x$ 軸，鉛直上向きに $y$ 軸をとる．光線1は右上向き，光線2は左上向きに進む．球の中心 O は F の近くにあり，(1)(2) の近似が使えるとする．まず $\\beta=1$ の場合に，球は O が F の真下にある位置で静止した．この位置のまわりで球が鉛直方向に微小振動するときの周期 $T_y$ を求めよ．また，水平方向に微小振動するときの周期 $T_x$ との比 $T_x/T_y$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "一般の $\\beta$ の場合に，球が静止しているとき，光線1，2から受ける力の大きさ $f_1$，$f_2$ と，O から光線1，2までの距離 $d_1$，$d_2$ を求めよ．さらに O の座標 $(x,\\,y)$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$n=1.5$，$r=2.0\\ \\mu\\text{m}$，球の密度 $1.05\\times10^3\\ \\text{kg/m}^3$，$P=10\\ \\text{mW}$，$\\beta=0.50$，$\\alpha=30^\\circ$，$g=9.8\\ \\text{m/s}^2$，$c=3.0\\times10^8\\ \\text{m/s}$ のとき，$d_1$ と O の座標 $x$，$y$ を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：光の運動量による透明球の捕捉（凸レンズとしての球と，強さの異なる2本の光線による重力下のつり合い）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：光の運動量による透明球の捕捉（凸レンズとしての球と，強さの異なる2本の光線による重力下のつり合い）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\delta=\\dfrac{2(n-1)b}{nr}$，$f=\\dfrac{nr}{2(n-1)}$"
+   },
+   {
+    "id": "2",
+    "tex": "$F=\\dfrac{2(n-1)Pb}{ncr}$，光線に垂直で，O から光線へ向かう向き（球は光線の方へ引き寄せられる）"
+   },
+   {
+    "id": "3",
+    "tex": "$T_y=\\dfrac{\\pi}{\\sin\\alpha}\\sqrt{\\dfrac{nMcr}{(n-1)P}}$，$\\dfrac{T_x}{T_y}=\\tan\\alpha$"
+   },
+   {
+    "id": "4",
+    "tex": "$f_1=f_2=\\dfrac{Mg}{2\\sin\\alpha}$，$d_1=\\dfrac{nMgcr}{4(n-1)P\\sin\\alpha}$，$d_2=\\dfrac{d_1}{\\beta}$，$x=-\\dfrac{(1-\\beta)\\,nMgcr}{8\\beta(n-1)P\\sin\\alpha\\cos\\alpha}$，$y=-\\dfrac{(1+\\beta)\\,nMgcr}{8\\beta(n-1)P\\sin^2\\alpha}$"
+   },
+   {
+    "id": "5",
+    "tex": "$d_1\\fallingdotseq3.1\\times10^{-8}\\ \\text{m}$，$x\\fallingdotseq-1.8\\times10^{-8}\\ \\text{m}$，$y\\fallingdotseq-9.3\\times10^{-8}\\ \\text{m}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 曲がる角}　入射角を $\\theta$，屈折角を $\\phi$ とすると，入射点で O に引いた半径と光線のなす角が $\\theta$ なので $\\sin\\theta=\\dfrac{b}{r}$，屈折の法則より $\\sin\\theta=n\\sin\\phi$．球の中の光線は O を通る直線に関して対称な弦になり，出口でも入射角 $\\phi$，屈折角 $\\theta$ となる．入口と出口でそれぞれ $\\theta-\\phi$ ずつ，同じ向き（O の側）に曲がるので\n\\[ \\delta=2(\\theta-\\phi)\\fallingdotseq2\\left(\\frac{b}{r}-\\frac{b}{nr}\\right)=\\boldsymbol{\\frac{2(n-1)b}{nr}} \\]\n$\\delta=b/f$ とおくと $f=\\boldsymbol{\\dfrac{nr}{2(n-1)}}$．$\\delta$ が $b$ に比例するので，球は（中心付近の光線に対して）凸レンズと同じはたらきをする．\n\n\\textbf{(2) 光から受ける力}　単位時間あたりに通過する光子の運動量は大きさ $p=P/c$ で，向きだけが角 $\\delta$ 変わる．運動量の変化は大きさ $2p\\sin\\frac{\\delta}{2}\\fallingdotseq p\\delta$ で，向きはほぼ光線に垂直に「光線が曲がった側」すなわち O の側である（光線に平行な成分 $p(1-\\cos\\delta)\\fallingdotseq\\frac12p\\delta^2$ は無視する）．球はその反作用を受けるので\n\\[ F=\\frac{P}{c}\\,\\delta=\\boldsymbol{\\frac{2(n-1)Pb}{ncr}} \\]\n向きは\\textbf{光線に垂直で，O から光線へ向かう向き}．すなわち球はずれた量 $b$ に比例する力で光線の方へ引き戻され，光線はばね定数 $k=\\dfrac{2(n-1)P}{ncr}$ のばねのようにはたらく．\n\n\\textbf{(3) $\\beta=1$ の微小振動}　光線1，2の進む向きの単位ベクトルは $\\vec u_1=(\\sin\\alpha,\\cos\\alpha)$，$\\vec u_2=(-\\sin\\alpha,\\cos\\alpha)$，それに垂直で上向き成分をもつ単位ベクトルは $\\vec n_1=(-\\cos\\alpha,\\sin\\alpha)$，$\\vec n_2=(\\cos\\alpha,\\sin\\alpha)$ である．O の位置ベクトルを $\\vec r$ とすると，光線 $i$ からの距離（符号つき）は $\\vec r\\cdot\\vec n_i$ で，(2) より光線 $i$ からの力は $-k_i(\\vec r\\cdot\\vec n_i)\\,\\vec n_i$（$k_1=k$，$k_2=\\beta k$）．\n\n$\\beta=1$ では静止位置は対称性から F の真下．そこから $(\\Delta x,\\Delta y)$ ずれると力の変化は $-k\\sum_i(\\Delta\\vec r\\cdot\\vec n_i)\\vec n_i$ で，成分を計算すると\n\\[ \\Delta F_x=-2k\\cos^2\\alpha\\,\\Delta x,\\qquad \\Delta F_y=-2k\\sin^2\\alpha\\,\\Delta y \\]\n（交差項は2本で打ち消し合う）．重力は一定なので振動の中心をずらすだけで周期には効かない．よって\n\\[ T_y=2\\pi\\sqrt{\\frac{M}{2k\\sin^2\\alpha}}=\\boldsymbol{\\frac{\\pi}{\\sin\\alpha}\\sqrt{\\frac{nMcr}{(n-1)P}}},\\qquad \\frac{T_x}{T_y}=\\sqrt{\\frac{2k\\sin^2\\alpha}{2k\\cos^2\\alpha}}=\\boldsymbol{\\tan\\alpha} \\]\n光線が鉛直に近い（$\\alpha$ が小さい）ほど，鉛直方向の捕捉は弱くなる．\n\n\\textbf{(4) 一般の $\\beta$ でのつり合い}　光線 $i$ からの力は $\\vec n_i$ の向き（O が光線より下にあるので上向き成分をもつ）で大きさ $f_i$ とおける．つり合いの式\n\\[ x\\text{成分：}-f_1\\cos\\alpha+f_2\\cos\\alpha=0,\\qquad y\\text{成分：}(f_1+f_2)\\sin\\alpha-Mg=0 \\]\nより\n\\[ f_1=f_2=\\boldsymbol{\\frac{Mg}{2\\sin\\alpha}} \\]\n力の大きさは光線の強さによらず，重力を2本の光線に垂直な向きに分解するだけで決まる．強さの違いはずれの大きさに現れ，$f_i=k_id_i$ より\n\\[ d_1=\\frac{Mg}{2k\\sin\\alpha}=\\boldsymbol{\\frac{nMgcr}{4(n-1)P\\sin\\alpha}},\\qquad d_2=\\frac{Mg}{2\\beta k\\sin\\alpha}=\\boldsymbol{\\frac{d_1}{\\beta}} \\]\nO は両方の光線の下側にあるので $\\vec r\\cdot\\vec n_1=-d_1$，$\\vec r\\cdot\\vec n_2=-d_2$，すなわち\n\\[ -x\\cos\\alpha+y\\sin\\alpha=-d_1,\\qquad x\\cos\\alpha+y\\sin\\alpha=-d_2 \\]\nこれを解いて\n\\[ x=\\frac{d_1-d_2}{2\\cos\\alpha}=\\boldsymbol{-\\frac{(1-\\beta)\\,nMgcr}{8\\beta(n-1)P\\sin\\alpha\\cos\\alpha}},\\qquad y=-\\frac{d_1+d_2}{2\\sin\\alpha}=\\boldsymbol{-\\frac{(1+\\beta)\\,nMgcr}{8\\beta(n-1)P\\sin^2\\alpha}} \\]\n$\\beta<1$ では O は F の左下（弱い光線2から遠ざかる側）にずれる．\n\n\\textbf{(5) 数値}　$M=\\frac43\\pi(2.0\\times10^{-6})^3\\times1.05\\times10^3\\fallingdotseq3.52\\times10^{-14}\\ \\text{kg}$，$Mg\\fallingdotseq3.45\\times10^{-13}\\ \\text{N}$．$k=\\dfrac{2\\times0.5\\times1.0\\times10^{-2}}{1.5\\times3.0\\times10^8\\times2.0\\times10^{-6}}\\fallingdotseq1.11\\times10^{-5}\\ \\text{N/m}$．\n\\[ d_1=\\frac{Mg}{2k\\sin30^\\circ}\\fallingdotseq\\boldsymbol{3.1\\times10^{-8}\\ \\text{m}},\\quad d_2=6.2\\times10^{-8}\\ \\text{m} \\]\n\\[ x=\\frac{d_1-d_2}{2\\cos30^\\circ}\\fallingdotseq\\boldsymbol{-1.8\\times10^{-8}\\ \\text{m}},\\qquad y=-\\frac{d_1+d_2}{2\\sin30^\\circ}\\fallingdotseq\\boldsymbol{-9.3\\times10^{-8}\\ \\text{m}} \\]\n$d_1,d_2\\ll r$ であり，$\\delta\\fallingdotseq\\dfrac{2(n-1)}{n}\\cdot\\dfrac{d_2}{r}\\sim10^{-2}$ と小さいので近似は妥当である（無視した光線方向の成分は，垂直成分の $\\delta/2\\sim0.5\\%$ 程度）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "屈折で光子の運動量の向きが変わる反作用として，透明球は光線からのずれ $b$ に比例する力で光線側へ引かれる（球は焦点距離 $nr/2(n-1)$ の凸レンズと同じで，光線は「ばね」になる）．2本の交差光線で重力を支えるとき，各光線の力は光線に垂直なので，その大きさは光線の強さによらず重力の分解だけで決まり，強さの違いはずれの量（強さに反比例）として現れる．"
+ },
+ "concepts": [
+  "photon",
+  "momentum-conservation",
+  "equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "光の運動量",
+  "光ピンセット",
+  "屈折",
+  "ばね定数",
+  "力のつり合い"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

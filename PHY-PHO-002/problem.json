@@ -1,0 +1,134 @@
+{
+ "id": "PHY-PHO-002",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "光電効果による孤立したコンデンサーの帯電と極板間隔の変化",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，面積 $S$ の2枚の金属板 K，A を間隔 $d$ で平行に向かい合わせ，真空中に置く．どちらの極板もどこにも接続されておらず，初めはどちらも帯電していない．極板 K（仕事関数 $W$）だけに振動数 $\\nu$ の光を当て続ける（$h\\nu>W$）．K から飛び出した光電子のうち A に達したものは A に吸収される．プランク定数を $h$，電気素量を $e$ とし，この平行板コンデンサーの電気容量を $C$（間隔 $d$ のとき）とする．極板間の電場は一様とみなし，A からの光電子の放出と，極板の材質の違いによる接触電位差は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "十分に時間がたつと，光電子は A に達しなくなる．このときの K，A 間の電位差 $V_1$ と，A の電荷 $Q_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の状態から光を当て続けたまま，極板間隔をゆっくりと $\\dfrac{d}{2}$ にする．十分に時間がたった後の A の電荷と，この操作の間に新たに A に達した電子の数を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の操作の間に，極板を動かす外力がした仕事を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "次に光を止め，極板間隔をゆっくりと $d$ に戻す．このときの K，A 間の電位差と，外力がした仕事を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "その後，振動数 $\\nu'$ の光を K に当てる．光電子が再び A に達するための $\\nu'$ の条件を，$h,\\ \\nu,\\ W$ で表せ．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "解答は，$V_1$ を用いずに $h,\\ \\nu,\\ W,\\ e,\\ C$ で表せ．"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：光電効果による孤立したコンデンサーの帯電と極板間隔の変化",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V_1=\\dfrac{h\\nu-W}{e}$，$Q_1=-\\dfrac{C(h\\nu-W)}{e}$"
+   },
+   {
+    "id": "2",
+    "tex": "A の電荷 $-\\dfrac{2C(h\\nu-W)}{e}$，電子数 $\\dfrac{C(h\\nu-W)}{e^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$-\\dfrac{C(h\\nu-W)^2}{2e^2}$"
+   },
+   {
+    "id": "4",
+    "tex": "電位差 $\\dfrac{2(h\\nu-W)}{e}$，仕事 $\\dfrac{C(h\\nu-W)^2}{e^2}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\nu'>2\\nu-\\dfrac{W}{h}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　電子が A にたまると A は負，K は正に帯電し，極板間に電子を K へ押し戻す電場ができる．K から飛び出す光電子の運動エネルギーの最大値は $K_{\\max}=h\\nu-W$．電子が A に達するには，極板に垂直な速度成分による運動エネルギーで電位差 $V$ を越えなければならないが，それが最も大きいのは $K_{\\max}$ で垂直に飛び出した電子である．$eV=K_{\\max}$ となると，どの電子も A に届かなくなる．\n\\[ \\boldsymbol{V_1=\\frac{h\\nu-W}{e}},\\qquad \\boldsymbol{Q_1=-CV_1=-\\frac{C(h\\nu-W)}{e}} \\]\n\n\\textbf{(2)}　極板間隔を縮めると容量が増え，電荷が一定なら電位差は下がる．すると再び光電子が A に届くようになり，電位差が $V_1$ に戻るまで電子が移る．ゆっくり動かすので，操作中も電位差は常に $V_1$ に保たれる．間隔 $\\frac{d}{2}$ での容量は $2C$ なので，A の電荷は\n\\[ \\boldsymbol{-2CV_1=-\\frac{2C(h\\nu-W)}{e}} \\]\n新たに移った電気量は $CV_1$ だから，電子数は $\\boldsymbol{\\dfrac{CV_1}{e}=\\dfrac{C(h\\nu-W)}{e^2}}$．\n\n\\textbf{(3)}　\\textbf{エネルギー収支で解く．}静電エネルギーの変化は\n\\[ \\Delta U=\\frac12(2C)V_1^2-\\frac12CV_1^2=\\frac12CV_1^2 \\]\n新たな電子が K から A へ電位差 $V_1$ を逆らって移るとき，電荷 $CV_1$ の移動で電場は $CV_1\\cdot V_1$ のエネルギーを受け取る（これは光子のエネルギーに由来する）．外力の仕事を $W_{\\mathrm{ext}}$ とすると $\\Delta U=W_{\\mathrm{ext}}+CV_1^2$．\n\\[ W_{\\mathrm{ext}}=\\frac12CV_1^2-CV_1^2=-\\frac12CV_1^2=\\boldsymbol{-\\frac{C(h\\nu-W)^2}{2e^2}} \\]\n\\textbf{別解（力から）．}間隔 $x$ のとき電荷は $Q=\\dfrac{\\varepsilon_0SV_1}{x}$，極板間の引力は $F=\\dfrac{Q^2}{2\\varepsilon_0S}=\\dfrac{\\varepsilon_0SV_1^2}{2x^2}$．ゆっくり動かすので外力は引力とつり合い，間隔を広げる向きにはたらく．極板の移動は間隔を縮める向きなので\n\\[ W_{\\mathrm{ext}}=-\\int_{d/2}^{d}\\frac{\\varepsilon_0SV_1^2}{2x^2}\\,dx=-\\frac{\\varepsilon_0SV_1^2}{2d}=-\\frac12CV_1^2 \\]\nとなり一致する．\n\n\\textbf{(4)}　光がないので電荷は $2CV_1$ のまま．容量が $C$ に戻るので電位差は\n\\[ \\frac{2CV_1}{C}=2V_1=\\boldsymbol{\\frac{2(h\\nu-W)}{e}} \\]\n電子はもともと K から A への向きにしか移らないので，電位差が $V_1$ を超えても元に戻らない．外力の仕事は静電エネルギーの増加に等しく\n\\[ \\frac{(2CV_1)^2}{2C}-\\frac{(2CV_1)^2}{2\\cdot2C}=CV_1^2=\\boldsymbol{\\frac{C(h\\nu-W)^2}{e^2}} \\]\n\n\\textbf{(5)}　電子が A に届くには $h\\nu'-W>e\\cdot2V_1=2(h\\nu-W)$．\n\\[ \\boldsymbol{\\nu'>2\\nu-\\frac{W}{h}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "孤立した極板間では，光電子が移るたびに逆電圧が育ち，最大運動エネルギーに等しい電位差で流れが止まる．その後に容量を変えると，電位差が阻止電圧より下がる向きにだけ電子が補充され，上がる向きでは電荷が保存されるという一方向性が生じ，エネルギー収支には光電子が電場に対してした仕事が入る．"
+ },
+ "concepts": [
+  "photon",
+  "work-energy",
+  "capacitor"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "光電効果",
+  "阻止電圧",
+  "コンデンサー",
+  "静電エネルギー",
+  "外力の仕事"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 330">
+  <defs>
+    <marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+    <marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+  <marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker></defs>
+  <!-- (a) view within plane Sigma -->
+  <text x="20" y="24" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">(a) 平面 Σ 内の配置</text>
+  <!-- A(110,230) B(310,230) D(160,90) C(360,90) -->
+  <line x1="30" y1="230" x2="108" y2="230" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <circle cx="30" cy="230" r="4" fill="#222"/>
+  <text x="18" y="252" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">N</text>
+  <text x="34" y="220" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">中性子</text>
+  <line x1="110" y1="230" x2="308" y2="230" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <line x1="110" y1="230" x2="159" y2="92" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <line x1="310" y1="230" x2="359" y2="92" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <line x1="160" y1="90" x2="358" y2="90" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <line x1="360" y1="90" x2="418" y2="90" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+  <rect x="420" y="78" width="22" height="24" fill="none" stroke="#222" stroke-width="1.6"/>
+  <text x="424" y="70" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">E</text>
+  <text x="448" y="95" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">検出器</text>
+  <!-- crystals: thin slabs -->
+  <g stroke="#222" stroke-width="3" stroke-linecap="round">
+    <line x1="88" y1="246" x2="132" y2="214"/><line x1="288" y1="246" x2="332" y2="214"/>
+    <line x1="138" y1="106" x2="182" y2="74"/><line x1="338" y1="106" x2="382" y2="74"/>
+  </g>
+  <g font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">
+    <text x="116" y="262">A</text><text x="316" y="262">B</text><text x="146" y="70">D</text><text x="368" y="122">C</text>
+  </g>
+  <!-- ell dimension -->
+  <line x1="110" y1="280" x2="310" y2="280" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+  <line x1="110" y1="248" x2="110" y2="288" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="310" y1="248" x2="310" y2="288" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="204" y="300" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">ℓ</text>
+  <!-- s dimension -->
+  <line x1="70" y1="90" x2="155" y2="90" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="70" y1="92" x2="70" y2="228" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+  <text x="54" y="166" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">s</text>
+  <text x="200" y="58" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">結晶板（薄い）</text><line x1="198" y1="56" x2="178" y2="76" stroke="#222" stroke-width="0.8"/>
+  <!-- (b) side view along AB -->
+  <text x="462" y="160" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">(b) AB の方向から見た図</text>
+  <line x1="480" y1="280" x2="600" y2="280" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <text x="560" y="298" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">水平</text>
+  <!-- plane line from (500,280) at angle 50deg length 110 -> (570.7,195.7) -->
+  <line x1="500" y1="280" x2="570.7" y2="195.7" stroke="#222" stroke-width="1.6"/>
+  <circle cx="500" cy="280" r="4" fill="#222"/>
+  <circle cx="570.7" cy="195.7" r="4" fill="#222"/>
+  <text x="470" y="296" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">A, B</text>
+  <text x="578" y="196" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">D, C</text>
+  <text x="540" y="186" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">平面 Σ</text>
+  <path d="M 530 280 A 30 30 0 0 0 519.3 257" fill="none" stroke="#222" stroke-width="1"/>
+  <text x="534" y="268" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">α</text>
+  <line x1="620" y1="225" x2="620" y2="262" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+  <text x="628" y="250" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#c0392b">g</text>
+</svg>

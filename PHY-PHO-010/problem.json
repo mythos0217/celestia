@@ -1,0 +1,139 @@
+{
+ "id": "PHY-PHO-010",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "直角に散乱された光子による粒子の反跳と，動く光源の発光時間の前後での違い（測定から入射光子の振動数を逆算）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "真空中で，静止している質量 $m$ の粒子1に振動数 $\\nu$ の光子が当たり，振動数 $\\nu'$ の光子が入射光子の進行方向に対して直角の向きに散乱された．粒子1は，入射光子の進行方向と角 $\\varphi$ をなす向きに速さ $u$ で動き出した．粒子1の内部の状態は変わらない．プランク定数を $h$，光速を $c$ とし，$u\\ll c$ なので粒子の運動エネルギーは $\\frac12mu^2$，運動量は $mu$ としてよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "運動量保存（入射方向と散乱方向の2成分）とエネルギー保存の式を書き，$u$ を $c,\\ \\varphi$ で表せ．また，$u\\ll c$ であるために $\\varphi$ はどのような値でなければならないか．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\nu$，$\\nu'$ を $m,\\ c,\\ h,\\ \\varphi$ で表せ．さらに，散乱による光の波長の変化 $\\lambda'-\\lambda$ を $\\varphi$ を用いて表し，それが $\\dfrac{h}{mc}$ にほぼ等しいことを示せ．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "粒子1は，その進路上に静止していた質量 $2m$ の粒子2に衝突して一体となり（粒子3），一定の速度で動きながら，衝突で生じた内部エネルギーを使って光を放出した．光の放出は，粒子3の進路上の地上の時計で時間 $T$ の間続いた．粒子3の進路の延長上の前方と後方に観測者 A，B が静止しており，それぞれが光を受けとっていた時間は $\\tau_{\\rm A}$，$\\tau_{\\rm B}$ であった．光は光源の速度によらず速さ $c$ で進む．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "3",
+      "tex": "粒子3の速さ $w$ と，衝突で生じた内部エネルギー $\\Delta U$ を $m,\\ u$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\tau_{\\rm A}$，$\\tau_{\\rm B}$ を $T,\\ w,\\ c$ で表せ．逆に，測定値 $\\tau_{\\rm A},\\ \\tau_{\\rm B}$ から $w$ と $T$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\dfrac{\\tau_{\\rm B}}{\\tau_{\\rm A}}=\\rho$ として，はじめの光子の振動数 $\\nu$ を $m,\\ c,\\ h,\\ \\rho$ で表せ．ただし $\\dfrac wc$ の2次以上の項は無視する．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：直角に散乱された光子による粒子の反跳と，動く光源の発光時間の前後での違い（測定から入射光子の振動数を逆算）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{h\\nu}{c}=mu\\cos\\varphi$，$\\dfrac{h\\nu'}{c}=mu\\sin\\varphi$，$h\\nu-h\\nu'=\\dfrac12mu^2$；$u=2c(\\cos\\varphi-\\sin\\varphi)$，$\\varphi$ は $\\dfrac\\pi4$ よりわずかに小さい"
+   },
+   {
+    "id": "2",
+    "tex": "$\\nu=\\dfrac{2mc^2}{h}\\cos\\varphi(\\cos\\varphi-\\sin\\varphi)$，$\\nu'=\\dfrac{2mc^2}{h}\\sin\\varphi(\\cos\\varphi-\\sin\\varphi)$，$\\lambda'-\\lambda=\\dfrac{h}{mc\\sin2\\varphi}\\fallingdotseq\\dfrac{h}{mc}$"
+   },
+   {
+    "id": "3",
+    "tex": "$w=\\dfrac u3$，$\\Delta U=\\dfrac13mu^2$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\tau_{\\rm A}=T\\left(1-\\dfrac wc\\right)$，$\\tau_{\\rm B}=T\\left(1+\\dfrac wc\\right)$；$w=\\dfrac{\\tau_{\\rm B}-\\tau_{\\rm A}}{\\tau_{\\rm B}+\\tau_{\\rm A}}c$，$T=\\dfrac{\\tau_{\\rm A}+\\tau_{\\rm B}}{2}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\nu=\\dfrac{3mc^2}{\\sqrt2\\,h}\\cdot\\dfrac{\\rho-1}{\\rho+1}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　入射方向と散乱方向は直交するので，運動量保存はそれぞれの方向で\n\\[ \\frac{h\\nu}{c}=mu\\cos\\varphi,\\qquad \\frac{h\\nu'}{c}=mu\\sin\\varphi \\]\n（散乱光子は入射方向の運動量をもたず，粒子は散乱光子と逆向きの成分をもつ．）エネルギー保存は\n\\[ h\\nu-h\\nu'=\\frac12mu^2 \\]\n第1式・第2式を第3式に代入すると $mcu(\\cos\\varphi-\\sin\\varphi)=\\frac12mu^2$ より\n\\[ u=\\boldsymbol{2c(\\cos\\varphi-\\sin\\varphi)} \\]\n$u>0$ で，しかも $u\\ll c$ であるためには $\\cos\\varphi-\\sin\\varphi=\\sqrt2\\sin\\left(\\frac\\pi4-\\varphi\\right)$ が正で非常に小さくなければならない．すなわち $\\varphi$ は $\\boldsymbol{\\dfrac\\pi4}$ \\textbf{よりわずかに小さい}．光子の運動量の大きさがほぼ等しい（$\\nu'\\fallingdotseq\\nu$）ので，粒子は2つの光子の運動量のベクトル差の向き，ほぼ $45^\\circ$ に動き出す．\n\n\\textbf{(2)}　$u$ を代入して\n\\[ \\nu=\\frac{mcu\\cos\\varphi}{h}=\\boldsymbol{\\frac{2mc^2}{h}\\cos\\varphi(\\cos\\varphi-\\sin\\varphi)},\\qquad \\nu'=\\boldsymbol{\\frac{2mc^2}{h}\\sin\\varphi(\\cos\\varphi-\\sin\\varphi)} \\]\n\\[ \\lambda'-\\lambda=\\frac{c}{\\nu'}-\\frac{c}{\\nu}=\\frac{h}{2mc(\\cos\\varphi-\\sin\\varphi)}\\left(\\frac1{\\sin\\varphi}-\\frac1{\\cos\\varphi}\\right)=\\boldsymbol{\\frac{h}{mc\\sin2\\varphi}} \\]\n$\\varphi\\fallingdotseq\\frac\\pi4$ では $\\sin2\\varphi\\fallingdotseq1$ なので $\\lambda'-\\lambda\\fallingdotseq\\dfrac{h}{mc}$．これは散乱角 $90^\\circ$ のコンプトン散乱の式 $\\lambda'-\\lambda=\\dfrac{h}{mc}(1-\\cos90^\\circ)$ と一致する．\n\n\\textbf{(3)}　衝突は完全非弾性で，運動量保存より $mu=3mw$，$w=\\boldsymbol{\\dfrac u3}$．失われた運動エネルギーが内部エネルギーになるので\n\\[ \\Delta U=\\frac12mu^2-\\frac12(3m)\\left(\\frac u3\\right)^2=\\boldsymbol{\\frac13mu^2} \\]\n\n\\textbf{(4)}　時刻 0 に放出を始めた位置から A までの距離を $L$ とする．最初の光は時刻 $\\dfrac Lc$ に，最後の光は粒子3が A に $wT$ だけ近づいた位置から時刻 $T$ に出て，時刻 $T+\\dfrac{L-wT}{c}$ に A に届く．よって\n\\[ \\tau_{\\rm A}=T-\\frac{wT}{c}=\\boldsymbol{T\\left(1-\\frac wc\\right)},\\qquad \\tau_{\\rm B}=\\boldsymbol{T\\left(1+\\frac wc\\right)} \\]\n（B からは $wT$ だけ遠ざかるので遅れが加わる．）これらを連立して\n\\[ T=\\boldsymbol{\\frac{\\tau_{\\rm A}+\\tau_{\\rm B}}{2}},\\qquad w=\\boldsymbol{\\frac{\\tau_{\\rm B}-\\tau_{\\rm A}}{\\tau_{\\rm B}+\\tau_{\\rm A}}\\,c} \\]\n前方では短く，後方では長く受けとるが，その平均が放出の時間である．\n\n\\textbf{(5)}　$w=\\dfrac{\\rho-1}{\\rho+1}c$ と $u=3w$ より $\\cos\\varphi-\\sin\\varphi=\\dfrac{u}{2c}=\\dfrac{3(\\rho-1)}{2(\\rho+1)}$．これは $\\dfrac wc$ の1次の小さな量なので，(2) の $\\nu$ で $\\cos\\varphi$ を $\\cos\\dfrac\\pi4=\\dfrac1{\\sqrt2}$ としてよく（誤差は2次），\n\\[ \\nu\\fallingdotseq\\frac{2mc^2}{h}\\cdot\\frac1{\\sqrt2}\\cdot\\frac{3(\\rho-1)}{2(\\rho+1)}=\\boldsymbol{\\frac{3mc^2}{\\sqrt2\\,h}\\cdot\\frac{\\rho-1}{\\rho+1}} \\]\n離れた2人の観測者が光を受けとる時間の比だけから，はじめのγ線の振動数がわかる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "散乱光子が入射光子と直交するとき，運動量保存は直角をはさむ2成分の式になり，エネルギー保存と合わせると粒子の速さは $2c(\\cos\\varphi-\\sin\\varphi)$ と反跳角だけで決まって，非相対論的に扱えるのは反跳角が $45^\\circ$ にごく近いときに限られる（90°のコンプトン散乱に一致）．等速で動く光源が一定時間放出した光を受けとる時間は前方で $1-\\frac wc$ 倍，後方で $1+\\frac wc$ 倍となり，その比から光源の速さ，さらに入射光子の振動数がさかのぼって決まる．"
+ },
+ "concepts": [
+  "photon",
+  "restitution",
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "光子の運動量",
+  "コンプトン散乱",
+  "完全非弾性衝突",
+  "動く光源",
+  "逆算"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

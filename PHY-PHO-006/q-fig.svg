@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 305" width="440" height="305">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<circle cx="200" cy="115" r="75" fill="none" stroke="#222" stroke-width="1.6"/>
+<rect x="164" y="75" width="8" height="80" fill="#222"/>
+<rect x="230" y="75" width="8" height="80" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="156" y="122" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">K</text>
+<text x="246" y="122" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">P</text>
+<polyline points="306.0,4.0 302.7,2.6 302.1,5.3 302.4,9.5 300.3,10.0 296.6,7.8 294.5,8.4 294.8,12.5 294.2,15.2 290.9,13.8 287.6,12.4 287.0,15.1 287.3,19.3 285.3,19.8 281.5,17.7 279.4,18.2 279.7,22.3 279.1,25.0 275.8,23.6 272.5,22.3 271.9,25.0 272.2,29.1 270.2,29.6 266.4,27.5 264.4,28.0 264.7,32.1 264.0,34.8 260.7,33.5 257.5,32.1 256.8,34.8 257.1,38.9 255.1,39.4 251.3,37.3 249.3,37.8 249.6,42.0 248.9,44.7 245.7,43.3 242.4,41.9 241.7,44.6 242.0,48.7 240.0,49.3 236.2,47.1 234.2,47.6 234.5,51.8 233.9,54.5 230.6,53.1 227.3,51.7 226.7,54.4 227.0,58.5 224.9,59.1 221.1,56.9 219.1,57.5 219.4,61.6 218.8,64.3 215.5,62.9 212.2,61.5 211.6,64.2 211.9,68.4 209.8,68.9 206.0,66.7 204.0,67.3 204.3,71.4 203.7,74.1 200.4,72.7 197.1,71.3 196.5,74.0 196.8,78.2 194.7,78.7 191.0,76.6 188.9,77.1" fill="none" stroke="#1f5fbf" stroke-width="1.6"/>
+<line x1="190.33674450126188" y1="79.27291230870259" x2="180" y2="86" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<polyline points="334.0,4.0 330.7,2.6 330.1,5.3 330.4,9.4 328.3,10.0 324.6,7.8 322.5,8.4 322.8,12.5 322.2,15.2 318.9,13.8 315.6,12.4 315.0,15.1 315.3,19.2 313.2,19.8 309.5,17.6 307.4,18.2 307.7,22.3 307.1,25.0 303.8,23.6 300.5,22.2 299.9,24.9 300.2,29.1 298.1,29.6 294.4,27.4 292.3,28.0 292.6,32.1 292.0,34.8 288.7,33.4 285.4,32.0 284.8,34.7 285.1,38.9 283.1,39.4 279.3,37.2 277.2,37.8 277.5,41.9 276.9,44.6 273.6,43.2 270.3,41.8 269.7,44.5 270.0,48.7 268.0,49.2 264.2,47.0 262.1,47.6 262.4,51.7 261.8,54.4 258.5,53.0 255.2,51.6 254.6,54.3 254.9,58.5 252.9,59.0 249.1,56.8 247.0,57.4 247.3,61.5 246.7,64.2 243.4,62.8 240.1,61.4 239.5,64.1 239.8,68.3 237.8,68.8 234.0,66.6 231.9,67.2 232.2,71.3 231.6,74.0 228.3,72.6 225.0,71.2 224.4,73.9 224.7,78.1 222.7,78.6 218.9,76.4 216.8,77.0 217.1,81.1 216.5,83.8 213.2,82.4 209.9,81.0 209.3,83.7 209.6,87.9 207.6,88.4 203.8,86.3 201.7,86.8 202.0,90.9 201.4,93.6 198.1,92.2 194.8,90.8 194.2,93.5 194.5,97.7 192.5,98.2" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+<line x1="190.5836026790368" y1="97.12753072789818" x2="180" y2="104" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<text x="236" y="46" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf" text-anchor="end">λ<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<text x="346" y="22" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#c0392b" text-anchor="start">λ<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<line x1="168" y1="155" x2="168" y2="175" stroke="#222" stroke-width="1.6" />
+<line x1="168" y1="175" x2="60" y2="175" stroke="#222" stroke-width="1.6" />
+<line x1="60" y1="175" x2="60" y2="260" stroke="#222" stroke-width="1.6" />
+<line x1="60" y1="260" x2="170" y2="260" stroke="#222" stroke-width="1.6" />
+<line x1="234" y1="155" x2="234" y2="175" stroke="#222" stroke-width="1.6" />
+<line x1="234" y1="175" x2="340" y2="175" stroke="#222" stroke-width="1.6" />
+<line x1="340" y1="175" x2="340" y2="260" stroke="#222" stroke-width="1.6" />
+<line x1="340" y1="260" x2="230" y2="260" stroke="#222" stroke-width="1.6" />
+<rect x="170" y="250" width="60" height="20" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="200" y="292" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">R</text>
+<line x1="80" y1="248" x2="140" y2="248" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="105" y="240" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf" text-anchor="middle">i</text>
+<text x="160" y="243" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">＋</text>
+<text x="240" y="243" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">－</text>
+<text x="200" y="240" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">u</text>
+</svg>

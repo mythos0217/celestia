@@ -1,0 +1,136 @@
+{
+ "id": "PHY-PHO-014",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "床の上ではね返る中性子の量子化（重力中の物質波の定常状態と吸収板による選別）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平な床（中性子を完全にはね返す鏡）の上で，質量 $m$ の中性子が鉛直方向に弾性的にはね返りながら運動している．重力加速度の大きさを $g$，プランク定数を $h$ とし，床から測った最高点の高さを $H$ とする（中性子は水平方向にも一定の速さで動いているが，以下では鉛直方向の運動だけを考える）．\n\n中性子の物質波を考えると，このような往復運動では，床からの高さ $x$ における鉛直方向の運動量の大きさを $p(x)$ として，「$p(x)$ を $x$ について $0$ から $H$ まで足し合わせた量（$p$-$x$ グラフの面積）の2倍（1往復分）」が $h$ の整数倍になる運動だけが許されるとする：\n\\[ 2\\int_0^H p(x)\\,dx=nh\\qquad(n=1,2,3,\\dots). \\]\n必要なら $\\displaystyle\\int_0^H\\sqrt{H-x}\\,dx=\\frac23H^{\\frac32}$ を用いてよい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$p(x)$ を $m$，$g$，$H$，$x$ で表せ．さらに，許される最高点の高さ $H_n$ と，床を基準とした力学的エネルギー $E_n$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$m=1.675\\times10^{-27}\\ \\mathrm{kg}$，$g=9.80\\ \\mathrm{m/s^2}$，$h=6.63\\times10^{-34}\\ \\mathrm{J\\cdot s}$ として，$H_1$ を $\\mathrm{\\mu m}$ 単位で，$E_1$ を $\\mathrm{eV}$ 単位で，それぞれ有効数字2桁で求めよ．$1\\ \\mathrm{eV}=1.60\\times10^{-19}\\ \\mathrm J$ とする．"
+     },
+     {
+      "id": "3",
+      "tex": "$n$ 番目の運動で，床に当たる直前の中性子の物質波の波長 $\\lambda_n$ と $H_n$ の比 $\\lambda_n/H_n$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "床から高さ $s$ のところに，床と平行に中性子を吸収する板を置き，床と板のすき間に中性子を水平に通す．最高点が $s$ をこえる運動をしている中性子は板に吸収され，最高点が $s$ 以下の中性子だけが通り抜けるとする．$s=30\\ \\mathrm{\\mu m}$ のとき，通り抜けられるのはどの $n$ の中性子か．また，$s$ をいくら以下にすると中性子がまったく通り抜けられなくなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：床の上ではね返る中性子の量子化（重力中の物質波の定常状態と吸収板による選別）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：床の上ではね返る中性子の量子化（重力中の物質波の定常状態と吸収板による選別）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$p(x)=m\\sqrt{2g(H-x)}$，$H_n=\\left(\\dfrac{9n^2h^2}{32m^2g}\\right)^{\\frac13}$，$E_n=mgH_n=\\left(\\dfrac{9n^2h^2mg^2}{32}\\right)^{\\frac13}$"
+   },
+   {
+    "id": "2",
+    "tex": "$H_1=17\\ \\mathrm{\\mu m}$，$E_1=1.7\\times10^{-12}\\ \\mathrm{eV}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{\\lambda_n}{H_n}=\\dfrac{4}{3n}$"
+   },
+   {
+    "id": "4",
+    "tex": "$n=1,\\ 2$．$s\\le17\\ \\mathrm{\\mu m}$（$H_1$ 以下）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 運動量と量子化}　高さ $x$ での鉛直方向の速さ $u$ は，力学的エネルギー保存 $\\frac12mu^2+mgx=mgH$ より $u=\\sqrt{2g(H-x)}$．よって\n\\[ \\boldsymbol{p(x)=m\\sqrt{2g(H-x)}}. \\]\n与えられた積分を用いると\n\\[ \\int_0^Hp(x)\\,dx=m\\sqrt{2g}\\cdot\\frac23H^{\\frac32} \\]\n（解答図の面積）．量子化の条件は\n\\[ \\frac43m\\sqrt{2g}\\,H^{\\frac32}=nh\\quad\\therefore\\quad H^{\\frac32}=\\frac{3nh}{4m\\sqrt{2g}},\\qquad \\boldsymbol{H_n=\\left(\\frac{9n^2h^2}{32m^2g}\\right)^{\\frac13}}. \\]\n最高点では運動エネルギーが $0$ なので\n\\[ \\boldsymbol{E_n=mgH_n=\\left(\\frac{9n^2h^2mg^2}{32}\\right)^{\\frac13}} \\]\nで，$n^{2/3}$ に比例する（間隔が一定でもなく，$n^2$ に比例するのでもない）．\n\n\\textbf{(2) 数値}　\n\\[ \\frac{9h^2}{32m^2g}=\\frac{9(6.63\\times10^{-34})^2}{32(1.675\\times10^{-27})^2(9.80)}=4.50\\times10^{-15}\\ \\mathrm{m^3} \\]\nより $H_1=1.65\\times10^{-5}\\ \\mathrm m=\\boldsymbol{17\\ \\mathrm{\\mu m}}$．\n\\[ E_1=mgH_1=(1.675\\times10^{-27})(9.80)(1.65\\times10^{-5})=2.71\\times10^{-31}\\ \\mathrm J=\\boldsymbol{1.7\\times10^{-12}\\ \\mathrm{eV}}. \\]\n目に見えるほどの高さの「定常状態」が，きわめて小さなエネルギーで実現している．\n\n\\textbf{(3) 床での波長}　床での運動量は $p(0)=m\\sqrt{2gH_n}$ なので，量子化の条件は\n\\[ nh=\\frac43m\\sqrt{2g}\\,H_n^{\\frac32}=\\frac43\\,p(0)\\,H_n \\]\nと書ける．したがって $\\lambda_n=\\dfrac{h}{p(0)}=\\dfrac{4H_n}{3n}$，\n\\[ \\boldsymbol{\\frac{\\lambda_n}{H_n}=\\frac{4}{3n}} \\]\nで，$m$ や $g$ によらない．$n=1$ では物質波の波長が運動の範囲 $H_1$ より長く，「放物線を描いてはねる小球」という古典的な描像は成り立たない．\n\n\\textbf{(4) 吸収板による選別}　$H_n=H_1n^{2/3}$ より\n\\[ H_1=16.5\\ \\mathrm{\\mu m},\\quad H_2=16.5\\times2^{2/3}=26.2\\ \\mathrm{\\mu m},\\quad H_3=16.5\\times3^{2/3}=34.3\\ \\mathrm{\\mu m}. \\]\n$s=30\\ \\mathrm{\\mu m}$ では $H_n\\le s$ となる $\\boldsymbol{n=1,\\ 2}$ の中性子だけが通り抜ける．最も低い $H_1$ より $s$ を小さくすると，どの中性子も通れない．よって $\\boldsymbol{s\\le17\\ \\mathrm{\\mu m}}$（$H_1$ 以下）で通り抜ける中性子は $0$ になる．古典的には，最高点の低い中性子はどれだけ狭いすき間でも通れるはずであり，透過量が $0$ になるしきい値が存在することが量子化の証拠になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "重力場の中ではね返る粒子に物質波の量子化条件 $2\\int_0^Hp\\,dx=nh$ を課すと，$\\int p\\,dx\\propto H^{3/2}$ から最高点の高さは $n^{2/3}$ に比例する離散的な値になる．床での波長は $\\frac{4}{3n}H_n$ で質量や $g$ によらず，最低の状態では運動の範囲より長いので，すき間の高さで中性子を選別するとしきい値が現れる．"
+ },
+ "concepts": [
+  "photon",
+  "wave-basics",
+  "matter-wave"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "物質波",
+  "量子化条件",
+  "ド・ブロイ波長",
+  "重力",
+  "中性子",
+  "エネルギー準位"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

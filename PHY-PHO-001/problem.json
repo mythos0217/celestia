@@ -1,0 +1,122 @@
+{
+ "id": "PHY-PHO-001",
+ "schema": "celestia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "極性反転による油滴実験（無電場の落下速度を使わない電気素量の決定）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平に置いた間隔 $d$ の平行極板 P，Q の間に，切替スイッチ S によって向きを反転できる電圧 $V$ を加える．極板間の油滴（油の密度 $\\rho$）1個を顕微鏡で観察する．油滴は半径 $a$ の球とみなせ，空気（密度 $\\rho_0$）から浮力を受け，速さ $u$ で動くとき大きさ $6\\pi\\eta a u$（$\\eta$ は空気の粘性率）の抵抗力を受ける．重力加速度の大きさを $g$ とする．油滴は負に帯電していて，その電荷を $-q\\ (q>0)$ とする．油滴はすぐに一定の速さに達するものとし，その速さを測定する．この実験では電圧 $0$ での落下の速さは測定しない．\n\\begin{itemize}\n\\item 極性①：P を高電位にする．このときの油滴の速度を，鉛直上向きを正として $v_1$ とする．\n\\item 極性②：Q を高電位にする．このとき油滴は下降する．その速さを $v_2$ とする．\n\\end{itemize}"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$a$ を $v_1,\\ v_2,\\ \\eta,\\ \\rho,\\ \\rho_0,\\ g$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$q$ を $v_1,\\ v_2,\\ a,\\ \\eta,\\ d,\\ V$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ油滴に X 線を当てて電荷を変えながら測定し，次の結果を得た（速さの単位は $10^{-5}\\ \\mathrm{m/s}$）．\n\\begin{itemize}\n\\item 測定1：極性①で上昇 $3.98$，極性②で下降 $20.9$\n\\item 測定2：極性①で上昇 $13.3$，極性②で下降 $30.3$\n\\item 測定3：極性①でも下降 $2.24$，極性②で下降 $14.7$\n\\item 測定4：極性①で上昇 $7.10$，極性②で下降 $24.0$\n\\end{itemize}\n$d=6.00\\times10^{-3}\\ \\mathrm{m}$，$V=360\\ \\mathrm{V}$，$\\eta=1.82\\times10^{-5}\\ \\mathrm{Pa\\cdot s}$，$\\rho=875\\ \\mathrm{kg/m^3}$，$\\rho_0=1.20\\ \\mathrm{kg/m^3}$，$g=9.80\\ \\mathrm{m/s^2}$ として，油滴の半径 $a$ と電気素量 $e$ をそれぞれ有効数字3桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "測定3の電荷のまま極性①にして，油滴を極板間に静止させたい．加える電圧を有効数字3桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：極性反転による油滴実験（無電場の落下速度を使わない電気素量の決定）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$a=\\dfrac32\\sqrt{\\dfrac{\\eta(v_2-v_1)}{(\\rho-\\rho_0)g}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$q=\\dfrac{3\\pi\\eta a d(v_1+v_2)}{V}$"
+   },
+   {
+    "id": "3",
+    "tex": "$a=9.00\\times10^{-7}\\ \\mathrm{m}$，$e=1.60\\times10^{-19}\\ \\mathrm{C}$"
+   },
+   {
+    "id": "4",
+    "tex": "$4.89\\times10^{2}\\ \\mathrm{V}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{力のつり合い}　油滴は一定の速さで動くので力がつり合う．重力と浮力の合力（下向き）を\n\\[ w=\\frac43\\pi a^3(\\rho-\\rho_0)g \\]\nとし，静電気力の大きさを $qE=\\dfrac{qV}{d}$，抵抗力を $ku\\ (k=6\\pi\\eta a)$ とする．抵抗力は運動と逆向き．\n極性①（静電気力上向き，速度 $v_1$ は上向き正．$v_1<0$ でも同じ式）：\n\\[ \\frac{qV}{d}-w=kv_1 \\quad\\cdots\\text{①} \\]\n極性②（静電気力下向き，下降の速さ $v_2$）：\n\\[ \\frac{qV}{d}+w=kv_2 \\quad\\cdots\\text{②} \\]\n\n\\textbf{(1)}　②$-$①より $2w=k(v_2-v_1)$．静電気力が消え，重力（浮力込み）だけが残る：\n\\[ \\frac43\\pi a^3(\\rho-\\rho_0)g=3\\pi\\eta a(v_2-v_1)\\quad\\therefore\\ \\boldsymbol{a=\\frac32\\sqrt{\\frac{\\eta(v_2-v_1)}{(\\rho-\\rho_0)g}}} \\]\n$\\dfrac{v_2-v_1}{2}$ は，電圧 $0$ での落下の速さ $v_g$ に等しい．\n\n\\textbf{(2)}　①$+$②より $\\dfrac{2qV}{d}=k(v_1+v_2)$：\n\\[ \\boldsymbol{q=\\frac{3\\pi\\eta a d(v_1+v_2)}{V}} \\]\n和は電荷だけ，差は重力だけで決まり，電圧 $0$ での測定が要らない．\n\n\\textbf{(3)}　測定3では極性①でも下降しているので $v_1=-2.24$ とする（静電気力が重力より小さい）．\n$\\dfrac{v_2-v_1}{2}$ は順に $8.46,\\ 8.50,\\ 8.47,\\ 8.45$（$\\times10^{-5}$ m/s）でほぼ一定であり，同じ油滴であることが確かめられる．平均 $v_g=8.47\\times10^{-5}$ m/s を使って\n\\[ a=\\sqrt{\\frac{9\\eta v_g}{2(\\rho-\\rho_0)g}}=\\sqrt{\\frac{9\\times1.82\\times10^{-5}\\times8.47\\times10^{-5}}{2\\times873.8\\times9.80}}\\fallingdotseq \\boldsymbol{9.00\\times10^{-7}\\ \\mathrm{m}} \\]\n$\\dfrac{3\\pi\\eta a d}{V}=\\dfrac{3\\pi\\times1.82\\times10^{-5}\\times9.00\\times10^{-7}}{6.00\\times10^{4}}\\fallingdotseq2.573\\times10^{-15}$ なので，$v_1+v_2$（$24.88,\\ 43.6,\\ 12.46,\\ 31.1$）を掛けて\n\\[ q=6.40,\\ 11.22,\\ 3.21,\\ 8.00\\quad(\\times10^{-19}\\ \\mathrm{C}) \\]\n小さい順に $3.21,\\ 6.40,\\ 8.00,\\ 11.22$ と並べ，隣どうしの差は $3.19,\\ 1.60,\\ 3.22$．差はすべて約 $1.6$ の整数倍なので $e\\fallingdotseq1.6\\times10^{-19}$ C と見当がつき，各電荷はそれぞれ $2e,\\ 4e,\\ 5e,\\ 7e$．すべての測定を生かすため総和をとると\n\\[ (3.21+6.40+8.00+11.22)\\times10^{-19}=28.83\\times10^{-19}=(2+4+5+7)e=18e \\]\n\\[ \\therefore\\ \\boldsymbol{e\\fallingdotseq1.60\\times10^{-19}\\ \\mathrm{C}} \\]\n\n\\textbf{(4)}　静止させるには $\\dfrac{qV'}{d}=w$．①②より $\\dfrac{qV}{d}=\\dfrac{k(v_1+v_2)}{2}$，$w=\\dfrac{k(v_2-v_1)}{2}$ なので\n\\[ V'=V\\cdot\\frac{v_2-v_1}{v_1+v_2}=360\\times\\frac{14.7+2.24}{-2.24+14.7}\\fallingdotseq\\boldsymbol{4.89\\times10^2\\ \\mathrm{V}} \\]\n測定3で極性①でも下降したのは $V<V'$ だったためで，これと矛盾しない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電場の向きを反転した2回の終端速度について，力のつり合いの式の差をとると静電気力が消えて重力（したがって半径）が，和をとると重力が消えて電荷が決まる．電荷の値は差をとって最小単位の見当をつけ，総和で精度よく電気素量を求める．"
+ },
+ "concepts": [
+  "photon",
+  "equilibrium",
+  "coulomb-field"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ミリカンの実験",
+  "終端速度",
+  "電気素量",
+  "力のつり合い",
+  "データ処理"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

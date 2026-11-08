@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 290" width="640" height="290">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<rect x="110.0" y="50.7" width="18.0" height="57.3" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="110.0" y="152.0" width="18.0" height="57.3" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="130.0" y="52.3" width="18.0" height="55.7" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="130.0" y="152.0" width="18.0" height="55.7" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="150.0" y="53.8" width="18.0" height="54.2" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="150.0" y="152.0" width="18.0" height="54.2" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="170.0" y="55.4" width="18.0" height="52.6" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="170.0" y="152.0" width="18.0" height="52.6" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="190.0" y="57.1" width="18.0" height="50.9" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="190.0" y="152.0" width="18.0" height="50.9" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="210.0" y="58.9" width="18.0" height="49.1" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="210.0" y="152.0" width="18.0" height="49.1" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="230.0" y="60.7" width="18.0" height="47.3" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="230.0" y="152.0" width="18.0" height="47.3" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="250.0" y="62.6" width="18.0" height="45.4" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="250.0" y="152.0" width="18.0" height="45.4" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="270.0" y="64.6" width="18.0" height="43.4" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="270.0" y="152.0" width="18.0" height="43.4" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="290.0" y="66.8" width="18.0" height="41.2" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="290.0" y="152.0" width="18.0" height="41.2" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="310.0" y="69.1" width="18.0" height="38.9" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="310.0" y="152.0" width="18.0" height="38.9" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="330.0" y="71.6" width="18.0" height="36.4" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="330.0" y="152.0" width="18.0" height="36.4" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="350.0" y="74.3" width="18.0" height="33.7" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="350.0" y="152.0" width="18.0" height="33.7" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="370.0" y="77.3" width="18.0" height="30.7" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="370.0" y="152.0" width="18.0" height="30.7" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="390.0" y="80.8" width="18.0" height="27.2" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="390.0" y="152.0" width="18.0" height="27.2" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="410.0" y="85.1" width="18.0" height="22.9" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="410.0" y="152.0" width="18.0" height="22.9" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="430.0" y="91.4" width="18.0" height="16.6" fill="#ccc" stroke="#222" stroke-width="1"/>
+<rect x="430.0" y="152.0" width="18.0" height="16.6" fill="#ccc" stroke="#222" stroke-width="1"/>
+<text x="280.0" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">巻き数を変えたコイル（磁場 </text>
+<text x="370.0" y="30" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">B</text>
+<text x="380.0" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">(</text>
+<text x="386.0" y="30" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">x</text>
+<text x="394.0" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">)）</text>
+<line x1="30" y1="130" x2="560" y2="130" stroke="#888" stroke-width="1" stroke-dasharray="6 3"/>
+<line x1="470" y1="240" x2="560" y2="240" stroke="#222" stroke-width="1.2" marker-end="url(#q-ak)"/>
+<text x="565" y="244" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">x</text>
+<line x1="110" y1="152" x2="110" y2="252" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="450" y1="152" x2="450" y2="252" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="100" y="268" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="middle">x</text>
+<text x="118" y="268" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">= 0</text>
+<text x="434" y="268" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="middle">x</text>
+<text x="446" y="268" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">=</text>
+<text x="458" y="268" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="middle">L</text>
+<rect x="20" y="105" width="34" height="50" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="37" y="175" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">原子源</text>
+<circle cx="70" cy="130" r="4" fill="#222"/>
+<circle cx="90" cy="130" r="4" fill="#222"/>
+<line x1="64" y1="118" x2="104" y2="118" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="84" y="112" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf" text-anchor="middle">V</text>
+<polyline points="600.0,136.0 598.0,133.1 596.0,134.2 594.0,137.8 592.0,138.9 590.0,136.0 588.0,133.1 586.0,134.2 584.0,137.8 582.0,138.9 580.0,136.0 578.0,133.1 576.0,134.2 574.0,137.8 572.0,138.9 570.0,136.0 568.0,133.1 566.0,134.2 564.0,137.8 562.0,138.9 560.0,136.0 558.0,133.1 556.0,134.2 554.0,137.8 552.0,138.9 550.0,136.0 548.0,133.1 546.0,134.2 544.0,137.8 542.0,138.9 540.0,136.0 538.0,133.1 536.0,134.2 534.0,137.8 532.0,138.9 530.0,136.0 528.0,133.1 526.0,134.2 524.0,137.8 522.0,138.9 520.0,136.0 518.0,133.1 516.0,134.2 514.0,137.8 512.0,138.9 510.0,136.0 508.0,133.1 506.0,134.2 504.0,137.8 502.0,138.9 500.0,136.0 498.0,133.1 496.0,134.2 494.0,137.8 492.0,138.9 490.0,136.0 488.0,133.1 486.0,134.2 484.0,137.8 482.0,138.9" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+<line x1="482.0" y1="136.0" x2="470" y2="136" stroke="#c0392b" stroke-width="1.8" marker-end="url(#q-ar)"/>
+<text x="540" y="160" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="middle">レーザー光</text>
+<text x="498" y="178" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">（振動数 </text>
+<text x="556" y="178" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="start">ν<tspan baseline-shift="sub" font-size="10">L</tspan></text>
+<text x="572" y="178" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222" text-anchor="start">）</text>
+</svg>
