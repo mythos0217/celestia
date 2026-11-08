@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+<defs><marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<line x1="50" y1="200" x2="313.0" y2="200" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+<text x="321.0" y="205" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">x</text>
+<circle cx="199.5" cy="200" r="80.5" fill="none" stroke="#1f5fbf" stroke-width="1.6"/>
+<circle cx="199.5" cy="200" r="139.5" fill="none" stroke="#c0392b" stroke-width="1.2" stroke-dasharray="6 3"/>
+<circle cx="199.5" cy="200" r="2.5" fill="#222"/><text x="199.4744111674235" y="218" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">G</text>
+<text x="56" y="218" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">O</text>
+<line x1="60" y1="200" x2="250.52558883257652" y2="90.00000000000001" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="254.52558883257652" y="90.00000000000001" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="start">α = 30°</text>
+<line x1="60" y1="200" x2="199.5" y2="119.5" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/><line x1="199.4744111674235" y1="200" x2="199.4744111674235" y2="119.47441116742351" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="207.4744111674235" y="111.47441116742351" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">χ = 90°</text>
+<line x1="60" y1="200" x2="199.5" y2="339.5" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/><text x="205.4744111674235" y="355.4744111674235" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">β = 45°</text>
+<line x1="60" y1="200" x2="129.7" y2="159.7" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/><line x1="199.4744111674235" y1="200" x2="129.73720558371178" y2="159.73720558371176" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="123.73720558371178" y="151.73720558371176" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="end">χ = 150°</text>
+<line x1="60" y1="200" x2="320.3" y2="269.7" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/><text x="326.2627944162883" y="285.7372055837117" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">β = 15°</text>
+<text x="390" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">青：A の速度の終点の円</text>
+<text x="390" y="62" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">赤：B の速度の終点の円</text>
+<text x="390" y="84" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">（どちらも中心は重心速度 G）</text>
+</svg>

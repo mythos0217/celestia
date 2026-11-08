@@ -1,0 +1,135 @@
+{
+ "id": "PHY-MOM-019",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "動ける台のスロープと壁の間を往復する小球（速度平面での折り返しと相互作用の回数）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平な床の上に，質量 $M$ の台 S が置かれている．S の上面は床から高さ $h$ の水平面で，その右側は床までなめらかにつながる曲面（スロープ）になっており，スロープの下端で面は水平になる．S の右方の離れた位置には，床に垂直ななめらかな壁が固定されている．S の上面の右端に質量 $m\\ (m<M)$ の小球を置き，静かにスロープへ押し出したところ，小球はスロープをすべり下りて床の上を右へ進み，S は左へ動き出した．小球と壁の衝突は弾性衝突とし，小球は S の面や床から離れず，S の上面に戻ることもないものとする．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "小球がスロープを下り終えたときの，床に対する小球と S の速さ $u$，$w$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "床の上を左向きに進む小球が S に追いつき，スロープを上って再び下り終えるまでの過程は，小球と S の弾性衝突と同じ結果を与える．その理由を説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$M=3m$ とする．壁ではね返った小球は S に追いつき，スロープを上ってから下りた．小球が達する最高点の床からの高さ $l$ と，下り終えた後の小球と S の速度を求めよ．また，その後の運動のようすを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "一般の $M\\ (>m)$ について，小球と S の速度を左向きを正として $v$，$V$ とし，座標平面上の点 $\\left(\\sqrt m\\,v,\\ \\sqrt M\\,V\\right)$ を考える．壁との衝突とスロープでの相互作用によってこの点がどのように移るかを調べ，小球がスロープを上る回数がちょうど2回になる $\\dfrac Mm$ の範囲を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：動ける台のスロープと壁の間を往復する小球（速度平面での折り返しと相互作用の回数）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：動ける台のスロープと壁の間を往復する小球（速度平面での折り返しと相互作用の回数）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$u=\\sqrt{\\frac{2Mgh}{M+m}}$，$w=\\frac mM\\sqrt{\\frac{2Mgh}{M+m}}$"
+   },
+   {
+    "id": "2",
+    "tex": "水平方向の運動量と力学的エネルギーが保存し，下り終えたとき高さが元に戻るから"
+   },
+   {
+    "id": "3",
+    "tex": "$l=\\frac h4$．小球は床の上で静止し，S は左向きに速さ $\\sqrt{\\frac{2gh}{3}}$ で動く．以後，小球は静止したまま，S は等速で遠ざかり，相互作用は起こらない"
+   },
+   {
+    "id": "4",
+    "tex": "$3+2\\sqrt2<\\frac Mm\\le7+4\\sqrt3$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　小球と S にはたらく水平方向の外力はないので水平方向の運動量が保存し，面はなめらかなので力学的エネルギーも保存する．\n\\[ mu=Mw,\\qquad \\frac12mu^2+\\frac12Mw^2=mgh \\]\n\\[ \\therefore\\quad u=\\boldsymbol{\\sqrt{\\frac{2Mgh}{M+m}}},\\qquad w=\\frac mMu=\\boldsymbol{\\frac mM\\sqrt{\\frac{2Mgh}{M+m}}} \\]\n\n\\textbf{(2)}　スロープ上の小球と S の間の力（垂直抗力）は内力で，水平方向の外力はないから水平方向の運動量が保存する．面はなめらかで力学的エネルギーも保存し，下り終えたときは小球の高さが $0$ に戻るので，運動エネルギーの和も最初と等しい．運動量と運動エネルギーがともに保存する前後関係は弾性衝突と同じ式で決まり，同じ結果になる．\n\n\\textbf{(3)}　$M=3m$ では $u=\\frac{\\sqrt{6gh}}{2}$，$w=\\frac u3=\\frac{\\sqrt{6gh}}{6}$．壁で小球は左向きの速さ $u$ になり，$u>w$ なので S に追いつく．最高点では小球は S に対して静止し（水平方向に同じ速度），その共通の速度 $U$ は\n\\[ mu+3mw=4mU \\quad\\therefore\\quad U=\\frac{u+3w}{4}=\\frac u2 \\]\nエネルギー保存 $\\frac12mu^2+\\frac12\\cdot3mw^2=\\frac12\\cdot4mU^2+mgl$ より\n\\[ mgl=\\frac12m\\left(u^2+\\frac{u^2}{3}-u^2\\right)=\\frac{mu^2}{6}=\\frac{mgh}{4} \\qquad\\therefore\\quad l=\\boldsymbol{\\frac h4} \\]\n（$l<h$ で上面には達しない．）下り終えた後は弾性衝突の式（左向き正）より\n\\[ v'=\\frac{(m-3m)u+2\\cdot3m\\,w}{4m}=\\frac{-2u+2u}{4}=\\boldsymbol0,\\qquad V'=\\frac{(3m-m)w+2mu}{4m}=\\frac{u+w}{2}=\\frac23u=\\boldsymbol{\\sqrt{\\frac{2gh}{3}}} \\]\n小球は床の上で静止し，S が全エネルギー $mgh$ をもって左へ等速で遠ざかる．\\textbf{以後何も起こらない}．\n\n\\textbf{(4) 速度平面での折り返し}　$X=\\sqrt m\\,v$，$Y=\\sqrt M\\,V$ とおくと，運動エネルギーは $\\frac12(X^2+Y^2)=mgh$ で一定なので，点 $(X,Y)$ は半径 $\\sqrt{2mgh}$ の円周上にある．運動量は $\\sqrt m\\,X+\\sqrt M\\,Y$ と書けるので，運動量が等しい点は，ベクトル $\\vec n=(\\sqrt m,\\sqrt M)$ に垂直な直線上にある．\n\\begin{itemize}\n  \\item 壁との弾性衝突：$v\\to-v$ なので，$Y$ 軸に関する折り返し．\n  \\item スロープでの相互作用（弾性衝突）：運動量とエネルギーを保ったまま点が移るので，円と「$\\vec n$ に垂直な直線」の2交点の間の移動，すなわち $\\vec n$ 方向の直線に関する折り返し．\n\\end{itemize}\n$Y$ 軸の正の向きから $X$ 軸の正の向きへはかった偏角を $\\psi$ とし，$\\vec n$ の偏角を $\\theta$（$\\tan\\theta=\\sqrt{m/M}$，$M>m$ より $0<\\theta<45^\\circ$）とする．折り返しは $\\psi\\to-\\psi$（壁），$\\psi\\to2\\theta-\\psi$（スロープ）である．\n下り終えた直後は運動量 $0$ で小球は右向きなので $\\psi_0=\\theta-90^\\circ$．壁→スロープの1組で偏角は $2\\theta$ 増え，$k$ 回上り下りした後は $\\psi_k=(2k+1)\\theta-90^\\circ$．\n小球が再び S に追いつくには，壁ではね返った後に $v>V$，すなわち $\\tan(-\\psi_k)>\\tan\\theta$ が必要で，これは $\\psi_k<-\\theta$，つまり $(2k+2)\\theta<90^\\circ$．（$\\psi_k\\ge0$ なら小球は左向きでも S より遅く，$-\\theta\\le\\psi_k<0$ なら壁ではね返っても S に追いつけない．）\nよって上る回数がちょうど $n$ 回になる条件は $2n\\theta<90^\\circ\\le(2n+2)\\theta$，$n=2$ では\n\\[ 15^\\circ\\le\\theta<22.5^\\circ \\]\n$\\frac Mm=\\frac1{\\tan^2\\theta}$ で，$\\frac1{\\tan22.5^\\circ}=\\sqrt2+1$，$\\frac1{\\tan15^\\circ}=2+\\sqrt3$ より\n\\[ \\boldsymbol{3+2\\sqrt2<\\frac Mm\\le7+4\\sqrt3} \\]\n（$M=3m$ は $\\theta=30^\\circ$ で $n=1$，$\\psi_1=0$ すなわち小球が静止する (3) の結果と一致する．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "動ける台のなめらかなスロープを上って下りる過程は，水平方向の運動量と力学的エネルギーがともに保存するので台との弾性衝突と同じになる．速度を $(\\sqrt m\\,v,\\sqrt M\\,V)$ で表すとエネルギー一定は円になり，壁との衝突と台との「衝突」はそれぞれ直線に関する折り返しなので，1往復で一定角 $2\\theta$（$\\tan\\theta=\\sqrt{m/M}$）だけ回転し，相互作用の回数が質量比から角度の割り算で決まる．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "restitution",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "動く台",
+  "弾性衝突",
+  "速度平面",
+  "運動量保存",
+  "繰り返し衝突"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

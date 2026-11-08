@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320">
+  <defs>
+    <marker id="q-ak" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M0,1 L9,5 L0,9 z" fill="#222"/>
+    </marker>
+  </defs>
+  <!-- floor -->
+  <line x1="20" y1="270" x2="540" y2="270" stroke="#222" stroke-width="1.6"/>
+  <g stroke="#222" stroke-width="1">
+    <line x1="30" y1="270" x2="20" y2="282"/><line x1="50" y1="270" x2="40" y2="282"/><line x1="70" y1="270" x2="60" y2="282"/><line x1="90" y1="270" x2="80" y2="282"/><line x1="110" y1="270" x2="100" y2="282"/><line x1="130" y1="270" x2="120" y2="282"/><line x1="150" y1="270" x2="140" y2="282"/><line x1="170" y1="270" x2="160" y2="282"/><line x1="190" y1="270" x2="180" y2="282"/><line x1="210" y1="270" x2="200" y2="282"/><line x1="230" y1="270" x2="220" y2="282"/><line x1="250" y1="270" x2="240" y2="282"/><line x1="270" y1="270" x2="260" y2="282"/><line x1="290" y1="270" x2="280" y2="282"/><line x1="310" y1="270" x2="300" y2="282"/><line x1="330" y1="270" x2="320" y2="282"/><line x1="350" y1="270" x2="340" y2="282"/><line x1="370" y1="270" x2="360" y2="282"/><line x1="390" y1="270" x2="380" y2="282"/><line x1="410" y1="270" x2="400" y2="282"/><line x1="430" y1="270" x2="420" y2="282"/><line x1="450" y1="270" x2="440" y2="282"/><line x1="470" y1="270" x2="460" y2="282"/><line x1="490" y1="270" x2="480" y2="282"/><line x1="510" y1="270" x2="500" y2="282"/><line x1="530" y1="270" x2="520" y2="282"/><line x1="550" y1="270" x2="540" y2="282"/>
+  </g>
+  <text x="380" y="304" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">なめらかな床</text>
+  <!-- P -->
+  <rect x="60" y="110" width="140" height="160" fill="#ddd" stroke="#222" stroke-width="1.6"/>
+  <text x="122" y="196" font-family="Noto Sans CJK JP, sans-serif" font-size="16" fill="#222">P</text>
+  <text x="120" y="218" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">M</text>
+  <!-- Q -->
+  <rect x="380" y="110" width="150" height="160" fill="#ddd" stroke="#222" stroke-width="1.6"/>
+  <text x="448" y="196" font-family="Noto Sans CJK JP, sans-serif" font-size="16" fill="#222">Q</text>
+  <text x="440" y="218" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">2<tspan font-family="Times New Roman, serif" font-style="italic">M</tspan></text>
+  <!-- string: corners (200,110) and (380,110); s=104 px -> horizontal half=90, drop=52 => theta=30deg -->
+  <polyline points="200,110 290,162 380,110" fill="none" stroke="#222" stroke-width="1.2"/>
+  <circle cx="290" cy="162" r="8" fill="#bbb" stroke="#222" stroke-width="1.6"/>
+  <text x="284" y="190" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">R</text>
+  <text x="304" y="190" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">M</text>
+  <!-- angle theta at Q corner -->
+  <line x1="320" y1="110" x2="380" y2="110" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <path d="M 344,110 A 36,36 0 0 0 348.8,128" fill="none" stroke="#222" stroke-width="1"/>
+  <text x="326" y="126" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">θ</text>
+  <!-- s labels -->
+  <text x="232" y="126" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">s</text>
+  <text x="340" y="152" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">s</text>
+  <!-- L -->
+  <line x1="40" y1="110" x2="40" y2="270" stroke="#222" stroke-width="1" marker-start="url(#q-ak)" marker-end="url(#q-ak)"/>
+  <text x="24" y="196" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">L</text>
+  <!-- g -->
+  <line x1="500" y1="30" x2="500" y2="75" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+  <text x="510" y="58" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">g</text>
+</svg>

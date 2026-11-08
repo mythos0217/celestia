@@ -1,0 +1,135 @@
+{
+ "id": "PHY-MOM-023",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "最高点で止まった小球への斜め衝突ではじき出された小球の到達距離と，衝突の逆算",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鉛直に投げ上げた小球A（質量 $m$）が最高点Oに達して速さが0になった瞬間に，放物運動の最高点を水平に速さ $V_0$ で通過中の小球B（質量 $M$）が衝突した．A，Bは同じ半径のなめらかな球で，衝突の瞬間，Bの中心からAの中心へ向かう直線は水平と角 $\\theta\\ \\left(0<\\theta<\\frac{\\pi}{2}\\right)$ をなし，Aの中心の方が高い（図）．AとBの間の反発係数を $e\\ (0<e\\le1)$，重力加速度の大きさを $g$ とする．衝突は瞬間的で，衝突中の重力の力積は無視できる．空気抵抗は無視し，衝突後に2球が再び接触することはないものとする．以下，速度の成分はBの入射の向きを $x$ 軸の正，鉛直上向きを $y$ 軸の正とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "衝突直後のAの速度の向きと大きさ $v$，およびBの速度の $x$ 成分，$y$ 成分を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "衝突後，AがOと同じ高さに戻るまでに進む水平距離 $L$ を $\\theta$ の関数として表し，$L$ を最大にする $\\theta$ と $L$ の最大値を求めよ．また，Aの最高点のOからの高さ $H$ を最大にする $\\theta$ と $H$ の最大値も求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$L$ が最大となるように $\\theta$ を選んだとき，衝突後のBの速度の $x$ 成分が負になる（Bがはね返される）ための $\\dfrac{M}{m}$ の条件を求めよ．また，そのような $M$ が存在するための $e$ の条件を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\theta$ と $e$ がわからない衝突で，衝突後のAの最高点のOからの高さが $H$，Oと同じ高さに戻るまでの水平距離が $L$ であった．$m$，$M$，$V_0$，$g$ は既知とする．$\\tan\\theta$ と $e$ を $m$，$M$，$V_0$，$g$，$H$，$L$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：最高点で止まった小球への斜め衝突ではじき出された小球の到達距離と，衝突の逆算",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：最高点で止まった小球への斜め衝突ではじき出された小球の到達距離と，衝突の逆算",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "Aは中心を結ぶ向き（水平から角 $\\theta$ 上向き）に $v=\\dfrac{(1+e)MV_0\\cos\\theta}{m+M}$；Bは $x$ 成分 $V_0\\left\\{1-\\dfrac{(1+e)m\\cos^2\\theta}{m+M}\\right\\}$，$y$ 成分 $-\\dfrac{(1+e)mV_0\\sin\\theta\\cos\\theta}{m+M}$"
+   },
+   {
+    "id": "2",
+    "tex": "$L=\\dfrac{2u^2}{g}\\cos^3\\theta\\sin\\theta$（$u=\\dfrac{(1+e)MV_0}{m+M}$），$\\theta=\\dfrac{\\pi}{6}$ で $L_{\\max}=\\dfrac{3\\sqrt3}{8}\\dfrac{(1+e)^2M^2V_0^2}{(m+M)^2g}$；$H$ は $\\theta=\\dfrac{\\pi}{4}$ で $H_{\\max}=\\dfrac{(1+e)^2M^2V_0^2}{8(m+M)^2g}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac Mm<\\dfrac{3e-1}{4}$，存在条件 $e>\\dfrac13$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\tan\\theta=\\dfrac{4H}{L}$，$e=\\dfrac{(m+M)g\\left(L^2+16H^2\\right)}{2MV_0L\\sqrt{2gH}}-1$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　なめらかな球どうしの衝突では，互いに及ぼす力は接触点の法線方向，すなわち中心を結ぶ直線の方向（単位ベクトル $\\vec n=(\\cos\\theta,\\sin\\theta)$）だけを向く．したがって\n\n・静止していたAは $\\vec n$ の向きに飛び出す．\n\n・$\\vec n$ に垂直な方向の速度成分は両球とも変わらない．\n\n$\\vec n$ 方向については1次元の衝突と同じで，Bの法線成分 $V_0\\cos\\theta$ が，静止したAに当たる．運動量保存 $MV_0\\cos\\theta=Mw+mv$ と反発の式 $v-w=eV_0\\cos\\theta$ から\n\\[ \\boldsymbol{v=\\frac{(1+e)MV_0\\cos\\theta}{m+M}}\\quad(\\text{向き：水平から角 }\\theta\\text{ 上向き}). \\]\nBの速度は，運動量保存（$x$，$y$ の両成分）$M\\vec V_0=M\\vec V+mv\\vec n$ より $\\vec V=\\vec V_0-\\dfrac mM v\\vec n$：\n\\[ V_x=\\boldsymbol{V_0\\left\\{1-\\frac{(1+e)m\\cos^2\\theta}{m+M}\\right\\}},\\qquad V_y=\\boldsymbol{-\\frac{(1+e)mV_0\\sin\\theta\\cos\\theta}{m+M}}. \\]\n$u=\\dfrac{(1+e)MV_0}{m+M}$ とおくと $v=u\\cos\\theta$ で，Aの速度の終点は「原点と $(u,0)$ を直径の両端とする円」の上にある（解答図）．$\\theta$ を大きくして上向きに飛ばそうとすると，そのぶん速さが落ちるのがこの問題の要点である．\n\n\\textbf{(2)}　衝突後のAは初速 $u\\cos\\theta$，仰角 $\\theta$ の放物運動．Oの高さに戻るまでの時間は $\\dfrac{2u\\cos\\theta\\sin\\theta}{g}$ なので\n\\[ L=u\\cos\\theta\\cos\\theta\\cdot\\frac{2u\\cos\\theta\\sin\\theta}{g}=\\frac{2u^2}{g}\\cos^3\\theta\\sin\\theta. \\]\n$\\dfrac{d}{d\\theta}(\\cos^3\\theta\\sin\\theta)=\\cos^2\\theta(\\cos^2\\theta-3\\sin^2\\theta)$ は $\\tan\\theta=\\dfrac1{\\sqrt3}$ の前後で正から負に変わるので，$\\boldsymbol{\\theta=\\frac{\\pi}{6}}$ で最大．$\\cos^3\\theta\\sin\\theta=\\dfrac{3\\sqrt3}{8}\\cdot\\dfrac12$ より\n\\[ L_{\\max}=\\boldsymbol{\\frac{3\\sqrt3}{8}\\frac{(1+e)^2M^2V_0^2}{(m+M)^2g}}. \\]\n（初速が一定なら最大到達距離は $45^\\circ$ だが，ここでは初速が $\\cos\\theta$ に比例して減るため最適角が $30^\\circ$ に下がる．）\n\n最高点の高さは $H=\\dfrac{(u\\cos\\theta\\sin\\theta)^2}{2g}=\\dfrac{u^2\\sin^22\\theta}{8g}$ なので $\\boldsymbol{\\theta=\\frac{\\pi}{4}}$ で最大，$H_{\\max}=\\boldsymbol{\\dfrac{(1+e)^2M^2V_0^2}{8(m+M)^2g}}$．\n\n\\textbf{(3)}　$\\theta=\\dfrac{\\pi}{6}$（$\\cos^2\\theta=\\frac34$）のとき $V_x=V_0\\dfrac{4M-(3e-1)m}{4(m+M)}$．$V_x<0$ となる条件は\n\\[ \\boldsymbol{\\frac Mm<\\frac{3e-1}{4}}. \\]\n$\\dfrac Mm>0$ なので，このような $M$ があるのは $\\boldsymbol{e>\\frac13}$ のときに限る．（弾性衝突 $e=1$ なら $M<\\frac m2$．Bが軽いほど，また反発が強いほどBははね返されやすい．）\n\n\\textbf{(4)}　Aの初速の成分を $v_x=v\\cos\\theta$，$v_y=v\\sin\\theta$ とすると，$H=\\dfrac{v_y^2}{2g}$，$L=\\dfrac{2v_xv_y}{g}$ より\n\\[ v_y=\\sqrt{2gH},\\qquad v_x=\\frac{gL}{2\\sqrt{2gH}},\\qquad \\boldsymbol{\\tan\\theta=\\frac{v_y}{v_x}=\\frac{4H}{L}}. \\]\n一方，(1)より $v_x=v\\cos\\theta=u\\cos^2\\theta$，$\\cos^2\\theta=\\dfrac{1}{1+\\tan^2\\theta}=\\dfrac{L^2}{L^2+16H^2}$．よって\n\\[ u=\\frac{g\\left(L^2+16H^2\\right)}{2L\\sqrt{2gH}},\\qquad 1+e=\\frac{(m+M)u}{MV_0}, \\]\n\\[ \\boldsymbol{e=\\frac{(m+M)g\\left(L^2+16H^2\\right)}{2MV_0L\\sqrt{2gH}}-1}. \\]\n（この値が $0<e\\le1$ の範囲になければ，測定値かモデルの前提が誤っている．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "なめらかな球の斜め衝突では，静止していた球は中心を結ぶ向きに，その方向の速度成分だけを受け取って飛び出すので，速度の終点は直径 $\\frac{(1+e)MV_0}{m+M}$ の円（タレスの円）上にあり，速さは $\\cos\\theta$ に比例する．このため放物運動の到達距離は $30^\\circ$，高さは $45^\\circ$ で最大になり，逆に軌道の高さと距離から衝突の角度と反発係数が決まる．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "projectile-motion",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "斜め衝突",
+  "反発係数",
+  "放物運動",
+  "最大到達距離",
+  "逆問題"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

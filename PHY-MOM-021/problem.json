@@ -1,0 +1,142 @@
+{
+ "id": "PHY-MOM-021",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "球を1個ずつ後方へ打ち出して進む台車（一度に打ち出す場合・連続噴射の極限との比較）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平のレール上に，球を積んだ台車が静止している．台車と球全体の質量は $M$ で，そのうち $N$ 個の球はどれも質量 $m$ である（$Nm<M$）．台車の後端の発射装置から球を後ろ向きに打ち出すと，台車は前向きに動き出す．打ち出された直後の球の，\\textbf{打ち出した後の台車に対する}速さはつねに $w$ であるとする．空気の抵抗は無視し，速度は台車の進む向きを正とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$N$ 個の球を同時に打ち出したときの台車の速さ $V$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "球を1個ずつ打ち出す．$k$ 個目を打ち出す直前の台車（残りの球を含む）の速さを $W_{k-1}$，直後の速さを $W_k$（$W_0=0$）とする．$W_k-W_{k-1}$ を求め，$N$ 個すべてを打ち出した後の速さ $W_N$ を和の記号を用いて表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$V<W_N<w\\log\\dfrac{M}{M-Nm}$ が成り立つことを示せ（$\\log$ は自然対数）．"
+     },
+     {
+      "id": "4",
+      "tex": "打ち出す球の総質量 $Nm=\\mu$ を一定に保ったまま，球を細かくして $N\\to\\infty$ としたときの $W_N$ の極限を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "台車だけの質量が $m$，球が $N=9$ 個（したがって $M=10m$）の場合を考える．\n (a) $W_9$ は $w$ の何倍か．有効数字3桁で答えよ．\n (b) 地面から見ると，打ち出された球の中には，後ろ向きに打ち出されたのに前向きに進むものがある．それは何個目以降に打ち出された球か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：球を1個ずつ後方へ打ち出して進む台車（一度に打ち出す場合・連続噴射の極限との比較）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：球を1個ずつ後方へ打ち出して進む台車（一度に打ち出す場合・連続噴射の極限との比較）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V=\\dfrac{Nmw}{M}$"
+   },
+   {
+    "id": "2",
+    "tex": "$W_k-W_{k-1}=\\dfrac{mw}{M-(k-1)m}$，$W_N=\\displaystyle\\sum_{k=1}^{N}\\frac{mw}{M-(k-1)m}$"
+   },
+   {
+    "id": "3",
+    "tex": "解説参照"
+   },
+   {
+    "id": "4",
+    "tex": "$w\\log\\dfrac{M}{M-\\mu}$"
+   },
+   {
+    "id": "5",
+    "tex": "(a) $1.93$ 倍　(b) 7個目以降"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 同時に打ち出す}\n\n打ち出した後の台車の速度を $V$ とすると，球の速度は $V-w$．はじめ静止していたので，水平方向の運動量保存より\n\\[ 0=(M-Nm)V+Nm(V-w)\\quad\\Longrightarrow\\quad \\boldsymbol{V=\\frac{Nmw}{M}} \\]\n\n\\textbf{(2) 1個ずつ打ち出す}\n\n$k$ 個目を打ち出す直前の全質量は $M-(k-1)m$．打ち出した直後の台車の速度 $W_k$，球の速度 $W_k-w$ について運動量保存を立てると\n\\[ \\{M-(k-1)m\\}W_{k-1}=(M-km)W_k+m(W_k-w)=\\{M-(k-1)m\\}W_k-mw \\]\n\\[ \\boldsymbol{W_k-W_{k-1}=\\frac{mw}{M-(k-1)m}},\\qquad \\boldsymbol{W_N=\\sum_{k=1}^{N}\\frac{mw}{M-(k-1)m}} \\]\n相対速さ $w$ が一定でも，打ち出す直前の質量がだんだん軽くなるので，速度の増分は後になるほど大きい．\n\n\\textbf{(3) 不等式}\n\n左側：$W_N$ の各項の分母は $M$ 以下で，$k\\geqq2$ の項は $M$ より小さいので\n\\[ W_N>\\sum_{k=1}^{N}\\frac{mw}{M}=\\frac{Nmw}{M}=V \\]\n（同時に打ち出すと，すべての球が「重い台車」を押すことになり損をする．）\n\n右側：$g(x)=\\dfrac{mw}{M-xm}$ は $0\\leqq x\\leqq N$ で増加関数なので，$k-1\\leqq x\\leqq k$ で $g(k-1)<g(x)$．よって\n\\[ W_N=\\sum_{k=1}^{N}g(k-1)<\\int_0^N g(x)\\,dx=w\\Big[-\\log(M-xm)\\Big]_0^N=w\\log\\frac{M}{M-Nm} \\]\n\n\\textbf{(4) 連続噴射の極限}\n\n$N\\to\\infty$，$m=\\mu/N\\to0$ では，(2)の和は(3)の積分と同じ値に近づく（区分求積）．\n\\[ \\boldsymbol{\\lim_{N\\to\\infty}W_N=w\\log\\frac{M}{M-\\mu}} \\]\nこれは連続的に噴射するロケットの速度の式（ツィオルコフスキーの式）である．球を細かく分けるほど速くなり，連続噴射が上限になる．\n\n\\textbf{(5) 数値例}\n\n(a) $M=10m$ なので\n\\[ \\frac{W_9}{w}=\\frac1{10}+\\frac19+\\frac18+\\cdots+\\frac12=1.928\\cdots\\approx\\boldsymbol{1.93} \\]\n（同時に打ち出すと $0.900$，連続噴射の極限でも $\\log10\\approx2.30$．）\n\n(b) $k$ 個目の球の地面に対する速度は $W_k-w$ なので，$W_k>w$ になった後に打ち出された球は前向きに進む．\n\\[ \\frac{W_6}{w}=\\frac1{10}+\\frac19+\\frac18+\\frac17+\\frac16+\\frac15=0.845\\cdots<1,\\qquad \\frac{W_7}{w}=0.845\\cdots+\\frac14=1.095\\cdots>1 \\]\nよって \\textbf{7個目以降}の球は，後ろ向きに打ち出されたにもかかわらず地面に対して前向きに進む（台車の速さが $w$ を超えたため）．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "打ち出しのたびに「打ち出し後の相対速さ $w$」で運動量保存を立てると，速度の増分は打ち出す直前の全質量に反比例し，$\\sum\\frac{mw}{M-(k-1)m}$ となる．これは同時に打ち出す場合 $\\frac{Nmw}{M}$ より大きく，区分求積による比較で連続噴射の $w\\log\\frac{M}{M-\\mu}$ より小さい．台車の速さが $w$ を超えると，後ろ向きに打ち出した球が地面に対して前に進む．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "kinematics-components"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動量保存",
+  "ロケット",
+  "相対速度",
+  "区分求積",
+  "ツィオルコフスキーの式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

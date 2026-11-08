@@ -1,0 +1,136 @@
+{
+ "id": "PHY-MOM-020",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "定滑車のロープをたぐってのぼる人と，握った瞬間に向きを変えるおもり",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，天井に固定した軽くなめらかに回る定滑車に軽いロープをかけ，一端に質量 $m$ の人 P がつかまってぶら下がり，他端には質量 $M\\ (M>m)$ の物体 B がつながれて床の上に置かれている．はじめ P はロープを握ったまま静止しており（足は床から離れている），B は床の上に静止している．ロープは伸び縮みせず，P と B は鉛直方向にだけ動くものとする．重力加速度の大きさを $g$ とする．\n\n時刻 $t=0$ から $t=\\tau$ の間，P は手でロープをたぐってのぼり，P の\\textbf{ロープに対する}加速度（P が握っている部分のロープから見た P の加速度）を鉛直上向きに一定の大きさ $\\alpha$ に保った．ただし $m\\alpha>(M-m)g$ とする．時刻 $t=\\tau$ に P はたぐるのをやめ，その瞬間にロープを強く握って，以後 P はロープに対して滑らなくなった．P が滑車に達することはないものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$0<t<\\tau$ でのロープの張力の大きさ $T$，B の加速度 $b$（上向きを正），床から見た P の加速度 $a_{\\rm P}$（上向きを正）を求めよ．また，$t=0$ の直後に B が床から離れる理由を述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$0\\le t\\le\\tau$ の間に P が手でたぐったロープの長さを $\\ell$ とする．この間の P と B の力学的エネルギーの和の増加 $\\Delta E$ を求め，$\\Delta E=T\\ell$ が成り立つことを示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "P がロープを握った直後の B の速度（上向きを正）と，握ることで失われる運動エネルギーを求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "その後，B は床に達して床の上で止まる．B が床に達する直前の速さ $V$ と，P が到達する最高点の，はじめの位置からの高さ $H$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：定滑車のロープをたぐってのぼる人と，握った瞬間に向きを変えるおもり",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：定滑車のロープをたぐってのぼる人と，握った瞬間に向きを変えるおもり",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T=\\dfrac{Mm(2g+\\alpha)}{M+m}$，$b=\\dfrac{m\\alpha-(M-m)g}{M+m}$，$a_{\\rm P}=\\dfrac{M\\alpha+(M-m)g}{M+m}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Delta E=\\dfrac{Mm\\alpha(2g+\\alpha)\\tau^2}{2(M+m)}$（$\\ell=\\frac12\\alpha\\tau^2$ より $T\\ell$ に等しい）"
+   },
+   {
+    "id": "3",
+    "tex": "$-\\dfrac{(M-m)g\\tau}{M+m}$（$\\alpha$ によらず下向き），失われる運動エネルギー $\\dfrac{Mm\\alpha^2\\tau^2}{2(M+m)}$"
+   },
+   {
+    "id": "4",
+    "tex": "$V=\\dfrac{\\tau\\sqrt{m(M-m)g\\alpha}}{M+m}$，$H=\\dfrac{M(M+3m)\\alpha\\tau^2}{2(M+m)^2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　P が手でロープをたぐる力は，P とロープ（つまり B）の間の\\textbf{内力}である．ロープに沿った1次元の座標で見ると，P と B の系を外から動かすのは重力の差 $(M-m)g$（と床の力）だけであり，P がどれほど激しくのぼっても，この「ロープ方向の運動量」は重力の差の力積でしか変わらない．握る瞬間は P とロープの間の完全非弾性衝突とみなせる．\n\n\\textbf{(1)}　B が浮いているとすると，P が握っている部分のロープは B が上がる分だけ下がるので，その加速度は下向きに $b$ である．P のロープに対する加速度が上向き $\\alpha$ だから $a_{\\rm P}=\\alpha-b$．運動方程式は\n\\[ m a_{\\rm P}=T-mg,\\qquad Mb=T-Mg \\]\nこれらを解いて\n\\[ \\boldsymbol{T=\\frac{Mm(2g+\\alpha)}{M+m}},\\quad \\boldsymbol{b=\\frac{m\\alpha-(M-m)g}{M+m}},\\quad \\boldsymbol{a_{\\rm P}=\\frac{M\\alpha+(M-m)g}{M+m}} \\]\n仮に B が床に残っていてロープが動かないとすると，P の加速度は $\\alpha$ で張力は $m(g+\\alpha)$ となるが，条件 $m\\alpha>(M-m)g$ よりこれは $Mg$ を超え，B は床から離れる．実際 $b>0$ であり，矛盾がない．\n\n\\textbf{(2)}　P がたぐった長さはロープに対する P の移動距離なので $\\ell=\\frac12\\alpha\\tau^2$．時刻 $\\tau$ での速度は P が $a_{\\rm P}\\tau$，B が $b\\tau$，高さの増加は $\\frac12a_{\\rm P}\\tau^2,\\ \\frac12b\\tau^2$ だから\n\\[ \\Delta E=\\tfrac12m(a_{\\rm P}\\tau)^2+mg\\cdot\\tfrac12a_{\\rm P}\\tau^2+\\tfrac12M(b\\tau)^2+Mg\\cdot\\tfrac12b\\tau^2 \\]\n$m(a_{\\rm P}+g)=T$，$M(b+g)=T$ を使うと\n\\[ \\Delta E=\\tfrac12\\tau^2\\{a_{\\rm P}T+bT\\}=\\tfrac12T(a_{\\rm P}+b)\\tau^2=T\\cdot\\tfrac12\\alpha\\tau^2=T\\ell \\]\n\\[ \\boldsymbol{\\Delta E=\\frac{Mm\\alpha(2g+\\alpha)\\tau^2}{2(M+m)}} \\]\nロープが P にする仕事（$Ta_{\\rm P}\\tau^2/2$）と B にする仕事（$Tb\\tau^2/2$）は，どちらも P の筋肉が供給したエネルギーの一部であり，その和が「張力 $\\times$ たぐった長さ」になっている．\n\n\\textbf{(3)}　ロープに沿って，B が上がる向き（P が下がる向き）を正とする1次元座標で考える．握る直前のこの向きの運動量は\n\\[ M\\cdot b\\tau+m\\cdot(-a_{\\rm P}\\tau)=\\{(M+m)b-m\\alpha\\}\\tau=-(M-m)g\\tau \\]\n（別解：$t=0$ から B は浮いているので，この運動量の変化は重力の差 $-(M-m)g$ の力積だけで決まり，$-(M-m)g\\tau$ となる．たぐる力は内力なので効かない．）\n握る瞬間は張力が撃力となり，重力の力積は無視できるので，この運動量は保存して P と B は共通の速さで動く：\n\\[ \\boldsymbol{v_{\\rm B}'=-\\frac{(M-m)g\\tau}{M+m}} \\]\nすなわち B は $\\alpha$ の値によらず，握った瞬間に向きを変えて\\textbf{下向き}に動き出す．衝突前の P と B の相対速度（ロープ方向）は $a_{\\rm P}\\tau+b\\tau=\\alpha\\tau$ だから，失われる運動エネルギーは換算質量 $\\frac{Mm}{M+m}$ を用いて\n\\[ \\boldsymbol{\\frac{Mm\\alpha^2\\tau^2}{2(M+m)}} \\]\n\n\\textbf{(4)}　握った後はアトウッドの機械で，B は下向きに加速度 $\\gamma=\\frac{(M-m)g}{M+m}$ で運動する（張力 $\\frac{2Mmg}{M+m}>0$ でロープは張っている）．B の高さは $h_1=\\frac12b\\tau^2$ だから\n\\[ V^2=\\Bigl(\\frac{(M-m)g\\tau}{M+m}\\Bigr)^2+2\\gamma\\cdot\\frac12b\\tau^2=\\gamma\\tau^2(\\gamma+b)=\\gamma\\tau^2\\cdot\\frac{m\\alpha}{M+m} \\]\n\\[ \\boldsymbol{V=\\frac{\\tau\\sqrt{m(M-m)g\\alpha}}{M+m}} \\]\nB が床で止まると，P は上向きに速さ $V$ で動いているが，P の減速度 $g$ は張ったままのアトウッド運動の減速度 $\\gamma$ より大きいのでロープはたるみ，P は鉛直投げ上げの運動をする．\nB が床に戻るまでに P が上がった高さは，(1)の間の $\\frac12a_{\\rm P}\\tau^2$ と，B が $h_1$ 下がる分 $\\frac12b\\tau^2$ の和で $\\frac12\\alpha\\tau^2=\\ell$（ロープの長さは変わらないので，P は結局たぐった長さだけ上がっている）．これに投げ上げの $V^2/(2g)$ を加えて\n\\[ H=\\frac12\\alpha\\tau^2+\\frac{m(M-m)\\alpha\\tau^2}{2(M+m)^2}=\\boldsymbol{\\frac{M(M+3m)\\alpha\\tau^2}{2(M+m)^2}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ロープをたぐる力は人とおもりの間の内力なので，ロープに沿った1次元座標の運動量は重力の差の力積だけで決まり，たぐり方によらない．そのため握った瞬間（完全非弾性衝突）におもりは必ず下向きに動き出し，筋肉の仕事は「張力×たぐった長さ」に等しく，その一部が握る瞬間に失われる．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "restitution",
+  "work-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "定滑車",
+  "内力",
+  "1次元化した運動量保存",
+  "完全非弾性衝突",
+  "仕事とエネルギー",
+  "ロープのたるみ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "id": "PHY-MOM-027",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "質量が段階的に変わる球の列による運動エネルギーの受け渡し（相乗平均と連続極限）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平な直線レール上に，質量 $m_0,\\ m_1,\\ \\dots,\\ m_N$ の小球がこの順に間隔をあけて静止している．左端の質量 $m_0=M$ の球に右向きの速さ $V$ を与えると，球は順に衝突していく．衝突はすべて弾性衝突で，正面衝突とする．右端の球の質量を $m_N=m$（$m<M$）とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$N=2$ とする．中間の球の質量 $m_1=\\mu$ をどのように選べば，右端の球の速さが最大になるか．また，その最大の速さを求めよ．ただし，各球の間の衝突は1回ずつとして考えてよい．"
+     },
+     {
+      "id": "2",
+      "tex": "一般の $N$ で，質量を公比 $r=\\left(\\dfrac{m}{M}\\right)^{1/N}$ の等比数列 $m_k=Mr^k$ に選ぶ．各衝突の直後，衝突した2球のうち右の球の速さは左の球の速さより大きいことを示し，衝突がちょうど $N$ 回で終わることを説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の場合の右端の球の速さ $v_N$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$M=4m$ とする．$N=1$，$N=2$ の場合に，右端の球の運動エネルギーは最初の運動エネルギーの何倍か．また，$N\\to\\infty$ の極限での $v_N$ と，そのときのエネルギーの割合を求め，その結果を説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：質量が段階的に変わる球の列による運動エネルギーの受け渡し（相乗平均と連続極限）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\mu=\\sqrt{Mm}$，$\\dfrac{4M}{(\\sqrt M+\\sqrt m)^2}V$"
+   },
+   {
+    "id": "2",
+    "tex": "略（右の球の速さは左の球の $\\dfrac{2}{1-r}$ 倍）"
+   },
+   {
+    "id": "3",
+    "tex": "$v_N=\\left(\\dfrac{2}{1+r}\\right)^NV$"
+   },
+   {
+    "id": "4",
+    "tex": "$N=1$：$0.64$ 倍，$N=2$：$\\dfrac{64}{81}\\fallingdotseq0.79$ 倍，$N\\to\\infty$：$v_N\\to\\sqrt{\\dfrac Mm}\\,V=2V$，割合 $1$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{2球の弾性衝突}　質量 $m_a$，速さ $u$ の球が静止した質量 $m_b$ の球に弾性正面衝突すると，運動量保存と反発係数 $1$ より\n\\[ u_a'=\\frac{m_a-m_b}{m_a+m_b}u,\\qquad u_b'=\\frac{2m_a}{m_a+m_b}u \\]\n\n\\textbf{(1)}　$v_2=\\dfrac{2M}{M+\\mu}\\cdot\\dfrac{2\\mu}{\\mu+m}V=\\dfrac{4MV}{M+m+\\mu+\\dfrac{Mm}{\\mu}}$．相加平均・相乗平均の関係より $\\mu+\\dfrac{Mm}{\\mu}\\ge2\\sqrt{Mm}$（等号は $\\mu=\\sqrt{Mm}$）なので，$\\boldsymbol{\\mu=\\sqrt{Mm}}$ のとき最大で\n\\[ \\boldsymbol{v_2=\\frac{4M}{M+m+2\\sqrt{Mm}}V=\\frac{4M}{(\\sqrt M+\\sqrt m)^2}V} \\]\n\n\\textbf{(2)}　$m_{k+1}/m_k=r<1$ なので，速さ $u$ の球 $k$ が球 $k+1$ に当たると，球 $k$ は $\\dfrac{1-r}{1+r}u$（前向き），球 $k+1$ は $\\dfrac{2}{1+r}u$．球 $k+1$ の速さは球 $k$ の $\\dfrac{2}{1-r}>1$ 倍．球 $k+1$ が次に球 $k+2$ に当たると，その速さは $\\dfrac{1-r}{1+r}\\cdot\\dfrac{2}{1+r}u$ となり，これも球 $k$ の速さ $\\dfrac{1-r}{1+r}u$ の $\\dfrac{2}{1+r}>1$ 倍．したがって，どの球も衝突後は自分のすぐ右の球より遅く，追いつくことはない．衝突は左から順に1回ずつ，ちょうど $N$ 回で終わる．\n\n\\textbf{(3)}　各衝突で速さが $\\dfrac{2}{1+r}$ 倍になるので $\\boldsymbol{v_N=\\left(\\dfrac{2}{1+r}\\right)^NV}$．（$N=2$ では $r=\\sqrt{m/M}$ で (1) の最適値と一致する．）\n\n\\textbf{(4)}　エネルギーの割合は $\\dfrac{m v_N^2}{MV^2}=\\dfrac14\\left(\\dfrac{v_N}{V}\\right)^2$．\n$N=1$：$v_1=\\dfrac{2M}{M+m}V=\\dfrac85V$，割合 $\\boldsymbol{0.64}$．\n$N=2$：$r=\\dfrac12$，$v_2=\\dfrac{16}{9}V$，割合 $\\boldsymbol{\\dfrac{64}{81}\\fallingdotseq0.79}$．\n$N\\to\\infty$：$r=4^{-1/N}$．$\\log\\dfrac{v_N}{V}=N\\log\\dfrac{2}{1+4^{-1/N}}$ で，$x=\\dfrac1N\\to0$ とすると $\\dfrac{\\log2-\\log(1+4^{-x})}{x}\\to-\\dfrac{d}{dx}\\log(1+4^{-x})\\Big|_{x=0}=\\dfrac{\\log4}{2}$．よって\n\\[ \\boldsymbol{v_N\\to\\sqrt4\\,V=2V=\\sqrt{\\frac Mm}\\,V},\\qquad \\text{割合}\\ \\boldsymbol{1} \\]\n質量の差が小さい衝突ほど，ほとんどすべての運動エネルギーが次の球へ移る（等しい質量どうしなら完全に移る）．質量を細かい段階でゆるやかに変えると，各段で取り残されるエネルギーが $\\left(\\frac{1-r}{1+r}\\right)^2\\sim\\frac{1}{N^2}$ 程度になり，$N$ 段の合計でも $0$ に近づく．そのため，最終的には運動エネルギーが全部右端の軽い球に移り，$\\dfrac12mv_N^2=\\dfrac12MV^2$ となる．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弾性衝突での運動エネルギーの受け渡しは質量比が1に近いほど効率がよく，中間の球は相乗平均 $\\sqrt{Mm}$ が最適になる．質量を等比数列で細かく変えると各段の損失が $1/N^2$ 程度になり，$N\\to\\infty$ で全エネルギーが移る（インピーダンス整合と同じ構造）．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "restitution",
+  "ac-circuit"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "弾性衝突",
+  "運動量保存",
+  "相加相乗平均",
+  "等比数列",
+  "極限"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

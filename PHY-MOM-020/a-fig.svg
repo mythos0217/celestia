@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 310">
+<defs><marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<line x1="70" y1="150" x2="520" y2="150" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+<line x1="80" y1="290" x2="80" y2="30" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+<text x="525" y="155" font-family="Times New Roman, serif" font-style="italic" fill="#222" font-size="16">t</text>
+<text x="70" y="24" font-family="Noto Sans CJK JP, sans-serif" fill="#222" font-size="13">B の速度（上向き正）</text>
+<text x="64" y="166" font-family="Noto Sans CJK JP, sans-serif" fill="#222" font-size="14">O</text>
+<polyline points="80,150 380,79.716" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+<polyline points="380,234.0 486.59,263.844" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+<line x1="380" y1="79.716" x2="380" y2="234.0" stroke="#c0392b" stroke-width="1.4" stroke-dasharray="3,3"/>
+<line x1="486.59" y1="263.844" x2="486.59" y2="150" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="80" y1="79.716" x2="380" y2="79.716" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="80" y1="234.0" x2="380" y2="234.0" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="80" y1="263.844" x2="486.59" y2="263.844" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="50" y="84.716" font-family="Times New Roman, serif" font-style="italic" fill="#222" font-size="15">bτ</text>
+<text x="10" y="239.0" font-family="Times New Roman, serif" font-style="italic" fill="#222" font-size="15">−γτ</text>
+<text x="50" y="268.844" font-family="Times New Roman, serif" font-style="italic" fill="#222" font-size="15">−V</text>
+<text x="376" y="144" font-family="Times New Roman, serif" font-style="italic" fill="#222" font-size="15">τ</text>
+<text x="388" y="117.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">握る瞬間（撃力）</text>
+<text x="492.59" y="142" font-family="Noto Sans CJK JP, sans-serif" fill="#222" font-size="13">着床</text>
+<text x="125.0" y="75.0" font-family="Noto Sans CJK JP, sans-serif" fill="#222" font-size="13">傾き </text><text x="157.0" y="75.0" font-family="Times New Roman, serif" font-style="italic" fill="#222" font-size="15">b</text>
+<text x="420" y="219.0" font-family="Noto Sans CJK JP, sans-serif" fill="#222" font-size="13">傾き −</text><text x="462" y="219.0" font-family="Times New Roman, serif" font-style="italic" fill="#222" font-size="15">γ</text>
+<text x="250" y="300" font-size="15" fill="#222"><tspan font-family="Times New Roman, serif" font-style="italic">γ</tspan><tspan font-family="Noto Sans CJK JP, sans-serif" font-style="normal"> = (</tspan><tspan font-family="Times New Roman, serif" font-style="italic">M</tspan><tspan font-family="Noto Sans CJK JP, sans-serif" font-style="normal"> − </tspan><tspan font-family="Times New Roman, serif" font-style="italic">m</tspan><tspan font-family="Noto Sans CJK JP, sans-serif" font-style="normal">)</tspan><tspan font-family="Times New Roman, serif" font-style="italic">g</tspan><tspan font-family="Noto Sans CJK JP, sans-serif" font-style="normal"> / (</tspan><tspan font-family="Times New Roman, serif" font-style="italic">M</tspan><tspan font-family="Noto Sans CJK JP, sans-serif" font-style="normal"> + </tspan><tspan font-family="Times New Roman, serif" font-style="italic">m</tspan><tspan font-family="Noto Sans CJK JP, sans-serif" font-style="normal">)</tspan></text>
+</svg>

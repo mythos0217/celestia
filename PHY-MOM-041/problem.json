@@ -1,0 +1,144 @@
+{
+ "id": "PHY-MOM-041",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "摩擦の異なる2物体をつなぐひもが反発係数をもって張る運動（相対運動とはずむボールの対応）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平面と角 $\\theta$ をなすあらい斜面上で，質量がともに $m$ の小物体 A，B が，伸び縮みしない長さ $\\ell$ の軽いひもで結ばれて，斜面の最大傾斜の方向に沿って運動している．A が B より下側にある．A，B と斜面の間の動摩擦係数はそれぞれ $\\mu_{\\rm A}$，$\\mu_{\\rm B}$ で，$\\mu_{\\rm A}<\\mu_{\\rm B}<\\tan\\theta$ である．重力加速度の大きさを $g$ とし，$\\kappa=(\\mu_{\\rm B}-\\mu_{\\rm A})g\\cos\\theta$ とおく．\n\n時刻 $0$ に，A，B はともに斜面下向きの速さ $v_0$ で運動しており，AB 間の距離は $\\dfrac{\\ell}{2}$（ひもはたるんでいる）であった．ひもがたるんでいる間，ひもは A，B に力を及ぼさない．ひもが張る瞬間には A，B の間に撃力がはたらき，張る直前の（B に対する A の）相対速度の $e$ 倍（$0<e<1$）の大きさの相対速度で，A，B が互いに近づく向きに動きだす．撃力がはたらく時間は十分短く，その間の重力と摩擦力の影響は無視する．また，$v_0$ は十分大きく，A，B は常に斜面下向きに運動しているものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "時刻 $0$ から初めてひもが張るまでの時間 $T_1$ と，その直前の B に対する A の相対速度の大きさ $w_1$ を，$\\ell,\\ \\kappa$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "1回目にひもが張った後，AB 間の距離の最小値を求め，A と B が衝突しないことを示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "1回目にひもが張ってから2回目に張るまでの時間を求めよ．また，$n$ 回目に張ってから $n+1$ 回目に張るまでの時間を $T_1,\\ e,\\ n$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "ひもは無限回張るが，ある時刻 $T_\\infty$ 以後はひもが張ったままとなる．$T_\\infty$ を $T_1,\\ e$ で表せ．また，$T_\\infty$ 以後の A，B の加速度の大きさと，ひもの張力の大きさを求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "ひもが張るたびに失われる力学的エネルギーの総和 $Q$ を $m,\\ \\kappa,\\ \\ell$ で表せ．また，$e=1$ の場合には運動がどうなるか，ひもが張る時間間隔と $Q$ について述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：摩擦の異なる2物体をつなぐひもが反発係数をもって張る運動（相対運動とはずむボールの対応）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：摩擦の異なる2物体をつなぐひもが反発係数をもって張る運動（相対運動とはずむボールの対応）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T_1=\\sqrt{\\dfrac{\\ell}{\\kappa}}$，$w_1=\\sqrt{\\kappa\\ell}$"
+   },
+   {
+    "id": "2",
+    "tex": "最小値 $\\Bigl(1-\\dfrac{e^2}{2}\\Bigr)\\ell$（$>\\dfrac{\\ell}{2}>0$ なので衝突しない）"
+   },
+   {
+    "id": "3",
+    "tex": "$2eT_1$，$2e^nT_1$"
+   },
+   {
+    "id": "4",
+    "tex": "$T_\\infty=\\dfrac{1+e}{1-e}T_1$，加速度 $g\\sin\\theta-\\dfrac{\\mu_{\\rm A}+\\mu_{\\rm B}}{2}g\\cos\\theta$，張力 $\\dfrac12m\\kappa=\\dfrac12(\\mu_{\\rm B}-\\mu_{\\rm A})mg\\cos\\theta$"
+   },
+   {
+    "id": "5",
+    "tex": "$Q=\\dfrac14m\\kappa\\ell$（$e$ によらない）．$e=1$ ではひもは時間 $2T_1$ ごとに張り続け，$Q=0$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針：相対運動に着目する}　斜面下向きを正とする．A，B の加速度は\n\\[ a_{\\rm A}=g\\sin\\theta-\\mu_{\\rm A}g\\cos\\theta,\\qquad a_{\\rm B}=g\\sin\\theta-\\mu_{\\rm B}g\\cos\\theta \\]\n（どちらも下向きに運動しているので，動摩擦力は常に斜面上向き）．B から見た A の相対加速度は\n\\[ a_{\\rm A}-a_{\\rm B}=(\\mu_{\\rm B}-\\mu_{\\rm A})g\\cos\\theta=\\kappa>0 \\]\nで一定である．つまり，AB 間の距離 $s$ は「一定の加速度 $\\kappa$ で増える向きに引かれ，$s=\\ell$ でひもによってはね返される」運動をする．これは\\textbf{重力 $\\kappa$ のもとで床（$s=\\ell$）ではずむボール}と同じ構造である．\n\n\\textbf{(1) 初めて張るまで}\n\n$s$ は $\\frac{\\ell}{2}$ から，相対初速度 $0$，加速度 $\\kappa$ で増えるので\n\\[ \\frac{\\ell}{2}=\\frac12\\kappa T_1^{\\,2}\\ \\Longrightarrow\\ T_1=\\boldsymbol{\\sqrt{\\frac{\\ell}{\\kappa}}},\\qquad w_1=\\kappa T_1=\\boldsymbol{\\sqrt{\\kappa\\ell}}. \\]\n\n\\textbf{(2) 最小距離}\n\n張った直後の相対速度は「近づく向きに $ew_1$」．その後，相対加速度 $\\kappa$ で減速し，相対速度が $0$ のとき距離が最小になる．等加速度運動の式から\n\\[ s_{\\min}=\\ell-\\frac{(ew_1)^2}{2\\kappa}=\\ell-\\frac{e^2\\kappa\\ell}{2\\kappa}=\\boldsymbol{\\Bigl(1-\\frac{e^2}{2}\\Bigr)\\ell}. \\]\n$e<1$ より $s_{\\min}>\\frac{\\ell}{2}>0$ なので A，B は衝突しない（ひもの張った後は，はじめより近づくことはない）．\n\n\\textbf{(3) 張る時間間隔}\n\n相対運動は加速度 $\\kappa$ の等加速度運動なので，速さ $ew_1$ で離れた（近づき始めた）後，同じ速さ $ew_1$ で $s=\\ell$ に戻る．その時間は\n\\[ \\frac{2ew_1}{\\kappa}=\\boldsymbol{2eT_1}. \\]\n2回目に張る直前の相対速度は $ew_1$ なので，以後は毎回 $e$ 倍になり，$n$ 回目の直前の相対速度は $e^{n-1}w_1$，$n$ 回目から $n+1$ 回目までの時間は\n\\[ \\frac{2e^nw_1}{\\kappa}=\\boldsymbol{2e^nT_1}. \\]\n\n\\textbf{(4) ひもが張ったままになる時刻とその後の運動}\n\n時間間隔は公比 $e$ の等比数列なので，その和は有限である：\n\\[ T_\\infty=T_1+\\sum_{n=1}^{\\infty}2e^nT_1=T_1+\\frac{2eT_1}{1-e}=\\boldsymbol{\\frac{1+e}{1-e}T_1}. \\]\nこの時刻に相対速度は $0$ になり，A は B より大きな加速度で下ろうとするので，ひもは張ったままとなる．A，B は一体となって運動し，張力を $S$ とすると\n\\[ \\text{A}：\\ ma=mg\\sin\\theta-\\mu_{\\rm A}mg\\cos\\theta-S,\\qquad \\text{B}：\\ ma=mg\\sin\\theta-\\mu_{\\rm B}mg\\cos\\theta+S. \\]\n辺々加えて\n\\[ a=\\boldsymbol{g\\sin\\theta-\\frac{\\mu_{\\rm A}+\\mu_{\\rm B}}{2}g\\cos\\theta}, \\]\n辺々引いて\n\\[ S=\\boldsymbol{\\frac12(\\mu_{\\rm B}-\\mu_{\\rm A})mg\\cos\\theta}=\\frac12m\\kappa. \\]\n$S>0$ なので，ひもが張った状態は確かに保たれる（もし $\\mu_{\\rm A}>\\mu_{\\rm B}$ なら $S<0$ となって，張ったままにはなれない）．\n\n\\textbf{(5) 失われる力学的エネルギー}\n\n撃力の間は外力の力積が無視できるので運動量が保存し，重心の速度は変わらない．2物体の運動エネルギーは「重心の運動エネルギー」＋「相対運動のエネルギー $\\frac12\\cdot\\frac{m}{2}w^2$」（$\\frac{m}{2}$ は換算質量）と分けられるので，1回張るごとに失われるのは相対運動のエネルギーの $(1-e^2)$ 倍だけである．$n$ 回目の直前の相対速度は $e^{n-1}w_1$ なので\n\\[ Q=\\sum_{n=1}^{\\infty}\\frac12\\cdot\\frac m2\\,(e^{n-1}w_1)^2(1-e^2)=\\frac{m}{4}w_1^{\\,2}(1-e^2)\\cdot\\frac{1}{1-e^2}=\\frac m4w_1^{\\,2}=\\boldsymbol{\\frac14m\\kappa\\ell}. \\]\n$Q$ は $e$ によらず，最初に張る直前の相対運動のエネルギー $\\frac12\\cdot\\frac m2w_1^{\\,2}$ にちょうど等しい．はずむボールが最後には床に静止するのと同じで，相対運動のエネルギーが最終的にすべて失われるからである（間の区間では相対運動は保存的な等加速度運動で，速さが戻る）．\n\n$e=1$ のときは，相対速度の大きさが張るたびに $w_1$ に戻るので，ひもは時間 $\\boldsymbol{2T_1}$ ごとに張り続け，張ったままになることはない．エネルギーは失われず $\\boldsymbol{Q=0}$ である．$e<1$ では張る回数は無限でも有限の時間 $T_\\infty$ で終わり，$e\\to1$ で $T_\\infty\\to\\infty$ となって $e=1$ の場合とつながる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2物体の動摩擦係数が異なると相対加速度 $(\\mu_{\\rm B}-\\mu_{\\rm A})g\\cos\\theta$ が一定になり，ひもが張る瞬間を反発係数 $e$ の衝突とみなすと，相対運動は「重力 $\\kappa$ のもとで床ではずむボール」と同じになる．張る間隔は公比 $e$ の等比数列で有限時間に収束し，その後はひもが張ったまま張力 $\\frac12m\\kappa$ で一体運動する．失われるエネルギーの総和は換算質量による最初の相対運動エネルギーに等しく，$e$ によらない．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "kinematics-components",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "相対運動",
+  "反発係数",
+  "換算質量",
+  "等比級数",
+  "動摩擦",
+  "状態の切り替わり"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

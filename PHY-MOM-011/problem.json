@@ -1,0 +1,144 @@
+{
+ "id": "PHY-MOM-011",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "壁に衝突する振り子：糸のたるみと再緊張による損失と，棒が及ぼす撃力",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，点 O に長さ $l$ の軽い糸の一端を固定し，他端に質量 $m$ の小球をつける．O から左へ水平距離 $l\\sin\\alpha$ の位置に，鉛直でなめらかな壁がある（$0<\\alpha<45^\\circ$）．糸を O の右側に水平に張った状態から小球を静かに放すと，小球は O の真下を通過したのち，糸が鉛直と角 $\\alpha$ をなす点 B で壁に衝突した．小球と壁の間の反発係数を $e$（$0<e\\le1$），重力加速度の大きさを $g$ とし，空気抵抗は無視する．衝突直前の小球の速さを $v_0$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$v_0$ を $g,\\ l,\\ \\alpha$ で表せ．また，衝突直後の小球の速度のうち糸に沿った成分の向きと大きさを $e,\\ v_0,\\ \\alpha$ で表し，衝突直後から糸がたるむ理由を説明せよ．"
+     },
+     {
+      "id": "2",
+      "tex": "衝突後，小球は放物運動をし，その最高点はちょうど O の真下にあった．$e$ を $\\alpha$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) のとき，小球は B と O の真下の鉛直線について対称な点 B$'$ に達し，そこで糸が再びぴんと張った．糸は伸びず，張る瞬間に小球の速度の糸に沿った成分は瞬時に $0$ になるものとする．その直後の小球の速さ $V$ を $v_0,\\ \\alpha$ で表せ．また，その後小球が達する最高点の高さを，O を基準（上向き正）として $l,\\ \\alpha$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "糸を，O のまわりになめらかに回転できる長さ $l$ の軽い変形しない棒に取りかえ，同じ位置から放して同じ壁に衝突させた（反発係数は (2) の $e$）．衝突の間に小球が壁から受ける力積の大きさ $J_{\\mathrm w}$ と，棒から受ける力積の大きさ $J_{\\mathrm r}$ を，$e$ を用いずに $m,\\ v_0,\\ \\alpha$ で表せ．また，衝突の間，棒は引っ張られているか，押し縮められているか．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) の棒の場合に，衝突後に小球が達する最高点の高さを，O を基準（上向き正）として $l,\\ \\alpha$ で表せ．また，(3) の糸の場合とどちらが高いか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：壁に衝突する振り子：糸のたるみと再緊張による損失と，棒が及ぼす撃力",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：壁に衝突する振り子：糸のたるみと再緊張による損失と，棒が及ぼす撃力",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_0=\\sqrt{2gl\\cos\\alpha}$，O に向かう向きに大きさ $(1+e)v_0\\sin\\alpha\\cos\\alpha$（糸は小球を押せないので円軌道を保てない）"
+   },
+   {
+    "id": "2",
+    "tex": "$e=\\dfrac{1}{2\\cos^2\\alpha}$"
+   },
+   {
+    "id": "3",
+    "tex": "$V=\\dfrac{v_0\\cos2\\alpha}{2}$，高さ $-l\\cos\\alpha\\left(1-\\dfrac{\\cos^22\\alpha}{4}\\right)$"
+   },
+   {
+    "id": "4",
+    "tex": "$J_{\\mathrm w}=\\dfrac{(2\\cos^2\\alpha+1)mv_0}{2\\cos^3\\alpha}$，$J_{\\mathrm r}=\\dfrac{(2\\cos^2\\alpha+1)mv_0\\sin\\alpha}{2\\cos^3\\alpha}$，押し縮められている"
+   },
+   {
+    "id": "5",
+    "tex": "$-l\\cos\\alpha\\left(1-\\dfrac{1}{4\\cos^4\\alpha}\\right)$，棒の場合の方が高い"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{座標}　O を原点に水平右向きに $x$ 軸，鉛直上向きに $y$ 軸をとる．B は $(-l\\sin\\alpha,\\,-l\\cos\\alpha)$．\n\n\\textbf{(1)}　糸の張力は速度に垂直で仕事をしないので，力学的エネルギー保存より $\\dfrac12mv_0^2=mgl\\cos\\alpha$，$v_0=\\boldsymbol{\\sqrt{2gl\\cos\\alpha}}$．\n\nB での速度は糸に垂直で，左上向き：$\\vec v=v_0(-\\cos\\alpha,\\ \\sin\\alpha)$．壁はなめらかなので壁から受ける力積は水平（壁に垂直）だけで，鉛直成分は変わらず，水平成分は反発係数により $-e$ 倍になる（糸がたるむなら，衝突中に糸から力積を受けないことと矛盾しない）．衝突直後の速度は $\\vec v'=v_0(e\\cos\\alpha,\\ \\sin\\alpha)$．O から B に向かう単位ベクトル $(-\\sin\\alpha,\\,-\\cos\\alpha)$ との内積は\n\\[ \\vec v'\\cdot(-\\sin\\alpha,-\\cos\\alpha)=-(1+e)v_0\\sin\\alpha\\cos\\alpha<0 \\]\nすなわち\\textbf{O に向かう向きに大きさ $\\boldsymbol{(1+e)v_0\\sin\\alpha\\cos\\alpha}$} の速度成分をもつ．円運動を続けるには糸に沿った速度成分は $0$ でなければならず，そのためには糸が小球を外向きに押す必要があるが，糸は引くことしかできない．よって小球は O に近づき，糸はたるむ．\n\n\\textbf{(2)}　衝突後は重力だけを受ける放物運動．最高点に達するまでの時間は $\\dfrac{v_0\\sin\\alpha}{g}$，その間の水平移動距離が $l\\sin\\alpha$（O の真下まで）なので\n\\[ ev_0\\cos\\alpha\\cdot\\frac{v_0\\sin\\alpha}{g}=l\\sin\\alpha\\quad\\Longrightarrow\\quad e=\\frac{gl}{v_0^2\\cos\\alpha}=\\boldsymbol{\\frac{1}{2\\cos^2\\alpha}} \\]\n$0<\\alpha<45^\\circ$ なので $\\dfrac12<e<1$ で，物理的に可能である．\n\n\\textbf{(3)}　放物線は最高点を通る鉛直線（O の真下）について対称なので，小球は B と同じ高さの対称点 B$'(l\\sin\\alpha,\\,-l\\cos\\alpha)$ に達する．B から B$'$ までの放物線は B，B$'$ を結ぶ弦より上にあり，O からの距離は $l$ より小さい（円の内側）ので，途中で糸が張ることはない．B$'$ での速度は $v_0(e\\cos\\alpha,\\,-\\sin\\alpha)$．B$'$ での円の接線方向（反時計回り）の単位ベクトルは $(\\cos\\alpha,\\ \\sin\\alpha)$ なので，接線成分は\n\\[ V=v_0(e\\cos^2\\alpha-\\sin^2\\alpha)=v_0\\left(\\frac12-\\sin^2\\alpha\\right)=\\boldsymbol{\\frac{v_0\\cos2\\alpha}{2}} \\]\n（$\\alpha<45^\\circ$ なので正で，小球は右上へ振れ上がる）．糸に沿った成分 $v_0\\sin\\alpha\\cos\\alpha(1+e)$ は，糸が張る瞬間の大きな張力（撃力）によって失われ，その運動エネルギーは失われる．この瞬間は運動量も保存しない（O が力積を与える）．\n\nその後は糸が張ったまま円運動をし（O より下では張力は正），力学的エネルギー保存より B$'$ から $\\dfrac{V^2}{2g}=\\dfrac{v_0^2\\cos^22\\alpha}{8g}=\\dfrac{l\\cos\\alpha\\cos^22\\alpha}{4}$ だけ上がる．よって最高点の高さは\n\\[ -l\\cos\\alpha+\\frac{l\\cos\\alpha\\cos^22\\alpha}{4}=\\boldsymbol{-l\\cos\\alpha\\left(1-\\frac{\\cos^22\\alpha}{4}\\right)} \\]\n\n\\textbf{(4)}　棒は小球を押すこともできるので，小球は衝突後も円周上にあり，速度は円の接線方向に限られる．衝突直後の速度の水平成分は反発係数により $ev_0\\cos\\alpha$（右向き）で，接線方向の単位ベクトル $(\\cos\\alpha,-\\sin\\alpha)$ の水平成分が $\\cos\\alpha$ であることから，衝突直後の速度は $ev_0(\\cos\\alpha,\\ -\\sin\\alpha)$，速さは $ev_0$ である．運動量の変化は\n\\[ \\Delta\\vec p=m(1+e)v_0(\\cos\\alpha,\\ -\\sin\\alpha) \\]\n壁の力積は水平右向き $J_{\\mathrm w}(1,0)$，棒の力積は棒に沿って $J(-\\sin\\alpha,-\\cos\\alpha)$（$J>0$ なら O から遠ざける向き，すなわち棒が小球を押す）とおくと\n\\[ x:\\ J_{\\mathrm w}-J\\sin\\alpha=m(1+e)v_0\\cos\\alpha,\\qquad y:\\ -J\\cos\\alpha=-m(1+e)v_0\\sin\\alpha \\]\nこれより $J=m(1+e)v_0\\tan\\alpha>0$，$J_{\\mathrm w}=\\dfrac{m(1+e)v_0}{\\cos\\alpha}$．$1+e=\\dfrac{2\\cos^2\\alpha+1}{2\\cos^2\\alpha}$ を代入して\n\\[ J_{\\mathrm w}=\\boldsymbol{\\frac{(2\\cos^2\\alpha+1)mv_0}{2\\cos^3\\alpha}},\\qquad J_{\\mathrm r}=\\boldsymbol{\\frac{(2\\cos^2\\alpha+1)mv_0\\sin\\alpha}{2\\cos^3\\alpha}} \\]\n$J>0$ なので棒は小球を O から遠ざける向きに押しており，棒は\\textbf{押し縮められている}．壁の力積は運動量変化の大きさ $m(1+e)v_0$ より大きく，その鉛直方向への「行きすぎ」を棒が打ち消している．\n\n\\textbf{(5)}　衝突直後の速さは $ev_0$ で，以後は円運動．B から $\\dfrac{e^2v_0^2}{2g}=e^2l\\cos\\alpha$ だけ上がるので\n\\[ -l\\cos\\alpha+e^2l\\cos\\alpha=\\boldsymbol{-l\\cos\\alpha\\left(1-\\frac{1}{4\\cos^4\\alpha}\\right)} \\]\n(3) との差は\n\\[ l\\cos\\alpha\\left(\\frac{1}{4\\cos^4\\alpha}-\\frac{\\cos^22\\alpha}{4}\\right)>0\\qquad\\left(\\frac{1}{\\cos^4\\alpha}>1\\ge\\cos^22\\alpha\\right) \\]\nなので，\\textbf{棒の場合の方が高い}．糸の場合は壁との衝突での損失は小さい（鉛直成分が保たれる）が，再び糸が張るときに糸方向の速度成分をすべて失うので，全体としては損失が大きくなる．例えば $\\alpha=30^\\circ$ では，糸の場合 $-\\dfrac{15\\sqrt3}{32}l$，棒の場合 $-\\dfrac{5\\sqrt3}{18}l$ である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "糸は引くことしかできないので，壁でのはね返りで糸方向に O 向きの速度成分が生じると糸はたるみ，放物運動の後に再び張る瞬間に糸方向の成分を撃力で失う．棒は押すこともできるので衝突中に撃力を及ぼし，壁の力積は運動量変化より大きくなる．拘束が「片側だけ」か「両側」かで保存則の使える範囲とエネルギー損失が変わる．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "projectile-motion",
+  "simple-pendulum"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "撃力",
+  "拘束力",
+  "反発係数",
+  "放物運動",
+  "糸のたるみ",
+  "力学的エネルギー"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

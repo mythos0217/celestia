@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 270">
+<defs><marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<line x1="50" y1="190" x2="400" y2="190" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+<text x="406" y="195" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="start">X = √m v</text>
+<line x1="220" y1="205" x2="220" y2="15" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+<text x="226" y="22" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="start">Y = √M V</text>
+<path d="M90,190 A130,130 0 0,1 350,190" fill="none" stroke="#222" stroke-width="1.4"/>
+<line x1="220" y1="190" x2="302.5" y2="47.10580837556762" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="308.5" y="51.10580837556762" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222" text-anchor="start">n</text>
+<path d="M220,145 A45,45 0 0,1 242.5,151.0" fill="none" stroke="#888"/><text x="232" y="138" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222" text-anchor="middle">θ</text>
+<circle cx="107.4" cy="125.0" r="4" fill="#c0392b"/><circle cx="332.6" cy="125.0" r="4" fill="#c0392b"/><circle cx="220.0" cy="60.0" r="4" fill="#c0392b"/><line x1="107.4" y1="125.0" x2="326.6" y2="125.0" stroke="#1f5fbf" stroke-width="1.6" marker-end="url(#a-ab)"/><line x1="332.6" y1="125.0" x2="225.0" y2="64.0" stroke="#1f5fbf" stroke-width="1.6" marker-end="url(#a-ab)"/><text x="101.41669750802298" y="116.99999999999999" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="end">下り終え ψ₀</text>
+<text x="340.583302491977" y="129.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="start">壁の後</text>
+<text x="212.0" y="50.0" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="end">上り下りの後（v = 0）</text>
+<text x="300" y="255" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222" text-anchor="middle">M = 3m（θ = 30°）：壁で Y 軸について，スロープで n について折り返す</text>
+</svg>

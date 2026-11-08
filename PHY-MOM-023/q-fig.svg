@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300">
+  <defs>
+    <marker id="q-ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f5fbf"/></marker>
+    <marker id="q-ak" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222"/></marker>
+  </defs>
+  <!-- Aの鉛直投げ上げの経路 -->
+  <line x1="330" y1="285" x2="330" y2="180" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <!-- Bの放物運動の経路（最高点で水平） -->
+  <path d="M 40 285 Q 174.9666790032092 174.0 284.9666790032092 176.0" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <!-- 球 -->
+  <circle cx="330" cy="150" r="26" fill="none" stroke="#222" stroke-width="1.6"/>
+  <circle cx="285.0" cy="176.0" r="26" fill="none" stroke="#222" stroke-width="1.6"/>
+  <circle cx="330" cy="150" r="2.2" fill="#222"/>
+  <circle cx="285.0" cy="176.0" r="2.2" fill="#222"/>
+  <text x="336" y="144" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">O</text>
+  <text x="362" y="128" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">A（質量 <tspan font-family="Times New Roman, serif" font-style="italic">m</tspan>）</text>
+  <text x="141.0" y="224.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">B（質量 <tspan font-family="Times New Roman, serif" font-style="italic">M</tspan>）</text>
+  <!-- 中心線 -->
+  <line x1="285.0" y1="176.0" x2="330" y2="150" stroke="#222" stroke-width="1"/>
+  <line x1="285.0" y1="176.0" x2="365.0" y2="176.0" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <path d="M 325.0 176.0 A 40 40 0 0 0 319.6 156.0" fill="none" stroke="#222" stroke-width="1"/>
+  <text x="331.0" y="170.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">θ</text>
+  <!-- Bの速度 -->
+  <line x1="199.0" y1="176.0" x2="253.0" y2="176.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ar)"/>
+  <text x="207.0" y="168.0" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf">V<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+  <text x="200" y="110" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">Aは速さ0（最高点）</text>
+  <!-- 重力 -->
+  <line x1="500" y1="40" x2="500" y2="95" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+  <text x="440" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">重力加速度 <tspan font-family="Times New Roman, serif" font-style="italic">g</tspan></text>
+  <text x="350" y="275" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">Aは鉛直に投げ上げた</text>
+</svg>

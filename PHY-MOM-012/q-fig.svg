@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320">
+<defs><marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<line x1="60" y1="260" x2="320" y2="260" stroke="#222" stroke-width="1.6"/>
+<g stroke="#222" stroke-width="1">
+<line x1="70" y1="260" x2="60" y2="272"/><line x1="90" y1="260" x2="80" y2="272"/><line x1="110" y1="260" x2="100" y2="272"/><line x1="130" y1="260" x2="120" y2="272"/><line x1="150" y1="260" x2="140" y2="272"/><line x1="170" y1="260" x2="160" y2="272"/><line x1="190" y1="260" x2="180" y2="272"/><line x1="210" y1="260" x2="200" y2="272"/><line x1="230" y1="260" x2="220" y2="272"/><line x1="250" y1="260" x2="240" y2="272"/><line x1="270" y1="260" x2="260" y2="272"/><line x1="290" y1="260" x2="280" y2="272"/><line x1="310" y1="260" x2="300" y2="272"/><line x1="330" y1="260" x2="320" y2="272"/></g>
+<circle cx="190" cy="246" r="14" fill="#222"/>
+<circle cx="190" cy="223" r="9" fill="#222"/>
+<!-- slack string loop -->
+<path d="M 181 225 C 150 215, 120 200, 115 225 C 110 255, 160 255, 178 248" fill="none" stroke="#222" stroke-width="1.2"/>
+<text x="40" y="196" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">糸（長さ</text>
+<text x="98" y="196" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">l</text>
+<text x="104" y="196" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">）</text>
+<line x1="190" y1="212" x2="190" y2="150" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="198" y="165" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#1f5fbf">v<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+<text x="208" y="228" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">Q（</text>
+<text x="232" y="228" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">m</text>
+<text x="244" y="228" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">）</text>
+<text x="212" y="252" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">P（</text>
+<text x="236" y="252" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">2m</text>
+<text x="256" y="252" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">）</text>
+<line x1="340" y1="120" x2="340" y2="170" stroke="#222" stroke-width="1.6" marker-end="url(#q-ak)"/>
+<text x="348" y="152" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">g</text>
+</svg>

@@ -1,0 +1,144 @@
+{
+ "id": "PHY-MOM-024",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "一定の力で押される台の壁と，上面の小物体の繰り返し衝突（有限時間で終わる跳ね返りと反発係数によらない損失）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかな水平な床の上に，左端に鉛直な壁をもつ質量 $M$ の台が静止している．台のなめらかで水平な上面には，質量 $m$ の小物体 B が壁から距離 $D$ の位置に静止している．時刻 $t=0$ から，台に $x$ 軸の正の向き（壁から B へ向かう向き）に大きさ $F$ の一定の力を加え続けた．B と壁の間の反発係数を $e$（$0<e<1$）とする．台の上面は十分に長く，B が台の右端に達することはない．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "B が初めて壁と衝突する時刻 $t_1$ を求めよ．また，この衝突の直後の台の速度 $V_1$ と B の速度 $v_1$ を $M,\\ m,\\ F,\\ D,\\ e$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$n$ 回目の衝突から $n+1$ 回目の衝突までの時間 $\\Delta t_n$ を $e,\\ n,\\ t_1$ で表せ（$n\\ge1$）．"
+     },
+     {
+      "id": "3",
+      "tex": "衝突は無限回起こるが，ある時刻 $t_\\infty$ 以降は，B は壁に接したまま台と一体となって運動する．$t_\\infty$ を $e,\\ t_1$ で表せ．また，時刻 $t_\\infty$ での台の速度 $V_\\infty$ を $F,\\ M,\\ m,\\ e,\\ t_1$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$t=0$ から $t_\\infty$ までに衝突によって失われた力学的エネルギーの総量 $Q$ を求め，$Q$ が $e$ によらないことを示せ．"
+     },
+     {
+      "id": "5",
+      "tex": "$e$ を $1$ に近づけると $t_\\infty$ と $Q$ はそれぞれどうなるか．$e=1$ ちょうどではエネルギーが失われないことと矛盾しないことを含めて簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：一定の力で押される台の壁と，上面の小物体の繰り返し衝突（有限時間で終わる跳ね返りと反発係数によらない損失）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：一定の力で押される台の壁と，上面の小物体の繰り返し衝突（有限時間で終わる跳ね返りと反発係数によらない損失）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$t_1=\\sqrt{\\dfrac{2MD}{F}}$，$V_1=\\dfrac{M-em}{M+m}\\sqrt{\\dfrac{2FD}{M}}$，$v_1=\\dfrac{(1+e)M}{M+m}\\sqrt{\\dfrac{2FD}{M}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Delta t_n=2e^nt_1$"
+   },
+   {
+    "id": "3",
+    "tex": "$t_\\infty=\\dfrac{1+e}{1-e}t_1$，$V_\\infty=\\dfrac{F}{M+m}\\cdot\\dfrac{1+e}{1-e}t_1$"
+   },
+   {
+    "id": "4",
+    "tex": "$Q=\\dfrac{mFD}{M+m}$（$e$ を含まない）"
+   },
+   {
+    "id": "5",
+    "tex": "$t_\\infty\\to\\infty$ となるが $Q$ は $\\dfrac{mFD}{M+m}$ のまま．$e\\to1$ では損失を出し切るまでに無限に長い時間がかかり，有限の時刻までに失われるエネルギーは $0$ に近づくので，$e=1$ で損失がないことと矛盾しない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　B には水平な力がはたらかないので，最初の衝突までは静止したまま．台は加速度 $\\dfrac FM$ で動くので，$\\dfrac12\\dfrac FMt_1^2=D$ より $t_1=\\boldsymbol{\\sqrt{\\dfrac{2MD}{F}}}$．衝突直前の台の速さは $u_0=\\dfrac FMt_1=\\sqrt{\\dfrac{2FD}{M}}$．\n衝突は一瞬なので，有限の力 $F$ の力積は無視でき，台と B の運動量の和が保存する：$Mu_0=MV_1+mv_1$．反発係数の式 $v_1-V_1=eu_0$ と連立して\n\\[ V_1=\\boldsymbol{\\frac{M-em}{M+m}\\sqrt{\\frac{2FD}{M}}},\\qquad v_1=\\boldsymbol{\\frac{(1+e)M}{M+m}\\sqrt{\\frac{2FD}{M}}}. \\]\n\n\\textbf{(2)　相対運動を見る}　壁から B までの距離を $s$ とする．衝突と衝突の間，B の加速度は $0$，台の加速度は $\\dfrac FM$ なので，台から見た B の加速度は $-\\dfrac FM$（壁の向き）で一定．衝突では壁に対する B の速度が $-e$ 倍になる．したがって $s$ の運動は「大きさ $\\dfrac FM$ の見かけの重力のもとで，反発係数 $e$ の床ではずむボール」と全く同じである（解答図）．\n$n$ 回目の衝突で壁に近づく速さは $e^{n-1}u_0$，はね返る速さは $e^nu_0$ で，同じ速さで戻ってくるまでの時間は\n\\[ \\Delta t_n=\\frac{2e^nu_0}{F/M}=\\boldsymbol{2e^nt_1}\\qquad\\left(\\frac{Mu_0}{F}=t_1\\right). \\]\n\n\\textbf{(3)}　衝突の間隔は公比 $e$ の等比数列なので，和は有限：\n\\[ t_\\infty=t_1+\\sum_{n=1}^{\\infty}2e^nt_1=t_1\\left(1+\\frac{2e}{1-e}\\right)=\\boldsymbol{\\frac{1+e}{1-e}t_1}. \\]\n以後は相対速度 $0$，$s=0$ のままで，B は壁から $\\dfrac{mF}{M+m}\\,(>0)$ の力で押されて一体で加速する（壁から離れない）．\n台と B を1つの系とみると，水平方向の外力は $F$ だけで，衝突の力は内力なので，時刻 $t$ での運動量の和はつねに $Ft$．時刻 $t_\\infty$ では両者の速度が等しいので\n\\[ V_\\infty=\\frac{Ft_\\infty}{M+m}=\\boldsymbol{\\frac{F}{M+m}\\cdot\\frac{1+e}{1-e}t_1}. \\]\n\n\\textbf{(4)}　運動エネルギーは「重心の運動エネルギー」と「相対運動のエネルギー $\\frac12\\mu w^2$」（$\\mu=\\frac{Mm}{M+m}$，$w$ は相対速度）の和に分けられる．衝突では重心速度は変わらず相対速度が $e$ 倍になるので，近づく速さ $w$ の衝突1回で失われるのは $\\frac12\\mu(1-e^2)w^2$．$w=e^{n-1}u_0$（$n=1,2,\\ldots$）について和をとると\n\\[ Q=\\frac12\\mu(1-e^2)u_0^2\\sum_{n=1}^{\\infty}e^{2(n-1)}=\\frac12\\mu u_0^2=\\frac12\\cdot\\frac{Mm}{M+m}\\cdot\\frac{2FD}{M}=\\boldsymbol{\\frac{mFD}{M+m}}. \\]\n$e$ は約分されて消える．\n\n\\textbf{別解（相対運動の「位置エネルギー」）}　台の変位 $X$ を重心の変位 $X_{\\rm G}$ と $s$ で $X=X_{\\rm G}-\\frac{m}{M+m}s$ と書くと，$F$ の仕事のうち $F\\Delta X_{\\rm G}$ は重心の運動エネルギーの増加に使われ，残り $-\\frac{mF}{M+m}\\Delta s$ が相対運動にはたらく．よって衝突と衝突の間は $\\frac12\\mu w^2+\\frac{mF}{M+m}s$ が一定に保たれる（ボールの力学的エネルギーに相当）．はじめこの量は $\\frac{mF}{M+m}D$，最後は $w=0$，$s=0$ で $0$ になるので，その差がすべて衝突で失われ，$Q=\\dfrac{mFD}{M+m}$．$e$ は「何回に分けて失うか」を決めるだけである．\n\n\\textbf{(5)}　$e\\to1$ で $t_\\infty=\\frac{1+e}{1-e}t_1\\to\\infty$．一方 $Q=\\frac{mFD}{M+m}$ は $e$ によらない．$e$ が $1$ に近いと1回の損失 $\\frac12\\mu(1-e^2)w^2$ はごくわずかで，損失を出し切るまでに無限に長い時間がかかる．どの有限の時刻をとっても，それまでに失われるエネルギーは $e\\to1$ で $0$ に近づくので，$e=1$ で永久にはずみ続け損失がないことと矛盾しない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一定の力で押される台の上のなめらかな面の物体は，台に対して見かけの重力 $F/M$ のもとではずむボールと同じ相対運動をし，衝突の間隔が公比 $e$ の等比数列になるので有限の時間で跳ね終わる．衝突は内力なので運動量の和は常に $Ft$ で，失われるエネルギーは相対運動の「位置エネルギー」$\\mu FD/M$ そのものとなり反発係数によらない．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "kinematics-components",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反発係数",
+  "繰り返し衝突",
+  "相対運動",
+  "重心",
+  "等比級数",
+  "換算質量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

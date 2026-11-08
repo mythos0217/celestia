@@ -1,0 +1,120 @@
+{
+ "id": "PHY-MOM-030",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "ホバリングに必要な出力と，相似な機体の拡大・縮小",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ヘリコプターのホバリング（空中静止）を次のモデルで考える．回転翼が掃く円の面積を $A$ とし，翼の上方で静止していた空気が，面積 $A$ の円を通り抜けるときに一様な速さ $w$ で鉛直下向きに押し出される（押し出された空気はその後も速さ $w$ のまま）とする．エンジンの出力はすべてこの空気の運動エネルギーになるとし，空気の密度を $\\rho$，機体の質量を $M$，重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ホバリングに必要な $w$ と，必要な出力 $P$ を $M,g,\\rho,A$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "形も材質も同じで，長さをすべて $k$ 倍にした機体（質量は $k^3$ 倍，面積 $A$ は $k^2$ 倍）がホバリングに必要な出力は $P$ の何倍か．$k=\\dfrac12$ のときの値を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "エンジンの最大出力も機体の体積に比例するとする．もとの機体のエンジンの最大出力が $1.5P$ であるとき，ホバリングできる相似な機体の $k$ の範囲を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "もとの機体が，空気の密度が地上の $0.70$ 倍の高地で最大出力 $1.5P$ を使ってホバリングするとき，積むことのできる荷物の質量の最大値は $M$ の何倍か．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ホバリングに必要な出力と，相似な機体の拡大・縮小",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$w=\\sqrt{\\dfrac{Mg}{\\rho A}}$，$P=\\dfrac{(Mg)^{3/2}}{2\\sqrt{\\rho A}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$k^{7/2}$ 倍，$k=\\dfrac12$ のとき $0.088$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "$0<k\\le2.25$"
+   },
+   {
+    "id": "4",
+    "tex": "$0.16$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 推力と出力}\n時間 $\\Delta t$ の間に円を通り抜ける空気の質量は $\\rho Aw\\Delta t$ で，この空気は静止から下向きの速さ $w$ になる．運動量の変化は翼が空気におよぼす力の力積に等しいから，その力の大きさを $F$ として\n\\[ F\\Delta t=\\rho Aw\\Delta t\\cdot w\\quad\\Longrightarrow\\quad F=\\rho Aw^2. \\]\n作用・反作用により空気は機体を上向きに $F$ で押す．ホバリングでは $F=Mg$ なので\n\\[ w=\\boldsymbol{\\sqrt{\\frac{Mg}{\\rho A}}}. \\]\n出力は空気が単位時間に得る運動エネルギーで\n\\[ P=\\frac12(\\rho Aw)\\,w^2=\\frac12Fw=\\frac12Mg\\sqrt{\\frac{Mg}{\\rho A}}=\\boldsymbol{\\frac{(Mg)^{3/2}}{2\\sqrt{\\rho A}}}. \\]\n（出力が $Fw$ でなく $\\frac12Fw$ になるのは，空気が $0$ から $w$ まで加速されるからである．）\n\n\\textbf{(2) 相似な機体}\n$P\\propto M^{3/2}A^{-1/2}$ なので，$M\\to k^3M$，$A\\to k^2A$ とすると\n\\[ \\frac{P'}{P}=(k^3)^{3/2}(k^2)^{-1/2}=\\boldsymbol{k^{7/2}}. \\]\n$k=\\frac12$ では $2^{-7/2}=\\dfrac{1}{8\\sqrt2}=\\boldsymbol{0.088}$ 倍．質量が $\\frac18$ になるのに対し，必要出力はそれより小さい．\n\n\\textbf{(3) ホバリングできる大きさ}\n相似な機体のエンジンの最大出力は $1.5Pk^3$．ホバリングできる条件は\n\\[ 1.5Pk^3\\ge Pk^{7/2}\\quad\\Longleftrightarrow\\quad k^{1/2}\\le1.5\\quad\\Longleftrightarrow\\quad \\boldsymbol{0<k\\le2.25}. \\]\n小さい機体ほど余裕が大きく，大きくするとやがて飛べなくなる．\n\n\\textbf{(4) 高地での荷物}\n荷物を含めた全質量を $M'$ とすると，密度 $0.70\\rho$ でのホバリング出力は $P\\left(\\dfrac{M'}{M}\\right)^{3/2}(0.70)^{-1/2}$．これが $1.5P$ 以下であればよいので\n\\[ \\frac{M'}{M}\\le(1.5\\sqrt{0.70})^{2/3}=1.16. \\]\nよって荷物の最大値は $\\boldsymbol{0.16}$ 倍．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "空気を押し下げる推力は運動量の流れ $\\rho Aw^2$，出力は運動エネルギーの流れ $\\frac12\\rho Aw^3$ なので，ホバリング出力は $(Mg)^{3/2}/(2\\sqrt{\\rho A})$ と重さの $3/2$ 乗・面積と密度の $-1/2$ 乗に比例する．相似な拡大では必要出力が $k^{7/2}$，エンジン出力が $k^3$ で増えるため大型化に上限がある．"
+ },
+ "concepts": [
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動量の流れ",
+  "推力",
+  "出力",
+  "相似則",
+  "ホバリング"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

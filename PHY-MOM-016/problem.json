@@ -1,0 +1,130 @@
+{
+ "id": "PHY-MOM-016",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "加速する台の斜面上で静止した小球を放した後の重心系と相対運動（垂直抗力の不連続と往復時間）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかな水平な床の上に質量 $M$ の台 Q が置かれている．台 Q の左側は傾斜角 $\\theta$ のなめらかな斜面で，その下端はなめらかな曲面を経て水平でなめらかな上面につながっている．上面の右端にはばね定数 $k$ の軽いばねが水平に取り付けられており，斜面の下端からばねの自由端までの水平部分の長さは $D$ である．曲面の部分の大きさと，そこを通過する時間は無視できる．重力加速度の大きさを $g$ とし，水平方向は右向きを正とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "斜面上の，水平な上面から高さ $h$ の位置に質量 $m$ の小球 P を置くと同時に，台 Q に糸をつけて一定の大きさ $F$ の力で水平右向きに引き始めたところ，P は Q に対して静止したまま，P と Q が一体となって加速した．$F$ と，P が斜面から受ける垂直抗力の大きさ $N_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P と Q の速度が $V_0$ になった瞬間に糸を切った．切った直後に P が斜面から受ける垂直抗力の大きさ $N_1$ と，比 $N_1/N_0$ を求めよ．また，切った直後の Q の加速度を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "P が水平な上面に移った後（ばねに触れる前）の，Q に対する P の相対速度の大きさ $u$ と，床に対する P，Q の速度 $v_{\\rm P}$，$V_{\\rm Q}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ばねの縮みの最大値 $X$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "P はばねに押し戻されたのち，斜面を上り，ある高さで Q に対して一瞬静止した．その高さを求めよ．さらに，糸を切った瞬間からこのときまでの時間 $t_1$ と，その間の Q の床に対する移動距離を，$M,\\ m,\\ \\theta,\\ g,\\ h,\\ k,\\ D,\\ V_0$ のうち必要なものを用いて表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：加速する台の斜面上で静止した小球を放した後の重心系と相対運動（垂直抗力の不連続と往復時間）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$F=(M+m)g\\tan\\theta$，$N_0=\\dfrac{mg}{\\cos\\theta}$"
+   },
+   {
+    "id": "2",
+    "tex": "$N_1=\\dfrac{Mmg\\cos\\theta}{M+m\\sin^2\\theta}$，$\\dfrac{N_1}{N_0}=\\dfrac{M\\cos^2\\theta}{M+m\\sin^2\\theta}$，Q の加速度 $-\\dfrac{mg\\sin\\theta\\cos\\theta}{M+m\\sin^2\\theta}$（左向き）"
+   },
+   {
+    "id": "3",
+    "tex": "$u=\\sqrt{\\dfrac{2(M+m)gh}{M}}$，$v_{\\rm P}=V_0+\\dfrac{Mu}{M+m}$，$V_{\\rm Q}=V_0-\\dfrac{mu}{M+m}$"
+   },
+   {
+    "id": "4",
+    "tex": "$X=\\sqrt{\\dfrac{2mgh}{k}}$"
+   },
+   {
+    "id": "5",
+    "tex": "高さ $h$，$t_1=\\dfrac{2}{\\sin\\theta}\\sqrt{\\dfrac{2h(M+m\\sin^2\\theta)}{(M+m)g}}+2D\\sqrt{\\dfrac{M}{2(M+m)gh}}+\\pi\\sqrt{\\dfrac{mM}{(M+m)k}}$，移動距離 $V_0t_1$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 一体で加速する間}　P は Q に対して静止しているので，P の加速度も Q と同じ水平右向きの $a$．P にはたらく力は重力と垂直抗力だけで，垂直抗力は斜面に垂直（右上向き）なので\n\\[ N_0\\cos\\theta=mg,\\qquad N_0\\sin\\theta=ma \\]\nより $a=g\\tan\\theta$，$\\boldsymbol{N_0=\\dfrac{mg}{\\cos\\theta}}$．P と Q を1つの系とみると，水平方向の外力は $F$ だけなので $\\boldsymbol{F=(M+m)g\\tan\\theta}$．\n\n\\textbf{(2) 糸を切った直後}　糸を切った瞬間，速度は連続だが加速度は不連続に変わる．Q の加速度を $A$（右向き正），Q に対する P の斜面に沿った下向きの加速度を $s$ とすると，P の床に対する加速度は $(A+s\\cos\\theta,\\ -s\\sin\\theta)$．垂直抗力を $N_1$ として\n\\[ m(A+s\\cos\\theta)=N_1\\sin\\theta,\\quad -ms\\sin\\theta=N_1\\cos\\theta-mg,\\quad MA=-N_1\\sin\\theta. \\]\nこれを解くと\n\\[ \\boldsymbol{N_1=\\frac{Mmg\\cos\\theta}{M+m\\sin^2\\theta}},\\quad \\boldsymbol{\\frac{N_1}{N_0}=\\frac{M\\cos^2\\theta}{M+m\\sin^2\\theta}}\\ (<1),\\quad \\boldsymbol{A=-\\frac{mg\\sin\\theta\\cos\\theta}{M+m\\sin^2\\theta}},\\quad s=\\frac{(M+m)g\\sin\\theta}{M+m\\sin^2\\theta}. \\]\n糸が Q を引いている間は Q が P を押し上げて支えていたが，糸を切ると Q は P に押されて左へ逃げるので，垂直抗力は突然小さくなる．これらの加速度は斜面上にいる間一定である．\n\n\\textbf{(3) 水平な上面へ移った後}　糸を切った後は水平方向の外力がないので，P と Q の水平方向の運動量の和 $(M+m)V_0$ は保存し，重心は速度 $V_0$ で等速運動する．なめらかなので力学的エネルギーも保存する．重心とともに動く座標系（慣性系）では，はじめ両者とも静止していて運動エネルギーは $0$．水平な上面に移ると，重心系での P，Q の速度は相対速度 $u$ を質量の逆比に分けて $\\frac{M}{M+m}u$，$-\\frac{m}{M+m}u$ なので，重心系の運動エネルギーは $\\frac12\\mu u^2$（$\\mu=\\frac{mM}{M+m}$）．これが $mgh$ に等しいから\n\\[ \\boldsymbol{u=\\sqrt{\\frac{2(M+m)gh}{M}}},\\qquad \\boldsymbol{v_{\\rm P}=V_0+\\frac{M}{M+m}u},\\quad \\boldsymbol{V_{\\rm Q}=V_0-\\frac{m}{M+m}u}. \\]\n\n\\textbf{(4) ばねの最大の縮み}　縮みが最大のとき相対速度は 0 で，重心系の運動エネルギーはすべて弾性エネルギーになる：$\\frac12kX^2=\\frac12\\mu u^2=mgh$ より $\\boldsymbol{X=\\sqrt{\\dfrac{2mgh}{k}}}$．\n\n\\textbf{(5) 戻ってくるまでの時間と Q の移動距離}　重心系ではエネルギーが保存し，P が Q に対して静止する瞬間には重心系の運動エネルギーが 0 なので，位置エネルギーは $mgh$，すなわち高さは $\\boldsymbol{h}$ に戻る．重心系の運動は時間反転について対称なので，帰りの斜面の時間は行きと同じである．\n\n斜面を下る時間 $t_s$ は，Q に対して一定の加速度 $s$ で距離 $h/\\sin\\theta$ 進む時間で\n\\[ t_s=\\sqrt{\\frac{2h}{s\\sin\\theta}}=\\frac{1}{\\sin\\theta}\\sqrt{\\frac{2h(M+m\\sin^2\\theta)}{(M+m)g}}. \\]\n水平部分は相対速度 $u$ で往復するので $2D/u$．ばねと接触している間の相対座標は換算質量 $\\mu$ の単振動の半周期で，$\\pi\\sqrt{\\mu/k}$．したがって\n\\[ \\boldsymbol{t_1=\\frac{2}{\\sin\\theta}\\sqrt{\\frac{2h(M+m\\sin^2\\theta)}{(M+m)g}}+2D\\sqrt{\\frac{M}{2(M+m)gh}}+\\pi\\sqrt{\\frac{mM}{(M+m)k}}}. \\]\nこのとき P と Q の相対的な配置は糸を切った瞬間とまったく同じで，重心は $V_0t_1$ だけ進んでいる．重心の位置は質量で重みをつけた平均なので，相対配置が同じなら Q の移動距離も重心と同じ $\\boldsymbol{V_0t_1}$ である．途中の Q の複雑な加速・減速を追わなくても，重心系と相対運動に分けるだけで求まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一定の力で引かれる台の斜面では，見かけの重力が斜面に垂直になる加速度で小球が静止できるが，力を断つと台が押し返されて逃げるため垂直抗力が不連続に小さくなる．その後は重心の等速運動と，換算質量で表される相対運動（斜面の等加速度・水平の等速・ばねの半周期）に分ければ，相対配置が元に戻るまでの時間と台の移動距離が求まる．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "uniform-acceleration",
+  "kinematics-components"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "動く斜面",
+  "重心系",
+  "換算質量",
+  "運動量保存",
+  "単振動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

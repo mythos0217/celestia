@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 290">
+  <defs>
+    <marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+    <marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+  </defs>
+  <!-- left panel: string case -->
+  <text x="20" y="24" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">糸の場合</text>
+  <line x1="88" y1="40" x2="88" y2="250" stroke="#222" stroke-width="1.6"/>
+  <g stroke="#222" stroke-width="1"><line x1="88" y1="50" x2="78" y2="60"/><line x1="88" y1="80" x2="78" y2="90"/><line x1="88" y1="110" x2="78" y2="120"/><line x1="88" y1="140" x2="78" y2="150"/><line x1="88" y1="170" x2="78" y2="180"/><line x1="88" y1="200" x2="78" y2="210"/><line x1="88" y1="230" x2="78" y2="240"/></g>
+  <circle cx="170" cy="50" r="3" fill="#222"/>
+  <text x="176" y="46" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">O</text>
+  <path d="M 95 180 A 150 150 0 0 0 245 180" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="170" y1="50" x2="170" y2="230" stroke="#888" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="170" y1="50" x2="245" y2="180" stroke="#888" stroke-width="1"/>
+  <path d="M 95 180 Q 170 115 245 180" fill="none" stroke="#c0392b" stroke-width="1.8"/>
+  <circle cx="95" cy="180" r="5" fill="#222"/><circle cx="245" cy="180" r="5" fill="#222"/>
+  <text x="96" y="204" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">B</text>
+  <text x="248" y="204" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">B′</text>
+  <!-- velocity at B' : (e cos a, -sin a) -> screen (0.577,0.5) scaled -->
+  <line x1="245" y1="180" x2="290" y2="219" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+  <!-- radial lost component (outward along O->B') -->
+  <line x1="245" y1="180" x2="275" y2="232" stroke="#c0392b" stroke-width="1.4" stroke-dasharray="4,3" marker-end="url(#a-ar)"/>
+  <text x="290" y="244" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#c0392b">糸方向の成分は失われる</text>
+  <text x="120" y="140" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#c0392b">放物線</text>
+  <!-- right panel: rod impulses at B -->
+  <text x="360" y="24" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222">棒の場合：B での力積</text>
+  <line x1="390" y1="80" x2="505" y2="80" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+  <text x="430" y="72" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf">J<tspan baseline-shift="sub" font-size="10" font-style="normal">w</tspan></text>
+  <line x1="505" y1="80" x2="477" y2="130" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#a-ab)"/>
+  <text x="500" y="118" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#1f5fbf">J<tspan baseline-shift="sub" font-size="10" font-style="normal">r</tspan></text>
+  <line x1="390" y1="80" x2="477" y2="130" stroke="#c0392b" stroke-width="1.8" marker-end="url(#a-ar)"/>
+  <text x="402" y="128" font-family="Times New Roman, serif" font-size="15" fill="#c0392b">Δ<tspan font-style="italic">p</tspan></text>
+  <!-- rod direction reference -->
+  <line x1="505" y1="80" x2="534" y2="30" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="538" y="34" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#888">O の方向</text>
+  <path d="M 445 80 A 55 55 0 0 1 437.6 107.5" fill="none" stroke="#222" stroke-width="1"/>
+  <text x="448" y="104" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#222">α</text>
+  <text x="360" y="170" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">|Δ<tspan font-family="Times New Roman, serif" font-style="italic">p</tspan>| = <tspan font-family="Times New Roman, serif" font-style="italic">m</tspan>(1+<tspan font-family="Times New Roman, serif" font-style="italic">e</tspan>)<tspan font-family="Times New Roman, serif" font-style="italic">v</tspan><tspan baseline-shift="sub" font-size="9">0</tspan>（接線方向）</text>
+  <text x="360" y="192" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">棒の力積は O から遠ざかる向き（押す）</text>
+</svg>

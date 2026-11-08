@@ -1,0 +1,134 @@
+{
+ "id": "PHY-MOM-018",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "質量の異なる円板の2次元弾性衝突（速度の円・最大の曲がり角・2通りの衝突）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平面上に，半径 $r$ の等しい2つの円板 A（質量 $\\sqrt3\\,m$）と B（質量 $m$）がある．静止している B に A が速さ $V$ で衝突した．衝突は弾性衝突で，円板どうしの間に摩擦はなく，衝突の際の力は接触点で2つの中心を結ぶ方向にはたらく．衝突前の A の速度の向きを $x$ 軸の正の向きとし，衝突後の A，B の速度が $x$ 軸となす角の大きさをそれぞれ $\\alpha$，$\\beta$ とする（図）．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "2円板の重心の速度の大きさ $v_{\\rm G}$ を求めよ．また，重心とともに動く観測者から見ると，衝突の前後で各円板の速さが変わらないことを示し，衝突後の A の速度ベクトルの終点（始点を原点にそろえたとき）がどのような円の上にあるかを答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\alpha$ の最大値を $\\alpha_{\\max}$ とするとき，$\\tan\\alpha_{\\max}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "衝突後，$\\alpha=30^\\circ$ であった．$\\beta$ として考えられる値をすべて求め，それぞれの場合について衝突後の A，B の速さ $V_{\\rm A}$，$V_{\\rm B}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) のそれぞれの場合について，衝突前の A の中心の進路と B の中心との距離 $b$ を $r$ で表せ．また，B に移った運動エネルギーの，衝突前の運動エネルギーに対する割合を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：質量の異なる円板の2次元弾性衝突（速度の円・最大の曲がり角・2通りの衝突）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：質量の異なる円板の2次元弾性衝突（速度の円・最大の曲がり角・2通りの衝突）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_{\\rm G}=\\frac{3-\\sqrt3}{2}V$．点 $(v_{\\rm G},\\,0)$ を中心とする半径 $\\frac{\\sqrt3-1}{2}V$ の円"
+   },
+   {
+    "id": "2",
+    "tex": "$\\tan\\alpha_{\\max}=\\frac{1}{\\sqrt2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\beta=45^\\circ$ のとき $V_{\\rm A}=(\\sqrt3-1)V$，$V_{\\rm B}=\\frac{3\\sqrt2-\\sqrt6}{2}V$；$\\beta=15^\\circ$ のとき $V_{\\rm A}=\\frac{\\sqrt3-1}{2}V$，$V_{\\rm B}=\\frac{\\sqrt6}{2}V$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\beta=45^\\circ$：$b=\\sqrt2\\,r$，割合 $2\\sqrt3-3$；$\\beta=15^\\circ$：$b=\\frac{\\sqrt6-\\sqrt2}{2}r$，割合 $\\frac{\\sqrt3}{2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 重心系で見る}　外力がないので重心は等速で\n\\[ v_{\\rm G}=\\frac{\\sqrt3\\,m\\,V}{(\\sqrt3+1)m}=\\boldsymbol{\\frac{3-\\sqrt3}{2}V} \\]\n重心系では衝突前の A の速度は $u_{\\rm A}=V-v_{\\rm G}=\\frac{V}{\\sqrt3+1}$，B は $-v_{\\rm G}$（大きさ $\\sqrt3\\,u_{\\rm A}$）．重心系では全運動量が $0$ なので，衝突後も A と B の速度は逆向きで，大きさの比は質量の逆比 $1:\\sqrt3$ である．衝突後の A の速さを $u'$ とすると，重心系での運動エネルギー（全運動エネルギーから重心の運動エネルギーを引いたもの）も保存するから\n\\[ \\frac12\\sqrt3\\,m\\,u'^2+\\frac12m\\left(\\sqrt3\\,u'\\right)^2=\\frac12\\sqrt3\\,m\\,u_{\\rm A}^{\\,2}+\\frac12m\\left(\\sqrt3\\,u_{\\rm A}\\right)^2 \\quad\\therefore\\quad u'=u_{\\rm A} \\]\nB も同様．したがって重心系では速さは変わらず向きだけが角 $\\chi$ 回る．床から見た A の速度は $\\vec v_{\\rm G}+u_{\\rm A}(\\cos\\chi,\\sin\\chi)$ なので，終点は \\textbf{点 $(v_{\\rm G},0)$ を中心とする半径 $u_{\\rm A}=\\frac{\\sqrt3-1}{2}V$ の円}の上にある．B の速度は $\\vec v_{\\rm G}-v_{\\rm G}(\\cos\\chi,\\sin\\chi)$ で，同じ点を中心とし原点を通る半径 $v_{\\rm G}$ の円の上にある．\n\n\\textbf{(2)}　A の円の半径 $u_{\\rm A}$ は中心までの距離 $v_{\\rm G}$ より小さい（A の方が重いため）ので，原点は円の外にある．$\\alpha$ が最大になるのは原点からの直線が円に接するときで\n\\[ \\sin\\alpha_{\\max}=\\frac{u_{\\rm A}}{v_{\\rm G}}=\\frac{m}{\\sqrt3\\,m}=\\frac1{\\sqrt3} \\qquad\\therefore\\quad \\tan\\alpha_{\\max}=\\boldsymbol{\\frac1{\\sqrt2}} \\]\n\n\\textbf{(3) 2つの交点}　$\\alpha<\\alpha_{\\max}$ のとき，傾き $\\alpha$ の直線は円と2点で交わるので，2通りの衝突がありうる．A の速度の成分から\n\\[ \\tan\\alpha=\\frac{u_{\\rm A}\\sin\\chi}{v_{\\rm G}+u_{\\rm A}\\cos\\chi}=\\frac{\\sin\\chi}{\\sqrt3+\\cos\\chi} \\]\n$\\alpha=30^\\circ$ を代入して $\\sqrt3\\sin\\chi-\\cos\\chi=\\sqrt3$，$2\\sin(\\chi-30^\\circ)=\\sqrt3$ より $\\chi=90^\\circ,\\ 150^\\circ$．\nB の速度 $v_{\\rm G}(1-\\cos\\chi,\\,-\\sin\\chi)$ の向きは $\\tan\\beta=\\frac{\\sin\\chi}{1-\\cos\\chi}=\\frac1{\\tan(\\chi/2)}$ より $\\beta=90^\\circ-\\frac{\\chi}{2}$，大きさは $V_{\\rm B}=2v_{\\rm G}\\cos\\beta$．\n\\begin{itemize}\n  \\item $\\chi=90^\\circ$：$\\boldsymbol{\\beta=45^\\circ}$．$V_{\\rm A}=\\sqrt{v_{\\rm G}^{\\,2}+u_{\\rm A}^{\\,2}}=\\frac{2V}{\\sqrt3+1}=\\boldsymbol{(\\sqrt3-1)V}$，$V_{\\rm B}=\\sqrt2\\,v_{\\rm G}=\\boldsymbol{\\frac{3\\sqrt2-\\sqrt6}{2}V}$．\n  \\item $\\chi=150^\\circ$：$\\boldsymbol{\\beta=15^\\circ}$．A の速度は $\\frac{V}{\\sqrt3+1}\\left(\\frac{\\sqrt3}{2},\\,\\frac12\\right)$ なので $V_{\\rm A}=\\frac{V}{\\sqrt3+1}=\\boldsymbol{\\frac{\\sqrt3-1}{2}V}$，$V_{\\rm B}=2v_{\\rm G}\\cos15^\\circ=\\frac{2\\sqrt3V}{\\sqrt3+1}\\cdot\\frac{\\sqrt6+\\sqrt2}{4}=\\boldsymbol{\\frac{\\sqrt6}{2}V}$．\n\\end{itemize}\n（確認：$y$ 方向の運動量 $\\sqrt3\\,mV_{\\rm A}\\sin30^\\circ=mV_{\\rm B}\\sin\\beta$，運動エネルギー $\\sqrt3V_{\\rm A}^{\\,2}+V_{\\rm B}^{\\,2}=\\sqrt3V^2$ はどちらの場合も成り立つ．）\n\n\\textbf{(4)}　摩擦がないので B が受ける力積は中心を結ぶ方向で，B はその向き（$x$ 軸と角 $\\beta$）に動き出す．接触の瞬間，A の中心は B の中心から距離 $2r$ だけその反対向きにあるから，A の進路と B の中心との距離は $b=2r\\sin\\beta$．\n\\[ \\beta=45^\\circ:\\ b=\\boldsymbol{\\sqrt2\\,r},\\qquad \\beta=15^\\circ:\\ b=2r\\sin15^\\circ=\\boldsymbol{\\frac{\\sqrt6-\\sqrt2}{2}r} \\]\nB に移った割合 $\\frac{mV_{\\rm B}^{\\,2}}{\\sqrt3\\,mV^2}$ は，$\\beta=45^\\circ$ で $\\frac{(3\\sqrt2-\\sqrt6)^2}{4\\sqrt3}=\\boldsymbol{2\\sqrt3-3}$，$\\beta=15^\\circ$ で $\\frac{6}{4\\sqrt3}=\\boldsymbol{\\frac{\\sqrt3}{2}}$．\nA の曲がる角だけを見ても衝突は1つに決まらず，正面に近い衝突（$b$ が小さい）ほど多くのエネルギーが B に移る．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弾性衝突を重心系で見ると各物体の速さは変わらず向きだけが変わるので，床から見た衝突後の速度の終点は「重心速度を中心とする円」の上にある．入射する側が重いと原点が円の外にあって曲がる角に上限（接線）があり，同じ曲がる角に対して円との交点が2つ，すなわち衝突パラメーターの異なる2通りの衝突が対応する．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "2次元の弾性衝突",
+  "重心系",
+  "速度の円",
+  "最大の曲がり角",
+  "衝突パラメーター"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

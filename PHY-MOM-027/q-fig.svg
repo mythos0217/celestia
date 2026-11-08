@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 170" width="540" height="170">
+<defs>
+<marker id="q-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="q-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="q-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+<marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+</defs>
+<line x1="20.0" y1="120.0" x2="520.0" y2="120.0" stroke="#222" stroke-width="1.6" />
+<circle cx="70.0" cy="94.0" r="26.0" fill="#fff" stroke="#222" stroke-width="1.6"/>
+<text x="70.0" y="144.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">m<tspan baseline-shift="sub" font-size="10" font-style="normal" font-family="Noto Sans CJK JP, sans-serif">0</tspan></text>
+<circle cx="150.0" cy="99.0" r="21.0" fill="#fff" stroke="#222" stroke-width="1.6"/>
+<text x="150.0" y="144.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">m<tspan baseline-shift="sub" font-size="10" font-style="normal" font-family="Noto Sans CJK JP, sans-serif">1</tspan></text>
+<circle cx="225.0" cy="103.0" r="17.0" fill="#fff" stroke="#222" stroke-width="1.6"/>
+<text x="225.0" y="144.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">m<tspan baseline-shift="sub" font-size="10" font-style="normal" font-family="Noto Sans CJK JP, sans-serif">2</tspan></text>
+<circle cx="300.0" cy="106.0" r="14.0" fill="#fff" stroke="#222" stroke-width="1.6"/>
+<text x="300.0" y="144.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">m<tspan baseline-shift="sub" font-size="10" font-style="normal" font-family="Noto Sans CJK JP, sans-serif">3</tspan></text>
+<text x="385.0" y="112.0" font-family="Noto Sans CJK JP, sans-serif" font-size="16" text-anchor="middle" fill="#222">…</text>
+<circle cx="470.0" cy="111.0" r="9.0" fill="#fff" stroke="#222" stroke-width="1.6"/>
+<text x="470.0" y="144.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#222">m<tspan baseline-shift="sub" font-size="10" font-style="normal" font-family="Noto Sans CJK JP, sans-serif">N</tspan></text>
+<text x="70.0" y="166.0" font-size="14" text-anchor="middle" fill="#222"><tspan font-family="Times New Roman, serif" font-size="16">= </tspan><tspan font-family="Times New Roman, serif" font-style="italic" font-size="16">M</tspan></text>
+<text x="470.0" y="166.0" font-size="14" text-anchor="middle" fill="#222"><tspan font-family="Times New Roman, serif" font-size="16">= </tspan><tspan font-family="Times New Roman, serif" font-style="italic" font-size="16">m</tspan></text>
+<line x1="60.0" y1="58.0" x2="110.0" y2="58.0" stroke="#1f5fbf" stroke-width="1.8" marker-end="url(#q-ab)"/>
+<text x="116.0" y="62.0" font-family="Times New Roman, serif" font-style="italic" font-size="16" text-anchor="start" fill="#1f5fbf">V</text>
+<text x="270.0" y="26.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" text-anchor="middle" fill="#222">左端の球以外は静止</text>
+</svg>

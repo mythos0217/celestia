@@ -1,0 +1,128 @@
+{
+ "id": "PHY-MOM-033",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "樋に斜めに当たる水流の分かれ方と，バケツをのせて動き出す台車",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平のレールの上に台車があり，その上に半円形の断面をもつまっすぐな樋が，レールと平行かつ水平に固定されている．樋の両端の下には，台車に固定したバケツ P，Q がある．図のように，樋の中心線を含む鉛直面内で，鉛直から角 $\\alpha$ だけ P 側へ傾いた向きに進む水流が，速さ $v$ で樋に当たる．水流は毎秒 $\\mu$（質量）の割合で樋に当たる．\n\n樋に当たった水は樋の上を摩擦なく両側へ分かれて流れ，当たる直前の樋に対する速さのまま，樋に対して水平に両端から飛び出してそれぞれのバケツに入る．高さの差による速さの変化は無視し，樋の上や空中にある水の質量も無視する．台車・樋・空のバケツの質量の和を $M_0$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "台車を手で押さえて静止させておく．P 側，Q 側の端から流れ出す水の毎秒の質量 $\\mu_{\\rm P}$，$\\mu_{\\rm Q}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の状態で，水が樋に及ぼす力の水平成分と，水がバケツ P，Q に及ぼす力の水平成分の和をそれぞれ求めよ．また，台車を静止させておくのに必要な水平方向の力を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "時刻 $t=0$ に台車を静かに放す．時刻 $t$ における台車の速さ $u$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "台車の速さが $u$ $(0<u<v\\sin\\alpha)$ のときの比 $\\mu_{\\rm P}/\\mu_{\\rm Q}$ を，$v$，$\\alpha$，$u$ で表せ．ただし台車の加速度は十分小さく，台車とともに動く観測者から見ても，水は樋に当たる直前の（樋に対する）速さで両端から出るとしてよい．さらに $\\alpha=30^\\circ$ の場合について，$u=\\dfrac{v}{4}$ となる時刻とそのときの比 $\\mu_{\\rm P}/\\mu_{\\rm Q}$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "十分時間がたつと，台車の速さと比 $\\mu_{\\rm P}/\\mu_{\\rm Q}$ はそれぞれどうなるか．台車から見た水流の向きと関連づけて答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：樋に斜めに当たる水流の分かれ方と，バケツをのせて動き出す台車",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\mu_{\\rm P}=\\dfrac{1+\\sin\\alpha}{2}\\mu$，$\\mu_{\\rm Q}=\\dfrac{1-\\sin\\alpha}{2}\\mu$"
+   },
+   {
+    "id": "2",
+    "tex": "樋：$0$，バケツ：P の向きに $\\mu v\\sin\\alpha$，台車を押さえる力：Q の向きに $\\mu v\\sin\\alpha$"
+   },
+   {
+    "id": "3",
+    "tex": "$u=\\dfrac{\\mu t}{M_0+\\mu t}v\\sin\\alpha$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{\\mu_{\\rm P}}{\\mu_{\\rm Q}}=\\dfrac{w+(v\\sin\\alpha-u)}{w-(v\\sin\\alpha-u)}$，ただし $w=\\sqrt{(v\\sin\\alpha-u)^2+v^2\\cos^2\\alpha}$．$\\alpha=30^\\circ$ のとき時刻 $t=\\dfrac{M_0}{\\mu}$，比 $\\dfrac{7+\\sqrt{13}}{6}\\ (\\fallingdotseq1.77)$"
+   },
+   {
+    "id": "5",
+    "tex": "台車の速さは $v\\sin\\alpha$ に近づき，比は $1$ に近づく（台車から見て水流が樋に垂直に当たるようになるため）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 水の分かれ方} \\\\\n樋はなめらかなので，水が樋から受ける力は樋の面に垂直で，樋の中心線方向（水平）の成分をもたない．そこで「樋に当たる直前の水」から「両端から出ていく水」までの水について，中心線方向の運動量を考える．毎秒入ってくる中心線方向（P 向きを正）の運動量は $\\mu v\\sin\\alpha$，出ていくのは $\\mu_{\\rm P}v-\\mu_{\\rm Q}v$ で，その間に水平な外力がないから\n\\[ \\mu_{\\rm P}v-\\mu_{\\rm Q}v=\\mu v\\sin\\alpha,\\qquad \\mu_{\\rm P}+\\mu_{\\rm Q}=\\mu \\]\n\\[ \\boldsymbol{\\mu_{\\rm P}=\\frac{1+\\sin\\alpha}{2}\\mu},\\qquad \\boldsymbol{\\mu_{\\rm Q}=\\frac{1-\\sin\\alpha}{2}\\mu} \\]\n\\hfill$\\square$\n\n\\textbf{(2) 力の水平成分} \\\\\n上で述べたとおり，なめらかな樋は水に水平な力を及ぼさないので，作用反作用により水が樋に及ぼす力の水平成分も $\\boldsymbol{0}$ である． \\\\\nバケツ P には毎秒 $\\mu_{\\rm P}$ の水が P 向きに速さ $v$ で入って止まり，Q には毎秒 $\\mu_{\\rm Q}$ の水が Q 向きに速さ $v$ で入って止まる．水の水平運動量を $0$ にするためにバケツが水に及ぼす力の反作用として，水がバケツに及ぼす力の水平成分の和は P 向きに\n\\[ \\mu_{\\rm P}v-\\mu_{\\rm Q}v=\\boldsymbol{\\mu v\\sin\\alpha} \\]\nしたがって台車を静止させるには，Q 向きに $\\boldsymbol{\\mu v\\sin\\alpha}$ の力で押さえればよい．これは「台車に毎秒入ってくる水平運動量」$\\mu v\\sin\\alpha$ と一致する．\\hfill$\\square$\n\n\\textbf{(3) 放した後の台車} \\\\\n台車と，それまでにバケツに入った水を合わせた系を考える．水平方向の外力はない（レールはなめらか）．系に入ってくる水は，樋に当たる直前に水平方向の速度 $v\\sin\\alpha$ をもつ．時刻 $t$ までに入った水の質量は $\\mu t$ で，バケツに入った水は台車とともに速さ $u$ で動くから，水平方向の運動量保存より\n\\[ (M_0+\\mu t)\\,u=\\mu t\\cdot v\\sin\\alpha \\qquad\\therefore\\quad \\boldsymbol{u=\\frac{\\mu t}{M_0+\\mu t}\\,v\\sin\\alpha} \\]\n（樋の上や空中にある水の質量は無視している．）\\hfill$\\square$\n\n\\textbf{(4) 動く台車の上での分かれ方} \\\\\n台車とともに動く観測者から見ると，水流の速度は中心線方向（P 向き）に $v\\sin\\alpha-u$，鉛直下向きに $v\\cos\\alpha$ で，速さは $w=\\sqrt{(v\\sin\\alpha-u)^2+v^2\\cos^2\\alpha}$ である．樋は鉛直に動かないので，水が樋に当たる割合は毎秒 $\\mu$ のままである．この観測者から見て (1) と同じ考え方をすると，両端から出る速さはどちらも $w$ なので\n\\[ \\mu_{\\rm P}w-\\mu_{\\rm Q}w=\\mu(v\\sin\\alpha-u),\\qquad \\mu_{\\rm P}+\\mu_{\\rm Q}=\\mu \\]\n\\[ \\boldsymbol{\\frac{\\mu_{\\rm P}}{\\mu_{\\rm Q}}=\\frac{w+(v\\sin\\alpha-u)}{w-(v\\sin\\alpha-u)}} \\]\n$\\alpha=30^\\circ$ のとき $v\\sin\\alpha=\\dfrac v2$．(3) より $u=\\dfrac v4$ となるのは $\\dfrac{\\mu t}{M_0+\\mu t}=\\dfrac12$，すなわち $\\boldsymbol{t=\\dfrac{M_0}{\\mu}}$．このとき $v\\sin\\alpha-u=\\dfrac v4$，$w=v\\sqrt{\\dfrac1{16}+\\dfrac34}=\\dfrac{\\sqrt{13}}{4}v$ なので\n\\[ \\frac{\\mu_{\\rm P}}{\\mu_{\\rm Q}}=\\frac{\\sqrt{13}+1}{\\sqrt{13}-1}=\\boldsymbol{\\frac{7+\\sqrt{13}}{6}}\\fallingdotseq1.77 \\]\n（静止しているときの比 $\\dfrac{1+\\sin30^\\circ}{1-\\sin30^\\circ}=3$ より $1$ に近づいている．）\\hfill$\\square$\n\n\\textbf{(5) 十分時間がたった後} \\\\\n(3) で $t\\to\\infty$ とすると $\\boldsymbol{u\\to v\\sin\\alpha}$．このとき台車から見た水流の中心線方向の成分 $v\\sin\\alpha-u$ は $0$ に近づき，水流は樋に垂直に当たるようになるので，$\\boldsymbol{\\mu_{\\rm P}/\\mu_{\\rm Q}\\to1}$ である．台車が加速するのは台車から見た水流に中心線方向の成分がある間だけで，(2) と同様に台車が受ける水平な力は $\\mu(v\\sin\\alpha-u)$ である．実際，(3) の式を微分すると $(M_0+\\mu t)\\dfrac{du}{dt}=\\mu(v\\sin\\alpha-u)$ となり，この見方と一致する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "なめらかな樋は水に中心線方向の力を及ぼさないので，当たる水と分かれて出る水の中心線方向の運動量が等しく，流量の比は $(1+\\sin\\alpha):(1-\\sin\\alpha)$ になる．水平な力はバケツが受け止めるときに生じ，台車が自由に動けると，運動量保存から台車は水流の水平成分の速さに近づき，台車から見て水流が垂直に当たるようになって流量は等分される．"
+ },
+ "concepts": [
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動量の流れ",
+  "水流",
+  "観測者の変換",
+  "運動量保存",
+  "質量の増える物体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

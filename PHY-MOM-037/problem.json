@@ -1,0 +1,142 @@
+{
+ "id": "PHY-MOM-037",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "積み荷を床に置き去りにしながらあらい面を進む物体（押し出し方の比較とエネルギー）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，あらい水平面上を質量 $m_0$（積み荷を含む）の物体 P が速さ $v_0$ ですべっている．この時刻を $t=0$ とする．P と水平面の間の動摩擦係数を $\\mu$，重力加速度の大きさを $g$ とする．P は内部の装置で積み荷を後方へ押し出すことができ，押し出された積み荷は，押し出された直後に水平面に対して静止し，以後動かない．押し出せる積み荷は合計 $\\dfrac{m_0}{2}$ までである．時刻 $t$ における P の質量を $m$，速さを $v$ とし，P は回転しないものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "時間 $\\Delta t$ の間に質量 $\\Delta m\\,(>0)$ の積み荷を押し出したときの P の速さの変化 $\\Delta v$ を，$m,\\ v,\\ \\Delta m,\\ \\mu,\\ g,\\ \\Delta t$ で表せ（微小量どうしの積は無視せよ）．また，P の運動量 $p=mv$ の変化 $\\Delta p$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "方法 A：速さを $v_0$ に保つように積み荷を押し出し続け，合計 $\\dfrac{m_0}{2}$ を押し出したらやめる．$m$ を $t$ の関数として表し，押し出しを終える時刻 $t_1$ と，$t=0$ から P が止まるまでに進む距離 $L_{\\mathrm A}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "方法 B：$t=0$ に一度に $\\dfrac{m_0}{2}$ を押し出す．押し出しにかかる時間は無視できるとする．P が止まるまでに進む距離 $L_{\\mathrm B}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "方法 A，B のそれぞれで，積み荷を押し出すために装置が供給したエネルギー $W_{\\mathrm A},\\ W_{\\mathrm B}$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "どのような押し出し方をしても，P が止まるまでに進む距離は $L_{\\mathrm B}$ を超えないことを示せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：積み荷を床に置き去りにしながらあらい面を進む物体（押し出し方の比較とエネルギー）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：積み荷を床に置き去りにしながらあらい面を進む物体（押し出し方の比較とエネルギー）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Delta v=\\dfrac{v}{m}\\Delta m-\\mu g\\Delta t$，$\\Delta p=-\\mu mg\\Delta t$"
+   },
+   {
+    "id": "2",
+    "tex": "$m=m_0e^{-\\mu gt/v_0}$，$t_1=\\dfrac{v_0\\log 2}{\\mu g}$，$L_{\\mathrm A}=\\left(\\log2+\\dfrac12\\right)\\dfrac{v_0^2}{\\mu g}$"
+   },
+   {
+    "id": "3",
+    "tex": "$L_{\\mathrm B}=\\dfrac{2v_0^2}{\\mu g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$W_{\\mathrm A}=\\dfrac14m_0v_0^2$，$W_{\\mathrm B}=\\dfrac12m_0v_0^2$"
+   },
+   {
+    "id": "5",
+    "tex": "解説参照（各時刻の速さが方法 B 以下になる）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} P と押し出す積み荷を合わせた系を考える．押し出す力は内力で，水平方向の外力は P にはたらく動摩擦力 $\\mu mg$（後ろ向き）だけである（押し出された積み荷は静止し，摩擦力を受けない）．運動量と力積の関係より\n\\[ (m-\\Delta m)(v+\\Delta v)+\\Delta m\\cdot0-mv=-\\mu mg\\Delta t \\]\n$\\Delta m\\Delta v$ を無視して $m\\Delta v-v\\Delta m=-\\mu mg\\Delta t$，よって\n\\[ \\Delta v=\\boldsymbol{\\frac vm\\Delta m-\\mu g\\Delta t} \\]\nまた，左辺は P の運動量の変化そのものなので $\\boldsymbol{\\Delta p=-\\mu mg\\Delta t}$．床に対して静止する積み荷は運動量を持ち去らないので，P の運動量は押し出しによっては変わらず，摩擦力の力積だけで減る．押し出すと質量が減る分だけ速さが増す．\n\n\\textbf{(2)} $\\Delta v=0$ より $\\dfrac{\\Delta m}{m}=\\dfrac{\\mu g}{v_0}\\Delta t$．$m$ は時間 $dt$ の間に $-dm=\\dfrac{\\mu g}{v_0}m\\,dt$ だけ減るので，$\\dfrac{dm}{m}=-\\dfrac{\\mu g}{v_0}dt$ を積分して\n\\[ m=\\boldsymbol{m_0e^{-\\mu gt/v_0}} \\]\n$m=\\dfrac{m_0}2$ となる時刻は $t_1=\\boldsymbol{\\dfrac{v_0\\log2}{\\mu g}}$．この間に $v_0t_1$ 進み，その後は加速度 $-\\mu g$ で $\\dfrac{v_0^2}{2\\mu g}$ 進んで止まる．\n\\[ L_{\\mathrm A}=\\boldsymbol{\\left(\\log2+\\frac12\\right)\\frac{v_0^2}{\\mu g}} \\]\n\n\\textbf{(3)} 一瞬の押し出しでは摩擦力の力積は無視でき，P の運動量 $m_0v_0$ は変わらない．質量が $\\dfrac{m_0}{2}$ になるので速さは $2v_0$．その後は加速度 $-\\mu g$ で進むので\n\\[ L_{\\mathrm B}=\\frac{(2v_0)^2}{2\\mu g}=\\boldsymbol{\\frac{2v_0^2}{\\mu g}} \\]\n\n\\textbf{(4)} 装置の供給したエネルギーは，(運動エネルギーの総和の増加)＋(摩擦で生じた熱) に等しい．押し出された積み荷は静止しているので運動エネルギーをもたない．\n\n方法 A（押し出しを終えるまで）：運動エネルギーは $\\dfrac12m_0v_0^2$ から $\\dfrac12\\cdot\\dfrac{m_0}{2}v_0^2$ へ $\\dfrac14m_0v_0^2$ だけ減る．熱は $\\mu mg\\cdot v_0dt$ の和で，(2) の関係 $\\mu mg\\,dt=-v_0\\,dm$ を使うと\n\\[ \\text{熱}=\\int(-v_0^2)\\,dm=v_0^2\\cdot\\frac{m_0}{2}=\\frac12m_0v_0^2 \\]\nよって $W_{\\mathrm A}=-\\dfrac14m_0v_0^2+\\dfrac12m_0v_0^2=\\boldsymbol{\\dfrac14m_0v_0^2}$．\n\n方法 B：一瞬なので熱は生じず\n\\[ W_{\\mathrm B}=\\frac12\\cdot\\frac{m_0}{2}(2v_0)^2-\\frac12m_0v_0^2=\\boldsymbol{\\frac12m_0v_0^2} \\]\nB は A の2倍のエネルギーを使うが，進む距離は $L_{\\mathrm B}/L_{\\mathrm A}=2/(\\log2+\\frac12)\\approx1.68$ 倍になる．\n\n\\textbf{(5)} (1) より，どの方法でも P が動いている間は $\\Delta p=-\\mu mg\\Delta t$ で，$m\\ge\\dfrac{m_0}{2}$ だから\n\\[ p(t)=m_0v_0-\\mu g\\int_0^t m\\,dt'\\ \\le\\ m_0v_0-\\mu g\\frac{m_0}{2}t=p_{\\mathrm B}(t) \\]\n（$p_{\\mathrm B}$ は方法 B の運動量）．P が動いている間は $p(t)>0$ なので\n\\[ v(t)=\\frac{p(t)}{m}\\le\\frac{p_{\\mathrm B}(t)}{m_0/2}=v_{\\mathrm B}(t) \\]\nすなわち，各時刻の速さが方法 B の速さを超えることはない（B が止まる時刻には他の方法でも止まっている）．進む距離は $v$-$t$ グラフの面積なので，B の面積 $L_{\\mathrm B}$ を超えない．等号は最初に一度に全部押し出すときに限る．早く軽くなるほど摩擦力が小さく，運動量の減りが遅いからである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "床に対して静止する積み荷を放出しても運動量は持ち去られないので，残りの物体の運動量は外力（摩擦力 $\\mu mg$）の力積だけで変わり，質量が減った分だけ速くなる．摩擦力が質量に比例するので早く軽くなるほど運動量の減りが遅く，最初に一度に放出する方法が各時刻で最も速い．その代わり必要なエネルギーは大きく，熱と運動エネルギーの収支で比較できる．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "static-friction"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "質量が変化する物体",
+  "運動量と力積",
+  "動摩擦力",
+  "エネルギー収支",
+  "最適化"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

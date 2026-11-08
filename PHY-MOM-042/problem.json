@@ -1,0 +1,138 @@
+{
+ "id": "PHY-MOM-042",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "なめらかな床上の2つの台をつなぐ糸の中央のおもり（中点の束縛と水平方向の運動量保存）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかで水平な床の上に，高さ $L$ の直方体の物体 P（質量 $M$）と Q（質量 $2M$）が向かい合って置かれている．P の右上の辺の中点と Q の左上の辺の中点を，質量の無視できる長さ $2s$（$s<L$）の糸でつなぎ，糸の中央に大きさの無視できる質量 $M$ のおもり R を取り付ける．P，Q，R と糸は常に同じ鉛直面内にある．\n\nはじめ，糸が水平にぴんと張るように P，Q の位置を合わせ，R を高さ $L$ に支えて全体を静止させた．R を静かに放すと，R は下がり，P と Q は互いに近づく向きに動き出した（図は運動の途中の様子）．運動の間，P，Q は傾かず，糸はたるまないものとする．糸が水平面となす角を $\\theta$，P，Q の速度を $V_{\\rm P}$，$V_{\\rm Q}$（右向きを正）とし，P と Q がぶつかる直前までを考える．重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "R の速度の水平成分と鉛直成分（上向きを正）を，$V_{\\rm P}$，$V_{\\rm Q}$，$\\theta$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$V_{\\rm Q}$ を $V_{\\rm P}$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "P 側の糸の張力の大きさを $T_{\\rm P}$，Q 側の糸の張力の大きさを $T_{\\rm Q}$ とする．比 $T_{\\rm Q}/T_{\\rm P}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\theta=\\dfrac{\\pi}{6}$ のときの $V_{\\rm P}$ を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\theta=\\dfrac{\\pi}{6}$ のときの $T_{\\rm P}$ を求めよ．"
+     },
+     {
+      "id": "6",
+      "tex": "糸が鉛直に近づき P と Q がぶつかる直前の $V_{\\rm P}$ を求めよ．また，放してからこのときまでに R が水平方向に移動した距離と向きを求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：なめらかな床上の2つの台をつなぐ糸の中央のおもり（中点の束縛と水平方向の運動量保存）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "水平：$\\dfrac{V_{\\rm P}+V_{\\rm Q}}{2}$，鉛直：$\\dfrac{V_{\\rm Q}-V_{\\rm P}}{2\\tan\\theta}$"
+   },
+   {
+    "id": "2",
+    "tex": "$V_{\\rm Q}=-\\dfrac35V_{\\rm P}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac65$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac52\\sqrt{\\dfrac{gs}{23}}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{550}{529}Mg$"
+   },
+   {
+    "id": "6",
+    "tex": "$V_{\\rm P}=5\\sqrt{\\dfrac{gs}{22}}$，右向き（Q の側）に $\\dfrac{s}{4}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 中点の束縛}\n\n糸をつないだ P の点の $x$ 座標を $x_{\\rm P}$，Q の点を $x_{\\rm Q}$ とする．2点は同じ高さ $L$ にあり，R は長さ $s$ の2本の糸の合流点なので，R は2点の真ん中にあって\n\\[ x_{\\rm R}=\\frac{x_{\\rm P}+x_{\\rm Q}}{2},\\qquad x_{\\rm Q}-x_{\\rm P}=2s\\cos\\theta,\\qquad y_{\\rm R}=L-s\\sin\\theta. \\]\nよって水平成分は $\\boldsymbol{\\dfrac{V_{\\rm P}+V_{\\rm Q}}{2}}$．また $V_{\\rm Q}-V_{\\rm P}=-2s\\sin\\theta\\,\\dot\\theta$，$\\dot y_{\\rm R}=-s\\cos\\theta\\,\\dot\\theta$ より，鉛直成分は $\\boldsymbol{\\dfrac{V_{\\rm Q}-V_{\\rm P}}{2\\tan\\theta}}$（P，Q が近づくとき負，すなわち下向き）．\n\n\\textbf{(2) 水平方向の運動量保存}\n\n床はなめらかなので，P，Q，R と糸の系にはたらく外力（重力・垂直抗力）は鉛直である．水平方向の運動量は保存し，はじめ $0$ だから\n\\[ MV_{\\rm P}+2MV_{\\rm Q}+M\\frac{V_{\\rm P}+V_{\\rm Q}}{2}=0\\quad\\Longrightarrow\\quad \\frac32V_{\\rm P}+\\frac52V_{\\rm Q}=0,\\quad \\boldsymbol{V_{\\rm Q}=-\\frac35V_{\\rm P}}. \\]\nR の水平速度は $\\dfrac{V_{\\rm P}+V_{\\rm Q}}{2}=\\dfrac{V_{\\rm P}}{5}$ で，R も P と同じ向き（右向き）に動く．\n\n\\textbf{(3) 張力の比}\n\nP，Q が糸から受ける水平な力は $T_{\\rm P}\\cos\\theta$（右向き），$T_{\\rm Q}\\cos\\theta$（左向き）で，加速度を $a_{\\rm P}$，$a_{\\rm Q}$ とすると\n\\[ Ma_{\\rm P}=T_{\\rm P}\\cos\\theta,\\qquad 2Ma_{\\rm Q}=-T_{\\rm Q}\\cos\\theta. \\]\n(2) の関係は常に成り立つので $a_{\\rm Q}=-\\dfrac35a_{\\rm P}$．よって\n\\[ \\frac{T_{\\rm Q}}{T_{\\rm P}}=\\frac{-2Ma_{\\rm Q}}{Ma_{\\rm P}}=\\boldsymbol{\\frac65}. \\]\n左右の張力が違うのは，R が水平方向に加速するためである（$Ma_{\\rm R}=(T_{\\rm Q}-T_{\\rm P})\\cos\\theta$）．比は $\\theta$ によらず一定である．\n\n\\textbf{(4) エネルギー保存}\n\n$u=V_{\\rm Q}-V_{\\rm P}=-\\dfrac85V_{\\rm P}$ とおくと，$V_{\\rm P}=-\\dfrac58u$，$V_{\\rm Q}=\\dfrac38u$，R の水平成分 $-\\dfrac18u$，鉛直成分 $\\dfrac{u}{2\\tan\\theta}$．運動エネルギーの和は\n\\[ \\frac12M\\frac{25u^2}{64}+\\frac12(2M)\\frac{9u^2}{64}+\\frac12M\\left(\\frac{u^2}{64}+\\frac{u^2}{4\\tan^2\\theta}\\right)=\\frac{11}{32}Mu^2+\\frac{Mu^2}{8\\tan^2\\theta}. \\]\nこれが R の位置エネルギーの減少 $Mgs\\sin\\theta$ に等しい．$\\theta=\\dfrac{\\pi}{6}$ では $\\tan^2\\theta=\\dfrac13$ なので $\\dfrac{23}{32}Mu^2=\\dfrac{Mgs}{2}$，$u^2=\\dfrac{16gs}{23}$．\n\\[ V_{\\rm P}=\\frac58|u|=\\boldsymbol{\\frac52\\sqrt{\\frac{gs}{23}}}. \\]\n\n\\textbf{(5) 張力}\n\n一般の $\\theta$ で $u^2=\\dfrac{32gs\\sin\\theta}{11+4\\cot^2\\theta}$．$D=x_{\\rm Q}-x_{\\rm P}=2s\\cos\\theta$ とすると $u=\\dot D$ なので $\\dot u=\\dfrac{1}{2}\\dfrac{d(u^2)}{dD}=\\dfrac12\\dfrac{d(u^2)/d\\theta}{-2s\\sin\\theta}$．これを $\\theta=\\dfrac{\\pi}{6}$ で計算すると\n\\[ \\frac{d(u^2)}{d\\theta}=32gs\\,\\frac{\\cos\\theta(11+4\\cot^2\\theta)+8\\sin\\theta\\cot\\theta\\csc^2\\theta}{(11+4\\cot^2\\theta)^2}\\Bigg|_{\\pi/6}=32gs\\cdot\\frac{\\frac{\\sqrt3}{2}\\cdot23+16\\sqrt3}{529}=\\frac{880\\sqrt3}{529}gs, \\]\n$\\dot u=-\\dfrac{880\\sqrt3\\,g}{529\\cdot2}=-\\dfrac{440\\sqrt3}{529}g$．$a_{\\rm P}=-\\dfrac58\\dot u=\\dfrac{275\\sqrt3}{529}g$ より\n\\[ T_{\\rm P}=\\frac{Ma_{\\rm P}}{\\cos\\theta}=\\boldsymbol{\\frac{550}{529}Mg}\\ (\\fallingdotseq1.04Mg). \\]\n（$T_{\\rm Q}=\\dfrac65T_{\\rm P}$ で，どちらも正なので糸はたるまない．放した瞬間は糸が水平で $T_{\\rm P}=0$，R は自由落下の加速度で落ち始める．）\n\n\\textbf{(6) 衝突直前}\n\n$\\theta\\to\\dfrac{\\pi}{2}$ では $\\cot\\theta\\to0$ で，R の鉛直速度は $0$ に近づき，位置エネルギーの減少 $Mgs$ がすべて水平運動のエネルギーになる：$\\dfrac{11}{32}Mu^2=Mgs$，$u^2=\\dfrac{32gs}{11}$．\n\\[ V_{\\rm P}=\\frac58|u|=\\boldsymbol{5\\sqrt{\\frac{gs}{22}}}. \\]\n水平方向の重心は動かないので，変位について $\\Delta x_{\\rm R}=-\\dfrac18\\Delta D$ が成り立つ（(4) の速度の関係を時間で足し合わせる）．$D$ は $2s$ から $0$ まで変わるので\n\\[ \\Delta x_{\\rm R}=-\\frac18(0-2s)=\\boldsymbol{\\frac{s}{4}} \\]\nで，R は右向き（重い Q の側）に $\\dfrac{s}{4}$ 移動する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ高さの2点を結ぶ糸の中央のおもりは常に2点の中点の真下にあるので，その水平速度は2つの台の速度の平均になる．この束縛と水平方向の運動量保存を合わせると2つの台の速度比が一定に決まり，左右の張力の比も角度によらない定数になる（おもりの水平加速度が張力の差を生む）．速さはエネルギー保存，張力は $u^2$ を間隔で微分した加速度から求まる．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動量保存",
+  "束縛条件",
+  "張力",
+  "エネルギー保存",
+  "重心",
+  "連結物体"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

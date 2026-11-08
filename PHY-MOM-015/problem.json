@@ -1,0 +1,143 @@
+{
+ "id": "PHY-MOM-015",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "床の砂を集めながら一定の力で押される板（取り込みによる運動量の変化と停止位置の行き過ぎ）",
+ "course": "物理",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，水平な床の上に，単位長さあたりの質量が $\\sigma$ の砂が直線状に一様に薄く敷かれている．質量 $M$ の板を砂の列の端に置き，時刻 $0$ に静止の状態から一定の水平な力 $F$ で押し始めた．板は進みながら前方の砂をすべて集め，集めた砂は板と一体となって（板と同じ速度で）床の上を滑る．板と床，集めた砂と床の間の動摩擦係数はともに $\\mu$ で，静止摩擦係数も $\\mu$ に等しいとする．砂の層の厚さや空気抵抗は無視し，重力加速度の大きさを $g$ とする．板が出発点から距離 $s$ 進んだときの，板と集めた砂の質量の和を $m=M+\\sigma s$，速さを $v$ とする．$F>\\mu Mg$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "まず比較のため，力を調節して板を一定の速さ $u$ で動かす場合を考える．距離 $s$ 進んだときに必要な力の大きさ $F_u$ を求めよ．また，この力の仕事率のうち，床との摩擦熱にも，新たに集めた砂の運動エネルギーの増加にもならずに失われる分を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "一定の力 $F$ で押す場合を考える．$m$ と $mv$ の関係を調べることにより，$v^2$ を $m,\\ M,\\ F,\\ \\mu,\\ g,\\ \\sigma$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "以下では $F=2\\mu Mg$ とする．押す力と床からの動摩擦力の大きさが等しくなる位置 $s_1$ を求めよ．また，板が止まる位置 $s_2$ を求め，止まった後に同じ力で押し続けても板は再び動き出さないことを示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "板の速さが最大になる位置 $s_3$ と，速さの最大値 $v_{\\max}$ を求めよ．また，$s_3$ が $s_1$ より手前になる理由を，(1) の結果をもとに説明せよ．"
+     },
+     {
+      "id": "5",
+      "tex": "出発してから止まるまでに力 $F$ がした仕事のうち，床との摩擦熱以外の形で失われた分の割合を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：床の砂を集めながら一定の力で押される板（取り込みによる運動量の変化と停止位置の行き過ぎ）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：床の砂を集めながら一定の力で押される板（取り込みによる運動量の変化と停止位置の行き過ぎ）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$F_u=\\mu g(M+\\sigma s)+\\sigma u^2$，失われる仕事率 $\\dfrac12\\sigma u^3$"
+   },
+   {
+    "id": "2",
+    "tex": "$v^2=\\dfrac{F(m^2-M^2)-\\frac23\\mu g(m^3-M^3)}{\\sigma m^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$s_1=\\dfrac M\\sigma$，$s_2=\\dfrac{\\sqrt3\\,M}{\\sigma}$"
+   },
+   {
+    "id": "4",
+    "tex": "$s_3=\\dfrac{(\\sqrt[3]4-1)M}{\\sigma}$，$v_{\\max}=\\sqrt{(2-\\sqrt[3]4)\\dfrac{\\mu gM}{\\sigma}}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac12-\\dfrac{\\sqrt3}4\\ (\\fallingdotseq0.067)$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　砂を取り込む瞬間，静止していた砂は板と同じ速さまで急に加速される．これは完全非弾性衝突なので力学的エネルギーは保存しないが，「板と集めた砂と，これから取り込む砂」をまとめた系の運動量の変化は外力の力積に等しい．時間 $\\Delta t$ の間に取り込む砂（質量 $\\Delta m=\\sigma v\\Delta t$）ははじめ静止しているので\n\\[ (m+\\Delta m)(v+\\Delta v)-mv=(F-\\mu mg)\\Delta t\\quad\\Longrightarrow\\quad\\frac{d(mv)}{dt}=F-\\mu mg,\\qquad\\frac{dm}{dt}=\\sigma v. \\]\n床の垂直抗力は集めた砂の重さも支えるので，動摩擦力は $\\mu mg$ である．\n\n\\textbf{(1)}　$v=u$ 一定なら $\\frac{d(mu)}{dt}=u\\frac{dm}{dt}=\\sigma u^2$ なので\n\\[ F_u=\\boldsymbol{\\mu g(M+\\sigma s)+\\sigma u^2}. \\]\n仕事率 $F_uu$ のうち $\\mu gmu$ は摩擦熱，単位時間に取り込む質量 $\\sigma u$ の砂の運動エネルギーの増加は $\\frac12\\sigma u\\cdot u^2$ である．残りの $\\sigma u^3-\\frac12\\sigma u^3=\\boldsymbol{\\frac12\\sigma u^3}$ が取り込みの衝突で失われる（砂に与える運動エネルギーと同じだけが熱になる）．\n\n\\textbf{(2)}　$P=mv$ とおく．$\\frac{dP}{dt}=F-\\mu gm$ の両辺に $P$ を掛け，$P\\,dt=m\\,(v\\,dt)=\\frac m\\sigma\\,dm$ を使うと\n\\[ \\frac12\\,d(P^2)=(F-\\mu gm)\\frac m\\sigma\\,dm. \\]\n$m=M$ で $P=0$ として積分すると $P^2=\\frac1\\sigma\\left\\{F(m^2-M^2)-\\frac23\\mu g(m^3-M^3)\\right\\}$ なので\n\\[ v^2=\\boldsymbol{\\frac{F(m^2-M^2)-\\frac23\\mu g(m^3-M^3)}{\\sigma m^2}}. \\]\nエネルギー保存則は使えないので，運動量の式から $m$ を変数として積分するのがポイントである．\n\n\\textbf{(3)}　$F=\\mu mg$ より $m=2M$，$s_1=\\boldsymbol{\\frac M\\sigma}$．\n止まるのは $v=0$ のときで，$X=\\frac mM$ とおくと $2(X^2-1)-\\frac23(X^3-1)=0$．$X\\ne1$ なので $X-1$ で割って $2(X+1)=\\frac23(X^2+X+1)$，すなわち $X^2-2X-2=0$，$X=1+\\sqrt3$．よって $s_2=\\boldsymbol{\\frac{\\sqrt3\\,M}\\sigma}$ で，力のつり合う位置 $s_1$ の $\\sqrt3$ 倍まで行き過ぎる．\n止まったときの最大静止摩擦力は $\\mu(1+\\sqrt3)Mg>2\\mu Mg=F$ なので，板は再び動き出さない．\n\n\\textbf{(4)}　$v^2=\\frac{\\mu gM}{\\sigma}h(X)$，$h(X)=\\frac{2(X^2-1)-\\frac23(X^3-1)}{X^2}=2-\\frac23X-\\frac4{3X^2}$．$h'(X)=-\\frac23+\\frac8{3X^3}=0$ より $X^3=4$．よって\n\\[ s_3=\\boldsymbol{\\frac{(\\sqrt[3]4-1)M}{\\sigma}}\\ (\\fallingdotseq0.59\\tfrac M\\sigma),\\qquad h(\\sqrt[3]4)=2-\\tfrac23\\sqrt[3]4-\\tfrac13\\sqrt[3]4=2-\\sqrt[3]4,\\qquad v_{\\max}=\\boldsymbol{\\sqrt{(2-\\sqrt[3]4)\\frac{\\mu gM}{\\sigma}}}. \\]\n理由：$\\frac{d(mv)}{dt}=m\\frac{dv}{dt}+v\\frac{dm}{dt}=m\\frac{dv}{dt}+\\sigma v^2$ なので\n\\[ m\\frac{dv}{dt}=F-\\mu mg-\\sigma v^2. \\]\n(1) で見たように，動いている板は砂を取り込むために余分な力 $\\sigma v^2$ を必要とし，これが速さの2乗に比例する抵抗としてはたらく．速さが最大になるのは $F-\\mu mg=\\sigma v^2>0$ のときなので，押す力が摩擦力とつり合う $s_1$ より手前で減速が始まる．一方，止まる直前には $\\sigma v^2\\to0$ となり，板と砂がもつ運動量のために $s_1$ を越えて進む．\n\n\\textbf{(5)}　仕事は $W=Fs_2=2\\mu Mg\\cdot\\frac{\\sqrt3M}\\sigma=\\frac{2\\sqrt3\\,\\mu gM^2}{\\sigma}$．床との摩擦熱は\n\\[ Q=\\int_0^{s_2}\\mu mg\\,ds=\\frac{\\mu g}{\\sigma}\\int_M^{(1+\\sqrt3)M}m\\,dm=\\frac{\\mu gM^2}{2\\sigma}\\left\\{(1+\\sqrt3)^2-1\\right\\}=\\frac{(3+2\\sqrt3)\\mu gM^2}{2\\sigma}. \\]\n止まったときの運動エネルギーは $0$ なので，取り込みで失われた分は $W-Q=\\frac{(2\\sqrt3-3)\\mu gM^2}{2\\sigma}$，その割合は\n\\[ \\frac{W-Q}{W}=\\boldsymbol{\\frac12-\\frac{\\sqrt3}4}\\fallingdotseq0.067. \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "静止した砂を取り込みながら進む物体では，外力の力積が（板＋集めた砂）の運動量の変化に等しく，速さ $v$ のとき取り込みのための余分な力 $\\sigma v^2$ が要る．取り込みは完全非弾性衝突でエネルギー保存は使えないので，運動量の式を質量を変数として積分して速さを求める．その結果，速さの最大は押す力と摩擦力のつり合う位置より手前で起こり，止まる位置はつり合いの位置を越える．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "restitution",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "可変質量",
+  "運動量",
+  "完全非弾性衝突",
+  "摩擦",
+  "エネルギー収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

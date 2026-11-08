@@ -1,0 +1,142 @@
+{
+ "id": "PHY-MOM-032",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "水槽からコップへ注ぐ水と2台のはかりの読み（推力・衝突の力・空中の水）",
+ "course": "物理",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，はかり A の上に水を入れた水槽が，はかり B の上にコップが置かれている．水槽の底の蛇口から水が鉛直下向きに流れ出て，真下のコップに注がれる．蛇口を開いている間，水は毎秒 $\\mu$（質量）の割合で，速さ $v_0$ で蛇口の出口から出る．水槽は十分大きく，水槽内の水の流れの速さは無視できる．蛇口の出口とコップの水面の高さの差は $h$ で，コップの水面の上昇は無視する．空気抵抗は無視し，コップの水面に当たった水はただちにコップに対して静止する（はねない）ものとする．重力加速度の大きさを $g$ とする．\n\n時刻 $t=0$ に蛇口を開き，$t=T$ に閉じる．$T$ は水の落下時間より長い．開く前のはかり A，B の読み（台を押す力の大きさ）はそれぞれ $M_{\\rm A}g$，$M_{\\rm B}g$ であった．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水が蛇口を出てからコップの水面に達するまでの時間 $t_1$ と，そのときの速さ $v_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "はかり A の読み $N_{\\rm A}$ を，$0<t<T$ と $t>T$ のそれぞれについて求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "はかり B の読み $N_{\\rm B}$ を，$0<t<t_1$，$t_1<t<T+t_1$，$t>T+t_1$ のそれぞれについて求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "2つの読みの和と最初の値との差 $\\Delta(t)=N_{\\rm A}+N_{\\rm B}-(M_{\\rm A}+M_{\\rm B})g$ を，$t>0$ のすべての時間について求め，その最小値と最大値を答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\displaystyle\\int_0^{\\infty}\\Delta(t)\\,dt$ の値を求め，その結果を，水槽・コップ・水全体の運動量を使って説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：水槽からコップへ注ぐ水と2台のはかりの読み（推力・衝突の力・空中の水）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：水槽からコップへ注ぐ水と2台のはかりの読み（推力・衝突の力・空中の水）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$t_1=\\dfrac{\\sqrt{v_0^2+2gh}-v_0}{g}$，$v_1=\\sqrt{v_0^2+2gh}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0<t<T$：$N_{\\rm A}=(M_{\\rm A}-\\mu t)g-\\mu v_0$，$t>T$：$N_{\\rm A}=(M_{\\rm A}-\\mu T)g$"
+   },
+   {
+    "id": "3",
+    "tex": "$0<t<t_1$：$M_{\\rm B}g$，$t_1<t<T+t_1$：$\\{M_{\\rm B}+\\mu(t-t_1)\\}g+\\mu v_1$，$t>T+t_1$：$(M_{\\rm B}+\\mu T)g$"
+   },
+   {
+    "id": "4",
+    "tex": "$0<t<t_1$：$\\Delta=-\\mu(v_0+gt)$，$t_1<t<T$：$\\Delta=0$，$T<t<T+t_1$：$\\Delta=\\mu\\{v_0+g(t-T)\\}$，$t>T+t_1$：$\\Delta=0$．最小値 $-\\mu v_1$（$t\\to t_1$ の直前），最大値 $\\mu v_1$（$t\\to T+t_1$ の直前）"
+   },
+   {
+    "id": "5",
+    "tex": "$0$．全体の鉛直方向の運動量ははじめと終わりで $0$ なので，外力（はかりの抗力と重力）の力積の和が $0$ になるため．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 落下} \\\\\n等加速度運動なので $v_1=\\boldsymbol{\\sqrt{v_0^2+2gh}}$，$t_1=\\boldsymbol{\\dfrac{v_1-v_0}{g}=\\dfrac{\\sqrt{v_0^2+2gh}-v_0}{g}}$．\\hfill$\\square$\n\n\\textbf{(2) はかり A} \\\\\n水槽とその中の水を1つの系とみる．$0<t<T$ では，短い時間 $\\Delta t$ に質量 $\\mu\\Delta t$ の水が，ほぼ静止した状態から速さ $v_0$ で下向きに押し出される．系の外に出ていく下向きの運動量は $\\mu\\Delta t\\,v_0$ であり，系の中の運動量は変わらない（水槽内の水はほぼ静止）．したがって，この運動量の変化を与えるのは系にはたらく外力（重力と抗力 $N_{\\rm A}$）で，下向きを正として\n\\[ \\{(M_{\\rm A}-\\mu t)g-N_{\\rm A}\\}\\Delta t=\\mu\\Delta t\\,v_0 \\]\n\\[ \\boldsymbol{N_{\\rm A}=(M_{\\rm A}-\\mu t)g-\\mu v_0}\\quad(0<t<T) \\]\n水を下に押し出す反作用（噴流の推力）$\\mu v_0$ の分だけ，残った質量の重さより小さく読む．$t>T$ では静止しているので $\\boldsymbol{N_{\\rm A}=(M_{\\rm A}-\\mu T)g}$．\\hfill$\\square$\n\n\\textbf{(3) はかり B} \\\\\n最初の水がコップに届くのは $t=t_1$，最後の水が届くのは $t=T+t_1$ である．その間，毎秒 $\\mu$ の水が速さ $v_1$ で当たって止まるので，コップと中の水の系に入ってくる下向きの運動量は毎秒 $\\mu v_1$ で，これを止めるために抗力が余分に $\\mu v_1$ 必要である．コップ内の水の質量は $\\mu(t-t_1)$ なので\n\\[ 0<t<t_1:\\ \\boldsymbol{N_{\\rm B}=M_{\\rm B}g},\\qquad t_1<t<T+t_1:\\ \\boldsymbol{N_{\\rm B}=\\{M_{\\rm B}+\\mu(t-t_1)\\}g+\\mu v_1} \\]\n\\[ t>T+t_1:\\ \\boldsymbol{N_{\\rm B}=(M_{\\rm B}+\\mu T)g} \\]\n\\hfill$\\square$\n\n\\textbf{(4) 読みの和} \\\\\n$0<t<t_1$：$\\Delta=-\\mu tg-\\mu v_0=\\boldsymbol{-\\mu(v_0+gt)}$（空中の水の重さの分と推力の分だけ減る）． \\\\\n$t_1<t<T$：$\\Delta=-\\mu tg-\\mu v_0+\\mu(t-t_1)g+\\mu v_1=\\mu(v_1-v_0-gt_1)=\\boldsymbol{0}$．空中にある水の質量 $\\mu t_1$ の重さの不足分を，衝突の力と推力の差 $\\mu(v_1-v_0)=\\mu g t_1$ がちょうど補う． \\\\\n$T<t<T+t_1$：$\\Delta=-\\mu Tg+\\mu(t-t_1)g+\\mu v_1=\\boldsymbol{\\mu\\{v_0+g(t-T)\\}}$．蛇口を閉じた瞬間に推力が消えて $\\Delta$ は $0$ から $\\mu v_0$ に跳び上がり，その後は空中の水が減るので増え続ける． \\\\\n$t>T+t_1$：$\\Delta=\\boldsymbol{0}$． \\\\\nよって最小値は $t_1$ の直前の $\\boldsymbol{-\\mu(v_0+gt_1)=-\\mu v_1}$，最大値は $T+t_1$ の直前の $\\boldsymbol{\\mu v_1}$ である（解答図）．\\hfill$\\square$\n\n\\textbf{(5) 時間積分} \\\\\n\\[ \\int_0^\\infty\\Delta\\,dt=-\\mu\\int_0^{t_1}(v_0+gt)\\,dt+\\mu\\int_T^{T+t_1}\\{v_0+g(t-T)\\}\\,dt=-\\mu h+\\mu h=\\boldsymbol{0} \\]\n（$\\int_0^{t_1}(v_0+gt)dt=h$ は落下距離）．全体（水槽・コップ・水）にはたらく外力は重力 $(M_{\\rm A}+M_{\\rm B})g$ と抗力 $N_{\\rm A}+N_{\\rm B}$ だけで，下向きを正とすると系の鉛直方向の運動量 $P$ について $\\dfrac{dP}{dt}=-\\Delta$．はじめ（$t<0$）も終わり（$t>T+t_1$）も全体は静止して $P=0$ なので，$\\int\\Delta\\,dt=-[P]=0$ となる．なお，$t_1<t<T$ で $\\Delta=0$ となるのも，空中の水の運動量 $P=\\mu h$ が一定であることの表れである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "流れ出る・流れ込む水がある系では，はかりの読みが「重さ」からずれる分は系の運動量の出入り（推力 $\\mu v_0$ と衝突の力 $\\mu v_1$）で決まる．2つのはかりの和のずれは全体の運動量の時間変化に等しく，空中の水の運動量が一定の間は $0$，流れの始めと終わりにだけ逆符号で現れ，その時間積分は $0$ になる．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動量の流れ",
+  "はかりの読み",
+  "噴流",
+  "力積",
+  "系の取り方"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

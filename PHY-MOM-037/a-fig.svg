@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300">
+<defs>
+<marker id="a-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f5fbf"/></marker>
+<marker id="a-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+<marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<line x1="60" y1="250" x2="500" y2="250" stroke="#222" stroke-width="1" marker-end="url(#a-ak)"/><text x="504" y="255" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="start">t</text>
+<line x1="60" y1="250" x2="60" y2="20" stroke="#222" stroke-width="1" marker-end="url(#a-ak)"/><text x="52" y="28" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">v</text>
+<polyline points="60.0,160.0 164.0,160.0 314.0,250.0" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+<polyline points="60.0,70.0 360.0,250.0" fill="none" stroke="#c0392b" stroke-width="1.8"/>
+<text x="54" y="165" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">v<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+<text x="54" y="75" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="end">2v<tspan baseline-shift="sub" font-size="10" font-style="normal">0</tspan></text>
+<line x1="164.0" y1="160" x2="164.0" y2="250" stroke="#888" stroke-dasharray="4,3"/><text x="163.9720770839918" y="268" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222" text-anchor="middle">t<tspan baseline-shift="sub" font-size="10" font-style="normal">1</tspan></text>
+<text x="248.97207708399182" y="196.0" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">A（速さ一定→滑走）</text>
+<text x="217.5" y="137.5" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#222" text-anchor="start">B（最初に一度に放出）</text>
+</svg>

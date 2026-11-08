@@ -1,0 +1,130 @@
+{
+ "id": "PHY-MOM-029",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "伸びない糸が急に張る2物体の平面運動（動径方向の相対速度の消失と重心系の回転）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかな水平な氷の上に $xy$ 座標をとる．質量 $m$ の物体 A と質量 $2m$ の物体 B が，軽くて柔らかい長さ $2L$ の糸で結ばれている．時刻 $t=0$ に，A は原点に静止し，B は点 $(L,0)$ を $y$ 軸の正の向きに速さ $V$ で動いている．糸はぴんと張るとそれ以上まったく伸びず，張る瞬間には，糸の方向の A と B の相対速度が瞬間的に $0$ になる（その後，糸はたるまない）．物体の大きさは無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "糸が張る時刻 $t_0$ と，そのときの B の位置を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "糸が張った直後の A，B の速度を成分で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "糸が張るときに失われる力学的エネルギーを求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "糸が張った後の糸の張力の大きさを求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "糸が張った後，A の速さの最大値と最小値を求めよ．また，糸が張ってから A の速さが初めて最大になるまでの時間を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：伸びない糸が急に張る2物体の平面運動（動径方向の相対速度の消失と重心系の回転）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$t_0=\\dfrac{\\sqrt3L}{V}$，$(L,\\ \\sqrt3L)$"
+   },
+   {
+    "id": "2",
+    "tex": "A：$\\left(\\dfrac{\\sqrt3}{6}V,\\ \\dfrac12V\\right)$，B：$\\left(-\\dfrac{\\sqrt3}{12}V,\\ \\dfrac34V\\right)$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac14mV^2$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{mV^2}{12L}$"
+   },
+   {
+    "id": "5",
+    "tex": "最大 $V$，最小 $\\dfrac V3$，$\\dfrac{8\\pi L}{3V}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　糸が張るまで B は等速直線運動．$\\sqrt{L^2+(Vt)^2}=2L$ より $\\boldsymbol{t_0=\\dfrac{\\sqrt3L}{V}}$，B は $\\boldsymbol{(L,\\ \\sqrt3L)}$．糸の向きの単位ベクトルは $\\vec e=\\left(\\dfrac12,\\dfrac{\\sqrt3}{2}\\right)$，それに垂直な単位ベクトルを $\\vec n=\\left(-\\dfrac{\\sqrt3}{2},\\dfrac12\\right)$ とする．\n\n\\textbf{(2)}　張る瞬間の力（撃力）は糸に沿った内力だけなので，\\textbf{運動量は保存}するが，糸が引く向きなので\\textbf{力学的エネルギーは保存しない}．重心速度は張る前後で\n\\[ \\vec V_{\\mathrm G}=\\frac{2m\\cdot(0,V)}{3m}=\\left(0,\\frac23V\\right) \\]\nB の A に対する相対速度は張る前 $(0,V)$ で，$\\vec e$ 成分 $\\dfrac{\\sqrt3}{2}V$，$\\vec n$ 成分 $\\dfrac12V$．撃力は $\\vec e$ 方向なので $\\vec n$ 成分は変わらず，$\\vec e$ 成分は $0$ になる．張った直後の相対速度は $\\vec u=\\dfrac V2\\vec n=\\left(-\\dfrac{\\sqrt3}{4}V,\\dfrac14V\\right)$．\n\\[ \\vec v_{\\mathrm A}=\\vec V_{\\mathrm G}-\\frac{2m}{3m}\\vec u=\\boldsymbol{\\left(\\frac{\\sqrt3}{6}V,\\ \\frac12V\\right)},\\qquad \\vec v_{\\mathrm B}=\\vec V_{\\mathrm G}+\\frac{m}{3m}\\vec u=\\boldsymbol{\\left(-\\frac{\\sqrt3}{12}V,\\ \\frac34V\\right)} \\]\n\n\\textbf{(3)}　運動エネルギーは「重心の運動エネルギー＋相対運動のエネルギー $\\frac12\\mu u^2$（$\\mu=\\frac{m\\cdot2m}{3m}=\\frac23m$）」に分けられ，張る前後で前者は不変．相対速度の $\\vec e$ 成分が消えた分だけ失われるので\n\\[ \\Delta E=\\frac12\\cdot\\frac23m\\left(\\frac{\\sqrt3}{2}V\\right)^2=\\boldsymbol{\\frac14mV^2} \\]\n\n\\textbf{(4)}　その後は外力がないので重心は速度 $\\vec V_{\\mathrm G}$ で等速直線運動し，重心から見ると A，B は糸の長さを保ったまま重心のまわりを回る．糸の張力は糸に垂直な相対速度を変えないので，相対速さ $\\dfrac V2$ の等速円運動（角速度 $\\omega=\\dfrac{V/2}{2L}=\\dfrac{V}{4L}$）．A は重心から $\\dfrac23\\cdot2L=\\dfrac43L$ の円周上を速さ $\\dfrac23\\cdot\\dfrac V2=\\dfrac V3$ で回るので\n\\[ T=m\\frac{(V/3)^2}{4L/3}=\\boldsymbol{\\frac{mV^2}{12L}} \\]\n\n\\textbf{(5)}　A の速度は $\\vec V_{\\mathrm G}$（大きさ $\\frac23V$，$+y$ 向き）と，大きさ $\\frac V3$ で角速度 $\\omega$ で反時計回りに回るベクトルの和．よって $|\\vec v_{\\mathrm A}|$ は最大 $\\dfrac23V+\\dfrac13V=\\boldsymbol{V}$，最小 $\\dfrac23V-\\dfrac13V=\\boldsymbol{\\dfrac V3}$（A は一瞬も止まらない）．張った直後の回転部分 $-\\dfrac23\\vec u=\\dfrac V3\\left(\\dfrac{\\sqrt3}{2},-\\dfrac12\\right)$ は $x$ 軸から $-30^\\circ$ の向きで，最大になるのはこれが $+y$ 向き（$90^\\circ$）になるとき．反時計回りに $120^\\circ$ 回る時間は\n\\[ \\frac{2\\pi/3}{\\omega}=\\boldsymbol{\\frac{8\\pi L}{3V}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "伸びない糸が急に張る瞬間は糸方向の撃力だけがはたらくので，運動量は保存し，相対速度の糸方向成分だけが消え（換算質量で損失が決まる），垂直成分は残る．その後は重心の等速運動と重心のまわりの等速円運動の重ね合わせになり，各物体の速さは2つのベクトルの和として最大・最小をとる．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "kinematics-components",
+  "circular-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "運動量保存",
+  "撃力",
+  "換算質量",
+  "重心系",
+  "等速円運動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

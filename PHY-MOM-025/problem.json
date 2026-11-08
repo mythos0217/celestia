@@ -1,0 +1,142 @@
+{
+ "id": "PHY-MOM-025",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "片端を放した折り返し鎖（折り返し点の速さと支点が受ける力の増大）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "長さ $L$，質量 $M$ の一様でしなやかな鎖がある．図のように，鎖の両端を天井の同じ点Pに留め，鎖を2本の鉛直な部分が並ぶように折り返して静止させた．時刻 $0$ に一方の端Qを静かに放す．以後，鎖の運動について次のように仮定する．\n\\begin{itemize}\n\\item Pから折り返し点までの部分（静止部分）は静止したままである．\n\\item 折り返し点からQまでの部分（落下部分）はすべて同じ速度で自由落下する．\n\\item 落下部分の鎖は，折り返し点で静止部分に加わる瞬間に速度を失う．\n\\end{itemize}\n鎖の太さと折り返し部分の大きさは無視し，重力加速度の大きさを $g$ とする．Qの落下距離を $x$（$0\\leqq x<L$）とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "折り返し点のPからの深さ，および落下部分の長さを $x$，$L$ で表せ．また，折り返し点が下がる速さは落下部分の速さの何倍か．"
+     },
+     {
+      "id": "2",
+      "tex": "鎖全体の運動量の大きさ $p$ を $x$ の関数として求めよ．また，$p$ が最大になる $x$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "鎖が点Pを下向きに引く力の大きさ $F$ を $x$ の関数として求めよ．放した直後と，$x\\to L$ の直前の $F$ はそれぞれ鎖の重さの何倍か．"
+     },
+     {
+      "id": "4",
+      "tex": "(2)で求めた $x$ において $F$ はどうなっているか．その理由を運動量の変化と関連づけて述べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "Qを放してから鎖がまっすぐ1本にのびきるまでに失われる力学的エネルギーを求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：片端を放した折り返し鎖（折り返し点の速さと支点が受ける力の増大）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：片端を放した折り返し鎖（折り返し点の速さと支点が受ける力の増大）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "深さ $\\dfrac{L+x}{2}$，落下部分の長さ $\\dfrac{L-x}{2}$，$\\dfrac12$ 倍"
+   },
+   {
+    "id": "2",
+    "tex": "$p=\\dfrac{M}{2L}(L-x)\\sqrt{2gx}$，$x=\\dfrac{L}{3}$"
+   },
+   {
+    "id": "3",
+    "tex": "$F=\\dfrac{Mg}{2}\\left(1+\\dfrac{3x}{L}\\right)$，放した直後 $\\dfrac12$ 倍，$x\\to L$ で $2$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "$F=Mg$（運動量の時間変化率が $0$ なので，外力の和 $Mg-F$ が $0$）"
+   },
+   {
+    "id": "5",
+    "tex": "$\\dfrac{MgL}{4}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "線密度を $\\lambda=\\dfrac{M}{L}$ とし，下向きを正とする．落下部分の速さは自由落下だから $v=\\sqrt{2gx}$ である．\n\n\\textbf{(1) 折り返し点の位置}\n\n静止部分の長さを $\\ell_1$ とすると，折り返し点の深さも $\\ell_1$．落下部分はQ（深さ $x$）から折り返し点まで続くのでその長さは $\\ell_1-x$．全長は $\\ell_1+(\\ell_1-x)=L$ より\n\\[ \\ell_1=\\boldsymbol{\\frac{L+x}{2}},\\qquad \\ell_1-x=\\boldsymbol{\\frac{L-x}{2}} \\]\n深さ $\\ell_1$ の変化率は $\\dfrac12\\dfrac{dx}{dt}=\\dfrac v2$．折り返し点は落下部分の\\textbf{半分の速さ $\\boldsymbol{\\frac12}$ 倍}で下がる（$x$ だけ落ちる間に，落下部分が $x/2$ だけ静止部分に移る）．\n\n\\textbf{(2) 運動量}\n\n動いているのは落下部分だけなので\n\\[ p=\\lambda\\cdot\\frac{L-x}{2}\\cdot v=\\boldsymbol{\\frac{M}{2L}(L-x)\\sqrt{2gx}} \\]\n$p^2\\propto (L-x)^2x$ を $x$ で微分すると $(L-x)(L-3x)$ に比例するので，$p$ は $\\boldsymbol{x=\\dfrac L3}$ で最大となる．$x$ が小さいうちは速さの増加で $p$ が増え，のちには動く部分の減少で $p$ が減る．\n\n\\textbf{(3) 点Pが受ける力}\n\n鎖全体に，重力 $Mg$（下向き）と点Pからの力 $F$（上向き）がはたらく．鎖全体の運動量の変化率は外力の和に等しい：\n\\[ \\frac{dp}{dt}=Mg-F \\]\n$\\dfrac{dx}{dt}=v$，$\\dfrac{dv}{dt}=g$ を用いると\n\\[ \\frac{dp}{dt}=\\lambda\\left\\{-\\frac{1}{2}\\frac{dx}{dt}\\,v+\\frac{L-x}{2}\\frac{dv}{dt}\\right\\}=\\frac{\\lambda}{2}\\{-v^2+(L-x)g\\}=\\frac{\\lambda g}{2}(L-3x) \\]\nよって\n\\[ F=Mg-\\frac{\\lambda g}{2}(L-3x)=\\boldsymbol{\\frac{Mg}{2}\\left(1+\\frac{3x}{L}\\right)} \\]\n放した直後（$x=0$）は $\\boldsymbol{\\frac12}$ 倍（静止部分の重さだけを支え，落下部分は自由落下しているから），$x\\to L$ の直前は $\\boldsymbol{2}$ 倍となる．\n\n\\textbf{別解（静止部分だけに着目）}：静止部分には，自身の重さ $\\lambda g\\ell_1$ に加え，折り返し点で毎秒 $\\lambda\\cdot\\dfrac v2$ の質量が速さ $v$ から止められる．止めるのに必要な力（運動量の流入率）は $\\lambda\\dfrac v2\\cdot v=\\lambda gx$．したがって $F=\\lambda g\\dfrac{L+x}{2}+\\lambda gx=\\dfrac{\\lambda g}{2}(L+3x)$ で一致する．\n\n\\textbf{(4) $x=L/3$ での力}\n\n$x=\\dfrac{L}{3}$ では $F=\\dfrac{Mg}{2}\\cdot2=\\boldsymbol{Mg}$．運動量が最大で $\\dfrac{dp}{dt}=0$ だから外力の和 $Mg-F$ が $0$ になる．これより前は鎖全体が下向きに「加速」（$p$ 増加）するので $F<Mg$，後は $p$ が減るので $F>Mg$ で，ふつうにぶら下げたときより大きな力が支点にかかる．\n\n\\textbf{(5) 失われる力学的エネルギー}\n\n始めは2本の部分の重心がともにPから $\\dfrac L4$ の深さ，最後はまっすぐな鎖の重心が $\\dfrac L2$ の深さにある．最後の瞬間には落下部分の長さが $0$ なので運動エネルギーも $0$．よって位置エネルギーの減少分\n\\[ Mg\\left(\\frac L2-\\frac L4\\right)=\\boldsymbol{\\frac{MgL}{4}} \\]\nがすべて，折り返し点で落下部分が止められるときの非弾性的な衝突で失われる．（確認：単位時間に止められる質量 $\\lambda v/2$ が運動エネルギー $\\frac12 v^2$ ずつ失うので損失率は $\\frac{\\lambda v^3}{4}$．$v=gt$ を $t=0$ から $\\sqrt{2L/g}$ まで積分すると $\\frac{\\lambda g^3}{16}\\cdot\\frac{4L^2}{g^2}=\\frac{MgL}{4}$．）\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "折り返し点は落下部分の半分の速さで下がるので，動く部分の質量が減りながら速さが増し，運動量は $x=L/3$ で最大になる．支点の力は「重力−運動量の変化率」で決まり，静止部分の重さに折り返し点での運動量の流入（止める力）が加わるため，最後には鎖の重さの2倍に達する．失われる力学的エネルギーは重心の降下分に等しい．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "mechanical-energy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "変化する質量",
+  "運動量の変化率",
+  "鎖",
+  "非弾性",
+  "支点の力"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

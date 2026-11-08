@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 330">
+  <defs>
+    <marker id="q-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#888"/>
+    </marker>
+  </defs>
+  <!-- ceiling support at O -->
+  <line x1="270" y1="52" x2="330" y2="52" stroke="#222" stroke-width="1.6"/>
+  <g stroke="#222" stroke-width="1">
+    <line x1="274" y1="52" x2="282" y2="44"/><line x1="284" y1="52" x2="292" y2="44"/><line x1="294" y1="52" x2="302" y2="44"/>
+    <line x1="304" y1="52" x2="312" y2="44"/><line x1="314" y1="52" x2="322" y2="44"/><line x1="324" y1="52" x2="332" y2="44"/>
+  </g>
+  <line x1="300" y1="52" x2="300" y2="60" stroke="#222" stroke-width="1.6"/>
+  <circle cx="300" cy="60" r="3" fill="#222"/>
+  <text x="306" y="76" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">O</text>
+  <!-- wall -->
+  <line x1="193" y1="30" x2="193" y2="320" stroke="#222" stroke-width="1.6"/>
+  <g stroke="#222" stroke-width="1">
+    <line x1="193" y1="40" x2="183" y2="50"/><line x1="193" y1="60" x2="183" y2="70"/><line x1="193" y1="80" x2="183" y2="90"/>
+    <line x1="193" y1="100" x2="183" y2="110"/><line x1="193" y1="120" x2="183" y2="130"/><line x1="193" y1="140" x2="183" y2="150"/>
+    <line x1="193" y1="160" x2="183" y2="170"/><line x1="193" y1="180" x2="183" y2="190"/><line x1="193" y1="200" x2="183" y2="210"/>
+    <line x1="193" y1="220" x2="183" y2="230"/><line x1="193" y1="240" x2="183" y2="250"/><line x1="193" y1="260" x2="183" y2="270"/>
+    <line x1="193" y1="280" x2="183" y2="290"/><line x1="193" y1="300" x2="183" y2="310"/>
+  </g>
+  <!-- vertical through O -->
+  <line x1="300" y1="60" x2="300" y2="300" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <!-- initial horizontal string and ball -->
+  <line x1="300" y1="60" x2="494" y2="60" stroke="#888" stroke-width="1" stroke-dasharray="5,4"/>
+  <circle cx="500" cy="60" r="7" fill="none" stroke="#222" stroke-width="1.4"/>
+  <text x="482" y="44" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">放す</text>
+  <!-- swing path -->
+  <path d="M 500 60 A 200 200 0 0 1 200 233.2" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="3,4"/>
+  <!-- string at B -->
+  <line x1="300" y1="60" x2="200" y2="233.2" stroke="#222" stroke-width="1.6"/>
+  <circle cx="200" cy="233.2" r="7" fill="#222"/>
+  <text x="208" y="256" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="#222">B</text>
+  <text x="236" y="150" font-family="Times New Roman, serif" font-style="italic" font-size="16" fill="#222">l</text>
+  <!-- angle alpha -->
+  <path d="M 300 110 A 50 50 0 0 1 275 103.3" fill="none" stroke="#222" stroke-width="1"/>
+  <text x="280" y="128" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">α</text>
+  <!-- horizontal distance l sin alpha -->
+  <line x1="193" y1="22" x2="300" y2="22" stroke="#888" stroke-width="1" marker-start="url(#q-ag)" marker-end="url(#q-ag)"/>
+  <line x1="300" y1="16" x2="300" y2="44" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="212" y="16" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">l <tspan font-style="normal">sin</tspan> α</text>
+  <text x="60" y="180" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">なめらかな壁</text>
+  <text x="380" y="40" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">l</text>
+</svg>

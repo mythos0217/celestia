@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 270">
+  <defs><marker id="a-ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+  <line x1="70" y1="200" x2="530" y2="200" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+  <line x1="70" y1="220" x2="70" y2="40" stroke="#222" stroke-width="1.2" marker-end="url(#a-ak)"/>
+  <text x="536" y="205" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">t</text>
+  <text x="20" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#222">物体1が受ける力</text>
+  <text x="56" y="218" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">O</text>
+  <line x1="70" y1="80.0" x2="438.0" y2="80.0" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="52" y="85" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">F</text>
+  <path d="M70.0,200.0 L71.5,196.9 L72.9,193.7 L74.4,190.6 L75.8,187.4 L77.3,184.3 L78.8,181.2 L80.2,178.0 L81.7,174.9 L83.2,171.8 L84.6,168.7 L86.1,165.6 L87.5,162.5 L89.0,159.4 L90.5,156.3 L91.9,153.2 L93.4,150.1 L94.9,147.0 L96.3,144.0 L97.8,140.9 L99.2,137.9 L100.7,134.9 L102.2,131.8 L103.6,128.8 L105.1,125.8 L106.6,122.9 L108.0,119.9 L109.5,116.9 L110.9,114.0 L112.4,111.1 L113.9,108.2 L115.3,105.3 L116.8,102.4 L118.3,99.5 L119.7,96.7 L121.2,93.9 L122.6,91.0 L124.1,88.3 L125.6,85.5 L127.0,82.7 L128.5,80.0 L262.5,80.0 L262.5,80.0 L266.9,80.1 L271.3,80.4 L275.7,80.8 L280.1,81.5 L284.5,82.3 L288.9,83.3 L293.2,84.5 L297.6,85.9 L302.0,87.4 L306.4,89.1 L310.8,91.0 L315.2,93.1 L319.6,95.3 L323.9,97.7 L328.3,100.2 L332.7,102.9 L337.1,105.8 L341.5,108.8 L345.9,111.9 L350.3,115.1 L354.7,118.5 L359.0,122.1 L363.4,125.7 L367.8,129.5 L372.2,133.3 L376.6,137.3 L381.0,141.4 L385.4,145.5 L389.7,149.8 L394.1,154.1 L398.5,158.5 L402.9,162.9 L407.3,167.4 L411.7,172.0 L416.1,176.6 L420.5,181.2 L424.8,185.9 L429.2,190.6 L433.6,195.3 L438.0,200.0" fill="none" stroke="#1f5fbf" stroke-width="1.8"/>
+  <line x1="128.5" y1="80.0" x2="128.5" y2="200" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="262.5" y1="80.0" x2="262.5" y2="200" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="122.48853687288434" y="220" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">t<tspan baseline-shift="sub" font-size="10" font-style="normal">1</tspan></text>
+  <text x="240.534389381347" y="220" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">t<tspan baseline-shift="sub" font-size="10" font-style="normal">1</tspan>+t<tspan baseline-shift="sub" font-size="10" font-style="normal">2</tspan></text>
+  <text x="434.0" y="220" font-family="Times New Roman, serif" font-style="italic" font-size="15" fill="#222">T</text>
+  <text x="82" y="66" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">ばね</text>
+  <text x="165.5114631271157" y="66" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">すべり（力 <tspan font-family="Times New Roman, serif" font-style="italic">F</tspan>）</text>
+  <text x="330.26719469067353" y="66" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">ばねの復元</text>
+  <text x="272.3" y="146.0" font-family="Noto Sans CJK JP, sans-serif" font-size="12" fill="#222">1/4 周期</text>
+</svg>

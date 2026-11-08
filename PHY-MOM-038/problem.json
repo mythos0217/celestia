@@ -1,0 +1,135 @@
+{
+ "id": "PHY-MOM-038",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "あらい床への斜め着地の摩擦の力積と，滑走を含めた到達距離を最大にする投射角",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，あらい水平面上の点 O から，小物体を水平面と角 $\\theta\\ \\left(0<\\theta<\\dfrac{\\pi}{2}\\right)$ をなす向きに速さ $v$ で投げ出す．小物体は放物運動をして水平面に落下し，はね返らない（衝突直後の速度の鉛直成分は $0$）．衝突は非常に短い時間で終わり，その間は重力の力積は無視できる．小物体と水平面の間の動摩擦係数は衝突中も衝突後も $\\mu$ で，衝突中も小物体が水平面上を滑っている限り，垂直抗力の大きさ $N$ に対して大きさ $\\mu N$ の動摩擦力がはたらく．小物体は回転せず，空気の抵抗は無視でき，重力加速度の大きさを $g$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "衝突直後の速度の水平成分 $u$ を求めよ．$\\theta$ の範囲によって場合分けして答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "小物体が止まった点と O の距離 $X$ を，$\\theta$ の範囲で場合分けして $v,\\ g,\\ \\mu,\\ \\theta$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\mu<1$ のとき，$X$ を最大にする $\\theta$（$\\tan\\theta$ の値で答えよ）と $X$ の最大値を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\mu\\ge1$ のとき，$X$ を最大にする $\\theta$ と $X$ の最大値を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：あらい床への斜め着地の摩擦の力積と，滑走を含めた到達距離を最大にする投射角",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：あらい床への斜め着地の摩擦の力積と，滑走を含めた到達距離を最大にする投射角",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\tan\\theta<\\dfrac1\\mu$ のとき $u=v(\\cos\\theta-\\mu\\sin\\theta)$，$\\tan\\theta\\ge\\dfrac1\\mu$ のとき $u=0$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\tan\\theta<\\dfrac1\\mu$ のとき $X=\\dfrac{v^2}{g}\\left\\{\\sin2\\theta+\\dfrac{(\\cos\\theta-\\mu\\sin\\theta)^2}{2\\mu}\\right\\}$，$\\tan\\theta\\ge\\dfrac1\\mu$ のとき $X=\\dfrac{v^2\\sin2\\theta}{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\tan\\theta=\\mu$，最大値 $\\dfrac{(1+\\mu^2)v^2}{2\\mu g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\theta=\\dfrac{\\pi}{4}$，最大値 $\\dfrac{v^2}{g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 衝突中の力積}\n\n放物運動の対称性より，落下直前の速度は水平成分 $v\\cos\\theta$，鉛直下向き成分 $v\\sin\\theta$．はね返らないので，鉛直方向の運動量と力積の関係より，垂直抗力の力積は\n\\[ \\int N\\,dt=mv\\sin\\theta \\]\n（$m$ は小物体の質量）．衝突中ずっと滑っていれば，動摩擦力の力積は $\\mu\\displaystyle\\int N\\,dt=\\mu mv\\sin\\theta$ なので\n\\[ mu-mv\\cos\\theta=-\\mu mv\\sin\\theta\\qquad\\therefore\\ u=v(\\cos\\theta-\\mu\\sin\\theta) \\]\nこれが正であるためには $\\tan\\theta<\\dfrac1\\mu$．$\\tan\\theta\\ge\\dfrac1\\mu$ のときは，衝突の途中で水平の速度が $0$ になって滑りが止まり（その後は摩擦力は水平の速度を生まない），$u=0$．\n\\[ \\boldsymbol{\\tan\\theta<\\tfrac1\\mu:\\ u=v(\\cos\\theta-\\mu\\sin\\theta),\\qquad \\tan\\theta\\ge\\tfrac1\\mu:\\ u=0} \\]\n衝突が短くても垂直抗力が大きいので，摩擦の力積は無視できない点に注意．\n\n\\textbf{(2)} 放物運動の水平到達距離は $\\dfrac{v^2\\sin2\\theta}{g}$．着地後は加速度 $-\\mu g$ で $\\dfrac{u^2}{2\\mu g}$ 滑るので\n\\[ \\tan\\theta<\\frac1\\mu:\\ X=\\boldsymbol{\\frac{v^2}{g}\\left\\{\\sin2\\theta+\\frac{(\\cos\\theta-\\mu\\sin\\theta)^2}{2\\mu}\\right\\}},\\qquad \\tan\\theta\\ge\\frac1\\mu:\\ X=\\boldsymbol{\\frac{v^2\\sin2\\theta}{g}} \\]\n\n\\textbf{(3)} $\\tan\\theta<\\dfrac1\\mu$ の式を $2\\theta$ で書き直すと\n\\[ X=\\frac{v^2}{g}\\left\\{\\frac12\\sin2\\theta+\\frac{1-\\mu^2}{4\\mu}\\cos2\\theta+\\frac{1+\\mu^2}{4\\mu}\\right\\} \\]\n$\\tan\\alpha=\\mu\\ \\left(0<\\alpha<\\dfrac\\pi2\\right)$ とおくと $\\sin2\\alpha=\\dfrac{2\\mu}{1+\\mu^2}$，$\\cos2\\alpha=\\dfrac{1-\\mu^2}{1+\\mu^2}$ なので\n\\[ X=\\frac{(1+\\mu^2)v^2}{4\\mu g}\\{1+\\cos(2\\theta-2\\alpha)\\}=\\frac{(1+\\mu^2)v^2}{2\\mu g}\\cos^2(\\theta-\\alpha) \\]\n$\\mu<1$ なら $\\tan\\alpha=\\mu<\\dfrac1\\mu$ なので $\\theta=\\alpha$ はこの範囲に入り，そこで最大値 $\\dfrac{(1+\\mu^2)v^2}{2\\mu g}$ をとる．一方 $\\tan\\theta\\ge\\dfrac1\\mu$ の範囲では $X\\le\\dfrac{v^2}{g}$ で，$\\dfrac{1+\\mu^2}{2\\mu}\\ge1$ だからこれを超えない．よって\n\\[ \\boldsymbol{\\tan\\theta=\\mu,\\quad X_{\\max}=\\frac{(1+\\mu^2)v^2}{2\\mu g}} \\]\n摩擦角の方向に投げるのが最適で，$\\mu\\to0$ のとき（ほとんど滑らせるだけ）距離はいくらでも大きくなる．\n\n\\textbf{(4)} $\\mu\\ge1$ のとき $\\alpha\\ge\\dfrac\\pi4$ で，$\\tan\\theta<\\dfrac1\\mu$ の範囲は $0<\\theta<\\dfrac\\pi2-\\alpha\\ (\\le\\alpha)$．この範囲で $\\theta-\\alpha<0$ かつ $|\\theta-\\alpha|$ は $\\theta$ とともに減るので，$X$ は増加し，境界 $\\theta=\\dfrac\\pi2-\\alpha$ で $\\dfrac{v^2\\sin2\\theta}{g}$ の値 $\\dfrac{2\\mu}{1+\\mu^2}\\cdot\\dfrac{v^2}{g}$ に連続につながる．$\\theta\\ge\\dfrac\\pi2-\\alpha$ の範囲では $X=\\dfrac{v^2\\sin2\\theta}{g}$ で，$\\dfrac\\pi2-\\alpha\\le\\dfrac\\pi4$ だから $\\theta=\\dfrac\\pi4$ がこの範囲に入る．よって\n\\[ \\boldsymbol{\\theta=\\frac\\pi4,\\quad X_{\\max}=\\frac{v^2}{g}} \\]\nこのとき小物体は着地した位置で止まる．$\\mu$ が大きいと滑走による得が着地の損失に見合わず，ふつうの放物運動の最適角に戻る．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "はね返らない着地でも垂直抗力の力積は有限なので，滑っている限り摩擦の力積は $\\mu\\times$（垂直抗力の力積）となり，水平の速さを $\\mu v\\sin\\theta$ だけ奪う（奪いきれば滑りは途中で止まる）．放物運動と着地後の滑走を合わせた距離は $\\cos^2(\\theta-\\alpha)$（$\\tan\\alpha=\\mu$）の形にまとまり，$\\mu<1$ では摩擦角の方向が最適，$\\mu\\ge1$ では着地で止まる $45^\\circ$ が最適という場合分けになる．"
+ },
+ "concepts": [
+  "momentum-conservation",
+  "projectile-motion",
+  "restitution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "斜め衝突",
+  "摩擦の力積",
+  "放物運動",
+  "最大値",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-08",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

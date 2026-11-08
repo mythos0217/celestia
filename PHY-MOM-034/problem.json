@@ -1,0 +1,133 @@
+{
+ "id": "PHY-MOM-034",
+ "schema": "celestia.problem/1",
+ "field": "MEC",
+ "unit": "MEC-05",
+ "topic": "テーブルの穴から落ちる鎖（山からの取り込み・床での停止・自由落下の切り替わり）",
+ "course": "物理",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "derivation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "高さ $h$ の水平なテーブルの中央に小さな穴があいている．長さ $2h$，単位長さあたりの質量 $\\lambda$ の細くて柔らかい鎖を，図のように穴のすぐそばに小さく丸めて置き，鎖の一端をわずかに穴から引き出して静かに放した．鎖はテーブル上の山から順に引き出され，穴を通って鉛直に落下する．重力加速度の大きさを $g$ とし，次のように考えてよい．\n\\begin{itemize}\n\\item 山の中の鎖は穴を通るまでは静止しており，穴の所で一瞬のうちに下の部分と同じ速さになる．穴や鎖の摩擦，空気抵抗は無視する．\n\\item 床に達した鎖はその場で直ちに静止し（はね返らない），床の上に積み重なる．床の上の鎖は垂れ下がった部分の運動に影響しない．\n\\end{itemize}"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "鎖の先端が床に達するまでの間，垂れ下がった部分の長さを $x$，速さを $v$ とする．穴の所で鎖を加速するのに必要な力を考えて，垂れ下がった部分の加速度 $a$ を $x,v,g$ で表せ．さらに，$v^2=kx$（$k$ は定数）の形の解を仮定して $k$ を求め，先端が床に達するまでの時間 $t_1$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の間に失われた力学的エネルギーは，位置エネルギーの減少量の何倍か．"
+     },
+     {
+      "id": "3",
+      "tex": "先端が床に達した後，鎖の後端が穴を通過するまでの間，垂れ下がった部分の加速度は $g-\\dfrac{v^2}{h}$ となることを示せ．また，後端が穴を通過する直前の速さ $v_2$ を求めよ．必要なら，$y$ が $s$ の関数で $\\dfrac{\\Delta y}{\\Delta s}=-c\\,(y-y_\\infty)$（$c,y_\\infty$ は定数）を満たすとき $y-y_\\infty=\\{y(0)-y_\\infty\\}e^{-cs}$ となることを用いよ．"
+     },
+     {
+      "id": "4",
+      "tex": "後端が穴を通過する直前に，床が鎖から受ける力の大きさ $F_2$ を求めよ．また，後端が穴を通過してから鎖がすべて床に達するまでの時間 $t_3$ を $v_2,g,h$ で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：テーブルの穴から落ちる鎖（山からの取り込み・床での停止・自由落下の切り替わり）",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：テーブルの穴から落ちる鎖（山からの取り込み・床での停止・自由落下の切り替わり）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$a=g-\\dfrac{v^2}{x}$，$k=\\dfrac{2g}{3}$，$t_1=\\sqrt{\\dfrac{6h}{g}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac13$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "$v_2=\\sqrt{gh\\left(1-\\dfrac{1}{3e^{2}}\\right)}$"
+   },
+   {
+    "id": "4",
+    "tex": "$F_2=\\lambda gh\\left(2-\\dfrac{1}{3e^{2}}\\right)$，$t_3=\\dfrac{\\sqrt{v_2^2+2gh}-v_2}{g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{穴の所での力}　速さ $v$ のとき，時間 $\\Delta t$ の間に長さ $v\\Delta t$（質量 $\\lambda v\\Delta t$）の鎖が穴の所で速さ $0$ から $v$ になる．その運動量の変化 $\\lambda v\\Delta t\\cdot v$ を与えるのは垂れ下がった部分の張力なので，穴の所の張力は $\\lambda v^2$ であり，反作用として垂れ下がった部分は上向きに $\\lambda v^2$ の力を受ける．この取り込みは完全非弾性衝突と同じなので，力学的エネルギーは保存しない．\n\n\\textbf{(1)}　垂れ下がった部分（質量 $\\lambda x$）の各部分は同じ速度で動くので，運動方程式は\n\\[ \\lambda x\\,a=\\lambda xg-\\lambda v^2\\quad\\text{より}\\quad a=\\boldsymbol{g-\\frac{v^2}{x}}. \\]\n$v^2=kx$ とすると，$\\Delta(v^2)=2v\\Delta v$，$\\Delta x=v\\Delta t$ より $a=\\frac{\\Delta v}{\\Delta t}=\\frac12\\frac{\\Delta (v^2)}{\\Delta x}=\\frac k2$．これを代入して $\\frac k2=g-k$，よって $\\boldsymbol{k=\\frac{2g}{3}}$ で，加速度は一定の $\\frac g3$ である．$h=\\frac12\\cdot\\frac g3t_1^2$ より\n\\[ t_1=\\boldsymbol{\\sqrt{\\frac{6h}{g}}}. \\]\n\n\\textbf{(2)}　垂れ下がった部分の重心は穴から $\\frac x2$ 下にあるので，位置エネルギーの減少量は $\\lambda x\\cdot g\\cdot\\frac x2=\\frac12\\lambda gx^2$．運動エネルギーは $\\frac12\\lambda x\\cdot\\frac{2g}{3}x=\\frac13\\lambda gx^2$．よって失われたのは $\\frac16\\lambda gx^2$ で，位置エネルギーの減少量の $\\boldsymbol{\\frac13}$ 倍．これは穴での取り込み（非弾性）による損失である．\n\n\\textbf{(3)}　先端が床に達した後は，垂れ下がった部分の長さは $h$ のまま変わらない．上端では (1) と同じく上向きに $\\lambda v^2$ の力を受ける．下端では床に達した部分が止まるが，それを止めるのは床であって鎖の張力ではない（下端の張力は $0$）．よって垂れ下がった部分（質量 $\\lambda h$）について\n\\[ \\lambda h\\,a=\\lambda hg-\\lambda v^2\\quad\\text{より}\\quad a=g-\\frac{v^2}{h}. \\]\n（加速度は正で，$v^2$ は $gh$ に近づく．）先端が床に達した後に穴を通過した長さを $s$ とすると，$a=\\frac12\\frac{\\Delta(v^2)}{\\Delta s}$ だから\n\\[ \\frac{\\Delta (v^2)}{\\Delta s}=2g-\\frac{2v^2}{h}=-\\frac2h\\left(v^2-gh\\right). \\]\n$s=0$ で $v^2=\\frac23gh$ なので，$v^2=gh-\\frac13gh\\,e^{-2s/h}$．後端が穴を通過するのは $s=h$ のときなので\n\\[ v_2=\\boldsymbol{\\sqrt{gh\\left(1-\\frac{1}{3e^{2}}\\right)}}. \\]\n\n\\textbf{(4)}　このとき床の上には長さ $h$ の鎖が積もっていて，その重さ $\\lambda gh$ を床が支える．さらに，床は単位時間に質量 $\\lambda v_2$ の鎖を速さ $v_2$ から止めるので，その分の力 $\\lambda v_2^2$ も受ける．よって\n\\[ F_2=\\lambda gh+\\lambda v_2^2=\\boldsymbol{\\lambda gh\\left(2-\\frac{1}{3e^{2}}\\right)}. \\]\n後端が穴を通過した後は，穴の所での取り込みがなくなり，垂れ下がった部分には張力がはたらかない．各部分は加速度 $g$ で自由落下し，最後に床に達するのは後端である．後端は初速 $v_2$ で $h$ 落ちるので $h=v_2t_3+\\frac12gt_3^2$，正の解をとって\n\\[ t_3=\\boldsymbol{\\frac{\\sqrt{v_2^2+2gh}-v_2}{g}}. \\]\n加速度は後端の通過の瞬間に $g-\\frac{v_2^2}{h}$ から $g$ に不連続に変わる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "静止した山から鎖を引き出す所では運動量を与えるための力 $\\lambda v^2$ が張力として必要（非弾性でエネルギーの $\\frac13$ が失われ，加速度 $g/3$）だが，床で止まる所はその力を床が受け持つので張力を必要としない．この非対称のため，先端が着床した後は長さ一定の垂れ下がり部分が $g-v^2/h$ で終端速度 $\\sqrt{gh}$ に近づき，山が尽きると自由落下に切り替わる．"
+ },
+ "concepts": [
+  "momentum-conservation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "変化する質量",
+  "運動量",
+  "非弾性",
+  "終端速度",
+  "鎖"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "physics": true,
+   "human": false
+  },
+  "verified": false
+ }
+}
